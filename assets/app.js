@@ -495,6 +495,7 @@ function pgHome(app) {
     <div class="linha">
       <div class="dropdown"><button class="btn peq" id="fs-btn">Setores <span id="fs-qtd"></span> ▾</button><div class="dropdown-painel" id="fs-painel" hidden></div></div>
       <div class="chips" id="fs-chips"></div>
+      <button class="btn peq" id="fs-limpar" hidden>Limpar filtro ✕</button>
     </div>
     <div class="perenes" id="perenes">
       <div><b>Setores perenes</b> <span class="sub">Energia elétrica, saneamento, telecom, seguros e bancos. Vendem serviços essenciais, com demanda estável mesmo em crise, contratos regulados e histórico de dividendos. Tendem a cair menos em recessões, mas também crescem menos nos ciclos de alta.</span></div>
@@ -527,9 +528,8 @@ function pgHome(app) {
   };
   const painel = () => {
     const ss = setoresDoSeg();
-    $("#fs-painel").innerHTML = `<div class="linha entre"><b>Escolha um ou mais setores</b><button class="btn peq" id="fs-limpar">Limpar</button></div>
+    $("#fs-painel").innerHTML = `<div><b>Escolha um ou mais setores</b></div>
       ${ss.map((x) => `<label><input type="checkbox" value="${esc(x)}" ${EST.homeSetores.includes(x) ? "checked" : ""}> ${esc(x)}${SETORES_PERENES.includes(x) ? ' <span class="badge pos">perene</span>' : ""}</label>`).join("")}`;
-    $("#fs-limpar").onclick = () => { EST.homeSetores = []; painel(); desenhar(); };
     $("#fs-painel").onchange = (e) => { const v = e.target.value; EST.homeSetores = e.target.checked ? [...EST.homeSetores, v] : EST.homeSetores.filter((x) => x !== v); desenhar(); };
   };
   $("#fs-btn").onclick = (e) => { e.stopPropagation(); painel(); $("#fs-painel").hidden = !$("#fs-painel").hidden; };
@@ -558,6 +558,8 @@ function pgHome(app) {
     const lista = base(), perm = new Set(lista), filtrado = EST.homeSetores.length > 0;
     const sufixo = filtrado ? ` · ${EST.homeSetores.length === 1 ? EST.homeSetores[0] : `${EST.homeSetores.length} setores`}` : "";
     $("#fs-qtd").textContent = filtrado ? `(${EST.homeSetores.length})` : "";
+    $("#fs-limpar").hidden = !filtrado;
+    $("#fs-limpar").onclick = () => { EST.homeSetores = []; $("#fs-painel").hidden = true; desenhar(); };
     $("#fs-chips").innerHTML = EST.homeSetores.map((x) => `<button class="chip ativo" data-tira="${esc(x)}">${esc(x)}<span class="x">✕</span></button>`).join("");
     $$("#fs-chips [data-tira]").forEach((b) => b.onclick = () => { EST.homeSetores = EST.homeSetores.filter((x) => x !== b.dataset.tira); desenhar(); });
     $("#perenes").classList.toggle("ativo", filtrado && SETORES_PERENES.filter((x) => setoresDoSeg().includes(x)).every((x) => EST.homeSetores.includes(x)));
