@@ -101,12 +101,14 @@ svg { display: block; }
 .menu-mobile { display: none; }
 
 /* ---------------- faixa de mercado */
-.faixa-linha { display: flex; align-items: stretch; border-top: 1px solid var(--borda); background: var(--bg); }
-.faixa-status { flex: none; display: flex; align-items: center; gap: 8px; padding: 0 16px; border-left: 1px solid var(--borda);
-  font-size: .74rem; font-weight: 600; color: var(--txt-3); white-space: nowrap; font-variant-numeric: tabular-nums; }
-.faixa-status .v { color: var(--txt); font-weight: 700; }
+.faixa-linha { display: flex; flex-direction: column; border-top: 1px solid var(--borda); background: var(--bg); }
+.faixa-status { order: -1; display: flex; align-items: center; justify-content: flex-end; gap: 6px; height: 20px; padding: 4px 16px 0;
+  font-size: .64rem; font-weight: 600; color: var(--txt-3); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.faixa-status .v { color: var(--txt-2); font-weight: 700; }
+.faixa-status .tempo-real { font-size: .56rem; padding: 0 5px; letter-spacing: .08em; }
+.faixa-status .ponto-vivo { width: 5px; height: 5px; }
 .faixa-status:empty { display: none; }
-.faixa { flex: 1; min-width: 0; overflow: hidden; height: 34px; background: var(--bg);
+.faixa { flex: none; min-width: 0; overflow: hidden; height: 34px; background: var(--bg);
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 50px, #000 calc(100% - 50px), transparent); mask-image: linear-gradient(90deg, transparent, #000 50px, #000 calc(100% - 50px), transparent); }
 .faixa { cursor: grab; user-select: none; touch-action: pan-y; }
 .faixa.arrastando { cursor: grabbing; }
@@ -528,4 +530,4 @@ tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72re
 .legenda-acionaria i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
 .legenda-acionaria b { color: var(--txt); margin-left: 4px; }
 
-@media (max-width: 560px) { .faixa-status { padding: 0 10px; } .faixa-status .tempo-real { display: none; } }
+@media (max-width: 560px) { .faixa-status { padding: 4px 10px 0; } }
