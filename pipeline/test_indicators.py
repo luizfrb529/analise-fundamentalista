@@ -207,3 +207,10 @@ def test_wacc_e_criterios():
     assert r2["nota"] == ap(10 * (46 - 5 - 5 - 4) / 46)
     banco = I.criterios(dict(roe=0.2, pl=8, peg=0.5, cagr_lucro_5a=0.1, consist_lucro=5, cagr_receita_5a=0.08), {}, 0.15, None, 0.34, 0.04, True)
     assert banco["avaliados"] == 4 and banco["testes"]["roic"] is None
+
+
+def test_controlador_estatal():
+    assert I.controlador_estatal([{"nome": "União Federal", "pct": 0.29}]) == "União Federal"
+    assert I.controlador_estatal([{"nome": "Governo do Estado do Rio Grande do Sul"}])
+    assert I.controlador_estatal([{"nome": "Vila Velha S.A. - Administração e Participações"}]) is None
+    assert I.controlador_estatal([{"nome": "LTD Administração e Participações S.A."}]) is None

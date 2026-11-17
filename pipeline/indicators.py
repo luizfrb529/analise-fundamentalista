@@ -15,6 +15,7 @@ e as cores do comparador.
 from __future__ import annotations
 
 import math
+import re
 from statistics import mean, median, pstdev
 from typing import Iterable, Optional
 
@@ -687,3 +688,17 @@ META["nota_criterios"] = ("Nota por critérios", "Soma das estrelas dos critéri
                           "EV/EBITDA abaixo dos pares, PEG até 1 e cobertura de juros acima de 4x.", 1, "Rentabilidade", "x")
 META["wacc"] = ("WACC", "Custo médio ponderado de capital: E/(D+E) x custo do capital próprio + D/(D+E) x custo da dívida x (1 - IR). "
                 "Custo da dívida: Selic (Brasil) ou Treasury 10 anos (exterior) + 2%.", 0, "TIR", "pct")
+
+
+# ===================================================================== participação estatal
+_ESTATAL = re.compile(r"\buni[aã]o\b|\bestado d[eo]\b|\bgoverno d|minist[eé]rio|tesouro nacional|caixa econ[oô]mica|"
+                      r"banco do brasil|petrobras|\bbndes|prefeitura|\bmunic[ií]pio d", re.I)
+
+
+def controlador_estatal(controladores: list) -> Optional[str]:
+    """Nome do primeiro controlador que é ente público ou estatal (Formulário de Referência), ou None."""
+    for c in controladores or []:
+        nome = c.get("nome", "") if isinstance(c, dict) else str(c)
+        if _ESTATAL.search(nome):
+            return nome
+    return None

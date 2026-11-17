@@ -1290,6 +1290,13 @@ def aplicar_criterios(fundamentals: dict, mac: dict, univ: dict):
         i["nota_criterios"] = r["nota"]
         i["wacc"] = r["wacc"]
         f["criterios"] = {"testes": r["testes"], "avaliados": r["avaliados"], "kd": kd, "inflacao": infl.get("valor")}
+        # interferência estatal: cadastro manual no universe.json tem prioridade; senão, controlador público no FRE
+        if a.get("estado"):
+            f["estado"] = a["estado"]
+        else:
+            nome = I.controlador_estatal(((f.get("governanca") or {}).get("controladores")) or [])
+            f["estado"] = {"nivel": "controle", "resumo": f"Controlador listado no Formulário de Referência: {nome}.",
+                           "fonte": "Formulário de Referência (CVM), detecção automática"} if nome else None
 
 
 def relatorio_cobertura(universo, resultados, meta):

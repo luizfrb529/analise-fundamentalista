@@ -86,6 +86,7 @@ Ação brasileira:
 - Units: opcional. A composição (ex.: "1 ON + 2 PN") também vem do FCA; só preencha `composicao_unit` e `acoes_por_papel` se o pipeline avisar que não encontrou.
 - `segmento_listagem` e `tag_along`: opcionais. O segmento vem da B3; o tag along sai da regra do segmento (Novo Mercado e Nível 2: 100%; ON fora deles: 80% por lei). PN fora do NM/N2 depende do estatuto: preencha à mão.
 - `modelo_analise`: GERAL, BANCO, SEGURADORA, HOLDING, TESOURARIA_CRIPTO ou RECUPERACAO.
+- Interferência estatal: `"estado": {"nivel": "controle" ou "influencia", "resumo": "...", "fonte": "..."}` mostra o quadrado amarelo (controle do governo, golden share ou fatia relevante). Sem esse campo, o pipeline marca sozinho quando o controlador no Formulário de Referência é ente público. É um alerta e não entra na nota.
 - RECUPERACAO: só para empresa com pedido de recuperação judicial ou extrajudicial. Preencha `"recuperacao": {"tipo": "Judicial", "pedido": "2026-08-17", "situacao": "...", "fonte": "..."}`. O site mostra o selo "Em recuperação" e não exibe múltiplos de lucro nem TIR. O relatório de cobertura lista empresas com sinais de estresse financeiro para conferência.
 - HOLDING: acrescente `"participacoes_listadas": ["GGBR4"]`. O percentual detido vem do Formulário de Referência e o desconto é calculado contra o valor de mercado das investidas.
 - TESOURARIA_CRIPTO: a quantidade de BTC vem da SEC (XBRL) ou do saldo de criptoativos no balanço da CVM. Se não houver, preencha `manuais.btc_em_caixa` no notes.json.

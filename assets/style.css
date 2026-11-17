@@ -445,3 +445,14 @@ tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72re
 .nota-barra i { display: block; height: 100%; background: var(--acento); }
 .legenda-crit { margin-top: 12px; }
 .legenda-crit summary { cursor: pointer; color: var(--acento); font-weight: 600; font-size: .86rem; }
+
+/* ---------------- interferência estatal */
+.q-estatal { display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: #f5c542; box-shadow: 0 0 0 2px rgba(245, 197, 66, .22); vertical-align: middle; margin-left: 6px; flex-shrink: 0; cursor: help; }
+.q-estatal.grande { width: 14px; height: 14px; margin-left: 0; }
+.badge.estatal { background: rgba(245, 197, 66, .14); color: #d9a514; border-color: transparent; }
+.badge.estatal .q-estatal { margin: 0 2px 0 0; }
+:root[data-theme="light"] .badge.estatal { color: #9a7200; }
+.aviso-estatal { display: flex; gap: 12px; align-items: flex-start; background: rgba(245, 197, 66, .09); border: 1px solid rgba(245, 197, 66, .4); border-radius: var(--raio); padding: 14px 18px; margin-top: 18px; }
+.aviso-estatal .q-estatal { margin: 5px 0 0; }
+.aviso-estatal b { color: #d9a514; }
+:root[data-theme="light"] .aviso-estatal b { color: #9a7200; }
