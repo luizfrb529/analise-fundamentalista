@@ -1527,7 +1527,7 @@ function faixaMercado() {
   const taxa = (x, campo = "valor") => x && ok(x[campo]) ? { v: nf2.format(x[campo] * 100) + "%" } : null;
   const venc = m.ntnb_longa && m.ntnb_longa.vencimento ? m.ntnb_longa.vencimento.slice(0, 4) : "";
   const itens = [
-    ["Ibovespa", pts(m.ibovespa), "pts"], ["IFIX", pts(m.ifix), "pts"], ["S&P 500", pts(m.sp500), "pts"], ["Nasdaq", pts(m.nasdaq), "pts"],
+    ["Ibovespa", pts(m.ibovespa), "pts"], ["SMLL", pts(m.smll), "pts"], ["IFIX", pts(m.ifix), "pts"], ["S&P 500", pts(m.sp500), "pts"], ["Nasdaq", pts(m.nasdaq), "pts"], ["EWZ", pts(m.ewz, "US$ ")],
     ["Dólar", pts(m.dolar, "R$ ")], ["Euro", pts(m.euro, "R$ ")], ["Bitcoin", pts(m.bitcoin_brl, "R$ ")],
     ["Brent", pts(m.brent, "US$ ")], ["Ouro", pts(m.ouro, "US$ "), "onça"],
     ["Selic", taxa(m.selic), "a.a."], ["CDI", taxa(m.cdi), "a.a."], ["IPCA 12m", taxa(m.ipca_12m)],

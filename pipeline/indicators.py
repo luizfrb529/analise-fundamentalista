@@ -815,3 +815,39 @@ META["aluguel_valor"] = ("Posição vendida em R$", "Valor das ações em aberto
 META["aluguel_pct_ff"] = ("Posição vendida sobre o free float", "Ações em aberto no aluguel / (ações da classe x free float do Formulário de Referência). "
                           "Em PNA e PNB usa o total de preferenciais; em units, o total de ações dividido pela composição da unit.", 0, "Posição vendida", "pct")
 META["aluguel_dias"] = ("Dias para cobrir", "Valor da posição em aberto no aluguel / volume financeiro médio diário de 21 pregões.", 0, "Posição vendida", "x")
+
+
+# ===================================================================== notícias financeiras
+TERMOS_FINANCEIROS = re.compile(
+    r"lucr|preju[ií]zo|resultado|receita|faturamento|ebitda|margem|balan[cç]o|trimestr|\b[1-4]t\d{2}\b|dividend|\bjcp\b|juros sobre capital|provent|"
+    r"a[cç][aã]o da|a[cç][oõ]es d[aeo]|na bolsa|bolsa de valores|ibovespa|cota[cç][aã]o|valor de mercado|recompra|deb[eê]nture|d[ií]vida|alavancagem|rating|capta[cç][aã]o|"
+    r"aquisi[cç][aã]o|aquire|compra d[aeo]|venda d[aeo]|fus[aã]o|incorpora[cç][aã]o|oferta|follow-on|\bipo\b|\bopa\b|guidance|proje[cç][aã]o|"
+    r"pre[cç]o-alvo|recomenda|rebaix|eleva|investimento|capex|patrim[oô]nio|caixa|fato relevante|acionista|controlador|conselho|ceo|diretor|"
+    r"privatiza|concess[aã]o|leil[aã]o|tarifa|reajuste|produ[cç][aã]o|vendas|recupera[cç][aã]o judicial|recupera[cç][aã]o extrajudicial|"
+    r"earnings|revenue|profit|loss|shares|stock|dividend|guidance|quarter|buyback|acquisition|merger|debt|outlook|forecast|analyst|price target", re.I)
+VEICULOS_FINANCEIROS = re.compile(
+    r"valor|infomoney|money times|exame|brazil journal|seu dinheiro|e-investidor|estad[aã]o|suno|bp money|bpmoney|investing|bloomberg|reuters|"
+    r"cnn brasil|neofeed|pipeline|investidor10|trademap|bora investir|space money|advfn|times brasil|mover|forbes|financial times|wall street|"
+    r"cnbc|barron|marketwatch|yahoo finance|motley|seeking alpha|veja|folha|o globo|isto[eé] dinheiro|monitor mercantil|poder360|metr[oó]poles|"
+    r"capital aberto|eu quero investir|genial|xp investimentos|btg|nord|empiricus|the cap|inteligencia financeira|melhor investimento|visno", re.I)
+FORA_DE_PAUTA = re.compile(r"est[aá]gio|vagas|emprego|concurso|trainee|bolsa aux|ao vivo|futebol|campeonato|copa do mundo|liga das na[cç][oõ]es|\bx\b.*\bao vivo\b|novela|teatro|show|festival|anivers[aá]rio|"
+                           r"receita de bolo|hor[oó]scopo|celebridade|bbb|carnaval", re.I)
+
+
+def noticia_financeira(titulo: str, veiculo: str, nome: str, ticker: str) -> bool:
+    """Mantém só notícias sobre o negócio e o resultado da empresa.
+    Título com o ticker passa sempre. Sem o ticker, o título precisa citar a empresa (com maiúsculas, fora de "ao vivo")
+    e ter um termo financeiro, ou vir de veículo especializado em mercado; temas fora de pauta são descartados."""
+    t = titulo or ""
+    if re.search(rf"\b{re.escape(ticker)}\b", t) or (len(ticker) >= 5 and re.search(rf"\b{re.escape(ticker[:4])}\d{{1,2}}\b", t)):
+        return True
+    if FORA_DE_PAUTA.search(t):
+        return False
+    curto = re.split(r"\s+(?:s\.?a\.?|holding|holdings|inc|corp|n\.v\.|pn|on)\b", nome, flags=re.I)[0].strip()
+    if curto.upper() in {"B3"}:                          # nome igual ao da bolsa: só com o ticker no título
+        return False
+    alvo = nome if len(curto) <= 3 else curto          # nomes curtos (Nu) exigem o nome completo
+    cita_nome = bool(re.search(rf"(?<![Aa][Oo] )(?<!AO )\b{re.escape(alvo)}\b", t))
+    if not cita_nome:
+        return False
+    return bool(TERMOS_FINANCEIROS.search(t)) or bool(VEICULOS_FINANCEIROS.search(veiculo or ""))

@@ -246,3 +246,23 @@ def test_posicao_vendida():
     assert r["pct_free_float"] == ap(0.05) and r["pct_classe"] == ap(0.025) and r["dias_para_cobrir"] == ap(4)
     r2 = I.posicao_vendida(5e6, 100e6, None, 0.5, 0)
     assert r2["pct_free_float"] is None and r2["dias_para_cobrir"] is None
+
+
+def test_noticia_financeira():
+    f = I.noticia_financeira
+    assert not f("Gongada Drag celebra aniversário no Teatro Sabesp Frei Caneca", "Blog do Arcanjo", "Sabesp", "SBSP3")
+    assert not f("País de Gales x Portugal pela Liga das Nações; acompanhe ao vivo", "GZH", "Vivo", "VIVT3")
+    assert f("Banco do Brasil (BBAS3) nega empréstimos a fazendas fantasmas", "Money Times", "Banco do Brasil", "BBAS3")
+    assert f("Sabesp tem lucro de R$ 1,2 bilhão no 3T26", "Valor Econômico", "Sabesp", "SBSP3")
+    assert f("WEG anuncia dividendos e JCP", "InfoMoney", "WEG", "WEGE3")
+    assert not f("Vivo patrocina festival de música em São Paulo", "G1", "Vivo", "VIVT3")
+
+
+def test_noticia_financeira_ambigua():
+    f = I.noticia_financeira
+    assert not f("Vivo abre estágio no Nordeste; bolsa da trilha chega a R$ 2.075", "GazetaWeb", "Vivo", "VIVT3")
+    assert not f("Balanço Geral Bahia - AO VIVO - 17/11/2026", "R7", "Vivo", "VIVT3")
+    assert not f("Ibovespa Hoje Ao Vivo: Bolsa diminui ritmo de alta", "InfoMoney", "Vivo", "VIVT3")
+    assert f("Telefônica Vivo (VIVT3): negócios previsíveis", "Money Times", "Vivo", "VIVT3")
+    assert not f("American Century Reveals 5.5% Ownership Stake in Nu Skin", "Kalkine Media", "Nu Holdings", "NU")
+    assert f("Is Nu Holdings Stock a Buy After Falling 24%?", "Yahoo Finance", "Nu Holdings", "NU")

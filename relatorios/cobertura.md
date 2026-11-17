@@ -1,6 +1,6 @@
 # Relatório de cobertura de dados
 
-Gerado em 17/11/2026 19:15 | Preços de fechamento de 2026-11-17 | Balanços até 3T2026
+Gerado em 17/11/2026 19:48 | Preços de fechamento de 2026-11-17 | Balanços até 3T2026
 
 | Ticker | Modelo | Balanço | Fonte | Indicadores com valor | Faltando |
 |---|---|---|---|---|---|
@@ -10,6 +10,7 @@ Gerado em 17/11/2026 19:15 | Preços de fechamento de 2026-11-17 | Balanços at�
 | BBDC4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 65/70 | 5 |
 | ITUB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 65/70 | 5 |
 | BRSR6 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 61/70 | 9 |
+| BMEB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 60/70 | 10 |
 | SANB11 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 57/70 | 13 |
 | ROXO34 | BANCO | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 45/69 | 24 |
 | INBR34 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 56/69 | 13 |
@@ -123,6 +124,7 @@ Gerado em 17/11/2026 19:15 | Preços de fechamento de 2026-11-17 | Balanços at�
 | JBSS32 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 45/103 | 58 |
 | CSUD3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/104 | 14 |
 | CASH3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 76/104 | 28 |
+| BMOB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
 | SMFT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/104 | 14 |
 | OBTC3 | TESOURARIA_CRIPTO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 56/96 | 40 |
 | M2ST34 | TESOURARIA_CRIPTO | 2026-09-30 | SEC EDGAR (XBRL) | 66/95 | 29 |
@@ -205,6 +207,22 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
+- Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
+- Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Margem financeira / ativo (NIM aprox.) (`nim`): conta não encontrada na fonte ou não aplicável ao modelo
+- Índice de eficiência (aprox.) (`indice_eficiencia`): conta não encontrada na fonte ou não aplicável ao modelo
+- Custo do crédito / margem (`custo_credito_sobre_margem`): conta não encontrada na fonte ou não aplicável ao modelo
+- Índice de Basileia (`basileia`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
+- Inadimplência 90 dias (`inadimplencia_90`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
+- Cobertura de PDD (`cobertura_pdd`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
+
+## BMEB4
+
+
+Indicadores sem valor e motivo:
+
+- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -2050,6 +2068,21 @@ Indicadores sem valor e motivo:
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
+- Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+
+## BMOB3
+
+Avisos do pipeline:
+- total de ações CVM (81,246,922) difere da B3 (85,608,392); usado CVM
+
+Indicadores sem valor e motivo:
+
+- CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 7 exercícios ou extremos negativos
+- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 7 exercícios ou extremos negativos
+- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 7 exercícios ou extremos negativos
+- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 7 exercícios ou extremos negativos
+- CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 
 ## SMFT3

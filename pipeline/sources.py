@@ -295,6 +295,26 @@ def google_news(consulta: str, lingua: str = "pt-BR", pais: str = "BR", limite: 
     return itens[:limite]
 
 
+def noticias_empresa(nome: str, ticker: str, ticker_exterior: str | None = None, limite: int = 15) -> list[dict]:
+    """Notícias de negócio e resultado da empresa: busca direcionada a termos de mercado e peneira por título
+    (indicators.noticia_financeira). Para BDRs, inclui a imprensa em inglês."""
+    import indicators as I
+    termos = "(ações OR resultado OR lucro OR prejuízo OR receita OR dividendos OR balanço OR trimestre OR dívida OR aquisição OR bolsa)"
+    itens = [x for x in google_news(f'("{nome}" OR {ticker}) {termos}', "pt-BR", "BR", 40)
+             if I.noticia_financeira(x["titulo"], x["veiculo"], nome, ticker)]
+    if ticker_exterior:
+        en = [dict(x, lingua="en") for x in google_news(f'("{nome}" OR {ticker_exterior}) (stock OR earnings OR shares OR revenue OR profit)', "en-US", "US", 40)
+              if I.noticia_financeira(x["titulo"], x["veiculo"], nome, ticker_exterior)]
+        itens = itens + en
+    vistos, out = set(), []
+    for x in sorted(itens, key=lambda x: x["data"] or "", reverse=True):
+        chave = x["titulo"].strip().lower()
+        if chave not in vistos:
+            vistos.add(chave)
+            out.append(x)
+    return out[:limite]
+
+
 # ------------------------------------------------------------------ B3: empréstimo de ações (posição vendida)
 B3_BDI = "https://arquivos.b3.com.br/bdi"
 

@@ -46,12 +46,7 @@ def noticias() -> dict:
     for a in universo():
         t, nome = a["ticker"], a["nome"]
         try:
-            itens = S.google_news(f'"{nome}" OR {t}', "pt-BR", "BR", 15)
-            if a["tipo"].startswith("BDR") and a.get("ticker_exterior"):
-                en = S.google_news(f'"{nome}" OR {a["ticker_exterior"]} stock', "en-US", "US", 15)
-                for x in en:
-                    x["lingua"] = "en"
-                itens = sorted(itens + en, key=lambda x: x["data"] or "", reverse=True)[:15]
+            itens = S.noticias_empresa(nome, t, a.get("ticker_exterior") if a["tipo"].startswith("BDR") else None, 15)
         except Exception as e:
             print(f"{t}: {e}")
             continue

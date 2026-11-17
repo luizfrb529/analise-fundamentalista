@@ -194,7 +194,7 @@ def macro() -> dict:
 
 
 # índices e ativos exibidos na faixa de mercado do site (ticker yfinance -> chave em macro.json)
-MERCADO_FAIXA = {"IFIX.SA": "ifix", "^IXIC": "nasdaq", "BRL=X": "dolar", "EURBRL=X": "euro", "BZ=F": "brent", "GC=F": "ouro"}
+MERCADO_FAIXA = {"SMLL.SA": "smll", "EWZ": "ewz", "IFIX.SA": "ifix", "^IXIC": "nasdaq", "BRL=X": "dolar", "EURBRL=X": "euro", "BZ=F": "brent", "GC=F": "ouro"}
 
 
 # ===================================================================== proventos
@@ -1354,14 +1354,8 @@ def main():
         noticias = antigo.get("noticias", [])
         if not sem_noticias:
             try:
-                nome = a["nome"]
-                q = f'"{nome}" OR {t}'
-                noticias = S.google_news(q, "pt-BR", "BR", 15)
-                if a["tipo"].startswith("BDR") and a.get("ticker_exterior"):
-                    en = S.google_news(f'"{nome}" OR {a["ticker_exterior"]} stock', "en-US", "US", 15)
-                    for x in en:
-                        x["lingua"] = "en"
-                    noticias = sorted(noticias + en, key=lambda x: x["data"] or "", reverse=True)[:15]
+                ext = a.get("ticker_exterior") if a["tipo"].startswith("BDR") else None
+                noticias = S.noticias_empresa(a["nome"], t, ext, 15)
             except Exception as e:
                 aviso(t, f"notícias: {e}")
         com = r.get("comunicados", antigo.get("comunicados", []))

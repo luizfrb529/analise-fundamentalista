@@ -1852,5 +1852,33 @@
       "Fabricação própria e margem bruta elevada"
     ],
     "manuais": {}
+  },
+  "BMEB4": {
+    "resumo": "Banco de Minas Gerais focado em crédito consignado e serviços para aposentados e pensionistas do INSS, além de crédito para pequenas e médias empresas. Tem rede de agências no Sudeste e opera canais digitais. Concorrentes: grandes bancos de varejo, bancos médios de consignado e financeiras digitais.",
+    "tese": "",
+    "riscos": [
+      "Mudanças nas regras e no teto de juros do consignado do INSS",
+      "Inadimplência no crédito a pessoas e empresas",
+      "Custo de captação sensível à Selic"
+    ],
+    "oportunidades": [
+      "Base grande de aposentados e pensionistas atendidos",
+      "Expansão dos canais digitais"
+    ],
+    "manuais": {}
+  },
+  "BMOB3": {
+    "resumo": "Empresa de tecnologia que processa pagamentos recorrentes e oferece serviços digitais para operadoras de telecomunicação, concessionárias de energia, água e gás e outras empresas de serviços. A receita vem de taxas por transação e de assinaturas de serviços. Concorrentes: adquirentes, plataformas de pagamento e empresas de software de cobrança.",
+    "tese": "",
+    "riscos": [
+      "Concentração de receita em grandes clientes de telecom e utilidades",
+      "Concorrência de plataformas de pagamento",
+      "Execução e integração de aquisições"
+    ],
+    "oportunidades": [
+      "Crescimento de pagamentos digitais e recorrentes",
+      "Expansão para outros setores de serviços"
+    ],
+    "manuais": {}
   }
 }

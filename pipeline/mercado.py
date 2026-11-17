@@ -13,7 +13,7 @@ from zoneinfo import ZoneInfo
 
 import yfinance as yf
 
-ATIVOS = {"ibovespa": "^BVSP", "ifix": "IFIX.SA", "sp500": "^GSPC", "nasdaq": "^IXIC", "dolar": "BRL=X",
+ATIVOS = {"ibovespa": "^BVSP", "smll": "SMLL.SA", "ewz": "EWZ", "ifix": "IFIX.SA", "sp500": "^GSPC", "nasdaq": "^IXIC", "dolar": "BRL=X",
           "euro": "EURBRL=X", "brent": "BZ=F", "ouro": "GC=F", "_btc_usd": "BTC-USD"}
 
 
