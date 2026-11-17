@@ -572,7 +572,7 @@ FATORES = {
     "proventos": ["dy", "dy_medio_5a", "anos_pagando", "dividendos_sobre_fcl"],
 }
 META["estab_margem"] = ("Estabilidade de margem", "Desvio padrão da margem líquida anual em 5 anos (menor = mais estável).", -1, "Eficiência", "pct")
-META["piotroski"] = ("Piotroski F-Score", "Nove testes de qualidade contábil, último exercício contra o anterior: ROA positivo, FCO positivo, "
+META["piotroski"] = ("Qualidade contábil (Piotroski F-Score)", "Nove testes de qualidade contábil, último exercício contra o anterior: ROA positivo, FCO positivo, "
                      "ROA subindo, FCO acima do lucro, alavancagem caindo, liquidez corrente subindo, sem emissão de ações, "
                      "margem bruta subindo e giro do ativo subindo. Um ponto por teste; de 0 a 9.", 1, "Rentabilidade", "int")
 

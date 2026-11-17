@@ -27,15 +27,15 @@ const NAO_FIN = new Set(["divida_bruta", "divida_liquida", "ev", "p_ebitda", "p_
   "ev_receita", "earnings_yield", "fcf_yield", "divliq_pl", "divliq_ebitda", "divliq_ebit", "liquidez_corrente", "liquidez_seca",
   "liquidez_imediata", "cobertura_juros", "divida_cp_pct", "margem_bruta", "margem_ebitda", "margem_ebit", "giro_ativo", "pmr", "pme",
   "pmp", "ciclo_financeiro", "roic", "roic_spread", "fco", "capex", "fcl", "ebitda", "capex_depreciacao", "conversao_caixa",
-  "dividendos_sobre_fcl", "tir_caixa", "tir_dcf", "evebitda_vs_media5", "cagr_ebitda_5a", "cagr_ebitda_10a", "piotroski", "passivos_ativos", "pl_ativos"]);
+  "dividendos_sobre_fcl", "tir_caixa", "tir_dcf", "evebitda_vs_media5", "cagr_ebitda_5a", "cagr_ebitda_10a", "piotroski", "margem_fcl", "passivos_ativos", "pl_ativos"]);
 const SUPRIME_REC = new Set(["pl", "peg", "earnings_yield", "p_ebit", "p_ebitda", "ev_ebit", "ev_ebitda", "graham", "tir_implicita"]);
 const ROT = {
   empresa: "Empresa", setor_micro: "Setor", preco: "Preço", var_12m: "12 meses", var_ano: "No ano", valor_mercado_brl: "Valor de mercado",
   tir_implicita: "TIR implícita", divliq_ebitda: "Dív. líq./EBITDA", margem_liquida: "Margem líquida", margem_bruta: "Margem bruta",
   margem_ebitda: "Margem EBITDA", cagr_lucro_5a: "CAGR lucro 5a", cagr_receita_5a: "CAGR receita 5a", ev_ebitda: "EV/EBITDA", dy: "Dividend yield",
-  pl: "P/L", pvp: "P/VP", roe: "ROE", roic: "ROIC", roa: "ROA", piotroski: "Piotroski", payout: "Payout", lpa: "LPA", vpa: "VPA",
+  pl: "P/L", pvp: "P/VP", roe: "ROE", roic: "ROIC", roa: "ROA", piotroski: "Qualidade contábil", payout: "Payout", lpa: "LPA", vpa: "VPA",
   psr: "PSR", liquidez_corrente: "Liquidez corrente", giro_ativo: "Giro do ativo", pl_ativos: "Patrimônio/Ativos", passivos_ativos: "Passivos/Ativos",
-  nota_criterios: "Nota", cresc_lucro_ltm: "Lucro 12m vs anterior", cresc_receita_ltm: "Receita 12m vs anterior", dy_medio_5a: "DY médio 5 anos", anos_pagando: "Anos pagando",
+  nota_criterios: "Nota", cresc_lucro_ltm: "Lucro 12m vs anterior", cresc_receita_ltm: "Receita 12m vs anterior", dy_medio_5a: "DY médio 5 anos", anos_pagando: "Anos pagando", margem_fcl: "Margem FCL", fcf_yield: "FCF yield", conversao_caixa: "Conversão de caixa", fcl: "Fluxo de caixa livre",
 };
 const EXTRA_META = {
   empresa: { nome: "Empresa", unidade: "txt" }, nome: { nome: "Nome", unidade: "txt" }, ticker: { nome: "Ticker", unidade: "txt" },
@@ -43,6 +43,7 @@ const EXTRA_META = {
   porte: { nome: "Porte", unidade: "txt", grupo: "Geral" }, tipo: { nome: "Tipo", unidade: "txt", grupo: "Geral" },
   var_ano: { nome: "Variação no ano", unidade: "pct", direcao: 1, grupo: "Preço" }, var_12m: { nome: "Variação em 12 meses", unidade: "pct", direcao: 1, grupo: "Preço" },
   var_5a: { nome: "Variação em 5 anos", unidade: "pct", direcao: 1, grupo: "Preço" },
+  margem_fcl: { nome: "Margem de fluxo de caixa livre", unidade: "pct", direcao: 1, grupo: "Caixa", formula: "Fluxo de caixa livre de 12 meses (caixa operacional - investimentos) / receita de 12 meses. Mostra quanto de cada R$ 100 vendidos sobra em caixa." },
   valor_mercado_brl: { nome: "Valor de mercado em R$", unidade: "moeda_grande_brl", direcao: 0, grupo: "Geral", formula: "Valor de mercado em reais (BDR: em dólar x PTAX)." },
 };
 const ICONE_GRAF = '<svg viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7"/></svg>';
@@ -54,7 +55,7 @@ const ICONE_LUPA = '<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><pat
 const D = {};
 let charts = [];
 const EST = { homeSeg: "ACAO_BR", tab: { seg: "TODOS", setor: "", porte: "", busca: "", preset: "padrao", sort: { k: "valor_mercado_brl", d: -1 }, colunas: null },
-  rkSeg: "TODOS", rkSetor: "", rkAbertos: {}, scrFiltros: [],
+  rkSeg: "TODOS", rkSetor: "", rkAbertos: {}, rkListas: {}, scrFiltros: [],
   scr: { seg: "TODOS", macro: "", micro: "", porte: "", tirMin: "", liqMin: "", pioMin: "", semRec: true, cenario: "" } };
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -105,7 +106,7 @@ function fmt(t, k, v) {
 }
 function pioHtml(v) {
   if (!ok(v)) return ND;
-  return `<span class="pio" data-tip="Piotroski F-Score: ${v} de 9 testes de qualidade contábil atendidos."><span class="pio-dots">${Array.from({ length: 9 }, (_, i) => `<i class="${i < v ? "on" : ""}"></i>`).join("")}</span><b>${v}</b></span>`;
+  return `<span class="pio" data-tip="Qualidade contábil: ${v} de 9 testes atendidos (Piotroski F-Score)."><span class="pio-dots">${Array.from({ length: 9 }, (_, i) => `<i class="${i < v ? "on" : ""}"></i>`).join("")}</span><b>${v}</b></span>`;
 }
 function A(t) { return D.univMap[t]; }
 function isBDR(t) { return A(t).tipo.startsWith("BDR"); }
@@ -128,6 +129,7 @@ function val(t, k) {
     case "setor_macro": return a.setor_macro;
     case "tipo": return TIPO_CURTO[a.tipo];
     case "porte": return ind(t).porte || null;
+    case "margem_fcl": { const i = ind(t); if (isFin(t) || !ok(i.fcl) || !ok(i.ev) || !ok(i.ev_receita) || !i.ev_receita) return null; const r = i.ev / i.ev_receita; return r > 0 ? i.fcl / r : null; }
     case "preco": case "var_mes": case "var_ano": case "var_12m": case "var_5a": case "max_52s": case "min_52s": return p[k] ?? null;
     default: { const v = ind(t)[k]; return v === undefined ? null : v; }
   }
@@ -135,7 +137,153 @@ function val(t, k) {
 function suprimido(t, k) { return semValuation(t) && SUPRIME_REC.has(k); }
 function sinal(v) { return ok(v) ? (v > 0 ? "pos" : v < 0 ? "neg" : "") : ""; }
 function varHtml(v) { return ok(v) ? `<span class="${sinal(v)}">${v > 0 ? "+" : ""}${nf2.format(v * 100)}%</span>` : ND; }
-function tip(k) { const m = meta(k); return m.formula ? `<i class="info" data-tip="${esc(m.nome + ": " + m.formula)}">i</i>` : ""; }
+/* por que cada indicador importa (segundo ícone "?") */
+const POR_QUE = {
+  // tamanho e mercado
+  preco: "É o ponto de partida de todos os múltiplos: o mesmo lucro pode ser barato ou caro dependendo do preço pago.",
+  valor_mercado: "Mostra o tamanho da empresa na bolsa. Empresas grandes tendem a ser mais líquidas e estáveis; pequenas, mais voláteis e com mais espaço para crescer.",
+  valor_mercado_brl: "Permite comparar o tamanho de empresas brasileiras e estrangeiras na mesma moeda.",
+  ev: "Soma o valor das ações com a dívida líquida: é o preço de comprar a empresa inteira, base para comparar empresas com níveis de dívida diferentes.",
+  liquidez_21: "Indica se dá para comprar e vender a ação sem mexer no preço. Baixa liquidez dificulta sair da posição.",
+  liquidez_63: "Mesma leitura da liquidez de 21 dias, num período maior e mais estável.",
+  volatilidade: "Mede o quanto o preço oscila. Mais volatilidade significa mais risco de quedas fortes no curto prazo.",
+  beta: "Mostra o quanto a ação acompanha o mercado. Beta acima de 1 amplifica altas e quedas do Ibovespa.",
+  drawdown_5a: "A maior queda do pico ao fundo em 5 anos: dá a dimensão do pior momento que o investidor já enfrentou.",
+  // governança
+  free_float: "Quanto maior a parte negociada em bolsa, mais liquidez e menor o poder isolado do controlador.",
+  acoes: "Base dos indicadores por ação. Variações no número de ações mudam o quanto do lucro cabe a cada ação.",
+  diluicao_3a: "Emissão de ações reduz a fatia de cada acionista no lucro. Recompra faz o contrário.",
+  diluicao_5a: "Mesma leitura da diluição de 3 anos, num horizonte maior.",
+  controlador_pct: "Mostra a concentração do poder de decisão. Controle forte pode alinhar ou conflitar com o minoritário.",
+  tag_along: "Protege o minoritário: se o controle for vendido, ele recebe parte do prêmio pago ao controlador.",
+  recompras_ltm: "Recompra devolve dinheiro ao acionista e aumenta a fatia de cada um no lucro.",
+  // valuation
+  pl: "Mostra quantos anos de lucro atual o preço paga. Quanto menor, mais barato em relação ao lucro; útil para comparar com o setor e com a própria história.",
+  pvp: "Compara o preço com o patrimônio contábil. Importante em bancos e empresas de ativos: abaixo de 1, o mercado paga menos que o valor dos livros.",
+  p_ebitda: "Compara o preço com a geração operacional de caixa, sem efeito de juros, impostos e depreciação.",
+  p_ebit: "Compara o preço com o lucro operacional, antes de juros e impostos.",
+  psr: "Útil para empresas com lucro baixo ou negativo: mostra quanto o mercado paga por cada real de receita.",
+  p_ativo: "Indica quanto o mercado paga por cada real de ativos da empresa.",
+  p_capital_giro: "Relaciona o preço com os recursos de curto prazo que a empresa tem para operar.",
+  p_acl: "Compara o preço com os ativos de curto prazo líquidos; valores baixos indicam margem de segurança patrimonial.",
+  ev_ebitda: "Considera a dívida: compara o valor total da empresa com a geração operacional. É o múltiplo mais usado para comparar empresas com estruturas de capital diferentes.",
+  ev_ebit: "Como o EV/EBITDA, mas descontando a depreciação, que reflete o desgaste dos ativos.",
+  ev_receita: "Compara o valor total da empresa com as vendas; útil para empresas ainda pouco lucrativas.",
+  lpa: "É o lucro que cabe a cada ação. Crescimento consistente do LPA sustenta a valorização ao longo do tempo.",
+  vpa: "É o patrimônio que cabe a cada ação; referência do valor contábil por papel.",
+  peg: "Ajusta o P/L pelo crescimento: um P/L alto pode ser justo se o lucro cresce rápido. Até 1 sugere preço compatível com o crescimento.",
+  earnings_yield: "É o inverso do P/L: o retorno do lucro sobre o preço. Permite comparar diretamente com a renda fixa.",
+  fcf_yield: "Mostra quanto caixa livre a empresa gera para cada real pago na ação. Caixa, diferente do lucro contábil, não aceita ajustes: é o que paga dividendos e dívida.",
+  pl_vs_media5: "Compara o P/L de hoje com a própria média de 5 anos: indica se a ação está mais cara ou mais barata que o normal dela.",
+  evebitda_vs_media5: "Compara o EV/EBITDA de hoje com a média de 5 anos da própria empresa.",
+  pvp_vs_media5: "Compara o P/VP de hoje com a média de 5 anos, leitura principal para bancos.",
+  graham: "Estimativa clássica de valor justo que combina lucro e patrimônio; serve como referência de margem de segurança.",
+  graham_margem: "Mostra a distância entre o preço e o valor de Graham: positivo indica preço abaixo da referência.",
+  // TIR e crescimento implícito
+  tir_lucro: "Estima o retorno anual que o preço embute pelo lucro. Permite comparar a ação com o retorno da renda fixa.",
+  tir_caixa: "Mesma lógica da TIR pelo lucro, usando o caixa livre, que é mais difícil de maquiar.",
+  tir_dcf: "Estima o retorno embutido no preço projetando o caixa futuro: é a leitura mais completa de quanto o preço promete.",
+  tir_banco: "Para bancos, estima o retorno embutido no preço a partir do ROE e do quanto o lucro é distribuído.",
+  tir_implicita: "Resume o retorno anual que o preço de hoje promete se a empresa mantiver o desempenho. Comparar com o juro do título público mostra se o risco compensa.",
+  tir_spread_ref: "Mostra quanto a ação promete acima do título público de referência: é o prêmio por correr risco de bolsa.",
+  cresc_implicito: "Mostra o crescimento que o preço exige. Se for maior que o histórico, o mercado aposta em algo que a empresa nunca entregou.",
+  cresc_historico_ref: "Referência do que a empresa já entregou, para comparar com o crescimento que o preço exige.",
+  cresc_gap: "Diferença entre o crescimento exigido pelo preço e o histórico: positivo indica expectativa exigente.",
+  taxa_referencia: "Retorno mínimo que um investidor exige da bolsa: título público mais um prêmio de risco.",
+  g: "Crescimento de longo prazo usado nas contas de retorno implícito.",
+  wacc: "É o custo de todo o capital da empresa. Retorno abaixo dele significa que a empresa destrói valor mesmo dando lucro.",
+  // endividamento
+  divida_bruta: "Total de empréstimos e financiamentos; ponto de partida para avaliar o risco financeiro.",
+  caixa: "Reserva que dá fôlego em crises e permite investir sem depender de crédito.",
+  divida_liquida: "Dívida menos caixa: o que a empresa realmente deve. Negativo significa caixa maior que a dívida.",
+  divliq_pl: "Mostra o peso da dívida em relação ao capital dos acionistas.",
+  divliq_ebitda: "Quantos anos de geração operacional pagariam a dívida. Acima de 3x acende alerta, sobretudo com juros altos.",
+  divliq_ebit: "Como a dívida/EBITDA, mas usando o lucro operacional depois da depreciação.",
+  pl_ativos: "Mostra quanto dos ativos é financiado com capital próprio. Mais alto significa menos dependência de terceiros.",
+  passivos_ativos: "Mostra quanto dos ativos é financiado por terceiros. Mais alto significa mais alavancagem.",
+  liquidez_corrente: "Mede se os recursos de curto prazo cobrem as obrigações de curto prazo. Abaixo de 1 indica aperto de caixa.",
+  liquidez_seca: "Como a liquidez corrente, sem contar estoques, que podem demorar a virar dinheiro.",
+  liquidez_imediata: "Mostra quanto das obrigações de curto prazo o caixa paga hoje.",
+  cobertura_juros: "Mostra se o lucro operacional paga os juros com folga. Abaixo de 2x, qualquer piora ameaça a saúde financeira.",
+  divida_cp_pct: "Dívida concentrada no curto prazo aumenta o risco de refinanciamento em momentos de crédito caro.",
+  // eficiência
+  margem_bruta: "Mostra o poder de preço sobre o custo do produto. Margens brutas altas costumam indicar marca forte ou vantagem de custo.",
+  margem_ebitda: "Mostra a eficiência operacional: quanto sobra de cada venda antes de juros, impostos e depreciação.",
+  margem_ebit: "Eficiência operacional depois da depreciação, que reflete o custo de manter os ativos.",
+  margem_liquida: "Mostra quanto de cada real vendido vira lucro para o acionista, depois de todos os custos.",
+  giro_ativo: "Mostra quanto a empresa vende para cada real de ativos. Giro alto compensa margens baixas.",
+  pmr: "Prazo médio para receber dos clientes. Prazos longos prendem caixa.",
+  pme: "Prazo médio dos estoques. Estoques parados consomem caixa e podem perder valor.",
+  pmp: "Prazo médio para pagar fornecedores. Prazos maiores financiam a operação.",
+  ciclo_financeiro: "Tempo entre pagar fornecedores e receber dos clientes. Quanto menor, menos capital de giro a empresa precisa.",
+  estab_margem: "Margens estáveis indicam negócio previsível; oscilações fortes elevam o risco.",
+  // rentabilidade
+  roe: "Mostra o retorno sobre o dinheiro dos acionistas. ROE alto e sustentável é sinal de negócio de qualidade.",
+  roa: "Mostra o retorno sobre todos os ativos, independentemente de como são financiados.",
+  roic: "Mostra o retorno sobre todo o capital investido. É o indicador mais direto de criação de valor quando comparado com o custo do capital.",
+  roic_spread: "Diferença entre o ROIC e o custo do capital: positiva indica criação de valor.",
+  piotroski: "Resume em uma nota de 0 a 9 se a saúde contábil melhorou no último ano: lucro, caixa, dívida, liquidez e eficiência. Notas altas indicam empresa em melhora.",
+  nota_criterios: "Resume em uma nota de 0 a 10 quantos critérios fundamentalistas a empresa atende, pesados pela importância de cada um.",
+  // crescimento
+  cagr_receita_5a: "Mostra se a empresa ganha mercado. Crescimento de receita acima da inflação é a base do crescimento do lucro.",
+  cagr_receita_10a: "Crescimento da receita num horizonte longo, que atravessa ciclos econômicos.",
+  cagr_ebitda_5a: "Mostra se a geração operacional acompanha o crescimento das vendas.",
+  cagr_ebitda_10a: "Crescimento da geração operacional em 10 anos.",
+  cagr_lucro_5a: "É o motor da valorização no longo prazo: lucro que cresce sustenta preço e dividendos maiores.",
+  cagr_lucro_10a: "Crescimento do lucro em 10 anos, que mostra a consistência ao longo de ciclos.",
+  cagr_lpa_5a: "Crescimento do lucro por ação, já descontando emissões de ações.",
+  cagr_lpa_10a: "Crescimento do lucro por ação em 10 anos.",
+  cagr_dpa_5a: "Mostra se os proventos por ação vêm crescendo, importante para quem busca renda.",
+  cagr_dpa_10a: "Crescimento dos proventos por ação em 10 anos.",
+  cresc_receita_ltm: "Mostra o ritmo mais recente de vendas, antes de aparecer nas médias de longo prazo.",
+  cresc_lucro_ltm: "Mostra o ritmo mais recente do lucro; quedas aqui antecipam problemas.",
+  consist_receita: "Crescimento em muitos anos seguidos indica negócio resiliente.",
+  consist_lucro: "Lucro que cresce na maioria dos anos é mais confiável que saltos isolados.",
+  // caixa
+  fco: "É o dinheiro que a operação de fato gera; é mais difícil de maquiar que o lucro.",
+  capex: "Investimento em ativos. Necessário para crescer, mas consome caixa que poderia ir para o acionista.",
+  fcl: "É o caixa que sobra depois de operar e investir. É ele que paga dividendos, recompras e dívida: a melhor medida da capacidade real de gerar dinheiro.",
+  margem_fcl: "Mostra quanto de cada real vendido vira caixa livre. Empresas com margem de caixa alta financiam o próprio crescimento e remuneram o acionista.",
+  ebitda: "Aproxima a geração operacional de caixa e é a base dos principais múltiplos de dívida e valuation.",
+  capex_depreciacao: "Acima de 1, a empresa investe mais do que o desgaste dos ativos, sinal de expansão; abaixo, pode estar sucateando.",
+  conversao_caixa: "Mostra se o lucro vira dinheiro. Abaixo de 0,5 o lucro contábil não está se transformando em caixa.",
+  // proventos
+  dpa_12m: "É o valor pago por ação nos últimos 12 meses, base do dividend yield.",
+  dy: "Mostra o retorno em proventos sobre o preço. Importante para quem busca renda, mas só vale se for sustentável.",
+  dy_medio_5a: "A média de 5 anos evita olhar um ano atípico de proventos.",
+  payout: "Mostra quanto do lucro é distribuído. Acima de 100%, a empresa paga mais do que lucra, o que não se sustenta.",
+  dividendos_sobre_fcl: "Mostra se os proventos cabem no caixa livre. Acima de 1, a empresa paga com caixa acumulado ou dívida.",
+  anos_pagando: "Anos seguidos pagando proventos indicam disciplina e previsibilidade de renda.",
+  anos_corte: "Cortes frequentes de proventos indicam renda menos confiável.",
+  jcp_pct_12m: "JCP tem tributação diferente de dividendos para o investidor; a proporção afeta o retorno líquido.",
+  // bancos e seguradoras
+  nim: "Margem financeira sobre os ativos: é a principal fonte de lucro de um banco.",
+  indice_eficiencia: "Mostra quanto o banco gasta para gerar receita. Quanto menor, mais eficiente.",
+  custo_credito_sobre_margem: "Mostra quanto da margem financeira é consumido por calotes. Alto indica risco de crédito.",
+  cresc_carteira: "Crescimento da carteira de crédito, motor da receita futura do banco.",
+  basileia: "Mede o colchão de capital do banco frente aos riscos. Abaixo do mínimo regulatório limita crescimento e dividendos.",
+  inadimplencia_90: "Mostra a qualidade da carteira de crédito: alta inadimplência corrói o lucro.",
+  cobertura_pdd: "Mostra quanto das perdas esperadas já está provisionado. Alta cobertura protege resultados futuros.",
+  resultado_financeiro_sobre_lucro: "Mostra quanto do lucro da seguradora vem das aplicações financeiras, sensível à taxa de juros.",
+  indice_combinado: "Abaixo de 100% a operação de seguros dá lucro antes do resultado financeiro.",
+  sinistralidade: "Mostra quanto dos prêmios vira pagamento de sinistros. Quanto menor, mais rentável a carteira.",
+  // holding, cripto, BDR
+  soma_partes: "Referência do valor das participações a preço de mercado, para medir o desconto da holding.",
+  desconto_holding: "Holdings costumam negociar abaixo da soma das partes; desconto acima do histórico pode indicar oportunidade ou problema de governança.",
+  btc_em_caixa: "Em empresas de tesouraria em bitcoin, o valor depende diretamente da quantidade de BTC.",
+  valor_btc: "Valor de mercado do bitcoin em caixa, base para medir o prêmio pago pela ação.",
+  mnav: "Acima de 1, o investidor paga mais pela ação do que valeria comprar o bitcoin diretamente.",
+  btc_por_acao: "Mostra quanto bitcoin cada ação representa; emissões de ações diluem esse número.",
+  bdr_preco_justo: "Preço do BDR pela cotação lá fora e pelo câmbio: mostra se o BDR está alinhado ao papel original.",
+  bdr_agio: "Ágio significa pagar mais do que o papel vale lá fora; deságio, menos.",
+  setor_micro: "Empresas do mesmo setor têm margens, dívida e múltiplos parecidos: compare sempre dentro do setor.",
+  var_12m: "Mostra o desempenho recente do preço; útil para contexto, não para conclusão sobre o negócio.",
+};
+function porQue(k) { return POR_QUE[k] || ""; }
+function tip(k) {
+  const m = meta(k), pq = porQue(k);
+  return (m.formula ? `<i class="info" data-tip="${esc("O que é. " + m.nome + ": " + m.formula)}">i</i>` : "") + (pq ? `<i class="info porque" data-tip="${esc("Por que importa. " + pq)}">?</i>` : "");
+}
 function logo(t, cls = "") {
   if (D.logos.has(t)) return `<span class="logo ${cls}"><img src="assets/logos/${t}.svg" alt="" loading="lazy"></span>`;
   return `<span class="logo ini ${cls}">${esc(t.replace(/\d+$/, "").slice(0, 4))}</span>`;
@@ -310,7 +458,7 @@ function pgHome(app) {
     <div class="linha centro" style="margin-top:22px"><a class="btn-contorno" id="link-tabela" href="#/ativos">Ver tabela completa ›</a></div>
   </section>
   <section class="secao">
-    <div class="secao-cab"><h2 class="titulo-barra">Próximos resultados</h2><a class="lk" href="#/calendario">Ver calendário completo →</a></div>
+    <div class="secao-cab"><h2 class="titulo-barra">Próximos resultados</h2><div class="linha"><button class="btn peq" id="home-ag-xls">Baixar Excel</button><a class="lk" href="#/calendario">Ver calendário completo →</a></div></div>
     <div class="ag-faixa" id="home-agenda"></div>
   </section>
   <section class="secao">
@@ -323,6 +471,7 @@ function pgHome(app) {
     $("#tit-listas").textContent = `Rankings de ${nome()}`;
     $("#tit-setores").textContent = `Setores de ${nome()}`;
     $("#link-tabela").href = `#/ativos?seg=${seg}`;
+    $("#home-ag-xls").onclick = () => exportarAgenda(seg);
     $("#home-agenda").innerHTML = agendaLista(seg).prox.slice(0, 8).map(([t, x]) => linhaAgenda(t, x)).join("") || '<p class="vazio">Sem datas futuras.</p>';
     $("#listas").innerHTML = LISTAS_HOME.map((L) => {
       const top = topLista(L, base);
@@ -433,6 +582,7 @@ const PRESETS = {
   padrao: { nome: "Principais", cols: ["setor_micro", "valor_mercado_brl", "preco", "nota_criterios", "pl", "pvp", "dy", "roe", "roic", "divliq_ebitda", "piotroski"] },
   valuation: { nome: "Valuation e dividendos", cols: ["setor_micro", "valor_mercado_brl", "pl", "pvp", "ev_ebitda", "psr", "dy", "payout", "tir_implicita"] },
   rentab: { nome: "Rentabilidade e eficiência", cols: ["setor_micro", "roe", "roic", "roa", "margem_bruta", "margem_ebitda", "margem_liquida", "giro_ativo", "piotroski"] },
+  caixa: { nome: "Geração de caixa", cols: ["setor_micro", "valor_mercado_brl", "fcl", "margem_fcl", "fcf_yield", "conversao_caixa", "divliq_ebitda", "dy"] },
   risco: { nome: "Endividamento e crescimento", cols: ["setor_micro", "divliq_ebitda", "liquidez_corrente", "pl_ativos", "cagr_receita_5a", "cagr_lucro_5a", "cresc_lucro_ltm", "var_12m"] },
   personalizado: { nome: "Personalizado", cols: null },
 };
@@ -442,7 +592,7 @@ function tabela(lista, colunas, opts = {}) {
   const ths = cols.map((k) => {
     const m = meta(k), n = m.unidade !== "txt";
     const seta = sort && sort.k === k ? `<span class="seta">${sort.d > 0 ? "▲" : "▼"}</span>` : "";
-    return `<th class="${n ? "n" : ""} ${sort ? "ord" : ""}" data-k="${k}" data-tip="${esc(m.nome + (m.formula ? ": " + m.formula : ""))}">${esc(rot(k))}${seta}</th>`;
+    return `<th class="${n ? "n" : ""} ${sort ? "ord" : ""}" data-k="${k}" data-tip="${esc(m.nome + (m.formula ? ": " + m.formula : "") + (porQue(k) ? "\n\nPor que importa. " + porQue(k) : ""))}">${esc(rot(k))}${seta}</th>`;
   }).join("");
   const trs = lista.map((t) => `<tr class="clicavel" data-t="${t}">${cols.map((k) => celula(t, k)).join("")}</tr>`).join("");
   return `<div class="tabela-wrap ${opts.alta ? "alta" : ""}"><table class="resp"><thead><tr>${ths}</tr></thead><tbody>${trs || `<tr><td colspan="${cols.length}" class="vazio">Nenhum ativo encontrado.</td></tr>`}</tbody></table></div>`;
@@ -467,7 +617,7 @@ function ordenar(lista, k, d) {
   });
 }
 function todasColunas() {
-  const base = ["setor_micro", "setor_macro", "tipo", "porte", "preco", "var_ano", "var_12m", "var_5a", "valor_mercado_brl"];
+  const base = ["setor_micro", "setor_macro", "tipo", "porte", "preco", "var_ano", "var_12m", "var_5a", "valor_mercado_brl", "margem_fcl"];
   return [...base, ...Object.keys(D.imeta.indicadores).filter((k) => !["preco", "valor_mercado"].includes(k))];
 }
 function pgAtivos(app, q) {
@@ -488,7 +638,7 @@ function pgAtivos(app, q) {
       <select id="t-setor"><option value="">Todos os setores</option>${setores.map((s) => `<option ${T.setor === s ? "selected" : ""}>${esc(s)}</option>`).join("")}</select>
       <input type="search" id="t-busca" placeholder="Buscar ativo, ticker ou setor" value="${esc(T.busca)}">
       <div class="dropdown"><button class="btn" id="btn-colunas">Colunas</button><div class="dropdown-painel" id="painel-colunas" hidden></div></div>
-      <button class="btn" id="t-csv" title="Exportar em CSV">Exportar</button>
+      <button class="btn" id="t-csv" title="Baixar a tabela em Excel">Baixar Excel</button>
     </div>
   </div>
   <div class="aviso-verde">Clique em uma empresa para a análise completa. Ordenado pelo maior valor de mercado; clique no cabeçalho para mudar.</div>
@@ -514,7 +664,7 @@ function pgAtivos(app, q) {
   $$("#t-preset .chip").forEach((c) => c.onclick = () => { T.preset = c.dataset.p; $$("#t-preset .chip").forEach((x) => x.classList.toggle("ativo", x === c)); if (T.preset === "personalizado") $("#painel-colunas").hidden = false; desenhar(); });
   $("#t-setor").onchange = (e) => { location.hash = `#/ativos?seg=${T.seg}${e.target.value ? "&setor=" + encodeURIComponent(e.target.value) : ""}`; };
   $("#t-busca").oninput = (e) => { T.busca = e.target.value; desenhar(); };
-  $("#t-csv").onclick = () => exportarCSV(lista(), ["ticker", "nome", ...colunas()]);
+  $("#t-csv").onclick = () => exportarTabela(T.setor ? `ativos_${T.setor}` : "ativos", lista(), colunas());
   painelColunas($("#btn-colunas"), $("#painel-colunas"), () => { T.preset = "personalizado"; $$("#t-preset .chip").forEach((x) => x.classList.toggle("ativo", x.dataset.p === "personalizado")); desenhar(); });
   desenhar();
 }
@@ -547,6 +697,8 @@ const RANKINGS = [
   { id: "dy", nome: "Dividendos sustentáveis", desc: "Dividend yield de 12 meses de quem distribui menos do que lucra (payout abaixo de 100%).", k: "dy", dir: 1, f: (t) => ok(ind(t).payout) && ind(t).payout > 0 && ind(t).payout < 1 },
   { id: "tir", nome: "Maior TIR implícita", desc: "Retorno anual que o preço de hoje embute, mantida a geração atual de lucro e caixa.", k: "tir_implicita", dir: 1, f: (t) => !semValuation(t) },
   { id: "pl", nome: "Menor P/L", desc: "Preço sobre lucro por ação. Só empresas com lucro.", k: "pl", dir: -1, f: (t) => !semValuation(t) && ind(t).pl > 0 },
+  { id: "caixa", nome: "Geração de caixa", desc: "Margem de fluxo de caixa livre: quanto de cada R$ 100 de receita sobra em caixa depois dos investimentos, em 12 meses. Não se aplica a bancos.", k: "margem_fcl", dir: 1, f: (t) => !isFin(t) && !semValuation(t) && ok(val(t, "margem_fcl")) && val(t, "margem_fcl") <= 1 },
+  { id: "fcfy", nome: "Caixa livre sobre o preço", desc: "FCF yield: fluxo de caixa livre de 12 meses dividido pelo valor de mercado. Quanto caixa a empresa gera para cada real pago na ação.", k: "fcf_yield", dir: 1, f: (t) => !isFin(t) && !semValuation(t) },
 ];
 function pgRankings(app, q) {
   if (q.has("seg")) EST.rkSeg = q.get("seg");
@@ -555,29 +707,36 @@ function pgRankings(app, q) {
   app.innerHTML = `${trilha([["Rankings"]])}<div class="cab-pagina"><div><h1>Rankings</h1><p>Cada ranking ordena por um único indicador, descrito no próprio cartão. Empresas em recuperação ficam fora dos rankings de preço e rentabilidade.</p></div>${pilulasData()}</div>
   <div class="linha entre" style="margin-bottom:16px"><div class="segmentado" id="rk-seg">${[["TODOS", "Todos"], ["ACAO_BR", "Ações"], ["BDR", "BDRs"]].map(([k, n]) => `<button data-s="${k}" class="${EST.rkSeg === k ? "ativo" : ""}">${n}</button>`).join("")}</div>
     <select id="rk-setor"><option value="">Todos os setores</option>${macros.map((s) => `<option ${EST.rkSetor === s ? "selected" : ""}>${esc(s)}</option>`).join("")}</select></div>
-  <section><div class="secao-cab"><div><h2 class="titulo-barra">Classificação por critérios</h2><p class="sub" style="margin-top:6px">Nota de 0 a 10: soma das estrelas dos critérios que a empresa atende sobre as estrelas dos critérios avaliados. Passe o mouse no nome de cada critério para ver o parâmetro e o peso. Empresas em recuperação ficam de fora. <i class="q-estatal"></i> controle ou influência estatal (alerta, não entra na nota).</p></div></div>
+  <section><div class="secao-cab"><button class="btn peq prim" id="crit-xls" style="order:2">Baixar Excel</button><div><h2 class="titulo-barra">Classificação por critérios</h2><p class="sub" style="margin-top:6px">Nota de 0 a 10: soma das estrelas dos critérios que a empresa atende sobre as estrelas dos critérios avaliados. Passe o mouse no nome de cada critério para ver o parâmetro e o peso. Empresas em recuperação ficam de fora. <i class="q-estatal"></i> controle ou influência estatal (alerta, não entra na nota).</p></div></div>
     <div id="rk-criterios"></div>
     <details class="legenda-crit"><summary>Ver critérios e pesos</summary><div class="tabela-wrap" style="margin-top:10px"><table><thead><tr><th>Indicador</th><th>Parâmetro desejável</th><th>Importância</th></tr></thead><tbody>
       ${(D.imeta.criterios || []).map(([, nm, par, est]) => `<tr><td><b>${esc(nm)}</b></td><td style="white-space:normal">${esc(par)}</td><td>${estrelas(est)}</td></tr>`).join("")}</tbody></table></div>
       <p class="sub" style="margin-top:8px">WACC: custo do capital próprio (NTN-B longa nominal + 5%; exterior: Treasury 10 anos + 5%) e custo da dívida (Selic ou Treasury + 2%, menos IR), ponderados pelo valor de mercado e pela dívida bruta. Bancos e seguradoras são avaliados só por ROE, receita, lucro e P/L.</p></details>
   </section>
   <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Rankings por indicador</h2></div><div class="rank-grade" id="rk-saida"></div></section>`;
-  if (foco) EST.rkAbertos[foco] = true;
   const desenhar = () => {
     let base = filtroSeg(D.tickers, EST.rkSeg);
     if (EST.rkSetor) base = base.filter((t) => A(t).setor_macro === EST.rkSetor);
     $("#rk-criterios").innerHTML = tabelaCriterios(base);
+    $("#crit-xls").onclick = () => { const lista = D.imeta.criterios || [];
+      const l = base.filter(entraNota).sort((a, b) => ind(b).nota_criterios - ind(a).nota_criterios || (ind(b).roe || 0) - (ind(a).roe || 0));
+      const sn = (v) => v === true ? "Sim" : v === false ? "Não" : "n/d";
+      baixarExcel("classificacao_criterios", [{ nome: "Classificação", cab: ["Posição", "Ticker", "Empresa", "Setor", "Nota (0 a 10)", "Interferência estatal", ...lista.map(([, nm, , est]) => `${nm} (${est} estrelas)`)],
+        linhas: l.map((t, i) => [i + 1, t, A(t).nome, A(t).setor_micro, Math.round(ind(t).nota_criterios * 100) / 100, estado(t) ? rotEstado(t) : "", ...lista.map(([id]) => sn(D.fund[t].criterios.testes[id]))]) }]); };
     ligarLinhas($("#rk-criterios"));
     $("#rk-saida").innerHTML = RANKINGS.map((R) => {
       const l = topLista(R, base, 999);
-      const aberto = !!EST.rkAbertos[R.id], mostra = aberto ? l : l.slice(0, 8);
+      const aberto = !!EST.rkAbertos[R.id], mostra = aberto ? l : l.slice(0, 10);
+      EST.rkListas[R.id] = l;
       const vs = l.map(([, v]) => v), mn = Math.min(...vs), mx = Math.max(...vs), rg = mx - mn || 1;
       const larg = (v) => 12 + 88 * (R.dir > 0 ? (v - mn) / rg : (mx - v) / rg);
       return `<div class="rank ${foco === R.id ? "foco" : ""}" id="rk-${R.id}"><h3>${esc(R.nome)}</h3><p class="sub">${esc(R.desc)}</p>
         ${mostra.map(([t, v], i) => `<div class="rk"><span class="pos-n">${i + 1}</span><div style="min-width:0">${empresa(t, { cls: "p", semBadge: true })}<div class="barra"><i style="width:${larg(v)}%"></i></div></div><span class="valor">${fmt(t, R.k, v)}</span></div>`).join("") || '<p class="vazio">Sem empresas neste recorte.</p>'}
-        ${l.length > 8 ? `<div class="mais"><button class="btn peq" data-abre="${R.id}">${aberto ? "Mostrar só os 8 primeiros" : `Ver todos (${l.length})`}</button></div>` : ""}</div>`;
+        ${l.length > 10 || aberto ? `<div class="mais linha">${l.length > 10 ? `<button class="btn peq" data-abre="${R.id}">${aberto ? "Mostrar só o top 10" : `Ver todos (${l.length})`}</button>` : ""}${aberto ? `<button class="btn peq prim" data-xls="${R.id}">Baixar Excel</button>` : ""}</div>` : ""}</div>`;
     }).join("");
     $$("[data-abre]").forEach((b) => b.onclick = () => { EST.rkAbertos[b.dataset.abre] = !EST.rkAbertos[b.dataset.abre]; desenhar(); });
+    $$("[data-xls]").forEach((b) => b.onclick = () => { const R = RANKINGS.find((x) => x.id === b.dataset.xls), l = EST.rkListas[R.id] || [];
+      baixarExcel(`ranking_${R.id}`, [{ nome: R.nome, cab: ["Posição", "Ticker", "Empresa", "Setor", cabCol(R.k)], linhas: l.map(([t], i) => [i + 1, t, A(t).nome, A(t).setor_micro, valCol(t, R.k)]) }]); });
   };
   $$("#rk-seg button").forEach((b) => b.onclick = () => { EST.rkSeg = b.dataset.s; $$("#rk-seg button").forEach((x) => x.classList.toggle("ativo", x === b)); desenhar(); });
   $("#rk-setor").onchange = (e) => { EST.rkSetor = e.target.value; desenhar(); };
@@ -592,10 +751,11 @@ const GRUPOS_IND = [
   { nome: "Valuation", ks: ["pl", "pvp", "ev_ebitda", "ev_ebit", "psr", "lpa", "vpa", "earnings_yield"] },
   { nome: "Dividendos", ks: ["dy", "payout", "dy_medio_5a", "dpa_12m", "anos_pagando"] },
   { nome: "Rentabilidade e eficiência", ks: ["roe", "roic", "roa", "margem_bruta", "margem_ebitda", "margem_ebit", "margem_liquida", "giro_ativo"] },
+  { nome: "Geração de caixa", ks: ["fcl", "margem_fcl", "fcf_yield", "conversao_caixa"] },
   { nome: "Crescimento", ks: ["cagr_receita_5a", "cagr_lucro_5a", "cresc_receita_ltm", "cresc_lucro_ltm"] },
   { nome: "Endividamento", ks: ["divliq_ebitda", "divliq_pl", "liquidez_corrente", "cobertura_juros", "pl_ativos", "passivos_ativos"] },
 ];
-const PRINCIPAIS = new Set(["pl", "dy", "roic", "roe", "margem_liquida", "margem_ebitda", "cagr_receita_5a", "cagr_lucro_5a", "divliq_ebitda"]);
+const PRINCIPAIS = new Set(["pl", "dy", "roic", "roe", "margem_liquida", "margem_ebitda", "margem_fcl", "cagr_receita_5a", "cagr_lucro_5a", "divliq_ebitda"]);
 function cartaoInd(t, k, h) {
   const m = meta(k), v = val(t, k), st = D.fund[t].setor || {}, md = (st.mediana_grupo || {})[k];
   const sup = suprimido(t, k);
@@ -760,7 +920,7 @@ function blocoPiotroski(t) {
   const pz = D.fund[t].piotroski, testes = (pz && pz.testes) || {}, nomes = D.imeta.piotroski_testes || {};
   if (isFin(t)) return `<div class="cartao"><h3>Qualidade contábil</h3><p class="sub">O Piotroski F-Score usa margem bruta, giro do ativo e liquidez corrente, que não existem no balanço de bancos e seguradoras.</p></div>`;
   if (!pz || !ok(pz.pontos)) return `<div class="cartao"><h3>Qualidade contábil</h3><p class="sub">Piotroski F-Score indisponível: faltam dois exercícios anuais completos.</p></div>`;
-  return `<div class="cartao"><div class="cartao-cab"><div><h3>Qualidade contábil</h3><p class="sub">Piotroski F-Score, ${pz.anos[1]} contra ${pz.anos[0]}.</p></div><div class="placar"><b>${pz.pontos}</b><span>de 9</span></div></div>
+  return `<div class="cartao"><div class="cartao-cab"><div><h3>Qualidade contábil</h3><p class="sub">Nota de 0 a 9: quantos testes de saúde contábil a empresa passou em ${pz.anos[1]} contra ${pz.anos[0]} (método Piotroski F-Score).</p></div><div class="placar"><b>${pz.pontos}</b><span>de 9</span></div></div>
   <ul class="checks">${Object.entries(testes).map(([k, v]) => `<li><span class="ic ${v === true ? "s" : v === false ? "n" : "x"}">${v === true ? "✓" : v === false ? "✕" : "?"}</span>${esc(nomes[k] || k)}${v === null ? ' <span class="muted">(sem dado)</span>' : ""}</li>`).join("")}</ul></div>`;
 }
 function blocoHolding(t) {
@@ -987,7 +1147,7 @@ function pgCalendario(app, q) {
   for (const [t, x] of prox) { const k = x.data.slice(0, 7); (porMes[k] = porMes[k] || []).push([t, x]); }
   app.innerHTML = `${trilha([["Calendário"]])}<div class="cab-pagina"><div><h1>Calendário de resultados</h1>
     <p>Próximas divulgações de resultados trimestrais e anuais. Para ações brasileiras, a data é estimada pela entrega do mesmo período no ano anterior, sem passar do prazo legal da CVM; para BDRs, vem do calendário informado ao Yahoo Finance ou do prazo da SEC. Passe o mouse para ver o critério de cada data.</p></div></div>
-  <div class="segmentado" id="cal-seg" style="margin-bottom:18px">${[["TODOS", "Todos"], ["ACAO_BR", "Ações"], ["BDR", "BDRs"]].map(([k, n]) => `<button data-s="${k}" class="${seg === k ? "ativo" : ""}">${n}</button>`).join("")}</div>
+  <div class="linha entre" style="margin-bottom:18px"><div class="segmentado" id="cal-seg">${[["TODOS", "Todos"], ["ACAO_BR", "Ações"], ["BDR", "BDRs"]].map(([k, n]) => `<button data-s="${k}" class="${seg === k ? "ativo" : ""}">${n}</button>`).join("")}</div><button class="btn prim" id="cal-xls">Baixar Excel</button></div>
   <div class="grade g-3-2">
     <div>${Object.entries(porMes).map(([m, l]) => `<div class="cartao" style="margin-bottom:16px"><h3>${MESES[+m.slice(5) - 1].replace(/^./, (c) => c.toUpperCase())} de ${m.slice(0, 4)} <span class="muted" style="font-weight:500">· ${l.length} empresa${l.length === 1 ? "" : "s"}</span></h3>
       <div class="ag-lista">${l.map(([t, x]) => linhaAgenda(t, x)).join("")}</div></div>`).join("") || '<div class="cartao"><p class="vazio">Sem datas futuras neste recorte.</p></div>'}</div>
@@ -995,16 +1155,17 @@ function pgCalendario(app, q) {
   </div>`;
   ligarLinhas(app);
   $$("#cal-seg button").forEach((b) => b.onclick = () => { location.hash = `#/calendario?seg=${b.dataset.s}`; });
+  $("#cal-xls").onclick = () => exportarAgenda(seg);
 }
 
 /* =====================================================================
    COMPARADOR
    ===================================================================== */
 const LIDERES = [
-  { k: "roe", nome: "Maior ROE", dir: 1 }, { k: "piotroski", nome: "Maior Piotroski", dir: 1 }, { k: "divliq_ebitda", nome: "Menor dívida", dir: -1 },
+  { k: "roe", nome: "Maior ROE", dir: 1 }, { k: "piotroski", nome: "Melhor qualidade contábil", dir: 1 }, { k: "margem_fcl", nome: "Maior geração de caixa", dir: 1 }, { k: "divliq_ebitda", nome: "Menor dívida", dir: -1 },
   { k: "dy", nome: "Maior dividend yield", dir: 1 }, { k: "tir_implicita", nome: "Maior TIR implícita", dir: 1 },
 ];
-const MINIS = ["pl", "pvp", "roe", "margem_liquida", "dy", "tir_implicita"];
+const MINIS = ["pl", "pvp", "roe", "margem_liquida", "margem_fcl", "fcf_yield", "dy", "tir_implicita", "nota_criterios"];
 function pgComparar(app, q) {
   let sel = (q.get("t") || "").split(",").map((x) => x.trim().toUpperCase()).filter((x) => D.fund[x]);
   const setor = q.get("setor");
@@ -1033,7 +1194,7 @@ function pgComparar(app, q) {
   };
   const grupos = ["TIR", "Valuation", "Rentabilidade", "Eficiência", "Endividamento", "Crescimento", "Caixa", "Proventos", "Governança", "Tamanho", "Banco", "Seguradora", "Holding", "Cripto", "BDR"];
   const im = D.imeta.indicadores;
-  let corpo = `<tr class="grupo-linha"><td colspan="${sel.length + 1}">Resumo</td></tr>` + ["setor_micro", "porte", "preco", "var_12m", "valor_mercado_brl"].map((k) => linhaCmp(k, sel)).join("");
+  let corpo = `<tr class="grupo-linha"><td colspan="${sel.length + 1}">Resumo</td></tr>` + ["setor_micro", "porte", "preco", "var_12m", "valor_mercado_brl", "nota_criterios", "fcl", "margem_fcl"].map((k) => linhaCmp(k, sel)).join("");
   for (const g of grupos) {
     const ks = Object.keys(im).filter((k) => im[k].grupo === g && !["preco", "valor_mercado"].includes(k)).filter((k) => sel.some((t) => ok(val(t, k))));
     if (ks.length) corpo += `<tr class="grupo-linha"><td colspan="${sel.length + 1}">${esc(g)}</td></tr>` + ks.map((k) => linhaCmp(k, sel)).join("");
@@ -1041,8 +1202,14 @@ function pgComparar(app, q) {
   $("#cmp-saida").innerHTML = `<section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Destaques da seleção</h2></div><div class="lideres">${LIDERES.map((L) => [L, lider(L)]).filter(([, t]) => t).map(([L, t]) =>
     `<div class="lider"><div class="r">${esc(L.nome)}</div>${empresa(t, { cls: "p" })}<div class="v">${fmt(t, L.k)}</div></div>`).join("")}</div></section>
   <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Indicadores-chave</h2></div><div class="mini-grade">${MINIS.map(mini).join("")}</div></section>
-  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Todos os indicadores</h2><span class="sub">Verde marca o melhor e vermelho o pior de cada linha.</span></div>
+  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Todos os indicadores</h2><div class="linha"><span class="sub">Verde marca o melhor e vermelho o pior de cada linha.</span><button class="btn peq prim" id="cmp-xls">Baixar Excel</button></div></div>
   <div class="tabela-wrap alta"><table><thead><tr><th>Indicador</th>${sel.map((t) => `<th class="n"><a href="#/ativo/${t}" class="empresa" style="justify-content:flex-end">${logo(t, "p")}<span class="tk">${t}</span></a></th>`).join("")}</tr></thead><tbody>${corpo}</tbody></table></div></section>`;
+  $("#cmp-xls").onclick = () => exportarComparador(sel);
+}
+function exportarComparador(sel) {
+  const im = D.imeta.indicadores;
+  const ks = ["setor_micro", "porte", "preco", "var_12m", "valor_mercado_brl", "nota_criterios", "margem_fcl", ...Object.keys(im).filter((k) => !["preco", "valor_mercado", "nota_criterios"].includes(k) && sel.some((t) => ok(val(t, k))))];
+  baixarExcel("comparador", [{ nome: "Comparador", cab: ["Indicador", ...sel.map((t) => `${t} (${A(t).nome})`)], linhas: ks.map((k) => [cabCol(k), ...sel.map((t) => valCol(t, k))]) }]);
 }
 function linhaCmp(k, sel) {
   const m = meta(k), dir = m.direcao || 0;
@@ -1077,7 +1244,7 @@ function pgFiltros(app) {
       <label class="campo">Setor<select id="f-macro"><option value="">Todos</option>${macros.map((x) => `<option ${s.macro === x ? "selected" : ""}>${esc(x)}</option>`).join("")}</select></label>
       <label class="campo">Subsetor<select id="f-micro"><option value="">Todos</option>${micros.map((x) => `<option ${s.micro === x ? "selected" : ""}>${esc(x)}</option>`).join("")}</select></label>
       <label class="campo">Porte<select id="f-porte"><option value="">Todos</option>${["Large cap", "Mid cap", "Small cap", "Micro cap"].map((x) => `<option ${s.porte === x ? "selected" : ""}>${x}</option>`).join("")}</select></label>
-      <label class="campo">Piotroski mínimo<select id="f-pio"><option value="">Qualquer</option>${[5, 6, 7, 8].map((v) => `<option ${+s.pioMin === v ? "selected" : ""} value="${v}">${v} ou mais</option>`).join("")}</select></label>
+      <label class="campo">Qualidade contábil mínima (0 a 9)<select id="f-pio"><option value="">Qualquer</option>${[5, 6, 7, 8].map((v) => `<option ${+s.pioMin === v ? "selected" : ""} value="${v}">${v} ou mais</option>`).join("")}</select></label>
       <label class="campo">Nota por critérios mínima<select id="f-nota"><option value="">Qualquer</option>${[5, 6, 7, 8].map((v) => `<option ${+s.notaMin === v ? "selected" : ""} value="${v}">${v} ou mais</option>`).join("")}</select></label>
       <label class="campo">TIR implícita mínima (%)<input type="number" id="f-tir" step="0.5" value="${esc(s.tirMin)}"></label>
       <label class="campo">Liquidez diária mínima (R$ milhões)<input type="number" id="f-liq" step="1" value="${esc(s.liqMin)}"></label>
@@ -1091,7 +1258,7 @@ function pgFiltros(app) {
     <div class="linha entre"><div class="linha">
       <select id="f-favs"><option value="">Filtros salvos</option>${Object.keys(favs).map((n) => `<option>${esc(n)}</option>`).join("")}</select>
       <button class="btn peq" id="f-salvar">Salvar filtro</button><button class="btn peq" id="f-apagar">Apagar salvo</button><button class="btn peq" id="f-limpar">Limpar</button></div>
-      <button class="btn prim" id="f-csv">Exportar CSV</button></div>
+      <button class="btn prim" id="f-csv">Baixar Excel</button></div>
   </div>
   <section class="secao"><div class="secao-cab"><h2 class="titulo-barra" id="f-qtd"></h2></div><div id="f-res"></div></section>`;
   const faixas = () => {
@@ -1139,19 +1306,44 @@ function pgFiltros(app) {
   $("#f-favs").onchange = (e) => { const fv = lsGet("filtros_favoritos", {})[e.target.value]; if (fv) { Object.assign(EST.scr, fv.scr); EST.scrFiltros = fv.faixas || []; pgFiltros(app); } };
   $("#f-apagar").onclick = () => { const n = $("#f-favs").value; if (!n) return; const fv = lsGet("filtros_favoritos", {}); delete fv[n]; lsSet("filtros_favoritos", fv); pgFiltros(app); };
   $("#f-limpar").onclick = () => { EST.scr = { seg: "TODOS", macro: "", micro: "", porte: "", tirMin: "", liqMin: "", pioMin: "", semRec: true, cenario: "" }; EST.scrFiltros = []; pgFiltros(app); };
-  $("#f-csv").onclick = () => exportarCSV(resultado(), ["ticker", "nome", ...colunas()]);
+  $("#f-csv").onclick = () => exportarTabela("filtro", resultado(), colunas());
   faixas(); aplicar();
 }
-function exportarCSV(lista, colunas) {
-  const n4 = new Intl.NumberFormat("pt-BR", { maximumFractionDigits: 6, useGrouping: false });
-  const linhas = [colunas.map((k) => meta(k).nome).join(";")];
-  for (const t of lista) linhas.push(colunas.map((k) => { const v = val(t, k); return ok(v) ? n4.format(v) : (v === null || v === undefined ? "" : `"${String(v).replace(/"/g, '""')}"`); }).join(";"));
-  const blob = new Blob(["﻿" + linhas.join("\n")], { type: "text/csv;charset=utf-8" });
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = `ativos_${D.meta.data_fechamento || "dados"}.csv`;
-  document.body.appendChild(a); a.click(); a.remove();
-  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+/* ---------------- exportação para Excel (.xlsx, gerado no navegador com SheetJS) */
+const XLSX_URL = "https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js";
+function carregarXLSX() {
+  if (window.XLSX) return Promise.resolve();
+  return new Promise((res, rej) => { const sc = document.createElement("script"); sc.src = XLSX_URL; sc.onload = res; sc.onerror = () => rej(new Error("Não foi possível carregar o gerador de Excel. Verifique a conexão.")); document.head.appendChild(sc); });
+}
+async function baixarExcel(arquivo, abas) {
+  try { await carregarXLSX(); } catch (e) { alert(e.message); return; }
+  const wb = XLSX.utils.book_new();
+  for (const a of abas) {
+    const ws = XLSX.utils.aoa_to_sheet([a.cab, ...a.linhas]);
+    ws["!cols"] = a.cab.map((c, i) => ({ wch: Math.min(48, Math.max(8, String(c).length + 2, ...a.linhas.slice(0, 300).map((l) => String(l[i] ?? "").length + 2))) }));
+    XLSX.utils.book_append_sheet(wb, ws, a.nome.slice(0, 31));
+  }
+  XLSX.writeFile(wb, `${arquivo}_${D.meta.data_fechamento || "dados"}.xlsx`);
+}
+function cabCol(k) { const u = meta(k).unidade; return rot(k) + (u === "pct" ? " (%)" : ""); }
+function valCol(t, k) {
+  const v = val(t, k);
+  if (k === "setor_micro" || k === "setor_macro" || meta(k).unidade === "txt") return v ?? "";
+  if (!ok(v) || suprimido(t, k)) return "";
+  return meta(k).unidade === "pct" ? Math.round(v * 10000) / 100 : Math.round(v * 100) / 100;
+}
+function exportarTabela(arquivo, lista, colunas) {
+  const cols = colunas.filter((k) => !["ticker", "nome", "empresa"].includes(k));
+  baixarExcel(arquivo, [{ nome: "Ativos", cab: ["Ticker", "Empresa", "Moeda dos fundamentos", ...cols.map(cabCol)], linhas: lista.map((t) => [t, A(t).nome, moedaDe(t), ...cols.map((k) => valCol(t, k))]) }]);
+}
+function exportarAgenda(seg) {
+  const { prox, recentes } = agendaLista(seg);
+  baixarExcel("calendario_resultados", [
+    { nome: "Próximos resultados", cab: ["Data", "Ticker", "Empresa", "Período", "Situação", "Critério da data", "Prazo legal"],
+      linhas: prox.map(([t, x]) => [dataBR(x.data), t, A(t).nome, x.rotulo || "", x.criterio && x.criterio.includes("Yahoo") ? "data informada" : "estimada", x.criterio || "", x.prazo_legal ? dataBR(x.prazo_legal) : ""]) },
+    { nome: "Divulgados recentemente", cab: ["Data de entrega à CVM", "Ticker", "Empresa", "Período", "Documento", "Link"],
+      linhas: recentes.map(([t, x]) => [dataBR(x.entrega), t, A(t).nome, x.rotulo || "", x.doc || "", x.link || ""]) },
+  ]);
 }
 
 /* =====================================================================

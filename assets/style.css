@@ -490,3 +490,6 @@ tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72re
 @media (max-width: 680px) { .ag-faixa { grid-template-columns: minmax(0, 1fr); } }
 .fx-hora { gap: 8px; }
 .tempo-real { color: #ff4d4f; font-size: .66rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; border: 1px solid rgba(255, 77, 79, .5); background: rgba(255, 77, 79, .1); padding: 1px 6px; border-radius: 4px; }
+
+.info.porque { border-color: color-mix(in srgb, var(--serie-2) 70%, transparent); color: var(--serie-2); margin-left: 3px; }
+.info + .info { margin-left: 3px; }
