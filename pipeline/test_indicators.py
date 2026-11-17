@@ -179,3 +179,17 @@ def test_meta_tem_campos():
     for fator in I.FATORES.values():
         for k in fator:
             assert k in m, k
+
+
+def test_piotroski():
+    ant = dict(roa=0.05, fco=90, lucro_liq=80, receita=1000, giro_ativo=0.5, divida_bruta=600, liquidez_corrente=1.2,
+               acoes=100, margem_bruta=0.30)
+    atu = dict(roa=0.06, fco=150, lucro_liq=120, receita=1200, giro_ativo=0.6, divida_bruta=500, liquidez_corrente=1.4,
+               acoes=100, margem_bruta=0.32)
+    pts, t = I.piotroski(atu, ant)
+    assert pts == 9 and all(t.values())
+    pior = dict(atu, roa=-0.01, fco=-5, lucro_liq=-20, acoes=130)
+    pts2, t2 = I.piotroski(pior, ant)
+    assert t2["roa_positivo"] is False and t2["sem_emissao"] is False and pts2 == 5
+    pts3, _ = I.piotroski({"roa": 0.1}, {"roa": 0.05})
+    assert pts3 is None

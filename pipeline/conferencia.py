@@ -213,7 +213,7 @@ def conf_bhia():
         ("Margem EBIT", i["margem_ebit"], ltm["ebit"] / ltm["receita"], info.get("operatingMargins"), pct),
         ("Valor de mercado (R$ bi)", vm, PRICES[t]["preco"] * i["acoes"], info.get("marketCap"), lambda v: bi(v) if v else "n/d"),
     ])
-    p("P/L, P/VP e TIR não se aplicam: lucro e patrimônio negativos, modelo DISTRESSED. O site suprime múltiplos e TIR como sinal de preço baixo.\n")
+    p("P/L, P/VP e TIR não se aplicam: lucro e patrimônio negativos, modelo RECUPERACAO (em recuperação). O site suprime múltiplos e TIR como sinal de preço baixo.\n")
 
 
 def conf_msft():

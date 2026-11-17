@@ -580,6 +580,54 @@ FATORES = {
     "proventos": ["dy", "dy_medio_5a", "anos_pagando", "dividendos_sobre_fcl"],
 }
 META["estab_margem"] = ("Estabilidade de margem", "Desvio padrão da margem líquida anual em 5 anos (menor = mais estável).", -1, "Eficiência", "pct")
+META["piotroski"] = ("Piotroski F-Score", "Nove testes de qualidade contábil, último exercício contra o anterior: ROA positivo, FCO positivo, "
+                     "ROA subindo, FCO acima do lucro, alavancagem caindo, liquidez corrente subindo, sem emissão de ações, "
+                     "margem bruta subindo e giro do ativo subindo. Um ponto por teste; de 0 a 9.", 1, "Rentabilidade", "int")
+
+PIOTROSKI_TESTES = {
+    "roa_positivo": "ROA positivo", "fco_positivo": "Fluxo de caixa operacional positivo", "roa_subiu": "ROA maior que no ano anterior",
+    "fco_maior_lucro": "Caixa operacional acima do lucro", "alavancagem_caiu": "Dívida sobre ativo menor que no ano anterior",
+    "liquidez_subiu": "Liquidez corrente maior que no ano anterior", "sem_emissao": "Não emitiu ações no ano",
+    "margem_bruta_subiu": "Margem bruta maior que no ano anterior", "giro_subiu": "Giro do ativo maior que no ano anterior",
+}
+
+
+def piotroski(atual: dict, anterior: dict, minimo_testes: int = 7):
+    """Piotroski (2000), com dois exercícios anuais. Retorna (pontos, {teste: True/False/None}).
+    Teste sem dado fica None e não pontua; com menos de `minimo_testes` avaliáveis o placar é None."""
+    def g(d, k):
+        v = d.get(k)
+        return v if ok(v) else None
+
+    def ativo(d):
+        return div(g(d, "receita"), g(d, "giro_ativo")) if ok(g(d, "giro_ativo")) and d["giro_ativo"] > 0 else None
+
+    def cmp(a, b, maior=True):
+        if a is None or b is None:
+            return None
+        return a > b if maior else a < b
+
+    roa_t, roa_a = g(atual, "roa"), g(anterior, "roa")
+    fco, lucro = g(atual, "fco"), g(atual, "lucro_liq")
+    at_t, at_a = ativo(atual), ativo(anterior)
+    alav_t = div(g(atual, "divida_bruta") or 0.0, at_t) if at_t else None
+    alav_a = div(g(anterior, "divida_bruta") or 0.0, at_a) if at_a else None
+    ac_t, ac_a = g(atual, "acoes"), g(anterior, "acoes")
+    t = {
+        "roa_positivo": None if roa_t is None else roa_t > 0,
+        "fco_positivo": None if fco is None else fco > 0,
+        "roa_subiu": cmp(roa_t, roa_a),
+        "fco_maior_lucro": cmp(fco, lucro),
+        "alavancagem_caiu": None if alav_t is None or alav_a is None else (alav_t < alav_a or (alav_t == 0 and alav_a == 0)),
+        "liquidez_subiu": cmp(g(atual, "liquidez_corrente"), g(anterior, "liquidez_corrente")),
+        "sem_emissao": None if ac_t is None or ac_a is None else ac_t <= ac_a * 1.005,
+        "margem_bruta_subiu": cmp(g(atual, "margem_bruta"), g(anterior, "margem_bruta")),
+        "giro_subiu": cmp(g(atual, "giro_ativo"), g(anterior, "giro_ativo")),
+    }
+    avaliados = [v for v in t.values() if v is not None]
+    if len(avaliados) < minimo_testes:
+        return None, t
+    return sum(1 for v in avaliados if v), t
 
 
 def meta_json() -> dict:

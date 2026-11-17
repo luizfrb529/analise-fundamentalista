@@ -243,8 +243,8 @@ def tesouro_ntnb_longa() -> dict | None:
             "data": row["Data Base"].strftime("%Y-%m-%d")}
 
 
-def fred_dgs10() -> dict | None:
-    txt = get("https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10").text
+def fred_dgs10(serie: str = "DGS10") -> dict | None:
+    txt = get(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={serie}").text
     df = pd.read_csv(io.StringIO(txt))
     df.columns = ["data", "v"]
     df = df[pd.to_numeric(df["v"], errors="coerce").notna()]

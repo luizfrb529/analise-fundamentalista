@@ -174,6 +174,12 @@ def macro() -> dict:
     except Exception as e:
         m["treasury_10y"] = None
         aviso("MACRO", f"Treasury: {e}")
+    try:
+        m["treasury_20y"] = S.fred_dgs10("DGS20")
+        m["treasury_20y"]["fonte"] = "FRED DGS20"
+    except Exception as e:
+        m["treasury_20y"] = None
+        aviso("MACRO", f"Treasury 20y: {e}")
     infl = m["inflacao_lp_brasil"]["valor"]
     ntnb = (m.get("ntnb_longa") or {}).get("taxa")
     m["ntnb_nominal"] = (1 + ntnb) * (1 + infl) - 1 if ntnb is not None else None
@@ -181,6 +187,10 @@ def macro() -> dict:
     ust = (m.get("treasury_10y") or {}).get("taxa")
     m["taxa_ref_exterior"] = I.taxa_referencia(None, 0, cfg["premio_risco_exterior"], nominal_direto=ust)
     return m
+
+
+# índices e ativos exibidos na faixa de mercado do site (ticker yfinance -> chave em macro.json)
+MERCADO_FAIXA = {"IFIX.SA": "ifix", "^IXIC": "nasdaq", "BRL=X": "dolar", "EURBRL=X": "euro", "BZ=F": "brent", "GC=F": "ouro"}
 
 
 # ===================================================================== proventos
@@ -790,6 +800,12 @@ def processar(ativo: dict, ctx: dict) -> dict:
     ind["consist_receita"] = I.consistencia_crescimento([hist[a].get("receita") for a in ult10])
     ind["consist_lucro"] = I.consistencia_crescimento([hist[a].get("lucro_liq") for a in ult10])
     ind["anos_historico"] = len(hist)
+    # Piotroski F-Score: dois últimos exercícios anuais (não se aplica a bancos e seguradoras)
+    if gm not in ("BANCO", "SEGURADORA") and len(hist) >= 2:
+        a1, a0 = sorted(hist)[-1], sorted(hist)[-2]
+        pts, testes = I.piotroski(hist[a1], hist[a0])
+        ind["piotroski"] = pts
+        res["piotroski"] = {"pontos": pts, "testes": testes, "anos": [a0, a1]}
     # proventos
     anos_compl = [a for a in range(ano_completo - 9, ano_completo + 1)]
     serie_dpa = [dpa_ano.get(a, 0.0) for a in anos_compl if a >= min(dpa_ano or {ano_completo: 0})]
@@ -851,13 +867,13 @@ def processar(ativo: dict, ctx: dict) -> dict:
     ind["cresc_gap"] = ind["cresc_implicito"] - ind["cresc_historico_ref"] if I.ok(ind.get("cresc_implicito"), ind.get("cresc_historico_ref")) else None
     ind["tir_spread_ref"] = ind["tir_implicita"] - titulo_ref if I.ok(ind.get("tir_implicita"), titulo_ref) else None
     ind["titulo_ref"] = titulo_ref
-    if modelo == "DISTRESSED":
-        # fluxos de empresa em reestruturação (fornecedores congelados, dívida convertida) não sustentam TIR
-        ind["tir_calculo_distressed"] = {k: ind.get(k) for k in ("tir_lucro", "tir_caixa", "tir_dcf", "cresc_implicito")}
+    if modelo == "RECUPERACAO":
+        # fluxos de empresa em recuperação judicial ou extrajudicial (fornecedores congelados, dívida convertida) não sustentam TIR
+        ind["tir_calculo_recuperacao"] = {k: ind.get(k) for k in ("tir_lucro", "tir_caixa", "tir_dcf", "cresc_implicito")}
         for k in ("tir_lucro", "tir_caixa", "tir_dcf", "tir_implicita", "cresc_implicito", "cresc_gap", "tir_spread_ref",
                   "graham", "graham_margem", "bazin", "bazin_margem", "peg"):
             ind[k] = None
-        ind["suprimido_distressed"] = True
+        ind["suprimido_recuperacao"] = True
     if modelo == "TESOURARIA_CRIPTO":
         # valor da empresa depende do bitcoin em caixa; lucro contábil é marcação a mercado do BTC
         btc_usd = serie_completa(precos.get("BTC-USD"))
@@ -1018,7 +1034,7 @@ def main():
             tks.add(p + ".SA")
         if a.get("ticker_exterior"):
             tks.add(a["ticker_exterior"])
-    tks |= {"^BVSP", "^GSPC", "BTC-USD"}
+    tks |= {"^BVSP", "^GSPC", "BTC-USD"} | set(MERCADO_FAIXA)
     precos = S.precos_yf(sorted(tks))
     faltam = sorted(tks - set(precos))
     if faltam:
@@ -1118,12 +1134,48 @@ def main():
     ref_bal = max(set(trims), key=trims.count) if trims else None
 
     idx_px = {}
-    for k in ("^BVSP", "^GSPC"):
+    for k in ("^BVSP", "^GSPC", "BTC-USD", *MERCADO_FAIXA):
         df = serie_completa(precos.get(k))
-        if df is not None and len(df):
-            idx_px[k] = {"valor": float(df["Close"].iloc[-1]), "var_dia": float(df["Close"].iloc[-1] / df["Close"].iloc[-2] - 1), "data": df.index[-1].strftime("%Y-%m-%d")}
+        if df is not None and len(df) >= 2:
+            c = df["Close"].dropna()
+            if len(c) < 2:
+                continue
+            idx_px[k] = {"valor": float(c.iloc[-1]), "var_dia": float(c.iloc[-1] / c.iloc[-2] - 1), "data": c.index[-1].strftime("%Y-%m-%d"),
+                         "_serie": c}
     mac["ibovespa"] = idx_px.get("^BVSP")
     mac["sp500"] = idx_px.get("^GSPC")
+    # séries que o Yahoo só entrega como cotação do dia (IFIX): variação contra o valor gravado na execução anterior
+    try:
+        ant = json.loads((DATA / "macro.json").read_text(encoding="utf-8"))
+    except Exception:
+        ant = {}
+    for k, nome in MERCADO_FAIXA.items():
+        if k in idx_px:
+            continue
+        df = serie_completa(precos.get(k))
+        c = df["Close"].dropna() if df is not None and len(df) else None
+        if c is None or not len(c):
+            continue
+        atual = {"valor": float(c.iloc[-1]), "var_dia": None, "data": c.index[-1].strftime("%Y-%m-%d")}
+        velho = ant.get(nome) or {}
+        if velho.get("valor") and velho.get("data", "") < atual["data"]:
+            atual["var_dia"] = atual["valor"] / velho["valor"] - 1
+            atual["anterior"] = {"valor": velho["valor"], "data": velho["data"]}
+        elif velho.get("data") == atual["data"]:
+            atual["var_dia"], atual["anterior"] = velho.get("var_dia"), velho.get("anterior")
+        idx_px[k] = atual
+    for k, nome in MERCADO_FAIXA.items():
+        mac[nome] = idx_px.get(k)
+    # bitcoin em reais = BTC em US$ x dólar comercial do mesmo dia
+    if idx_px.get("BTC-USD") and idx_px.get("BRL=X"):
+        b, d = idx_px["BTC-USD"]["_serie"], idx_px["BRL=X"]["_serie"]
+        d = d.reindex(b.index.union(d.index)).ffill().reindex(b.index)
+        brl = (b * d).dropna()
+        if len(brl) >= 2:
+            mac["bitcoin_brl"] = {"valor": float(brl.iloc[-1]), "var_dia": float(brl.iloc[-1] / brl.iloc[-2] - 1),
+                                  "data": brl.index[-1].strftime("%Y-%m-%d")}
+    for v in idx_px.values():
+        v.pop("_serie", None)
     gravar(DATA / "macro.json", mac)
 
     meta = {"gerado_em": AGORA.isoformat(), "data_fechamento": data_fech, "balancos_ate": tri(ref_bal) if ref_bal else None,
@@ -1131,7 +1183,7 @@ def main():
                                                     "yfinance (preços e volumes)", "brapi.dev (cotação, quando há token)", "SEC EDGAR (companyfacts, submissions)",
                                                     "Banco Central SGS e Focus", "Tesouro Direto", "FRED", "Google News RSS"]}
     gravar(DATA / "meta.json", meta)
-    gravar(DATA / "indicators_meta.json", {"indicadores": I.meta_json(), "fatores": I.FATORES})
+    gravar(DATA / "indicators_meta.json", {"indicadores": I.meta_json(), "fatores": I.FATORES, "piotroski_testes": I.PIOTROSKI_TESTES})
 
     prices, fundamentals, dividends = {}, {}, {}
     for a in universo:
@@ -1148,7 +1200,7 @@ def main():
                            "fonte": r.get("fonte_fundamentos"), "moeda": r.get("moeda_fundamentos"), "governanca": r.get("governanca"),
                            "bdr": r.get("bdr"), "mercado_exterior": {k: (r.get("mercado_exterior") or {}).get(k) for k in ("preco", "data", "var_dia")} if r.get("mercado_exterior") else None,
                            "valor_mercado_partes": r.get("valor_mercado_partes"), "cd_cvm": r.get("cd_cvm"), "cik": r.get("cik"),
-                           "holding": r.get("holding"), "cripto": r.get("cripto"), "acoes_por_papel": r.get("acoes_por_papel"),
+                           "holding": r.get("holding"), "cripto": r.get("cripto"), "piotroski": r.get("piotroski"), "acoes_por_papel": r.get("acoes_por_papel"),
                            "classes": r.get("classes"), "composicao_unit": a.get("composicao_unit"), "manuais_fonte": r.get("manuais_fonte"),
                            "avisos": AVISOS.get(t, [])}
         dividends[t] = r.get("proventos")
@@ -1240,7 +1292,7 @@ def relatorio_cobertura(universo, resultados, meta):
             detalhes.append("\nIndicadores sem valor e motivo:\n")
             for k in falta:
                 detalhes.append(f"- {meta_ind[k]['nome']} (`{k}`): {motivo(k, a, r)}")
-    # avaliação de DISTRESSED: critérios objetivos para os ativos marcados no universe.json e para qualquer outro que os atinja
+    # sinais de estresse financeiro (informativo): "Em recuperação" só vale para pedido de RJ ou RE, marcado à mão no universe.json
     linhas_d = []
     for a in universo:
         r = resultados.get(a["ticker"], {})
@@ -1259,11 +1311,11 @@ def relatorio_cobertura(universo, resultados, meta):
             crit.append("recuperação judicial no cadastro da CVM")
         if (i.get("sinais") or {}).get("acao_abaixo_1"):
             crit.append("ação abaixo de R$ 1")
-        if a.get("avaliar_distressed") or (len(crit) >= 2 and a["modelo_analise"] != "DISTRESSED"):
-            sug = "DISTRESSED" if len(crit) >= 2 else "manter " + a["modelo_analise"]
+        if len(crit) >= 2 and a["modelo_analise"] != "RECUPERACAO":
+            sug = "monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial"
             linhas_d.append(f"| {a['ticker']} | {a['modelo_analise']} | {'; '.join(crit) or 'nenhum'} | {sug} |")
     if linhas_d:
-        detalhes.append("\n## Avaliação de DISTRESSED\n\nCritério: dois ou mais entre PL negativo, Dív.líq/EBITDA acima de 5x (ou EBITDA negativo com dívida), EBIT abaixo dos juros, recuperação judicial, ação abaixo de R$ 1.\n")
+        detalhes.append("\n## Sinais de estresse financeiro\n\nEmpresas fora do modelo RECUPERACAO com dois ou mais entre PL negativo, Dív.líq/EBITDA acima de 5x (ou EBITDA negativo com dívida), EBIT abaixo dos juros, recuperação judicial, ação abaixo de R$ 1.\n")
         detalhes.append("| Ticker | Modelo atual | Critérios atingidos | Sugestão |\n|---|---|---|---|\n" + "\n".join(linhas_d))
     if AVISOS.get("MACRO") or AVISOS.get("PRECOS"):
         detalhes.append("\n## Geral\n" + "\n".join(f"- {x}" for x in AVISOS.get("MACRO", []) + AVISOS.get("PRECOS", [])))
@@ -1276,7 +1328,7 @@ def aplicaveis(a):
     base = [k for k, v in I.META.items() if v[3] not in ("Banco", "Seguradora", "BDR", "Holding", "Cripto")]
     suprimidos = {"tir_lucro", "tir_caixa", "tir_dcf", "tir_implicita", "cresc_implicito", "cresc_gap", "tir_spread_ref",
                   "graham", "graham_margem", "bazin", "bazin_margem", "peg", "pl", "earnings_yield"}
-    if m in ("DISTRESSED", "TESOURARIA_CRIPTO"):
+    if m in ("RECUPERACAO", "TESOURARIA_CRIPTO"):
         base = [k for k in base if k not in suprimidos]
     if m == "TESOURARIA_CRIPTO":
         base += [k for k, v in I.META.items() if v[3] == "Cripto"]

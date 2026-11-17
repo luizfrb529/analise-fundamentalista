@@ -52,22 +52,6 @@
       "fonte": "Preencher com o release trimestral da companhia."
     }
   },
-  "BBDC3": {
-    "resumo": "Ação ordinária do Bradesco. O negócio é o mesmo da BBDC4: grande banco de varejo com um dos maiores grupos seguradores do país. Esta classe tem direito a voto e tag along legal de 80%.",
-    "tese": "",
-    "riscos": [
-      "Mesmos riscos da BBDC4: execução da reestruturação e inadimplência no varejo"
-    ],
-    "oportunidades": [
-      "Mesmas da BBDC4"
-    ],
-    "manuais": {
-      "basileia": null,
-      "inadimplencia_90": null,
-      "cobertura_pdd": null,
-      "fonte": "Preencher com o release trimestral da companhia."
-    }
-  },
   "BBDC4": {
     "resumo": "Segundo maior banco privado do Brasil, com grande base de clientes de varejo e um dos maiores grupos seguradores do país (Bradesco Seguros). A receita vem da margem financeira com crédito, de tarifas e serviços e do resultado de seguros, previdência e capitalização. Passa por um plano de transformação para recuperar rentabilidade. Concorrentes: Itaú, Banco do Brasil, Santander Brasil, Nubank e Inter.",
     "tese": "",
@@ -79,22 +63,6 @@
     "oportunidades": [
       "Negocia abaixo do patrimônio (P/VP menor que 1) enquanto o ROE se recupera",
       "Resultado de seguros diversifica a receita"
-    ],
-    "manuais": {
-      "basileia": null,
-      "inadimplencia_90": null,
-      "cobertura_pdd": null,
-      "fonte": "Preencher com o release trimestral da companhia."
-    }
-  },
-  "ITUB3": {
-    "resumo": "Ação ordinária do Itaú Unibanco. O negócio é o mesmo da ITUB4: maior banco privado do país. Esta classe tem direito a voto e costuma negociar com prêmio ou desconto em relação à PN conforme a liquidez.",
-    "tese": "",
-    "riscos": [
-      "Mesmos riscos da ITUB4"
-    ],
-    "oportunidades": [
-      "Mesmas da ITUB4"
     ],
     "manuais": {
       "basileia": null,
@@ -383,17 +351,6 @@
     ],
     "oportunidades": [
       "Ouro em alta e crescimento de produção"
-    ],
-    "manuais": {}
-  },
-  "PETR3": {
-    "resumo": "Ação ordinária da Petrobras. O negócio é o mesmo da PETR4: produção de petróleo e gás, refino e venda de combustíveis. Esta classe dá direito a voto e tem tag along de 100% (Nível 2).",
-    "tese": "",
-    "riscos": [
-      "Mesmos riscos da PETR4"
-    ],
-    "oportunidades": [
-      "Mesmas da PETR4"
     ],
     "manuais": {}
   },
