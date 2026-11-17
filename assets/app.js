@@ -1200,8 +1200,9 @@ function faixaMercado() {
     [`NTN-B ${venc}`, m.ntnb_longa && ok(m.ntnb_longa.taxa) ? { v: "IPCA + " + nf2.format(m.ntnb_longa.taxa * 100) + "%" } : null],
     ["Treasury 10a", taxa(m.treasury_10y, "taxa")], ["Treasury 20a", taxa(m.treasury_20y, "taxa")],
   ].filter(([, x]) => x);
-  const hora = FAIXA.hora ? `<span class="fx fx-hora"><i class="ponto-vivo"></i>${FAIXA.hora.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}</span>`
-    : `<span class="fx fx-hora">Fechamento ${dataBR(D.meta.data_fechamento)}</span>`;
+  const hora = FAIXA.hora
+    ? `<span class="fx fx-hora"><i class="ponto-vivo"></i><span class="tempo-real">Tempo real</span><span class="v">${FAIXA.hora.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}</span></span>`
+    : `<span class="fx fx-hora"><i class="ponto-vivo"></i><span>Fechamento</span><span class="v">${dataBR(D.meta.data_fechamento)}</span></span>`;
   const html = hora + itens.map(([r, x, u]) => `<span class="fx"><span class="r">${esc(r)}</span><span class="v">${x.v}</span>${u ? `<span class="u">${u}</span>` : ""}${ok(x.d) ? `<span class="d ${sinal(x.d)}">${x.d > 0 ? "▲" : x.d < 0 ? "▼" : ""} ${nf2.format(Math.abs(x.d) * 100)}%</span>` : ""}</span>`).join("");
   $("#faixa-trilho").innerHTML = html + html;
   $("#faixa").title = FAIXA.hora
