@@ -21,12 +21,6 @@
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSFgxQ2wtZ001SXp1OTVwMGlkNTlzS0ktWHNYbGU3cXFhVW0xWVlPZmhkbWtHVHI1ZWl4Ql9hR0xZTUhNQVc1b21YYS0tR2dSZzItQ1BaSjcwYkFBTG95RkdFZmFvR3ppQnhSSzNCLW4zSkxKTi1vWjY1c0FraDJHRmJDY0VWYjR4bDVsbndsendTcnd6ekFLSjZNeThYNFJGNEpPb0ZjMEl4TzdKd1A4TFlIbG1KV29xdll1aA?oc=5"
   },
   {
-   "titulo": "Tarifa de energia da CEEE Equatorial subirá mais de 20%",
-   "veiculo": "GZH",
-   "data": "2026-11-17T13:53:05+00:00",
-   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQMm4tYUpvbUFtMERXUzRDSUVVdmxXc25qZWJxTW1UOE42OS1SbjlEU0Nnb1RsVHExQnVaUXJZbEQ5cWZWZWNPUEdEYm1xeTQ5WGpEMWdHYzFKVWR1enc3UVBiRTZXd0hxNDBHMjlLOFZvVk5BNVI3Rl94cFhUdTlJeTZZRFI0X1N5MXNaTUVJQjlTazdpRGF4bS10N0Rzd0FFY3U3czA1b2huLS1Kc3hTZ1h5aVhYV05ZR3U4NUotakY4Z2RBLVAtMnc1czlSOUJ0b0FDb3BDVm1vRHlLRWkxRXliQ2RKcjk5SGJSaXlR?oc=5"
-  },
-  {
    "titulo": "Equatorial Goiás leva Caravana da Tarifa Social a Formosa e Planaltina",
    "veiculo": "Blog do PAULO MELO",
    "data": "2026-11-17T13:00:00+00:00",
@@ -42,140 +36,35 @@
  "comunicados": [
   {
    "data": "2026-11-12",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588307&numSequencia=1113013&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-11",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Mudança na composição do comitê de auditoria estatutário",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588004&numSequencia=1112710&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-11",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "ITR 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587940&numSequencia=1112646&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-11",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Earnings Release 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587908&numSequencia=1112614&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-10-29",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Release Operacional - 3T26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1581835&numSequencia=1106541&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-21",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579213&numSequencia=1103919&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-21",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Cronograma de Eleição do CAE",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579193&numSequencia=1103899&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-20",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578854&numSequencia=1103560&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-20",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Reajuste Tarifário - Equatorial Goiás",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578855&numSequencia=1103561&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-13",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1576757&numSequencia=1101463&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-08",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Alteração no BVD",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1575672&numSequencia=1100378&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-21",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "WACC regulatório",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569972&numSequencia=1094678&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-16",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Reajuste Tarifário - Equatorial Pará",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1568523&numSequencia=1093229&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-14",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Corporate Presentation sep/26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1567755&numSequencia=1092461&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-10",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Aumento de Capital - Programa de ILP",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1566926&numSequencia=1091632&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-27",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação Institucional 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1562174&numSequencia=1086880&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-08-26",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Reajuste Tarifário Anual - Equatorial Maranhão",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561609&numSequencia=1086315&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-21",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Apresentação Site Visit CEEE-D",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1560098&numSequencia=1084804&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-20",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Apresentação Equatorial Day 2026",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1559727&numSequencia=1084433&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-13",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556897&numSequencia=1081603&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -188,5 +77,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1549580&numSequencia=1074286&numVersao=4",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://ri.equatorialenergia.com.br",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (canal de divulgação)"
  }
 }

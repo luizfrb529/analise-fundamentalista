@@ -820,7 +820,7 @@ META["aluguel_dias"] = ("Dias para cobrir", "Valor da posição em aberto no alu
 # ===================================================================== notícias financeiras
 TERMOS_FINANCEIROS = re.compile(
     r"lucr|preju[ií]zo|resultado|receita|faturamento|ebitda|margem|balan[cç]o|trimestr|\b[1-4]t\d{2}\b|dividend|\bjcp\b|juros sobre capital|provent|"
-    r"a[cç][aã]o da|a[cç][oõ]es d[aeo]|na bolsa|bolsa de valores|ibovespa|cota[cç][aã]o|valor de mercado|recompra|deb[eê]nture|d[ií]vida|alavancagem|rating|capta[cç][aã]o|"
+    r"a[cç][aã]o da|na bolsa|bolsa de valores|ibovespa|cota[cç][aã]o|valor de mercado|recompra|deb[eê]nture|d[ií]vida|alavancagem|rating|capta[cç][aã]o|"
     r"aquisi[cç][aã]o|aquire|compra d[aeo]|venda d[aeo]|fus[aã]o|incorpora[cç][aã]o|oferta|follow-on|\bipo\b|\bopa\b|guidance|proje[cç][aã]o|"
     r"pre[cç]o-alvo|recomenda|rebaix|eleva|investimento|capex|patrim[oô]nio|caixa|fato relevante|acionista|controlador|conselho|ceo|diretor|"
     r"privatiza|concess[aã]o|leil[aã]o|tarifa|reajuste|produ[cç][aã]o|vendas|recupera[cç][aã]o judicial|recupera[cç][aã]o extrajudicial|"
@@ -830,7 +830,7 @@ VEICULOS_FINANCEIROS = re.compile(
     r"cnn brasil|neofeed|pipeline|investidor10|trademap|bora investir|space money|advfn|times brasil|mover|forbes|financial times|wall street|"
     r"cnbc|barron|marketwatch|yahoo finance|motley|seeking alpha|veja|folha|o globo|isto[eé] dinheiro|monitor mercantil|poder360|metr[oó]poles|"
     r"capital aberto|eu quero investir|genial|xp investimentos|btg|nord|empiricus|the cap|inteligencia financeira|melhor investimento|visno", re.I)
-FORA_DE_PAUTA = re.compile(r"est[aá]gio|vagas|emprego|concurso|trainee|bolsa aux|ao vivo|futebol|campeonato|copa do mundo|liga das na[cç][oõ]es|\bx\b.*\bao vivo\b|novela|teatro|show|festival|anivers[aá]rio|"
+FORA_DE_PAUTA = re.compile(r"educa[cç][aã]o ambiental|servi[cç]os gratuitos|a[cç][aã]o social|voluntari|mutir[aã]o|est[aá]gio|vagas|emprego|concurso|trainee|bolsa aux|ao vivo|futebol|campeonato|copa do mundo|liga das na[cç][oõ]es|\bx\b.*\bao vivo\b|novela|teatro|show|festival|anivers[aá]rio|"
                            r"receita de bolo|hor[oó]scopo|celebridade|bbb|carnaval", re.I)
 
 
@@ -851,3 +851,68 @@ def noticia_financeira(titulo: str, veiculo: str, nome: str, ticker: str) -> boo
     if not cita_nome:
         return False
     return bool(TERMOS_FINANCEIROS.search(t)) or bool(VEICULOS_FINANCEIROS.search(veiculo or ""))
+
+
+# ---------------------------------------------------------------- notícias repetidas
+_PALAVRAS_VAZIAS = set("""a o as os de da do das dos e em no na nos nas um uma para por com sem que se ao aos sua seu suas seus mais
+menos sobre apos ate entre como diz the of and to in for on with its at by from is are as after acoes acao empresa companhia
+bolsa hoje agora ser tem veja""".split())
+
+
+def _radicais(titulo: str, ignorar: Iterable[str] = ()) -> set:
+    import unicodedata
+    t = unicodedata.normalize("NFKD", (titulo or "").lower()).encode("ascii", "ignore").decode()
+    ign = {w for x in ignorar for w in re.findall(r"[a-z0-9]+", unicodedata.normalize("NFKD", (x or "").lower()).encode("ascii", "ignore").decode())}
+    return {w[:5] for w in re.findall(r"[a-z0-9]+", t) if len(w) >= 3 and w not in _PALAVRAS_VAZIAS and w not in ign}
+
+
+def mesma_noticia(a: str, b: str, ignorar: Iterable[str] = ()) -> bool:
+    """Dois títulos contam o mesmo fato: dividem 3 ou mais palavras relevantes (fora nome e ticker da empresa)
+    ou metade das palavras do título mais curto."""
+    ra, rb = _radicais(a, ignorar), _radicais(b, ignorar)
+    if not ra or not rb:
+        return False
+    comum = len(ra & rb)
+    return comum >= 3 or comum >= max(2, min(len(ra), len(rb)) / 2)
+
+
+def sem_repeticao(itens: list, ignorar: Iterable[str] = (), dias: int = 4) -> list:
+    """Mantém uma notícia por fato: percorre da mais nova para a mais antiga e descarta a que repete
+    uma já mantida publicada até `dias` antes ou depois."""
+    from datetime import datetime
+    def quando(x):
+        try:
+            return datetime.fromisoformat(str(x.get("data"))[:10])
+        except Exception:
+            return None
+    ignorar = list(ignorar)
+    out = []
+    for x in sorted(itens, key=lambda x: str(x.get("data") or ""), reverse=True):
+        dx = quando(x)
+        repete = any(mesma_noticia(x.get("titulo", ""), y.get("titulo", ""), ignorar + list(y.get("tickers") or []))
+                     and (dx is None or quando(y) is None or abs((quando(y) - dx).days) <= dias) for y in out)
+        if not repete:
+            out.append(x)
+    return out
+
+
+# ---------------------------------------------------------------- comunicados de relações com investidores
+_RI_RELEASE = re.compile(r"release|resultado|earnings|desempenho|demonstra[cç][oõ]es financeiras|\bitr\b|\bdfp\b|informa[cç][oõ]es trimestrais", re.I)
+_RI_APRESENTACAO = re.compile(r"apresenta[cç][aã]o.*(resultado|\d\s?t\s?\d{2})|videoconfer[eê]ncia.*resultado|teleconfer[eê]ncia.*resultado|webcast", re.I)
+_RI_INGLES = re.compile(r"\b[1-4]Q\d{2}\b|\b(the|of|regarding|shares|treasury|information|material fact|notice|version|cancellation|financial statements|results presentation)\b", re.I)
+_RI_FORA = re.compile(r"ingl[eê]s|english|vers[aã]o em|agente fiduci|rating|calend[aá]rio|agenda de divulga", re.I)
+
+
+def comunicado_ri(categoria: str, titulo: str):
+    """Classifica um documento entregue à CVM no que interessa ao investidor: 'Fato relevante',
+    'Resultado' (release e demonstrações) ou 'Apresentação de resultados'. Devolve None para o resto."""
+    c, t = (categoria or "").lower(), titulo or ""
+    if _RI_FORA.search(t) or _RI_INGLES.search(t):
+        return None
+    if c.startswith("fato relevante"):
+        return "Fato relevante"
+    if _RI_APRESENTACAO.search(t):
+        return "Apresentação de resultados"
+    if (c.startswith("resultado") or c.startswith("dados econ")) and _RI_RELEASE.search(t):
+        return "Resultado"
+    return None

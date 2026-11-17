@@ -312,7 +312,7 @@ def noticias_empresa(nome: str, ticker: str, ticker_exterior: str | None = None,
         if chave not in vistos:
             vistos.add(chave)
             out.append(x)
-    return out[:limite]
+    return I.sem_repeticao(out, [nome, ticker, ticker_exterior or ""])[:limite]
 
 
 # ------------------------------------------------------------------ B3: empréstimo de ações (posição vendida)

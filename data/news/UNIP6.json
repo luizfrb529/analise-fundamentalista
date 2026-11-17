@@ -21,12 +21,6 @@
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZkZoaGc5X3FIS1FxTEJXNGdITnZFb1l5R2loczEtbEdGdUo5dU9Kem5sS1YyTU9RRDBDWUNZSkhMcUtGaksyci1qd2xndE1EV1UtUjU0QzF3UC1jY1dGNDQ4ZHNQS0YwbWxhZmFRVmZKcFZSV1p6TWNtSERiVmpqaTRYQ1RxWmVmUE9uQTRzRnZHRzlFZWFtYg?oc=5"
   },
   {
-   "titulo": "Sanepar e JHSF brilham no 3T26; Unipar e Nexpe decepcionam",
-   "veiculo": "SpaceMoney",
-   "data": "2026-11-13T12:19:31+00:00",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQ0otMXlQMGZfWm13VlYwaFFJbEM4NHo2TTlSR1lmamFQSmplRFVLSWdPLTFtOXJnRWl5SGF0aldvTmpIWkZKb3dEZjNGTkNYR1lxTkJ1NlkySTBHYnVFZ1UxZmJsaWFMNzUyVDVKZF9feksxM1gzY0JCQm5UUVEta3pIQjJLSy1oV1RxRQ?oc=5"
-  },
-  {
    "titulo": "Unipar (UNIP6) | Prévia do 3T26: Novamente sob pressão",
    "veiculo": "XP Investimentos",
    "data": "2026-11-04T10:49:26+00:00",
@@ -36,65 +30,30 @@
  "comunicados": [
   {
    "data": "2026-11-13",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1589093&numSequencia=1113799&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-12",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588468&numSequencia=1113174&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-11-10",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Conversão de Ações Preferenciais PNA em PNB",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587261&numSequencia=1111967&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-09",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1575837&numSequencia=1100543&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-17",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Mudança de Auditor (art. 28, Instr. CVM nº308/99)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569064&numSequencia=1093770&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-17",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Apresentação para Investidores - Agosto/2026",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1558612&numSequencia=1083318&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-07",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1554092&numSequencia=1078798&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-06",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553672&numSequencia=1078378&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-08",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Apresentação para Investidores - Julho/2026",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542947&numSequencia=1067653&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -105,22 +64,15 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-05-21",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Conversão de Ações Preferenciais PNA em PNB",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1525662&numSequencia=1050368&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-05-15",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1522867&numSequencia=1047573&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-05-14",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de Resultados 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1522273&numSequencia=1046979&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -131,48 +83,6 @@
    "titulo": "Reorganização Interna de Empresas do Grupo",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1520939&numSequencia=1045645&numVersao=1",
    "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Relatório Anual do Agente Fiduciário 2025 - 5ª Emissão de Debêntures",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1513061&numSequencia=1037767&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Relatório Anual do Agente Fiduciário 2025 - 6ª Emissão de Debêntures",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1513072&numSequencia=1037778&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Relatório Anual do Agente Fiduciário 2025 - 7ª Emissão de Debêntures",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1513079&numSequencia=1037785&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Relatório Anual do Agente Fiduciário 2025 - 8ª Emissão de Debêntures",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1513093&numSequencia=1037799&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Relatório Anual do Agente Fiduciário 2025 - 9ª Emissão de Debêntures",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1513097&numSequencia=1037803&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Relatório Anual do Agente Fiduciário 2025 - 10ª Emissão de Debêntures",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1513109&numSequencia=1037815&numVersao=1",
-   "fonte": "CVM (IPE)"
   }
  ],
  "proximo_resultado": null,
@@ -182,5 +92,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1467582&numSequencia=992288&numVersao=1",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://www.unipar.com",
+  "tipo": "empresa",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

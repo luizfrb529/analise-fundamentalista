@@ -61,12 +61,6 @@
    "lingua": "en"
   },
   {
-   "titulo": "JBS (JBSS32) compra dona do Minuano por R$ 2,97 bilhões e leva Canal Rural em nova reorganização do grupo",
-   "veiculo": "Money Times",
-   "data": "2026-11-09T21:38:16+00:00",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNdHF5Um9XbFhiSlpHWGxWQUlMMFI1akJZdm1OVjRZRTh4SXpRWUJxR1NLLXdCN3N4N081eWhaZzFDbkNCTjRrb0dSdThFVHh1WTVFSWZCVmVqVEVFUTgtOG9BTjJPQV91M3lZdWtUUWJfQjBNSk9DZFB2MGxMWEphRWsxYVk2Q3VsME5TOHVONUN5Rk5HSUlTblZtVTBxYXZKUmxxZ2tPNkRYYXRNNkNJcjZkSTk3VDREdWVnNVE0Z2VoaVhuTmlQVHFKeGFqS1RReXlr?oc=5"
-  },
-  {
    "titulo": "JBS Enters Personal Care Market with Flora Acquisition",
    "veiculo": "Business Wire",
    "data": "2026-11-09T21:18:00+00:00",
@@ -101,44 +95,9 @@
  "comunicados": [
   {
    "data": "2026-11-09",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026117580/ea0311486-8k_jbs.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-11-09",
    "categoria": "Resultado trimestral (10-Q)",
    "titulo": "10-Q",
    "link": "https://www.sec.gov/Archives/edgar/data/1791942/000179194226000011/jbsay-20260930.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-11-09",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000179194226000009/jbsay-20261109.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-09-15",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026100180/ea0305591-8k_jbs.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-08-19",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026091373/ea0302563-8k425_jbs.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-08-11",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026087444/ea0301374-8k_jbs.htm",
    "fonte": "SEC EDGAR"
   },
   {
@@ -146,97 +105,6 @@
    "categoria": "Resultado trimestral (10-Q)",
    "titulo": "10-Q",
    "link": "https://www.sec.gov/Archives/edgar/data/1791942/000179194226000004/jbsay-20260630.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-08-07",
-   "categoria": "Comunicado (6-K)",
-   "titulo": "REPORT OF FOREIGN PRIVATE ISSUER",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026086392/ea0301037-6k_jbs.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-08-05",
-   "categoria": "Comunicado (6-K)",
-   "titulo": "REPORT OF FOREIGN PRIVATE ISSUER",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026085774/ea0300826-6k_jbs.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-07-31",
-   "categoria": "Comunicado (6-K)",
-   "titulo": "REPORT OF FOREIGN PRIVATE ISSUER",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026084089/ea0300037-6k_jbsnv.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-06-15",
-   "categoria": "Comunicado (6-K)",
-   "titulo": "REPORT OF FOREIGN PRIVATE ISSUER",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026068560/ea0294771-6k_jbsnv.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-05-14",
-   "categoria": "Comunicado (6-K)",
-   "titulo": "REPORT OF FOREIGN PRIVATE ISSUER",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026056240/ea0290803-6k_jbsnv.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-05-12",
-   "categoria": "Comunicado (6-K)",
-   "titulo": "REPORT OF FOREIGN PRIVATE ISSUER",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026055217/ea0288902-6k_jbsnv.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-05-12",
-   "categoria": "Comunicado (6-K)",
-   "titulo": "REPORT OF FOREIGN PRIVATE ISSUER",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026055181/ea0290363-6k_jbsnv.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Comunicado (6-K)",
-   "titulo": "REPORT OF FOREIGN PRIVATE ISSUER",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026050273/ea0288579-6k_jbs.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-04-15",
-   "categoria": "Comunicado (6-K)",
-   "titulo": "REPORT OF FOREIGN PRIVATE ISSUER",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026044089/ea0286401-6k_jbsnv.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-04-13",
-   "categoria": "Comunicado (6-K)",
-   "titulo": "REPORT OF FOREIGN PRIVATE ISSUER",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026042824/ea0286078-6k_jbsnv.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-04-08",
-   "categoria": "Comunicado (6-K)",
-   "titulo": "REPORT OF FOREIGN PRIVATE ISSUER",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026041590/ea0285523-6k_jbsnv.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-03-31",
-   "categoria": "Comunicado (6-K)",
-   "titulo": "REPORT OF FOREIGN PRIVATE ISSUER",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026036668/ea0284180-6k_jbsnv.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-03-27",
-   "categoria": "Comunicado (6-K)",
-   "titulo": "REPORT OF FOREIGN PRIVATE ISSUER",
-   "link": "https://www.sec.gov/Archives/edgar/data/1791942/000121390026035573/ea028384901-6k_jbs.htm",
    "fonte": "SEC EDGAR"
   }
  ],

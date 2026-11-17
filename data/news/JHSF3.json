@@ -45,24 +45,6 @@
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5mS0V0cmhFb05keWtkSGxGbS03NTZ5bUN3VE8xOHBheU5QY21rOTA4OWZvdzBKLVEzTG1uTjE0UkRJMkxyeHBwdzg2NFA4YVlBQTYyS3lqUVc3bXo5ZDY4MVZ6cHpyNWlNOUE?oc=5"
   },
   {
-   "titulo": "JHSF (JHSF3) lucrou R$ 391,4 milhões no terceiro trimestre de 2026 com alta de 28,6%",
-   "veiculo": "TradeMap",
-   "data": "2026-11-13T20:49:00+00:00",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBFY0tmSk9KaEczUVYxRDhfdnR4bmhObVR0cEpCOVFlbGtRcTdjX3VJMWFfRkR5cEphMkUxMDB3cVc1Q1FPN05HRENDOGlHVUNIM0luNHdQSWs?oc=5"
-  },
-  {
-   "titulo": "Analistas Projetam Alta de até 60% nas Ações da JHSF (JHSF3)",
-   "veiculo": "Forbes Brasil",
-   "data": "2026-11-13T20:38:30+00:00",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWXZuZ2hfOVdWb3VqUjJiQUJORmJWNGE1dzE4M1AtVVRqQnNMbGtqTURMQnpscFhPekJrdWF2QlJDWGlBb05XbHJaQUxpM0FzWjNXd2pFOGZCY182ZDFUNkprNVVIQ2Y3MTN2QVpVWklSLWZyWVNucTFQaEpQYWZBTENOM0RwUVNFalNua1JTLS1ibENmRHlRclJJcmI1YzZkRDVJ?oc=5"
-  },
-  {
-   "titulo": "JHSF registra lucro de R$ 391,5 milhões no 3T26, alta de 28,6%",
-   "veiculo": "ADVFN",
-   "data": "2026-11-13T20:00:56+00:00",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbzR6TUdyMVJFRW9pcFpLbEVGX3d3Qlo4aGtmTXRlVUVjdGs2YmNIdGxhcDc3WDNpNTFfWXZMWnFWVzJ1V0NuTG9vX2E1c25NWHNoalk2cm1GUlNhVEQ1UHVFT05mRWRZLUxKMllFNTZEaTFwdllsV1JIWlYxWGZ0V2Ytb2tLc1hGRTV0NDNVRDlaOEh4YkVNZVBMZnk?oc=5"
-  },
-  {
    "titulo": "JHSF (JHSF3) 3T26: segmentos de renda recorrente seguem em destaque; novo preço-alvo",
    "veiculo": "InvesTalk",
    "data": "2026-11-13T19:14:00+00:00",
@@ -96,72 +78,23 @@
  "comunicados": [
   {
    "data": "2026-11-13",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1589237&numSequencia=1113943&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-12",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "ITR 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588744&numSequencia=1113450&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-12",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588451&numSequencia=1113157&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-05",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aeroporto Privado Internacional do Fasano Las Piedras",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584621&numSequencia=1109327&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-03",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Inauguração da primeira loja da Loro Piana na América Latina",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583554&numSequencia=1108260&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-01",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Comunicado ao mercado - Relatório de Informações Financeiras Relacionados à Sustentabilidade",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1573099&numSequencia=1097805&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-29",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "FIDC JHSF Capital",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1572295&numSequencia=1097001&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-17",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Live na Bastter.com",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569071&numSequencia=1093777&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-14",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Índices JHSF",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1568001&numSequencia=1092707&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-08",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Comunicado ao Mercado - Inauguração da CJ Fashion | Notice to the Market -  Opening of CJ Fashion",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1565457&numSequencia=1090163&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -173,21 +106,21 @@
   },
   {
    "data": "2026-08-14",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557844&numSequencia=1082550&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-13",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras Intermediárias",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557374&numSequencia=1082080&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-13",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557373&numSequencia=1082079&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -198,41 +131,6 @@
    "titulo": "Programa de recompra de ações",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557386&numSequencia=1082092&numVersao=1",
    "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-15",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Conclusão Captação JCSC11",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1545266&numSequencia=1069972&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-10",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Conclusão aquisição Enjoy Punta del Este",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1543919&numSequencia=1068625&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-29",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Comunicado CJ Boa Vista Village",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1528863&numSequencia=1053569&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-25",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Comunicado ao Mercado - Fasano Yachts",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1526546&numSequencia=1051252&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-22",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "PARTICIPAÇÃO EM EVENTO ONLINE \"LIVE\"",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1526160&numSequencia=1050866&numVersao=1",
-   "fonte": "CVM (IPE)"
   }
  ],
  "proximo_resultado": null,
@@ -242,5 +140,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1515163&numSequencia=1039869&numVersao=3",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "http://ri.jhsf.com.br",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

@@ -57,18 +57,6 @@
    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMjhFNmZNQ3hFNG5LUnUwblh5YmMzekhDTzBPYURncGtqMVV2Nl94SzQxbE55UFRqNGpfTnBXWTdDazlKSnQtTUNZemJIYzdnd1hxaFN0ZVktR2hpU2JaeGEtTDNkTWItblQ1R01GRVk2QzVUSWM0SWZIc3hoTVQ4MTNaLUhfUDJJZlBUVWY2a3hValpGMUlFSkRHYTBVVWVhOEl2Ujk0S1A5NVVCZkR1TmdpX0Q5NmdwTHNZTUJvNlQzWU5hZ0pmT1J3UG8?oc=5"
   },
   {
-   "titulo": "Cruzeiro do Sul Educacional tem lucro de R$ 100,7 milhões no 2º trimestre",
-   "veiculo": "Valor Econômico",
-   "data": "2026-08-11T07:00:00+00:00",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUEJBN2FOZW93NU9pX0VtOEJhVjY5WUZNUWJ0ZnR4X2J4SEgzaXJRNkRzSmZ6U2U0Tmw0cjRSQXk1dm5XcGRuNGNmNXJ5ZlM3enZuOUR1X3lCZmRaV3ZOUmJBbngzdi1JUnBKamowMXlRVHFBX2xFM29GUXdhcE9pZzRPWlNncFd3bWdHMUg0VjBrN05vcXMtS1pndVBVOVhwdzBqbWFhaEZzUjc2WHRDdF9IMmNvUjZxd29tLVVTdWhmOXdWaEHSAdQBQVVfeXFMTmU1aEJud2NfVWJHYkFoVnFfODBrYnZOSWQxbXdPZ0VBeGZxTENSUTNaUFZJU2lZRHFVT2R5c3g0SUt2NTRIU1dxa0wxV3RNY3dvcXc2NXFTZEZTaTVpZ0MxRm1yVnNhMDNhSEkxbXU5ZlhPLXBhWkQ0QmpPYk1FX3ktblF4bFhxVHE0ekhpWnhKcTQ4dW5QQWVGdk9ISW1zeVFabE9DNXJhTkR3bGRCY3NqdGxMUVAzY0x6c051S2hxckx4MUxkU0NobmdLMTRlMkJiSVU?oc=5"
-  },
-  {
-   "titulo": "Cruzeiro do Sul (CSED3) tem lucro de R$ 100,7 milhões no 2T26, alta de 60,6%",
-   "veiculo": "Money Times",
-   "data": "2026-08-11T07:00:00+00:00",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQM0N3U0NnNDVMUHFab2FEU1JMdGJkZW1KaHlLSVpEOWhKMTNzcVRKdGxJYnJ0UFNveGFNUDE0clQ3Wml3dGI3d3V0YWlJdWFuRGxRRjJ0Z2pXMVBIV0E1ekVYUHFMdVpEek9DY2VpMlJtc3E5MWlkQWRBcFQxMFhQam5kQlhJMnQ2QjN1aUpmZGFIelQ5NmRHTURFS2RxQWJjanZDa2d2aXU?oc=5"
-  },
-  {
    "titulo": "CSED3: Oportunidade em educação ou armadilha? Veja preço-justo de Cruzeiro do Sul",
    "veiculo": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
    "data": "2026-07-24T07:00:00+00:00",
@@ -90,37 +78,23 @@
  "comunicados": [
   {
    "data": "2026-11-10",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação dos Resultados - 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587426&numSequencia=1112132&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-10",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Renúncia e indicação - Membro do Conselho",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587606&numSequencia=1112312&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-10",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações financeiras intermediárias - 30 de setembro de 2026",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587321&numSequencia=1112027&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-10",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de Resultados referente ao 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587393&numSequencia=1112099&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-01",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Apresentação Institucional - Setembro/26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1573104&numSequencia=1097810&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -131,29 +105,22 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-08-31",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "AGE - Eleição membro conselho de administração",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1562874&numSequencia=1087580&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-11",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação dos Resultados - 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556055&numSequencia=1080761&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-11",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações financeiras intermediárias - 30 de junho de 2026",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556012&numSequencia=1080718&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-11",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de Resultados referente ao 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556024&numSequencia=1080730&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -166,66 +133,24 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-07-13",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Autorização 60 vagas medicina - Centro Universitário Módulo",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1544231&numSequencia=1068937&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-22",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Apresentação Institucional - Maio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1526242&numSequencia=1050948&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-05-13",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação dos Resultados - 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521078&numSequencia=1045784&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-05-12",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações financeiras intermediárias - 31 de março de 2026",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1520868&numSequencia=1045574&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-05-12",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de Resultados - 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1520875&numSequencia=1045581&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Relatório Anual Agente Fiduciário - 2ª emissão de Debêntures - 31/12/2025",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1513458&numSequencia=1038164&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Relatório Anual Agente Fiduciário - 3ª emissão de Debêntures - 31/12/2025",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1513462&numSequencia=1038168&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-28",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1509843&numSequencia=1034549&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-27",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Entendimento para indicação do membro do Conselho de Administração (RCA)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1509346&numSequencia=1034052&numVersao=1",
    "fonte": "CVM (IPE)"
   }
  ],
@@ -236,5 +161,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1454144&numSequencia=978856&numVersao=1",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://www.cruzeirodosuleducacional.edu.br",
+  "tipo": "empresa",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

@@ -438,10 +438,8 @@ function pilulasData() {
 function itemMenu(t) { return `<a class="item" href="#/ativo/${t}">${logo(t, "p")}<span><b>${t}</b><small>${esc(A(t).nome)}</small></span></a>`; }
 function montarMenus() {
   const acoes = D.tickers.filter(emAcoes);
-  const busc = [...acoes].sort((a, b) => (ind(b).valor_mercado_brl || 0) - (ind(a).valor_mercado_brl || 0)).slice(0, 8);
   const setores = [...new Set(acoes.map((t) => A(t).setor_macro))].sort((a, b) => a.localeCompare(b, "pt-BR"));
   $("#mega-acoes").innerHTML = `
-    <div class="mega-col"><h5>Maiores empresas</h5>${busc.map(itemMenu).join("")}</div>
     <div class="mega-col"><h5>Setores</h5>${setores.map((s) => `<a class="item" href="#/ativos?seg=ACAO_BR&setor=${encodeURIComponent(s)}">${esc(s)}</a>`).join("")}</div>
     <div class="mega-col"><h5>Listas rápidas</h5>
       <a class="item" href="#/rankings?foco=roe&seg=ACAO_BR">Maior ROE</a>
@@ -451,7 +449,6 @@ function montarMenus() {
     <div class="rodape-mega"><a class="lk" href="#/ativos?seg=ACAO_BR">Ver todas as ações →</a></div>`;
   const bdrs = D.tickers.filter((t) => !emAcoes(t)).sort((a, b) => (ind(b).valor_mercado_brl || 0) - (ind(a).valor_mercado_brl || 0));
   $("#mega-bdrs").innerHTML = `
-    <div class="mega-col"><h5>Maiores BDRs</h5>${bdrs.slice(0, 8).map(itemMenu).join("")}</div>
     <div class="mega-col"><h5>Setores</h5>${[...new Set(D.tickers.filter((t) => !emAcoes(t)).map((t) => A(t).setor_macro))].sort((a, b) => a.localeCompare(b, "pt-BR")).map((x) => `<a class="item" href="#/ativos?seg=BDR&setor=${encodeURIComponent(x)}">${esc(x)}</a>`).join("")}</div>
     <div class="mega-col"><h5>Listas rápidas</h5><a class="item" href="#/rankings?seg=BDR">Nota por critérios</a><a class="item" href="#/rankings?foco=roe&seg=BDR">Maior ROE</a><a class="item" href="#/rankings?foco=margem&seg=BDR">Maior margem líquida</a>
       <a class="item" href="#/rankings?foco=cresc&seg=BDR">Crescimento do lucro</a><a class="item" href="#/rankings?foco=piotroski&seg=BDR">Qualidade contábil</a></div>
@@ -520,7 +517,7 @@ function pgHome(app) {
   </section>
   <section class="secao">
     <div class="secao-cab"><h2 class="titulo-barra">Notícias e comunicados</h2>
-      <div class="abas" id="feed-abas" style="margin:0"><button data-a="noticias">Imprensa</button><button data-a="comunicados">Comunicados oficiais</button></div></div>
+      <div class="abas" id="feed-abas" style="margin:0"><button data-a="noticias">Imprensa</button><button data-a="comunicados">Relações com investidores</button></div></div>
     <div class="cartao" id="feed"><div class="carregando"><span></span>Carregando</div></div>
   </section>`;
   ligarBusca($("#busca-home"), $("#busca-home-lista"), $("#busca-home-ir"));
@@ -550,7 +547,7 @@ function pgHome(app) {
         <div style="min-width:0"><a class="feed-tit" href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.titulo)}</a>
         <div class="meta">${ts.map((t) => `<a href="#/ativo/${t}"><b>${t}</b></a>`).join(" · ")} · ${esc(aba === "noticias" ? (x.veiculo || "") : (x.categoria || ""))} · ${quando}</div></div></div>`; }).join("")}</div>
       ${itens.length > mostra.length ? `<div class="linha centro" style="margin-top:12px"><button class="btn-contorno" id="feed-mais">Ver mais (${itens.length - mostra.length})</button></div>` : ""}
-      <p class="sub" style="margin-top:10px">${aba === "noticias" ? "Imprensa: Google News, atualizado diariamente. A imprensa interpreta; o comunicado oficial é a fonte." : "Comunicados oficiais: CVM (fatos relevantes, comunicados e resultados) e SEC EDGAR para BDRs."}</p>`
+      <p class="sub" style="margin-top:10px">${aba === "noticias" ? "Imprensa: Google News, atualizado diariamente. A imprensa interpreta; o comunicado oficial é a fonte." : "Relações com investidores: fatos relevantes, releases e apresentações de resultados (CVM) e resultados entregues à SEC."}</p>`
       : '<p class="vazio">Sem itens para os setores selecionados.</p>';
     if ($("#feed-mais")) $("#feed-mais").onclick = () => { EST.homeFeed.n += 15; desenharFeed(); };
   };
@@ -583,7 +580,7 @@ function pgHome(app) {
     $("#setores").innerHTML = Object.entries(por).sort((a, b) => b[1].length - a[1].length).map(([s, l]) => {
       const vl = l.filter((t) => !semValuation(t));
       const top = [...l].sort((a, b) => (ind(b).valor_mercado_brl || 0) - (ind(a).valor_mercado_brl || 0)).slice(0, 5);
-      return `<a class="setor" href="#/ativos?seg=${seg}&setor=${encodeURIComponent(s)}"><div class="setor-topo"><b>${esc(s)}${SETORES_PERENES.includes(s) ? ' <span class="badge pos">perene</span>' : ""}</b><span class="qtd">${l.length} empresa${l.length === 1 ? "" : "s"}</span></div>
+      return `<a class="setor" href="#/ativos?seg=${seg}&setor=${encodeURIComponent(s)}"><b class="setor-nome" title="${esc(s)}">${esc(s)}</b><div class="setor-meta"><span class="qtd">${l.length} empresa${l.length === 1 ? "" : "s"}</span>${SETORES_PERENES.includes(s) ? '<span class="badge pos">perene</span>' : ""}</div>
         <div class="logos-pilha">${top.map((t) => logo(t, "p")).join("")}</div>
         <div class="setor-nums"><div>P/L<b>${fmtU(mediana(vl.map((t) => ind(t).pl).filter((v) => v > 0)), "x")}</b></div><div>ROE<b>${fmtU(mediana(vl.map((t) => ind(t).roe)), "pct")}</b></div><div>DY<b>${fmtU(mediana(vl.map((t) => ind(t).dy)), "pct")}</b></div></div></a>`;
     }).join("");
@@ -1101,8 +1098,9 @@ async function abaNoticias(t) {
   const limite = Date.now() - CONFIG.NOVO_HORAS * 3600e3;
   const novo = (d) => d && new Date(d).getTime() >= limite ? ' <span class="badge novo">Novo</span>' : "";
   return `<div class="grade g2">
-  <div><h3>Comunicados oficiais</h3><p class="sub">${A(t).tipo === "ACAO_BR" ? "CVM: fatos relevantes, comunicados e resultados." : "SEC EDGAR."}</p>
-  ${(n.comunicados || []).slice(0, 10).map((x) => `<div class="noticia"><a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.titulo)}</a>${novo(x.data)}<div class="meta">${esc(x.categoria)} · ${dataBR(x.data)}</div></div>`).join("") || '<p class="vazio">Sem comunicados.</p>'}</div>
+  <div><h3>Relações com investidores</h3><p class="sub">${A(t).tipo === "ACAO_BR" ? "Fatos relevantes, release e apresentação de resultados entregues à CVM." : "Resultados entregues à SEC (10-Q, 10-K, 20-F e 8-K de resultados)."}</p>
+  ${n.site_ri && n.site_ri.url ? `<a class="btn peq ri-link" href="${esc(n.site_ri.url)}" target="_blank" rel="noopener" title="${esc(n.site_ri.fonte || "")}">${n.site_ri.tipo === "empresa" ? "Site da empresa" : "Site de RI da empresa"} ↗</a>` : ""}
+  ${(n.comunicados || []).slice(0, 8).map((x) => `<div class="noticia"><a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.titulo)}</a>${novo(x.data)}<div class="meta">${esc(x.categoria)} · ${dataBR(x.data)}</div></div>`).join("") || '<p class="vazio">Sem fato relevante ou resultado recente.</p>'}</div>
   <div><h3>Imprensa</h3><p class="sub">Google News.</p>
   ${(n.noticias || []).slice(0, 10).map((x) => `<div class="noticia"><a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.titulo)}</a>${novo(x.data)}<div class="meta">${esc(x.veiculo)} · ${x.data ? new Date(x.data).toLocaleDateString("pt-BR") : "n/d"}</div></div>`).join("") || '<p class="vazio">Sem notícias.</p>'}</div></div>`;
 }
@@ -1535,9 +1533,11 @@ function faixaMercado() {
     ["Treasury 10a", taxa(m.treasury_10y, "taxa")], ["Treasury 20a", taxa(m.treasury_20y, "taxa")],
   ].filter(([, x]) => x);
   const hora = FAIXA.hora
-    ? `<span class="fx fx-hora"><i class="ponto-vivo"></i><span class="tempo-real">Tempo real</span><span class="v">${FAIXA.hora.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}</span></span>`
-    : `<span class="fx fx-hora"><i class="ponto-vivo"></i><span>Fechamento</span><span class="v">${dataBR(D.meta.data_fechamento)}</span></span>`;
-  const html = hora + itens.map(([r, x, u]) => `<span class="fx"><span class="r">${esc(r)}</span><span class="v">${x.v}</span>${u ? `<span class="u">${u}</span>` : ""}${ok(x.d) ? `<span class="d ${sinal(x.d)}">${x.d > 0 ? "▲" : x.d < 0 ? "▼" : ""} ${nf2.format(Math.abs(x.d) * 100)}%</span>` : ""}</span>`).join("");
+    ? `<i class="ponto-vivo"></i><span class="tempo-real">Tempo real</span><span class="v">${FAIXA.hora.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}</span>`
+    : `<span>Fechamento</span><span class="v">${dataBR(D.meta.data_fechamento)}</span>`;
+  $("#faixa-status").innerHTML = hora;
+  $("#faixa-status").title = FAIXA.hora ? `Última atualização das cotações às ${FAIXA.hora.toLocaleTimeString("pt-BR")}` : "Dados de fechamento";
+  const html = itens.map(([r, x, u]) => `<span class="fx"><span class="r">${esc(r)}</span><span class="v">${x.v}</span>${u ? `<span class="u">${u}</span>` : ""}${ok(x.d) ? `<span class="d ${sinal(x.d)}">${x.d > 0 ? "▲" : x.d < 0 ? "▼" : ""} ${nf2.format(Math.abs(x.d) * 100)}%</span>` : ""}</span>`).join("");
   $("#faixa-trilho").innerHTML = html + html;
   $("#faixa").title = FAIXA.hora
     ? `Cotações atualizadas às ${FAIXA.hora.toLocaleTimeString("pt-BR")}: câmbio e bitcoin em tempo real (AwesomeAPI); índices e commodities com atraso de até 15 minutos (Yahoo Finance). Arraste para rolar.`

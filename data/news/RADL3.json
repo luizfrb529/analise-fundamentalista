@@ -5,142 +5,44 @@
  "comunicados": [
   {
    "data": "2026-11-04",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583713&numSequencia=1108419&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-11-03",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Informações Intermediárias 3ºITR 2026 - Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583339&numSequencia=1108045&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-02",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1573571&numSequencia=1098277&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-17",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação Institucional 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1558786&numSequencia=1083492&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-05",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552326&numSequencia=1077032&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-08-04",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Informações Intermediárias 2º ITR 2026 - Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552190&numSequencia=1076896&numVersao=2",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-02",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Fechamento da Aquisição de Participação Societária na Stix",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1541405&numSequencia=1066111&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-30",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1540129&numSequencia=1064835&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-06-16",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação Institucional 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1534971&numSequencia=1059677&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-05-20",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição de participação societária no capital social da Stix",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1525263&numSequencia=1049969&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-19",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1524748&numSequencia=1049454&numVersao=2",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-05-11",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação Institucional 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519575&numSequencia=1044281&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-05-06",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516538&numSequencia=1041244&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-05",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Informações intermediárias 1º ITR 2026 - Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516396&numSequencia=1041102&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-04",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Fechamento e Conclusão da Alienação da 4Bio Medicamentos S.A.",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1515372&numSequencia=1040078&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Relatório Anual do Agente Fiduciário_Exercício 2025 - 11ª emissão",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1512482&numSequencia=1037188&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Relatório Anual do Agente Fiduciário_Exercício 2025 - 10ª emissão",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1512483&numSequencia=1037189&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Relatório Anual do Agente Fiduciário_Exercício 2025 - 9ª emissão",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1512484&numSequencia=1037190&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Relatório Anual do Agente Fiduciário_Exercício 2025 - 5ª emissão",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1512485&numSequencia=1037191&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Relatório Anual do Agente Fiduciário_Exercício 2025 - 4ª emissão",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1512486&numSequencia=1037192&numVersao=1",
    "fonte": "CVM (IPE)"
   }
  ],
@@ -151,5 +53,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1454431&numSequencia=979143&numVersao=1",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://ri.rdsaude.com.br",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

@@ -53,55 +53,6 @@
  ],
  "comunicados": [
   {
-   "data": "2026-09-29",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1572412&numSequencia=1097118&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-28",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1572134&numSequencia=1096840&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-24",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Deliberação JCP",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571111&numSequencia=1095817&numVersao=2",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-21",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Deliberação JCP",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1570070&numSequencia=1094776&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-23",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Deliberação JCP",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1537538&numSequencia=1062244&numVersao=2",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-22",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Deliberação JCP",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1537053&numSequencia=1061759&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-21",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1525418&numSequencia=1050124&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-05-18",
    "categoria": "Fato relevante",
    "titulo": "Aquisição de Ações de Emissão da Própria Companhia",
@@ -109,87 +60,10 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-04-14",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Mudança de Auditor (art. 28, Instr. CVM nº308/99)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1504711&numSequencia=1029417&numVersao=2",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-13",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Mudança de Auditor (art. 28, Instr. CVM nº308/99)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1504375&numSequencia=1029081&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-03-24",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Instruções para participação remota na AGO de 23.04.2026",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1494228&numSequencia=1018934&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-03-23",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Pagamento de dividendos em forma de juros sobre o capital próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1493825&numSequencia=1018531&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-03-19",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras Anuais Completas",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1492711&numSequencia=1017417&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-03-11",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Indicação de Candidatos ao CA e CF",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1488720&numSequencia=1013426&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-02-04",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Mudança da Estrutura Organizacional da Unidade Automotiva",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1473142&numSequencia=997848&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-02-03",
-   "categoria": "Calendário de eventos",
-   "titulo": "Calendário de eventos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1472487&numSequencia=997193&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2025-12-22",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Distribuição de Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1460443&numSequencia=985149&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2025-08-05",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1408162&numSequencia=932874&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2025-08-01",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1407072&numSequencia=931784&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2025-05-30",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Fechamento - Autoprodução de Energia",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1384840&numSequencia=909552&numVersao=1",
    "fonte": "CVM (IPE)"
   }
  ],
@@ -200,5 +74,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1472487&numSequencia=997193&numVersao=1",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://www.schulzsa.com",
+  "tipo": "empresa",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

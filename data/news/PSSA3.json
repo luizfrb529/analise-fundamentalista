@@ -11,22 +11,8 @@
  ],
  "comunicados": [
   {
-   "data": "2026-11-10",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Reporte Setorial - Set/26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586975&numSequencia=1111681&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-11-05",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Call de Resultados - 3T26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584379&numSequencia=1109085&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-05",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de Resultados - 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584314&numSequencia=1109020&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -39,13 +25,6 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-10-16",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Reporte Setorial Ago26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577727&numSequencia=1102433&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-10-02",
    "categoria": "Fato relevante",
    "titulo": "Pedido de Cancelamento de registro de Companhia Aberta - Porto Serviço",
@@ -53,43 +32,8 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-09-21",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Reporte Setorial Mensal - Jul/26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569828&numSequencia=1094534&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-18",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569636&numSequencia=1094342&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-14",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Demonstrações Financeiras Internacionais - Versão Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1558121&numSequencia=1082827&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-10",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Reporte Setorial Susep - Jun/26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1554777&numSequencia=1079483&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-07",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Call de Resultados - 2T26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553891&numSequencia=1078597&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-07",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553850&numSequencia=1078556&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -102,50 +46,8 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-07-23",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Reporte Setorial Mensal - Jun26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1547268&numSequencia=1071974&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-17",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1535779&numSequencia=1060485&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-15",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Reporte Setorial Abr/26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1534440&numSequencia=1059146&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-14",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Demonstrações Financeiras Internacionais - Versão Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1522446&numSequencia=1047152&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-11",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Reporte Setorial - Mar/26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519732&numSequencia=1044438&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-05-07",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Call de Resultados - 1T26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1517421&numSequencia=1042127&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-07",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de Resultados 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1517349&numSequencia=1042055&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -161,5 +63,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1453523&numSequencia=978235&numVersao=1",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://www.portoseguro.com.br",
+  "tipo": "empresa",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

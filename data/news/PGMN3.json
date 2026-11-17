@@ -66,135 +66,16 @@
  "comunicados": [
   {
    "data": "2026-11-05",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Apresentação de Resultados 3T26 (versão em inglês)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584382&numSequencia=1109088&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-05",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584383&numSequencia=1109089&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-11-05",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Esclarecimentos sobre notícia veiculada na mídia",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1585197&numSequencia=1109903&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-04",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Release 3T26 (versão em inglês)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583955&numSequencia=1108661&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-04",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Release 3T26 (versão em português)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583957&numSequencia=1108663&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-11",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1567426&numSequencia=1092132&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-03",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1564725&numSequencia=1089431&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-02",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1564096&numSequencia=1088802&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-01",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1563560&numSequencia=1088266&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-19",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1559387&numSequencia=1084093&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-19",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Apresentação de Resultados 2T26 (versão em inglês)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1559388&numSequencia=1084094&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-07",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Material Publicitária da Oferta Pública da 9ª Emissão de Debêntures",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1554089&numSequencia=1078795&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-06",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Aviso ao Mercado - 9ª Emissão de Debêntures",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553830&numSequencia=1078536&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-03",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Release 2T26 (versão em inglês)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1551399&numSequencia=1076105&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-03",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Release 2T26 (versão em português)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1551400&numSequencia=1076106&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-28",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Cancelamento de Assembleia Geral Extraordinária",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1548864&numSequencia=1073570&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-09",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Renúncia de membro do conselho de administração",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1543334&numSequencia=1068040&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-26",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1539123&numSequencia=1063829&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-17",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Apresentação - Evento GLP-1",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1535551&numSequencia=1060257&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -212,5 +93,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1477458&numSequencia=1002164&numVersao=3",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://ri.paguemenos.com.br",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (canal de divulgação)"
  }
 }

@@ -27,12 +27,6 @@
    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNZ1J6alk5OTl2Y242VmFDVDREaVdfQTNTaEJlRlNlZTZVdGtiWUNKY08zZldJT3ZsWHEwdmpqZ3JKelA0bExQUklyNmVKSVNxd3JxRDJqWHlzSEV1N3lxYjlCSkNrMWtKZFU2NUdfYlFjWW1WNy0xSzJpZUd3MWZNZ0t6TnMwaXZKZ3VRSDU4Mlo?oc=5"
   },
   {
-   "titulo": "Em cenário difícil para bancos, lucro do Banrisul cai 52%",
-   "veiculo": "GZH",
-   "data": "2026-11-13T01:12:49+00:00",
-   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOb1ZCMEFvWTBGbGdGQkNOclVtN1RWdG41YmVvUS1VRGdfX3dzcnFyMjZYX0NhN0JhazZwQWtzV1F4dmpyNXVsb3plQVQwRmtvSG9ySzhrREJyUE53VEcxRHlDYUFIakJiVklDYk4xWVd5Szg3TTl6RVFfWVlJYVRIUE4yTTRudlBURXZvekNuYlhoM0NkUk1fQWNaeXowUC0zSktOMUJ0UGNCc3Zod3NpNXlmZE45LXdyQ1ZKMjd2cmFYdXdVbVJxSGlMV0FjMFBRdXp5ajJIZkxENVhsVFU1SVVNZXphVTd3MUZSeHZIYw?oc=5"
-  },
-  {
    "titulo": "Lucro do Banrisul cai 52% no 3º trimestre, para R$ 157,8 milhões",
    "veiculo": "Valor Econômico",
    "data": "2026-11-12T14:40:45+00:00",
@@ -43,12 +37,6 @@
    "veiculo": "Visno Invest",
    "data": "2026-11-12T12:56:26+00:00",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOX3F3VENvZEs5OHN2VHpnUHFMSGFfa3RKakgwVVBPQWFjVWE0UEJUc0w1aERGdmsycWdETGNwU0IzU3R0Wk9CdXQybWlMOTdiaFNON1BzMDdCQVV3ZUppVG1EUXFvU2huZ0QwRm1iWGRPZGp0MGdGMUJ1bHRUcEhZU1FKa1V2bTgtcHRMd2pubzlzdVhpVW9FdVA5X3paZw?oc=5"
-  },
-  {
-   "titulo": "Banrisul alcança lucro líquido de R$ 704,8 milhões até setembro",
-   "veiculo": "Grupo AMANHÃ",
-   "data": "2026-11-12T07:20:00+00:00",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPcjM4blN1MkpGZXNXd1VMNGJtaGJadmRJYUNIRzZCLXRZYWFWZGF2Y0hiX05oaVl5UTE1TjM5WE9WZ2VST0xxUWlmMTRBNzJqMVhJckpKeGFma2h2ZlJ3QkpBNVhRN2JidWJVTk5BUXRwRXFkc0hmaVVoTGNDTGFUTXpBaS1VSENBUHBTejh6Sjc?oc=5"
   },
   {
    "titulo": "Banrisul (BRSR6) propõe pagamento de R$ 90 milhões em JCP",
@@ -66,30 +54,16 @@
  "comunicados": [
   {
    "data": "2026-11-12",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588181&numSequencia=1112887&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-12",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588399&numSequencia=1113105&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-12",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras 3T2026",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588093&numSequencia=1112799&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-13",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1576815&numSequencia=1101521&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -101,21 +75,21 @@
   },
   {
    "data": "2026-08-24",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentacao Institucional 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1560751&numSequencia=1085457&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-13",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556798&numSequencia=1081504&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-13",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras 2T2026",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556793&numSequencia=1081499&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -125,13 +99,6 @@
    "categoria": "Fato relevante",
    "titulo": "Guidance",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556797&numSequencia=1081503&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-11",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Novo Diretor de Desenvolvimento",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1555898&numSequencia=1080604&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -149,13 +116,6 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-06-10",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Reapresentação de Boletim de Voto à Distância - AGE 2026",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533073&numSequencia=1057779&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-06-09",
    "categoria": "Fato relevante",
    "titulo": "PAGAMENTO DE JUROS SOBRE CAPITAL PRÓPRIO REFERENTE AO 2º TRIMESTRE DE 2026",
@@ -164,28 +124,21 @@
   },
   {
    "data": "2026-06-08",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação Institucional 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531575&numSequencia=1056281&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-05-26",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Renúncia de membro do Conselho de Administração",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1526695&numSequencia=1051401&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-05-14",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521879&numSequencia=1046585&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-05-14",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras 1T2026",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521772&numSequencia=1046478&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -212,5 +165,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1467987&numSequencia=992693&numVersao=2",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://www.banrisul.com.br/ri",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

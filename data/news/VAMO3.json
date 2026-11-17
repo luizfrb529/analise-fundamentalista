@@ -12,30 +12,23 @@
  "comunicados": [
   {
    "data": "2026-10-30",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1582010&numSequencia=1106716&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-10-29",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações financeiras em padrões internacionais referente ao 3TRI26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1581906&numSequencia=1106612&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-10-29",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1581900&numSequencia=1106606&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-23",
-   "categoria": "Calendário de eventos",
-   "titulo": "Calendário de eventos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579637&numSequencia=1104343&numVersao=6",
    "fonte": "CVM (IPE)"
   },
   {
@@ -46,43 +39,22 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-10-02",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Movimentação de participação relevante",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574042&numSequencia=1098748&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-01",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1573511&numSequencia=1098217&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-26",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Política de Aplicação e Governança do Compromisso de Indenidade",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561612&numSequencia=1086318&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-12",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556222&numSequencia=1080928&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-11",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações financeiras em padrões internacionais referente ao 2TRI26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556083&numSequencia=1080789&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-11",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556062&numSequencia=1080768&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -95,31 +67,10 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-07-28",
-   "categoria": "Calendário de eventos",
-   "titulo": "Calendário de eventos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1548861&numSequencia=1073567&numVersao=5",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-07-16",
    "categoria": "Fato relevante",
    "titulo": "Divulgação de Prévia Operacional 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1545576&numSequencia=1070282&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-26",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Mudança no Comitê de Auditoria.",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1538972&numSequencia=1063678&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-03",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Renuncia de Diretor",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1530528&numSequencia=1055234&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -135,20 +86,6 @@
    "titulo": "Programa de recompra de ações",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1525177&numSequencia=1049883&numVersao=1",
    "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-15",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Homologação do Aumento de Capital Privado",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1523142&numSequencia=1047848&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-15",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1523297&numSequencia=1048003&numVersao=1",
-   "fonte": "CVM (IPE)"
   }
  ],
  "proximo_resultado": null,
@@ -158,5 +95,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579637&numSequencia=1104343&numVersao=6",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://ri.grupovamos.com.br",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (canal de divulgação)"
  }
 }

@@ -63,56 +63,14 @@
    "data": "2026-11-17T16:08:30+00:00",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOOUctNExwQ2VPbVZTWGdBdjZWTnNhU1hjZUxQZWdUSzhhVWRKRUt2ZHZORkZ3V3dxc3RCbE83Ny1JX2o4NkxhZ2RxblFuTFdNUjJJaWZhT3VfQWxkZFN2RlVXclZlVU1Ua3FJbERLbHRkc1pFbjRpNlNZUHlKS2xYR1BNVDI3bWtUOXd3RmV6RjBwUWptb1ZiaVJsTkVyVGN4TENHR0pn?oc=5",
    "lingua": "en"
-  },
-  {
-   "titulo": "Bill Ackman Just Sold 35% of His Microsoft Stake",
-   "veiculo": "Yahoo Finance",
-   "data": "2026-11-17T15:10:58+00:00",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTE5zMWhvZGZJRVBtTTFsOWxJQmcxeEpPRlhhQXlibk1yYXVwQWtUaVNvTE1NMzFoS0haa2NDWHVKU3VVV18yeHlVODlMY3UxMm9KSkFqZ0RHdDZNdjZ2cDhHUjF1LTZQa0VTYnRzM2Q3cVJCbUJOQ2cySjRxcFhLQ3NNWVhJVWY4WHZRbi1kMU1nT3c?oc=5",
-   "lingua": "en"
   }
  ],
  "comunicados": [
-  {
-   "data": "2026-11-05",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-11-04",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/789019/000119312526447173/d178557d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-10-28",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436149/msft-20261028.htm",
-   "fonte": "SEC EDGAR"
-  },
   {
    "data": "2026-10-28",
    "categoria": "Resultado trimestral (10-Q)",
    "titulo": "10-Q",
    "link": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-10-28",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-20261028.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-09-02",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm",
    "fonte": "SEC EDGAR"
   },
   {
@@ -123,38 +81,10 @@
    "fonte": "SEC EDGAR"
   },
   {
-   "data": "2026-07-29",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323632/msft-20260729.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-06-05",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/789019/000119312526258667/d26760d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-05-14",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/789019/000119312526224155/d125909d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2026-04-29",
    "categoria": "Resultado trimestral (10-Q)",
    "titulo": "10-Q",
    "link": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-04-29",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191457/msft-20260429.htm",
    "fonte": "SEC EDGAR"
   },
   {
@@ -165,20 +95,6 @@
    "fonte": "SEC EDGAR"
   },
   {
-   "data": "2026-01-28",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027198/msft-20260128.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2025-12-08",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/789019/000119312525311196/d34077d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2025-10-29",
    "categoria": "Resultado trimestral (10-Q)",
    "titulo": "10-Q",
@@ -186,31 +102,10 @@
    "fonte": "SEC EDGAR"
   },
   {
-   "data": "2025-10-29",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256310/msft-20251028.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2025-09-30",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/789019/000119312525225125/d863209d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2025-07-30",
    "categoria": "Relatório anual (10-K)",
    "titulo": "10-K",
    "link": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2025-07-30",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100226/msft-20250730.htm",
    "fonte": "SEC EDGAR"
   }
  ],

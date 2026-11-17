@@ -12,51 +12,16 @@
  "comunicados": [
   {
    "data": "2026-11-10",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Data de pagamento de JSCP deliberados em fevereiro de 2026",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587189&numSequencia=1111895&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-10",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587193&numSequencia=1111899&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-10",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de Resultados do 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587194&numSequencia=1111900&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-30",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Esclarecimentos sobre questionamentos da CVM/B3 - Notícia veiculada na imprensa",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1581920&numSequencia=1106626&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-14",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577175&numSequencia=1101881&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-14",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1568085&numSequencia=1092791&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-14",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Deliberação de JSCP",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1558156&numSequencia=1082862&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -68,51 +33,16 @@
   },
   {
    "data": "2026-07-27",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1548479&numSequencia=1073185&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-07-27",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Política de Direitos Humanos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1548519&numSequencia=1073225&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-27",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1548502&numSequencia=1073208&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-24",
-   "categoria": "Calendário de eventos",
-   "titulo": "Calendário de eventos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1547952&numSequencia=1072658&numVersao=4",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-16",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1545587&numSequencia=1070293&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-01",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Incorporação da Cyberco Brasil pela TIS",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1540626&numSequencia=1065332&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-16",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Laudo com base no valor do patrimônio líquido a preços de mercado ou outro critério aceito pela CVM",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1535334&numSequencia=1060040&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -120,34 +50,6 @@
    "categoria": "Fato relevante",
    "titulo": "Incorporação Fibrasil",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1535336&numSequencia=1060042&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-15",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1534787&numSequencia=1059493&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-27",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Confirmação do valor por ação do JSCP de 15.05.2026",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1527434&numSequencia=1052140&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-22",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Confirmação do Valor por Ação da Redução de Capital",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1526262&numSequencia=1050968&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-18",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Transação FiBrasil T.Infra",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1524043&numSequencia=1048749&numVersao=1",
    "fonte": "CVM (IPE)"
   }
  ],
@@ -158,5 +60,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1547952&numSequencia=1072658&numVersao=4",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://ri.telefonica.com.br",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (canal de divulgação)"
  }
 }

@@ -12,14 +12,14 @@
  "comunicados": [
   {
    "data": "2026-11-13",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação da Teleconferência de Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588963&numSequencia=1113669&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-12",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Press-release de Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588419&numSequencia=1113125&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -32,66 +32,17 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-10-15",
-   "categoria": "Calendário de eventos",
-   "titulo": "Calendário de eventos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577542&numSequencia=1102248&numVersao=4",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-21",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Distribuição de Juros Sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1570154&numSequencia=1094860&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-16",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Acordo Atlântica D Or Jundiaí",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1568855&numSequencia=1093561&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-02",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Acordo Atlântica D'Or Hospital Biocor",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1563844&numSequencia=1088550&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-13",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação da Teleconferência de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556818&numSequencia=1081524&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-12",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Press-release de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556594&numSequencia=1081300&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-13",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Fechamento do Acordo Atlântica D'Or São Conrado",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1544527&numSequencia=1069233&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-25",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Distribuição de Juros Sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1538611&numSequencia=1063317&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-22",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Distribuição de Juros Sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1537134&numSequencia=1061840&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -102,52 +53,17 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-05-26",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Acordo Atlântica Hospital São Conrado D'Or",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1526683&numSequencia=1051389&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-05-07",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação da Teleconferência de Resultados 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1517476&numSequencia=1042182&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-05-06",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Press-release de Resultados 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1517178&numSequencia=1041884&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Relatório Anual do Agente Fiduciário",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1512724&numSequencia=1037430&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-17",
-   "categoria": "Calendário de eventos",
-   "titulo": "Calendário de eventos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1506316&numSequencia=1031022&numVersao=3",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-16",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1505499&numSequencia=1030205&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-03-31",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Reapresentacao do Boletim de Voto a Distancia e da Proposta da Administracao",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1499379&numSequencia=1024085&numVersao=1",
    "fonte": "CVM (IPE)"
   }
  ],
@@ -158,5 +74,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577542&numSequencia=1102248&numVersao=4",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://www.rededorsaoluiz.com.br",
+  "tipo": "empresa",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

@@ -30,44 +30,23 @@
  "comunicados": [
   {
    "data": "2026-11-13",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras - IFRS - Português",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1589591&numSequencia=1114297&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-11-13",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Demonstrações Financeiras - IFRS - Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1589594&numSequencia=1114300&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-11-12",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras Intermediárias 3T26 - Português",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588086&numSequencia=1112792&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-12",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Demonstrações Financeiras Intermediárias 3T26 - Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588088&numSequencia=1112794&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-12",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Earnings Release - Português",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588087&numSequencia=1112793&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-12",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Earnings Release - Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588089&numSequencia=1112795&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -78,92 +57,29 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-11-05",
-   "categoria": "Calendário de eventos",
-   "titulo": "Calendário de eventos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584935&numSequencia=1109641&numVersao=3",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-03",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aumento de Participação Acionária - Capital International Investors",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583599&numSequencia=1108305&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-19",
-   "categoria": "Calendário de eventos",
-   "titulo": "Calendário de eventos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578476&numSequencia=1103182&numVersao=2",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-14",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras em IFRS - Português",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1558305&numSequencia=1083011&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-08-14",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Demonstrações Financeiras em IFRS - Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1558306&numSequencia=1083012&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-11",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras Intermediárias 2T26 - Português",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1555531&numSequencia=1080237&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-11",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Demonstrações Financeiras Intermediárias 2T26 - Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1555534&numSequencia=1080240&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-11",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Earnings Release - Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1555532&numSequencia=1080238&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-11",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Earnings Release - Português",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1555533&numSequencia=1080239&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-08-05",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552909&numSequencia=1077615&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-24",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Notícia da mídia",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1538136&numSequencia=1062842&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-21",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Apresentações a analistas/agentes do mercado 2025",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1525523&numSequencia=1050229&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-05-15",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras - IFRS - Português",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1523393&numSequencia=1048099&numVersao=1",
    "fonte": "CVM (IPE)"

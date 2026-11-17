@@ -266,3 +266,41 @@ def test_noticia_financeira_ambigua():
     assert f("Telefônica Vivo (VIVT3): negócios previsíveis", "Money Times", "Vivo", "VIVT3")
     assert not f("American Century Reveals 5.5% Ownership Stake in Nu Skin", "Kalkine Media", "Nu Holdings", "NU")
     assert f("Is Nu Holdings Stock a Buy After Falling 24%?", "Yahoo Finance", "Nu Holdings", "NU")
+
+
+
+def test_noticias_repetidas():
+    ign = ["TIM", "TIMS3"]
+    tim = [
+        {"titulo": "Por que você deveria comprar ações da TIM (TIMS3) agora, segundo o Itaú BBA", "data": "2026-11-17"},
+        {"titulo": "Itaú BBA eleva TIM (TIMS3) para compra com preço-alvo de R$ 25 e vê retorno de 26% até 2027", "data": "2026-11-17"},
+        {"titulo": "Itaú BBA eleva TIM (TIMS3) para compra e cita três fatores que tornam a ação difícil de ignorar", "data": "2026-11-17"},
+        {"titulo": "TIM: Itaú BBA eleva recomendação para compra e vê potencial de dividendos de até 35%", "data": "2026-11-17"},
+        {"titulo": "TIM tem lucro de R$ 1 bilhão no 3T26, alta de 20%", "data": "2026-11-05"},
+    ]
+    r = I.sem_repeticao(tim, ign)
+    assert len(r) == 2
+    assert I.sem_repeticao([{"titulo": "Petrobras anuncia dividendos de R$ 10 bi", "data": "2026-11-10"},
+                            {"titulo": "Petrobras aprova venda de refinaria na Bahia", "data": "2026-11-10"}], ["Petrobras"]).__len__() == 2
+
+
+def test_noticia_acao_social():
+    assert not I.noticia_financeira("Sanepar oferece serviços gratuitos e ações de educação ambiental em São José dos Pinhais", "SOT", "Sanepar", "SAPR11")
+
+
+def test_comunicado_ri():
+    f = I.comunicado_ri
+    assert f("Fato relevante", "Programa de Recompra de Ações") == "Fato relevante"
+    assert f("Resultado / dados financeiros", "Release de Resultados 3T26") == "Resultado"
+    assert f("Resultado / dados financeiros", "Demonstrações Financeiras Intermediárias 3T26") == "Resultado"
+    assert f("Comunicado ao mercado", "Apresentação de Resultados 3T26") == "Apresentação de resultados"
+    assert f("Comunicado ao mercado", "Apresentação da Videoconferência dos Resultados do 3T26") == "Apresentação de resultados"
+    assert f("Resultado / dados financeiros", "Versão em Inglês") is None
+    assert f("Resultado / dados financeiros", "Demonstrações Financeiras em IFRS - Inglês") is None
+    assert f("Comunicado ao mercado", "Aquisição/Alienação de Participação Acionária") is None
+    assert f("Aviso aos acionistas", "Dividendos/Juros sobre Capital Próprio") is None
+    assert f("Comunicado ao mercado", "Inauguração de Loja") is None
+    assert f("Fato relevante", "Programa de Recompra de Ações - versão em inglês") is None
+    assert f("Fato relevante", "Cancellation of Treasury Shares") is None
+    assert f("Resultado / dados financeiros", "Earnings Release 3Q26") is None
+    assert f("Resultado / dados financeiros", "Earnings Release 3T26") == "Resultado"

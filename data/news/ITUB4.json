@@ -90,65 +90,16 @@
  "comunicados": [
   {
    "data": "2026-11-03",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação com a Imprensa sobre os Resultados do 3º Trimestre de 2026.",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583276&numSequencia=1107982&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-03",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Reunião pública com analistas e de divulgação de resultados 3T26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583280&numSequencia=1107986&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-03",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Gerenciamento de Riscos e Capital - Pilar 3 (3T26)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583272&numSequencia=1107978&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-03",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Press Release",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583273&numSequencia=1107979&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-03",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação Institucional do Resultado do 3º Trimestre de 2026.",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583279&numSequencia=1107985&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-03",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Versão em Português",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583274&numSequencia=1107980&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-03",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Versão em Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583275&numSequencia=1107981&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-03",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Demonstrações Contábeis Completas",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583268&numSequencia=1107974&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-03",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Análise Gerencial da Operação",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583267&numSequencia=1107973&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -164,69 +115,6 @@
    "titulo": "Aquisição da totalidade das ações de emissão da Neospace",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580024&numSequencia=1104730&numVersao=1",
    "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-22",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Panorama Itaúsa 2026",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1570579&numSequencia=1095285&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-17",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Recompra de Letras Financeiras Subordinadas Nível 2",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569218&numSequencia=1093924&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-10",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Letras Financeiras Subordinadas Nível 2",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1567067&numSequencia=1091773&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-28",
-   "categoria": "Calendário de eventos",
-   "titulo": "Calendário de eventos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1562665&numSequencia=1087371&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-17",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Autorização Preliminar para a Constituição de Banco Múltiplo nos Estados Unidos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1558760&numSequencia=1083466&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-05",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Informações sobre o Resultado do 2º Trimestre de 2026.",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552244&numSequencia=1076950&numVersao=2",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-04",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Data de Pagamento de Juros sobre o Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552011&numSequencia=1076717&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-04",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Informações sobre o Resultado do 2º Trimestre de 2026.",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552023&numSequencia=1076729&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-04",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Press Release",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552013&numSequencia=1076719&numVersao=1",
-   "fonte": "CVM (IPE)"
   }
  ],
  "proximo_resultado": null,
@@ -236,5 +124,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1562665&numSequencia=1087371&numVersao=1",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://www.itau.com.br/relacoes-com-investidores",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

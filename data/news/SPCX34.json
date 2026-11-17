@@ -36,20 +36,6 @@
    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1VMld5V1p0ZzM5WTNEMEtLdFZVOV90aHo5T3BqNG5obHJaM3pTaExWSTNpQXVWZk1ZanZMUWpYMkZoVXZxcEVncWt5VkxBTzVGejRCbFhXZGdRNEFtYXlXT05pdFR4UQ?oc=5"
   },
   {
-   "titulo": "Rocket Lab Slides 4% as SpaceX Shares a $985 Million Launch Award: Are Cathie Wood and David Tepper Picking SpaceX Over Rocket Lab?",
-   "veiculo": "Yahoo Finance",
-   "data": "2026-11-17T16:03:07+00:00",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPY0prUkE5YnZuQnZGbmpQbWxraUFDVUxzSFFfV0Q3NlNpQ3N4Ul83YXE2OUxxRXpBcFJLR3J3NlI2WWFxTzZVczBBdV9tQzJJNXdranlhZGxXRTE5aWlLajUwMmY0LTdUdUZaRzk1SkNCaElBS1Q1bUNMUGEzOURxNTRaNEZNSjBlUDEwa0JTNmNDVXBTV1E?oc=5",
-   "lingua": "en"
-  },
-  {
-   "titulo": "SpaceX new debt for AI chips set to launch as soon as this week - report (SPCX:NASDAQ)",
-   "veiculo": "Seeking Alpha",
-   "data": "2026-11-17T15:54:13+00:00",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNaW96S0h0Q2ViWXdtZGFRcVRKMmNIZWxDWTJsdFl4V2lxYnFjQU5jUWdSWEhuU3VNVDJzdGFfZzVOUU9pQl9SYU5JYjg0cHBjSlR0RkhSS0Z0R0tEQUN6QWQ1UDVmLXVfeFI5S0VaU1NtUllPYVg4UW5nNE9XVVdTa3laUmlfRmZ6MjcxNWNHR0ttR0lKTzRBYXE1cDdtSG5aS2xaRlJHZXRhN3Y0?oc=5",
-   "lingua": "en"
-  },
-  {
    "titulo": "Tesla-SpaceX (NASDAQ: TSLA) (NASDAQ: SPCX) Merger Could Force $100 Billion In Passive Fund Buying",
    "veiculo": "Foreign Policy Journal",
    "data": "2026-11-17T15:47:00+00:00",
@@ -87,20 +73,6 @@
  ],
  "comunicados": [
   {
-   "data": "2026-11-06",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026071689/spcx-20261104.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-10-26",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "FORM 8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2026-10-22",
    "categoria": "Resultado trimestral (10-Q)",
    "titulo": "10-Q",
@@ -108,73 +80,10 @@
    "fonte": "SEC EDGAR"
   },
   {
-   "data": "2026-10-20",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spcx-20261020.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-08-14",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2026-08-04",
    "categoria": "Resultado trimestral (10-Q)",
    "titulo": "10-Q",
    "link": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-08-04",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052515/spcx-20260804.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-06-26",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-06-23",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-06-22",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-06-17",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026043865/spaceexplorationtechnologi.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-06-16",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026043411/spaceexplorationtechnologi.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-06-15",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026043288/spaceexplorationtechnologi.htm",
    "fonte": "SEC EDGAR"
   }
  ],

@@ -5,16 +5,9 @@
  "comunicados": [
   {
    "data": "2026-11-05",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de resultados referente ao 3º trimestre de 2026",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584317&numSequencia=1109023&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-14",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Atribuição de rating nacional pela Moody s",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577236&numSequencia=1101942&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -26,21 +19,14 @@
   },
   {
    "data": "2026-08-05",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de resultados do 2º trimestre de 2026",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552201&numSequencia=1076907&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-05",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "IFRS Versão em Português",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552271&numSequencia=1076977&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-05",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras em BRGAAP 1º Semestre 2026",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552270&numSequencia=1076976&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -54,7 +40,7 @@
   },
   {
    "data": "2026-05-06",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de resultados referentes ao 1T2026",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516473&numSequencia=1041179&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -67,29 +53,15 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-03-09",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aprovação do aumento de capital privado com emissão de ações ordinárias",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1487489&numSequencia=1012195&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-03-04",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação a analistas/agentes de mercado - 4T25",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1485152&numSequencia=1009858&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-03-04",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "IFRS Português",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1485146&numSequencia=1009852&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-03-04",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras Anuais Completas",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1485145&numSequencia=1009851&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -124,23 +96,9 @@
   },
   {
    "data": "2026-02-19",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Fim do prazo para subscrição de sobras e resultado do aumento de capital privado",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1479552&numSequencia=1004258&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-02-19",
    "categoria": "Fato relevante",
    "titulo": "Resultado do leilão da oferta pública para aquisição das ações de emissão de sua controlada, a MERCANTIL FINANCEIRA S.A.",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1479701&numSequencia=1004407&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-02-04",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Resultado do Direito de Preferência e Rateio de Sobras",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1473209&numSequencia=997915&numVersao=1",
    "fonte": "CVM (IPE)"
   }
  ],
@@ -151,5 +109,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1472157&numSequencia=996863&numVersao=3",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://ri.bancomercantil.com.br",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

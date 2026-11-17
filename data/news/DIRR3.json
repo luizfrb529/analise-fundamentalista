@@ -39,12 +39,6 @@
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNY3BGOHNCZE5iblRIcHZJdzdKcWRTUGdmT1Q0MXk3NThLQ01yX052TmZGNkJUc1BTbzZHOElveXJqMUVjX3BsVjNGcTRkdUFFOVI0RlNiaHZmcFVfbXM1blVVWHBXbTdCNnZmRU5vVk8zVXhzUWpxVGFiMjlvTkRzUVlSZnR2SWJGRnJqcXpOQm9jQ3NVbVlrbWUxeDZFM1hDZ0Y0?oc=5"
   },
   {
-   "titulo": "Direcional (DIRR3) tem lucro de R$ 201 milhões no 3º tri, queda de 12,6%",
-   "veiculo": "InfoMoney",
-   "data": "2026-11-09T08:00:00+00:00",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOGl1eFhlSWc3aG9PcVNPU2NtR1JvX0lRSkEtcXlqdDNCbFNBMDh0TFFob1FWZ2JMUGtwOUlWVjdTaGUyN0p5ZzdPZnBBN3ZleFlCaEhJMHRmLXhybGxFd1hCV3FORzZtenQ2bm80Sk41elNfaVpOdksxV0VWQzlGOVBIcHRuNm80eHN1bkVldzhLbTNC0gGaAUFVX3lxTE9vU1NzRFI5ckZ3Y1ZvTUdjbWdhVk5MTXc0QUFEUG5wMlRZMFFLRXRvOTNMTXlacUVkOG1tOXg4Y2lkVW0yQmRUdjIwRzlXbkI0eWtzajcwUUN6TUxTSFM5VDFCdTZVMWZEMHVzM28tbG9menh1dmtSTmF2dmJpTHhZRHdOek1jU1BlUE1HSmhsd2VaaTNpT1FSNkE?oc=5"
-  },
-  {
    "titulo": "M. Dias Branco (MDIA3), Braskem (BRKM5), Unifique (FIQE3), Direcional (DIRR3) e mais: Veja os destaques das empresas",
    "veiculo": "Valor Investe",
    "data": "2026-10-19T07:00:00+00:00",
@@ -79,81 +73,26 @@
    "veiculo": "Forbes Brasil",
    "data": "2026-08-12T07:00:00+00:00",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOa24yZFFEUENXQVg4cFhmVzNoZFU3QU9hbm1vaGVBeGxFbW0xbjFHamVxa0tqSFdIRWJCREE3VHNzbnk5b0JqRHRNdlREXy1aRzRUTXdKb2UyUzZ5VlhCdVZOMzZxZU5WM0NjTGNqMmJ0UjdHdFJXaHVsRlZrME4yOEI5c1AxbmhPOEc2TzRUQmFGZFVyb0ZUSnpn?oc=5"
-  },
-  {
-   "titulo": "Direcional (DIRR3) aprova recompra de até 32 milhões de ações",
-   "veiculo": "Investidor10",
-   "data": "2026-08-12T07:00:00+00:00",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUWQzS0NjSE9hQVlqdFlUYmp1OVF4V2dCWlVQbjNFMmhJZ0dJRWhGTWVidU9BOF85TjFnTmE4MnRnOWZXR0Z0dWZhV2FIc2d4RFVING05NHR3QXFtNWtvbDYyRGpwNFBIN1d6SHVDc1hxdW9wZzhSQXpPem9oN1VsUkI3UDV3YTdTaXFzUERtanotNE02Vktvb0d4cGc4Z2FhX1dTRlpVMNIBrAFBVV95cUxOTzVMamt2RkJjOGE5QVVWUWl5WTlHdDN0MmJQVTVNUDU4Y09wRFV0TXpUbDhnU21HSHJmOTllXzhiSnJDUmVDMTdZTlFoRTVKYXJJa2ZTNGl6S25GZE9lNTlJVnRYLW9mMWZHbVhLUEV1bVBSS0hVWHA2eXdWRHdyRlJpTzlFNjRIZk5XZ3U1X3VWUjUtc0RKM1FTZWphM0NVTHpCV3RMR0pheEwx?oc=5"
   }
  ],
  "comunicados": [
   {
    "data": "2026-11-10",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Resultados 3T26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586760&numSequencia=1111466&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-10",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação Institucional 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587564&numSequencia=1112270&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-09",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586356&numSequencia=1111062&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-11-06",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1585628&numSequencia=1110334&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-16",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578085&numSequencia=1102791&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-14",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Prévia Operacional 3T26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577238&numSequencia=1101944&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-23",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1570676&numSequencia=1095382&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-08",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Entrada no IBrX 50",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1565858&numSequencia=1090564&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-12",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Resultado 2T26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556167&numSequencia=1080873&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-11",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1555937&numSequencia=1080643&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -166,66 +105,24 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-07-08",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Prévia Operacional 2T26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1543296&numSequencia=1068002&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-23",
-   "categoria": "Calendário de eventos",
-   "titulo": "Calendário de eventos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1537298&numSequencia=1062004&numVersao=2",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-12",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Resultado 1T26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1520304&numSequencia=1045010&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-05-11",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Resultado 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1520127&numSequencia=1044833&numVersao=2",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-04-09",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Prévia Operacional 1T26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1503284&numSequencia=1027990&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-03-10",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Resultado 4T25",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1487938&numSequencia=1012644&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-03-09",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras Anuais Completas",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1487723&numSequencia=1012429&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-03-09",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Resultado 4T25",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1487550&numSequencia=1012256&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-01-15",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Prévia Operacional 4T25",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1467743&numSequencia=992449&numVersao=1",
    "fonte": "CVM (IPE)"
   }
  ],
@@ -236,5 +133,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1537298&numSequencia=1062004&numVersao=2",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://www.direcional.com.br/ri",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

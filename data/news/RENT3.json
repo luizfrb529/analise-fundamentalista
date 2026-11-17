@@ -12,44 +12,16 @@
  "comunicados": [
   {
    "data": "2026-11-06",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Webcast 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1585271&numSequencia=1109977&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-05",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Earnings Release 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584887&numSequencia=1109593&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-27",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "49ª emissão de debêntures da Localiza Rent a Car S.A.",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580872&numSequencia=1105578&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-27",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Moodys - 49ª emissão de debêntures da Localiza",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580856&numSequencia=1105562&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-19",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "49ª emissão de debêntures da Localiza Rent a Car S.A.",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578145&numSequencia=1102851&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-25",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Juros sobre o capital próprio - valor por ação",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571759&numSequencia=1096465&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -60,59 +32,17 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-09-04",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1565059&numSequencia=1089765&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-14",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Interim Financial Statements 2Q26 - Free translation",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557789&numSequencia=1082495&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-07",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Webcast 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553922&numSequencia=1078628&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-06",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Earnings Release 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553657&numSequencia=1078363&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-24",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1547943&numSequencia=1072649&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-26",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Juros sobre o capital próprio valor por ação",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1538961&numSequencia=1063667&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-24",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Comunicado de aquisição facultativa",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1537781&numSequencia=1062487&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-24",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "48ª emissão de debêntures da Localiza Rent a Car S.A. e 21ª emissão de debêntures da Localiza Fleet S.A.",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1537782&numSequencia=1062488&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -123,29 +53,15 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-06-15",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "47ª emissão de debêntures da Localiza Rent a Car S.A.",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1534380&numSequencia=1059086&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-05-21",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Free translation ITR 1T26 Localiza",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1525456&numSequencia=1050162&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-05-11",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "46ª emissão de debêntures da Localiza Rent a Car S.A.",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519454&numSequencia=1044160&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-05-08",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Webcast 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1518477&numSequencia=1043183&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -158,5 +74,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1471688&numSequencia=996394&numVersao=3",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://ri.localiza.com",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (canal de divulgação)"
  }
 }

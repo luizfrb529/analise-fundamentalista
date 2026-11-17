@@ -33,12 +33,6 @@
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPOHpYbkpYSFV2d2VOdHhaeG5TZ19yVjFEMnZwY21mcXRRenlNNU1KQnRwTjZzUWg5TGg2UGR3VC1lWHBFWVZDSWlpdno2Q2xYeFZmSU9GRmdnVXU0dHJGWERXZ3dzSkczczdidVNxWmdKQ0xMc0k2eXdSQ0tBeTMtWE9nNmtkZGVhLXhKeUl0M3dhTmczWDNrckZkZENfa3BrWmRlbmU5bnVHMURLMlpoNEVFczVWMFhmY21LNUZnZ01IeEZkd2Jv?oc=5"
   },
   {
-   "titulo": "CPFL Energia (CPFE3) registra lucro de R$ 1,3 bi no 3T26",
-   "veiculo": "Visno Invest",
-   "data": "2026-11-12T22:23:42+00:00",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOd1VVaEQ0em1GSy1YZUZVeWViWkJIRDQ5UG13ZlVBNlNVMUxGTHJHSGlNb0dZSTN4THZheWdWYlBLbjYyb0F3VjNKVWhkWXJnLUF3eEZaS1hDTHFPVlBWZktpbVlXNVI5ajZNSHpLYk9NbjJvZVRrVXBPUUFJb0k1eGZqNWYtSGM4Z2FTc1dYWVFEWVVU?oc=5"
-  },
-  {
    "titulo": "CPFL Energia lucra R$ 1,29 bilhão no terceiro trimestre, queda de 6,4%",
    "veiculo": "UOL Economia",
    "data": "2026-11-12T22:21:18+00:00",
@@ -69,12 +63,6 @@
    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQcnhBOEFJc1M1Rk1kY1Vta1JMOG9FcnZ4Z3ZWVThkQmRuY0g4TnFhWm43aENERTNWSU1SOF9DeDV4d3FCMUJOOGhRZGlDd0VBSUszVkJyRktzeUQyRWZCR1hPS1FSR1lpZFFlSlJoall6QzNjLS1rM0IwRUNlZVFMa3VPNmZyS2FFVzJxeUs2RUgta1dqU0otQy1yNnlLNkxoc1M1TGpjX2J1aHRHWm9fbnV4NE5rSTJHajlEbXF0N2RJeWQ3aG52N19kQ0tGeWRnVlpxM1VfXzVWN0tveHBRLTJXeDNrMDVpRHFOR0IzNG1Cdw?oc=5"
   },
   {
-   "titulo": "CPFL (CPFE3): Itaú BBA e Bradesco BBI elevam preço-alvo, mas só um recomenda compra",
-   "veiculo": "Money Times",
-   "data": "2026-10-01T07:00:00+00:00",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNY1ZBcTBXQko1WkNXWjB4eW41VGxmRWxzRTVxU2pydEtyZVZOSzJzbnVRLUl2amhwRmFtcWJhOFVZdzI2amlCbjFpS2ZqNkJ0bVB3cml4eURCa29fMGwzRWY4emU4NjRFd0hDV0JwYlEtQ2pSZ19WdHZETWhIckJtcFRNeXN3a1FpMXZ0dTJEMGl3RDA3dXUxanJQUXRzaW05ZlpoN19QbGo2cTRDVnVSb01WSElXQQ?oc=5"
-  },
-  {
    "titulo": "CPFL (CPFE3) define data de pagamento de R$ 700 milhões em dividendos",
    "veiculo": "InfoMoney",
    "data": "2026-09-08T07:00:00+00:00",
@@ -84,128 +72,44 @@
  "comunicados": [
   {
    "data": "2026-11-13",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1589189&numSequencia=1113895&numVersao=2",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-12",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Demonstrações Financeiras em IFRS - Versão em Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588751&numSequencia=1113457&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-12",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588749&numSequencia=1113455&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-11-09",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586133&numSequencia=1110839&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-14",
-   "categoria": "Calendário de eventos",
-   "titulo": "Calendário de eventos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577103&numSequencia=1101809&numVersao=3",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-14",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Alteração da data da Conferência de Resultados do 3T26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577105&numSequencia=1101811&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-02",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1573762&numSequencia=1098468&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-04",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1565092&numSequencia=1089798&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-14",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557597&numSequencia=1082303&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-13",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Demonstrações Financeiras em IFRS - Versão em Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557379&numSequencia=1082085&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-13",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557383&numSequencia=1082089&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-08-05",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552324&numSequencia=1077030&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-09",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Documento de Atribuições da Diretoria Executiva",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1532325&numSequencia=1057031&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-01",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1529053&numSequencia=1053759&numVersao=2",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-05-15",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1522868&numSequencia=1047574&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-05-14",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Demonstrações Financeiras em IFRS - Versão em Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1522505&numSequencia=1047211&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-14",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1522502&numSequencia=1047208&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-11",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519522&numSequencia=1044228&numVersao=2",
    "fonte": "CVM (IPE)"
   },
   {
@@ -213,13 +117,6 @@
    "categoria": "Fato relevante",
    "titulo": "Renovação das Concessões das distribuidoras",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519069&numSequencia=1043775&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-29",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1510817&numSequencia=1035523&numVersao=1",
    "fonte": "CVM (IPE)"
   }
  ],
@@ -230,5 +127,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577103&numSequencia=1101809&numVersao=3",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://www.cpfl.com.br/ri",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (canal de divulgação)"
  }
 }

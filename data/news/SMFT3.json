@@ -27,18 +27,6 @@
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTmN5VGVQN1FEbEwySUdJcHRYaF9kVUFzOWpsUWt0a2MyTDE2SGcwUVc5Vm9vZHlCUkJUMUdrU0dadUVTWVpjQnBvRjUyMFUxTUNUZlgwYkRUaTdwSDR5cUZtWTRzaEE3cTVmS1FoMW1OeGhISkhyQ2VZTHVqVWRjYnNHb3RXOTE5ZjdV?oc=5"
   },
   {
-   "titulo": "Moody’s Local Brasil atribui rating ‘AAA.br’ à Smart Fit; perspectiva estável",
-   "veiculo": "Finance News",
-   "data": "2026-11-17T03:24:35+00:00",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUFdEcXhnR1F3WkxFMjBVbDUtWVN2MXJKX1JSc3JVVU9RWFdGVnVrTTBvSV9FanpxQTBqRkU0blZWT2pnVHhCZzVSSFJUVFUxSVk3eVVTUW11NmgybjRNQ191TDYwbnliZ2pDV254OGc0M1hPbmd2VHhrenJfZld0Q0xXQXQ1LTI5NC1WY2c3UTkyejlEUnFkdWNxQ0VkTS1BcWtxMXVnY25DLS02eWc?oc=5"
-  },
-  {
-   "titulo": "Smart Fit (SMFT3) recebe rating AAA.br da Moody's Local, nota máxima",
-   "veiculo": "Visno Invest",
-   "data": "2026-11-17T00:45:22+00:00",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPV1ZMR3JsVUJGQ3J6aG9BZ3ZfUFdmMUJtdmU0amVRVDhQMFFXZkZ0Yk1IQzJaVm1EdjV6NGdqdGRCNDdCUnhkSjgweTcxQVkyQ0lWX3NRN0VfZ0JZekZMZF9taWw5SmIxYjdVWW9KdWMzTlJwb3J6dnVtdEhNZ2lZaHlncWF0bDBEa1JXbmtuS3dYT1g5RWdWX3JOVjdaWS1EdTdPVTV3?oc=5"
-  },
-  {
    "titulo": "Treino pesado dá resultado? Smart Fit (SMFT3) anima analistas e ações disparam",
    "veiculo": "Valor Investe",
    "data": "2026-11-05T18:28:39+00:00",
@@ -60,114 +48,30 @@
  "comunicados": [
   {
    "data": "2026-11-05",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação Call - 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584540&numSequencia=1109246&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-04",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Demonstrações Financeiras 3T26 em inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584156&numSequencia=1108862&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-04",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release do 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584149&numSequencia=1108855&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-10-05",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Investimento Minoritário - Buddha Spa",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574086&numSequencia=1098792&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-14",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Apresentação Institucional de Setembro/2026",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1568139&numSequencia=1092845&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-31",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1563266&numSequencia=1087972&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-14",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1558308&numSequencia=1083014&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-13",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Atualização do Cronograma da Oferta Pública de Distribuição da 15ª Emissão de Debêntures",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557477&numSequencia=1082183&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-06",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação Call - 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553104&numSequencia=1077810&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-05",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Demonstrações Financeiras 2T26 em inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552806&numSequencia=1077512&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-05",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release do 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552794&numSequencia=1077500&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-04",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Conclusão da aquisição do controle da Evolve",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1551493&numSequencia=1076199&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-27",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Fitch atribui rating AA+(BRA) à proposta da 15ª emissão de debentures",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1548096&numSequencia=1072802&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-02",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1541407&numSequencia=1066113&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-25",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1538609&numSequencia=1063315&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-28",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Dividendos/Juros sobre Capital Próprio",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1528175&numSequencia=1052881&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -178,24 +82,10 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-05-12",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Apresentação Institucional de Maio/2026",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1520946&numSequencia=1045652&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-05-07",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação Call - 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1517507&numSequencia=1042213&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-06",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Demonstrações Financeiras 1T26 em Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1517139&numSequencia=1041845&numVersao=1",
    "fonte": "CVM (IPE)"
   }
  ],
@@ -206,5 +96,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1455189&numSequencia=979901&numVersao=1",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://www.smartfit.com.br",
+  "tipo": "empresa",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

@@ -59,13 +59,6 @@
    "lingua": "en"
   },
   {
-   "titulo": "Qualcomm Incorporated $QCOM Stock Position Lifted by Bessemer Group Inc.",
-   "veiculo": "MarketBeat",
-   "data": "2026-11-17T08:34:49+00:00",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQm1ScEVrVnlIQlluQk4zWnpqWFNYN2xhSUNMcFZUZlFEcTNlNGxNa09tWFR3VDFDVkI3YVFOSDE0NHNkMzVmMUc3cjhhcWVjeHBQN09kZ3VIMTV2VFotN2tncG5xcFg0LU93UWJTcXdHN3FwU2N0dktLQ3MxZnJfS0Nrb1VBSlV1SUJJS3lkcVlSaEJUOWZWVV91TFgtRWZoWVB5dXhROVQ0M3FISXFXRHhCcmwwTktHVmFHVm1tLXdySDh0OUJtb096NA?oc=5",
-   "lingua": "en"
-  },
-  {
    "titulo": "3,052 Qualcomm Incorporated $QCOM Shares Bought by BCS Private Wealth Management Inc.",
    "veiculo": "MarketBeat",
    "data": "2026-11-17T08:21:06+00:00",
@@ -75,38 +68,10 @@
  ],
  "comunicados": [
   {
-   "data": "2026-11-13",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "FORM 8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/804328/000110465926127163/tm2629667d1_8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2026-11-04",
    "categoria": "Relatório anual (10-K)",
    "titulo": "10-K",
    "link": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000128/qcom-20260927.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-11-04",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom-20261104.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-09-08",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "FORM 8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/804328/000110465926105718/tm2623289d1_8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-07-31",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "FORM 8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/804328/000110465926089234/tm2621612d2_8k.htm",
    "fonte": "SEC EDGAR"
   },
   {
@@ -117,38 +82,10 @@
    "fonte": "SEC EDGAR"
   },
   {
-   "data": "2026-07-29",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000085/qcom-20260729.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-06-24",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "FORM 8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/804328/000110465926077071/tm2618522d1_8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2026-04-29",
    "categoria": "Resultado trimestral (10-Q)",
    "titulo": "10-Q",
    "link": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000061/qcom-20260329.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-04-29",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000060/qcom-20260429.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-03-19",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000041/qcom-20260317.htm",
    "fonte": "SEC EDGAR"
   },
   {
@@ -159,59 +96,10 @@
    "fonte": "SEC EDGAR"
   },
   {
-   "data": "2026-02-04",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000016/qcom-20260204.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-01-16",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000008/qcom-20260113.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2025-12-16",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000098/qcom-20251210.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2025-12-10",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000096/qcom-20251209.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2025-11-05",
    "categoria": "Relatório anual (10-K)",
    "titulo": "10-K",
    "link": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000085/qcom-20250928.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2025-11-05",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000084/qcom-20251105.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2025-09-02",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000054/qcom-20250902.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2025-08-25",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000049/qcom-20250825.htm",
    "fonte": "SEC EDGAR"
   }
  ],

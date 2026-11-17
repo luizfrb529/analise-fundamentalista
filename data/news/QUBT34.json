@@ -64,13 +64,6 @@
    "lingua": "en"
   },
   {
-   "titulo": "Why Are Quantum Computing Stocks Falling Today? IONQ, QBTS, RGTI, QUBT, QNT Slide in Pre-market",
-   "veiculo": "TipRanks",
-   "data": "2026-11-12T13:51:05+00:00",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNY21MTkVnRjlvYWUxQ0h3S0hTUTAwc3lOQVBxTERYeXFrb0VkanpCcXhlLUR6UUlrUWNGaHF3R255UmpvNXFvVm94WURCVjVWUFdGZ2FkTThKUlhyUElvQ3llZ1FPbEdVMDVHYXNqaDNQZExha1poWTViaXhiQnVSZmwwQnN6S0YyeHd1a0RncUJZdmFGWUNzd3JMSkMyRldBaXBnaFdmdFBiRGlhbE1RNDk4OWhySEFzalFaLQ?oc=5",
-   "lingua": "en"
-  },
-  {
    "titulo": "Quantum Computing News: Rigetti, D-Wave, QUBT Earnings and Big Government Funding Deals",
    "veiculo": "TipRanks",
    "data": "2026-11-12T11:49:34+00:00",
@@ -102,30 +95,9 @@
  "comunicados": [
   {
    "data": "2026-11-09",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1758009/000162828026072163/qubt-20261109.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-11-09",
    "categoria": "Resultado trimestral (10-Q)",
    "titulo": "10-Q",
    "link": "https://www.sec.gov/Archives/edgar/data/1758009/000162828026072119/qubt-20260930.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-10-02",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026106409/ea0307594-8k_quantum.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-08-10",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026087267/ea0301433-8k_quantum.htm",
    "fonte": "SEC EDGAR"
   },
   {
@@ -136,34 +108,6 @@
    "fonte": "SEC EDGAR"
   },
   {
-   "data": "2026-07-22",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026080443/ea0298923-8k_quantum.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-06-30",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026073258/ea0296335-8k_quantum.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-06-23",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026070872/ea0295466-8k_quantum.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-05-18",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026058515/ea0291239-8k_quantum.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2026-05-11",
    "categoria": "Resultado trimestral (10-Q)",
    "titulo": "QUARTERLY REPORT",
@@ -171,66 +115,10 @@
    "fonte": "SEC EDGAR"
   },
   {
-   "data": "2026-05-11",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026054470/ea0289878-8k_quantum.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-03-05",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026023896/ea0280138-8k_quantum.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2026-03-02",
    "categoria": "Relatório anual (10-K)",
    "titulo": "ANNUAL REPORT",
    "link": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026022417/ea0278445-10k_quantum.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-03-02",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026022316/ea0279219-8k_quantum.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-02-03",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026011452/ea0275383-8k_quantum.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-01-12",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026003174/ea0272529-8k_quantum.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2025-12-17",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1758009/000121390025122478/ea0270014-8k_quantum.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2025-12-15",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1758009/000121390025121746/ea0269686-8k_quantum.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2025-11-14",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "CURRENT REPORT",
-   "link": "https://www.sec.gov/Archives/edgar/data/1758009/000121390025110846/ea0265781-8k_quantum.htm",
    "fonte": "SEC EDGAR"
   },
   {

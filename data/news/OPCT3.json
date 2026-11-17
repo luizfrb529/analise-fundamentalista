@@ -9,12 +9,6 @@
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTWRfRklWdFo2eGNIeHdBQkplS3VJeERRa0dhRzJfaTZBY2tGZ252cU5ielBrYnRVWUJyTVBDMU9FN28yYVJfejBWTHFDV2tuMTAycmhyUmJFSjRqMHF0Ymx4NjhDclgwRnlyQlE4Yk5KaTJnMDVDdm0yRWFOM3B3d1l6blFDeXFXMERFWVRkV1ZzdzNOQ01fcGhDMlc2OV94S3dkeHNaVnRJUFkwaVBZLXdteXF5MGZkYzB1ZUdGYw?oc=5"
   },
   {
-   "titulo": "OceanPact lucra R$ 32,0 milhões no terceiro trimestre de 2026, queda de 45%",
-   "veiculo": "UOL Economia",
-   "data": "2026-11-10T11:13:30+00:00",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPOHIwVjVlMHVJdmdKS2FVemtPMGk2bFNxZ2lEbjBaUWpYbEF0S1F5UTBMSjJFc01oSWlFQ2dsN2hidjJfdTV1TGxORjAxNzRFbWJGYlI2OE9Sb19zWVBFbmtvaFdGMUI4V0p6OWF0Y01LS0loSnIwZExaRUZZUHBwSUNiYnFhZVptVEhPTTdfWWtieGV2bTJGNmFUTmU4OGZFZmFmdHhJSUVYQXpZM05mSk1JQWFiR3FOMmg2WUhtcS1JeGpWcklKYjl4Zw?oc=5"
-  },
-  {
    "titulo": "OceanPact vende navios por 86 milhões de dólares e mira dividendos",
    "veiculo": "VEJA",
    "data": "2026-11-05T08:00:00+00:00",
@@ -31,12 +25,6 @@
    "veiculo": "Seu Dinheiro",
    "data": "2026-10-27T07:00:00+00:00",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQcEVRNjBoTVRVd0MwWUhhcVBEbWdzTU16Z0ZuZzFyMEMydUZtOFhELTlRR3F2NU1xU2pVVWZOVEVCRFVBSWNsMC1IOG9YRXVPd1JWTUR0QTJNQTZMT2Nudk5sUDJnQk9fMVVOVEYyR1RXTUgyTlVTVDRPRGx3SVpkQTR4dkJPMWhYUWstTEZoTUhEYi1PZnQ0U2hvNGZJcl9waW1iajB2eVc3aGdPNFJfNHhGNHQ0NXFrekdOS0lDOGlHYVhIeUdSb3RKNA?oc=5"
-  },
-  {
-   "titulo": "OceanPact (OPCT3): Citi inicia cobertura com recomendação de compra e calcula potencial de 48% para a ação",
-   "veiculo": "Money Times",
-   "data": "2026-10-27T07:00:00+00:00",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNanBOMGFoVXZCS0NFazJWakFKcl90WS0tcnE2ZFRUMXBCajdrdWlBSC1oSXJ6SlN5RkV1aTNlaDU2OFVaaF9mSVhPd1k3SXZpT21ZTkNOX0p1dS02SFYwclh2cmZYcXJ0WGZEZDhld2hUM1YxeHdyOXNFdFVSV2dDWndHaDdRMG41a2JiZVRtdzRPM19QblJ1S1hWeG5LZ0h6RG9QeU9XeDRTLXFGbVR3SE5Qa1Z4RjQ1WW1zeF9zTjExNUU3X2NVQ08zd2xhMWE5Q2I2WA?oc=5"
   },
   {
    "titulo": "Oceanpact Servicos Maritimos S.A (OPCT3) Previsões, Preço-Alvo e Projeções de Analistas",
@@ -78,21 +66,21 @@
  "comunicados": [
   {
    "data": "2026-11-10",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de resultados do 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587021&numSequencia=1111727&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-09",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de webcast de resultados do 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586700&numSequencia=1111406&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-09",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de resultados do 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586690&numSequencia=1111396&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -105,45 +93,10 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-11-03",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Assinatura de MOAs para a venda de 2 PSVs",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1582939&numSequencia=1107645&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-21",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Moody's Local Brasil eleva ratings da OceanPact",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1570269&numSequencia=1094975&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-21",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Moody's Local Brasil eleva ratings da OceanPact",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1570268&numSequencia=1094974&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-17",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569258&numSequencia=1093964&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-09-16",
    "categoria": "Fato relevante",
    "titulo": "Closing da combinação de negócios com a CBO",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1568838&numSequencia=1093544&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-10",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Liquidação empréstimo de ações da Companhia no caso de opção pelo recebimento de ações PN da Holding UP",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1566540&numSequencia=1091246&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -155,65 +108,23 @@
   },
   {
    "data": "2026-09-01",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Cronograma e procedimentos a serem adotados para a implementação da Operação de combinação de negócios entre a Companhia e a CBO Holding",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1563377&numSequencia=1088083&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-01",
    "categoria": "Fato relevante",
    "titulo": "Aprovação definitiva da combinação de negócios entre a Companhia e a CBO Holding pelo CADE||Definição da data de negociação ex-direitos e início das negociações na B3 das novas ações entregues aos acionistas da CBO||Emissão de novas ações da Companhia a serem entregues aos acionistas da CBO||Implemento de todas as condições suspensivas à implementação da Operação",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1563378&numSequencia=1088084&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-08-31",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Fechamento aquisição Dock Brasil",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1563271&numSequencia=1087977&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-13",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Processo Coral",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556835&numSequencia=1081541&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-06",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de webcast de resultados do 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553701&numSequencia=1078407&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-06",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de resultados do 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553692&numSequencia=1078398&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-28",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Assinatura de contrato de aquisição da Dock Brasil por subsidiária integral da OceanPact",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1548964&numSequencia=1073670&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-27",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aprovação do CADE de combinação de negócios OceanPact e CBO Holdings",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1548312&numSequencia=1073018&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-09",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1532415&numSequencia=1057121&numVersao=1",
    "fonte": "CVM (IPE)"
   }
  ],
@@ -224,5 +135,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1524858&numSequencia=1049564&numVersao=2",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://oceanpact.com",
+  "tipo": "empresa",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

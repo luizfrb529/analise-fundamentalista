@@ -39,12 +39,6 @@
    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcV82dW5yTXJ6MHc5QzBCS3lsWGlZajhxa19fbG9mazZaOG16YU56VTdwbk8wLXIxVUNFQjRGeEZWeUIwUEZNRTh5akRHUkdOV1JyYjNNd1RwZGc5TkJjVWZnbHBxbzBaQjVGcGNwUkkzc1dLbjVOYzQydXNMRHJ4MnhFOGNsXzI0aHIzZzBMUdIBlAFBVV95cUxPWE1OUXROYWthdG5VYWhqSEJabEdVZm1pVGFwdThTdVoteGI4YlU0VldqOVhIaHRxek9yWnJIdndjV2JtbUdRb0V3Wkd0VWMycG9jTE5aQ2F5aTN4TURtWURUaUtKWGVRdV9ldW53bXB5YTliMWZHandXQUtTLWo3X3ozUktLdFREVnIyNEJCaDV5T3hl?oc=5"
   },
   {
-   "titulo": "Cyrela (CYRE3) lucra R$ 481 milhões no terceiro trimestre, 21% menor que um ano antes",
-   "veiculo": "Money Times",
-   "data": "2026-11-12T21:42:00+00:00",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQ01vQ3dhdlpmczhyQXJOa052LS1xSUNnT1V0TWx4dVRxS3ZUTDBJRjJ0ZlljaDZBeng3ZXc0SWhYbnpwOV9VbUNad2pmanBJamVYa21BU1ozdXo1WW9DZEYzRW8ycUM1MklOSHd3MnpLMHNOQnB0QldVeGlMMWdhb2dqSWtOQzhCSEZQTVNMbGdjZ25kc3hGOVV0cEhMRTROT1lQb1BlRlJUWm81T0pz?oc=5"
-  },
-  {
    "titulo": "CYRE3, CPFE3 e ITUB4: após reação, analista aponta até onde podem subir",
    "veiculo": "InfoMoney",
    "data": "2026-11-05T08:00:00+00:00",
@@ -90,65 +84,9 @@
  "comunicados": [
   {
    "data": "2026-11-12",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Call de Resultados 3Q26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588422&numSequencia=1113128&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-12",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Release 3Q26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588400&numSequencia=1113106&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-12",
    "categoria": "Fato relevante",
    "titulo": "Aprovação do Novo Programa de Recompra de Ações||Cancelamento de Ações em Tesouraria",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588408&numSequencia=1113114&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-28",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1581244&numSequencia=1105950&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-21",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579196&numSequencia=1103902&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-13",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Previa 3Q26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1576898&numSequencia=1101604&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-06",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574865&numSequencia=1099571&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-18",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569691&numSequencia=1094397&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-09",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1566022&numSequencia=1090728&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -159,73 +97,10 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-08-21",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1560101&numSequencia=1084807&numVersao=2",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-21",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Versão em Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1560336&numSequencia=1085042&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-13",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Call de Resultados 2Q26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557076&numSequencia=1081782&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-13",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Release 2Q26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557074&numSequencia=1081780&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-12",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556727&numSequencia=1081433&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-05",
    "categoria": "Fato relevante",
    "titulo": "Celebração MoU alienação de ativos",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552788&numSequencia=1077494&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-03",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1550899&numSequencia=1075605&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-13",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Prévia Operacional 2T26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1544378&numSequencia=1069084&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-23",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1537621&numSequencia=1062327&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-11",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533739&numSequencia=1058445&numVersao=1",
    "fonte": "CVM (IPE)"
   }
  ],
@@ -236,5 +111,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1526586&numSequencia=1051292&numVersao=2",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://www.cyrela.com.br",
+  "tipo": "empresa",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

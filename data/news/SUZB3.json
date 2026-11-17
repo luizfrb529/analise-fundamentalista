@@ -4,43 +4,15 @@
  "noticias": [],
  "comunicados": [
   {
-   "data": "2026-11-10",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Apresentações a analistas/agentes do mercado (Port)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586916&numSequencia=1111622&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-06",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Apresentações a analistas/agentes do mercado",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1585329&numSequencia=1110035&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-11-05",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "ITR 3T26 - Versão em Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1585076&numSequencia=1109782&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-05",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "ITR - 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584914&numSequencia=1109620&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-05",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Release de Resultados 3T26 - versão inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584901&numSequencia=1109607&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-05",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584906&numSequencia=1109612&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -53,80 +25,17 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-10-21",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Abertura de Bens de Consumo",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579209&numSequencia=1103915&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-15",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577620&numSequencia=1102326&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-31",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Acordo com o Grupo Imetame",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1563182&numSequencia=1087888&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-20",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Eficácia do Acordo de Acionistas",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1559914&numSequencia=1084620&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-13",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556836&numSequencia=1081542&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-12",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "ITR 2T26 - Versão inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556619&numSequencia=1081325&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-12",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "ITR 2T26 - Versão Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556620&numSequencia=1081326&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-12",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556624&numSequencia=1081330&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-12",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Release de Resultados 2T26 - Versão em inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556627&numSequencia=1081333&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-04",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Alterações na Vice Presidência Executiva",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1551541&numSequencia=1076247&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-06",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Esclarecimento sobre questionamento da CVM/B3",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542230&numSequencia=1066936&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -151,5 +60,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1481220&numSequencia=1005926&numVersao=2",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://www.suzano.com.br/ri",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

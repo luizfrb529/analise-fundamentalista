@@ -15,18 +15,6 @@
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMVkzMFpVQ25GRC13N1RFNXVTNmJpUDRhOV9pd3FwUjZic2VscGppZWlSdHVRcDVMRU4zTngyOENueklRelF0Q3BzYjZOTElGdk8xcGFubG9HTnFsdnI1YjhDM1pMRHA4MUlaTXp6ZVpIS1I5bGMtcDdGcGptNUppNTY5RTFSMWNBZWt0aUFqbHAxZTlRZm8tbm4zWGkxTHlNTmI4LUdxbmpWZFJ4eURRSjJraXVhMFhpME9lZnZMY3QwekVzVkpmMzVB0gHYAUFVX3lxTE1Td3RWa3MtN0Y4SExRem9qNzRPNlNrb3p6VnNmYW1VY2xoaUhVRkFFRGdWNGpIZDRHZFRqN1RJT1FGMTJJenhqbjZ2OXh5WE1FaTJKLWs1cWFuY2VoUE5ERENyc3lHa0NaTGhHQ2M5N2ZiODI5TWs0S2FQTVZhRFN1b3NpOG5XYVkzYXgyWXdjY05Fb0FYMjN2Z1U1eDhVU2ZPMFVZUzlaSDlJX3B6TTBWZ3VkZ3VqUXUwdTYySFNHY2VwRFZTLTNzZmRfZ3RhbWpya0RKRldMbg?oc=5"
   },
   {
-   "titulo": "Cogna (COGN3) reverte lucro e tem prejuízo líquido de R$ 37,3 milhões no 3T26",
-   "veiculo": "InfoMoney",
-   "data": "2026-11-11T22:15:18+00:00",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbDJmTi1USzZtT3pnaHZ6NDhzSlJkZGs2aW4yX2p5VW5McjhDR2F3T3hwT0NfdFltcUNOVWZYZ2ZwSnBDQWFKNVFXSFZYWE1ZMFJUdWFIbHN5YjJzSnZNYmJqQnN2LVFsSHIzaTIwZTcydEo3NEl3aG5nR3o3Y3kwM3lBU214cTk0SHpaZjVB0gGTAUFVX3lxTE9oUTFrLVl3c2FxbGpacTJsTzg1dW9nSmdLSGtYS3V4R0xhZ09zZUYtS1dfWlFVQTF4N280NFVDMEJLdnpYM1E3ZjJGZjQ3c0s3ZmVmTDVCOTVtT0NLMnB1Z2pTRmxNeVZ4eTB0NEF1dDlBMzc4OXN0X1hCbWVrUi1YRTNmM3FMejZDOWVlMWdVZVZSMA?oc=5"
-  },
-  {
-   "titulo": "Cogna reverte lucro e tem prejuízo de R$ 37,3 milhões no terceiro trimestre",
-   "veiculo": "UOL Economia",
-   "data": "2026-11-11T21:57:24+00:00",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQYzVXVDluMEZZRUs5azU2bXlXdUZFSU10MGVrVGdJTnZwQmVpR2Zra3lLMjZkNGZtRDJRc1VEaGxndjNHVFduOXRPRDJOZ19GNmZPeTJXUF8yb0liLVBBb2p5S1d2WFU2Wkd0REVxeU0tRG9XVDJRbGpnZTNWb1BQRUJxQzhOTHJSN080Xy1ob0ZWZlpiRHFyZVZudHlNeEJ0OV9TamVtVzk1Um9YTTA2QkV6NjZnUk9lemxkNXRVNjZ0WXpRWTNWM0s0WHpCZw?oc=5"
-  },
-  {
    "titulo": "Cogna tomba 12% e lidera perdas do Ibovespa hoje; veja maiores altas e baixas",
    "veiculo": "Estadão",
    "data": "2026-11-03T14:43:34+00:00",
@@ -84,14 +72,14 @@
  "comunicados": [
   {
    "data": "2026-11-12",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588185&numSequencia=1112891&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-11",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Divulgação de Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587916&numSequencia=1112622&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -104,38 +92,17 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-11-04",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583959&numSequencia=1108665&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-14",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577185&numSequencia=1101891&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-13",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556855&numSequencia=1081561&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-12",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Divulgação de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556591&numSequencia=1081297&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-03",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Incorporação Vasta Platform Limited",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1551319&numSequencia=1076025&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -143,13 +110,6 @@
    "categoria": "Fato relevante",
    "titulo": "Eleição Diretor Estatutário",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1546380&numSequencia=1071086&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-26",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição Educbank",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1539064&numSequencia=1063770&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -161,65 +121,23 @@
   },
   {
    "data": "2026-05-22",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras em Padrões Internacionais",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1526071&numSequencia=1050777&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-05-11",
-   "categoria": "Calendário de eventos",
-   "titulo": "Calendário de eventos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519573&numSequencia=1044279&numVersao=2",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-05-07",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1517503&numSequencia=1042209&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-05-06",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Divulgação de Resultados 1T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516996&numSequencia=1041702&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Cogna Educação S.A - 15ª Emissão",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1513507&numSequencia=1038213&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Cogna Educação S.A - 14ª Emissão",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1513510&numSequencia=1038216&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Cogna Educação S.A - 13ª Emissão",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1513512&numSequencia=1038218&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Cogna Educação S.A - 12ª Emissão",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1513514&numSequencia=1038220&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-04-30",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Cogna Educação S.A - 10ª Emissão",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1513518&numSequencia=1038224&numVersao=1",
    "fonte": "CVM (IPE)"
   }
  ],
@@ -230,5 +148,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519573&numSequencia=1044279&numVersao=2",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "http://ri.cogna.com.br",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

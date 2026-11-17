@@ -90,37 +90,23 @@
  "comunicados": [
   {
    "data": "2026-11-05",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação Webcast de Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584461&numSequencia=1109167&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-04",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras 3T2026",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584250&numSequencia=1108956&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-04",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Earnings Release 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584233&numSequencia=1108939&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-27",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Agenda de Divulgação de Resultados 3T26",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580451&numSequencia=1105157&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-09",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Aumento de capital por subscrição privada deliberado em RCA",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1576277&numSequencia=1100983&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
@@ -131,13 +117,6 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-09-14",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Aumento de capital por subscrição privada deliberado em RCA",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1567787&numSequencia=1092493&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-09-04",
    "categoria": "Fato relevante",
    "titulo": "Méliuz informa sobre proposta de redução de capital social para constituição de reserva de capital",
@@ -145,50 +124,22 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-09-02",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1564185&numSequencia=1088891&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-13",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557206&numSequencia=1081912&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-12",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556503&numSequencia=1081209&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-08-06",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação Webcast de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553149&numSequencia=1077855&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-05",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Aumento de capital por subscrição privada deliberado em RCA",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552912&numSequencia=1077618&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-05",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras 2T2026",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552895&numSequencia=1077601&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-05",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Resultados do 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552884&numSequencia=1077590&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -199,34 +150,6 @@
    "titulo": "Méliuz anuncia novo programa de recompra de ações e evolução da estratégia de tesouraria em Bitcoin",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552887&numSequencia=1077593&numVersao=1",
    "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-22",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1546770&numSequencia=1071476&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-20",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Méliuz conclui programa de recompra de ações",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1546385&numSequencia=1071091&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-17",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1545988&numSequencia=1070694&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-14",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Aumento de capital por subscrição privada deliberado em RCA",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1544772&numSequencia=1069478&numVersao=1",
-   "fonte": "CVM (IPE)"
   }
  ],
  "proximo_resultado": null,
@@ -236,5 +159,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1508133&numSequencia=1032839&numVersao=3",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://www.meliuz.com.br",
+  "tipo": "empresa",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

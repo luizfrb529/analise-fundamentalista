@@ -11,13 +11,6 @@
  ],
  "comunicados": [
   {
-   "data": "2026-11-12",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Leilão das frações de ações resultantes da incorporação da EMAE",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588827&numSequencia=1113533&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-11-06",
    "categoria": "Fato relevante",
    "titulo": "Aprovação do pagamento de JCP",
@@ -26,21 +19,14 @@
   },
   {
    "data": "2026-11-05",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584865&numSequencia=1109571&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-05",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "3ITR26 Versão em inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584835&numSequencia=1109541&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-11-05",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release 3T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584864&numSequencia=1109570&numVersao=2",
    "fonte": "CVM (IPE)"
@@ -82,21 +68,14 @@
   },
   {
    "data": "2026-08-12",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556530&numSequencia=1081236&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-08-12",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "ITR 06/2026 (Em inglês)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556585&numSequencia=1081291&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-08-12",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release 2T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556532&numSequencia=1081238&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -109,45 +88,10 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-07-29",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Adiamento da AGE EMAE",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1549318&numSequencia=1074024&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-27",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Comunicado em Conjunto com EMAE sobre a AGE de 30/07/2026",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1548065&numSequencia=1072771&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-17",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Laudo com base no valor do patrimônio líquido a preços de mercado ou outro critério aceito pela CVM",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1546042&numSequencia=1070748&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-06",
-   "categoria": "Calendário de eventos",
-   "titulo": "Calendário de eventos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542085&numSequencia=1066791&numVersao=4",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-06-29",
    "categoria": "Fato relevante",
    "titulo": "Protocolo e Justificação de Incorporação das Ações da EMAE",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1539689&numSequencia=1064395&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-06-25",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1538467&numSequencia=1063173&numVersao=1",
    "fonte": "CVM (IPE)"
   }
  ],
@@ -158,5 +102,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542085&numSequencia=1066791&numVersao=4",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://ri.sabesp.com.br",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

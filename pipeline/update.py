@@ -343,7 +343,7 @@ def acoes_cvm(tabs_por_ano: dict, cnpj: str, ref_total: float):
     return dict(sorted(out.items()))
 
 
-FUNDO_RE = re.compile(r"fundo|fia|fim|fic|fip|investimento|previd|pension|asset|capital|gest[aã]o|blackrock|vanguard|norges|gic", re.I)
+FUNDO_RE = re.compile(r"\bfundo|\bfia\b|\bfim\b|\bfic\b|\bfip\b|investimento|previd|pension|asset|capital|gest[aã]o|blackrock|vanguard|norges|gic\b", re.I)
 
 
 def _num(v):
@@ -461,7 +461,9 @@ def comunicados_cvm(ipe: list[pd.DataFrame], cd: str) -> tuple[list, dict]:
             if cat == "calendario de eventos corporativos":
                 if not cal or item["data"] > cal["data"]:
                     cal = item
-            linhas.append(item)
+            ri = I.comunicado_ri(item["categoria"], item["titulo"])
+            if ri:
+                linhas.append({**item, "categoria": ri})
     linhas.sort(key=lambda x: x["data"] or "", reverse=True)
     vistos, out = set(), []
     for l in linhas:
@@ -478,12 +480,16 @@ def comunicados_sec(cik: int) -> list:
     except Exception as e:
         return []
     r = s["filings"]["recent"]
-    nomes = {"8-K": "Comunicado (8-K)", "10-Q": "Resultado trimestral (10-Q)", "10-K": "Relatório anual (10-K)",
-             "6-K": "Comunicado (6-K)", "20-F": "Relatório anual (20-F)"}
+    # só o que é resultado: 10-Q, 10-K, 20-F e 8-K com item 2.02 (divulgação de resultados); 6-K genérico fica de fora
+    nomes = {"8-K": "Resultado (8-K)", "10-Q": "Resultado trimestral (10-Q)", "10-K": "Relatório anual (10-K)", "20-F": "Relatório anual (20-F)"}
+    titulos = {"8-K": "Divulgação de resultados", "10-Q": "Demonstrações trimestrais", "10-K": "Relatório anual", "20-F": "Relatório anual"}
     out = []
-    for f, d, acc, doc, desc in zip(r["form"], r["filingDate"], r["accessionNumber"], r["primaryDocument"], r.get("primaryDocDescription", [""] * len(r["form"]))):
+    n = len(r["form"])
+    for f, d, acc, doc, it in zip(r["form"], r["filingDate"], r["accessionNumber"], r["primaryDocument"], r.get("items", [""] * n)):
+        if f == "8-K" and "2.02" not in (it or ""):
+            continue
         if f in nomes:
-            out.append({"data": d, "categoria": nomes[f], "titulo": (desc or f).strip() or f,
+            out.append({"data": d, "categoria": nomes[f], "titulo": titulos[f],
                         "link": f"https://www.sec.gov/Archives/edgar/data/{cik}/{acc.replace('-', '')}/{doc}", "fonte": "SEC EDGAR"})
         if len(out) >= 20:
             break
@@ -533,6 +539,51 @@ def agenda_yfinance(simbolo: str, trimestral: list) -> dict:
     return out
 
 
+def filtrar_ri(lista: list) -> list:
+    """Comunicados já guardados, reduzidos ao que é de relações com investidores (fato relevante e resultados)."""
+    validos = {"Fato relevante", "Resultado", "Apresentação de resultados", "Resultado (8-K)", "Resultado trimestral (10-Q)",
+               "Relatório anual (10-K)", "Relatório anual (20-F)"}
+    out = []
+    for x in lista or []:
+        c = x.get("categoria") or ""
+        if c.endswith(")"):                       # SEC
+            if c in validos:
+                out.append(x)
+            continue
+        ri = I.comunicado_ri(c, x.get("titulo"))
+        if ri:
+            out.append({**x, "categoria": ri})
+    return out
+
+
+def fca_site_ri(fca: dict, cnpj: str):
+    """Endereço de relações com investidores declarado pela companhia à CVM (Formulário Cadastral):
+    o canal de divulgação que aponta para o portal de RI ou, sem ele, a página da empresa."""
+    def url(txt):
+        m = re.search(r"(https?://)?[a-z0-9-]+(\.[a-z0-9-]+)*\.(com|br|net|org|io|ai|co|global|group|energy|com\.br)(?![a-z])(/[^\s,;)]*)?", str(txt or ""), re.I)
+        if not m:
+            return None
+        u = m.group(0).rstrip("./")
+        return u if u.lower().startswith("http") else "https://" + u
+    canais = fca.get("fca_cia_aberta_canal_divulgacao")
+    if canais is not None and not canais.empty:
+        x = canais[canais["CNPJ_Companhia"] == cnpj]
+        if "Data_Referencia" in x and len(x):
+            x = x[x["Data_Referencia"] == x["Data_Referencia"].max()]
+        for c in x["Canal_Divulgacao"].fillna(""):
+            u = url(c)
+            if u and re.search(r"investidor|\bri\b|/ri|ri\.|/ir\b|ir\.", c, re.I) and not re.search(r"valor\.globo|valor\.com|cvm\.gov|b3\.com|rad\.cvm|estadao|jornal", u, re.I):
+                return {"url": u, "tipo": "ri", "fonte": "CVM, Formulário Cadastral (canal de divulgação)"}
+    geral = fca.get("fca_cia_aberta_geral")
+    if geral is not None and not geral.empty and "Pagina_Web" in geral:
+        x = geral[geral["CNPJ_Companhia"] == cnpj]["Pagina_Web"].dropna()
+        if len(x) and url(x.iloc[-1]):
+            u = url(x.iloc[-1])
+            ri = re.search(r"//ri\.|\.ri\.|/ri\b|investidor|/ir\b|//ir\.", u, re.I)
+            return {"url": u, "tipo": "ri" if ri else "empresa", "fonte": "CVM, Formulário Cadastral (página da companhia)"}
+    return None
+
+
 def montar_feed(pasta: Path, tickers: list, n_noticias: int = 150, n_comunicados: int = 150) -> dict:
     """Notícias e comunicados de todas as empresas num arquivo só, do mais novo para o mais antigo.
     A mesma notícia citada por várias empresas aparece uma vez, com todos os tickers."""
@@ -549,7 +600,7 @@ def montar_feed(pasta: Path, tickers: list, n_noticias: int = 150, n_comunicados
             item = noticias.setdefault(chave, {**x, "tickers": []})
             if t not in item["tickers"]:
                 item["tickers"].append(t)
-        for x in j.get("comunicados") or []:
+        for x in filtrar_ri(j.get("comunicados")):
             chave = x.get("link") or f"{t}{x.get('titulo')}{x.get('data')}"
             comunicados.setdefault(chave, {**x, "tickers": [t]})
     ord_ = lambda l: sorted(l, key=lambda x: str(x.get("data") or ""), reverse=True)  # noqa: E731
@@ -680,6 +731,7 @@ def processar(ativo: dict, ctx: dict) -> dict:
         except Exception:
             pass
         acionistas = fre_acionistas(ctx["fre"], cnpj)
+        res["site_ri"] = fca_site_ri(ctx["fca"], cnpj)
         seg_fca = fca_segmentos(ctx["fca"], cnpj)
         comunic, calendario = comunicados_cvm(ctx["ipe"], cd)
         try:
@@ -1358,7 +1410,8 @@ def main():
                 noticias = S.noticias_empresa(a["nome"], t, ext, 15)
             except Exception as e:
                 aviso(t, f"notícias: {e}")
-        com = r.get("comunicados", antigo.get("comunicados", []))
+        com = filtrar_ri(r.get("comunicados", antigo.get("comunicados", [])))
+        noticias = I.sem_repeticao(noticias, [a["nome"], t, a.get("ticker_exterior") or ""])
         prox = None
         try:
             if a["tipo"] == "ACAO_BR" or a.get("ticker_exterior"):
@@ -1383,7 +1436,7 @@ def main():
                     novos += 1
             except Exception:
                 pass
-        gravar(arq, {"ticker": t, "atualizado_em": AGORA.isoformat(), "noticias": noticias, "comunicados": com,
+        gravar(arq, {"ticker": t, "atualizado_em": AGORA.isoformat(), "noticias": noticias, "comunicados": com, "site_ri": r.get("site_ri") or antigo.get("site_ri"),
                      "proximo_resultado": prox, "calendario_cvm": r.get("calendario")})
         idx_news[t] = {"novos_48h": novos, "total_noticias": len(noticias), "total_comunicados": len(com)}
     gravar(DATA / "news" / "_index.json", idx_news)

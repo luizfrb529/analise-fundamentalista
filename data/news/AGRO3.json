@@ -29,29 +29,22 @@
  ],
  "comunicados": [
   {
-   "data": "2026-11-10",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586777&numSequencia=1111483&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-11-05",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 1T27",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584656&numSequencia=1109362&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-03",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "ITR 1T27",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583601&numSequencia=1108307&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-11-03",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de Resultados 1T27",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583600&numSequencia=1108306&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -64,34 +57,6 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-10-23",
-   "categoria": "Comunicado ao mercado",
-   "titulo": "Aquisição/Alienação de Participação Acionária (art. 12 da Instr. CVM nº 358)",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579984&numSequencia=1104690&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-21",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Pagamento de Dividendos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579064&numSequencia=1103770&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-09",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Relatório Anual do Agente Fiduciário - 3ª Emissão de Debêntures",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1576184&numSequencia=1100890&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-10-07",
-   "categoria": "Calendário de eventos",
-   "titulo": "Calendário de eventos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574946&numSequencia=1099652&numVersao=3",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-09-29",
    "categoria": "Fato relevante",
    "titulo": "Venda e Arrendamento de Áreas da Fazenda Rio do Meio",
@@ -99,50 +64,29 @@
    "fonte": "CVM (IPE)"
   },
   {
-   "data": "2026-09-22",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Versão em inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1570567&numSequencia=1095273&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-18",
-   "categoria": "Calendário de eventos",
-   "titulo": "Calendário de eventos",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569364&numSequencia=1094070&numVersao=2",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-09-18",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "LAUDO DE AVALIAÇÃO DO ACERVO LÍQUIDO APURADO POR MEIO DOS LIVROS CONTÁBEIS - INCORPORAÇÃO",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569604&numSequencia=1094310&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
    "data": "2026-09-04",
-   "categoria": "Comunicado ao mercado",
+   "categoria": "Apresentação de resultados",
    "titulo": "Apresentação de Resultados 4T26 | 2026",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1564985&numSequencia=1089691&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-09-03",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Demonstrações Financeiras Anuais Completas",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1564866&numSequencia=1089572&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-09-03",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "DFP 2026",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1564869&numSequencia=1089575&numVersao=1",
    "fonte": "CVM (IPE)"
   },
   {
    "data": "2026-09-03",
-   "categoria": "Resultado / dados financeiros",
+   "categoria": "Resultado",
    "titulo": "Release de Resultados 4T26",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1564868&numSequencia=1089574&numVersao=1",
    "fonte": "CVM (IPE)"
@@ -153,20 +97,6 @@
    "titulo": "Estimativas Safra 26/27",
    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1564871&numSequencia=1089577&numVersao=1",
    "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-07-15",
-   "categoria": "Aviso aos acionistas",
-   "titulo": "Data da assembleia",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1545209&numSequencia=1069915&numVersao=1",
-   "fonte": "CVM (IPE)"
-  },
-  {
-   "data": "2026-05-26",
-   "categoria": "Resultado / dados financeiros",
-   "titulo": "Versão em Inglês",
-   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1526924&numSequencia=1051630&numVersao=1",
-   "fonte": "CVM (IPE)"
   }
  ],
  "proximo_resultado": null,
@@ -176,5 +106,10 @@
   "titulo": "Calendário de eventos",
   "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574946&numSequencia=1099652&numVersao=3",
   "fonte": "CVM (IPE)"
+ },
+ "site_ri": {
+  "url": "https://ri.brasil-agro.com",
+  "tipo": "ri",
+  "fonte": "CVM, Formulário Cadastral (página da companhia)"
  }
 }

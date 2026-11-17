@@ -33,31 +33,10 @@
  ],
  "comunicados": [
   {
-   "data": "2026-11-05",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2026-10-29",
    "categoria": "Resultado trimestral (10-Q)",
    "titulo": "10-Q",
    "link": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-10-28",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-08-10",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526342390/d171253d8k.htm",
    "fonte": "SEC EDGAR"
   },
   {
@@ -68,55 +47,6 @@
    "fonte": "SEC EDGAR"
   },
   {
-   "data": "2026-07-22",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/goog-20260722.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-06-11",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526267578/d57679d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-06-05",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526259830/d36818d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-06-05",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000059/goog-20260602.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-06-04",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526257724/d83560d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-05-21",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526234488/d144566d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-05-11",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526216986/d109021d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2026-04-30",
    "categoria": "Resultado trimestral (10-Q)",
    "titulo": "10-Q",
@@ -124,52 +54,10 @@
    "fonte": "SEC EDGAR"
   },
   {
-   "data": "2026-04-29",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/goog-20260429.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-04-10",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000034/goog-20260407.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-04-02",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000031/goog-20260330.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-03-06",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000026/goog-20260304.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-02-13",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526051423/d946885d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2026-02-05",
    "categoria": "Relatório anual (10-K)",
    "titulo": "10-K",
    "link": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-02-04",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/goog-20260204.htm",
    "fonte": "SEC EDGAR"
   }
  ],

@@ -53,38 +53,10 @@
  ],
  "comunicados": [
   {
-   "data": "2026-11-12",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-11-05",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-10-29",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526438017/d183592d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2026-10-22",
    "categoria": "Resultado trimestral (10-Q)",
    "titulo": "10-Q",
    "link": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-10-21",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-20261019.htm",
    "fonte": "SEC EDGAR"
   },
   {
@@ -95,45 +67,10 @@
    "fonte": "SEC EDGAR"
   },
   {
-   "data": "2026-07-29",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050596/meta-20260729.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-05-29",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026039193/meta-20260527.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-05-04",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526204128/d134616d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2026-04-30",
    "categoria": "Resultado trimestral (10-Q)",
    "titulo": "10-Q",
    "link": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/meta-20260331.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-04-29",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028364/meta-20260429.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-04-14",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025108/meta-20260408.htm",
    "fonte": "SEC EDGAR"
   },
   {
@@ -144,52 +81,10 @@
    "fonte": "SEC EDGAR"
   },
   {
-   "data": "2026-01-28",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-20260128.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2026-01-16",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026002429/meta-20260112.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2025-12-19",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025058337/meta-20251219.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2025-12-12",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025056768/meta-20251205.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2025-11-03",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1326801/000119312525262593/d75422d8k.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
    "data": "2025-10-30",
    "categoria": "Resultado trimestral (10-Q)",
    "titulo": "10-Q",
    "link": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm",
-   "fonte": "SEC EDGAR"
-  },
-  {
-   "data": "2025-10-29",
-   "categoria": "Comunicado (8-K)",
-   "titulo": "8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/meta-20251029.htm",
    "fonte": "SEC EDGAR"
   }
  ],
