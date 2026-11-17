@@ -1,5 +1,6 @@
-# Cotações da faixa do site a cada 15 minutos em dias úteis, das 9h às 19h (Brasília = 12h a 22h UTC).
-# Grava mercado.json no ramo "mercado" (um único commit, sobrescrito), sem mexer no histórico do main.
+# Dados ao vivo do site, gravados no ramo "mercado" (um único commit, sobrescrito), sem mexer no histórico do main:
+#  - a cada 15 minutos em dias úteis, das 9h às 19h (Brasília = 12h a 22h UTC): cotações da faixa e preço de tela das empresas;
+#  - na primeira rodada de cada hora: notícias da imprensa de todas as empresas.
 name: cotacoes-faixa
 
 on:
@@ -12,28 +13,41 @@ permissions:
 
 concurrency:
   group: cotacoes-faixa
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   cotacoes:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
 
-      - name: Instalar yfinance
-        run: pip install yfinance
+      - name: Instalar dependências
+        run: pip install -r pipeline/requirements.txt
 
-      - name: Buscar cotações
+      - name: Cotações e preço de tela
         env:
           TZ: America/Sao_Paulo
         run: |
           mkdir -p saida
           python pipeline/mercado.py saida/mercado.json
+          python pipeline/ao_vivo.py precos saida/precos.json
+
+      - name: Notícias (de hora em hora)
+        env:
+          TZ: America/Sao_Paulo
+        run: |
+          if [ "$(date +%M)" -lt 15 ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python pipeline/ao_vivo.py noticias saida/noticias.json
+          else
+            curl -sf "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/refs/heads/mercado/noticias.json" -o saida/noticias.json || true
+          fi
 
       - name: Publicar no ramo mercado
         working-directory: saida
@@ -43,6 +57,6 @@ jobs:
           git init -q -b mercado
           git config user.name "atualizacao-automatica"
           git config user.email "actions@users.noreply.github.com"
-          git add mercado.json
-          git commit -q -m "Cotações de $(date '+%d/%m/%Y %H:%M')"
+          git add .
+          git commit -q -m "Dados ao vivo de $(date '+%d/%m/%Y %H:%M')"
           git push -q -f "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" mercado

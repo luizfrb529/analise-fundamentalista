@@ -239,3 +239,10 @@ def test_proxima_divulgacao():
     assert p["data"] == "2027-02-25" and p["prazo_legal"] == "2027-03-31" and not p["passou"]
     r2 = I.proxima_divulgacao([("2026-06-30", "ITR", "2026-08-10", "x")], "2026-11-17")
     assert r2["proxima"]["doc"] == "ITR" and r2["proxima"]["data"] == "2026-11-14" and r2["proxima"]["passou"]
+
+
+def test_posicao_vendida():
+    r = I.posicao_vendida(5e6, 100e6, 200e6, 0.5, 25e6)
+    assert r["pct_free_float"] == ap(0.05) and r["pct_classe"] == ap(0.025) and r["dias_para_cobrir"] == ap(4)
+    r2 = I.posicao_vendida(5e6, 100e6, None, 0.5, 0)
+    assert r2["pct_free_float"] is None and r2["dias_para_cobrir"] is None

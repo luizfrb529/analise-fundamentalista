@@ -1,10 +1,11 @@
-# Fase 2: roda o pipeline todo dia útil às 18h30 (Brasília = 21h30 UTC) e faz commit dos JSON.
+# Roda o pipeline nos dias úteis às 9h e às 18h30 (Brasília) e faz commit dos JSON.
 # Na Fase 1 o arquivo já existe, mas só é usado depois que o projeto estiver num repositório do GitHub.
 name: atualizar-dados
 
 on:
   schedule:
-    - cron: "30 21 * * 1-5"
+    - cron: "30 21 * * 1-5"   # 18h30 em Brasília: fechamento do pregão
+    - cron: "0 12 * * 1-5"    # 9h em Brasília: aluguel da B3 do pregão anterior e documentos entregues à noite
   workflow_dispatch: {}
 
 permissions:

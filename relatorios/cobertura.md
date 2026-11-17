@@ -1,151 +1,149 @@
 # Relatório de cobertura de dados
 
-Gerado em 17/11/2026 17:03 | Preços de fechamento de 2026-11-16 | Balanços até 3T2026
+Gerado em 17/11/2026 19:15 | Preços de fechamento de 2026-11-17 | Balanços até 3T2026
 
 | Ticker | Modelo | Balanço | Fonte | Indicadores com valor | Faltando |
 |---|---|---|---|---|---|
-| B3SA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
-| BBAS3 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 62/67 | 5 |
-| BPAC11 | BANCO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 58/67 | 9 |
-| BBDC4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 62/67 | 5 |
-| ITUB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 62/67 | 5 |
-| BRSR6 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 58/67 | 9 |
-| SANB11 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 53/67 | 14 |
-| ROXO34 | BANCO | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 43/66 | 23 |
-| INBR34 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 54/66 | 12 |
-| XPBR31 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 52/66 | 14 |
-| BBSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 59/63 | 4 |
-| CXSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 51/63 | 12 |
-| PSSA3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 60/63 | 3 |
-| SAUD3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 60/63 | 3 |
-| WIZC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
-| VALE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
-| GGBR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/101 | 6 |
-| GOAU4 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/103 | 6 |
-| CSNA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 79/101 | 22 |
-| USIM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/101 | 15 |
-| FESA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
-| AURA33 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 38/100 | 62 |
-| PETR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/101 | 5 |
-| PRIO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/101 | 7 |
-| RECV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
-| BRAV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 84/101 | 17 |
-| OPCT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/101 | 19 |
-| UGPA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
-| PASS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/101 | 12 |
-| CSAN3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 84/103 | 19 |
-| RAIZ4 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 69/89 | 20 |
-| BRKM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 71/101 | 30 |
-| UNIP6 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/101 | 7 |
-| DEXP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/101 | 6 |
-| SUZB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
-| KLBN11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
-| RANI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/101 | 1 |
-| AXIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/101 | 10 |
-| ALUP11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
-| TAEE11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
-| ISAE4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
-| AURE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/101 | 19 |
-| EGIE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
-| CMIG4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
-| EQTL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/101 | 9 |
-| CPFE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
-| SBSP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 83/101 | 18 |
-| SAPR11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
-| CSMG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/101 | 7 |
-| MGLU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/101 | 12 |
-| BHIA3 | RECUPERACAO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 63/89 | 26 |
-| LJQQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 78/101 | 23 |
-| GMAT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/101 | 6 |
-| AZZA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/101 | 1 |
-| GRND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/101 | 1 |
-| LREN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
-| VIVA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/101 | 1 |
-| CEAB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/101 | 6 |
-| TFCO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
-| VULC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
-| SBFG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
-| AMOB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 74/101 | 27 |
-| MELI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 88/100 | 12 |
-| MRVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 78/101 | 23 |
-| TEND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/101 | 5 |
-| DIRR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
-| PLPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/101 | 13 |
-| CURY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
-| CYRE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/101 | 7 |
-| EVEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/101 | 11 |
-| TRIS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
-| EZTC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
-| LAVV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/101 | 7 |
-| MDNE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/101 | 11 |
-| WEGE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/101 | 0 |
-| EMBJ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/101 | 9 |
-| SHUL4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
-| ROMI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
-| TUPY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 79/101 | 22 |
-| LEVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
-| POMO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
-| RAPT4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/101 | 16 |
-| KEPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
-| TASA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/101 | 12 |
-| RENT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/101 | 9 |
-| MOVI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/101 | 6 |
-| VAMO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/101 | 7 |
-| MILS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/101 | 11 |
-| PRNR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/101 | 14 |
-| SIMH3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/103 | 14 |
-| RAIL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/101 | 5 |
-| ECOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/101 | 11 |
-| SEQL3 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 68/89 | 21 |
-| LOGG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/101 | 12 |
-| ALOS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/101 | 6 |
-| JHSF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
-| RDOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
-| FLRY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
-| RADL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/101 | 1 |
-| PGMN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/101 | 14 |
-| PNVL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/101 | 1 |
-| VIVT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
-| TIMS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 83/101 | 18 |
-| FIQE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
-| COGN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/101 | 9 |
-| YDUQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
-| VTRU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/101 | 11 |
-| CSED3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/101 | 6 |
-| SLCE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
-| AGRO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
-| SOJA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 83/101 | 18 |
-| TTEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/101 | 19 |
-| SMTO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
-| JALL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/101 | 15 |
-| MDIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/101 | 1 |
-| CAML3 | GERAL | 2026-08-31 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
-| BEEF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/101 | 13 |
-| JBSS32 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 43/100 | 57 |
-| CSUD3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/101 | 14 |
-| CASH3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 72/101 | 29 |
-| SMFT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/101 | 15 |
-| OBTC3 | TESOURARIA_CRIPTO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 52/93 | 41 |
-| M2ST34 | TESOURARIA_CRIPTO | 2026-09-30 | SEC EDGAR (XBRL) | 64/92 | 28 |
-| MSFT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 99/100 | 1 |
-| M1TA34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 92/100 | 8 |
-| GOGL34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 94/100 | 6 |
-| NVDC34 | GERAL | 2026-07-26 | SEC EDGAR (XBRL) | 90/100 | 10 |
-| MUTC34 | GERAL | 2026-09-03 | SEC EDGAR (XBRL) | 94/100 | 6 |
-| QCOM34 | GERAL | 2026-09-27 | SEC EDGAR (XBRL) | 79/100 | 21 |
-| P2LT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 67/100 | 33 |
-| N1OW34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 88/100 | 12 |
-| V1RT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 93/100 | 7 |
-| RGTI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 48/100 | 52 |
-| QUBT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 54/100 | 46 |
-| SPCX34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 32/100 | 68 |
+| B3SA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| BBAS3 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 65/70 | 5 |
+| BPAC11 | BANCO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 61/70 | 9 |
+| BBDC4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 65/70 | 5 |
+| ITUB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 65/70 | 5 |
+| BRSR6 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 61/70 | 9 |
+| SANB11 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 57/70 | 13 |
+| ROXO34 | BANCO | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 45/69 | 24 |
+| INBR34 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 56/69 | 13 |
+| XPBR31 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 54/69 | 15 |
+| BBSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 62/66 | 4 |
+| CXSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 54/66 | 12 |
+| PSSA3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 63/66 | 3 |
+| SAUD3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 63/66 | 3 |
+| WIZC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
+| VALE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
+| GGBR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| CSNA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/104 | 22 |
+| USIM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/104 | 15 |
+| FESA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| AURA33 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 40/103 | 63 |
+| PETR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
+| PRIO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| RECV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
+| BRAV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/104 | 17 |
+| OPCT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/104 | 19 |
+| UGPA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| PASS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/104 | 12 |
+| CSAN3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/106 | 19 |
+| RAIZ4 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 69/92 | 23 |
+| BRKM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 74/104 | 30 |
+| UNIP6 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
+| DEXP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
+| SUZB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
+| KLBN11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
+| RANI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
+| AXIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/104 | 10 |
+| ALUP11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| TAEE11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| ISAE4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
+| AURE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/104 | 19 |
+| EGIE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| CMIG4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
+| EQTL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
+| CPFE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
+| SBSP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/104 | 17 |
+| SAPR11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| CSMG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| MGLU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/104 | 12 |
+| BHIA3 | RECUPERACAO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 66/92 | 26 |
+| LJQQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/104 | 22 |
+| GMAT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| AZZA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
+| GRND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
+| LREN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
+| VIVA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
+| CEAB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| TFCO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| VULC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
+| SBFG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
+| AMOB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 77/104 | 27 |
+| MELI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 90/103 | 13 |
+| MRVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 81/104 | 23 |
+| TEND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
+| DIRR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
+| PLPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/104 | 13 |
+| CURY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
+| CYRE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
+| EVEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
+| TRIS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
+| EZTC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
+| LAVV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
+| MDNE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
+| WEGE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 104/104 | 0 |
+| EMBJ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
+| SHUL4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
+| ROMI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
+| TUPY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 83/104 | 21 |
+| LEVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
+| POMO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
+| RAPT4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/104 | 16 |
+| KEPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
+| TASA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/104 | 12 |
+| RENT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
+| MOVI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| VAMO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
+| MILS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
+| PRNR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/104 | 13 |
+| SIMH3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/106 | 14 |
+| RAIL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
+| ECOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
+| SEQL3 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 71/92 | 21 |
+| LOGG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/104 | 12 |
+| ALOS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
+| JHSF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
+| RDOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
+| FLRY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| RADL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
+| PGMN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/104 | 14 |
+| PNVL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
+| VIVT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| TIMS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/104 | 18 |
+| FIQE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| COGN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
+| YDUQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| VTRU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/104 | 10 |
+| CSED3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| SLCE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| AGRO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
+| SOJA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/104 | 18 |
+| TTEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/104 | 19 |
+| SMTO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| JALL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/104 | 15 |
+| MDIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
+| CAML3 | GERAL | 2026-08-31 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
+| BEEF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/104 | 13 |
+| JBSS32 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 45/103 | 58 |
+| CSUD3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/104 | 14 |
+| CASH3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 76/104 | 28 |
+| SMFT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/104 | 14 |
+| OBTC3 | TESOURARIA_CRIPTO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 56/96 | 40 |
+| M2ST34 | TESOURARIA_CRIPTO | 2026-09-30 | SEC EDGAR (XBRL) | 66/95 | 29 |
+| MSFT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 100/103 | 3 |
+| M1TA34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 94/103 | 9 |
+| GOGL34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 96/103 | 7 |
+| NVDC34 | GERAL | 2026-07-26 | SEC EDGAR (XBRL) | 92/103 | 11 |
+| MUTC34 | GERAL | 2026-09-03 | SEC EDGAR (XBRL) | 96/103 | 7 |
+| QCOM34 | GERAL | 2026-09-27 | SEC EDGAR (XBRL) | 81/103 | 22 |
+| P2LT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 69/103 | 34 |
+| N1OW34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 90/103 | 13 |
+| V1RT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 95/103 | 8 |
+| RGTI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 50/103 | 53 |
+| QUBT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 56/103 | 47 |
+| SPCX34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 34/103 | 69 |
 
 ## B3SA3
 
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
@@ -156,7 +154,7 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de Basileia (`basileia`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Inadimplência 90 dias (`inadimplencia_90`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Cobertura de PDD (`cobertura_pdd`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
@@ -170,7 +168,7 @@ Indicadores sem valor e motivo:
 
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem financeira / ativo (NIM aprox.) (`nim`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de eficiência (aprox.) (`indice_eficiencia`): conta não encontrada na fonte ou não aplicável ao modelo
 - Custo do crédito / margem (`custo_credito_sobre_margem`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -186,7 +184,7 @@ Avisos do pipeline:
 Indicadores sem valor e motivo:
 
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de Basileia (`basileia`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Inadimplência 90 dias (`inadimplencia_90`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Cobertura de PDD (`cobertura_pdd`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
@@ -197,7 +195,7 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de Basileia (`basileia`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Inadimplência 90 dias (`inadimplencia_90`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Cobertura de PDD (`cobertura_pdd`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
@@ -209,7 +207,7 @@ Indicadores sem valor e motivo:
 
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem financeira / ativo (NIM aprox.) (`nim`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de eficiência (aprox.) (`indice_eficiencia`): conta não encontrada na fonte ou não aplicável ao modelo
 - Custo do crédito / margem (`custo_credito_sobre_margem`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -222,13 +220,12 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem financeira / ativo (NIM aprox.) (`nim`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de eficiência (aprox.) (`indice_eficiencia`): conta não encontrada na fonte ou não aplicável ao modelo
 - Custo do crédito / margem (`custo_credito_sobre_margem`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -261,7 +258,8 @@ Indicadores sem valor e motivo:
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de eficiência (aprox.) (`indice_eficiencia`): conta não encontrada na fonte ou não aplicável ao modelo
 - Custo do crédito / margem (`custo_credito_sobre_margem`): conta não encontrada na fonte ou não aplicável ao modelo
 - Crescimento da carteira de crédito (`cresc_carteira`): carteira de crédito não identificada nas duas datas
@@ -281,7 +279,8 @@ Indicadores sem valor e motivo:
 - Receita LTM vs LTM anterior (`cresc_receita_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de eficiência (aprox.) (`indice_eficiencia`): conta não encontrada na fonte ou não aplicável ao modelo
 - Custo do crédito / margem (`custo_credito_sobre_margem`): conta não encontrada na fonte ou não aplicável ao modelo
 - Crescimento da carteira de crédito (`cresc_carteira`): carteira de crédito não identificada nas duas datas
@@ -304,7 +303,8 @@ Indicadores sem valor e motivo:
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de eficiência (aprox.) (`indice_eficiencia`): conta não encontrada na fonte ou não aplicável ao modelo
 - Custo do crédito / margem (`custo_credito_sobre_margem`): conta não encontrada na fonte ou não aplicável ao modelo
 - Crescimento da carteira de crédito (`cresc_carteira`): carteira de crédito não identificada nas duas datas
@@ -318,7 +318,7 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice combinado (`indice_combinado`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Sinistralidade (`sinistralidade`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 
@@ -336,7 +336,7 @@ Indicadores sem valor e motivo:
 - Anos com receita crescendo (`consist_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Estabilidade de margem (`estab_margem`): conta não encontrada na fonte ou não aplicável ao modelo
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice combinado (`indice_combinado`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Sinistralidade (`sinistralidade`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 
@@ -345,7 +345,7 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice combinado (`indice_combinado`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Sinistralidade (`sinistralidade`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 
@@ -354,7 +354,7 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice combinado (`indice_combinado`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Sinistralidade (`sinistralidade`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 
@@ -373,7 +373,6 @@ Avisos do pipeline:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 11 exercícios ou extremos negativos
@@ -383,18 +382,6 @@ Indicadores sem valor e motivo:
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 
 ## GGBR4
-
-
-Indicadores sem valor e motivo:
-
-- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 11 exercícios ou extremos negativos
-- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 11 exercícios ou extremos negativos
-- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
-- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
-
-## GOAU4
 
 
 Indicadores sem valor e motivo:
@@ -533,6 +520,7 @@ Indicadores sem valor e motivo:
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## PETR4
 
@@ -552,7 +540,6 @@ Avisos do pipeline:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
@@ -565,7 +552,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
@@ -627,7 +613,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
@@ -704,6 +689,9 @@ Indicadores sem valor e motivo:
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## BRKM5
 
@@ -759,7 +747,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
@@ -806,7 +793,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 11 exercícios ou extremos negativos
@@ -815,6 +801,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 
 ## ALUP11
@@ -898,7 +885,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -925,7 +911,6 @@ Avisos do pipeline:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -958,7 +943,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
@@ -1021,7 +1005,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
@@ -1078,7 +1061,6 @@ Avisos do pipeline:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 
 ## VIVA3
@@ -1185,6 +1167,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MRVE3
 
@@ -1220,7 +1203,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
@@ -1353,7 +1335,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
@@ -1386,7 +1367,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
@@ -1452,7 +1432,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 
@@ -1479,7 +1458,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -1536,7 +1514,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -1651,7 +1628,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
@@ -1685,7 +1661,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
@@ -1755,7 +1730,7 @@ Indicadores sem valor e motivo:
 - Receita LTM vs LTM anterior (`cresc_receita_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Estabilidade de margem (`estab_margem`): conta não encontrada na fonte ou não aplicável ao modelo
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## FIQE3
 
@@ -1771,7 +1746,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
@@ -1788,7 +1762,6 @@ Avisos do pipeline:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
@@ -1798,7 +1771,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 6 exercícios ou extremos negativos
 - CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 6 exercícios ou extremos negativos
@@ -1836,7 +1808,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
@@ -2025,6 +1996,7 @@ Indicadores sem valor e motivo:
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CSUD3
 
@@ -2051,7 +2023,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
@@ -2086,7 +2057,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -2110,7 +2080,6 @@ Avisos do pipeline:
 
 Indicadores sem valor e motivo:
 
-- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Receita (PSR) (`psr`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -2150,7 +2119,7 @@ Indicadores sem valor e motivo:
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Estabilidade de margem (`estab_margem`): conta não encontrada na fonte ou não aplicável ao modelo
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## M2ST34
 
@@ -2187,6 +2156,7 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MSFT34
 
@@ -2194,6 +2164,8 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## M1TA34
 
@@ -2210,6 +2182,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## GOGL34
 
@@ -2224,6 +2197,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## NVDC34
 
@@ -2240,6 +2214,7 @@ Indicadores sem valor e motivo:
 - Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MUTC34
 
@@ -2252,6 +2227,7 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 18 exercícios ou extremos negativos
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## QCOM34
 
@@ -2279,6 +2255,7 @@ Indicadores sem valor e motivo:
 - Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## P2LT34
 
@@ -2320,6 +2297,7 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## N1OW34
 
@@ -2338,6 +2316,7 @@ Indicadores sem valor e motivo:
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## V1RT34
 
@@ -2351,6 +2330,7 @@ Indicadores sem valor e motivo:
 - CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 9 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RGTI34
 
@@ -2408,7 +2388,8 @@ Indicadores sem valor e motivo:
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Estabilidade de margem (`estab_margem`): conta não encontrada na fonte ou não aplicável ao modelo
-- Piotroski F-Score (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## QUBT34
 
@@ -2461,6 +2442,7 @@ Indicadores sem valor e motivo:
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SPCX34
 
@@ -2538,6 +2520,7 @@ Indicadores sem valor e motivo:
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## Sinais de estresse financeiro
 
@@ -2548,7 +2531,6 @@ Empresas fora do modelo RECUPERACAO com dois ou mais entre PL negativo, Dív.lí
 | CSNA3 | GERAL | dív.líq/EBITDA 7.625275; EBIT não cobre juros (0.15x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | CSAN3 | HOLDING | dív.líq/EBITDA 6.040139; EBIT não cobre juros (0.25x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | AURE3 | GERAL | dív.líq/EBITDA 5.150336; EBIT não cobre juros (0.62x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
-| LJQQ3 | GERAL | EBIT não cobre juros (-0.01x); ação abaixo de R$ 1 | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | MRVE3 | GERAL | dív.líq/EBITDA 5.450855; EBIT não cobre juros (0.57x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | TUPY3 | GERAL | dív.líq/EBITDA 10.148525; EBIT não cobre juros (-0.49x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | OBTC3 | TESOURARIA_CRIPTO | dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-7.44x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |

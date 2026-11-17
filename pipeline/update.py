@@ -343,25 +343,68 @@ def acoes_cvm(tabs_por_ano: dict, cnpj: str, ref_total: float):
     return dict(sorted(out.items()))
 
 
+FUNDO_RE = re.compile(r"fundo|fia|fim|fic|fip|investimento|previd|pension|asset|capital|gest[aã]o|blackrock|vanguard|norges|gic", re.I)
+
+
+def _num(v):
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return None
+
+
 def fre_acionistas(fre: dict, cnpj: str) -> dict:
+    """Composição acionária (acionistas diretos com 5% ou mais, tesouraria e outros) e free float oficial por classe,
+    a partir do Formulário de Referência (posição acionária e distribuição de capital)."""
+    out = {}
     df = fre.get("fre_cia_aberta_posicao_acionaria")
-    if df is None or df.empty:
-        return {}
-    x = df[df["CNPJ_Companhia"] == cnpj].copy()
-    if x.empty:
-        return {}
-    x["Versao"] = pd.to_numeric(x["Versao"], errors="coerce")
-    x = x[x["Data_Referencia"] == x["Data_Referencia"].max()]
-    x = x[x["Versao"] == x["Versao"].max()]
-    diretos = x[x["ID_Acionista_Relacionado"].isna()] if "ID_Acionista_Relacionado" in x else x
-    pct = pd.to_numeric(diretos["Percentual_Total_Acoes_Circulacao"], errors="coerce").fillna(0)
-    ctrl_mask = diretos["Acionista_Controlador"] == "S"
-    tes_mask = diretos["Acionista"].fillna("").str.lower().str.contains("tesouraria")
-    controladores = [{"nome": n, "pct": float(p) / 100} for n, p in zip(diretos[ctrl_mask]["Acionista"], pct[ctrl_mask])]
-    c = float(pct[ctrl_mask].sum()) / 100
-    t = float(pct[tes_mask].sum()) / 100
-    return {"controladores": controladores, "controlador_pct": c if c > 0 else None,
-            "free_float": max(0.0, 1 - c - t) if c > 0 else None, "fre_data": str(x["Data_Referencia"].iloc[0])}
+    if df is not None and not df.empty:
+        x = df[df["CNPJ_Companhia"] == cnpj].copy()
+        if not x.empty:
+            x["Versao"] = pd.to_numeric(x["Versao"], errors="coerce")
+            x = x[x["Data_Referencia"] == x["Data_Referencia"].max()]
+            x = x[x["Versao"] == x["Versao"].max()]
+            diretos = x[x["ID_Acionista_Relacionado"].isna()] if "ID_Acionista_Relacionado" in x else x
+            pct = pd.to_numeric(diretos["Percentual_Total_Acoes_Circulacao"], errors="coerce").fillna(0)
+            ctrl_mask = diretos["Acionista_Controlador"] == "S"
+            tes_mask = diretos["Acionista"].fillna("").str.lower().str.contains("tesouraria")
+            out_mask = diretos["Acionista"].fillna("").str.strip().str.lower() == "outros"
+            out["controladores"] = [{"nome": n, "pct": float(p) / 100} for n, p in zip(diretos[ctrl_mask]["Acionista"], pct[ctrl_mask])]
+            c = float(pct[ctrl_mask].sum()) / 100
+            out["controlador_pct"] = c if c > 0 else None
+            out["tesouraria_pct"] = float(pct[tes_mask].sum()) / 100
+            out["outros_pct"] = float(pct[out_mask].sum()) / 100
+            lista = []
+            for _, r in diretos[~tes_mask & ~out_mask].iterrows():
+                nome = str(r["Acionista"] or "").strip()
+                tipo = "Fundo ou gestora" if FUNDO_RE.search(nome) else {"PF": "Pessoa física", "PJ": "Empresa"}.get(str(r.get("Tipo_Pessoa_Acionista")), "Outro")
+                lista.append({"nome": nome, "tipo": tipo, "controlador": r.get("Acionista_Controlador") == "S",
+                              "acordo": r.get("Participante_Acordo_Acionistas") == "S", "estrangeiro": r.get("Residente_Exterior") == "S",
+                              "pct_on": (_num(r.get("Percentual_Acao_Ordinaria_Circulacao")) or 0) / 100,
+                              "pct_pn": (_num(r.get("Percentual_Acao_Preferencial_Circulacao")) or 0) / 100,
+                              "pct_total": (_num(r.get("Percentual_Total_Acoes_Circulacao")) or 0) / 100})
+            out["acionistas"] = sorted(lista, key=lambda a: -a["pct_total"])[:20]
+            out["fre_data"] = str(x["Data_Referencia"].iloc[0])
+            out["free_float"] = max(0.0, 1 - c - out["tesouraria_pct"]) if c > 0 else None
+    dc = fre.get("fre_cia_aberta_distribuicao_capital")
+    if dc is not None and not dc.empty:
+        y = dc[dc["CNPJ_Companhia"] == cnpj].copy()
+        if not y.empty:
+            y["Versao"] = pd.to_numeric(y["Versao"], errors="coerce")
+            y = y[y["Data_Referencia"] == y["Data_Referencia"].max()]
+            r = y[y["Versao"] == y["Versao"].max()].iloc[0]
+            circ = {"on": _num(r.get("Quantidade_Acoes_Ordinarias_Circulacao")), "pn": _num(r.get("Quantidade_Acoes_Preferenciais_Circulacao")),
+                    "total": _num(r.get("Quantidade_Total_Acoes_Circulacao")),
+                    "pct_on": (_num(r.get("Percentual_Acoes_Ordinarias_Circulacao")) or 0) / 100,
+                    "pct_pn": (_num(r.get("Percentual_Acoes_Preferenciais_Circulacao")) or 0) / 100,
+                    "pct_total": (_num(r.get("Percentual_Total_Acoes_Circulacao")) or 0) / 100,
+                    "acionistas_pf": _num(r.get("Quantidade_Acionistas_PF")), "acionistas_pj": _num(r.get("Quantidade_Acionistas_PJ")),
+                    "institucionais": _num(r.get("Quantidade_Acionistas_Investidores_Institucionais"))}
+            out["circulacao"] = circ
+            if circ["pct_total"]:
+                out["free_float"] = circ["pct_total"]   # free float oficial: ações em circulação no mercado
+            out.setdefault("fre_data", str(r["Data_Referencia"]))
+    return out
 
 
 def fre_participacao(fre: dict, cnpj_holding: str, cnpj_investida: str):
@@ -1086,7 +1129,7 @@ def main():
     dfp = {y: S.cvm_arquivo("DFP", y, cods, cnpjs, 30 if y < ano - 1 else 1) for y in range(ano - 10, ano)}
     itr = {y: S.cvm_arquivo("ITR", y, cods, cnpjs, 30 if y < ano - 1 else 1) for y in (ano - 2, ano - 1, ano)}
     ipe = [S.cvm_arquivo("IPE", y, cods, cnpjs, 0.25).get("ipe_cia_aberta") for y in (ano - 1, ano)]
-    fre = S.cvm_arquivo("FRE", ano, cods, cnpjs, 7) or S.cvm_arquivo("FRE", ano - 1, cods, cnpjs, 7)
+    fre = S.cvm_arquivo("FRE", ano, cods, cnpjs, 1) or S.cvm_arquivo("FRE", ano - 1, cods, cnpjs, 1)
     fca = S.cvm_arquivo("FCA", ano, cods, cnpjs, 7)
     # classes (ON/PN) e composição de units pelo FCA, quando não estão no universe.json
     for a in universo:
@@ -1296,6 +1339,7 @@ def main():
                                                 "ltm_contas": r.get("ltm_contas"), "moeda": r.get("moeda_fundamentos")})
     gravar(DATA / "prices.json", prices)
     aplicar_criterios(fundamentals, mac, {a["ticker"]: a for a in universo})
+    aplicar_aluguel(fundamentals, prices, {a["ticker"]: a for a in universo})
     gravar(DATA / "fundamentals.json", fundamentals)
     gravar(DATA / "dividends.json", dividends)
 
@@ -1353,6 +1397,37 @@ def main():
 
     relatorio_cobertura(universo, resultados, meta)
     print("OK.", meta)
+
+
+def aplicar_aluguel(fundamentals: dict, prices: dict, univ: dict):
+    """Posição vendida (ações em aberto no aluguel da B3), percentual do free float e dias para cobrir."""
+    try:
+        data, al = S.b3_aluguel()
+    except Exception as e:
+        aviso("ALUGUEL", f"B3 indisponível: {e}")
+        return
+    for t, f in fundamentals.items():
+        a, x, i = univ.get(t) or {}, al.get(t), f.setdefault("ind", {})
+        if not x:
+            f["aluguel"] = None
+            continue
+        acoes_cls = None
+        if a.get("tipo") == "ACAO_BR" and a.get("emissor_b3"):
+            try:
+                b = S.b3_emissor(a["emissor_b3"])
+                on, pn, tot = (S.num_br(b.get(k)) for k in ("numberCommonShares", "numberPreferredShares", "totalNumberShares"))
+                suf = t[4:]
+                acoes_cls = on if suf == "3" else pn if suf in ("4", "5", "6") else (tot / (f.get("acoes_por_papel") or a.get("acoes_por_papel") or 1) if suf == "11" and tot else None)
+            except Exception as e:
+                aviso(t, f"ações por classe na B3: {e}")
+        circ = (f.get("governanca") or {}).get("circulacao") or {}
+        suf = t[4:]
+        circ_cls = circ.get("on") if suf == "3" else circ.get("pn") if suf in ("4", "5", "6") else (circ.get("total") / (f.get("acoes_por_papel") or a.get("acoes_por_papel") or 1) if suf == "11" and circ.get("total") else None)
+        ff = circ_cls / acoes_cls if circ_cls and acoes_cls else (f.get("governanca") or {}).get("free_float")
+        r = I.posicao_vendida(x["qtd"], x["valor"], acoes_cls, ff, (prices.get(t) or {}).get("liquidez_21"))
+        f["aluguel"] = {"data": data, "qtd": x["qtd"], "valor": x["valor"], "acoes_classe": acoes_cls, **r,
+                        "fonte": "B3, Boletim Diário: Empréstimos de ativos, posições em aberto"}
+        i["aluguel_valor"], i["aluguel_pct_ff"], i["aluguel_dias"] = x["valor"], r["pct_free_float"], r["dias_para_cobrir"]
 
 
 def aplicar_criterios(fundamentals: dict, mac: dict, univ: dict):

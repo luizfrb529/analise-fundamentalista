@@ -293,3 +293,32 @@ def google_news(consulta: str, lingua: str = "pt-BR", pais: str = "BR", limite: 
         itens.append({"titulo": titulo, "veiculo": veiculo, "data": data, "link": it.findtext("link")})
     itens.sort(key=lambda x: x["data"] or "", reverse=True)
     return itens[:limite]
+
+
+# ------------------------------------------------------------------ B3: empréstimo de ações (posição vendida)
+B3_BDI = "https://arquivos.b3.com.br/bdi"
+
+
+def b3_ultimo_pregao() -> str:
+    """Último dia útil com Boletim Diário publicado (AAAA-MM-DD)."""
+    return str(get(f"{B3_BDI}/table/workday").json())[:10]
+
+
+def b3_aluguel(data: str | None = None) -> tuple[str, dict]:
+    """Posições em aberto de empréstimo de ativos (Boletim Diário da B3, tabela BTBLendingOpenPosition).
+    Devolve (data, {ticker: {"qtd": ações em aberto, "valor": R$}}), usando a linha 'Total' de cada ativo."""
+    data = data or b3_ultimo_pregao()
+    corpo = {"Name": "BTBLendingOpenPosition", "Date": data, "FinalDate": data, "ClientId": "", "Filters": {}}
+    r = requests.post(f"{B3_BDI}/table/export", json=corpo, timeout=90, headers={"Accept": "application/json"})
+    r.raise_for_status()
+    j = r.json()
+    nomes = [c["name"] for c in j.get("columns", [])]
+    cols = ("TckrSymb", "Market", "StockBalance", "Balance")   # ticker, tipo (Registro, Neg. Eletrônica, Total), ações, R$
+    if not set(cols) <= set(nomes):
+        raise ValueError(f"layout da tabela BTBLendingOpenPosition mudou: {nomes}")
+    i_tk, i_tp, i_q, i_v = (nomes.index(n) for n in cols)
+    out = {}
+    for row in j.get("values", []):
+        if str(row[i_tp]).strip().lower() == "total" and row[i_q] is not None:
+            out[row[i_tk]] = {"qtd": float(row[i_q]), "valor": float(row[i_v]) if row[i_v] is not None else None}
+    return data, out

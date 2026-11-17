@@ -799,3 +799,19 @@ def proxima_divulgacao(entregas: list, hoje: str) -> dict:
             "proxima": {"fim": prox_fim.isoformat(), "doc": doc, "rotulo": rotulo_trimestre(prox_fim.isoformat()) if doc == "ITR" else f"4T{prox_fim.isoformat()[2:4]}",
                         "data": estimada.isoformat(), "prazo_legal": prazo.isoformat(), "criterio": criterio,
                         "passou": estimada.isoformat() < hoje}}
+
+
+# ===================================================================== posição vendida (aluguel de ações)
+def posicao_vendida(qtd_alugada: Num, valor_alugado: Num, acoes_classe: Num, free_float: Num, volume_medio_rs: Num) -> dict:
+    """Ações em empréstimo (proxy da posição vendida no Brasil) sobre o free float da classe e dias para zerar a posição
+    com o volume financeiro médio diário. free_float em fração (0.7 = 70%)."""
+    ff_acoes = acoes_classe * free_float if ok(acoes_classe, free_float) and acoes_classe > 0 and free_float > 0 else None
+    return {
+        "pct_free_float": div(qtd_alugada, ff_acoes) if ff_acoes else None,
+        "pct_classe": div(qtd_alugada, acoes_classe) if ok(acoes_classe) and acoes_classe > 0 else None,
+        "dias_para_cobrir": div(valor_alugado, volume_medio_rs) if ok(volume_medio_rs) and volume_medio_rs > 0 else None,
+    }
+META["aluguel_valor"] = ("Posição vendida em R$", "Valor das ações em aberto no aluguel (empréstimo de ativos) na B3, último pregão.", 0, "Posição vendida", "moeda_grande_brl")
+META["aluguel_pct_ff"] = ("Posição vendida sobre o free float", "Ações em aberto no aluguel / (ações da classe x free float do Formulário de Referência). "
+                          "Em PNA e PNB usa o total de preferenciais; em units, o total de ações dividido pela composição da unit.", 0, "Posição vendida", "pct")
+META["aluguel_dias"] = ("Dias para cobrir", "Valor da posição em aberto no aluguel / volume financeiro médio diário de 21 pregões.", 0, "Posição vendida", "x")

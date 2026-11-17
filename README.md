@@ -110,6 +110,22 @@ O menu "Ações" e "BDRs" lista as maiores empresas por valor de mercado e os se
 
 Não há nota composta. Cada ranking ordena por um único indicador (Piotroski F-Score, ROE, ROIC, margem líquida, dívida líquida/EBITDA, crescimento do lucro, dividend yield com payout abaixo de 100%, TIR implícita e P/L). O Piotroski F-Score soma 9 testes de qualidade contábil do último exercício contra o anterior (função `piotroski` em `pipeline/indicators.py`); não se aplica a bancos e seguradoras.
 
+## Atualização automática
+
+| Dado | Fonte | Frequência |
+|---|---|---|
+| Faixa de cotações (índices, câmbio, commodities) | Yahoo Finance e AwesomeAPI | a cada 15 min no pregão; câmbio e bitcoin ao vivo no navegador |
+| Preço de tela das empresas | Yahoo Finance (atraso de até 15 min) | a cada 15 min no pregão (`pipeline/ao_vivo.py precos`) |
+| Notícias da imprensa | Google News RSS | de hora em hora no pregão (`pipeline/ao_vivo.py noticias`) |
+| Resultados, indicadores, critérios, calendário, comunicados, acionistas, posições vendidas | CVM, SEC, B3 | dias úteis às 9h e às 18h30 (`.github/workflows/daily.yml`) |
+
+Os dados ao vivo ficam no ramo `mercado` (um commit sobrescrito a cada rodada, robô `cotacoes-faixa`); o site usa o mais novo disponível e volta ao fechamento de `data/` se o arquivo ao vivo tiver mais de 36 horas. Os indicadores (P/L, TIR e afins) usam o preço de fechamento.
+
+## Posição vendida e acionistas
+
+- Posição vendida: B3, Boletim Diário, tabela "Empréstimos de ativos, posições em aberto" (BTBLendingOpenPosition), linha Total de cada papel. Percentual sobre as ações em circulação da classe declaradas no Formulário de Referência (tabela distribuição de capital). Relatórios que usam outras bases de free float (Economatica) chegam a percentuais maiores; em 30/10/2026 a ordem das empresas bateu com o relatório da Genial e a soma do aluguel (R$ 197 bi) ficou próxima dos R$ 180 bi citados por ela.
+- Composição acionária: Formulário de Referência (posição acionária), acionistas diretos com 5% ou mais, tesouraria e free float oficial por classe.
+
 ## Faixa de mercado
 
 Cotações ao abrir a página: dólar, euro e bitcoin em tempo real (AwesomeAPI, chamada pelo navegador); índices e commodities pelo robô `cotacoes-faixa` (.github/workflows/mercado.yml), que roda `pipeline/mercado.py` a cada 15 minutos em dias úteis e grava `mercado.json` no ramo `mercado`. Sem esses dados, a faixa mostra os fechamentos de `data/macro.json`. A faixa pode ser arrastada com o mouse ou o dedo.

@@ -513,3 +513,10 @@ tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72re
 .feed-item .meta a:hover { color: var(--acento); }
 @media (max-width: 920px) { .filtro-setores { grid-template-columns: minmax(0, 1fr); } .perenes { flex-direction: column; align-items: flex-start; } }
 @media (max-width: 680px) { .feed-item { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------------- composição acionária */
+.barra-acionaria { display: flex; height: 14px; border-radius: 8px; overflow: hidden; background: var(--sup-3); gap: 2px; }
+.barra-acionaria i { display: block; height: 100%; cursor: help; }
+.legenda-acionaria { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px; font-size: .8rem; color: var(--txt-2); }
+.legenda-acionaria i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+.legenda-acionaria b { color: var(--txt); margin-left: 4px; }

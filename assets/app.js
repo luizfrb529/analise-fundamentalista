@@ -35,7 +35,7 @@ const ROT = {
   margem_ebitda: "Margem EBITDA", cagr_lucro_5a: "CAGR lucro 5a", cagr_receita_5a: "CAGR receita 5a", ev_ebitda: "EV/EBITDA", dy: "Dividend yield",
   pl: "P/L", pvp: "P/VP", roe: "ROE", roic: "ROIC", roa: "ROA", piotroski: "Qualidade contábil", payout: "Payout", lpa: "LPA", vpa: "VPA",
   psr: "PSR", liquidez_corrente: "Liquidez corrente", giro_ativo: "Giro do ativo", pl_ativos: "Patrimônio/Ativos", passivos_ativos: "Passivos/Ativos",
-  nota_criterios: "Nota", cresc_lucro_ltm: "Lucro 12m vs anterior", cresc_receita_ltm: "Receita 12m vs anterior", dy_medio_5a: "DY médio 5 anos", anos_pagando: "Anos pagando", margem_fcl: "Margem FCL", fcf_yield: "FCF yield", conversao_caixa: "Conversão de caixa", fcl: "Fluxo de caixa livre",
+  nota_criterios: "Nota", cresc_lucro_ltm: "Lucro 12m vs anterior", cresc_receita_ltm: "Receita 12m vs anterior", dy_medio_5a: "DY médio 5 anos", anos_pagando: "Anos pagando", aluguel_pct_ff: "Vendida / free float", aluguel_dias: "Dias para cobrir", aluguel_valor: "Posição vendida", free_float: "Free float", margem_fcl: "Margem FCL", fcf_yield: "FCF yield", conversao_caixa: "Conversão de caixa", fcl: "Fluxo de caixa livre",
 };
 const EXTRA_META = {
   empresa: { nome: "Empresa", unidade: "txt" }, nome: { nome: "Nome", unidade: "txt" }, ticker: { nome: "Ticker", unidade: "txt" },
@@ -276,6 +276,9 @@ const POR_QUE = {
   btc_por_acao: "Mostra quanto bitcoin cada ação representa; emissões de ações diluem esse número.",
   bdr_preco_justo: "Preço do BDR pela cotação lá fora e pelo câmbio: mostra se o BDR está alinhado ao papel original.",
   bdr_agio: "Ágio significa pagar mais do que o papel vale lá fora; deságio, menos.",
+  aluguel_valor: "Mostra o tamanho da aposta contra a ação no mercado de aluguel. Posições grandes indicam que muitos investidores esperam queda.",
+  aluguel_pct_ff: "Mostra quanto das ações disponíveis no mercado está vendido. Percentuais altos indicam pessimismo concentrado e risco de alta rápida se os vendidos precisarem recomprar.",
+  aluguel_dias: "Mostra quantos dias de negociação normal seriam necessários para recomprar toda a posição vendida. Quanto maior, mais difícil e cara a saída dos vendidos.",
   setor_micro: "Empresas do mesmo setor têm margens, dívida e múltiplos parecidos: compare sempre dentro do setor.",
   var_12m: "Mostra o desempenho recente do preço; útil para contexto, não para conclusão sobre o negócio.",
 };
@@ -318,12 +321,38 @@ async function carregar() {
   D.univMap = Object.fromEntries(univ.map((a) => [a.ticker, a]));
   D.tickers = D.univ.map((a) => a.ticker);
 }
+const RAMO_VIVO = "https://raw.githubusercontent.com/luizfrb529/analise-fundamentalista/refs/heads/mercado/";
+async function jsonVivo(arquivo) {
+  try {
+    const r = await fetch(`${RAMO_VIVO}${arquivo}?t=${Date.now()}`, { cache: "no-store" });
+    if (!r.ok) return null;
+    const j = await r.json();
+    return Date.now() - new Date(j.atualizado_em).getTime() < 36 * 3600e3 ? j : null;   // ignora arquivo velho
+  } catch (e) { return null; }
+}
+async function precosAoVivo() {
+  const j = await jsonVivo("precos.json");
+  if (!j) return;
+  for (const [t, v] of Object.entries(j.precos || {})) {
+    const p = D.prices[t];
+    if (!p || !ok(v.preco) || (p.data && v.data < p.data)) continue;
+    D.prices[t] = { ...p, preco: v.preco, var_dia: v.var_dia, data: v.data, ao_vivo: j.atualizado_em };
+  }
+}
+async function noticiasAoVivo() {
+  if (D.cache.vivoNot === undefined) D.cache.vivoNot = await jsonVivo("noticias.json");
+  return D.cache.vivoNot;
+}
 async function historico(t) {
   if (!D.cache["h" + t]) D.cache["h" + t] = await j(`data/history/${t}.json`, { anual: {}, precos: { semanal: [], diario: [] } });
   return D.cache["h" + t];
 }
 async function noticias(t) {
-  if (!D.cache["n" + t]) D.cache["n" + t] = await j(`data/news/${t}.json`, { noticias: [], comunicados: [] });
+  if (!D.cache["n" + t]) {
+    const [base, vivo] = await Promise.all([j(`data/news/${t}.json`, { noticias: [], comunicados: [] }), noticiasAoVivo()]);
+    const nv = vivo && vivo.por_ticker && vivo.por_ticker[t];
+    D.cache["n" + t] = nv && nv.length ? { ...base, noticias: nv } : base;
+  }
   return D.cache["n" + t];
 }
 async function proventos(t) {
@@ -414,7 +443,7 @@ function montarMenus() {
     <div class="mega-col"><h5>Listas rápidas</h5>
       <a class="item" href="#/rankings?foco=roe&seg=ACAO_BR">Maior ROE</a>
       <a class="item" href="#/rankings?foco=dy&seg=ACAO_BR">Maior dividend yield</a><a class="item" href="#/rankings?seg=ACAO_BR">Nota por critérios</a><a class="item" href="#/rankings?foco=piotroski&seg=ACAO_BR">Qualidade contábil</a>
-      <a class="item" href="#/rankings?foco=pl&seg=ACAO_BR">Menor P/L</a><a class="item" href="#/ativos?seg=ACAO_BR&porte=small">Small caps</a>
+      <a class="item" href="#/rankings?foco=pl&seg=ACAO_BR">Menor P/L</a><a class="item" href="#/ativos?seg=ACAO_BR&porte=small">Small caps</a><a class="item" href="#/rankings?foco=vendida&seg=ACAO_BR">Maiores posições vendidas</a>
       <a class="item" href="#/filtros">Filtros avançados</a></div>
     <div class="rodape-mega"><a class="lk" href="#/ativos?seg=ACAO_BR">Ver todas as ações →</a></div>`;
   const bdrs = D.tickers.filter(isBDR).sort((a, b) => (ind(b).valor_mercado_brl || 0) - (ind(a).valor_mercado_brl || 0));
@@ -444,7 +473,10 @@ function topLista(L, base, n = 5) {
 }
 const SETORES_PERENES = ["Energia elétrica", "Saneamento", "Seguros", "Telecom", "Financeiro"];
 async function feedNoticias() {
-  if (!D.cache.feed) D.cache.feed = await j("data/news/_feed.json", { noticias: [], comunicados: [] });
+  if (!D.cache.feed) {
+    const [base, vivo] = await Promise.all([j("data/news/_feed.json", { noticias: [], comunicados: [] }), noticiasAoVivo()]);
+    D.cache.feed = vivo && vivo.feed && vivo.feed.length ? { ...base, noticias: vivo.feed } : base;
+  }
   return D.cache.feed;
 }
 function pgHome(app) {
@@ -644,6 +676,7 @@ const PRESETS = {
   padrao: { nome: "Principais", cols: ["setor_micro", "valor_mercado_brl", "preco", "nota_criterios", "pl", "pvp", "dy", "roe", "roic", "divliq_ebitda", "piotroski"] },
   valuation: { nome: "Valuation e dividendos", cols: ["setor_micro", "valor_mercado_brl", "pl", "pvp", "ev_ebitda", "psr", "dy", "payout", "tir_implicita"] },
   rentab: { nome: "Rentabilidade e eficiência", cols: ["setor_micro", "roe", "roic", "roa", "margem_bruta", "margem_ebitda", "margem_liquida", "giro_ativo", "piotroski"] },
+  vendida: { nome: "Posições vendidas", cols: ["setor_micro", "valor_mercado_brl", "aluguel_valor", "aluguel_pct_ff", "aluguel_dias", "free_float"] },
   caixa: { nome: "Geração de caixa", cols: ["setor_micro", "valor_mercado_brl", "fcl", "margem_fcl", "fcf_yield", "conversao_caixa", "divliq_ebitda", "dy"] },
   risco: { nome: "Endividamento e crescimento", cols: ["setor_micro", "divliq_ebitda", "liquidez_corrente", "pl_ativos", "cagr_receita_5a", "cagr_lucro_5a", "cresc_lucro_ltm", "var_12m"] },
   personalizado: { nome: "Personalizado", cols: null },
@@ -759,6 +792,8 @@ const RANKINGS = [
   { id: "dy", nome: "Dividendos sustentáveis", desc: "Dividend yield de 12 meses de quem distribui menos do que lucra (payout abaixo de 100%).", k: "dy", dir: 1, f: (t) => ok(ind(t).payout) && ind(t).payout > 0 && ind(t).payout < 1 },
   { id: "tir", nome: "Maior TIR implícita", desc: "Retorno anual que o preço de hoje embute, mantida a geração atual de lucro e caixa.", k: "tir_implicita", dir: 1, f: (t) => !semValuation(t) },
   { id: "pl", nome: "Menor P/L", desc: "Preço sobre lucro por ação. Só empresas com lucro.", k: "pl", dir: -1, f: (t) => !semValuation(t) && ind(t).pl > 0 },
+  { id: "vendida", nome: "Maiores posições vendidas", desc: "Ações em aberto no aluguel da B3 (posição vendida) sobre as ações em circulação da classe declaradas à CVM, no último pregão. Outras bases de free float dão percentuais maiores; a ordem tende a ser a mesma.", k: "aluguel_pct_ff", dir: 1, f: (t) => ok(val(t, "aluguel_pct_ff")) },
+  { id: "cobrir", nome: "Mais dias para cobrir", desc: "Dias de volume médio necessários para recomprar toda a posição vendida (valor alugado / volume financeiro médio de 21 pregões).", k: "aluguel_dias", dir: 1, f: (t) => ok(val(t, "aluguel_dias")) },
   { id: "caixa", nome: "Geração de caixa", desc: "Margem de fluxo de caixa livre: quanto de cada R$ 100 de receita sobra em caixa depois dos investimentos, em 12 meses. Não se aplica a bancos.", k: "margem_fcl", dir: 1, f: (t) => !isFin(t) && !semValuation(t) && ok(val(t, "margem_fcl")) && val(t, "margem_fcl") <= 1 },
   { id: "fcfy", nome: "Caixa livre sobre o preço", desc: "FCF yield: fluxo de caixa livre de 12 meses dividido pelo valor de mercado. Quanto caixa a empresa gera para cada real pago na ação.", k: "fcf_yield", dir: 1, f: (t) => !isFin(t) && !semValuation(t) },
 ];
@@ -868,12 +903,12 @@ async function pgAtivo(app, t) {
   app.innerHTML = `${trilha([[isBDR(t) ? "BDRs" : "Ações", `#/ativos?seg=${segTab}`], [a.setor_macro, `#/ativos?seg=${segTab}&setor=${encodeURIComponent(a.setor_macro)}`], [t]])}
   <div class="ativo-topo">
     <div class="ativo-id">${logo(t, "g")}<div><h1>${t}${classes.length ? classes.map((c) => `<span class="badge">${c}</span>`).join("") : ""}${isRec(t) ? `<span class="badge rec">${esc(recNome(t))}</span>` : ""}${estado(t) ? `<span class="badge estatal" data-tip="${esc(estado(t).resumo)}"><i class="q-estatal"></i>${rotEstado(t)}</span>` : ""}</h1><div class="nm">${esc(a.nome)}</div>${proxResultado(t)}</div></div>
-    <nav class="secoes-nav" id="secoes">${[["indicadores", "Indicadores"], ["criterios", "Critérios"], ["resultados", "Resultados"], ["proventos", "Proventos"], ["sobre", "Sobre a empresa"], ["governanca", "Governança"], ["noticias", "Comunicados"]].map(([id, nm]) => `<a href="#" data-sec="${id}">${nm}</a>`).join("")}</nav>
+    <nav class="secoes-nav" id="secoes">${[["indicadores", "Indicadores"], ["criterios", "Critérios"], ["resultados", "Resultados"], ["proventos", "Proventos"], ["sobre", "Sobre a empresa"], ["governanca", "Governança"], ["acionistas", "Acionistas"], ["noticias", "Comunicados"]].map(([id, nm]) => `<a href="#" data-sec="${id}">${nm}</a>`).join("")}</nav>
   </div>
 
   <div class="cartao" style="margin-top:18px">
     <div class="cotacao-cab"><div><div class="sub">Cotação</div><div class="preco-grande">R$ ${ok(p.preco) ? nf2.format(p.preco) : "n/d"}</div>
-      <div class="sub" style="margin-top:6px">12 meses ${varHtml(p.var_12m)} · no ano ${varHtml(p.var_ano)} · fechamento de ${dataBR(p.data)}</div>
+      <div class="sub" style="margin-top:6px">${p.ao_vivo ? `hoje ${varHtml(p.var_dia)} · cotação das ${new Date(p.ao_vivo).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })} (atraso de até 15 min)` : `fechamento de ${dataBR(p.data)}`} · 12 meses ${varHtml(p.var_12m)} · no ano ${varHtml(p.var_ano)}</div><div class="sub">Indicadores calculados com o preço de fechamento de ${dataBR(D.meta.data_fechamento)}.</div>
       ${pos52 !== null ? `<div class="faixa52"><div class="trilho"><span class="marc" style="left:${pos52}%"></span></div><div class="ext"><span>Mín. 52 semanas R$ ${nf2.format(p.min_52s)}</span><span>Máx. R$ ${nf2.format(p.max_52s)}</span></div></div>` : ""}</div>
       <div class="chips" id="px-per"><button class="chip ativo" data-p="1">1A</button><button class="chip" data-p="5">5A</button><button class="chip" data-p="10">10A</button></div></div>
     <div class="grafico" style="margin-top:12px"><canvas id="g-preco"></canvas></div>
@@ -929,6 +964,9 @@ async function pgAtivo(app, t) {
     </div>
   </section>
 
+  <section class="secao" id="sec-acionistas"><div class="secao-cab"><h2 class="titulo-barra">Composição acionária</h2></div>${blocoAcionistas(t)}</section>
+  <section class="secao" id="sec-vendida"><div class="secao-cab"><h2 class="titulo-barra">Posição vendida</h2></div>${blocoVendida(t)}</section>
+
   <section class="secao" id="sec-noticias"><div class="secao-cab"><h2 class="titulo-barra">Comunicados e notícias</h2></div><div id="noticias" class="cartao"><div class="carregando"><span></span>Carregando</div></div></section>
 
   <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Outras empresas de ${esc(a.setor_macro)}</h2><a class="lk" href="#/comparar?t=${[t, ...pares(t, 4)].join(",")}">Comparar lado a lado →</a></div>
@@ -959,6 +997,42 @@ function tabelaHistorica(t, h, nAnos) {
   const f = (v, u) => !ok(v) ? ND : u === "din" ? `${mo} ${grande(v)}` : fmtU(v, u, mo);
   return `<div class="tabela-wrap"><table><thead><tr><th>Exercício</th>${anos.map((y) => `<th class="n">${y}</th>`).join("")}</tr></thead><tbody>
     ${linhas.map(([k, nm, u]) => `<tr><td>${esc(nm)}</td>${anos.map((y) => `<td class="n">${f(h.anual[y][k], u)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+}
+function blocoAcionistas(t) {
+  const g = D.fund[t].governanca || {}, ac = g.acionistas || [], circ = g.circulacao || {};
+  if (!ac.length && !ok(circ.pct_total)) return '<div class="cartao"><p class="sub">Composição acionária não disponível no Formulário de Referência (BDRs e emissores estrangeiros não entregam esse formulário à CVM).</p></div>';
+  const p = (v) => ok(v) && v > 0 ? nf2.format(v * 100) + "%" : '<span class="muted">-</span>';
+  const ctrl = ac.filter((a) => a.controlador).reduce((s, a) => s + a.pct_total, 0);
+  const rel = ac.filter((a) => !a.controlador).reduce((s, a) => s + a.pct_total, 0);
+  const ff = ok(circ.pct_total) ? circ.pct_total : g.free_float;
+  const tes = g.tesouraria_pct || 0;
+  const fatias = [["Controladores", ctrl, "var(--serie-2)"], ["Outros acionistas relevantes", rel, "#a78bfa"], ["Tesouraria", tes, "var(--txt-3)"], ["Free float (em circulação)", ff, "var(--acento)"]].filter(([, v]) => ok(v) && v > 0.0005);
+  return `<div class="cartao"><div class="cartao-cab"><div><h3>Quem detém a empresa</h3><p class="sub">Formulário de Referência entregue à CVM (data-base ${dataBR(g.fre_data)}). A CVM exige identificar quem tem 5% ou mais de alguma classe; o restante aparece somado como free float.</p></div></div>
+    <div class="barra-acionaria">${fatias.map(([n, v, c]) => `<i style="width:${Math.max(1, v * 100)}%;background:${c}" data-tip="${esc(n)}: ${nf2.format(v * 100)}%"></i>`).join("")}</div>
+    <div class="legenda-acionaria">${fatias.map(([n, v, c]) => `<span><i style="background:${c}"></i>${esc(n)} <b>${nf2.format(v * 100)}%</b></span>`).join("")}</div>
+    <div class="ind-grade" style="margin-top:14px">
+      <div class="ind"><div class="rot">Free float total${tip("free_float")}</div><div class="val">${p(ff)}</div><div class="det">ações em circulação no mercado</div></div>
+      ${ok(circ.pct_on) && circ.pct_on > 0 ? `<div class="ind"><div class="rot">Free float das ON</div><div class="val">${p(circ.pct_on)}</div><div class="det">${ok(circ.on) ? grande(circ.on) + " ações" : ""}</div></div>` : ""}
+      ${ok(circ.pct_pn) && circ.pct_pn > 0 ? `<div class="ind"><div class="rot">Free float das PN</div><div class="val">${p(circ.pct_pn)}</div><div class="det">${ok(circ.pn) ? grande(circ.pn) + " ações" : ""}</div></div>` : ""}
+      ${ok(circ.acionistas_pf) ? `<div class="ind"><div class="rot">Base de acionistas</div><div class="val">${grande((circ.acionistas_pf || 0) + (circ.acionistas_pj || 0))}</div><div class="det">${grande(circ.acionistas_pf || 0)} pessoas físicas · ${grande(circ.institucionais || 0)} institucionais</div></div>` : ""}
+    </div>
+    ${ac.length ? `<h4>Acionistas identificados</h4><div class="tabela-wrap"><table class="resp"><thead><tr><th>Acionista</th><th>Tipo</th><th class="n">% ON</th><th class="n">% PN</th><th class="n">% do capital</th></tr></thead><tbody>
+      ${ac.map((a) => `<tr><td class="cel-largo" data-label=""><b>${esc(a.nome)}</b> ${a.controlador ? '<span class="badge ac">Controlador</span>' : ""}${a.acordo ? '<span class="badge">Acordo de acionistas</span>' : ""}${a.estrangeiro ? '<span class="badge">Exterior</span>' : ""}</td>
+        <td data-label="Tipo">${esc(a.tipo)}</td><td class="n" data-label="% ON">${p(a.pct_on)}</td><td class="n" data-label="% PN">${p(a.pct_pn)}</td><td class="n" data-label="% do capital"><b>${p(a.pct_total)}</b></td></tr>`).join("")}
+      ${tes > 0 ? `<tr><td class="cel-largo" data-label=""><b>Ações em tesouraria</b></td><td data-label="Tipo">Recompradas pela empresa</td><td></td><td></td><td class="n" data-label="% do capital"><b>${p(tes)}</b></td></tr>` : ""}
+    </tbody></table></div><p class="sub" style="margin-top:8px">Tipo "Fundo ou gestora" é identificado pelo nome; o formulário classifica os demais como pessoa física ou jurídica. Atualizado a cada nova versão do Formulário de Referência.</p>` : ""}
+  </div>`;
+}
+function blocoVendida(t) {
+  const a = D.fund[t].aluguel;
+  if (!a) return '<div class="cartao"><p class="sub">Sem posições em aberto de aluguel registradas na B3 para este papel no último pregão.</p></div>';
+  const tag = !ok(a.pct_free_float) ? "" : a.pct_free_float >= 0.15 ? '<span class="badge neg">alta</span>' : a.pct_free_float >= 0.05 ? '<span class="badge alerta">moderada</span>' : '<span class="badge pos">baixa</span>';
+  return `<div class="cartao"><div class="cartao-cab"><div><h3>Ações alugadas (posição vendida)</h3><p class="sub">No Brasil, a venda a descoberto exige alugar a ação; o saldo em aberto no aluguel é a medida pública da posição vendida. Fonte: ${esc(a.fonte)}, pregão de ${dataBR(a.data)}.</p></div>${tag}</div>
+    <div class="ind-grade">
+      <div class="ind principal"><span class="tag-principal">Principal</span><div class="rot">Vendida / free float${tip("aluguel_pct_ff")}</div><div class="val">${fmtU(a.pct_free_float, "pct")}</div><div class="det">${ok(a.pct_classe) ? `${nf2.format(a.pct_classe * 100)}% de todas as ações da classe` : "&nbsp;"}</div></div>
+      <div class="ind"><div class="rot">Dias para cobrir${tip("aluguel_dias")}</div><div class="val">${ok(a.dias_para_cobrir) ? nf2.format(a.dias_para_cobrir) : ND}</div><div class="det">pelo volume médio de 21 pregões</div></div>
+      <div class="ind"><div class="rot">Posição em R$${tip("aluguel_valor")}</div><div class="val">R$ ${grande(a.valor || 0)}</div><div class="det">${grande(a.qtd || 0)} ações em aberto</div></div>
+    </div><p class="sub" style="margin-top:10px">Base do percentual: ações em circulação da classe declaradas no Formulário de Referência (CVM). Relatórios de corretoras que usam outras bases de free float, como a da Economatica, chegam a percentuais maiores; a ordem entre as empresas tende a ser a mesma. Acima de 15% do free float é considerado elevado.</p></div>`;
 }
 function blocoPrecoHoje(t) {
   const i = ind(t), fin = isFin(t);
@@ -1563,8 +1637,10 @@ function pedirSenha() {
   }
   ligarBusca($("#busca"), $("#busca-lista"));
   montarMenus();
+  await Promise.race([precosAoVivo(), new Promise((r) => setTimeout(r, 3000))]);
   faixaMercado();
   animarFaixa();
+  setInterval(precosAoVivo, AO_VIVO.intervaloMs);
   cotacoesAoVivo();
   setInterval(cotacoesAoVivo, AO_VIVO.intervaloMs);
   rodape();
