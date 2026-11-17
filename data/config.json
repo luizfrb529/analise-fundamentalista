@@ -1,7 +1,10 @@
 {
   "_comentario": "Parâmetros usados pelo pipeline e pelo site. Edite à mão. Taxas em fração (0.05 = 5%).",
-  "porte_faixas_brl": {"large": 50000000000, "mid": 10000000000, "small": 2000000000},
-  "bazin_taxa": 0.06,
+  "porte_faixas_brl": {
+    "large": 50000000000,
+    "mid": 10000000000,
+    "small": 2000000000
+  },
   "premio_risco_brasil": 0.05,
   "premio_risco_exterior": 0.05,
   "inflacao_longo_prazo_brasil_fallback": 0.035,
@@ -25,6 +28,9 @@
   "grupo_minimo_pares": 3,
   "liquidez_minima_brl": 5000000,
   "bdr_agio_relevante": 0.05,
-  "bdr_alerta_proporcao": 0.10,
-  "concentracao_cenario_alerta": 0.6
+  "bdr_alerta_proporcao": 0.1,
+  "concentracao_cenario_alerta": 0.6,
+  "spread_divida": 0.02,
+  "ir_brasil": 0.34,
+  "ir_eua": 0.21
 }

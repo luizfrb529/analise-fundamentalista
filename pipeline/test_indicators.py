@@ -49,10 +49,9 @@ def test_consistencias():
     assert I.queda_seguida([5, 4, 5, 2]) is False
 
 
-def test_graham_bazin():
+def test_graham():
     assert I.graham(2, 20) == ap(math.sqrt(22.5 * 40))
     assert I.graham(-1, 20) is None
-    assert I.bazin(1.2, 0.06) == ap(20)
     assert I.margem_seguranca(20, 16) == ap(0.25)
 
 
@@ -193,3 +192,18 @@ def test_piotroski():
     assert t2["roa_positivo"] is False and t2["sem_emissao"] is False and pts2 == 5
     pts3, _ = I.piotroski({"roa": 0.1}, {"roa": 0.05})
     assert pts3 is None
+
+
+def test_wacc_e_criterios():
+    assert I.wacc(0.15, 0.12, 100, 0, 0.34) == ap(0.15)
+    assert I.wacc(0.15, 0.10, 60, 40, 0.34) == ap(0.6 * 0.15 + 0.4 * 0.10 * 0.66)
+    boa = dict(roic=0.25, roe=0.22, ebitda=100, divliq_ebitda=0.5, margem_ebitda=0.3, cagr_receita_5a=0.10, cagr_lucro_5a=0.12,
+               consist_lucro=7, fcl=50, margem_fcl_5a=0.1, ev_ebitda=6, pl=10, peg=0.8, cobertura_juros=9, valor_mercado=1000, divida_bruta=100)
+    r = I.criterios(boa, {"margem_ebitda": 0.2, "ev_ebitda": 8, "pl": 12}, 0.15, 0.12, 0.34, 0.04, False)
+    assert r["nota"] == ap(10) and r["avaliados"] == 10
+    ruim = dict(boa, roe=0.10, divliq_ebitda=3.5, peg=1.6)
+    r2 = I.criterios(ruim, {"margem_ebitda": 0.2, "ev_ebitda": 8, "pl": 12}, 0.15, 0.12, 0.34, 0.04, False)
+    assert r2["testes"]["roe"] is False and r2["testes"]["divida"] is False and r2["testes"]["pl"] is False
+    assert r2["nota"] == ap(10 * (46 - 5 - 5 - 4) / 46)
+    banco = I.criterios(dict(roe=0.2, pl=8, peg=0.5, cagr_lucro_5a=0.1, consist_lucro=5, cagr_receita_5a=0.08), {}, 0.15, None, 0.34, 0.04, True)
+    assert banco["avaliados"] == 4 and banco["testes"]["roic"] is None

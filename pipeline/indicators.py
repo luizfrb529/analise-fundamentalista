@@ -134,13 +134,6 @@ def graham(lpa: Num, vpa: Num) -> Num:
     return math.sqrt(22.5 * lpa * vpa)
 
 
-def bazin(dpa_medio_5a: Num, taxa: float = 0.06) -> Num:
-    """Preço teto de Bazin = dividendo médio por ação de 5 anos / taxa mínima (padrão 6%)."""
-    if not ok(dpa_medio_5a) or dpa_medio_5a <= 0 or taxa <= 0:
-        return None
-    return dpa_medio_5a / taxa
-
-
 def margem_seguranca(preco_justo: Num, preco: Num) -> Num:
     """(preço justo / preço) - 1. Positivo = preço de tela abaixo do preço justo da fórmula."""
     if not ok(preco_justo, preco) or preco <= 0:
@@ -466,8 +459,6 @@ META = {
     "pvp_vs_media5": ("P/VP vs média própria 5a", "P/VP atual / média dos 5 últimos exercícios - 1 (usado em bancos).", -1, "Valuation", "pct"),
     "graham": ("Preço justo de Graham", "raiz(22,5 x LPA x VPA). Só com LPA e VPA positivos.", 0, "Valuation", "moeda"),
     "graham_margem": ("Margem de segurança Graham", "Preço de Graham / preço - 1.", 1, "Valuation", "pct"),
-    "bazin": ("Preço teto de Bazin", "Dividendo médio por ação dos 5 últimos anos / taxa mínima (padrão 6%, em config.json).", 0, "Valuation", "moeda"),
-    "bazin_margem": ("Margem de segurança Bazin", "Preço teto de Bazin / preço - 1.", 1, "Valuation", "pct"),
     # tir
     "tir_lucro": ("TIR implícita por lucro", "Lucro médio de 3 exercícios / valor de mercado + g.", 1, "TIR", "pct"),
     "tir_caixa": ("TIR implícita por caixa", "FCL médio de 3 exercícios / valor de mercado + g.", 1, "TIR", "pct"),
@@ -632,3 +623,67 @@ def piotroski(atual: dict, anterior: dict, minimo_testes: int = 7):
 
 def meta_json() -> dict:
     return {k: {"nome": v[0], "formula": v[1], "direcao": v[2], "grupo": v[3], "unidade": v[4]} for k, v in META.items()}
+
+
+# ===================================================================== critérios ponderados
+# (id, indicador, parâmetro desejável, importância de 1 a 5 estrelas). Fonte: tabela de critérios do usuário.
+CRITERIOS = [
+    ("roic", "ROIC", "Maior que o WACC, idealmente por mais de 3 pontos percentuais", 5),
+    ("roe", "ROE", "Acima de 15% e superior ao custo do capital próprio", 5),
+    ("divida", "Dívida líquida/EBITDA", "Abaixo de 2x", 5),
+    ("margem_ebitda", "Margem EBITDA", "Superior à mediana do setor", 4),
+    ("receita", "Crescimento da receita", "Acima da inflação em 5 anos", 4),
+    ("lucro", "Crescimento do lucro", "Positivo e consistente em 5 anos", 5),
+    ("fcl", "Fluxo de caixa livre", "Positivo e recorrente", 5),
+    ("ev_ebitda", "EV/EBITDA", "Abaixo da mediana dos pares", 5),
+    ("pl", "P/L", "Abaixo do justificável pelo crescimento (PEG até 1)", 4),
+    ("cobertura", "Cobertura de juros", "EBIT/despesas de juros acima de 4x", 4),
+]
+NAO_SE_APLICA_FIN = {"roic", "divida", "margem_ebitda", "fcl", "ev_ebitda", "cobertura"}
+
+
+def wacc(ke: Num, kd: Num, valor_mercado: Num, divida: Num, ir: float) -> Num:
+    """WACC = E/(D+E) x Ke + D/(D+E) x Kd x (1 - IR)."""
+    if not ok(ke, valor_mercado) or valor_mercado <= 0:
+        return None
+    d = divida if ok(divida) and divida > 0 else 0.0
+    if d and not ok(kd):
+        return None
+    total = valor_mercado + d
+    return valor_mercado / total * ke + (d / total * kd * (1 - ir) if d else 0.0)
+
+
+def criterios(i: dict, mediana_grupo: dict, ke: Num, kd: Num, ir: float, inflacao: Num, financeira: bool) -> dict:
+    """Avalia cada critério (True/False/None) e a nota ponderada de 0 a 10 sobre os critérios avaliados."""
+    g = lambda k: i.get(k) if ok(i.get(k)) else None  # noqa: E731
+    w = wacc(ke, kd, g("valor_mercado"), g("divida_bruta"), ir)
+    sn = i.get("sinais") or {}
+    peg, pl = g("peg"), g("pl")
+    res = {
+        "roic": None if g("roic") is None or w is None else g("roic") > w + 0.03,
+        "roe": None if g("roe") is None else (g("roe") > 0.15 and (ke is None or g("roe") > ke)),
+        "divida": None if g("ebitda") is None or g("divliq_ebitda") is None else (g("ebitda") > 0 and g("divliq_ebitda") < 2),
+        "margem_ebitda": None if g("margem_ebitda") is None or not ok(mediana_grupo.get("margem_ebitda")) else g("margem_ebitda") > mediana_grupo["margem_ebitda"],
+        "receita": None if g("cagr_receita_5a") is None or not ok(inflacao) else g("cagr_receita_5a") > inflacao,
+        "lucro": None if g("cagr_lucro_5a") is None else (g("cagr_lucro_5a") > 0 and (g("consist_lucro") or 0) >= 3),
+        "fcl": None if g("fcl") is None else (g("fcl") > 0 and (g("margem_fcl_5a") or 0) > 0 and not sn.get("fcl_negativo_anos")),
+        "ev_ebitda": None if g("ev_ebitda") is None or not ok(mediana_grupo.get("ev_ebitda")) else (0 < g("ev_ebitda") < mediana_grupo["ev_ebitda"]),
+        "pl": None if pl is None else (pl > 0 and ((0 < peg <= 1) if peg is not None else (ok(mediana_grupo.get("pl")) and pl < mediana_grupo["pl"]))),
+        "cobertura": None if g("cobertura_juros") is None else g("cobertura_juros") > 4,
+    }
+    if financeira:
+        for k in NAO_SE_APLICA_FIN:
+            res[k] = None
+    peso = {c[0]: c[3] for c in CRITERIOS}
+    avaliados = [k for k, v in res.items() if v is not None]
+    total = sum(peso[k] for k in avaliados)
+    nota = 10 * sum(peso[k] for k in avaliados if res[k]) / total if total else None
+    return {"nota": nota, "testes": res, "avaliados": len(avaliados), "wacc": w}
+
+
+META["nota_criterios"] = ("Nota por critérios", "Soma das estrelas dos critérios atendidos / soma das estrelas dos critérios avaliados, de 0 a 10. "
+                          "Critérios: ROIC acima do WACC + 3 p.p., ROE acima de 15% e do custo do capital, dívida líquida/EBITDA abaixo de 2x, "
+                          "margem EBITDA acima do setor, receita crescendo acima da inflação, lucro crescendo em 5 anos, FCL positivo e recorrente, "
+                          "EV/EBITDA abaixo dos pares, PEG até 1 e cobertura de juros acima de 4x.", 1, "Rentabilidade", "x")
+META["wacc"] = ("WACC", "Custo médio ponderado de capital: E/(D+E) x custo do capital próprio + D/(D+E) x custo da dívida x (1 - IR). "
+                "Custo da dívida: Selic (Brasil) ou Treasury 10 anos (exterior) + 2%.", 0, "TIR", "pct")

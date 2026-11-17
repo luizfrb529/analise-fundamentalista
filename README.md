@@ -42,7 +42,7 @@ assets/app.js              lógica do site; CONFIG no topo (colunas, limites dos
 assets/logos/              logos das empresas (SVG), baixados por pipeline/logos.py
 assets/style.css           visual (tema claro e escuro)
 data/universe.json         lista de ativos e classificação (fonte da verdade, editável)
-data/config.json           parâmetros do pipeline (faixas de porte, g por setor, Bazin, prêmios de risco)
+data/config.json           parâmetros do pipeline (faixas de porte, g por setor, prêmios de risco)
 data/notes.json            resumo do negócio, riscos, oportunidades, campos manuais (editável)
 data/prices.json           preço de fechamento e variações (gerado)
 data/fundamentals.json     indicadores LTM, médias de 5 anos, medianas e percentis do setor (gerado)
@@ -96,12 +96,13 @@ Se o setor micro for novo, acrescente o crescimento real dele em `data/config.js
 
 ## Páginas do site
 
-- Início: busca, listas top 5 (ações ou BDRs), setores e ferramentas.
+- Início: busca, chave Ações/BDRs que muda toda a página, listas top 5 e setores.
 - Ativos: tabela completa com conjuntos de colunas prontos, busca, filtro por setor e exportação em CSV. Filtros avançados em `#/filtros`.
 - Empresa: cotação, indicadores em cartões (cada um abre o histórico anual), TIR e crescimento implícitos, Piotroski, resultados financeiros, proventos, governança, comunicados e empresas do setor.
-- Rankings, Comparador e Ferramentas (juros compostos, viver de dividendos, preço teto).
+- Rankings (classificação por critérios ponderados e rankings por indicador) e Comparador.
+- Critérios ponderados: lista, parâmetros e estrelas em `CRITERIOS` (pipeline/indicators.py); custo da dívida e IR em data/config.json (`spread_divida`, `ir_brasil`, `ir_eua`).
 
-O menu "Ações" e "BDRs" e os atalhos da busca usam `MAIS_BUSCADAS` e `ATALHOS_HOME` no topo de `assets/app.js`.
+O menu "Ações" e "BDRs" lista as maiores empresas por valor de mercado e os setores de cada grupo.
 
 ## Rankings e qualidade
 

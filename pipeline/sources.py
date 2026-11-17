@@ -195,8 +195,12 @@ def brapi_quote(tickers: list[str]) -> dict:
 # ------------------------------------------------------------------ macro
 def bcb_sgs(serie: int, ultimos: int = 1) -> list[dict]:
     # a API do BCB às vezes responde 304 sem corpo; pedir sem cache resolve
-    return get(f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{serie}/dados/ultimos/{ultimos}?formato=json",
-               headers={"Cache-Control": "no-cache", "Pragma": "no-cache"}).json()
+    url = f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{serie}/dados/ultimos/{ultimos}?formato=json"
+    try:
+        return get(url, headers={"Cache-Control": "no-cache", "Pragma": "no-cache"}).json()
+    except Exception:
+        # segunda tentativa com parâmetro único na URL, que fura o cache intermediário
+        return get(f"{url}&_={int(time.time())}", headers={"Cache-Control": "no-cache", "Pragma": "no-cache"}).json()
 
 
 def bcb_sgs_periodo(serie: int, anos: int = 11) -> list[dict]:

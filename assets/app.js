@@ -7,9 +7,8 @@ const CONFIG = {
   MODO_PRIVADO: false,
   // SHA-256 da senha (padrão: trocar-senha). Para gerar: python -c "import hashlib;print(hashlib.sha256(b'SUA_SENHA').hexdigest())"
   SENHA_SHA256: "7602b08c32dd3c35d59593cc17cbd28dd80aa1da77558496207d0c69ded5dc36",
-  // atalhos da busca e do menu
-  MAIS_BUSCADAS: ["PETR4", "VALE3", "ITUB4", "BBAS3", "WEGE3", "BBDC4", "BPAC11", "SBSP3"],
-  ATALHOS_HOME: ["PETR4", "ITUB4", "VALE3", "BPAC11", "WEGE3", "NVDC34", "MSFT34"],
+  // mínimo de critérios avaliados para entrar na classificação ponderada
+  CRITERIOS_MIN: 6,
   // limites dos selos de destaque na página de cada empresa
   RISCOS: { divliq_ebitda_max: 3, cobertura_juros_min: 2, fcl_negativo_anos: 2, payout_max: 1, diluicao_3a_max: 0.10,
     armadilha_pl_max: 8, gap_crescimento_max: 0.05, bdr_agio_max: 0.05, liquidez_min: 5e6 },
@@ -29,14 +28,14 @@ const NAO_FIN = new Set(["divida_bruta", "divida_liquida", "ev", "p_ebitda", "p_
   "liquidez_imediata", "cobertura_juros", "divida_cp_pct", "margem_bruta", "margem_ebitda", "margem_ebit", "giro_ativo", "pmr", "pme",
   "pmp", "ciclo_financeiro", "roic", "roic_spread", "fco", "capex", "fcl", "ebitda", "capex_depreciacao", "conversao_caixa",
   "dividendos_sobre_fcl", "tir_caixa", "tir_dcf", "evebitda_vs_media5", "cagr_ebitda_5a", "cagr_ebitda_10a", "piotroski", "passivos_ativos", "pl_ativos"]);
-const SUPRIME_REC = new Set(["pl", "peg", "earnings_yield", "p_ebit", "p_ebitda", "ev_ebit", "ev_ebitda", "graham", "bazin", "tir_implicita"]);
+const SUPRIME_REC = new Set(["pl", "peg", "earnings_yield", "p_ebit", "p_ebitda", "ev_ebit", "ev_ebitda", "graham", "tir_implicita"]);
 const ROT = {
   empresa: "Empresa", setor_micro: "Setor", preco: "Preço", var_12m: "12 meses", var_ano: "No ano", valor_mercado_brl: "Valor de mercado",
   tir_implicita: "TIR implícita", divliq_ebitda: "Dív. líq./EBITDA", margem_liquida: "Margem líquida", margem_bruta: "Margem bruta",
   margem_ebitda: "Margem EBITDA", cagr_lucro_5a: "CAGR lucro 5a", cagr_receita_5a: "CAGR receita 5a", ev_ebitda: "EV/EBITDA", dy: "Dividend yield",
   pl: "P/L", pvp: "P/VP", roe: "ROE", roic: "ROIC", roa: "ROA", piotroski: "Piotroski", payout: "Payout", lpa: "LPA", vpa: "VPA",
   psr: "PSR", liquidez_corrente: "Liquidez corrente", giro_ativo: "Giro do ativo", pl_ativos: "Patrimônio/Ativos", passivos_ativos: "Passivos/Ativos",
-  cresc_lucro_ltm: "Lucro 12m vs anterior", cresc_receita_ltm: "Receita 12m vs anterior", dy_medio_5a: "DY médio 5 anos", anos_pagando: "Anos pagando",
+  nota_criterios: "Nota", cresc_lucro_ltm: "Lucro 12m vs anterior", cresc_receita_ltm: "Receita 12m vs anterior", dy_medio_5a: "DY médio 5 anos", anos_pagando: "Anos pagando",
 };
 const EXTRA_META = {
   empresa: { nome: "Empresa", unidade: "txt" }, nome: { nome: "Nome", unidade: "txt" }, ticker: { nome: "Ticker", unidade: "txt" },
@@ -237,7 +236,6 @@ async function render() {
     else if (r === "ativo") await pgAtivo(app, p.toUpperCase());
     else if (r === "comparar") pgComparar(app, q);
     else if (r === "filtros") pgFiltros(app);
-    else if (r === "ferramentas") pgFerramentas(app, p);
     else app.innerHTML = '<div class="cartao"><h1>Página não encontrada</h1><p><a class="lk" href="#/">Voltar ao início</a></p></div>';
   } catch (e) {
     console.error(e);
@@ -256,22 +254,22 @@ function pilulasData() {
 function itemMenu(t) { return `<a class="item" href="#/ativo/${t}">${logo(t, "p")}<span><b>${t}</b><small>${esc(A(t).nome)}</small></span></a>`; }
 function montarMenus() {
   const acoes = D.tickers.filter((t) => A(t).tipo === "ACAO_BR");
-  const busc = CONFIG.MAIS_BUSCADAS.filter((t) => D.univMap[t]);
+  const busc = [...acoes].sort((a, b) => (ind(b).valor_mercado_brl || 0) - (ind(a).valor_mercado_brl || 0)).slice(0, 8);
   const setores = [...new Set(acoes.map((t) => A(t).setor_macro))].sort((a, b) => a.localeCompare(b, "pt-BR"));
   $("#mega-acoes").innerHTML = `
-    <div class="mega-col"><h5>Mais buscadas</h5>${busc.map(itemMenu).join("")}</div>
+    <div class="mega-col"><h5>Maiores empresas</h5>${busc.map(itemMenu).join("")}</div>
     <div class="mega-col"><h5>Setores</h5>${setores.map((s) => `<a class="item" href="#/ativos?seg=ACAO_BR&setor=${encodeURIComponent(s)}">${esc(s)}</a>`).join("")}</div>
     <div class="mega-col"><h5>Listas rápidas</h5>
-      <a class="item" href="#/ativos?seg=ACAO_BR">Maiores empresas</a><a class="item" href="#/rankings?foco=roe&seg=ACAO_BR">Maior ROE</a>
-      <a class="item" href="#/rankings?foco=dy&seg=ACAO_BR">Maior dividend yield</a><a class="item" href="#/rankings?foco=piotroski&seg=ACAO_BR">Qualidade contábil</a>
+      <a class="item" href="#/rankings?foco=roe&seg=ACAO_BR">Maior ROE</a>
+      <a class="item" href="#/rankings?foco=dy&seg=ACAO_BR">Maior dividend yield</a><a class="item" href="#/rankings?seg=ACAO_BR">Nota por critérios</a><a class="item" href="#/rankings?foco=piotroski&seg=ACAO_BR">Qualidade contábil</a>
       <a class="item" href="#/rankings?foco=pl&seg=ACAO_BR">Menor P/L</a><a class="item" href="#/ativos?seg=ACAO_BR&porte=small">Small caps</a>
       <a class="item" href="#/filtros">Filtros avançados</a></div>
     <div class="rodape-mega"><a class="lk" href="#/ativos?seg=ACAO_BR">Ver todas as ações →</a></div>`;
   const bdrs = D.tickers.filter(isBDR).sort((a, b) => (ind(b).valor_mercado_brl || 0) - (ind(a).valor_mercado_brl || 0));
   $("#mega-bdrs").innerHTML = `
     <div class="mega-col"><h5>Maiores BDRs</h5>${bdrs.slice(0, 8).map(itemMenu).join("")}</div>
-    <div class="mega-col"><h5>Categorias</h5><a class="item" href="#/ativos?seg=BDR_EXTERIOR">Empresas estrangeiras</a><a class="item" href="#/ativos?seg=BDR_EXPOSICAO_BR">Estrangeiras com risco Brasil</a></div>
-    <div class="mega-col"><h5>Listas rápidas</h5><a class="item" href="#/rankings?foco=roe&seg=BDR">Maior ROE</a><a class="item" href="#/rankings?foco=margem&seg=BDR">Maior margem líquida</a>
+    <div class="mega-col"><h5>Setores</h5>${[...new Set(D.tickers.filter(isBDR).map((t) => A(t).setor_macro))].sort((a, b) => a.localeCompare(b, "pt-BR")).map((x) => `<a class="item" href="#/ativos?seg=BDR&setor=${encodeURIComponent(x)}">${esc(x)}</a>`).join("")}</div>
+    <div class="mega-col"><h5>Listas rápidas</h5><a class="item" href="#/rankings?seg=BDR">Nota por critérios</a><a class="item" href="#/rankings?foco=roe&seg=BDR">Maior ROE</a><a class="item" href="#/rankings?foco=margem&seg=BDR">Maior margem líquida</a>
       <a class="item" href="#/rankings?foco=cresc&seg=BDR">Crescimento do lucro</a><a class="item" href="#/rankings?foco=piotroski&seg=BDR">Qualidade contábil</a></div>
     <div class="rodape-mega"><a class="lk" href="#/ativos?seg=BDR">Ver todos os BDRs →</a></div>`;
   $$(".mega a").forEach((a) => a.addEventListener("click", () => { a.blur(); document.activeElement && document.activeElement.blur(); }));
@@ -284,67 +282,113 @@ const LISTAS_HOME = [
   { id: "dy", nome: "Maiores dividend yield", desc: "Últimos 12 meses, de quem distribui menos do que lucra.", k: "dy", dir: 1, f: (t) => ok(ind(t).payout) && ind(t).payout > 0 && ind(t).payout < 1, link: "#/rankings?foco=dy" },
   { id: "vm", nome: "Maiores por valor de mercado", desc: "Empresas ordenadas pelo valor de mercado em reais.", k: "valor_mercado_brl", dir: 1, f: () => true, link: "#/ativos" },
   { id: "roe", nome: "Maior ROE", desc: "Lucro de 12 meses sobre o patrimônio líquido.", k: "roe", dir: 1, f: (t) => !isRec(t), link: "#/rankings?foco=roe" },
-  { id: "piotroski", nome: "Qualidade contábil", desc: "Piotroski F-Score: testes de qualidade atendidos, de 0 a 9.", k: "piotroski", dir: 1, f: (t) => !isFin(t), link: "#/rankings?foco=piotroski", desempate: "roe" },
+  { id: "nota", nome: "Melhor nota por critérios", desc: "Critérios fundamentalistas ponderados por importância, de 0 a 10.", k: "nota_criterios", dir: 1, f: (t) => entraNota(t), link: "#/rankings", desempate: "roe" },
   { id: "pl", nome: "Menor P/L", desc: "Preço sobre lucro, só empresas com lucro positivo.", k: "pl", dir: -1, f: (t) => !semValuation(t) && ind(t).pl > 0, link: "#/rankings?foco=pl" },
-  { id: "small", nome: "Small caps com maior ROE", desc: "Valor de mercado até R$ 10 bilhões.", k: "roe", dir: 1, f: (t) => !isRec(t) && ind(t).valor_mercado_brl <= CONFIG.SMALL_CAP_MAX, link: "#/ativos?porte=small" },
+  { id: "small", nome: "Small caps com maior ROE", desc: "Valor de mercado até R$ 10 bilhões.", k: "roe", dir: 1, f: (t) => !isRec(t) && ok(ind(t).valor_mercado_brl) && ind(t).valor_mercado_brl <= CONFIG.SMALL_CAP_MAX, link: "#/ativos?porte=small" },
 ];
 function topLista(L, base, n = 5) {
   return base.filter(L.f).map((t) => [t, val(t, L.k)]).filter(([, v]) => ok(v))
     .sort((a, b) => (L.dir > 0 ? b[1] - a[1] : a[1] - b[1]) || (L.desempate ? (ind(b[0])[L.desempate] || 0) - (ind(a[0])[L.desempate] || 0) : 0)).slice(0, n);
 }
 function pgHome(app) {
-  const atalhos = CONFIG.ATALHOS_HOME.filter((t) => D.univMap[t]);
+  const nome = () => EST.homeSeg === "BDR" ? "BDRs" : "ações";
   app.innerHTML = `
   <section class="hero">
     <h1>Análise fundamentalista das empresas da B3</h1>
     <p>Indicadores, qualidade e valuation de ${D.tickers.length} ações e BDRs, calculados a partir das demonstrações oficiais.</p>
     <div class="busca-grande busca"><input type="search" id="busca-home" placeholder="Digite o nome da empresa, o código ou o setor" autocomplete="off" aria-label="Buscar ativo">
       <button class="ir" id="busca-home-ir" aria-label="Buscar">${ICONE_LUPA}</button><div class="busca-lista" id="busca-home-lista" hidden></div></div>
-    <div class="atalhos">Mais buscados: ${atalhos.map((t) => `<a class="atalho" href="#/ativo/${t}">${logo(t)}${t}</a>`).join("")}</div>
+    <div class="linha centro" style="margin-top:26px"><div class="segmentado" id="home-seg"><button data-s="ACAO_BR" class="${EST.homeSeg === "ACAO_BR" ? "ativo" : ""}">Ações</button><button data-s="BDR" class="${EST.homeSeg === "BDR" ? "ativo" : ""}">BDRs</button></div></div>
   </section>
   <section class="secao">
-    <div class="secao-cab centro" style="flex-direction:column"><h2>Rankings em destaque</h2>
-      <div class="segmentado" id="home-seg"><button data-s="ACAO_BR" class="${EST.homeSeg === "ACAO_BR" ? "ativo" : ""}">Ações</button><button data-s="BDR" class="${EST.homeSeg === "BDR" ? "ativo" : ""}">BDRs</button></div></div>
+    <div class="secao-cab"><h2 class="titulo-barra" id="tit-listas"></h2></div>
     <div class="listas" id="listas"></div>
-    <div class="linha centro" style="margin-top:22px"><a class="btn-contorno" href="#/ativos">Ver tabela de ativos ›</a></div>
+    <div class="linha centro" style="margin-top:22px"><a class="btn-contorno" id="link-tabela" href="#/ativos">Ver tabela completa ›</a></div>
   </section>
   <section class="secao">
-    <div class="secao-cab"><h2 class="titulo-barra">Setores</h2><span class="sub">Medianas de P/L, ROE e dividend yield de cada setor</span></div>
+    <div class="secao-cab"><h2 class="titulo-barra" id="tit-setores"></h2><span class="sub">Medianas de P/L, ROE e dividend yield de cada setor</span></div>
     <div class="setores" id="setores"></div>
-  </section>
-  <section class="secao">
-    <div class="secao-cab"><h2 class="titulo-barra">Ferramentas</h2><a class="lk" href="#/ferramentas">Ver todas →</a></div>
-    ${cartoesFerramentas()}
   </section>`;
   ligarBusca($("#busca-home"), $("#busca-home-lista"), $("#busca-home-ir"));
-  const desenharListas = () => {
-    const base = filtroSeg(D.tickers, EST.homeSeg);
+  const desenhar = () => {
+    const seg = EST.homeSeg, base = filtroSeg(D.tickers, seg);
+    $("#tit-listas").textContent = `Rankings de ${nome()}`;
+    $("#tit-setores").textContent = `Setores de ${nome()}`;
+    $("#link-tabela").href = `#/ativos?seg=${seg}`;
     $("#listas").innerHTML = LISTAS_HOME.map((L) => {
       const top = topLista(L, base);
       if (top.length < 3) return "";
       return `<div class="lista"><h3>${esc(L.nome)}</h3><p class="sub">${esc(L.desc)}</p>
         ${top.map(([t, v]) => `<div class="lin"><div>${empresa(t, { semBadge: true })}<div class="valor">${fmt(t, L.k, v)}</div></div><a class="btn-ver" href="#/ativo/${t}">Ver ativo</a></div>`).join("")}
-        <a class="btn-contorno" href="${L.link}${L.link.includes("?") ? "&" : "?"}seg=${EST.homeSeg}">Ver lista ›</a></div>`;
+        <a class="btn-contorno" href="${L.link}${L.link.includes("?") ? "&" : "?"}seg=${seg}">Ver lista ›</a></div>`;
+    }).join("");
+    const por = {};
+    for (const t of base) (por[A(t).setor_macro] = por[A(t).setor_macro] || []).push(t);
+    $("#setores").innerHTML = Object.entries(por).sort((a, b) => b[1].length - a[1].length).map(([s, l]) => {
+      const vl = l.filter((t) => !semValuation(t));
+      const top = [...l].sort((a, b) => (ind(b).valor_mercado_brl || 0) - (ind(a).valor_mercado_brl || 0)).slice(0, 5);
+      return `<a class="setor" href="#/ativos?seg=${seg}&setor=${encodeURIComponent(s)}"><div class="setor-topo"><b>${esc(s)}</b><span class="qtd">${l.length} empresa${l.length === 1 ? "" : "s"}</span></div>
+        <div class="logos-pilha">${top.map((t) => logo(t, "p")).join("")}</div>
+        <div class="setor-nums"><div>P/L<b>${fmtU(mediana(vl.map((t) => ind(t).pl).filter((v) => v > 0)), "x")}</b></div><div>ROE<b>${fmtU(mediana(vl.map((t) => ind(t).roe)), "pct")}</b></div><div>DY<b>${fmtU(mediana(vl.map((t) => ind(t).dy)), "pct")}</b></div></div></a>`;
     }).join("");
   };
-  $$("#home-seg button").forEach((b) => b.onclick = () => { EST.homeSeg = b.dataset.s; $$("#home-seg button").forEach((x) => x.classList.toggle("ativo", x === b)); desenharListas(); });
-  desenharListas();
-  const por = {};
-  for (const t of D.tickers.filter((x) => A(x).tipo === "ACAO_BR")) (por[A(t).setor_macro] = por[A(t).setor_macro] || []).push(t);
-  $("#setores").innerHTML = Object.entries(por).sort((a, b) => b[1].length - a[1].length).map(([s, l]) => {
-    const vl = l.filter((t) => !semValuation(t));
-    const top = [...l].sort((a, b) => (ind(b).valor_mercado_brl || 0) - (ind(a).valor_mercado_brl || 0)).slice(0, 5);
-    return `<a class="setor" href="#/ativos?seg=ACAO_BR&setor=${encodeURIComponent(s)}"><div class="setor-topo"><b>${esc(s)}</b><span class="qtd">${l.length} empresas</span></div>
-      <div class="logos-pilha">${top.map((t) => logo(t, "p")).join("")}</div>
-      <div class="setor-nums"><div>P/L<b>${fmtU(mediana(vl.map((t) => ind(t).pl).filter((v) => v > 0)), "x")}</b></div><div>ROE<b>${fmtU(mediana(vl.map((t) => ind(t).roe)), "pct")}</b></div><div>DY<b>${fmtU(mediana(vl.map((t) => ind(t).dy)), "pct")}</b></div></div></a>`;
-  }).join("");
+  $$("#home-seg button").forEach((b) => b.onclick = () => { EST.homeSeg = b.dataset.s; $$("#home-seg button").forEach((x) => x.classList.toggle("ativo", x === b)); desenhar(); });
+  desenhar();
 }
+
+/* =====================================================================
+   CRITÉRIOS PONDERADOS (tabela de importância do usuário; cálculo em pipeline/indicators.py)
+   ===================================================================== */
+function entraNota(t) {
+  const c = D.fund[t].criterios;
+  return !isRec(t) && !isCripto(t) && c && c.avaliados >= CONFIG.CRITERIOS_MIN && ok(ind(t).nota_criterios);
+}
+function estrelas(n) { return `<span class="estrelas" aria-label="${n} de 5">${"★".repeat(n)}<i>${"★".repeat(5 - n)}</i></span>`; }
+function valorCriterio(t, id) {
+  const i = ind(t), f = D.fund[t], md = ((f.setor || {}).mediana_grupo) || {}, c = f.criterios || {}, mo = moedaDe(t);
+  const p = (v) => fmtU(v, "pct"), x = (v) => fmtU(v, "x");
+  switch (id) {
+    case "roic": return `${p(i.roic)} <span class="muted">· WACC ${p(i.wacc)}</span>`;
+    case "roe": return `${p(i.roe)} <span class="muted">· custo do capital ${p(i.taxa_referencia)}</span>`;
+    case "divida": return x(i.divliq_ebitda);
+    case "margem_ebitda": return `${p(i.margem_ebitda)} <span class="muted">· setor ${p(md.margem_ebitda)}</span>`;
+    case "receita": return `${p(i.cagr_receita_5a)} ao ano <span class="muted">· inflação ${p(c.inflacao)}</span>`;
+    case "lucro": return `${p(i.cagr_lucro_5a)} ao ano <span class="muted">· ${ok(i.consist_lucro) ? i.consist_lucro : "n/d"} anos crescendo</span>`;
+    case "fcl": return ok(i.fcl) ? `${mo} ${grande(i.fcl)}` : ND;
+    case "ev_ebitda": return `${x(i.ev_ebitda)} <span class="muted">· setor ${x(md.ev_ebitda)}</span>`;
+    case "pl": return `${x(i.pl)} <span class="muted">· PEG ${x(i.peg)}</span>`;
+    case "cobertura": return x(i.cobertura_juros);
+    default: return ND;
+  }
+}
+function blocoCriterios(t) {
+  const c = D.fund[t].criterios, lista = D.imeta.criterios || [];
+  if (!c || !lista.length) return "";
+  const nota = ind(t).nota_criterios;
+  return `<div class="cartao"><div class="cartao-cab"><div><h3>Critérios fundamentalistas</h3><p class="sub">Cada critério pesa conforme a importância. Nota = estrelas atendidas sobre estrelas avaliadas.</p></div>
+    <div class="placar"><b>${ok(nota) ? nf2.format(nota) : "n/d"}</b><span>de 10</span></div></div>
+    <div class="tabela-wrap"><table class="resp"><thead><tr><th>Indicador</th><th>Parâmetro desejável</th><th>Empresa</th><th>Importância</th><th class="n">Atende</th></tr></thead><tbody>
+    ${lista.map(([id, nm, par, est]) => { const v = c.testes[id];
+      return `<tr><td class="cel-largo" data-label=""><b>${esc(nm)}</b></td><td data-label="Parâmetro" style="white-space:normal">${esc(par)}</td><td data-label="Empresa">${v === null && isFin(t) && ["roic", "divida", "margem_ebitda", "fcl", "ev_ebitda", "cobertura"].includes(id) ? '<span class="muted">não se aplica a bancos</span>' : valorCriterio(t, id)}</td>
+        <td data-label="Importância">${estrelas(est)}</td><td class="n" data-label="Atende"><span class="ic-crit ${v === true ? "s" : v === false ? "n" : "x"}">${v === true ? "✓" : v === false ? "✕" : "n/d"}</span></td></tr>`; }).join("")}
+    </tbody></table></div></div>`;
+}
+function tabelaCriterios(base) {
+  const lista = D.imeta.criterios || [];
+  const l = base.filter(entraNota).sort((a, b) => ind(b).nota_criterios - ind(a).nota_criterios || (ind(b).roe || 0) - (ind(a).roe || 0));
+  return `<div class="tabela-wrap alta"><table><thead><tr><th>#</th><th>Empresa</th><th class="n">Nota</th>${lista.map(([id, nm, par, est]) => `<th class="n" data-tip="${esc(nm + ": " + par + " (" + est + " de 5 estrelas)")}">${esc(nm.replace("Dívida líquida/EBITDA", "Dív./EBITDA").replace("Crescimento da receita", "Receita").replace("Crescimento do lucro", "Lucro").replace("Fluxo de caixa livre", "FCL").replace("Cobertura de juros", "Cobertura"))}</th>`).join("")}</tr></thead><tbody>
+  ${l.map((t, i) => { const c = D.fund[t].criterios.testes, n = ind(t).nota_criterios;
+    return `<tr class="clicavel" data-t="${t}"><td class="n muted">${i + 1}</td><td>${empresa(t, { semBadge: true })}</td><td class="n"><span class="nota-barra"><i style="width:${n * 10}%"></i></span><b>${nf2.format(n)}</b></td>
+      ${lista.map(([id]) => `<td class="n"><span class="ic-crit ${c[id] === true ? "s" : c[id] === false ? "n" : "x"}">${c[id] === true ? "✓" : c[id] === false ? "✕" : "·"}</span></td>`).join("")}</tr>`; }).join("") || `<tr><td colspan="${lista.length + 3}" class="vazio">Sem empresas neste recorte.</td></tr>`}
+  </tbody></table></div>`;
+}
+
 
 /* =====================================================================
    TABELA DE ATIVOS
    ===================================================================== */
 const PRESETS = {
-  padrao: { nome: "Principais", cols: ["setor_micro", "valor_mercado_brl", "preco", "pl", "pvp", "dy", "roe", "roic", "margem_liquida", "divliq_ebitda", "piotroski"] },
+  padrao: { nome: "Principais", cols: ["setor_micro", "valor_mercado_brl", "preco", "nota_criterios", "pl", "pvp", "dy", "roe", "roic", "divliq_ebitda", "piotroski"] },
   valuation: { nome: "Valuation e dividendos", cols: ["setor_micro", "valor_mercado_brl", "pl", "pvp", "ev_ebitda", "psr", "dy", "payout", "tir_implicita"] },
   rentab: { nome: "Rentabilidade e eficiência", cols: ["setor_micro", "roe", "roic", "roa", "margem_bruta", "margem_ebitda", "margem_liquida", "giro_ativo", "piotroski"] },
   risco: { nome: "Endividamento e crescimento", cols: ["setor_micro", "divliq_ebitda", "liquidez_corrente", "pl_ativos", "cagr_receita_5a", "cagr_lucro_5a", "cresc_lucro_ltm", "var_12m"] },
@@ -412,7 +456,7 @@ function pgAtivos(app, q) {
   const lista = () => {
     let l = filtroSeg(D.tickers, T.seg);
     if (T.setor) l = l.filter((t) => A(t).setor_macro === T.setor);
-    if (T.porte === "small") l = l.filter((t) => ind(t).valor_mercado_brl <= CONFIG.SMALL_CAP_MAX);
+    if (T.porte === "small") l = l.filter((t) => ok(ind(t).valor_mercado_brl) && ind(t).valor_mercado_brl <= CONFIG.SMALL_CAP_MAX);
     const b = T.busca.trim().toLowerCase();
     if (b) l = l.filter((t) => t.toLowerCase().includes(b) || A(t).nome.toLowerCase().includes(b) || A(t).setor_macro.toLowerCase().includes(b) || A(t).setor_micro.toLowerCase().includes(b));
     return ordenar(l, T.sort.k, T.sort.d);
@@ -469,11 +513,19 @@ function pgRankings(app, q) {
   app.innerHTML = `${trilha([["Rankings"]])}<div class="cab-pagina"><div><h1>Rankings</h1><p>Cada ranking ordena por um único indicador, descrito no próprio cartão. Empresas em recuperação ficam fora dos rankings de preço e rentabilidade.</p></div>${pilulasData()}</div>
   <div class="linha entre" style="margin-bottom:16px"><div class="segmentado" id="rk-seg">${[["TODOS", "Todos"], ["ACAO_BR", "Ações"], ["BDR", "BDRs"]].map(([k, n]) => `<button data-s="${k}" class="${EST.rkSeg === k ? "ativo" : ""}">${n}</button>`).join("")}</div>
     <select id="rk-setor"><option value="">Todos os setores</option>${macros.map((s) => `<option ${EST.rkSetor === s ? "selected" : ""}>${esc(s)}</option>`).join("")}</select></div>
-  <div class="rank-grade" id="rk-saida"></div>`;
+  <section><div class="secao-cab"><div><h2 class="titulo-barra">Classificação por critérios</h2><p class="sub" style="margin-top:6px">Nota de 0 a 10: soma das estrelas dos critérios que a empresa atende sobre as estrelas dos critérios avaliados. Passe o mouse no nome de cada critério para ver o parâmetro e o peso. Empresas em recuperação ficam de fora.</p></div></div>
+    <div id="rk-criterios"></div>
+    <details class="legenda-crit"><summary>Ver critérios e pesos</summary><div class="tabela-wrap" style="margin-top:10px"><table><thead><tr><th>Indicador</th><th>Parâmetro desejável</th><th>Importância</th></tr></thead><tbody>
+      ${(D.imeta.criterios || []).map(([, nm, par, est]) => `<tr><td><b>${esc(nm)}</b></td><td style="white-space:normal">${esc(par)}</td><td>${estrelas(est)}</td></tr>`).join("")}</tbody></table></div>
+      <p class="sub" style="margin-top:8px">WACC: custo do capital próprio (NTN-B longa nominal + 5%; exterior: Treasury 10 anos + 5%) e custo da dívida (Selic ou Treasury + 2%, menos IR), ponderados pelo valor de mercado e pela dívida bruta. Bancos e seguradoras são avaliados só por ROE, receita, lucro e P/L.</p></details>
+  </section>
+  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Rankings por indicador</h2></div><div class="rank-grade" id="rk-saida"></div></section>`;
   if (foco) EST.rkAbertos[foco] = true;
   const desenhar = () => {
     let base = filtroSeg(D.tickers, EST.rkSeg);
     if (EST.rkSetor) base = base.filter((t) => A(t).setor_macro === EST.rkSetor);
+    $("#rk-criterios").innerHTML = tabelaCriterios(base);
+    ligarLinhas($("#rk-criterios"));
     $("#rk-saida").innerHTML = RANKINGS.map((R) => {
       const l = topLista(R, base, 999);
       const aberto = !!EST.rkAbertos[R.id], mostra = aberto ? l : l.slice(0, 8);
@@ -539,7 +591,7 @@ async function pgAtivo(app, t) {
   app.innerHTML = `${trilha([[isBDR(t) ? "BDRs" : "Ações", `#/ativos?seg=${segTab}`], [a.setor_macro, `#/ativos?seg=${segTab}&setor=${encodeURIComponent(a.setor_macro)}`], [t]])}
   <div class="ativo-topo">
     <div class="ativo-id">${logo(t, "g")}<div><h1>${t}${classes.length ? classes.map((c) => `<span class="badge">${c}</span>`).join("") : ""}${isRec(t) ? `<span class="badge rec">${esc(recNome(t))}</span>` : ""}</h1><div class="nm">${esc(a.nome)}</div></div></div>
-    <nav class="secoes-nav" id="secoes">${[["indicadores", "Indicadores"], ["resultados", "Resultados"], ["proventos", "Proventos"], ["sobre", "Sobre a empresa"], ["governanca", "Governança"], ["noticias", "Comunicados"]].map(([id, nm]) => `<a href="#" data-sec="${id}">${nm}</a>`).join("")}</nav>
+    <nav class="secoes-nav" id="secoes">${[["indicadores", "Indicadores"], ["criterios", "Critérios"], ["resultados", "Resultados"], ["proventos", "Proventos"], ["sobre", "Sobre a empresa"], ["governanca", "Governança"], ["noticias", "Comunicados"]].map(([id, nm]) => `<a href="#" data-sec="${id}">${nm}</a>`).join("")}</nav>
   </div>
 
   <div class="cartao" style="margin-top:18px">
@@ -559,6 +611,7 @@ async function pgAtivo(app, t) {
     ${pts.length ? `<div class="atencao" style="margin-bottom:16px">${pts.map((x) => `<span class="badge ${x.tipo}" data-tip="${esc(x.det)}">${esc(x.rot)}</span>`).join("")}</div>` : ""}
     ${grupos.map((g) => { const cards = g.ks.map((k) => cartaoInd(t, k, h)).join(""); return cards ? `<h4>${esc(g.nome)}</h4><div class="ind-grade">${cards}</div>` : ""; }).join("")}
   </section>
+  <section class="secao" id="sec-criterios">${blocoCriterios(t)}</section>
   <section class="secao"><div class="grade g-3-2">${blocoPrecoHoje(t)}${blocoPiotroski(t)}</div></section>
   ${isBDR(t) ? `<section class="secao">${blocoBDR(t)}</section>` : ""}
   ${f.holding ? `<section class="secao">${blocoHolding(t)}</section>` : ""}
@@ -850,6 +903,7 @@ function pgFiltros(app) {
       <label class="campo">Subsetor<select id="f-micro"><option value="">Todos</option>${micros.map((x) => `<option ${s.micro === x ? "selected" : ""}>${esc(x)}</option>`).join("")}</select></label>
       <label class="campo">Porte<select id="f-porte"><option value="">Todos</option>${["Large cap", "Mid cap", "Small cap", "Micro cap"].map((x) => `<option ${s.porte === x ? "selected" : ""}>${x}</option>`).join("")}</select></label>
       <label class="campo">Piotroski mínimo<select id="f-pio"><option value="">Qualquer</option>${[5, 6, 7, 8].map((v) => `<option ${+s.pioMin === v ? "selected" : ""} value="${v}">${v} ou mais</option>`).join("")}</select></label>
+      <label class="campo">Nota por critérios mínima<select id="f-nota"><option value="">Qualquer</option>${[5, 6, 7, 8].map((v) => `<option ${+s.notaMin === v ? "selected" : ""} value="${v}">${v} ou mais</option>`).join("")}</select></label>
       <label class="campo">TIR implícita mínima (%)<input type="number" id="f-tir" step="0.5" value="${esc(s.tirMin)}"></label>
       <label class="campo">Liquidez diária mínima (R$ milhões)<input type="number" id="f-liq" step="1" value="${esc(s.liqMin)}"></label>
       <label class="campo">Cenário macro favorável<select id="f-cen"><option value="">Nenhum</option>${Object.entries(CENARIOS).map(([k, c]) => `<option value="${k}" ${s.cenario === k ? "selected" : ""}>${c}</option>`).join("")}</select></label>
@@ -884,6 +938,7 @@ function pgFiltros(app) {
     if (s.micro) l = l.filter((t) => A(t).setor_micro === s.micro);
     if (s.porte) l = l.filter((t) => val(t, "porte") === s.porte);
     if (s.pioMin) l = l.filter((t) => ok(ind(t).piotroski) && ind(t).piotroski >= +s.pioMin);
+    if (s.notaMin) l = l.filter((t) => entraNota(t) && ind(t).nota_criterios >= +s.notaMin);
     if (s.tirMin !== "" && s.tirMin !== null) l = l.filter((t) => !semValuation(t) && ok(ind(t).tir_implicita) && ind(t).tir_implicita * 100 >= +s.tirMin);
     if (s.liqMin !== "" && s.liqMin !== null) l = l.filter((t) => ok((D.prices[t] || {}).liquidez_21) && D.prices[t].liquidez_21 >= +s.liqMin * 1e6);
     if (s.semRec) l = l.filter((t) => !isRec(t));
@@ -891,17 +946,17 @@ function pgFiltros(app) {
     for (const f of EST.scrFiltros) l = l.filter((t) => { const v = val(t, f.k); return ok(v) && v >= f.min - 1e-12 && v <= f.max + 1e-12; });
     return ordenar(l, "valor_mercado_brl", -1);
   };
-  const colunas = () => [...new Set(["setor_micro", "preco", ...EST.scrFiltros.map((f) => f.k), "pl", "roe", "dy", "tir_implicita", "piotroski"])];
+  const colunas = () => [...new Set(["setor_micro", "preco", ...EST.scrFiltros.map((f) => f.k), "nota_criterios", "pl", "roe", "dy", "tir_implicita", "piotroski"])];
   const aplicar = () => {
     const l = resultado();
     $("#f-qtd").textContent = `${l.length} empresa${l.length === 1 ? "" : "s"}`;
     $("#f-res").innerHTML = tabela(l, colunas(), { alta: true });
     ligarLinhas($("#f-res"));
   };
-  const ler = () => { Object.assign(s, { macro: $("#f-macro").value, micro: $("#f-micro").value, porte: $("#f-porte").value, pioMin: $("#f-pio").value, tirMin: $("#f-tir").value,
+  const ler = () => { Object.assign(s, { macro: $("#f-macro").value, micro: $("#f-micro").value, porte: $("#f-porte").value, pioMin: $("#f-pio").value, notaMin: $("#f-nota").value, tirMin: $("#f-tir").value,
     liqMin: $("#f-liq").value, cenario: $("#f-cen").value, semRec: $("#f-rec").checked }); aplicar(); };
   $$("#scr-seg button").forEach((c) => c.onclick = () => { s.seg = c.dataset.s; $$("#scr-seg button").forEach((x) => x.classList.toggle("ativo", x === c)); aplicar(); });
-  ["#f-macro", "#f-micro", "#f-porte", "#f-pio", "#f-tir", "#f-liq", "#f-cen", "#f-rec"].forEach((id) => { $(id).onchange = ler; $(id).oninput = ler; });
+  ["#f-macro", "#f-micro", "#f-porte", "#f-pio", "#f-nota", "#f-tir", "#f-liq", "#f-cen", "#f-rec"].forEach((id) => { $(id).onchange = ler; $(id).oninput = ler; });
   $("#f-novo").onchange = (e) => { if (e.target.value) { EST.scrFiltros.push({ k: e.target.value, min: null, max: null }); e.target.value = ""; faixas(); aplicar(); } };
   $("#f-salvar").onclick = () => { const nome = prompt("Nome do filtro:"); if (!nome) return; const fv = lsGet("filtros_favoritos", {}); fv[nome] = { scr: { ...s }, faixas: EST.scrFiltros }; lsSet("filtros_favoritos", fv); pgFiltros(app); };
   $("#f-favs").onchange = (e) => { const fv = lsGet("filtros_favoritos", {})[e.target.value]; if (fv) { Object.assign(EST.scr, fv.scr); EST.scrFiltros = fv.faixas || []; pgFiltros(app); } };
@@ -920,91 +975,6 @@ function exportarCSV(lista, colunas) {
   a.download = `ativos_${D.meta.data_fechamento || "dados"}.csv`;
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(a.href), 2000);
-}
-
-/* =====================================================================
-   FERRAMENTAS
-   ===================================================================== */
-const FERRAMENTAS = [
-  { id: "juros", nome: "Calculadora de juros compostos", desc: "Veja quanto um valor inicial e aportes mensais rendem ao longo dos anos.", ic: '<path d="M4 19h16M6 15l4-4 3 3 5-6"/>' },
-  { id: "dividendos", nome: "Quanto preciso para viver de dividendos", desc: "Patrimônio necessário para uma renda mensal e tempo para chegar lá.", ic: '<circle cx="12" cy="12" r="8"/><path d="M12 8v8M9.5 10.5h4a1.5 1.5 0 0 1 0 3h-3a1.5 1.5 0 0 0 0 3h4"/>' },
-  { id: "preco-teto", nome: "Preço teto por dividendos", desc: "Método de Bazin: preço máximo para um dividend yield desejado, com os proventos reais da empresa.", ic: '<path d="M4 7h16M7 7v10M17 7v10M4 17h16"/>' },
-];
-function cartoesFerramentas() {
-  return `<div class="ferr-grade">${FERRAMENTAS.map((f) => `<a class="ferr" href="#/ferramentas/${f.id}"><div class="ic"><svg viewBox="0 0 24 24">${f.ic}</svg></div><h3>${esc(f.nome)}</h3><p>${esc(f.desc)}</p></a>`).join("")}</div>`;
-}
-function pgFerramentas(app, id) {
-  const F = FERRAMENTAS.find((f) => f.id === id);
-  if (!F) {
-    app.innerHTML = `${trilha([["Ferramentas"]])}<div class="cab-pagina"><div><h1>Ferramentas</h1><p>Simule, calcule e compare com os dados do site.</p></div></div>${cartoesFerramentas()}`;
-    return;
-  }
-  app.innerHTML = `${trilha([["Ferramentas", "#/ferramentas"], [F.nome]])}<div class="cab-pagina"><div><h1>${esc(F.nome)}</h1><p>${esc(F.desc)}</p></div></div><div id="calc"></div>
-  <p class="sub" style="margin-top:14px">Simulação educativa. Não considera impostos, taxas nem inflação, salvo quando indicado.</p>`;
-  if (id === "juros") calcJuros();
-  else if (id === "dividendos") calcDividendos();
-  else calcPrecoTeto();
-}
-function campoNum(id, rotulo, v, passo = "any") { return `<label class="campo">${rotulo}<input type="number" id="${id}" value="${v}" step="${passo}" min="0"></label>`; }
-function num(id) { const v = parseFloat($("#" + id).value); return isFinite(v) ? v : 0; }
-function calcJuros() {
-  const cdi = (D.macro.cdi || {}).valor;
-  $("#calc").innerHTML = `<div class="calc"><div class="cartao campos">
-    ${campoNum("j-ini", "Valor inicial (R$)", 10000)}${campoNum("j-mes", "Aporte mensal (R$)", 1000)}
-    ${campoNum("j-taxa", `Taxa de juros anual (%)${ok(cdi) ? ` · CDI hoje: ${nf2.format(cdi * 100)}%` : ""}`, ok(cdi) ? (cdi * 100).toFixed(2) : 10)}${campoNum("j-anos", "Prazo (anos)", 10, 1)}</div>
-    <div class="cartao"><div class="sub">Valor final</div><div class="resultado-grande" id="j-final"></div><div class="ind-grade" style="grid-template-columns:repeat(2,minmax(0,1fr));margin:12px 0">
-      <div class="ind"><div class="rot">Total investido</div><div class="val" id="j-inv"></div></div><div class="ind"><div class="rot">Juros ganhos</div><div class="val pos" id="j-jur"></div></div></div>
-      <div class="grafico peq"><canvas id="g-calc"></canvas></div></div></div>`;
-  const calc = () => {
-    const ini = num("j-ini"), mes = num("j-mes"), taxa = num("j-taxa") / 100, anos = Math.min(60, Math.round(num("j-anos")));
-    const im = Math.pow(1 + taxa, 1 / 12) - 1;
-    let saldo = ini, inv = ini; const sInv = [ini], sSal = [ini];
-    for (let m = 1; m <= anos * 12; m++) { saldo = saldo * (1 + im) + mes; inv += mes; if (m % 12 === 0) { sInv.push(inv); sSal.push(saldo); } }
-    $("#j-final").textContent = "R$ " + nf2.format(saldo); $("#j-inv").textContent = "R$ " + nf2.format(inv); $("#j-jur").textContent = "R$ " + nf2.format(saldo - inv);
-    destruirGraficos();
-    if (window.Chart) charts.push(new Chart($("#g-calc"), { type: "bar", data: { labels: sInv.map((_, i) => `Ano ${i}`), datasets: [
-      { label: "Investido", data: sInv, backgroundColor: cor("--serie-2"), borderRadius: 3 }, { label: "Juros", data: sSal.map((s, i) => s - sInv[i]), backgroundColor: cor("--serie"), borderRadius: 3 }] }, options: optGraf({ stacked: true, moeda: "R$ " }) }));
-  };
-  $$("#calc input").forEach((x) => x.oninput = calc); calc();
-}
-function calcDividendos() {
-  const dyMed = mediana(D.tickers.filter((t) => A(t).tipo === "ACAO_BR" && !semValuation(t)).map((t) => ind(t).dy).filter((v) => v > 0));
-  $("#calc").innerHTML = `<div class="calc"><div class="cartao campos">
-    ${campoNum("d-renda", "Renda mensal desejada (R$)", 10000)}${campoNum("d-dy", `Dividend yield anual da carteira (%)${ok(dyMed) ? ` · mediana das ações: ${nf2.format(dyMed * 100)}%` : ""}`, ok(dyMed) ? (dyMed * 100).toFixed(2) : 6)}
-    ${campoNum("d-atual", "Patrimônio atual (R$)", 100000)}${campoNum("d-mes", "Aporte mensal (R$)", 3000)}${campoNum("d-rent", "Rentabilidade anual esperada até lá (%)", 10)}</div>
-    <div class="cartao"><div class="sub">Patrimônio necessário</div><div class="resultado-grande" id="d-pat"></div><p class="sub" id="d-txt"></p>
-      <div class="ind-grade" style="grid-template-columns:repeat(2,minmax(0,1fr));margin-top:12px"><div class="ind"><div class="rot">Tempo estimado</div><div class="val" id="d-tempo"></div></div><div class="ind"><div class="rot">Renda anual</div><div class="val" id="d-anual"></div></div></div></div></div>`;
-  const calc = () => {
-    const renda = num("d-renda"), dy = num("d-dy") / 100, atual = num("d-atual"), mes = num("d-mes"), r = num("d-rent") / 100;
-    const alvo = dy > 0 ? renda * 12 / dy : NaN;
-    $("#d-pat").textContent = isFinite(alvo) ? "R$ " + nf2.format(alvo) : "n/d";
-    $("#d-anual").textContent = "R$ " + nf2.format(renda * 12);
-    $("#d-txt").textContent = isFinite(alvo) ? `Com ${nf2.format(dy * 100)}% ao ano em proventos, esse patrimônio gera R$ ${nf2.format(renda)} por mês.` : "";
-    const im = Math.pow(1 + r, 1 / 12) - 1; let s = atual, m = 0;
-    while (s < alvo && m < 1200) { s = s * (1 + im) + mes; m++; }
-    $("#d-tempo").textContent = !isFinite(alvo) ? "n/d" : m >= 1200 ? "mais de 100 anos" : m === 0 ? "já atingido" : `${Math.floor(m / 12)} anos e ${m % 12} meses`;
-  };
-  $$("#calc input").forEach((x) => x.oninput = calc); calc();
-}
-function calcPrecoTeto() {
-  const lista = D.tickers.filter((t) => A(t).tipo === "ACAO_BR" && ind(t).dpa_12m > 0).sort((a, b) => a.localeCompare(b));
-  const ini = lista.includes("BBAS3") ? "BBAS3" : lista[0];
-  $("#calc").innerHTML = `<div class="calc"><div class="cartao campos">
-    <label class="campo">Empresa<select id="p-t">${lista.map((t) => `<option value="${t}" ${t === ini ? "selected" : ""}>${t} · ${esc(A(t).nome)}</option>`).join("")}</select></label>
-    ${campoNum("p-dy", "Dividend yield desejado (%)", 6, 0.5)}</div>
-    <div class="cartao" id="p-res"></div></div>`;
-  const calc = () => {
-    const t = $("#p-t").value, y = num("p-dy") / 100, i = ind(t), preco = (D.prices[t] || {}).preco, dpa = i.dpa_12m;
-    const teto = y > 0 ? dpa / y : NaN, marg = ok(teto) && ok(preco) ? teto / preco - 1 : null;
-    $("#p-res").innerHTML = `<div class="linha entre">${empresa(t)}<a class="btn-ver" href="#/ativo/${t}">Ver ativo</a></div>
-      <div class="sub" style="margin-top:16px">Preço teto para ${nf2.format(y * 100)}% ao ano</div><div class="resultado-grande">R$ ${ok(teto) ? nf2.format(teto) : "n/d"}</div>
-      <div class="ind-grade" style="grid-template-columns:repeat(3,minmax(0,1fr));margin-top:12px">
-        <div class="ind"><div class="rot">Proventos em 12 meses</div><div class="val">R$ ${nf2.format(dpa)}</div></div>
-        <div class="ind"><div class="rot">Preço atual</div><div class="val">R$ ${ok(preco) ? nf2.format(preco) : "n/d"}</div></div>
-        <div class="ind"><div class="rot">Teto vs preço</div><div class="val ${sinal(marg)}">${ok(marg) ? (marg > 0 ? "+" : "") + nf2.format(marg * 100) + "%" : "n/d"}</div></div></div>
-      <p class="frase">Preço teto = proventos por ação dos últimos 12 meses / dividend yield desejado. Usa o que a empresa pagou, não o que vai pagar; proventos extraordinários distorcem a conta.</p>`;
-  };
-  $("#p-t").onchange = calc; $("#p-dy").oninput = calc; calc();
 }
 
 /* =====================================================================

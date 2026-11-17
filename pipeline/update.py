@@ -157,6 +157,10 @@ def macro() -> dict:
         m["_ptax_hist"] = {pd.to_datetime(x["data"], dayfirst=True).strftime("%Y-%m-%d"): float(x["valor"]) for x in hist}
     except Exception:
         m["_ptax_hist"] = {}
+    if not m.get("ptax") and m["_ptax_hist"]:
+        # BCB às vezes responde 304 sem corpo no "últimos 1": usa o último dia da série histórica
+        d = max(m["_ptax_hist"])
+        m["ptax"] = {"valor": m["_ptax_hist"][d], "data": pd.Timestamp(d).strftime("%d/%m/%Y"), "fonte": "BCB SGS 1 (série histórica)"}
     try:
         m["ntnb_longa"] = S.tesouro_ntnb_longa()
         if m["ntnb_longa"]:
@@ -827,11 +831,9 @@ def processar(ativo: dict, ctx: dict) -> dict:
             cand = [a for a in acoes_ano if a <= a0]
             if cand and not acoes_ano[max(cand)][1]:
                 ind[f"diluicao_{n}a"] = acoes / acoes_ano[max(cand)][0] - 1
-    # Graham e Bazin (por papel; BDR em US$ sobre o preço lá fora)
+    # Graham (por papel; BDR em US$ sobre o preço lá fora)
     ind["graham"] = I.graham(ind.get("lpa"), ind.get("vpa"))
     ind["graham_margem"] = I.margem_seguranca(ind["graham"], preco_calc)
-    ind["bazin"] = I.bazin(dpa_medio_5, cfg["bazin_taxa"])
-    ind["bazin_margem"] = I.margem_seguranca(ind["bazin"], preco_calc)
     ind["peg"] = I.peg(ind.get("pl"), ind.get("cagr_lpa_5a"))
     # estabilidade de margem
     ml = [hist[a].get("margem_liquida") for a in ult5 if I.ok(hist[a].get("margem_liquida"))]
@@ -871,7 +873,7 @@ def processar(ativo: dict, ctx: dict) -> dict:
         # fluxos de empresa em recuperação judicial ou extrajudicial (fornecedores congelados, dívida convertida) não sustentam TIR
         ind["tir_calculo_recuperacao"] = {k: ind.get(k) for k in ("tir_lucro", "tir_caixa", "tir_dcf", "cresc_implicito")}
         for k in ("tir_lucro", "tir_caixa", "tir_dcf", "tir_implicita", "cresc_implicito", "cresc_gap", "tir_spread_ref",
-                  "graham", "graham_margem", "bazin", "bazin_margem", "peg"):
+                  "graham", "graham_margem", "peg"):
             ind[k] = None
         ind["suprimido_recuperacao"] = True
     if modelo == "TESOURARIA_CRIPTO":
@@ -1183,7 +1185,7 @@ def main():
                                                     "yfinance (preços e volumes)", "brapi.dev (cotação, quando há token)", "SEC EDGAR (companyfacts, submissions)",
                                                     "Banco Central SGS e Focus", "Tesouro Direto", "FRED", "Google News RSS"]}
     gravar(DATA / "meta.json", meta)
-    gravar(DATA / "indicators_meta.json", {"indicadores": I.meta_json(), "fatores": I.FATORES, "piotroski_testes": I.PIOTROSKI_TESTES})
+    gravar(DATA / "indicators_meta.json", {"indicadores": I.meta_json(), "fatores": I.FATORES, "piotroski_testes": I.PIOTROSKI_TESTES, "criterios": [list(c) for c in I.CRITERIOS]})
 
     prices, fundamentals, dividends = {}, {}, {}
     for a in universo:
@@ -1212,6 +1214,7 @@ def main():
         gravar(DATA / "history" / f"{t}.json", {"ticker": t, "anual": r.get("historico", {}), "precos": hist_px,
                                                 "ltm_contas": r.get("ltm_contas"), "moeda": r.get("moeda_fundamentos")})
     gravar(DATA / "prices.json", prices)
+    aplicar_criterios(fundamentals, mac, {a["ticker"]: a for a in universo})
     gravar(DATA / "fundamentals.json", fundamentals)
     gravar(DATA / "dividends.json", dividends)
 
@@ -1268,6 +1271,25 @@ def main():
 
     relatorio_cobertura(universo, resultados, meta)
     print("OK.", meta)
+
+
+def aplicar_criterios(fundamentals: dict, mac: dict, univ: dict):
+    """Critérios ponderados (indicators.CRITERIOS) e WACC de cada ativo. Depende das medianas do grupo, por isso roda no fim."""
+    selic = (mac.get("selic") or {}).get("valor")
+    ust = (mac.get("treasury_10y") or {}).get("taxa")
+    for t, f in fundamentals.items():
+        i = f.get("ind") or {}
+        a = univ.get(t) or {}
+        usd = a.get("moeda_reporte") == "USD"
+        base_kd = ust if usd else selic
+        kd = base_kd + CFG.get("spread_divida", 0.02) if base_kd is not None else None
+        ir = CFG.get("ir_eua", 0.21) if usd else CFG.get("ir_brasil", 0.34)
+        infl = (mac.get("inflacao_lp_eua") if usd else mac.get("inflacao_lp_brasil")) or {}
+        fin = a.get("modelo_analise") in ("BANCO", "SEGURADORA")
+        r = I.criterios(i, (f.get("setor") or {}).get("mediana_grupo") or {}, i.get("taxa_referencia"), kd, ir, infl.get("valor"), fin)
+        i["nota_criterios"] = r["nota"]
+        i["wacc"] = r["wacc"]
+        f["criterios"] = {"testes": r["testes"], "avaliados": r["avaliados"], "kd": kd, "inflacao": infl.get("valor")}
 
 
 def relatorio_cobertura(universo, resultados, meta):
@@ -1327,7 +1349,7 @@ def aplicaveis(a):
     m = a["modelo_analise"]
     base = [k for k, v in I.META.items() if v[3] not in ("Banco", "Seguradora", "BDR", "Holding", "Cripto")]
     suprimidos = {"tir_lucro", "tir_caixa", "tir_dcf", "tir_implicita", "cresc_implicito", "cresc_gap", "tir_spread_ref",
-                  "graham", "graham_margem", "bazin", "bazin_margem", "peg", "pl", "earnings_yield"}
+                  "graham", "graham_margem", "peg", "pl", "earnings_yield"}
     if m in ("RECUPERACAO", "TESOURARIA_CRIPTO"):
         base = [k for k in base if k not in suprimidos]
     if m == "TESOURARIA_CRIPTO":
@@ -1377,7 +1399,7 @@ def motivo(k, a, r):
         return "composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada"
     if k in ("free_float", "controlador_pct"):
         return "FRE sem acionista marcado como controlador (controle difuso)"
-    if k in ("bazin", "bazin_margem", "dy_medio_5a", "anos_corte"):
+    if k in ("dy_medio_5a", "anos_corte"):
         return "sem proventos suficientes nos últimos 5 anos"
     if k == "fcf_yield" or k == "conversao_caixa":
         return "FCL negativo ou lucro negativo"

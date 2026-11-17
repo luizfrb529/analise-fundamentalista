@@ -433,3 +433,15 @@ tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72re
 @media (max-width: 420px) {
   .setores, .g4 { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* ---------------- critérios ponderados */
+.estrelas { color: #f5c542; letter-spacing: 1px; font-size: .9rem; white-space: nowrap; }
+.estrelas i { color: var(--borda-forte); font-style: normal; }
+.ic-crit { display: inline-grid; place-items: center; min-width: 22px; height: 22px; padding: 0 4px; border-radius: 6px; font-size: .72rem; font-weight: 800; }
+.ic-crit.s { background: var(--pos-fundo); color: var(--pos); }
+.ic-crit.n { background: var(--neg-fundo); color: var(--neg); }
+.ic-crit.x { background: var(--sup-3); color: var(--txt-3); }
+.nota-barra { display: inline-block; width: 54px; height: 5px; border-radius: 5px; background: var(--sup-3); vertical-align: middle; margin-right: 8px; overflow: hidden; }
+.nota-barra i { display: block; height: 100%; background: var(--acento); }
+.legenda-crit { margin-top: 12px; }
+.legenda-crit summary { cursor: pointer; color: var(--acento); font-weight: 600; font-size: .86rem; }
