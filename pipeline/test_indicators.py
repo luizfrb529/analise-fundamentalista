@@ -227,3 +227,15 @@ def test_trimestres_por_diferenca():
     s = I.serie_trimestral(q)
     assert s[-1]["rotulo"] == "1T26" and s[-1]["ebitda"] == ap(26) and s[0]["margem_liquida"] == ap(0.1)
     assert s[3]["rotulo"] == "4T25" and s[3]["lucro_liq"] == 20
+
+
+def test_proxima_divulgacao():
+    ent = [("2025-09-30", "ITR", "2025-10-22", "l1"), ("2025-12-31", "DFP", "2026-02-25", "l2"), ("2026-03-31", "ITR", "2026-04-29", "l3"),
+           ("2026-06-30", "ITR", "2026-07-22", "l4"), ("2026-09-30", "ITR", "2026-10-21", "l5"), ("2024-12-31", "DFP", "2025-02-26", "l0")]
+    r = I.proxima_divulgacao(ent, "2026-11-17")
+    assert r["ultima"]["rotulo"] == "3T26" and r["ultima"]["entrega"] == "2026-10-21"
+    p = r["proxima"]
+    assert p["doc"] == "DFP" and p["fim"] == "2026-12-31" and p["rotulo"] == "4T26"
+    assert p["data"] == "2027-02-25" and p["prazo_legal"] == "2027-03-31" and not p["passou"]
+    r2 = I.proxima_divulgacao([("2026-06-30", "ITR", "2026-08-10", "x")], "2026-11-17")
+    assert r2["proxima"]["doc"] == "ITR" and r2["proxima"]["data"] == "2026-11-14" and r2["proxima"]["passou"]

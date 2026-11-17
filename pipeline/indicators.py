@@ -756,3 +756,46 @@ def trimestres_por_diferenca(acumulados: dict) -> dict:
                         q[c][fim] = a - ant_v[c]
             ant_fim, ant_v = fim, v
     return q
+
+
+# ===================================================================== agenda de resultados
+def proxima_divulgacao(entregas: list, hoje: str) -> dict:
+    """entregas = [(data_fim_periodo, 'ITR' ou 'DFP', data_entrega_cvm, link)]. Devolve a última divulgação e a estimativa da próxima.
+    Estimativa: a data de entrega do mesmo período no ano anterior + 1 ano, limitada ao prazo legal
+    (ITR: 45 dias após o fim do trimestre; DFP: 3 meses após o fim do exercício)."""
+    from datetime import date, timedelta
+    d = lambda s: date.fromisoformat(str(s)[:10])  # noqa: E731
+    ent = sorted({(str(a)[:10], c, str(r)[:10], l) for a, c, r, l in entregas if a and r}, key=lambda x: (x[0], x[2]))
+    if not ent:
+        return {}
+    ult = max(ent, key=lambda x: (x[0], x[2]))
+    fim_ult = d(ult[0])
+    # fim do próximo período: 3 meses depois do último
+    m = fim_ult.month + 3
+    ano = fim_ult.year + (m - 1) // 12
+    m = (m - 1) % 12 + 1
+    prox_fim = (date(ano + (m == 12), (m % 12) + 1, 1) - timedelta(days=1))
+    meses_dfp = {d(a).month for a, c, _, _ in ent if c == "DFP"}
+    doc = "DFP" if prox_fim.month in meses_dfp else "ITR"
+    prazo = prox_fim + timedelta(days=45)
+    if doc == "DFP":   # último dia do terceiro mês após o fim do exercício
+        mm = prox_fim.month + 3
+        prazo = date(prox_fim.year + (mm - 1) // 12, (mm - 1) % 12 + 1, 1)
+        prazo = date(prazo.year + (prazo.month == 12), prazo.month % 12 + 1, 1) - timedelta(days=1)
+    antes = [x for x in ent if x[0][5:] == prox_fim.isoformat()[5:] and d(x[0]).year == prox_fim.year - 1]
+    if antes:
+        base = d(antes[-1][2])
+        try:
+            estimada = base.replace(year=base.year + 1)
+        except ValueError:
+            estimada = base + timedelta(days=365)
+        while estimada.weekday() >= 5:
+            estimada += timedelta(days=1)
+        estimada = min(estimada, prazo)
+        criterio = f"mesmo período do ano anterior, entregue em {base.strftime('%d/%m/%Y')}"
+    else:
+        estimada, criterio = prazo, "prazo legal da CVM"
+    return {"ultima": {"fim": ult[0], "doc": ult[1], "entrega": ult[2], "link": ult[3], "rotulo": rotulo_trimestre(ult[0]) if ult[1] == "ITR" else f"4T{ult[0][2:4]}"},
+            "proxima": {"fim": prox_fim.isoformat(), "doc": doc, "rotulo": rotulo_trimestre(prox_fim.isoformat()) if doc == "ITR" else f"4T{prox_fim.isoformat()[2:4]}",
+                        "data": estimada.isoformat(), "prazo_legal": prazo.isoformat(), "criterio": criterio,
+                        "passou": estimada.isoformat() < hoje}}
