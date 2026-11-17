@@ -1054,7 +1054,7 @@ function exportarCSV(lista, colunas) {
    FAIXA DE MERCADO, RODAPÉ, BUSCA, TEMA, TOOLTIP
    ===================================================================== */
 /* ---------------- faixa de cotações: dados ao vivo e arraste com o mouse */
-const AO_VIVO = { url: "https://raw.githubusercontent.com/luizfrb529/analise-fundamentalista/mercado/mercado.json",
+const AO_VIVO = { url: "https://raw.githubusercontent.com/luizfrb529/analise-fundamentalista/refs/heads/mercado/mercado.json",
   cambio: "https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL", intervaloMs: 60000 };
 const FAIXA = { x: 0, pausado: false, arrastando: false, ultX: 0, moveu: 0, ultimo: 0, hora: null };
 async function cotacoesAoVivo() {
