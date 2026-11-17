@@ -21,7 +21,7 @@ const CENARIOS = {
   selic_caindo: "Selic caindo", dolar_subindo: "Dólar subindo", commodities_subindo: "Commodities subindo",
   pib_acelerando: "PIB acelerando", inflacao_subindo: "Inflação subindo", risco_fiscal_subindo: "Risco fiscal subindo",
 };
-const TIPO_CURTO = { ACAO_BR: "Ação", BDR_EXPOSICAO_BR: "BDR risco Brasil", BDR_EXTERIOR: "BDR" };
+const TIPO_CURTO = { ACAO_BR: "Ação", BDR_EXPOSICAO_BR: "BDR (empresa brasileira)", BDR_EXTERIOR: "BDR" };
 const SEGMENTO_B3 = { NM: "Novo Mercado", N1: "Nível 1", N2: "Nível 2", MA: "Bovespa Mais", M2: "Bovespa Mais Nível 2", BOLSA: "Tradicional", DR3: "BDR Nível III" };
 const NAO_FIN = new Set(["divida_bruta", "divida_liquida", "ev", "p_ebitda", "p_ebit", "psr", "p_capital_giro", "p_acl", "ev_ebitda", "ev_ebit",
   "ev_receita", "earnings_yield", "fcf_yield", "divliq_pl", "divliq_ebitda", "divliq_ebit", "liquidez_corrente", "liquidez_seca",
@@ -110,6 +110,8 @@ function pioHtml(v) {
 }
 function A(t) { return D.univMap[t]; }
 function isBDR(t) { return A(t).tipo.startsWith("BDR"); }
+// empresas brasileiras listadas via BDR (Nu, Inter, XP...) aparecem junto das ações
+function emAcoes(t) { const a = A(t); return a.tipo === "ACAO_BR" || a.grupo_site === "acoes"; }
 function isFin(t) { return ["BANCO", "SEGURADORA"].includes(A(t).modelo_analise); }
 function isRec(t) { return A(t).modelo_analise === "RECUPERACAO"; }
 function isCripto(t) { return A(t).modelo_analise === "TESOURARIA_CRIPTO"; }
@@ -301,7 +303,8 @@ function cor(v) { return getComputedStyle(document.documentElement).getPropertyV
 function stripTags(s) { return String(s).replace(/<[^>]+>/g, ""); }
 function filtroSeg(lista, seg) {
   if (!seg || seg === "TODOS") return lista;
-  if (seg === "BDR") return lista.filter(isBDR);
+  if (seg === "BDR") return lista.filter((t) => !emAcoes(t));
+  if (seg === "ACAO_BR") return lista.filter(emAcoes);
   return lista.filter((t) => A(t).tipo === seg);
 }
 
@@ -405,7 +408,7 @@ async function render() {
   const { r, p, q } = rota();
   let ativoMenu = r;
   if (r === "ativos" || r === "filtros") ativoMenu = q.get("seg") === "BDR" ? "bdrs" : "acoes";
-  if (r === "ativo" && D.univMap[p.toUpperCase()]) ativoMenu = isBDR(p.toUpperCase()) ? "bdrs" : "acoes";
+  if (r === "ativo" && D.univMap[p.toUpperCase()]) ativoMenu = emAcoes(p.toUpperCase()) ? "acoes" : "bdrs";
   $$(".menu-item > a").forEach((a) => a.classList.toggle("ativo", a.dataset.rota === ativoMenu));
   $("#menu").classList.remove("aberto");
   const app = $("#app");
@@ -434,7 +437,7 @@ function pilulasData() {
    ===================================================================== */
 function itemMenu(t) { return `<a class="item" href="#/ativo/${t}">${logo(t, "p")}<span><b>${t}</b><small>${esc(A(t).nome)}</small></span></a>`; }
 function montarMenus() {
-  const acoes = D.tickers.filter((t) => A(t).tipo === "ACAO_BR");
+  const acoes = D.tickers.filter(emAcoes);
   const busc = [...acoes].sort((a, b) => (ind(b).valor_mercado_brl || 0) - (ind(a).valor_mercado_brl || 0)).slice(0, 8);
   const setores = [...new Set(acoes.map((t) => A(t).setor_macro))].sort((a, b) => a.localeCompare(b, "pt-BR"));
   $("#mega-acoes").innerHTML = `
@@ -446,10 +449,10 @@ function montarMenus() {
       <a class="item" href="#/rankings?foco=pl&seg=ACAO_BR">Menor P/L</a><a class="item" href="#/ativos?seg=ACAO_BR&porte=small">Small caps</a><a class="item" href="#/rankings?foco=vendida&seg=ACAO_BR">Maiores posições vendidas</a>
       <a class="item" href="#/filtros">Filtros avançados</a></div>
     <div class="rodape-mega"><a class="lk" href="#/ativos?seg=ACAO_BR">Ver todas as ações →</a></div>`;
-  const bdrs = D.tickers.filter(isBDR).sort((a, b) => (ind(b).valor_mercado_brl || 0) - (ind(a).valor_mercado_brl || 0));
+  const bdrs = D.tickers.filter((t) => !emAcoes(t)).sort((a, b) => (ind(b).valor_mercado_brl || 0) - (ind(a).valor_mercado_brl || 0));
   $("#mega-bdrs").innerHTML = `
     <div class="mega-col"><h5>Maiores BDRs</h5>${bdrs.slice(0, 8).map(itemMenu).join("")}</div>
-    <div class="mega-col"><h5>Setores</h5>${[...new Set(D.tickers.filter(isBDR).map((t) => A(t).setor_macro))].sort((a, b) => a.localeCompare(b, "pt-BR")).map((x) => `<a class="item" href="#/ativos?seg=BDR&setor=${encodeURIComponent(x)}">${esc(x)}</a>`).join("")}</div>
+    <div class="mega-col"><h5>Setores</h5>${[...new Set(D.tickers.filter((t) => !emAcoes(t)).map((t) => A(t).setor_macro))].sort((a, b) => a.localeCompare(b, "pt-BR")).map((x) => `<a class="item" href="#/ativos?seg=BDR&setor=${encodeURIComponent(x)}">${esc(x)}</a>`).join("")}</div>
     <div class="mega-col"><h5>Listas rápidas</h5><a class="item" href="#/rankings?seg=BDR">Nota por critérios</a><a class="item" href="#/rankings?foco=roe&seg=BDR">Maior ROE</a><a class="item" href="#/rankings?foco=margem&seg=BDR">Maior margem líquida</a>
       <a class="item" href="#/rankings?foco=cresc&seg=BDR">Crescimento do lucro</a><a class="item" href="#/rankings?foco=piotroski&seg=BDR">Qualidade contábil</a></div>
     <div class="rodape-mega"><a class="lk" href="#/ativos?seg=BDR">Ver todos os BDRs →</a></div>`;
@@ -891,7 +894,7 @@ async function pgAtivo(app, t) {
   if (!D.univMap[t] || !D.fund[t]) { app.innerHTML = `<div class="cartao"><h1>${esc(t)}</h1><p>Ativo não encontrado.</p><p><a class="lk" href="#/">Voltar ao início</a></p></div>`; return; }
   const a = A(t), f = D.fund[t], i = f.ind, p = D.prices[t] || {}, n = D.notes[t] || {}, mo = moedaDe(t), st = f.setor || {};
   const h = await historico(t);
-  const segTab = isBDR(t) ? "BDR" : "ACAO_BR";
+  const segTab = emAcoes(t) ? "ACAO_BR" : "BDR";
   const pos52 = ok(p.preco) && ok(p.min_52s) && ok(p.max_52s) && p.max_52s > p.min_52s ? (p.preco - p.min_52s) / (p.max_52s - p.min_52s) * 100 : null;
   const rec = a.recuperacao || {};
   const classes = Object.values(f.classes || a.classes || {}).filter((x) => x && x !== t);
@@ -902,7 +905,7 @@ async function pgAtivo(app, t) {
   const kv = (r, v) => `<div class="kv"><span>${r}</span><b>${v}</b></div>`;
   const din = (v) => ok(v) ? `${mo} ${grande(v)}` : ND;
 
-  app.innerHTML = `${trilha([[isBDR(t) ? "BDRs" : "Ações", `#/ativos?seg=${segTab}`], [a.setor_macro, `#/ativos?seg=${segTab}&setor=${encodeURIComponent(a.setor_macro)}`], [t]])}
+  app.innerHTML = `${trilha([[emAcoes(t) ? "Ações" : "BDRs", `#/ativos?seg=${segTab}`], [a.setor_macro, `#/ativos?seg=${segTab}&setor=${encodeURIComponent(a.setor_macro)}`], [t]])}
   <div class="ativo-topo">
     <div class="ativo-id">${logo(t, "g")}<div><h1>${t}${classes.length ? classes.map((c) => `<span class="badge">${c}</span>`).join("") : ""}${isRec(t) ? `<span class="badge rec">${esc(recNome(t))}</span>` : ""}${estado(t) ? `<span class="badge estatal" data-tip="${esc(estado(t).resumo)}"><i class="q-estatal"></i>${rotEstado(t)}</span>` : ""}</h1><div class="nm">${esc(a.nome)}</div>${proxResultado(t)}</div></div>
     <nav class="secoes-nav" id="secoes">${[["indicadores", "Indicadores"], ["criterios", "Critérios"], ["resultados", "Resultados"], ["proventos", "Proventos"], ["sobre", "Sobre a empresa"], ["governanca", "Governança"], ["acionistas", "Acionistas"], ["noticias", "Comunicados"]].map(([id, nm]) => `<a href="#" data-sec="${id}">${nm}</a>`).join("")}</nav>
