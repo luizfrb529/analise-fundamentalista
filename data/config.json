@@ -1,0 +1,30 @@
+{
+  "_comentario": "Parâmetros usados pelo pipeline e pelo site. Edite à mão. Taxas em fração (0.05 = 5%).",
+  "porte_faixas_brl": {"large": 50000000000, "mid": 10000000000, "small": 2000000000},
+  "bazin_taxa": 0.06,
+  "premio_risco_brasil": 0.05,
+  "premio_risco_exterior": 0.05,
+  "inflacao_longo_prazo_brasil_fallback": 0.035,
+  "inflacao_longo_prazo_eua": 0.025,
+  "dcf_teto_crescimento": 0.15,
+  "dcf_piso_crescimento": -0.05,
+  "dcf_anos": 5,
+  "g_real_padrao": 0.01,
+  "g_real_por_setor_micro": {
+    "Bancos": 0.01,
+    "Seguros bancassurance": 0.01,
+    "Transmissão": 0.0,
+    "Baixa renda": 0.01,
+    "Média e alta renda": 0.01,
+    "Vestuário": 0.01,
+    "Eletro e móveis": 0.0,
+    "Minério de ferro": 0.0,
+    "Equipamentos elétricos": 0.02,
+    "Software e nuvem": 0.02
+  },
+  "grupo_minimo_pares": 3,
+  "liquidez_minima_brl": 5000000,
+  "bdr_agio_relevante": 0.05,
+  "bdr_alerta_proporcao": 0.10,
+  "concentracao_cenario_alerta": 0.6
+}

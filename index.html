@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Análise Fundamentalista B3</title>
+<meta name="description" content="Indicadores fundamentalistas, TIR implícita, crescimento implícito e contexto macro de ações e BDRs da B3.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+  try { var t = localStorage.getItem("tema"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</head>
+<body>
+<div id="bloqueio" hidden>
+  <form id="form-senha" class="bloqueio-caixa">
+    <h1>Acesso restrito</h1>
+    <p>Digite a senha para ver o conteúdo.</p>
+    <input type="password" id="senha" autocomplete="current-password" aria-label="Senha">
+    <button type="submit">Entrar</button>
+    <p class="erro" id="senha-erro" hidden>Senha incorreta.</p>
+  </form>
+</div>
+
+<header class="topo">
+  <div class="topo-linha1">
+    <a href="#/" class="marca" aria-label="Visão geral">Análise Fundamentalista</a>
+    <nav class="menu" id="menu">
+      <a href="#/" data-rota="">Visão geral</a>
+      <a href="#/rankings" data-rota="rankings">Rankings</a>
+      <a href="#/oportunidades" data-rota="oportunidades">Oportunidades</a>
+      <a href="#/riscos" data-rota="riscos">Riscos</a>
+      <a href="#/comparar" data-rota="comparar">Comparador</a>
+      <a href="#/filtros" data-rota="filtros">Filtros</a>
+      <a href="#/metodologia" data-rota="metodologia">Metodologia</a>
+    </nav>
+    <div class="topo-acoes">
+      <div class="busca">
+        <input type="search" id="busca" placeholder="Ticker ou nome" aria-label="Buscar ativo" autocomplete="off">
+        <div class="busca-lista" id="busca-lista" hidden></div>
+      </div>
+      <button class="btn-icone" id="tema" aria-label="Alternar tema claro e escuro" title="Tema claro/escuro">◐</button>
+      <button class="btn-icone menu-mobile" id="menu-btn" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+  <div class="topo-linha2">
+    <div class="datas" id="datas">Carregando dados...</div>
+    <div class="macro" id="macro"></div>
+  </div>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<div class="aviso-fixo" role="note">
+  Conteúdo de caráter educacional e informativo. Não constitui recomendação de compra ou venda de valores mobiliários nem relatório de análise nos termos da Resolução CVM 20. Rentabilidade passada não garante rentabilidade futura.
+</div>
+
+<footer class="rodape" id="rodape"></footer>
+
+<div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

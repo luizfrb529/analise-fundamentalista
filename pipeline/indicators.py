@@ -1,0 +1,586 @@
+"""
+Fórmulas dos indicadores fundamentalistas.
+
+Funções puras (sem rede, sem arquivo). Toda função devolve None quando o dado
+de entrada falta ou quando a conta não faz sentido (ex.: P/L com lucro negativo
+é devolvido, mas Graham com LPA negativo devolve None). O site mostra None como "n/d".
+
+Unidades: valores monetários em unidade cheia (R$ ou US$, não milhares).
+Taxas e margens em fração (0.15 = 15%).
+
+O dicionário META no final descreve cada indicador (nome, fórmula, direção, grupo)
+e é exportado para data/indicators_meta.json, que alimenta tooltips, metodologia
+e as cores do comparador.
+"""
+from __future__ import annotations
+
+import math
+from statistics import mean, median, pstdev
+from typing import Iterable, Optional
+
+Num = Optional[float]
+
+
+# ---------------------------------------------------------------- utilitários
+def ok(*xs) -> bool:
+    return all(x is not None and isinstance(x, (int, float)) and math.isfinite(x) for x in xs)
+
+
+def div(a: Num, b: Num) -> Num:
+    """Divisão segura: None se faltar dado ou denominador zero."""
+    if not ok(a, b) or b == 0:
+        return None
+    return a / b
+
+
+def pos_div(a: Num, b: Num) -> Num:
+    """Divisão que só faz sentido com denominador positivo (ex.: múltiplos sobre lucro)."""
+    if not ok(a, b) or b <= 0:
+        return None
+    return a / b
+
+
+def soma(*xs: Num) -> Num:
+    vals = [x for x in xs if ok(x)]
+    return sum(vals) if vals else None
+
+
+def media(xs: Iterable[Num]) -> Num:
+    v = [x for x in xs if ok(x)]
+    return mean(v) if v else None
+
+
+def mediana(xs: Iterable[Num]) -> Num:
+    v = [x for x in xs if ok(x)]
+    return median(v) if v else None
+
+
+def cagr(inicio: Num, fim: Num, anos: float) -> Num:
+    """CAGR = (fim / início)^(1/anos) - 1. Só existe se início e fim forem positivos."""
+    if not ok(inicio, fim) or inicio <= 0 or fim <= 0 or anos <= 0:
+        return None
+    return (fim / inicio) ** (1.0 / anos) - 1.0
+
+
+def percentil(valor: Num, populacao: Iterable[Num]) -> Num:
+    """Percentil do valor dentro da população (0 a 100), contando empates pela metade."""
+    pop = [x for x in populacao if ok(x)]
+    if not ok(valor) or not pop:
+        return None
+    abaixo = sum(1 for x in pop if x < valor)
+    iguais = sum(1 for x in pop if x == valor)
+    return 100.0 * (abaixo + 0.5 * iguais) / len(pop)
+
+
+def ltm(anual_anterior: Num, acumulado_atual: Num, acumulado_ano_anterior: Num) -> Num:
+    """LTM de conta de fluxo = último exercício + acumulado do ano - mesmo acumulado do ano anterior."""
+    if not ok(anual_anterior, acumulado_atual, acumulado_ano_anterior):
+        return None
+    return anual_anterior + acumulado_atual - acumulado_ano_anterior
+
+
+def porte(valor_mercado_brl: Num, faixas: dict) -> Optional[str]:
+    if not ok(valor_mercado_brl):
+        return None
+    if valor_mercado_brl >= faixas["large"]:
+        return "Large cap"
+    if valor_mercado_brl >= faixas["mid"]:
+        return "Mid cap"
+    if valor_mercado_brl >= faixas["small"]:
+        return "Small cap"
+    return "Micro cap"
+
+
+def consistencia_crescimento(serie: list) -> Optional[int]:
+    """Número de anos em que o valor cresceu sobre o ano anterior (série em ordem cronológica)."""
+    v = [x for x in serie if ok(x)]
+    if len(v) < 2:
+        return None
+    return sum(1 for a, b in zip(v[:-1], v[1:]) if b > a)
+
+
+def anos_seguidos_positivos(serie: list) -> int:
+    """Conta, a partir do ano mais recente para trás, quantos anos seguidos o valor foi > 0."""
+    n = 0
+    for x in reversed(serie):
+        if ok(x) and x > 0:
+            n += 1
+        else:
+            break
+    return n
+
+
+def anos_com_corte(serie: list) -> Optional[int]:
+    v = [x for x in serie if ok(x)]
+    if len(v) < 2:
+        return None
+    return sum(1 for a, b in zip(v[:-1], v[1:]) if b < a * 0.95)
+
+
+def queda_seguida(serie: list, anos: int = 3) -> bool:
+    """True se os últimos `anos` valores caíram em sequência (precisa de anos+1 pontos)."""
+    v = [x for x in serie if ok(x)]
+    if len(v) < anos + 1:
+        return False
+    ult = v[-(anos + 1):]
+    return all(b < a for a, b in zip(ult[:-1], ult[1:]))
+
+
+# ------------------------------------------------------- valuation clássico
+def graham(lpa: Num, vpa: Num) -> Num:
+    """Preço justo de Graham = raiz(22,5 x LPA x VPA). Só com LPA e VPA positivos."""
+    if not ok(lpa, vpa) or lpa <= 0 or vpa <= 0:
+        return None
+    return math.sqrt(22.5 * lpa * vpa)
+
+
+def bazin(dpa_medio_5a: Num, taxa: float = 0.06) -> Num:
+    """Preço teto de Bazin = dividendo médio por ação de 5 anos / taxa mínima (padrão 6%)."""
+    if not ok(dpa_medio_5a) or dpa_medio_5a <= 0 or taxa <= 0:
+        return None
+    return dpa_medio_5a / taxa
+
+
+def margem_seguranca(preco_justo: Num, preco: Num) -> Num:
+    """(preço justo / preço) - 1. Positivo = preço de tela abaixo do preço justo da fórmula."""
+    if not ok(preco_justo, preco) or preco <= 0:
+        return None
+    return preco_justo / preco - 1.0
+
+
+def peg(pl: Num, cagr_lpa: Num) -> Num:
+    """PEG = P/L / (CAGR do LPA em pontos percentuais). Só com P/L e CAGR positivos."""
+    if not ok(pl, cagr_lpa) or pl <= 0 or cagr_lpa <= 0:
+        return None
+    return pl / (cagr_lpa * 100.0)
+
+
+# ------------------------------------------------ TIR e crescimento implícitos
+def tir_por_lucro(lucro_medio_3a: Num, valor_mercado: Num, g: float) -> Num:
+    """TIR implícita por lucro = lucro médio de 3 anos / valor de mercado + g."""
+    ey = pos_div(lucro_medio_3a, valor_mercado)
+    if ey is None or lucro_medio_3a <= 0:
+        return None
+    return ey + g
+
+
+def tir_por_caixa(fcl_medio_3a: Num, valor_mercado: Num, g: float) -> Num:
+    """TIR implícita por caixa = FCL médio de 3 anos / valor de mercado + g."""
+    y = pos_div(fcl_medio_3a, valor_mercado)
+    if y is None or fcl_medio_3a <= 0:
+        return None
+    return y + g
+
+
+def vp_dcf(taxa: float, receita0: float, cresc: float, margem_fcl: float, g: float, anos: int = 5) -> float:
+    """Valor presente: N anos de FCL = receita0*(1+cresc)^t*margem, depois perpetuidade com g."""
+    vp = 0.0
+    fcl = 0.0
+    for t in range(1, anos + 1):
+        fcl = receita0 * (1 + cresc) ** t * margem_fcl
+        vp += fcl / (1 + taxa) ** t
+    terminal = fcl * (1 + g) / (taxa - g)
+    return vp + terminal / (1 + taxa) ** anos
+
+
+def tir_dcf_reverso(ev: Num, receita0: Num, cresc: Num, margem_fcl: Num, g: float,
+                    anos: int = 5, teto: float = 0.15, piso: float = -0.05) -> Num:
+    """
+    DCF reverso: taxa de desconto r tal que VP(fluxo projetado) = valor da firma (EV).
+    Crescimento dos N anos = CAGR 5a da receita limitado a [piso, teto]; margem FCL = média 5a.
+    Resolve por bisseção entre g+0,1% e 100% a.a.
+    """
+    if not ok(ev, receita0, cresc, margem_fcl) or ev <= 0 or receita0 <= 0 or margem_fcl <= 0:
+        return None
+    c = max(piso, min(teto, cresc))
+    lo, hi = g + 0.001, 1.0
+    f = lambda r: vp_dcf(r, receita0, c, margem_fcl, g, anos) - ev
+    if f(lo) < 0:      # nem a menor taxa justifica o EV: TIR abaixo de g
+        return None
+    if f(hi) > 0:      # EV pequeno demais: TIR acima de 100%
+        return hi
+    for _ in range(200):
+        mid = (lo + hi) / 2
+        if f(mid) > 0:
+            lo = mid
+        else:
+            hi = mid
+        if hi - lo < 1e-7:
+            break
+    return (lo + hi) / 2
+
+
+def crescimento_implicito(ev: Num, fcl_normalizado: Num, taxa: float) -> Num:
+    """
+    Crescimento perpétuo exigido pelo preço (Gordon): EV = FCL*(1+g)/(r-g)
+    => g = (r*EV - FCL) / (EV + FCL).
+    """
+    if not ok(ev, fcl_normalizado) or ev <= 0 or fcl_normalizado <= 0:
+        return None
+    return (taxa * ev - fcl_normalizado) / (ev + fcl_normalizado)
+
+
+def tir_banco(roe: Num, payout: Num, pvp: Num) -> Num:
+    """
+    Bancos e seguradoras: TIR ~ ROE x (1 - payout) + payout x ROE / (P/VP).
+    Parte retida cresce ao ROE; parte distribuída rende o dividend yield sobre o preço.
+    """
+    if not ok(roe, payout, pvp) or pvp <= 0:
+        return None
+    p = max(0.0, min(1.0, payout))
+    return roe * (1 - p) + p * roe / pvp
+
+
+def crescimento_implicito_banco(roe: Num, pvp: Num, taxa: float) -> Num:
+    """
+    Modelo de P/VP justificado: P/VP = (ROE - g) / (r - g)  =>  g = (r*P/VP - ROE) / (P/VP - 1).
+    Indefinido quando P/VP ~ 1.
+    """
+    if not ok(roe, pvp) or pvp <= 0 or abs(pvp - 1) < 0.02:
+        return None
+    return (taxa * pvp - roe) / (pvp - 1)
+
+
+def taxa_referencia(juro_real_longo: Num, inflacao_lp: float, premio: float, nominal_direto: Num = None) -> Num:
+    """
+    Brasil: (1 + NTN-B longa real) x (1 + inflação LP) - 1 + prêmio.
+    Exterior: Treasury 10y (já nominal) + prêmio.
+    """
+    if ok(nominal_direto):
+        return nominal_direto + premio
+    if not ok(juro_real_longo):
+        return None
+    return (1 + juro_real_longo) * (1 + inflacao_lp) - 1 + premio
+
+
+# ---------------------------------------------- mercado (séries de preço)
+def retornos(precos: list) -> list:
+    return [b / a - 1 for a, b in zip(precos[:-1], precos[1:]) if ok(a, b) and a > 0]
+
+
+def volatilidade_anual(precos: list, periodos_ano: int = 252) -> Num:
+    r = retornos(precos)
+    if len(r) < 20:
+        return None
+    return pstdev(r) * math.sqrt(periodos_ano)
+
+
+def beta(precos_ativo: list, precos_indice: list) -> Num:
+    """Beta = cov(r_ativo, r_índice) / var(r_índice), retornos diários alinhados."""
+    ra, ri = retornos(precos_ativo), retornos(precos_indice)
+    n = min(len(ra), len(ri))
+    if n < 60:
+        return None
+    ra, ri = ra[-n:], ri[-n:]
+    ma, mi = mean(ra), mean(ri)
+    cov = sum((a - ma) * (b - mi) for a, b in zip(ra, ri)) / n
+    var = sum((b - mi) ** 2 for b in ri) / n
+    return div(cov, var)
+
+
+def max_drawdown(precos: list) -> Num:
+    """Maior queda do pico ao vale (negativo, ex.: -0.45)."""
+    v = [p for p in precos if ok(p) and p > 0]
+    if len(v) < 2:
+        return None
+    pico, pior = v[0], 0.0
+    for p in v:
+        pico = max(pico, p)
+        pior = min(pior, p / pico - 1)
+    return pior
+
+
+# --------------------------------------------- snapshot de um período
+def calcular(f: dict, m: dict, modelo: str = "GERAL") -> dict:
+    """
+    Calcula os indicadores de um período.
+    f: contas do período (fluxos do período e saldos no fim dele). Chaves usadas:
+       receita, custo, lucro_bruto, ebit, da, desp_fin, rec_fin, lair, ir, lucro_liq,
+       fco, capex, div_pagos, recompras, ativo, ativo_circ, caixa, receber, estoques,
+       passivo_circ, passivo_nc, fornecedores, divida_cp, divida_lp, pl, minoritarios,
+       (bancos) rec_interm, desp_interm, pdd, rec_servicos, desp_adm, desp_pessoal, desp_trib
+       (seguradoras) res_fin
+    m: mercado: preco, valor_mercado, acoes, dpa_12m, acoes_por_papel
+    """
+    g = lambda k: f.get(k)
+    r: dict = {}
+    vm = m.get("valor_mercado")
+    acoes = m.get("acoes")
+    fator = m.get("acoes_por_papel") or 1
+    preco = m.get("preco")
+
+    divida_bruta = soma(g("divida_cp"), g("divida_lp")) if (ok(g("divida_cp")) or ok(g("divida_lp"))) else None
+    caixa = g("caixa")
+    divida_liq = divida_bruta - caixa if ok(divida_bruta, caixa) else None
+    financeiro = modelo in ("BANCO", "SEGURADORA")
+    ebitda = soma(g("ebit"), g("da")) if ok(g("ebit")) and ok(g("da")) else None
+    fcl = g("fco") - abs(g("capex")) if ok(g("fco"), g("capex")) else None
+    if financeiro:
+        divida_liq_ev = None
+    else:
+        divida_liq_ev = divida_liq
+    ev = vm + divida_liq_ev + (g("minoritarios") or 0) if ok(vm, divida_liq_ev) else (vm if financeiro else None)
+
+    r["divida_bruta"] = None if financeiro else divida_bruta
+    r["caixa"] = caixa
+    r["divida_liquida"] = None if financeiro else divida_liq
+    r["ebitda"] = None if financeiro else ebitda
+    r["fcl"] = None if financeiro else fcl
+    r["valor_mercado"] = vm
+    r["ev"] = None if financeiro else ev
+
+    lpa = div(g("lucro_liq"), acoes)
+    vpa = div(g("pl"), acoes)
+    r["lpa"] = lpa * fator if ok(lpa) else None
+    r["vpa"] = vpa * fator if ok(vpa) else None
+
+    # valuation
+    r["pl"] = pos_div(vm, g("lucro_liq"))
+    r["pvp"] = pos_div(vm, g("pl"))
+    r["p_ebitda"] = None if financeiro else pos_div(vm, ebitda)
+    r["p_ebit"] = None if financeiro else pos_div(vm, g("ebit"))
+    r["psr"] = None if financeiro else pos_div(vm, g("receita"))
+    r["p_ativo"] = pos_div(vm, g("ativo"))
+    capital_giro = g("ativo_circ") - g("passivo_circ") if ok(g("ativo_circ"), g("passivo_circ")) else None
+    r["p_capital_giro"] = None if financeiro else pos_div(vm, capital_giro)
+    acl = g("ativo_circ") - soma(g("passivo_circ"), g("passivo_nc")) if ok(g("ativo_circ"), g("passivo_circ"), g("passivo_nc")) else None
+    r["p_acl"] = None if financeiro else pos_div(vm, acl)
+    r["ev_ebitda"] = None if financeiro else pos_div(ev, ebitda)
+    r["ev_ebit"] = None if financeiro else pos_div(ev, g("ebit"))
+    r["ev_receita"] = None if financeiro else pos_div(ev, g("receita"))
+    r["earnings_yield"] = None if financeiro else pos_div(g("ebit"), ev)
+    r["fcf_yield"] = None if financeiro else pos_div(fcl, vm)
+
+    # endividamento
+    if not financeiro:
+        r["divliq_pl"] = pos_div(divida_liq, g("pl")) if ok(divida_liq) else None
+        r["divliq_ebitda"] = div(divida_liq, ebitda) if ok(ebitda) and ebitda > 0 else None
+        r["divliq_ebit"] = div(divida_liq, g("ebit")) if ok(g("ebit")) and g("ebit") > 0 else None
+        r["liquidez_corrente"] = div(g("ativo_circ"), g("passivo_circ"))
+        ac_sem_est = g("ativo_circ") - (g("estoques") or 0) if ok(g("ativo_circ")) else None
+        r["liquidez_seca"] = div(ac_sem_est, g("passivo_circ"))
+        r["liquidez_imediata"] = div(caixa, g("passivo_circ"))
+        dfin = abs(g("desp_fin")) if ok(g("desp_fin")) else None
+        r["cobertura_juros"] = div(g("ebit"), dfin) if ok(dfin) and dfin > 0 else None
+        r["divida_cp_pct"] = div(g("divida_cp"), divida_bruta) if ok(divida_bruta) and divida_bruta > 0 else None
+    r["pl_ativos"] = div(g("pl"), g("ativo"))
+    passivos = g("ativo") - g("pl") - (g("minoritarios") or 0) if ok(g("ativo"), g("pl")) else None
+    r["passivos_ativos"] = div(passivos, g("ativo"))
+
+    # eficiência
+    if not financeiro:
+        lb = g("lucro_bruto") if ok(g("lucro_bruto")) else (g("receita") - abs(g("custo")) if ok(g("receita"), g("custo")) else None)
+        r["margem_bruta"] = pos_div(lb, g("receita")) if ok(lb) else None
+        r["margem_ebitda"] = div(ebitda, g("receita")) if ok(g("receita")) and g("receita") > 0 else None
+        r["margem_ebit"] = div(g("ebit"), g("receita")) if ok(g("receita")) and g("receita") > 0 else None
+        cv = abs(g("custo")) if ok(g("custo")) else None
+        r["pmr"] = div(g("receber"), g("receita")) * 365 if ok(div(g("receber"), g("receita"))) else None
+        r["pme"] = div(g("estoques"), cv) * 365 if ok(div(g("estoques"), cv)) else None
+        r["pmp"] = div(g("fornecedores"), cv) * 365 if ok(div(g("fornecedores"), cv)) else None
+        r["ciclo_financeiro"] = r["pmr"] + r["pme"] - r["pmp"] if ok(r["pmr"], r["pme"], r["pmp"]) else None
+        r["giro_ativo"] = div(g("receita"), g("ativo"))
+    r["margem_liquida"] = div(g("lucro_liq"), g("receita")) if ok(g("receita")) and g("receita") > 0 else None
+
+    # rentabilidade
+    r["roe"] = div(g("lucro_liq"), g("pl")) if ok(g("pl")) and g("pl") > 0 else None
+    r["roa"] = div(g("lucro_liq"), g("ativo"))
+    if not financeiro:
+        aliq = div(abs(g("ir")) if ok(g("ir")) else None, g("lair")) if ok(g("lair")) and g("lair") > 0 else None
+        aliq = 0.34 if aliq is None else max(0.0, min(0.34, aliq))
+        nopat = g("ebit") * (1 - aliq) if ok(g("ebit")) else None
+        capital_investido = soma(g("pl"), g("minoritarios"), divida_liq) if ok(g("pl"), divida_liq) else None
+        r["roic"] = div(nopat, capital_investido) if ok(capital_investido) and capital_investido > 0 else None
+
+    # caixa
+    if not financeiro:
+        r["fco"] = g("fco")
+        r["capex"] = abs(g("capex")) if ok(g("capex")) else None
+        r["capex_depreciacao"] = div(r["capex"], abs(g("da"))) if ok(g("da")) and g("da") != 0 else None
+        r["conversao_caixa"] = div(fcl, g("lucro_liq")) if ok(g("lucro_liq")) and g("lucro_liq") > 0 else None
+
+    # proventos
+    dpa = m.get("dpa_12m")
+    r["dpa_12m"] = dpa
+    r["dy"] = div(dpa, preco) if ok(dpa) and ok(preco) and preco > 0 else None
+    if ok(dpa, lpa) and lpa > 0:
+        r["payout"] = dpa / (lpa * fator)
+    else:
+        r["payout"] = None
+    if not financeiro:
+        dp = abs(g("div_pagos")) if ok(g("div_pagos")) else None
+        r["dividendos_sobre_fcl"] = div(dp, fcl) if ok(dp, fcl) and fcl > 0 else None
+        r["dividendo_sem_caixa"] = bool(ok(dp, fcl) and dp > 0 and fcl <= 0)
+
+    # específicos
+    if modelo == "BANCO":
+        # nii = receitas de juros - despesas de juros; receitas operacionais = receitas da
+        # intermediação (que no layout CVM já incluem serviços e seguros) - despesas de juros
+        jd = abs(g("juros_desp")) if ok(g("juros_desp")) else None
+        nii = g("juros_rec") - jd if ok(g("juros_rec"), jd) else None
+        r["nim"] = div(nii, g("ativo"))
+        rec_op = g("rec_interm") - jd if ok(g("rec_interm"), jd) else None
+        if ok(rec_op) and ok(g("rec_servicos_fora")):
+            rec_op += g("rec_servicos_fora")
+        despesas = abs(g("desp_adm")) + abs(g("desp_pessoal") or 0) if ok(g("desp_adm")) else None
+        r["indice_eficiencia"] = div(despesas, rec_op) if ok(despesas, rec_op) and rec_op > 0 else None
+        pdd = abs(g("pdd")) if ok(g("pdd")) else None
+        r["custo_credito_sobre_margem"] = div(pdd, nii) if ok(pdd, nii) and nii > 0 else None
+        r["carteira_credito"] = g("carteira")
+    if modelo == "SEGURADORA":
+        r["resultado_financeiro_sobre_lucro"] = div(g("res_fin"), g("lucro_liq")) if ok(g("lucro_liq")) and g("lucro_liq") > 0 else None
+    return r
+
+
+# --------------------------------------------- metadados para o site
+# direcao: 1 = maior é melhor, -1 = menor é melhor, 0 = neutro
+META = {
+    # tamanho
+    "preco": ("Preço", "Fechamento do último pregão.", 0, "Tamanho", "moeda"),
+    "valor_mercado": ("Valor de mercado", "Preço de cada classe x número de ações da classe (ON + PN), excluindo tesouraria.", 0, "Tamanho", "moeda_grande"),
+    "ev": ("Valor da firma (EV)", "Valor de mercado + dívida líquida + participação de minoritários.", 0, "Tamanho", "moeda_grande"),
+    "liquidez_21": ("Liquidez média 21 pregões", "Média do volume financeiro diário (preço x quantidade) dos últimos 21 pregões.", 1, "Tamanho", "moeda_grande"),
+    "liquidez_63": ("Liquidez média 63 pregões", "Média do volume financeiro diário dos últimos 63 pregões.", 1, "Tamanho", "moeda_grande"),
+    "volatilidade": ("Volatilidade anualizada", "Desvio padrão dos retornos diários de 1 ano x raiz(252).", -1, "Tamanho", "pct"),
+    "beta": ("Beta", "Cov(retorno do ativo, retorno do índice) / Var(retorno do índice), diário, 2 anos. Índice: Ibovespa (Brasil) ou S&P 500 (BDR exterior).", 0, "Tamanho", "x"),
+    "drawdown_5a": ("Maior queda em 5 anos", "Maior recuo do pico ao vale do preço ajustado em 5 anos.", 1, "Tamanho", "pct"),
+    "free_float": ("Free float", "Percentual das ações fora do bloco de controle, segundo o Formulário de Referência (CVM).", 1, "Governança", "pct"),
+    # valuation
+    "pl": ("P/L", "Valor de mercado / lucro líquido LTM atribuído aos controladores.", -1, "Valuation", "x"),
+    "pvp": ("P/VP", "Valor de mercado / patrimônio líquido dos controladores.", -1, "Valuation", "x"),
+    "p_ebitda": ("P/EBITDA", "Valor de mercado / EBITDA LTM (EBIT + depreciação e amortização).", -1, "Valuation", "x"),
+    "p_ebit": ("P/EBIT", "Valor de mercado / EBIT LTM.", -1, "Valuation", "x"),
+    "psr": ("P/Receita (PSR)", "Valor de mercado / receita líquida LTM.", -1, "Valuation", "x"),
+    "p_ativo": ("P/Ativo", "Valor de mercado / ativo total.", -1, "Valuation", "x"),
+    "p_capital_giro": ("P/Capital de giro", "Valor de mercado / (ativo circulante - passivo circulante). n/d se o capital de giro for negativo.", -1, "Valuation", "x"),
+    "p_acl": ("P/Ativo circulante líquido", "Valor de mercado / (ativo circulante - passivo total). n/d se negativo.", -1, "Valuation", "x"),
+    "ev_ebitda": ("EV/EBITDA", "Valor da firma / EBITDA LTM.", -1, "Valuation", "x"),
+    "ev_ebit": ("EV/EBIT", "Valor da firma / EBIT LTM.", -1, "Valuation", "x"),
+    "ev_receita": ("EV/Receita", "Valor da firma / receita líquida LTM.", -1, "Valuation", "x"),
+    "lpa": ("LPA", "Lucro líquido LTM / número de ações (x ações por papel, no caso de units).", 1, "Valuation", "moeda"),
+    "vpa": ("VPA", "Patrimônio líquido / número de ações (x ações por papel, no caso de units).", 1, "Valuation", "moeda"),
+    "peg": ("PEG", "P/L / CAGR de 5 anos do LPA (em pontos percentuais). Só com ambos positivos.", -1, "Valuation", "x"),
+    "earnings_yield": ("Earnings Yield", "EBIT LTM / valor da firma.", 1, "Valuation", "pct"),
+    "fcf_yield": ("FCF Yield", "Fluxo de caixa livre LTM (FCO - capex) / valor de mercado.", 1, "Valuation", "pct"),
+    "pl_vs_media5": ("P/L vs média própria 5a", "P/L atual / média do P/L anual dos últimos 5 exercícios - 1. Negativo = abaixo da própria média.", -1, "Valuation", "pct"),
+    "evebitda_vs_media5": ("EV/EBITDA vs média própria 5a", "EV/EBITDA atual / média dos 5 últimos exercícios - 1.", -1, "Valuation", "pct"),
+    "pvp_vs_media5": ("P/VP vs média própria 5a", "P/VP atual / média dos 5 últimos exercícios - 1 (usado em bancos).", -1, "Valuation", "pct"),
+    "graham": ("Preço justo de Graham", "raiz(22,5 x LPA x VPA). Só com LPA e VPA positivos.", 0, "Valuation", "moeda"),
+    "graham_margem": ("Margem de segurança Graham", "Preço de Graham / preço - 1.", 1, "Valuation", "pct"),
+    "bazin": ("Preço teto de Bazin", "Dividendo médio por ação dos 5 últimos anos / taxa mínima (padrão 6%, em config.json).", 0, "Valuation", "moeda"),
+    "bazin_margem": ("Margem de segurança Bazin", "Preço teto de Bazin / preço - 1.", 1, "Valuation", "pct"),
+    # tir
+    "tir_lucro": ("TIR implícita por lucro", "Lucro médio de 3 exercícios / valor de mercado + g.", 1, "TIR", "pct"),
+    "tir_caixa": ("TIR implícita por caixa", "FCL médio de 3 exercícios / valor de mercado + g.", 1, "TIR", "pct"),
+    "tir_dcf": ("TIR implícita por DCF reverso", "Taxa que iguala o VP de 5 anos de FCL (receita crescendo ao CAGR 5a limitado, margem FCL média 5a) mais perpetuidade com g ao valor da firma. Bisseção.", 1, "TIR", "pct"),
+    "tir_banco": ("TIR implícita (banco/seguradora)", "ROE sustentável x (1 - payout) + payout x ROE / (P/VP). ROE sustentável = média de 3 exercícios.", 1, "TIR", "pct"),
+    "tir_implicita": ("TIR implícita (principal)", "Bancos e seguradoras: fórmula de ROE. Demais: mediana das TIRs por lucro, caixa e DCF reverso disponíveis.", 1, "TIR", "pct"),
+    "tir_spread_ref": ("TIR - título de referência", "TIR implícita principal - NTN-B longa nominal (Brasil) ou Treasury 10y (exterior). Informativo.", 1, "TIR", "pct"),
+    "cresc_implicito": ("Crescimento implícito", "Crescimento perpétuo que o preço exige à taxa de referência (Gordon: g = (r x EV - FCL) / (EV + FCL)). Bancos: g = (r x P/VP - ROE) / (P/VP - 1).", -1, "TIR", "pct"),
+    "cresc_historico_ref": ("Crescimento histórico de referência", "CAGR 5a do lucro (bancos e seguradoras) ou da receita (demais).", 1, "TIR", "pct"),
+    "cresc_gap": ("Implícito - histórico", "Crescimento implícito - crescimento histórico. Positivo = preço exige mais do que a empresa entregou.", -1, "TIR", "pct"),
+    "taxa_referencia": ("Taxa de desconto de referência", "Brasil: (1 + NTN-B longa) x (1 + inflação LP) - 1 + 5%. Exterior: Treasury 10y + 5%.", 0, "TIR", "pct"),
+    "g": ("g (crescimento de longo prazo)", "Inflação de longo prazo + crescimento real do setor micro (config.json).", 0, "TIR", "pct"),
+    # endividamento
+    "divida_bruta": ("Dívida bruta", "Empréstimos, financiamentos e debêntures de curto e longo prazo.", -1, "Endividamento", "moeda_grande"),
+    "caixa": ("Caixa", "Caixa e equivalentes + aplicações financeiras de curto prazo.", 1, "Endividamento", "moeda_grande"),
+    "divida_liquida": ("Dívida líquida", "Dívida bruta - caixa.", -1, "Endividamento", "moeda_grande"),
+    "divliq_pl": ("Dív. líq./PL", "Dívida líquida / patrimônio líquido.", -1, "Endividamento", "x"),
+    "divliq_ebitda": ("Dív. líq./EBITDA", "Dívida líquida / EBITDA LTM.", -1, "Endividamento", "x"),
+    "divliq_ebit": ("Dív. líq./EBIT", "Dívida líquida / EBIT LTM.", -1, "Endividamento", "x"),
+    "pl_ativos": ("PL/Ativos", "Patrimônio líquido / ativo total.", 1, "Endividamento", "pct"),
+    "passivos_ativos": ("Passivos/Ativos", "(Ativo - PL) / ativo total.", -1, "Endividamento", "pct"),
+    "liquidez_corrente": ("Liquidez corrente", "Ativo circulante / passivo circulante.", 1, "Endividamento", "x"),
+    "liquidez_seca": ("Liquidez seca", "(Ativo circulante - estoques) / passivo circulante.", 1, "Endividamento", "x"),
+    "liquidez_imediata": ("Liquidez imediata", "Caixa / passivo circulante.", 1, "Endividamento", "x"),
+    "cobertura_juros": ("Cobertura de juros", "EBIT LTM / despesas financeiras LTM.", 1, "Endividamento", "x"),
+    "divida_cp_pct": ("% dívida no curto prazo", "Dívida de curto prazo / dívida bruta.", -1, "Endividamento", "pct"),
+    # eficiência
+    "margem_bruta": ("Margem bruta", "Lucro bruto / receita líquida.", 1, "Eficiência", "pct"),
+    "margem_ebitda": ("Margem EBITDA", "EBITDA / receita líquida.", 1, "Eficiência", "pct"),
+    "margem_ebit": ("Margem EBIT", "EBIT / receita líquida.", 1, "Eficiência", "pct"),
+    "margem_liquida": ("Margem líquida", "Lucro líquido / receita líquida (bancos: sobre receitas da intermediação).", 1, "Eficiência", "pct"),
+    "giro_ativo": ("Giro do ativo", "Receita líquida LTM / ativo total.", 1, "Eficiência", "x"),
+    "pmr": ("Prazo médio de recebimento", "Contas a receber / receita x 365 (dias).", -1, "Eficiência", "dias"),
+    "pme": ("Prazo médio de estoque", "Estoques / custo dos produtos x 365 (dias).", -1, "Eficiência", "dias"),
+    "pmp": ("Prazo médio de pagamento", "Fornecedores / custo dos produtos x 365 (dias).", 1, "Eficiência", "dias"),
+    "ciclo_financeiro": ("Ciclo financeiro", "PMR + PME - PMP (dias).", -1, "Eficiência", "dias"),
+    # rentabilidade
+    "roe": ("ROE", "Lucro líquido LTM / patrimônio líquido dos controladores.", 1, "Rentabilidade", "pct"),
+    "roa": ("ROA", "Lucro líquido LTM / ativo total.", 1, "Rentabilidade", "pct"),
+    "roic": ("ROIC", "EBIT x (1 - alíquota efetiva, limitada a 34%) / (PL + minoritários + dívida líquida).", 1, "Rentabilidade", "pct"),
+    "roic_spread": ("ROIC - custo de capital", "ROIC - taxa de desconto de referência. Positivo = cria valor.", 1, "Rentabilidade", "pct"),
+    # crescimento
+    "cagr_receita_5a": ("CAGR receita 5a", "(Receita do último exercício / receita de 5 anos antes)^(1/5) - 1.", 1, "Crescimento", "pct"),
+    "cagr_receita_10a": ("CAGR receita 10a", "Mesmo cálculo com 10 anos (ou o máximo disponível, indicado).", 1, "Crescimento", "pct"),
+    "cagr_ebitda_5a": ("CAGR EBITDA 5a", "CAGR de 5 anos do EBITDA anual.", 1, "Crescimento", "pct"),
+    "cagr_ebitda_10a": ("CAGR EBITDA 10a", "CAGR de 10 anos do EBITDA anual.", 1, "Crescimento", "pct"),
+    "cagr_lucro_5a": ("CAGR lucro 5a", "CAGR de 5 anos do lucro líquido anual. n/d se algum extremo for negativo.", 1, "Crescimento", "pct"),
+    "cagr_lucro_10a": ("CAGR lucro 10a", "CAGR de 10 anos do lucro líquido anual.", 1, "Crescimento", "pct"),
+    "cagr_lpa_5a": ("CAGR LPA 5a", "CAGR de 5 anos do lucro por ação (ajustado por desdobramentos).", 1, "Crescimento", "pct"),
+    "cagr_lpa_10a": ("CAGR LPA 10a", "CAGR de 10 anos do lucro por ação.", 1, "Crescimento", "pct"),
+    "cagr_dpa_5a": ("CAGR dividendo por ação 5a", "CAGR de 5 anos dos proventos por ação por ano.", 1, "Crescimento", "pct"),
+    "cagr_dpa_10a": ("CAGR dividendo por ação 10a", "CAGR de 10 anos dos proventos por ação.", 1, "Crescimento", "pct"),
+    "cresc_receita_ltm": ("Receita LTM vs LTM anterior", "Receita LTM / receita dos 12 meses encerrados um ano antes - 1.", 1, "Crescimento", "pct"),
+    "cresc_lucro_ltm": ("Lucro LTM vs LTM anterior", "Lucro LTM / lucro dos 12 meses encerrados um ano antes - 1.", 1, "Crescimento", "pct"),
+    "consist_receita": ("Anos com receita crescendo", "Em quantos dos últimos 10 anos a receita cresceu.", 1, "Crescimento", "anos"),
+    "consist_lucro": ("Anos com lucro crescendo", "Em quantos dos últimos 10 anos o lucro cresceu.", 1, "Crescimento", "anos"),
+    # caixa
+    "fco": ("FCO", "Caixa líquido das atividades operacionais LTM.", 1, "Caixa", "moeda_grande"),
+    "capex": ("Capex", "Aquisições de imobilizado e intangível LTM.", 0, "Caixa", "moeda_grande"),
+    "fcl": ("FCL", "FCO - capex.", 1, "Caixa", "moeda_grande"),
+    "ebitda": ("EBITDA", "EBIT + depreciação e amortização (da DFC).", 1, "Caixa", "moeda_grande"),
+    "capex_depreciacao": ("Capex/Depreciação", "Capex / depreciação e amortização. Acima de 1 = investe mais do que deprecia.", 0, "Caixa", "x"),
+    "conversao_caixa": ("Conversão de caixa", "FCL / lucro líquido. Abaixo de 0,5 = lucro não vira caixa.", 1, "Caixa", "x"),
+    # proventos
+    "dpa_12m": ("Proventos por ação 12m", "Soma dos dividendos e JCP com data-com nos últimos 12 meses (B3).", 1, "Proventos", "moeda"),
+    "dy": ("Dividend Yield 12m", "Proventos por ação 12m / preço.", 1, "Proventos", "pct"),
+    "dy_medio_5a": ("DY médio 5a", "Média do DY de cada um dos 5 últimos anos (proventos do ano / preço no fim do ano).", 1, "Proventos", "pct"),
+    "payout": ("Payout", "Proventos por ação 12m / LPA LTM.", 0, "Proventos", "pct"),
+    "dividendos_sobre_fcl": ("Dividendos pagos / FCL", "Dividendos e JCP pagos (DFC) / FCL. Acima de 1 = pago além do caixa gerado.", -1, "Proventos", "x"),
+    "anos_pagando": ("Anos seguidos pagando", "Anos consecutivos, até o último ano completo, com proventos > 0.", 1, "Proventos", "anos"),
+    "anos_corte": ("Anos com corte", "Anos (em 10) em que o provento por ação caiu mais de 5%.", -1, "Proventos", "anos"),
+    "jcp_pct_12m": ("% JCP nos proventos 12m", "Parcela dos proventos 12m declarada como Juros sobre Capital Próprio.", 0, "Proventos", "pct"),
+    # governança
+    "acoes": ("Número de ações", "Total de ações (todas as classes) menos ações em tesouraria.", 0, "Governança", "num"),
+    "diluicao_3a": ("Diluição 3a", "Ações hoje / ações 3 anos antes (ajustado por desdobramento) - 1.", -1, "Governança", "pct"),
+    "diluicao_5a": ("Diluição 5a", "Ações hoje / ações 5 anos antes - 1.", -1, "Governança", "pct"),
+    "controlador_pct": ("Participação do controlador", "Soma do capital total detido por acionistas marcados como controladores (FRE).", 0, "Governança", "pct"),
+    "tag_along": ("Tag along", "Percentual garantido ao minoritário em venda de controle.", 1, "Governança", "pct_int"),
+    "recompras_ltm": ("Recompras LTM", "Valor gasto com aquisição de ações próprias nos 12 meses (DFC).", 1, "Governança", "moeda_grande"),
+    # bancos
+    "nim": ("Margem financeira / ativo (NIM aprox.)", "(Receitas de juros - despesas de juros) / ativo total. Aproximação com dados da DRE.", 1, "Banco", "pct"),
+    "indice_eficiencia": ("Índice de eficiência (aprox.)", "(Despesas de pessoal + administrativas) / (margem financeira + serviços). Menor é melhor.", -1, "Banco", "pct"),
+    "custo_credito_sobre_margem": ("Custo do crédito / margem", "Perda esperada com crédito / margem financeira bruta.", -1, "Banco", "pct"),
+    "cresc_carteira": ("Crescimento da carteira de crédito", "Carteira de crédito no fim do período / um ano antes - 1 (balanço CVM).", 1, "Banco", "pct"),
+    "basileia": ("Índice de Basileia", "Capital regulatório / ativos ponderados pelo risco. Fonte: release da empresa (notes.json).", 1, "Banco", "pct"),
+    "inadimplencia_90": ("Inadimplência 90 dias", "Carteira com atraso acima de 90 dias / carteira. Fonte: release (notes.json).", -1, "Banco", "pct"),
+    "cobertura_pdd": ("Cobertura de PDD", "Provisão / carteira vencida há mais de 90 dias. Fonte: release (notes.json).", 1, "Banco", "pct"),
+    # seguradoras
+    "resultado_financeiro_sobre_lucro": ("Resultado financeiro / lucro", "Resultado financeiro / lucro líquido.", 0, "Seguradora", "pct"),
+    "indice_combinado": ("Índice combinado", "(Sinistros + despesas) / prêmios ganhos. Fonte: release (notes.json).", -1, "Seguradora", "pct"),
+    "sinistralidade": ("Sinistralidade", "Sinistros retidos / prêmios ganhos. Fonte: release (notes.json).", -1, "Seguradora", "pct"),
+    # holding
+    "soma_partes": ("Soma das partes listadas", "Soma de (participação declarada no FRE x valor de mercado de cada investida listada).", 0, "Holding", "moeda_grande"),
+    "desconto_holding": ("Desconto de holding", "Valor de mercado da holding / soma das partes listadas - 1. Negativo = holding vale menos que as participações.", -1, "Holding", "pct"),
+    # tesouraria em bitcoin
+    "btc_em_caixa": ("Bitcoin em caixa", "Quantidade de BTC declarada (SEC XBRL) ou saldo de criptoativos no balanço / preço do BTC na data do balanço (CVM).", 1, "Cripto", "num_btc"),
+    "valor_btc": ("Valor do bitcoin em caixa", "BTC em caixa x preço do BTC no fechamento.", 1, "Cripto", "moeda_grande"),
+    "mnav": ("mNAV", "Valor de mercado / valor do bitcoin em caixa. Acima de 1 = a ação custa mais que o BTC que a empresa tem.", -1, "Cripto", "x"),
+    "btc_por_acao": ("BTC por ação", "Bitcoin em caixa / número de ações.", 1, "Cripto", "num_btc"),
+    # bdr
+    "bdr_preco_justo": ("Preço justo do BDR", "Preço no exterior x PTAX / proporção.", 0, "BDR", "moeda"),
+    "bdr_agio": ("Ágio/deságio do BDR", "Preço do BDR / preço justo - 1. Positivo = ágio.", -1, "BDR", "pct"),
+}
+
+FATORES = {
+    "valuation": ["tir_implicita", "earnings_yield", "pl_vs_media5", "evebitda_vs_media5", "pvp_vs_media5", "cresc_gap"],
+    "qualidade": ["roic", "roe", "conversao_caixa", "diluicao_5a", "estab_margem"],
+    "solidez": ["divliq_ebitda", "cobertura_juros", "liquidez_corrente", "pl_ativos"],
+    "crescimento": ["cagr_receita_5a", "cagr_lucro_5a", "consist_receita", "consist_lucro", "cresc_lucro_ltm"],
+    "proventos": ["dy", "dy_medio_5a", "anos_pagando", "dividendos_sobre_fcl"],
+}
+META["estab_margem"] = ("Estabilidade de margem", "Desvio padrão da margem líquida anual em 5 anos (menor = mais estável).", -1, "Eficiência", "pct")
+
+
+def meta_json() -> dict:
+    return {k: {"nome": v[0], "formula": v[1], "direcao": v[2], "grupo": v[3], "unidade": v[4]} for k, v in META.items()}

@@ -1,0 +1,1897 @@
+{
+  "_comentario": "Notas escritas à mão. Versão inicial gerada para revisão. 'manuais' recebe indicadores que só existem em release (use fração: 0.15 = 15%). Campos vazios aparecem como n/d.",
+  "B3SA3": {
+    "resumo": "Bolsa de valores do Brasil e principal infraestrutura do mercado de capitais: negociação de ações, derivativos e renda fixa, compensação e liquidação, depositária, balcão e serviços de dados e tecnologia. A receita vem de tarifas sobre volume negociado, registro e custódia. Concorrência potencial de novas bolsas e de plataformas de balcão.",
+    "tese": "",
+    "riscos": [
+      "Queda de volume negociado em ciclos de juros altos",
+      "Entrada de bolsas concorrentes",
+      "Revisão de tarifas"
+    ],
+    "oportunidades": [
+      "Aumento do número de investidores e de emissões quando os juros caem",
+      "Crescimento de dados e serviços de tecnologia"
+    ],
+    "manuais": {}
+  },
+  "BBAS3": {
+    "resumo": "Banco do Brasil, maior banco do país em ativos, controlado pela União. Forte no crédito ao agronegócio, ao funcionalismo (consignado) e a empresas, além de participações em seguros (BB Seguridade), cartões e gestão de recursos. Concorrentes: Itaú, Bradesco, Caixa, Santander e Sicredi no agro.",
+    "tese": "",
+    "riscos": [
+      "Interferência do controlador estatal",
+      "Inadimplência no crédito ao agronegócio",
+      "Risco fiscal e político"
+    ],
+    "oportunidades": [
+      "Rentabilidade elevada negociando a múltiplos baixos",
+      "Liderança no crédito rural"
+    ],
+    "manuais": {
+      "basileia": null,
+      "inadimplencia_90": null,
+      "cobertura_pdd": null,
+      "fonte": "Preencher com o release trimestral da companhia."
+    }
+  },
+  "BPAC11": {
+    "resumo": "BTG Pactual, maior banco de investimento da América Latina. Receitas de banco de investimento, corporate lending, vendas e operações (trading), gestão de recursos e patrimônio e um banco digital para pessoa física. Concorrentes: Itaú BBA, Bradesco BBI, XP e bancos globais.",
+    "tese": "",
+    "riscos": [
+      "Resultado de trading volátil",
+      "Dependência do ciclo de mercado de capitais",
+      "Risco de reputação"
+    ],
+    "oportunidades": [
+      "Captação crescente em gestão de patrimônio",
+      "Expansão do crédito a empresas"
+    ],
+    "manuais": {
+      "basileia": null,
+      "inadimplencia_90": null,
+      "cobertura_pdd": null,
+      "fonte": "Preencher com o release trimestral da companhia."
+    }
+  },
+  "BBDC3": {
+    "resumo": "Ação ordinária do Bradesco. O negócio é o mesmo da BBDC4: grande banco de varejo com um dos maiores grupos seguradores do país. Esta classe tem direito a voto e tag along legal de 80%.",
+    "tese": "",
+    "riscos": [
+      "Mesmos riscos da BBDC4: execução da reestruturação e inadimplência no varejo"
+    ],
+    "oportunidades": [
+      "Mesmas da BBDC4"
+    ],
+    "manuais": {
+      "basileia": null,
+      "inadimplencia_90": null,
+      "cobertura_pdd": null,
+      "fonte": "Preencher com o release trimestral da companhia."
+    }
+  },
+  "BBDC4": {
+    "resumo": "Segundo maior banco privado do Brasil, com grande base de clientes de varejo e um dos maiores grupos seguradores do país (Bradesco Seguros). A receita vem da margem financeira com crédito, de tarifas e serviços e do resultado de seguros, previdência e capitalização. Passa por um plano de transformação para recuperar rentabilidade. Concorrentes: Itaú, Banco do Brasil, Santander Brasil, Nubank e Inter.",
+    "tese": "",
+    "riscos": [
+      "Execução do plano de reestruturação e recuperação do ROE",
+      "Inadimplência elevada no varejo de baixa renda",
+      "Mudanças regulatórias e tributárias sobre JCP"
+    ],
+    "oportunidades": [
+      "Negocia abaixo do patrimônio (P/VP menor que 1) enquanto o ROE se recupera",
+      "Resultado de seguros diversifica a receita"
+    ],
+    "manuais": {
+      "basileia": null,
+      "inadimplencia_90": null,
+      "cobertura_pdd": null,
+      "fonte": "Preencher com o release trimestral da companhia."
+    }
+  },
+  "ITUB3": {
+    "resumo": "Ação ordinária do Itaú Unibanco. O negócio é o mesmo da ITUB4: maior banco privado do país. Esta classe tem direito a voto e costuma negociar com prêmio ou desconto em relação à PN conforme a liquidez.",
+    "tese": "",
+    "riscos": [
+      "Mesmos riscos da ITUB4"
+    ],
+    "oportunidades": [
+      "Mesmas da ITUB4"
+    ],
+    "manuais": {
+      "basileia": null,
+      "inadimplencia_90": null,
+      "cobertura_pdd": null,
+      "fonte": "Preencher com o release trimestral da companhia."
+    }
+  },
+  "ITUB4": {
+    "resumo": "Maior banco privado do Brasil, com operações também na América Latina. A receita vem principalmente da margem financeira com clientes (crédito a pessoas físicas, empresas e cartões), de tarifas e serviços (cartões, gestão de recursos, banco de investimento) e de seguros e previdência. Concorrentes: Bradesco, Banco do Brasil, Santander Brasil, BTG Pactual e bancos digitais como Nubank e Inter.",
+    "tese": "",
+    "riscos": [
+      "Ciclo de inadimplência em pessoa física e pequenas empresas",
+      "Competição de bancos digitais em cartões e conta corrente",
+      "Mudanças regulatórias e tributárias sobre JCP"
+    ],
+    "oportunidades": [
+      "Rentabilidade (ROE) acima do custo de capital de forma consistente",
+      "Escala em tecnologia e eficiência operacional"
+    ],
+    "manuais": {
+      "basileia": null,
+      "inadimplencia_90": null,
+      "cobertura_pdd": null,
+      "fonte": "Preencher com o release trimestral da companhia (Basileia, inadimplência 90 dias e cobertura)."
+    }
+  },
+  "BRSR6": {
+    "resumo": "Banrisul, banco controlado pelo Estado do Rio Grande do Sul, com atuação concentrada no estado. Receita de crédito consignado a servidores, crédito a empresas e serviços bancários. Concorrentes: Banco do Brasil, Caixa, Sicredi e bancos privados.",
+    "tese": "",
+    "riscos": [
+      "Concentração regional e eventos climáticos no RS",
+      "Interferência do controlador estatal",
+      "Possibilidade de privatização ou mudança de gestão"
+    ],
+    "oportunidades": [
+      "Negocia abaixo do patrimônio",
+      "Recuperação da economia gaúcha"
+    ],
+    "manuais": {
+      "basileia": null,
+      "inadimplencia_90": null,
+      "cobertura_pdd": null,
+      "fonte": "Preencher com o release trimestral da companhia."
+    }
+  },
+  "SANB11": {
+    "resumo": "Santander Brasil, subsidiária do grupo espanhol Santander e terceiro maior banco privado do país. Receita de crédito ao consumo e a empresas, cartões, financiamento de veículos e tarifas. Concorrentes: Itaú, Bradesco, Banco do Brasil e bancos digitais.",
+    "tese": "",
+    "riscos": [
+      "Inadimplência em pessoa física",
+      "Baixa liquidez no free float",
+      "Decisões do controlador estrangeiro"
+    ],
+    "oportunidades": [
+      "Recuperação do ROE com queda de juros"
+    ],
+    "manuais": {
+      "basileia": null,
+      "inadimplencia_90": null,
+      "cobertura_pdd": null,
+      "fonte": "Preencher com o release trimestral da companhia."
+    }
+  },
+  "ROXO34": {
+    "resumo": "BDR da Nu Holdings, dona do Nubank, maior banco digital do Brasil e com operações no México e na Colômbia. A receita vem de juros do cartão de crédito e de empréstimos pessoais, de tarifas de intercâmbio e de serviços. Reporta em dólar, mas o negócio e o risco são de Brasil e América Latina. Concorrentes: Itaú, Bradesco, Inter, PicPay e Mercado Pago.",
+    "tese": "",
+    "riscos": [
+      "Inadimplência em crédito sem garantia",
+      "Câmbio: lucro em reais convertido para dólar",
+      "Execução da expansão no México"
+    ],
+    "oportunidades": [
+      "Crescimento de clientes e de crédito com custo de servir baixo"
+    ],
+    "manuais": {
+      "basileia": null,
+      "inadimplencia_90": null,
+      "cobertura_pdd": null,
+      "fonte": "Preencher com o release trimestral (6-K)."
+    }
+  },
+  "INBR34": {
+    "resumo": "BDR da Inter&Co, holding do Banco Inter, banco digital brasileiro com conta, crédito imobiliário e consignado, cartões, investimentos e seguros. Reporta em reais e negocia na Nasdaq. Concorrentes: Nubank, PicPay, C6, Itaú e Bradesco.",
+    "tese": "",
+    "riscos": [
+      "Inadimplência",
+      "Competição entre bancos digitais"
+    ],
+    "oportunidades": [
+      "Ganho de rentabilidade com escala"
+    ],
+    "manuais": {
+      "basileia": null,
+      "inadimplencia_90": null,
+      "cobertura_pdd": null,
+      "fonte": "Preencher com o release trimestral da companhia."
+    }
+  },
+  "XPBR31": {
+    "resumo": "BDR da XP Inc, maior plataforma de investimentos independente do Brasil, com corretora, assessoria, banco, asset e cartões. Reporta em reais e negocia na Nasdaq. Concorrentes: BTG Pactual, Itaú, bancos digitais e outras corretoras.",
+    "tese": "",
+    "riscos": [
+      "Juros altos levam investidores à renda fixa de bancos",
+      "Concorrência por assessores"
+    ],
+    "oportunidades": [
+      "Queda de juros e migração para renda variável",
+      "Recompras e dividendos"
+    ],
+    "manuais": {
+      "basileia": null,
+      "inadimplencia_90": null,
+      "cobertura_pdd": null,
+      "fonte": "Preencher com o release trimestral da companhia."
+    }
+  },
+  "BBSE3": {
+    "resumo": "Holding de seguros do Banco do Brasil. Tem participações na Brasilseg (seguros de vida, rural, prestamista e residencial), na Brasilprev (previdência) e na Brasilcap (capitalização), além da corretora própria. O lucro vem da equivalência patrimonial dessas empresas e das comissões de corretagem, com distribuição pelo balcão do Banco do Brasil. Concorrentes: Caixa Seguridade, Porto, Bradesco Seguros e as seguradoras dos grandes bancos.",
+    "tese": "",
+    "riscos": [
+      "Dependência do canal de distribuição do Banco do Brasil",
+      "Queda de juros reduz o resultado financeiro das coligadas",
+      "Sinistralidade do seguro rural em anos de quebra de safra"
+    ],
+    "oportunidades": [
+      "Modelo com pouca necessidade de capital e payout alto",
+      "Crescimento do seguro rural e prestamista acompanhando o crédito do BB"
+    ],
+    "manuais": {
+      "indice_combinado": null,
+      "sinistralidade": null,
+      "fonte": "Preencher com o release trimestral (dados da Brasilseg)."
+    }
+  },
+  "CXSE3": {
+    "resumo": "Caixa Seguridade, holding de seguros, previdência, capitalização e consórcios distribuídos pela rede da Caixa Econômica Federal. O lucro vem de participações em joint ventures (com CNP e Tokio Marine) e de comissões de corretagem. Concorrentes: BB Seguridade, Bradesco Seguros e seguradoras independentes.",
+    "tese": "",
+    "riscos": [
+      "Dependência do balcão da Caixa",
+      "Queda de juros reduz resultado financeiro",
+      "Controle estatal"
+    ],
+    "oportunidades": [
+      "Crescimento do seguro habitacional e prestamista",
+      "Payout alto e pouca necessidade de capital"
+    ],
+    "manuais": {
+      "indice_combinado": null,
+      "sinistralidade": null,
+      "fonte": "Preencher com o release trimestral."
+    }
+  },
+  "PSSA3": {
+    "resumo": "Porto, uma das maiores seguradoras do Brasil, líder em seguro de automóvel e com operações de saúde, odontológico, residencial, consórcio, cartões e serviços financeiros. A receita vem de prêmios de seguro e do resultado financeiro das reservas. Concorrentes: Bradesco Seguros, Allianz, Tokio Marine e HDI.",
+    "tese": "",
+    "riscos": [
+      "Sinistralidade de automóvel (roubo e custo de peças)",
+      "Concorrência em preço",
+      "Queda de juros reduz o resultado financeiro"
+    ],
+    "oportunidades": [
+      "Diversificação em saúde e serviços financeiros"
+    ],
+    "manuais": {
+      "indice_combinado": null,
+      "sinistralidade": null,
+      "fonte": "Preencher com o release trimestral."
+    }
+  },
+  "SAUD3": {
+    "resumo": "Bradsaúde, empresa de seguros e planos de saúde do grupo Bradesco listada na B3. A receita vem de mensalidades de planos e seguros de saúde, principalmente empresariais. Concorrentes: Amil, SulAmérica (Rede D'Or), Hapvida e Unimeds.",
+    "tese": "",
+    "riscos": [
+      "Inflação médica acima dos reajustes",
+      "Regulação da ANS sobre reajustes",
+      "Judicialização de coberturas"
+    ],
+    "oportunidades": [
+      "Recuperação de margem com reajustes",
+      "Escala no segmento empresarial"
+    ],
+    "manuais": {
+      "indice_combinado": null,
+      "sinistralidade": null,
+      "fonte": "Preencher com o release trimestral."
+    }
+  },
+  "WIZC3": {
+    "resumo": "Wiz Co, corretora e distribuidora de seguros e produtos financeiros por meio de parcerias com bancos e varejistas. A receita vem de comissões de corretagem. Concorrentes: corretoras próprias dos bancos e outras plataformas de distribuição.",
+    "tese": "",
+    "riscos": [
+      "Fim ou renegociação de contratos de parceria",
+      "Concentração em poucos parceiros"
+    ],
+    "oportunidades": [
+      "Novas parcerias de distribuição"
+    ],
+    "manuais": {}
+  },
+  "VALE3": {
+    "resumo": "Uma das maiores produtoras de minério de ferro e pelotas do mundo, com negócios também em níquel e cobre. A receita é quase toda em dólar, vinda de exportações, com a China como principal destino. O resultado depende do preço do minério, do câmbio e dos custos de frete. Concorrentes: Rio Tinto, BHP e Fortescue.",
+    "tese": "",
+    "riscos": [
+      "Desaceleração da construção civil e da siderurgia na China",
+      "Passivos de Mariana e Brumadinho e riscos de barragens",
+      "Interferência política e questões regulatórias de concessões ferroviárias"
+    ],
+    "oportunidades": [
+      "Geração de caixa forte com minério em alta",
+      "Expansão em cobre ligada à transição energética"
+    ],
+    "manuais": {}
+  },
+  "GGBR4": {
+    "resumo": "Gerdau, maior produtora de aço longo do Brasil, com operações relevantes na América do Norte. A receita vem de vergalhões, perfis, aços especiais e aços planos, destinados à construção, indústria e infraestrutura. Concorrentes: ArcelorMittal, CSN, Usiminas e aço importado.",
+    "tese": "",
+    "riscos": [
+      "Importação de aço chinês a preço baixo",
+      "Ciclo da construção civil",
+      "Tarifas comerciais entre países"
+    ],
+    "oportunidades": [
+      "Geração de caixa nos EUA",
+      "Medidas antidumping no Brasil"
+    ],
+    "manuais": {}
+  },
+  "GOAU4": {
+    "resumo": "Metalúrgica Gerdau, holding que controla a Gerdau S.A. Seu principal ativo é a participação na GGBR, por isso o valor depende da Gerdau e do desconto de holding. Concorrentes: os mesmos da Gerdau.",
+    "tese": "",
+    "riscos": [
+      "Mesmos riscos da Gerdau",
+      "Desconto de holding pode persistir"
+    ],
+    "oportunidades": [
+      "Desconto em relação à soma das partes"
+    ],
+    "manuais": {}
+  },
+  "CSNA3": {
+    "resumo": "CSN, grupo com siderurgia (aço plano), mineração de ferro (CSN Mineração), cimento, logística e energia. A receita é diversificada entre aço e minério, e a empresa é bastante alavancada. Concorrentes: Usiminas, ArcelorMittal, Vale e Votorantim Cimentos.",
+    "tese": "",
+    "riscos": [
+      "Endividamento elevado",
+      "Preço do minério e importação de aço",
+      "Governança e transações com o controlador"
+    ],
+    "oportunidades": [
+      "Venda de ativos para reduzir dívida",
+      "Queda de juros reduz despesa financeira"
+    ],
+    "manuais": {}
+  },
+  "USIM5": {
+    "resumo": "Usiminas, produtora de aço plano para indústria automotiva, linha branca e máquinas, com mineração própria de ferro. A receita depende de preço e volume de aço no mercado interno. Concorrentes: CSN, ArcelorMittal e importados.",
+    "tese": "",
+    "riscos": [
+      "Aço importado e margens comprimidas",
+      "Disputas entre os acionistas controladores"
+    ],
+    "oportunidades": [
+      "Medidas de defesa comercial",
+      "Recuperação da demanda industrial"
+    ],
+    "manuais": {}
+  },
+  "FESA4": {
+    "resumo": "Ferbasa, produtora integrada de ferroligas (principalmente ferrocromo) com mineração de cromo na Bahia e energia própria. A receita vem de vendas para a siderurgia de aço inoxidável no Brasil e no exterior. Concorrentes: produtores globais de ferroligas.",
+    "tese": "",
+    "riscos": [
+      "Preço internacional do ferrocromo",
+      "Baixa liquidez da ação"
+    ],
+    "oportunidades": [
+      "Caixa líquido e energia própria"
+    ],
+    "manuais": {}
+  },
+  "AURA33": {
+    "resumo": "BDR da Aura Minerals, produtora de ouro e cobre com minas no Brasil, México e Honduras, listada na Nasdaq (AUGO) e na TSX. A receita é em dólar e acompanha o preço do ouro. Concorrentes: mineradoras de ouro de médio porte.",
+    "tese": "",
+    "riscos": [
+      "Preço do ouro",
+      "Execução de novos projetos"
+    ],
+    "oportunidades": [
+      "Ouro em alta e crescimento de produção"
+    ],
+    "manuais": {}
+  },
+  "PETR3": {
+    "resumo": "Ação ordinária da Petrobras. O negócio é o mesmo da PETR4: produção de petróleo e gás, refino e venda de combustíveis. Esta classe dá direito a voto e tem tag along de 100% (Nível 2).",
+    "tese": "",
+    "riscos": [
+      "Mesmos riscos da PETR4"
+    ],
+    "oportunidades": [
+      "Mesmas da PETR4"
+    ],
+    "manuais": {}
+  },
+  "PETR4": {
+    "resumo": "Petrobras, maior empresa do Brasil, controlada pela União. A receita vem da produção de petróleo e gás (principalmente pré-sal), do refino e da venda de derivados. A política de preços e de dividendos sofre influência do governo. Concorrentes: petroleiras globais e importadores de combustíveis.",
+    "tese": "",
+    "riscos": [
+      "Interferência política em preços, investimentos e dividendos",
+      "Preço do petróleo",
+      "Investimentos fora do núcleo do negócio"
+    ],
+    "oportunidades": [
+      "Baixo custo de extração no pré-sal",
+      "Dividendos elevados"
+    ],
+    "manuais": {}
+  },
+  "PRIO3": {
+    "resumo": "PRIO, maior petroleira independente do Brasil, focada em comprar e revitalizar campos maduros offshore com custo de extração baixo. A receita é a venda de petróleo em dólar. Concorrentes: Brava, PetroReconcavo e petroleiras globais.",
+    "tese": "",
+    "riscos": [
+      "Preço do petróleo",
+      "Execução de aquisições e licenças ambientais"
+    ],
+    "oportunidades": [
+      "Crescimento de produção com novos campos",
+      "Custo baixo por barril"
+    ],
+    "manuais": {}
+  },
+  "RECV3": {
+    "resumo": "PetroReconcavo, produtora independente de petróleo e gás em campos maduros terrestres na Bahia e no Rio Grande do Norte. A receita vem de petróleo e da venda de gás natural. Concorrentes: Brava, PRIO e Petrobras.",
+    "tese": "",
+    "riscos": [
+      "Preço do petróleo e do gás",
+      "Declínio natural dos campos"
+    ],
+    "oportunidades": [
+      "Venda de gás com contratos indexados",
+      "Balanço conservador"
+    ],
+    "manuais": {}
+  },
+  "BRAV3": {
+    "resumo": "Brava Energia, resultado da fusão entre 3R Petroleum e Enauta, com produção onshore e offshore. A receita vem da venda de petróleo e gás. Concorrentes: PRIO, PetroReconcavo e Petrobras.",
+    "tese": "",
+    "riscos": [
+      "Endividamento e execução operacional",
+      "Preço do petróleo"
+    ],
+    "oportunidades": [
+      "Aumento de produção em ativos offshore"
+    ],
+    "manuais": {}
+  },
+  "OPCT3": {
+    "resumo": "OceanPact, prestadora de serviços marítimos para a indústria de óleo e gás: apoio offshore, resposta a emergências ambientais, subsea e engenharia. A receita vem de contratos de afretamento e serviços, muitos com a Petrobras. Concorrentes: CBO, Bram e empresas internacionais.",
+    "tese": "",
+    "riscos": [
+      "Dependência da Petrobras",
+      "Renovação de contratos"
+    ],
+    "oportunidades": [
+      "Alta das taxas diárias de embarcações"
+    ],
+    "manuais": {}
+  },
+  "UGPA3": {
+    "resumo": "Ultrapar, holding com a Ipiranga (distribuição de combustíveis), a Ultragaz (gás LP) e a Ultracargo (terminais de granéis líquidos). A receita vem principalmente de volume e margem na distribuição de combustíveis. Concorrentes: Vibra, Raízen (Shell) e distribuidoras regionais.",
+    "tese": "",
+    "riscos": [
+      "Margens de distribuição e sonegação no setor",
+      "Transição energética"
+    ],
+    "oportunidades": [
+      "Ganho de eficiência na Ipiranga",
+      "Expansão de terminais"
+    ],
+    "manuais": {}
+  },
+  "PASS3": {
+    "resumo": "Compass, empresa do grupo Cosan dona da Comgás (distribuição de gás canalizado em São Paulo) e de participações em outras distribuidoras e em terminal de GNL. A receita é regulada, com tarifa definida pela agência estadual. Concorrentes: outras fontes de energia; a distribuição é monopólio regional.",
+    "tese": "",
+    "riscos": [
+      "Revisões tarifárias",
+      "Alavancagem do grupo controlador"
+    ],
+    "oportunidades": [
+      "Expansão da rede de gás",
+      "Receita previsível"
+    ],
+    "manuais": {}
+  },
+  "CSAN3": {
+    "resumo": "Cosan, holding com participações em Rumo (logística), Raízen (combustíveis e etanol), Compass (gás), Moove (lubrificantes) e Radar (terras). O valor depende das investidas e da dívida da própria holding. Concorrentes: os de cada investida.",
+    "tese": "",
+    "riscos": [
+      "Dívida elevada na holding",
+      "Dificuldades da Raízen",
+      "Desconto de holding"
+    ],
+    "oportunidades": [
+      "Desconto em relação à soma das partes",
+      "Venda de participações para desalavancar"
+    ],
+    "manuais": {}
+  },
+  "RAIZ4": {
+    "resumo": "Raízen, joint venture de Cosan e Shell, maior produtora de etanol de cana do mundo e distribuidora de combustíveis com a marca Shell no Brasil e na Argentina. A receita vem de açúcar, etanol, energia e distribuição de combustíveis. Concorrentes: Vibra, Ipiranga, São Martinho e outras usinas.",
+    "tese": "",
+    "riscos": [
+      "Endividamento alto e geração de caixa fraca",
+      "Safras ruins e preço do açúcar",
+      "Possível capitalização pelos sócios"
+    ],
+    "oportunidades": [
+      "Venda de ativos",
+      "Etanol de segunda geração"
+    ],
+    "manuais": {}
+  },
+  "BRKM5": {
+    "resumo": "Braskem, maior petroquímica das Américas, produtora de resinas como polietileno, polipropileno e PVC, com fábricas no Brasil, EUA, México e Alemanha. Controlada por Novonor e Petrobras. Concorrentes: Dow, LyondellBasell e produtores asiáticos.",
+    "tese": "",
+    "riscos": [
+      "Ciclo petroquímico global em baixa",
+      "Passivo do afundamento do solo em Maceió",
+      "Endividamento e indefinição do controle"
+    ],
+    "oportunidades": [
+      "Recuperação do spread petroquímico",
+      "Mudança de controle"
+    ],
+    "manuais": {}
+  },
+  "UNIP6": {
+    "resumo": "Unipar, produtora de cloro, soda cáustica e PVC no Brasil e na Argentina. A receita depende do preço internacional de soda e PVC e da energia. Concorrentes: Braskem e importados.",
+    "tese": "",
+    "riscos": [
+      "Preços cíclicos de soda e PVC",
+      "Custo de energia"
+    ],
+    "oportunidades": [
+      "Projetos de autoprodução de energia",
+      "Histórico de dividendos"
+    ],
+    "manuais": {}
+  },
+  "DEXP3": {
+    "resumo": "Dexxos, empresa química (antiga GPC Participações) com produção de metanol, formaldeído, resinas e produtos para a indústria. A receita vem da venda de químicos para indústria de painéis de madeira, tintas e outros. Concorrentes: produtores nacionais e importados.",
+    "tese": "",
+    "riscos": [
+      "Baixa liquidez da ação",
+      "Preço do metanol importado"
+    ],
+    "oportunidades": [
+      "Expansão de capacidade"
+    ],
+    "manuais": {}
+  },
+  "SUZB3": {
+    "resumo": "Suzano, maior produtora mundial de celulose de eucalipto, também com papel e produtos de consumo (papel higiênico). A receita é quase toda em dólar, exportada para Ásia, Europa e América do Norte. Concorrentes: Arauco, CMPC, Eldorado e Klabin.",
+    "tese": "",
+    "riscos": [
+      "Preço da celulose",
+      "Dólar caindo reduz receita em reais",
+      "Alavancagem após projetos"
+    ],
+    "oportunidades": [
+      "Custo caixa baixo",
+      "Geração de caixa forte em ciclo de alta"
+    ],
+    "manuais": {}
+  },
+  "KLBN11": {
+    "resumo": "Klabin, maior produtora de papéis para embalagens do Brasil e exportadora de celulose. A receita vem de papel cartão, papel kraft, embalagens de papelão ondulado e sacos industriais, além de celulose. Concorrentes: Suzano, WestRock e Irani.",
+    "tese": "",
+    "riscos": [
+      "Endividamento após o projeto Puma II",
+      "Preço da celulose"
+    ],
+    "oportunidades": [
+      "Demanda por embalagens sustentáveis",
+      "Integração florestal"
+    ],
+    "manuais": {}
+  },
+  "RANI3": {
+    "resumo": "Irani, fabricante de papel para embalagens e de embalagens de papelão ondulado, com base florestal própria no Sul. A receita vem do mercado interno de embalagens. Concorrentes: Klabin, WestRock e fabricantes regionais.",
+    "tese": "",
+    "riscos": [
+      "Demanda industrial",
+      "Preço das aparas recicladas"
+    ],
+    "oportunidades": [
+      "Projetos de expansão concluídos"
+    ],
+    "manuais": {}
+  },
+  "AXIA3": {
+    "resumo": "Axia Energia, nome atual da antiga Eletrobras, maior empresa de geração e transmissão de energia da América Latina após a privatização. A receita vem da venda de energia de hidrelétricas e de receitas de transmissão. Concorrentes: Engie, Auren, CPFL e Cemig.",
+    "tese": "",
+    "riscos": [
+      "Preço de energia no mercado livre",
+      "Disputas com a União e passivos herdados",
+      "Risco hidrológico"
+    ],
+    "oportunidades": [
+      "Ganhos de eficiência pós-privatização",
+      "Descontratação de energia a preços melhores"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "regulacao": "Preencher: agência reguladora, ciclo de revisão tarifária e indexador.",
+      "concessoes": "Preencher com os vencimentos das concessões (release ou formulário de referência)."
+    }
+  },
+  "ALUP11": {
+    "resumo": "Alupar, holding de transmissão e geração de energia com concessões no Brasil, Colômbia e Peru. A receita vem principalmente de RAP de transmissão, reajustada pela inflação. Concorrentes em leilões: Taesa, ISA Energia e fundos.",
+    "tese": "",
+    "riscos": [
+      "Alavancagem para novos projetos",
+      "Revisões tarifárias"
+    ],
+    "oportunidades": [
+      "Novos lotes de transmissão",
+      "Receita previsível"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "regulacao": "Preencher: agência reguladora, ciclo de revisão tarifária e indexador.",
+      "concessoes": "Preencher com os vencimentos das concessões (release ou formulário de referência)."
+    }
+  },
+  "TAEE11": {
+    "resumo": "Transmissora de energia elétrica com concessões em vários estados. A receita é a Receita Anual Permitida (RAP), contratada em leilões da ANEEL por prazos longos e reajustada anualmente pela inflação (IPCA ou IGP-M, conforme o contrato), sem risco de volume de energia. É controlada pela Cemig e pela ISA Energia. Concorrentes em leilões: ISA Energia, Alupar, Axia (antiga Eletrobras) e fundos de infraestrutura.",
+    "tese": "",
+    "riscos": [
+      "Vencimento das concessões mais antigas e redução de RAP em revisões tarifárias",
+      "Alavancagem para financiar novos projetos",
+      "Mudança do indexador e da regulação da ANEEL"
+    ],
+    "oportunidades": [
+      "Receita previsível e indexada à inflação",
+      "Novos lotes de transmissão em leilões"
+    ],
+    "qualitativo": {
+      "regulacao": "Transmissão regulada pela ANEEL. RAP definida em leilão, com revisões tarifárias periódicas nos contratos mais novos. Versão inicial: revisar com o formulário de referência.",
+      "concessoes": "Preencher com a tabela de concessões e datas de vencimento do release ou do formulário de referência."
+    },
+    "manuais": {}
+  },
+  "ISAE4": {
+    "resumo": "ISA Energia Brasil (antiga ISA CTEEP), grande transmissora de energia controlada pela colombiana ISA. A receita é a RAP das concessões em São Paulo e outros estados. Concorrentes em leilões: Taesa, Alupar e Axia.",
+    "tese": "",
+    "riscos": [
+      "Revisões tarifárias e vencimento de concessões",
+      "Investimentos elevados"
+    ],
+    "oportunidades": [
+      "Reforços e melhorias com retorno regulatório"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "regulacao": "Preencher: agência reguladora, ciclo de revisão tarifária e indexador.",
+      "concessoes": "Preencher com os vencimentos das concessões (release ou formulário de referência)."
+    }
+  },
+  "AURE3": {
+    "resumo": "Auren Energia, geradora de energia renovável (hidrelétrica, eólica e solar) controlada pela Votorantim e pelo CPP, que incorporou a AES Brasil. A receita vem da venda de energia em contratos e no mercado livre. Concorrentes: Engie, Axia, CPFL e Eneva.",
+    "tese": "",
+    "riscos": [
+      "Preços baixos de energia e cortes de geração (curtailment)",
+      "Endividamento após a aquisição"
+    ],
+    "oportunidades": [
+      "Comercialização de energia",
+      "Sinergias da integração"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "regulacao": "Preencher: agência reguladora, ciclo de revisão tarifária e indexador.",
+      "concessoes": "Preencher com os vencimentos das concessões (release ou formulário de referência)."
+    }
+  },
+  "EGIE3": {
+    "resumo": "Engie Brasil Energia, maior geradora privada do país, com hidrelétricas, eólicas, solares e transmissão. A receita vem de contratos de longo prazo de venda de energia. Concorrentes: Axia, Auren e CPFL.",
+    "tese": "",
+    "riscos": [
+      "Preço de energia e risco hidrológico",
+      "Investimentos em transmissão"
+    ],
+    "oportunidades": [
+      "Contratos indexados à inflação",
+      "Histórico de dividendos"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "regulacao": "Preencher: agência reguladora, ciclo de revisão tarifária e indexador.",
+      "concessoes": "Preencher com os vencimentos das concessões (release ou formulário de referência)."
+    }
+  },
+  "CMIG4": {
+    "resumo": "Cemig, empresa de energia de Minas Gerais controlada pelo Estado, com geração, transmissão, distribuição e gás (Gasmig). A receita vem principalmente da distribuição em Minas. Concorrentes: Equatorial, CPFL e Axia.",
+    "tese": "",
+    "riscos": [
+      "Interferência do controlador estadual",
+      "Vencimento de concessões de usinas"
+    ],
+    "oportunidades": [
+      "Possível privatização",
+      "Dividendos elevados"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "regulacao": "Preencher: agência reguladora, ciclo de revisão tarifária e indexador.",
+      "concessoes": "Preencher com os vencimentos das concessões (release ou formulário de referência)."
+    }
+  },
+  "EQTL3": {
+    "resumo": "Equatorial, grupo que compra e reestrutura distribuidoras de energia em vários estados e atua em transmissão, saneamento (Sabesp, participação) e geração. A receita vem de tarifas reguladas. Concorrentes: Energisa, Neoenergia e CPFL.",
+    "tese": "",
+    "riscos": [
+      "Alavancagem com aquisições",
+      "Revisões tarifárias e perdas de energia"
+    ],
+    "oportunidades": [
+      "Ganhos de eficiência em distribuidoras compradas"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "regulacao": "Preencher: agência reguladora, ciclo de revisão tarifária e indexador.",
+      "concessoes": "Preencher com os vencimentos das concessões (release ou formulário de referência)."
+    }
+  },
+  "CPFE3": {
+    "resumo": "CPFL Energia, controlada pela chinesa State Grid, com distribuição em São Paulo e no Sul, geração e transmissão. A receita vem principalmente de tarifas de distribuição. Concorrentes: Equatorial, Neoenergia e Enel.",
+    "tese": "",
+    "riscos": [
+      "Revisões tarifárias",
+      "Baixo free float"
+    ],
+    "oportunidades": [
+      "Eficiência operacional",
+      "Dividendos consistentes"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "regulacao": "Preencher: agência reguladora, ciclo de revisão tarifária e indexador.",
+      "concessoes": "Preencher com os vencimentos das concessões (release ou formulário de referência)."
+    }
+  },
+  "SBSP3": {
+    "resumo": "Sabesp, maior empresa de saneamento das Américas, privatizada em 2024, atendendo o estado de São Paulo com água e esgoto. A receita é tarifária, regulada pela Arsesp. Concorrentes: concessão regional (monopólio natural).",
+    "tese": "",
+    "riscos": [
+      "Execução do plano de universalização",
+      "Mudança regulatória"
+    ],
+    "oportunidades": [
+      "Ganhos de eficiência após a privatização",
+      "Investimentos remunerados na base de ativos"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "regulacao": "Preencher: agência reguladora, ciclo de revisão tarifária e indexador.",
+      "concessoes": "Preencher com os vencimentos das concessões (release ou formulário de referência)."
+    }
+  },
+  "SAPR11": {
+    "resumo": "Sanepar, companhia de saneamento do Paraná controlada pelo Estado. A receita vem de tarifas de água e esgoto reguladas pela Agepar. Concorrentes: concessão regional.",
+    "tese": "",
+    "riscos": [
+      "Interferência política nas tarifas",
+      "Renovação de contratos com municípios"
+    ],
+    "oportunidades": [
+      "Novo marco do saneamento",
+      "Múltiplos baixos"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "regulacao": "Preencher: agência reguladora, ciclo de revisão tarifária e indexador.",
+      "concessoes": "Preencher com os vencimentos das concessões (release ou formulário de referência)."
+    }
+  },
+  "CSMG3": {
+    "resumo": "Copasa, companhia de saneamento de Minas Gerais controlada pelo Estado. A receita vem de tarifas de água e esgoto. Concorrentes: concessão regional.",
+    "tese": "",
+    "riscos": [
+      "Interferência do controlador estadual",
+      "Renovação de contratos municipais"
+    ],
+    "oportunidades": [
+      "Possível privatização"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "regulacao": "Preencher: agência reguladora, ciclo de revisão tarifária e indexador.",
+      "concessoes": "Preencher com os vencimentos das concessões (release ou formulário de referência)."
+    }
+  },
+  "MGLU3": {
+    "resumo": "Magazine Luiza, varejista de eletrodomésticos, eletrônicos e móveis com lojas físicas, e-commerce e marketplace, além de serviços financeiros (cartão Luiza). Concorrentes: Mercado Livre, Amazon, Casas Bahia e Shopee.",
+    "tese": "",
+    "riscos": [
+      "Juros altos reduzem consumo financiado",
+      "Concorrência de plataformas internacionais"
+    ],
+    "oportunidades": [
+      "Queda de juros e recuperação de margens"
+    ],
+    "manuais": {}
+  },
+  "BHIA3": {
+    "resumo": "Varejista de eletrodomésticos, eletrônicos e móveis com as bandeiras Casas Bahia e Ponto, lojas físicas, comércio eletrônico e marketplace, além de crediário próprio. A companhia passa por reestruturação de dívidas e consta no cadastro da CVM como em recuperação judicial. Concorrentes: Magazine Luiza, Mercado Livre, Amazon e Shopee.",
+    "tese": "",
+    "riscos": [
+      "Reestruturação de dívidas e diluição dos acionistas por conversão de dívida em ações",
+      "Patrimônio líquido negativo",
+      "Juros altos sobre crediário e capital de giro"
+    ],
+    "oportunidades": [],
+    "manuais": {}
+  },
+  "LJQQ3": {
+    "resumo": "Lojas Quero-Quero, varejista de materiais de construção, eletrodomésticos e móveis com forte presença no Sul, focada em cidades médias e pequenas, com cartão próprio. Concorrentes: Leroy Merlin, lojas regionais e e-commerce.",
+    "tese": "",
+    "riscos": [
+      "Alavancagem e consumo no Sul",
+      "Inadimplência no cartão"
+    ],
+    "oportunidades": [
+      "Recuperação da demanda por reforma"
+    ],
+    "manuais": {}
+  },
+  "GMAT3": {
+    "resumo": "Grupo Mateus, rede de supermercados, atacarejo, eletro e atacado distribuidor no Norte e Nordeste. A receita vem de vendas de alimentos e bens de consumo. Concorrentes: Assaí, Atacadão (Carrefour) e redes regionais.",
+    "tese": "",
+    "riscos": [
+      "Pressão de margem no atacarejo",
+      "Expansão acelerada"
+    ],
+    "oportunidades": [
+      "Crescimento em regiões menos penetradas"
+    ],
+    "manuais": {}
+  },
+  "AZZA3": {
+    "resumo": "Azzas 2154, resultado da fusão entre Arezzo&Co e Grupo Soma, dona de marcas de calçados e vestuário como Arezzo, Schutz, Farm, Animale e Hering. Concorrentes: Renner, C&A, Riachuelo e marcas internacionais.",
+    "tese": "",
+    "riscos": [
+      "Integração da fusão e conflitos de gestão",
+      "Consumo de média e alta renda"
+    ],
+    "oportunidades": [
+      "Sinergias e portfólio de marcas fortes"
+    ],
+    "manuais": {}
+  },
+  "GRND3": {
+    "resumo": "Grendene, fabricante de calçados plásticos (Melissa, Ipanema, Rider, Grendha) com exportação relevante. Mantém caixa líquido e alto payout. Concorrentes: Alpargatas (Havaianas) e importados.",
+    "tese": "",
+    "riscos": [
+      "Demanda fraca e custo de matéria-prima",
+      "Competição de calçados asiáticos"
+    ],
+    "oportunidades": [
+      "Caixa líquido e dividendos"
+    ],
+    "manuais": {}
+  },
+  "LREN3": {
+    "resumo": "Maior varejista de moda do Brasil, com as marcas Renner, Youcom, Camicado e Ashua, lojas físicas e canal digital. A receita vem da venda de vestuário, calçados e artigos de casa, e há um braço financeiro (Realize) que oferece cartão e crédito aos clientes. Concorrentes: C&A, Riachuelo (Guararapes), Zara e plataformas internacionais como Shein e Shopee.",
+    "tese": "",
+    "riscos": [
+      "Competição de plataformas internacionais de baixo preço",
+      "Inadimplência na operação de crédito (Realize)",
+      "Consumo sensível a juros e emprego"
+    ],
+    "oportunidades": [
+      "Balanço com caixa líquido",
+      "Recuperação do consumo com queda de juros"
+    ],
+    "manuais": {}
+  },
+  "CEAB3": {
+    "resumo": "C&A Brasil, varejista de moda com lojas físicas e e-commerce e uma operação de crédito em parceria com banco. Concorrentes: Renner, Riachuelo, Shein e Shopee.",
+    "tese": "",
+    "riscos": [
+      "Concorrência de plataformas internacionais",
+      "Consumo sensível a juros"
+    ],
+    "oportunidades": [
+      "Melhora de margens após reestruturação"
+    ],
+    "manuais": {}
+  },
+  "TFCO4": {
+    "resumo": "Track & Field, marca de vestuário esportivo de alto padrão com lojas próprias, franquias e o ecossistema TF Sports de eventos. Concorrentes: Nike, Adidas, Lululemon e marcas nacionais.",
+    "tese": "",
+    "riscos": [
+      "Consumo de alta renda",
+      "Baixa liquidez da ação"
+    ],
+    "oportunidades": [
+      "Expansão de lojas e eventos"
+    ],
+    "manuais": {}
+  },
+  "VULC3": {
+    "resumo": "Vulcabras, fabricante de calçados esportivos com marcas próprias (Olympikus, Mizuno no Brasil sob licença, Under Armour) e fábricas no Nordeste. Concorrentes: Nike, Adidas e importados.",
+    "tese": "",
+    "riscos": [
+      "Concorrência de importados",
+      "Fim de licenças de marcas"
+    ],
+    "oportunidades": [
+      "Ganho de participação da Olympikus"
+    ],
+    "manuais": {}
+  },
+  "SBFG3": {
+    "resumo": "Grupo SBF, dono da Centauro e distribuidor exclusivo da Nike no Brasil (Fisia). A receita vem do varejo e da distribuição de artigos esportivos. Concorrentes: Netshoes (Magalu), Decathlon e lojas multimarca.",
+    "tese": "",
+    "riscos": [
+      "Dependência da Nike",
+      "Consumo sensível a juros"
+    ],
+    "oportunidades": [
+      "Integração entre varejo e distribuição"
+    ],
+    "manuais": {}
+  },
+  "AMOB3": {
+    "resumo": "Automob, grupo de concessionárias de veículos (leves, pesados e máquinas) e serviços automotivos, formado a partir de ativos da Simpar. Concorrentes: grandes grupos de concessionárias regionais.",
+    "tese": "",
+    "riscos": [
+      "Juros altos reduzem vendas financiadas de veículos",
+      "Margens apertadas"
+    ],
+    "oportunidades": [
+      "Consolidação do setor de concessionárias"
+    ],
+    "manuais": {}
+  },
+  "MELI34": {
+    "resumo": "BDR do MercadoLibre, maior plataforma de comércio eletrônico e de pagamentos da América Latina (Mercado Livre, Mercado Pago, Mercado Envios). Reporta em dólar, mas o negócio está em Brasil, México e Argentina. Concorrentes: Amazon, Shopee, Magalu e bancos digitais.",
+    "tese": "",
+    "riscos": [
+      "Inadimplência no crédito do Mercado Pago",
+      "Câmbio e risco da Argentina"
+    ],
+    "oportunidades": [
+      "Crescimento de fintech e publicidade"
+    ],
+    "manuais": {}
+  },
+  "MRVE3": {
+    "resumo": "MRV, maior incorporadora de imóveis econômicos do Brasil, com forte presença no Minha Casa Minha Vida e operação nos EUA (Resia). Concorrentes: Tenda, Direcional, Cury e Plano&Plano.",
+    "tese": "",
+    "riscos": [
+      "Margens pressionadas por custos",
+      "Endividamento e operação nos EUA"
+    ],
+    "oportunidades": [
+      "Ampliação das faixas do Minha Casa Minha Vida",
+      "Venda de ativos da Resia"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "vso": "Preencher com a prévia operacional (VSO, lançamentos e vendas líquidas).",
+      "banco_terrenos": "Preencher com o VGV do banco de terrenos do release.",
+      "caixa": "Preencher com a geração ou queima de caixa do trimestre (release)."
+    }
+  },
+  "TEND3": {
+    "resumo": "Tenda, incorporadora de baixa renda focada no Minha Casa Minha Vida, com construção industrializada em parte das obras (Alea). Concorrentes: MRV, Direcional, Cury e Plano&Plano.",
+    "tese": "",
+    "riscos": [
+      "Custos de construção",
+      "Mudanças no programa habitacional"
+    ],
+    "oportunidades": [
+      "Recuperação de margens após reestruturação"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "vso": "Preencher com a prévia operacional (VSO, lançamentos e vendas líquidas).",
+      "banco_terrenos": "Preencher com o VGV do banco de terrenos do release.",
+      "caixa": "Preencher com a geração ou queima de caixa do trimestre (release)."
+    }
+  },
+  "DIRR3": {
+    "resumo": "Direcional, incorporadora com foco em baixa renda (Minha Casa Minha Vida) e média renda (marca Riva), com presença em várias regiões. Concorrentes: MRV, Tenda, Cury e Plano&Plano.",
+    "tese": "",
+    "riscos": [
+      "Custos de construção",
+      "Mudanças no programa habitacional"
+    ],
+    "oportunidades": [
+      "ROE alto e crescimento de lançamentos"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "vso": "Preencher com a prévia operacional (VSO, lançamentos e vendas líquidas).",
+      "banco_terrenos": "Preencher com o VGV do banco de terrenos do release.",
+      "caixa": "Preencher com a geração ou queima de caixa do trimestre (release)."
+    }
+  },
+  "PLPL3": {
+    "resumo": "Plano & Plano, incorporadora de baixa renda na região metropolitana de São Paulo, com foco no Minha Casa Minha Vida. Tem a Cyrela como sócia relevante. Concorrentes: Cury, MRV, Tenda e Direcional.",
+    "tese": "",
+    "riscos": [
+      "Concentração em São Paulo",
+      "Mudanças no programa habitacional"
+    ],
+    "oportunidades": [
+      "Ampliação das faixas de renda do programa"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "vso": "Preencher com a prévia operacional (VSO, lançamentos e vendas líquidas).",
+      "banco_terrenos": "Preencher com o VGV do banco de terrenos do release.",
+      "caixa": "Preencher com a geração ou queima de caixa do trimestre (release)."
+    }
+  },
+  "CURY3": {
+    "resumo": "Incorporadora e construtora focada em habitação para baixa renda, com atuação concentrada nas regiões metropolitanas de São Paulo e do Rio de Janeiro, grande parte dentro do programa Minha Casa Minha Vida. A receita é reconhecida conforme o avanço das obras, e o financiamento ao comprador vem principalmente do FGTS. Tem a Cyrela como acionista relevante. Concorrentes: MRV, Tenda, Direcional e Plano&Plano.",
+    "tese": "",
+    "riscos": [
+      "Mudanças nas regras e no orçamento do Minha Casa Minha Vida e do FGTS",
+      "Inflação de custos de construção (INCC)",
+      "Concentração geográfica em SP e RJ"
+    ],
+    "oportunidades": [
+      "ROE elevado com pouca dívida",
+      "Ampliação das faixas de renda do programa habitacional"
+    ],
+    "qualitativo": {
+      "vso": "Preencher com a prévia operacional (VSO, lançamentos e vendas líquidas).",
+      "banco_terrenos": "Preencher com o VGV do banco de terrenos do release.",
+      "caixa": "Preencher com a geração ou queima de caixa do trimestre (release)."
+    },
+    "manuais": {}
+  },
+  "CYRE3": {
+    "resumo": "Uma das maiores incorporadoras do Brasil, com foco em empreendimentos de média e alta renda, principalmente em São Paulo e no Rio de Janeiro. A receita é reconhecida conforme o avanço das obras e parte do resultado vem de participações em outras incorporadoras (como Cury, Lavvi e Plano&Plano). Concorrentes: EZTec, Even, Mitre, Lavvi e Tegra.",
+    "tese": "",
+    "riscos": [
+      "Juros altos encarecem o financiamento imobiliário (SBPE) e reduzem a demanda",
+      "Inflação de custos de construção",
+      "Consumo de caixa na compra de terrenos"
+    ],
+    "oportunidades": [
+      "Queda de juros historicamente favorece média e alta renda",
+      "Participações em incorporadoras listadas"
+    ],
+    "qualitativo": {
+      "vso": "Preencher com a prévia operacional (VSO, lançamentos e vendas líquidas).",
+      "banco_terrenos": "Preencher com o VGV do banco de terrenos do release.",
+      "caixa": "Preencher com a geração ou queima de caixa do trimestre (release)."
+    },
+    "manuais": {}
+  },
+  "EVEN3": {
+    "resumo": "Even, incorporadora de média e alta renda em São Paulo e no Rio Grande do Sul (Melnick). Concorrentes: Cyrela, EZTec, Trisul e Mitre.",
+    "tese": "",
+    "riscos": [
+      "Juros altos reduzem financiamento imobiliário",
+      "Estoque de unidades prontas"
+    ],
+    "oportunidades": [
+      "Queda de juros e desconto sobre o patrimônio"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "vso": "Preencher com a prévia operacional (VSO, lançamentos e vendas líquidas).",
+      "banco_terrenos": "Preencher com o VGV do banco de terrenos do release.",
+      "caixa": "Preencher com a geração ou queima de caixa do trimestre (release)."
+    }
+  },
+  "TRIS3": {
+    "resumo": "Trisul, incorporadora de média renda na cidade de São Paulo. Concorrentes: Even, EZTec, Cyrela e Mitre.",
+    "tese": "",
+    "riscos": [
+      "Juros altos e financiamento SBPE",
+      "Baixa liquidez da ação"
+    ],
+    "oportunidades": [
+      "Queda de juros"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "vso": "Preencher com a prévia operacional (VSO, lançamentos e vendas líquidas).",
+      "banco_terrenos": "Preencher com o VGV do banco de terrenos do release.",
+      "caixa": "Preencher com a geração ou queima de caixa do trimestre (release)."
+    }
+  },
+  "EZTC3": {
+    "resumo": "EZTec, incorporadora de média e alta renda em São Paulo com balanço de caixa líquido e grande banco de terrenos, além de imóveis comerciais. Concorrentes: Cyrela, Even, Trisul e Lavvi.",
+    "tese": "",
+    "riscos": [
+      "Juros altos",
+      "Estoque de imóveis prontos"
+    ],
+    "oportunidades": [
+      "Caixa líquido e terrenos a custo histórico"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "vso": "Preencher com a prévia operacional (VSO, lançamentos e vendas líquidas).",
+      "banco_terrenos": "Preencher com o VGV do banco de terrenos do release.",
+      "caixa": "Preencher com a geração ou queima de caixa do trimestre (release)."
+    }
+  },
+  "LAVV3": {
+    "resumo": "Lavvi, incorporadora de média e alta renda em São Paulo, com a Cyrela como sócia em parte dos projetos. Concorrentes: EZTec, Even e Cyrela.",
+    "tese": "",
+    "riscos": [
+      "Juros altos",
+      "Concentração em São Paulo"
+    ],
+    "oportunidades": [
+      "Distribuição de dividendos",
+      "Queda de juros"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "vso": "Preencher com a prévia operacional (VSO, lançamentos e vendas líquidas).",
+      "banco_terrenos": "Preencher com o VGV do banco de terrenos do release.",
+      "caixa": "Preencher com a geração ou queima de caixa do trimestre (release)."
+    }
+  },
+  "MDNE3": {
+    "resumo": "Moura Dubeux, incorporadora líder no Nordeste em média e alta renda, com modelo de condomínio a preço de custo e loteamentos. Concorrentes: incorporadoras regionais e nacionais.",
+    "tese": "",
+    "riscos": [
+      "Juros altos e financiamento",
+      "Concentração regional"
+    ],
+    "oportunidades": [
+      "Crescimento de vendas no Nordeste"
+    ],
+    "manuais": {},
+    "qualitativo": {
+      "vso": "Preencher com a prévia operacional (VSO, lançamentos e vendas líquidas).",
+      "banco_terrenos": "Preencher com o VGV do banco de terrenos do release.",
+      "caixa": "Preencher com a geração ou queima de caixa do trimestre (release)."
+    }
+  },
+  "WEGE3": {
+    "resumo": "Fabricante global de motores elétricos, equipamentos para geração, transmissão e distribuição de energia (geradores, transformadores), automação industrial e tintas. Cerca de metade da receita vem do exterior, com fábricas em vários países. Concorrentes: Siemens, ABB, Nidec e Schneider Electric.",
+    "tese": "",
+    "riscos": [
+      "Múltiplo alto exige crescimento contínuo",
+      "Desaceleração de investimentos industriais e de energia",
+      "Variação cambial sobre receita externa"
+    ],
+    "oportunidades": [
+      "Demanda por transformadores e infraestrutura de rede elétrica",
+      "Histórico longo de ROIC alto e crescimento"
+    ],
+    "manuais": {}
+  },
+  "EMBJ3": {
+    "resumo": "Embraer, fabricante de aviões comerciais regionais, jatos executivos, aeronaves de defesa e serviços, além da Eve (eVTOL). A receita é majoritariamente em dólar, com clientes no mundo todo. Concorrentes: Airbus, Boeing, Bombardier, Gulfstream e Textron.",
+    "tese": "",
+    "riscos": [
+      "Cadeia de suprimentos e atrasos de entregas",
+      "Tarifas comerciais"
+    ],
+    "oportunidades": [
+      "Carteira de pedidos recorde em comercial e defesa"
+    ],
+    "manuais": {}
+  },
+  "SHUL4": {
+    "resumo": "Schulz, fabricante de compressores de ar e de componentes automotivos para veículos pesados. A receita vem do mercado interno e de exportação. Concorrentes: fabricantes nacionais e importados.",
+    "tese": "",
+    "riscos": [
+      "Ciclo de caminhões e máquinas",
+      "Baixa liquidez da ação"
+    ],
+    "oportunidades": [
+      "Exportações com dólar alto"
+    ],
+    "manuais": {}
+  },
+  "ROMI3": {
+    "resumo": "Romi, fabricante de máquinas-ferramenta, máquinas para plásticos e fundidos e usinados, com operação na Itália. Concorrentes: fabricantes europeus e asiáticos.",
+    "tese": "",
+    "riscos": [
+      "Investimento industrial fraco",
+      "Concorrência asiática"
+    ],
+    "oportunidades": [
+      "Retomada de investimentos na indústria"
+    ],
+    "manuais": {}
+  },
+  "TUPY3": {
+    "resumo": "Tupy, fabricante de blocos e cabeçotes de motor em ferro fundido para veículos comerciais e máquinas, com operações no Brasil, México e Portugal (MWM). A receita é majoritariamente em dólar. Concorrentes: fundições globais.",
+    "tese": "",
+    "riscos": [
+      "Ciclo de caminhões nos EUA e Europa",
+      "Transição para veículos elétricos"
+    ],
+    "oportunidades": [
+      "Novos negócios em energia e descarbonização"
+    ],
+    "manuais": {}
+  },
+  "LEVE3": {
+    "resumo": "Mahle Metal Leve, fabricante de componentes de motores (pistões, bronzinas, filtros) controlada pela alemã Mahle, com forte presença no mercado de reposição. Concorrentes: Tenneco, Rheinmetall e importados.",
+    "tese": "",
+    "riscos": [
+      "Transição para veículos elétricos",
+      "Dependência do controlador"
+    ],
+    "oportunidades": [
+      "Mercado de reposição com margens altas",
+      "Dividendos elevados"
+    ],
+    "manuais": {}
+  },
+  "POMO4": {
+    "resumo": "Marcopolo, maior fabricante de carrocerias de ônibus do Brasil, com fábricas em vários países. A receita vem de ônibus rodoviários, urbanos e micro-ônibus. Concorrentes: Caio, Comil e fabricantes internacionais.",
+    "tese": "",
+    "riscos": [
+      "Ciclo de renovação de frotas",
+      "Programas de governo"
+    ],
+    "oportunidades": [
+      "Ônibus elétricos e exportações"
+    ],
+    "manuais": {}
+  },
+  "RAPT4": {
+    "resumo": "Randoncorp, grupo de implementos rodoviários (Librelato, Randon), autopeças (Fras-le, Suspensys), serviços financeiros e tecnologia. Concorrentes: Facchini, Noma e fabricantes globais de autopeças.",
+    "tese": "",
+    "riscos": [
+      "Ciclo do agronegócio e do transporte de cargas",
+      "Alavancagem"
+    ],
+    "oportunidades": [
+      "Diversificação internacional"
+    ],
+    "manuais": {}
+  },
+  "KEPL3": {
+    "resumo": "Kepler Weber, líder em sistemas de armazenagem de grãos (silos) e equipamentos para pós-colheita. A receita depende da renda do produtor rural e do crédito agrícola. Concorrentes: AGI e fabricantes regionais.",
+    "tese": "",
+    "riscos": [
+      "Renda agrícola e crédito rural",
+      "Juros altos"
+    ],
+    "oportunidades": [
+      "Déficit de armazenagem de grãos no Brasil"
+    ],
+    "manuais": {}
+  },
+  "TASA4": {
+    "resumo": "Taurus, fabricante de armas leves com receita majoritária nos EUA, além de vendas a forças de segurança. Concorrentes: Smith & Wesson, Ruger, Glock e Sig Sauer.",
+    "tese": "",
+    "riscos": [
+      "Demanda civil nos EUA",
+      "Regulação de armas no Brasil e nos EUA"
+    ],
+    "oportunidades": [
+      "Exportações e contratos governamentais"
+    ],
+    "manuais": {}
+  },
+  "RENT3": {
+    "resumo": "Localiza, maior empresa de aluguel de carros e gestão de frotas da América Latina, após a fusão com a Unidas. A receita vem de aluguel, terceirização de frotas e venda de carros seminovos. Concorrentes: Movida, Unidas (Vamos), locadoras regionais e aplicativos.",
+    "tese": "",
+    "riscos": [
+      "Juros altos encarecem a frota",
+      "Depreciação de carros e preço de seminovos"
+    ],
+    "oportunidades": [
+      "Queda de juros e recuperação de margem"
+    ],
+    "manuais": {}
+  },
+  "MOVI3": {
+    "resumo": "Movida, locadora de veículos do grupo Simpar, com aluguel de carros, terceirização de frotas e venda de seminovos. Concorrentes: Localiza e locadoras regionais.",
+    "tese": "",
+    "riscos": [
+      "Endividamento alto e juros",
+      "Preço de seminovos"
+    ],
+    "oportunidades": [
+      "Queda de juros"
+    ],
+    "manuais": {}
+  },
+  "VAMO3": {
+    "resumo": "Vamos, locadora de caminhões, máquinas e equipamentos do grupo Simpar, com concessionárias de veículos pesados. A receita vem de contratos de locação de longo prazo. Concorrentes: Localiza (pesados) e fabricantes com locação própria.",
+    "tese": "",
+    "riscos": [
+      "Endividamento e juros",
+      "Demanda do agronegócio"
+    ],
+    "oportunidades": [
+      "Penetração baixa da locação de pesados"
+    ],
+    "manuais": {}
+  },
+  "MILS3": {
+    "resumo": "Mills, locadora de plataformas aéreas de trabalho, máquinas pesadas e equipamentos para construção e indústria. Concorrentes: locadoras nacionais e regionais.",
+    "tese": "",
+    "riscos": [
+      "Ciclo de construção e indústria"
+    ],
+    "oportunidades": [
+      "Balanço com pouca dívida",
+      "Aquisições"
+    ],
+    "manuais": {}
+  },
+  "PRNR3": {
+    "resumo": "Priner, prestadora de serviços industriais de manutenção (acesso, pintura, isolamento) para óleo e gás, mineração e indústria. Concorrentes: empresas de engenharia e manutenção.",
+    "tese": "",
+    "riscos": [
+      "Dependência de grandes clientes",
+      "Baixa liquidez da ação"
+    ],
+    "oportunidades": [
+      "Contratos de longo prazo com indústria"
+    ],
+    "manuais": {}
+  },
+  "SIMH3": {
+    "resumo": "Simpar, holding de logística com participações em JSL, Vamos, Movida, Automob, CS Infra e BBC (banco). O valor depende das investidas e da dívida consolidada. Concorrentes: os de cada investida.",
+    "tese": "",
+    "riscos": [
+      "Endividamento consolidado elevado",
+      "Desconto de holding"
+    ],
+    "oportunidades": [
+      "Desconto em relação à soma das partes",
+      "Queda de juros"
+    ],
+    "manuais": {}
+  },
+  "RAIL3": {
+    "resumo": "Rumo, maior operadora ferroviária do Brasil, levando grãos, açúcar e fertilizantes do Centro-Oeste aos portos. A receita depende de volume e tarifa, com concorrência do caminhão. Concorrentes: VLI, transporte rodoviário e hidrovias.",
+    "tese": "",
+    "riscos": [
+      "Safras ruins",
+      "Investimentos elevados em expansão"
+    ],
+    "oportunidades": [
+      "Expansão da malha no Mato Grosso"
+    ],
+    "manuais": {}
+  },
+  "ECOR3": {
+    "resumo": "Ecorodovias, concessionária de rodovias controlada pelo grupo italiano Gavio, com concessões em São Paulo, Paraná, Minas e outros estados. A receita vem de pedágio, reajustado pela inflação. Concorrentes: Motiva (CCR) e outros grupos em leilões.",
+    "tese": "",
+    "riscos": [
+      "Endividamento elevado",
+      "Vencimento de concessões"
+    ],
+    "oportunidades": [
+      "Novas concessões e reequilíbrios contratuais"
+    ],
+    "manuais": {}
+  },
+  "SEQL3": {
+    "resumo": "Sequoia Logística, empresa de logística e transporte para e-commerce e varejo. Passou por reestruturação de dívidas. Concorrentes: Loggi, Correios, transportadoras e logística própria dos marketplaces.",
+    "tese": "",
+    "riscos": [
+      "Endividamento e prejuízos",
+      "Concorrência das plataformas"
+    ],
+    "oportunidades": [
+      "Reestruturação"
+    ],
+    "manuais": {}
+  },
+  "LOGG3": {
+    "resumo": "LOG Commercial Properties, desenvolvedora e locadora de galpões logísticos em várias regiões, controlada pela família de MRV. A receita vem de aluguéis indexados à inflação e da venda de ativos. Concorrentes: GLP, fundos imobiliários de logística.",
+    "tese": "",
+    "riscos": [
+      "Vacância e juros altos",
+      "Custo de construção"
+    ],
+    "oportunidades": [
+      "Demanda por galpões com e-commerce"
+    ],
+    "manuais": {}
+  },
+  "ALOS3": {
+    "resumo": "Allos, maior empresa de shoppings do Brasil, resultado da fusão entre Aliansce Sonae e brMalls. A receita vem de aluguéis, estacionamento e serviços. Concorrentes: Multiplan, Iguatemi e fundos imobiliários.",
+    "tese": "",
+    "riscos": [
+      "Consumo e vacância",
+      "Juros altos"
+    ],
+    "oportunidades": [
+      "Venda de ativos e recompra de ações"
+    ],
+    "manuais": {}
+  },
+  "JHSF3": {
+    "resumo": "JHSF, empresa de alta renda com shoppings (Cidade Jardim, Catarina), hotéis Fasano, incorporação de luxo e aeroporto executivo. Concorrentes: Iguatemi, Multiplan e incorporadoras de luxo.",
+    "tese": "",
+    "riscos": [
+      "Concentração no público de altíssima renda",
+      "Endividamento"
+    ],
+    "oportunidades": [
+      "Projetos de alta renda e renda recorrente"
+    ],
+    "manuais": {}
+  },
+  "RDOR3": {
+    "resumo": "Rede D'Or, maior rede de hospitais privados do Brasil, com a seguradora SulAmérica. A receita vem de serviços hospitalares e de planos de saúde. Concorrentes: Dasa, Hapvida, Einstein e hospitais regionais.",
+    "tese": "",
+    "riscos": [
+      "Glosas e pressão das operadoras",
+      "Sinistralidade da SulAmérica"
+    ],
+    "oportunidades": [
+      "Expansão de leitos e verticalização"
+    ],
+    "manuais": {}
+  },
+  "FLRY3": {
+    "resumo": "Fleury, rede de medicina diagnóstica e serviços de saúde com marcas premium e populares, que incorporou o Grupo Pardini. Concorrentes: Dasa, Sabin e laboratórios regionais.",
+    "tese": "",
+    "riscos": [
+      "Pressão de preços das operadoras",
+      "Concorrência"
+    ],
+    "oportunidades": [
+      "Sinergias com o Pardini"
+    ],
+    "manuais": {}
+  },
+  "RADL3": {
+    "resumo": "Raia Drogasil, maior rede de farmácias do Brasil, com marcas Droga Raia e Drogasil, e-commerce e serviços de saúde. Concorrentes: Pague Menos, Panvel, DPSP e farmácias independentes.",
+    "tese": "",
+    "riscos": [
+      "Múltiplo alto exige crescimento",
+      "Reajuste de medicamentos regulado"
+    ],
+    "oportunidades": [
+      "Abertura de lojas e ganho de escala"
+    ],
+    "manuais": {}
+  },
+  "PGMN3": {
+    "resumo": "Pague Menos, rede de farmácias com forte presença no Norte e Nordeste, que incorporou a Extrafarma. Concorrentes: Raia Drogasil, Panvel e redes regionais.",
+    "tese": "",
+    "riscos": [
+      "Margens apertadas e alavancagem"
+    ],
+    "oportunidades": [
+      "Ganhos de integração com a Extrafarma"
+    ],
+    "manuais": {}
+  },
+  "PNVL3": {
+    "resumo": "Panvel (Dimed), rede de farmácias líder no Sul do Brasil, com distribuição de medicamentos e marca própria de cosméticos. Concorrentes: Raia Drogasil, São João e redes regionais.",
+    "tese": "",
+    "riscos": [
+      "Concentração no Sul",
+      "Concorrência das grandes redes"
+    ],
+    "oportunidades": [
+      "Crescimento do digital"
+    ],
+    "manuais": {}
+  },
+  "VIVT3": {
+    "resumo": "Vivo (Telefônica Brasil), maior operadora de telecomunicações do país, com telefonia móvel, banda larga em fibra e serviços digitais. Controlada pela espanhola Telefónica. Concorrentes: TIM, Claro e provedores regionais.",
+    "tese": "",
+    "riscos": [
+      "Competição em banda larga",
+      "Regulação e fim de concessão fixa"
+    ],
+    "oportunidades": [
+      "Geração de caixa e distribuição alta aos acionistas"
+    ],
+    "manuais": {}
+  },
+  "TIMS3": {
+    "resumo": "TIM Brasil, operadora de telefonia móvel controlada pela Telecom Italia, com banda larga em fibra (TIM Ultrafibra). Concorrentes: Vivo e Claro.",
+    "tese": "",
+    "riscos": [
+      "Competição de preços",
+      "Controlador endividado"
+    ],
+    "oportunidades": [
+      "Mercado móvel mais consolidado após a compra da Oi Móvel"
+    ],
+    "manuais": {}
+  },
+  "FIQE3": {
+    "resumo": "Unifique, provedora regional de internet por fibra, telefonia e TV com forte presença em Santa Catarina e no Sul. Concorrentes: Vivo, Claro e provedores regionais.",
+    "tese": "",
+    "riscos": [
+      "Competição de provedores regionais",
+      "Endividamento"
+    ],
+    "oportunidades": [
+      "Consolidação de provedores e operação móvel"
+    ],
+    "manuais": {}
+  },
+  "COGN3": {
+    "resumo": "Cogna, grupo de educação com ensino superior (Kroton), soluções para educação básica (Vasta e Saber) e serviços. Concorrentes: Yduqs, Ser Educacional, Cruzeiro do Sul e Ânima.",
+    "tese": "",
+    "riscos": [
+      "Endividamento e evasão de alunos",
+      "Regulação do ensino a distância"
+    ],
+    "oportunidades": [
+      "Recuperação de margens e geração de caixa"
+    ],
+    "manuais": {}
+  },
+  "YDUQ3": {
+    "resumo": "Yduqs, grupo de ensino superior dono de Estácio, Ibmec e escolas de medicina (Idomed). Concorrentes: Cogna, Ser, Cruzeiro do Sul e Ânima.",
+    "tese": "",
+    "riscos": [
+      "Regulação do ensino a distância",
+      "Inadimplência de alunos"
+    ],
+    "oportunidades": [
+      "Cursos de medicina com margens altas"
+    ],
+    "manuais": {}
+  },
+  "VTRU3": {
+    "resumo": "Vitru Educação, grupo de ensino superior a distância (Uniasselvi, UniCesumar). Concorrentes: Cogna, Yduqs e Cruzeiro do Sul.",
+    "tese": "",
+    "riscos": [
+      "Novas regras do MEC para ensino a distância",
+      "Endividamento após aquisição"
+    ],
+    "oportunidades": [
+      "Escala no ensino digital"
+    ],
+    "manuais": {}
+  },
+  "CSED3": {
+    "resumo": "Cruzeiro do Sul Educacional, grupo de ensino superior presencial e a distância com faculdades de medicina. Concorrentes: Yduqs, Cogna e Ânima.",
+    "tese": "",
+    "riscos": [
+      "Regulação do ensino a distância",
+      "Endividamento"
+    ],
+    "oportunidades": [
+      "Cursos de saúde e medicina"
+    ],
+    "manuais": {}
+  },
+  "SLCE3": {
+    "resumo": "SLC Agrícola, uma das maiores produtoras de grãos e fibras do Brasil (soja, milho e algodão), com fazendas próprias e arrendadas no Cerrado. A receita é atrelada a commodities em dólar. Concorrentes: grandes grupos agrícolas e tradings.",
+    "tese": "",
+    "riscos": [
+      "Clima e quebra de safra",
+      "Preço das commodities agrícolas"
+    ],
+    "oportunidades": [
+      "Valorização de terras e eficiência operacional"
+    ],
+    "manuais": {}
+  },
+  "AGRO3": {
+    "resumo": "BrasilAgro, empresa que compra, desenvolve e vende terras agrícolas e produz grãos, cana e pecuária. A receita mistura produção agrícola e ganhos com venda de fazendas. Concorrentes: SLC e fundos de terras.",
+    "tese": "",
+    "riscos": [
+      "Preço das terras e das commodities",
+      "Clima"
+    ],
+    "oportunidades": [
+      "Ganhos com venda de fazendas"
+    ],
+    "manuais": {}
+  },
+  "SOJA3": {
+    "resumo": "Boa Safra, produtora de sementes de soja certificadas, com unidades no Centro-Oeste e em outras regiões. Concorrentes: produtores de sementes regionais e multinacionais.",
+    "tese": "",
+    "riscos": [
+      "Renda do produtor rural",
+      "Estoques e preços de sementes"
+    ],
+    "oportunidades": [
+      "Expansão de capacidade"
+    ],
+    "manuais": {}
+  },
+  "TTEN3": {
+    "resumo": "3tentos, empresa do agronegócio gaúcho com varejo de insumos agrícolas, originação de grãos e indústria de esmagamento de soja e biodiesel. Concorrentes: cooperativas e tradings.",
+    "tese": "",
+    "riscos": [
+      "Clima no Rio Grande do Sul",
+      "Margens de esmagamento"
+    ],
+    "oportunidades": [
+      "Expansão para o Mato Grosso"
+    ],
+    "manuais": {}
+  },
+  "SMTO3": {
+    "resumo": "São Martinho, uma das maiores produtoras de açúcar, etanol e bioenergia do Brasil, com usinas em São Paulo e Goiás. A receita depende de preços de açúcar e etanol. Concorrentes: Raízen, Jalles, Tereos e outras usinas.",
+    "tese": "",
+    "riscos": [
+      "Preço do açúcar e do etanol",
+      "Clima e produtividade da cana"
+    ],
+    "oportunidades": [
+      "Etanol de milho e eficiência agrícola"
+    ],
+    "manuais": {}
+  },
+  "JALL3": {
+    "resumo": "Jalles Machado, produtora de açúcar (inclusive orgânico), etanol e energia em Goiás. Concorrentes: São Martinho, Raízen e usinas regionais.",
+    "tese": "",
+    "riscos": [
+      "Preço do açúcar e do etanol",
+      "Endividamento após aquisições"
+    ],
+    "oportunidades": [
+      "Açúcar orgânico com prêmio de preço"
+    ],
+    "manuais": {}
+  },
+  "MDIA3": {
+    "resumo": "M. Dias Branco, líder em biscoitos e massas no Brasil, com marcas como Vitarella, Piraquê e Adria, e moinhos de trigo próprios. Concorrentes: Nestlé, Mondelez, Camil e marcas regionais.",
+    "tese": "",
+    "riscos": [
+      "Custo do trigo e de outras matérias-primas",
+      "Dólar alto encarece insumos"
+    ],
+    "oportunidades": [
+      "Recuperação de margens com insumos mais baratos"
+    ],
+    "manuais": {}
+  },
+  "CAML3": {
+    "resumo": "Camil, empresa de alimentos com arroz, feijão, açúcar (União), massas e pescados, no Brasil e em outros países da América do Sul. Concorrentes: Josapar, M. Dias Branco e marcas regionais.",
+    "tese": "",
+    "riscos": [
+      "Preço dos grãos e margens apertadas",
+      "Endividamento"
+    ],
+    "oportunidades": [
+      "Diversificação de categorias"
+    ],
+    "manuais": {}
+  },
+  "BEEF3": {
+    "resumo": "Minerva, uma das maiores exportadoras de carne bovina da América do Sul, com frigoríficos no Brasil, Argentina, Uruguai, Paraguai, Colômbia e Austrália. A receita é majoritariamente exportação em dólar. Concorrentes: JBS, Marfrig e frigoríficos regionais.",
+    "tese": "",
+    "riscos": [
+      "Ciclo do gado e preço da arroba",
+      "Endividamento após aquisições",
+      "Barreiras sanitárias e comerciais"
+    ],
+    "oportunidades": [
+      "Exportações com dólar alto"
+    ],
+    "manuais": {}
+  },
+  "JBSS32": {
+    "resumo": "BDR da JBS N.V., uma das maiores empresas de proteína animal do mundo (bovinos, frangos com Seara e Pilgrim's, suínos), listada também na NYSE após a reorganização. A receita é global e em dólar. Concorrentes: Tyson, Cargill, Marfrig e BRF.",
+    "tese": "",
+    "riscos": [
+      "Ciclo do gado nos EUA",
+      "Governança e histórico dos controladores"
+    ],
+    "oportunidades": [
+      "Escala global e listagem nos EUA"
+    ],
+    "manuais": {}
+  },
+  "CSUD3": {
+    "resumo": "CSU Digital, empresa de tecnologia e serviços para meios de pagamento, processamento de cartões e programas de relacionamento. Concorrentes: processadoras e empresas de tecnologia financeira.",
+    "tese": "",
+    "riscos": [
+      "Perda de grandes clientes",
+      "Baixa liquidez da ação"
+    ],
+    "oportunidades": [
+      "Novos contratos de processamento"
+    ],
+    "manuais": {}
+  },
+  "CASH3": {
+    "resumo": "Méliuz, plataforma de cashback e marketplace de ofertas, que passou a manter parte do caixa em bitcoin. A receita vem de comissões de parceiros. Concorrentes: outras plataformas de cashback e programas de fidelidade.",
+    "tese": "",
+    "riscos": [
+      "Volatilidade do bitcoin no caixa",
+      "Escala do negócio principal"
+    ],
+    "oportunidades": [
+      "Exposição a bitcoin"
+    ],
+    "manuais": {}
+  },
+  "SMFT3": {
+    "resumo": "Smart Fit, maior rede de academias da América Latina, com modelo de baixo custo e alto volume, em vários países. A receita vem de mensalidades. Concorrentes: Bluefit, Bodytech e academias independentes.",
+    "tese": "",
+    "riscos": [
+      "Expansão alavancada",
+      "Câmbio nos países da região"
+    ],
+    "oportunidades": [
+      "Abertura de unidades e ganho de escala"
+    ],
+    "manuais": {}
+  },
+  "OBTC3": {
+    "resumo": "OranjeBTC, empresa listada que mantém bitcoin como principal ativo de tesouraria e atua com educação financeira. O valor da ação acompanha o bitcoin em caixa e a capacidade de captar recursos. Concorrentes: Méliuz e outras tesourarias em bitcoin.",
+    "tese": "",
+    "riscos": [
+      "Volatilidade do bitcoin",
+      "Diluição por emissões de ações",
+      "Negociar acima do valor do bitcoin em caixa (mNAV alto)"
+    ],
+    "oportunidades": [
+      "Valorização do bitcoin"
+    ],
+    "manuais": {
+      "btc_em_caixa": null,
+      "fonte": "Preencher só se a fonte automática (SEC/CVM) não trouxer a quantidade de BTC."
+    }
+  },
+  "M2ST34": {
+    "resumo": "BDR da Strategy (antiga MicroStrategy), maior detentora corporativa de bitcoin do mundo, que capta recursos com ações e dívida para comprar BTC e mantém um negócio de software. O valor acompanha o bitcoin em caixa. Concorrentes: outras tesourarias em bitcoin e ETFs de bitcoin.",
+    "tese": "",
+    "riscos": [
+      "Volatilidade do bitcoin",
+      "Diluição por emissões contínuas",
+      "Dívida conversível e preferenciais"
+    ],
+    "oportunidades": [
+      "Valorização do bitcoin"
+    ],
+    "manuais": {
+      "btc_em_caixa": null,
+      "fonte": "Preencher só se a fonte automática (SEC/CVM) não trouxer a quantidade de BTC."
+    }
+  },
+  "MSFT34": {
+    "resumo": "BDR da Microsoft. A receita vem de software e serviços em nuvem (Azure, Microsoft 365, Dynamics), do LinkedIn, de Windows e de games (Xbox). A maior parte é receita recorrente de assinaturas. Investe pesado em data centers e inteligência artificial. Concorrentes: Amazon (AWS), Alphabet (Google Cloud), Oracle, Salesforce e Apple.",
+    "tese": "",
+    "riscos": [
+      "Capex elevado em inteligência artificial com retorno incerto",
+      "Regulação antitruste nos EUA e na Europa",
+      "Para o investidor brasileiro, variação do dólar"
+    ],
+    "oportunidades": [
+      "Crescimento do Azure e monetização de IA na base instalada"
+    ],
+    "manuais": {}
+  },
+  "M1TA34": {
+    "resumo": "BDR da Meta Platforms, dona de Facebook, Instagram, WhatsApp e Messenger, com receita quase toda de publicidade, além de investimentos em realidade virtual e inteligência artificial. Concorrentes: Alphabet, TikTok, Snap e Amazon Ads.",
+    "tese": "",
+    "riscos": [
+      "Regulação de privacidade e antitruste",
+      "Capex elevado em IA"
+    ],
+    "oportunidades": [
+      "Monetização de IA na publicidade e no WhatsApp"
+    ],
+    "manuais": {}
+  },
+  "GOGL34": {
+    "resumo": "BDR da Alphabet, dona do Google (busca, YouTube, Android), Google Cloud e projetos como Waymo. A receita vem principalmente de publicidade e nuvem. Concorrentes: Microsoft, Meta, Amazon e empresas de IA.",
+    "tese": "",
+    "riscos": [
+      "Processos antitruste",
+      "Concorrência de buscadores com IA"
+    ],
+    "oportunidades": [
+      "Crescimento do Google Cloud e da IA"
+    ],
+    "manuais": {}
+  },
+  "NVDC34": {
+    "resumo": "BDR da NVIDIA, líder em processadores gráficos (GPUs) para data centers, inteligência artificial, games e automóveis. A receita é dominada por chips de data center. Concorrentes: AMD, Intel, Broadcom e chips próprios das big techs.",
+    "tese": "",
+    "riscos": [
+      "Concentração de clientes em grandes nuvens",
+      "Restrições de exportação para a China",
+      "Ciclo de investimento em IA"
+    ],
+    "oportunidades": [
+      "Demanda por infraestrutura de IA"
+    ],
+    "manuais": {}
+  },
+  "MUTC34": {
+    "resumo": "BDR da Micron Technology, fabricante de memórias DRAM e NAND, incluindo memória de alta largura de banda (HBM) para IA. A receita é cíclica e depende do preço das memórias. Concorrentes: Samsung e SK Hynix.",
+    "tese": "",
+    "riscos": [
+      "Ciclo de preços de memória",
+      "Capex alto"
+    ],
+    "oportunidades": [
+      "Demanda por HBM em IA"
+    ],
+    "manuais": {}
+  },
+  "QCOM34": {
+    "resumo": "BDR da Qualcomm, líder em chips para smartphones (Snapdragon) e dona de patentes de comunicação móvel com receita de licenciamento. Expande-se em automóveis e PCs. Concorrentes: MediaTek, Apple (chips próprios) e Broadcom.",
+    "tese": "",
+    "riscos": [
+      "Perda da Apple como cliente de modem",
+      "Dependência do mercado de celulares"
+    ],
+    "oportunidades": [
+      "Chips para automóveis e PCs com IA"
+    ],
+    "manuais": {}
+  },
+  "P2LT34": {
+    "resumo": "BDR da Palantir, empresa de software de análise de dados e plataformas de IA para governos (defesa e inteligência) e empresas. A receita vem de contratos de software. Concorrentes: Snowflake, Databricks, Microsoft e integradores.",
+    "tese": "",
+    "riscos": [
+      "Múltiplo muito alto",
+      "Dependência de contratos governamentais"
+    ],
+    "oportunidades": [
+      "Adoção da plataforma de IA (AIP) em empresas"
+    ],
+    "manuais": {}
+  },
+  "N1OW34": {
+    "resumo": "BDR da ServiceNow, plataforma de software em nuvem para fluxos de trabalho de TI, atendimento ao cliente e RH, vendida por assinatura. Concorrentes: Salesforce, Microsoft, Atlassian e SAP.",
+    "tese": "",
+    "riscos": [
+      "Múltiplo alto",
+      "Concorrência em IA para empresas"
+    ],
+    "oportunidades": [
+      "Receita recorrente e expansão com IA"
+    ],
+    "manuais": {}
+  },
+  "V1RT34": {
+    "resumo": "BDR da Vertiv, fornecedora de infraestrutura crítica para data centers: energia, refrigeração (inclusive líquida) e gerenciamento térmico. Concorrentes: Schneider Electric, Eaton e ABB.",
+    "tese": "",
+    "riscos": [
+      "Ciclo de investimento em data centers",
+      "Execução da cadeia de suprimentos"
+    ],
+    "oportunidades": [
+      "Demanda por refrigeração de data centers de IA"
+    ],
+    "manuais": {}
+  },
+  "RGTI34": {
+    "resumo": "BDR da Rigetti Computing, empresa de computação quântica com processadores supercondutores e acesso via nuvem. A receita ainda é pequena e vem de contratos de pesquisa. Concorrentes: IBM, Google, IonQ e D-Wave.",
+    "tese": "",
+    "riscos": [
+      "Prejuízos e queima de caixa",
+      "Tecnologia ainda sem uso comercial em escala",
+      "Diluição"
+    ],
+    "oportunidades": [
+      "Avanços técnicos e contratos governamentais"
+    ],
+    "manuais": {}
+  },
+  "QUBT34": {
+    "resumo": "BDR da Quantum Computing Inc, empresa de computação quântica fotônica e de chips de fotônica. A receita ainda é muito pequena. Concorrentes: IonQ, Rigetti, D-Wave e grandes empresas de tecnologia.",
+    "tese": "",
+    "riscos": [
+      "Prejuízos e diluição",
+      "Tecnologia em estágio inicial"
+    ],
+    "oportunidades": [
+      "Contratos e parcerias em fotônica"
+    ],
+    "manuais": {}
+  },
+  "SPCX34": {
+    "resumo": "BDR da SpaceX, empresa de lançamentos espaciais (Falcon 9, Starship) e de internet por satélite (Starlink), que abriu capital em 2026. A receita vem de lançamentos, contratos governamentais e assinaturas da Starlink. Concorrentes: Blue Origin, Rocket Lab, Amazon Kuiper e operadoras de satélite.",
+    "tese": "",
+    "riscos": [
+      "Múltiplo muito alto",
+      "Execução do programa Starship",
+      "Pouco histórico como empresa listada"
+    ],
+    "oportunidades": [
+      "Crescimento da Starlink"
+    ],
+    "manuais": {}
+  }
+}

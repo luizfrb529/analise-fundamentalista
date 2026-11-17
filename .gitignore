@@ -1,0 +1,16 @@
+# ambiente e cache (não sincronizar)
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+pipeline/.cache/
+*.tmp
+*.log
+~$*
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# local, não publicar
+PROMPT.md
+.claude/
