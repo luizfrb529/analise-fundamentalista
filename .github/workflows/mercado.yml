@@ -1,0 +1,48 @@
+# Cotações da faixa do site a cada 15 minutos em dias úteis, das 9h às 19h (Brasília = 12h a 22h UTC).
+# Grava mercado.json no ramo "mercado" (um único commit, sobrescrito), sem mexer no histórico do main.
+name: cotacoes-faixa
+
+on:
+  schedule:
+    - cron: "*/15 12-22 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cotacoes-faixa
+  cancel-in-progress: true
+
+jobs:
+  cotacoes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar yfinance
+        run: pip install yfinance
+
+      - name: Buscar cotações
+        env:
+          TZ: America/Sao_Paulo
+        run: |
+          mkdir -p saida
+          python pipeline/mercado.py saida/mercado.json
+
+      - name: Publicar no ramo mercado
+        working-directory: saida
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git init -q -b mercado
+          git config user.name "atualizacao-automatica"
+          git config user.email "actions@users.noreply.github.com"
+          git add mercado.json
+          git commit -q -m "Cotações de $(date '+%d/%m/%Y %H:%M')"
+          git push -q -f "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" mercado

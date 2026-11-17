@@ -702,3 +702,57 @@ def controlador_estatal(controladores: list) -> Optional[str]:
         if _ESTATAL.search(nome):
             return nome
     return None
+
+
+# ===================================================================== resultados trimestrais
+CONTAS_TRI = ("receita", "rec_interm", "ebit", "da", "lucro_liq", "fco", "capex")
+
+
+def rotulo_trimestre(fim: str) -> str:
+    """'2026-09-30' -> '3T26' (trimestre do calendário da data de encerramento)."""
+    return f"{(int(fim[5:7]) - 1) // 3 + 1}T{fim[2:4]}"
+
+
+def serie_trimestral(q: dict, n: int = 9) -> list:
+    """q = {conta: {data_fim: valor do trimestre isolado}}. Devolve os últimos n trimestres com EBITDA e margens."""
+    fins = sorted({f for c in CONTAS_TRI for f in (q.get(c) or {})})[-n:]
+    out = []
+    for f in fins:
+        v = {c: (q.get(c) or {}).get(f) for c in CONTAS_TRI}
+        if v["lucro_liq"] is None and v["receita"] is None:
+            continue
+        ebitda = v["ebit"] + abs(v["da"]) if ok(v["ebit"], v["da"]) else None
+        rec = v["receita"]
+        out.append({"fim": f, "rotulo": rotulo_trimestre(f), "receita": rec, "rec_interm": v["rec_interm"], "ebitda": ebitda,
+                    "ebit": v["ebit"], "lucro_liq": v["lucro_liq"], "fco": v["fco"],
+                    "margem_ebitda": div(ebitda, rec) if ok(rec) and rec > 0 else None,
+                    "margem_liquida": div(v["lucro_liq"], rec) if ok(rec) and rec > 0 else None})
+    return out
+
+
+def trimestres_por_diferenca(acumulados: dict) -> dict:
+    """acumulados = {data_fim: (data_inicio_exercicio, {conta: acumulado no exercício})}.
+    Trimestre isolado = acumulado - acumulado anterior do mesmo exercício; o 1º trimestre é o próprio acumulado.
+    Só aceita intervalos de 80 a 100 dias (descarta buracos na série)."""
+    from datetime import date
+    d = lambda s: date.fromisoformat(str(s)[:10])  # noqa: E731
+    por_ini = {}
+    for fim, (ini, v) in acumulados.items():
+        por_ini.setdefault(str(ini)[:10], []).append((str(fim)[:10], v))
+    q = {c: {} for c in CONTAS_TRI}
+    for ini, lst in por_ini.items():
+        lst.sort()
+        ant_fim, ant_v = None, None
+        for fim, v in lst:
+            dias = (d(fim) - (d(ant_fim) if ant_fim else d(ini))).days + (0 if ant_fim else 1)
+            if 80 <= dias <= 100:
+                for c in CONTAS_TRI:
+                    a = v.get(c)
+                    if a is None:
+                        continue
+                    if ant_fim is None:
+                        q[c][fim] = a
+                    elif ant_v.get(c) is not None:
+                        q[c][fim] = a - ant_v[c]
+            ant_fim, ant_v = fim, v
+    return q

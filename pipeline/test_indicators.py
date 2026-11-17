@@ -214,3 +214,16 @@ def test_controlador_estatal():
     assert I.controlador_estatal([{"nome": "Governo do Estado do Rio Grande do Sul"}])
     assert I.controlador_estatal([{"nome": "Vila Velha S.A. - Administração e Participações"}]) is None
     assert I.controlador_estatal([{"nome": "LTD Administração e Participações S.A."}]) is None
+
+
+def test_trimestres_por_diferenca():
+    acc = {"2025-03-31": ("2025-01-01", {"receita": 100, "lucro_liq": 10, "ebit": 15, "da": -5}),
+           "2025-06-30": ("2025-01-01", {"receita": 220, "lucro_liq": 25, "ebit": 33, "da": -10}),
+           "2025-09-30": ("2025-01-01", {"receita": 350, "lucro_liq": 40, "ebit": 52, "da": -15}),
+           "2025-12-31": ("2025-01-01", {"receita": 500, "lucro_liq": 60, "ebit": 75, "da": -20}),
+           "2026-03-31": ("2026-01-01", {"receita": 130, "lucro_liq": 14, "ebit": 20, "da": -6})}
+    q = I.trimestres_por_diferenca(acc)
+    assert q["receita"] == {"2025-03-31": 100, "2025-06-30": 120, "2025-09-30": 130, "2025-12-31": 150, "2026-03-31": 130}
+    s = I.serie_trimestral(q)
+    assert s[-1]["rotulo"] == "1T26" and s[-1]["ebitda"] == ap(26) and s[0]["margem_liquida"] == ap(0.1)
+    assert s[3]["rotulo"] == "4T25" and s[3]["lucro_liq"] == 20

@@ -1,143 +1,144 @@
 # Relatório de cobertura de dados
 
-Gerado em 17/11/2026 16:23 | Preços de fechamento de 2026-11-16 | Balanços até 3T2026
+Gerado em 17/11/2026 17:03 | Preços de fechamento de 2026-11-16 | Balanços até 3T2026
 
 | Ticker | Modelo | Balanço | Fonte | Indicadores com valor | Faltando |
 |---|---|---|---|---|---|
-| B3SA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/99 | 4 |
-| BBAS3 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 60/65 | 5 |
-| BPAC11 | BANCO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 56/65 | 9 |
-| BBDC4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 60/65 | 5 |
-| ITUB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 60/65 | 5 |
-| BRSR6 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 56/65 | 9 |
-| SANB11 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 51/65 | 14 |
-| ROXO34 | BANCO | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 41/64 | 23 |
-| INBR34 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 52/64 | 12 |
-| XPBR31 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 50/64 | 14 |
-| BBSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 57/61 | 4 |
-| CXSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 49/61 | 12 |
-| PSSA3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 58/61 | 3 |
-| SAUD3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 58/61 | 3 |
-| WIZC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/99 | 2 |
-| VALE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/99 | 8 |
-| GGBR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/99 | 6 |
-| GOAU4 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/101 | 6 |
-| CSNA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 77/99 | 22 |
-| USIM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 84/99 | 15 |
-| FESA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/99 | 3 |
-| AURA33 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 36/98 | 62 |
-| PETR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/99 | 5 |
-| PRIO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/99 | 7 |
-| RECV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/99 | 8 |
-| BRAV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/99 | 17 |
-| OPCT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 80/99 | 19 |
-| UGPA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/99 | 4 |
-| PASS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/99 | 12 |
-| CSAN3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/101 | 19 |
-| RAIZ4 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 67/87 | 20 |
-| BRKM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 69/99 | 30 |
-| UNIP6 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/99 | 7 |
-| DEXP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/99 | 6 |
-| SUZB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/99 | 8 |
-| KLBN11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/99 | 8 |
-| RANI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/99 | 1 |
-| AXIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/99 | 10 |
-| ALUP11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/99 | 3 |
-| TAEE11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/99 | 3 |
-| ISAE4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/99 | 8 |
-| AURE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 80/99 | 19 |
-| EGIE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/99 | 3 |
-| CMIG4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/99 | 4 |
-| EQTL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/99 | 9 |
-| CPFE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/99 | 4 |
-| SBSP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 81/99 | 18 |
-| SAPR11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/99 | 3 |
-| CSMG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/99 | 7 |
-| MGLU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/99 | 12 |
-| BHIA3 | RECUPERACAO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 61/87 | 26 |
-| LJQQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 76/99 | 23 |
-| GMAT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/99 | 6 |
-| AZZA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/99 | 1 |
-| GRND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/99 | 1 |
-| LREN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/99 | 2 |
-| CEAB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/99 | 6 |
-| TFCO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/99 | 3 |
-| VULC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/99 | 4 |
-| SBFG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/99 | 8 |
-| AMOB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 72/99 | 27 |
-| MELI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 86/98 | 12 |
-| MRVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 76/99 | 23 |
-| TEND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/99 | 5 |
-| DIRR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/99 | 2 |
-| PLPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/99 | 13 |
-| CURY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/99 | 4 |
-| CYRE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/99 | 7 |
-| EVEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/99 | 11 |
-| TRIS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/99 | 8 |
-| EZTC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/99 | 2 |
-| LAVV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/99 | 7 |
-| MDNE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/99 | 11 |
-| WEGE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/99 | 0 |
-| EMBJ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/99 | 9 |
-| SHUL4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/99 | 2 |
-| ROMI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/99 | 4 |
-| TUPY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 77/99 | 22 |
-| LEVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/99 | 2 |
-| POMO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/99 | 2 |
-| RAPT4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 83/99 | 16 |
-| KEPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/99 | 3 |
-| TASA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/99 | 12 |
-| RENT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/99 | 9 |
-| MOVI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/99 | 6 |
-| VAMO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/99 | 7 |
-| MILS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/99 | 11 |
-| PRNR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/99 | 14 |
-| SIMH3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/101 | 14 |
-| RAIL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/99 | 5 |
-| ECOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/99 | 11 |
-| SEQL3 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 66/87 | 21 |
-| LOGG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/99 | 12 |
-| ALOS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/99 | 6 |
-| JHSF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/99 | 2 |
-| RDOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/99 | 8 |
-| FLRY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/99 | 4 |
-| RADL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/99 | 1 |
-| PGMN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/99 | 14 |
-| PNVL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/99 | 1 |
-| VIVT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/99 | 3 |
-| TIMS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 81/99 | 18 |
-| FIQE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/99 | 3 |
-| COGN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/99 | 9 |
-| YDUQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/99 | 4 |
-| VTRU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/99 | 11 |
-| CSED3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/99 | 6 |
-| SLCE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/99 | 3 |
-| AGRO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/99 | 8 |
-| SOJA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 81/99 | 18 |
-| TTEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 80/99 | 19 |
-| SMTO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/99 | 3 |
-| JALL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 84/99 | 15 |
-| MDIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/99 | 1 |
-| CAML3 | GERAL | 2026-08-31 | CVM (DFP/ITR, consolidado) | 95/99 | 4 |
-| BEEF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/99 | 13 |
-| JBSS32 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 41/98 | 57 |
-| CSUD3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/99 | 14 |
-| CASH3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 70/99 | 29 |
-| SMFT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 84/99 | 15 |
-| OBTC3 | TESOURARIA_CRIPTO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 50/91 | 41 |
-| M2ST34 | TESOURARIA_CRIPTO | 2026-09-30 | SEC EDGAR (XBRL) | 62/90 | 28 |
-| MSFT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 97/98 | 1 |
-| M1TA34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 90/98 | 8 |
-| GOGL34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 92/98 | 6 |
-| NVDC34 | GERAL | 2026-07-26 | SEC EDGAR (XBRL) | 88/98 | 10 |
-| MUTC34 | GERAL | 2026-09-03 | SEC EDGAR (XBRL) | 92/98 | 6 |
-| QCOM34 | GERAL | 2026-09-27 | SEC EDGAR (XBRL) | 77/98 | 21 |
-| P2LT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 65/98 | 33 |
-| N1OW34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 86/98 | 12 |
-| V1RT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 91/98 | 7 |
-| RGTI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 46/98 | 52 |
-| QUBT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 52/98 | 46 |
-| SPCX34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 30/98 | 68 |
+| B3SA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
+| BBAS3 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 62/67 | 5 |
+| BPAC11 | BANCO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 58/67 | 9 |
+| BBDC4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 62/67 | 5 |
+| ITUB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 62/67 | 5 |
+| BRSR6 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 58/67 | 9 |
+| SANB11 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 53/67 | 14 |
+| ROXO34 | BANCO | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 43/66 | 23 |
+| INBR34 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 54/66 | 12 |
+| XPBR31 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 52/66 | 14 |
+| BBSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 59/63 | 4 |
+| CXSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 51/63 | 12 |
+| PSSA3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 60/63 | 3 |
+| SAUD3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 60/63 | 3 |
+| WIZC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
+| VALE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
+| GGBR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/101 | 6 |
+| GOAU4 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/103 | 6 |
+| CSNA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 79/101 | 22 |
+| USIM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/101 | 15 |
+| FESA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
+| AURA33 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 38/100 | 62 |
+| PETR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/101 | 5 |
+| PRIO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/101 | 7 |
+| RECV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
+| BRAV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 84/101 | 17 |
+| OPCT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/101 | 19 |
+| UGPA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
+| PASS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/101 | 12 |
+| CSAN3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 84/103 | 19 |
+| RAIZ4 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 69/89 | 20 |
+| BRKM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 71/101 | 30 |
+| UNIP6 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/101 | 7 |
+| DEXP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/101 | 6 |
+| SUZB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
+| KLBN11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
+| RANI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/101 | 1 |
+| AXIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/101 | 10 |
+| ALUP11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
+| TAEE11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
+| ISAE4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
+| AURE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/101 | 19 |
+| EGIE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
+| CMIG4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
+| EQTL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/101 | 9 |
+| CPFE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
+| SBSP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 83/101 | 18 |
+| SAPR11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
+| CSMG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/101 | 7 |
+| MGLU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/101 | 12 |
+| BHIA3 | RECUPERACAO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 63/89 | 26 |
+| LJQQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 78/101 | 23 |
+| GMAT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/101 | 6 |
+| AZZA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/101 | 1 |
+| GRND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/101 | 1 |
+| LREN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
+| VIVA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/101 | 1 |
+| CEAB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/101 | 6 |
+| TFCO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
+| VULC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
+| SBFG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
+| AMOB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 74/101 | 27 |
+| MELI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 88/100 | 12 |
+| MRVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 78/101 | 23 |
+| TEND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/101 | 5 |
+| DIRR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
+| PLPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/101 | 13 |
+| CURY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
+| CYRE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/101 | 7 |
+| EVEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/101 | 11 |
+| TRIS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
+| EZTC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
+| LAVV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/101 | 7 |
+| MDNE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/101 | 11 |
+| WEGE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/101 | 0 |
+| EMBJ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/101 | 9 |
+| SHUL4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
+| ROMI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
+| TUPY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 79/101 | 22 |
+| LEVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
+| POMO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
+| RAPT4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/101 | 16 |
+| KEPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
+| TASA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/101 | 12 |
+| RENT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/101 | 9 |
+| MOVI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/101 | 6 |
+| VAMO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/101 | 7 |
+| MILS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/101 | 11 |
+| PRNR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/101 | 14 |
+| SIMH3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/103 | 14 |
+| RAIL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/101 | 5 |
+| ECOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/101 | 11 |
+| SEQL3 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 68/89 | 21 |
+| LOGG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/101 | 12 |
+| ALOS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/101 | 6 |
+| JHSF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/101 | 2 |
+| RDOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
+| FLRY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
+| RADL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/101 | 1 |
+| PGMN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/101 | 14 |
+| PNVL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/101 | 1 |
+| VIVT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
+| TIMS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 83/101 | 18 |
+| FIQE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
+| COGN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/101 | 9 |
+| YDUQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
+| VTRU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/101 | 11 |
+| CSED3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/101 | 6 |
+| SLCE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
+| AGRO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/101 | 8 |
+| SOJA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 83/101 | 18 |
+| TTEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/101 | 19 |
+| SMTO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/101 | 3 |
+| JALL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/101 | 15 |
+| MDIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/101 | 1 |
+| CAML3 | GERAL | 2026-08-31 | CVM (DFP/ITR, consolidado) | 97/101 | 4 |
+| BEEF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/101 | 13 |
+| JBSS32 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 43/100 | 57 |
+| CSUD3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/101 | 14 |
+| CASH3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 72/101 | 29 |
+| SMFT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/101 | 15 |
+| OBTC3 | TESOURARIA_CRIPTO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 52/93 | 41 |
+| M2ST34 | TESOURARIA_CRIPTO | 2026-09-30 | SEC EDGAR (XBRL) | 64/92 | 28 |
+| MSFT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 99/100 | 1 |
+| M1TA34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 92/100 | 8 |
+| GOGL34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 94/100 | 6 |
+| NVDC34 | GERAL | 2026-07-26 | SEC EDGAR (XBRL) | 90/100 | 10 |
+| MUTC34 | GERAL | 2026-09-03 | SEC EDGAR (XBRL) | 94/100 | 6 |
+| QCOM34 | GERAL | 2026-09-27 | SEC EDGAR (XBRL) | 79/100 | 21 |
+| P2LT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 67/100 | 33 |
+| N1OW34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 88/100 | 12 |
+| V1RT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 93/100 | 7 |
+| RGTI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 48/100 | 52 |
+| QUBT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 54/100 | 46 |
+| SPCX34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 32/100 | 68 |
 
 ## B3SA3
 
@@ -1079,6 +1080,13 @@ Indicadores sem valor e motivo:
 
 - Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+
+## VIVA3
+
+
+Indicadores sem valor e motivo:
+
+- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 
 ## CEAB3
 

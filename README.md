@@ -99,7 +99,7 @@ Se o setor micro for novo, acrescente o crescimento real dele em `data/config.js
 
 - Início: busca, chave Ações/BDRs que muda toda a página, listas top 5 e setores.
 - Ativos: tabela completa com conjuntos de colunas prontos, busca, filtro por setor e exportação em CSV. Filtros avançados em `#/filtros`.
-- Empresa: cotação, indicadores em cartões (cada um abre o histórico anual), TIR e crescimento implícitos, Piotroski, resultados financeiros, proventos, governança, comunicados e empresas do setor.
+- Empresa: cotação, resultados trimestrais (último trimestre contra o mesmo do ano anterior e acumulado do ano), P/L ano a ano, indicadores em cartões (cada um abre o histórico anual), TIR e crescimento implícitos, Piotroski, resultados financeiros, proventos, governança, comunicados e empresas do setor.
 - Rankings (classificação por critérios ponderados e rankings por indicador) e Comparador.
 - Critérios ponderados: lista, parâmetros e estrelas em `CRITERIOS` (pipeline/indicators.py); custo da dívida e IR em data/config.json (`spread_divida`, `ir_brasil`, `ir_eua`).
 
@@ -110,6 +110,9 @@ O menu "Ações" e "BDRs" lista as maiores empresas por valor de mercado e os se
 Não há nota composta. Cada ranking ordena por um único indicador (Piotroski F-Score, ROE, ROIC, margem líquida, dívida líquida/EBITDA, crescimento do lucro, dividend yield com payout abaixo de 100%, TIR implícita e P/L). O Piotroski F-Score soma 9 testes de qualidade contábil do último exercício contra o anterior (função `piotroski` em `pipeline/indicators.py`); não se aplica a bancos e seguradoras.
 
 ## Faixa de mercado
+
+Cotações ao abrir a página: dólar, euro e bitcoin em tempo real (AwesomeAPI, chamada pelo navegador); índices e commodities pelo robô `cotacoes-faixa` (.github/workflows/mercado.yml), que roda `pipeline/mercado.py` a cada 15 minutos em dias úteis e grava `mercado.json` no ramo `mercado`. Sem esses dados, a faixa mostra os fechamentos de `data/macro.json`. A faixa pode ser arrastada com o mouse ou o dedo.
+
 
 A faixa no topo mostra Ibovespa, IFIX, S&P 500, Nasdaq, dólar comercial, euro, bitcoin em reais, Brent, ouro, Selic, CDI, IPCA 12 meses, NTN-B de maior vencimento (Tesouro IPCA+, hoje 2050) e Treasuries de 10 e 20 anos. O Yahoo só entrega a cotação do dia do IFIX; a variação é calculada contra o valor gravado na execução anterior.
 

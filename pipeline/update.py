@@ -509,6 +509,11 @@ def processar(ativo: dict, ctx: dict) -> dict:
         cnpj = ctx["cadastro"][cd]["cnpj"]
         res["cd_cvm"], res["cnpj"] = cd, cnpj
         anuais = ctx["base"].anuais(cd, gm)
+        try:
+            desde = f"{AGORA.year - 3}-01-01"
+            res["trimestral"] = I.serie_trimestral(I.trimestres_por_diferenca(ctx["base"].acumulados(cd, gm, desde)))
+        except Exception as e:
+            aviso(t, f"trimestres: {e}")
         data_ref, ltm, ltm_ant, saldo_ant = ctx["base"].ltm(cd, gm, anuais)
         fonte_fund = "CVM (DFP/ITR, consolidado)"
         # ações
@@ -635,9 +640,15 @@ def processar(ativo: dict, ctx: dict) -> dict:
                 facts = S.sec_companyfacts(cik)
                 fz = sec.fundamentos(facts, moeda_rep)
                 anuais, ltm, ltm_ant, saldo_ant, data_ref = fz["anuais"], fz["ltm"] or {}, fz["ltm_ant"], fz["saldo_ant"], fz["data_ref"]
+                res["trimestral"] = I.serie_trimestral(fz.get("trimestrais") or {})
                 acoes, hist_sh = sec.acoes_em_circulacao(facts)
             except Exception as e:
                 aviso(t, f"SEC: {e}")
+        if not res.get("trimestral"):
+            qy = sec.trimestres_yfinance(ext)
+            if gm in ("BANCO", "SEGURADORA"):
+                qy.pop("receita", None)   # "Total Revenue" do Yahoo não é comparável para instituições financeiras
+            res["trimestral"] = I.serie_trimestral(qy)
         if not ltm or ltm.get("lucro_liq") is None:
             ly = sec.ltm_yfinance(ext)
             if ly.get("lucro_liq") is not None:
@@ -1211,7 +1222,7 @@ def main():
         diario = df["Close"].iloc[-260:]
         hist_px = {"semanal": [[d.strftime("%Y-%m-%d"), round(float(v), 4)] for d, v in semanal.items()],
                    "diario": [[d.strftime("%Y-%m-%d"), round(float(v), 4)] for d, v in diario.items()]}
-        gravar(DATA / "history" / f"{t}.json", {"ticker": t, "anual": r.get("historico", {}), "precos": hist_px,
+        gravar(DATA / "history" / f"{t}.json", {"ticker": t, "anual": r.get("historico", {}), "trimestral": r.get("trimestral") or [], "precos": hist_px,
                                                 "ltm_contas": r.get("ltm_contas"), "moeda": r.get("moeda_fundamentos")})
     gravar(DATA / "prices.json", prices)
     aplicar_criterios(fundamentals, mac, {a["ticker"]: a for a in universo})

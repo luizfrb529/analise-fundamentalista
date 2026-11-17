@@ -103,10 +103,10 @@ svg { display: block; }
 /* ---------------- faixa de mercado */
 .faixa { border-top: 1px solid var(--borda); overflow: hidden; height: 34px; background: var(--bg);
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 50px, #000 calc(100% - 50px), transparent); mask-image: linear-gradient(90deg, transparent, #000 50px, #000 calc(100% - 50px), transparent); }
-.faixa-trilho { display: flex; width: max-content; height: 100%; align-items: center; animation: rolar 80s linear infinite; }
-.faixa:hover .faixa-trilho { animation-play-state: paused; }
+.faixa { cursor: grab; user-select: none; touch-action: pan-y; }
+.faixa.arrastando { cursor: grabbing; }
+.faixa-trilho { display: flex; width: max-content; height: 100%; align-items: center; will-change: transform; }
 @keyframes rolar { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-@media (prefers-reduced-motion: reduce) { .faixa { overflow-x: auto; } .faixa-trilho { animation: none; } }
 .fx { display: flex; align-items: baseline; gap: 7px; padding: 0 20px; white-space: nowrap; font-size: .8rem; border-right: 1px solid var(--borda); }
 .fx .r { color: var(--txt-3); font-weight: 600; }
 .fx .v { font-weight: 600; color: var(--txt); }
@@ -456,3 +456,7 @@ tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72re
 .aviso-estatal .q-estatal { margin: 5px 0 0; }
 .aviso-estatal b { color: #d9a514; }
 :root[data-theme="light"] .aviso-estatal b { color: #9a7200; }
+
+.fx-hora { color: var(--txt-3); font-size: .74rem; font-weight: 600; gap: 6px; align-items: center; }
+.ponto-vivo { width: 7px; height: 7px; border-radius: 50%; background: var(--pos); box-shadow: 0 0 0 0 rgba(51, 196, 122, .6); animation: pulsar 2s infinite; display: inline-block; }
+@keyframes pulsar { 0% { box-shadow: 0 0 0 0 rgba(51, 196, 122, .55); } 70% { box-shadow: 0 0 0 7px rgba(51, 196, 122, 0); } 100% { box-shadow: 0 0 0 0 rgba(51, 196, 122, 0); } }

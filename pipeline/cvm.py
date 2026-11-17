@@ -260,6 +260,22 @@ class BaseCVM:
                     out[ano - 1] = ant
         return {k: v for k, v in sorted(out.items()) if v.get("lucro_liq") is not None}
 
+    def acumulados(self, cd, modelo, desde: str) -> dict:
+        """{data_fim: (início do exercício, fluxos acumulados)} de ITR e DFP a partir de 'desde' (AAAA-MM-DD)."""
+        out = {}
+        for origem in ("ITR", "DFP"):
+            for dref in self.datas("DRE", cd, origem):
+                if dref < desde:
+                    continue
+                rows = self._rows("DRE", cd, origem, dref, "U")
+                if rows is None:
+                    continue
+                ini = rows.DT_INI_EXERC.dropna()
+                if not len(ini):
+                    continue
+                out[dref] = (ini.min(), self.periodo(cd, origem, dref, "U", modelo, com_saldo=False))
+        return out
+
     @staticmethod
     def _base(anuais, antes_de):
         cand = [a for a in anuais.values() if a.get("_fim") and a["_fim"] < antes_de]

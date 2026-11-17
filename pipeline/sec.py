@@ -202,7 +202,7 @@ def fundamentos(facts: dict, unidade: str = "USD") -> dict:
             ltm_ant.update(saldo_ant)
         ltm = _ajustar(ltm, ref)
         ltm_ant = _ajustar(ltm_ant, cands[0]) if ltm_ant else None
-    return {"anuais": anuais_out, "ltm": ltm, "ltm_ant": ltm_ant, "saldo_ant": saldo_ant, "data_ref": ref}
+    return {"anuais": anuais_out, "ltm": ltm, "ltm_ant": ltm_ant, "saldo_ant": saldo_ant, "data_ref": ref, "trimestrais": trimestrais}
 
 
 def _saldo_em(series, fim):
@@ -330,3 +330,26 @@ def anuais_yfinance(ticker: str) -> dict[int, dict]:
             "minoritarios": 0.0, "_fim": str(col.date()), "_fonte": "yfinance (anual)",
         }
     return {k: d for k, d in out.items() if d["lucro_liq"] is not None}
+
+
+def trimestres_yfinance(ticker: str) -> dict:
+    """{conta: {data_fim: valor do trimestre}} pelo yfinance, para emissores sem trimestrais em XBRL na SEC."""
+    import math
+    import yfinance as yf
+    linhas = {"receita": ("Total Revenue", "Operating Revenue"), "lucro_liq": ("Net Income", "Net Income Common Stockholders"),
+              "ebit": ("EBIT", "Operating Income"), "da": ("Reconciled Depreciation", "Depreciation And Amortization In Income Statement")}
+    out = {k: {} for k in linhas}
+    try:
+        q = yf.Ticker(ticker).quarterly_income_stmt
+    except Exception:
+        return out
+    if q is None or q.empty:
+        return out
+    for conta, nomes in linhas.items():
+        nome = next((n for n in nomes if n in q.index), None)
+        if not nome:
+            continue
+        for data, v in q.loc[nome].items():
+            if v is not None and not (isinstance(v, float) and math.isnan(v)):
+                out[conta][data.strftime("%Y-%m-%d")] = float(v)
+    return out

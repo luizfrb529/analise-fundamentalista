@@ -631,8 +631,11 @@ async function pgAtivo(app, t) {
       <div class="cartao"><h3>Resultado em 12 meses</h3><div class="espaco" style="height:8px"></div>${isFin(t) ? "" : kv("Receita líquida", din(L.receita))}${isFin(t) ? "" : kv("EBITDA", din(i.ebitda))}${kv("Lucro líquido", din(L.lucro))}${isFin(t) ? "" : kv("Fluxo de caixa operacional", din(i.fco))}${isFin(t) ? "" : kv("Fluxo de caixa livre", din(i.fcl))}</div>
       <div class="cartao"><h3>Balanço patrimonial</h3><div class="espaco" style="height:8px"></div>${kv("Patrimônio líquido", din(L.pl))}${isFin(t) ? "" : kv("Dívida bruta", din(i.divida_bruta))}${isFin(t) ? "" : kv("Caixa", din(i.caixa))}${isFin(t) ? "" : kv("Dívida líquida", din(i.divida_liquida))}${isFin(t) ? kv("ROE", fmt(t, "roe")) : kv("Liquidez corrente", fmt(t, "liquidez_corrente"))}</div>
     </div>
+    <div class="cartao" style="margin-top:16px" id="tri"></div>
     <div class="cartao" style="margin-top:16px"><div class="cartao-cab"><h3>Histórico anual</h3><div class="abas" id="hist-anos" style="margin:0"><button data-n="5" class="ativo">5A</button><button data-n="10">10A</button></div></div><div id="hist-tabela"></div></div>
-    <div class="cartao" style="margin-top:16px"><div class="cartao-cab"><div><h3>Lucro e preço</h3><p class="sub">Lucro líquido anual (barras) e preço no fim de cada exercício (linha).</p></div></div><div class="grafico"><canvas id="g-lucro"></canvas></div></div>
+    <div class="cartao" style="margin-top:16px"><div class="cartao-cab"><div><h3>Preço sobre lucro (P/L) ano a ano</h3>
+      <p class="sub">Quantas vezes o preço da ação equivalia ao lucro por ação de cada ano. P/L 10 = o preço pagava 10 anos daquele lucro. Quanto menor, mais barato em relação ao lucro. A barra "Hoje" usa o preço atual e o lucro dos últimos 12 meses; a linha tracejada é a média de 5 anos. Anos com prejuízo não têm P/L.</p></div></div>
+      <div class="grafico"><canvas id="g-lucro"></canvas></div></div>
   </section>
 
   <section class="secao" id="sec-proventos"><div class="secao-cab"><h2 class="titulo-barra">Proventos</h2></div><div id="proventos"></div></section>
@@ -664,6 +667,8 @@ async function pgAtivo(app, t) {
   graficoPreco(t, h, 1);
   $$("#px-per .chip").forEach((c) => c.onclick = () => { $$("#px-per .chip").forEach((x) => x.classList.toggle("ativo", x === c)); graficoPreco(t, h, +c.dataset.p); });
   graficoLucro(t, h);
+  $("#tri").innerHTML = blocoTrimestral(t, h);
+  graficoTrimestral(t, h);
   const histTab = (nAnos) => { $("#hist-tabela").innerHTML = tabelaHistorica(t, h, nAnos); };
   histTab(5);
   $$("#hist-anos button").forEach((b) => b.onclick = () => { $$("#hist-anos button").forEach((x) => x.classList.toggle("ativo", x === b)); histTab(+b.dataset.n); });
@@ -786,11 +791,70 @@ function graficoPreco(t, h, anos) {
 function graficoLucro(t, h) {
   const el = $("#g-lucro");
   if (!el || !window.Chart) return;
-  const anos = Object.keys(h.anual || {}).sort(), mo = moedaDe(t);
-  charts.push(new Chart(el, { data: { labels: anos, datasets: [
-    { type: "bar", label: `Lucro líquido (${mo} bi)`, data: anos.map((y) => ok(h.anual[y].lucro_liq) ? h.anual[y].lucro_liq / 1e9 : null), backgroundColor: anos.map((y) => (h.anual[y].lucro_liq || 0) >= 0 ? cor("--serie") : cor("--neg")), borderRadius: 4, yAxisID: "y" },
-    { type: "line", label: `Preço (${mo})`, data: anos.map((y) => h.anual[y].preco_fim), borderColor: cor("--serie-2"), backgroundColor: cor("--serie-2"), pointRadius: 3, borderWidth: 2, yAxisID: "y2" },
-  ] }, options: optGraf({ eixo2: true }) }));
+  const anos = Object.keys(h.anual || {}).sort().slice(-10), mo = moedaDe(t);
+  const pl = anos.map((y) => { const v = h.anual[y].pl; return ok(v) && v > 0 ? v : null; });
+  const hoje = !suprimido(t, "pl") && ok(ind(t).pl) && ind(t).pl > 0 ? ind(t).pl : null;
+  const ult5 = pl.slice(-5).filter(ok), media = ult5.length ? ult5.reduce((a, b) => a + b, 0) / ult5.length : null;
+  const rotulos = [...anos, "Hoje"], dados = [...pl, hoje];
+  const det = (i) => {
+    if (i === anos.length) return [`Preço atual: R$ ${ok(D.prices[t]?.preco) ? nf2.format(D.prices[t].preco) : "n/d"}`, `Lucro por ação 12m: ${fmtU(ind(t).lpa, "moeda", mo)}`.replace(/<[^>]+>/g, "")];
+    const a = h.anual[anos[i]];
+    return [`Preço no fim do ano: ${ok(a.preco_fim) ? mo + " " + nf2.format(a.preco_fim) : "n/d"}`, `Lucro por ação: ${ok(a.lpa) ? mo + " " + nf2.format(a.lpa) : "prejuízo ou n/d"}`];
+  };
+  const o = optGraf({ legenda: false });
+  o.plugins.tooltip.callbacks = { label: (ctx) => `P/L: ${ok(ctx.parsed.y) ? nf2.format(ctx.parsed.y) : "n/d"}`, afterLabel: (ctx) => det(ctx.dataIndex) };
+  const ds = [{ type: "bar", label: "P/L", data: dados, backgroundColor: rotulos.map((r) => r === "Hoje" ? cor("--acento-forte") : cor("--serie-2")), borderRadius: 4 }];
+  if (ok(media)) ds.push({ type: "line", label: "Média 5 anos", data: rotulos.map(() => media), borderColor: cor("--txt-3"), borderDash: [6, 5], borderWidth: 1.5, pointRadius: 0 });
+  charts.push(new Chart(el, { data: { labels: rotulos, datasets: ds }, options: o }));
+}
+function triAnterior(tri, x) {
+  const alvo = `${+x.fim.slice(0, 4) - 1}${x.fim.slice(4, 7)}`;
+  return tri.find((y) => y.fim.slice(0, 7) === alvo) || null;
+}
+function blocoTrimestral(t, h) {
+  const tri = h.trimestral || [], mo = moedaDe(t);
+  if (tri.length < 2) return `<h3>Resultados trimestrais</h3><p class="sub">Sem demonstrações trimestrais suficientes para a comparação.</p>`;
+  const ult = tri[tri.length - 1], ant = triAnterior(tri, ult);
+  const receitaK = ok(ult.receita) ? "receita" : "rec_interm";
+  const itens = [[receitaK, receitaK === "receita" ? "Receita líquida" : "Receita de intermediação", "din"], ["ebitda", "EBITDA", "din"], ["lucro_liq", "Lucro líquido", "din"], ["margem_liquida", "Margem líquida", "pct"]]
+    .filter(([k]) => ok(ult[k]));
+  const vf = (v, u) => !ok(v) ? ND : u === "pct" ? fmtU(v, "pct") : `${mo} ${grande(v)}`;
+  const variacao = (a, b, u) => {
+    if (!ok(a) || !ok(b)) return '<span class="muted">sem base</span>';
+    if (u === "pct") { const d = (a - b) * 100; return `<span class="${sinal(d)}">${d > 0 ? "+" : ""}${nf2.format(d)} p.p.</span>`; }
+    if (b <= 0) return a > b ? '<span class="pos">melhora</span>' : '<span class="neg">piora</span>';
+    return varHtml(a / b - 1);
+  };
+  // acumulado do ano: trimestres do ano corrente contra os mesmos do ano anterior
+  const ano = ult.fim.slice(0, 4), noAno = tri.filter((x) => x.fim.slice(0, 4) === ano);
+  const antAno = noAno.map((x) => triAnterior(tri, x));
+  const soma = (l, k) => l.every((x) => x && ok(x[k])) ? l.reduce((a, x) => a + x[k], 0) : null;
+  const acc = noAno.length > 1 && antAno.every(Boolean) ? [[receitaK, "Receita"], ["lucro_liq", "Lucro líquido"]].map(([k, nm]) => [nm, soma(noAno, k), soma(antAno, k)]) : [];
+  const rot9 = `${noAno.length * 3}M${ano.slice(2)}`, rot9a = `${noAno.length * 3}M${String(+ano - 1).slice(2)}`;
+  const ultimos = tri.slice(-8);
+  return `<div class="cartao-cab"><div><h3>Resultados trimestrais</h3><p class="sub">Último trimestre divulgado (${ult.rotulo}, encerrado em ${dataBR(ult.fim)}) contra o mesmo trimestre do ano anterior${ant ? ` (${ant.rotulo})` : ""}.</p></div></div>
+  <div class="ind-grade">${itens.map(([k, nm, u]) => `<div class="ind"><div class="rot">${nm}</div><div class="val">${vf(ult[k], u)}</div>
+    <div class="det">${ant ? `${ant.rotulo}: ${vf(ant[k], u)} · ${variacao(ult[k], ant[k], u)}` : "sem trimestre comparável"}</div></div>`).join("")}</div>
+  ${acc.length ? `<h4>Acumulado do ano (${rot9} contra ${rot9a})</h4><div class="ind-grade">${acc.map(([nm, a, b]) => `<div class="ind"><div class="rot">${nm} ${rot9}</div><div class="val">${vf(a, "din")}</div><div class="det">${rot9a}: ${vf(b, "din")} · ${variacao(a, b, "din")}</div></div>`).join("")}</div>` : ""}
+  <div class="grade" style="margin-top:16px">
+    <div><h4>Últimos trimestres</h4><div class="grafico peq"><canvas id="g-tri"></canvas></div></div>
+    <div><h4>Tabela trimestral</h4><div class="tabela-wrap"><table><thead><tr><th></th>${ultimos.slice(-5).map((x) => `<th class="n">${x.rotulo}</th>`).join("")}</tr></thead><tbody>
+      ${[[receitaK, receitaK === "receita" ? "Receita" : "Rec. intermediação", "din"], ["ebitda", "EBITDA", "din"], ["lucro_liq", "Lucro líquido", "din"], ["margem_ebitda", "Margem EBITDA", "pct"], ["margem_liquida", "Margem líquida", "pct"]]
+        .filter(([k]) => ultimos.some((x) => ok(x[k])))
+        .map(([k, nm, u]) => `<tr><td>${nm}</td>${ultimos.slice(-5).map((x) => `<td class="n">${vf(x[k], u)}</td>`).join("")}</tr>`).join("")}
+    </tbody></table></div></div>
+  </div>`;
+}
+function graficoTrimestral(t, h) {
+  const el = $("#g-tri"), tri = (h.trimestral || []).slice(-8);
+  if (!el || !window.Chart || !tri.length) return;
+  const rk = tri.some((x) => ok(x.receita)) ? "receita" : "rec_interm", mo = moedaDe(t);
+  const o = optGraf({ moeda: mo + " " });
+  o.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: ${ok(ctx.parsed.y) ? nf2.format(ctx.parsed.y) + " bi" : "n/d"}`;
+  charts.push(new Chart(el, { type: "bar", data: { labels: tri.map((x) => x.rotulo), datasets: [
+    { label: `${rk === "receita" ? "Receita" : "Rec. intermediação"} (${mo} bi)`, data: tri.map((x) => ok(x[rk]) ? x[rk] / 1e9 : null), backgroundColor: cor("--serie-2"), borderRadius: 3 },
+    { label: `Lucro líquido (${mo} bi)`, data: tri.map((x) => ok(x.lucro_liq) ? x.lucro_liq / 1e9 : null), backgroundColor: tri.map((x) => (x.lucro_liq || 0) >= 0 ? cor("--serie") : cor("--neg")), borderRadius: 3 },
+  ] }, options: o }));
 }
 async function graficoProventos(t) {
   const pv = await proventos(t), el = $("#g-prov");
@@ -989,6 +1053,36 @@ function exportarCSV(lista, colunas) {
 /* =====================================================================
    FAIXA DE MERCADO, RODAPÉ, BUSCA, TEMA, TOOLTIP
    ===================================================================== */
+/* ---------------- faixa de cotações: dados ao vivo e arraste com o mouse */
+const AO_VIVO = { url: "https://raw.githubusercontent.com/luizfrb529/analise-fundamentalista/mercado/mercado.json",
+  cambio: "https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL", intervaloMs: 60000 };
+const FAIXA = { x: 0, pausado: false, arrastando: false, ultX: 0, moveu: 0, ultimo: 0, hora: null };
+async function cotacoesAoVivo() {
+  const m = D.macro;
+  let hora = null;
+  try {
+    const r = await fetch(`${AO_VIVO.url}?t=${Date.now()}`, { cache: "no-store" });
+    if (r.ok) {
+      const j = await r.json();
+      const quando = new Date(j.atualizado_em);
+      if (Date.now() - quando.getTime() < 36 * 3600e3) {   // ignora arquivo velho (fim de semana, robô parado)
+        for (const [k, v] of Object.entries(j.itens || {})) if (ok(v.valor)) m[k] = { ...(m[k] || {}), valor: v.valor, var_dia: v.var_dia };
+        hora = quando;
+      }
+    }
+  } catch (e) { /* sem cotação ao vivo: fica o fechamento */ }
+  try {
+    const r = await fetch(AO_VIVO.cambio, { cache: "no-store" });
+    if (r.ok) {
+      const j = await r.json();
+      const usa = (par, chave) => { const x = j[par]; if (x && isFinite(+x.bid)) m[chave] = { ...(m[chave] || {}), valor: +x.bid, var_dia: +x.pctChange / 100 }; };
+      usa("USDBRL", "dolar"); usa("EURBRL", "euro"); usa("BTCBRL", "bitcoin_brl");
+      if (j.USDBRL && j.USDBRL.timestamp) { const q = new Date(+j.USDBRL.timestamp * 1000); if (!hora || q > hora) hora = q; }
+    }
+  } catch (e) { /* idem */ }
+  FAIXA.hora = hora;
+  faixaMercado();
+}
 function faixaMercado() {
   const m = D.macro || {};
   const pts = (x, pre = "") => x && ok(x.valor) ? { v: pre + nf2.format(x.valor), d: x.var_dia } : null;
@@ -1002,9 +1096,34 @@ function faixaMercado() {
     [`NTN-B ${venc}`, m.ntnb_longa && ok(m.ntnb_longa.taxa) ? { v: "IPCA + " + nf2.format(m.ntnb_longa.taxa * 100) + "%" } : null],
     ["Treasury 10a", taxa(m.treasury_10y, "taxa")], ["Treasury 20a", taxa(m.treasury_20y, "taxa")],
   ].filter(([, x]) => x);
-  const html = itens.map(([r, x, u]) => `<span class="fx"><span class="r">${esc(r)}</span><span class="v">${x.v}</span>${u ? `<span class="u">${u}</span>` : ""}${ok(x.d) ? `<span class="d ${sinal(x.d)}">${x.d > 0 ? "▲" : x.d < 0 ? "▼" : ""} ${nf2.format(Math.abs(x.d) * 100)}%</span>` : ""}</span>`).join("");
+  const hora = FAIXA.hora ? `<span class="fx fx-hora"><i class="ponto-vivo"></i>${FAIXA.hora.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}</span>`
+    : `<span class="fx fx-hora">Fechamento ${dataBR(D.meta.data_fechamento)}</span>`;
+  const html = hora + itens.map(([r, x, u]) => `<span class="fx"><span class="r">${esc(r)}</span><span class="v">${x.v}</span>${u ? `<span class="u">${u}</span>` : ""}${ok(x.d) ? `<span class="d ${sinal(x.d)}">${x.d > 0 ? "▲" : x.d < 0 ? "▼" : ""} ${nf2.format(Math.abs(x.d) * 100)}%</span>` : ""}</span>`).join("");
   $("#faixa-trilho").innerHTML = html + html;
-  $("#faixa").title = `Fechamento de ${dataBR(D.meta.data_fechamento)}. NTN-B: Tesouro IPCA+ ${venc}, taxa real de compra.`;
+  $("#faixa").title = FAIXA.hora
+    ? `Cotações atualizadas às ${FAIXA.hora.toLocaleTimeString("pt-BR")}: câmbio e bitcoin em tempo real (AwesomeAPI); índices e commodities com atraso de até 15 minutos (Yahoo Finance). Arraste para rolar.`
+    : `Fechamento de ${dataBR(D.meta.data_fechamento)}. Arraste para rolar.`;
+}
+function animarFaixa() {
+  const faixa = $("#faixa"), trilho = $("#faixa-trilho");
+  const parado = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const passo = (ts) => {
+    const dt = FAIXA.ultimo ? Math.min(64, ts - FAIXA.ultimo) : 0;
+    FAIXA.ultimo = ts;
+    if (!FAIXA.pausado && !FAIXA.arrastando && !parado) FAIXA.x -= dt * 0.045;
+    const meio = trilho.scrollWidth / 2;
+    if (meio > 0) { while (FAIXA.x <= -meio) FAIXA.x += meio; while (FAIXA.x > 0) FAIXA.x -= meio; }
+    trilho.style.transform = `translate3d(${FAIXA.x}px,0,0)`;
+    requestAnimationFrame(passo);
+  };
+  requestAnimationFrame(passo);
+  faixa.addEventListener("mouseenter", () => { FAIXA.pausado = true; });
+  faixa.addEventListener("mouseleave", () => { FAIXA.pausado = false; });
+  faixa.addEventListener("pointerdown", (e) => { FAIXA.arrastando = true; FAIXA.ultX = e.clientX; FAIXA.moveu = 0; faixa.setPointerCapture(e.pointerId); faixa.classList.add("arrastando"); });
+  faixa.addEventListener("pointermove", (e) => { if (!FAIXA.arrastando) return; const d = e.clientX - FAIXA.ultX; FAIXA.x += d; FAIXA.moveu += Math.abs(d); FAIXA.ultX = e.clientX; });
+  const soltar = (e) => { FAIXA.arrastando = false; faixa.classList.remove("arrastando"); if (e.pointerType !== "mouse") FAIXA.pausado = false; };
+  faixa.addEventListener("pointerup", soltar);
+  faixa.addEventListener("pointercancel", soltar);
 }
 function rodape() {
   $("#rodape").innerHTML = `<p>Dados atualizados em ${D.meta.gerado_em ? new Date(D.meta.gerado_em).toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short" }) : "n/d"} · preços de fechamento de ${dataBR(D.meta.data_fechamento)} · balanços até o ${esc(D.meta.balancos_ate || "n/d")}.</p>
@@ -1085,6 +1204,9 @@ function pedirSenha() {
   ligarBusca($("#busca"), $("#busca-lista"));
   montarMenus();
   faixaMercado();
+  animarFaixa();
+  cotacoesAoVivo();
+  setInterval(cotacoesAoVivo, AO_VIVO.intervaloMs);
   rodape();
   window.addEventListener("hashchange", render);
   render();
