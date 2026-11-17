@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Análise Fundamentalista B3</title>
 <meta name="description" content="Indicadores fundamentalistas, qualidade, TIR implícita e contexto macro de ações e BDRs da B3.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B1F3A'/%3E%3Cpath d='M8 22l5-6 4 3 7-9' stroke='%23C9A96A' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B0C0E'/%3E%3Cpath d='M8 22l5-6 4 3 7-9' stroke='%2333C47A' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=2">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=4">
 <script>
   try { var t = localStorage.getItem("tema"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -28,20 +28,21 @@
 
 <header class="topo">
   <div class="topo-barra">
-    <a href="#/" class="marca" aria-label="Visão geral">
+    <a href="#/" class="marca" aria-label="Início">
       <span class="marca-icone" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M8 22l5-6 4 3 7-9"/></svg></span>
-      <span class="marca-texto"><b>Análise Fundamentalista</b><small>Ações e BDRs da B3</small></span>
+      <span class="marca-texto">Análise Fundamentalista<span>B3</span></span>
     </a>
     <nav class="menu" id="menu">
-      <a href="#/" data-rota="">Visão geral</a>
-      <a href="#/rankings" data-rota="rankings">Rankings</a>
-      <a href="#/comparar" data-rota="comparar">Comparador</a>
-      <a href="#/filtros" data-rota="filtros">Filtros</a>
+      <div class="menu-item"><a href="#/ativos?seg=ACAO_BR" data-rota="acoes">Ações <i class="seta"></i></a><div class="mega" id="mega-acoes"></div></div>
+      <div class="menu-item"><a href="#/ativos?seg=BDR" data-rota="bdrs">BDRs <i class="seta"></i></a><div class="mega" id="mega-bdrs"></div></div>
+      <div class="menu-item"><a href="#/rankings" data-rota="rankings">Rankings</a></div>
+      <div class="menu-item"><a href="#/comparar" data-rota="comparar">Comparador</a></div>
+      <div class="menu-item"><a href="#/ferramentas" data-rota="ferramentas">Ferramentas</a></div>
     </nav>
     <div class="topo-acoes">
       <div class="busca">
         <svg class="busca-lupa" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-        <input type="search" id="busca" placeholder="Buscar empresa ou ticker" aria-label="Buscar ativo" autocomplete="off">
+        <input type="search" id="busca" placeholder="Buscar ativo" aria-label="Buscar ativo" autocomplete="off">
         <div class="busca-lista" id="busca-lista" hidden></div>
       </div>
       <button class="btn-icone" id="tema" aria-label="Alternar tema claro e escuro" title="Tema claro ou escuro">
@@ -68,6 +69,6 @@
 <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<script src="assets/app.js?v=2"></script>
+<script src="assets/app.js?v=4"></script>
 </body>
 </html>

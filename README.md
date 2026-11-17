@@ -94,6 +94,15 @@ BDR: `tipo` BDR_EXTERIOR ou BDR_EXPOSICAO_BR, preencha `ticker_exterior`, `bolsa
 
 Se o setor micro for novo, acrescente o crescimento real dele em `data/config.json` (`g_real_por_setor_micro`); sem isso vale `g_real_padrao`.
 
+## Páginas do site
+
+- Início: busca, listas top 5 (ações ou BDRs), setores e ferramentas.
+- Ativos: tabela completa com conjuntos de colunas prontos, busca, filtro por setor e exportação em CSV. Filtros avançados em `#/filtros`.
+- Empresa: cotação, indicadores em cartões (cada um abre o histórico anual), TIR e crescimento implícitos, Piotroski, resultados financeiros, proventos, governança, comunicados e empresas do setor.
+- Rankings, Comparador e Ferramentas (juros compostos, viver de dividendos, preço teto).
+
+O menu "Ações" e "BDRs" e os atalhos da busca usam `MAIS_BUSCADAS` e `ATALHOS_HOME` no topo de `assets/app.js`.
+
 ## Rankings e qualidade
 
 Não há nota composta. Cada ranking ordena por um único indicador (Piotroski F-Score, ROE, ROIC, margem líquida, dívida líquida/EBITDA, crescimento do lucro, dividend yield com payout abaixo de 100%, TIR implícita e P/L). O Piotroski F-Score soma 9 testes de qualidade contábil do último exercício contra o anterior (função `piotroski` em `pipeline/indicators.py`); não se aplica a bancos e seguradoras.
