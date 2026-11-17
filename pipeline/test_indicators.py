@@ -304,3 +304,19 @@ def test_comunicado_ri():
     assert f("Fato relevante", "Cancellation of Treasury Shares") is None
     assert f("Resultado / dados financeiros", "Earnings Release 3Q26") is None
     assert f("Resultado / dados financeiros", "Earnings Release 3T26") == "Resultado"
+
+
+def test_noticias_repetidas_mesmo_dia():
+    l = [{"titulo": x, "data": "2026-11-17"} for x in (
+        "Por que você deveria comprar ações da TIM (TIMS3) agora, segundo o Itaú BBA",
+        "TIM: BBA eleva ação a compra de olho em proventos gordos e proteção contra incertezas",
+        "Dividendos tornam a TIM atraente demais para ser ignorada pelo Itaú BBA",
+        "Itaú BBA vê TIM como compra com foco em proventos",
+        "TIM (TIMS3) mantém recomendação neutra na XP, que eleva preço-alvo para R$ 22,40")]
+    r = I.sem_repeticao(l, ["TIM", "TIMS3"])
+    assert [x["titulo"][:9] for x in r] == ["Por que v", "TIM (TIMS"]
+    assert not I.noticia_financeira("Atualização: Ibovespa em alta, Petrobras sobe, TIM elevada por banco e outros destaques", "Investing", "TIM", "TIMS3")
+
+
+def test_trimestres_diferentes_nao_repetem():
+    assert not I.mesma_noticia("Brava Energia (BRAV3) | Resultado 2T26: Ecopetrol assume controle", "Brava Energia (BRAV3) | Resultado 3T26: Ecopetrol assume controle", ["Brava"], True)

@@ -830,7 +830,7 @@ VEICULOS_FINANCEIROS = re.compile(
     r"cnn brasil|neofeed|pipeline|investidor10|trademap|bora investir|space money|advfn|times brasil|mover|forbes|financial times|wall street|"
     r"cnbc|barron|marketwatch|yahoo finance|motley|seeking alpha|veja|folha|o globo|isto[eé] dinheiro|monitor mercantil|poder360|metr[oó]poles|"
     r"capital aberto|eu quero investir|genial|xp investimentos|btg|nord|empiricus|the cap|inteligencia financeira|melhor investimento|visno", re.I)
-FORA_DE_PAUTA = re.compile(r"educa[cç][aã]o ambiental|servi[cç]os gratuitos|a[cç][aã]o social|voluntari|mutir[aã]o|est[aá]gio|vagas|emprego|concurso|trainee|bolsa aux|ao vivo|futebol|campeonato|copa do mundo|liga das na[cç][oõ]es|\bx\b.*\bao vivo\b|novela|teatro|show|festival|anivers[aá]rio|"
+FORA_DE_PAUTA = re.compile(r"outros destaques|destaques do dia|resumo do dia|educa[cç][aã]o ambiental|servi[cç]os gratuitos|a[cç][aã]o social|voluntari|mutir[aã]o|est[aá]gio|vagas|emprego|concurso|trainee|bolsa aux|ao vivo|futebol|campeonato|copa do mundo|liga das na[cç][oõ]es|\bx\b.*\bao vivo\b|novela|teatro|show|festival|anivers[aá]rio|"
                            r"receita de bolo|hor[oó]scopo|celebridade|bbb|carnaval", re.I)
 
 
@@ -856,24 +856,28 @@ def noticia_financeira(titulo: str, veiculo: str, nome: str, ticker: str) -> boo
 # ---------------------------------------------------------------- notícias repetidas
 _PALAVRAS_VAZIAS = set("""a o as os de da do das dos e em no na nos nas um uma para por com sem que se ao aos sua seu suas seus mais
 menos sobre apos ate entre como diz the of and to in for on with its at by from is are as after acoes acao empresa companhia
-bolsa hoje agora ser tem veja""".split())
+bolsa hoje agora ser tem veja eleva sobe sobem cai caem alta queda diz ve entenda saiba noticia atualizacao""".split())
+_SINONIMOS = {"prove": "divid", "jcp": "divid", "remun": "divid", "lucra": "lucro"}
 
 
 def _radicais(titulo: str, ignorar: Iterable[str] = ()) -> set:
     import unicodedata
     t = unicodedata.normalize("NFKD", (titulo or "").lower()).encode("ascii", "ignore").decode()
     ign = {w for x in ignorar for w in re.findall(r"[a-z0-9]+", unicodedata.normalize("NFKD", (x or "").lower()).encode("ascii", "ignore").decode())}
-    return {w[:5] for w in re.findall(r"[a-z0-9]+", t) if len(w) >= 3 and w not in _PALAVRAS_VAZIAS and w not in ign}
+    return {_SINONIMOS.get(w[:5], w[:5]) for w in re.findall(r"[a-z0-9]+", t) if len(w) >= 3 and w not in _PALAVRAS_VAZIAS and w not in ign}
 
 
-def mesma_noticia(a: str, b: str, ignorar: Iterable[str] = ()) -> bool:
-    """Dois títulos contam o mesmo fato: dividem 3 ou mais palavras relevantes (fora nome e ticker da empresa)
-    ou metade das palavras do título mais curto."""
+def mesma_noticia(a: str, b: str, ignorar: Iterable[str] = (), mesmo_dia: bool = False) -> bool:
+    """Dois títulos contam o mesmo fato: dividem 3 ou mais palavras relevantes (fora nome e ticker da empresa),
+    2 se saíram no mesmo dia, ou metade das palavras do título mais curto."""
+    pa, pb = (set(m.upper().replace("Q", "T") for m in re.findall(r"\b[1-4][TQ]\d{2}\b", x or "", re.I)) for x in (a, b))
+    if pa and pb and not pa & pb:          # trimestres diferentes nunca são o mesmo fato
+        return False
     ra, rb = _radicais(a, ignorar), _radicais(b, ignorar)
     if not ra or not rb:
         return False
     comum = len(ra & rb)
-    return comum >= 3 or comum >= max(2, min(len(ra), len(rb)) / 2)
+    return comum >= (2 if mesmo_dia else 3) or comum >= max(2, min(len(ra), len(rb)) / 2)
 
 
 def sem_repeticao(itens: list, ignorar: Iterable[str] = (), dias: int = 4) -> list:
@@ -889,8 +893,10 @@ def sem_repeticao(itens: list, ignorar: Iterable[str] = (), dias: int = 4) -> li
     out = []
     for x in sorted(itens, key=lambda x: str(x.get("data") or ""), reverse=True):
         dx = quando(x)
-        repete = any(mesma_noticia(x.get("titulo", ""), y.get("titulo", ""), ignorar + list(y.get("tickers") or []))
-                     and (dx is None or quando(y) is None or abs((quando(y) - dx).days) <= dias) for y in out)
+        def perto(y, lim):
+            return dx is None or quando(y) is None or abs((quando(y) - dx).days) <= lim
+        repete = any(perto(y, dias) and mesma_noticia(x.get("titulo", ""), y.get("titulo", ""), ignorar + list(y.get("tickers") or []),
+                                                     mesmo_dia=dx is not None and quando(y) is not None and perto(y, 1)) for y in out)
         if not repete:
             out.append(x)
     return out
