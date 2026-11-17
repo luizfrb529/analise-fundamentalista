@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=23">
+<link rel="stylesheet" href="assets/style.css?v=25">
 <script>
   try { var t = localStorage.getItem("tema"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -48,16 +48,14 @@
       <button class="btn-icone" id="tema" aria-label="Alternar tema claro e escuro" title="Tema claro ou escuro">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
       </button>
+      <div class="faixa-status" id="faixa-status"></div>
       <button class="btn-icone menu-mobile" id="menu-btn" aria-label="Abrir menu">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
     </div>
   </div>
-  <div class="faixa-linha">
-    <div class="faixa" id="faixa" aria-label="Indicadores de mercado">
-      <div class="faixa-trilho" id="faixa-trilho"></div>
-    </div>
-    <div class="faixa-status" id="faixa-status"></div>
+  <div class="faixa" id="faixa" aria-label="Indicadores de mercado">
+    <div class="faixa-trilho" id="faixa-trilho"></div>
   </div>
 </header>
 
@@ -72,6 +70,6 @@
 <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<script src="assets/app.js?v=23"></script>
+<script src="assets/app.js?v=25"></script>
 </body>
 </html>

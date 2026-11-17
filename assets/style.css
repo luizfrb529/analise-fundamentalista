@@ -62,7 +62,7 @@ svg { display: block; }
 
 /* ---------------- topo */
 .topo { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--borda); }
-.topo-barra { max-width: 1240px; margin: 0 auto; padding: 0 24px; height: 62px; display: flex; align-items: center; gap: 30px; }
+.topo-barra { max-width: 1240px; margin: 0 auto; padding: 0 24px; height: 62px; display: flex; align-items: center; gap: 22px; }
 .marca { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 .marca-icone { width: 30px; height: 30px; border-radius: 8px; border: 1.5px solid var(--acento); display: grid; place-items: center; }
 .marca-icone svg { width: 20px; height: 20px; fill: none; stroke: var(--acento); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
@@ -87,7 +87,7 @@ svg { display: block; }
 .mega .rodape-mega { grid-column: 1 / -1; border-top: 1px solid var(--borda); padding-top: 10px; margin-top: 4px; }
 .topo-acoes { margin-left: auto; display: flex; align-items: center; gap: 10px; }
 .busca { position: relative; }
-.topo .busca input { width: 300px; background: var(--sup-2); border: 1px solid var(--borda); border-radius: 999px; padding: 9px 14px 9px 38px; outline: none; color: var(--txt); }
+.topo .busca input { width: 220px; background: var(--sup-2); border: 1px solid var(--borda); border-radius: 999px; padding: 9px 14px 9px 38px; outline: none; color: var(--txt); }
 .topo .busca input::placeholder { color: var(--txt-3); }
 .topo .busca input:focus { border-color: var(--acento); }
 .busca-lupa { position: absolute; left: 13px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; fill: none; stroke: var(--txt-3); stroke-width: 2; pointer-events: none; }
@@ -101,14 +101,13 @@ svg { display: block; }
 .menu-mobile { display: none; }
 
 /* ---------------- faixa de mercado */
-.faixa-linha { display: flex; flex-direction: column; border-top: 1px solid var(--borda); background: var(--bg); }
-.faixa-status { order: -1; display: flex; align-items: center; justify-content: flex-end; gap: 6px; height: 20px; padding: 4px 16px 0;
-  font-size: .64rem; font-weight: 600; color: var(--txt-3); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.faixa-status { display: flex; align-items: center; gap: 6px; padding: 5px 9px; border: 1px solid var(--borda); border-radius: 8px; background: var(--sup);
+  font-size: .66rem; font-weight: 600; color: var(--txt-3); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .faixa-status .v { color: var(--txt-2); font-weight: 700; }
-.faixa-status .tempo-real { font-size: .56rem; padding: 0 5px; letter-spacing: .08em; }
-.faixa-status .ponto-vivo { width: 5px; height: 5px; }
+.faixa-status .tempo-real { font-size: .58rem; padding: 0 5px; letter-spacing: .08em; }
+.faixa-status .ponto-vivo { width: 6px; height: 6px; }
 .faixa-status:empty { display: none; }
-.faixa { flex: none; min-width: 0; overflow: hidden; height: 34px; background: var(--bg);
+.faixa { border-top: 1px solid var(--borda); overflow: hidden; height: 34px; background: var(--bg);
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 50px, #000 calc(100% - 50px), transparent); mask-image: linear-gradient(90deg, transparent, #000 50px, #000 calc(100% - 50px), transparent); }
 .faixa { cursor: grab; user-select: none; touch-action: pan-y; }
 .faixa.arrastando { cursor: grabbing; }
@@ -530,4 +529,5 @@ tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72re
 .legenda-acionaria i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
 .legenda-acionaria b { color: var(--txt); margin-left: 4px; }
 
-@media (max-width: 560px) { .faixa-status { padding: 4px 10px 0; } }
+@media (max-width: 1240px) { .topo .busca input { width: 180px; } }
+@media (max-width: 1100px) { .faixa-status .tempo-real { display: none; } .topo .busca input { width: 110px; } }

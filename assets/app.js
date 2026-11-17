@@ -287,7 +287,7 @@ const POR_QUE = {
 function porQue(k) { return POR_QUE[k] || ""; }
 function tip(k) {
   const m = meta(k), pq = porQue(k);
-  return (m.formula ? `<i class="info" data-tip="${esc("O que é. " + m.nome + ": " + m.formula)}">i</i>` : "") + (pq ? `<i class="info porque" data-tip="${esc("Por que importa. " + pq)}">?</i>` : "");
+  return (m.formula ? `<i class="info" data-tip="${esc(m.nome + ": " + m.formula)}">i</i>` : "") + (pq ? `<i class="info porque" data-tip="${esc("Por que importa: " + pq)}">?</i>` : "");
 }
 function logo(t, cls = "") {
   if (D.logos.has(t)) return `<span class="logo ${cls}"><img src="assets/logos/${t}.svg" alt="" loading="lazy"></span>`;
@@ -689,7 +689,7 @@ function tabela(lista, colunas, opts = {}) {
   const ths = cols.map((k) => {
     const m = meta(k), n = m.unidade !== "txt";
     const seta = sort && sort.k === k ? `<span class="seta">${sort.d > 0 ? "▲" : "▼"}</span>` : "";
-    return `<th class="${n ? "n" : ""} ${sort ? "ord" : ""}" data-k="${k}" data-tip="${esc(m.nome + (m.formula ? ": " + m.formula : "") + (porQue(k) ? "\n\nPor que importa. " + porQue(k) : ""))}">${esc(rot(k))}${seta}</th>`;
+    return `<th class="${n ? "n" : ""} ${sort ? "ord" : ""}" data-k="${k}" data-tip="${esc(m.nome + (m.formula ? ": " + m.formula : "") + (porQue(k) ? "\n\nPor que importa: " + porQue(k) : ""))}">${esc(rot(k))}${seta}</th>`;
   }).join("");
   const trs = lista.map((t) => `<tr class="clicavel" data-t="${t}">${cols.map((k) => celula(t, k)).join("")}</tr>`).join("");
   return `<div class="tabela-wrap ${opts.alta ? "alta" : ""}"><table class="resp"><thead><tr>${ths}</tr></thead><tbody>${trs || `<tr><td colspan="${cols.length}" class="vazio">Nenhum ativo encontrado.</td></tr>`}</tbody></table></div>`;
