@@ -442,8 +442,15 @@ function topLista(L, base, n = 5) {
   return base.filter(L.f).map((t) => [t, val(t, L.k)]).filter(([, v]) => ok(v))
     .sort((a, b) => (L.dir > 0 ? b[1] - a[1] : a[1] - b[1]) || (L.desempate ? (ind(b[0])[L.desempate] || 0) - (ind(a[0])[L.desempate] || 0) : 0)).slice(0, n);
 }
+const SETORES_PERENES = ["Energia elétrica", "Saneamento", "Seguros", "Telecom", "Financeiro"];
+async function feedNoticias() {
+  if (!D.cache.feed) D.cache.feed = await j("data/news/_feed.json", { noticias: [], comunicados: [] });
+  return D.cache.feed;
+}
 function pgHome(app) {
   const nome = () => EST.homeSeg === "BDR" ? "BDRs" : "ações";
+  EST.homeSetores = EST.homeSetores || [];
+  EST.homeFeed = EST.homeFeed || { aba: "noticias", n: 15 };
   app.innerHTML = `
   <section class="hero">
     <h1>Análise fundamentalista das empresas da B3</h1>
@@ -452,6 +459,16 @@ function pgHome(app) {
       <button class="ir" id="busca-home-ir" aria-label="Buscar">${ICONE_LUPA}</button><div class="busca-lista" id="busca-home-lista" hidden></div></div>
     <div class="linha centro" style="margin-top:26px"><div class="segmentado" id="home-seg"><button data-s="ACAO_BR" class="${EST.homeSeg === "ACAO_BR" ? "ativo" : ""}">Ações</button><button data-s="BDR" class="${EST.homeSeg === "BDR" ? "ativo" : ""}">BDRs</button></div></div>
   </section>
+  <div class="filtro-setores">
+    <div class="linha">
+      <div class="dropdown"><button class="btn peq" id="fs-btn">Setores <span id="fs-qtd"></span> ▾</button><div class="dropdown-painel" id="fs-painel" hidden></div></div>
+      <div class="chips" id="fs-chips"></div>
+    </div>
+    <div class="perenes" id="perenes">
+      <div><b>Setores perenes</b> <span class="sub">Energia elétrica, saneamento, telecom, seguros e bancos. Vendem serviços essenciais, com demanda estável mesmo em crise, contratos regulados e histórico de dividendos. Tendem a cair menos em recessões, mas também crescem menos nos ciclos de alta.</span></div>
+      <button class="btn peq" id="fs-perenes">Ver só os perenes</button>
+    </div>
+  </div>
   <section class="secao">
     <div class="secao-cab"><h2 class="titulo-barra" id="tit-listas"></h2></div>
     <div class="listas" id="listas"></div>
@@ -464,31 +481,76 @@ function pgHome(app) {
   <section class="secao">
     <div class="secao-cab"><h2 class="titulo-barra" id="tit-setores"></h2><span class="sub">Medianas de P/L, ROE e dividend yield de cada setor</span></div>
     <div class="setores" id="setores"></div>
+  </section>
+  <section class="secao">
+    <div class="secao-cab"><h2 class="titulo-barra">Notícias e comunicados</h2>
+      <div class="abas" id="feed-abas" style="margin:0"><button data-a="noticias">Imprensa</button><button data-a="comunicados">Comunicados oficiais</button></div></div>
+    <div class="cartao" id="feed"><div class="carregando"><span></span>Carregando</div></div>
   </section>`;
   ligarBusca($("#busca-home"), $("#busca-home-lista"), $("#busca-home-ir"));
+  const setoresDoSeg = () => [...new Set(filtroSeg(D.tickers, EST.homeSeg).map((t) => A(t).setor_macro))].sort((a, b) => a.localeCompare(b, "pt-BR"));
+  const base = () => {
+    const l = filtroSeg(D.tickers, EST.homeSeg);
+    return EST.homeSetores.length ? l.filter((t) => EST.homeSetores.includes(A(t).setor_macro)) : l;
+  };
+  const painel = () => {
+    const ss = setoresDoSeg();
+    $("#fs-painel").innerHTML = `<div class="linha entre"><b>Escolha um ou mais setores</b><button class="btn peq" id="fs-limpar">Limpar</button></div>
+      ${ss.map((x) => `<label><input type="checkbox" value="${esc(x)}" ${EST.homeSetores.includes(x) ? "checked" : ""}> ${esc(x)}${SETORES_PERENES.includes(x) ? ' <span class="badge pos">perene</span>' : ""}</label>`).join("")}`;
+    $("#fs-limpar").onclick = () => { EST.homeSetores = []; painel(); desenhar(); };
+    $("#fs-painel").onchange = (e) => { const v = e.target.value; EST.homeSetores = e.target.checked ? [...EST.homeSetores, v] : EST.homeSetores.filter((x) => x !== v); desenhar(); };
+  };
+  $("#fs-btn").onclick = (e) => { e.stopPropagation(); painel(); $("#fs-painel").hidden = !$("#fs-painel").hidden; };
+  document.addEventListener("click", (e) => { const p = $("#fs-painel"); if (p && !p.contains(e.target) && e.target.id !== "fs-btn") p.hidden = true; });
+  $("#fs-perenes").onclick = () => { EST.homeSetores = SETORES_PERENES.filter((x) => setoresDoSeg().includes(x)); desenhar(); };
+  const desenharFeed = async () => {
+    const f = await feedNoticias(), perm = new Set(base()), aba = EST.homeFeed.aba;
+    $$("#feed-abas button").forEach((b) => b.classList.toggle("ativo", b.dataset.a === aba));
+    const itens = (f[aba] || []).filter((x) => (x.tickers || []).some((t) => perm.has(t)));
+    const mostra = itens.slice(0, EST.homeFeed.n);
+    $("#feed").innerHTML = mostra.length ? `<div class="feed">${mostra.map((x) => {
+      const ts = (x.tickers || []).filter((t) => perm.has(t)).slice(0, 4);
+      const quando = x.data ? (aba === "noticias" ? new Date(x.data).toLocaleDateString("pt-BR") : dataBR(x.data)) : "";
+      return `<div class="feed-item"><div class="feed-logos">${ts.map((t) => `<a href="#/ativo/${t}" data-tip="${esc(A(t).nome)}">${logo(t, "p")}</a>`).join("")}</div>
+        <div style="min-width:0"><a class="feed-tit" href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.titulo)}</a>
+        <div class="meta">${ts.map((t) => `<a href="#/ativo/${t}"><b>${t}</b></a>`).join(" · ")} · ${esc(aba === "noticias" ? (x.veiculo || "") : (x.categoria || ""))} · ${quando}</div></div></div>`; }).join("")}</div>
+      ${itens.length > mostra.length ? `<div class="linha centro" style="margin-top:12px"><button class="btn-contorno" id="feed-mais">Ver mais (${itens.length - mostra.length})</button></div>` : ""}
+      <p class="sub" style="margin-top:10px">${aba === "noticias" ? "Imprensa: Google News, atualizado diariamente. A imprensa interpreta; o comunicado oficial é a fonte." : "Comunicados oficiais: CVM (fatos relevantes, comunicados e resultados) e SEC EDGAR para BDRs."}</p>`
+      : '<p class="vazio">Sem itens para os setores selecionados.</p>';
+    if ($("#feed-mais")) $("#feed-mais").onclick = () => { EST.homeFeed.n += 15; desenharFeed(); };
+  };
+  $$("#feed-abas button").forEach((b) => b.onclick = () => { EST.homeFeed = { aba: b.dataset.a, n: 15 }; desenharFeed(); });
   const desenhar = () => {
-    const seg = EST.homeSeg, base = filtroSeg(D.tickers, seg);
-    $("#tit-listas").textContent = `Rankings de ${nome()}`;
-    $("#tit-setores").textContent = `Setores de ${nome()}`;
-    $("#link-tabela").href = `#/ativos?seg=${seg}`;
-    $("#home-ag-xls").onclick = () => exportarAgenda(seg);
-    $("#home-agenda").innerHTML = agendaLista(seg).prox.slice(0, 8).map(([t, x]) => linhaAgenda(t, x)).join("") || '<p class="vazio">Sem datas futuras.</p>';
+    const seg = EST.homeSeg;
+    EST.homeSetores = EST.homeSetores.filter((x) => setoresDoSeg().includes(x));
+    const lista = base(), perm = new Set(lista), filtrado = EST.homeSetores.length > 0;
+    const sufixo = filtrado ? ` · ${EST.homeSetores.length === 1 ? EST.homeSetores[0] : `${EST.homeSetores.length} setores`}` : "";
+    $("#fs-qtd").textContent = filtrado ? `(${EST.homeSetores.length})` : "";
+    $("#fs-chips").innerHTML = EST.homeSetores.map((x) => `<button class="chip ativo" data-tira="${esc(x)}">${esc(x)}<span class="x">✕</span></button>`).join("");
+    $$("#fs-chips [data-tira]").forEach((b) => b.onclick = () => { EST.homeSetores = EST.homeSetores.filter((x) => x !== b.dataset.tira); desenhar(); });
+    $("#perenes").classList.toggle("ativo", filtrado && SETORES_PERENES.filter((x) => setoresDoSeg().includes(x)).every((x) => EST.homeSetores.includes(x)));
+    $("#tit-listas").textContent = `Rankings de ${nome()}${sufixo}`;
+    $("#tit-setores").textContent = `Setores de ${nome()}${sufixo}`;
+    $("#link-tabela").href = `#/ativos?seg=${seg}${EST.homeSetores.length === 1 ? "&setor=" + encodeURIComponent(EST.homeSetores[0]) : ""}`;
+    $("#home-ag-xls").onclick = () => exportarAgenda(seg, perm);
+    $("#home-agenda").innerHTML = agendaLista(seg, perm).prox.slice(0, 8).map(([t, x]) => linhaAgenda(t, x)).join("") || '<p class="vazio">Sem datas futuras para este recorte.</p>';
     $("#listas").innerHTML = LISTAS_HOME.map((L) => {
-      const top = topLista(L, base);
-      if (top.length < 3) return "";
+      const top = topLista(L, lista);
+      if (!top.length) return "";
       return `<div class="lista"><h3>${esc(L.nome)}</h3><p class="sub">${esc(L.desc)}</p>
         ${top.map(([t, v]) => `<div class="lin"><div>${empresa(t, { semBadge: true })}<div class="valor">${fmt(t, L.k, v)}</div></div><a class="btn-ver" href="#/ativo/${t}">Ver ativo</a></div>`).join("")}
         <a class="btn-contorno" href="${L.link}${L.link.includes("?") ? "&" : "?"}seg=${seg}">Ver lista ›</a></div>`;
-    }).join("");
+    }).join("") || '<p class="vazio">Sem empresas neste recorte.</p>';
     const por = {};
-    for (const t of base) (por[A(t).setor_macro] = por[A(t).setor_macro] || []).push(t);
+    for (const t of lista) (por[A(t).setor_macro] = por[A(t).setor_macro] || []).push(t);
     $("#setores").innerHTML = Object.entries(por).sort((a, b) => b[1].length - a[1].length).map(([s, l]) => {
       const vl = l.filter((t) => !semValuation(t));
       const top = [...l].sort((a, b) => (ind(b).valor_mercado_brl || 0) - (ind(a).valor_mercado_brl || 0)).slice(0, 5);
-      return `<a class="setor" href="#/ativos?seg=${seg}&setor=${encodeURIComponent(s)}"><div class="setor-topo"><b>${esc(s)}</b><span class="qtd">${l.length} empresa${l.length === 1 ? "" : "s"}</span></div>
+      return `<a class="setor" href="#/ativos?seg=${seg}&setor=${encodeURIComponent(s)}"><div class="setor-topo"><b>${esc(s)}${SETORES_PERENES.includes(s) ? ' <span class="badge pos">perene</span>' : ""}</b><span class="qtd">${l.length} empresa${l.length === 1 ? "" : "s"}</span></div>
         <div class="logos-pilha">${top.map((t) => logo(t, "p")).join("")}</div>
         <div class="setor-nums"><div>P/L<b>${fmtU(mediana(vl.map((t) => ind(t).pl).filter((v) => v > 0)), "x")}</b></div><div>ROE<b>${fmtU(mediana(vl.map((t) => ind(t).roe)), "pct")}</b></div><div>DY<b>${fmtU(mediana(vl.map((t) => ind(t).dy)), "pct")}</b></div></div></a>`;
     }).join("");
+    desenharFeed();
   };
   $$("#home-seg button").forEach((b) => b.onclick = () => { EST.homeSeg = b.dataset.s; $$("#home-seg button").forEach((x) => x.classList.toggle("ativo", x === b)); desenhar(); });
   desenhar();
@@ -1120,10 +1182,11 @@ document.addEventListener("keydown", (e) => { if (e.key === "Escape") fecharModa
    ===================================================================== */
 const DIAS = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"];
 const MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
-function agendaLista(seg) {
+function agendaLista(seg, permitidos) {
   const hoje = new Date().toISOString().slice(0, 10);
   const prox = [], recentes = [];
   for (const t of filtroSeg(D.tickers, seg)) {
+    if (permitidos && !permitidos.has(t)) continue;
     const ag = D.fund[t].agenda || {};
     if (ag.proxima && ag.proxima.data && ag.proxima.data >= hoje) prox.push([t, ag.proxima]);
     if (ag.ultima && ag.ultima.entrega) recentes.push([t, ag.ultima]);
@@ -1336,8 +1399,8 @@ function exportarTabela(arquivo, lista, colunas) {
   const cols = colunas.filter((k) => !["ticker", "nome", "empresa"].includes(k));
   baixarExcel(arquivo, [{ nome: "Ativos", cab: ["Ticker", "Empresa", "Moeda dos fundamentos", ...cols.map(cabCol)], linhas: lista.map((t) => [t, A(t).nome, moedaDe(t), ...cols.map((k) => valCol(t, k))]) }]);
 }
-function exportarAgenda(seg) {
-  const { prox, recentes } = agendaLista(seg);
+function exportarAgenda(seg, permitidos) {
+  const { prox, recentes } = agendaLista(seg, permitidos);
   baixarExcel("calendario_resultados", [
     { nome: "Próximos resultados", cab: ["Data", "Ticker", "Empresa", "Período", "Situação", "Critério da data", "Prazo legal"],
       linhas: prox.map(([t, x]) => [dataBR(x.data), t, A(t).nome, x.rotulo || "", x.criterio && x.criterio.includes("Yahoo") ? "data informada" : "estimada", x.criterio || "", x.prazo_legal ? dataBR(x.prazo_legal) : ""]) },

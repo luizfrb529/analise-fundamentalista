@@ -493,3 +493,23 @@ tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72re
 
 .info.porque { border-color: color-mix(in srgb, var(--serie-2) 70%, transparent); color: var(--serie-2); margin-left: 3px; }
 .info + .info { margin-left: 3px; }
+
+/* ---------------- filtro de setores e feed da capa */
+.filtro-setores { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 14px; align-items: center; margin-top: 24px; padding: 12px 14px; border: 1px solid var(--borda); border-radius: 12px; background: var(--sup); }
+.filtro-setores .dropdown-painel { left: 0; right: auto; width: 320px; }
+.filtro-setores .chips .chip { padding: 4px 10px; font-size: .76rem; }
+.perenes { display: flex; gap: 12px; align-items: center; justify-content: space-between; font-size: .8rem; border-left: 3px solid var(--pos); padding-left: 12px; }
+.perenes b { color: var(--pos); font-size: .82rem; }
+.perenes .sub { font-size: .76rem; }
+.perenes.ativo { background: var(--pos-fundo); border-radius: 0 8px 8px 0; padding: 6px 10px; }
+.perenes .btn { white-space: nowrap; }
+.feed { display: grid; gap: 2px; }
+.feed-item { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; align-items: center; padding: 10px 6px; border-bottom: 1px solid var(--borda); }
+.feed-item:last-child { border-bottom: 0; }
+.feed-logos { display: flex; gap: 4px; flex-wrap: wrap; }
+.feed-tit { font-weight: 600; font-size: .9rem; }
+.feed-tit:hover { color: var(--acento); }
+.feed-item .meta { font-size: .74rem; color: var(--txt-3); margin-top: 3px; }
+.feed-item .meta a:hover { color: var(--acento); }
+@media (max-width: 920px) { .filtro-setores { grid-template-columns: minmax(0, 1fr); } .perenes { flex-direction: column; align-items: flex-start; } }
+@media (max-width: 680px) { .feed-item { grid-template-columns: minmax(0, 1fr); } }

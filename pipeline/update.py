@@ -490,6 +490,29 @@ def agenda_yfinance(simbolo: str, trimestral: list) -> dict:
     return out
 
 
+def montar_feed(pasta: Path, tickers: list, n_noticias: int = 150, n_comunicados: int = 150) -> dict:
+    """Notícias e comunicados de todas as empresas num arquivo só, do mais novo para o mais antigo.
+    A mesma notícia citada por várias empresas aparece uma vez, com todos os tickers."""
+    noticias, comunicados = {}, {}
+    for t in tickers:
+        arq = pasta / f"{t}.json"
+        if not arq.exists():
+            continue
+        j = json.loads(arq.read_text(encoding="utf-8"))
+        for x in j.get("noticias") or []:
+            chave = (x.get("titulo") or "").strip().lower()
+            if not chave:
+                continue
+            item = noticias.setdefault(chave, {**x, "tickers": []})
+            if t not in item["tickers"]:
+                item["tickers"].append(t)
+        for x in j.get("comunicados") or []:
+            chave = x.get("link") or f"{t}{x.get('titulo')}{x.get('data')}"
+            comunicados.setdefault(chave, {**x, "tickers": [t]})
+    ord_ = lambda l: sorted(l, key=lambda x: str(x.get("data") or ""), reverse=True)  # noqa: E731
+    return {"atualizado_em": AGORA.isoformat(), "noticias": ord_(noticias.values())[:n_noticias], "comunicados": ord_(comunicados.values())[:n_comunicados]}
+
+
 def grupo_modelo(m):
     return "BANCO" if m == "BANCO" else ("SEGURADORA" if m == "SEGURADORA" else "GERAL")
 
@@ -1326,6 +1349,7 @@ def main():
                      "proximo_resultado": prox, "calendario_cvm": r.get("calendario")})
         idx_news[t] = {"novos_48h": novos, "total_noticias": len(noticias), "total_comunicados": len(com)}
     gravar(DATA / "news" / "_index.json", idx_news)
+    gravar(DATA / "news" / "_feed.json", montar_feed(DATA / "news", [x["ticker"] for x in universo]))
 
     relatorio_cobertura(universo, resultados, meta)
     print("OK.", meta)
