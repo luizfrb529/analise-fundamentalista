@@ -448,6 +448,48 @@ def comunicados_sec(cik: int) -> list:
 
 
 # ===================================================================== núcleo por ativo
+def entregas_cvm(dfp: dict, itr: dict, cd) -> list:
+    """[(fim do período, 'ITR'/'DFP', data da 1ª entrega à CVM, link)] a partir dos índices dos arquivos DFP e ITR."""
+    primeira = {}
+    for doc, por_ano in (("DFP", dfp), ("ITR", itr)):
+        for tabs in por_ano.values():
+            df = tabs.get(f"{doc.lower()}_cia_aberta")
+            if df is None or df.empty or "DT_RECEB" not in df.columns:
+                continue
+            x = df[pd.to_numeric(df["CD_CVM"], errors="coerce") == int(cd)]
+            for _, r in x.iterrows():
+                chave = (str(r["DT_REFER"])[:10], doc)
+                if chave not in primeira or str(r["DT_RECEB"]) < primeira[chave][0]:
+                    primeira[chave] = (str(r["DT_RECEB"])[:10], r.get("LINK_DOC"))
+    return [(f, d, rec, lk) for (f, d), (rec, lk) in primeira.items()]
+
+
+def agenda_yfinance(simbolo: str, trimestral: list) -> dict:
+    """Próxima divulgação pelo calendário do Yahoo (BDRs); a última é o último trimestre da série."""
+    out = {}
+    if trimestral:
+        u = trimestral[-1]
+        out["ultima"] = {"fim": u["fim"], "rotulo": u["rotulo"], "entrega": None, "doc": None, "link": None}
+    try:
+        datas = [d for d in (S.acoes_yf(simbolo).calendar or {}).get("Earnings Date") or [] if d.isoformat() >= AGORA.date().isoformat()]
+    except Exception:
+        datas = []
+    fim = None
+    if trimestral:   # fim do próximo trimestre: último dia do mês três meses depois
+        f0 = dt.date.fromisoformat(trimestral[-1]["fim"])
+        m = f0.month + 3
+        ano, mes = f0.year + (m - 1) // 12, (m - 1) % 12 + 1
+        fim = (dt.date(ano + (mes == 12), mes % 12 + 1, 1) - dt.timedelta(days=1)).isoformat()
+    if datas:
+        out["proxima"] = {"data": min(datas).isoformat(), "fim": fim, "rotulo": I.rotulo_trimestre(fim) if fim else None,
+                          "criterio": "calendário informado ao Yahoo Finance", "passou": False}
+    elif fim:
+        prazo = dt.date.fromisoformat(fim) + dt.timedelta(days=60 if fim[5:7] == "12" else 40)
+        out["proxima"] = {"data": prazo.isoformat(), "fim": fim, "rotulo": I.rotulo_trimestre(fim),
+                          "criterio": "estimativa pelo prazo de entrega à SEC", "passou": prazo.isoformat() < AGORA.date().isoformat()}
+    return out
+
+
 def grupo_modelo(m):
     return "BANCO" if m == "BANCO" else ("SEGURADORA" if m == "SEGURADORA" else "GERAL")
 
@@ -574,6 +616,10 @@ def processar(ativo: dict, ctx: dict) -> dict:
         acionistas = fre_acionistas(ctx["fre"], cnpj)
         seg_fca = fca_segmentos(ctx["fca"], cnpj)
         comunic, calendario = comunicados_cvm(ctx["ipe"], cd)
+        try:
+            res["agenda"] = I.proxima_divulgacao(entregas_cvm(ctx["dfp"], ctx["itr"], cd), AGORA.date().isoformat())
+        except Exception as e:
+            aviso(t, f"agenda: {e}")
         seg_b3 = (info_b3.get("segment") or "").upper()
         seg_nome = SEGMENTOS_B3.get(seg_b3, seg_b3 or None)
         if ativo.get("segmento_listagem") and seg_b3 and ativo["segmento_listagem"].upper() != seg_b3:
@@ -649,6 +695,7 @@ def processar(ativo: dict, ctx: dict) -> dict:
             if gm in ("BANCO", "SEGURADORA"):
                 qy.pop("receita", None)   # "Total Revenue" do Yahoo não é comparável para instituições financeiras
             res["trimestral"] = I.serie_trimestral(qy)
+        res["agenda"] = agenda_yfinance(ext, res.get("trimestral") or [])
         if not ltm or ltm.get("lucro_liq") is None:
             ly = sec.ltm_yfinance(ext)
             if ly.get("lucro_liq") is not None:
@@ -1213,7 +1260,7 @@ def main():
                            "fonte": r.get("fonte_fundamentos"), "moeda": r.get("moeda_fundamentos"), "governanca": r.get("governanca"),
                            "bdr": r.get("bdr"), "mercado_exterior": {k: (r.get("mercado_exterior") or {}).get(k) for k in ("preco", "data", "var_dia")} if r.get("mercado_exterior") else None,
                            "valor_mercado_partes": r.get("valor_mercado_partes"), "cd_cvm": r.get("cd_cvm"), "cik": r.get("cik"),
-                           "holding": r.get("holding"), "cripto": r.get("cripto"), "piotroski": r.get("piotroski"), "acoes_por_papel": r.get("acoes_por_papel"),
+                           "holding": r.get("holding"), "cripto": r.get("cripto"), "piotroski": r.get("piotroski"), "agenda": r.get("agenda"), "acoes_por_papel": r.get("acoes_por_papel"),
                            "classes": r.get("classes"), "composicao_unit": a.get("composicao_unit"), "manuais_fonte": r.get("manuais_fonte"),
                            "avisos": AVISOS.get(t, [])}
         dividends[t] = r.get("proventos")

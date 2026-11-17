@@ -238,6 +238,7 @@ async function render() {
     else if (r === "rankings") pgRankings(app, q);
     else if (r === "ativo") await pgAtivo(app, p.toUpperCase());
     else if (r === "comparar") pgComparar(app, q);
+    else if (r === "calendario") pgCalendario(app, q);
     else if (r === "filtros") pgFiltros(app);
     else app.innerHTML = '<div class="cartao"><h1>Página não encontrada</h1><p><a class="lk" href="#/">Voltar ao início</a></p></div>';
   } catch (e) {
@@ -309,6 +310,10 @@ function pgHome(app) {
     <div class="linha centro" style="margin-top:22px"><a class="btn-contorno" id="link-tabela" href="#/ativos">Ver tabela completa ›</a></div>
   </section>
   <section class="secao">
+    <div class="secao-cab"><h2 class="titulo-barra">Próximos resultados</h2><a class="lk" href="#/calendario">Ver calendário completo →</a></div>
+    <div class="ag-faixa" id="home-agenda"></div>
+  </section>
+  <section class="secao">
     <div class="secao-cab"><h2 class="titulo-barra" id="tit-setores"></h2><span class="sub">Medianas de P/L, ROE e dividend yield de cada setor</span></div>
     <div class="setores" id="setores"></div>
   </section>`;
@@ -318,6 +323,7 @@ function pgHome(app) {
     $("#tit-listas").textContent = `Rankings de ${nome()}`;
     $("#tit-setores").textContent = `Setores de ${nome()}`;
     $("#link-tabela").href = `#/ativos?seg=${seg}`;
+    $("#home-agenda").innerHTML = agendaLista(seg).prox.slice(0, 8).map(([t, x]) => linhaAgenda(t, x)).join("") || '<p class="vazio">Sem datas futuras.</p>';
     $("#listas").innerHTML = LISTAS_HOME.map((L) => {
       const top = topLista(L, base);
       if (top.length < 3) return "";
@@ -364,15 +370,45 @@ function valorCriterio(t, id) {
     default: return ND;
   }
 }
+const CRIT_O_QUE = {
+  roic: "ROIC é o retorno sobre todo o capital investido (dívida + patrimônio); WACC é o custo desse capital. ROIC acima do WACC significa que cada real investido cria valor; abaixo, destrói valor.",
+  roe: "ROE é o lucro sobre o patrimônio dos acionistas. Acima de 15% e acima do custo do capital próprio indica que o dinheiro do acionista rende mais do que renderia em alternativas de risco parecido.",
+  divida: "Dívida líquida sobre EBITDA mostra quantos anos de geração operacional de caixa pagariam a dívida. Abaixo de 2x é confortável; negativo significa caixa maior que a dívida.",
+  margem_ebitda: "Margem EBITDA é o quanto sobra de cada real vendido depois dos custos operacionais, antes de juros, impostos e depreciação. Acima da mediana do setor sugere vantagem de custo ou de preço sobre os concorrentes.",
+  receita: "Crescimento médio anual da receita em 5 anos. Acima da inflação significa crescimento real: a empresa vende mais, não só repassa preço.",
+  lucro: "Crescimento médio anual do lucro em 5 anos, com pelo menos 3 anos de alta nos últimos 10. Lucro que cresce com constância sustenta valorização e dividendos.",
+  fcl: "Fluxo de caixa livre é o dinheiro que sobra depois dos investimentos. Positivo e recorrente mostra que o lucro vira caixa de verdade.",
+  ev_ebitda: "EV/EBITDA compara o valor da empresa (ações + dívida líquida) com a geração operacional. Abaixo da mediana dos pares indica preço relativo menor.",
+  pl: "PEG é o P/L dividido pelo crescimento do lucro. Até 1 indica que o preço pago pelo lucro é compatível com o ritmo de crescimento.",
+  cobertura: "Cobertura de juros é o lucro operacional (EBIT) dividido pelas despesas financeiras. Acima de 4x indica folga para pagar os juros.",
+};
+function explicaCriterio(t, id, v) {
+  const i = ind(t), f = D.fund[t], md = ((f.setor || {}).mediana_grupo) || {}, c = f.criterios || {};
+  const p = (x) => ok(x) ? nf2.format(x * 100) + "%" : "n/d", x = (y) => ok(y) ? nf2.format(y) : "n/d";
+  const det = {
+    roic: `ROIC de ${p(i.roic)} contra WACC de ${p(i.wacc)}${ok(i.roic) && ok(i.wacc) ? ` (diferença de ${nf2.format((i.roic - i.wacc) * 100)} p.p.; o mínimo é 3 p.p.)` : ""}.`,
+    roe: `ROE de ${p(i.roe)}; custo do capital próprio de ${p(i.taxa_referencia)}.`,
+    divida: ok(i.ebitda) && i.ebitda <= 0 ? "EBITDA negativo: a operação não gera caixa para pagar a dívida." : `Dívida líquida de ${x(i.divliq_ebitda)} vezes o EBITDA.`,
+    margem_ebitda: `Margem de ${p(i.margem_ebitda)} contra mediana do setor de ${p(md.margem_ebitda)}.`,
+    receita: `Receita cresceu ${p(i.cagr_receita_5a)} ao ano; inflação de referência de ${p(c.inflacao)}.`,
+    lucro: `Lucro cresceu ${p(i.cagr_lucro_5a)} ao ano; ${ok(i.consist_lucro) ? i.consist_lucro : "n/d"} anos de alta nos últimos 10.`,
+    fcl: `Fluxo de caixa livre de 12 meses: ${ok(i.fcl) ? moedaDe(t) + " " + grande(i.fcl) : "n/d"}; margem média de 5 anos: ${p(i.margem_fcl_5a)}.`,
+    ev_ebitda: `EV/EBITDA de ${x(i.ev_ebitda)} contra mediana dos pares de ${x(md.ev_ebitda)}.`,
+    pl: `P/L de ${x(i.pl)} e PEG de ${x(i.peg)}.`,
+    cobertura: `EBIT cobre ${x(i.cobertura_juros)} vezes as despesas financeiras.`,
+  }[id] || "";
+  const ver = v === true ? "Atende. " : v === false ? "Não atende. " : "Não avaliado: falta dado ou o critério não se aplica. ";
+  return `${CRIT_O_QUE[id] || ""}\n\n${ver}${v === null ? "" : det}`;
+}
 function blocoCriterios(t) {
   const c = D.fund[t].criterios, lista = D.imeta.criterios || [];
   if (!c || !lista.length) return "";
   const nota = ind(t).nota_criterios;
-  return `<div class="cartao"><div class="cartao-cab"><div><h3>Critérios fundamentalistas</h3><p class="sub">Cada critério pesa conforme a importância. Nota = estrelas atendidas sobre estrelas avaliadas.</p></div>
+  return `<div class="cartao"><div class="cartao-cab"><div><h3>Critérios fundamentalistas</h3><p class="sub">Cada critério pesa conforme a importância. Nota = estrelas atendidas sobre estrelas avaliadas. Passe o mouse em uma linha para ver o que o critério significa e por que a empresa atende ou não.</p></div>
     <div class="placar"><b>${ok(nota) ? nf2.format(nota) : "n/d"}</b><span>de 10</span></div></div>
     <div class="tabela-wrap"><table class="resp"><thead><tr><th>Indicador</th><th>Parâmetro desejável</th><th>Empresa</th><th>Importância</th><th class="n">Atende</th></tr></thead><tbody>
     ${lista.map(([id, nm, par, est]) => { const v = c.testes[id];
-      return `<tr><td class="cel-largo" data-label=""><b>${esc(nm)}</b></td><td data-label="Parâmetro" style="white-space:normal">${esc(par)}</td><td data-label="Empresa">${v === null && isFin(t) && ["roic", "divida", "margem_ebitda", "fcl", "ev_ebitda", "cobertura"].includes(id) ? '<span class="muted">não se aplica a bancos</span>' : valorCriterio(t, id)}</td>
+      return `<tr data-tip="${esc(explicaCriterio(t, id, v))}" class="linha-crit"><td class="cel-largo" data-label=""><b>${esc(nm)}</b> <i class="info">i</i></td><td data-label="Parâmetro" style="white-space:normal">${esc(par)}</td><td data-label="Empresa">${v === null && isFin(t) && ["roic", "divida", "margem_ebitda", "fcl", "ev_ebitda", "cobertura"].includes(id) ? '<span class="muted">não se aplica a bancos</span>' : valorCriterio(t, id)}</td>
         <td data-label="Importância">${estrelas(est)}</td><td class="n" data-label="Atende"><span class="ic-crit ${v === true ? "s" : v === false ? "n" : "x"}">${v === true ? "✓" : v === false ? "✕" : "n/d"}</span></td></tr>`; }).join("")}
     <tr><td class="cel-largo" data-label=""><b>Interferência estatal</b></td><td data-label="Parâmetro" style="white-space:normal">Sem controle nem poder de veto do governo (alerta, não entra na nota)</td>
       <td data-label="Empresa" style="white-space:normal">${estado(t) ? esc(rotEstado(t) + ": " + estado(t).resumo) : "Sem participação estatal relevante identificada"}</td><td data-label="Importância"><span class="muted">alerta</span></td>
@@ -559,6 +595,7 @@ const GRUPOS_IND = [
   { nome: "Crescimento", ks: ["cagr_receita_5a", "cagr_lucro_5a", "cresc_receita_ltm", "cresc_lucro_ltm"] },
   { nome: "Endividamento", ks: ["divliq_ebitda", "divliq_pl", "liquidez_corrente", "cobertura_juros", "pl_ativos", "passivos_ativos"] },
 ];
+const PRINCIPAIS = new Set(["pl", "dy", "roic", "roe", "margem_liquida", "margem_ebitda", "cagr_receita_5a", "cagr_lucro_5a", "divliq_ebitda"]);
 function cartaoInd(t, k, h) {
   const m = meta(k), v = val(t, k), st = D.fund[t].setor || {}, md = (st.mediana_grupo || {})[k];
   const sup = suprimido(t, k);
@@ -569,7 +606,8 @@ function cartaoInd(t, k, h) {
     const melhor = m.direcao ? (m.direcao > 0 ? v > md : v < md) : null;
     det = `${melhor === null ? "" : `<span class="${melhor ? "pos" : "neg"}">${melhor ? "▲" : "▼"}</span> `}Setor: ${fmtU(md, m.unidade, moedaDe(t))}`;
   }
-  return `<div class="ind"><div class="rot">${esc(rot(k))}${tip(k)}</div>${serie.filter(ok).length >= 3 ? `<button class="graf" data-k="${k}" aria-label="Histórico de ${esc(rot(k))}">${ICONE_GRAF}</button>` : ""}
+  const princ = PRINCIPAIS.has(k) && (k !== "roe" || isFin(t));
+  return `<div class="ind${princ ? " principal" : ""}">${princ ? '<span class="tag-principal">Principal</span>' : ""}<div class="rot">${esc(rot(k))}${tip(k)}</div>${serie.filter(ok).length >= 3 ? `<button class="graf" data-k="${k}" aria-label="Histórico de ${esc(rot(k))}">${ICONE_GRAF}</button>` : ""}
     <div class="val">${sup ? ND : fmt(t, k, v)}</div><div class="det">${det || "&nbsp;"}</div></div>`;
 }
 function ltmContas(t) {
@@ -578,6 +616,17 @@ function ltmContas(t) {
   const lucro = ok(i.valor_mercado) && ok(i.pl) && i.pl ? i.valor_mercado / i.pl : (ok(receita) && ok(i.margem_liquida) ? receita * i.margem_liquida : null);
   const pl = ok(i.valor_mercado) && ok(i.pvp) && i.pvp ? i.valor_mercado / i.pvp : null;
   return { receita, lucro, pl };
+}
+function baseResultado(t) {
+  const u = ((D.fund[t] || {}).agenda || {}).ultima;
+  if (!u) return `Balanço até o ${esc(D.fund[t].trimestre || "n/d")}`;
+  return `Último resultado: ${esc(u.rotulo)}, trimestre encerrado em ${dataBR(u.fim)}${u.entrega ? `, divulgado à CVM em ${dataBR(u.entrega)}` : ""}`;
+}
+function proxResultado(t, comLink = true) {
+  const pr = ((D.fund[t] || {}).agenda || {}).proxima;
+  if (!pr || !pr.data) return "";
+  const conf = pr.criterio && pr.criterio.includes("Yahoo") ? "data informada" : "estimada";
+  return `<span class="prox-res" data-tip="${esc(`Próxima divulgação (${pr.rotulo || ""}): ${dataBR(pr.data)}, ${conf}. Critério: ${pr.criterio}.${pr.prazo_legal ? ` Prazo legal: ${dataBR(pr.prazo_legal)}.` : ""}`)}">${comLink ? '<a href="#/calendario">' : ""}Próximo resultado: <b>${esc(pr.rotulo || "")} · ${dataBR(pr.data)}</b> <small>${conf}</small>${comLink ? "</a>" : ""}</span>`;
 }
 async function pgAtivo(app, t) {
   if (!D.univMap[t] || !D.fund[t]) { app.innerHTML = `<div class="cartao"><h1>${esc(t)}</h1><p>Ativo não encontrado.</p><p><a class="lk" href="#/">Voltar ao início</a></p></div>`; return; }
@@ -596,7 +645,7 @@ async function pgAtivo(app, t) {
 
   app.innerHTML = `${trilha([[isBDR(t) ? "BDRs" : "Ações", `#/ativos?seg=${segTab}`], [a.setor_macro, `#/ativos?seg=${segTab}&setor=${encodeURIComponent(a.setor_macro)}`], [t]])}
   <div class="ativo-topo">
-    <div class="ativo-id">${logo(t, "g")}<div><h1>${t}${classes.length ? classes.map((c) => `<span class="badge">${c}</span>`).join("") : ""}${isRec(t) ? `<span class="badge rec">${esc(recNome(t))}</span>` : ""}${estado(t) ? `<span class="badge estatal" data-tip="${esc(estado(t).resumo)}"><i class="q-estatal"></i>${rotEstado(t)}</span>` : ""}</h1><div class="nm">${esc(a.nome)}</div></div></div>
+    <div class="ativo-id">${logo(t, "g")}<div><h1>${t}${classes.length ? classes.map((c) => `<span class="badge">${c}</span>`).join("") : ""}${isRec(t) ? `<span class="badge rec">${esc(recNome(t))}</span>` : ""}${estado(t) ? `<span class="badge estatal" data-tip="${esc(estado(t).resumo)}"><i class="q-estatal"></i>${rotEstado(t)}</span>` : ""}</h1><div class="nm">${esc(a.nome)}</div>${proxResultado(t)}</div></div>
     <nav class="secoes-nav" id="secoes">${[["indicadores", "Indicadores"], ["criterios", "Critérios"], ["resultados", "Resultados"], ["proventos", "Proventos"], ["sobre", "Sobre a empresa"], ["governanca", "Governança"], ["noticias", "Comunicados"]].map(([id, nm]) => `<a href="#" data-sec="${id}">${nm}</a>`).join("")}</nav>
   </div>
 
@@ -614,7 +663,7 @@ async function pgAtivo(app, t) {
   ${isBDR(t) ? `<div class="aviso-info">BDR: fundamentos em ${mo === "US$" ? "dólar" : "reais (a empresa reporta em R$)"}. A tributação de proventos de BDR difere da de ações brasileiras.</div>` : ""}
 
   <section class="secao" id="sec-indicadores">
-    <div class="secao-cab"><h2 class="titulo-barra">Indicadores fundamentalistas</h2><span class="sub">Últimos 12 meses · comparação com a mediana de ${esc(st.grupo_nome || "o setor")}</span></div>
+    <div class="secao-cab"><h2 class="titulo-barra">Indicadores fundamentalistas</h2><span class="sub">Últimos 12 meses · ${baseResultado(t)} · comparação com a mediana de ${esc(st.grupo_nome || "o setor")}</span></div>
     ${pts.length ? `<div class="atencao" style="margin-bottom:16px">${pts.map((x) => `<span class="badge ${x.tipo}" data-tip="${esc(x.det)}">${esc(x.rot)}</span>`).join("")}</div>` : ""}
     ${grupos.map((g) => { const cards = g.ks.map((k) => cartaoInd(t, k, h)).join(""); return cards ? `<h4>${esc(g.nome)}</h4><div class="ind-grade">${cards}</div>` : ""; }).join("")}
   </section>
@@ -625,7 +674,7 @@ async function pgAtivo(app, t) {
   ${isCripto(t) ? `<section class="secao">${blocoCripto(t)}</section>` : ""}
 
   <section class="secao" id="sec-resultados">
-    <div class="secao-cab"><h2 class="titulo-barra">Resultados financeiros</h2><span class="sub">Balanço até o ${esc(f.trimestre || "n/d")} · ${esc(f.fonte || "")}</span></div>
+    <div class="secao-cab"><h2 class="titulo-barra">Resultados financeiros</h2><span class="sub">${baseResultado(t)} · ${esc(f.fonte || "")}</span></div>
     <div class="grade g3">
       <div class="cartao"><h3>Múltiplos de valuation</h3><div class="espaco" style="height:8px"></div>${kv("Valor de mercado", din(i.valor_mercado))}${isFin(t) ? "" : kv("Valor da firma (EV)", din(i.ev))}${kv("P/L", suprimido(t, "pl") ? ND : fmt(t, "pl"))}${kv("P/VP", fmt(t, "pvp"))}${isFin(t) ? "" : kv("EV/EBITDA", suprimido(t, "ev_ebitda") ? ND : fmt(t, "ev_ebitda"))}</div>
       <div class="cartao"><h3>Resultado em 12 meses</h3><div class="espaco" style="height:8px"></div>${isFin(t) ? "" : kv("Receita líquida", din(L.receita))}${isFin(t) ? "" : kv("EBITDA", din(i.ebitda))}${kv("Lucro líquido", din(L.lucro))}${isFin(t) ? "" : kv("Fluxo de caixa operacional", din(i.fco))}${isFin(t) ? "" : kv("Fluxo de caixa livre", din(i.fcl))}</div>
@@ -831,30 +880,43 @@ function blocoTrimestral(t, h) {
   const soma = (l, k) => l.every((x) => x && ok(x[k])) ? l.reduce((a, x) => a + x[k], 0) : null;
   const acc = noAno.length > 1 && antAno.every(Boolean) ? [[receitaK, "Receita"], ["lucro_liq", "Lucro líquido"]].map(([k, nm]) => [nm, soma(noAno, k), soma(antAno, k)]) : [];
   const rot9 = `${noAno.length * 3}M${ano.slice(2)}`, rot9a = `${noAno.length * 3}M${String(+ano - 1).slice(2)}`;
-  const ultimos = tri.slice(-8);
-  return `<div class="cartao-cab"><div><h3>Resultados trimestrais</h3><p class="sub">Último trimestre divulgado (${ult.rotulo}, encerrado em ${dataBR(ult.fim)}) contra o mesmo trimestre do ano anterior${ant ? ` (${ant.rotulo})` : ""}.</p></div></div>
-  <div class="ind-grade">${itens.map(([k, nm, u]) => `<div class="ind"><div class="rot">${nm}</div><div class="val">${vf(ult[k], u)}</div>
+  // pares: cada trimestre mais recente (1T a 4T) contra o mesmo trimestre do ano anterior
+  const porNum = {};
+  for (const x of tri) porNum[x.rotulo[0]] = x;
+  const pares = Object.values(porNum).map((x) => [triAnterior(tri, x), x]).filter(([a]) => a).sort((a, b) => a[1].fim.localeCompare(b[1].fim));
+  const agu = ((D.fund[t] || {}).agenda || {}).ultima;
+  const colunas = [[receitaK, receitaK === "receita" ? "Receita" : "Rec. intermediação", "din"], ["ebitda", "EBITDA", "din"], ["lucro_liq", "Lucro líquido", "din"], ["margem_liquida", "Margem líquida", "pct"]]
+    .filter(([k]) => pares.some(([a, b]) => ok(a[k]) || ok(b[k])));
+  return `<div class="cartao-cab"><div><h3>Resultados trimestrais</h3><p class="sub">Os números consideram o último resultado trimestral divulgado: <b>${ult.rotulo}</b>, trimestre encerrado em ${dataBR(ult.fim)}${agu && agu.entrega && agu.fim === ult.fim ? `, entregue à CVM em ${dataBR(agu.entrega)}` : ""}. Comparação com o mesmo trimestre do ano anterior${ant ? ` (${ant.rotulo})` : ""}.</p></div></div>
+  <div class="ind-grade">${itens.map(([k, nm, u]) => `<div class="ind"><div class="rot">${nm} ${ult.rotulo}</div><div class="val">${vf(ult[k], u)}</div>
     <div class="det">${ant ? `${ant.rotulo}: ${vf(ant[k], u)} · ${variacao(ult[k], ant[k], u)}` : "sem trimestre comparável"}</div></div>`).join("")}</div>
   ${acc.length ? `<h4>Acumulado do ano (${rot9} contra ${rot9a})</h4><div class="ind-grade">${acc.map(([nm, a, b]) => `<div class="ind"><div class="rot">${nm} ${rot9}</div><div class="val">${vf(a, "din")}</div><div class="det">${rot9a}: ${vf(b, "din")} · ${variacao(a, b, "din")}</div></div>`).join("")}</div>` : ""}
-  <div class="grade" style="margin-top:16px">
-    <div><h4>Últimos trimestres</h4><div class="grafico peq"><canvas id="g-tri"></canvas></div></div>
-    <div><h4>Tabela trimestral</h4><div class="tabela-wrap"><table><thead><tr><th></th>${ultimos.slice(-5).map((x) => `<th class="n">${x.rotulo}</th>`).join("")}</tr></thead><tbody>
-      ${[[receitaK, receitaK === "receita" ? "Receita" : "Rec. intermediação", "din"], ["ebitda", "EBITDA", "din"], ["lucro_liq", "Lucro líquido", "din"], ["margem_ebitda", "Margem EBITDA", "pct"], ["margem_liquida", "Margem líquida", "pct"]]
-        .filter(([k]) => ultimos.some((x) => ok(x[k])))
-        .map(([k, nm, u]) => `<tr><td>${nm}</td>${ultimos.slice(-5).map((x) => `<td class="n">${vf(x[k], u)}</td>`).join("")}</tr>`).join("")}
-    </tbody></table></div></div>
-  </div>`;
+  ${pares.length ? `<h4>Trimestre contra o mesmo trimestre do ano anterior</h4>
+  <div class="linha entre" style="margin-bottom:8px"><span class="sub">Barras claras: ano anterior. Barras verdes: ano mais recente.</span>
+    <div class="abas" id="tri-met" style="margin:0">${colunas.map(([k, nm], i) => `<button data-k="${k}" class="${i === 0 ? "ativo" : ""}">${nm}</button>`).join("")}</div></div>
+  <div class="grafico peq"><canvas id="g-tri"></canvas></div>
+  <div class="tabela-wrap" style="margin-top:14px"><table class="tab-pares"><thead><tr><th>Trimestre</th>${colunas.map(([, nm]) => `<th class="n" colspan="3">${nm}</th>`).join("")}</tr>
+    <tr class="sub-cab"><th></th>${colunas.map(() => '<th class="n">Ano anterior</th><th class="n">Atual</th><th class="n">Variação</th>').join("")}</tr></thead><tbody>
+    ${pares.map(([a, b]) => `<tr><td><b>${b.rotulo}</b> <span class="muted">contra ${a.rotulo}</span></td>${colunas.map(([k, , u]) => `<td class="n muted">${vf(a[k], u)}</td><td class="n"><b>${vf(b[k], u)}</b></td><td class="n">${variacao(b[k], a[k], u)}</td>`).join("")}</tr>`).join("")}
+  </tbody></table></div>` : ""}`;
 }
-function graficoTrimestral(t, h) {
-  const el = $("#g-tri"), tri = (h.trimestral || []).slice(-8);
+function graficoTrimestral(t, h, chave) {
+  const el = $("#g-tri"), tri = h.trimestral || [];
   if (!el || !window.Chart || !tri.length) return;
-  const rk = tri.some((x) => ok(x.receita)) ? "receita" : "rec_interm", mo = moedaDe(t);
-  const o = optGraf({ moeda: mo + " " });
-  o.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: ${ok(ctx.parsed.y) ? nf2.format(ctx.parsed.y) + " bi" : "n/d"}`;
-  charts.push(new Chart(el, { type: "bar", data: { labels: tri.map((x) => x.rotulo), datasets: [
-    { label: `${rk === "receita" ? "Receita" : "Rec. intermediação"} (${mo} bi)`, data: tri.map((x) => ok(x[rk]) ? x[rk] / 1e9 : null), backgroundColor: cor("--serie-2"), borderRadius: 3 },
-    { label: `Lucro líquido (${mo} bi)`, data: tri.map((x) => ok(x.lucro_liq) ? x.lucro_liq / 1e9 : null), backgroundColor: tri.map((x) => (x.lucro_liq || 0) >= 0 ? cor("--serie") : cor("--neg")), borderRadius: 3 },
+  const porNum = {};
+  for (const x of tri) porNum[x.rotulo[0]] = x;
+  const pares = Object.values(porNum).map((x) => [triAnterior(tri, x), x]).filter(([a]) => a).sort((a, b) => a[1].fim.localeCompare(b[1].fim));
+  const k = chave || (tri.some((x) => ok(x.receita)) ? "receita" : "rec_interm"), mo = moedaDe(t), pct = k.startsWith("margem");
+  const conv = (v) => ok(v) ? (pct ? v * 100 : v / 1e9) : null;
+  charts = charts.filter((c) => { if (c.canvas === el) { c.destroy(); return false; } return true; });
+  const o = optGraf({});
+  o.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: ${ok(ctx.parsed.y) ? nf2.format(ctx.parsed.y) + (pct ? "%" : ` ${mo === "US$" ? "US$" : "R$"} bi`) : "n/d"}`;
+  o.plugins.tooltip.callbacks.title = (it) => { const [a, b] = pares[it[0].dataIndex]; return `${b.rotulo} contra ${a.rotulo}`; };
+  charts.push(new Chart(el, { type: "bar", data: { labels: pares.map(([a, b]) => `${b.rotulo} x ${a.rotulo}`), datasets: [
+    { label: "Ano anterior", data: pares.map(([a]) => conv(a[k])), backgroundColor: cor("--borda-forte"), borderRadius: 3 },
+    { label: "Ano mais recente", data: pares.map(([, b]) => conv(b[k])), backgroundColor: pares.map(([, b]) => (b[k] || 0) >= 0 ? cor("--serie") : cor("--neg")), borderRadius: 3 },
   ] }, options: o }));
+  $$("#tri-met button").forEach((bt) => bt.onclick = () => { $$("#tri-met button").forEach((x) => x.classList.toggle("ativo", x === bt)); graficoTrimestral(t, h, bt.dataset.k); });
 }
 async function graficoProventos(t) {
   const pv = await proventos(t), el = $("#g-prov");
@@ -892,6 +954,48 @@ function modalHistorico(t, k, h) {
   }
 }
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") fecharModal(); });
+
+/* =====================================================================
+   CALENDÁRIO DE RESULTADOS
+   ===================================================================== */
+const DIAS = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"];
+const MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+function agendaLista(seg) {
+  const hoje = new Date().toISOString().slice(0, 10);
+  const prox = [], recentes = [];
+  for (const t of filtroSeg(D.tickers, seg)) {
+    const ag = D.fund[t].agenda || {};
+    if (ag.proxima && ag.proxima.data && ag.proxima.data >= hoje) prox.push([t, ag.proxima]);
+    if (ag.ultima && ag.ultima.entrega) recentes.push([t, ag.ultima]);
+  }
+  prox.sort((a, b) => a[1].data.localeCompare(b[1].data));
+  recentes.sort((a, b) => b[1].entrega.localeCompare(a[1].entrega));
+  return { prox, recentes };
+}
+function linhaAgenda(t, x, recente) {
+  const dtx = new Date((recente ? x.entrega : x.data) + "T12:00:00");
+  const conf = recente ? "divulgado" : x.criterio && x.criterio.includes("Yahoo") ? "data informada" : "estimada";
+  return `<a class="ag-linha" href="#/ativo/${t}" data-tip="${esc(recente ? `${x.rotulo} divulgado à CVM em ${dataBR(x.entrega)}.` : `${x.rotulo}: ${dataBR(x.data)} (${conf}). Critério: ${x.criterio}.${x.prazo_legal ? ` Prazo legal: ${dataBR(x.prazo_legal)}.` : ""}`)}">
+    <div class="ag-data"><b>${String(dtx.getDate()).padStart(2, "0")}</b><span>${MESES[dtx.getMonth()].slice(0, 3)}</span></div>
+    <div style="min-width:0">${empresa(t, { link: false, semBadge: true })}</div>
+    <div class="ag-info"><span class="badge">${esc(x.rotulo || "")}</span><span class="ag-conf ${recente ? "pos" : conf === "estimada" ? "muted" : ""}">${conf}</span><small class="muted">${DIAS[dtx.getDay()]}</small></div></a>`;
+}
+function pgCalendario(app, q) {
+  const seg = q.get("seg") || "TODOS";
+  const { prox, recentes } = agendaLista(seg);
+  const porMes = {};
+  for (const [t, x] of prox) { const k = x.data.slice(0, 7); (porMes[k] = porMes[k] || []).push([t, x]); }
+  app.innerHTML = `${trilha([["Calendário"]])}<div class="cab-pagina"><div><h1>Calendário de resultados</h1>
+    <p>Próximas divulgações de resultados trimestrais e anuais. Para ações brasileiras, a data é estimada pela entrega do mesmo período no ano anterior, sem passar do prazo legal da CVM; para BDRs, vem do calendário informado ao Yahoo Finance ou do prazo da SEC. Passe o mouse para ver o critério de cada data.</p></div></div>
+  <div class="segmentado" id="cal-seg" style="margin-bottom:18px">${[["TODOS", "Todos"], ["ACAO_BR", "Ações"], ["BDR", "BDRs"]].map(([k, n]) => `<button data-s="${k}" class="${seg === k ? "ativo" : ""}">${n}</button>`).join("")}</div>
+  <div class="grade g-3-2">
+    <div>${Object.entries(porMes).map(([m, l]) => `<div class="cartao" style="margin-bottom:16px"><h3>${MESES[+m.slice(5) - 1].replace(/^./, (c) => c.toUpperCase())} de ${m.slice(0, 4)} <span class="muted" style="font-weight:500">· ${l.length} empresa${l.length === 1 ? "" : "s"}</span></h3>
+      <div class="ag-lista">${l.map(([t, x]) => linhaAgenda(t, x)).join("")}</div></div>`).join("") || '<div class="cartao"><p class="vazio">Sem datas futuras neste recorte.</p></div>'}</div>
+    <div><div class="cartao"><h3>Divulgados recentemente</h3><p class="sub">Entregas à CVM mais recentes.</p><div class="ag-lista">${recentes.slice(0, 15).map(([t, x]) => linhaAgenda(t, x, true)).join("") || '<p class="vazio">Sem registros.</p>'}</div></div></div>
+  </div>`;
+  ligarLinhas(app);
+  $$("#cal-seg button").forEach((b) => b.onclick = () => { location.hash = `#/calendario?seg=${b.dataset.s}`; });
+}
 
 /* =====================================================================
    COMPARADOR

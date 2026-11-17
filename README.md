@@ -100,6 +100,7 @@ Se o setor micro for novo, acrescente o crescimento real dele em `data/config.js
 - Início: busca, chave Ações/BDRs que muda toda a página, listas top 5 e setores.
 - Ativos: tabela completa com conjuntos de colunas prontos, busca, filtro por setor e exportação em CSV. Filtros avançados em `#/filtros`.
 - Empresa: cotação, resultados trimestrais (último trimestre contra o mesmo do ano anterior e acumulado do ano), P/L ano a ano, indicadores em cartões (cada um abre o histórico anual), TIR e crescimento implícitos, Piotroski, resultados financeiros, proventos, governança, comunicados e empresas do setor.
+- Calendário: próximas divulgações e entregas recentes. Ações: data estimada pela entrega do mesmo período no ano anterior (índices DFP/ITR da CVM, coluna DT_RECEB), limitada ao prazo legal; BDRs: calendário do Yahoo ou prazo da SEC.
 - Rankings (classificação por critérios ponderados e rankings por indicador) e Comparador.
 - Critérios ponderados: lista, parâmetros e estrelas em `CRITERIOS` (pipeline/indicators.py); custo da dívida e IR em data/config.json (`spread_divida`, `ir_brasil`, `ir_eua`).
 
