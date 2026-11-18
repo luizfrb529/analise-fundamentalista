@@ -1,0 +1,86 @@
+{
+ "ticker": "WEGE3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Fabricante de motores, equipamentos elétricos, transformadores e tintas. Recorde de 62,5% da receita no exterior no 3T26, com a América do Norte como principal mercado.",
+ "modelo": "A WEG fabrica e vende motores elétricos, automação, inversores, geradores, transformadores, sistemas de energia e tintas industriais para indústrias, concessionárias de energia e fabricantes de eletrodomésticos. A receita vem da venda de produtos seriados e de projetos sob encomenda, com fábricas no Brasil e em vários países. O negócio é ligado ao investimento industrial e em infraestrutura elétrica (transmissão, data centers, renováveis).",
+ "segmentos": [
+  {
+   "nome": "Equipamentos eletroeletrônicos industriais",
+   "peso_receita": 0.5,
+   "periodo": "3T26",
+   "obs": "Motores e automação; R$ 5,39 bi no trimestre (49,6%)."
+  },
+  {
+   "nome": "Geração, transmissão e distribuição (GTD)",
+   "peso_receita": 0.38,
+   "periodo": "3T26",
+   "obs": "Cerca de R$ 4,19 bi; exterior cresceu 24,1% com transformadores e geradores na América do Norte."
+  },
+  {
+   "nome": "Motores comerciais e appliance e tintas e vernizes",
+   "peso_receita": 0.12,
+   "periodo": "3T26",
+   "obs": "Calculado por diferença; no 2T26 motores comerciais eram cerca de 7,6% da receita."
+  }
+ ],
+ "geografia": {
+  "brasil_pct": 0.375,
+  "exterior_pct": 0.625,
+  "periodo": "3T26",
+  "texto": "Receita externa de R$ 6,79 bi (US$ 1,32 bi) no 3T26, maior fatia da história. A América do Norte respondeu por 54,7% das vendas externas (+31,1% em dólar), seguida por Europa, Ásia-Pacífico e África; 60,2% do capex do trimestre foi em fábricas no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "baixa",
+  "texto": "Cerca de 62,5% da receita é gerada fora do Brasil, em dólar e outras moedas. A empresa tem caixa líquido (R$ 2,54 bi em set/26), então dólar mais alto aumenta receita e lucro em reais; no 3T26 o dólar médio 5,7% menor reduziu o crescimento em reais."
+ },
+ "momento": "No 3T26 (divulgado em 21/10/2026), a receita líquida foi de R$ 10,86 bi (+5,7% sobre o 3T25), o Ebitda de R$ 2,35 bi (+3,1%, margem de 21,6% contra 22,2%) e o lucro líquido de R$ 1,67 bi (+0,9%), números abaixo do consenso. A margem foi pressionada por alta do cobre, tarifas de importação nos EUA e despesas com expansão de capacidade. O mercado interno cresceu 1,8% e o externo 8,3% em reais (14,8% em dólar). No acumulado de 9M26 a receita ficou estável (-0,3%), com mercado interno em queda de 7,9% por menor demanda em geração solar; o ROIC foi de 33,2%.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula investimento industrial e projetos de energia no Brasil, mas o mercado interno é hoje só 37,5% da receita."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "Com 62,5% da receita no exterior e caixa líquido, dólar mais alto eleva diretamente receita e lucro em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Cobre e aço são os principais insumos e encarecem o custo, como no 3T26, efeito compensado pela maior demanda de mineração e óleo e gás por equipamentos."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade eleva pedidos de motores e equipamentos no Brasil, com peso limitado pela forte exposição externa."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "A empresa costuma repassar custos aos preços, e boa parte da receita está fora do Brasil."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Risco fiscal tende a enfraquecer o real, o que ajuda a receita externa, mas reduz investimento doméstico; efeitos se compensam."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Times Brasil (CNBC): WEG, lucro do terceiro trimestre e mercado externo recorde",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/weg-lucro-terceiro-trimestre-mercado-externo-recorde/",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "Cenário Energia: WEG lucra R$ 1,67 bilhão no 3T26, mas margem Ebitda recua",
+   "url": "https://cenarioenergia.com.br/2026/10/21/weg-lucra-r-167-bilhao-no-3t26-mas-margem-ebitda-recua/",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "BB Investimentos (investalk): WEG apresenta 3T26 misto",
+   "url": "https://investalk.bb.com.br/noticias/mercado/WEGE-3T26",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "BP Money: WEG lucro de R$ 1,67 bilhão no 3º trimestre de 2026",
+   "url": "https://bpmoney.com.br/negocios/empresas-na-bolsa/weg-wege3-lucro-167-bilhao-3-trimestre-2026/",
+   "data": "2026-10-21"
+  }
+ ]
+}

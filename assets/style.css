@@ -545,3 +545,5 @@ tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72re
 .sobre-fontes { margin: 0; padding-left: 18px; font-size: .84rem; display: grid; gap: 4px; }
 #sobre-ver, #sens-ver { margin-top: 12px; }
 @media (max-width: 560px) { .sobre-destaques { grid-template-columns: minmax(0, 1fr); } }
+.sobre-destaques .nd-txt { color: var(--txt-3); font-size: .86rem; font-weight: 600; }
+#sobre .grade { align-items: start; }

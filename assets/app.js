@@ -994,13 +994,13 @@ async function blocoSobre(t) {
   const pct = (x) => ok(x) ? nf0.format(x * 100) + "%" : ND;
   const nivel = (x) => x ? `<b>${esc(x[0].toUpperCase() + x.slice(1))}</b>` : ND;
   const destaques = pf ? `<div class="sobre-destaques">
-      <div><span>Receita no exterior</span>${pf.geografia && ok(pf.geografia.exterior_pct) ? `<b>${pct(pf.geografia.exterior_pct)}</b><small>${esc(pf.geografia.periodo || "")}</small>` : ND}</div>
+      <div><span>${pf.geografia && pf.geografia.base ? `Exterior (${esc(pf.geografia.base)})` : "Receita no exterior"}</span>${pf.geografia && ok(pf.geografia.exterior_pct) ? `<b>${pct(pf.geografia.exterior_pct)}</b><small>${esc(pf.geografia.periodo || "")}</small>` : '<b class="nd-txt">Não divulgada</b>'}</div>
       <div><span>Receita em dólar</span>${nivel(pf.moeda && pf.moeda.receita_em_dolar)}</div>
       <div><span>Dívida em dólar</span>${nivel(pf.moeda && pf.moeda.divida_em_dolar)}</div></div>` : "";
   const segs = pf && (pf.segmentos || []).filter((x) => ok(x.peso_receita));
   const detalhe = pf ? `<div class="sobre-mais" id="sobre-mais" hidden>
       ${pf.modelo ? `<h4>Modelo de negócio</h4><p>${esc(pf.modelo)}</p>` : ""}
-      ${segs && segs.length ? `<h4>Receita por segmento${segs[0].periodo ? ` (${esc(segs[0].periodo)})` : ""}</h4><div class="barras">${segs.map((x) => `<div class="linha-barra"${x.obs ? ` data-tip="${esc(x.obs)}"` : ""}><span>${esc(x.nome)}</span><span class="barra"><i style="left:0;width:${Math.min(100, x.peso_receita * 100)}%;background:var(--acento)"></i></span><span class="num">${pct(x.peso_receita)}</span></div>`).join("")}</div>` : ""}
+      ${segs && segs.length ? `<h4>${esc(pf.segmentos_base && !/^receita/i.test(pf.segmentos_base) ? pf.segmentos_base + " por segmento" : "Receita por segmento")}${segs[0].periodo ? ` (${esc(segs[0].periodo)})` : ""}</h4><div class="barras">${segs.map((x) => `<div class="linha-barra"${x.obs ? ` data-tip="${esc(x.obs)}"` : ""}><span>${esc(x.nome)}</span><span class="barra"><i style="left:0;width:${Math.min(100, x.peso_receita * 100)}%;background:var(--acento)"></i></span><span class="num">${pct(x.peso_receita)}</span></div>`).join("")}</div>` : ""}
       ${pf.geografia && pf.geografia.texto ? `<h4>Onde atua</h4><p>${esc(pf.geografia.texto)}</p>` : ""}
       ${pf.moeda && pf.moeda.texto ? `<h4>Exposição a moeda</h4><p>${esc(pf.moeda.texto)}</p>` : ""}
       ${pf.momento ? `<h4>Momento atual</h4><p>${esc(pf.momento)}</p>` : ""}

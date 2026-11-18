@@ -1,0 +1,85 @@
+{
+ "ticker": "SBSP3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Concessionária de água e esgoto do estado de São Paulo, com tarifa regulada e reajustada pela inflação. O ponto central é o ciclo de investimentos financiado com dívida, que eleva a despesa financeira.",
+ "modelo": "A Sabesp presta serviços de abastecimento de água, coleta e tratamento de esgoto em municípios paulistas, com receita recorrente cobrada de clientes residenciais, comerciais e industriais por meio de tarifa regulada. Após a privatização, opera sob contrato de concessão com metas de universalização até 2029, o que exige investimento pesado. A receita de construção registrada no balanço (norma contábil de concessões) não tem margem relevante; por isso o mercado acompanha a receita e o Ebitda ajustados. Desde 2026 consolida receita de energia da EMAE.",
+ "segmentos": [
+  {
+   "nome": "Saneamento (água e esgoto)",
+   "peso_receita": 0.98,
+   "periodo": "3T26",
+   "obs": "Receita líquida de serviços de R$ 6,14 bilhões, excluída a receita de construção."
+  },
+  {
+   "nome": "Energia (EMAE)",
+   "peso_receita": 0.02,
+   "periodo": "3T26",
+   "obs": "R$ 150 milhões, sem equivalente no 3T25."
+  }
+ ],
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "texto": "Opera apenas no estado de São Paulo, com a Região Metropolitana como principal mercado. Não tem receita no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita é 100% em reais. A maior parte da dívida é em reais, atrelada a CDI e IPCA; há linhas com organismos multilaterais, mas a parcela exposta a dólar não foi confirmada para o 3T26. O efeito de uma alta do dólar tende a ser pequeno."
+ },
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita líquida ajustada subiu 9%, para R$ 5,96 bilhões, e o Ebitda ajustado chegou a R$ 3,65 bilhões, com margem de 61% (59% no 3T25). O lucro líquido ajustado caiu 13,8%, para R$ 1,107 bilhão, e o lucro contábil caiu 35,7%, para R$ 1,388 bilhão, por causa da maior despesa financeira e de um ganho não recorrente de R$ 1,5 bilhão com precatórios no 3T25. O capex do trimestre foi de R$ 4,5 bilhões (cerca de R$ 12 bilhões em 9M26), e a dívida líquida subiu cerca de 34% no ano, para algo entre R$ 37 e 39 bilhões conforme o critério. A companhia aprovou R$ 2,64 bilhões em juros sobre capital próprio, equivalentes a 50% do lucro de 9M26.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Dívida crescente para financiar o capex, em grande parte atrelada a CDI e IPCA: juro menor reduz a despesa financeira, que já é o principal fator de queda do lucro."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita toda em reais e exposição cambial da dívida pequena."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Insumos químicos e energia pesam nos custos, mas o contrato prevê repasse por reajuste tarifário."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Consumo residencial é estável, mas atividade mais forte eleva volumes comerciais e industriais e reduz inadimplência."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "A tarifa é reajustada pela inflação; parte da dívida também é indexada ao IPCA, o que limita o ganho."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior eleva juros futuros e o custo de refinanciar uma dívida em expansão."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "InfoMoney: Sabesp tem lucro líquido ajustado de R$ 1,107 bi no 3º tri",
+   "url": "https://www.infomoney.com.br/mercados/sabesp-sbsp3-resultados-terceiro-trimestre-2026/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Eu Quero Investir: Sabesp tem lucro líquido de R$ 1,39 bilhão no 3T26",
+   "url": "https://euqueroinvestir.com/acoes/sabesp-tem-lucro-liquido-de-r-139-bilhao-no-3t26-queda-de-357",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "CNN Brasil: Sabesp tem lucro de R$ 1,39 bilhão no 3º trimestre",
+   "url": "https://www.cnnbrasil.com.br/infra/sabesp-tem-lucro-de-r-139-bilhao-no-3-trimestre-queda-de-357/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "brapi (compilação de Money Times, InfoMoney e Times Brasil): Sabesp supera projeções no 3º tri",
+   "url": "https://brapi.dev/news/sabesp-supera-projecoes-no-3-tri-e-anuncia-r-2-64-bi-e9474fec",
+   "data": "2026-11-07"
+  },
+  {
+   "titulo": "Times Brasil: Sabesp tem lucro ajustado de R$ 1,1 bilhão no 3º trimestre",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/saneamento/sabesp-registra-lucro-liquido-ajustado-de-r-1107-bilhao-no-terceiro-trimestre/",
+   "data": "2026-11-05"
+  }
+ ]
+}

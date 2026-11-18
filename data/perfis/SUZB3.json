@@ -1,0 +1,91 @@
+{
+ "ticker": "SUZB3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Produtora de celulose de eucalipto, com papel, embalagens e, desde jul/26, a Arbex (papel higiênico e lenços com a Kimberly-Clark). Receita majoritariamente em dólar e no exterior.",
+ "modelo": "A Suzano planta eucalipto e produz celulose de fibra curta vendida principalmente a fabricantes de papel no exterior, com preço em dólar definido pelo mercado internacional. Também vende papéis de imprimir, embalagens de papelão e bens de consumo (tissue). Desde 01/07/2026 consolida a Arbex, joint venture com a Kimberly-Clark (51% Suzano) com 22 fábricas em 14 países e licença de marcas como Kleenex e Scott. A receita é recorrente em volume, mas o resultado oscila com o preço da celulose e o câmbio.",
+ "segmentos": [
+  {
+   "nome": "Celulose",
+   "peso_receita": 0.57,
+   "periodo": "3T26",
+   "obs": "R$ 9,6 bilhões; 3,1 milhões de toneladas vendidas; responde pela maior parte do Ebitda."
+  },
+  {
+   "nome": "Bens de consumo (inclui Arbex)",
+   "peso_receita": 0.29,
+   "periodo": "3T26",
+   "obs": "R$ 5,0 bilhões; primeiro trimestre com a Arbex consolidada."
+  },
+  {
+   "nome": "Papel e embalagem",
+   "peso_receita": 0.14,
+   "periodo": "3T26",
+   "obs": "R$ 2,4 bilhões; 374 mil toneladas vendidas."
+  }
+ ],
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "texto": "Florestas e fábricas de celulose ficam no Brasil, mas a maior parte da celulose é exportada, com preço em dólar. Com a Arbex, a empresa passou a ter fábricas e vendas de tissue em 14 países fora do Brasil, o que elevou a fatia de receita gerada no exterior a partir do 3T26."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "alta",
+  "texto": "A celulose é vendida em dólar e a dívida também é majoritariamente em moeda estrangeira (dívida líquida de US$ 14,7 bilhões no 3T26). Dólar mais alto eleva receita e geração de caixa em reais, mas causa perda contábil na conversão da dívida, que afeta o lucro do trimestre sem efeito imediato de caixa; a empresa usa derivativos para proteger parte da exposição."
+ },
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita líquida subiu 36%, para R$ 16,5 bilhões, com a entrada da Arbex, e o Ebitda ajustado subiu 9%, para cerca de R$ 5,6 a 5,7 bilhões, com margem de 34% (43% no 3T25). O lucro líquido foi de R$ 2,08 bilhões, alta de 6%. O pagamento pela Arbex e a dívida incorporada elevaram a dívida líquida em 15% no trimestre, para US$ 14,7 bilhões (R$ 76,3 bilhões), com alavancagem de 3,7x em dólar (3,4x pro forma). A empresa projeta fechar 2026 com dívida líquida abaixo de US$ 14 bilhões (câmbio de R$ 5,40) e mantém meta de médio prazo, para 2027 e 2028, de US$ 11 bilhões e alavancagem abaixo de 2,5x, sem considerar os efeitos da Arbex.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A dívida é majoritariamente em dólar e a receita vem do exterior, então a Selic tem efeito pequeno no resultado."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "Receita de celulose em dólar e custo de produção em reais (R$ 825 por tonelada no 3T26): dólar alto amplia margem e caixa em reais."
+  },
+  "commodities_subindo": {
+   "nota": 2,
+   "porque": "Celulose é commodity; alta de preço vai quase integralmente para a margem, já que o custo é em boa parte fixo e em reais."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O mercado doméstico pesa pouco; o que move a receita é a demanda global por celulose e tissue."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação brasileira eleva custos de madeira, logística e mão de obra, mas o preço de venda é em dólar e o efeito líquido é pequeno."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal costuma desvalorizar o real, o que favorece exportadora com receita em dólar, embora aumente a dívida convertida em reais."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "CNN Brasil: Suzano lucra R$ 2,08 bi no 3º tri de 2026, alta de 6%",
+   "url": "https://www.cnnbrasil.com.br/agro/suzano-lucra-r-208-bi-no-3o-tri-de-2026-alta-de-6/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Eu Quero Investir: Suzano balanço 3T26",
+   "url": "https://euqueroinvestir.com/mercados/suzano-balanco-3t26-lucro",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "PaperAge: Suzano and Kimberly-Clark finalize $3.4 billion JV to create Arbex",
+   "url": "https://www.paperage.com/2026news/07-02-2026suzano-and-kimberly-clark-finalize-$3--4-billion-jv-to-create-arbex.html",
+   "data": "2026-07-02"
+  },
+  {
+   "titulo": "Manufacturing Dive: Kimberly-Clark and Suzano $3.4B tissue joint venture",
+   "url": "https://www.manufacturingdive.com/news/kimberly-clark-suzano-3-4-billion-tissue-joint-venture-kleenex-scott-viva/749963/",
+   "data": "2026-07-01"
+  },
+  {
+   "titulo": "BP Money: Suzano 3T26, dívida líquida e metas",
+   "url": "https://bpmoney.com.br/?p=434247",
+   "data": "2026-11-05"
+  }
+ ]
+}

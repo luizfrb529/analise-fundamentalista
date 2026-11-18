@@ -1,0 +1,80 @@
+{
+ "ticker": "MSFT34",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR da Microsoft, de software e nuvem (Azure, Microsoft 365). Para o investidor brasileiro, o valor acompanha a ação em dólar e a variação do câmbio.",
+ "modelo": "A Microsoft vende software e serviços de nuvem para empresas e consumidores: infraestrutura e IA na nuvem Azure, assinaturas do Microsoft 365, Dynamics, LinkedIn e GitHub, além de Windows, Xbox e dispositivos Surface. A maior parte da receita é recorrente, por assinatura ou consumo de nuvem, com contratos plurianuais (carteira comercial contratada de US$ 677 bilhões em set/26). Desde o ano fiscal de 2027 reporta dois segmentos: Agents and Infra (nuvem, software corporativo e IA) e Devices and Consumer. O BDR MSFT34 é negociado na B3 e representa ações listadas na Nasdaq.",
+ "segmentos": [
+  {
+   "nome": "Agents and Infra (Azure, Microsoft 365, Dynamics, LinkedIn)",
+   "peso_receita": 0.83,
+   "periodo": "1T do ano fiscal 2027 (jul a set/26)",
+   "obs": "US$ 76,8 bilhões, alta de 25%; Azure cresceu 48%."
+  },
+  {
+   "nome": "Devices and Consumer (Windows, Xbox, Surface, Bing)",
+   "peso_receita": 0.17,
+   "periodo": "1T do ano fiscal 2027 (jul a set/26)",
+   "obs": "US$ 15,5 bilhões, queda de 3%."
+  }
+ ],
+ "geografia": {
+  "brasil_pct": 0.0,
+  "exterior_pct": 1.0,
+  "periodo": "Ano fiscal 2026 (jul/25 a jun/26)",
+  "texto": "Do ponto de vista do investidor brasileiro, toda a receita é externa: 51,5% nos Estados Unidos (US$ 170,8 bilhões) e 48,5% em outros países (US$ 161,0 bilhões) no ano fiscal 2026. Nenhum país além dos EUA passa de 10% da receita."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "baixa",
+  "texto": "Os resultados são em dólar e o BDR replica a ação em dólar convertida para reais, então a alta do dólar valoriza o BDR na B3. A dívida é em dólar e pequena frente à geração de caixa: em jun/26 havia US$ 76,8 bilhões em caixa e aplicações contra cerca de US$ 40 bilhões em títulos de dívida; somando os arrendamentos financeiros de data centers (US$ 66,6 bilhões), a posição passa a dívida líquida de cerca de US$ 30 bilhões."
+ },
+ "momento": "No 1T do ano fiscal 2027 (trimestre encerrado em 30/09/2026, divulgado em 28/10/2026), a receita subiu 19%, para US$ 92,3 bilhões, e o lucro operacional subiu 21%, para US$ 45,9 bilhões (margem de cerca de 50%). O lucro líquido contábil foi de US$ 36,6 bilhões, alta de 32%, ou US$ 36,4 bilhões em base ajustada (alta de 18%), já que a base de comparação tinha perda de US$ 3,1 bilhões ligada à OpenAI. A receita do Azure cresceu 48%, para US$ 33,2 bilhões, primeira vez em que o valor foi divulgado em dólares. O investimento em data centers segue elevado (US$ 45,2 bilhões incluindo arrendamentos financeiros) e o fluxo de caixa livre caiu 27%, para US$ 18,6 bilhões; a projeção para o trimestre seguinte é de receita entre US$ 96 e 97,1 bilhões.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A empresa não opera com crédito no Brasil; a Selic só afeta o BDR indiretamente, pela comparação com a renda fixa local."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "O BDR é a ação em dólar convertida para reais: cada alta do dólar se soma diretamente ao retorno em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Software e nuvem têm baixa dependência de commodities; energia para data centers é o custo mais próximo, com efeito limitado."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O Brasil é parcela pequena da receita; o que importa é o gasto global de empresas com nuvem e IA."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação brasileira não afeta a operação; contratos de assinatura permitem repasse de preços no mercado global."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal no Brasil tende a desvalorizar o real, o que eleva o BDR em reais, funcionando como proteção para o investidor local."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Microsoft FY27 Q1 Earnings Press Release",
+   "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "SiliconANGLE: resultados do 1T do ano fiscal 2027 da Microsoft",
+   "url": "https://siliconangle.com/?p=852356",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "Microsoft Form 10-K, ano fiscal 2026 (receita por região, caixa e dívida)",
+   "url": "https://fortune.com/company-assets/1861/quartr/annual-report-10-k-83e73ff4ec29a490befb68812eb1b111-2026-07-29-20-09-47.pdf",
+   "data": "2026-07-29"
+  },
+  {
+   "titulo": "sec-api.io: análise do 10-K do ano fiscal 2026 da Microsoft",
+   "url": "https://sec-api.io/insights/financial-analysis-of-microsoft-fy2026-capital-intensity-against-a-record-margin",
+   "data": "2026-09-02"
+  }
+ ]
+}

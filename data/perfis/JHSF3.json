@@ -1,0 +1,119 @@
+{
+ "ticker": "JHSF3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Grupo de alta renda com shoppings, hotéis Fasano, aeroporto executivo e incorporação. No 3T26, metade da receita veio de incorporação; operações no exterior (EUA e Uruguai) ainda são pequenas e sem número divulgado.",
+ "modelo": "A JHSF desenvolve e administra ativos voltados ao público de alta renda: shoppings (Cidade Jardim, Catarina, CJ Boa Vista Village), o Grupo Fasano (11 hotéis e 36 restaurantes), o Aeroporto Executivo Catarina, clubes e residências, além da gestora JHSF Capital (R$ 12,9 bi sob gestão em set/26). A renda recorrente vem de aluguéis, diárias, restaurantes, aviação e taxas de gestão; a incorporação gera receita pontual com venda de lotes e casas, em boa parte para fundos imobiliários estruturados pela própria JHSF Capital.",
+ "segmentos": [
+  {
+   "nome": "Incorporação",
+   "peso_receita": 0.5,
+   "periodo": "3T26",
+   "obs": "Receita bruta de cerca de R$ 483 mi (+161%), puxada pela segunda tranche da Fazenda Santa Helena vendida a FII."
+  },
+  {
+   "nome": "Hospitalidade e gastronomia (Fasano)",
+   "peso_receita": 0.13,
+   "periodo": "3T26",
+   "obs": "R$ 127,3 mi de receita bruta (+12,3%)."
+  },
+  {
+   "nome": "Aviação e náutica",
+   "peso_receita": 0.13,
+   "periodo": "3T26",
+   "obs": "R$ 125,9 mi (+102%), inclui o FBO de Opa-Locka, em Miami, desde abril de 2026."
+  },
+  {
+   "nome": "Shoppings",
+   "peso_receita": 0.11,
+   "periodo": "3T26",
+   "obs": "R$ 108,8 mi (+17%), ocupação de 98,5%."
+  },
+  {
+   "nome": "Residences e Clubs",
+   "peso_receita": 0.1,
+   "periodo": "3T26",
+   "obs": "Cerca de R$ 99 mi (+42%)."
+  },
+  {
+   "nome": "JHSF Capital e outros",
+   "peso_receita": 0.02,
+   "periodo": "3T26",
+   "obs": "Diferença entre a renda recorrente total (R$ 481,8 mi) e os segmentos acima."
+  }
+ ],
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "texto": "Quase toda a receita é gerada no Brasil. No exterior, já operam com receita: o hotel Fasano Fifth Avenue e 3 restaurantes em Nova York, o Fasano Las Piedras e 4 restaurantes em Punta del Este, o FBO de Opa-Locka em Miami (desde abril de 2026) e o complexo Enjoy Punta del Este, com cassino, comprado por US$ 160 mi e concluído em julho de 2026. Fasano Miami (previsto para 2027), Londres, Milão, Sardenha, Cascais e La Barra ainda são projetos em desenvolvimento."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "baixa",
+  "texto": "A empresa não divulga quanto da receita vem do exterior; as operações em dólar (Nova York, Miami, Uruguai) e as taxas de marca Fasano são pequenas frente ao total, mas crescem com Enjoy e Embassair. A dívida é majoritariamente em CDI e IPCA; há empréstimo do Citibank ao Fasano Nova York (R$ 347 mi em jun/26) e dívida em dólar no segmento de aviação, compensados em parte por aplicações financeiras em dólar mantidas no caixa, o que deixa efeito líquido de alta do dólar levemente positivo."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita bruta consolidada foi de R$ 917,8 mi (+62,6% sobre o 3T25), o Ebitda ajustado de R$ 469,6 mi (+78,7%, margem de 54,9%) e o lucro líquido de R$ 391,5 mi (+28,6%); a margem líquida caiu de 58,9% para 45,8% por menor valorização de propriedades para investimento. A renda recorrente somou R$ 481,8 mi (+40,8%), com aviação dobrando de tamanho. A empresa terminou setembro com caixa líquido gerencial de R$ 741,1 mi (R$ 1,19 bi em junho), que inclui recebíveis, e dívida bruta de R$ 6,49 bi. Em 2026 comprou o FBO Embassair em Miami (abril) e o Enjoy Punta del Este (julho), e no início de novembro recebeu autorização para voos internacionais privados no aeroporto de Las Piedras, no Uruguai.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Juro menor favorece a venda de imóveis de alto padrão, valoriza shoppings e propriedades para investimento e reduz o custo da dívida, que é majoritariamente em CDI."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Hotéis, restaurantes e o FBO no exterior, além de aplicações em dólar no caixa, ganham valor em reais; o efeito é pequeno porque a receita externa ainda é baixa e há dívida em dólar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities; o efeito indireto via riqueza do agronegócio, cliente relevante do aeroporto e dos imóveis, é difuso."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade eleva vendas dos lojistas e ocupação dos hotéis, mas o público de alta renda é menos sensível ao ciclo econômico."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Aluguéis corrigidos por IGP-M e preços de hotelaria acompanham a inflação, enquanto parte da dívida em IPCA encarece, efeitos que se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior pressiona juros longos, o que reduz o valor de imóveis e a disposição de compra em lançamentos de alto padrão."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "JHSF, Earnings Release 2T26 (inclui ITR)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/1389c06d-4b85-4082-ae2b-3cc3b67db647/21aa483c-3455-dcff-495a-4b5ebfebe9e2?origin=2",
+   "data": "2026-08-13"
+  },
+  {
+   "titulo": "NeoFeed: Com o caixa cheio, JHSF traça plano para exportar seu ecossistema de alta renda",
+   "url": "https://neofeed.com.br/negocios/com-o-caixa-cheio-jhsf-traca-plano-para-exportar-seu-ecossistema-de-alta-renda/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Bloomberg Línea: Aeroporto dobra receita e já rivaliza com Fasano na JHSF",
+   "url": "https://www.bloomberglinea.com.br/negocios/aeroporto-dobra-receita-e-ja-rivaliza-com-fasano-na-jhsf-mas-custos-pressionam-margem/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Forbes Brasil: balanço JHSF3, lucro do terceiro trimestre",
+   "url": "https://forbes.com.br/forbes-money/forbes-real-estate/2026/11/balanco-jhsf3-lucro-terceiro-trimestre/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): JHSF lucra R$ 391,5 milhões no 3º trimestre",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/jhsf-lucra-r-3915-milhoes-no-3o-trimestre-alta-de-286/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Money Times: JHSF conclui compra do Enjoy Punta del Este",
+   "url": "https://moneytimes.com.br/jhsf-jhsf3-conclui-compra-do-enjoy-punta-del-este-complexo-tera-hotel-fasano-shopping-e-residenciais-igdl/",
+   "data": "2026-07-13"
+  },
+  {
+   "titulo": "NeoFeed: JHSF compra empresa de aviação executiva em Miami",
+   "url": "https://neofeed.com.br/negocios/jhsf-compra-empresa-de-aviacao-executiva-em-miami-e-aumenta-sua-forca-internacional/",
+   "data": "2026-04-27"
+  }
+ ]
+}

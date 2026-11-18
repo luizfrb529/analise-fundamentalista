@@ -1,0 +1,97 @@
+{
+ "ticker": "VIVA3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior rede de joalherias do Brasil, com as marcas Vivara e Life e venda de relógios. Receita toda no país, ligada ao consumo de renda média e alta e ao preço do ouro e da prata.",
+ "modelo": "A Vivara fabrica e vende joias, acessórios e relógios em lojas próprias, principalmente em shoppings, e pelo canal digital. A marca Vivara atende o segmento de joias em ouro e pedras; a Life, de prata e acessórios, mira público mais amplo e é o principal vetor de expansão de lojas. A receita é pontual (venda no varejo) e concentrada em datas comemorativas, sobretudo no quarto trimestre. A fabricação própria permite controlar margem, mas expõe a empresa ao preço dos metais.",
+ "segmentos": [
+  {
+   "nome": "Joias (marca Vivara)",
+   "peso_receita": 0.51,
+   "periodo": "3T26",
+   "obs": "Alta de 2,1% no ano; a empresa segurou repasse de preço com a queda do ouro."
+  },
+  {
+   "nome": "Life",
+   "peso_receita": 0.32,
+   "periodo": "3T26",
+   "obs": "Cerca de R$ 275 milhões, alta de 10,3%; 250 lojas Life ao fim do trimestre."
+  },
+  {
+   "nome": "Relógios",
+   "peso_receita": 0.16,
+   "periodo": "3T26",
+   "obs": "Cerca de R$ 143 milhões, alta de 15,5%, com marcas próprias em expansão."
+  },
+  {
+   "nome": "Outros",
+   "peso_receita": 0.01,
+   "periodo": "3T26",
+   "obs": "Diferença residual sobre a receita bruta de R$ 867,4 milhões."
+  }
+ ],
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "texto": "Opera no Brasil, com 533 pontos de venda ao fim do 3T26, sendo 272 lojas Vivara e 250 lojas Life. Não há receita relevante no exterior; a produção fica em fábrica própria em Manaus."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais; a empresa captou R$ 300 milhões em debêntures a CDI + 0,65% ao ano. A exposição ao dólar está no custo: ouro e prata são cotados em dólar e parte dos relógios é importada, então dólar mais alto encarece a matéria-prima."
+ },
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita líquida subiu 4,3%, para R$ 692,9 milhões, e a receita bruta subiu 7,7%, para R$ 867,4 milhões, puxada por Life e relógios. O Ebitda ajustado caiu 22,4%, para R$ 132,7 milhões, com margem de 19,1% (25,7% no 3T25), e o lucro líquido ajustado caiu 22,2%, para R$ 119,9 milhões, por menor repasse de preço em joias, custo maior da prata e alta de 11,3% nas despesas. O canal digital cresceu 25,3% e já é 16% das vendas. A dívida líquida caiu para R$ 149,7 milhões, ou 0,2x o Ebitda (0,5x um ano antes), e a meta é abrir 55 a 65 lojas em 2026 (35 até setembro).",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Joias e relógios são compras discricionárias, muitas vezes parceladas: juro menor estimula crédito e consumo, e a empresa ainda paga CDI na dívida."
+  },
+  "dolar_subindo": {
+   "nota": -1,
+   "porque": "Ouro e prata são cotados em dólar e parte dos relógios é importada; dólar alto encarece insumos sem receita em moeda forte para compensar."
+  },
+  "commodities_subindo": {
+   "nota": -1,
+   "porque": "Alta de ouro e prata eleva o custo da matéria-prima; o repasse ao preço existe, mas com defasagem e risco de perder volume."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Vendas dependem de renda e confiança do consumidor; atividade mais forte sustenta vendas mesmas lojas e expansão da Life."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação corrói renda disponível para itens não essenciais e pressiona aluguel em shoppings e salários."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal tende a elevar juros e dólar, o que pesa sobre consumo discricionário e custo dos metais."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Diário do Grande ABC: Vivara registra lucro líquido ajustado de R$ 119,9 milhões no 3tri26",
+   "url": "https://www.dgabc.com.br/Noticia/4367163/vivara-registra-lucro-liquido-ajustado-de-r-119-9-milhoes-no-3tri26-recuo-de-22-2",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Money Times / Reuters: Ação da Vivara despenca após balanço do 3º tri",
+   "url": "https://www.moneytimes.com.br/acao-da-vivara-despenca-apos-balanco-do-3o-tri/",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Bloomberg Línea: Vivara retoma compra de ouro e prevê margem estável e caixa sólido em 2027, diz CFO",
+   "url": "https://www.bloomberglinea.com.br/negocios/vivara-retoma-compra-de-ouro-e-preve-margem-estavel-e-caixa-solido-em-2027-diz-cfo/",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Mercado & Consumo: Vivara tem lucro de R$ 119,9 milhões no 3º tri",
+   "url": "https://mercadoeconsumo.com.br/06/11/2026/mc-capital/vivara-tem-lucro-de-r-1199-milhoes-no-3o-tri-queda-de-222-afetada-por-alta-em-despesas/",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "BP Money: resultado da Vivara no 3T26",
+   "url": "https://bpmoney.com.br/?p=434259",
+   "data": "2026-11-06"
+  }
+ ]
+}

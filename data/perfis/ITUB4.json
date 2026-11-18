@@ -1,0 +1,94 @@
+{
+ "ticker": "ITUB4",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior banco privado do país, com crédito, cartões, seguros e serviços. Cerca de 94% do lucro vem do Brasil; o restante, de operações na América Latina, como o Chile.",
+ "modelo": "O Itaú Unibanco ganha dinheiro principalmente com a margem financeira (diferença entre o que cobra no crédito e o custo de captação), além de tarifas de serviços (cartões, conta corrente, gestão de recursos, banco de investimento) e seguros. Atende pessoas físicas, micro, pequenas e médias empresas e grandes empresas no Brasil e tem operações em Chile, Uruguai, Paraguai, Argentina e Colômbia (esta última reduzida ao atacado). A receita é majoritariamente recorrente.",
+ "segmentos": [
+  {
+   "nome": "Pessoa física (Brasil)",
+   "peso_receita": 0.32,
+   "periodo": "3T26",
+   "obs": "Peso na carteira de crédito, não na receita: R$ 500,4 bi, com imobiliário, cartão e consignado."
+  },
+  {
+   "nome": "Grandes empresas (Brasil)",
+   "peso_receita": 0.31,
+   "periodo": "3T26",
+   "obs": "Peso na carteira: R$ 479,4 bi (+9,5% em 12 meses)."
+  },
+  {
+   "nome": "Micro, pequenas e médias empresas (Brasil)",
+   "peso_receita": 0.21,
+   "periodo": "3T26",
+   "obs": "Peso na carteira: R$ 320,4 bi (+15,1% em 12 meses)."
+  },
+  {
+   "nome": "América Latina",
+   "peso_receita": 0.16,
+   "periodo": "3T26",
+   "obs": "Peso na carteira: R$ 244,2 bi (+6% em 12 meses, sem câmbio)."
+  }
+ ],
+ "geografia": {
+  "brasil_pct": 0.84,
+  "exterior_pct": 0.16,
+  "periodo": "3T26",
+  "texto": "Percentuais da carteira de crédito: R$ 1,3 tri no Brasil e R$ 244,2 bi na América Latina, com destaque para o Chile. No lucro, a América Latina respondeu por cerca de 6,2% no 3T26. Em julho de 2026 o banco concluiu a venda do varejo na Colômbia ao Banco de Bogotá e mantém no país só atividades de atacado.",
+  "base": "carteira"
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita das operações fora do Brasil é em pesos chilenos e outras moedas latino-americanas, não em dólar, e representa parcela pequena do lucro. O banco tem captações e ativos em moeda estrangeira, mas costuma proteger a exposição cambial, de modo que uma alta do dólar tem efeito líquido pequeno no resultado."
+ },
+ "momento": "No 3T26 (divulgado em 03/11/2026), o lucro recorrente gerencial foi de R$ 12,6 bi (+6,2% sobre o 3T25), com ROE de 23,6% (24,3% no 2T26). A carteira de crédito chegou a R$ 1,544 tri (+10,2% em 12 meses), a inadimplência acima de 90 dias subiu de 1,9% para 2,0%, puxada por pequenas e médias empresas, e o custo do crédito foi de R$ 10,4 bi (+10,2%). A margem financeira com clientes cresceu 6,9% e as receitas de serviços ficaram estáveis em cerca de R$ 11 bi; o capital principal (CET1) estava em 12,7%. O banco manteve as projeções de 2026 (carteira +5,5% a 9,5%, custo do crédito de R$ 38,5 a 43,5 bi) e reduziu a alíquota efetiva de IR/CS esperada para 28% a 29%.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "Juro menor reduz a remuneração do capital próprio e do float, mas estimula crédito e reduz inadimplência; efeitos se compensam para um banco com captação barata."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "A exposição cambial é protegida e a receita externa está em moedas latino-americanas, com peso pequeno no lucro."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Efeito indireto: melhora a qualidade do crédito do agronegócio, que puxou a carteira de grandes empresas, mas sem impacto direto relevante."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Atividade maior eleva demanda por crédito, especialmente de PMEs e pessoa física, e reduz a inadimplência, que subiu no 3T26."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação eleva receitas nominais e a margem com o capital de giro do banco, mas tende a trazer juro alto e pressão sobre a renda dos devedores."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal eleva juros longos, desacelera o crédito e pressiona a inadimplência de famílias e PMEs, além de afetar o valor da carteira de títulos públicos."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Forbes Brasil (Reuters): Itaú Unibanco tem lucro líquido recorrente de R$ 12,6 bi no 3º tri",
+   "url": "https://forbes.com.br/forbes-money/2026/11/itau-unibanco-tem-lucro-liquido-recorrente-de-r126-bi-no-3o-tri/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Seu Dinheiro: Itaú lucra R$ 12,6 bilhões no 3T26",
+   "url": "https://www.seudinheiro.com/2026/empresas/itau-itub4-com-lucro-roe-rentabilidade-banco-balanco-do-3t26-miql/",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "Jornal do Brasil: Itaú lucra R$ 12,617 bilhões no trimestre, mas AL cresce mais do que o Brasil",
+   "url": "https://www.jb.com.br/economia/2026/11/1061443-itau-lucra-rs-12-617-bilhoes-no-trimestre-e-rs-37-405-bilhoes-em-2026-mas-al-cresce-mais-do-que-o-brasil.html",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "Mercado & Consumo: carteira de crédito do Itaú chega a R$ 1,54 tri no 3º trimestre",
+   "url": "https://mercadoeconsumo.com.br/04/11/2026/mc-capital/itau-carteira-de-credito-total-chega-a-r-154-tri-no-3o-trimestre-alta-de-102-em-um-ano/amp/",
+   "data": "2026-11-04"
+  }
+ ],
+ "segmentos_base": "Carteira de crédito"
+}

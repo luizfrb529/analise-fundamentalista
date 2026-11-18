@@ -1,0 +1,102 @@
+{
+ "ticker": "EMBJ3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Fabricante de aviões comerciais, executivos e de defesa, com área de serviços. Cerca de 92% da receita vem do exterior e é cotada em dólar.",
+ "modelo": "A Embraer projeta, fabrica e vende jatos comerciais de até cerca de 150 assentos (E1 e E2), jatos executivos (Phenom e Praetor) e aeronaves de defesa (KC-390 Millennium e A-29 Super Tucano). A receita de venda de aeronaves é pontual e depende do ritmo de entregas; a área de Serviços e Suporte (peças, manutenção, treinamento) é recorrente e tem margem maior. A carteira de pedidos firmes dá visibilidade de vários anos. A empresa também controla a Eve, de mobilidade aérea urbana, ainda sem receita relevante.",
+ "segmentos": [
+  {
+   "nome": "Aviação Comercial",
+   "peso_receita": 0.3,
+   "periodo": "3T26",
+   "obs": "US$ 696 milhões, alta de 13% em dólar; margem EBIT ajustada de 2,4%."
+  },
+  {
+   "nome": "Aviação Executiva",
+   "peso_receita": 0.28,
+   "periodo": "3T26",
+   "obs": "US$ 655 milhões, com 41 jatos entregues no trimestre."
+  },
+  {
+   "nome": "Serviços e Suporte",
+   "peso_receita": 0.27,
+   "periodo": "3T26",
+   "obs": "US$ 638 milhões, receita recorrente e segmento de maior margem junto com Executiva."
+  },
+  {
+   "nome": "Defesa e Segurança",
+   "peso_receita": 0.15,
+   "periodo": "3T26",
+   "obs": "US$ 341 milhões, alta de 22%, puxada pelo KC-390."
+  }
+ ],
+ "geografia": {
+  "brasil_pct": 0.08,
+  "exterior_pct": 0.92,
+  "periodo": "2025",
+  "texto": "Em 2025, a América do Norte respondeu por 59% da receita, a Europa por 24%, o Brasil por 8% e o restante por Ásia, América Latina e outros. A produção fica principalmente no Brasil, com unidades nos Estados Unidos e em Portugal."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "alta",
+  "texto": "Praticamente toda a receita é precificada em dólar, que é a moeda funcional da empresa; 97% da dívida também está em moeda estrangeira (dez/25). Como parte relevante dos custos (mão de obra e fábricas) está em reais, a alta do dólar tende a ampliar a margem e o resultado convertido em reais."
+ },
+ "momento": "No 3T26 (divulgado em 10/11/2026), a receita foi recorde para um terceiro trimestre: US$ 2,35 bilhões (R$ 12,1 bilhões), alta de 17% em dólar, com 66 aeronaves entregues. A margem EBIT ajustada subiu para 10,9%, ante 8,6% no 3T25, mas o lucro líquido ajustado caiu 15,6%, para R$ 379,8 milhões, pressionado pela despesa financeira, que mais que dobrou. A empresa passou de dívida líquida de US$ 214,5 milhões em junho para caixa líquido de US$ 430 milhões em setembro (sem Eve). A carteira de pedidos chegou a US$ 35,7 bilhões, recorde, e o guidance de receita de 2026 subiu para US$ 8,4 a 8,6 bilhões, com fluxo de caixa livre ajustado de pelo menos US$ 700 milhões.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A dívida é quase toda em moeda estrangeira e as vendas são feitas a clientes no exterior, então o juro doméstico tem pouco efeito direto no resultado."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "Receita em dólar e parte dos custos em reais: dólar mais alto amplia margem e aumenta o lucro convertido em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Alumínio, titânio e combustível de aviação pesam nos custos e na demanda das aéreas, mas o efeito é indireto e diluído."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O Brasil representa cerca de 8% da receita; o que importa é a demanda de companhias aéreas e clientes executivos nos EUA e na Europa."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Pressiona custos de mão de obra em reais, mas os contratos são em dólar e o efeito líquido é pequeno."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal maior costuma enfraquecer o real, o que favorece uma exportadora com receita em dólar; o orçamento de defesa brasileiro é parcela pequena da receita."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Embraer Form 20-F 2025 (SEC): receita por região e dívida por moeda",
+   "url": "https://www.sec.gov/Archives/edgar/data/1355444/000162828026021824/R76.htm",
+   "data": "2026-03-xx"
+  },
+  {
+   "titulo": "Embraer Form 20-F 2025 (SEC): empréstimos e financiamentos por moeda",
+   "url": "https://www.sec.gov/Archives/edgar/data/1355444/000162828026021824/R114.htm",
+   "data": "2026-03-xx"
+  },
+  {
+   "titulo": "Embraer Earnings Results 3rd Quarter 2026 (release, via Finviz/PR Newswire)",
+   "url": "https://finviz.com/news/419776/embraer-earnings-results-3rd-quarter-2026",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Folha de Pernambuco / O Globo: Embraer tem receita recorde de R$ 12 bilhões e eleva projeção",
+   "url": "https://www.folhape.com.br/economia/embraer-tem-receita-recorde-de-r-12-bilhoes-eleva-projecao-de/523381/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Diário do Grande ABC: Embraer registra lucro líquido de R$ 379,8 milhões no 3º trimestre",
+   "url": "https://www.dgabc.com.br/Noticia/4367835/embraer-registra-lucro-liquido-de-de-r-379-8-milhoes-no-3-trimestre-15-6-ante-um-ano",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "AeroTime: Embraer raises 2026 outlook after record Q3 revenue",
+   "url": "https://www.aerotime.aero/articles/embraer-raises-2026-outlook-record-q3-revenue/amp",
+   "data": "2026-11-xx"
+  }
+ ]
+}

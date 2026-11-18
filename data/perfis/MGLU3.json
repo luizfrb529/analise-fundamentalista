@@ -1,0 +1,92 @@
+{
+ "ticker": "MGLU3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Varejista de eletrônicos e móveis com lojas físicas, e-commerce próprio e marketplace. Receita 100% no Brasil e muito sensível a juros e crédito ao consumidor.",
+ "modelo": "O Magazine Luiza vende eletrodomésticos, eletrônicos, celulares e móveis em 1.238 lojas físicas e no e-commerce próprio (1P), além de cobrar comissões de vendedores no marketplace (3P). Complementa a receita com serviços financeiros (Luizacred, em parceria com o Itaú, e MagaluPay), publicidade e logística. Também controla Netshoes, KaBuM!, Época Cosméticos e Estante Virtual.",
+ "segmentos": [
+  {
+   "nome": "E-commerce próprio (1P)",
+   "peso_receita": 0.4,
+   "periodo": "3T26",
+   "obs": "Peso nas vendas totais, não na receita líquida: R$ 5,9 bi (-8,6%)."
+  },
+  {
+   "nome": "Lojas físicas",
+   "peso_receita": 0.36,
+   "periodo": "3T26",
+   "obs": "Peso nas vendas totais: R$ 5,2 bi (+10%, mesmas lojas +9,5%)."
+  },
+  {
+   "nome": "Marketplace (3P)",
+   "peso_receita": 0.24,
+   "periodo": "3T26",
+   "obs": "Peso nas vendas totais (GMV de parceiros): cerca de R$ 3,5 bi (-11,9%); para o Magalu gera receita de comissão."
+  }
+ ],
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "texto": "Toda a operação e a venda são no Brasil. Não há projeto de operação no exterior; em 2026 a empresa passou a vender também em marketplaces de terceiros (Mercado Livre, Shopee, Amazon)."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida em reais. Uma alta do dólar encarece eletrônicos e componentes importados, o que pressiona preços e demanda."
+ },
+ "momento": "No 3T26 (divulgado em 10/11/2026), as vendas totais foram de R$ 14,56 bi (-3,6%), com lojas físicas em alta de 10% e e-commerce em queda de 9,8%; a receita líquida foi de R$ 8,9 bi (-0,9%). O Ebitda ajustado foi de R$ 710 mi (margem de 7,9%, estável), o lucro ajustado de R$ 13,9 mi (-34,6%) e o resultado contábil um prejuízo de R$ 10,7 mi, ante lucro de R$ 84,6 mi no 3T25, com juros altos pesando nas despesas financeiras. O caixa líquido ajustado caiu para R$ 503,8 mi (R$ 1,6 bi um ano antes). Em outubro de 2026 as vendas das lojas físicas cresceram 16% e o 1P online 14%, com a empresa ganhando espaço diante da crise da Casas Bahia e com parcerias de venda em Mercado Livre, Shopee e Amazon.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Juro menor barateia o crediário e o cartão para o consumidor de bens duráveis e reduz as despesas financeiras, que hoje consomem o lucro."
+  },
+  "dolar_subindo": {
+   "nota": -1,
+   "porque": "Eletrônicos e componentes importados ficam mais caros, pressionando preços e volume; não há receita em dólar para compensar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Sem ligação direta com o negócio; efeito indireto via renda em regiões agrícolas é difuso."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Venda de bens duráveis depende de emprego, renda e confiança do consumidor, que crescem com a atividade."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação corrói a renda disponível para bens duráveis e tende a manter os juros altos."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Risco fiscal eleva juros futuros, encarecendo crédito e dívida; a ação subiu em novembro de 2026 quando os juros futuros caíram com sinais de ajuste fiscal."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Seu Dinheiro: Magazine Luiza ganha espaço com crise da Casas Bahia, mas juros ainda pressionam resultados do 3T26",
+   "url": "https://seudinheiro.com/2026/economia/embargomagazine-luiza-mglu3-ganha-espaco-com-crise-da-casas-bahia-bhia3-mas-juros-ainda-pressionam-resultados-do-3t26/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Investidor10: Magazine Luiza lucra R$ 14 milhões no 3T26, queda de 34%",
+   "url": "https://investidor10.com.br/noticias/magazine-luiza-mglu3-lucra-r-14-milhoes-no-3t26-queda-de-34-123791/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Economic News Brasil: vendas do Magalu no terceiro trimestre",
+   "url": "https://economicnewsbrasil.com.br/2026/11/10/vendas-do-magalu-no-terceiro-trimestre/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "BP Money: Magalu após vendas de outubro e balanço do 3T26",
+   "url": "https://bpmoney.com.br/?p=435911",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "NeoFeed: Magalu preserva margem, cresce vendas nas lojas físicas e sente o peso dos juros (1T26)",
+   "url": "https://neofeed.com.br/negocios/magalu-preserva-margem-cresce-vendas-nas-lojas-fisicas-e-sente-o-peso-dos-juros/",
+   "data": "2026-05-07"
+  }
+ ],
+ "segmentos_base": "Vendas totais (GMV)"
+}

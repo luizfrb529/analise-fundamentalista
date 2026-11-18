@@ -1,0 +1,106 @@
+{
+ "ticker": "PETR4",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior produtora de petróleo do país, com refino e venda de combustíveis. Receita atrelada ao Brent e ao dólar: cerca de 36% vem de exportações (1S26).",
+ "modelo": "A Petrobras explora e produz petróleo e gás, com foco no pré-sal (2,96 milhões de boe/dia no 3T26), refina e vende derivados como diesel, gasolina e QAV no Brasil e exporta petróleo e óleo combustível. A receita depende do volume produzido, do preço internacional do petróleo e do câmbio. É controlada pela União, o que influencia política de preços, investimentos e dividendos.",
+ "segmentos": [
+  {
+   "nome": "Derivados no mercado interno",
+   "peso_receita": 0.54,
+   "periodo": "1S26",
+   "obs": "Diesel, gasolina, GLP, QAV, nafta e outros vendidos no Brasil."
+  },
+  {
+   "nome": "Exportações",
+   "peso_receita": 0.35,
+   "periodo": "1S26",
+   "obs": "Principalmente petróleo cru (R$ 82,3 bi de R$ 103,8 bi exportados no semestre)."
+  },
+  {
+   "nome": "Outros no mercado interno",
+   "peso_receita": 0.06,
+   "periodo": "1S26",
+   "obs": "Petróleo vendido no país, renováveis e nitrogenados, energia elétrica e serviços."
+  },
+  {
+   "nome": "Gás natural no mercado interno",
+   "peso_receita": 0.03,
+   "periodo": "1S26"
+  },
+  {
+   "nome": "Vendas no exterior (trading)",
+   "peso_receita": 0.01,
+   "periodo": "1S26"
+  }
+ ],
+ "geografia": {
+  "brasil_pct": 0.64,
+  "exterior_pct": 0.36,
+  "periodo": "1S26",
+  "texto": "Produção concentrada no Brasil, sobretudo no pré-sal da Bacia de Santos. O mercado externo (exportações de petróleo e derivados e vendas de trading) somou R$ 106,2 bi de R$ 293,2 bi de receita no 1S26; no 3T26 as exportações foram recorde em volume, de 1.251 mil barris por dia."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "alta",
+  "texto": "Exportações são em dólar e os preços internos de derivados têm como referência o mercado internacional, ainda que com defasagens definidas pela política comercial da empresa. A dívida é reportada em dólar (US$ 70,0 bi bruta em set/26); uma alta do dólar eleva receita e geração de caixa em reais e tende a superar o efeito contábil sobre a dívida."
+ },
+ "momento": "No 3T26 (divulgado em 10/11/2026), a receita de vendas foi de R$ 169,4 bi (+32,4% sobre o 3T25), o Ebitda ajustado de R$ 85,8 bi e o lucro líquido de R$ 39,75 bi (+21,5%); sem eventos exclusivos, o lucro foi de R$ 47,9 bi (+67,9%). O resultado foi pressionado pela queda de 7% do Brent ante o 2T26, menor ganho cambial com o real mais forte, contingências judiciais e despesas ligadas ao contrato de venda da TAG. A produção própria foi recorde, de 3,51 milhões de boe/dia, e a meta de 2026 subiu de 3,1 para 3,3 a 3,4 milhões de boe/dia, com capex revisado para US$ 24 a 25,5 bi. A dívida líquida caiu 4,2% no trimestre, para US$ 57,8 bi, e foram aprovados R$ 15,3 bi em dividendos e JCP referentes ao trimestre.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A receita depende de petróleo e câmbio, e a dívida é majoritariamente em dólar, então juros domésticos têm efeito pequeno no resultado."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "Cerca de 36% da receita vem do exterior e os preços internos seguem referência internacional, de modo que dólar mais alto eleva receita e caixa em reais."
+  },
+  "commodities_subindo": {
+   "nota": 2,
+   "porque": "Brent mais alto eleva diretamente o valor das exportações e a margem da produção do pré-sal, que tem custo de extração baixo; derivados caros podem gerar pressão política sobre preços internos."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "Atividade maior aumenta a venda de diesel e gasolina no país, mas o efeito é pequeno frente ao peso do preço do petróleo."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação doméstica tem pouco efeito direto; o risco é pressão do controlador para conter reajustes de combustíveis."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Com a União como controladora, aperto fiscal eleva o risco de uso da empresa via preços de combustíveis, investimentos ou pressão por dividendos extraordinários."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Petrobras, Relatório de Desempenho 2T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/25fdf098-34f5-4608-b7fa-17d60b2de47d/857e970b-1bf4-9ea4-093f-b93bfc2bac95?origin=2",
+   "data": "2026-08"
+  },
+  {
+   "titulo": "CNN Brasil: Petrobras tem R$ 39,75 bi de lucro líquido no 3º tri, alta de 21,5%",
+   "url": "https://www.cnnbrasil.com.br/infra/petrobras-tem-r-3975-bi-de-lucro-liquido-no-3o-tri-alta-de-215/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Jornal do Brasil: Petrobras lucra R$ 39,8 bilhões no 3T26 e eleva previsão de produção",
+   "url": "https://www.jb.com.br/economia/2026/11/1061517-petrobras-lucra-rs-398-bilhoes-no-3t26-e-eleva-previsao-de-producao.html",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Agência iNFRA: resultado da Petrobras no 3T26",
+   "url": "https://agenciainfra.com/blog/?p=50032",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "BP Money: Petrobras 3T26",
+   "url": "https://bpmoney.com.br/?p=435608",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "Cenário Energia: Petrobras lucra R$ 39,8 bilhões no 3T26",
+   "url": "https://cenarioenergia.com.br/2026/11/11/petrobras-lucra-r-398-bilhoes-no-3t26-e-eleva-projecao-de-producao-para-ate-34-milhoes-de-boed/",
+   "data": "2026-11-11"
+  }
+ ]
+}
