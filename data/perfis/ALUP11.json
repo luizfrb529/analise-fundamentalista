@@ -1,0 +1,82 @@
+{
+ "ticker": "ALUP11",
+ "revisado_em": "2026-11-18",
+ "resumo": "Transmissora de energia com receita regulada corrigida pela inflação, que responde por cerca de 80% da receita, e geração hidrelétrica e eólica. Tem projetos em construção no Chile, Peru e Colômbia.",
+ "modelo": "A Alupar detém 46 concessões de transmissão, com mais de 10 mil km de linhas no Brasil, Colômbia, Chile e Peru, remuneradas por Receita Anual Permitida (RAP) fixa e reajustada por inflação (IPCA ou IGP-M no Brasil), independentemente do volume de energia transportada. Também gera energia em hidrelétricas, PCHs e eólicas (cerca de 800 MW), vendida em contratos nos mercados regulado e livre. A receita é recorrente e previsível; o crescimento vem de novos lotes ganhos em leilões.",
+ "segmentos": [
+  {
+   "nome": "Transmissão",
+   "peso_receita": 0.79,
+   "periodo": "3T26",
+   "obs": "Receita líquida regulatória de R$ 775 mi (+12,2%), com contribuição da TCE, na Colômbia; disponibilidade de 99,8%."
+  },
+  {
+   "nome": "Geração",
+   "peso_receita": 0.21,
+   "periodo": "3T26",
+   "obs": "Calculado por diferença sobre a receita regulatória consolidada de R$ 980,3 mi."
+  }
+ ],
+ "segmentos_base": "Receita líquida regulatória.",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "A maior parte da receita vem de ativos no Brasil. No exterior, já operam a TCE (Colômbia, desde out/25) e ativos no Chile (TES e SED); no Peru, a TCN está 85% concluída e Puno Sur obteve licença ambiental em set/26. Em 3/11/2026 venceu no Chile o projeto Pelarco-Trueno (US$ 85 mi de investimento e RAP de US$ 11,9 mi, operação prevista para 2031)."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita no exterior, em dólar ou moedas locais, ainda é pequena frente ao total, mas cresce com os projetos andinos. Em set/25, 13,3% da dívida bruta era em moeda estrangeira, contraída em grande parte para os ativos no exterior; 53% era em IPCA e 27% em CDI. O efeito líquido de alta do dólar é pequeno."
+ },
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita líquida regulatória foi de R$ 980,3 mi (+9,2% sobre o 3T25), o Ebitda regulatório de R$ 773,2 mi (+4,0%) e o lucro regulatório atribuído à Alupar de R$ 214,2 mi (-2,6%). No critério societário, o lucro atribuído aos acionistas caiu 72,7%, para R$ 133,5 mi, porque o 3T25 teve ganho não recorrente de cerca de R$ 1 bi de arbitragem na Transnorte Energia (TNE). A dívida líquida foi de R$ 9,7 bi (+5,3%), com alavancagem regulatória de 3,2 vezes o Ebitda. A empresa tem 15 projetos em construção no Brasil, Chile, Colômbia e Peru, com investimento de R$ 10,4 bi até 2031, e aprovou R$ 69,2 mi em dividendos intercalares (R$ 0,21 por unit).",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "A receita é fixa e de longo prazo, cujo valor presente sobe com juro menor; 27% da dívida é em CDI e o custo de financiar R$ 10,4 bi em projetos cai."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "A dívida em moeda estrangeira (13% do total) é casada em parte com receitas dos ativos no Chile, Peru e Colômbia, e o restante do negócio é em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Transmissão e geração renovável não dependem de preços de commodities; alta de aço e cobre pode encarecer obras em andamento."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "A RAP não depende do consumo de energia; só a parcela de geração vendida no mercado livre tem alguma relação com a atividade."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "A RAP é reajustada por IPCA ou IGP-M; mais da metade da dívida também é em IPCA, o que reduz, mas não elimina, o ganho."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal eleva juros longos, o que reduz o valor de receitas reguladas de longo prazo e encarece a dívida de uma empresa com alavancagem de 3,2 vezes."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Cenário Energia: Alupar registra receita regulatória de R$ 980,3 milhões no 3T26",
+   "url": "https://cenarioenergia.com.br/2026/11/06/alupar-resultados-3t26-receita-regulatoria-investimentos-transmissao/",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Eu Quero Investir: Alupar, lucro cai no 3T26; receita e dividendos",
+   "url": "https://euqueroinvestir.com/acoes/alupar-alup11-lucro-cai-3t26-receita-dividendos",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Alupar, Release de Resultados 3T25",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/7055e766-fc6d-42b3-9911-c19f8e89875a/6b96cbcb-4309-3d14-f12a-386b5f2d4679?origin=1",
+   "data": "2025-11-06"
+  },
+  {
+   "titulo": "Agência iNFRA: Alupar vence licitação para projeto de transmissão no Chile",
+   "url": "https://agenciainfra.com/blog/?p=49697",
+   "data": "2026-11-04"
+  }
+ ]
+}

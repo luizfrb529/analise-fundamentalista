@@ -1,0 +1,87 @@
+{
+ "ticker": "SBFG3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Dona da Centauro e da Fisia, distribuidora exclusiva da Nike no Brasil até 2034. Receita dividida meio a meio entre as duas; produtos Nike são importados e cotados em dólar.",
+ "modelo": "O Grupo SBF vende artigos esportivos por duas unidades: a Centauro, maior rede de varejo esportivo do país (lojas físicas, site e marketplace), e a Fisia, que importa, distribui e vende Nike no Brasil por atacado, lojas próprias (Nike Value e Nike Direct) e canal digital. A receita é de varejo e atacado, recorrente mas ligada ao consumo discricionário, com picos em datas como Black Friday, Natal e grandes eventos esportivos. O contrato de distribuição da Nike foi estendido até maio de 2034.",
+ "segmentos": [
+  {
+   "nome": "Fisia (Nike)",
+   "peso_receita": 0.5,
+   "periodo": "3T26",
+   "obs": "Receita líquida de R$ 1,1 bi (+6,9%); inclui vendas por atacado à própria Centauro, eliminadas no consolidado."
+  },
+  {
+   "nome": "Centauro",
+   "peso_receita": 0.5,
+   "periodo": "3T26",
+   "obs": "Receita líquida de R$ 1,07 bi (+4,2%); digital +20,3% e lojas físicas -0,4%."
+  }
+ ],
+ "segmentos_base": "Receita bruta de cada unidade antes da eliminação intercompany (Centauro R$ 1,35 bi, Fisia R$ 1,38 bi no 3T26); a receita líquida consolidada foi de R$ 2,04 bi.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Toda a receita é gerada no Brasil, com 236 lojas Centauro e 53 lojas Nike ao fim do 3T26, além dos canais digitais. Não há operação no exterior; a ligação com o mercado externo está na compra de produtos Nike importados."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita é toda em reais, mas boa parte do custo da Fisia é de produtos Nike importados e precificados em dólar. Alta do dólar encarece o estoque e pressiona a margem bruta, como mostra o efeito cambial positivo citado no 3T26 com dólar mais fraco; a dívida é em reais."
+ },
+ "momento": "No 3T26 (divulgado em 09/11/2026), a receita líquida foi de R$ 2,04 bi (+5,1% sobre o 3T25), com margem bruta estável em 47,3% e canais digitais em 37,3% das vendas (33,5% um ano antes). O Ebitda ajustado ex-IFRS caiu 14,3%, para R$ 144,8 mi (margem de 7,1%, -1,6 p.p.), e o lucro líquido ajustado ex-IFRS caiu 40,2%, para R$ 62,1 mi; no contábil houve prejuízo de R$ 17,5 mi, ante lucro de R$ 85,9 mi no 3T25. A dívida líquida chegou a R$ 1,30 bi em setembro (R$ 674 mi um ano antes), ou 1,71x o Ebitda ajustado ex-IFRS, por capital de giro, capex e dividendos pagos em agosto. A Fisia estendeu o contrato com a Nike até maio de 2034, e a empresa iniciou revisão da estrutura de custos após um trimestre de menor fluxo nas lojas e mais promoções.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Juro menor estimula o consumo discricionário e o crédito ao consumidor e reduz o custo de uma dívida líquida que quase dobrou em um ano e já pesa no resultado financeiro."
+  },
+  "dolar_subindo": {
+   "nota": -1,
+   "porque": "Os produtos Nike vendidos pela Fisia são importados e cotados em dólar, então a alta da moeda encarece o estoque e pressiona a margem bruta, sem receita em dólar para compensar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende diretamente de commodities; algodão e petroquímicos entram no custo dos fornecedores de forma indireta e diluída."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Vendas de artigos esportivos dependem de renda e confiança do consumidor, e o 3T26 mostrou queda de fluxo nas lojas físicas em ambiente de consumo fraco."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação maior corrói a renda disponível para compras não essenciais e eleva despesas de pessoal e aluguel, enquanto o ambiente promocional limita repasse de preços."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior tende a manter juros altos e pressionar o câmbio, o que afeta consumo, custo da dívida e custo dos produtos importados."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Grupo SBF, Divulgação de Resultados 3T26 (documento enviado à CVM)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/SBFG3/52221/",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Money Times: Grupo SBF, dono da Centauro, tem recuo de 45% no lucro do 3º trimestre",
+   "url": "https://www.moneytimes.com.br/grupo-sbf-sbfg3-dono-da-centauro-tem-recuo-de-45-no-lucro-do-3o-trimestre-fets/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "InfoMoney: Riachuelo e Grupo SBF desabam até 13% apesar de balanços com desempenhos distintos",
+   "url": "https://www.infomoney.com.br/mercados/riachuelo-e-grupo-sbf-desabam-ate-13-apesar-de-balancos-com-desempenhos-distintos/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Brazil Journal: A Centauro está trocando margem por crescimento (4T25)",
+   "url": "https://braziljournal.com/a-centauro-esta-trocando-margem-por-crescimento-mas-o-tri-bateu-o-consenso",
+   "data": "2026-03-09"
+  },
+  {
+   "titulo": "NeoFeed: As duas corridas da dona da Centauro",
+   "url": "https://neofeed.com.br/negocios/as-duas-corridas-da-dona-da-centauro/",
+   "data": "2025-08-12"
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "ticker": "FLRY3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Uma das maiores empresas de medicina diagnóstica do país, com laboratórios próprios e serviços a hospitais e outros laboratórios. Cerca de 70% da receita vem do atendimento direto ao paciente.",
+ "modelo": "O Grupo Fleury realiza exames laboratoriais e de imagem em unidades próprias e atendimento móvel, com marcas como Fleury, a+, Labs a+, Pardini e, desde 2026, Femme e São Lucas. Recebe principalmente de operadoras de planos de saúde e de pacientes particulares (B2C), presta serviços de apoio a outros laboratórios e hospitais (B2B) e atua em novos negócios, como infusões, ortopedia e oftalmologia (Novos Elos). A receita é recorrente, ligada ao volume de exames, e a empresa cresce também por aquisições.",
+ "segmentos": [
+  {
+   "nome": "B2C (atendimento ao paciente)",
+   "peso_receita": 0.7,
+   "periodo": "3T26",
+   "obs": "R$ 1,89 bi (+14,1%, ou +9,3% orgânico), com 4,9 milhões de atendimentos."
+  },
+  {
+   "nome": "B2B (laboratórios e hospitais)",
+   "peso_receita": 0.22,
+   "periodo": "3T26",
+   "obs": "R$ 576,4 mi (+12,7%)."
+  },
+  {
+   "nome": "Novos Elos",
+   "peso_receita": 0.08,
+   "periodo": "3T26",
+   "obs": "R$ 221,4 mi (+8,4%), inclui infusões não oncológicas."
+  }
+ ],
+ "segmentos_base": "Receita bruta (R$ 2,7 bi no 3T26)",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera só no Brasil, com presença forte em São Paulo, Rio de Janeiro e Minas Gerais e expansão no interior paulista. Não há operação no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais. Parte de reagentes e equipamentos é importada, então um dólar mais alto pode pressionar custos, sem efeito direto na receita."
+ },
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita bruta foi de cerca de R$ 2,7 bi (+13,3%, ou +9,9% orgânico), a receita líquida de R$ 2,48 bi (+13,4%), o Ebitda de R$ 672,2 mi (+12,2%, margem de 27,1%, -0,3 p.p.) e o lucro líquido de R$ 264,3 mi (+42,9%), ajudado por alíquota efetiva menor. A margem recuou pelos custos de integração da Femme, consolidada pela primeira vez no trimestre. A geração de caixa operacional foi de R$ 798,5 mi (+11,1%), o capex caiu 18,4%, para R$ 102,8 mi, e a alavancagem ficou estável em 1,0x dívida líquida/Ebitda. Em 9M26, o lucro somou R$ 687,4 mi (+33,1%).",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Com alavancagem de 1,0x Ebitda, juro menor reduz a despesa financeira de forma moderada e facilita novas aquisições."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita em dólar; reagentes e equipamentos importados encarecem, mas o efeito sobre a margem tende a ser limitado."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais emprego formal amplia a base de beneficiários de planos de saúde, que respondem pela maior parte dos exames."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Salários e insumos sobem, mas os preços negociados com operadoras são reajustados periodicamente, o que compensa com defasagem."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Juros longos mais altos encarecem a dívida e pressionam o valor das aquisições."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Eu Quero Investir: Fleury, lucro do 3T26 e receita de R$ 2,7 bilhões",
+   "url": "https://euqueroinvestir.com/acoes/fleury-flry3-lucro-3t26-receita-27-bilhoes",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "The Rio Times: Fleury profit jumps 43 percent in third quarter 2026",
+   "url": "https://www.riotimesonline.com/brazil-fleury-profit-jumps-43-percent-third-quarter-2026/",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "brapi (com base em Exame, Money Times, Seu Dinheiro e InfoMoney): Fleury tem lucro de R$ 264,3 mi no 3T26",
+   "url": "https://brapi.dev/news/fleury-tem-lucro-de-r-264-3-mi-no-3t26-alta-de-20f8c423",
+   "data": "2026-11-07"
+  }
+ ]
+}

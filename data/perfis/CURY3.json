@@ -1,0 +1,82 @@
+{
+ "ticker": "CURY3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Construtora de moradia popular nas regiões metropolitanas de São Paulo e Rio, com vendas concentradas no Minha Casa Minha Vida. Receita 100% no Brasil e em reais, com caixa líquido positivo.",
+ "modelo": "A Cury incorpora e constrói empreendimentos residenciais econômicos, em grande parte enquadrados no programa Minha Casa Minha Vida e financiados com recursos do FGTS via Caixa, além de parte em SBPE. A receita é reconhecida conforme o avanço das obras (método POC) e depende do ritmo de lançamentos, vendas e repasses aos bancos. Também financia diretamente parte do preço ao cliente (pro-soluto), carteira que somava R$ 1,74 bi em set/26. Atua com as marcas Cury e Cury Rio.",
+ "segmentos": [
+  {
+   "nome": "São Paulo (região metropolitana)",
+   "peso_receita": 0.77,
+   "periodo": "3T26",
+   "obs": "R$ 20,2 bi de VGV potencial no banco de terrenos; 5 dos 8 lançamentos do 3T26."
+  },
+  {
+   "nome": "Rio de Janeiro (região metropolitana)",
+   "peso_receita": 0.23,
+   "periodo": "3T26",
+   "obs": "R$ 6,0 bi de VGV potencial; 3 dos 8 lançamentos do 3T26."
+  }
+ ],
+ "segmentos_base": "Banco de terrenos (VGV potencial). A Cury tem um único segmento operacional e não abre a receita por região.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Toda a operação está nas regiões metropolitanas de São Paulo e do Rio de Janeiro. Não há atividade nem projetos fora do Brasil."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são integralmente em reais. Uma alta do dólar só afeta a empresa de forma indireta, via custo de insumos da obra e via juros."
+ },
+ "momento": "No 3T26 (divulgado em 10/11/2026), a receita líquida foi recorde, de R$ 1,84 bi (+29,7% sobre o 3T25), e o lucro líquido da atividade somou R$ 369,6 mi (+30,5%, margem de 20,1%); o lucro atribuível aos acionistas da Cury foi de R$ 313,9 mi (+23,0%). A margem bruta ficou em 39,5% (40,0% no 3T25) e o ROE de 12 meses em 73,2%. As vendas líquidas subiram 11,4%, para R$ 2,04 bi, mas os distratos cresceram 59,3%, para R$ 358,2 mi, e passaram de 11% para 15% das vendas brutas. A empresa fechou setembro com caixa líquido de R$ 312,7 mi (dívida bruta de R$ 1,78 bi), completou o 30º trimestre seguido de geração de caixa (R$ 253,6 mi) e aprovou R$ 200 mi em dividendos intercalares, pagos em 30/11/2026.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "A maior parte das vendas usa crédito do FGTS com juro subsidiado, menos ligado à Selic; juro menor ajuda mais na parcela vendida via SBPE e na carteira pro-soluto."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em dólar; o efeito indireto via insumos importados é pequeno."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Aço e cimento pesam no custo de obra, mas o INCC repassa parte disso aos contratos, deixando efeito líquido pequeno."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais emprego formal e renda ampliam a base de clientes aptos ao financiamento do MCMV e tendem a reduzir distratos."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação de custos de construção pressiona a margem das obras em andamento, e os tetos de preço do MCMV não sobem na mesma velocidade."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "O negócio depende do orçamento do MCMV e do FGTS; aperto fiscal pode limitar subsídios e o ritmo de crédito da Caixa."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Cury, Release de Resultados 3T26 e 9M26",
+   "url": "https://filemanager-cdn.mziq.com/published/702b9586-4f10-4a79-a7e6-232ce8803136/56092c47-bbe7-4202-8caf-861f68747135",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Exame: Cury tem lucro recorde de R$ 370 milhões e anuncia mais R$ 200 milhões em dividendos",
+   "url": "https://exame.com/mercado-imobiliario/cury-tem-lucro-recorde-de-r-370-milhoes-e-anuncia-mais-r-200-milhoes-em-dividendos/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "InfoMoney (Reuters): Cury tem alta de 30% no lucro do 3º tri, acima do esperado",
+   "url": "https://www.infomoney.com.br/mercados/resultados-cury-cury3-terceiro-trimestre-2026/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Investidor10: Cury lucra R$ 313,9 mi no 3T26 e aprova R$ 200 mi em dividendos",
+   "url": "https://investidor10.com.br/noticias/cury-cury3-lucra-r-313-9-mi-no-3t26-e-aprova-r-200-mi-em-dividendos-123810/",
+   "data": "2026-11-10"
+  }
+ ]
+}

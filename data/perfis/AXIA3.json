@@ -1,0 +1,82 @@
+{
+ "ticker": "AXIA3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Antiga Eletrobras, uma das maiores geradoras de energia renovável do país e maior transmissora. A transmissão, com receita regulada corrigida pela inflação, responde pela maior parte da margem.",
+ "modelo": "A Axia Energia, nome adotado pela Eletrobras privatizada, gera energia principalmente em hidrelétricas, além de eólicas e solares, e vende em contratos no mercado regulado e no mercado livre (comercialização). Na transmissão, opera linhas e subestações remuneradas pela Receita Anual Permitida (RAP), fixada pela Aneel e corrigida pela inflação, o que dá receita recorrente e previsível. Após a venda das térmicas, o portfólio de geração passou a ser 100% renovável.",
+ "segmentos": [
+  {
+   "nome": "Transmissão",
+   "peso_receita": 0.6,
+   "periodo": "3T26",
+   "obs": "Margem de R$ 4.533 mi (+8,3%); RAP homologada passou de R$ 4,134 bi para R$ 4,451 bi no trimestre."
+  },
+  {
+   "nome": "Geração e comercialização",
+   "peso_receita": 0.4,
+   "periodo": "3T26",
+   "obs": "Margem de R$ 3.071 mi (+9,1%), dos quais R$ 1.754 mi da comercialização no mercado livre e de curto prazo."
+  }
+ ],
+ "segmentos_base": "Margem de contribuição regulatória por segmento (não receita).",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Toda a operação e a receita estão no Brasil, com usinas e linhas de transmissão em todas as regiões do país."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita é toda em reais, com contratos de energia e RAP corrigidos por inflação. A dívida é majoritariamente em reais, com custo médio de CDI + 0,19% ao ano no 3T26, e a parcela em moeda estrangeira, ligada a financiamentos de projetos como Belo Monte e Angra 3 segundo a Fitch, não tem peso divulgado nas fontes consultadas; o efeito de alta do dólar é pequeno."
+ },
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita líquida foi de R$ 10,04 bi (+0,3% sobre o 3T25), o Ebitda regulatório ajustado de R$ 6,92 bi (+8,4%) e o lucro líquido de R$ 1,11 bi, revertendo prejuízo de R$ 5,45 bi no 3T25; o lucro ajustado caiu 19,1%, para R$ 1,76 bi. A dívida líquida ajustada chegou a R$ 47,6 bi, com alavancagem de 2,0 vezes o Ebitda (2,1 vezes um ano antes). Os investimentos somaram R$ 7,3 bi nos 9M26 (+28%), concentrados em transmissão, com 269 projetos que devem acrescentar cerca de R$ 2 bi à RAP até 2030. A empresa aprovou até R$ 11,7 bi em remuneração aos acionistas em 2026 e captou R$ 14,3 bi entre julho e outubro.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "A dívida líquida de R$ 47,6 bi é atrelada principalmente ao CDI, então juro menor reduz a despesa financeira e valoriza fluxos longos e previsíveis da transmissão."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita toda em reais e dívida em moeda estrangeira pequena; o câmbio tem pouco efeito direto."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "A geração é renovável, sem compra de combustível, e a transmissão não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade eleva o consumo e os preços no mercado livre, onde a empresa vende parte relevante da energia, com efeito na margem de comercialização."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "A RAP da transmissão e os contratos de energia são corrigidos por inflação, e parte da dívida em IPCA encarece, mas a receita indexada é maior."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal eleva juros longos, o que encarece o refinanciamento da dívida e reduz o valor presente de receitas reguladas de longo prazo."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Eu Quero Investir: Axia Energia, Ebitda e resultados do 3T26",
+   "url": "https://euqueroinvestir.com/acoes/axia-energia-axia3-ebitda-resultados-3t26",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Axia Energia reverte prejuízo e registra lucro líquido de R$ 1,11 bilhão no trimestre",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/energia/axia-energia-reverte-prejuizo-e-registra-lucro-liquido-de-r-111-bilhao-no-trimestre/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Cenário Energia: AXIA Energia amplia Capex em 28% no ano e abre espaço para R$ 2 bi em nova RAP até 2030",
+   "url": "https://cenarioenergia.com.br/2026/11/05/axia-energia-amplia-capex-em-28-no-ano-e-abre-espaco-para-r-2-bi-em-nova-rap-ate-2030/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Money Times: Axia Energia tem lucro líquido ajustado de R$ 1,25 bilhão no 4T25, alta de 141%",
+   "url": "https://www.moneytimes.com.br/axia-energia-axia3-tem-lucro-liquido-ajustado-de-r-125-bilhao-alta-de-141-kda/",
+   "data": "2026-02-26"
+  }
+ ]
+}

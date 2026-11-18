@@ -1,0 +1,82 @@
+{
+ "ticker": "RDOR3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior rede de hospitais privados do país e dona da SulAmérica, de planos de saúde e seguros. A receita bruta vem cerca de 60% dos hospitais; a operação é toda no Brasil.",
+ "modelo": "A Rede D'Or opera 75 hospitais (73 próprios e 2 sob gestão) com 13.771 leitos, além de oncologia e outros serviços, e recebe principalmente de operadoras de planos de saúde. Desde 2022 controla a SulAmérica, que vende planos de saúde e odontológicos, previdência e gestão de recursos para 6,2 milhões de beneficiários. A receita é recorrente: diárias, procedimentos e oncologia nos hospitais, e mensalidades de planos na SulAmérica, que também gera receita financeira sobre as reservas técnicas.",
+ "segmentos": [
+  {
+   "nome": "Hospitais, oncologia e outros",
+   "peso_receita": 0.62,
+   "periodo": "3T26",
+   "obs": "Receita bruta de R$ 10,34 bi (+10,1%); oncologia somou R$ 1,25 bi (+18,2%)."
+  },
+  {
+   "nome": "SulAmérica (seguros, previdência e gestão)",
+   "peso_receita": 0.38,
+   "periodo": "3T26",
+   "obs": "Receita líquida de R$ 8,84 bi (+4,6%), sinistralidade de 77,7% (-2,4 p.p.)."
+  }
+ ],
+ "segmentos_base": "Proporção aproximada entre receita bruta hospitalar (R$ 10,34 bi) e receita líquida da SulAmérica (R$ 8,84 bi), antes de eliminações entre segmentos; a receita líquida consolidada foi de R$ 15,41 bi.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera apenas no Brasil, com hospitais em 14 estados e no Distrito Federal. Não há operação no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita é toda em reais. Parte de insumos e equipamentos médicos é importada e encarece com o dólar; a dívida é concentrada em reais."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita líquida consolidada foi de R$ 15,41 bi (+5,6%), o Ebitda ajustado de R$ 3,61 bi (+11,6%) e o lucro líquido de R$ 1,45 bi (-0,1%), pressionado por resultado financeiro negativo de R$ 715,9 mi (R$ 524,2 mi no 3T25) e por imposto 21,5% maior. Nos hospitais, a margem bruta subiu 2,3 p.p., para 28,0%, com ticket médio 10,5% maior e taxa de ocupação de 79,6% (-2 p.p.). A geração de caixa operacional foi de R$ 2,8 bi (+19,2%) e a alavancagem caiu para 1,65x dívida líquida/Ebitda (1,71x no 2T26). A empresa prevê adicionar 2.690 leitos entre 2026 e 2028.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor reduz a despesa financeira, que tirou R$ 715,9 mi do resultado no 3T26, mas também diminui a receita financeira da SulAmérica sobre suas reservas, o que limita o ganho líquido."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita em dólar; insumos e equipamentos importados encarecem, mas o efeito é diluído na base de custos."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais emprego formal amplia a base de planos coletivos empresariais da SulAmérica e o volume nos hospitais."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Custos médicos e de pessoal sobem, mas os preços hospitalares e os reajustes de planos coletivos acompanham a inflação com defasagem."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Juros longos mais altos encarecem a dívida e o financiamento do plano de expansão de leitos."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Times Brasil (CNBC): Rede D'Or registra lucro de R$ 1,45 bilhão no terceiro trimestre de 2026",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/rede-dor-registra-lucro-de-r-145-bilhao-no-terceiro-trimestre-de-2026/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Diário do Grande ABC (Estadão Conteúdo): Rede D'Or encerrou o 3T26 com lucro de R$ 1,45 bilhão",
+   "url": "https://www.dgabc.com.br/Noticia/4368499/rede-d-or-encerrou-o-terceiro-trimestre-de-2026-com-lucro-liquido-de-r-1-45-bilhao",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Investidor10: Rede D'Or lucra R$ 1,45 bilhão no 3T26, com melhora na sinistralidade",
+   "url": "https://investidor10.com.br/noticias/rede-d-or-sao-luiz-rdor3-lucra-r-1-45-bilhao-no-3t26-com-melhora-na-sinistralidade-123873/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Eu Quero Investir: Rede D'Or, lucro do 3T26 e Ebitda ajustado",
+   "url": "https://euqueroinvestir.com/acoes/rede-dor-rdor3-lucro-3t26-ebitda-ajustado",
+   "data": "2026-11-12"
+  }
+ ]
+}
