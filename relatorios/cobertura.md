@@ -1,148 +1,149 @@
 # Relatório de cobertura de dados
 
-Gerado em 18/11/2026 11:05 | Preços de fechamento de 2026-11-17 | Balanços até 3T2026
+Gerado em 18/11/2026 16:40 | Preços de fechamento de 2026-11-17 | Balanços até 3T2026
 
 | Ticker | Modelo | Balanço | Fonte | Indicadores com valor | Faltando |
 |---|---|---|---|---|---|
-| B3SA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| BBAS3 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 65/70 | 5 |
-| BPAC11 | BANCO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 61/70 | 9 |
-| BBDC4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 65/70 | 5 |
-| ITUB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 65/70 | 5 |
-| BRSR6 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 61/70 | 9 |
-| BMEB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 60/70 | 10 |
-| SANB11 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 57/70 | 13 |
-| ROXO34 | BANCO | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 45/69 | 24 |
-| INBR34 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 56/69 | 13 |
-| XPBR31 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 54/69 | 15 |
-| BBSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 62/66 | 4 |
-| CXSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 54/66 | 12 |
-| PSSA3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 63/66 | 3 |
-| SAUD3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 63/66 | 3 |
-| WIZC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| VALE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| GGBR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
-| CSNA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/104 | 22 |
-| USIM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/104 | 15 |
-| FESA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| AURA33 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 40/103 | 63 |
-| PETR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
-| PRIO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
-| RECV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| BRAV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/104 | 17 |
-| OPCT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/104 | 19 |
-| UGPA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| PASS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/104 | 12 |
-| CSAN3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/106 | 19 |
-| RAIZ4 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 69/92 | 23 |
-| BRKM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 74/104 | 30 |
-| UNIP6 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| DEXP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
-| SUZB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| KLBN11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| RANI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| AXIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/104 | 10 |
-| ALUP11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| TAEE11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| ISAE4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| AURE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/104 | 19 |
-| EGIE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| CMIG4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
-| EQTL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| CPFE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
-| SBSP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/104 | 17 |
-| SAPR11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| CSMG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
-| MGLU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/104 | 12 |
-| BHIA3 | RECUPERACAO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 66/92 | 26 |
-| LJQQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/104 | 22 |
-| GMAT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
-| AZZA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| GRND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| LREN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| VIVA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| CEAB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
-| TFCO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| VULC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
-| SBFG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| AMOB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 77/104 | 27 |
-| MELI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 90/103 | 13 |
-| MRVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 81/104 | 23 |
-| TEND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
-| DIRR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| PLPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/104 | 13 |
-| CURY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
-| CYRE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| EVEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
-| TRIS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| EZTC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| LAVV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| MDNE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
-| WEGE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 104/104 | 0 |
-| EMBJ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| SHUL4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| ROMI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
-| TUPY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 83/104 | 21 |
-| LEVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| POMO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| RAPT4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/104 | 16 |
-| KEPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| TASA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/104 | 12 |
-| RENT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| MOVI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
-| VAMO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| MILS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
-| PRNR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/104 | 13 |
-| SIMH3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/106 | 14 |
-| RAIL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
-| ECOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
-| SEQL3 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 71/92 | 21 |
-| LOGG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/104 | 12 |
-| ALOS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
-| JHSF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| RDOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| FLRY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| RADL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| PGMN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/104 | 14 |
-| PNVL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| VIVT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| TIMS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/104 | 18 |
-| FIQE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| COGN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| YDUQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| VTRU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/104 | 10 |
-| CSED3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
-| SLCE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| AGRO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| SOJA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/104 | 18 |
-| TTEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/104 | 19 |
-| SMTO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| JALL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/104 | 15 |
-| MDIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| CAML3 | GERAL | 2026-08-31 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
-| BEEF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/104 | 13 |
-| JBSS32 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 45/103 | 58 |
-| CSUD3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/104 | 14 |
-| CASH3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 76/104 | 28 |
-| BMOB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| SMFT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/104 | 14 |
-| OBTC3 | TESOURARIA_CRIPTO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 56/96 | 40 |
+| B3SA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
+| BBAS3 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 63/68 | 5 |
+| BPAC11 | BANCO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 59/68 | 9 |
+| BBDC4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 63/68 | 5 |
+| ITUB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 63/68 | 5 |
+| BRSR6 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 59/68 | 9 |
+| BMEB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 58/68 | 10 |
+| SANB11 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 55/68 | 13 |
+| ROXO34 | BANCO | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 43/67 | 24 |
+| INBR34 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 54/67 | 13 |
+| XPBR31 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 52/67 | 15 |
+| BBSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 60/64 | 4 |
+| CXSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 52/64 | 12 |
+| PSSA3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 61/64 | 3 |
+| SAUD3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 61/64 | 3 |
+| WIZC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
+| VALE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
+| GGBR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/102 | 7 |
+| CSNA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 81/102 | 21 |
+| USIM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/102 | 16 |
+| FESA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
+| AURA33 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 38/101 | 63 |
+| PETR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/102 | 6 |
+| PRIO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/102 | 7 |
+| RECV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
+| BRAV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/102 | 16 |
+| OPCT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/102 | 20 |
+| UGPA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
+| PASS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/102 | 13 |
+| CSAN3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/104 | 18 |
+| RAIZ4 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 68/92 | 24 |
+| BRKM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 73/102 | 29 |
+| UNIP6 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
+| DEXP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/102 | 6 |
+| SUZB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/102 | 9 |
+| KLBN11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/102 | 9 |
+| RANI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/102 | 2 |
+| AXIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/102 | 11 |
+| ALUP11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
+| TAEE11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
+| ISAE4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/102 | 9 |
+| AURE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 84/102 | 18 |
+| EGIE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
+| CMIG4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/102 | 5 |
+| EQTL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/102 | 9 |
+| CPFE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/102 | 5 |
+| SBSP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 84/102 | 18 |
+| SAPR11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
+| CSMG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/102 | 7 |
+| MGLU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/102 | 11 |
+| BHIA3 | RECUPERACAO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 65/92 | 27 |
+| LJQQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 81/102 | 21 |
+| GMAT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/102 | 7 |
+| AZZA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/102 | 2 |
+| GRND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/102 | 2 |
+| LREN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/102 | 2 |
+| VIVA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/102 | 2 |
+| CEAB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/102 | 7 |
+| TFCO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
+| VULC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/102 | 5 |
+| SBFG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/102 | 9 |
+| AMOB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 76/102 | 26 |
+| MELI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 88/101 | 13 |
+| MRVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 80/102 | 22 |
+| TEND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/102 | 5 |
+| DIRR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
+| PLPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/102 | 14 |
+| CURY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/102 | 5 |
+| CYRE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
+| EVEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/102 | 12 |
+| TRIS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/102 | 9 |
+| EZTC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
+| LAVV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
+| MDNE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/102 | 12 |
+| WEGE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/102 | 1 |
+| EMBJ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/102 | 9 |
+| SHUL4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
+| ROMI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/102 | 5 |
+| TUPY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/102 | 20 |
+| LEVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
+| POMO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
+| RAPT4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/102 | 15 |
+| KEPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
+| TASA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/102 | 11 |
+| RENT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/102 | 9 |
+| MOVI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/102 | 7 |
+| VAMO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
+| MILS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/102 | 12 |
+| PRNR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/102 | 14 |
+| SIMH3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/104 | 15 |
+| RAIL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/102 | 6 |
+| ECOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/102 | 12 |
+| SEQL3 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 70/92 | 22 |
+| LOGG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/102 | 13 |
+| ALOS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/102 | 5 |
+| JHSF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
+| RDOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/102 | 9 |
+| FLRY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
+| RADL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/102 | 2 |
+| PGMN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/102 | 15 |
+| PNVL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/102 | 2 |
+| VIVT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
+| TIMS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 83/102 | 19 |
+| FIQE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
+| COGN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/102 | 9 |
+| YDUQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
+| VTRU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/102 | 11 |
+| CSED3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/102 | 7 |
+| SLCE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
+| AGRO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
+| SOJA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 83/102 | 19 |
+| TTEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/102 | 20 |
+| SMTO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
+| JALL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/102 | 14 |
+| MDIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/102 | 2 |
+| CAML3 | GERAL | 2026-08-31 | CVM (DFP/ITR, consolidado) | 97/102 | 5 |
+| BEEF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/102 | 12 |
+| JBSS32 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 43/101 | 58 |
+| CSUD3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/102 | 15 |
+| CASH3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 76/102 | 26 |
+| BMOB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
+| SMFT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/102 | 15 |
+| OBTC3 | TESOURARIA_CRIPTO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 55/96 | 41 |
 | M2ST34 | TESOURARIA_CRIPTO | 2026-09-30 | SEC EDGAR (XBRL) | 66/95 | 29 |
-| MSFT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 100/103 | 3 |
-| M1TA34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 94/103 | 9 |
-| GOGL34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 96/103 | 7 |
-| NVDC34 | GERAL | 2026-07-26 | SEC EDGAR (XBRL) | 92/103 | 11 |
-| MUTC34 | GERAL | 2026-09-03 | SEC EDGAR (XBRL) | 96/103 | 7 |
-| QCOM34 | GERAL | 2026-09-27 | SEC EDGAR (XBRL) | 81/103 | 22 |
-| P2LT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 69/103 | 34 |
-| N1OW34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 90/103 | 13 |
-| V1RT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 95/103 | 8 |
-| RGTI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 50/103 | 53 |
-| QUBT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 56/103 | 47 |
-| SPCX34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 34/103 | 69 |
-| MULT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| MLAS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| INTB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| MSFT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 98/101 | 3 |
+| M1TA34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 92/101 | 9 |
+| GOGL34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 94/101 | 7 |
+| NVDC34 | GERAL | 2026-07-26 | SEC EDGAR (XBRL) | 90/101 | 11 |
+| MUTC34 | GERAL | 2026-09-03 | SEC EDGAR (XBRL) | 94/101 | 7 |
+| QCOM34 | GERAL | 2026-09-27 | SEC EDGAR (XBRL) | 81/101 | 20 |
+| P2LT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 67/101 | 34 |
+| N1OW34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 88/101 | 13 |
+| V1RT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 93/101 | 8 |
+| RGTI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 50/101 | 51 |
+| QUBT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 56/101 | 45 |
+| SPCX34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 34/101 | 67 |
+| MULT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/102 | 2 |
+| MLAS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
+| INTB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
+| SEER3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
 
 ## B3SA3
 
@@ -152,6 +153,7 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## BBAS3
 
@@ -386,6 +388,7 @@ Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## VALE3
 
@@ -401,6 +404,7 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## GGBR4
 
@@ -413,6 +417,7 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CSNA3
 
@@ -424,8 +429,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -441,6 +444,7 @@ Indicadores sem valor e motivo:
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## USIM5
 
@@ -462,6 +466,7 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## FESA4
 
@@ -471,6 +476,7 @@ Indicadores sem valor e motivo:
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## AURA33
 
@@ -553,6 +559,7 @@ Indicadores sem valor e motivo:
 - CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## PRIO3
 
@@ -567,6 +574,7 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RECV3
 
@@ -580,6 +588,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## BRAV3
 
@@ -590,8 +599,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
@@ -603,6 +610,7 @@ Indicadores sem valor e motivo:
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## OPCT3
 
@@ -628,6 +636,7 @@ Indicadores sem valor e motivo:
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## UGPA3
 
@@ -637,6 +646,7 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## PASS3
 
@@ -655,6 +665,7 @@ Indicadores sem valor e motivo:
 - DY médio 5a (`dy_medio_5a`): sem proventos suficientes nos últimos 5 anos
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CSAN3
 
@@ -667,8 +678,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
 - CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 11 exercícios ou extremos negativos
@@ -680,6 +689,7 @@ Indicadores sem valor e motivo:
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 - Soma das partes listadas (`soma_partes`): conta não encontrada na fonte ou não aplicável ao modelo
 - Desconto de holding (`desconto_holding`): conta não encontrada na fonte ou não aplicável ao modelo
 
@@ -710,6 +720,7 @@ Indicadores sem valor e motivo:
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -725,8 +736,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -749,6 +758,7 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## UNIP6
 
@@ -762,6 +772,7 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## DEXP3
 
@@ -773,6 +784,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SUZB3
 
@@ -787,6 +799,7 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## KLBN11
 
@@ -801,6 +814,7 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RANI3
 
@@ -808,6 +822,7 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## AXIA3
 
@@ -824,6 +839,7 @@ Indicadores sem valor e motivo:
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## ALUP11
 
@@ -833,6 +849,7 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TAEE11
 
@@ -842,6 +859,7 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## ISAE4
 
@@ -856,6 +874,7 @@ Indicadores sem valor e motivo:
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## AURE3
 
@@ -866,8 +885,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 6 exercícios ou extremos negativos
 - CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 6 exercícios ou extremos negativos
@@ -881,6 +898,7 @@ Indicadores sem valor e motivo:
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## EGIE3
 
@@ -890,6 +908,7 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CMIG4
 
@@ -900,6 +919,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## EQTL3
 
@@ -914,6 +934,7 @@ Indicadores sem valor e motivo:
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CPFE3
 
@@ -924,6 +945,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SBSP3
 
@@ -949,6 +971,7 @@ Indicadores sem valor e motivo:
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SAPR11
 
@@ -958,6 +981,7 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CSMG3
 
@@ -970,6 +994,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MGLU3
 
@@ -980,14 +1005,13 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## BHIA3
 
@@ -1020,6 +1044,7 @@ Indicadores sem valor e motivo:
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## LJQQ3
 
@@ -1032,8 +1057,6 @@ Indicadores sem valor e motivo:
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
@@ -1048,6 +1071,7 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## GMAT3
 
@@ -1060,6 +1084,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## AZZA3
 
@@ -1067,6 +1092,7 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## GRND3
 
@@ -1074,6 +1100,7 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## LREN3
 
@@ -1083,6 +1110,7 @@ Avisos do pipeline:
 Indicadores sem valor e motivo:
 
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## VIVA3
 
@@ -1090,6 +1118,7 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CEAB3
 
@@ -1102,6 +1131,7 @@ Indicadores sem valor e motivo:
 - CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TFCO4
 
@@ -1123,6 +1153,7 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SBFG3
 
@@ -1137,6 +1168,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## AMOB3
 
@@ -1147,8 +1179,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -1170,6 +1200,7 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MELI34
 
@@ -1199,8 +1230,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -1218,6 +1247,7 @@ Indicadores sem valor e motivo:
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TEND3
 
@@ -1228,6 +1258,7 @@ Indicadores sem valor e motivo:
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## DIRR3
 
@@ -1236,6 +1267,7 @@ Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## PLPL3
 
@@ -1255,6 +1287,7 @@ Indicadores sem valor e motivo:
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CURY3
 
@@ -1265,6 +1298,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CYRE3
 
@@ -1278,6 +1312,7 @@ Indicadores sem valor e motivo:
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## EVEN3
 
@@ -1295,6 +1330,7 @@ Indicadores sem valor e motivo:
 - Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TRIS3
 
@@ -1309,6 +1345,7 @@ Indicadores sem valor e motivo:
 - Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## EZTC3
 
@@ -1317,6 +1354,7 @@ Indicadores sem valor e motivo:
 
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## LAVV3
 
@@ -1330,6 +1368,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MDNE3
 
@@ -1347,9 +1386,14 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## WEGE3
 
+
+Indicadores sem valor e motivo:
+
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## EMBJ3
 
@@ -1364,6 +1408,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SHUL4
 
@@ -1372,6 +1417,7 @@ Indicadores sem valor e motivo:
 
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## ROMI3
 
@@ -1382,6 +1428,7 @@ Indicadores sem valor e motivo:
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TUPY3
 
@@ -1394,8 +1441,6 @@ Indicadores sem valor e motivo:
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
@@ -1409,6 +1454,7 @@ Indicadores sem valor e motivo:
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## LEVE3
 
@@ -1417,6 +1463,7 @@ Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## POMO4
 
@@ -1425,6 +1472,7 @@ Indicadores sem valor e motivo:
 
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RAPT4
 
@@ -1435,8 +1483,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
 - CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
@@ -1447,6 +1493,7 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## KEPL3
 
@@ -1455,6 +1502,7 @@ Indicadores sem valor e motivo:
 
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TASA4
 
@@ -1464,8 +1512,6 @@ Indicadores sem valor e motivo:
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
@@ -1473,6 +1519,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RENT3
 
@@ -1487,6 +1534,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MOVI3
 
@@ -1499,6 +1547,7 @@ Indicadores sem valor e motivo:
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## VAMO3
 
@@ -1512,6 +1561,7 @@ Indicadores sem valor e motivo:
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MILS3
 
@@ -1529,6 +1579,7 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 8 exercícios ou extremos negativos
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## PRNR3
 
@@ -1548,6 +1599,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SIMH3
 
@@ -1568,6 +1620,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RAIL3
 
@@ -1579,6 +1632,7 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## ECOR3
 
@@ -1596,6 +1650,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SEQL3
 
@@ -1625,6 +1680,7 @@ Indicadores sem valor e motivo:
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## LOGG3
 
@@ -1643,6 +1699,7 @@ Indicadores sem valor e motivo:
 - Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## ALOS3
 
@@ -1662,6 +1719,7 @@ Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RDOR3
 
@@ -1676,6 +1734,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## FLRY3
 
@@ -1685,6 +1744,7 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RADL3
 
@@ -1692,6 +1752,7 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## PGMN3
 
@@ -1712,6 +1773,7 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 5 exercícios ou extremos negativos
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## PNVL3
 
@@ -1719,6 +1781,7 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## VIVT3
 
@@ -1728,6 +1791,7 @@ Indicadores sem valor e motivo:
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TIMS3
 
@@ -1752,6 +1816,7 @@ Indicadores sem valor e motivo:
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Estabilidade de margem (`estab_margem`): conta não encontrada na fonte ou não aplicável ao modelo
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## FIQE3
 
@@ -1761,6 +1826,7 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## COGN3
 
@@ -1775,6 +1841,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## YDUQ3
 
@@ -1786,6 +1853,7 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## VTRU3
 
@@ -1802,6 +1870,7 @@ Indicadores sem valor e motivo:
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CSED3
 
@@ -1814,6 +1883,7 @@ Indicadores sem valor e motivo:
 - CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SLCE3
 
@@ -1823,6 +1893,7 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## AGRO3
 
@@ -1836,6 +1907,7 @@ Indicadores sem valor e motivo:
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SOJA3
 
@@ -1860,6 +1932,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TTEN3
 
@@ -1885,6 +1958,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SMTO3
 
@@ -1894,6 +1968,7 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## JALL3
 
@@ -1904,8 +1979,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
 - CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 7 exercícios ou extremos negativos
 - CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
@@ -1915,6 +1988,7 @@ Indicadores sem valor e motivo:
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MDIA3
 
@@ -1922,6 +1996,7 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CAML3
 
@@ -1932,6 +2007,7 @@ Indicadores sem valor e motivo:
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## BEEF3
 
@@ -1942,8 +2018,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
@@ -1951,6 +2025,7 @@ Indicadores sem valor e motivo:
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## JBSS32
 
@@ -2038,6 +2113,7 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 4 exercícios ou extremos negativos
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CASH3
 
@@ -2049,8 +2125,6 @@ Indicadores sem valor e motivo:
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -2087,6 +2161,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SMFT3
 
@@ -2107,6 +2182,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## OBTC3
 
@@ -2156,6 +2232,7 @@ Indicadores sem valor e motivo:
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Estabilidade de margem (`estab_margem`): conta não encontrada na fonte ou não aplicável ao modelo
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## M2ST34
 
@@ -2274,8 +2351,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - VPA (`vpa`): conta não encontrada na fonte ou não aplicável ao modelo
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -2384,8 +2459,6 @@ Indicadores sem valor e motivo:
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -2443,8 +2516,6 @@ Indicadores sem valor e motivo:
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -2502,8 +2573,6 @@ Indicadores sem valor e motivo:
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -2564,6 +2633,7 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MLAS3
 
@@ -2577,6 +2647,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## INTB3
 
@@ -2586,6 +2657,16 @@ Indicadores sem valor e motivo:
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
+
+## SEER3
+
+
+Indicadores sem valor e motivo:
+
+- P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## Sinais de estresse financeiro
 
@@ -2601,5 +2682,5 @@ Empresas fora do modelo RECUPERACAO com dois ou mais entre PL negativo, Dív.lí
 | OBTC3 | TESOURARIA_CRIPTO | dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-7.44x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 
 ## Geral
-- ptax: HTTP 304 em https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados/ultimos/1?formato=json&_=1795010756
+- selic: HTTP 304 em https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/1?formato=json&_=1795030854
 - sem histórico: ['BPAC4.SA', 'MGLU4.SA', 'RAIZ3.SA', 'TFCO3.SA']
