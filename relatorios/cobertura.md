@@ -1,145 +1,145 @@
 # Relatório de cobertura de dados
 
-Gerado em 17/11/2026 19:48 | Preços de fechamento de 2026-11-17 | Balanços até 3T2026
+Gerado em 18/11/2026 00:04 | Preços de fechamento de 2026-11-16 | Balanços até 3T2026
 
 | Ticker | Modelo | Balanço | Fonte | Indicadores com valor | Faltando |
 |---|---|---|---|---|---|
-| B3SA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| BBAS3 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 65/70 | 5 |
-| BPAC11 | BANCO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 61/70 | 9 |
-| BBDC4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 65/70 | 5 |
-| ITUB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 65/70 | 5 |
-| BRSR6 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 61/70 | 9 |
-| BMEB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 60/70 | 10 |
-| SANB11 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 57/70 | 13 |
-| ROXO34 | BANCO | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 45/69 | 24 |
-| INBR34 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 56/69 | 13 |
-| XPBR31 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 54/69 | 15 |
-| BBSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 62/66 | 4 |
-| CXSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 54/66 | 12 |
-| PSSA3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 63/66 | 3 |
-| SAUD3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 63/66 | 3 |
-| WIZC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| VALE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| GGBR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
-| CSNA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/104 | 22 |
-| USIM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/104 | 15 |
-| FESA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| AURA33 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 40/103 | 63 |
-| PETR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
-| PRIO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
-| RECV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| BRAV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/104 | 17 |
-| OPCT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/104 | 19 |
-| UGPA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| PASS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/104 | 12 |
-| CSAN3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/106 | 19 |
+| B3SA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| BBAS3 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 62/70 | 8 |
+| BPAC11 | BANCO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 58/70 | 12 |
+| BBDC4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 62/70 | 8 |
+| ITUB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 62/70 | 8 |
+| BRSR6 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 58/70 | 12 |
+| BMEB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 57/70 | 13 |
+| SANB11 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 54/70 | 16 |
+| ROXO34 | BANCO | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 43/69 | 26 |
+| INBR34 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 54/69 | 15 |
+| XPBR31 | BANCO | 2026-06-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 52/69 | 17 |
+| BBSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 59/66 | 7 |
+| CXSE3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 51/66 | 15 |
+| PSSA3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 60/66 | 6 |
+| SAUD3 | SEGURADORA | 2026-09-30 | CVM (DFP/ITR, consolidado) | 60/66 | 6 |
+| WIZC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
+| VALE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/104 | 10 |
+| GGBR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/104 | 9 |
+| CSNA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 79/104 | 25 |
+| USIM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/104 | 18 |
+| FESA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| AURA33 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 38/103 | 65 |
+| PETR4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
+| PRIO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/104 | 9 |
+| RECV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/104 | 10 |
+| BRAV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 84/104 | 20 |
+| OPCT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/104 | 22 |
+| UGPA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| PASS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/104 | 15 |
+| CSAN3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 84/106 | 22 |
 | RAIZ4 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 69/92 | 23 |
-| BRKM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 74/104 | 30 |
-| UNIP6 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| DEXP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
-| SUZB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| KLBN11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| RANI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| AXIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/104 | 10 |
-| ALUP11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| TAEE11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| ISAE4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| AURE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/104 | 19 |
-| EGIE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| CMIG4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
-| EQTL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| CPFE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
-| SBSP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/104 | 17 |
-| SAPR11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| CSMG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
-| MGLU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/104 | 12 |
-| BHIA3 | RECUPERACAO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 66/92 | 26 |
-| LJQQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/104 | 22 |
-| GMAT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
-| AZZA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| GRND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| LREN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| VIVA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| CEAB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
-| TFCO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| VULC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
-| SBFG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| AMOB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 77/104 | 27 |
-| MELI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 90/103 | 13 |
-| MRVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 81/104 | 23 |
-| TEND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
-| DIRR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| PLPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/104 | 13 |
-| CURY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
-| CYRE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| EVEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
-| TRIS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| EZTC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| LAVV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| MDNE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
-| WEGE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 104/104 | 0 |
-| EMBJ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| SHUL4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| ROMI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
-| TUPY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 83/104 | 21 |
-| LEVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| POMO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| RAPT4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/104 | 16 |
-| KEPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| TASA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/104 | 12 |
-| RENT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| MOVI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
-| VAMO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| MILS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
-| PRNR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/104 | 13 |
-| SIMH3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/106 | 14 |
-| RAIL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
-| ECOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
-| SEQL3 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 71/92 | 21 |
-| LOGG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/104 | 12 |
-| ALOS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
-| JHSF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 102/104 | 2 |
-| RDOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| FLRY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| RADL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| PGMN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/104 | 14 |
-| PNVL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| VIVT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| TIMS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/104 | 18 |
-| FIQE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| COGN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
-| YDUQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| VTRU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/104 | 10 |
-| CSED3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
-| SLCE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| AGRO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| SOJA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/104 | 18 |
-| TTEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/104 | 19 |
-| SMTO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
-| JALL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/104 | 15 |
-| MDIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 103/104 | 1 |
-| CAML3 | GERAL | 2026-08-31 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
-| BEEF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/104 | 13 |
-| JBSS32 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 45/103 | 58 |
-| CSUD3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/104 | 14 |
-| CASH3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 76/104 | 28 |
-| BMOB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
-| SMFT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/104 | 14 |
-| OBTC3 | TESOURARIA_CRIPTO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 56/96 | 40 |
-| M2ST34 | TESOURARIA_CRIPTO | 2026-09-30 | SEC EDGAR (XBRL) | 66/95 | 29 |
-| MSFT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 100/103 | 3 |
-| M1TA34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 94/103 | 9 |
-| GOGL34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 96/103 | 7 |
-| NVDC34 | GERAL | 2026-07-26 | SEC EDGAR (XBRL) | 92/103 | 11 |
-| MUTC34 | GERAL | 2026-09-03 | SEC EDGAR (XBRL) | 96/103 | 7 |
-| QCOM34 | GERAL | 2026-09-27 | SEC EDGAR (XBRL) | 81/103 | 22 |
-| P2LT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 69/103 | 34 |
-| N1OW34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 90/103 | 13 |
-| V1RT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 95/103 | 8 |
-| RGTI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 50/103 | 53 |
-| QUBT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 56/103 | 47 |
-| SPCX34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 34/103 | 69 |
+| BRKM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 71/104 | 33 |
+| UNIP6 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/104 | 10 |
+| DEXP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
+| SUZB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
+| KLBN11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
+| RANI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
+| AXIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/104 | 12 |
+| ALUP11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| TAEE11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| ISAE4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
+| AURE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/104 | 22 |
+| EGIE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| CMIG4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
+| EQTL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
+| CPFE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
+| SBSP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 84/104 | 20 |
+| SAPR11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| CSMG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/104 | 9 |
+| MGLU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/104 | 15 |
+| BHIA3 | RECUPERACAO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 63/92 | 29 |
+| LJQQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 79/104 | 25 |
+| GMAT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/104 | 9 |
+| AZZA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
+| GRND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
+| LREN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
+| VIVA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
+| CEAB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/104 | 9 |
+| TFCO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| VULC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
+| SBFG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
+| AMOB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 74/104 | 30 |
+| MELI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 88/103 | 15 |
+| MRVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 78/104 | 26 |
+| TEND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
+| DIRR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
+| PLPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/104 | 16 |
+| CURY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
+| CYRE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/104 | 10 |
+| EVEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/104 | 14 |
+| TRIS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
+| EZTC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
+| LAVV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/104 | 10 |
+| MDNE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/104 | 14 |
+| WEGE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/104 | 3 |
+| EMBJ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
+| SHUL4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
+| ROMI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
+| TUPY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 80/104 | 24 |
+| LEVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
+| POMO4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
+| RAPT4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/104 | 19 |
+| KEPL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
+| TASA4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/104 | 15 |
+| RENT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
+| MOVI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/104 | 9 |
+| VAMO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/104 | 10 |
+| MILS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/104 | 14 |
+| PRNR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/104 | 16 |
+| SIMH3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/106 | 17 |
+| RAIL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
+| ECOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/104 | 14 |
+| SEQL3 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 68/92 | 24 |
+| LOGG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/104 | 15 |
+| ALOS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/104 | 8 |
+| JHSF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/104 | 5 |
+| RDOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
+| FLRY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| RADL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
+| PGMN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/104 | 17 |
+| PNVL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
+| VIVT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| TIMS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 83/104 | 21 |
+| FIQE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| COGN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/104 | 11 |
+| YDUQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| VTRU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/104 | 13 |
+| CSED3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/104 | 9 |
+| SLCE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| AGRO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/104 | 10 |
+| SOJA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 83/104 | 21 |
+| TTEN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/104 | 22 |
+| SMTO3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/104 | 6 |
+| JALL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/104 | 18 |
+| MDIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/104 | 4 |
+| CAML3 | GERAL | 2026-08-31 | CVM (DFP/ITR, consolidado) | 97/104 | 7 |
+| BEEF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/104 | 16 |
+| JBSS32 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 43/103 | 60 |
+| CSUD3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/104 | 17 |
+| CASH3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 73/104 | 31 |
+| BMOB3 | GERAL | None | None | 0/104 | 104 |
+| SMFT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 87/104 | 17 |
+| OBTC3 | TESOURARIA_CRIPTO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 53/96 | 43 |
+| M2ST34 | TESOURARIA_CRIPTO | 2026-09-30 | SEC EDGAR (XBRL) | 64/95 | 31 |
+| MSFT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 98/103 | 5 |
+| M1TA34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 92/103 | 11 |
+| GOGL34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 94/103 | 9 |
+| NVDC34 | GERAL | 2026-07-26 | SEC EDGAR (XBRL) | 90/103 | 13 |
+| MUTC34 | GERAL | 2026-09-03 | SEC EDGAR (XBRL) | 94/103 | 9 |
+| QCOM34 | GERAL | 2026-09-27 | SEC EDGAR (XBRL) | 79/103 | 24 |
+| P2LT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 67/103 | 36 |
+| N1OW34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 88/103 | 15 |
+| V1RT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 93/103 | 10 |
+| RGTI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 48/103 | 55 |
+| QUBT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 54/103 | 49 |
+| SPCX34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 32/103 | 71 |
 
 ## B3SA3
 
@@ -149,6 +149,9 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## BBAS3
 
@@ -157,6 +160,9 @@ Indicadores sem valor e motivo:
 
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de Basileia (`basileia`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Inadimplência 90 dias (`inadimplencia_90`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Cobertura de PDD (`cobertura_pdd`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
@@ -171,6 +177,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem financeira / ativo (NIM aprox.) (`nim`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de eficiência (aprox.) (`indice_eficiencia`): conta não encontrada na fonte ou não aplicável ao modelo
 - Custo do crédito / margem (`custo_credito_sobre_margem`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -187,6 +196,9 @@ Indicadores sem valor e motivo:
 
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de Basileia (`basileia`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Inadimplência 90 dias (`inadimplencia_90`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Cobertura de PDD (`cobertura_pdd`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
@@ -198,6 +210,9 @@ Indicadores sem valor e motivo:
 
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de Basileia (`basileia`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Inadimplência 90 dias (`inadimplencia_90`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Cobertura de PDD (`cobertura_pdd`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
@@ -210,6 +225,9 @@ Indicadores sem valor e motivo:
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem financeira / ativo (NIM aprox.) (`nim`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de eficiência (aprox.) (`indice_eficiencia`): conta não encontrada na fonte ou não aplicável ao modelo
 - Custo do crédito / margem (`custo_credito_sobre_margem`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -226,6 +244,9 @@ Indicadores sem valor e motivo:
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem financeira / ativo (NIM aprox.) (`nim`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de eficiência (aprox.) (`indice_eficiencia`): conta não encontrada na fonte ou não aplicável ao modelo
 - Custo do crédito / margem (`custo_credito_sobre_margem`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -244,6 +265,9 @@ Indicadores sem valor e motivo:
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem financeira / ativo (NIM aprox.) (`nim`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de eficiência (aprox.) (`indice_eficiencia`): conta não encontrada na fonte ou não aplicável ao modelo
 - Custo do crédito / margem (`custo_credito_sobre_margem`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -277,7 +301,9 @@ Indicadores sem valor e motivo:
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de eficiência (aprox.) (`indice_eficiencia`): conta não encontrada na fonte ou não aplicável ao modelo
 - Custo do crédito / margem (`custo_credito_sobre_margem`): conta não encontrada na fonte ou não aplicável ao modelo
 - Crescimento da carteira de crédito (`cresc_carteira`): carteira de crédito não identificada nas duas datas
@@ -298,7 +324,9 @@ Indicadores sem valor e motivo:
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de eficiência (aprox.) (`indice_eficiencia`): conta não encontrada na fonte ou não aplicável ao modelo
 - Custo do crédito / margem (`custo_credito_sobre_margem`): conta não encontrada na fonte ou não aplicável ao modelo
 - Crescimento da carteira de crédito (`cresc_carteira`): carteira de crédito não identificada nas duas datas
@@ -322,7 +350,9 @@ Indicadores sem valor e motivo:
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice de eficiência (aprox.) (`indice_eficiencia`): conta não encontrada na fonte ou não aplicável ao modelo
 - Custo do crédito / margem (`custo_credito_sobre_margem`): conta não encontrada na fonte ou não aplicável ao modelo
 - Crescimento da carteira de crédito (`cresc_carteira`): carteira de crédito não identificada nas duas datas
@@ -337,6 +367,9 @@ Indicadores sem valor e motivo:
 
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice combinado (`indice_combinado`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Sinistralidade (`sinistralidade`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 
@@ -355,6 +388,9 @@ Indicadores sem valor e motivo:
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Estabilidade de margem (`estab_margem`): conta não encontrada na fonte ou não aplicável ao modelo
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice combinado (`indice_combinado`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Sinistralidade (`sinistralidade`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 
@@ -364,6 +400,9 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice combinado (`indice_combinado`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Sinistralidade (`sinistralidade`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 
@@ -373,6 +412,9 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 - Índice combinado (`indice_combinado`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 - Sinistralidade (`sinistralidade`): não existe nas demonstrações padronizadas da CVM/SEC; preencher a partir do release em notes.json (campo manuais)
 
@@ -383,6 +425,9 @@ Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## VALE3
 
@@ -398,6 +443,9 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## GGBR4
 
@@ -410,6 +458,9 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CSNA3
 
@@ -438,6 +489,9 @@ Indicadores sem valor e motivo:
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## USIM5
 
@@ -459,6 +513,9 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## FESA4
 
@@ -468,6 +525,9 @@ Indicadores sem valor e motivo:
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## AURA33
 
@@ -538,7 +598,9 @@ Indicadores sem valor e motivo:
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## PETR4
 
@@ -550,6 +612,9 @@ Indicadores sem valor e motivo:
 - CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## PRIO3
 
@@ -564,6 +629,9 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RECV3
 
@@ -577,6 +645,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## BRAV3
 
@@ -600,6 +671,9 @@ Indicadores sem valor e motivo:
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## OPCT3
 
@@ -625,6 +699,9 @@ Indicadores sem valor e motivo:
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## UGPA3
 
@@ -634,6 +711,9 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## PASS3
 
@@ -652,6 +732,9 @@ Indicadores sem valor e motivo:
 - DY médio 5a (`dy_medio_5a`): sem proventos suficientes nos últimos 5 anos
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CSAN3
 
@@ -677,6 +760,9 @@ Indicadores sem valor e motivo:
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 - Soma das partes listadas (`soma_partes`): conta não encontrada na fonte ou não aplicável ao modelo
 - Desconto de holding (`desconto_holding`): conta não encontrada na fonte ou não aplicável ao modelo
 
@@ -746,6 +832,9 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## UNIP6
 
@@ -759,6 +848,9 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## DEXP3
 
@@ -770,6 +862,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SUZB3
 
@@ -784,6 +879,9 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## KLBN11
 
@@ -798,6 +896,9 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RANI3
 
@@ -805,6 +906,9 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## AXIA3
 
@@ -819,8 +923,10 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## ALUP11
 
@@ -830,6 +936,9 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TAEE11
 
@@ -839,6 +948,9 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## ISAE4
 
@@ -853,6 +965,9 @@ Indicadores sem valor e motivo:
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## AURE3
 
@@ -878,6 +993,9 @@ Indicadores sem valor e motivo:
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## EGIE3
 
@@ -887,6 +1005,9 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CMIG4
 
@@ -897,6 +1018,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## EQTL3
 
@@ -911,6 +1035,9 @@ Indicadores sem valor e motivo:
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CPFE3
 
@@ -921,6 +1048,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SBSP3
 
@@ -946,6 +1076,9 @@ Indicadores sem valor e motivo:
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SAPR11
 
@@ -955,6 +1088,9 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CSMG3
 
@@ -967,6 +1103,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MGLU3
 
@@ -985,6 +1124,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## BHIA3
 
@@ -1017,6 +1159,9 @@ Indicadores sem valor e motivo:
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## LJQQ3
 
@@ -1045,6 +1190,9 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## GMAT3
 
@@ -1057,6 +1205,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## AZZA3
 
@@ -1064,6 +1215,9 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## GRND3
 
@@ -1071,6 +1225,9 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## LREN3
 
@@ -1080,6 +1237,9 @@ Avisos do pipeline:
 Indicadores sem valor e motivo:
 
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## VIVA3
 
@@ -1087,6 +1247,9 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CEAB3
 
@@ -1099,6 +1262,9 @@ Indicadores sem valor e motivo:
 - CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TFCO4
 
@@ -1110,6 +1276,9 @@ Indicadores sem valor e motivo:
 - % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## VULC3
 
@@ -1120,6 +1289,9 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SBFG3
 
@@ -1134,6 +1306,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## AMOB3
 
@@ -1167,6 +1342,9 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MELI34
 
@@ -1185,7 +1363,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MRVE3
 
@@ -1215,6 +1395,9 @@ Indicadores sem valor e motivo:
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TEND3
 
@@ -1225,6 +1408,9 @@ Indicadores sem valor e motivo:
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## DIRR3
 
@@ -1233,6 +1419,9 @@ Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## PLPL3
 
@@ -1252,6 +1441,9 @@ Indicadores sem valor e motivo:
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CURY3
 
@@ -1262,6 +1454,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CYRE3
 
@@ -1275,6 +1470,9 @@ Indicadores sem valor e motivo:
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## EVEN3
 
@@ -1292,6 +1490,9 @@ Indicadores sem valor e motivo:
 - Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TRIS3
 
@@ -1306,6 +1507,9 @@ Indicadores sem valor e motivo:
 - Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## EZTC3
 
@@ -1314,6 +1518,9 @@ Indicadores sem valor e motivo:
 
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## LAVV3
 
@@ -1327,6 +1534,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MDNE3
 
@@ -1344,9 +1554,18 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## WEGE3
 
+
+Indicadores sem valor e motivo:
+
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## EMBJ3
 
@@ -1361,6 +1580,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SHUL4
 
@@ -1369,6 +1591,9 @@ Indicadores sem valor e motivo:
 
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## ROMI3
 
@@ -1379,6 +1604,9 @@ Indicadores sem valor e motivo:
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TUPY3
 
@@ -1406,6 +1634,9 @@ Indicadores sem valor e motivo:
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## LEVE3
 
@@ -1414,6 +1645,9 @@ Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## POMO4
 
@@ -1422,6 +1656,9 @@ Indicadores sem valor e motivo:
 
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RAPT4
 
@@ -1444,6 +1681,9 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## KEPL3
 
@@ -1452,6 +1692,9 @@ Indicadores sem valor e motivo:
 
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TASA4
 
@@ -1470,6 +1713,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RENT3
 
@@ -1484,6 +1730,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MOVI3
 
@@ -1496,6 +1745,9 @@ Indicadores sem valor e motivo:
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## VAMO3
 
@@ -1509,6 +1761,9 @@ Indicadores sem valor e motivo:
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MILS3
 
@@ -1526,6 +1781,9 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 8 exercícios ou extremos negativos
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## PRNR3
 
@@ -1545,6 +1803,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SIMH3
 
@@ -1565,6 +1826,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RAIL3
 
@@ -1576,6 +1840,9 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## ECOR3
 
@@ -1593,6 +1860,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SEQL3
 
@@ -1622,6 +1892,9 @@ Indicadores sem valor e motivo:
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## LOGG3
 
@@ -1640,6 +1913,9 @@ Indicadores sem valor e motivo:
 - Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## ALOS3
 
@@ -1651,6 +1927,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## JHSF3
 
@@ -1659,6 +1938,9 @@ Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RDOR3
 
@@ -1673,6 +1955,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## FLRY3
 
@@ -1682,6 +1967,9 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RADL3
 
@@ -1689,6 +1977,9 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## PGMN3
 
@@ -1709,6 +2000,9 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 5 exercícios ou extremos negativos
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## PNVL3
 
@@ -1716,6 +2010,9 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## VIVT3
 
@@ -1725,6 +2022,9 @@ Indicadores sem valor e motivo:
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TIMS3
 
@@ -1749,6 +2049,9 @@ Indicadores sem valor e motivo:
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Estabilidade de margem (`estab_margem`): conta não encontrada na fonte ou não aplicável ao modelo
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## FIQE3
 
@@ -1758,6 +2061,9 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## COGN3
 
@@ -1772,6 +2078,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## YDUQ3
 
@@ -1783,6 +2092,9 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## VTRU3
 
@@ -1799,6 +2111,9 @@ Indicadores sem valor e motivo:
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CSED3
 
@@ -1811,6 +2126,9 @@ Indicadores sem valor e motivo:
 - CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SLCE3
 
@@ -1820,6 +2138,9 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## AGRO3
 
@@ -1833,6 +2154,9 @@ Indicadores sem valor e motivo:
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SOJA3
 
@@ -1857,6 +2181,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## TTEN3
 
@@ -1882,6 +2209,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SMTO3
 
@@ -1891,6 +2221,9 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## JALL3
 
@@ -1912,6 +2245,9 @@ Indicadores sem valor e motivo:
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MDIA3
 
@@ -1919,6 +2255,9 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CAML3
 
@@ -1929,6 +2268,9 @@ Indicadores sem valor e motivo:
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## BEEF3
 
@@ -1948,6 +2290,9 @@ Indicadores sem valor e motivo:
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## JBSS32
 
@@ -2014,7 +2359,9 @@ Indicadores sem valor e motivo:
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CSUD3
 
@@ -2035,6 +2382,9 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 4 exercícios ou extremos negativos
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## CASH3
 
@@ -2069,21 +2419,121 @@ Indicadores sem valor e motivo:
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## BMOB3
 
 Avisos do pipeline:
-- total de ações CVM (81,246,922) difere da B3 (85,608,392); usado CVM
+- sem preço no yfinance
 
 Indicadores sem valor e motivo:
 
-- CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 7 exercícios ou extremos negativos
-- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 7 exercícios ou extremos negativos
-- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 7 exercícios ou extremos negativos
-- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 7 exercícios ou extremos negativos
+- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
+- Liquidez média 21 pregões (`liquidez_21`): conta não encontrada na fonte ou não aplicável ao modelo
+- Liquidez média 63 pregões (`liquidez_63`): conta não encontrada na fonte ou não aplicável ao modelo
+- Volatilidade anualizada (`volatilidade`): conta não encontrada na fonte ou não aplicável ao modelo
+- Beta (`beta`): histórico de preço curto
+- Maior queda em 5 anos (`drawdown_5a`): conta não encontrada na fonte ou não aplicável ao modelo
+- Free float (`free_float`): FRE sem acionista marcado como controlador (controle difuso)
+- P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
+- P/VP (`pvp`): conta não encontrada na fonte ou não aplicável ao modelo
+- P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
+- P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
+- P/Receita (PSR) (`psr`): conta não encontrada na fonte ou não aplicável ao modelo
+- P/Ativo (`p_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
+- P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
+- P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
+- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
+- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
+- LPA (`lpa`): conta não encontrada na fonte ou não aplicável ao modelo
+- VPA (`vpa`): conta não encontrada na fonte ou não aplicável ao modelo
+- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
+- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
+- FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
+- P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
+- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
+- Preço justo de Graham (`graham`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
+- Margem de segurança Graham (`graham_margem`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
+- TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
+- TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
+- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
+- TIR implícita (principal) (`tir_implicita`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
+- TIR - título de referência (`tir_spread_ref`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
+- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
+- Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
+- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
+- Taxa de desconto de referência (`taxa_referencia`): conta não encontrada na fonte ou não aplicável ao modelo
+- g (crescimento de longo prazo) (`g`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
+- Caixa (`caixa`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
+- PL/Ativos (`pl_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
+- Passivos/Ativos (`passivos_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
+- Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
+- Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
+- Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
+- Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
+- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
+- Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
+- Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
+- Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
+- Margem líquida (`margem_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
+- Giro do ativo (`giro_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
+- Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
+- Prazo médio de estoque (`pme`): empresa sem estoques relevantes
+- Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
+- Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
+- ROE (`roe`): conta não encontrada na fonte ou não aplicável ao modelo
+- ROA (`roa`): conta não encontrada na fonte ou não aplicável ao modelo
+- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
+- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
+- CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
+- CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 0 exercícios ou extremos negativos
+- CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
+- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 0 exercícios ou extremos negativos
+- CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
+- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 0 exercícios ou extremos negativos
+- CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
+- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 0 exercícios ou extremos negativos
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Receita LTM vs LTM anterior (`cresc_receita_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
+- Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
+- Anos com receita crescendo (`consist_receita`): conta não encontrada na fonte ou não aplicável ao modelo
+- Anos com lucro crescendo (`consist_lucro`): conta não encontrada na fonte ou não aplicável ao modelo
+- FCO (`fco`): conta não encontrada na fonte ou não aplicável ao modelo
+- Capex (`capex`): conta não encontrada na fonte ou não aplicável ao modelo
+- FCL (`fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- EBITDA (`ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
+- Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
+- Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
+- Proventos por ação 12m (`dpa_12m`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dividend Yield 12m (`dy`): conta não encontrada na fonte ou não aplicável ao modelo
+- DY médio 5a (`dy_medio_5a`): sem proventos suficientes nos últimos 5 anos
+- Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Anos seguidos pagando (`anos_pagando`): conta não encontrada na fonte ou não aplicável ao modelo
+- Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
+- % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
+- Número de ações (`acoes`): conta não encontrada na fonte ou não aplicável ao modelo
+- Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
+- Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
+- Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Estabilidade de margem (`estab_margem`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Nota por critérios (`nota_criterios`): conta não encontrada na fonte ou não aplicável ao modelo
+- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SMFT3
 
@@ -2104,6 +2554,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## OBTC3
 
@@ -2153,6 +2606,9 @@ Indicadores sem valor e motivo:
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Estabilidade de margem (`estab_margem`): conta não encontrada na fonte ou não aplicável ao modelo
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## M2ST34
 
@@ -2189,7 +2645,9 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MSFT34
 
@@ -2198,7 +2656,9 @@ Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## M1TA34
 
@@ -2215,7 +2675,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## GOGL34
 
@@ -2230,7 +2692,9 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## NVDC34
 
@@ -2247,7 +2711,9 @@ Indicadores sem valor e motivo:
 - Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MUTC34
 
@@ -2260,7 +2726,9 @@ Indicadores sem valor e motivo:
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 18 exercícios ou extremos negativos
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## QCOM34
 
@@ -2288,7 +2756,9 @@ Indicadores sem valor e motivo:
 - Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## P2LT34
 
@@ -2330,7 +2800,9 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## N1OW34
 
@@ -2349,7 +2821,9 @@ Indicadores sem valor e motivo:
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## V1RT34
 
@@ -2363,10 +2837,14 @@ Indicadores sem valor e motivo:
 - CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 9 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## RGTI34
 
+Avisos do pipeline:
+- proporção declarada 1 difere da implícita pelo preço 0.88
 
 Indicadores sem valor e motivo:
 
@@ -2422,7 +2900,9 @@ Indicadores sem valor e motivo:
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - Estabilidade de margem (`estab_margem`): conta não encontrada na fonte ou não aplicável ao modelo
 - Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## QUBT34
 
@@ -2475,7 +2955,9 @@ Indicadores sem valor e motivo:
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## SPCX34
 
@@ -2553,7 +3035,9 @@ Indicadores sem valor e motivo:
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
+- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
+- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## Sinais de estresse financeiro
 
@@ -2564,9 +3048,11 @@ Empresas fora do modelo RECUPERACAO com dois ou mais entre PL negativo, Dív.lí
 | CSNA3 | GERAL | dív.líq/EBITDA 7.625275; EBIT não cobre juros (0.15x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | CSAN3 | HOLDING | dív.líq/EBITDA 6.040139; EBIT não cobre juros (0.25x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | AURE3 | GERAL | dív.líq/EBITDA 5.150336; EBIT não cobre juros (0.62x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
+| LJQQ3 | GERAL | EBIT não cobre juros (-0.01x); ação abaixo de R$ 1 | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | MRVE3 | GERAL | dív.líq/EBITDA 5.450855; EBIT não cobre juros (0.57x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | TUPY3 | GERAL | dív.líq/EBITDA 10.148525; EBIT não cobre juros (-0.49x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | OBTC3 | TESOURARIA_CRIPTO | dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-7.44x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 
 ## Geral
-- sem histórico: ['BPAC4.SA', 'MGLU4.SA', 'RAIZ3.SA', 'TFCO3.SA']
+- cdi: HTTP 304 em https://api.bcb.gov.br/dados/serie/bcdata.sgs.4389/dados/ultimos/1?formato=json&_=1794971064
+- sem histórico: ['BMOB3.SA', 'BPAC4.SA', 'MGLU4.SA', 'RAIZ3.SA', 'TFCO3.SA']
