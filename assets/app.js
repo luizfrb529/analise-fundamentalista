@@ -909,8 +909,10 @@ async function pgAtivo(app, t) {
   </div>
 
   <div class="cartao" style="margin-top:18px">
-    <div class="cotacao-cab"><div><div class="sub">Cotação</div><div class="preco-grande">R$ ${ok(p.preco) ? nf2.format(p.preco) : "n/d"}</div>
-      <div class="sub" style="margin-top:6px">${p.ao_vivo ? `hoje ${varHtml(p.var_dia)} · cotação das ${new Date(p.ao_vivo).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })} (atraso de até 15 min)` : `fechamento de ${dataBR(p.data)}`} · 12 meses ${varHtml(p.var_12m)} · no ano ${varHtml(p.var_ano)}</div><div class="sub">Indicadores calculados com o preço de fechamento de ${dataBR(D.meta.data_fechamento)}.</div>
+    <div class="cotacao-cab"><div title="Cotação com atraso de até 15 minutos. Indicadores calculados com o preço de fechamento de ${dataBR(D.meta.data_fechamento)}."><div class="sub">Cotação</div>
+      <div class="preco-grande">R$ ${ok(p.preco) ? nf2.format(p.preco) : "n/d"}${ok(p.var_dia) ? ` <span class="preco-var">(${varHtml(p.var_dia)})</span>` : ""}</div>
+      <div class="sub" style="margin-top:6px">${p.ao_vivo ? `Atualizada às ${new Date(p.ao_vivo).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}` : `Fechamento de ${dataBR(p.data)}`}</div>
+      <div class="sub">No ano ${varHtml(p.var_ano)} · 12 meses ${varHtml(p.var_12m)}</div>
       ${pos52 !== null ? `<div class="faixa52"><div class="trilho"><span class="marc" style="left:${pos52}%"></span></div><div class="ext"><span>Mín. 52 semanas R$ ${nf2.format(p.min_52s)}</span><span>Máx. R$ ${nf2.format(p.max_52s)}</span></div></div>` : ""}</div>
       <div class="chips" id="px-per"><button class="chip ativo" data-p="1">1A</button><button class="chip" data-p="5">5A</button><button class="chip" data-p="10">10A</button></div></div>
     <div class="grafico" style="margin-top:12px"><canvas id="g-preco"></canvas></div>
