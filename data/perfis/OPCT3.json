@@ -1,0 +1,87 @@
+{
+ "ticker": "OPCT3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Afretamento de embarcações de apoio offshore e serviços submarinos e ambientais, com a CBO incorporada em setembro de 2026. Cerca de três quartos da receita vêm de embarcações, com diárias referenciadas em dólar.",
+ "modelo": "A OceanPact afreta embarcações de apoio marítimo (PSV, OSRV, RSV, AHTS, entre outras) e presta serviços de geofísica, inspeção submarina com ROVs, descomissionamento, resposta a derramamento de óleo e consultoria ambiental, principalmente para a Petrobras e petroleiras privadas. A receita é majoritariamente recorrente, baseada em contratos de afretamento de vários anos com diária fixa, e o backlog era de R$ 10,9 bi em set/26. Desde 16/09/2026 incorpora a CBO, formando frota de 70 embarcações, e opera também o estaleiro Dock Brasil.",
+ "segmentos": [
+  {
+   "nome": "Embarcações",
+   "peso_receita": 0.76,
+   "periodo": "3T26",
+   "obs": "R$ 1.006 mi de receita líquida pro forma (+3%), antes de eliminações entre segmentos; inclui frota da CBO e estaleiro."
+  },
+  {
+   "nome": "Serviços",
+   "peso_receita": 0.24,
+   "periodo": "3T26",
+   "obs": "R$ 316 mi (+38%), puxados por Subsea e Geociências e pelo projeto de descomissionamento com a Trident."
+  }
+ ],
+ "segmentos_base": "Receita líquida pro forma (OceanPact + CBO) antes das eliminações entre segmentos (R$ 71 mi no 3T26).",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "A operação está concentrada na costa brasileira, com destaque para as bacias de Campos e Santos. Há projetos pontuais no exterior, como os dois trabalhos para a Petrobras na Colômbia citados no 1T26, mas a empresa não divulga a fatia da receita gerada fora do Brasil."
+ },
+ "moeda": {
+  "receita_em_dolar": "média",
+  "divida_em_dolar": "média",
+  "texto": "As diárias dos contratos com a Petrobras são informadas em dólar no release, o que liga parte relevante da receita ao câmbio. Parte da dívida também é atrelada ao dólar (o covenant usa o dólar médio do ano divulgado pelo BNDES), o que reduz o efeito líquido de uma alta da moeda; a fatia exata da dívida em dólar não foi divulgada no release."
+ },
+ "momento": "No 3T26 (release de 09/11/2026), em base pro forma, a receita líquida foi de R$ 1,25 bi (+5% sobre o 3T25) e o Ebitda ajustado de R$ 468 mi (-1%), com margem de 38% sobre a receita ex-parcerias; a ocupação da frota caiu de 78% para 74%. O lucro líquido contábil foi de R$ 32 mi (R$ 117 mi nos 9M26), consolidando a CBO só a partir de 16/09; o lucro pro forma foi de R$ 60 mi, ante R$ 126 mi no 3T25. A dívida bruta somou R$ 5,7 bi e a alavancagem pelo critério do covenant ficou em 2,59x, dentro do novo limite de 3,00x até dez/27. Em 02/11/2026 a empresa assinou a venda dos PSVs CBO Energy e CBO Wiser por US$ 86 mi, com conclusão prevista até 18/12/2026.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "A dívida bruta de R$ 5,7 bi tem parcela relevante em CDI, e juro menor reduz a despesa financeira, que foi de R$ 101 mi líquidos no 3T26."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "As diárias de afretamento são referenciadas em dólar e ganham valor em reais; o ganho é parcial porque parte da dívida também é atrelada ao dólar."
+  },
+  "commodities_subindo": {
+   "nota": 1,
+   "porque": "Petróleo mais caro estimula a atividade offshore da Petrobras e de petroleiras privadas, o que favorece novas licitações e diárias mais altas."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "A demanda depende do investimento em petróleo no mar, guiado por preço do óleo e planos da Petrobras, e não do ciclo da economia doméstica."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Os contratos têm reajustes que repassam parte dos custos, enquanto salários de tripulação e manutenção sobem com a inflação, efeitos que se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "O efeito de juros mais altos sobre a dívida tende a ser compensado pelo real mais fraco, que eleva em reais as diárias referenciadas em dólar."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "OceanPact, Release de Resultados 3T26 (documento oficial, via investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/OPCT3/52208/",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "OceanPact, Release de Resultados 2T26 (RI)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/d3d19aad-2471-4309-a7e5-a5dbc02c0a1c/0fc8d41f-1fb8-a0bc-2433-efe908d8171a?origin=2",
+   "data": "2026-08-06"
+  },
+  {
+   "titulo": "OceanPact, Release de Resultados 1T26 (RI)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/d3d19aad-2471-4309-a7e5-a5dbc02c0a1c/cfd1ca3f-905a-ff48-0e0e-e155f0b46682?origin=2",
+   "data": "2026-05-08"
+  },
+  {
+   "titulo": "Investidor10: OceanPact coloca US$ 86 milhões no caixa com venda de dois PSVs",
+   "url": "https://investidor10.com.br/noticias/oceanpact-opct3-coloca-us-86-milhoes-no-caixa-e-pode-ampliar-dividendos-123691/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Offshore Engineer: OceanPact-CBO Merger to Form 73-Vessel Fleet",
+   "url": "https://www.oedigital.com/news/536556-oceanpact-cbo-merger-to-form-73-vessel-fleet",
+   "data": "2026-03-05"
+  }
+ ]
+}

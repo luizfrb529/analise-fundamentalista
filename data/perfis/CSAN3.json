@@ -1,0 +1,99 @@
+{
+ "ticker": "CSAN3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Holding com participações em Compass (gás), Rumo (ferrovias), Moove (lubrificantes), Radar (terras agrícolas) e Raízen. O ponto central é a dívida da holding, de R$ 9,5 bi, ainda pouco coberta por dividendos.",
+ "modelo": "A Cosan não opera diretamente: vive de dividendos e da venda de participações. O portfólio inclui o controle da Compass (distribuição de gás) e da Moove (lubrificantes Mobil no Brasil e no exterior), participação relevante na Rumo (ferrovias e terminais), a Radar (terras agrícolas arrendadas e vendidas com ganho) e participação na Raízen, cujo valor contábil foi zerado no fim de 2025. A receita consolidada vem das controladas, enquanto o caixa da holding depende de dividendos e vendas de terras e ativos, usados para pagar juros e amortizar dívida.",
+ "segmentos": [
+  {
+   "nome": "Compass (gás)",
+   "peso_receita": 0.37,
+   "periodo": "3T26",
+   "obs": "Receita de cerca de R$ 4,1 bi; Ebitda de R$ 1,64 bi (+22%)."
+  },
+  {
+   "nome": "Rumo (logística)",
+   "peso_receita": 0.35,
+   "periodo": "3T26",
+   "obs": "Receita de cerca de R$ 3,95 bi; Ebitda ajustado de R$ 2,22 bi (-4%)."
+  },
+  {
+   "nome": "Moove (lubrificantes)",
+   "peso_receita": 0.27,
+   "periodo": "3T26",
+   "obs": "Receita de R$ 3,08 bi (+26%); Ebitda de R$ 435 mi (+21%)."
+  },
+  {
+   "nome": "Radar e outros",
+   "peso_receita": 0.01,
+   "periodo": "3T26",
+   "obs": "Radar teve Ebitda de R$ 117 mi (+11%); peso obtido por diferença."
+  }
+ ],
+ "segmentos_base": "Receita líquida das controladas antes de eliminações, comparada à receita consolidada de R$ 11,29 bi no 3T26 (estimativa).",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Compass, Rumo e Radar operam só no Brasil. A Moove tem operações fora do país, como Estados Unidos, Reino Unido e América do Sul, mas a Cosan não divulga a fatia consolidada da receita gerada no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "média",
+  "texto": "A receita em moeda estrangeira vem principalmente das operações internacionais da Moove. A holding tem histórico de bônus em dólar protegidos por derivativos; a parcela atual em dólar não foi confirmada, e o efeito líquido de alta do dólar tende a ser pequeno."
+ },
+ "momento": "No 3T26 (divulgado em 13/11/2026), a Cosan teve lucro atribuível de R$ 190 mi, ante prejuízo de R$ 1,19 bi no 3T25, com equivalência patrimonial positiva de R$ 719 mi e sem reconhecimento de resultado da Raízen; nos 9M26 ainda acumula prejuízo de R$ 1,7 bi. A receita consolidada foi de R$ 11,29 bi (+6%) e o Ebitda ajustado de R$ 4,36 bi. A dívida líquida expandida da holding fechou setembro em R$ 9,5 bi, 48% menor em um ano e 3% maior no trimestre, com cobertura do serviço da dívida de 0,3x, ante meta de 0,8x a 1,2x para 2026. A meta de cobertura conta com dividendos e vendas de terras da Radar; a holding não acompanha o aumento de capital da Raízen e terá Guilherme Penin como CEO interino a partir de 04/01/2027, no lugar de Marcelo Martins.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "A holding paga juros sobre R$ 9,5 bi de dívida com cobertura de apenas 0,3x por dividendos; juro menor alivia esse custo e valoriza Compass e Rumo, ambas endividadas em CDI."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "A receita externa da Moove ganha em reais, mas o efeito é pequeno no consolidado e a dívida em moeda estrangeira da holding tende a ser protegida por hedge."
+  },
+  "commodities_subindo": {
+   "nota": 1,
+   "porque": "Preços agrícolas maiores valorizam as terras da Radar e elevam o volume de grãos transportado pela Rumo."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade eleva o volume de gás da Compass, de lubrificantes da Moove e de carga da Rumo."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Tarifas de gás e ferrovia têm reajuste por inflação, mas inflação maior tende a manter a Selic alta, o que pesa sobre a dívida da holding."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Juros longos mais altos encarecem a dívida da holding, reduzem o valor das participações e dificultam a venda de ativos a bons preços, que é a principal fonte de desalavancagem."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Times Brasil (CNBC): Cosan tem lucro de R$ 190 milhões no terceiro trimestre de 2026",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/cosan-lucro-190-milhoes-terceiro-trimestre-2026/",
+   "data": "2026-11-16"
+  },
+  {
+   "titulo": "Análise de Ações: Cosan registra lucro de R$ 190 milhões no 3T26, reduz dívida e inicia transição de CEO",
+   "url": "https://www.analisedeacoes.com/noticias/cosan-csan3-registra-lucro-de-190-milhoes-no-3t26-reduz-divida-e-inicia-transicao-de-ceo/",
+   "data": "2026-11-14"
+  },
+  {
+   "titulo": "BP Money: Cosan volta ao lucro com R$ 190 milhões no 3T26 e troca de CEO em 2027",
+   "url": "https://bpmoney.com.br/?p=436516",
+   "data": "2026-11-14"
+  },
+  {
+   "titulo": "Brazil Journal: Na Cosan, saem dois veteranos marcando uma nova fase",
+   "url": "https://braziljournal.com/na-cosan-saem-dois-veteranos-marcando-uma-nova-fase/",
+   "data": "2026-08-14"
+  },
+  {
+   "titulo": "Compass, Release de Resultados 2T26 (controlada, documento oficial)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/PASS3/47836/",
+   "data": "2026-08-13"
+  }
+ ]
+}

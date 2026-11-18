@@ -1,0 +1,88 @@
+{
+ "ticker": "BRKM5",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior petroquímica das Américas, com resinas plásticas e químicos no Brasil, EUA, Europa e México, em recuperação extrajudicial desde agosto de 2026. Receita e dívida são, em grande parte, atreladas ao dólar.",
+ "modelo": "A Braskem transforma nafta, etano e gás em eteno e propeno e daí em resinas termoplásticas (polietileno, polipropileno, PVC) e químicos básicos, vendidos à indústria de embalagens, construção, automotiva e agronegócio. O resultado depende do spread entre o preço das resinas e o custo das matérias-primas, que segue preços internacionais e ciclos globais de oferta. Opera polos no Brasil (Camaçari, Triunfo, ABC paulista, Duque de Caxias), plantas de polipropileno nos EUA e na Alemanha e, por meio da Braskem Idesa, um complexo no México, além de produzir polietileno verde a partir de etanol.",
+ "segmentos": [
+  {
+   "nome": "Brasil e América do Sul",
+   "peso_receita": 0.94,
+   "periodo": "3T26",
+   "obs": "Ebitda recorrente de US$ 267 mi (cerca de R$ 1,4 bi)."
+  },
+  {
+   "nome": "Estados Unidos e Europa",
+   "peso_receita": 0.05,
+   "periodo": "3T26",
+   "obs": "Ebitda recorrente de US$ 15 mi (R$ 78 mi), ante negativo de R$ 79 mi no 3T25."
+  },
+  {
+   "nome": "México (Braskem Idesa)",
+   "peso_receita": 0.01,
+   "periodo": "3T26",
+   "obs": "Ebitda recorrente de US$ 2 mi (R$ 11 mi), ante negativo de R$ 204 mi no 3T25."
+  }
+ ],
+ "segmentos_base": "Ebitda recorrente dos segmentos (soma dos três segmentos, sem eliminações e corporativo); a receita por segmento do 3T26 não foi confirmada em duas fontes.",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Produz e vende no Brasil e na América do Sul, nos EUA e na Europa (polipropileno) e no México (Braskem Idesa, que pediu Chapter 11 nos EUA), além de exportar resinas a partir do Brasil (240 mil toneladas no 3T26). A fatia da receita gerada fora do Brasil no 3T26 não foi confirmada."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "alta",
+  "texto": "Os preços de resinas e químicos seguem referências internacionais em dólar, mesmo nas vendas no Brasil, e as operações no exterior faturam em dólar e euro. A maior parte da dívida financeira é em dólar, com bônus internacionais no centro da reestruturação de cerca de US$ 10,9 bi, de modo que a alta do dólar eleva receita e dívida em reais ao mesmo tempo."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita líquida foi de R$ 19,58 bi (+13% sobre o 3T25, -10% sobre o 2T26) e o Ebitda recorrente de R$ 1,96 bi (+140% no ano, -63% no trimestre), com normalização dos spreads petroquímicos internacionais que tinham subido com tensões geopolíticas. O prejuízo atribuível aos acionistas foi de R$ 1,07 bi, ante lucro de R$ 3,33 bi no 2T26, pressionado por resultado financeiro negativo de R$ 1,61 bi. A alavancagem caiu para 6,36x a dívida líquida ajustada sobre o Ebitda recorrente, ante 6,74x em junho. Em 03/06/2026 o fundo Shine I, ligado à IG4, assumiu 50,1% do capital votante, com a Petrobras mantendo 47%, e em 24/08/2026 a empresa pediu recuperação extrajudicial para renegociar a dívida financeira, sem afetar fornecedores e clientes.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula construção, consumo e indústria no Brasil, que demandam resinas, mas tem pouco efeito sobre a dívida, que é majoritariamente em dólar."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "A receita atrelada ao dólar sobe em reais, mas a dívida em dólar, de cerca de US$ 10,9 bi em reestruturação, cresce na mesma moeda, gerando perdas cambiais que anulam o ganho."
+  },
+  "commodities_subindo": {
+   "nota": -1,
+   "porque": "Nafta, etano e gás são as principais matérias-primas; quando sobem sem repasse imediato aos preços das resinas, o spread e o Ebitda caem."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Resinas são insumos de embalagens, construção, automóveis e agronegócio, e as vendas no Brasil (854 mil t no 3T26, +9%) acompanham de perto a atividade."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Os preços são definidos por referências internacionais, e a inflação doméstica afeta sobretudo custos fixos em reais, com efeito pequeno."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior desvaloriza o real e encarece em reais a dívida em dólar, além de piorar o acesso a crédito em plena renegociação."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Times Brasil (CNBC): Braskem tem prejuízo de R$ 1,2 bilhão no 3º trimestre",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/braskem-tem-prejuizo-de-r-12-bilhao-no-3o-trimestre/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Investidor10: Braskem tem prejuízo líquido de R$ 1,068 bi no 3º trimestre",
+   "url": "https://investidor10.com.br/noticias/braskem-brkm5-tem-prejuizo-liquido-de-r-1-068-bi-no-3-trimestre-123875/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Forbes Brasil: Braskem pede recuperação extrajudicial, quem são os donos",
+   "url": "https://forbes.com.br/forbes-money/2026/08/braskem-recuperacao-extrajudicial-quem-sao-os-donos/",
+   "data": "2026-08-24"
+  },
+  {
+   "titulo": "InvestNews: IG4 assume a Braskem e prepara reestruturação e venda de ativos",
+   "url": "https://investnews.com.br/negocios/braskem-ig4-re-venda-ativos/",
+   "data": "2026-06-03"
+  }
+ ]
+}

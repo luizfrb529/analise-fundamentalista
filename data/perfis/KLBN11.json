@@ -1,0 +1,99 @@
+{
+ "ticker": "KLBN11",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior produtora de papéis para embalagem do Brasil, com celulose, papel-cartão e caixas de papelão. Cerca de um terço da receita vem de exportações e 83% da dívida é em moeda estrangeira.",
+ "modelo": "A Klabin planta florestas de pinus e eucalipto no Paraná e em Santa Catarina e produz celulose de fibra curta, fibra longa e fluff, papéis (papel-cartão e containerboard, como kraftliner) e embalagens de papelão ondulado e sacos industriais. Vende para fabricantes de embalagens, indústria de alimentos e bebidas, bens de consumo e mercado externo. A receita é recorrente e depende de volume e de preços internacionais de celulose e papel em dólar, além dos preços de embalagens no mercado interno.",
+ "segmentos": [
+  {
+   "nome": "Embalagens",
+   "peso_receita": 0.37,
+   "periodo": "6M26",
+   "obs": "Papelão ondulado e sacos industriais; R$ 3.709 mi no semestre."
+  },
+  {
+   "nome": "Papéis",
+   "peso_receita": 0.34,
+   "periodo": "6M26",
+   "obs": "Papel-cartão e containerboard; R$ 3.403 mi no semestre."
+  },
+  {
+   "nome": "Celulose",
+   "peso_receita": 0.28,
+   "periodo": "6M26",
+   "obs": "Fibra curta, fibra longa e fluff; R$ 2.855 mi no semestre."
+  },
+  {
+   "nome": "Madeira e outros",
+   "peso_receita": 0.01,
+   "periodo": "6M26",
+   "obs": "Venda de madeira (R$ 318 mi) menos ajustes de hedge accounting e subprodutos (R$ -188 mi)."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão).",
+ "geografia": {
+  "brasil_pct": 0.67,
+  "exterior_pct": 0.33,
+  "periodo": "2T26",
+  "base": null,
+  "texto": "As fábricas e florestas ficam no Brasil (PR, SC, SP e outros estados com unidades de embalagens). As exportações de celulose, papel-cartão e kraftliner vão para América Latina, Ásia, Europa e outros mercados; no 3T26 o volume de papel-cartão exportado cresceu 23%."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "alta",
+  "texto": "Um terço da receita é exportada e preços de celulose e papel seguem referências em dólar mesmo no mercado interno. Em junho de 2026, 83% da dívida bruta (R$ 28,4 bi de R$ 34,1 bi) era em moeda estrangeira, a custo de USD + 5,1% ao ano, o que gera variação cambial contábil no lucro quando o dólar sobe; no caixa e no Ebitda, a alta do dólar é positiva, e a empresa usa hedge de receita futura em dólar."
+ },
+ "momento": "No 3T26 (divulgado em 28/10/2026), a receita líquida foi de R$ 5,57 bi (+3% sobre o 3T25), o Ebitda ajustado de R$ 1,86 bi (-12%, margem de 33% ante 39%) e o lucro líquido de R$ 393 mi (-18%), com custos maiores (combustíveis, químicos, fretes e medidas contra o El Niño) e real 5,7% mais valorizado frente ao dólar. A dívida líquida ficou em R$ 23,98 bi (-8% em um ano), com alavancagem de 3,3 vezes o Ebitda em dólar (3,2 vezes em junho). O investimento do trimestre foi de R$ 754 mi (+36%) e o fluxo de caixa livre caiu para R$ 73 mi, ante R$ 699 mi no 3T25. No 2T26, a empresa anunciou programa de recompra de ações e captou R$ 1,75 bi em CPR-F.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula consumo e produção industrial, que puxam a demanda por embalagens, e reduz o custo da parcela da dívida em reais (12,1% ao ano no 2T26), que é só 17% do total."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Um terço da receita é exportada e celulose e papel têm preço em dólar, o que eleva o Ebitda; a dívida majoritariamente em dólar gera perda contábil no lucro, por isso o efeito não é maior."
+  },
+  "commodities_subindo": {
+   "nota": 1,
+   "porque": "Alta no preço da celulose e do papel em dólar aumenta a receita, mas parte do ganho é anulada se petróleo, químicos e fretes também subirem."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Embalagens de papelão acompanham a produção industrial e o consumo de alimentos e bebidas no Brasil."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "A empresa repassa parte da inflação nos preços de embalagens, mas o custo por tonelada subiu 12% no 3T26 com pressões inflacionárias em insumos, efeitos que se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Risco fiscal maior costuma enfraquecer o real, o que ajuda a receita em dólar, mas aumenta a dívida em moeda estrangeira em reais e os juros locais."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Klabin, Release de Resultados 2T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/1c41fa99-efe7-4e72-81dd-5b571f5aa376/1c433925-a2b4-39b8-9193-db7a1ff0a2e0?origin=2",
+   "data": "2026-08-05"
+  },
+  {
+   "titulo": "Money Times (Reuters): Lucro da Klabin cai 18% no 3º trimestre para R$ 393 milhões",
+   "url": "https://moneytimes.com.br/lucro-da-klabin-klbn11-cai-18-no-3o-trimestre-para-r-393-milhoes-lmrs/",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Klabin fatura R$ 5,6 bilhões, mas lucro cai 18% com alta dos custos",
+   "url": "https://timesbrasil.com.br/brasil/klabin-fatura-r-56-bilhoes-mas-lucro-cai-18-com-alta-dos-custos-no-3o-trimestre/",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "DGABC (Estadão Conteúdo): Lucro líquido da Klabin cai 18% e atinge R$ 393 milhões no 3º trimestre",
+   "url": "https://www.dgabc.com.br/Noticia/4365460/lucro-liquido-da-klabin-cai-18-e-atinge-r-393-milhoes-no-3-trimestre",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "Klabin, Release de Resultados 3T25",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/1c41fa99-efe7-4e72-81dd-5b571f5aa376/16f35741-e476-efd6-62d5-8f92d8c9d60c?origin=1",
+   "data": "2025-10"
+  }
+ ]
+}

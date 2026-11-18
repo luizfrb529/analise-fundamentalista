@@ -1,0 +1,105 @@
+{
+ "ticker": "CMIG4",
+ "revisado_em": "2026-11-18",
+ "resumo": "Elétrica integrada controlada pelo Estado de Minas Gerais; cerca de 70% da receita vem da distribuição em MG. O lucro do 3T26 foi inflado por reversão de provisões, e o governador eleito descartou privatizar.",
+ "modelo": "A Cemig atua em distribuição (Cemig D, que atende quase todo o estado de Minas Gerais), geração e transmissão (Cemig GT), comercialização de energia no mercado livre, distribuição de gás canalizado (Gasmig, exclusiva em MG) e geração distribuída solar (Cemig SIM). A distribuição tem tarifa regulada pela Aneel e reajuste anual, a transmissão recebe RAP fixa e a geração vende em contratos; tem ainda 21,68% da Taesa. A receita é majoritariamente recorrente e regulada.",
+ "segmentos": [
+  {
+   "nome": "Distribuição de energia (Cemig D)",
+   "peso_receita": 0.7,
+   "periodo": "3T26",
+   "obs": "R$ 7.844 mi de receita com terceiros; reajuste tarifário de 6,5% desde 28/05/2026."
+  },
+  {
+   "nome": "Comercialização",
+   "peso_receita": 0.18,
+   "periodo": "3T26",
+   "obs": "R$ 2.042 mi; margem baixa, com Ebitda ajustado de R$ 18,4 mi."
+  },
+  {
+   "nome": "Gás (Gasmig)",
+   "peso_receita": 0.05,
+   "periodo": "3T26",
+   "obs": "R$ 496 mi."
+  },
+  {
+   "nome": "Geração",
+   "peso_receita": 0.04,
+   "periodo": "3T26",
+   "obs": "R$ 438 mi com terceiros."
+  },
+  {
+   "nome": "Transmissão",
+   "peso_receita": 0.03,
+   "periodo": "3T26",
+   "obs": "R$ 296 mi com terceiros."
+  }
+ ],
+ "segmentos_base": "Receita líquida com terceiros (exclui vendas entre segmentos)",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera essencialmente em Minas Gerais, com comercialização de energia para clientes em outros estados. A estratégia declarada é concentrar os negócios em Minas Gerais."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "Receita em reais. Pelo gráfico do release do 3T26, a dívida está concentrada em IPCA e CDI, com parcela pequena, de cerca de 6%, em dólar; alta do dólar tem efeito pequeno e negativo, dependendo de hedge não detalhado."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita líquida foi de R$ 11,16 bi (+5,1%), o Ebitda de R$ 2,69 bi (+74%) e o lucro de R$ 1.717,0 mi (+115,5%), inflados pela reversão de R$ 1.071,2 mi em provisões para contingências previdenciárias sobre PLR (efeito de R$ 774,6 mi no lucro). Em base ajustada, o Ebitda foi de R$ 1,99 bi (+31,1%) e o lucro de R$ 922,8 mi (+18,0%), puxados pela distribuição (Ebitda ajustado +50%). A dívida líquida é de R$ 19,7 bi e a alavancagem de 2,43x; em setembro foram emitidos R$ 3 bi em debêntures e declarados R$ 200 mi em JCP, e o capex do 9M26 somou R$ 5,1 bi. Em 05/10/2026, o governador eleito Cleitinho Azevedo descartou privatizar a companhia e defendeu usar recursos dela para subsidiar a conta de luz.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor reduz o custo da dívida de R$ 19,7 bi, parte em CDI, mas a alavancagem de 2,43x limita o ganho frente a pares mais endividados."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita em reais e só cerca de 6% da dívida em dólar, com efeito líquido pequeno."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Gás mais caro é repassado nas tarifas da Gasmig, e a geração é hídrica, sem combustível."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade industrial e comercial em Minas eleva o volume distribuído de energia e gás, que cresceu 1,0% no 3T26 sem GD."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "A parcela B da tarifa de distribuição e a RAP de transmissão são corrigidas por IPCA, efeito que supera a parcela da dívida em IPCA."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal eleva juros longos e aumenta a pressão política sobre tarifas e dividendos de uma estatal estadual."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Cemig, Release de Resultados 3T26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/CMIG3/52705/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Diário do Comércio: Lucro líquido da Cemig sobe 115% e atinge R$ 1,7 bilhão no terceiro trimestre de 2026",
+   "url": "https://diariodocomercio.com.br/negocios/lucro-cemig-terceiro-trimestre-2026/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "EuQueroInvestir: Cemig (CMIG4) lucro 3T26",
+   "url": "https://euqueroinvestir.com/acoes/cemig-cmig4-lucro-3t26-resultados",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "DGABC (Estadão Conteúdo): Cleitinho descarta privatizar Cemig",
+   "url": "https://www.dgabc.com.br/Noticia/4351099/cleitinho-descarta-privatizar-cemig-e-promete-dialogo-com-lula-ou-flavio-em-governo",
+   "data": "2026-10-05"
+  },
+  {
+   "titulo": "Canal Solar: governador eleito de Minas Gerais, Cleitinho, e a privatização da Cemig",
+   "url": "https://canalsolar.com.br/governador-minas-gerais-cleitinho-cemig-privatizacao/",
+   "data": "2026-10-08"
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "ticker": "INBR34",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR da Inter&Co, banco digital com 46,8 milhões de clientes e superapp de serviços. Cerca de 70% da carteira tem garantia, com destaque para o crédito imobiliário; a receita é quase toda no Brasil.",
+ "modelo": "O Inter oferece conta digital gratuita, cartão, crédito imobiliário e home equity, consignado, crédito a pequenas empresas, investimentos, seguros e um marketplace, tudo em um aplicativo. Ganha dinheiro com a margem financeira (78% da receita líquida no 3T26) e com tarifas, intercâmbio, corretagem de seguros e comissões do marketplace (22%), com receita recorrente. A Inter&Co tem ações na Nasdaq (INTR) e BDR na B3; também atende clientes nos EUA com conta global e financiamento imobiliário.",
+ "segmentos": [
+  {
+   "nome": "Imobiliário e home equity",
+   "peso_receita": 0.34,
+   "periodo": "3T26",
+   "obs": "R$ 19,9 bi, +37% em 12 meses."
+  },
+  {
+   "nome": "Cartão de crédito",
+   "peso_receita": 0.28,
+   "periodo": "3T26",
+   "obs": "R$ 16,5 bi, +18% em 12 meses; crescimento reduzido por decisão de risco."
+  },
+  {
+   "nome": "Consignado público e pessoal",
+   "peso_receita": 0.17,
+   "periodo": "3T26",
+   "obs": "R$ 9,9 bi, inclui FGTS, cheque especial e renegociações."
+  },
+  {
+   "nome": "Pequenas e médias empresas",
+   "peso_receita": 0.09,
+   "periodo": "3T26",
+   "obs": "R$ 5,2 bi (+22%), inclui rural; Pronampe cresceu 73%."
+  },
+  {
+   "nome": "Títulos privados de crédito",
+   "peso_receita": 0.06,
+   "periodo": "3T26",
+   "obs": "R$ 3,5 bi em debêntures, CRI, CRA e similares."
+  },
+  {
+   "nome": "Consignado privado",
+   "peso_receita": 0.05,
+   "periodo": "3T26",
+   "obs": "R$ 3,1 bi, +147% em 12 meses."
+  }
+ ],
+ "segmentos_base": "Carteira de crédito ampliada (set/26, R$ 58,1 bi)",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Quase toda a receita e a carteira estão no Brasil. Nos EUA, o grupo oferece conta global a brasileiros e americanos e financiamento imobiliário, incluído na linha de imobiliário, mas não divulga o tamanho dessa operação."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita e a captação (R$ 81 bi, a cerca de 70% do CDI) são em reais; a operação nos EUA é pequena. Para o investidor do BDR, a alta do dólar eleva o valor do papel em reais, mas reduz na mesma medida o valor em dólar do lucro gerado em reais, por isso o efeito líquido tende a ser pequeno."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), o lucro líquido foi recorde de R$ 425 mi (+26% sobre o 3T25), a receita líquida chegou a R$ 2,7 bi (+26%) e o ROE anualizado foi de 15,8% (16,3% no 2T26). A carteira ampliada somou R$ 58,1 bi (+25% em 12 meses), a margem financeira (NIM) ficou em 9,96%, afetada pela inflação menor nos ativos atrelados ao IPCA, e o índice de eficiência melhorou para 41,9%. A inadimplência acima de 90 dias subiu para 5,3%, puxada por consignado privado e cartão, enquanto a de 15 a 90 dias caiu para 4,2%; o custo do risco ficou estável em 5,9%. Em 20/10/2026 o Inter acertou a compra dos 39,75% da Inter Seguros que pertenciam à Wiz, por R$ 409,5 mi, operação que depende de Banco Central e Cade.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor barateia a captação, estimula o crédito imobiliário, maior linha da carteira, e alivia a inadimplência de cartão e consignado privado."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Para o BDR em reais, o ganho de conversão é compensado pela queda em dólar do lucro gerado em reais; nota corrigida de -1 para 0."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "A carteira é de varejo e pequenas empresas, sem dependência relevante de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Mais renda e emprego aumentam a demanda por crédito e reduzem atrasos, que subiram em consignado privado e cartão."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação maior eleva o rendimento dos ativos atrelados ao IPCA, que reduziu a margem no 3T26, mas pressiona a renda dos devedores; efeitos se compensam. Nota corrigida de -1 para 0."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Risco fiscal sobe juros longos, encarece a captação e reduz o valor e a demanda do crédito imobiliário de longo prazo."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Inter&Co, 3Q26 Earnings Release (6-K)",
+   "url": "https://s3.amazonaws.com/sec.irpass.cc/2728/0001864163-26-000089.htm",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Inter&Co, Release de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/b4dc0b14-a83a-40a9-9545-d9e4f18ed7af/f169fccc-acd2-44cb-b664-d2e10d58d5c2",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "NeoFeed: Lucro do Inter cresce 26% e inadimplência de curto prazo recua, mas ROE é um ponto de atenção",
+   "url": "https://neofeed.com.br/negocios/lucro-do-inter-cresce-26-e-inadimplencia-de-curto-prazo-recua-mas-roe-e-um-ponto-de-atencao/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Blog Inter: Inter alcança lucro líquido recorde no 3T26",
+   "url": "https://blog.inter.co/inter-alcanca-lucro-liquido-recorde-no-3t26-e-avanca-em-crescimento-e-eficiencia/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Inter&Co delivers record 3Q26 net income (Business Wire, via Finviz)",
+   "url": "https://finviz.com/news/422318/interco-delivers-record-3q26-net-income-of-us761-million-with-strong-growth-higher-margin-and-better-efficiency",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Blog Inter: Inter compra fatia da Wiz e assume 100% da Inter Seguros",
+   "url": "https://blog.inter.co/inter-compra-fatia-da-wiz-e-assume-100pct-da-inter-seguros/",
+   "data": "2026-10-20"
+  }
+ ]
+}

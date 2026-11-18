@@ -1,0 +1,92 @@
+{
+ "ticker": "PASS3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Dona da Comgás e de outras distribuidoras de gás canalizado, com braço de comercialização e GNL (Edge). Cerca de 77% da receita vêm da distribuição regulada, com tarifas reajustadas por inflação.",
+ "modelo": "A Compass controla a Comgás, maior distribuidora de gás natural do país (São Paulo), e, pela Commit (sócia da Mitsui), Sulgás, Compagas e Necta, além de participações em outras distribuidoras. A distribuição é uma concessão regulada: a empresa ganha uma margem tarifária sobre o volume entregue a residências, comércio, indústrias e termelétricas, com repasse do custo do gás. O segmento de Comercialização e Serviços (Edge) opera o terminal de regaseificação TRSP, em Santos, vende gás no mercado livre e desenvolve GNL fora da rede e biometano. A Cosan é a controladora desde o IPO de maio de 2026.",
+ "segmentos": [
+  {
+   "nome": "Distribuição de gás",
+   "peso_receita": 0.77,
+   "periodo": "6M26",
+   "obs": "R$ 5,87 bi de receita líquida; Comgás, Sulgás, Compagas e Necta."
+  },
+  {
+   "nome": "Comercialização e Serviços (Edge)",
+   "peso_receita": 0.23,
+   "periodo": "6M26",
+   "obs": "R$ 1,80 bi; inclui terminal TRSP, gás no mercado livre, GNL B2B e biometano."
+  }
+ ],
+ "segmentos_base": "Receita líquida por segmento antes das eliminações entre segmentos (R$ 575 mi no 6M26), conforme release do 2T26.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "6M26",
+  "base": null,
+  "texto": "Opera somente no Brasil: São Paulo (Comgás), Rio Grande do Sul (Sulgás), Paraná (Compagas) e Necta, no interior paulista, além de participações minoritárias em distribuidoras de outros estados."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita em reais. O custo do gás, que tem referência em dólar e petróleo, é repassado às tarifas. Após swaps, cerca de 92% da dívida bruta é indexada ao CDI e o restante a IPCA e IGP-M, sem exposição relevante ao dólar."
+ },
+ "momento": "No 3T26, a Compass teve lucro líquido consolidado de R$ 591 mi (+37% sobre o 3T25) e Ebitda de R$ 1,64 bi (+22%), ajudado por ganho de otimização de carga na Edge, enquanto o volume distribuído caiu cerca de 4%. A dívida líquida fechou setembro em R$ 11,5 bi, com alavancagem de 2,2x o Ebitda, ante 2,3x no 2T26. Em maio de 2026 a empresa fez o IPO no Novo Mercado (PASS3), de cerca de R$ 3,0 bi, e em junho pagou R$ 406 mi em dividendos referentes a 2025. A Edge assinou em 2026 seu primeiro contrato de GNL para caminhões, de 10 anos.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Cerca de 92% da dívida de R$ 11,5 bi está em CDI, então juro menor reduz diretamente a despesa financeira, que somou R$ 473 mi no 2T26."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "O custo do gás, atrelado a dólar, é repassado à tarifa e a dívida não tem exposição relevante à moeda; o efeito líquido é neutro."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Gás mais caro é repassado ao cliente e não altera a margem regulada; pode reduzir volume industrial no curto prazo."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade industrial e comercial aumenta o volume distribuído, embora a parcela residencial seja pouco sensível ao ciclo."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "As margens de distribuição são reajustadas por índices de inflação nos contratos de concessão, preservando a receita real."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior eleva juros e o custo da dívida em CDI, além de reduzir o valor presente de uma concessão de longo prazo."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Compass, Release de Resultados 2T26 (documento oficial, via investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/PASS3/47836/",
+   "data": "2026-08-13"
+  },
+  {
+   "titulo": "Compass, Earnings Release 2Q26 (RI)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/17eafccb-2e4b-40d4-8da2-1ba38e6d4676/55a8c79b-a502-ec37-b191-86abd95a5a9f?origin=2",
+   "data": "2026-08-13"
+  },
+  {
+   "titulo": "Compass, Earnings Release 1Q26 (RI)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/17eafccb-2e4b-40d4-8da2-1ba38e6d4676/79482818-13c3-115d-256d-821af034706d?origin=2",
+   "data": "2026-05-13"
+  },
+  {
+   "titulo": "BP Money: Cosan volta ao lucro no 3T26 (inclui resultado da Compass)",
+   "url": "https://bpmoney.com.br/?p=436516",
+   "data": "2026-11-14"
+  },
+  {
+   "titulo": "Análise de Ações: Cosan registra lucro de R$ 190 milhões no 3T26 (inclui Compass)",
+   "url": "https://www.analisedeacoes.com/noticias/cosan-csan3-registra-lucro-de-190-milhoes-no-3t26-reduz-divida-e-inicia-transicao-de-ceo/",
+   "data": "2026-11-14"
+  },
+  {
+   "titulo": "eixos: IPO da Compass testa nova fonte de capital para o mercado de gás",
+   "url": "https://eixos.com.br/?p=507891",
+   "data": "2026-05-16"
+  }
+ ]
+}

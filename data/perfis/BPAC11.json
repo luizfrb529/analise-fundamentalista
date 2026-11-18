@@ -1,0 +1,88 @@
+{
+ "ticker": "BPAC11",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior banco de investimento da América Latina, com crédito a empresas, gestão de fortunas e de recursos e banco de varejo via Banco Pan. Crédito corporativo responde por cerca de 26% da receita e 70% da carteira.",
+ "modelo": "O BTG Pactual ganha dinheiro com crédito a grandes empresas e PMEs, assessoria em fusões e ofertas (investment banking), operações de tesouraria e mercados (sales and trading), gestão de recursos e de fortunas (R$ 2,8 tri sob gestão em set/26) e crédito ao consumidor, principalmente pelo Banco Pan. Crédito, gestão e consumo geram receita recorrente; investment banking e trading são mais voláteis. Tem operações em Chile, Colômbia, Peru, México, Estados Unidos e Uruguai.",
+ "segmentos": [
+  {
+   "nome": "Corporate Lending (grandes empresas)",
+   "peso_receita": 0.7,
+   "periodo": "3T26",
+   "obs": "Peso na carteira: cerca de R$ 268 bi (+23,1% em 12 meses). Na receita, Corporate Lending & Business Banking somou R$ 2,77 bi (26% do total)."
+  },
+  {
+   "nome": "Consumer Finance (Banco Pan e consignado)",
+   "peso_receita": 0.22,
+   "periodo": "3T26",
+   "obs": "Peso na carteira: R$ 84 bi (+36,6% em 12 meses). Receita de R$ 1,60 bi (15% do total)."
+  },
+  {
+   "nome": "Pequenas e médias empresas",
+   "peso_receita": 0.09,
+   "periodo": "3T26",
+   "obs": "Peso na carteira: R$ 33,5 bi (+25,9% em 12 meses)."
+  }
+ ],
+ "segmentos_base": "Carteira de crédito (R$ 386 bi, incluindo consumer finance). Na receita de R$ 10,81 bi do 3T26, o mix foi: Corporate Lending & Business Banking 26%, Interest & Others 18%, Sales & Trading 16%, Consumer Finance 15%, Wealth Management 15%, Asset Management 7%, Investment Banking 4%.",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": "carteira",
+  "texto": "A maior parte do negócio está no Brasil. Fora do país, o banco opera em Chile, Colômbia, Peru (onde recebeu autorização para atuar como banco no 3T26), México, Estados Unidos e Uruguai, onde concluiu a compra do HSBC Uruguai no trimestre; o banco não detalha a receita por país."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "média",
+  "texto": "Parte relevante do crédito e da captação está fora do Brasil, em dólar e moedas latino-americanas, e o banco usa emissões externas como fonte de funding. Essas posições são em geral protegidas por derivativos, de modo que o efeito líquido de uma alta do dólar sobre o resultado tende a ser pequeno."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita total foi recorde, de R$ 10,81 bi (+13,8% sobre o 3T25), e o lucro ajustado de R$ 5,33 bi (+17%), com ROAE de 26,4% (28,1% um ano antes); o lucro contábil foi de R$ 5,09 bi. Crédito corporativo (+28,4%) e consumer finance (+64%) puxaram a receita, enquanto investment banking caiu 35,9% e sales and trading recuou cerca de 11%. A carteira de crédito chegou a R$ 302 bi (+22,3%), as despesas operacionais somaram R$ 4,52 bi e a captação líquida em gestão foi de R$ 58 bi. No trimestre, o banco concluiu a compra do HSBC Uruguai, foi autorizado a operar como banco no Peru e, em 11/11/2026, aprovou recompra de até R$ 2 bi em units.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula ofertas de ações e dívida, fusões e aquisições e a migração de clientes para produtos de maior taxa de gestão, compensando a menor remuneração do capital próprio."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "As posições em moeda estrangeira são em geral protegidas; alta do dólar costuma vir com volatilidade, que favorece trading, mas reduz emissões."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Sem exposição direta relevante; o efeito indireto via clientes corporativos do agronegócio e de energia é difuso."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Atividade maior eleva a demanda por crédito corporativo e de PMEs, o volume de operações de mercado de capitais e o patrimônio de clientes de wealth."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação eleva receitas nominais e a remuneração do capital, mas tende a manter juro alto, o que reduz o ritmo de emissões e de investment banking."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal eleva juros longos e a aversão a risco, reduzindo ofertas e fusões e pressionando posições de tesouraria, embora a volatilidade ajude o trading."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Times Brasil (CNBC): BTG Pactual alcança lucro histórico de R$ 5,3 bilhões e reforça expansão com recompra bilionária",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/btg-pactual-alcanca-lucro-historico-de-r-53-bilhoes-e-reforca-expansao-com-recompra-bilionaria-de-acoes/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Seu Dinheiro: BTG Pactual lucra bilhões e rentabilidade cai no 3T26",
+   "url": "https://www.seudinheiro.com/2026/empresas/btg-pactual-bpac11-lucra-bilhoes-e-rentabilidade-cai-no-3t26-o-que-esta-por-tras-da-maquina-de-resultados-do-banco-miql/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Eu Quero Investir: BTG lucra R$ 5,3 bilhões no 3T26, alta de 17%, e bate recorde",
+   "url": "https://euqueroinvestir.com/acoes/btg-lucra-r-53-bilhoes-no-3t26-alta-de-17-e-bate-recorde",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Lets Money: BTG tem lucro recorde no 3º trimestre",
+   "url": "https://www.letsmoney.com.br/fintech/btg-lucro-recorde-3t/",
+   "data": "2026-11-12"
+  }
+ ]
+}

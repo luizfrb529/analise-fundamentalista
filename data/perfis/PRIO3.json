@@ -1,0 +1,99 @@
+{
+ "ticker": "PRIO3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior petroleira independente do Brasil, com campos maduros na Bacia de Campos. Quase toda a receita vem de petróleo exportado em dólar, hoje sujeito a imposto de exportação de 12%.",
+ "modelo": "A PRIO compra campos de petróleo já em produção, principalmente na Bacia de Campos, e reduz o custo de extração concentrando operações e equipamentos. Seus ativos são o cluster Valente (Frade e Wahoo), Peregrino, o cluster Bravo (Polvo e Tubarão Martelo) e Albacora Leste. A receita vem da venda de petróleo cru, quase toda exportada a preços ligados ao Brent em dólar; não há receita contratual recorrente, e o resultado depende de volume, Brent e custo por barril.",
+ "segmentos": [
+  {
+   "nome": "Cluster Valente (Frade e Wahoo)",
+   "peso_receita": 0.42,
+   "periodo": "3T26",
+   "obs": "Produção de 73,4 mil bpd (+123% no ano), com os quatro poços de Wahoo e o poço MUP7 de Frade, iniciado em setembro."
+  },
+  {
+   "nome": "Peregrino",
+   "peso_receita": 0.4,
+   "periodo": "3T26",
+   "obs": "80,6 mil bpd atribuíveis à PRIO, após a compra da participação de 40% e da operação, vendidas pela Equinor."
+  },
+  {
+   "nome": "Cluster Bravo (Polvo e Tubarão Martelo)",
+   "peso_receita": 0.09,
+   "periodo": "3T26",
+   "obs": null
+  },
+  {
+   "nome": "Albacora Leste",
+   "peso_receita": 0.09,
+   "periodo": "3T26",
+   "obs": null
+  }
+ ],
+ "segmentos_base": "Receita líquida por campo (padrão).",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Toda a produção fica no litoral do Rio de Janeiro, mas quase toda a receita vem da exportação de petróleo cru, vendido a refinarias e tradings no exterior. A empresa não divulga a divisão percentual da receita por destino."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "alta",
+  "texto": "A receita é em dólar e a empresa reporta em dólar; a dívida também é em dólar, com bonds e empréstimos bilaterais (emitiu US$ 700 mi em bonds em 2025). Como parte dos custos e dos impostos é em reais, uma alta do dólar tende a elevar a margem e o valor em reais."
+ },
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita líquida foi de US$ 1,37 bi (+146% sobre o 3T25), o Ebitda ajustado de cerca de US$ 1,1 bi (+235%, margem de 78%) e o lucro líquido ex-IFRS 16 de US$ 521 mi (+468%), com produção recorde de 191,6 mil bpd (+117%), lifting cost de US$ 7,9 por barril e reembolso de seguro de US$ 72 mi pelo gasoduto de Peregrino. Impostos sobre vendas e exportações somaram cerca de US$ 119 mi no trimestre, ante US$ 9 mi um ano antes, por causa do imposto de exportação de 12% sobre petróleo cru criado em março de 2026 e prorrogado pela Camex até o fim de 2026. A alavancagem ficou em 1,1x dívida líquida/Ebitda em setembro (1,5x em junho), a empresa recomprou 6,1 milhões de ações por US$ 71 mi e, em outubro, arrematou os blocos Magnetita e Hematita, vizinhos ao cluster Valente, em leilão da ANP.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A receita e a dívida são em dólar e o preço do petróleo é global, então a Selic tem efeito apenas indireto, via câmbio."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "Receita e dívida em dólar com parte dos custos em reais: dólar mais alto amplia a margem e o valor em reais do resultado."
+  },
+  "commodities_subindo": {
+   "nota": 2,
+   "porque": "Quase toda a receita é petróleo vendido pelo Brent, e o custo de extração baixo faz a alta do preço chegar quase inteira ao Ebitda."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O petróleo é exportado e precificado no mercado global, sem relação direta com a atividade no Brasil."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "A receita em dólar não acompanha a inflação brasileira, e a parcela de custos em reais é pequena frente à receita."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Risco fiscal tende a enfraquecer o real, o que ajuda a receita em reais, mas aumenta a chance de tributos como o imposto de 12% sobre a exportação de petróleo, que já custou cerca de US$ 120 mi no 3T26."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Eu Quero Investir: PRIO lucra US$ 521 milhões no 3T26, alta de 468%",
+   "url": "https://euqueroinvestir.com/acoes/prio-prio3-lucro-468-3t26-521-milhoes",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Investidor10: Lucro da Prio explode com produção recorde e Brent mais caro",
+   "url": "https://investidor10.com.br/noticias/lucro-da-prio-prio3-explode-707-com-producao-recorde-e-brent-mais-caro-123695/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "InfoMoney: Imposto de exportação de petróleo é prorrogado, como afeta Petrobras, Brava e PRIO",
+   "url": "https://www.infomoney.com.br/?p=3565324",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "PRIO, Release de Resultados 2T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/cecb3d3e-6bd6-4edd-b9b3-3cacde780cac/92a74c23-4a5f-3a21-9da2-72a4fbc7982c?origin=2",
+   "data": "2026-08-04"
+  },
+  {
+   "titulo": "PRIO, Release de Resultados 4T25",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/cecb3d3e-6bd6-4edd-b9b3-3cacde780cac/dfdc92c8-df52-f944-821b-e87eada61de5?origin=2",
+   "data": "2026-03-10"
+  }
+ ]
+}

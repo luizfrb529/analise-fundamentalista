@@ -1,0 +1,87 @@
+{
+ "ticker": "SAUD3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Holding de saúde do Bradesco, que detém 91,35% do capital: Bradesco Saúde, Odontoprev e hospitais Atlântica. Cerca de 95% dos prêmios vêm de planos médico-hospitalares, quase todos empresariais.",
+ "modelo": "A Bradsaúde reúne a seguradora médico-hospitalar Bradesco Saúde (cerca de 4,1 milhões de vidas), a operadora odontológica Odontoprev (cerca de 9,6 milhões de vidas), a rede Atlântica Hospitais (mais de 4 mil leitos próprios e em parcerias), clínicas Meu Doutor Novamed, as healthtechs Orizon e Kortex, a Croma (oncologia) e 24,85% do Fleury. Vende planos sobretudo a empresas, com foco crescente em pequenas e médias empresas. A receita é recorrente (mensalidades), e o lucro depende da diferença entre prêmios e custo assistencial (sinistralidade) e do resultado financeiro sobre cerca de R$ 30,8 bi em ativos financeiros.",
+ "segmentos": [
+  {
+   "nome": "Saúde médico-hospitalar (Bradesco Saúde)",
+   "peso_receita": 0.95,
+   "periodo": "2T26",
+   "obs": "Prêmios ganhos de R$ 13,1 bi no trimestre (+11,5%)."
+  },
+  {
+   "nome": "Odontológico (Odontoprev)",
+   "peso_receita": 0.05,
+   "periodo": "2T26",
+   "obs": "Receita líquida de R$ 635 mi (+5,6%)."
+  }
+ ],
+ "segmentos_base": "Prêmios ganhos (saúde) e receita líquida (dental) sobre a receita total de R$ 13,9 bi do 2T26, conforme apresentação corporativa da companhia; hospitais e serviços entram sobretudo por equivalência patrimonial e não aparecem como receita relevante.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "2T26",
+  "base": null,
+  "texto": "Toda a operação é no Brasil, com rede assistencial nacional e hospitais concentrados em São Paulo e Rio de Janeiro; a Atlântica D'Or, em Belo Horizonte, é o primeiro hospital fora desses dois estados."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receitas e ativos são em reais. O dólar só pesa de forma indireta, por meio de materiais, medicamentos e equipamentos importados que entram no custo assistencial."
+ },
+ "momento": "No 3T26 (divulgado em 21/10/2026), o lucro líquido foi de R$ 1,075 bi (+14,4% sobre o 3T25) e a receita total de R$ 14,275 bi (+9,2%); o resultado operacional ficou estável em R$ 1,449 bi e o resultado financeiro caiu 5,2%, para R$ 685 mi. A sinistralidade consolidada subiu para 84,5% (84,0% no 3T25), e o lucro foi ajudado pela equivalência da Atlântica e pela queda da alíquota efetiva de 36,4% para 31,6%. A base chegou a 13,7 milhões de beneficiários (+5,7% em 12 meses), e a companhia aprovou cerca de R$ 1 bi em dividendos, a pagar em 30/03/2027. A empresa estreou na B3 em 2026 e tem autorização da B3 para manter free float abaixo do mínimo do Novo Mercado até 30/10/2027.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": -1,
+   "porque": "O resultado financeiro sobre R$ 30,8 bi em ativos (R$ 685 mi no 3T26) responde por parte relevante do lucro e encolhe com juro menor."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Sem receita ou dívida em dólar; o efeito indireto via insumos médicos importados é pequeno frente ao custo total."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Planos empresariais crescem com o emprego formal, especialmente em pequenas e médias empresas, que responderam pela maior parte das adições líquidas."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "A inflação médica eleva o custo assistencial antes dos reajustes anuais dos contratos, pressionando a sinistralidade."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Juros mais altos elevam o rendimento das aplicações, mas enfraquecem o emprego e a contratação de planos, efeitos que se compensam."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Bradsaúde, Apresentação Corporativa (dados do 2T26, estrutura acionária set/26)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/c504a4a5-75e7-4404-8af7-524b50cd7e11/0f08b5af-ea2b-ba4a-c057-963a5eaf3cd3?origin=2",
+   "data": "2026-10-08"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Bradsaúde lucra R$ 1,1 bilhão no 3º trimestre, alta de 14,4%",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/bradsaude-lucra-r-11-bilhao-no-3o-trimestre-alta-de-144/",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "Money Times: Bradsaúde (SAUD3) lucro sobe 14,4% e chega a R$ 1,1 bi no 3T26",
+   "url": "https://www.moneytimes.com.br/bradsaude-saud3-lucro-sobe-144-e-chega-r-11-bi-no-3t26/",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "Seu Dinheiro: Sinistralidade sobe, mas lucro fala mais alto",
+   "url": "https://www.seudinheiro.com/2026/empresas/sinistralidade-sobe-mas-lucro-fala-mais-alto-por-que-bradsaude-saud3-agradou-mercado-rnda/",
+   "data": "2026-10-22"
+  },
+  {
+   "titulo": "Finance News: Bradsaúde obtém autorização da B3 para manter free float abaixo do mínimo",
+   "url": "https://financenews.com.br/2026/05/bradsaude-saud3-obtem-autorizacao-da-b3-para-manter-free-float-abaixo-do-percentual-minimo-previsto/",
+   "data": "2026-05-20"
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "ticker": "BRSR6",
+ "revisado_em": "2026-11-18",
+ "resumo": "Banco controlado pelo Estado do Rio Grande do Sul, com atuação concentrada no estado. Consignado e crédito rural somam cerca de metade da carteira; o lucro do 3T26 caiu 52% com mais provisões.",
+ "modelo": "O Banrisul ganha dinheiro com a margem financeira do crédito a pessoas físicas (com destaque para o consignado de servidores e aposentados), empresas, produtores rurais e financiamento imobiliário, financiado por uma base ampla de depósitos no Rio Grande do Sul. Também tem receitas de tarifas, cartões e adquirência (Vero) e gerencia a folha de pagamento do governo estadual. A receita é majoritariamente recorrente e regional.",
+ "segmentos": [
+  {
+   "nome": "Pessoa física",
+   "peso_receita": 0.43,
+   "periodo": "3T26",
+   "obs": "Peso na carteira: R$ 28,2 bi (-2,6% em 12 meses), dos quais R$ 18,2 bi em consignado (-9,1%)."
+  },
+  {
+   "nome": "Rural",
+   "peso_receita": 0.2,
+   "periodo": "3T26",
+   "obs": "R$ 12,95 bi (-3% em 12 meses)."
+  },
+  {
+   "nome": "Pessoa jurídica",
+   "peso_receita": 0.19,
+   "periodo": "3T26",
+   "obs": "R$ 12,6 bi (+22,3% em 12 meses), puxada por capital de giro."
+  },
+  {
+   "nome": "Imobiliário",
+   "peso_receita": 0.1,
+   "periodo": "3T26"
+  },
+  {
+   "nome": "Câmbio",
+   "peso_receita": 0.05,
+   "periodo": "3T26",
+   "obs": "R$ 3,3 bi (+38,2% em 12 meses)."
+  },
+  {
+   "nome": "Longo prazo",
+   "peso_receita": 0.04,
+   "periodo": "3T26"
+  }
+ ],
+ "segmentos_base": "Carteira de crédito (R$ 66,1 bi em set/26)",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": "carteira",
+  "texto": "A atuação é concentrada no Rio Grande do Sul, com presença menor em Santa Catarina e outros estados. Não há operação de varejo relevante no exterior; a exposição externa vem das operações de câmbio com exportadores e importadores."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "baixa",
+  "texto": "A carteira de câmbio, de R$ 3,3 bi (5% do total), é atrelada a moeda estrangeira e voltada a exportadores e importadores. A captação é quase toda em reais, por isso uma alta do dólar tem efeito líquido pequeno."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), o lucro líquido foi de R$ 157,8 mi (-52% sobre o 3T25 e -51,5% sobre o 2T26), com ROAE anualizado de 5,4% (12,2% um ano antes). A margem financeira subiu 3,3%, para R$ 1,66 bi, mas a despesa líquida de provisão cresceu 58,4%, para R$ 303,2 mi, e a inadimplência acima de 90 dias foi a 4,7% (3,6% um ano antes); as despesas administrativas subiram 10,6% em 12 meses. A carteira chegou a R$ 66,1 bi (+3,2%), com crescimento em empresas e queda no consignado, e a captação total a R$ 117,7 bi (+9,8%). No acumulado de 9M26, o lucro foi de R$ 704,8 mi (-25,7%).",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "Juro menor reduz a remuneração da base de depósitos baratos, mas alivia a inadimplência que derrubou o lucro do 3T26; efeitos se compensam."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "A carteira de câmbio é pequena (5%) e a captação é em reais; o efeito direto é pequeno."
+  },
+  "commodities_subindo": {
+   "nota": 1,
+   "porque": "Cerca de 20% da carteira é crédito rural no Rio Grande do Sul, e preços maiores de grãos e carne melhoram a renda dos produtores e a qualidade desse crédito."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Atividade maior eleva a demanda por crédito de empresas e reduz a inadimplência, mas a economia gaúcha, ligada ao agro, pesa mais que o PIB nacional."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação eleva receitas nominais, mas pressiona despesas administrativas, que já sobem acima da margem, e a renda de servidores tomadores de consignado."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Como banco estatal regional com carteira concentrada em consignado de servidores e com o Estado do RS como controlador, sofre com juros longos maiores e com o maior prêmio de risco cobrado de estatais."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Banrisul, Apresentação de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/fafdeaf3-7820-4ec2-9477-ce501c563c96/31ac8af4-0595-4051-ace7-8be4020ce42f",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Banrisul RI: central de resultados",
+   "url": "https://ri.banrisul.com.br/informacoes-ao-mercado/central-de-resultados/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Jornal do Comércio: Lucro do Banrisul cai 52% no terceiro trimestre e fica em R$ 157,8 milhões",
+   "url": "https://www.jornaldocomercio.com/economia/2026/11/1270322-lucro-do-banrisul-cai-52-no-terceiro-trimestre-e-fica-em-rs-1578-milhoes.html",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Banrisul, Demonstrações Financeiras 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/fafdeaf3-7820-4ec2-9477-ce501c563c96/065f899c-9626-42b6-ae87-7353177db948",
+   "data": "2026-11-12"
+  }
+ ]
+}

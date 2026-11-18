@@ -1,0 +1,88 @@
+{
+ "ticker": "GGBR4",
+ "revisado_em": "2026-11-18",
+ "resumo": "Siderúrgica de aços longos, planos e especiais com usinas no Brasil, EUA, Canadá e América do Sul. No 3T26, a América do Norte gerou 56% da receita e 76% do Ebitda.",
+ "modelo": "A Gerdau produz aço principalmente a partir de sucata reciclada (fornos elétricos), além da usina integrada de Ouro Branco (MG) e de minério próprio. Vende vergalhões, perfis, barras, aços planos e aços especiais para construção civil, indústria, setor automotivo, agronegócio e energia. A receita é recorrente em volume, mas depende do preço do aço em cada mercado; há joint ventures no Canadá e no México e operações na Argentina, no Peru e no Uruguai.",
+ "segmentos": [
+  {
+   "nome": "América do Norte",
+   "peso_receita": 0.56,
+   "periodo": "3T26",
+   "obs": "Receita de R$ 10,5 bi (+14,4%) e Ebitda de R$ 2,9 bi, margem de 27,7%."
+  },
+  {
+   "nome": "Brasil",
+   "peso_receita": 0.37,
+   "periodo": "3T26",
+   "obs": "Receita de R$ 6,9 bi (-9,7%), com R$ 688 mi de exportações; Ebitda de R$ 741 mi."
+  },
+  {
+   "nome": "América do Sul",
+   "peso_receita": 0.08,
+   "periodo": "3T26",
+   "obs": "Receita de R$ 1,4 bi (+4,7%); Ebitda de R$ 160 mi."
+  }
+ ],
+ "segmentos_base": "Receita líquida por segmento de negócio, antes de eliminações.",
+ "geografia": {
+  "brasil_pct": 0.33,
+  "exterior_pct": 0.67,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Cálculo a partir da receita por segmento: Brasil mercado interno de R$ 6,26 bi sobre R$ 18,9 bi; o restante vem de EUA e Canadá, Argentina, Peru, Uruguai e exportações do Brasil. Todas essas operações já geram receita; os novos projetos (mineração de Miguel Burnier, prevista para o 4T26, e reciclagem em Pindamonhangaba) ficam no Brasil."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "média",
+  "texto": "Cerca de 2/3 da receita vêm de operações no exterior ou exportações, atreladas ao dólar. Cerca de 53% da dívida bruta de R$ 13,7 bi é em dólar, mas a alavancagem é baixa (0,58x Ebitda), e o efeito líquido de alta do dólar é positivo."
+ },
+ "momento": "No 3T26 (divulgado em 26/10/2026), a receita foi de R$ 18,7 bi (+3,9% sobre o 3T25), o Ebitda ajustado de R$ 3,8 bi (+37,8%, margem de 20,2%, a maior desde o 2T23) e o lucro ajustado de R$ 1,52 bi (+39,7%). A América do Norte, com demanda e carteira de pedidos acima da média histórica, respondeu por 76,4% do Ebitda, enquanto o Brasil segue com mercado competitivo e oferta alta de aço importado. A dívida líquida caiu para R$ 7,7 bi (0,58x Ebitda), e Fitch e S&P passaram a perspectiva do rating para positiva. A empresa aprovou R$ 667 mi em dividendos (R$ 0,34 por ação, pagos a partir de 15/12/2026) e já usou R$ 344,1 mi no programa de recompra de 2026.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula a construção civil e a indústria no Brasil, mas o Brasil responde por só cerca de 1/5 do Ebitda."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "Cerca de 2/3 da receita e 76% do Ebitda vêm de fora do Brasil, e o dólar alto também protege o aço nacional contra importações; a dívida em dólar é pequena frente ao Ebitda."
+  },
+  "commodities_subindo": {
+   "nota": 1,
+   "porque": "Preço de aço mais alto melhora margens, enquanto sucata, minério e carvão encarecem; a mineração própria reduz parte desse custo."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade no Brasil eleva a demanda de vergalhões e aços planos, mas o resultado depende mais do ciclo nos EUA."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Preços do aço tendem a acompanhar a inflação, e custos de energia e mão de obra também sobem, efeitos que se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Risco fiscal enfraquece o real, o que favorece as operações no exterior, mas pesa sobre investimentos e construção no Brasil."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Gerdau, Quarterly Results 3Q26 (Form 6-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1073404/000110465926118862/tm2628297d1_ex99-1.htm",
+   "data": "2026-10-26"
+  },
+  {
+   "titulo": "Forbes Brasil: lucro da Gerdau no terceiro trimestre de 2026",
+   "url": "https://forbes.com.br/geral/2026/10/lucro-gerdau-terceiro-trimestre-2026/",
+   "data": "2026-10-26"
+  },
+  {
+   "titulo": "Análise de Ações: Gerdau registra lucro de R$ 1,52 bilhão no 3º trimestre de 2026",
+   "url": "https://www.analisedeacoes.com/noticias/gerdau-ggbr4-registra-lucro-de-1-52-bilhao-no-3-trimestre-de-2026-alta-de-39-7/",
+   "data": "2026-10-26"
+  },
+  {
+   "titulo": "Gerdau, Notice to Shareholders: Payment of Dividends (Form 6-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1073404/000110465926118865/tm2628297d2_6k.htm",
+   "data": "2026-10-26"
+  }
+ ]
+}

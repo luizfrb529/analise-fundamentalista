@@ -1,0 +1,94 @@
+{
+ "ticker": "AURE3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Geradora renovável (hidrelétricas, eólicas e solares, 8,2 GW próprios) e comercializadora de energia. O lucro do 3T26 dependeu de compensação de R$ 357 mi por cortes de geração; alavancagem de 4,7x.",
+ "modelo": "A Auren, controlada por Votorantim e CPP Investments, vende energia de usinas próprias em contratos de longo prazo no mercado regulado (ACR) e no livre (ACL), corrigidos majoritariamente por IPCA, e opera uma comercializadora que compra e revende energia. Tem 4.198 MW em hidrelétricas (Porto Primavera e Água Vermelha somam 70% da capacidade hídrica), 3.100 MW em eólicas e 876 MW em solares, além de participações minoritárias em hidrelétricas. A receita é em grande parte recorrente, mas o resultado oscila com chuva, vento, preço de curto prazo (PLD) e cortes de geração (curtailment) determinados pelo ONS.",
+ "segmentos": [
+  {
+   "nome": "Geração hidrelétrica",
+   "peso_receita": 0.49,
+   "periodo": "9M26",
+   "obs": "Ebitda ajustado de R$ 1.448,5 mi."
+  },
+  {
+   "nome": "Geração eólica",
+   "peso_receita": 0.44,
+   "periodo": "9M26",
+   "obs": "R$ 1.310,1 mi, inclui a compensação de curtailment passado reconhecida no 3T26."
+  },
+  {
+   "nome": "Geração solar",
+   "peso_receita": 0.07,
+   "periodo": "9M26",
+   "obs": "R$ 209,2 mi."
+  },
+  {
+   "nome": "Comercialização, holding e pipeline",
+   "peso_receita": 0.0,
+   "periodo": "9M26",
+   "obs": "Comercializadora com R$ 66,7 mi, compensada por custos de holding de R$ 64,0 mi negativos; no 3T26 a comercializadora teve R$ 107,7 mi."
+  }
+ ],
+ "segmentos_base": "Ebitda ajustado (a receita da comercializadora tem eliminações relevantes com a geração e distorce os pesos)",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Todas as usinas e vendas estão no Brasil, com hidrelétricas em São Paulo e Paraná e parques eólicos e solares no Nordeste. Não há operação no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Os contratos de venda são em reais e corrigidos majoritariamente por IPCA. Cerca de 68% da dívida líquida é indexada ao IPCA e 20% ao CDI, sem exposição relevante a dólar; alta do dólar não tem efeito direto relevante."
+ },
+ "momento": "No 3T26 (divulgado em 10/11/2026), a receita líquida foi de R$ 3.302,6 mi (-6,6%), o Ebitda ajustado de R$ 1.185,6 mi (+53,4%) e o lucro líquido de R$ 150,4 mi, contra prejuízo de R$ 403,7 mi no 3T25. Sem a compensação de R$ 357,1 mi pelo curtailment de set/23 a nov/25, o Ebitda ajustado seria de R$ 828,5 mi (+7,2%); o BTG calculou prejuízo ajustado de cerca de R$ 36 mi. A comercializadora ganhou com a queda do PLD (R$ 130/MWh no Sudeste no 3T26), enquanto a geração eólica caiu 13,5% por vento fraco e cortes. A dívida líquida foi de R$ 18,66 bi e a alavancagem caiu para 4,7x (5,3x no 2T26); a eólica Cajuína 3 (112 MW) foi concluída e o termo de compromisso do curtailment é esperado para o 2T27.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com R$ 18,7 bi de dívida líquida e alavancagem de 4,7x, juro menor alivia a despesa financeira e valoriza os contratos longos de venda de energia."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida são em reais; sem exposição relevante ao dólar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Usinas hídricas, eólicas e solares não usam combustível, e o preço da energia não segue commodities diretamente."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade aumenta a demanda por energia, sustenta o preço no mercado livre e pode reduzir os cortes de geração renovável."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Os contratos são corrigidos por IPCA, mas 68% da dívida líquida também é, o que faz os efeitos se compensarem."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Juros longos mais altos encarecem a dívida e reduzem o valor presente dos contratos de energia de longo prazo."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Auren Energia, Release de Resultados 3T26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/AURE3/52257/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Cenário Energia: Auren reverte prejuízo e lucra R$ 150,4 milhões no 3T26",
+   "url": "https://cenarioenergia.com.br/2026/11/11/auren-reverte-prejuizo-e-lucra-r-1504-milhoes-no-3t26-com-ganho-em-comercializacao-e-ressarcimento-por-curtailment/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "EuQueroInvestir: Auren tem geração fraca e Ebitda fica 7% abaixo das projeções do BTG",
+   "url": "https://euqueroinvestir.com/acoes/auren-tem-geracao-fraca-e-ebitda-fica-7-abaixo-das-projecoes-do-btg",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Money Times (Reuters): Auren reverte prejuízo e lucra no 3T26 com melhora na comercialização e ressarcimento de cortes",
+   "url": "https://www.moneytimes.com.br/auren-aure3-reverte-prejuizo-e-lucra-no-3t26-com-melhora-na-comercializacao-e-ressarcimento-de-cortes/",
+   "data": "2026-11-10"
+  }
+ ]
+}

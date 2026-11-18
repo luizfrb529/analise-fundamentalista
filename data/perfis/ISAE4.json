@@ -1,0 +1,94 @@
+{
+ "ticker": "ISAE4",
+ "revisado_em": "2026-11-18",
+ "resumo": "Transmissora controlada pela colombiana ISA, com RAP de R$ 7,1 bi no ciclo 2026/27, quase toda corrigida por IPCA. O lucro do 3T26 foi inflado por ganho contábil de R$ 1,9 bi com a troca de ativos com a AXIA.",
+ "modelo": "A ISA Energia Brasil (antiga CTEEP) opera linhas e subestações de transmissão sob concessão da Aneel e recebe a RAP pela disponibilidade dos ativos, sem depender do volume de energia. Do total de R$ 7.082,3 mi de RAP do ciclo 2026/27, 53,7% vêm do contrato renovado da Concessão Paulista (inclui RBSE, operação e manutenção e reforços) e 46,3% de contratos licitados ou adquiridos, dos quais 8,4% ainda em construção. É controlada pela Interconexión Eléctrica (ISA), do grupo Ecopetrol; a AXIA Energia (ex-Eletrobras) é acionista relevante.",
+ "segmentos": [
+  {
+   "nome": "Contratos licitados e adquiridos",
+   "peso_receita": 0.32,
+   "periodo": "3T26",
+   "obs": "R$ 551,9 mi de receita bruta (+108%), com a consolidação integral da IE Madeira desde agosto de 2026."
+  },
+  {
+   "nome": "RBSE (Concessão Paulista)",
+   "peso_receita": 0.3,
+   "periodo": "3T26",
+   "obs": "R$ 519,5 mi (+1,6%); indenização dos ativos antigos, paga até 2028."
+  },
+  {
+   "nome": "Concessão Paulista: operação, manutenção e reforços",
+   "peso_receita": 0.3,
+   "periodo": "3T26",
+   "obs": "R$ 519,3 mi (+10,9%)."
+  },
+  {
+   "nome": "Parcela de ajuste, encargos e outras",
+   "peso_receita": 0.08,
+   "periodo": "3T26",
+   "obs": "Diferença até a receita bruta de R$ 1.721,7 mi."
+  }
+ ],
+ "segmentos_base": "Receita bruta regulatória",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera apenas no Brasil, com base em São Paulo e ativos em vários estados, como a IE Madeira (Rondônia a São Paulo) e os projetos Serra Dourada (BA/MG) e Itatiaia (RJ/MG). A controladora ISA atua em outros países da América Latina, mas isso não entra na receita da ISA Energia Brasil."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita em reais, corrigida quase toda por IPCA. A dívida bruta de R$ 19,8 bi é composta por debêntures e financiamentos em IPCA e CDI, sem exposição relevante a dólar citada no release; alta do dólar não tem efeito direto relevante."
+ },
+ "momento": "No 3T26 (divulgado em 03/11/2026), a receita líquida regulatória foi de R$ 1.510,7 mi (+40,9%) e o lucro de R$ 1.904,8 mi (+246%), inflado por ganho contábil não recorrente e sem caixa de cerca de R$ 1,9 bi; sem esse efeito, o lucro pró-forma foi de R$ 625 mi (+14%) e o Ebitda pró-forma de cerca de R$ 1,25 bi (+41%). Em 31/07/2026 concluiu o descruzamento com a AXIA: passou a deter 100% da IE Madeira (RAP de R$ 796,7 mi) e saiu da IE Garanhuns, pagando torna de R$ 1,2 bi. Para isso fez follow-on de 44,4 mi de ações PN a R$ 27,00 (R$ 1,2 bi) e emitiu R$ 2,5 bi em debêntures a CDI + 0,42%. A dívida líquida subiu para R$ 17,0 bi (+20,5% sobre dez/25), com alavancagem gerencial de 3,50x; o capex do 9M26 foi de R$ 3,4 bi, e Serra Dourada e Itatiaia devem somar R$ 597 mi de RAP quando concluídos.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com R$ 17 bi de dívida líquida, parte em CDI, e grande plano de investimento, juro menor reduz o custo da dívida e valoriza o fluxo de RAP de longo prazo."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida são em reais; não há exposição direta relevante ao dólar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "A RAP não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "A receita é por disponibilidade das linhas e não varia com o consumo de energia."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "Quase toda a RAP é corrigida por IPCA, o que supera o encarecimento da parcela da dívida também indexada ao IPCA."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal eleva juros longos, encarece o refinanciamento do plano de investimentos e reduz o valor presente da RAP."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "ISA Energia Brasil, Earnings Release 3T26",
+   "url": "https://s3.sa-east-1.amazonaws.com/static.cteep.mediagroup.com.br/Arquivos/Download/6796-Earnings-Release-3T26.pdf",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "Cenário Energia: ISA Energia Brasil registra lucro de R$ 1,9 bilhão no 3T26",
+   "url": "https://cenarioenergia.com.br/2026/11/04/isa-energia-brasil-registra-lucro-de-r-19-bilhao-no-3t26-com-efeito-de-operacao-societaria/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Investidor10: Lucro da ISA Energia (ISAE4) dispara 246% e chega a R$ 1,9 bi no 3T26",
+   "url": "https://investidor10.com.br/noticias/lucro-da-isa-energia-isae4-dispara-246-e-chega-a-r-1-9-bi-no-3t26-123672/",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "ISA Energia Brasil, Central de Resultados (RI)",
+   "url": "https://ri.isaenergiabrasil.com.br/",
+   "data": "2026-11-18"
+  }
+ ]
+}

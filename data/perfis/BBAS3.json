@@ -1,0 +1,104 @@
+{
+ "ticker": "BBAS3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Banco controlado pela União e maior financiador do agronegócio. Cerca de 31% da carteira é rural, segmento cuja inadimplência derrubou o lucro do 3T26 em 66,5%.",
+ "modelo": "O Banco do Brasil ganha dinheiro principalmente com a margem financeira do crédito a pessoas físicas, empresas, governo e produtores rurais, financiada por depósitos e outras captações, além de tarifas de serviços (conta, cartões, gestão de recursos pela BB Asset) e participação em seguros e previdência via BB Seguridade. É o principal operador do crédito rural no país e tem operações no exterior, como o Banco Patagonia na Argentina e o BB Americas nos EUA. A receita é majoritariamente recorrente.",
+ "segmentos": [
+  {
+   "nome": "Pessoa jurídica (inclui governo)",
+   "peso_receita": 0.36,
+   "periodo": "3T26",
+   "obs": "Peso na carteira expandida: R$ 464,4 bi (+2,5% em 12 meses)."
+  },
+  {
+   "nome": "Agronegócio",
+   "peso_receita": 0.31,
+   "periodo": "3T26",
+   "obs": "R$ 403,6 bi (-4,3% no trimestre); inadimplência acima de 90 dias de 6,92%."
+  },
+  {
+   "nome": "Pessoa física",
+   "peso_receita": 0.27,
+   "periodo": "3T26",
+   "obs": "R$ 357,7 bi (+2,1% em 12 meses); inadimplência de 9,14%."
+  },
+  {
+   "nome": "Demais (por diferença)",
+   "peso_receita": 0.06,
+   "periodo": "3T26",
+   "obs": "Diferença entre a carteira expandida de R$ 1,307 tri e os três segmentos acima; inclui principalmente exterior."
+  }
+ ],
+ "segmentos_base": "Carteira de crédito expandida",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": "carteira",
+  "texto": "A carteira está concentrada no Brasil, com forte presença no interior e no Centro-Oeste por causa do agronegócio. No exterior, o banco opera principalmente o Banco Patagonia (Argentina) e o BB Americas (EUA), além de agências para comércio exterior; a fatia externa da carteira não foi confirmada em duas fontes."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "baixa",
+  "texto": "A maior parte da receita é em reais. O banco tem crédito e captações em moeda estrangeira ligados a comércio exterior e às operações fora do país, mas costuma proteger a exposição; uma alta do dólar tem efeito direto pequeno e efeito indireto positivo sobre produtores exportadores da carteira rural."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), o lucro ajustado foi de R$ 1,27 bi (-66,5% sobre o 3T25), com ROE de 2,8% (8,4% um ano antes), pressionado por custo do crédito de R$ 21,2 bi (+18,4%). A inadimplência acima de 90 dias subiu para 6,08% (4,51% um ano antes), com o agronegócio em 6,92% e a pessoa física em 9,14%; a formação de novos problemas no agro saltou para R$ 14,7 bi. A margem financeira bruta caiu 1,5%, para R$ 26 bi, e o capital principal recuou para 10,80%. O banco cortou a projeção de lucro ajustado de 2026 de R$ 18 a 22 bi para R$ 9 a 11 bi, elevou a de custo do crédito para R$ 80 a 83 bi, reduziu o payout para 25% e suspendeu dividendos intermediários em 2027.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor alivia o serviço da dívida de produtores rurais e famílias, hoje a principal fonte de perdas do banco, compensando a menor remuneração do capital e dos depósitos."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "A exposição cambial direta é protegida; o ganho indireto para produtores exportadores é contrabalançado pelo custo maior de insumos importados."
+  },
+  "commodities_subindo": {
+   "nota": 1,
+   "porque": "Preço maior de soja, milho e carne melhora a renda dos produtores e a qualidade da carteira rural, de R$ 403,6 bi, onde está a maior parte da inadimplência."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Atividade maior eleva a demanda por crédito, que o banco projeta estável ou em queda em 2026, e reduz a inadimplência de pessoas físicas e empresas."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação eleva receitas nominais, mas tende a manter juro alto e reduzir a renda real de devedores, efeitos que se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Como banco controlado pela União, sofre com o aumento do prêmio de risco, com pressão por uso político do crédito e com juros longos maiores, que pesam sobre a carteira de títulos e o capital."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Times Brasil (CNBC): BB tem queda de 66,5% no lucro e reduz previsão para 2026",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/bancos-fintechs/bb-tem-queda-de-665-no-lucro-e-reduz-previsao-para-2026/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Bloomberg Línea: BB corta pela metade previsão de lucro e reduz dividendos com inadimplência no agro",
+   "url": "https://www.bloomberglinea.com.br/negocios/bb-corta-pela-metade-previsao-de-lucro-e-reduz-dividendos-com-inadimplencia-no-agro/?outputType=amp",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Seu Dinheiro: Banco do Brasil frustra projeções e entrega lucro de R$ 1,3 bilhão no 3T26",
+   "url": "https://seudinheiro.com/2026/empresas/banco-do-brasil-bbas3-lucro-rentabilidade-roe-no-3t26-inadimplencia-ainda-desafia-recuperacao-do-banco-miql/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Compre Rural: Lucro do Banco do Brasil cai 66,5% no 3º trimestre com inadimplência do agro",
+   "url": "https://comprerural.com/lucro-do-banco-do-brasil-cai-665-no-3o-trimestre-com-inadimplencia-do-agro/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "SBT News: Banco do Brasil vê lucro cair 66% após inadimplência do agro",
+   "url": "https://sbtnews.sbt.com.br/noticia/economia/banco-do-brasil-ve-lucro-cair-66-apos-inadimplencia-do-agro",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Prensa Mercosur (Monitor Mercantil): BB acumula lucro líquido ajustado de R$ 8,6 bi até setembro",
+   "url": "https://prensamercosur.org/2026/11/12/bb-acumula-lucro-liquido-ajustado-de-r-86-bi-ate-setembro/",
+   "data": "2026-11-12"
+  }
+ ]
+}

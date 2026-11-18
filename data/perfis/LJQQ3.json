@@ -1,0 +1,88 @@
+{
+ "ticker": "LJQQ3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior rede de materiais de construção do país em número de lojas (578), concentrada no Sul e em cidades pequenas. Cerca de 31% da receita vem do cartão VerdeCard e de serviços financeiros, muito sensíveis a juros e inadimplência.",
+ "modelo": "A Lojas Quero-Quero vende materiais de construção, eletrodomésticos e móveis em 578 lojas no Rio Grande do Sul, Santa Catarina, Paraná, Mato Grosso do Sul e São Paulo, 56% delas em cidades com menos de 25 mil habitantes. Além do varejo, ganha com o cartão de crédito próprio VerdeCard, que gera juros de parcelamento, empréstimos, seguros e tarifas, e com transações do cartão fora das lojas. O varejo é venda pontual; a carteira de crédito, de R$ 1,09 bi com juros, dá receita mais recorrente, mas com risco de inadimplência.",
+ "segmentos": [
+  {
+   "nome": "Varejo",
+   "peso_receita": 0.69,
+   "periodo": "3T26",
+   "obs": "R$ 595,5 mi (+13,1%), com vendas mesmas lojas de +12,0%."
+  },
+  {
+   "nome": "Serviços financeiros",
+   "peso_receita": 0.28,
+   "periodo": "3T26",
+   "obs": "R$ 241,1 mi (+2,5%); carteira VerdeCard com juros de R$ 1.088 mi (+19,0%) e atraso acima de 90 dias de 12,4%."
+  },
+  {
+   "nome": "Cartão de crédito",
+   "peso_receita": 0.03,
+   "periodo": "3T26",
+   "obs": "Receita +1,5%, ligada ao uso do VerdeCard dentro e fora das lojas."
+  }
+ ],
+ "segmentos_base": "Receita bruta, líquida de devoluções e abatimentos (RBLD), de R$ 864,3 mi no 3T26",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera somente no Brasil, com forte concentração no Rio Grande do Sul e expansão gradual para Santa Catarina, Paraná, Mato Grosso do Sul e São Paulo. Não há receita no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais. O dólar só afeta de forma indireta, via preço de eletrodomésticos e de alguns insumos de construção."
+ },
+ "momento": "No 3T26 (divulgado em 05/11/2026), a RBLD cresceu 9,6%, para R$ 864,3 mi, e a receita líquida 7,9%, para R$ 750,4 mi, com vendas mesmas lojas de +12,0%. O Ebitda caiu 3,1%, para R$ 34,4 mi (R$ 3,2 mi no critério ajustado, sem IFRS 16), e o prejuízo foi de R$ 46,9 mi (R$ 42,1 mi no 3T25), afetado pelo não reconhecimento de R$ 15,5 mi de crédito fiscal; nos 9M26 o prejuízo soma R$ 159,8 mi. A margem de serviços financeiros caiu de 41,3% para 35,6% por maior provisão e crédito mais restritivo adotado no início de 2026. A dívida líquida ajustada recuou para R$ 385,7 mi (R$ 427,4 mi um ano antes), o investimento do trimestre caiu 39,2% e a empresa prevê abrir no máximo 10 lojas em 2026, das quais 7 já inauguradas até setembro.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "A própria empresa atribui a pressão na margem de serviços financeiros à Selic elevada; juro menor reduz o custo de funding do VerdeCard e estimula reformas e compras a prazo."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em moeda estrangeira; o efeito via preço de eletrodomésticos importados é pequeno frente ao total."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Alta de aço e cimento encarece produtos, mas safra e preços agrícolas melhores elevam a renda das cidades do interior do Sul onde está a maioria das lojas, efeitos que se compensam."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Reforma e construção dependem de emprego, renda e crédito; atividade mais forte eleva vendas e reduz a inadimplência da carteira."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação reduz a renda disponível para reformas e mantém juros altos, pressionando o crédito ao consumidor."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Risco fiscal maior eleva os juros futuros, encarece o funding do cartão e restringe a oferta de crédito, em uma empresa que já opera com prejuízo."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Lojas Quero-Quero, Divulgação de Resultados 3T26 (PDF oficial, reproduzido em investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/LJQQ3/52018/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Lojas Quero-Quero, 3Q26 Earnings Release (versão em inglês)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/LJQQ3/52016/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Jornal do Comércio: Prejuízo da Quero-Quero cresce 11,3% e chega a R$ 46,9 milhões no terceiro trimestre",
+   "url": "https://www.jornaldocomercio.com/economia/2026/11/1269956-prejuizo-da-quero-quero-cresce-113-e-chega-a-rs-469-milhoes-no-terceiro-trimestre.html",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "Quartr: Lojas Quero-Quero (LJQQ3) Q3 2026 earnings summary",
+   "url": "https://quartr.com/events/lojas-quero-quero-s-a-ljqq3-q3-2026_3ec5RWXR",
+   "data": "2026-11-05"
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "ticker": "B3SA3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Única bolsa e infraestrutura de mercado do país, com negociação, registro e dados. No 3T26, 64% da receita veio de Mercados, ligada ao volume negociado em ações, derivativos e renda fixa.",
+ "modelo": "A B3 cobra tarifas por negociação, compensação, liquidação e custódia de ações, derivativos listados e renda fixa (segmento Mercados), além de receitas mais recorrentes de tecnologia e plataformas (registro de operações, sistemas para instituições financeiras), serviços para emissores e mercado de capitais e dados e análises, agrupados desde 2026 na marca Trillia. A parte de Mercados varia com o volume negociado; as demais linhas são em boa parte recorrentes.",
+ "segmentos": [
+  {
+   "nome": "Mercados",
+   "peso_receita": 0.64,
+   "periodo": "3T26",
+   "obs": "R$ 1,97 bi (+7,8%); ADTV do mercado à vista de R$ 27,3 bi (+25,4%)."
+  },
+  {
+   "nome": "Tecnologia e Plataformas",
+   "peso_receita": 0.18,
+   "periodo": "3T26",
+   "obs": "R$ 557,0 mi (+16,3%)."
+  },
+  {
+   "nome": "Soluções Analíticas de Dados (Trillia)",
+   "peso_receita": 0.11,
+   "periodo": "3T26",
+   "obs": "R$ 327,6 mi (+12,4%)."
+  },
+  {
+   "nome": "Soluções para Mercado de Capitais",
+   "peso_receita": 0.07,
+   "periodo": "3T26",
+   "obs": "R$ 210,1 mi (+29,9%)."
+  }
+ ],
+ "segmentos_base": "Receita total (bruta)",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "A operação é concentrada no Brasil, onde a B3 é a única bolsa de ações e derivativos. A empresa não divulga receita gerada fora do país; investidores estrangeiros participam do volume negociado, mas pagam tarifas em reais."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "baixa",
+  "texto": "As tarifas são cobradas em reais; o dólar afeta a receita só de forma indireta, pelo fluxo de investidores estrangeiros e pelos contratos de câmbio negociados. A empresa tem histórico de captação externa com proteção cambial, por isso o efeito líquido de uma alta do dólar tende a ser pequeno."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita total foi de R$ 3,07 bi (+11,1% sobre o 3T25), o Ebitda recorrente de R$ 1,9 bi (+9%, margem de 68%) e o lucro recorrente de R$ 1,38 bi (+9,9%); o lucro contábil chegou a R$ 1,63 bi (+30,5%), ajudado por benefício fiscal de juros sobre capital próprio extraordinário. O volume médio diário do mercado à vista subiu 25,4%, para R$ 27,3 bi, e as receitas recorrentes de renda fixa e crédito cresceram 15%. As despesas ajustadas subiram 7,5%. No trimestre, a companhia anunciou R$ 1,13 bi em juros sobre capital próprio (R$ 750 mi extraordinários) e recomprou R$ 383 mi em ações.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula a migração de recursos da renda fixa para ações e fundos listados e favorece ofertas de ações, elevando o volume negociado, embora reduza a receita financeira sobre o caixa."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "As tarifas são em reais e a dívida externa costuma ser protegida; o efeito vem só pelo humor do investidor estrangeiro, que pode ir para os dois lados."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Sem relação direta com o negócio; o efeito indireto via valorização de empresas exportadoras na bolsa é difuso."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Atividade maior traz mais emissões de dívida e ações, mais registro de crédito e mais volume negociado."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Parte das tarifas e contratos de tecnologia é reajustada pela inflação, mas inflação alta costuma vir com juro maior, que reduz o apetite por ações."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal eleva juros longos e afasta investidores da renda variável, reduzindo o volume em ações, ainda que a volatilidade aumente o giro de derivativos de juros e câmbio."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Bora Investir (B3): B3 ocupa liderança global em futuros e registra alta de 11% na receita",
+   "url": "https://borainvestir.b3.com.br/noticias/empresas/b3-ocupa-lideranca-global-em-futuros-e-registra-alta-de-11-na-receita/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Jornal do Comércio: Lucro da B3 cresce 30% no trimestre e renda fixa supera R$ 10 trilhões",
+   "url": "https://www.jornaldocomercio.com/economia/2026/11/1270732-lucro-da-b3-cresce-30-no-trimestre-e-renda-fixa-supera-rs-10-trilhoes-pela-primeira-vez.html",
+   "data": "2026-11-16"
+  },
+  {
+   "titulo": "DGABC (Estadão Conteúdo): B3 encerrou o terceiro trimestre com lucro líquido recorrente de R$ 1,38 bilhão",
+   "url": "https://www.dgabc.com.br/Noticia/4368512/b3-encerrou-o-terceiro-trimestre-com-um-lucro-liquido-recorrente-de-r-1-38-bilhao",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Lets Money: receita da B3 no 3T26",
+   "url": "https://www.letsmoney.com.br/fintech/b3-receita-3t26-futuros/",
+   "data": "2026-11-13"
+  }
+ ]
+}

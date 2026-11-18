@@ -1,0 +1,99 @@
+{
+ "ticker": "PSSA3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Grupo de seguros com quatro frentes: seguros (auto à frente), saúde, banco (cartão, consórcio, crédito) e serviços. No 3T26, seguros geraram cerca de 55% das receitas e prêmios; a operação é quase toda no Brasil.",
+ "modelo": "A Porto vende seguros de automóvel, residência, vida e empresarial, planos de saúde e odontológicos (Porto Saúde), produtos financeiros como cartão de crédito, consórcio, financiamento e fiança locatícia (Porto Bank) e serviços de assistência e produtos digitais (Porto Serviço). Atende cerca de 19 milhões de clientes, com distribuição apoiada em corretores. A receita é recorrente, vinda de prêmios renovados anualmente, juros e tarifas do banco e do resultado financeiro sobre as reservas técnicas aplicadas.",
+ "segmentos": [
+  {
+   "nome": "Porto Seguro (seguros)",
+   "peso_receita": 0.55,
+   "periodo": "3T26",
+   "obs": "Receitas e prêmios de R$ 6,2 bi (+9%); frota segurada de 6,5 milhões de veículos; lucro de R$ 443,1 mi."
+  },
+  {
+   "nome": "Porto Saúde",
+   "peso_receita": 0.22,
+   "periodo": "3T26",
+   "obs": "R$ 2,5 bi (+12%); 956 mil beneficiários de saúde; sinistralidade de 82,0%."
+  },
+  {
+   "nome": "Porto Bank",
+   "peso_receita": 0.18,
+   "periodo": "3T26",
+   "obs": "R$ 2,0 bi (+13%); perdas de crédito de R$ 843 mi (+48%)."
+  },
+  {
+   "nome": "Porto Serviço",
+   "peso_receita": 0.06,
+   "periodo": "3T26",
+   "obs": "R$ 660 mi (+9%); lucro de R$ 51,6 mi."
+  }
+ ],
+ "segmentos_base": "Receitas e prêmios por vertical (soma das verticais, antes de eliminações; o total consolidado foi de R$ 11 bi).",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Praticamente toda a receita é gerada no Brasil. Fora do país, o grupo mantém a Porto Seguro Seguros del Uruguay, autorizada a operar desde 1995, cuja participação no total não é divulgada separadamente e é pequena."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita, reservas e captações são em reais. Uma alta do dólar atua de forma indireta, encarecendo peças e veículos e, com isso, o custo de sinistros do seguro auto."
+ },
+ "momento": "No 3T26 (divulgado em 05/11/2026), o lucro líquido recorrente foi de R$ 712,7 mi (-14% sobre o 3T25), com ROAE recorrente de 17,6% (-5,4 p.p.); o lucro contábil foi de R$ 839 mi (+1%), e a receita total de R$ 11 bi (+10%). A queda veio do Porto Bank, com perdas de crédito de R$ 843 mi (+48%) por ciclo de crédito mais adverso, e da Porto Saúde, cuja sinistralidade subiu para 82,0% (77,3% no 3T25), com lucro de R$ 84 mi (-34%). O seguro manteve índice combinado ampliado de 86% e ROAE de 31,7%. O resultado financeiro caiu 19%, para R$ 309 mi. Está em curso uma reorganização societária da Porto Serviço, que gerou provisão de R$ 135,4 mi em créditos tributários no trimestre.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": -1,
+   "porque": "Juro menor reduz o rendimento das reservas aplicadas, que sustentam parte relevante do lucro; o alívio no custo de captação e na inadimplência do Porto Bank compensa só em parte."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em dólar; o efeito indireto é custo maior de peças e veículos no seguro auto, repassado nas renovações."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais emprego e venda de veículos ampliam a base de seguros, planos de saúde empresariais e crédito, e reduzem a inadimplência do banco."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação de peças, mão de obra e custos médicos eleva os sinistros antes que os reajustes de preço sejam aplicados, como mostra a sinistralidade de saúde de 82% no 3T26."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Juros mais altos melhoram o rendimento das reservas, mas pioram o ciclo de crédito do Porto Bank e a demanda das famílias, efeitos que se compensam."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Porto, Relações com Investidores: destaques do 3T26 por vertical",
+   "url": "https://ri.portoseguro.com.br/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "CQCS: Porto registra lucro líquido recorrente de R$ 713 milhões no 3T26 (fonte: Porto)",
+   "url": "https://cqcs.com.br/noticia/porto-registra-lucro-liquido-recorrente-de-r-713-milhoes-no-terceiro-trimestre-de-2026/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Let's Money: Porto tem lucro recorrente de R$ 713 milhões no 3T26",
+   "url": "https://www.letsmoney.com.br/noticias/porto-lucro-recorrente-713-milhoes-3t26/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Seu Dinheiro: banco da Porto tropeça no crédito (resultado e projeções do 2T26)",
+   "url": "https://www.seudinheiro.com/2026/empresas/banco-da-porto-pssa3-tropeca-no-credito-derruba-as-acoes-e-reacende-alerta-btg-ve-oportunidade-na-queda-miql/",
+   "data": "2026-08-07"
+  },
+  {
+   "titulo": "Monitor Mercantil: Patricia Chacon, CEO da vertical Porto Seguros (operação no Uruguai)",
+   "url": "https://monitormercantil.com.br/patricia-chacon-ceo-da-vertical-porto-seguros/",
+   "data": "2026"
+  }
+ ]
+}

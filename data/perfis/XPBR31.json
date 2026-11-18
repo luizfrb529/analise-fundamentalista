@@ -1,0 +1,129 @@
+{
+ "ticker": "XPBR31",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR da XP Inc, plataforma de investimentos com R$ 1,57 tri de ativos de clientes. Cerca de 77% da receita vem do varejo, sensível ao volume negociado em bolsa e à taxa de juros.",
+ "modelo": "A XP distribui investimentos (ações, renda fixa, fundos, previdência) a pessoas físicas por assessores, private bankers e canais digitais, e atende empresas e institucionais com banco de atacado, emissões de dívida e ações, derivativos e tesouraria. Também oferece cartão, crédito, seguros e conta digital. A receita vem de comissões, taxas sobre ativos e spreads; é recorrente em boa parte, mas a corretagem e as emissões variam com o mercado. A empresa tem ações na Nasdaq (XP) e BDR na B3.",
+ "segmentos": [
+  {
+   "nome": "Varejo: renda variável",
+   "peso_receita": 0.23,
+   "periodo": "3T26",
+   "obs": "R$ 1.206 mi (+15,6% em 12 meses)."
+  },
+  {
+   "nome": "Varejo: renda fixa",
+   "peso_receita": 0.17,
+   "periodo": "3T26",
+   "obs": "R$ 903 mi (-2,0%)."
+  },
+  {
+   "nome": "Varejo: outros",
+   "peso_receita": 0.17,
+   "periodo": "3T26",
+   "obs": "R$ 895 mi, inclui plataforma internacional e outras receitas de varejo."
+  },
+  {
+   "nome": "Varejo: fundos",
+   "peso_receita": 0.08,
+   "periodo": "3T26",
+   "obs": "R$ 433 mi."
+  },
+  {
+   "nome": "Varejo: cartões",
+   "peso_receita": 0.07,
+   "periodo": "3T26",
+   "obs": "R$ 365 mi."
+  },
+  {
+   "nome": "Varejo: previdência, crédito e seguros",
+   "peso_receita": 0.06,
+   "periodo": "3T26",
+   "obs": "R$ 326 mi somados (previdência R$ 128 mi, crédito R$ 110 mi, seguros R$ 88 mi)."
+  },
+  {
+   "nome": "Atacado: corporate",
+   "peso_receita": 0.12,
+   "periodo": "3T26",
+   "obs": "R$ 631 mi (+55%)."
+  },
+  {
+   "nome": "Atacado: institucional",
+   "peso_receita": 0.07,
+   "periodo": "3T26",
+   "obs": "R$ 387 mi."
+  },
+  {
+   "nome": "Atacado: emissões (issuer services)",
+   "peso_receita": 0.04,
+   "periodo": "3T26",
+   "obs": "R$ 194 mi (-40%)."
+  }
+ ],
+ "segmentos_base": "Receita bruta (3T26, R$ 5.339 mi)",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "A receita é gerada quase toda no Brasil. A XP mantém uma plataforma internacional e a marca XP Private na Europa, cuja receita está dentro de 'outros' do varejo e não é divulgada separadamente."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita é em reais; a plataforma internacional é pequena e não tem número próprio. Para o investidor do BDR, a alta do dólar eleva o valor do papel em reais, mas reduz na mesma medida o valor em dólar do lucro gerado em reais, por isso o efeito líquido tende a ser pequeno."
+ },
+ "momento": "No 3T26 (divulgado em 16/11/2026), a receita bruta foi de R$ 5,34 bi (+8% sobre o 3T25), com varejo de R$ 4,13 bi (+11%) e atacado de R$ 1,21 bi (+13%), e o lucro líquido ajustado de R$ 1,38 bi (+4%), com ROAE de 21,7% (23,0% um ano antes). A captação líquida caiu para R$ 22 bi (R$ 29 bi no 3T25), e os ativos de clientes somaram R$ 1,574 tri (+11%), ou R$ 2,24 tri incluindo ativos geridos e administrados. A carteira de crédito ampliada chegou a R$ 86,2 bi (+28%) e o índice de Basileia ficou em 20,3%. A empresa aprovou R$ 1,3 bi em dividendos, novo programa de recompra de até R$ 1,5 bi e o cancelamento de 11,7 milhões de ações em tesouraria (cerca de 2,3% do total).",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Juro menor costuma levar o investidor da renda fixa para bolsa e fundos, de maior taxa, e aumenta emissões e volume negociado."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Para o BDR em reais, o ganho de conversão é compensado pela queda em dólar do lucro gerado em reais; nota corrigida de -1 para 0."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preços de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda amplia a poupança investida e a atividade de emissões corporativas, mas o efeito é menor que o dos juros."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação favorece a venda de títulos atrelados ao IPCA, mas tende a manter juros altos, o que reduz o interesse por bolsa."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal derruba a bolsa, reduz volumes e emissões e afasta investidores de produtos de maior risco."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "XP Inc. Reports Third Quarter 2026 Results (Form 6-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001787425/000095010326017561/dp256943_ex9901.htm",
+   "data": "2026-11-16"
+  },
+  {
+   "titulo": "InfoMoney: XP cresce lucro e receita no 3º trimestre, com R$ 2,2 trilhões de ativos de clientes",
+   "url": "https://www.infomoney.com.br/mercados/xp-inc-xpbr31-resultados-terceiro-trimestre-2026/",
+   "data": "2026-11-16"
+  },
+  {
+   "titulo": "Money Times: XP tem lucro líquido ajustado de R$ 1,38 bi no 3T26",
+   "url": "https://www.moneytimes.com.br/xp-tem-lucro-liquido-ajustado-de-r-138-bi-no-3t26-e-dara-agrado-bilionario-para-acionista/",
+   "data": "2026-11-16"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): XP registra lucro líquido de R$ 1,38 bilhão no terceiro trimestre",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/xp-registra-lucro-liquido-de-r-138-bilhao-no-terceiro-trimestre-alta-de-4/",
+   "data": "2026-11-16"
+  },
+  {
+   "titulo": "Finsee: XP Inc. Q3 2026 earnings review",
+   "url": "https://finsee.ai/earnings/xp/2026/q3/en/",
+   "data": "2026-11"
+  }
+ ]
+}

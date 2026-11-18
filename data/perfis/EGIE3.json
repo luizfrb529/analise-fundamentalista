@@ -1,0 +1,88 @@
+{
+ "ticker": "EGIE3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior geradora privada do país, com 12,8 GW em 146 usinas, quase tudo renovável, e projetos de transmissão em obra. Em julho de 2026 incorporou 40% da UHE Jirau via follow-on de R$ 8,36 bi.",
+ "modelo": "A Engie Brasil Energia, controlada pelo grupo francês ENGIE, vende energia de hidrelétricas, eólicas, solares, PCHs e biomassa em contratos de longo prazo com distribuidoras (mercado regulado) e consumidores livres, com preços corrigidos por inflação. Tem ainda concessões de transmissão (Gralha Azul, Novo Estado e as obras de Asa Branca, Graúna e Colibri), uma operação de trading de energia e participação na TAG, maior transportadora de gás natural do país. A receita é majoritariamente recorrente; a receita de construção da transmissão varia com o ritmo das obras.",
+ "segmentos": [
+  {
+   "nome": "Geração e venda de energia",
+   "peso_receita": 0.75,
+   "periodo": "3T26",
+   "obs": "R$ 2.754 mi, sendo R$ 1.120 mi no mercado regulado e R$ 1.112 mi no livre."
+  },
+  {
+   "nome": "Transmissão",
+   "peso_receita": 0.2,
+   "periodo": "3T26",
+   "obs": "R$ 741 mi, dos quais R$ 501 mi de receita de construção, sem efeito de caixa imediato."
+  },
+  {
+   "nome": "Trading de energia",
+   "peso_receita": 0.05,
+   "periodo": "3T26",
+   "obs": "R$ 175 mi."
+  }
+ ],
+ "segmentos_base": "Receita operacional líquida",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Todos os ativos e vendas estão no Brasil, com usinas no Sul, Centro-Oeste, Nordeste e Norte (Jirau, em Rondônia). O controlador ENGIE atua em vários países, mas a empresa listada não tem operação no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita em reais, com contratos corrigidos por IPCA ou IGP-M. A dívida bruta de R$ 30,2 bi está 53,1% em IPCA, 40,6% em CDI e 6,3% em TJLP, sem parcela em moeda estrangeira; alta do dólar não tem efeito direto relevante."
+ },
+ "momento": "No 3T26 (divulgado em 10/11/2026), a receita líquida foi de R$ 3.670 mi (+9,8%), o Ebitda ajustado de R$ 1.948 mi (+4,1%, margem de 53,1%) e o lucro líquido de R$ 711 mi (-3,7%), com lucro ajustado de R$ 716 mi (-2,1%), pressionado por maior despesa financeira e depreciação de usinas novas. O preço médio de venda caiu 4,7%, para R$ 201,77/MWh, e a energia vendida subiu 7,3%, para 5.010 MW médios. Em 17/07/2026 concluiu follow-on de R$ 8,36 bi a R$ 30,50 por ação, sendo R$ 5,74 bi pagos pelo controlador com 40% da UHE Jirau (3.750 MW), e em 20/07 pagou R$ 2,23 bi na repactuação do UBP de Cana Brava e Ponte de Pedra. A dívida líquida fechou em R$ 25,3 bi, com alavancagem de 3,1x; o capex do trimestre foi de R$ 662 mi, concentrado nas transmissoras Asa Branca e Graúna e na modernização da UHE Jaguara.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com R$ 25,3 bi de dívida líquida, 40,6% em CDI, e um ciclo de obras em transmissão, juro menor reduz a despesa financeira que já pressiona o lucro."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida são em reais, sem parcela em moeda estrangeira."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O parque é quase todo renovável e não depende de combustível; a participação na TAG tem tarifa regulada."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade eleva a demanda no mercado livre, onde a empresa tem 3.012 clientes, e favorece recontratação a preços melhores."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "Os contratos de venda e as receitas de transmissão são corrigidos por IPCA ou IGP-M, efeito que supera o encarecimento da dívida em IPCA."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Juros longos mais altos encarecem a dívida e reduzem o valor presente de contratos e concessões de longo prazo."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "ENGIE Brasil Energia, Release de Resultados 3T26",
+   "url": "https://content.btgpactual.com/research/files/file/insights-b3/rad/1587470.pdf",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Cenário Energia: ENGIE Brasil amplia receita e Ebitda no 3T26, mas lucro ajustado recua 2,1%",
+   "url": "https://cenarioenergia.com.br/2026/11/11/engie-brasil-amplia-receita-e-ebitda-no-3t26-mas-lucro-ajustado-recua-21/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Investidor10: Engie Brasil (EGIE3) lucra R$ 711 milhões no 3T26, queda de 3,7%",
+   "url": "https://investidor10.com.br/noticias/engie-brasil-egie3-lucra-r-711-milhoes-no-3t26-queda-de-3-7-123817/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Cenário Energia: ENGIE Brasil conclui follow-on de R$ 8,36 bilhões e incorpora participação de 40% na UHE Jirau",
+   "url": "https://cenarioenergia.com.br/2026/07/17/engie-brasil-conclui-follow-on-de-r-836-bilhoes-e-incorpora-participacao-de-40-na-uhe-jirau/",
+   "data": "2026-07-17"
+  }
+ ]
+}

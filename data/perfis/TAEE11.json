@@ -1,0 +1,76 @@
+{
+ "ticker": "TAEE11",
+ "revisado_em": "2026-11-18",
+ "resumo": "Transmissora de energia com 49 concessões e receita fixa (RAP) corrigida por IPCA e IGP-M. Distribui 100% do lucro regulatório; a alavancagem subiu para 4,7x após a compra de 5 ativos da Energisa.",
+ "modelo": "A Taesa, controlada em conjunto por Cemig e ISA Energia, opera linhas de transmissão sob concessão da Aneel. A receita é a RAP (Receita Anual Permitida), paga pela disponibilidade das linhas e não pelo volume de energia transportado, reajustada todo ano por IPCA ou IGP-M conforme o contrato. São 14 concessões na holding, 16 investidas integrais e 19 participações (TBE, AIE e ETAU); a RAP total do ciclo 2026/27 é de R$ 4,9 bi, considerando a fatia proporcional das participações.",
+ "segmentos": [
+  {
+   "nome": "Transmissão de energia (RAP)",
+   "peso_receita": 1.0,
+   "periodo": "3T26",
+   "obs": "Receita líquida regulatória de R$ 798,4 mi (+22,7%); quase toda vem da disponibilização do sistema de transmissão (R$ 872,8 mi de receita bruta)."
+  }
+ ],
+ "segmentos_base": "Receita líquida regulatória",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera apenas no Brasil, com linhas em diversas regiões do país. Não há operação nem plano de expansão no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "A receita é 100% em reais, indexada a IPCA e IGP-M. A dívida é formada por debêntures e financiamentos em CDI e IPCA; o ITR do 3T26 cita moeda estrangeira só na compra de equipamentos, sem dívida relevante em dólar. Alta do dólar tem efeito direto desprezível."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), a receita líquida regulatória foi de R$ 798,4 mi (+22,7% sobre o 3T25), o Ebitda regulatório de R$ 687,2 mi (+25,2%, margem de 86,1%) e o lucro líquido regulatório de R$ 363,8 mi (+12,5%); no IFRS, o lucro foi de R$ 360,7 mi (+5,9%). O crescimento veio da entrada em operação de Ananaí, Tangará e Saíra e da compra de cinco transmissoras da Energisa, concluída em 12/08/2026 (R$ 2,4 bi investidos em aquisição no 9M26, +R$ 305 mi de RAP). A dívida líquida chegou a R$ 12,47 bi (+19,7% no trimestre) e a alavancagem proporcional a 4,7x (4,2x no 2T26; 4,4x pró-forma). A empresa aprovou R$ 363,8 mi em dividendos (R$ 1,06 por unit), 100% do lucro regulatório do trimestre, a pagar em 27/01/2027; resta um projeto greenfield em obra (Juruá, RAP de R$ 20,5 mi).",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com dívida líquida de R$ 12,5 bi em CDI e IPCA e alavancagem de 4,7x, juro menor reduz a despesa financeira e valoriza o fluxo longo e previsível de dividendos."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida são em reais; não há exposição relevante ao dólar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "A RAP independe de preço de commodities e do volume de energia transportado."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "A receita é fixa por disponibilidade das linhas, sem relação com o consumo de energia."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "A RAP é reajustada anualmente por IPCA e IGP-M, e o efeito positivo supera a correção da parte da dívida em IPCA."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal eleva juros longos, encarece a dívida em CDI e reduz o valor presente de um fluxo de dividendos de prazo longo."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Taesa, Release de Resultados 3T26",
+   "url": "https://ri.taesa.com.br/wp-content/uploads/2018/11/TAESA_Release-3T26.pdf",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Taesa, Informações Trimestrais (ITR) 3T26",
+   "url": "https://ri.taesa.com.br/wp-content/uploads/2026/11/Taesa-3ITR26-1.pdf",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Cenário Energia: Taesa registra lucro líquido regulatório de R$ 363,8 milhões no 3T26",
+   "url": "https://cenarioenergia.com.br/2026/11/12/taesa-registra-lucro-liquido-regulatorio-de-r-3638-milhoes-no-3t26-alta-de-125-na-base-anual/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "EuQueroInvestir: Taesa registra lucro líquido de R$ 363,8 milhões no 3T26",
+   "url": "https://euqueroinvestir.com/acoes/taesa-registra-lucro-liquido-de-r-3638-milhoes-no-3t26-alta-de-125",
+   "data": "2026-11-11"
+  }
+ ]
+}

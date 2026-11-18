@@ -1,0 +1,105 @@
+{
+ "ticker": "VALE3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Uma das maiores mineradoras do mundo: minério de ferro e pelotas (73% da receita no 3T26), cobre e níquel. Receita em dólar, 93% vendida no exterior, com a China levando 47%.",
+ "modelo": "A Vale extrai e vende minério de ferro (finos e pelotas) para siderúrgicas, principalmente na Ásia, a partir de Carajás (PA) e Minas Gerais, com ferrovias e portos próprios. Pela Vale Base Metals produz cobre (Salobo e Sossego no Pará, além do Canadá) e níquel (Canadá, Indonésia e Onça Puma no Brasil), com ouro, prata, platinoides e cobalto como subprodutos. A receita é recorrente em volume, mas o preço varia com as cotações internacionais, e os custos são em boa parte em reais.",
+ "segmentos": [
+  {
+   "nome": "Minério de ferro, finos",
+   "peso_receita": 0.61,
+   "periodo": "3T26",
+   "obs": "US$ 6,43 bi (-9%), com preço realizado de US$ 85,1/t (-10%)."
+  },
+  {
+   "nome": "Pelotas",
+   "peso_receita": 0.11,
+   "periodo": "3T26",
+   "obs": "US$ 1,17 bi (+2%)."
+  },
+  {
+   "nome": "Cobre",
+   "peso_receita": 0.12,
+   "periodo": "3T26",
+   "obs": "US$ 1,32 bi (+52%), com preço realizado de US$ 15.314/t (+56%)."
+  },
+  {
+   "nome": "Níquel",
+   "peso_receita": 0.08,
+   "periodo": "3T26",
+   "obs": "US$ 842 mi (+27%)."
+  },
+  {
+   "nome": "Subprodutos e outros",
+   "peso_receita": 0.07,
+   "periodo": "3T26",
+   "obs": "Ouro, prata, platinoides, cobalto, outros ferrosos e logística."
+  }
+ ],
+ "segmentos_base": "Receita operacional líquida por produto (US$ 10,6 bi no 3T26).",
+ "geografia": {
+  "brasil_pct": 0.07,
+  "exterior_pct": 0.93,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "A receita vem sobretudo de exportações: Ásia 66% (China 47%, Japão 6%, Coreia do Sul 4%), Europa 17% e América do Norte 5%. A produção de minério está no Brasil; cobre e níquel também são produzidos no Canadá, e há níquel na Indonésia."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "alta",
+  "texto": "A receita é praticamente toda atrelada ao dólar, enquanto boa parte dos custos e impostos é em reais. A dívida bruta de US$ 17,5 bi inclui US$ 7,6 bi em bonds em dólar e debêntures em reais protegidas por swaps; o efeito líquido de alta do dólar é positivo no resultado em reais."
+ },
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita foi de US$ 10,6 bi (+2% sobre o 3T25), o Ebitda proforma de US$ 3,5 bi (-20%) e o lucro atribuível de US$ 1,26 bi (-53%), pressionados pelo preço do minério 10% menor, frete e combustível mais caros e real valorizado; o custo total do minério subiu 21%, para US$ 60,4/t. Cobre e níquel compensaram em parte: o Ebitda da Vale Base Metals subiu 61%, para US$ 1,1 bi. A produção de minério caiu 6%, para 88,4 Mt, e a empresa espera ficar no piso da meta de 335 a 345 Mt em 2026. A dívida líquida expandida, que inclui as provisões de Brumadinho e Samarco, era de US$ 16,4 bi em setembro, dentro da faixa de US$ 10 a 20 bi definida pela companhia.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A receita depende de preços internacionais e a dívida é majoritariamente em dólar ou protegida, de modo que o juro local tem pouco efeito."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "Receita em dólar e custos em reais: o real valorizado foi citado como fator de alta de custo no 3T26, e o inverso amplia margem e lucro em reais."
+  },
+  "commodities_subindo": {
+   "nota": 2,
+   "porque": "Minério, cobre e níquel são 93% da receita; a queda de 10% no preço do minério explicou a maior parte do recuo do lucro no 3T26."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "Só 7% da receita vem do Brasil; o que importa é a demanda da China e da siderurgia global."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação local eleva custos em reais, como diesel e mão de obra, mas costuma vir com real mais fraco, que eleva a receita em reais."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal tende a desvalorizar o real, o que aumenta a receita em reais de uma exportadora com custos locais."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Vale, 3Q26 Quarterly Results (Form 6-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/917851/000129281426005058/vale20261029_6k.htm",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Vale, demonstrações financeiras intermediárias IFRS 3T26 (Form 6-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/917851/000129281426005056/valedfifrs3q26_6k.htm",
+   "data": "2026-10-30"
+  },
+  {
+   "titulo": "Seu Dinheiro: Com minério de ferro e petróleo jogando contra, Vale vê lucro cair",
+   "url": "https://www.seudinheiro.com/2026/empresas/com-minerio-de-ferro-e-petroleo-jogando-contra-vale-vale3-ve-lucro-cair-54-para-us-1255-bilhao/",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Lucro da Vale cai 53% no 3º trimestre",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/lucro-da-vale-cai-53-no-3o-trimestre-para-us-13-bilhao/",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "SteelOrbis: Vale's Q3 2026 net profit falls 53 percent",
+   "url": "https://www.steelorbis.com/steel-news/latest-news/vales-q3-2026-net-profit-falls-53-percent-as-iron-ore-fines-prices-drop-1487435.htm",
+   "data": "2026-10-30"
+  }
+ ]
+}

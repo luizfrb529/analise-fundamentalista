@@ -1,0 +1,93 @@
+{
+ "ticker": "WIZC3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Corretora que distribui seguros, crédito e consórcios por meio de parcerias com bancos e varejistas. Seguros geram cerca de 2/3 da receita; em outubro de 2026 vendeu sua fatia na Inter Seguros por R$ 409,5 mi.",
+ "modelo": "A Wiz Co ganha comissões ao distribuir seguros, crédito consignado e consórcios em canais de terceiros, geralmente por joint ventures com contratos de exclusividade: Bmg Corretora, BRB Seguros, Omni1, Paraná Seguros, Polishop Seguros, Wiz Conseg e Wiz Corporate (seguros para empresas, como garantia), além de Promotiva e Wiz Parceiros em crédito e consórcios. A receita é majoritariamente recorrente, ligada ao volume de prêmios e créditos vendidos pelos parceiros. Ainda recebe receitas do run-off da antiga operação com a Caixa, referentes a contratos vendidos até fevereiro de 2021.",
+ "segmentos": [
+  {
+   "nome": "Seguros",
+   "peso_receita": 0.67,
+   "periodo": "2T26",
+   "obs": "R$ 157,1 mi (-14,4%), com queda em Bmg Corretora e BRB Seguros e alta em Omni1 e Wiz Corporate."
+  },
+  {
+   "nome": "Run-off Caixa",
+   "peso_receita": 0.19,
+   "periodo": "2T26",
+   "obs": "R$ 45,8 mi; receita de contratos antigos que tende a diminuir com o tempo."
+  },
+  {
+   "nome": "Crédito e consórcios",
+   "peso_receita": 0.14,
+   "periodo": "2T26",
+   "obs": "R$ 32,4 mi (-15,4%), afetado por mudanças regulatórias no consignado do INSS."
+  }
+ ],
+ "segmentos_base": "Receita líquida ex-comissões consolidada por segmento (R$ 235,3 mi no 2T26), conforme release oficial.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "2T26",
+  "base": null,
+  "texto": "Opera só no Brasil, com parceiros de alcance nacional e regional (BRB no Distrito Federal, Banrisul no Rio Grande do Sul, Paraná Banco)."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais; o dólar não tem efeito direto relevante no resultado."
+ },
+ "momento": "No 3T26 (divulgado em 05/11/2026), o lucro líquido da controladora foi de R$ 54,1 mi (-2,3% sobre o 3T25) e a receita líquida consolidada de R$ 222 mi (-23,3%); o Ebitda da controladora caiu 11,8%, para R$ 73,3 mi. Os prêmios emitidos somaram R$ 803,2 mi, e a Omni1 teve lucro recorde de R$ 18,5 mi (+40,8%), enquanto Bmg Corretora e BRB Seguros seguiram pressionadas. A dívida líquida caiu 61% em 12 meses, para R$ 118 mi. Em 19/10/2026 a empresa assinou a venda de toda a sua fatia de 39,75% na Inter Seguros ao Banco Inter por R$ 409,5 mi à vista, corrigidos pelo CDI, sujeita a Banco Central e Cade; a unidade respondeu por R$ 16 mi do lucro da controladora no 2T26, e as ações caíram mais de 20% no dia seguinte ao anúncio.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula crédito, consórcio e seguros massificados vendidos pelos parceiros e reduz a despesa financeira; a empresa atribuiu a fraqueza recente em parte aos juros altos."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Sem receita ou dívida em dólar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda e emprego aumentam a venda de seguros, crédito e consórcios nos canais parceiros."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Prêmios e valores segurados acompanham preços, mas a perda de renda das famílias reduz a venda de produtos massificados, efeitos que se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior tende a manter juros altos, o que já pesou sobre crédito e seguros massificados em 2026."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Wiz Co, Release de Resultados 2T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/0b486057-7845-4b55-ace2-4b4842d128c1/4a952b7e-3498-210d-29b3-44e8d54217f9?origin=2",
+   "data": "2026-08"
+  },
+  {
+   "titulo": "CQCS: Wiz Co registra lucro líquido de R$ 54,1 milhões no trimestre e reduz dívida líquida em 61% (fonte: Wiz Co)",
+   "url": "https://cqcs.com.br/noticia/wiz-co-registra-lucro-liquido-de-r-541-milhoes-no-trimestre-e-reduz-divida-liquida-em-61/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Revista Apólice: resultados da Wiz Co no 3T26",
+   "url": "https://revistaapolice.com.br/?p=143954",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Seu Dinheiro: Inter ri, enquanto Wiz chora, entenda a operação",
+   "url": "https://www.seudinheiro.com/2026/empresas/inter-ri-enquanto-wiz-chora-entenda-a-operacao-que-fez-acoes-de-seguradora-despencarem-20-rnda/",
+   "data": "2026-10-20"
+  },
+  {
+   "titulo": "CQCS: Wiz Co vende participação na Inter Seguros ao Banco Inter por R$ 409,5 mi (fonte: UOL)",
+   "url": "https://cqcs.com.br/noticia/wiz-co-vende-participacao-na-inter-seguros-ao-banco-inter-por-r-4095-mi/",
+   "data": "2026-10-20"
+  }
+ ]
+}

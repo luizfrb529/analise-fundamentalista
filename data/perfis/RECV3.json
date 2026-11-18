@@ -1,0 +1,98 @@
+{
+ "ticker": "RECV3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Produtora de petróleo e gás em campos maduros em terra na Bahia e no Rio Grande do Norte. Preços ligados ao Brent e ao dólar, mas boa parte da produção tem hedge e o gás tem contratos de preço fixo ou mínimo.",
+ "modelo": "A PetroRecôncavo recupera campos maduros onshore nos Ativos Bahia (Recôncavo) e Potiguar (RN), vendendo petróleo a refinarias e compradores no Brasil e gás natural sob contratos de longo prazo. Desde 2025 detém 50% de ativos de processamento de gás (midstream) no Rio Grande do Norte, comprados da Brava. A receita depende de volume e de preços referenciados no Brent e no dólar; parte do petróleo é protegida por derivativos e cerca de 75% do gás de 2026 tinha preço fixo ou mínimo.",
+ "segmentos": [
+  {
+   "nome": "Petróleo",
+   "peso_receita": 0.62,
+   "periodo": "2T26",
+   "obs": "R$ 504,6 mi, já descontada perda de R$ 89,3 mi com liquidação de hedges."
+  },
+  {
+   "nome": "Gás natural e derivados",
+   "peso_receita": 0.35,
+   "periodo": "2T26",
+   "obs": "R$ 279,2 mi."
+  },
+  {
+   "nome": "Serviços",
+   "peso_receita": 0.03,
+   "periodo": "2T26",
+   "obs": "Cerca de R$ 24 mi, calculado pela diferença para a receita total de R$ 807,9 mi."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão). A divisão por produto do 3T26 não foi localizada; usado o 2T26.",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Todas as operações ficam na Bahia e no Rio Grande do Norte, com produção de 23,7 mil boe/dia no 3T26 dividida quase igualmente entre os dois ativos. A venda é voltada ao mercado interno, como o contrato com a Brava para no mínimo 50% do petróleo do Ativo Potiguar entre out/26 e dez/30, por isso o imposto de exportação de petróleo tem efeito pequeno."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "alta",
+  "texto": "Embora vendida no Brasil, a receita de petróleo e de boa parte do gás é calculada em dólar a partir do Brent. A dívida é formada por debêntures em reais convertidas em dólar por swaps, o que casa a dívida com a receita; uma alta do dólar eleva a receita, mas também a dívida dolarizada, e o efeito líquido é moderadamente positivo."
+ },
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita líquida foi de R$ 786,3 mi (estável no ano e -3% sobre o 2T26), o Ebitda ajustado de R$ 378,6 mi (+8%, margem de 48,2%) e o lucro líquido de R$ 236,1 mi (+94%), dos quais R$ 159,2 mi vieram da marcação a mercado de swaps cambiais, sem efeito caixa; o lucro ajustado foi de R$ 145,3 mi. A produção caiu 10% no ano, para 23,7 mil boe/dia, com declínio de gás no Polo Sabiá (RN), enquanto o custo de extração ficou em US$ 16,52 por boe. A dívida líquida era de R$ 1,2 bi (0,90x o Ebitda de 12 meses) e o fluxo de caixa livre do trimestre foi de R$ 134,2 mi. No trimestre a empresa fechou contrato de venda de petróleo com a Brava até 2030, garantiu capacidade de processamento de gás na UTG de Catu com a Petrobras de 2028 a 2037 e suspendeu a UPGN de Miranga.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A dívida é convertida em dólar por swaps e a receita depende do Brent, então juro menor tem pouco efeito direto no resultado."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "Petróleo e gás são precificados em dólar, enquanto boa parte dos custos de operação em terra é em reais, o que amplia a margem em reais."
+  },
+  "commodities_subindo": {
+   "nota": 1,
+   "porque": "Petróleo mais caro eleva a receita, mas cerca de 55% do óleo dos 12 meses seguintes estava protegido por hedge em jun/26 e a maior parte do gás tem preço fixo ou mínimo, o que limita o ganho."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "Os preços seguem referências internacionais; a demanda doméstica por gás ajuda pouco, pois o volume já é contratado."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Custos de serviços e mão de obra em reais sobem com a inflação, compensados por preços em dólar e por reajustes dos contratos de gás."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal tende a desvalorizar o real, o que eleva a receita, e como a venda é doméstica a empresa fica pouco exposta a tributos sobre exportação de petróleo."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Eu Quero Investir: PetroRecôncavo tem lucro 94% maior no 3T26",
+   "url": "https://euqueroinvestir.com/acoes/petroreconcavo-recv3-lucro-sobe-94-3t26",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): PetroRecôncavo eleva lucro em 94% no 3º trimestre",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/petroreconcavo-eleva-lucro-em-94-no-3o-trimestre/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Eu Quero Investir: PetroRecôncavo aprova JCP após 2T26",
+   "url": "https://euqueroinvestir.com/acoes/petroreconcavo-recv3-jcp-2t26",
+   "data": "2026-08-07"
+  },
+  {
+   "titulo": "Cenário Energia: PetroRecôncavo eleva lucro no 2T26 para R$ 203 mi e aprova R$ 100 mi em JCP",
+   "url": "https://cenarioenergia.com.br/2026/08/07/petroreconcavo-eleva-lucro-no-2t26-para-r-203-mi-e-aprova-r-100-mi-em-jcp/",
+   "data": "2026-08-07"
+  },
+  {
+   "titulo": "Moody's Local Brasil: Relatório de Crédito PetroRecôncavo",
+   "url": "https://moodyslocal.com.br/wp-content/uploads/2026/02/MLBR_RelatoriodeCredito_PetroReconcavo_Fev2026.pdf",
+   "data": "2026-02-20"
+  },
+  {
+   "titulo": "InfoMoney: Imposto de exportação de petróleo é prorrogado, como afeta Petrobras, Brava e PRIO",
+   "url": "https://www.infomoney.com.br/?p=3565324",
+   "data": "2026-11-06"
+  }
+ ]
+}

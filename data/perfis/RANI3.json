@@ -1,0 +1,88 @@
+{
+ "ticker": "RANI3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Fabricante de papel para embalagem e caixas de papelão ondulado, com 92% da receita no Brasil e foco em clientes de alimentos. A dívida, de R$ 2,5 bi, é quase toda em reais e atrelada ao CDI.",
+ "modelo": "A Irani produz papéis para embalagens (rígidos, usados nas suas próprias caixas, e flexíveis, vendidos a terceiros) a partir de fibra virgem de florestas próprias e de aparas recicladas, com fábricas em Santa Catarina, Minas Gerais e Rio Grande do Sul. Converte a maior parte do papel rígido em caixas de papelão ondulado, vendidas principalmente para o setor de alimentos (75% do volume de caixas, com destaque para proteínas). A receita é recorrente e depende de volume e preço das caixas; o principal custo variável são as aparas de papel.",
+ "segmentos": [
+  {
+   "nome": "Embalagens Sustentáveis (papelão ondulado)",
+   "peso_receita": 0.64,
+   "periodo": "3T26",
+   "obs": "Vendas de 47,7 mil toneladas (+11,5% vs. 3T25), com participação de mercado de 4,3%."
+  },
+  {
+   "nome": "Papel para Embalagens Sustentáveis",
+   "peso_receita": 0.35,
+   "periodo": "3T26",
+   "obs": "Produção recorde de 85,2 mil toneladas, após a reforma da máquina de papel 5 (Projeto Gaia XI)."
+  },
+  {
+   "nome": "Florestal RS e outros",
+   "peso_receita": 0.01,
+   "periodo": "3T26",
+   "obs": "Diferença em relação ao total; venda de madeira de florestas no Rio Grande do Sul."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão), operação continuada.",
+ "geografia": {
+  "brasil_pct": 0.92,
+  "exterior_pct": 0.08,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Fábricas e florestas ficam no Sul e em Minas Gerais. As exportações, basicamente de papel, somaram R$ 108,6 mi nos 9M26 (-9,0%), cerca de 8% da receita líquida; no 3T26 foram R$ 35,2 mi."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Cerca de 8% da receita vem de exportações em moeda estrangeira, e os preços de papel no Brasil seguem em parte referências internacionais. Em setembro de 2026, 99% da dívida bruta de R$ 2,49 bi estava em reais. O efeito líquido de alta do dólar é pequeno e levemente positivo."
+ },
+ "momento": "No 3T26 (divulgado em 30/10/2026), a receita líquida foi de R$ 456,6 mi (+5,3% sobre o 3T25), o Ebitda ajustado de R$ 152,0 mi (+3,9%, margem de 33,3%) e o lucro líquido de R$ 56,5 mi (+34,3%), todos recordes trimestrais de receita e Ebitda. Nos 9M26, porém, o lucro caiu 50,3%, para R$ 106,9 mi, pela menor valorização de ativos biológicos e paradas programadas no 1T26. A alavancagem caiu para 1,89 vez o Ebitda (2,07 vezes em junho), com dívida líquida de R$ 991,5 mi; em julho a empresa captou R$ 750 mi a CDI + 1,16% ao ano e quitou R$ 158,6 mi mais caros. Em maio de 2026, projetou dobrar a participação no mercado de papelão ondulado de cerca de 4% para 8% até 2034, e toca o Projeto Gaia XII (R$ 514 mi, expansão da máquina de papel em MG, término previsto no 4T29).",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "A dívida bruta de R$ 2,5 bi é quase toda em reais e atrelada ao CDI, então juro menor reduz a despesa financeira e libera caixa para a expansão Gaia."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Só cerca de 8% da receita é exportada e a dívida é em reais; a alta do dólar ajuda pouco nos preços de papel, com efeito líquido pequeno."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O principal insumo são aparas recicladas e florestas próprias, sem relação direta com commodities em bolsa; alta de celulose e papel no exterior pode sustentar preços, mas encarece aparas."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "A demanda por caixas acompanha a produção de alimentos e bens de consumo; a concentração em alimentos dá alguma proteção em ciclos fracos."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Preços de caixas costumam ser reajustados com custos, mas frete, energia e aparas sobem junto; efeitos se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Juros mais altos encarecem a dívida em CDI, mas a alavancagem moderada (1,89x) limita o impacto; efeito sobre a demanda é indireto."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Irani, Release de Resultados 3T26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/RANI3/51530/",
+   "data": "2026-10-30"
+  },
+  {
+   "titulo": "Irani, Informações Financeiras Intermediárias de 30/09/2026 (ITR)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/RANI3/51529/",
+   "data": "2026-10-30"
+  },
+  {
+   "titulo": "Eu Quero Investir: Irani lucro líquido soma R$ 56,5 milhões no 3T26, alta de 34,3%",
+   "url": "https://euqueroinvestir.com/acoes/irani-lucro-liquido-soma-r-565-milhoes-no-3t26-alta-de-343",
+   "data": "2026-10-30"
+  },
+  {
+   "titulo": "Money Times: Irani vê lucro encolher 70,3%, a R$ 30,9 milhões no 2T26",
+   "url": "https://www.moneytimes.com.br/irani-rani3-ve-lucro-encolher-703-a-r-309-milhoes-no-2t26-veja-os-numeros-lmrs/",
+   "data": "2026-07-31"
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "ticker": "RAIZ4",
+ "revisado_em": "2026-11-18",
+ "resumo": "Distribuidora de combustíveis Shell no Brasil e produtora de açúcar, etanol e bioenergia, em recuperação extrajudicial desde março de 2026. A distribuição gerou cerca de 83% do Ebitda no 2T27.",
+ "modelo": "A Raízen distribui combustíveis e lubrificantes com a marca Shell para uma rede de postos e clientes empresariais no Brasil, ganhando margem por metro cúbico vendido. No segmento de Etanol, Açúcar e Bioenergia (Raízen Energia), mói cana em usinas próprias, vende açúcar principalmente para exportação, etanol para o mercado interno e energia elétrica, com resultado dependente de safra e preços internacionais. A empresa está separando as duas frentes em Raízen Combustíveis e Raízen Energia no âmbito da reestruturação da dívida. O ano fiscal vai de abril a março.",
+ "segmentos": [
+  {
+   "nome": "Distribuição de combustíveis e lubrificantes",
+   "peso_receita": 0.83,
+   "periodo": "2T27 (jul a set/26)",
+   "obs": "Ebitda ajustado recorde de R$ 3,6 bi (+167%), volume de 7,6 milhões de m³."
+  },
+  {
+   "nome": "Etanol, açúcar e bioenergia",
+   "peso_receita": 0.17,
+   "periodo": "2T27 (jul a set/26)",
+   "obs": "Ebitda de R$ 754 mi (-58%), com moagem 17,8% menor por chuvas no Centro-Sul."
+  }
+ ],
+ "segmentos_base": "Ebitda ajustado por segmento (a receita por segmento do 2T27 não foi confirmada em duas fontes).",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "2T27",
+  "base": null,
+  "texto": "Com a venda da distribuição na Argentina, concluída em 2026 e tratada como operação descontinuada, a operação ficou concentrada no Brasil. O açúcar é vendido em boa parte ao mercado externo, mas a fatia da receita de exportação não foi divulgada nas fontes consultadas."
+ },
+ "moeda": {
+  "receita_em_dolar": "média",
+  "divida_em_dolar": "alta",
+  "texto": "As exportações de açúcar e parte do etanol têm preço em dólar, mas o açúcar da safra 2026/27 já está 100% fixado em R$ 2.244 por tonelada. Os detentores de bônus internacionais estão entre os credores da reestruturação, o que indica dívida relevante em dólar; a parcela exata não foi confirmada."
+ },
+ "momento": "No 2T27 (jul a set/26, divulgado em 12/11/2026), a receita líquida foi de R$ 53,5 bi (+0,6%), o Ebitda ajustado de R$ 4,37 bi (+41%) e o prejuízo líquido de R$ 844 mi, ante R$ 2,3 bi um ano antes, com despesa financeira de R$ 2,3 bi no trimestre. A distribuição teve Ebitda recorde, enquanto chuvas reduziram a moagem para 24,6 milhões de toneladas. O plano de recuperação extrajudicial, pedido em 11/03/2026 sobre cerca de R$ 65 bi de dívidas, foi homologado no fim de julho de 2026, e a Shell propôs aporte de R$ 3,5 bi; a Cosan não acompanhará o aumento de capital e terá participação diluída. A empresa concluiu as vendas da distribuição na Argentina e da usina Caarapó.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com despesa financeira de R$ 2,3 bi por trimestre e dívida em reestruturação, juro menor é o fator que mais alivia o resultado e a viabilidade do plano."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Exportações de açúcar ganham em reais nas safras ainda não fixadas; o efeito é limitado pela dívida em dólar e pelo hedge de 100% do açúcar de 2026/27."
+  },
+  "commodities_subindo": {
+   "nota": 1,
+   "porque": "Açúcar e etanol mais caros elevam a margem do segmento de bioenergia, enquanto na distribuição o preço do petróleo é repassado."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade aumenta o consumo de diesel e gasolina, elevando o volume da rede Shell."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Preços de combustíveis acompanham a inflação, mas custos agrícolas e de pessoal também sobem, sem efeito líquido claro."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Juros mais altos e crédito mais restrito encarecem uma dívida já em reestruturação e dificultam a venda de ativos e a captação."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Investidor10: Raízen reduz prejuízo para R$ 843,7 milhões no 2º trimestre do ano-safra",
+   "url": "https://investidor10.com.br/noticias/raizen-raiz55-reduz-prejuizo-para-r-843-7-milhoes-no-2-trimestre-do-ano-safra-123847/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "BP Money: Raízen, distribuição sustenta 2T27 e reestruturação (Citi)",
+   "url": "https://bpmoney.com.br/negocios/empresas-na-bolsa/raizen-raiz55-distribuicao-sustenta-2t27-reestruturacao-citi/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Bloomberg Línea: Raízen inicia recuperação extrajudicial para renegociar R$ 65 bilhões em dívidas",
+   "url": "https://www.bloomberglinea.com.br/negocios/raizen-inicia-recuperacao-extrajudicial-para-renegociar-r-70-bilhoes-em-dividas/",
+   "data": "2026-03-11"
+  },
+  {
+   "titulo": "Brazil Journal: Na Cosan, saem dois veteranos marcando uma nova fase (Cosan fora do aumento de capital da Raízen)",
+   "url": "https://braziljournal.com/na-cosan-saem-dois-veteranos-marcando-uma-nova-fase/",
+   "data": "2026-08-14"
+  },
+  {
+   "titulo": "Bloomberg Línea: Raízen vê avanço em reestruturação e sinaliza redução de investimento",
+   "url": "https://www.bloomberglinea.com.br/agro/raizen-ve-avanco-em-reestruturacao-e-sinaliza-reducao-de-investimento-em-2026/",
+   "data": "2025-11-15"
+  }
+ ]
+}

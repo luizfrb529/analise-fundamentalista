@@ -1,0 +1,100 @@
+{
+ "ticker": "BMEB4",
+ "revisado_em": "2026-11-18",
+ "resumo": "Banco mineiro focado no público 50+ e em aposentados do INSS. O consignado INSS responde por 62% da carteira, o que deixa o resultado dependente de regras federais do consignado.",
+ "modelo": "O Banco Mercantil do Brasil concede crédito consignado a aposentados e pensionistas do INSS e a trabalhadores do setor privado, além de crédito pessoal e antecipação do FGTS. É um dos maiores pagadores de benefícios do INSS, o que dá acesso a clientes e a depósitos, e vende seguros e assistências, que somaram R$ 359 mi em receitas de serviços no 3T26. Capta principalmente com depósitos a prazo e letras financeiras; a receita é recorrente.",
+ "segmentos": [
+  {
+   "nome": "Consignado INSS",
+   "peso_receita": 0.62,
+   "periodo": "3T26",
+   "obs": "Peso na carteira: R$ 15,6 bi (+15% em 12 meses)."
+  },
+  {
+   "nome": "Crédito pessoal",
+   "peso_receita": 0.14,
+   "periodo": "3T26",
+   "obs": "R$ 3,5 bi (+28%)."
+  },
+  {
+   "nome": "Consignado privado",
+   "peso_receita": 0.12,
+   "periodo": "3T26",
+   "obs": "R$ 3,0 bi (+163%)."
+  },
+  {
+   "nome": "Antecipação FGTS",
+   "peso_receita": 0.08,
+   "periodo": "3T26",
+   "obs": "R$ 2,1 bi (-24%)."
+  },
+  {
+   "nome": "Demais",
+   "peso_receita": 0.04,
+   "periodo": "3T26",
+   "obs": "R$ 1,1 bi (-22%)."
+  }
+ ],
+ "segmentos_base": "Carteira de crédito (R$ 25,3 bi em set/26)",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": "carteira",
+  "texto": "Opera apenas no Brasil, com origem em Minas Gerais e atuação nacional por canais digitais e correspondentes. Não há operação no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Crédito e captação são em reais, com funding de R$ 33,8 bi formado por depósitos a prazo (60%), letras financeiras (23%) e operações estruturadas. Uma alta do dólar não tem efeito direto no resultado."
+ },
+ "momento": "No 3T26 (divulgado no início de novembro de 2026), o lucro líquido foi de R$ 279 mi (+10% sobre o 3T25), com ROAE de 39,4% em 12 meses (45,0% um ano antes) e margem financeira anualizada de 16,9%. A carteira chegou a R$ 25,3 bi (+17%), mas a originação caiu 28%, para R$ 3,2 bi, afetada por mudanças na portabilidade do consignado INSS e pela Medida Provisória 1.355/2026, que reduziu temporariamente a margem consignável; o banco relatou sinais de recuperação após o fim da vigência da MP. A inadimplência acima de 90 dias subiu para 4,1% (2,8% um ano antes) e as provisões somaram R$ 305 mi (R$ 116 mi no 3T25). O índice de Basileia subiu para 18,5%, e em outubro a Moody's atribuiu rating AA ao banco.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "O consignado tem taxa prefixada e a captação acompanha o CDI, então juro menor reduz o custo do funding e amplia a margem da carteira existente."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não tem receita nem dívida em moeda estrangeira."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Sem relação com o negócio de consignado e crédito pessoal."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "A renda dos clientes vem de benefícios do INSS, pouco ligada ao ciclo econômico; a demanda por consignado depende mais de regras do INSS que do PIB."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Benefícios do INSS são corrigidos pela inflação, o que amplia a margem consignável, mas inflação alta mantém juro alto e encarece a captação."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Pressão fiscal favorece mudanças no consignado INSS, como a MP que reduziu a margem consignável em 2026, e eleva o custo de captação via juros longos."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Banco Mercantil, Release de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/33817f28-e2e7-40d0-892a-09ddba2e44d6/0b031faf-27ea-402f-bdfc-91f56dcdc139",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "Banco Mercantil RI: página inicial com destaques do 3T26",
+   "url": "https://ri.bancomercantil.com.br/",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "TradeMap: Mercantil do Brasil lucra R$ 281 milhões no 3T26",
+   "url": "https://trademap.com.br/noticias/news-8562736",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Diário do Comércio: lucro recorde do Banco Mercantil (1T26, base de comparação)",
+   "url": "https://diariodocomercio.com.br/financas/lucro-banco-mercantil-recorde/",
+   "data": "2026-05-06"
+  }
+ ]
+}

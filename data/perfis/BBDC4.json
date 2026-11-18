@@ -1,0 +1,87 @@
+{
+ "ticker": "BBDC4",
+ "revisado_em": "2026-11-18",
+ "resumo": "Segundo maior banco privado do país, com crédito, serviços e um dos maiores grupos seguradores do Brasil. Seguros responderam por cerca de 41% do lucro recorrente no 3T26.",
+ "modelo": "O Bradesco ganha dinheiro com a margem financeira do crédito a pessoas físicas, micro, pequenas e médias empresas e grandes empresas, com tarifas de serviços (conta, cartões, gestão de recursos, banco de investimento) e com o grupo segurador Bradesco Seguros, que atua em saúde, vida, previdência, automóvel e capitalização. Atende desde a baixa renda até a alta renda (Bradesco Principal). A receita é majoritariamente recorrente e quase toda gerada no Brasil.",
+ "segmentos": [
+  {
+   "nome": "Pessoas jurídicas",
+   "peso_receita": 0.58,
+   "periodo": "3T26",
+   "obs": "Peso na carteira expandida: R$ 664,7 bi (+14,1% em 12 meses), inclui MPMEs e grandes empresas."
+  },
+  {
+   "nome": "Pessoas físicas",
+   "peso_receita": 0.42,
+   "periodo": "3T26",
+   "obs": "Peso na carteira expandida: R$ 484,9 bi (+7,4% em 12 meses)."
+  }
+ ],
+ "segmentos_base": "Carteira de crédito expandida (R$ 1.149,5 bi em set/26). O grupo segurador, que não entra na carteira, teve lucro recorrente de R$ 2,9 bi no 3T26, com provisões técnicas de R$ 478,9 bi.",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "A operação é concentrada no Brasil, com rede nacional de agências e canais digitais. O banco tem agências e subsidiárias no exterior voltadas a captação, comércio exterior e clientes de alta renda, com investimentos no exterior de R$ 40,1 bi em set/26, protegidos por hedge."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "baixa",
+  "texto": "Quase toda a receita é em reais. O banco tem ativos e passivos em moeda estrangeira, inclusive investimentos no exterior de R$ 40,1 bi, mas informa nas demonstrações financeiras que usa hedge para proteger essas posições, de modo que uma alta do dólar tem efeito líquido pequeno."
+ },
+ "momento": "No 3T26 (divulgado em 22/10/2026), o lucro recorrente foi de R$ 7,11 bi (+14,6% sobre o 3T25), com ROAE de 16,1% (14,6% um ano antes). A margem financeira total subiu 14,2%, para R$ 21,37 bi, mas as provisões para perdas cresceram 24,3%, para R$ 10,64 bi, e a inadimplência acima de 90 dias foi a 4,6% (+0,5 p.p. em 12 meses), puxada por MPMEs com capital de giro garantido por programas federais. A carteira expandida chegou a R$ 1,15 tri (+11,1%) e as receitas de serviços a R$ 10,92 bi (+3,1%); o grupo segurador lucrou R$ 2,9 bi (+14,1%). No trimestre o banco concluiu aumento de capital de cerca de R$ 10 bi e aprovou recompra de até 106,5 milhões de ações, entre 08/11/2026 e 08/05/2028.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor alivia a inadimplência de pessoas físicas de menor renda e de MPMEs, hoje a principal pressão do banco, e valoriza a carteira de títulos do grupo segurador."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Os investimentos e passivos em moeda estrangeira são protegidos por hedge e a receita externa é pequena."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Sem exposição direta relevante; o efeito via clientes do agronegócio, como os do Banco John Deere, é pequeno no total."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Atividade maior eleva a demanda por crédito e por seguros e reduz a inadimplência de MPMEs e pessoas físicas."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação reduz a renda real dos clientes de menor renda, cuja inadimplência já pesa no resultado, e encarece sinistros de saúde e automóvel no grupo segurador."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal eleva juros longos, desacelera o crédito e pressiona a inadimplência, além de afetar o valor da carteira de títulos de R$ 960,5 bi."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Bradesco, Relatório da Administração e Demonstrações Financeiras Consolidadas 9M26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/BBDC3/51185/",
+   "data": "2026-10-22"
+  },
+  {
+   "titulo": "Seu Dinheiro: Lucro do Bradesco sobe 14% no 3T26, a R$ 7,1 bilhões",
+   "url": "https://www.seudinheiro.com/2026/empresas/lucro-do-bradesco-bbdc4-no-3t26-rentabilidade-roe-calotes-podem-frear-a-virada-miql/",
+   "data": "2026-10-22"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Bradesco lucra R$ 7,1 bilhões e alcança R$ 38 bilhões em receitas no 3º trimestre",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/bradesco-lucra-r-71-bilhoes-e-alcanca-r-38-bilhoes-em-receitas-no-3o-trimestre/",
+   "data": "2026-10-22"
+  },
+  {
+   "titulo": "Mercado & Consumo: Bradesco tem lucro líquido recorrente de R$ 7,1 bi no 3º trimestre",
+   "url": "https://mercadoeconsumo.com.br/23/10/2026/noticias/bradesco-tem-lucro-liquido-recorrente-de-r-71-bi-no-3o-trimestre/",
+   "data": "2026-10-23"
+  },
+  {
+   "titulo": "Eu Quero Investir: balanço Bradesco 3T26",
+   "url": "https://euqueroinvestir.com/mercados/balanco-bradesco-3t26",
+   "data": "2026-10-22"
+  }
+ ]
+}

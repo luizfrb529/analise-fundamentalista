@@ -1,0 +1,119 @@
+{
+ "ticker": "SANB11",
+ "revisado_em": "2026-11-18",
+ "resumo": "Banco controlado pelo Santander espanhol, com crédito a pessoas físicas, empresas e financiamento de veículos. No 3T26 o ROE caiu para 11,9%, e o controlador conduz uma oferta de troca das ações em circulação.",
+ "modelo": "O Santander Brasil ganha dinheiro principalmente com a margem financeira do crédito (pessoa física, financiamento ao consumo, pequenas e médias empresas e grandes empresas) e com tarifas de cartões, conta corrente, seguros, gestão de recursos e banco de investimento. A receita é majoritariamente recorrente. O banco é controlado pelo Banco Santander S.A., da Espanha, que detém cerca de 90% do capital; as units SANB11 reúnem ações ordinárias e preferenciais.",
+ "segmentos": [
+  {
+   "nome": "Pessoa física",
+   "peso_receita": 0.37,
+   "periodo": "2T26",
+   "obs": "R$ 263,4 bi (-0,1% em 12 meses), com imobiliário, cartão e consignado; o banco reduz a exposição à baixa renda."
+  },
+  {
+   "nome": "Grandes empresas",
+   "peso_receita": 0.36,
+   "periodo": "2T26",
+   "obs": "R$ 254,6 bi (+6,8% em 12 meses); no 3T26 cresceu 7,8% em 12 meses."
+  },
+  {
+   "nome": "Financiamento ao consumo",
+   "peso_receita": 0.14,
+   "periodo": "2T26",
+   "obs": "R$ 100,8 bi (+15,3% em 12 meses), principalmente veículos; no 3T26 cresceu 9,1%."
+  },
+  {
+   "nome": "Pequenas e médias empresas",
+   "peso_receita": 0.13,
+   "periodo": "2T26",
+   "obs": "R$ 96,0 bi (+11,5% em 12 meses); no 3T26 cresceu 8,5%."
+  }
+ ],
+ "segmentos_base": "Carteira de crédito ampliada (jun/26, R$ 714,8 bi)",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": "carteira",
+  "texto": "A operação é concentrada no Brasil; o banco não divulga carteira ou receita relevante fora do país. A presença internacional é a do grupo controlador, não do Santander Brasil."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "baixa",
+  "texto": "Receita e crédito são em reais. O banco tem captações e ativos em moeda estrangeira, mas, como é prática do setor, protege a exposição cambial, de modo que uma alta do dólar tem efeito líquido pequeno. Quem aderir à oferta do controlador passa a ter ações do Santander espanhol, cotadas em euro."
+ },
+ "momento": "No 3T26 (divulgado em 28/10/2026), o lucro líquido gerencial recorrente foi de R$ 2,885 bi (-28% sobre o 3T25 e -4,3% sobre o 2T26) e o ROAE caiu para 11,9% (17,5% um ano antes). A margem financeira somou R$ 14,96 bi (-1,6%), as provisões para perdas de crédito subiram 14,4%, para R$ 7,46 bi, e a inadimplência acima de 90 dias foi a 3,4% (2,8% no 3T25), com piora em baixa renda e agronegócio. A carteira ampliada chegou a R$ 721,3 bi (+4,7% em 12 meses). Em 30/07/2026 o Santander espanhol lançou oferta voluntária para trocar os cerca de 10% de ações em circulação por BDRs ou ADSs do grupo, com prêmio de 15%; em 12/11/2026 elevou a relação de troca em 5%. A oferta não prevê fechamento de capital, tem assembleia do controlador marcada para 15/12/2026 e conclusão esperada no 1º semestre de 2027.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor reduz a inadimplência e melhora a margem com mercado, hoje negativa, embora diminua a remuneração do capital próprio."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e crédito são em reais e a exposição cambial é protegida; o efeito líquido é pequeno."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Efeito indireto: melhora a qualidade do crédito ao agronegócio, que pressionou a inadimplência no 3T26, sem peso direto na receita."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Atividade maior eleva a demanda por crédito e reduz a inadimplência, principal fator de queda do lucro em 2026."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação alta mantém juros elevados e corrói a renda das famílias, o que pressiona a inadimplência de pessoa física e baixa renda."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal eleva juros longos, encarece a captação e prejudica o crédito e o valor da carteira de títulos."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Seu Dinheiro: Santander Brasil (SANB11) frustra no 3T26, lucro tomba 28% e ROE cai a 11,9%",
+   "url": "https://www.seudinheiro.com/2026/empresas/santander-sanb11-lucro-roe-rentabilidade-3t26-veja-os-destaques-do-balanco-miql/",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "Money Times: Santander (SANB11), lucro do 3T26 e ROAE",
+   "url": "https://www.moneytimes.com.br/santander-sanb11-lucro-3t26-acima-abaixo-do-esperado-roae-miql/",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "Forbes Brasil: Lucro do Santander Brasil cai 28% no 3º tri",
+   "url": "https://forbes.com.br/geral/2026/10/lucro-do-santander-brasil-cai-28-no-3o-tri/",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Lucro do Santander cai 28%, menor nível em três anos",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/lucro-do-santander-cai-28-menor-nivel-em-tres-anos-diante-de-alta-da-inadimplencia-e-das-provisoes",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "BB Investimentos: Santander Brasil (SANB11) 3T26, análise do resultado",
+   "url": "https://investalk.bb.com.br/noticias/mercado/SANB3T26",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "DGABC (Estadão Conteúdo): carteira de crédito ampliada do Santander Brasil vai a R$ 714,769 bi no 2º tri",
+   "url": "https://www.dgabc.com.br/Noticia/4338039/santander-brasil-carteira-de-credito-ampliada-vai-a-r-714-769-bi-no-2-tri-5-8-em-um-ano",
+   "data": "2026-07-29"
+  },
+  {
+   "titulo": "Mercado & Consumo: carteira de crédito do Santander cresce 5,8% e atinge R$ 714,7 bilhões no 2º trimestre",
+   "url": "https://mercadoeconsumo.com.br/29/07/2026/mc-capital/carteira-de-credito-do-santander-cresce-58-e-atinge-r-7147-bilhoes-no-2o-trimestre/",
+   "data": "2026-07-29"
+  },
+  {
+   "titulo": "InfoMoney: Santander lança oferta por ações do Santander Brasil em operação de até R$ 11 bi",
+   "url": "https://www.infomoney.com.br/?p=3432462",
+   "data": "2026-07-30"
+  },
+  {
+   "titulo": "Seu Dinheiro: Santander turbina OPA de SANB11 em 5%",
+   "url": "https://www.seudinheiro.com/2026/empresas/santander-turbina-opa-de-sanb11-em-5-o-que-mudou-na-oferta-e-quanto-os-minoritarios-podem-receber-agora-miql/",
+   "data": "2026-11-12"
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+{
+ "ticker": "BHIA3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Varejista de eletro e móveis em recuperação judicial desde agosto de 2026, com R$ 17,3 bi em dívidas a renegociar. Cerca de 64% da receita vem das lojas físicas e o balanço do 3T26 foi adiado para 10/12/2026.",
+ "modelo": "O Grupo Casas Bahia vende eletrodomésticos, eletrônicos, celulares e móveis pela marca Casas Bahia, em lojas físicas e no comércio eletrônico, com venda própria (1P) e marketplace (3P). Uma parte relevante do resultado vem do crediário próprio, carteira de cerca de R$ 6,3 bi parcelada em até 24 meses, além de serviços como garantia estendida e seguros. A receita é de venda pontual ao consumidor, sensível a crédito e renda; o crediário e os serviços dão algum componente recorrente.",
+ "segmentos": [
+  {
+   "nome": "Lojas físicas",
+   "peso_receita": 0.64,
+   "periodo": "1S26",
+   "obs": "R$ 11.039 mi de receita bruta (-2,6%); 1.033 lojas em junho, com plano de fechar 298."
+  },
+  {
+   "nome": "Online, venda própria (1P)",
+   "peso_receita": 0.33,
+   "periodo": "1S26",
+   "obs": "R$ 5.670 mi (+20,7%)."
+  },
+  {
+   "nome": "Online, marketplace (3P)",
+   "peso_receita": 0.03,
+   "periodo": "1S26",
+   "obs": "R$ 441 mi de receita (-1,6%), comissões sobre vendas de terceiros."
+  }
+ ],
+ "segmentos_base": "Receita bruta por canal (1S26, total de R$ 17.150 mi). Por natureza, mercadorias foram 84%, crediário e cartões 10% e serviços 6%.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "1S26",
+  "base": null,
+  "texto": "Opera apenas no Brasil, com lojas em todo o país e venda online nacional. Não há receita no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais. A alta do dólar afeta de forma indireta, ao encarecer eletrônicos e componentes importados, o que pressiona preços e demanda."
+ },
+ "momento": "O Grupo pediu recuperação judicial em 16/08/2026, com cerca de R$ 17,3 bi em dívidas, e a Justiça de São Paulo autorizou o processamento em 21/10/2026. No 2T26, a receita líquida foi de quase R$ 7 bi (+1,6%), o Ebitda ajustado caiu 9,4%, para R$ 518 mi (margem de 7,4%), e o prejuízo contábil foi de R$ 10,1 bi, dos quais R$ 9,1 bi em efeitos sem caixa, como baixa de imposto de renda diferido; o prejuízo ajustado foi de R$ 978 mi. A empresa anunciou o fechamento de 298 lojas, depois que uma captação internacional não se concretizou. O balanço do 3T26, previsto para 11/11, foi adiado para 10/12/2026; em 10/11 o administrador judicial divulgou o relatório mensal de agosto, com dados preliminares.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Juro menor barateia o crediário e as vendas parceladas de bens duráveis e alivia a despesa financeira, que a própria empresa citou como causa da recuperação judicial."
+  },
+  "dolar_subindo": {
+   "nota": -1,
+   "porque": "Eletrônicos e celulares têm componentes importados; dólar mais alto encarece o estoque e reduz o volume de vendas."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O efeito é indireto e pequeno, via custo de fabricação de linha branca e móveis repassado pelos fornecedores."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Venda de bens duráveis a crédito depende de emprego e renda; economia mais forte eleva vendas e reduz a inadimplência do crediário."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação corrói a renda do público de classes C e D, principal cliente, e tende a manter os juros altos."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Risco fiscal maior eleva juros e restringe o crédito, o que agrava a situação de uma empresa em recuperação judicial e dependente de financiamento."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Grupo Casas Bahia, Informações Financeiras Intermediárias de 30/06/2026 (ITR 2T26)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/ce9bff9f-fb19-49b9-9588-c4c6b7052c9c/83a57707-e8aa-8907-a633-58c12f7cc3f4?origin=2",
+   "data": "2026-08-16"
+  },
+  {
+   "titulo": "Forbes Brasil: Casas Bahia tem prejuízo bilionário no 2T26",
+   "url": "https://forbes.com.br/forbes-money/2026/08/casas-bahia-prejuizo-recuperacao-judicial/",
+   "data": "2026-08-16"
+  },
+  {
+   "titulo": "Economic News Brasil: Casas Bahia adia balanço de resultados, enquanto Justiça mantém cobrança mensal de contas",
+   "url": "https://economicnewsbrasil.com.br/2026/11/07/balanco-da-casas-bahia-justica/",
+   "data": "2026-11-07"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): balanço da Casas Bahia é adiado em meio à recuperação judicial",
+   "url": "https://timesbrasil.com.br/brasil/judiciario/recuperacao-judicial/balanco-casas-bahia-adiamento-terceiro-trimestre-recuperacao-judicial/",
+   "data": "2026-11-07"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Casas Bahia divulga relatório financeiro de agosto",
+   "url": "https://timesbrasil.com.br/brasil/casas-bahia-relatorio-financeiro-agosto-recuperacao-judicial/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Grupo Casas Bahia, Resultados 1T26 (carta da administração)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/ce9bff9f-fb19-49b9-9588-c4c6b7052c9c/6bb403b7-21a3-78ba-bb10-c49cec3e2a2f?origin=2",
+   "data": "2026-05"
+  }
+ ]
+}

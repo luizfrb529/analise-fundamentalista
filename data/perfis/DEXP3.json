@@ -1,0 +1,82 @@
+{
+ "ticker": "DEXP3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Holding com a GPC Química (resinas para painéis de madeira e distribuição de químicos) e a Apolo (tubos de aço). Três quartos da receita vêm do químico, quase toda no Brasil, e a empresa tem caixa líquido.",
+ "modelo": "A Dexxos controla a GPC Química, que produz formol e resinas termofixas para a indústria de painéis de madeira (MDF, MDP), especialidades químicas e distribui produtos químicos, com fábricas em Araucária (PR), Uberaba (MG) e Camaçari (BA). Controla também a Apolo Tubos, fabricante de tubos de aço para óleo e gás, energia solar, construção e infraestrutura, com unidades em Pavuna (RJ) e Lorena (SP), e tem participação na Metanor (metanol), reconhecida por equivalência. A receita vem de vendas industriais recorrentes a clientes, com margem dependente do repasse do custo de matérias-primas como metanol, ureia e aço.",
+ "segmentos": [
+  {
+   "nome": "Químico (GPC Química)",
+   "peso_receita": 0.74,
+   "periodo": "9M26",
+   "obs": "Receita líquida de R$ 997,2 mi (-17,1%), com queda na distribuição de químicos e margem bruta maior, de 21,8%."
+  },
+  {
+   "nome": "Aço (Apolo Tubos)",
+   "peso_receita": 0.26,
+   "periodo": "9M26",
+   "obs": "Receita líquida de R$ 356,6 mi (-30,6%) e Ebitda ajustado de só R$ 1,0 mi, por demanda fraca em óleo e gás e concorrência."
+  }
+ ],
+ "segmentos_base": "Receita líquida dos segmentos, sem eliminação de transações entre as empresas.",
+ "geografia": {
+  "brasil_pct": 0.97,
+  "exterior_pct": 0.03,
+  "periodo": "2024",
+  "base": null,
+  "texto": "Quase toda a receita é gerada no Brasil; segundo o Formulário de Referência, clientes do exterior representaram 2,8% da receita líquida em 2024 (3,8% no químico e 0,1% no aço). Há escritório comercial em Houston, e as exportações de tubos para os EUA estão sujeitas a tarifa de 25% desde março de 2025."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "nenhuma",
+  "texto": "A receita é praticamente toda em reais, mas metanol, ureia e aço, cerca de 80% do custo de produção, têm preço definido no mercado internacional. A dívida em moeda estrangeira era de R$ 4,4 mi no fim de 2024, irrelevante frente ao total; o efeito líquido de alta do dólar depende do repasse de custos ao cliente e da proteção que o câmbio dá aos tubos contra importados."
+ },
+ "momento": "No 3T26 (divulgado em 10/11/2026), a receita líquida foi de R$ 506,6 mi (-1,9% sobre o 3T25), o Ebitda ajustado de R$ 49,5 mi (-2,5%, margem de 9,8%) e o lucro líquido de R$ 41,6 mi (+41,2%). Nos 9M26, a receita caiu 21,2%, para R$ 1.353,8 mi, enquanto o lucro subiu 11,6%, para R$ 135,0 mi, com ajuda do resultado financeiro e da equivalência da Metanor (R$ 27,3 mi). A empresa encerrou setembro com caixa líquido de R$ 81,7 mi. Em outubro de 2026, aprovou cerca de R$ 60 mi em dividendos pagos entre novembro de 2026 e janeiro de 2027, retomou os estudos de conversão das ações preferenciais em ordinárias e teve mantida pela ANP a autorização de distribuição de metanol da GPC Química.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula construção e móveis, que consomem painéis de madeira e tubos; como a empresa tem caixa líquido, a perda com menor rendimento do caixa é pequena."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "A receita é quase toda no Brasil e a dívida em dólar é irrelevante; a alta encarece metanol, ureia e aço, repassados com defasagem, mas protege os tubos da Apolo contra importados, efeitos que se compensam."
+  },
+  "commodities_subindo": {
+   "nota": -1,
+   "porque": "Matérias-primas com preço internacional respondem por cerca de 80% do custo, e a própria empresa atribuiu a queda da margem do químico no 3T26 à volatilidade desses insumos."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade aumenta a demanda por painéis de madeira, tubos para construção, infraestrutura e energia."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Preços de venda acompanham custos industriais, sem indexação direta à inflação; o efeito líquido é pequeno."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Com caixa líquido, juros maiores não pesam na dívida; o efeito vem de forma difusa via menor investimento e construção."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Dexxos, Resultados Financeiros 3T26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/DEXP3/52351/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Dexxos, Formulário de Referência 2026 (base 31/12/2025), versão 9",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/ca373d40-8cff-414f-a58e-e8d4ab5fe28f/3a2cb043-4619-bdc1-3ae9-c5035953cc11?origin=2",
+   "data": "2026-05-11"
+  },
+  {
+   "titulo": "Dexxos, Apresentação Institucional julho de 2026",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/DEXP3/45762/",
+   "data": "2026-07"
+  },
+  {
+   "titulo": "Dexxos, Release de Resultados 4T25",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/ca373d40-8cff-414f-a58e-e8d4ab5fe28f/3777b927-ce8d-a95e-6ac9-c1b779a76588?origin=2",
+   "data": "2026-03"
+  }
+ ]
+}

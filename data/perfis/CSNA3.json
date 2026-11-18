@@ -1,0 +1,115 @@
+{
+ "ticker": "CSNA3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Grupo com siderurgia (52% da receita no 3T26), mineração de ferro, cimento, logística e energia. Alavancagem de 4,23x Ebitda e venda de ativos em curso, como a CSN Cimentos por R$ 12,7 bi.",
+ "modelo": "A CSN produz aços planos na Usina Presidente Vargas (Volta Redonda, RJ) para distribuição, construção, indústria, automóveis e linha branca, e tem usinas de aço longo e laminação na Europa (SWT na Alemanha, Lusosider em Portugal) e nos EUA. A CSN Mineração extrai e exporta minério de ferro de Minas Gerais pelo terminal Tecar. Completam o grupo a CSN Cimentos, ferrovias e portos (participação de 37,49% na MRS, Transnordestina, Tecon) e geração de energia. A receita é recorrente em volume, mas oscila com preços de aço, minério e frete.",
+ "segmentos": [
+  {
+   "nome": "Siderurgia",
+   "peso_receita": 0.52,
+   "periodo": "3T26",
+   "obs": "R$ 5,75 bi (+8,6%); Ebitda ajustado de R$ 576 mi, margem de 10,0%."
+  },
+  {
+   "nome": "Mineração",
+   "peso_receita": 0.22,
+   "periodo": "3T26",
+   "obs": "R$ 2,38 bi (-46,1%), com receita unitária de US$ 40,06/t (-39%); Ebitda de R$ 381 mi."
+  },
+  {
+   "nome": "Cimento",
+   "peso_receita": 0.13,
+   "periodo": "3T26",
+   "obs": "R$ 1,45 bi (+8,8%); Ebitda de R$ 386 mi. Venda à Huaxin assinada em novembro de 2026."
+  },
+  {
+   "nome": "Logística",
+   "peso_receita": 0.11,
+   "periodo": "3T26",
+   "obs": "R$ 1,21 bi, estável; Ebitda de R$ 534 mi, margem de 44,0%."
+  },
+  {
+   "nome": "Energia",
+   "peso_receita": 0.02,
+   "periodo": "3T26",
+   "obs": "R$ 176 mi (+13,7%)."
+  }
+ ],
+ "segmentos_base": "Receita líquida por segmento antes de eliminações (mineração em base ajustada, com 100% da CSN Mineração; logística inclui 37,49% da MRS).",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "A siderurgia vende sobretudo no Brasil: das 1.131 mil t vendidas no 3T26, 305 mil t foram no exterior, por SWT (Alemanha), LLC (EUA), Lusosider (Portugal) e exportações. A mineração exporta a maior parte do minério, principalmente para a China. Cimento, logística e energia operam no Brasil. A venda da SWT (valor de 550 milhões de euros) ainda está em negociação."
+ },
+ "moeda": {
+  "receita_em_dolar": "média",
+  "divida_em_dolar": "alta",
+  "texto": "Minério exportado e aço vendido no exterior geram receita em dólar e euro, enquanto boa parte da dívida está em dólar (bonds e pré-pagamentos de exportação). A exposição cambial líquida no balanço era negativa em US$ 2,95 bi em setembro de 2026, mas a empresa usa contabilidade de hedge para casar a dívida com exportações futuras; o efeito líquido de alta do dólar no caixa tende a ser pequeno."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita líquida foi de R$ 10,49 bi (-11,1% sobre o 3T25), o Ebitda ajustado de R$ 1,88 bi (-43,5%, margem de 17,0%) e o prejuízo líquido de R$ 1,25 bi, ante lucro de R$ 76 mi um ano antes, pesando a queda do minério, o frete mais caro e uma provisão de arbitragem. A dívida líquida chegou a R$ 44,9 bi, com alavancagem de 4,23x Ebitda (3,49x no 2T26), e o fluxo de caixa livre foi negativo em R$ 3,5 bi. Em 08/11/2026 a CSN assinou a venda da CSN Cimentos à chinesa Huaxin por valor de empresa de R$ 12,7 bi, sujeita a Cade, Aneel e órgãos chineses, e em outubro firmou termo vinculante para vender a SWT por 550 milhões de euros. Em setembro reduziu a meta de produção e compras de minério de 2026 para 39 a 41 Mt, e em 09/11/2026 o diretor financeiro renunciou, com o presidente Fabio Schvartsman acumulando a função interinamente.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com dívida líquida de R$ 44,9 bi e resultado financeiro negativo em R$ 1,36 bi no trimestre, juro menor alivia muito a despesa financeira, além de estimular aço e cimento no mercado interno."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Exportações de minério e vendas de aço no exterior ganham valor em reais, mas a dívida elevada em dólar limita o ganho líquido."
+  },
+  "commodities_subindo": {
+   "nota": 2,
+   "porque": "O preço do minério e o frete explicaram a queda de 46% na receita da mineração no 3T26; uma alta do minério se reflete direto nas margens."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "A maior parte do aço é vendida no Brasil para construção, indústria e automóveis, e logística e cimento também dependem da atividade interna."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Parte relevante da dívida é corrigida por índices de inflação, cuja atualização monetária pesa no resultado financeiro, enquanto o repasse ao preço do aço é limitado pela concorrência de importados."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior mantém juros altos e encarece o refinanciamento de uma empresa alavancada, efeito que supera o ganho com real mais fraco."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "CSN, 3Q26 Earnings Release (Form 6-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1049659/000129281426005304/sidpr3q26_6k.htm",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "CSN, Fato Relevante: venda da CSN Cimentos à Huaxin (Form 6-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1049659/000129281426005184/sid20261108_6k.htm",
+   "data": "2026-11-08"
+  },
+  {
+   "titulo": "CSN, Fato Relevante: term sheet para venda da SWT à Megasa (Form 6-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1049659/000129281426004888/sid20261009_6k.htm",
+   "data": "2026-10-09"
+  },
+  {
+   "titulo": "CSN, Fato Relevante: redução de produção no complexo de Pires e revisão de guidance (Form 6-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1049659/000129281426004734/sid20260929_6k.htm",
+   "data": "2026-09-29"
+  },
+  {
+   "titulo": "CSN, Fato Relevante: renúncia do diretor financeiro (Form 6-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1049659/000129281426005193/sid20261109_6k.htm",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Money Times (Estadão Conteúdo): CSN reverte lucro e registra prejuízo de R$ 1,247 bi no 3º trimestre",
+   "url": "https://www.moneytimes.com.br/csn-csna3-reverte-lucro-e-registra-prejuizo-liquido-de-r-1247-bi-no-3o-trimestre-lmrs/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Money Times: CSN acerta venda da CSN Cimentos à chinesa Huaxin por R$ 12,7 bilhões",
+   "url": "https://www.moneytimes.com.br/para-reduzir-divida-csn-csna3-acerta-venda-da-csn-cimentos-a-chinesa-huaxin-por-r-127-bilhoes-igdl/",
+   "data": "2026-11-08"
+  }
+ ]
+}

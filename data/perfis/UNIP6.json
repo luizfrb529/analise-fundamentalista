@@ -1,0 +1,88 @@
+{
+ "ticker": "UNIP6",
+ "revisado_em": "2026-11-18",
+ "resumo": "Produtora de cloro, soda cáustica e PVC no Brasil e na Argentina, com preços atrelados às cotações internacionais em dólar. Teve prejuízo no 3T26 com a queda de preços de soda e PVC.",
+ "modelo": "A Unipar Carbocloro produz cloro e derivados clorados, soda cáustica e PVC em Cubatão e Santo André (SP), Camaçari (BA) e Bahía Blanca (Argentina, pela Unipar Indupa). Vende para indústrias de saneamento, papel e celulose, alumínio, química e construção civil. A receita depende do volume vendido e das referências internacionais de soda e PVC, enquanto os principais custos são energia elétrica, etileno e gás natural. A empresa também tem participações em parques de energia renovável para autoprodução.",
+ "segmentos": [
+  {
+   "nome": "PVC",
+   "peso_receita": 0.41,
+   "periodo": "2T26",
+   "obs": "Receita líquida ajustada do trimestre foi de R$ 1.494 mi; volume de PVC caiu 11% sobre o 1T26 por pressão de importados."
+  },
+  {
+   "nome": "Soda cáustica",
+   "peso_receita": 0.36,
+   "periodo": "2T26",
+   "obs": "Volume de vendas 7% maior que no 1T26, com recordes mensais."
+  },
+  {
+   "nome": "Clorados",
+   "peso_receita": 0.23,
+   "periodo": "2T26",
+   "obs": "Cloro, ácido clorídrico, hipoclorito e outros derivados."
+  }
+ ],
+ "segmentos_base": "Receita líquida ajustada (exclui efeitos do IAS 29 sobre a operação argentina).",
+ "geografia": {
+  "brasil_pct": 0.8,
+  "exterior_pct": 0.2,
+  "periodo": "2T26",
+  "base": "receita por país da operação (Brasil x Argentina)",
+  "texto": "No 2T26, as operações no Brasil geraram R$ 1.200 mi e a fábrica de Bahía Blanca, na Argentina, R$ 294 mi da receita líquida ajustada. A operação argentina está sujeita à contabilidade de hiperinflação (IAS 29)."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "baixa",
+  "texto": "Os preços de soda e PVC seguem referências internacionais em dólar, e a empresa cita a valorização do real como fator que reduziu receita e Ebitda em 2026. Em junho de 2026, cerca de 10% da dívida bruta (R$ 372 mi de R$ 3.691 mi) era em dólar (ECA e bancos comerciais); o restante é em reais (debêntures, BNDES e BNB). Uma alta do dólar tende a elevar receita e margem, com efeito pequeno na dívida."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a Unipar teve prejuízo líquido de R$ 16 mi, ante lucro de R$ 107 mi no 3T25, e Ebitda ajustado recorrente de R$ 180 mi (-32% na comparação anual), com margem de 14% (27% no 2T26), por queda dos preços internacionais de soda e PVC e etileno ainda caro. A dívida líquida foi de R$ 2,28 bi em setembro e a alavancagem subiu para 2,89 vezes o Ebitda (2,50 vezes em junho), com caixa de R$ 1,36 bi e 93% da dívida vencendo a partir de 2029. O ciclo de investimentos está no fim: a modernização de Cubatão atingiu plena capacidade em abril de 2026 e a purificação de cloro em Camaçari começou a operar em julho de 2026; o investimento de 9M26 foi cerca de 42% menor que o de 9M25.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "A demanda por PVC depende da construção civil, que a própria empresa associa à queda de juros, e a maior parte da dívida líquida de R$ 2,3 bi é em reais, com custo que cai junto com a Selic."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Soda e PVC têm preço em paridade internacional em dólar e só cerca de 10% da dívida está em dólar, então a alta do dólar tende a elevar a receita em reais; parte do ganho é compensada por custos de etileno e importados."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Alta de soda e PVC aumenta a receita, mas etileno e gás natural, principais insumos, também sobem com o petróleo, como ocorreu em 2026; os efeitos tendem a se compensar."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade eleva o consumo de PVC na construção e de soda e clorados na indústria e no saneamento."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Preços seguem referências internacionais, não a inflação local; custos de energia e pessoal acompanham a inflação, efeito pequeno no total."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Juros mais altos encarecem a dívida em reais e travam a construção, mas o real mais fraco que costuma acompanhar o risco fiscal favorece os preços em reais."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Unipar, Release de Resultados 2T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/3c0b3516-7dff-44a5-946f-20e7ec87dfa0/bd18e23a-20cf-5455-dc94-ecb4f607acce?origin=2",
+   "data": "2026-08"
+  },
+  {
+   "titulo": "InvestNews: Unipar investiu bilhões na baixa e busca nas fábricas o fôlego que o mercado não dá",
+   "url": "https://investnews.com.br/negocios/unipar-3t26-investimentos-fabricas/amp/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Brazil Journal: Unipar enfrenta um tri duro, mas chega ao fim do ciclo de capex",
+   "url": "https://braziljournal.com/unipar-enfrenta-um-tri-duro-mas-chega-ao-fim-do-ciclo-de-capex/",
+   "data": "2026-03-19"
+  },
+  {
+   "titulo": "InfoMoney (Estadão Conteúdo): Unipar tem 2025 desafiado pelo ciclo petroquímico",
+   "url": "https://www.infomoney.com.br/?p=3259351",
+   "data": "2026-03-20"
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "ticker": "UGPA3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Holding dona da Ipiranga (combustíveis), Ultragaz (GLP), Ultracargo (tancagem) e controladora da Hidrovias do Brasil. A Ipiranga responde por cerca de 90% da receita e pela maior parte do Ebitda.",
+ "modelo": "A Ultrapar ganha dinheiro sobretudo com margem de distribuição: a Ipiranga revende gasolina, diesel e etanol para postos da rede e grandes clientes, e a Ultragaz distribui GLP envasado e a granel. A Ultracargo aluga capacidade de armazenagem de granéis líquidos em portos, e a Hidrovias do Brasil, controlada desde maio de 2025, transporta grãos e minério por hidrovias no Arco Norte e no corredor do rio Paraguai. A receita é recorrente, ligada a volume vendido, com margens unitárias que variam com estoques e preços de importação.",
+ "segmentos": [
+  {
+   "nome": "Ipiranga",
+   "peso_receita": 0.9,
+   "periodo": "1T26",
+   "obs": "R$ 33,1 bi de receita líquida (+10%); no 3T26, Ebitda ajustado recorrente de R$ 2,28 bi."
+  },
+  {
+   "nome": "Ultragaz",
+   "peso_receita": 0.08,
+   "periodo": "1T26",
+   "obs": "R$ 2,97 bi (+4%); no 3T26, Ebitda recorrente de R$ 467 mi e volume de GLP 3% maior."
+  },
+  {
+   "nome": "Hidrovias do Brasil",
+   "peso_receita": 0.01,
+   "periodo": "1T26",
+   "obs": "R$ 445 mi ex-hedge accounting (-20%); no 3T26, Ebitda recorrente de R$ 303 mi."
+  },
+  {
+   "nome": "Ultracargo",
+   "peso_receita": 0.01,
+   "periodo": "1T26",
+   "obs": "R$ 276 mi (+2%); no 3T26, Ebitda ajustado de R$ 142 mi."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão), 1T26, último release oficial aberto com abertura por negócio.",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "1T26",
+  "base": null,
+  "texto": "Quase toda a receita é gerada no Brasil. A Hidrovias do Brasil opera também no corredor do rio Paraguai, com passagem por Paraguai e Argentina, mas a fatia externa não é divulgada e é pequena frente ao total."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "baixa",
+  "texto": "Os preços de combustível e GLP seguem a paridade internacional, mas são repassados ao consumidor; a receita com contratos em dólar se concentra na Hidrovias. A dívida tem parcela em moeda estrangeira em grande parte protegida por hedge, com custo médio em torno de 107% a 110% do CDI, o que deixa efeito líquido pequeno de uma alta do dólar."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), o lucro líquido foi de R$ 2,70 bi (+249% sobre o 3T25) e o Ebitda ajustado de R$ 4,63 bi, inflado por R$ 1,55 bi de créditos fiscais extraordinários na Ipiranga; o Ebitda ajustado recorrente foi de R$ 3,10 bi (+74% no ano, -15% sobre o 2T26). A Ipiranga vendeu 9% mais volume, mas teve margem menor que no 2T26, quando se beneficiou dos efeitos do conflito no Oriente Médio sobre preços. A dívida líquida subiu de R$ 8,86 bi para R$ 11,0 bi, com alavancagem de 1,0x, após a liquidação de R$ 1,98 bi em risco sacado e a formação de R$ 661 mi em subvenções a receber pelo combustível importado. O conselho aprovou R$ 1,085 bi em dividendos (R$ 1,00 por ação).",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "A dívida é indexada ao CDI e a Ipiranga financia capital de giro elevado, então juro menor reduz despesa financeira e custo de estoques."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Combustível e GLP são precificados em paridade de importação e repassados; a dívida em dólar é protegida por hedge, e a Hidrovias tem receita em dólar pequena no total."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Petróleo caro eleva receita, mas não a margem por litro, e pode reduzir volume; para a Hidrovias, safras e minério maiores ajudam, efeitos que se compensam."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade aumenta o consumo de diesel no transporte de cargas e de gasolina, elevando o volume da Ipiranga, além do transporte de grãos da Hidrovias."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Preços de combustíveis entram na inflação e são repassados, enquanto custos de pessoal e frete sobem, sem ganho ou perda líquida clara."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior eleva juros e o custo do capital de giro, além de aumentar a chance de interferência em preços e tributos de combustíveis."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Ultrapar, Divulgação dos resultados 1T26 (RI)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/4282e939-a6dc-401d-a873-e3c28b7e48df/d7d10c8a-3b8a-364a-c718-fd3b7d22e316?origin=2",
+   "data": "2026-05-06"
+  },
+  {
+   "titulo": "Ultrapar, Divulgação dos resultados 4T25 (RI)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/4282e939-a6dc-401d-a873-e3c28b7e48df/185b8f18-9e92-8ac5-2030-c9859eee414a?origin=2",
+   "data": "2026-03-04"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Ultrapar registra lucro de R$ 2,697 bilhões no terceiro trimestre",
+   "url": "https://timesbrasil.com.br/brasil/ultrapar-registra-lucro-de-r-2697-bilhoes-no-terceiro-trimestre-com-alta-de-249/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Cenário Energia: Ultrapar lucra R$ 2,7 bilhões no 3T26",
+   "url": "https://cenarioenergia.com.br/2026/11/12/ultrapar-lucra-2-7-bilhoes-3t26-ipiranga-ultragaz/",
+   "data": "2026-11-12"
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "ticker": "ROXO34",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR da Nu Holdings, dona do Nubank, banco digital com 143 milhões de clientes no Brasil, México e Colômbia. Cerca de 80% dos depósitos e a maior parte da receita estão no Brasil, embora o balanço seja publicado em dólar.",
+ "modelo": "O Nubank oferece conta digital, cartão de crédito, empréstimo pessoal e consignado, investimentos e seguros, quase todo pelo aplicativo e sem agências. Ganha dinheiro principalmente com juros do crédito (cartão parcelado e rotativo, empréstimos) e com tarifas de intercâmbio, financiando-se com depósitos de varejo a cerca de 87% do CDI. A receita é recorrente. A Nu Holdings tem sede nas Ilhas Cayman, ações na NYSE (NU) e BDR na B3 (ROXO34).",
+ "segmentos": [
+  {
+   "nome": "Cartão de crédito",
+   "peso_receita": 0.65,
+   "periodo": "3T26",
+   "obs": "US$ 27,2 bi (+32% em 12 meses, câmbio neutro)."
+  },
+  {
+   "nome": "Empréstimos sem garantia",
+   "peso_receita": 0.26,
+   "periodo": "3T26",
+   "obs": "US$ 11,0 bi (+39%), principalmente empréstimo pessoal."
+  },
+  {
+   "nome": "Empréstimos com garantia",
+   "peso_receita": 0.08,
+   "periodo": "3T26",
+   "obs": "US$ 3,4 bi (+23%), com consignado crescendo e FGTS em queda."
+  }
+ ],
+ "segmentos_base": "Carteira de crédito (set/26, US$ 41,6 bi)",
+ "geografia": {
+  "brasil_pct": 0.81,
+  "exterior_pct": 0.19,
+  "periodo": "3T26",
+  "base": "depósitos",
+  "texto": "Percentuais dos depósitos: US$ 38,6 bi no Brasil, US$ 5,3 bi no México e US$ 3,5 bi na Colômbia. Dos 143 milhões de clientes, cerca de 120 milhões estão no Brasil, 16,6 milhões no México (primeiro trimestre como banco) e 6,1 milhões na Colômbia. A conta nos EUA (Nu US, lançada em 10/09/2026) e a conta global em stablecoin (Nu Global) ainda são iniciantes."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "baixa",
+  "texto": "A empresa publica em dólar, mas a receita e a captação são em reais, pesos mexicanos e pesos colombianos. Para o investidor do BDR, a alta do dólar eleva o valor do papel em reais, mas reduz na mesma medida o valor em dólar do lucro gerado em reais, por isso o efeito líquido tende a ser pequeno."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), o lucro líquido foi recorde de US$ 1,09 bi (+31% em câmbio neutro e cerca de +39% em dólar), com ROE de 32%, e a receita total gerencial chegou a US$ 6,3 bi (+37% em câmbio neutro). A carteira de crédito somou US$ 41,6 bi (+33% em 12 meses) e os depósitos US$ 47,5 bi (+19%). A inadimplência acima de 90 dias subiu para 7,3% (6,9% no 2T26), enquanto o índice de eficiência melhorou para 19,3%, e a meta de 2026 foi ajustada para 19% a 19,5%. A empresa adicionou 3,7 milhões de clientes no trimestre, começou a operar como banco no México e lançou contas nos EUA e uma conta global multimoeda.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor barateia a captação, atrelada ao CDI, e reduz a inadimplência do cartão e do empréstimo pessoal, embora diminua o rendimento do caixa."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Para o BDR em reais, o ganho de conversão é compensado pela queda em dólar do lucro gerado em reais; nota corrigida de -1 para 0."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio de crédito de varejo não depende de preços de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Mais emprego e renda ampliam a demanda por cartão e empréstimos e reduzem a inadimplência, que subiu para 7,3% no 3T26."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação aperta o orçamento de clientes de renda média e baixa e mantém juros altos, o que eleva atrasos."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Risco fiscal sobe juros, enfraquece o real e eleva a inadimplência de uma carteira concentrada em crédito sem garantia a pessoas físicas no Brasil."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Nu Holdings Ltd. Reports Third Quarter 2026 Financial Results (Business Wire, via Finviz)",
+   "url": "https://finviz.com/news/422291/nu-holdings-ltd-reports-third-quarter-2026-financial-results",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "DGABC (Estadão Conteúdo): Nubank anunciou lucro líquido recorde de US$ 1,091 bilhão no 3º trimestre de 2026",
+   "url": "https://www.dgabc.com.br/Noticia/4368488/nubank-anunciou-hoje-lucro-liquido-recorde-de-us-1-091-bilhao-no-terceiro-trimestre-de-2026",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "sec-api.io: análise do relatório 6-K do 3T26 da Nu Holdings",
+   "url": "https://sec-api.io/insights/nu-holdings-nu-q3-2026-earnings-1-09bn-net-income-32-roe-and-a-41-6bn-credit-portfolio-sec-filing-analysis",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Stock Titan: Nu Holdings Form 20-F 2025",
+   "url": "https://stocktitan.net/sec-filings/NU/20-f-nu-holdings-ltd-files-annual-report-foreign-issuer-c6bf7bb401dd.html",
+   "data": "2026-04-08"
+  },
+  {
+   "titulo": "Seu Dinheiro: Nubank dispara em NY após lucro recorde de US$ 1,1 bilhão (2T26)",
+   "url": "https://www.seudinheiro.com/2026/empresas/nubank-dispara-no-pre-mercado-em-ny-apos-lucro-recorde-de-us-11-bilhao-o-que-fez-o-mercado-voltar-a-confiar-no-roxinho-miql/",
+   "data": "2026-08-14"
+  }
+ ]
+}
