@@ -1,0 +1,88 @@
+{
+ "ticker": "FESA4",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior produtora de ferroligas do Brasil e única de ferrocromo nas Américas. Cerca de 39% da receita é exportada e os preços seguem cotações internacionais em dólar.",
+ "modelo": "A Ferbasa produz ligas de cromo (ferrocromo alto e baixo carbono) e de silício (ferrossilício) em 14 fornos elétricos em Pojuca (BA), vendidas para siderúrgicas e fabricantes de aço inoxidável no Brasil, Europa, Japão, China e EUA. O modelo é verticalizado: minas próprias de cromo e quartzo, cerca de 25 mil hectares de eucalipto para o biorredutor e o complexo eólico BW Guirapá, que vende energia sob contrato. A receita é de venda de commodity, com preço baseado numa cesta de cotações internacionais; a energia eólica traz uma parcela pequena de receita contratada.",
+ "segmentos": [
+  {
+   "nome": "Ferroligas",
+   "peso_receita": 0.92,
+   "periodo": "3T26",
+   "obs": "R$ 555,8 mi; 77 mil t vendidas (+15,7% sobre o 2T26), 78% do volume em ligas de cromo."
+  },
+  {
+   "nome": "Energia eólica (BW Guirapá)",
+   "peso_receita": 0.05,
+   "periodo": "3T26",
+   "obs": "R$ 33,3 mi; geração de 68 MW médios, abaixo do contratado por restrições do ONS."
+  },
+  {
+   "nome": "Demais produtos",
+   "peso_receita": 0.03,
+   "periodo": "3T26",
+   "obs": "R$ 17,7 mi com areia de cromita, cal, microssílica, madeira e escórias."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão).",
+ "geografia": {
+  "brasil_pct": 0.62,
+  "exterior_pct": 0.38,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Toda a produção fica na Bahia. As exportações de ferroligas somaram R$ 233,4 mi no 3T26 (39% nos 9M26), com destino a Europa, Japão, China e EUA; as vendas de ligas de silício aos EUA e à União Europeia vêm caindo por sobretaxas e salvaguardas."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "nenhuma",
+  "texto": "As exportações (38% da receita no 3T26) são em dólar e o preço das ligas vendidas no Brasil também segue cotações internacionais, de modo que quase toda a receita de ferroligas depende do câmbio; nos 9M26 a queda de 9,6% do dólar médio praticado reduziu a receita. A dívida de R$ 363 mi é com o BNDES, em reais, e a empresa tem caixa líquido, então uma alta do dólar eleva receita e margem."
+ },
+ "momento": "No 3T26 (divulgado em 09/11/2026), a receita líquida foi de R$ 606,8 mi (+11,8% sobre o 3T25), o Ebitda ajustado de R$ 53,8 mi (+5,9%, margem de 8,9%) e o lucro líquido de R$ 66,4 mi (+44,3%), ajudado por ganho de R$ 57,9 mi no valor justo do ativo biológico (florestas). Nos 9M26, receita (-5,5%), Ebitda ajustado (-17,4%) e lucro (-22,9%) caíram com dólar mais fraco e exportações menores. A utilização da capacidade caiu para 72,7% no 3T26 porque a produção de ligas de silício foi reduzida diante do excesso de oferta mundial e das barreiras comerciais: desde agosto de 2026 as ligas de silício enviadas aos EUA pagam sobretaxa de cerca de 56% (antidumping e Section 301), enquanto as de cromo estão isentas desde fevereiro de 2026. A empresa terminou setembro com caixa líquido de R$ 533,3 mi.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A empresa tem caixa líquido e dívida pequena com o BNDES, e a demanda por ferroligas depende da produção global de aço, não do crédito no Brasil; o efeito é neutro, com receita financeira menor."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "Os preços das ferroligas, inclusive no mercado interno, são formados em dólar, enquanto a maior parte do custo (minério próprio, madeira, mão de obra) é em reais."
+  },
+  "commodities_subindo": {
+   "nota": 2,
+   "porque": "Ferrocromo e ferrossilício são commodities, e a integração com minas de cromo e florestas próprias faz a alta de preço chegar quase toda à margem."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "A demanda vem da produção mundial de aço e inox; o PIB brasileiro afeta só a parcela vendida às siderúrgicas locais."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Energia elétrica e insumos em reais sobem com a inflação, mas o preço em dólar e o caixa aplicado em CDI compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal tende a enfraquecer o real, o que eleva a receita em reais, e a empresa não tem dívida relevante que encareça com juros mais altos."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Ferbasa, Release de Resultados 3T26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/FESA3/52173/",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "TradeMap: Lucro de Ferbasa salta 44,41% no terceiro trimestre de 2026, para R$ 66,37 mi",
+   "url": "https://trademap.com.br/noticias/news-8577291",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Ferbasa, ITR de 30/09/2025 e release 3T25",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/e71f73d4-4d0a-41fb-8e5b-8d7f3660b6ad/54b966a1-3c89-4f45-ecb0-c34d62ac41a3?origin=2",
+   "data": "2025-11-11"
+  },
+  {
+   "titulo": "U.S. International Trade Administration: final determinations, antidumping and countervailing duty investigations of ferrosilicon (Ferbasa: dumping de 13,66% e subsídio de 5,25%)",
+   "url": "https://www.trade.gov/final-affirmative-determinations-antidumping-and-countervailing-duty-investigations-ferrosilicon",
+   "data": "2025-03-24"
+  }
+ ]
+}

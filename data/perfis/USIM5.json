@@ -1,0 +1,82 @@
+{
+ "ticker": "USIM5",
+ "revisado_em": "2026-11-18",
+ "resumo": "Siderúrgica de aços planos com mineração de minério de ferro em Minas Gerais. Cerca de 90% da receita vem do aço vendido no Brasil, que disputa mercado com o aço importado.",
+ "modelo": "A Usiminas produz aços planos (laminados a quente, a frio, revestidos e chapas grossas) nas usinas de Ipatinga (MG) e Cubatão (SP) e vende principalmente para montadoras, distribuidores e indústria; também processa aço sob medida pela Soluções Usiminas. A Mineração Usiminas extrai minério de ferro na Serra Azul (MG), vendido em sua maior parte para exportação. A receita é de venda de produtos, sem componente recorrente contratual, e depende de volume, preço do aço e do minério e do custo de carvão e coque.",
+ "segmentos": [
+  {
+   "nome": "Siderurgia",
+   "peso_receita": 0.89,
+   "periodo": "3T26",
+   "obs": "R$ 5,61 bi de receita líquida antes de eliminações; vendas de 1,03 mi t (+5% sobre o 2T26), 95% no mercado interno."
+  },
+  {
+   "nome": "Mineração",
+   "peso_receita": 0.11,
+   "periodo": "3T26",
+   "obs": "R$ 668 mi (-23% sobre o 2T26); 74% do volume exportado; uma planta paralisada temporariamente em set/26."
+  }
+ ],
+ "segmentos_base": "Receita líquida por unidade de negócio, antes de eliminações entre segmentos (R$ 76 mi no 3T26).",
+ "geografia": {
+  "brasil_pct": 0.86,
+  "exterior_pct": 0.14,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "As operações ficam todas no Brasil. Exportações somaram R$ 886 mi no 3T26 (14% da receita), quase dois terços vindos do minério de ferro; o aço exportado vai principalmente para a Argentina e outros países da América do Sul."
+ },
+ "moeda": {
+  "receita_em_dolar": "média",
+  "divida_em_dolar": "média",
+  "texto": "As exportações (14% da receita no 3T26) são em dólar, e o preço do aço no mercado interno acompanha a paridade de importação. Em set/26, 41% da dívida bruta de R$ 6,28 bi era em dólar, mas 47% do caixa de R$ 6,75 bi também estava em dólar, o que deixa posição líquida em dólar positiva; uma alta do dólar tende a ajudar preço e proteção contra importados, compensada em parte pelo custo de carvão e coque importados."
+ },
+ "momento": "No 3T26 (divulgado em 30/10/2026), a receita líquida foi de R$ 6,20 bi (-6% sobre o 3T25), o Ebitda ajustado de R$ 558 mi (+29% no ano, mas -27% sobre o 2T26) com margem de 9%, e o lucro líquido de R$ 243 mi, ante prejuízo de R$ 3,5 bi no 3T25. Nos 9M26, o lucro somou R$ 1,56 bi e o Ebitda ajustado R$ 1,97 bi (+25%). A empresa encerrou setembro com caixa líquido de R$ 471 mi (dívida líquida/Ebitda de -0,20x). A mineração pesou no trimestre com queda de preço do minério e frete alto, e a administração prevê para o 4T26 redução moderada do resultado da siderurgia e menores vendas de minério. Em fevereiro de 2026 o governo aplicou antidumping sobre laminados a frio e revestidos da China, após elevar para 25% a tarifa de importação de nove códigos de aço em janeiro.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula crédito para veículos e bens duráveis, que respondem pela maior parte da demanda de aço plano; como a empresa tem caixa líquido, o ganho financeiro direto é pequeno."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Dólar mais alto encarece o aço importado, sustenta o preço interno e valoriza exportações e o caixa em dólar, mas encarece carvão e coque e a dívida de R$ 2,58 bi em dólar."
+  },
+  "commodities_subindo": {
+   "nota": 1,
+   "porque": "Minério de ferro e aço mais caros elevam a receita da mineração e o preço do aço, mas parte do ganho é absorvida pelo custo maior de carvão metalúrgico."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "A demanda de aço plano depende de montadoras, construção e indústria, setores que crescem com a atividade econômica."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "O preço do aço tende a acompanhar custos ao longo do tempo, enquanto energia e insumos sobem junto, efeitos que se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Risco fiscal tende a desvalorizar o real, o que favorece preço e exportações, mas eleva juros e esfria a demanda doméstica, efeitos que se anulam."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Usiminas, Release de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/5dcf459c-823d-4c02-ac4b-a2aa54a63486/12790724-085d-4a7a-bdef-40e17c5d4a99",
+   "data": "2026-10-30"
+  },
+  {
+   "titulo": "Diário do Comércio: Usiminas lucra R$ 243 milhões no 3º trimestre e reverte prejuízo de 2025",
+   "url": "https://diariodocomercio.com.br/economia/usiminas-lucro-terceiro-trimestre-2026/",
+   "data": "2026-10-30"
+  },
+  {
+   "titulo": "Seu Dinheiro: Usiminas tem uma das maiores baixas do Ibovespa com balanço aquém do esperado",
+   "url": "https://www.seudinheiro.com/2026/bolsa-dolar/acoes-a-usiminas-caem-3-com-balanco-aquem-do-esperado-o-que-pesou-nos-numeros-do-3t26-lmrs/",
+   "data": "2026-10-30"
+  },
+  {
+   "titulo": "Diário do Comércio: impactos do antidumping sobre aço chinês para a Usiminas",
+   "url": "https://diariodocomercio.com.br/economia/usiminas-impactos-antidumping-aco-china/",
+   "data": "2026-02-13"
+  }
+ ]
+}

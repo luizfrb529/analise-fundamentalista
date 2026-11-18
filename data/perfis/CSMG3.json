@@ -1,0 +1,98 @@
+{
+ "ticker": "CSMG3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Companhia de saneamento de Minas Gerais, privatizada em junho de 2026, com a Equatorial como acionista de referência (30%). Receita regulada e toda em reais; alavancagem subiu para 2,8x com investimentos e outorgas.",
+ "modelo": "A Copasa distribui água em 633 cidades e coleta esgoto em 274 em Minas Gerais, por meio de contratos de concessão de longo prazo com os municípios; Belo Horizonte, cujo contrato foi estendido até 2073, responde por cerca de 30% da receita. A receita é recorrente, vem das tarifas reguladas pela agência estadual de Minas Gerais e é reajustada anualmente, com revisões periódicas. Consolida as subsidiárias Copanor e Patos Saneamento.",
+ "segmentos": [
+  {
+   "nome": "Água",
+   "peso_receita": 0.59,
+   "periodo": "1T26",
+   "obs": "Receita líquida de R$ 1,264 bi (+1,6%)."
+  },
+  {
+   "nome": "Esgoto",
+   "peso_receita": 0.31,
+   "periodo": "1T26",
+   "obs": "Receita líquida de R$ 661,0 mi (+4,2%)."
+  },
+  {
+   "nome": "Construção, resíduos sólidos e outros",
+   "peso_receita": 0.1,
+   "periodo": "1T26",
+   "obs": "Diferença até a receita líquida total de R$ 2,128 bi, majoritariamente receita de construção, que tem custo equivalente."
+  }
+ ],
+ "segmentos_base": "Receita líquida total, incluindo receita de construção",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Opera somente em Minas Gerais. Não há receita fora do Brasil."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita é integralmente em reais. A dívida em moeda estrangeira, sobretudo em euro, era 16% do total em junho de 2026 e estava protegida por hedge, segundo a Fitch, então o efeito líquido de uma alta do dólar é próximo de zero."
+ },
+ "momento": "No 3T26 (divulgado em 09/11/2026), a receita líquida de água, esgoto e resíduos foi de R$ 2,03 bi (+9,8%), com efeito tarifário médio de 6,56% da 3ª revisão tarifária, vigente desde 22/01/2026. O Ebitda ajustado subiu 14%, para R$ 828,4 mi (margem de 40,8%), mas o lucro ajustado caiu 6%, para R$ 339,2 mi, porque a despesa financeira líquida passou de R$ 31,9 mi para R$ 104,7 mi. A dívida líquida chegou a R$ 8,45 bi em setembro (R$ 6,06 bi um ano antes), com alavancagem de 2,8x, e os investimentos somaram R$ 2,33 bi nos 9M26 (+16,1%); em outubro a empresa concluiu emissão de R$ 1,2 bi em debêntures. A privatização foi concluída em 16/06/2026, com oferta a R$ 49,03 por ação: a Equatorial, via Gerais Saneamento, ficou com 30% do capital, fundos da Perfin com cerca de 20% e o Estado de Minas Gerais com 5%, mantendo poder de veto em decisões estratégicas.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "A dívida, 75% em debêntures, subiu para financiar investimentos e outorgas, então juro menor reduz a despesa financeira que já derrubou o lucro do 3T26 e valoriza contratos de longo prazo."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita em moeda estrangeira e a dívida externa (16% do total) está protegida por hedge."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Energia e produtos químicos pesam nos custos, mas são repassados nos reajustes anuais; o negócio não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O consumo de água e esgoto varia pouco com a atividade; o volume cresce mais com novas ligações e expansão da rede."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "Tarifas são reajustadas anualmente pela agência reguladora estadual com base na inflação de custos, o que protege a margem com defasagem."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Juros longos mais altos encarecem a dívida e reduzem o valor dos contratos; após a privatização, o risco de interferência do controlador estatal diminuiu."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "InfoMoney/Estadão Conteúdo: Copasa tem lucro líquido ajustado de R$ 339,2 milhões no 3º tri",
+   "url": "https://www.infomoney.com.br/mercados/copasa-csmg3-resultados-terceiro-trimestre-2026/",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Copasa tem lucro ajustado de R$ 339,2 milhões entre julho e setembro de 2026",
+   "url": "https://timesbrasil.com.br/brasil/copasa-tem-lucro-ajustado-de-r-3392-milhoes-entre-julho-e-setembro-de-2026/",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Fitch Ratings: rating AAA(bra) à 23ª emissão de debêntures da Copasa (PDF reproduzido em investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/CSMG3/48630/",
+   "data": "2026-08-26"
+  },
+  {
+   "titulo": "Diário do Comércio: Privatização da Copasa é concluída na B3; Equatorial assume 30% da companhia",
+   "url": "https://diariodocomercio.com.br/economia/privatizacao-copasa-equatorial/",
+   "data": "2026-06-16"
+  },
+  {
+   "titulo": "IstoÉ Dinheiro: Copasa, lucro líquido soma R$ 368,1 mi no 1º trimestre",
+   "url": "https://istoedinheiro.com.br/copasa-lucro-liquido-soma-r-3681-mi-no-1o-trimestre-queda-de-141",
+   "data": "2026-05-08"
+  },
+  {
+   "titulo": "Money Times: Copasa, lucro líquido soma R$ 368,1 milhões no 1º trimestre",
+   "url": "https://www.moneytimes.com.br/copasa-csmg3-lucro-liquido-soma-r-3681-milhoes-no-1o-trimestre-queda-de-141/",
+   "data": "2026-05-08"
+  }
+ ]
+}

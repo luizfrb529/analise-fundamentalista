@@ -1,0 +1,99 @@
+{
+ "ticker": "CPFE3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Grupo de energia controlado pela State Grid, com distribuição, geração renovável e transmissão. A distribuição responde por cerca de 62% do Ebitda (9M26); receita e dívida são praticamente todas em reais.",
+ "modelo": "A CPFL Energia é a maior distribuidora do país em volume, com 14% do mercado e cerca de 11 milhões de clientes em 687 municípios, por meio de distribuidoras como CPFL Paulista, CPFL Piratininga e RGE. Também tem 4.072 MW de geração 100% renovável (hidrelétricas, eólicas, solar e biomassa), mais de 6 mil km de linhas de transmissão e a CPFL Soluções. A receita é majoritariamente recorrente e regulada: tarifas reajustadas pela Aneel na distribuição, Receita Anual Permitida (RAP) corrigida por inflação na transmissão e contratos de longo prazo na geração.",
+ "segmentos": [
+  {
+   "nome": "Distribuição",
+   "peso_receita": 0.62,
+   "periodo": "9M26",
+   "obs": "Ebitda de R$ 6.537 mi (+0,6%); concessões de Paulista, Piratininga e RGE renovadas por 30 anos em 2026."
+  },
+  {
+   "nome": "Geração e gestão de energia",
+   "peso_receita": 0.26,
+   "periodo": "9M26",
+   "obs": "Ebitda de R$ 2.688 mi (+4,5%); eólicas afetadas por cortes de geração (curtailment) impostos pelo ONS."
+  },
+  {
+   "nome": "Transmissão",
+   "peso_receita": 0.1,
+   "periodo": "9M26",
+   "obs": "Ebitda de R$ 1.025 mi (+31,6%); RAP de R$ 1,363 bi no ciclo 2026/2027."
+  },
+  {
+   "nome": "Serviços e outros",
+   "peso_receita": 0.02,
+   "periodo": "9M26",
+   "obs": "Ebitda de R$ 233 mi."
+  }
+ ],
+ "segmentos_base": "Ebitda",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Opera apenas no Brasil, com distribuição concentrada no interior e no litoral de São Paulo (com destaque para Campinas e Jundiaí) e no Rio Grande do Sul, e ativos de geração e transmissão em diversos estados. Não há receita no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita é integralmente em reais. A dívida em moeda estrangeira era 22,16% do total em IFRS no 3T26, mas toda protegida por swaps para reais, de modo que uma alta do dólar tem efeito líquido próximo de zero."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita líquida foi de R$ 10,87 bi (-4,1%), o Ebitda de R$ 3,07 bi (-3,1%) e o lucro líquido de R$ 1,29 bi (-6,4%); a queda decorre de efeito contábil, sem caixa, da renovação das concessões, que reclassificou o ativo financeiro para intangível e tirou R$ 114 mi do Ebitda do trimestre. Nos 9M26, o Ebitda somou R$ 10,48 bi (+4,4%) e o lucro R$ 4,64 bi (+11,0%). A dívida líquida no critério dos covenants chegou a R$ 33,6 bi, com alavancagem de 2,46x (2,19x um ano antes), e o capex previsto para 2026 é de R$ 6,5 bi. O consumo na área de concessão cresceu 3,6%, com data centers +41,7%, enquanto a geração eólica caiu 23,8% por ventos fracos e curtailment de 47,7% da geração potencial. A empresa indicou que o efeito contábil da renovação deve pesar mais nos dois primeiros trimestres de 2027.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "A dívida líquida de R$ 33,6 bi é atrelada sobretudo a CDI e IPCA, então juro menor reduz a despesa financeira e valoriza um fluxo de caixa regulado e de longo prazo."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita em dólar e a dívida em moeda estrangeira (22% do total) é integralmente protegida por swap."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities; o custo de energia comprada é repassado às tarifas da distribuição."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade eleva o consumo na área de concessão, que cresceu 3,6% no 3T26 puxado por comércio e data centers, mas a receita regulada limita o ganho."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "Tarifas de distribuição e a RAP da transmissão são corrigidas por índices de inflação, o que compensa com folga a parcela da dívida em IPCA."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior eleva os juros longos, encarece a rolagem da dívida e reduz o valor presente dos contratos de concessão."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "CPFL Energia, Release de Resultados 3T26 (PDF oficial, reproduzido em investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/CPFE3/52710/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Cenário Energia: CPFL Energia registra lucro de R$ 1,29 bilhão no 3T26",
+   "url": "https://cenarioenergia.com.br/2026/11/13/cpfl-energia-registra-lucro-de-r-129-bilhao-no-3t26-com-impacto-contabil-da-renovacao-de-concessoes/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Cenário Energia: CPFL Energia consolida lucro de R$ 1,9 bilhão no 1T26 e oficializa renovação de concessões",
+   "url": "https://cenarioenergia.com.br/2026/05/15/cpfl-energia-consolida-lucro-de-r-19-bilhao-no-1t26-e-oficializa-renovacao-de-concessoes/",
+   "data": "2026-05-15"
+  },
+  {
+   "titulo": "CNN Brasil: CPFL lucra R$ 1,44 bilhão no 2º trimestre, alta de 21,3%",
+   "url": "https://www.cnnbrasil.com.br/infra/cpfl-lucra-r-144-bilhao-no-2o-trimestre-alta-de-213/",
+   "data": "2026-08-13"
+  },
+  {
+   "titulo": "Brapi (compilação de InfoMoney, Valor e Money Times): CPFL lucra R$ 1,3 bi no 3º tri",
+   "url": "https://brapi.dev/news/cpfl-lucra-r-1-3-bi-no-3-tri-6-4-menos-d652b8af",
+   "data": "2026-11-13"
+  }
+ ]
+}

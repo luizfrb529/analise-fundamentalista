@@ -1,0 +1,106 @@
+{
+ "ticker": "AURA33",
+ "revisado_em": "2026-11-18",
+ "resumo": "Mineradora de ouro e cobre com seis minas nas Américas, quatro delas no Brasil. A receita é toda em dólar, e o BDR em reais ganha com dólar e ouro em alta.",
+ "modelo": "A Aura Minerals (Nasdaq: AUGO, BDR AURA33 na B3, com 3 BDRs por ação) extrai e vende ouro, cobre e prata em seis operações: Borborema, Almas, Mineração Serra Grande (MSG) e Apoena no Brasil, Minosa em Honduras e Aranzazu no México, esta com concentrado de cobre, ouro e prata. A receita é a venda do metal a preços internacionais em dólar, sem componente contratual recorrente, e o resultado depende do preço do ouro e do custo por onça. Parte da produção de Borborema está travada por collars (faixas de preço) até junho de 2028, e o projeto Era Dorada, na Guatemala, está em construção.",
+ "segmentos": [
+  {
+   "nome": "Borborema (Brasil, ouro)",
+   "peso_receita": 0.25,
+   "periodo": "3T26",
+   "obs": "US$ 95,3 mi; produção recorde de 22.842 GEO e AISC de US$ 1.261/oz."
+  },
+  {
+   "nome": "Aranzazu (México, cobre, ouro e prata)",
+   "peso_receita": 0.23,
+   "periodo": "3T26",
+   "obs": "US$ 89,4 mi; produção de 24.920 GEO (+39% sobre o 2T26)."
+  },
+  {
+   "nome": "Almas (Brasil, ouro)",
+   "peso_receita": 0.16,
+   "periodo": "3T26",
+   "obs": "US$ 60,4 mi; produção de 14.264 GEO."
+  },
+  {
+   "nome": "MSG (Brasil, ouro)",
+   "peso_receita": 0.15,
+   "periodo": "3T26",
+   "obs": "US$ 56,4 mi; produção +85% sobre o 2T26 em processo de recuperação operacional, AISC ainda de US$ 3.647/oz."
+  },
+  {
+   "nome": "Minosa (Honduras, ouro)",
+   "peso_receita": 0.14,
+   "periodo": "3T26",
+   "obs": "US$ 55,6 mi; produção de 13.344 GEO."
+  },
+  {
+   "nome": "Apoena (Brasil, ouro)",
+   "peso_receita": 0.08,
+   "periodo": "3T26",
+   "obs": "US$ 29,0 mi; produção de 6.865 GEO."
+  }
+ ],
+ "segmentos_base": "Receita líquida por mina (padrão).",
+ "geografia": {
+  "brasil_pct": 0.62,
+  "exterior_pct": 0.38,
+  "periodo": "3T26",
+  "base": "receita por país da mina",
+  "texto": "As minas brasileiras (Borborema, Almas, MSG e Apoena) geraram 62% da receita do 3T26, o México 23% e Honduras 14%; o metal é vendido no mercado internacional em dólar. O projeto Era Dorada, na Guatemala, está em construção (13,1% de avanço físico em set/26) e ainda não gera receita."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "alta",
+  "texto": "Toda a receita é em dólar, e a dívida bruta de US$ 631,5 mi é majoritariamente em dólar, inclusive o empréstimo sindicalizado de US$ 200 mi assinado em set/26 (SOFR + 2,70%), o que forma proteção natural. Como boa parte do custo das minas brasileiras é em reais e o BDR é cotado em reais, uma alta do dólar eleva a margem e o valor do BDR para o investidor brasileiro."
+ },
+ "momento": "No 3T26 (divulgado em 06/11/2026), a receita líquida foi recorde de US$ 386,0 mi (+56% sobre o 3T25), o Ebitda ajustado de US$ 236,9 mi (+56%, margem de 61%) e o lucro líquido de US$ 135,0 mi, ante US$ 5,6 mi no 3T25, com produção recorde de 95.557 GEO (+29%). Os collars de Borborema geraram perdas realizadas de US$ 33,6 mi no trimestre e US$ 104,2 mi nos 9M26, porque limitam o ganho com ouro acima da faixa contratada. A dívida líquida era de US$ 178,8 mi (0,20x o Ebitda de 12 meses) em set/26. A empresa manteve a meta de 340 a 390 mil GEO em 2026, declarou dividendo de US$ 0,24 por BDR (pagamento por volta de 08/12/2026) e anunciou em 02/10/2026 a internalização da frota de mineração no Brasil por valor da empresa de R$ 612 mi, sujeita ao Cade.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A receita e a dívida são em dólar, e o preço do ouro não depende da Selic; o efeito só aparece de forma indireta, se juro menor enfraquecer o real."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "A receita é toda em dólar, boa parte do custo das minas brasileiras é em reais e o BDR é convertido para reais, então a alta do dólar amplia margem e valor em reais."
+  },
+  "commodities_subindo": {
+   "nota": 2,
+   "porque": "Ouro e cobre mais caros elevam a receita quase integralmente, com o limite dos collars sobre parte da produção de Borborema até 2028."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "A demanda e o preço do ouro são definidos no mercado global e não dependem da atividade no Brasil."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "O ouro costuma se valorizar em cenários de inflação, o que compensa o aumento de custos de mão de obra e insumos nas minas brasileiras."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal tende a desvalorizar o real e aumentar a procura por ativos de proteção, o que favorece o BDR em reais."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Aura Minerals, Form 6-K (SEC) com resultados do Q3 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/1468642/000117184326007236/0001171843-26-007236-index.htm",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Aura Minerals, Form 6-K (SEC): dividendo de US$ 0,72 por ação e US$ 0,24 por BDR",
+   "url": "https://www.sec.gov/Archives/edgar/data/1468642/000117184326007198/exh_991.htm",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "GlobeNewswire via Finviz: Aura Announces Q3 2026 and 9M 2026 Financial and Operational Results",
+   "url": "https://finviz.com/news/418348/aura-announces-q3-2026-and-9m-2026-financial-and-operational-results",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Eu Quero Investir: Aura Minerals bate recorde e produz 95,5 mil onças de ouro equivalente no 3º trimestre",
+   "url": "https://euqueroinvestir.com/acoes/aura-minerals-bate-recorde-e-produz-955-mil-oncas-de-ouro-equivalente-no-3o-trimestre",
+   "data": "2026-10"
+  }
+ ]
+}

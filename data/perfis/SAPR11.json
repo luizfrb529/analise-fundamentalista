@@ -1,0 +1,88 @@
+{
+ "ticker": "SAPR11",
+ "revisado_em": "2026-11-18",
+ "resumo": "Companhia de saneamento controlada pelo Estado do Paraná, com receita regulada pela Agepar e toda gerada no Brasil. O ponto que mais pesa hoje é a decisão regulatória que destinou o precatório de R$ 3,94 bi aos usuários.",
+ "modelo": "A Sanepar presta serviços de água e esgoto em 346 concessões municipais no Paraná, com cerca de 3,57 milhões de ligações de água e 2,71 milhões de esgoto (set/26); Curitiba responde por 21,8% da receita. A receita é recorrente e vem das tarifas, reajustadas anualmente e revisadas a cada ciclo pela agência estadual Agepar, mais serviços e coleta de resíduos sólidos. O Estado do Paraná detém 60,08% do capital votante e 20,03% do capital total.",
+ "segmentos": [
+  {
+   "nome": "Água",
+   "peso_receita": 0.59,
+   "periodo": "9M26",
+   "obs": "Receita bruta de R$ 3.650,4 mi (+7,7%); atendimento com água tratada de 100%."
+  },
+  {
+   "nome": "Esgoto",
+   "peso_receita": 0.38,
+   "periodo": "9M26",
+   "obs": "Receita bruta de R$ 2.375,4 mi (+10,3%); cobertura de coleta de 83,5% em set/26, com meta de 90% em 2029."
+  },
+  {
+   "nome": "Serviços, resíduos sólidos e outros",
+   "peso_receita": 0.03,
+   "periodo": "9M26",
+   "obs": "Inclui serviços prestados a municípios e coleta de resíduos."
+  }
+ ],
+ "segmentos_base": "Receita operacional bruta",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Opera somente no Paraná, com concessões de 343 municípios uniformizadas até 2048. Não há receita fora do Brasil."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita é integralmente em reais. Da dívida bruta de R$ 7,31 bi (set/26), só um empréstimo do banco alemão KfW, de R$ 182 mi (2,5% do total), é em euro; o restante está atrelado a TR, IPCA, CDI e TJLP, então o efeito de alta do dólar é desprezível."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita líquida foi de R$ 1,94 bi (+7,6%), com reajuste tarifário de 2,4993% desde 17/05/2026, o Ebitda de R$ 732,4 mi (+31,8%, margem de 37,7%) e o lucro de R$ 302,6 mi (+22,8%). Nos 9M26, o lucro caiu 91,3%, para R$ 150,1 mi, pelo registro de passivo regulatório ligado ao precatório do IRPJ. Em 23/06/2026, a Agepar decidiu que 100% dos R$ 3,94 bi do precatório devem ir para modicidade tarifária, e o conselho, por prudência, não declarou JCP do 1S26. A alavancagem era de 0,8x dívida líquida/Ebitda em set/26, e os investimentos do trimestre caíram 24,6%, para R$ 576,7 mi, dentro de um plano de R$ 13,1 bi para 2026 a 2030.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "A dívida é atrelada a TR, CDI e IPCA, e juro menor também valoriza um fluxo de caixa regulado de longo prazo, com concessões até 2048."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita em moeda estrangeira e só 2,5% da dívida é em euro."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Insumos como energia e produtos químicos pesam nos custos, mas são repassados nos reajustes tarifários anuais com defasagem."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O consumo de água e esgoto varia pouco com o ciclo econômico; o volume faturado depende mais de novas ligações."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "O reajuste tarifário anual repõe a inflação de custos, o que compensa a parcela da dívida indexada ao IPCA."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Como estatal estadual, está exposta a interferência na tarifa e na distribuição de lucros, como mostrou a decisão da Agepar sobre o precatório, além do efeito de juros longos mais altos."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Sanepar, Release de Resultados 3T26 (PDF oficial, reproduzido em investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/SAPR3/52829/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Agência Estadual de Notícias do Paraná: Lucro da Sanepar cresce 22,8% e atinge R$ 303 milhões no 3º trimestre",
+   "url": "https://www.parana.pr.gov.br/aen/Noticia/Lucro-da-Sanepar-cresce-228-e-atinge-R-303-milhoes-no-3o-trimestre",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Economic News Brasil: Investimentos da Sanepar caem 24,6% apesar de avanço operacional no 3T26",
+   "url": "https://economicnewsbrasil.com.br/2026/11/12/investimentos-sanepar-3t26/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "InfoMoney: Sanepar, ação cai 6% após proposta de agência reguladora sobre destino de R$ 3,94 bi",
+   "url": "https://www.infomoney.com.br/mercados/sanepar-acao-cai-6-apos-proposta-de-agencia-reguladora-sobre-destino-de-r-394-bi/amp/",
+   "data": "2026-03-24"
+  }
+ ]
+}
