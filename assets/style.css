@@ -532,3 +532,16 @@ tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72re
 @media (max-width: 1240px) { .topo .busca input { width: 180px; } }
 @media (max-width: 1100px) { .faixa-status .tempo-real { display: none; } .topo .busca input { width: 110px; } }
 .preco-var { font-size: .5em; font-weight: 700; vertical-align: middle; margin-left: 4px; }
+
+/* ---------------- sobre a empresa */
+.sobre-destaques { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 14px 0; }
+.sobre-destaques > div { background: var(--sup-2); border: 1px solid var(--borda); border-radius: 10px; padding: 9px 11px; display: flex; flex-direction: column; gap: 2px; }
+.sobre-destaques span { font-size: .72rem; color: var(--txt-3); }
+.sobre-destaques b { font-size: .98rem; }
+.sobre-destaques small { font-size: .68rem; color: var(--txt-3); }
+.sobre-mais { border-top: 1px solid var(--borda); margin-top: 12px; padding-top: 4px; }
+.sobre-mais h4 { margin: 14px 0 6px; font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--txt-3); }
+.sobre-mais p { color: var(--txt-2); margin: 0 0 8px; line-height: 1.55; font-size: .88rem; }
+.sobre-fontes { margin: 0; padding-left: 18px; font-size: .84rem; display: grid; gap: 4px; }
+#sobre-ver, #sens-ver { margin-top: 12px; }
+@media (max-width: 560px) { .sobre-destaques { grid-template-columns: minmax(0, 1fr); } }

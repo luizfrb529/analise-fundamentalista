@@ -950,14 +950,7 @@ async function pgAtivo(app, t) {
 
   <section class="secao" id="sec-proventos"><div class="secao-cab"><h2 class="titulo-barra">Proventos</h2></div><div id="proventos"></div></section>
 
-  <section class="secao" id="sec-sobre"><div class="secao-cab"><h2 class="titulo-barra">Sobre ${esc(a.nome)}</h2></div>
-    <div class="grade g2">
-      <div class="cartao"><h3>O negócio</h3><p style="color:var(--txt-2)">${esc(n.resumo || "Resumo não preenchido.")}</p>
-        ${n.qualitativo ? Object.entries(n.qualitativo).map(([k, v]) => `<p class="sub"><b>${esc(({ regulacao: "Regulação", concessoes: "Concessões", vso: "VSO", banco_terrenos: "Banco de terrenos", caixa: "Caixa" })[k] || k.replace(/_/g, " "))}:</b> ${esc(v)}</p>`).join("") : ""}</div>
-      <div class="cartao"><h3>Sensibilidade a cenários</h3><p class="sub">De -2 (perde muito) a +2 (ganha muito).</p>
-        <div class="barras" style="margin-top:12px">${Object.entries(a.sensibilidade || {}).filter(([c]) => CENARIOS[c]).map(([c, v]) => `<div class="linha-barra"><span>${CENARIOS[c]}</span><span class="barra centro"><i style="left:${v < 0 ? 50 + v * 25 : 50}%;width:${Math.abs(v) * 25}%;background:${v >= 0 ? "var(--pos)" : "var(--neg)"}"></i></span><span class="num ${sinal(v)}">${v > 0 ? "+" : ""}${v}</span></div>`).join("")}</div></div>
-    </div>
-  </section>
+  <section class="secao" id="sec-sobre"><div class="secao-cab"><h2 class="titulo-barra">Sobre ${esc(a.nome)}</h2></div><div id="sobre"><div class="carregando"><span></span>Carregando</div></div></section>
 
   <section class="secao" id="sec-governanca"><div class="secao-cab"><h2 class="titulo-barra">Governança</h2></div>
     <div class="gov">
@@ -987,9 +980,42 @@ async function pgAtivo(app, t) {
   $$("#hist-anos button").forEach((b) => b.onclick = () => { $$("#hist-anos button").forEach((x) => x.classList.toggle("ativo", x === b)); histTab(+b.dataset.n); });
   $$(".ind .graf").forEach((b) => b.onclick = () => modalHistorico(t, b.dataset.k, h));
   $$("#secoes a").forEach((l) => l.onclick = (e) => { e.preventDefault(); $(`#sec-${l.dataset.sec}`).scrollIntoView({ behavior: "smooth", block: "start" }); });
+  blocoSobre(t);
   $("#proventos").innerHTML = await blocoProventos(t);
   graficoProventos(t);
   $("#noticias").innerHTML = await abaNoticias(t);
+}
+async function blocoSobre(t) {
+  const a = A(t), n = D.notes[t] || {};
+  const pf = await j(`data/perfis/${t}.json`, null);
+  const sens = {};
+  for (const [c, v] of Object.entries(a.sensibilidade || {})) if (CENARIOS[c]) sens[c] = { nota: v, porque: "" };
+  if (pf && pf.sensibilidade) for (const [c, v] of Object.entries(pf.sensibilidade)) if (CENARIOS[c] && v && ok(v.nota)) sens[c] = { nota: v.nota, porque: v.porque || "" };
+  const pct = (x) => ok(x) ? nf0.format(x * 100) + "%" : ND;
+  const nivel = (x) => x ? `<b>${esc(x[0].toUpperCase() + x.slice(1))}</b>` : ND;
+  const destaques = pf ? `<div class="sobre-destaques">
+      <div><span>Receita no exterior</span>${pf.geografia && ok(pf.geografia.exterior_pct) ? `<b>${pct(pf.geografia.exterior_pct)}</b><small>${esc(pf.geografia.periodo || "")}</small>` : ND}</div>
+      <div><span>Receita em dólar</span>${nivel(pf.moeda && pf.moeda.receita_em_dolar)}</div>
+      <div><span>Dívida em dólar</span>${nivel(pf.moeda && pf.moeda.divida_em_dolar)}</div></div>` : "";
+  const segs = pf && (pf.segmentos || []).filter((x) => ok(x.peso_receita));
+  const detalhe = pf ? `<div class="sobre-mais" id="sobre-mais" hidden>
+      ${pf.modelo ? `<h4>Modelo de negócio</h4><p>${esc(pf.modelo)}</p>` : ""}
+      ${segs && segs.length ? `<h4>Receita por segmento${segs[0].periodo ? ` (${esc(segs[0].periodo)})` : ""}</h4><div class="barras">${segs.map((x) => `<div class="linha-barra"${x.obs ? ` data-tip="${esc(x.obs)}"` : ""}><span>${esc(x.nome)}</span><span class="barra"><i style="left:0;width:${Math.min(100, x.peso_receita * 100)}%;background:var(--acento)"></i></span><span class="num">${pct(x.peso_receita)}</span></div>`).join("")}</div>` : ""}
+      ${pf.geografia && pf.geografia.texto ? `<h4>Onde atua</h4><p>${esc(pf.geografia.texto)}</p>` : ""}
+      ${pf.moeda && pf.moeda.texto ? `<h4>Exposição a moeda</h4><p>${esc(pf.moeda.texto)}</p>` : ""}
+      ${pf.momento ? `<h4>Momento atual</h4><p>${esc(pf.momento)}</p>` : ""}
+      ${(pf.fontes || []).length ? `<h4>Fontes</h4><ul class="sobre-fontes">${pf.fontes.map((f) => `<li><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.titulo)}</a>${f.data ? ` <span class="sub">${esc(dataBR(f.data))}</span>` : ""}</li>`).join("")}</ul>` : ""}
+      <p class="sub">Revisado em ${esc(dataBR(pf.revisado_em))}.</p></div>
+    <button class="btn peq" id="sobre-ver">Ver mais</button>` : (n.qualitativo ? Object.entries(n.qualitativo).map(([k, v]) => `<p class="sub"><b>${esc(({ regulacao: "Regulação", concessoes: "Concessões", vso: "VSO", banco_terrenos: "Banco de terrenos", caixa: "Caixa" })[k] || k.replace(/_/g, " "))}:</b> ${esc(v)}</p>`).join("") : "");
+  const porques = Object.entries(sens).filter(([, v]) => v.porque);
+  $("#sobre").innerHTML = `<div class="grade g2">
+    <div class="cartao"><h3>O negócio</h3><p style="color:var(--txt-2)">${esc((pf && pf.resumo) || n.resumo || "Resumo não preenchido.")}</p>${destaques}${detalhe}</div>
+    <div class="cartao"><h3>Sensibilidade a cenários</h3><p class="sub">De -2 (perde muito) a +2 (ganha muito).${porques.length ? " Passe o mouse para ver o motivo." : ""}</p>
+      <div class="barras" style="margin-top:12px">${Object.entries(sens).map(([c, { nota: v, porque }]) => `<div class="linha-barra"${porque ? ` data-tip="${esc(porque)}"` : ""}><span>${CENARIOS[c]}</span><span class="barra centro"><i style="left:${v < 0 ? 50 + v * 25 : 50}%;width:${Math.abs(v) * 25}%;background:${v >= 0 ? "var(--pos)" : "var(--neg)"}"></i></span><span class="num ${sinal(v)}">${v > 0 ? "+" : ""}${v}</span></div>`).join("")}</div>
+      ${porques.length ? `<div class="sobre-mais" id="sens-mais" hidden>${porques.map(([c, v]) => `<p><b>${CENARIOS[c]}:</b> ${esc(v.porque)}</p>`).join("")}</div><button class="btn peq" id="sens-ver">Ver motivos</button>` : ""}</div></div>`;
+  const alterna = (bt, box, abrir, fechar) => { const b = $(bt); if (!b) return; b.onclick = () => { const x = $(box); x.hidden = !x.hidden; b.textContent = x.hidden ? abrir : fechar; }; };
+  alterna("#sobre-ver", "#sobre-mais", "Ver mais", "Ver menos");
+  alterna("#sens-ver", "#sens-mais", "Ver motivos", "Ocultar motivos");
 }
 function tabelaHistorica(t, h, nAnos) {
   const anos = Object.keys(h.anual || {}).sort().slice(-nAnos);
