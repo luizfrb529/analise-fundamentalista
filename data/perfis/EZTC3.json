@@ -1,0 +1,100 @@
+{
+ "ticker": "EZTC3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Incorporadora paulista de médio e alto padrão, com balanço historicamente líquido e carteira própria de financiamento a clientes. Receita 100% no Brasil; locação do Esther Towers ao Itaú abre fonte de renda recorrente.",
+ "modelo": "A EZTec incorpora e constrói imóveis residenciais e comerciais na cidade e na região metropolitana de São Paulo, do segmento econômico (marca Fit Casa) ao alto padrão. A receita vem principalmente da venda de unidades, reconhecida conforme o avanço das obras, e de juros e correção da carteira de financiamento direto a clientes (alienação fiduciária de R$ 801 mi em set/26). A partir da entrega das torres, terá receita de aluguel do complexo Esther Towers, locado ao Itaú Unibanco por 10 anos, com cerca de R$ 1,17 bi previstos no período, corrigidos pelo IPCA.",
+ "segmentos": [
+  {
+   "nome": "Médio padrão",
+   "peso_receita": 0.48,
+   "periodo": "3T26",
+   "obs": "R$ 253 mi em vendas líquidas, com projetos em Osasco e São Caetano do Sul."
+  },
+  {
+   "nome": "Econômico",
+   "peso_receita": 0.23,
+   "periodo": "3T26",
+   "obs": "R$ 122 mi, puxado pelo lançamento do Cidade Parque Guarapiranga."
+  },
+  {
+   "nome": "Alto padrão",
+   "peso_receita": 0.13,
+   "periodo": "3T26",
+   "obs": "R$ 68 mi."
+  },
+  {
+   "nome": "Médio-alto padrão",
+   "peso_receita": 0.12,
+   "periodo": "3T26",
+   "obs": "R$ 63 mi."
+  },
+  {
+   "nome": "Smart-living e comercial",
+   "peso_receita": 0.04,
+   "periodo": "3T26",
+   "obs": "R$ 19 mi."
+  }
+ ],
+ "segmentos_base": "Vendas líquidas %EZ do 3T26 (R$ 523,7 mi), lidas do gráfico de perfil de vendas do release. A empresa não abre a receita líquida por segmento.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Atua só no Brasil, na capital paulista e em cidades da região metropolitana e do interior próximo, como Osasco, São Caetano do Sul e Jacareí. Não há operação no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita, aplicações (CDB e LF a 97% a 103% do CDI) e dívida (CRI, debêntures e financiamento à construção) são em reais. O dólar afeta apenas de forma indireta, via juros e custo de insumos."
+ },
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita líquida foi de R$ 346,4 mi (-26,2% sobre o 3T25) e o lucro líquido de R$ 85,4 mi (-53,4%), abaixo do consenso; a margem bruta caiu para 33,7% (44,7% no 3T25) com provisões para distratos e ajuste a valor presente. Lançamentos (R$ 2,42 bi, +53%) e vendas (R$ 1,80 bi, +29%) nos 9M26 foram recordes, e a empresa manteve o guidance de lançar R$ 2,5 bi a R$ 3,5 bi em 2026. No trimestre, vendeu uma SPE com terreno (ganho de R$ 72,2 mi) e provisionou R$ 50,6 mi ao desistir do terreno do antigo Extra, na Marginal Pinheiros. Passou de caixa líquido para dívida líquida de R$ 52,9 mi, com R$ 561,8 mi de financiamento do Esther Towers vencendo em jan/27, e declarou R$ 20,3 mi em dividendos, pagos até 30/11/2026.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Juro menor destrava crédito imobiliário para médio e alto padrão e acelera a venda de estoque pronto, hoje de R$ 1,1 bi; a perda de receita financeira sobre o caixa é menor que o ganho de demanda."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em dólar; o efeito indireto via insumos é pequeno."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Não há receita ligada a commodities; aço e cimento pesam no custo, mas são parcialmente repassados via INCC."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda e confiança ampliam a demanda por imóveis de médio padrão, principal fonte de vendas, e reduzem distratos."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Custos de obra sobem, mas a carteira de financiamento próprio é corrigida por IGP-DI e IPCA e o aluguel do Esther Towers por IPCA, o que compensa boa parte do efeito."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior eleva juros longos e reduz a demanda por imóveis financiados; o balanço pouco alavancado limita o impacto financeiro."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "EZTec, Divulgação de Resultados 3T26 (documento entregue à CVM, via Investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/EZTC3/51920/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "EZTec, Aviso aos Acionistas nº 5/2026, dividendos intermediários",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/EZTC3/51922/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Eztec registra lucro líquido de R$ 85,4 milhões no terceiro trimestre de 2026",
+   "url": "https://timesbrasil.com.br/brasil/eztec-registra-lucro-liquido-de-r-854-milhoes-no-terceiro-trimestre-de-2026/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Investidor10: EZ Tec fecha locação do Esther Towers e prevê receita de R$ 1,2 bi em 10 anos",
+   "url": "https://investidor10.com.br/noticias/ez-tec-eztc3-fecha-locacao-do-esther-towers-e-preve-receita-de-r-1-2-bi-em-10-anos-122712/",
+   "data": "2026-09-18"
+  }
+ ]
+}

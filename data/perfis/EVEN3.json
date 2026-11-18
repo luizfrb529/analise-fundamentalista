@@ -1,0 +1,82 @@
+{
+ "ticker": "EVEN3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Incorporadora de alto padrão e luxo com atuação só na cidade de São Paulo. Em 2026 reduziu lançamentos e vendas, e a receita do 3T26 caiu 55% no ano.",
+ "modelo": "A Even desenvolve, constrói e vende apartamentos residenciais de alto padrão e luxo em bairros nobres de São Paulo. A receita é reconhecida conforme o avanço das obras e depende do ciclo de lançamentos; não há receita recorrente relevante. A empresa financia a produção com SFH e CRI e mantém carteira de recebíveis de cerca de R$ 3 bi, corrigida pela inflação. Também vende participações em projetos (SPEs) a parceiros, com efeito lançado direto no patrimônio.",
+ "segmentos": [
+  {
+   "nome": "Alto padrão e luxo",
+   "peso_receita": 0.93,
+   "periodo": "3T26",
+   "obs": "Estoque a valor de mercado de R$ 3,6 bi; os dois lançamentos do 3T26 foram de luxo."
+  },
+  {
+   "nome": "Demais produtos",
+   "peso_receita": 0.07,
+   "periodo": "3T26",
+   "obs": "Restante do estoque."
+  }
+ ],
+ "segmentos_base": "Estoque a valor de mercado. A Even tem um único segmento operacional e não abre a receita por produto.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Atua apenas na cidade de São Paulo, com banco de terrenos de 25 projetos ou fases e VGV potencial de R$ 8,2 bi (R$ 5,2 bi parte Even). Os indicadores do release são apresentados sem a Melnick, incorporadora gaúcha em que a Even tinha participação."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais: financiamento à produção via SFH e CRI e CRIs corporativos. O dólar afeta a empresa apenas de forma indireta, via juros e custo de insumos."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita líquida foi de R$ 240,1 mi (-54,6% sobre o 3T25) e o lucro líquido de R$ 20,2 mi (-77,6%), com margem bruta ajustada de 34,6%; nos 9M26, a receita somou R$ 771,4 mi (-46,3%) e o lucro abrangente R$ 97,5 mi. A empresa lançou dois projetos de luxo com VGV de R$ 590 mi (R$ 231 mi parte Even, -84%) e vendeu R$ 185 mi na sua parte (-77%), com VSO consolidada de 4,9% (18,7% no 3T25). A dívida líquida subiu para R$ 738,9 mi (31,8% do patrimônio, ante 13,1% um ano antes), com queima de caixa operacional de R$ 38 mi no trimestre. A administração diz manter seletividade nos lançamentos diante do cenário macroeconômico e foco na venda de estoque.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Imóveis de alto padrão dependem de financiamento bancário e competem com a renda fixa; juro menor estimula vendas, que caíram 77% no 3T26, e reduz o custo da dívida."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em dólar; o efeito indireto via insumos é pequeno."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Não há receita ligada a commodities; aço e cimento pesam no custo, mas são parcialmente repassados via INCC."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda e confiança ajudam vendas de imóveis de luxo, embora esse público seja menos dependente do ciclo econômico."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação mantém o juro alto, que trava as vendas; a carteira de recebíveis corrigida pela inflação, cerca de 1,6 vez o custo a incorrer, atenua o efeito sobre a margem."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Risco fiscal eleva juros longos e reduz a disposição de compra de imóveis de alto valor, num momento de vendas já fracas e dívida líquida em alta."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Even, Divulgação de Resultados 3T26 (documento entregue à CVM, via Investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/EVEN3/52747/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Even RI, central de resultados",
+   "url": "https://ri.even.com.br/informacoes-financeiras/central-de-resultados/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Money Times: Even tem queda de 78% no lucro no 3º trimestre",
+   "url": "https://www.moneytimes.com.br/even-even3-tem-queda-de-78-no-lucro-no-3o-trimestre-fets/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Análise de Ações: Even registra forte queda em vendas e lançamentos no 3T26",
+   "url": "https://www.analisedeacoes.com/noticias/even-even3-registra-forte-queda-em-vendas-e-lancamentos-no-3t26/",
+   "data": "2026-10-17"
+  }
+ ]
+}

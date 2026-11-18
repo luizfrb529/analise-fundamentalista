@@ -1,0 +1,88 @@
+{
+ "ticker": "RENT3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior locadora de veículos do Brasil, em aluguel de carros e gestão de frotas, com venda de seminovos para renovar a frota. Dívida líquida de R$ 33,1 bi torna juros e preço de carro usado os fatores centrais.",
+ "modelo": "A Localiza aluga carros a pessoas físicas, motoristas de aplicativo e empresas (Aluguel de Carros), terceiriza frotas sob contratos de longo prazo e assinatura (Gestão de Frotas) e revende os carros usados nas lojas Seminovos. O aluguel gera receita recorrente e a maior parte do Ebitda; a venda de seminovos tem margem baixa e serve para renovar a frota e recuperar o capital investido. Opera as marcas Localiza, Localiza Meoo e Localiza Seminovos, com 592 agências no Brasil, franqueados em cinco países da América do Sul e operação própria no México.",
+ "segmentos": [
+  {
+   "nome": "Seminovos",
+   "peso_receita": 0.55,
+   "periodo": "3T26",
+   "obs": "R$ 6.772 mi (+16,0%), margem Ebitda de 1,6%; 87.850 carros vendidos no Brasil."
+  },
+  {
+   "nome": "Aluguel de Carros",
+   "peso_receita": 0.25,
+   "periodo": "3T26",
+   "obs": "R$ 3.025 mi (+16,5%), margem Ebitda de 67,1% e utilização de 82,4%."
+  },
+  {
+   "nome": "Gestão de Frotas",
+   "peso_receita": 0.2,
+   "periodo": "3T26",
+   "obs": "R$ 2.428 mi (+6,8%), margem Ebitda de 78,7%."
+  }
+ ],
+ "segmentos_base": "Receita líquida (aluguel responde pela maior parte do Ebitda)",
+ "geografia": {
+  "brasil_pct": 0.99,
+  "exterior_pct": 0.01,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Quase toda a receita vem do Brasil. O aluguel de carros no México gerou R$ 72,1 mi no 3T26, com Ebitda negativo, e há franqueados na Argentina, Colômbia, Equador, Paraguai e Uruguai."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita é em reais, salvo a pequena operação no México em pesos. Os empréstimos em moeda estrangeira são convertidos para CDI por swap, então a alta do dólar tem efeito direto quase nulo; o efeito indireto é o encarecimento de carros novos e peças."
+ },
+ "momento": "No 3T26 (ITR aprovado em 05/11/2026), a receita líquida consolidada foi de R$ 12.278 mi (+14,4% sobre o 3T25), o Ebitda de R$ 4.029 mi (+13,7%) e o lucro líquido de R$ 1.125 mi, alta de 29,1% sobre o lucro do 3T25 ajustado pelos efeitos da redução do IPI Verde. A diária média do aluguel subiu 5,2%, para R$ 157,9, e o ROIC spread foi de 6,4 pontos nos 9M26. A dívida líquida somava R$ 33.063 mi em setembro (+6,5% sobre dezembro de 2025), dos quais R$ 24.734 mi protegidos por swap para taxa pré-fixada média de 12,6% mais spread e R$ 8.328 mi expostos ao CDI. A empresa cita concorrência de novas marcas e crédito restrito pressionando o preço dos carros e o valor residual da frota, e segue reajustando tarifas e taxas de depreciação.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com R$ 33,1 bi de dívida líquida, juro menor reduz o custo da parcela em CDI e das novas captações, e o crédito mais barato sustenta o preço dos seminovos."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita em reais e dívida externa trocada para CDI; o efeito vem só indiretamente, via preço de carros novos e peças."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Sem ligação direta com o negócio; combustível mais caro afeta pouco, pois é pago pelo cliente."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Mais atividade eleva viagens, aluguel corporativo, contratos de frota e a demanda por seminovos."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Encarece a compra de carros e a parcela da dívida em IPCA, e a recomposição de tarifas ocorre com defasagem."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Pressiona juros longos, que afetam o custo das novas captações, o valor residual da frota e a demanda por carros usados."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Localiza, Release de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/08f327aa-e610-4d9d-b683-8ff0f7caae07/903c4bb3-aa20-456d-b4ff-5d26c3a90b5c",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Localiza, ITR 3T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/08f327aa-e610-4d9d-b683-8ff0f7caae07/65ea015b-ddb8-d955-c7eb-f3b9b4d5c069?origin=2",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Localiza, Apresentação de Resultados 3T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/08f327aa-e610-4d9d-b683-8ff0f7caae07/96ea4c7b-012a-c4cf-9f8d-640784ce2e0e?origin=2",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Localiza RI, página inicial com documentos do 3T26",
+   "url": "https://ri.localiza.com/",
+   "data": "2026-11-18"
+  }
+ ]
+}

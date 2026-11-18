@@ -1,0 +1,88 @@
+{
+ "ticker": "SEQL3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Operadora de logística focada na entrega de cartões e objetos bancários (Flash Courier) e em logística B2B. Saiu do e-commerce em abril de 2026, é controlada pela JiveMauá e tem patrimônio líquido negativo.",
+ "modelo": "A Sequoia atua de forma asset-light: a Flash Courier faz a coleta, separação e entrega de cartões, maquininhas POS e outros objetos bancários por meio de uma rede de franquias entregadoras em 1.606 municípios, com relacionamento médio de 12 anos com os principais bancos clientes. A Carriers faz logística B2B para grandes empresas, com preço por projeto ou fretamento. A receita é recorrente, ligada a contratos com bancos e ao volume de entregas, e os centros de distribuição e a frota são arrendados.",
+ "segmentos": [
+  {
+   "nome": "Logística de objetos bancários (Flash Courier)",
+   "peso_receita": 0.824,
+   "periodo": "3T26",
+   "obs": "R$ 138,1 mi, estável sobre o 2T26 (+0,2%); cerca de 20,9 milhões de entregas no trimestre."
+  },
+  {
+   "nome": "Logística B2B (Carriers)",
+   "peso_receita": 0.169,
+   "periodo": "3T26",
+   "obs": "R$ 28,3 mi, alta de 43,7% sobre o 2T26, puxada por contratos com marketplaces."
+  },
+  {
+   "nome": "Outras",
+   "peso_receita": 0.007,
+   "periodo": "3T26",
+   "obs": "R$ 1,2 mi. A logística B2C (e-commerce) foi encerrada em abril de 2026."
+  }
+ ],
+ "segmentos_base": "Receita bruta",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera apenas no Brasil, com cobertura de 1.606 cidades, que representam cerca de 75% da população. Não há operação nem projeto no exterior divulgado."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais; a dívida é composta por capital de giro e debêntures repactuados, FIDCs e operações com bancos clientes. O efeito de uma alta do dólar é indireto, via custo de frete e combustível pago a parceiros."
+ },
+ "momento": "No 3T26 (release de 13/11/2026), a receita líquida foi de R$ 146,5 mi (+6,3% sobre o 2T26; a comparação anual fica distorcida pelo fim do B2C), com margem bruta de 24,5% (7,0% no 3T25) e Ebitda ajustado de R$ 27,1 mi (margem de 18,5%). O prejuízo líquido foi de R$ 25,1 mi, ante R$ 7,2 mi no 2T26. Em 9M26, a receita líquida somou R$ 412,0 mi (-11,1%) e a margem Ebitda ajustada chegou a 16,0% (0,3% em 9M25). A dívida líquida de tesouraria era de R$ 323,5 mi em setembro, com caixa de R$ 34,0 mi e patrimônio líquido negativo de R$ 277,8 mi. Em fevereiro de 2026, a conversão mandatória de debêntures em ações deu aos fundos da JiveMauá o controle da companhia; em abril, a operação B2C foi vendida e encerrada.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com patrimônio negativo, dívida líquida de R$ 323,5 mi e prejuízo puxado por despesa financeira, juro menor alivia diretamente o resultado e o refinanciamento."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não tem receita nem dívida em dólar; o efeito indireto via combustível no frete é pequeno."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Diesel mais caro encarece fretes de parceiros, mas no B2B o preço é por projeto, o que permite repasse parcial."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Após o fim do e-commerce, a receita depende sobretudo da emissão de cartões e maquininhas por bancos, menos sensível ao ciclo; o B2B ganha com mais atividade."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "O passivo da recuperação extrajudicial é corrigido por IPCA e custos de franquias e mão de obra sobem com a inflação, com repasse defasado aos contratos."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Empresa alavancada e com patrimônio negativo depende de crédito e de juros menores; estresse fiscal eleva o custo de rolagem."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Sequoia Logística, Release de Resultados 3T26 (via Investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/SEQL3/53035/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "brapi (com base em NeoFeed): Sequoia aposta em B2B e objetos bancários para voltar a faturar R$ 1 bi",
+   "url": "https://brapi.dev/news/sequoia-aposta-em-b2b-e-objetos-bancarios-para-voltar-a-faturar-r-ca5faab2",
+   "data": "2026-08-24"
+  },
+  {
+   "titulo": "Investidor10: Sequoia (SEQL3) derrete mais de 23% nesta segunda-feira (9); saiba motivo",
+   "url": "https://investidor10.com.br/noticias/sequoia-seql3-derrete-mais-de-23-nesta-segunda-feira-9-saiba-motivo-118528/",
+   "data": "2026-02-09"
+  },
+  {
+   "titulo": "AUVP Analítica: JiveMauá assume controle da Sequoia Logística e ações caem 23%",
+   "url": "https://analitica.auvp.com.br/noticias/jivemaua-assume-controle-da-sequoia-logistica-e-acoes-caem-23-",
+   "data": "2026-02-09"
+  }
+ ]
+}

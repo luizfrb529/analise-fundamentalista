@@ -1,0 +1,88 @@
+{
+ "ticker": "PRNR3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Prestadora de serviços industriais (pintura anticorrosiva, andaimes, isolamento, inspeção e montagem) para siderurgia, mineração e óleo e gás. Receita em reais, muito ligada ao investimento e à manutenção desses setores.",
+ "modelo": "A Priner presta serviços de engenharia industrial, inspeção e integridade, infraestrutura e montagem em plantas de clientes como siderúrgicas, mineradoras e petroleiras, em contratos plurianuais de manutenção. A receita é majoritariamente recorrente, mas depende da renovação de contratos e de paradas programadas; a empresa cresceu nos últimos anos por aquisições, como a SEMEP (60%, concluída em outubro de 2025).",
+ "segmentos": [
+  {
+   "nome": "Siderurgia e Mineração",
+   "peso_receita": 0.5,
+   "periodo": "3T26",
+   "obs": "Cerca de R$ 254,9 mi, lido do gráfico da apresentação."
+  },
+  {
+   "nome": "Óleo e Gás",
+   "peso_receita": 0.33,
+   "periodo": "3T26",
+   "obs": "Cerca de R$ 169,0 mi."
+  },
+  {
+   "nome": "Outros",
+   "peso_receita": 0.16,
+   "periodo": "3T26",
+   "obs": "Cerca de R$ 82,9 mi."
+  }
+ ],
+ "segmentos_base": "Receita líquida por setor de cliente",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Atua no Brasil, em unidades industriais de clientes de vários estados. A administração cita diversificação geográfica como objetivo, sem operação no exterior identificada."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida em reais (financiamentos bancários, debêntures e parcelas a pagar a vendedores de empresas adquiridas). O dólar afeta apenas indiretamente, via disposição de investir de clientes exportadores."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita líquida foi de R$ 506,9 mi (+41,1% sobre o 3T25), o lucro operacional ajustado de R$ 50,4 mi (+67,2%) e o NOPAT ajustado de R$ 46,0 mi (R$ 159,9 mi em 12 meses). O lucro líquido ajustado foi de R$ 9,0 mi (-2,6%) e o contábil de R$ 3,2 mi. A dívida líquida era de R$ 739,5 mi, com alavancagem pro forma de 2,28x o Ebitda, e a empresa fechou R$ 1,77 bi em novos contratos no trimestre. Em 17/11/2026, assembleia aprovou alteração do limite de capital autorizado.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Com alavancagem de 2,3x, juro menor reduz a despesa financeira, que hoje consome boa parte do lucro operacional."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida em reais; efeito indireto pela renda de clientes exportadores de minério, aço e petróleo."
+  },
+  "commodities_subindo": {
+   "nota": 1,
+   "porque": "Mineradoras, siderúrgicas e petroleiras ampliam manutenção e investimento quando preços sobem, gerando mais contratos."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Mais produção industrial eleva a demanda por manutenção, paradas programadas e montagem industrial."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Contratos têm reajuste periódico, mas a mão de obra, maior custo da empresa, sobe junto."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Juros mais altos encarecem a dívida e podem adiar investimentos dos clientes industriais."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Priner, Apresentação de Resultados 3T26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/PRNR3/53005/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "InfoMoney: Sanepar, JHSF, Unipar, IMC e mais empresas divulgam resultados no 3T",
+   "url": "https://www.infomoney.com.br/mercados/sanepar-jhsf-unipar-imc-e-mais-empresas-divulgam-resultados-no-3t/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Priner, Ata da Assembleia Geral Extraordinária de 17/11/2026",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/PRNR3/53194/",
+   "data": "2026-11-17"
+  },
+  {
+   "titulo": "Priner, Release de Resultados 3T25",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/6aff4303-d559-4771-901f-8de7d8a88ef5/6b09af81-72ad-bcd4-f7f2-a44624e38b7f?origin=2",
+   "data": "2025-11-06"
+  }
+ ]
+}

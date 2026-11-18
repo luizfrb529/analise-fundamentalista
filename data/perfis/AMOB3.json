@@ -1,0 +1,93 @@
+{
+ "ticker": "AMOB3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Rede de concessionárias do grupo Simpar, com 190 lojas e 38 marcas; cerca de 81% da receita vem de veículos leves. Opera com prejuízo e alavancagem alta, o que a deixa sensível a juros.",
+ "modelo": "A Automob vende veículos leves novos e seminovos, caminhões, ônibus e máquinas agrícolas e da linha amarela em concessionárias de 38 marcas, em 12 estados. Além da margem na venda, ganha comissões em vendas diretas das montadoras, financiamento e seguros (F&I) e receita recorrente de pós-venda (peças e oficina); F&I e pós-venda responderam por 42% do lucro bruto de leves no 2T26. É controlada pela Simpar.",
+ "segmentos": [
+  {
+   "nome": "Veículos leves",
+   "peso_receita": 0.81,
+   "periodo": "2T26",
+   "obs": "Receita bruta de R$ 2,97 bi (+16,2%); 130 lojas."
+  },
+  {
+   "nome": "Caminhões e ônibus",
+   "peso_receita": 0.13,
+   "periodo": "2T26",
+   "obs": "R$ 488 mi (+16,5%); pós-venda é 20% da receita do segmento."
+  },
+  {
+   "nome": "Agro e máquinas",
+   "peso_receita": 0.06,
+   "periodo": "2T26",
+   "obs": "R$ 223 mi (-20,9%), com foco em recuperar margem e reduzir estoque."
+  }
+ ],
+ "segmentos_base": "Receita bruta (padrão da empresa); consolidado de R$ 3,68 bi no 2T26. A divisão do 3T26 não foi confirmada.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "2T26",
+  "base": null,
+  "texto": "Toda a operação está no Brasil, com 190 lojas em 12 estados e 61 municípios. Não há receita no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais. O dólar afeta de forma indireta, via preço de veículos e peças importados definido pelas montadoras e via juros."
+ },
+ "momento": "No 3T26 (divulgado em 03/11/2026), a receita líquida caiu 1%, para R$ 3,43 bi, pelo menor faturamento em agro e máquinas, enquanto a receita bruta subiu 9%, para R$ 4,01 bi; as vendas de leves cresceram cerca de 16% (25,8 mil unidades) e as de pesados cerca de 20% (2,9 mil), com queda de 26% em máquinas. O Ebitda ajustado foi de R$ 146,3 mi (+1,6%, margem de cerca de 4,3%) e o prejuízo líquido ajustado de R$ 52,1 mi, ante R$ 65,7 mi no 3T25. No 2T26, último dado oficial lido, a alavancagem era de 3,6x o Ebitda ajustado (2,2x sem o estoque pago às montadoras), com resultado financeiro negativo de R$ 158 mi no trimestre. A empresa concluiu em 2026 o ciclo de R$ 540 mi de modernização da rede e reduziu o capex líquido para cerca de R$ 21 mi no 3T26.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Juro menor barateia o financiamento de veículos para o cliente e reduz o resultado financeiro negativo de uma empresa alavancada em 3,6x o Ebitda e ainda no prejuízo."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em dólar; preços de veículos e peças importados sobem, mas são repassados pelas montadoras e afetam volume de forma indireta."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Renda maior do agronegócio ajuda vendas de máquinas e caminhões, mas o segmento agro é só cerca de 6% da receita e está em retração."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Venda de veículos, caminhões e serviços depende diretamente de renda, crédito e atividade, e a margem baixa amplia o efeito do volume no resultado."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Preços de veículos e serviços acompanham a inflação, mas inflação alta tende a manter juros elevados e encarecer o crédito, efeitos que se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior pressiona juros e câmbio, encarece o crédito ao consumidor e pode afetar programas como o Move Brasil, que sustentaram vendas de pesados."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Automob, Release de Resultados 2T26 (site de RI)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/05362303-62dd-426f-99c4-549327edb689/f0b04fe9-d9d6-bd9e-00f2-fa8a34277548?origin=2",
+   "data": "2026-08"
+  },
+  {
+   "titulo": "InfoMoney (Reuters): Automob reduz prejuízo ajustado para R$ 52,1 mi no 3º tri",
+   "url": "https://www.infomoney.com.br/mercados/automob-reduz-prejuizo-ajustado-para-r521-mi-no-3o-tri/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "InfoMoney: Automob (AMOB3) tem alta de 9% na receita bruta no 3º trimestre",
+   "url": "https://www.infomoney.com.br/mercados/automob-amob3-tem-alta-de-9-na-receita-bruta-no-3o-trimestre/",
+   "data": "2026-10-19"
+  },
+  {
+   "titulo": "InfoMoney: Automob (AMOB3): ações saltam 15% após divulgação de dados operacionais do 3º tri",
+   "url": "https://www.infomoney.com.br/mercados/automob-amob3-acoes-saltam-apos-divulgacao-de-dados-operacionais-do-3o-tri/",
+   "data": "2026-10-19"
+  },
+  {
+   "titulo": "InfoMoney: Simpar (SIMH3) reverte prejuízo e lucra R$ 137 milhões no 3T26",
+   "url": "https://www.infomoney.com.br/mercados/simpar-simh3-resultados-terceiro-trimestre-2026/",
+   "data": "2026-11-04"
+  }
+ ]
+}

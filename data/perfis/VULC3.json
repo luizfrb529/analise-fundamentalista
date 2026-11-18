@@ -1,0 +1,93 @@
+{
+ "ticker": "VULC3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Fabricante de calçados esportivos dona da Olympikus e licenciada de Mizuno e Under Armour no Brasil. Quase 87% da receita vem de tênis esportivos e 97% do mercado interno.",
+ "modelo": "A Vulcabras produz em fábricas próprias no Brasil tênis, chinelos, roupas e acessórios esportivos das marcas Olympikus (própria), Mizuno e Under Armour (licenças para o país). Vende sobretudo a varejistas de calçados e artigos esportivos e, em menor escala, pelo próprio e-commerce (R$ 120,3 mi no 3T26). A receita é recorrente, baseada em volume (25,2 milhões de pares e peças no 9M26) e na força das marcas em corrida.",
+ "segmentos": [
+  {
+   "nome": "Calçados esportivos",
+   "peso_receita": 0.87,
+   "periodo": "3T26",
+   "obs": "R$ 848,4 mi de receita líquida (+2,5%)."
+  },
+  {
+   "nome": "Calçados e outros",
+   "peso_receita": 0.07,
+   "periodo": "3T26",
+   "obs": "R$ 67,3 mi (+3,9%), inclui chinelos."
+  },
+  {
+   "nome": "Vestuário e acessórios",
+   "peso_receita": 0.06,
+   "periodo": "3T26",
+   "obs": "R$ 61,9 mi (-2,5%)."
+  }
+ ],
+ "segmentos_base": "Receita líquida (R$ 977,6 mi no 3T26).",
+ "geografia": {
+  "brasil_pct": 0.98,
+  "exterior_pct": 0.02,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Produz e vende quase tudo no Brasil (R$ 2,68 bi de R$ 2,75 bi no 9M26). O mercado externo, sobretudo América Latina e Argentina, rendeu R$ 66,9 mi (-32,6%); a empresa vendeu ativos fixos descontinuados da subsidiária no Peru."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "baixa",
+  "texto": "Cerca de 2% da receita vem de exportações. Os principais insumos, como EVA, TPU, borrachas e outros derivados de petróleo, têm preço influenciado por dólar e petróleo, de modo que uma alta do dólar tende a pressionar o custo mais do que eleva a receita."
+ },
+ "momento": "No 3T26 (divulgado em 10/11/2026), a receita líquida foi de R$ 977,6 mi (+2,3% sobre o 3T25), com volume 2% menor, e a margem bruta caiu 1,9 p.p., para 39,5%, pela alta de matérias-primas derivadas de petróleo após o conflito entre Irã e Estados Unidos e pela reoneração da folha. O Ebitda recorrente recuou 3,7%, para R$ 203,2 mi (margem de 20,8%), e o lucro recorrente caiu 14,3%, para R$ 139,9 mi; o lucro contábil de R$ 144,4 mi ficou 73,6% abaixo do 3T25, que teve reconhecimento de impostos diferidos. A dívida líquida caiu para R$ 439,9 mi em set/26, ante R$ 769,4 mi em dez/25, após um 2025 de investimentos em capacidade.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula o varejo de calçados, que compra com cautela, e reduz a despesa financeira sobre dívida líquida de R$ 439,9 mi."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Exportações de 2% da receita ganham pouco com o dólar, enquanto insumos petroquímicos encarecem; o efeito líquido é pequeno e levemente negativo."
+  },
+  "commodities_subindo": {
+   "nota": -1,
+   "porque": "Petróleo mais caro elevou o custo de EVA, borrachas e outros insumos e derrubou a margem bruta no 3T26, segundo a própria empresa; nota corrigida de 0 para -1."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Tênis de marca são consumo discricionário; mais renda e emprego elevam o volume vendido ao varejo."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação pressiona mão de obra, já afetada pela reoneração da folha, e reduz o poder de compra do consumidor."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior mantém juros altos, encarece a dívida e esfria o consumo de bens não essenciais."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Vulcabras, Apresentação de Resultados 3T26 (documento CVM)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/VULC3/52329/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Vulcabras, Informações Contábeis Intermediárias 30/09/2025 (base de comparação)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/2a4ff98c-d670-4434-962c-10e11bafd659/ad05afc1-8396-3b78-4cf8-c03128e78fcb?origin=2",
+   "data": "2025-10-30"
+  },
+  {
+   "titulo": "InfoMoney: Vulcabras, Cruzeiro do Sul, Armac e mais divulgam balanços",
+   "url": "https://www.infomoney.com.br/mercados/vulcabras-vulc3-cruzeiro-do-sul-csed3-armac-arml3-e-mais-divulgam-balancos/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Jornal do Comércio: Lucro da Vulcabras cai 14,3% em meio à desaceleração do consumo",
+   "url": "https://www.jornaldocomercio.com/economia/2026/11/1270744-lucro-da-vulcabras-cai-143-em-meio-a-desaceleracao-do-consumo.html",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Bloomberg Línea: Vulcabras tem 23º trimestre de expansão, mas vê obstáculos com aumento de custos",
+   "url": "https://www.bloomberglinea.com.br/linha-esportiva/vulcabras-tem-23-trimestre-de-expansao-mas-ve-obstaculos-com-aumento-de-custos/",
+   "data": "2026-05-07"
+  }
+ ]
+}

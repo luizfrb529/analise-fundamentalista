@@ -1,0 +1,94 @@
+{
+ "ticker": "MRVE3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior construtora residencial do país, com 98% dos lançamentos de 2026 no Minha Casa Minha Vida. A subsidiária Resia, nos EUA, está em desmontagem com venda de ativos para reduzir dívida.",
+ "modelo": "A MRV&Co tem como núcleo a MRV Incorporação, que constrói e vende apartamentos econômicos financiados majoritariamente pelo Minha Casa Minha Vida, com recursos do FGTS. A receita é reconhecida conforme o avanço da obra (POC) e depende de vendas e repasses à Caixa. O grupo inclui a Urba (loteamentos), a Luggo (gestão de imóveis para locação) e a Resia (MRV US), que desenvolvia prédios para aluguel nos EUA e hoje vende seus ativos para encerrar a operação.",
+ "segmentos": [
+  {
+   "nome": "MRV Incorporação",
+   "peso_receita": 0.95,
+   "periodo": "3T26",
+   "obs": "Receita líquida recorde de R$ 3,41 bi (+28,7%), margem bruta de 32,1%."
+  },
+  {
+   "nome": "Urba (loteamentos)",
+   "peso_receita": 0.03,
+   "periodo": "3T26",
+   "obs": "R$ 104,9 mi de receita, margem bruta de 49,7%."
+  },
+  {
+   "nome": "Resia (MRV US)",
+   "peso_receita": 0.02,
+   "periodo": "3T26",
+   "obs": "R$ 79,7 mi; operação em venda de ativos para encerramento."
+  },
+  {
+   "nome": "Luggo (locação)",
+   "peso_receita": 0.0,
+   "periodo": "3T26",
+   "obs": "R$ 4,6 mi; vendeu seus três empreendimentos prontos e segue só como gestora."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão), antes de eliminações; consolidado MRV&Co de R$ 3,60 bi no 3T26.",
+ "geografia": {
+  "brasil_pct": 0.98,
+  "exterior_pct": 0.02,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "A incorporação atua em cerca de 80 cidades brasileiras (eram cerca de 120 em 2023). Nos EUA, a Resia vendeu Ten Oaks e Rayzor Ranch em julho de 2026 por US$ 139 mi, assinou em agosto a venda de Memorial e cinco terrenos por US$ 170 mi e estabilizou o Golden Glades, em Miami, para venda futura."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "média",
+  "texto": "Só a Resia, cerca de 2% da receita, gera em dólar. A operação nos EUA tinha dívida líquida de US$ 618 mi em set/26, lastreada nos próprios imóveis à venda; alta do dólar aumenta essa dívida em reais, mas também o valor em reais dos ativos e das vendas, com efeito líquido pequeno."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), a MRV Incorporação teve receita líquida recorde de R$ 3,4 bi (+28,7% sobre o 3T25), margem bruta de 32,1%, a maior em sete anos, e lucro líquido ajustado recorde de R$ 315 mi (+54,5%), com vendas líquidas de R$ 3,0 bi. No consolidado MRV&Co, a receita foi de R$ 3,6 bi e o lucro atribuível aos acionistas de R$ 152,7 mi (R$ 87 mi no 3T25), com prejuízo de R$ 88,2 mi na Resia. A dívida líquida consolidada caiu para cerca de R$ 5,5 bi em setembro (R$ 6,3 bi em dez/25), e a da operação Brasil equivale a 0,76x o Ebitda anualizado. Resia e Luggo anunciaram R$ 2,2 bi em vendas de ativos em 2026, que devem reduzir a dívida líquida em R$ 1,6 bi; a greve de funcionários da Caixa afetou repasses e caixa no trimestre.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "A dívida corporativa no Brasil é majoritariamente em CDI (custo médio de 11,56% a.a.), então juro menor reduz a despesa financeira; também melhora a demanda fora do MCMV e o valor de venda dos ativos da Resia."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "A dívida da Resia em dólar sobe em reais, mas os imóveis à venda nos EUA, que a pagam, também se valorizam em reais; a operação brasileira não depende de dólar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Aço e cimento entram no custo de obra, mas o efeito é diluído e parcialmente repassado; a empresa não vende commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais emprego e renda ampliam a base de compradores aptos ao financiamento, embora a demanda do MCMV seja sustentada pelo FGTS e pouco cíclica."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Custos de obra sobem com o INCC enquanto os tetos de preço do MCMV limitam o repasse, e 22% da dívida corporativa é corrigida pelo IPCA."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Com quase todos os lançamentos no MCMV, a empresa depende de orçamento, subsídios e regras do FGTS definidos pelo governo, além de sofrer com juros longos mais altos."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "MRV&Co, Divulgação de resultados 3T26 (documento enviado à CVM)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/MRVE3/52634/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "MRV&Co, Transcrição da teleconferência de resultados 3T26 (documento enviado à CVM)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/MRVE3/53134/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "InfoMoney: MRV&Co (MRVE3) tem lucro líquido de R$ 201,6 milhões no 3º trimestre",
+   "url": "https://www.infomoney.com.br/mercados/mrv-mrve3-resultados-terceiro-trimestre-2026/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Bloomberg Línea: MRV prioriza desalavancagem e vê margem maior após lucro recorde no Brasil, diz CFO",
+   "url": "https://www.bloomberglinea.com.br/negocios/mrv-prioriza-desalavancagem-e-ve-margem-maior-apos-lucro-recorde-no-brasil-diz-cfo/",
+   "data": "2026-11-12"
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "ticker": "ALOS3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior empresa de shoppings do país, com receita de aluguel, estacionamento e mídia. Opera só no Brasil e vende participações em shoppings maduros para pagar dividendos e reduzir dívida.",
+ "modelo": "A Allos, resultado da fusão entre Aliansce Sonae e brMalls, é dona e administradora de shoppings em várias regiões do país. Ganha dinheiro com aluguel de lojistas (mínimo e percentual sobre vendas), estacionamento, serviços e mídia (Hello, presente também em aeroportos) e, pontualmente, com incorporação em terrenos dos shoppings. A receita é majoritariamente recorrente e a empresa recicla capital vendendo participações em ativos.",
+ "segmentos": [
+  {
+   "nome": "Aluguel",
+   "peso_receita": 0.64,
+   "periodo": "3T26",
+   "obs": "R$ 497,3 mi (+1,7%)."
+  },
+  {
+   "nome": "Estacionamento",
+   "peso_receita": 0.18,
+   "periodo": "3T26",
+   "obs": "R$ 140,4 mi (+11,1%)."
+  },
+  {
+   "nome": "Serviços e mídia",
+   "peso_receita": 0.15,
+   "periodo": "3T26",
+   "obs": "R$ 113,0 mi (+31,4%), com a Hello em 12 aeroportos."
+  },
+  {
+   "nome": "Incorporação e outras",
+   "peso_receita": 0.03,
+   "periodo": "3T26",
+   "obs": "Cerca de R$ 70 mi brutos, incluindo projeto residencial no Shopping da Bahia e seguro do incêndio do Shopping Tijuca; o peso considera deduções."
+  }
+ ],
+ "segmentos_base": "Receita líquida (R$ 776,5 mi no 3T26); os valores por linha são brutos, por isso os pesos são aproximados.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Todos os shoppings ficam no Brasil. Não há operação no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais. Alta do dólar não tem efeito direto; o efeito indireto é via inflação e juros."
+ },
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita líquida foi de R$ 776,5 mi (+17,1%), o Ebitda ajustado de R$ 580,1 mi (+19,5%, margem de 74,7%) e o FFO de R$ 384,5 mi (+26,1%). O lucro líquido foi de R$ 273,6 mi, alta de 151%. A dívida líquida subiu 9,9% no trimestre, para R$ 4,0 bi, ou 1,8x o Ebitda (1,7x no 2T26), e a empresa indicou alavancagem perto de 2,0x em 2027 com dividendos mensais de R$ 0,28 a R$ 0,30 por ação, mesmo nível de 2026. Em outubro de 2026, assinou compromissos para vender participações em sete shoppings ao FII Kinea Allos Malls, mantendo a administração dos ativos.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com R$ 4,0 bi de dívida líquida, juro menor reduz a despesa financeira e valoriza shoppings vendidos a fundos imobiliários."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em dólar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Mais renda e emprego elevam vendas dos lojistas, aluguel percentual, fluxo no estacionamento e receita de mídia."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "Os contratos de aluguel são reajustados anualmente por índice de inflação, o que protege a receita, embora inflação alta pese sobre o consumo."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Juros longos mais altos encarecem a dívida e reduzem o preço pago por fundos nas vendas de participações."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Mercado & Consumo (Estadão Conteúdo): Allos tem lucro líquido de R$ 273,6 milhões no 3º trimestre",
+   "url": "https://mercadoeconsumo.com.br/06/11/2026/mc-capital/allos-tem-lucro-liquido-de-r-2736-milhoes-no-3o-trimestre-salto-de-151-em-um-ano/",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "brapi (com base em InfoMoney): Allos lucra R$ 291 mi no 3º tri",
+   "url": "https://brapi.dev/news/allos-lucra-r-291-mi-no-3-tri-alta-de-131-e-9c714133",
+   "data": "2026-11-07"
+  },
+  {
+   "titulo": "Diário do Grande ABC (Estadão Conteúdo): Allos tem lucro líquido de R$ 273,6 milhões no 3º trimestre",
+   "url": "https://www.dgabc.com.br/Noticia/4367164/allos-tem-lucro-liquido-de-rs-273-6-milhoes-no-3-trimestre-salto-de-151-em-um-ano",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Análise de Ações: Allos anuncia venda de participações em sete shoppings para fundo imobiliário",
+   "url": "https://www.analisedeacoes.com/noticias/allos-alos3-anuncia-venda-de-participacoes-em-sete-shoppings-para-fundo-imobiliario/",
+   "data": "2026-10-23"
+  }
+ ]
+}

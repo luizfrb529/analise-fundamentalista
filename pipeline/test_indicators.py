@@ -49,12 +49,6 @@ def test_consistencias():
     assert I.queda_seguida([5, 4, 5, 2]) is False
 
 
-def test_graham():
-    assert I.graham(2, 20) == ap(math.sqrt(22.5 * 40))
-    assert I.graham(-1, 20) is None
-    assert I.margem_seguranca(20, 16) == ap(0.25)
-
-
 def test_peg():
     assert I.peg(10, 0.10) == ap(1.0)
     assert I.peg(10, -0.1) is None

@@ -1,0 +1,82 @@
+{
+ "ticker": "LOGG3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Desenvolve e aluga galpões logísticos classe A em várias regiões do Brasil e vende ativos prontos para financiar novas obras. Boa parte do lucro vem da valorização e venda de ativos, não só do aluguel.",
+ "modelo": "A LOG constrói galpões logísticos modulares, aluga para empresas de e-commerce, varejo, farmacêutico e transporte e depois recicla parte dos ativos estabilizados, vendendo-os para financiar o programa Log 2 Milhões. A receita recorrente é o aluguel e, cada vez mais, serviços da plataforma LOG 360 (administração de condomínios, gestão de obras e de ativos de terceiros). O resultado de desenvolvimento, com reavaliação e venda de ativos, é pontual e responde pela maior parte do Ebitda.",
+ "segmentos": [
+  {
+   "nome": "Locação de galpões",
+   "peso_receita": 0.87,
+   "periodo": "9M26",
+   "obs": "Aluguel médio de R$ 26,36/m² no 3T26 (+17,5%) e vacância estabilizada de 1,14%."
+  },
+  {
+   "nome": "Serviços (LOG 360)",
+   "peso_receita": 0.13,
+   "periodo": "9M26",
+   "obs": "R$ 25,0 mi em 9M26 (+65,2%); R$ 9,1 mi no 3T26 (+48,7%)."
+  }
+ ],
+ "segmentos_base": "Receita líquida (R$ 189,8 mi em 9M26); o peso de serviços é aproximado, pois o release informa a receita de serviços sem detalhar a base líquida.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera só no Brasil. A ABL entregue está 51,8% no Sudeste, 26,1% no Nordeste, 17,0% no Centro-Oeste e 5,1% no Sul; no 3T26, 89% das novas locações ocorreram fora do Sudeste."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Aluguéis e dívida são em reais; o custo efetivo da dívida é de CDI + 1,05%. Alta do dólar não tem efeito direto relevante."
+ },
+ "momento": "No 3T26 (divulgado em 10/11/2026), a receita líquida foi de R$ 57,7 mi (-13,5%, com ABL média 28,5% menor após vendas de ativos), o Ebitda de R$ 179,1 mi (-7,1%) e o lucro líquido de R$ 121,6 mi (+9,2%). A empresa registrou absorção bruta recorde de 495 mil m² e pré-locou 488 mil m² com yield on cost médio de 13,8%. A dívida líquida ajustada por recebíveis de vendas ficou em R$ 906,1 mi, ou 1,5x o Ebitda de 12 meses (1,3x no 3T25), e no trimestre foi emitida a 27ª debênture, de R$ 300 mi, a CDI + 0,50%. O capex trimestral foi recorde, de R$ 318,5 mi, com 914,9 mil m² em construção, e foram aprovados R$ 86,6 mi em dividendos (R$ 0,995 por ação), pagos em 30/11/2026. No 2T26, a empresa fez a maior venda de sua história, um portfólio de cerca de R$ 1 bi ao FII Itaú Log CP, com custo de estruturação de R$ 157,4 mi que reduziu o lucro daquele trimestre.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "A dívida é toda atrelada ao CDI e a venda de galpões a fundos depende de taxas de capitalização menores, o que ocorre com juro em queda."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em dólar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Aço e cimento entram no custo das obras, mas o custo de construção da LOG tem ficado abaixo do INCC e os contratos de pré-locação são corrigidos por INCC."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais consumo e e-commerce elevam a demanda por galpões, mas a vacância já é baixa e os contratos são longos."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "Todos os contratos de pré-locação são corrigidos por inflação (90% INCC, 10% IPCA) e os aluguéis têm subido acima da inflação há 17 trimestres."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior eleva juros longos, encarece a dívida em CDI e reduz o preço que fundos pagam pelos galpões vendidos."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "LOG Commercial Properties, Earnings Release 3T26 (via Investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/LOGG3/52193/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Diário do Comércio: Log registra lucro de R$ 121,6 milhões no 3º trimestre e bate recorde de pré-locações",
+   "url": "https://diariodocomercio.com.br/negocios/log-lucro-bate-recorde-pre-locacoes/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "NeoFeed: Na maior venda da história da Log, um efeito contábil pontual",
+   "url": "https://neofeed.com.br/negocios/na-maior-venda-da-historia-da-log-um-efeito-contabil-pontual/",
+   "data": "2026-08-06"
+  },
+  {
+   "titulo": "Exame: Log turbina lucro com reciclagem de ativos e prestação de serviços (base de comparação 3T25)",
+   "url": "https://exame.com/mercado-imobiliario/log-turbina-lucro-com-reciclagem-de-ativos-e-prestacao-de-servicos",
+   "data": "2025-10-29"
+  }
+ ]
+}

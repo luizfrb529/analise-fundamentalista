@@ -1,0 +1,100 @@
+{
+ "ticker": "TFCO4",
+ "revisado_em": "2026-11-18",
+ "resumo": "Rede de moda esportiva de alto padrão, com 460 lojas, sendo 402 franquias. Royalties e vendas a franqueados somam quase metade da receita; não tem dívida bancária.",
+ "modelo": "A Track&Field cria e vende roupas e acessórios para esporte e bem-estar, voltados ao público de alta renda, por lojas próprias, franquias e e-commerce. Ganha com a venda no varejo próprio, com a venda de mercadorias aos franqueados e com royalties sobre as vendas da rede, além de eventos esportivos e a plataforma TFSports. A receita é recorrente e o modelo de franquias exige pouco capital.",
+ "segmentos": [
+  {
+   "nome": "Varejo (rede própria)",
+   "peso_receita": 0.46,
+   "periodo": "3T26",
+   "obs": "R$ 124,9 mi de receita líquida (+4,0%)."
+  },
+  {
+   "nome": "Vendas de mercadorias para franquias",
+   "peso_receita": 0.31,
+   "periodo": "3T26",
+   "obs": "R$ 85,5 mi (-5,2%), por menor reposição dos franqueados."
+  },
+  {
+   "nome": "Royalties",
+   "peso_receita": 0.17,
+   "periodo": "3T26",
+   "obs": "R$ 47,5 mi (+4,3%)."
+  },
+  {
+   "nome": "Eventos e tfmall",
+   "peso_receita": 0.05,
+   "periodo": "3T26",
+   "obs": "R$ 13,9 mi (+24,0%)."
+  },
+  {
+   "nome": "Outros",
+   "peso_receita": 0.01,
+   "periodo": "3T26",
+   "obs": "R$ 2,6 mi."
+  }
+ ],
+ "segmentos_base": "Receita líquida (R$ 274,5 mi no 3T26).",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Quase toda a receita vem do Brasil. No exterior há 3 franquias em Portugal, sem receita divulgada em separado."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "A receita é em reais e a empresa não tem endividamento bancário. Fornecedores estrangeiros somavam apenas R$ 3,1 mi de R$ 97 mi a pagar em set/26, o que indica exposição direta pequena ao dólar."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), o sell out da rede foi de R$ 470,1 mi (+6,4% sobre o 3T25), com vendas em mesmas lojas de +2,6%, bem abaixo dos 22,8% de um ano antes. A receita líquida cresceu 2,2%, para R$ 274,5 mi, a margem bruta subiu 2,9 p.p., para 55,7%, o Ebitda ajustado avançou 12,6%, para R$ 57,8 mi (margem de 21,1%), e o lucro líquido somou R$ 35,1 mi (+17,3%). A empresa abriu 12 franquias no trimestre, terminou com 460 lojas e manteve caixa líquido de R$ 48,1 mi, sem dívida bancária, com liquidez total de R$ 140,9 mi.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula o consumo e a abertura de franquias, mas a empresa não tem dívida bancária e o público de alta renda depende menos de crédito; nota reduzida de 2 para 1."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Fornecedores estrangeiros representam cerca de 3% do saldo a pagar, então a exposição direta é pequena; nota corrigida de -1 para 0."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O custo de tecidos sintéticos e algodão pesa pouco frente à margem bruta de 55,7% de uma marca premium."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Moda esportiva premium é consumo discricionário; mais renda eleva vendas em mesmas lojas, reposição dos franqueados e royalties."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação eleva despesas de pessoal e aluguel das lojas próprias e reduz a disposição de gasto com itens não essenciais."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior tende a reduzir a confiança e o consumo de bens discricionários, mesmo no público de alta renda."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Track&Field, Release de Resultados 3T26 (documento CVM)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/TFCO4/52861/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Track&Field, Informações Financeiras Intermediárias 30/09/2026 (ITR)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/TFCO4/52857/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "InfoMoney: Track&Field (TFCO4) tem lucro de R$ 35 mi no 3º tri, alta de 17%",
+   "url": "https://www.infomoney.com.br/mercados/resultados-trackfield-tfco4-terceiro-trimestre-2026/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Money Times (Reuters): Track&Field (TFCO4) tem lucro de R$ 35 milhões no 3º trimestre, alta de 17%",
+   "url": "https://www.moneytimes.com.br/trackfield-tfco4-tem-lucro-de-r-35-milhoes-no-3o-trimestre-alta-de-17-fets/",
+   "data": "2026-11-13"
+  }
+ ]
+}

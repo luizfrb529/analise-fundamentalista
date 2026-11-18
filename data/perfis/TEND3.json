@@ -1,0 +1,82 @@
+{
+ "ticker": "TEND3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Construtora de habitação popular, concentrada nas faixas mais baixas do Minha Casa Minha Vida, com a Alea (casas industrializadas) ainda no prejuízo. Opera só no Brasil; o 3T26 mostrou queda de margem e mais distratos.",
+ "modelo": "A Tenda constrói e vende apartamentos econômicos, principalmente para famílias das faixas 1 e 2 do Minha Casa Minha Vida, com financiamento pela Caixa e recursos do FGTS; a receita é reconhecida conforme o avanço da obra. Parte do preço é financiada pela própria empresa após a entrega das chaves (TCD) e por programas estaduais como o Pode Entrar, o que gera risco de crédito. A subsidiária Alea produz casas em fábrica (construção off-site) e busca equilíbrio de lucro e caixa até o fim de 2027.",
+ "segmentos": [
+  {
+   "nome": "Marca Tenda (incorporação on-site)",
+   "peso_receita": null,
+   "periodo": "3T26",
+   "obs": "Núcleo do negócio; guidance 2026 de vendas líquidas de R$ 5,5 bi a R$ 6,0 bi."
+  },
+  {
+   "nome": "Alea (casas off-site)",
+   "peso_receita": null,
+   "periodo": "3T26",
+   "obs": "Vendas líquidas de R$ 73 mi em VGV no 3T26 e prejuízo de R$ 27,7 mi; parcela pequena da receita."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão); a divisão entre Tenda e Alea não foi confirmada em fonte lida.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Toda a operação está no Brasil, em regiões metropolitanas como São Paulo, Rio de Janeiro, Nordeste (incluindo João Pessoa desde o 2T25), Goiás, Rio Grande do Sul e Curitiba. Não há receita ou projeto no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais. A alta do dólar só chega de forma indireta, por custo de insumos e juros."
+ },
+ "momento": "No 3T26 (divulgado em 03/11/2026), a receita líquida consolidada foi de R$ 1,25 bi (+10,5% sobre o 3T25) e o Ebitda ajustado de R$ 207,8 mi (+11,1%), ambos abaixo do consenso LSEG. O lucro líquido caiu 48,7%, para R$ 57,3 mi, por marcação a mercado de swaps referenciados em ações (R$ 49,1 mi); sem esse efeito seria de R$ 106,4 mi (+3,7%). A margem bruta ajustada recuou para 32,5% (37,3% no 2T26), por preço menor com redução do financiamento direto (TCD), mix com mais Faixa 1, custo de obra e distratos ligados à greve da Caixa. A dívida líquida corporativa ficou em 0,1% do patrimônio, a geração de caixa operacional foi de R$ 82,4 mi (14º trimestre positivo), e o guidance 2026 de lucro de R$ 600 mi a R$ 660 mi ex-swap foi mantido, com R$ 419,9 mi acumulados até setembro.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "O MCMV usa juros do FGTS e pouco depende da Selic, mas juro menor reduz o custo do financiamento direto ao cliente, alivia inadimplência e tende a favorecer o swap referenciado nas próprias ações."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em dólar; o efeito em insumos de obra é indireto."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Aço e cimento entram no custo de obra, mas de forma diluída; a empresa não vende commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais emprego formal amplia as famílias aptas a financiar e reduz distratos e atrasos, embora a demanda do MCMV seja pouco cíclica."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "O INCC eleva o custo de obra enquanto os preços-teto do MCMV limitam o repasse, e o 3T26 já mostrou custos tirando 1,0 p.p. da margem."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Com foco nas faixas 1 e 2, a empresa depende diretamente de subsídios do FGTS, do orçamento do MCMV e de programas estaduais, mais vulneráveis em ajuste fiscal."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Tenda, Apresentação institucional NDR novembro 2026 (documento enviado à CVM)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/TEND3/53170/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "InfoMoney (Reuters): Tenda (TEND3): lucro cai 48,7% no terceiro trimestre, baixa acima do esperado",
+   "url": "https://www.infomoney.com.br/mercados/resultados-tenda-tend3-terceiro-trimestre-2026/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Money Times: Lucro líquido da Tenda cai quase 50% e margens recuam no 3T26; CFO detalha os impactos",
+   "url": "https://www.moneytimes.com.br/lucro-liquido-da-tenda-tend3-cai-quase-50-e-margens-recuam-no-3t26-cfo-detalha-os-impactos-e-diz-o-que-esperar-bdap/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Tenda, Comunicado ao Mercado: participação relevante (documento enviado à CVM)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/TEND3/53042/",
+   "data": "2026-11-12"
+  }
+ ]
+}

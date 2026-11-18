@@ -1,0 +1,100 @@
+{
+ "ticker": "KEPL3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Líder latino-americana em silos e equipamentos de armazenagem de grãos, com 88% da receita no Brasil nos 9M26. A demanda depende de crédito rural e da renda do produtor, hoje pressionadas.",
+ "modelo": "A Kepler Weber projeta, fabrica e instala silos, secadores, transportadores e sistemas de armazenagem e movimentação de grãos para produtores rurais (Fazendas), agroindústrias, portos e terminais, além de clientes em outros países. A maior parte da receita é pontual, ligada a projetos de investimento; Reposição e Serviços (peças, manutenção e modernização) e o monitoramento remoto da Procer formam a parcela recorrente. Tem fábricas em Panambi (RS), Campo Grande (MS) e Criciúma (SC) e vende para 54 países.",
+ "segmentos": [
+  {
+   "nome": "Agroindústrias",
+   "peso_receita": 0.4,
+   "periodo": "9M26",
+   "obs": "R$ 381,4 mi (+20,4%), puxada por projetos ligados a biocombustíveis e processamento de grãos."
+  },
+  {
+   "nome": "Fazendas",
+   "peso_receita": 0.25,
+   "periodo": "9M26",
+   "obs": "R$ 243,2 mi (queda de 33,3%), afetada por juros altos e crédito restrito ao produtor."
+  },
+  {
+   "nome": "Reposição e Serviços",
+   "peso_receita": 0.21,
+   "periodo": "9M26",
+   "obs": "R$ 198,3 mi (queda de 8,0%); parcela mais recorrente."
+  },
+  {
+   "nome": "Negócios Internacionais",
+   "peso_receita": 0.12,
+   "periodo": "9M26",
+   "obs": "R$ 111,0 mi (queda de 17,9%), principalmente América Latina."
+  },
+  {
+   "nome": "Portos e Terminais",
+   "peso_receita": 0.03,
+   "periodo": "9M26",
+   "obs": "R$ 27,4 mi (queda de 54,0%), conforme o cronograma de contratos longos."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 0.88,
+  "exterior_pct": 0.12,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Quase toda a receita vem do Brasil, com fábricas no RS, MS e SC. As vendas externas, concentradas em países da América Latina, foram 12% da receita nos 9M26 e 10% no 3T26, todas exportadas a partir do Brasil."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "baixa",
+  "texto": "Cerca de 12% da receita vem de exportações. Parte da dívida (IFC, CPR e Finex) tem swaps que a atrelam ao dólar, usando as vendas externas como lastro, e a exposição líquida em dólar era de apenas US$ 2,9 mi em setembro de 2026; o efeito direto do câmbio é pequeno, e o maior canal é indireto, pela renda do produtor de grãos em reais."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), a receita líquida foi de R$ 344,2 mi (queda de 18,7% sobre o 3T25), o Ebitda de R$ 26,1 mi (queda de 64,6%, margem de 7,6% ante 17,4%) e o lucro líquido de R$ 13,4 mi (queda de 74,0%). Nos 9M26, a receita somou R$ 961,3 mi (queda de 11,9%) e o lucro R$ 36,9 mi (queda de 59,7%). Agroindústrias subiu para 43,6% da receita no trimestre, enquanto Fazendas caiu 46,5% com juros altos e crédito restrito; o backlog cresceu 2,6% sobre junho, mas caiu 13,8% em 12 meses. A empresa terminou setembro com caixa líquido de R$ 27,4 mi, cortou 17,2% das despesas de vendas, gerais e administrativas no trimestre e não distribuiu proventos em 2026 após antecipar R$ 50 mi em dezembro de 2025.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "A própria empresa condiciona a retomada de Fazendas a juros e crédito rural mais favoráveis; a queda da Selic barateia o financiamento de silos pelo produtor."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Exportações são só 12% da receita, mas dólar alto eleva o preço dos grãos em reais e a renda do produtor, que investe mais em armazenagem."
+  },
+  "commodities_subindo": {
+   "nota": 2,
+   "porque": "Grãos mais caros melhoram a rentabilidade do produtor e das agroindústrias, principal motor de pedidos de silos; aço mais caro pesa em parte no custo."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade ajuda crédito e investimento em agroindústrias e portos, mas o ciclo da empresa segue mais a safra e a renda agrícola."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Aço e mão de obra encarecem os projetos, mas os contratos costumam ser reajustados, com efeito líquido pequeno."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior eleva juros e reduz o crédito subsidiado do Plano Safra, adiando decisões de investimento do produtor."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Kepler Weber, Release de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/4eecf609-719e-4c7f-971f-b02a8a05c7b1/01410ff1-150a-42a1-83bf-f99cfd20e953",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Kepler Weber, ITR 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/4eecf609-719e-4c7f-971f-b02a8a05c7b1/930bab5c-0956-43c1-96af-9597f804cc39",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Kepler Weber, Apresentação Institucional (dados do 3T26)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/4eecf609-719e-4c7f-971f-b02a8a05c7b1/8d92cf12-8ccc-0c25-69d1-1060241a14ab?origin=2",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "Kepler Weber, Release de Resultados 2T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/4eecf609-719e-4c7f-971f-b02a8a05c7b1/a7ca9576-4ddd-8aee-1b72-208ac3bd97eb?origin=2",
+   "data": "2026-08-12"
+  }
+ ]
+}

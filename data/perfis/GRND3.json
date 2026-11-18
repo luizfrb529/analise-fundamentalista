@@ -1,0 +1,87 @@
+{
+ "ticker": "GRND3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Fabricante de calçados plásticos (Melissa, Ipanema, Rider, Zaxy, Cartago). Cerca de 23% da receita bruta vem de exportação, e o resultado financeiro do caixa líquido pesa no lucro.",
+ "modelo": "A Grendene fabrica em unidades próprias no Nordeste, com sede em Sobral (CE), sandálias, chinelos e calçados injetados em PVC e outras resinas, com marcas próprias e licenciadas. Vende principalmente ao varejo (magazines, distribuidores, autosserviço) e, no caso da Melissa, também por lojas franqueadas e clubes. A receita é recorrente e de alto volume (88,2 milhões de pares no 9M26), e a empresa tem caixa líquido cujos rendimentos são parte relevante do lucro.",
+ "segmentos": [
+  {
+   "nome": "Mercado interno",
+   "peso_receita": 0.77,
+   "periodo": "9M26",
+   "obs": "R$ 1,81 bi de receita bruta (-2,7%), 71,8 milhões de pares (+3,2%)."
+  },
+  {
+   "nome": "Exportação",
+   "peso_receita": 0.23,
+   "periodo": "9M26",
+   "obs": "R$ 552,9 mi (-11,2%), 16,4 milhões de pares (-13,8%)."
+  }
+ ],
+ "segmentos_base": "Receita bruta de vendas (R$ 2,37 bi no 9M26). A empresa não divulga receita por marca.",
+ "geografia": {
+  "brasil_pct": 0.77,
+  "exterior_pct": 0.23,
+  "periodo": "9M26",
+  "base": "receita bruta",
+  "texto": "Produz no Brasil e exporta; a Melissa tem participação maior nas vendas externas, o que eleva o preço médio por par exportado. Em agosto de 2026 vendeu a subsidiária Grendene Global Brands USA à Pajar por US$ 3,61 mi; a distribuidora segue vendendo as marcas nos EUA."
+ },
+ "moeda": {
+  "receita_em_dolar": "média",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Cerca de 23% da receita bruta (9M26) vem de exportações em dólar. A empresa não tem dívida relevante e mantém caixa líquido; a principal matéria-prima, resina de PVC, tem preço referenciado em dólar, o que reduz parte do ganho cambial."
+ },
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita líquida foi de R$ 742,1 mi (-2,4% sobre o 3T25), com alta de 3,6% nos pares vendidos no Brasil e queda de 21,6% no volume exportado, atribuída a menor reposição de estoques por distribuidores. A margem bruta caiu de 46,5% para 44,4%, o lucro líquido contábil foi de R$ 121,7 mi (-12,1%) e o ajustado de R$ 151 mi (-18,2%), pressionado pela queda dos rendimentos financeiros. As disponibilidades líquidas eram de R$ 1,3 bi em setembro, ante R$ 2,1 bi um ano antes, após distribuições extraordinárias de dividendos. A empresa aprovou R$ 54,1 mi em proventos com pagamento previsto para 09/12/2026.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula o consumo e a reposição de estoques do varejo, citada pela empresa como fator de pressão, mas reduz os rendimentos do caixa líquido, que ainda representam parte relevante do lucro."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Exportações respondem por cerca de 23% da receita bruta e ganham em reais; o efeito é parcialmente compensado pela resina de PVC cotada em dólar."
+  },
+  "commodities_subindo": {
+   "nota": -1,
+   "porque": "A resina de PVC e outros derivados de petróleo são o principal insumo; alta de petróleo e petroquímicos eleva o custo por par."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda favorece volume no mercado interno, mas os produtos são de preço baixo e menos sensíveis ao ciclo do que vestuário de marca."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação pressiona custos industriais e mão de obra e reduz o poder de compra do público de baixa e média renda, com repasse limitado pela concorrência de importados."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Sem dívida e com caixa remunerado a juros, juros mais altos por risco fiscal elevam a receita financeira e compensam o efeito sobre o consumo."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Grendene, Press Release 3T26 e 9M26",
+   "url": "https://ri.grendene.com.br/Arquivos/releases/2620_3T26.pdf",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Jornal do Comércio: Lucro da Grendene cai 12,1% no terceiro trimestre apesar de avanço das vendas no Brasil",
+   "url": "https://www.jornaldocomercio.com/economia/2026/11/1269844-lucro-da-grendene-cai-121-no-terceiro-trimestre-apesar-de-avanco-das-vendas-no-brasil.html",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "O Povo: Grendene registra alta de 3,6% na venda de calçados no Brasil",
+   "url": "https://mais.opovo.com.br/jornal/economia/2026/11/06/grendene-registra-alta-de-36-na-venda-de-calcados-no-brasil.html",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Grendene vende subsidiária nos EUA por US$ 3,6 milhões",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/grendene-vende-subsidiaria-nos-eua-por-us-36-milhoes/",
+   "data": "2026-08-07"
+  },
+  {
+   "titulo": "Grendene, página de RI (ITR 3T26)",
+   "url": "https://ri.grendene.com.br/Arquivos/IFRS_ITR/2622_ITR_30-09-2026_assinado.pdf",
+   "data": "2026-11-05"
+  }
+ ]
+}

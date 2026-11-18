@@ -1,0 +1,82 @@
+{
+ "ticker": "DIRR3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Incorporadora de habitação popular focada no Minha Casa Minha Vida, com a subsidiária Riva para média renda e Faixa 4. Opera só no Brasil, com dívida líquida baixa (16,8% do patrimônio).",
+ "modelo": "A Direcional desenvolve, constrói e vende empreendimentos residenciais de grande escala, com construção industrializada e padronizada. A marca Direcional atende principalmente as faixas 1 e 2 do Minha Casa Minha Vida, financiadas pelo FGTS, e a Riva atende média renda e as faixas 3 e 4 do programa. A receita é reconhecida conforme o avanço da obra e depende de lançamentos, vendas e repasses, com distribuição relevante de dividendos (R$ 1,5 bi pagos em 2025).",
+ "segmentos": [
+  {
+   "nome": "Direcional (MCMV faixas 1 e 2)",
+   "peso_receita": null,
+   "periodo": "3T26",
+   "obs": "Marca principal; foco em habitação popular com funding do FGTS."
+  },
+  {
+   "nome": "Riva (média renda e MCMV faixas 3 e 4)",
+   "peso_receita": null,
+   "periodo": "3T26",
+   "obs": "Subsidiária criada em 2020, com participação minoritária vendida a terceiros."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão); a divisão por marca não foi confirmada em fonte oficial lida.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Toda a operação está no Brasil, com liderança de mercado em 4 regiões e atuação em 9 grandes regiões metropolitanas. Não há receita nem projetos no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais, com financiamento à produção pelo SFH e dívida de mercado de capitais local. Alta do dólar só afeta de forma indireta, via custo de alguns insumos de obra e juros."
+ },
+ "momento": "No 3T26 (divulgado em 09/11/2026), a receita líquida consolidada foi de R$ 1,16 bi, estável sobre o 3T25, e o lucro líquido de R$ 200,7 mi, queda de 12,6%, abaixo do consenso LSEG de R$ 221 mi. A margem bruta ajustada chegou a 45,2%, recorde, e a margem bruta contábil a 43,1% (+3 p.p.), com venda de estoque de margem maior. Os lançamentos somaram R$ 1,35 bi em VGV (-37%) e R$ 4,4 bi no ano (-10,8%), e a geração de caixa caiu para R$ 10,2 mi (R$ 112,8 mi no 3T25) pela menor velocidade de venda dos lançamentos. A dívida líquida subiu para R$ 499 mi (R$ 104 mi um ano antes), equivalente a 16,8% do patrimônio líquido, com prazo médio de 63 meses.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "O MCMV usa juros subsidiados do FGTS e pouco depende da Selic, mas a Riva, com média renda e Faixa 4, sente o custo do crédito imobiliário, e a dívida corporativa fica mais barata."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em dólar; o efeito sobre insumos de construção é indireto e pequeno."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Aço e cimento pesam no custo de obra, mas o efeito é diluído e a construção industrializada ajuda a controlar custos."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais emprego formal amplia o número de famílias aptas ao financiamento, mas a demanda do MCMV é pouco cíclica."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "O INCC eleva o custo de obra enquanto os preços-teto do MCMV limitam o repasse ao comprador."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "A empresa depende do orçamento do MCMV, dos subsídios do FGTS e das regras definidas pelo governo, mais expostos em cenário de ajuste fiscal."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Direcional, Apresentação de Resultados 3T26 (documento enviado à CVM)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/DIRR3/52355/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Direcional, Apresentação institucional 3T26 (documento enviado à CVM)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/DIRR3/52356/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "InfoMoney (Reuters): Direcional (DIRR3) tem lucro de R$ 201 milhões no 3º tri, queda de 12,6%",
+   "url": "https://www.infomoney.com.br/mercados/direcional-dirr3-resultados-terceiro-trimestre-2026/",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Money Times (Reuters): Direcional (DIRR3) tem lucro de R$ 201 milhões no 3º trimestre, queda de 12,6%",
+   "url": "https://www.moneytimes.com.br/direcional-dirr3-tem-lucro-de-r-201-milhoes-no-3o-trimestre-queda-de-126-fets/",
+   "data": "2026-11-10"
+  }
+ ]
+}

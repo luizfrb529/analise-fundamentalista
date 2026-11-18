@@ -1,0 +1,87 @@
+{
+ "ticker": "ECOR3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Concessionária de rodovias controlada pela italiana ASTM, com 12 concessões e cerca de 5 mil km em 7 estados, além do Ecoporto em Santos. Tarifas e 78% da dívida bruta são corrigidas pela inflação.",
+ "modelo": "A EcoRodovias administra rodovias concedidas (entre elas Ecovias Noroeste Paulista, Raposo Castello, Rio Minas, Capixaba, Araguaia, Norte Minas, Minas Goiás, Cerrado e Ecovias das Gerais), arrecadando pedágio de veículos leves e pesados em contratos de longo prazo com reajuste anual pela inflação. A receita é recorrente e depende de tráfego e tarifa; em troca, assume obrigações de investimento elevadas. Possui também o terminal portuário Ecoporto, em Santos.",
+ "segmentos": [
+  {
+   "nome": "Concessões rodoviárias",
+   "peso_receita": null,
+   "periodo": "3T26",
+   "obs": "Concentram quase toda a receita líquida ajustada de R$ 1.953 mi; tráfego comparável +1,8%."
+  },
+  {
+   "nome": "Ecoporto Santos",
+   "peso_receita": null,
+   "periodo": "3T26",
+   "obs": "Único ativo portuário; peso na receita não confirmado."
+  }
+ ],
+ "segmentos_base": "Receita líquida ajustada (exclui receita de construção)",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera apenas no Brasil, em 7 estados do Sudeste e do Centro-Oeste, incluindo SP, RJ, MG, ES e GO. O controlador ASTM atua na Itália e em outros países, mas essas operações não pertencem à EcoRodovias."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita em reais. A dívida bruta está 78% atrelada a IPCA/TLP e cerca de 19% a CDI, sem parcela relevante em dólar; alta do dólar não tem efeito direto relevante."
+ },
+ "momento": "No 3T26 (divulgado em 09/11/2026), a receita líquida ajustada foi de R$ 1.953 mi (-1,0% sobre o 3T25) e o Ebitda ajustado de R$ 1.457 mi (-3,1%, margem de 74,6%), afetados pelo fim da concessão Ecovias Sul em março de 2026; sem ela, receita +8% e Ebitda +6,7%. O lucro recorrente dos controladores foi de R$ 321,2 mi (+17,5%), e o contábil ficou em torno de R$ 410 mi (-4,9%), com crédito fiscal de R$ 86,4 mi da Ecovias Capixaba. A dívida líquida subiu 19,4% em 12 meses, para R$ 24,5 bi, com alavancagem de 4,3x (3,8x um ano antes), pelo capex de R$ 1,98 bi no trimestre (+52,6%). A Ecovias das Gerais iniciou operação em novembro de 2026, com cobrança de pedágio antecipada para dezembro de 2026.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com alavancagem de 4,3x, capex pesado e contratos de décadas, juros reais menores reduzem o custo de novas dívidas e elevam o valor presente das concessões."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida em reais; sem exposição cambial relevante."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Efeito apenas indireto, via maior circulação de caminhões de safra e minério em rodovias de MG, GO e ES."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Tráfego de veículos pesados, que puxou o crescimento do 3T26, acompanha a produção e o transporte de cargas."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "As tarifas são reajustadas pelo IPCA, mas 78% da dívida bruta também é corrigida por inflação e de forma imediata; a empresa atribuiu ao IPCA menor a queda da despesa financeira no 3T26."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal eleva juros reais longos, encarecendo o financiamento do capex e reduzindo o valor das concessões."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "EcoRodovias, Apresentação de Resultados 3T26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/ECOR3/52357/",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "EcoRodovias, Apresentação institucional 2026 (estrutura acionária e portfólio)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/ECOR3/53220/",
+   "data": "2026-11-17"
+  },
+  {
+   "titulo": "InfoMoney: Ecorodovias tem lucro de R$ 407 mi no 3º tri, queda de 5,3%",
+   "url": "https://www.infomoney.com.br/mercados/ecorodovias-ecor3-resultados-terceiro-trimestre-2026/",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): EcoRodovias eleva lucro em 17,5%, mas dívida avança",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/ecorodovias-eleva-lucro-em-175-mas-divida-avanca/",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "EcoRodovias, Ata do Conselho de Administração que aprovou o ITR 3T26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/ECOR3/52561/",
+   "data": "2026-11-09"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "ticker": "RADL3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior rede de farmácias do país (Droga Raia e Drogasil), com 3.770 lojas e 19,1% de participação de mercado. A receita é toda no Brasil e quase 30% das vendas do varejo já passa por canais digitais.",
+ "modelo": "A RD Saúde vende medicamentos de marca, genéricos, isentos de prescrição e itens de higiene e beleza em farmácias próprias, por aplicativos e site, com entrega ou retirada em até 60 minutos. Complementa a receita com serviços farmacêuticos (vacinação, salas Mais Saúde), mídia e o programa de fidelidade Stix, que passou a ser 100% da RD em julho de 2026. A receita é recorrente e ligada ao consumo de saúde; os preços de medicamentos seguem reajuste anual definido pela CMED.",
+ "segmentos": [
+  {
+   "nome": "Varejo em lojas físicas",
+   "peso_receita": 0.706,
+   "periodo": "3T26",
+   "obs": "Vendas em mesmas lojas cresceram 10,1%; 83 aberturas líquidas no trimestre."
+  },
+  {
+   "nome": "Canais digitais",
+   "peso_receita": 0.294,
+   "periodo": "3T26",
+   "obs": "R$ 3,8 bi (+27,2%), 83% via aplicativos."
+  }
+ ],
+ "segmentos_base": "Receita bruta do varejo por canal. Medicamentos GLP-1 responderam por cerca de 12% da receita no 3T26.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera só no Brasil, em 697 municípios, com 33% de participação no estado de São Paulo e 24,8% no Centro-Oeste."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais. O dólar afeta indiretamente o custo de medicamentos importados, mas os preços são regulados e repassados no reajuste anual."
+ },
+ "momento": "No 3T26 (divulgado em 03/11/2026), a receita bruta foi de R$ 13,2 bi (+16,0%) e a líquida de R$ 11,4 bi (+7,8%); o Ebitda ajustado somou R$ 1,02 bi (+14,7%, margem de 7,8%, -0,1 p.p.) e o lucro líquido ajustado R$ 439,1 mi (+9,2%, ou +20,1% sem a 4Bio, vendida e tratada como operação descontinuada). O lucro contábil caiu 10,3%, para R$ 426,9 mi, por efeitos da venda da 4Bio. A dívida líquida ajustada caiu 15,4%, para R$ 2,9 bi, ou 0,8x o Ebitda (1,1x um ano antes), mas o fluxo de caixa livre recuou de R$ 615,6 mi para R$ 160,2 mi. A rede fechou setembro com 3.770 farmácias e manteve a meta de 330 a 350 aberturas brutas em 2026.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Com alavancagem de 0,8x Ebitda, juro menor reduz a despesa financeira e o custo de capital de giro, com efeito moderado."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em dólar; custos de medicamentos importados são repassados no reajuste anual regulado."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Renda maior favorece perfumaria, higiene e itens não essenciais, mas a venda de medicamentos é pouco sensível ao ciclo."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "O teto de preço de medicamentos é reajustado anualmente pela CMED com base na inflação, mas despesas com pessoal e aluguel sobem antes, efeitos que se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Baixa alavancagem e demanda defensiva limitam o efeito de juros longos mais altos sobre o negócio."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Diário do Grande ABC (Estadão Conteúdo): RD Saúde, lucro líquido ajustado soma R$ 439 mi no 3T26",
+   "url": "https://www.dgabc.com.br/Noticia/4366654/rd-saude-lucro-liquido-ajustado-soma-r-439-mi-no-3tri26-alta-de-9-2-na-comparacao-anual",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "Mercado & Consumo: Com impulso dos canais digitais em 27%, RD Saúde fecha 3T com receita de R$ 12 bi",
+   "url": "https://mercadoeconsumo.com.br/03/11/2026/noticias/com-impulso-dos-canais-digitais-em-27-rd-saude-fecha-3t-com-receita-de-r-12-bi/",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "Análise de Ações: Lucro ajustado da RD Saúde (RADL3) cresce 9,2% no 3º trimestre de 2026",
+   "url": "https://www.analisedeacoes.com/noticias/lucro-ajustado-da-rd-saude-radl3-cresce-9-2-no-3-trimestre-de-2026/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "brapi (com base em InfoMoney, Money Times, Suno, Forbes e Bloomberg Línea): Lucro ajustado da Raia Drogasil sobe 20,1% sem efeito 4Bio",
+   "url": "https://brapi.dev/news/lucro-ajustado-da-raia-drogasil-sobe-20-1-sem-efeito-4bio-19341fc6",
+   "data": "2026-11-07"
+  }
+ ]
+}

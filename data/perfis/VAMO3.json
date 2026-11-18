@@ -1,0 +1,93 @@
+{
+ "ticker": "VAMO3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior locadora de caminhões, máquinas e equipamentos do país, controlada pela Simpar. Cerca de 73% da receita vem de contratos de locação de longo prazo; a dívida alta torna o lucro muito sensível aos juros.",
+ "modelo": "A Vamos compra caminhões, máquinas agrícolas e equipamentos e os aluga a empresas, em contratos de longo prazo (em geral 5 anos) com manutenção incluída, atendendo agronegócio, indústria, logística e setor sucroenergético. A receita de locação é recorrente; no fim do contrato, os ativos são realugados (programa Sempre Novo) ou vendidos como seminovos, receita pontual de margem baixa. Tem ainda uma divisão industrial de implementos e carrocerias.",
+ "segmentos": [
+  {
+   "nome": "Locação",
+   "peso_receita": 0.73,
+   "periodo": "3T26",
+   "obs": "R$ 1.156,4 mi (+11,5%); taxa de ocupação de 88,8%."
+  },
+  {
+   "nome": "Venda de ativos (seminovos)",
+   "peso_receita": 0.19,
+   "periodo": "3T26",
+   "obs": "R$ 310,3 mi (-20,9%), com margem bruta entre 0% e 1%."
+  },
+  {
+   "nome": "Indústria",
+   "peso_receita": 0.08,
+   "periodo": "3T26",
+   "obs": "R$ 127,5 mi (+28,2%)."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Operação concentrada no Brasil, com clientes em todo o país e forte presença no agronegócio do Centro-Oeste. Não foram identificadas operações relevantes no exterior nos documentos consultados."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita em reais. O grupo Simpar informa no ITR que dívidas em dólar ou euro são trocadas para CDI por swap, de modo que a exposição cambial da Vamos é pequena; alta do dólar afeta indiretamente via preço de caminhões e máquinas novos."
+ },
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita líquida foi de R$ 1.594 mi (+4,3% sobre o 3T25), o Ebitda de R$ 1.035,5 mi (+15,7%, margem de 65,0% contra 58,5%) e o lucro líquido de R$ 150,9 mi (+199,1%), ajudado por despesa financeira 14,7% menor (R$ 479,8 mi). A dívida líquida era de R$ 11,7 bi em setembro, com alavancagem de 2,93x (3,27x um ano antes), após aumento de capital privado concluído em abril de 2026. As extensões de contrato somaram R$ 970,1 mi em 9M26, acima do teto do guidance anual (R$ 900 mi). Em maio de 2026, Christian Hahn da Silva, vindo da Automob, assumiu como CEO no lugar de Gustavo Couto.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "A despesa financeira consome quase metade do Ebitda (R$ 480 mi contra R$ 1,04 bi no 3T26); cada corte de juros vai quase direto ao lucro e estimula novas contratações de frota."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida em reais; o efeito indireto é o encarecimento de caminhões e máquinas, que valoriza a frota usada mas encarece a reposição."
+  },
+  "commodities_subindo": {
+   "nota": 1,
+   "porque": "O agronegócio é o principal cliente; renda agrícola maior aumenta a demanda por locação de caminhões e máquinas e reduz devoluções."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Mais atividade eleva a demanda por transporte e equipamentos, a ocupação da frota e o preço dos seminovos."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Os contratos são reajustados por índice de preços apenas uma vez por ano, enquanto inflação mais alta tende a manter juros elevados sobre a dívida em CDI."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Com alavancagem perto de 3x e dívida pós-fixada, juros mais altos por risco fiscal elevam o custo financeiro e dificultam a desalavancagem."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Simpar, ITR 3T26 com comentário de desempenho (inclui dados da Vamos)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/SIMH3/51802/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Vamos, transcrição da teleconferência de resultados 1T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/7715d566-5b13-44f4-96c2-0949202d82b4/96c527a3-670c-b78f-d882-995df6575aa1?origin=2",
+   "data": "2026-05-07"
+  },
+  {
+   "titulo": "Money Times (Estadão Conteúdo): Vamos tem lucro líquido de R$ 150,9 milhões no 3º trimestre",
+   "url": "https://www.moneytimes.com.br/?p=1420567",
+   "data": "2026-10-30"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Grupo Vamos registra receita de R$ 1,59 bilhão no terceiro trimestre",
+   "url": "https://timesbrasil.com.br/brasil/grupo-vamos-registra-receita-de-r-159-bilhao-no-terceiro-trimestre-com-avanco-de-115-em-locacao/",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "InfoMoney: Simpar reverte prejuízo e lucra R$ 137 milhões no 3T26 (destaques da Vamos)",
+   "url": "https://www.infomoney.com.br/?p=3562531",
+   "data": "2026-11-04"
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "ticker": "TUPY3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Fabricante global de blocos e cabeçotes de motor para caminhões, máquinas e geradores. Cerca de 61% da receita é em moeda estrangeira, com fábricas no Brasil, México e Portugal.",
+ "modelo": "A Tupy fabrica componentes estruturais em ferro fundido (blocos e cabeçotes de motor), usinados e motores montados por contrato para montadoras de veículos comerciais, máquinas agrícolas, de construção e geradores. Também vende grupos geradores e motores próprios (Energia & Descarbonização) e peças de reposição e produtos hidráulicos (Distribuição, com a marca MWM). A receita é recorrente, ligada a contratos de fornecimento de longo prazo com montadoras, mas oscila com o ciclo de produção de caminhões e máquinas.",
+ "segmentos": [
+  {
+   "nome": "Componentes Estruturais e Contratos de Manufatura",
+   "peso_receita": 0.86,
+   "periodo": "9M26",
+   "obs": "R$ 6.358 mi; 68% vendido ao mercado externo."
+  },
+  {
+   "nome": "Distribuição (reposição e hidráulicos)",
+   "peso_receita": 0.08,
+   "periodo": "9M26",
+   "obs": "R$ 560 mi."
+  },
+  {
+   "nome": "Energia & Descarbonização",
+   "peso_receita": 0.06,
+   "periodo": "9M26",
+   "obs": "R$ 460 mi; afetada por juros altos e restrição de crédito no Brasil."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 0.39,
+  "exterior_pct": 0.61,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "No 3T26, 43% da receita veio da América do Norte, 42% das Américas do Sul e Central, 12% da Europa e 3% de outras regiões. Tem fábricas no Brasil, no México e em Portugal, e o volume vendido à América do Norte subiu 26% no 3T26."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "alta",
+  "texto": "Receitas em moeda estrangeira foram 61% do total no 3T26 e 53% da dívida está em moeda estrangeira, enquanto 35% do caixa está fora do real. Alta do dólar aumenta receita e Ebitda em reais, mas também eleva a dívida; o efeito líquido operacional é positivo."
+ },
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita líquida foi de R$ 2,6 bi (+8% sobre o 3T25), com volume 10% maior, e o Ebitda ajustado de R$ 298 mi (+81%, margem de 11,5%, ou cerca de 9,5% sem efeitos pontuais de negociações comerciais). O lucro líquido foi de R$ 54 mi, ante prejuízo de R$ 40 mi um ano antes. A dívida líquida caiu para R$ 1,7 bi (-23% em 12 meses) e a alavancagem para 2,94x o Ebitda ajustado (4,14x em junho), com caixa de R$ 2,4 bi. Em outubro de 2026, recomprou debêntures com valor nominal de R$ 257 mi por R$ 250 mi e recebeu R$ 300 mi do BNDES no programa Brasil Soberano, a taxa fixa de 10,41% ao ano.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor reduz o custo da dívida em reais e favorece vendas de geradores e caminhões no Brasil, que a empresa diz estarem afetadas por juros altos; a maior parte da receita, porém, é externa."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Com 61% da receita em moeda estrangeira, real mais fraco eleva receita e margem em reais; o ganho é parcialmente compensado pela dívida em moeda estrangeira (53% do total)."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Sucata, ferro-gusa e energia pesam no custo, mas os contratos repassam a variação com defasagem; preço agrícola mais alto ajuda a demanda de máquinas, efeitos que se compensam."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade eleva a produção de caminhões e máquinas no Brasil, mas o motor principal hoje é a demanda da América do Norte."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Custos de insumos e mão de obra sobem, mas há mecanismos contratuais de repasse com defasagem."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Risco fiscal tende a enfraquecer o real, o que ajuda a receita externa, e a elevar juros, o que prejudica o mercado interno; efeitos que se compensam."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Tupy, Release de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/5ab6a371-dd2f-452a-b6b2-22c97ed0abbb/b5bd7726-5fc0-41a3-b6ba-9c427dc44260",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "NSC Total: Gigante metalúrgica do Brasil, Tupy anuncia lucro líquido de R$ 54 milhões",
+   "url": "https://www.nsctotal.com.br/economia/gigante-metalurgica-do-brasil-tupy-anuncia-lucro-liquido-de-r-54-milhoes-nos-nove-primeiros-meses-do-ano",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Tupy RI, Central de Resultados",
+   "url": "https://ri.tupy.com.br/informacoes-financeiras/central-de-resultados/",
+   "data": "2026-11-18"
+  }
+ ]
+}

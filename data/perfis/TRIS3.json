@@ -1,0 +1,82 @@
+{
+ "ticker": "TRIS3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Incorporadora paulistana de médio e alto padrão que migra para o Minha Casa Minha Vida: o programa já é 64% do banco de terrenos e mais da metade dos lançamentos de 2026. Receita toda no Brasil.",
+ "modelo": "A Trisul incorpora e constrói empreendimentos residenciais na cidade e na região metropolitana de São Paulo, em duas linhas: Médio/Alto Padrão (MAP, inclui compactos e alto padrão) e econômico, no Minha Casa Minha Vida (como a linha Elev). A receita é reconhecida conforme o avanço das obras e depende do ciclo de lançamentos e vendas; não há receita recorrente relevante. As obras são financiadas principalmente com SFH, e a carteira de recebíveis somava R$ 2,39 bi em set/26.",
+ "segmentos": [
+  {
+   "nome": "Minha Casa Minha Vida",
+   "peso_receita": 0.64,
+   "periodo": "3T26",
+   "obs": "Cinco lançamentos no programa em 2026; meta de R$ 1 bi em VGV no ano, mais de 50% do total."
+  },
+  {
+   "nome": "Médio/Alto Padrão (MAP)",
+   "peso_receita": 0.36,
+   "periodo": "3T26",
+   "obs": "Inclui um projeto de alto padrão de R$ 244 mi, com 56 unidades, lançado no 3T26 no condomínio Tutóia."
+  }
+ ],
+ "segmentos_base": "Banco de terrenos (VGV potencial, % Trisul, R$ 6,5 bi). A Trisul não divulga a receita líquida por segmento; pela defasagem da receita por avanço de obra, o MAP ainda deve pesar mais na receita atual do que no banco de terrenos.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Atua apenas no estado de São Paulo, com foco na capital e região metropolitana. Não há operação nem projetos no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais: R$ 337 mi em financiamento à produção (SFH) e R$ 420 mi em capital de giro e debêntures, incluindo nota comercial de R$ 100 mi a CDI + 0,35% emitida após o trimestre. O dólar afeta apenas de forma indireta."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita líquida foi de R$ 338,1 mi (-9,3% sobre o 3T25) e o lucro líquido de R$ 45,9 mi (-16,4%), com margem líquida de 13,6%; a margem bruta subiu para 30,2% (+1,6 p.p. no ano e +4,7 p.p. desde o 1T26). As vendas líquidas (% Trisul) foram de R$ 413,1 mi (+0,9%) e somaram R$ 1,27 bi nos 9M26 (+29,0%). Com entregas fortes, gerou R$ 134,8 mi de caixa operacional e reduziu a dívida líquida para R$ 319,8 mi (20,3% do patrimônio, menor nível desde 2021). Após o trimestre, captou R$ 100 mi com a Caixa no programa Eco Invest Brasil, e o MCMV passou a representar 64% do banco de terrenos (55% no 2T26).",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "A linha MAP depende de crédito SBPE e ganha com juro menor, mas a fatia crescente de MCMV usa FGTS com taxa subsidiada e a dívida líquida excluindo SFH é próxima de zero, o que reduz o efeito total."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em dólar; o efeito indireto via insumos é pequeno."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Não há receita ligada a commodities; aço e cimento pesam no custo, mas são parcialmente repassados via INCC."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda e emprego formal ampliam a demanda tanto no médio padrão quanto no MCMV."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Alta de custos de obra pressiona margens, especialmente no MCMV, onde os tetos de preço não acompanham a inflação no mesmo ritmo."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Pesa pelos dois lados: juros longos maiores reduzem vendas no médio e alto padrão, e o aperto fiscal pode limitar subsídios do MCMV, agora a maior parte do banco de terrenos."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Trisul, Release de Resultados 3T26 (documento entregue à CVM, via Investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/TRIS3/52866/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Trisul, Prévia Operacional 3T26 (documento entregue à CVM, via Investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/TRIS3/51114/",
+   "data": "2026-10-20"
+  },
+  {
+   "titulo": "InfoMoney: Sanepar, JHSF, Unipar, IMC e mais empresas divulgam resultados no 3T (inclui Trisul)",
+   "url": "https://www.infomoney.com.br/mercados/sanepar-jhsf-unipar-imc-e-mais-empresas-divulgam-resultados-no-3t/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Euqueroinvestir: Trisul tomba quase 7% após balanço do 1T26 (contexto da migração para baixa renda)",
+   "url": "https://euqueroinvestir.com/acoes/trisul-tomba-quase-7-nesta-sexta-entenda",
+   "data": "2026-05-15"
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "ticker": "MDNE3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Incorporadora líder no Nordeste, de alto, médio padrão e econômico (Mood e Ún1ca). Receita 100% no Brasil; quase dois terços vêm do modelo de condomínio fechado.",
+ "modelo": "A Moura Dubeux desenvolve empreendimentos residenciais e comerciais nas capitais do Nordeste, com as marcas Moura Dubeux (alto e médio padrão, Beach Class), Mood (médio padrão) e Ún1ca (baixa renda, Minha Casa Minha Vida). Atua em dois formatos: incorporação tradicional, com receita reconhecida conforme a evolução da obra, e condomínio fechado (preço de custo), em que ganha taxas de administração e de adesão com menor uso de capital. A receita é pontual, ligada a lançamentos e vendas, mas com visibilidade dada pela carteira de recebíveis e pelo resultado a apropriar.",
+ "segmentos": [
+  {
+   "nome": "Condomínio",
+   "peso_receita": 0.64,
+   "periodo": "9M26",
+   "obs": "R$ 1.326,8 mi de receita líquida (+49,9% sobre 9M25)."
+  },
+  {
+   "nome": "Incorporação",
+   "peso_receita": 0.36,
+   "periodo": "9M26",
+   "obs": "R$ 741,3 mi (-3,4%); inclui as marcas Mood e Ún1ca."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Opera apenas no Nordeste: Pernambuco, Ceará, Bahia, Alagoas, Rio Grande do Norte, Paraíba e Sergipe. Do estoque a valor de mercado em set/26, 36,5% está em Pernambuco, 28,2% no Ceará e 17,0% na Bahia; não há operação no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são integralmente em reais; a dívida bruta de cerca de R$ 1,35 bi em set/26 é formada por financiamentos SFH e SFI (R$ 976 mi) e por debêntures e notas comerciais (R$ 370 mi). Alta do dólar não tem efeito direto relevante."
+ },
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita líquida foi de R$ 709 mi (+29,3% sobre o 3T25), a margem bruta de 36,5% e o lucro líquido de R$ 150 mi (+27,7%, margem de 21,2%); em 9M26 o lucro somou R$ 480 mi (+55,6%). Os lançamentos do trimestre chegaram a R$ 1,55 bi (%MD, +15,5%), mas as vendas líquidas caíram 21,5%, para R$ 842 mi, com distratos de 8,3% das vendas brutas. A dívida líquida subiu para R$ 340 mi (14,0% do patrimônio líquido, ante 2,5% em junho), após consumo de caixa de R$ 169 mi, dos quais R$ 97 mi na compra do terreno dos Correios em Salvador. Na teleconferência de 06/11/2026, segundo o Valor Econômico, o presidente disse ver 2027 como o ano mais difícil desde o IPO e admitiu reduzir o guidance e a exposição ao MCMV se necessário.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Juro menor barateia o crédito imobiliário do comprador e o financiamento SFH das obras, e a própria empresa cita a pausa nos cortes da Selic como motivo de cautela para 2027."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida em reais; o efeito é só indireto, via custo de alguns insumos de obra."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Aço e cimento pesam no custo, mas o efeito aparece via INCC e é parcialmente repassado; não há exposição direta a preços de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda e emprego no Nordeste sustentam vendas, mas o público de médio e alto padrão é menos sensível ao ciclo."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação maior eleva o INCC das obras e leva a juros mais altos; os recebíveis corrigidos compensam só em parte."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Risco fiscal maior pressiona juros longos e o crédito imobiliário, e afeta a disposição de compra e o programa MCMV, ao qual a Ún1ca está ligada."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Moura Dubeux, Divulgação de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/0b55ea34-4419-4e98-859b-742720701ad7/abf8c0f3-8520-4ade-b28f-e13103482b50",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Moura Dubeux, Divulgação de Resultados 2T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/0b55ea34-4419-4e98-859b-742720701ad7/46901920-45d1-517f-af04-bf4fd4ad79e4?origin=2",
+   "data": "2026-08-12"
+  },
+  {
+   "titulo": "InfoMoney: Alupar, Moura Dubeux, Wiz Co e Lojas Quero-Quero divulgam resultados no 3T",
+   "url": "https://www.infomoney.com.br/mercados/alupar-moura-dubeux-wiz-co-e-lojas-quero-quero-divulgam-resultados-no-3t/",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Money Times: Moura Dubeux (MDNE3), ações sobem após prévia do 3T26",
+   "url": "https://www.moneytimes.com.br/moura-dubeux-mdne3-acoes-sobem-na-bolsa-apos-previa-do-3t26-o-que-dizem-os-analistas-igdl/",
+   "data": "2026-10-09"
+  },
+  {
+   "titulo": "brapi (reprodução de reportagem do Valor Econômico): Moura Dubeux vê 2027 mais difícil",
+   "url": "https://brapi.dev/news/moura-dubeux-ve-2027-mais-dificil-e-pode-cortar-guidance-pela-metade-caa6387a",
+   "data": "2026-11-07"
+  }
+ ]
+}

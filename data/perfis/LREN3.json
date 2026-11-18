@@ -1,0 +1,98 @@
+{
+ "ticker": "LREN3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Varejista de moda com as marcas Renner, Youcom e Camicado e o braço financeiro Realize. A marca Renner gera mais de 90% da receita de varejo, quase toda no Brasil.",
+ "modelo": "A Lojas Renner desenvolve e vende vestuário, calçados e acessórios em lojas próprias e no digital (Renner e Youcom) e artigos de casa e decoração (Camicado), com produção terceirizada no Brasil e no exterior. A Realize CFI oferece cartão próprio e cartões de bandeira aos clientes, gerando receita de juros e tarifas. O negócio é recorrente, com 449 lojas Renner, 162 Youcom e 99 Camicado em set/26, e a empresa opera com caixa líquido.",
+ "segmentos": [
+  {
+   "nome": "Renner",
+   "peso_receita": 0.92,
+   "periodo": "9M26",
+   "obs": "R$ 8,79 bi de receita líquida (+0,8%); no 3T26 caiu 2,4%."
+  },
+  {
+   "nome": "Youcom",
+   "peso_receita": 0.04,
+   "periodo": "9M26",
+   "obs": "R$ 402,4 mi (+9,3%)."
+  },
+  {
+   "nome": "Camicado",
+   "peso_receita": 0.04,
+   "periodo": "9M26",
+   "obs": "R$ 401,1 mi (+1,3%)."
+  }
+ ],
+ "segmentos_base": "Receita líquida de varejo (R$ 9,59 bi no 9M26). O resultado da Realize (serviços financeiros) é reportado à parte, com R$ 40,7 mi no 3T26.",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "A receita é gerada quase toda no Brasil. A companhia tem lojas na Argentina e no Uruguai, mas não divulga a receita separada desses países, que é pequena frente ao total."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita é em reais, com exceção marginal das lojas na Argentina e no Uruguai. Parte das mercadorias é importada da Ásia e tem custo atrelado ao dólar; a companhia tem caixa líquido de R$ 1,2 bi, de modo que uma alta do dólar afeta principalmente o custo das coleções."
+ },
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita líquida de varejo foi de R$ 3,03 bi (-1,6% sobre o 3T25), com vendas em mesmas lojas 2,5% menores; a margem bruta de varejo subiu 0,4 p.p., para 55,5%, e o Ebitda de varejo cresceu 3,2%, para R$ 530,3 mi. O resultado da Realize caiu 49%, para R$ 40,7 mi, por maiores perdas com crédito, e o lucro líquido foi de R$ 246,4 mi (-11,8%), ou R$ 187,1 mi (-24,5%) sem efeitos extraordinários, como juros Selic sobre créditos tributários. A empresa terminou setembro com caixa líquido de R$ 1,2 bi, recomprou R$ 500,3 mi em ações no 9M26 e, em fato relevante de 05/11/2026, descontinuou as projeções de crescimento de receita de varejo para 2026 e 2027 a 2030, mantendo as demais metas, como abertura de 50 a 60 lojas em 2026.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Juro menor melhora o crédito ao consumidor e a inadimplência da carteira de R$ 6,4 bi da Realize, além de estimular vendas de vestuário parceladas."
+  },
+  "dolar_subindo": {
+   "nota": -1,
+   "porque": "Parte das coleções é importada com custo em dólar e a receita é praticamente toda em reais, o que pressiona a margem bruta."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Algodão e fibras pesam no custo dos fornecedores, mas o efeito é diluído no preço final de moda."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Vestuário é consumo discricionário e a companhia citou a fraqueza do consumo como causa da queda de vendas no 3T26; mais emprego e renda elevam vendas e reduzem perdas de crédito."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação reduz a renda disponível do público de média renda e eleva despesas de pessoal e aluguel."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal mantém juros altos, encarece o funding da Realize e prolonga a cautela do consumidor."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Lojas Renner, Resultados 3T26 (documento CVM)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/LREN3/52026/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Lojas Renner, Fato Relevante: descontinuidade de projeção de receita",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/LREN3/52019/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Lojas Renner, Resultados 1T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/13154776-9416-4fce-8c46-3e54d45b03a3/0a3f6700-c502-b3cb-3062-a28e580a1cbb?origin=2",
+   "data": "2026-05-07"
+  },
+  {
+   "titulo": "Mercado&Consumo: Consumo fraco faz lucro da Lojas Renner recuar 11,8% no 3º tri",
+   "url": "https://mercadoeconsumo.com.br/06/11/2026/mc-capital/consumo-fraco-faz-lucro-da-lojas-renner-recuar-118-no-3o-tri-para-r-2464-milhoes/",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Diário do Grande ABC (Estadão Conteúdo): Lojas Renner tem lucro líquido de R$ 246 mi no 3tri26",
+   "url": "https://www.dgabc.com.br/Noticia/4367141/lojas-renner-tem-lucro-liquido-de-r-246-mi-no-3tri26-queda-anual-de-11-8",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Lojas Renner registra queda de 11,8% no lucro do terceiro trimestre de 2026",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/moda-textil/lojas-renner-registra-queda-de-118-no-lucro-do-terceiro-trimestre-de-2026/",
+   "data": "2026-11-05"
+  }
+ ]
+}

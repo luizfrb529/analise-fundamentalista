@@ -1,0 +1,88 @@
+{
+ "ticker": "MOVI3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Locadora de veículos do grupo Simpar, com aluguel de carros, terceirização de frotas e venda de seminovos. A dívida líquida de R$ 17,5 bi, quase toda em CDI, faz da Selic o principal fator de resultado.",
+ "modelo": "A Movida aluga carros a pessoas físicas, motoristas de aplicativo e empresas (Rent a Car), terceiriza frotas sob contratos de longo prazo e carro por assinatura (GTF) e revende os carros usados em lojas próprias de Seminovos. O aluguel é a receita recorrente e concentra o Ebitda; a venda de seminovos tem margem bruta baixa e serve para renovar a frota. É controlada pela Simpar e tem operação menor em Portugal (Drive on Holidays).",
+ "segmentos": [
+  {
+   "nome": "Seminovos",
+   "peso_receita": 0.4,
+   "periodo": "9M26",
+   "obs": "R$ 4.516,8 mi (queda de 13,6%); no 3T26, margem bruta de 5,8%."
+  },
+  {
+   "nome": "Rent a Car (locação)",
+   "peso_receita": 0.3,
+   "periodo": "9M26",
+   "obs": "R$ 3.459,8 mi (+25,4%); margem Ebitda de 69,8% no 3T26."
+  },
+  {
+   "nome": "Gestão e Terceirização de Frotas (locação)",
+   "peso_receita": 0.3,
+   "periodo": "9M26",
+   "obs": "R$ 3.440,0 mi (+13,8%); margem Ebitda de 79,2% no 3T26."
+  }
+ ],
+ "segmentos_base": "Receita líquida (locação responde pela maior parte do Ebitda)",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Quase toda a receita vem do Brasil, com lojas em 121 municípios. A operação em Portugal, com lojas em 11 municípios, já gera receita, mas o valor não é divulgado em separado."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita é em reais, salvo a pequena operação em Portugal em euros. A dívida em moeda estrangeira somava cerca de R$ 1,0 bi de R$ 21,0 bi em setembro de 2026, com proteção cambial por swap, então a alta do dólar tem efeito direto pequeno; o efeito indireto vem do preço de carros novos e peças."
+ },
+ "momento": "No 3T26 (divulgado em 27/10/2026), a receita líquida foi de R$ 3,87 bi (+2,8% sobre o 3T25), o Ebitda de R$ 1,795 bi (+21,4%) e o lucro líquido de R$ 152,1 mi (+117%), em linha com a prévia divulgada no início de outubro. As diárias do Rent a Car cresceram 22,2% e a tarifa média subiu para R$ 167, enquanto a venda de seminovos caiu 18,1% em unidades com a redução da idade da frota para 12 meses. A dívida líquida era de R$ 17,5 bi e a alavancagem por dívida líquida/Ebitda caiu de 2,74x para 2,56x em 12 meses, o menor nível em seis anos; captações recentes alongaram o prazo médio da dívida de 3,2 para 4,2 anos e reduziram o spread para CDI + 1,8%.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com R$ 17,5 bi de dívida líquida a CDI mais spread e despesa financeira de cerca de R$ 900 mi no trimestre, cada corte de juros eleva diretamente o lucro, além de sustentar o preço dos seminovos."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita em reais e dívida externa protegida por swap; o efeito vem só indiretamente, pelo preço de carros novos."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Sem ligação direta com o negócio; o combustível é pago pelo cliente."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Mais atividade eleva a demanda por aluguel, contratos de frota corporativa e a venda de seminovos."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Encarece a compra de carros, manutenção e mão de obra, e o repasse às tarifas ocorre com defasagem."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Pressiona juros futuros, encarecendo a rolagem de uma dívida grande e reduzindo o valor de revenda da frota."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Movida, ITR 3T26 com Comentário do Desempenho (CVM)",
+   "url": "http://www.rad.cvm.gov.br/ENETCONSULTA/frmDownloadDocumento.aspx?CodigoInstituicao=1&NumeroSequencialDocumento=161864",
+   "data": "2026-10-27"
+  },
+  {
+   "titulo": "CVM Dados Abertos: ITR de companhias abertas 2026 (DRE consolidada)",
+   "url": "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/ITR/DADOS/itr_cia_aberta_2026.zip",
+   "data": "2026-11-18"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Movida registra lucro de R$ 152 milhões no 3º trimestre",
+   "url": "https://timesbrasil.com.br/brasil/movida-registra-lucro-de-r-152-milhoes-no-3o-trimestre-alta-de-117/",
+   "data": "2026-10-27"
+  },
+  {
+   "titulo": "Movida, Earnings Release 3T25",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/437bf607-6e35-4ac9-973f-608b2497e42d/267bd5eb-77cf-6649-b7cc-e821aa30a779?origin=2",
+   "data": "2025-10"
+  }
+ ]
+}

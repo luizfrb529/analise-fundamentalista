@@ -1,0 +1,93 @@
+{
+ "ticker": "RAIL3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior operadora ferroviária do país, levando grãos, fertilizantes e combustíveis do Centro-Oeste aos portos. Cerca de 80% da receita vem da Operação Norte; o volume depende da safra e da exportação agrícola.",
+ "modelo": "A Rumo opera concessões ferroviárias (Malhas Norte, Paulista, Central, Oeste e Sul) e terminais de transbordo, cobrando frete por tonelada transportada, em contratos negociados com tradings e produtores, muitos com cláusula de volume mínimo (take or pay). A receita é recorrente, mas acompanha o tamanho e o ritmo da safra de soja e milho e a demanda por fertilizantes, combustíveis e açúcar. Também opera contêineres pela Brado Logística e desenvolve, em joint venture com a CHS, um terminal multimodal em Santos.",
+ "segmentos": [
+  {
+   "nome": "Operação Norte",
+   "peso_receita": 0.8,
+   "periodo": "3T26",
+   "obs": "R$ 3.155 mi (+4,3%); Malhas Norte, Paulista, Central e Oeste, volume de 19,4 bi de TKU (+4%)."
+  },
+  {
+   "nome": "Operação Sul",
+   "peso_receita": 0.14,
+   "periodo": "3T26",
+   "obs": "R$ 552 mi (-4,5%), com queda de volume de açúcar; segue com provisões de impairment trimestrais (R$ 166 mi no 3T26)."
+  },
+  {
+   "nome": "Operação de Contêineres (Brado)",
+   "peso_receita": 0.06,
+   "periodo": "3T26",
+   "obs": "R$ 246 mi (+13,6%), com 32,9 mil contêineres transportados."
+  }
+ ],
+ "segmentos_base": "Receita operacional líquida",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Toda a operação é no Brasil (Centro-Oeste, Sudeste e Sul), com destino principal nos portos de Santos, Paranaguá e São Francisco do Sul. A receita é em reais, mas boa parte da carga transportada é de exportação agrícola."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "O frete é cobrado em reais. Há R$ 4,7 bi em senior notes 2028 e 2032 em dólar, trocados para CDI por derivativos; a carteira de dívida tem custo médio de 102% do CDI. O efeito direto de alta do dólar é pequeno, e o indireto vem da competitividade da exportação de grãos, que tende a sustentar volume, e do diesel, que encarece custos."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita líquida foi de R$ 3.954 mi (+3,5% sobre o 3T25), o Ebitda ajustado de R$ 2.217 mi (-4,2%, margem de 56,1% contra 60,6%) e o lucro líquido de R$ 439 mi (+5,6%); o lucro ajustado, sem o impairment da Malha Sul, foi de R$ 605 mi (-17,4%). O volume cresceu 2%, para 23,9 bi de TKU, limitado por chuvas em setembro nos terminais de Santos. A dívida líquida chegou a R$ 17,8 bi, com alavancagem de 2,2x (1,9x um ano antes). A empresa adotou um novo plano de negócios focado em eficiência, corte de despesas e menor capex (R$ 1.303 mi no trimestre, -11,6%), e a Cosan, que detém cerca de 20% do capital, negocia a venda de uma fatia de 15%, ainda sem acordo em 17/11/2026.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com R$ 17,8 bi de dívida líquida majoritariamente atrelada ao CDI e capex elevado, juro menor reduz diretamente a despesa financeira, que somou R$ 926 mi no 3T26."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita em reais e dívida em dólar protegida por swap; o estímulo à exportação de grãos é compensado pelo diesel mais caro."
+  },
+  "commodities_subindo": {
+   "nota": 1,
+   "porque": "Preço maior de soja, milho e açúcar estimula plantio e exportação, aumentando a carga disponível e a disposição de pagar frete; o efeito é indireto."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Combustíveis, fertilizantes e contêineres de bens de consumo crescem com a atividade, mas o volume principal depende mais da safra que do PIB."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Os fretes são renegociados periodicamente, mas a inflação também corrige passivos de concessão, debêntures em IPCA e custos de diesel e pessoal; efeitos que se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior eleva juros longos, encarece a rolagem da dívida e reduz o valor presente de uma concessão de longo prazo com capex pesado."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Rumo, Relatório de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/003f6029-d45a-44ac-9c9e-869fe5df83fc/6c60caf6-cdfb-4ac0-8dcb-927d79d76ad1",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Rumo, Relatório de Resultados 1T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/003f6029-d45a-44ac-9c9e-869fe5df83fc/245895ea-1cd8-7a24-86ba-c589c358369b?origin=2",
+   "data": "2026-05-07"
+  },
+  {
+   "titulo": "InfoMoney: Compass e Rumo saltam após balanços e puxam Cosan",
+   "url": "https://www.infomoney.com.br/mercados/compass-e-rumo-sobem-apos-balancos-e-puxam-cosan-veja-o-que-agradou-mercado/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Money Times: Cosan negocia venda de participações na Rumo, Compass e Moove",
+   "url": "https://www.moneytimes.com.br/cosan-csan3-negocia-venda-de-participacoes-na-rumo-compass-e-moove-diz-jornal-lmrs/",
+   "data": "2026-11-17"
+  },
+  {
+   "titulo": "Money Times: Rumo tem resultado operacional em linha com esperado no 3º trimestre",
+   "url": "https://www.moneytimes.com.br/rumo-rail3-tem-resultado-operacional-em-linha-com-esperado-no-3o-trimestre-lmrs/",
+   "data": "2026-11-12"
+  }
+ ]
+}

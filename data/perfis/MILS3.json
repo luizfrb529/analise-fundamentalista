@@ -1,0 +1,82 @@
+{
+ "ticker": "MILS3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Locadora de plataformas aéreas, empilhadeiras, máquinas pesadas e formas para construção. Receita em reais, 83% da unidade Rental, e alavancagem baixa (1,1x).",
+ "modelo": "A Mills aluga equipamentos para indústria, construção, infraestrutura, mineração e varejo: plataformas elevatórias (Leves), máquinas da linha amarela (Pesados), empilhadeiras (Intralogística) e formas e escoramentos para obras. A receita é recorrente, com 56% da receita de locação em contratos de longo prazo no 3T26, complementada por venda de equipamentos usados.",
+ "segmentos": [
+  {
+   "nome": "Rental (Leves, Pesados e Intralogística)",
+   "peso_receita": 0.83,
+   "periodo": "3T26",
+   "obs": "R$ 407,7 mi (+3,3%), frota de cerca de 17,0 mil equipamentos."
+  },
+  {
+   "nome": "Formas e Escoramentos",
+   "peso_receita": 0.17,
+   "periodo": "3T26",
+   "obs": "Cerca de R$ 85 mi, calculado pela diferença entre a receita total e a unidade Rental."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera apenas no Brasil, com filiais em diversos estados. Não há operação no exterior nos documentos consultados."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida em reais; a dívida custa em média CDI + 1,13% ao ano. Alta do dólar afeta indiretamente o preço de reposição de equipamentos importados."
+ },
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita líquida foi de R$ 492,9 mi (+2,1% sobre o 3T25) e o Ebitda ajustado de R$ 256,1 mi (+0,6%, margem de 52,0%). O lucro líquido foi de R$ 130,9 mi (+94,5%), beneficiado por R$ 54,3 mi de créditos tributários extemporâneos; o lucro caixa foi de R$ 88,8 mi. A empresa terminou setembro com R$ 707,5 mi em caixa, dívida líquida de cerca de R$ 1,1 bi e alavancagem de 1,1x (1,5x um ano antes). O capex caiu 61,5%, para R$ 100,5 mi, e a administração cita concorrência intensa e maior oferta de equipamentos no mercado.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "A dívida é pequena (1,1x), mas juro menor estimula obras e investimentos dos clientes de construção e indústria, aumentando a demanda por locação."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida em reais; só encarece a reposição de equipamentos importados."
+  },
+  "commodities_subindo": {
+   "nota": 1,
+   "porque": "Mineração e agronegócio são clientes de máquinas pesadas; preços maiores ampliam investimentos nesses setores."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Demanda por plataformas, empilhadeiras e máquinas acompanha de perto a atividade de construção, indústria e logística."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Contratos permitem repasse de preços com o tempo, mas custos de peças e manutenção sobem junto, como já citado no 3T26."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Juros mais altos por risco fiscal adiam obras e investimentos, reduzindo a demanda por locação."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Mills, Release de Resultados 3T26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/MILS3/51772/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "InfoMoney: Lavvi, Méliuz, Pague Menos, Mills e Iochpe-Maxion divulgam resultados no 3T26",
+   "url": "https://www.infomoney.com.br/mercados/lavvi-meliuz-pague-menos-mills-e-iochpe-maxion-divulgam-resultados-no-3t26/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Mills, 4Q25 and 2025 Results (release)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/5a4be2ff-b3a2-4792-b967-e745978e71f9/a7007004-dbd3-857f-5c5a-c5ebe656b6ea?origin=1",
+   "data": "2026-03-18"
+  },
+  {
+   "titulo": "InfoMoney: Automob, Taurus, Melnick, Enjoei e mais empresas divulgaram resultados do 3T (dados 3T25 da Mills)",
+   "url": "https://www.infomoney.com.br/?p=3100352",
+   "data": "2025-11-12"
+  }
+ ]
+}

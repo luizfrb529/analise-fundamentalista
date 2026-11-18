@@ -28,7 +28,7 @@ const NAO_FIN = new Set(["divida_bruta", "divida_liquida", "ev", "p_ebitda", "p_
   "liquidez_imediata", "cobertura_juros", "divida_cp_pct", "margem_bruta", "margem_ebitda", "margem_ebit", "giro_ativo", "pmr", "pme",
   "pmp", "ciclo_financeiro", "roic", "roic_spread", "fco", "capex", "fcl", "ebitda", "capex_depreciacao", "conversao_caixa",
   "dividendos_sobre_fcl", "tir_caixa", "tir_dcf", "evebitda_vs_media5", "cagr_ebitda_5a", "cagr_ebitda_10a", "piotroski", "margem_fcl", "passivos_ativos", "pl_ativos"]);
-const SUPRIME_REC = new Set(["pl", "peg", "earnings_yield", "p_ebit", "p_ebitda", "ev_ebit", "ev_ebitda", "graham", "tir_implicita"]);
+const SUPRIME_REC = new Set(["pl", "peg", "earnings_yield", "p_ebit", "p_ebitda", "ev_ebit", "ev_ebitda", "tir_implicita"]);
 const ROT = {
   empresa: "Empresa", setor_micro: "Setor", preco: "Preço", var_12m: "12 meses", var_ano: "No ano", valor_mercado_brl: "Valor de mercado",
   tir_implicita: "TIR implícita", divliq_ebitda: "Dív. líq./EBITDA", margem_liquida: "Margem líquida", margem_bruta: "Margem bruta",
@@ -179,8 +179,6 @@ const POR_QUE = {
   pl_vs_media5: "Compara o P/L de hoje com a própria média de 5 anos: indica se a ação está mais cara ou mais barata que o normal dela.",
   evebitda_vs_media5: "Compara o EV/EBITDA de hoje com a média de 5 anos da própria empresa.",
   pvp_vs_media5: "Compara o P/VP de hoje com a média de 5 anos, leitura principal para bancos.",
-  graham: "Estimativa clássica de valor justo que combina lucro e patrimônio; serve como referência de margem de segurança.",
-  graham_margem: "Mostra a distância entre o preço e o valor de Graham: positivo indica preço abaixo da referência.",
   // TIR e crescimento implícito
   tir_lucro: "Estima o retorno anual que o preço embute pelo lucro. Permite comparar a ação com o retorno da renda fixa.",
   tir_caixa: "Mesma lógica da TIR pelo lucro, usando o caixa livre, que é mais difícil de maquiar.",
@@ -854,7 +852,7 @@ const GRUPOS_IND = [
   { nome: "Crescimento", ks: ["cagr_receita_5a", "cagr_lucro_5a", "cresc_receita_ltm", "cresc_lucro_ltm"] },
   { nome: "Endividamento", ks: ["divliq_ebitda", "divliq_pl", "liquidez_corrente", "cobertura_juros", "pl_ativos", "passivos_ativos"] },
 ];
-const PRINCIPAIS = new Set(["pl", "dy", "roic", "roe", "margem_liquida", "margem_ebitda", "margem_fcl", "cagr_receita_5a", "cagr_lucro_5a", "divliq_ebitda"]);
+const PRINCIPAIS = new Set(["pl", "dy", "roe", "margem_liquida", "margem_ebitda", "margem_fcl", "cagr_receita_5a", "cagr_lucro_5a", "divliq_ebitda"]);
 function cartaoInd(t, k, h) {
   const m = meta(k), v = val(t, k), st = D.fund[t].setor || {}, md = (st.mediana_grupo || {})[k];
   const sup = suprimido(t, k);
@@ -865,7 +863,7 @@ function cartaoInd(t, k, h) {
     const melhor = m.direcao ? (m.direcao > 0 ? v > md : v < md) : null;
     det = `${melhor === null ? "" : `<span class="${melhor ? "pos" : "neg"}">${melhor ? "▲" : "▼"}</span> `}Setor: ${fmtU(md, m.unidade, moedaDe(t))}`;
   }
-  const princ = PRINCIPAIS.has(k) && (k !== "roe" || isFin(t));
+  const princ = PRINCIPAIS.has(k);
   return `<div class="ind${princ ? " principal" : ""}">${princ ? '<span class="tag-principal">Principal</span>' : ""}<div class="rot">${esc(rot(k))}${tip(k)}</div>${serie.filter(ok).length >= 3 ? `<button class="graf" data-k="${k}" aria-label="Histórico de ${esc(rot(k))}">${ICONE_GRAF}</button>` : ""}
     <div class="val">${sup ? ND : fmt(t, k, v)}</div><div class="det">${det || "&nbsp;"}</div></div>`;
 }
@@ -944,7 +942,7 @@ async function pgAtivo(app, t) {
     <div class="cartao" style="margin-top:16px" id="tri"></div>
     <div class="cartao" style="margin-top:16px"><div class="cartao-cab"><h3>Histórico anual</h3><div class="abas" id="hist-anos" style="margin:0"><button data-n="5" class="ativo">5A</button><button data-n="10">10A</button></div></div><div id="hist-tabela"></div></div>
     <div class="cartao" style="margin-top:16px"><div class="cartao-cab"><div><h3>Preço sobre lucro (P/L) ano a ano</h3>
-      <p class="sub">Quantas vezes o preço da ação equivalia ao lucro por ação de cada ano. P/L 10 = o preço pagava 10 anos daquele lucro. Quanto menor, mais barato em relação ao lucro. A barra "Hoje" usa o preço atual e o lucro dos últimos 12 meses; a linha tracejada é a média de 5 anos. Anos com prejuízo não têm P/L.</p></div></div>
+      <p class="sub">Quantas vezes o preço da ação equivalia ao lucro por ação de cada ano. P/L 10 = o preço pagava 10 anos daquele lucro. Quanto menor, mais barato em relação ao lucro. A barra "Hoje" usa o preço atual e o lucro dos últimos 12 meses; a linha tracejada é a média de 5 anos. Anos com prejuízo aparecem em vermelho, sem P/L; passe o mouse para ver o valor.</p></div></div>
       <div class="grafico"><canvas id="g-lucro"></canvas></div></div>
   </section>
 
@@ -1075,11 +1073,10 @@ function blocoPrecoHoje(t) {
   else frase = "Crescimento implícito não calculado: falta fluxo de caixa livre (ou ROE) positivo para a conta.";
   const ref = A(t).moeda_reporte === "USD" ? "Treasury 10 anos" : "NTN-B longa";
   return `<div class="cartao"><h3>Ao preço de hoje</h3><p class="sub">Retorno anual que o preço embute e o crescimento que ele exige.</p><div class="espaco" style="height:12px"></div>
-  <div class="ind-grade" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+  <div class="ind-grade ind-grade-3">
     ${k("TIR implícita", "tir_implicita", ok(i.tir_spread_ref) ? `${i.tir_spread_ref >= 0 ? "+" : ""}${nf2.format(i.tir_spread_ref * 100)} p.p. sobre a ${ref}` : "")}
     ${k("Crescimento implícito", "cresc_implicito", ok(ch) ? `histórico de 5 anos: ${fmtU(ch, "pct")}` : "")}
     ${fin ? k("TIR pelo ROE", "tir_banco", `ROE sustentável ${fmtU(i.roe_sustentavel, "pct")}`) : k("TIR pelo caixa", "tir_caixa", "caixa livre médio de 3 anos")}
-    ${k("Preço justo de Graham", "graham", ok(i.graham_margem) ? `${i.graham_margem >= 0 ? "acima" : "abaixo"} do preço em ${nf2.format(Math.abs(i.graham_margem) * 100)}%` : "")}
   </div><p class="frase">${frase}</p></div>`;
 }
 function blocoPiotroski(t) {
@@ -1162,7 +1159,58 @@ function graficoPreco(t, h, anos) {
   const linha = subiu ? cor("--pos") : cor("--neg");
   const ctx = el.getContext("2d"), grad = ctx.createLinearGradient(0, 0, 0, 300);
   grad.addColorStop(0, linha + "40"); grad.addColorStop(1, linha + "00");
-  charts.push(new Chart(el, { type: "line", data: { labels: serie.map(([d]) => dataBR(d)), datasets: [{ label: t, data: serie.map(([, v]) => v), borderColor: linha, backgroundColor: grad, borderWidth: 1.6, pointRadius: 0, fill: true, tension: 0.1 }] }, options: optGraf({ moeda: "R$ ", legenda: false }) }));
+  const ch = new Chart(el, { type: "line", data: { labels: serie.map(([d]) => dataBR(d)), datasets: [{ label: t, data: serie.map(([, v]) => v), borderColor: linha, backgroundColor: grad, borderWidth: 1.6, pointRadius: 0, fill: true, tension: 0.1 }] }, options: optGraf({ moeda: "R$ ", legenda: false }), plugins: [PLUGIN_MEDIR] });
+  charts.push(ch);
+  ativarMedicao(ch, el, moedaDe(t));
+}
+// Segurar o botão do mouse sobre o gráfico e arrastar mostra quanto o preço subiu ou caiu entre os dois pontos.
+const PLUGIN_MEDIR = {
+  id: "medir",
+  afterDraw(ch) {
+    const m = ch.$medir;
+    if (!m || m.a == null || m.b == null || m.a === m.b) return;
+    const { ctx, chartArea: { top, bottom, left, right } } = ch, xs = ch.scales.x, d = ch.data.datasets[0].data;
+    const [i, j] = m.a < m.b ? [m.a, m.b] : [m.b, m.a];
+    const x1 = xs.getPixelForValue(i), x2 = xs.getPixelForValue(j), v1 = d[i], v2 = d[j];
+    if (!ok(v1) || !ok(v2) || v1 === 0) return;
+    const pct = v2 / v1 - 1, corV = pct >= 0 ? cor("--pos") : cor("--neg");
+    ctx.save();
+    ctx.fillStyle = corV + "26"; ctx.fillRect(x1, top, x2 - x1, bottom - top);
+    ctx.strokeStyle = corV; ctx.lineWidth = 1; ctx.setLineDash([4, 3]);
+    for (const x of [x1, x2]) { ctx.beginPath(); ctx.moveTo(x, top); ctx.lineTo(x, bottom); ctx.stroke(); }
+    ctx.setLineDash([]);
+    for (const [x, v] of [[x1, v1], [x2, v2]]) { ctx.beginPath(); ctx.arc(x, ch.scales.y.getPixelForValue(v), 3.5, 0, 2 * Math.PI); ctx.fillStyle = corV; ctx.fill(); }
+    const l1 = `${pct >= 0 ? "+" : ""}${nf2.format(pct * 100)}%`;
+    const l2 = `${ch.data.labels[i]} a ${ch.data.labels[j]} · ${m.mo} ${nf2.format(v1)} para ${m.mo} ${nf2.format(v2)}`;
+    ctx.font = "700 14px Inter, sans-serif"; const w1 = ctx.measureText(l1).width;
+    ctx.font = "500 11px Inter, sans-serif"; const w2 = ctx.measureText(l2).width;
+    const w = Math.max(w1, w2) + 20, hgt = 44;
+    let bx = (x1 + x2) / 2 - w / 2; bx = Math.max(left, Math.min(bx, right - w));
+    const by = top + 6;
+    ctx.fillStyle = cor("--sup"); ctx.strokeStyle = cor("--borda-forte");
+    ctx.beginPath(); ctx.roundRect ? ctx.roundRect(bx, by, w, hgt, 8) : ctx.rect(bx, by, w, hgt); ctx.fill(); ctx.stroke();
+    ctx.textAlign = "center"; ctx.textBaseline = "top";
+    ctx.fillStyle = corV; ctx.font = "700 14px Inter, sans-serif"; ctx.fillText(l1, bx + w / 2, by + 6);
+    ctx.fillStyle = cor("--txt-2"); ctx.font = "500 11px Inter, sans-serif"; ctx.fillText(l2, bx + w / 2, by + 25);
+    ctx.restore();
+  },
+};
+function ativarMedicao(ch, el, mo) {
+  const indice = (e) => { const p = ch.getElementsAtEventForMode(e, "index", { intersect: false }, false); return p.length ? p[0].index : null; };
+  const limpar = () => { if (!ch.$medir) return; ch.$medir = null; ch.options.plugins.tooltip.enabled = true; el.style.cursor = ""; ch.update("none"); };
+  el.style.userSelect = "none";
+  el.title = "Segure o botão do mouse e arraste para medir a variação entre dois pontos";
+  el.addEventListener("mousedown", (e) => {
+    if (e.button !== 0) return;
+    const i = indice(e); if (i == null) return;
+    e.preventDefault();
+    ch.$medir = { a: i, b: i, mo };
+    ch.options.plugins.tooltip.enabled = false; el.style.cursor = "ew-resize";
+    ch.update("none");
+  });
+  el.addEventListener("mousemove", (e) => { if (!ch.$medir) return; const i = indice(e); if (i != null && i !== ch.$medir.b) { ch.$medir.b = i; ch.draw(); } });
+  window.addEventListener("mouseup", limpar);
+  el.addEventListener("mouseleave", limpar);
 }
 function graficoLucro(t, h) {
   const el = $("#g-lucro");
@@ -1177,9 +1225,23 @@ function graficoLucro(t, h) {
     const a = h.anual[anos[i]];
     return [`Preço no fim do ano: ${ok(a.preco_fim) ? mo + " " + nf2.format(a.preco_fim) : "n/d"}`, `Lucro por ação: ${ok(a.lpa) ? mo + " " + nf2.format(a.lpa) : "prejuízo ou n/d"}`];
   };
+  const prej = anos.map((y) => { const a = h.anual[y]; return (ok(a.lucro_liq) && a.lucro_liq < 0) || (ok(a.lpa) && a.lpa < 0) ? a : null; });
+  const hojePrej = !hoje && ok(ind(t).lpa) && ind(t).lpa < 0;
+  const altura = Math.max(...dados.filter(ok), 4) * 0.12;
   const o = optGraf({ legenda: false });
-  o.plugins.tooltip.callbacks = { label: (ctx) => `P/L: ${ok(ctx.parsed.y) ? nf2.format(ctx.parsed.y) : "n/d"}`, afterLabel: (ctx) => det(ctx.dataIndex) };
-  const ds = [{ type: "bar", label: "P/L", data: dados, backgroundColor: rotulos.map((r) => r === "Hoje" ? cor("--acento-forte") : cor("--serie-2")), borderRadius: 4 }];
+  o.plugins.tooltip.callbacks = {
+    label: (ctx) => {
+      if (ctx.dataset.prejuizo) {
+        const i = ctx.dataIndex, a = i < anos.length ? prej[i] : null;
+        if (i === anos.length) return "A empresa está com prejuízo nos últimos 12 meses: sem P/L.";
+        return ok(a && a.lucro_liq) ? `Neste ano a empresa teve prejuízo líquido de ${mo} ${grande(Math.abs(a.lucro_liq))}.` : "Neste ano a empresa teve prejuízo líquido.";
+      }
+      return `P/L: ${ok(ctx.parsed.y) ? nf2.format(ctx.parsed.y) : "n/d"}`;
+    },
+    afterLabel: (ctx) => ctx.dataset.prejuizo ? "Sem P/L: com prejuízo o múltiplo não tem sentido." : det(ctx.dataIndex),
+  };
+  const ds = [{ type: "bar", label: "P/L", data: dados, backgroundColor: rotulos.map((r) => r === "Hoje" ? cor("--acento-forte") : cor("--serie-2")), borderRadius: 4, stack: "a" },
+    { type: "bar", label: "Prejuízo", prejuizo: true, data: [...prej.map((a) => a ? altura : null), hojePrej ? altura : null], backgroundColor: cor("--neg"), borderRadius: 4, stack: "a" }];
   if (ok(media)) ds.push({ type: "line", label: "Média 5 anos", data: rotulos.map(() => media), borderColor: cor("--txt-3"), borderDash: [6, 5], borderWidth: 1.5, pointRadius: 0 });
   charts.push(new Chart(el, { data: { labels: rotulos, datasets: ds }, options: o }));
 }
@@ -1219,12 +1281,12 @@ function blocoTrimestral(t, h) {
     <div class="det">${ant ? `${ant.rotulo}: ${vf(ant[k], u)} · ${variacao(ult[k], ant[k], u)}` : "sem trimestre comparável"}</div></div>`).join("")}</div>
   ${acc.length ? `<h4>Acumulado do ano (${rot9} contra ${rot9a})</h4><div class="ind-grade">${acc.map(([nm, a, b]) => `<div class="ind"><div class="rot">${nm} ${rot9}</div><div class="val">${vf(a, "din")}</div><div class="det">${rot9a}: ${vf(b, "din")} · ${variacao(a, b, "din")}</div></div>`).join("")}</div>` : ""}
   ${pares.length ? `<h4>Trimestre contra o mesmo trimestre do ano anterior</h4>
-  <div class="linha entre" style="margin-bottom:8px"><span class="sub">Barras claras: ano anterior. Barras verdes: ano mais recente.</span>
+  <div class="linha entre" style="margin-bottom:8px"><span class="sub">Barra cinza: trimestre do ano anterior. Barra verde: trimestre mais recente.</span>
     <div class="abas" id="tri-met" style="margin:0">${colunas.map(([k, nm], i) => `<button data-k="${k}" class="${i === 0 ? "ativo" : ""}">${nm}</button>`).join("")}</div></div>
   <div class="grafico peq"><canvas id="g-tri"></canvas></div>
   <div class="tabela-wrap" style="margin-top:14px"><table class="tab-pares"><thead><tr><th>Trimestre</th>${colunas.map(([, nm]) => `<th class="n" colspan="3">${nm}</th>`).join("")}</tr>
     <tr class="sub-cab"><th></th>${colunas.map(() => '<th class="n">Ano anterior</th><th class="n">Atual</th><th class="n">Variação</th>').join("")}</tr></thead><tbody>
-    ${pares.map(([a, b]) => `<tr><td><b>${b.rotulo}</b> <span class="muted">contra ${a.rotulo}</span></td>${colunas.map(([k, , u]) => `<td class="n muted">${vf(a[k], u)}</td><td class="n"><b>${vf(b[k], u)}</b></td><td class="n">${variacao(b[k], a[k], u)}</td>`).join("")}</tr>`).join("")}
+    ${pares.map(([a, b]) => `<tr><td><span class="muted">${a.rotulo}</span> x <b>${b.rotulo}</b></td>${colunas.map(([k, , u]) => `<td class="n muted">${vf(a[k], u)}</td><td class="n"><b>${vf(b[k], u)}</b></td><td class="n">${variacao(b[k], a[k], u)}</td>`).join("")}</tr>`).join("")}
   </tbody></table></div>` : ""}`;
 }
 function graficoTrimestral(t, h, chave) {
@@ -1237,9 +1299,9 @@ function graficoTrimestral(t, h, chave) {
   const conv = (v) => ok(v) ? (pct ? v * 100 : v / 1e9) : null;
   charts = charts.filter((c) => { if (c.canvas === el) { c.destroy(); return false; } return true; });
   const o = optGraf({});
-  o.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: ${ok(ctx.parsed.y) ? nf2.format(ctx.parsed.y) + (pct ? "%" : ` ${mo === "US$" ? "US$" : "R$"} bi`) : "n/d"}`;
-  o.plugins.tooltip.callbacks.title = (it) => { const [a, b] = pares[it[0].dataIndex]; return `${b.rotulo} contra ${a.rotulo}`; };
-  charts.push(new Chart(el, { type: "bar", data: { labels: pares.map(([a, b]) => `${b.rotulo} x ${a.rotulo}`), datasets: [
+  o.plugins.tooltip.callbacks.label = (ctx) => { const par = pares[ctx.dataIndex]; return `${par[ctx.datasetIndex].rotulo}: ${ok(ctx.parsed.y) ? nf2.format(ctx.parsed.y) + (pct ? "%" : ` ${mo === "US$" ? "US$" : "R$"} bi`) : "n/d"}`; };
+  o.plugins.tooltip.callbacks.title = (it) => { const [a, b] = pares[it[0].dataIndex]; return `${a.rotulo} x ${b.rotulo}`; };
+  charts.push(new Chart(el, { type: "bar", data: { labels: pares.map(([a, b]) => `${a.rotulo} x ${b.rotulo}`), datasets: [
     { label: "Ano anterior", data: pares.map(([a]) => conv(a[k])), backgroundColor: cor("--borda-forte"), borderRadius: 3 },
     { label: "Ano mais recente", data: pares.map(([, b]) => conv(b[k])), backgroundColor: pares.map(([, b]) => (b[k] || 0) >= 0 ? cor("--serie") : cor("--neg")), borderRadius: 3 },
   ] }, options: o }));

@@ -1,0 +1,100 @@
+{
+ "ticker": "SIMH3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Holding que controla Movida, Vamos, JSL, Automob, CS Infra, CS Brasil e o banco BBC. A receita é quase toda em reais e a dívida consolidada, de R$ 39 bi, faz do juro o principal fator de resultado.",
+ "modelo": "A Simpar controla empresas de serviços ligadas a transporte e logística: locação de carros (Movida), locação de caminhões e máquinas (Vamos), logística rodoviária (JSL), concessionárias de veículos (Automob), concessões de infraestrutura (CS Infra), serviços ao setor público (CS Brasil) e o banco BBC. A maior parte da receita é recorrente, vinda de contratos de locação e logística, complementada pela venda de veículos novos e seminovos. A holding capta dívida própria e recebe dividendos das controladas.",
+ "segmentos": [
+  {
+   "nome": "Movida",
+   "peso_receita": 0.33,
+   "periodo": "3T26",
+   "obs": "Receita líquida de R$ 3.870 mi (+2,8%), lucro de R$ 152,1 mi."
+  },
+  {
+   "nome": "Automob",
+   "peso_receita": 0.29,
+   "periodo": "3T26",
+   "obs": "R$ 3.432 mi, prejuízo ajustado de R$ 52,1 mi."
+  },
+  {
+   "nome": "JSL",
+   "peso_receita": 0.22,
+   "periodo": "3T26",
+   "obs": "R$ 2.626 mi (+5,7%), recorde."
+  },
+  {
+   "nome": "Vamos",
+   "peso_receita": 0.13,
+   "periodo": "3T26",
+   "obs": "R$ 1.594 mi (+4,3%), lucro de R$ 150,9 mi."
+  },
+  {
+   "nome": "CS Infra, CS Brasil e BBC",
+   "peso_receita": 0.03,
+   "periodo": "3T26",
+   "obs": "CS Infra R$ 181 mi; CS Brasil cerca de R$ 128,5 mi de receita de serviços; BBC com carteira de R$ 3,3 bi."
+  }
+ ],
+ "segmentos_base": "Receita líquida de cada controlada, antes das eliminações entre empresas do grupo (soma de cerca de R$ 11,8 bi contra R$ 11,6 bi consolidados).",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "As operações estão no Brasil; as entidades no exterior servem para captar recursos via senior notes (bonds) ou têm operações não relevantes, segundo o ITR. A empresa não divulga receita por país."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "Receita em reais. Há bonds e contratos em dólar e euro, mas o ITR informa que são trocados por CDI via swap (US$ 463,5 mi em swaps cambiais na holding), deixando efeito líquido de alta do dólar pequeno; o encarecimento de veículos importados ou com componentes em dólar é indireto."
+ },
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita líquida foi de R$ 11,6 bi (+4,1% sobre o 3T25), a receita de serviços de R$ 9,5 bi (+5,8%) e o Ebitda de R$ 3,5 bi (+19,9%). O lucro ajustado das operações continuadas foi de R$ 137 mi, contra prejuízo de R$ 128,6 mi um ano antes; o lucro atribuído aos controladores foi de R$ 35,2 mi. A alavancagem caiu para 2,7x, menor nível desde o IPO de 2010, com dívida líquida ex-BBC de R$ 39,2 bi (-5,4%), e a holding recomprou R$ 723 mi em dívidas no ano (72% da meta de R$ 1 bi). O grupo vendeu a Ciclus Rio (dezembro de 2025) e a Ciclus Amazônia (junho de 2026) e anunciou em julho a venda da CS Porto Aratu por R$ 1,8 bi, pendente de aprovação do Cade e do poder concedente.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com cerca de R$ 39 bi de dívida líquida majoritariamente em CDI, o resultado financeiro (cerca de R$ 1,9 bi negativo no 3T26) é o maior item entre Ebitda e lucro; juro menor eleva o lucro de todas as controladas."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita em reais e dívida em moeda estrangeira protegida por swap; efeito apenas indireto via preço de veículos."
+  },
+  "commodities_subindo": {
+   "nota": 1,
+   "porque": "Agronegócio é cliente relevante de Vamos e JSL; renda agrícola maior aumenta demanda por caminhões, máquinas e transporte."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Locação, logística e venda de veículos acompanham a atividade econômica e o crédito, beneficiando quase todas as controladas."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Contratos são reajustados com defasagem, enquanto inflação alta mantém juros elevados sobre uma dívida grande e pós-fixada."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Risco fiscal maior eleva juros e prêmios de crédito, encarecendo a rolagem de uma das maiores dívidas corporativas da bolsa."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Simpar, ITR 3T26 e comentário de desempenho",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/SIMH3/51802/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "InfoMoney: Simpar reverte prejuízo e lucra R$ 137 milhões no 3T26",
+   "url": "https://www.infomoney.com.br/?p=3562531",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Money Times (Estadão Conteúdo): Vamos tem lucro líquido de R$ 150,9 milhões no 3º trimestre",
+   "url": "https://www.moneytimes.com.br/?p=1420567",
+   "data": "2026-10-30"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Grupo Vamos registra receita de R$ 1,59 bilhão no terceiro trimestre",
+   "url": "https://timesbrasil.com.br/brasil/grupo-vamos-registra-receita-de-r-159-bilhao-no-terceiro-trimestre-com-avanco-de-115-em-locacao/",
+   "data": "2026-10-21"
+  }
+ ]
+}

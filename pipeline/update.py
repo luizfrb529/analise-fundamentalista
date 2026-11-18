@@ -1007,9 +1007,6 @@ def processar(ativo: dict, ctx: dict) -> dict:
             cand = [a for a in acoes_ano if a <= a0]
             if cand and not acoes_ano[max(cand)][1]:
                 ind[f"diluicao_{n}a"] = acoes / acoes_ano[max(cand)][0] - 1
-    # Graham (por papel; BDR em US$ sobre o preço lá fora)
-    ind["graham"] = I.graham(ind.get("lpa"), ind.get("vpa"))
-    ind["graham_margem"] = I.margem_seguranca(ind["graham"], preco_calc)
     ind["peg"] = I.peg(ind.get("pl"), ind.get("cagr_lpa_5a"))
     # estabilidade de margem
     ml = [hist[a].get("margem_liquida") for a in ult5 if I.ok(hist[a].get("margem_liquida"))]
@@ -1049,7 +1046,7 @@ def processar(ativo: dict, ctx: dict) -> dict:
         # fluxos de empresa em recuperação judicial ou extrajudicial (fornecedores congelados, dívida convertida) não sustentam TIR
         ind["tir_calculo_recuperacao"] = {k: ind.get(k) for k in ("tir_lucro", "tir_caixa", "tir_dcf", "cresc_implicito")}
         for k in ("tir_lucro", "tir_caixa", "tir_dcf", "tir_implicita", "cresc_implicito", "cresc_gap", "tir_spread_ref",
-                  "graham", "graham_margem", "peg"):
+                  "peg"):
             ind[k] = None
         ind["suprimido_recuperacao"] = True
     if modelo == "TESOURARIA_CRIPTO":
@@ -1087,7 +1084,7 @@ def processar(ativo: dict, ctx: dict) -> dict:
         ind["btc_por_acao"] = unidades / acoes if I.ok(unidades) and acoes else None
         res["cripto"] = {"btc": unidades, "data": data_btc, "fonte": fonte_btc, "preco_btc": preco_btc}
         for k in ("pl", "peg", "tir_lucro", "tir_caixa", "tir_dcf", "tir_implicita", "cresc_implicito", "cresc_gap",
-                  "tir_spread_ref", "graham", "graham_margem", "earnings_yield"):
+                  "tir_spread_ref", "earnings_yield"):
             ind[k] = None
         ind["suprimido_cripto"] = True
     ind["roic_spread"] = ind["roic"] - taxa_ref if I.ok(ind.get("roic"), taxa_ref) else None
@@ -1560,7 +1557,7 @@ def aplicaveis(a):
     m = a["modelo_analise"]
     base = [k for k, v in I.META.items() if v[3] not in ("Banco", "Seguradora", "BDR", "Holding", "Cripto")]
     suprimidos = {"tir_lucro", "tir_caixa", "tir_dcf", "tir_implicita", "cresc_implicito", "cresc_gap", "tir_spread_ref",
-                  "graham", "graham_margem", "peg", "pl", "earnings_yield"}
+                  "peg", "pl", "earnings_yield"}
     if m in ("RECUPERACAO", "TESOURARIA_CRIPTO"):
         base = [k for k in base if k not in suprimidos]
     if m == "TESOURARIA_CRIPTO":
@@ -1602,7 +1599,7 @@ def motivo(k, a, r):
         return f"histórico disponível de {nhist} exercícios ou extremos negativos"
     if k.startswith("cagr_"):
         return "extremo da série negativo ou ausente"
-    if k in ("pl", "p_ebit", "p_ebitda", "ev_ebitda", "ev_ebit", "peg", "earnings_yield", "graham", "graham_margem"):
+    if k in ("pl", "p_ebit", "p_ebitda", "ev_ebitda", "ev_ebit", "peg", "earnings_yield"):
         return "lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)"
     if k in ("tir_lucro", "tir_caixa", "tir_dcf", "tir_implicita", "cresc_implicito", "cresc_gap", "tir_spread_ref"):
         return "lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)"

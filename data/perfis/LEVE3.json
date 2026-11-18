@@ -1,0 +1,77 @@
+{
+ "ticker": "LEVE3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Fabricante de componentes de motor, filtros e gerenciamento térmico para montadoras e reposição. Cerca de 28% da receita vem de exportações e a maior parte da dívida é em euro.",
+ "modelo": "A MAHLE Metal Leve, controlada pelo grupo alemão MAHLE, fabrica pistões, anéis, bronzinas, válvulas, eixos de comando, filtros e compressores de ar-condicionado. Vende a montadoras (Equipamento Original) no Brasil e no exterior e a distribuidores e retíficas no mercado de reposição (Aftermarket), que dá receita mais estável. Tem seis fábricas, cinco no Brasil e uma na Argentina, e exporta para mais de 60 países.",
+ "segmentos": [
+  {
+   "nome": "Powertrain and Charging (componentes de motor)",
+   "peso_receita": 0.82,
+   "periodo": "9M26",
+   "obs": "R$ 3.287,9 mi (-2,8%)."
+  },
+  {
+   "nome": "Thermal and Fluid Systems (filtros e térmico)",
+   "peso_receita": 0.18,
+   "periodo": "9M26",
+   "obs": "R$ 711,0 mi (+1,6%). Por mercado: Equipamento Original doméstico 42%, reposição 36%, Equipamento Original exportação 22%."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 0.72,
+  "exterior_pct": 0.28,
+  "periodo": "9M26",
+  "base": "receita; a parcela doméstica inclui a operação na Argentina",
+  "texto": "A empresa classifica como mercado doméstico as vendas de Brasil e Argentina. As exportações, 28% da receita no 9M26, foram 40,7% para a Europa, 36,9% para Américas Central e do Norte, 17,0% para a América do Sul e 5,3% para outros destinos."
+ },
+ "moeda": {
+  "receita_em_dolar": "média",
+  "divida_em_dolar": "alta",
+  "texto": "As exportações, em dólar e euro, somam cerca de 28% da receita, e 88,5% dos financiamentos (R$ 1,33 bi em set/26) são NCE em euro, vinculados a exportações futuras. Alta do dólar e do euro eleva a receita exportada, mas aumenta a dívida em reais sem efeito de caixa imediato; o efeito operacional líquido é levemente positivo."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), a receita líquida foi de R$ 1,41 bi (-2,4% sobre o 3T25), o Ebitda de R$ 286 mi (-7,7%, margem de 20,3% ante 21,4%) e o lucro líquido de R$ 157,5 mi (-15,9%). No 9M26, a receita somou R$ 4,0 bi (-2,0%) e o lucro R$ 531,3 mi (+12,4%), ajudado por resultado financeiro positivo. A posição financeira líquida era devedora em R$ 848 mi em set/26, ou 0,82x o Ebitda ajustado. Em 10/11/2026 aprovou R$ 103,9 mi em juros sobre capital próprio, e em 11/11/2026 anunciou o exercício da opção de compra que elevará sua fatia na Arco Climatização para 70%.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula a venda de veículos novos no Brasil e reduz o custo da parte da dívida em reais; a reposição, porém, se beneficia de frota mais velha em ciclos de juro alto."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Exportações em dólar e euro ganham valor e competitividade, enquanto a dívida em euro é vinculada a exportações futuras e tem efeito contábil sem impacto de caixa imediato."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Alumínio, aço e outros metais pesam no custo, mas são repassados com defasagem; não há receita ligada a commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade eleva a produção de veículos no Brasil e a demanda de montadoras, que respondem por cerca de 42% da receita."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Custos de frete, pessoal e insumos sobem, mas a empresa mantém margens com reajustes de preço, sobretudo na reposição."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Risco fiscal tende a enfraquecer o real, o que ajuda a exportação, e a elevar juros, o que pesa nas vendas de veículos; efeitos que se compensam."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "MAHLE Metal Leve, Release de Resultados do 3T26 e 9M26",
+   "url": "https://filemanager-cdn.mziq.com/published/6b90b8ef-4914-4021-8296-c5aca7b388eb/8a9c5488-51cf-45b8-b804-797e43787af9",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "InfoMoney (Reuters): Mahle (LEVE3) tem lucro de R$ 158 milhões no 3º tri, queda de 16%",
+   "url": "https://www.infomoney.com.br/mercados/mahle-leve3-resultados-terceiro-trimestre-2026/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "MAHLE Metal Leve RI, Central de Resultados",
+   "url": "https://ri.mahle.com.br/informacoes-financeiras/central-de-resultados/",
+   "data": "2026-11-18"
+  }
+ ]
+}

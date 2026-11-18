@@ -1,0 +1,93 @@
+{
+ "ticker": "CEAB3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Varejista de moda de massa com cerca de 340 lojas no Brasil, que também vende eletrônicos e beleza e oferece crédito via C&A Pay. Vestuário responde por 90% da receita; não há operação no exterior.",
+ "modelo": "A C&A Modas vende vestuário, calçados e acessórios de marca própria, além de eletrônicos (fashiontronics) e beleza, em lojas físicas, site e aplicativo. A maior parte das mercadorias é comprada de fornecedores no Brasil e na Ásia. Complementa a receita com serviços financeiros (C&A Pay e parceria de cartões), que cresceram 32,2% no 3T26. É um negócio recorrente, voltado ao público de renda média e média baixa.",
+ "segmentos": [
+  {
+   "nome": "Vestuário",
+   "peso_receita": 0.9,
+   "periodo": "3T26",
+   "obs": "R$ 1,69 bi de receita líquida (+2,6%), margem bruta de 56,0%."
+  },
+  {
+   "nome": "Fashiontronics e beleza",
+   "peso_receita": 0.05,
+   "periodo": "3T26",
+   "obs": "R$ 101,9 mi (-15,3%)."
+  },
+  {
+   "nome": "Serviços financeiros",
+   "peso_receita": 0.05,
+   "periodo": "3T26",
+   "obs": "R$ 87,2 mi (+32,2%), incluindo C&A Pay."
+  }
+ ],
+ "segmentos_base": "Receita líquida operacional (R$ 1,88 bi no 3T26).",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "2025",
+  "base": null,
+  "texto": "Opera apenas no Brasil, com 340 lojas no fim de 2025 e e-commerce. A operação brasileira é independente das lojas C&A de outros países, mas compra mercadorias importadas por meio de empresa de sourcing ligada ao grupo controlador (Cofra)."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Toda a receita é em reais. Parte relevante das mercadorias vem do Oriente com preço em dólar, protegida por NDFs contratados na colocação dos pedidos; o empréstimo em dólar existente foi liquidado em 2025. Uma alta do dólar encarece as coleções seguintes."
+ },
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita líquida foi de R$ 1,88 bi (+2,3% sobre o 3T25), com vendas em mesmas lojas de +1% e alta de 27,6% no site e aplicativo, que chegaram a 8% das vendas de mercadorias. O Ebitda ajustado pós-IFRS 16 caiu 4,7%, para R$ 317,6 mi (margem de 16,9%), pressionado por marketing ligado aos 50 anos da marca no Brasil. O lucro líquido contábil subiu 145,1%, para R$ 170,3 mi, por créditos de PIS e Cofins de R$ 198,5 mi antes de impostos; o lucro ajustado caiu 23,3%, para R$ 56,5 mi. A dívida líquida ficou em R$ 200,5 mi (0,2 vez o Ebitda), após JCP de R$ 140 mi e recompras no ano, e em agosto a empresa lançou o ciclo estratégico Full Power (2027 a 2030).",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "O público de renda média compra muito a prazo; juro menor estimula vendas parceladas, reduz inadimplência na C&A Pay e o custo da dívida."
+  },
+  "dolar_subindo": {
+   "nota": -1,
+   "porque": "Parte relevante das mercadorias é importada com preço em dólar e a receita é toda em reais; o hedge apenas adia o efeito sobre o custo."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Algodão e fibras afetam o custo dos fornecedores, mas de forma diluída no preço final."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Moda de massa e eletrônicos dependem diretamente de emprego e renda do público de média e baixa renda."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação, em especial de alimentos, reduz a renda disponível do cliente-alvo e eleva custos de pessoal e aluguel."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal mantém juros altos, encarece o crédito ao consumidor e tende a pressionar o câmbio, com efeito sobre importados."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "C&A Modas, Release de Resultados 3T26 (documento CVM)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/CEAB3/51746/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "C&A Modas, Demonstrações Financeiras 2025",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/402adf94-e9a7-4c66-9bd9-3d0ec018abd5/38b9b163-1d85-cef2-e1dd-fee8f8283007?origin=2",
+   "data": "2026-03-01"
+  },
+  {
+   "titulo": "C&A Modas, Comunicado ao Mercado: encerramento do programa de recompra",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/CEAB3/51745/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Seu Dinheiro: Ação da C&A dispara após trimestre melhor do que o temido",
+   "url": "https://www.seudinheiro.com/2026/empresas/acao-da-ca-ceab3-dispara-apos-trimestre-melhor-do-que-o-temido-pelo-mercado-veja-os-destaques-lmrs/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Eu Quero Investir: C&A balanço 3T26",
+   "url": "https://euqueroinvestir.com/mercados/cea-balanco-3t26",
+   "data": "2026-11-04"
+  }
+ ]
+}

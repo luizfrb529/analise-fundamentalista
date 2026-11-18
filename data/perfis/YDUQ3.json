@@ -1,0 +1,88 @@
+{
+ "ticker": "YDUQ3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Grupo de ensino superior dono de Estácio, Wyden, Idomed (medicina) e Ibmec, com receita 100% no Brasil. Está em processo de fusão com a Afya, anunciada em setembro de 2026 e ainda dependente do Cade.",
+ "modelo": "A Yduqs vende cursos de graduação e pós-graduação presenciais, semipresenciais e a distância. A Estácio e a Wyden atendem o público de massa; o segmento Premium reúne o Idomed (escolas de medicina) e o Ibmec (negócios, direito e economia), de ticket alto. A receita é recorrente, vinda de mensalidades pagas pelo aluno, por financiamento privado próprio (DIS) ou por programas públicos como Fies e ProUni.",
+ "segmentos": [
+  {
+   "nome": "Estácio e Wyden",
+   "peso_receita": 0.67,
+   "periodo": "3T26",
+   "obs": "R$ 925 mi de receita líquida, estável sobre o 3T25; captação presencial subiu 8%, o digital segue em queda."
+  },
+  {
+   "nome": "Idomed (medicina)",
+   "peso_receita": 0.25,
+   "periodo": "3T26",
+   "obs": "R$ 342 mi (+5%), margem Ebitda ajustada de 50%."
+  },
+  {
+   "nome": "Ibmec",
+   "peso_receita": 0.08,
+   "periodo": "3T26",
+   "obs": "R$ 108 mi (+8%)."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Toda a operação e a receita estão no Brasil, com campi e polos de ensino a distância em todas as regiões. Não há atividade no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita em reais, vinda de mensalidades. A dívida é em debêntures atreladas ao CDI (spread médio de CDI + 0,90% em set/26), sem exposição relevante a moeda estrangeira; o efeito direto de alta do dólar é nulo."
+ },
+ "momento": "No 3T26 (divulgado em 13/11/2026), a receita líquida foi de R$ 1,375 bi (+1,7% sobre o 3T25), o Ebitda ajustado de R$ 490 mi (-3,4%, margem de 35,7% ante 37,6%) e o lucro líquido de R$ 117,6 mi (+20,1%); o lucro ajustado caiu 10,1%, para R$ 138,9 mi. O fluxo de caixa do acionista foi recorde, R$ 364 mi (+23%), e a base de alunos recuou 4,9%, para cerca de 1,31 milhão, com queda no ensino digital. A dívida líquida fechou setembro em R$ 2,64 bi, com alavancagem de 1,43x (1,52x um ano antes), e a empresa reiterou o guidance de 2026 (fluxo de caixa do acionista entre R$ 520 mi e R$ 620 mi; LPA entre R$ 1,40 e R$ 2,00). Em 23/09/2026 assinou fusão com a Afya: acionistas da Afya ficarão com 69% e os da Yduqs com 31% da companhia combinada, a Yduqs pagará R$ 750 mi em dividendos antes do fechamento e a assembleia está marcada para 25/11/2026; a operação depende do Cade.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "A dívida de R$ 2,6 bi é toda em CDI, o resultado financeiro pesa no lucro e juro menor também barateia o financiamento de mensalidades e reduz inadimplência."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida são em reais; não há custo ou receita relevante em dólar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Educação não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Cerca de dois terços da receita vêm de Estácio e Wyden, de público de renda média e baixa, cuja captação e adimplência dependem de emprego e renda."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Salários de professores e aluguéis sobem com a inflação, enquanto o reajuste de mensalidades no ensino de massa é limitado pela concorrência e pela renda do aluno."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Pressiona juros, encarecendo a dívida em CDI, e ameaça o orçamento de Fies e programas públicos de que parte dos alunos depende."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Yduqs, Apresentação de Resultados 3T26 e 9M26 (documento oficial, via comunicado)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/YDUQ3/52883/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "DGABC (Estadão Conteúdo): Yduqs obteve lucro líquido de R$ 117,6 milhões no 3T26",
+   "url": "https://www.dgabc.com.br/Noticia/4368497/yduqs-obteve-lucro-liquido-de-r-117-6-milhoes-no-terceiro-trimestre-de-2026",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Bloomberg Línea: Yduqs leva vantagem em fusão com a Afya, mas tem risco antitruste",
+   "url": "https://www.bloomberglinea.com.br/negocios/yduqs-leva-vantagem-em-fusao-com-a-afya-mas-tem-risco-antitruste-segundo-analistas/",
+   "data": "2026-09-24"
+  },
+  {
+   "titulo": "Brazil Journal: Yduqs tem forte geração de caixa, mas vê queda nas matrículas (resultado 2025)",
+   "url": "https://braziljournal.com/yduqs-tem-forte-geracao-de-caixa-mas-ve-queda-nas-matriculas",
+   "data": "2026-03-11"
+  }
+ ]
+}

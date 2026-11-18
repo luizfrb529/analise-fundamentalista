@@ -1,0 +1,83 @@
+{
+ "ticker": "ROMI3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Fabricante de máquinas-ferramenta, injetoras de plástico e peças fundidas, com subsidiária na Alemanha (B+W). Cerca de 34% da receita vem do exterior e a demanda depende do investimento industrial.",
+ "modelo": "A Romi fabrica máquinas-ferramenta (tornos e centros de usinagem), máquinas para plásticos e peças fundidas e usinadas, vendidas a indústrias de bens de capital, automotiva, agrícola, energia e outras. Na Alemanha, a Burkhardt+Weber (B+W) faz máquinas de alta precisão sob encomenda, com receita reconhecida conforme a entrega dos projetos. A venda de máquinas é pontual e depende do ciclo de investimento, e a locação de máquinas gera receita mensal recorrente.",
+ "segmentos": [
+  {
+   "nome": "Máquinas ROMI",
+   "peso_receita": 0.63,
+   "periodo": "9M26",
+   "obs": "R$ 512,1 mi (-9,0%); inclui locação de máquinas."
+  },
+  {
+   "nome": "Máquinas Burkhardt+Weber (Alemanha)",
+   "peso_receita": 0.24,
+   "periodo": "9M26",
+   "obs": "R$ 193,2 mi (-16,3%); carteira de pedidos subiu 41,5% em 12 meses."
+  },
+  {
+   "nome": "Fundidos e Usinados",
+   "peso_receita": 0.13,
+   "periodo": "9M26",
+   "obs": "R$ 107,5 mi (-25,8%), com margem bruta negativa."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 0.66,
+  "exterior_pct": 0.34,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Fora do Brasil, a receita veio de Europa (18%), Estados Unidos (7%), Ásia (7%) e América Latina (2%), por meio de subsidiárias em Alemanha, China, Espanha, Estados Unidos, França, Itália, México e Reino Unido. Tem 13 fábricas, 11 no Brasil e 2 na Alemanha."
+ },
+ "moeda": {
+  "receita_em_dolar": "média",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita externa (R$ 269,4 mi no 9M26, cerca de 34% do total) é em euro e dólar, e R$ 117,1 mi dos R$ 471,2 mi de financiamentos em set/26 estão em moeda estrangeira. Alta do dólar e do euro tende a ser positiva, por elevar a receita externa e a competitividade frente a máquinas importadas."
+ },
+ "momento": "No 3T26 (divulgado em 20/10/2026), a receita líquida foi de R$ 257,1 mi (-26,4% sobre o 3T25), com queda nas três unidades, e o Ebitda ajustado de R$ 10,2 mi (-73,2%, margem de 4,0%). O lucro líquido reportado foi de R$ 42,7 mi (+56,1%), mas o ajustado foi de R$ 7,0 mi (-74,6%), pois o trimestre incluiu R$ 35,7 mi de efeito de créditos tributários de processo previdenciário com trânsito em julgado. A entrada de pedidos somou R$ 421,5 mi (+8,5%) e a carteira R$ 992,7 mi (+10,9%), puxadas por contrato de cerca de R$ 200 mi da B+W com entregas entre 2027 e 2029. A dívida líquida era de R$ 101,5 mi em set/26 e o conselho aprovou R$ 26,1 mi em JCP em 24/09/2026.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Venda de máquinas depende de crédito e de decisões de investimento da indústria, que a empresa descreve como travadas por juros altos; juro menor também barateia o Finame usado pelos clientes."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Cerca de um terço da receita é externa, em euro e dólar, e real mais fraco encarece máquinas importadas concorrentes; a dívida em moeda estrangeira é pequena."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Aço e ferro-gusa pesam no custo, enquanto preços agrícolas mais altos ajudam a demanda de fundidos para máquinas agrícolas; efeitos que se compensam."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Bens de capital são dos setores mais sensíveis ao ciclo: atividade maior eleva a utilização da capacidade da indústria e os pedidos de máquinas."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Custos sobem, mas os preços de máquinas são reajustados; o efeito indireto via juros mais altos já está em 'selic'."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Risco fiscal adia investimentos industriais, mas tende a enfraquecer o real, o que ajuda a receita externa; efeitos que se compensam."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Romi, Release de Resultados 3T26",
+   "url": "https://www.romi.com/wp-content/uploads/2026/03/Release_3T26.pdf",
+   "data": "2026-10-20"
+  },
+  {
+   "titulo": "InfoMoney (Reuters): Romi registra lucro líquido de R$ 42,7 mi no 3º trimestre",
+   "url": "https://www.infomoney.com.br/mercados/romi-registra-lucro-liquido-de-r427-mi-no-3o-trimestre/",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "Romi, Central de Resultados 2026",
+   "url": "https://www.romi.com/central-de-resultados/2026/",
+   "data": "2026-11-18"
+  }
+ ]
+}

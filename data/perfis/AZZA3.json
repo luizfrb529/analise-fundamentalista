@@ -1,0 +1,99 @@
+{
+ "ticker": "AZZA3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Grupo de moda (Arezzo, Schutz, FARM Rio, Animale, Reserva, Hering) em processo de separação em duas companhias. Cerca de 13% da receita bruta vem do exterior, puxada pela FARM Rio.",
+ "modelo": "A Azzas 2154 desenha, terceiriza a produção e vende calçados, bolsas e vestuário de marcas próprias, como Arezzo, Schutz, Anacapri, Vans (licença), FARM Rio, Animale, Reserva e Hering. A receita vem de lojas próprias e e-commerce (sell-out, 49% da receita bruta no 9M26), de vendas a franquias e lojas multimarcas (sell-in, 35%) e da operação internacional (13%). O ganho é recorrente e depende do ritmo do varejo e das coleções.",
+ "segmentos": [
+  {
+   "nome": "Fashion Women (FARM Rio, Animale, NV, Cris Barros, Maria Filó e outras)",
+   "peso_receita": 0.41,
+   "periodo": "9M26",
+   "obs": "R$ 4,16 bi de receita bruta, estável (+0,1%); inclui a FARM Rio internacional."
+  },
+  {
+   "nome": "Shoes & Bags (Arezzo, Schutz, Anacapri, Vans, Alexandre Birman)",
+   "peso_receita": 0.3,
+   "periodo": "9M26",
+   "obs": "R$ 3,03 bi (-7,0%), com queda nas vendas a franquias e multimarcas."
+  },
+  {
+   "nome": "Basic (Hering)",
+   "peso_receita": 0.16,
+   "periodo": "9M26",
+   "obs": "R$ 1,65 bi (-12,6%), em plano de reestruturação com melhora de margem."
+  },
+  {
+   "nome": "Fashion Men (Reserva, Oficina, Foxton)",
+   "peso_receita": 0.12,
+   "periodo": "9M26",
+   "obs": "R$ 1,20 bi (-5,5%)."
+  }
+ ],
+ "segmentos_base": "Receita bruta recorrente das marcas continuadas (R$ 10,05 bi no 9M26).",
+ "geografia": {
+  "brasil_pct": 0.87,
+  "exterior_pct": 0.13,
+  "periodo": "9M26",
+  "base": "receita bruta",
+  "texto": "A maior parte das vendas ocorre no Brasil, em 1.999 lojas (set/26). O canal internacional somou R$ 1,34 bi de receita bruta no 9M26, sendo R$ 1,02 bi da FARM Rio (EUA, Europa e pop-ups) e R$ 325 mi de Shoes & Bags (Arezzo e Schutz nos EUA); há 52 lojas no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "média",
+  "divida_em_dolar": "baixa",
+  "texto": "Cerca de 13% da receita bruta é gerada no exterior, majoritariamente em dólar. A dívida é em reais, com contratos de swap de dólar para CDI e hedge operacional cambial; parte dos insumos e produtos importados encarece com o dólar, o que tende a compensar o ganho da receita externa."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), a receita líquida foi de R$ 2,84 bi (-4,2% sobre o 3T25), a margem bruta subiu 2,1 p.p., para 56,8%, o Ebitda recorrente ficou em R$ 466,4 mi (-2,2%, margem de 16,4%) e o lucro líquido recorrente em R$ 190,6 mi (-5,3%); o lucro contábil foi de R$ 177,7 mi (+7,8%). A geração de caixa operacional somou R$ 385,2 mi (+39,6%) e a dívida líquida caiu para R$ 2,06 bi, ou 1,48 vez o Ebitda recorrente (1,52 vez em junho). Em 2/9/2026 a companhia anunciou a separação em duas empresas listadas no Novo Mercado: Arezzo&Co (Shoes & Bags e Hering, controle da família Birman) e Grupo SOMA (Animale, NV, Reserva e outras, família Jatahy); a FARM Rio será subsidiária da Arezzo&Co (57,4%) com 42,6% do SOMA. O Cade aprovou sem restrições, decisão definitiva em 4/11/2026; faltam aprovações societárias.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Juro menor reduz a despesa financeira sobre dívida líquida de R$ 2,06 bi e destrava compras de franquias e multimarcas, canal que a empresa diz estar contido pelos juros altos."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Os 13% de receita no exterior ganham valor em reais, mas insumos e produtos importados encarecem e há hedge cambial, efeitos que tendem a se compensar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Algodão e couro pesam no custo, mas o preço final depende mais de marca e coleção do que de matéria-prima; o efeito é pequeno."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Vestuário e calçados de marca são consumo discricionário; mais renda e emprego elevam vendas em lojas e reposição de estoques por franquias e multimarcas."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação corrói a renda disponível para moda e pressiona custos de aluguel e pessoal, com repasse limitado em ambiente promocional."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior mantém juros altos por mais tempo, encarece a dívida e prolonga a cautela de compra do varejo multimarcas."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Azzas 2154, Earnings Release 3Q26 (documento CVM)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/AZZA3/52502/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Azzas 2154, Earnings Release 2T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/2edfd667-eaa1-4187-9777-1528284720de/a99b5067-d063-1676-95ec-b9609bb74531?origin=2",
+   "data": "2026-08-13"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Azzas 2154 lucra R$ 190,6 milhões no trimestre, mas enfrenta queda na receita",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/azzas-2154-lucra-r-1906-milhoes-no-trimestre-mas-enfrenta-queda-na-receita/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Diário do Grande ABC (Estadão Conteúdo): Azzas 2154 tem lucro líquido recorrente de R$ 190,6 mi no 3º trimestre",
+   "url": "https://www.dgabc.com.br/Noticia/4368279/azzas-2154-tem-lucro-liquido-recorrente-de-r-190-6-mi-no-3-trimestre-queda-anual-de-5-3",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Seu Dinheiro: Balanço melhor que o esperado e divórcio à vista, Azzas após o 3T26",
+   "url": "https://www.seudinheiro.com/2026/empresas/balanco-melhor-que-o-esperado-e-divorcio-a-vista-por-que-o-mercado-se-animou-com-azzas-azza3-apos-o-3t26-bdap/",
+   "data": "2026-11-12"
+  }
+ ]
+}

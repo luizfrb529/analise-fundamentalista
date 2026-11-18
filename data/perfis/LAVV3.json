@@ -1,0 +1,77 @@
+{
+ "ticker": "LAVV3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Incorporadora de médio, alto padrão e luxo na cidade de São Paulo, com a marca econômica Novvo. Receita 100% no Brasil; a dívida líquida subiu para 32,3% do patrimônio em set/26.",
+ "modelo": "A Lavvi incorpora e constrói empreendimentos residenciais apenas na cidade de São Paulo, para os segmentos médio, médio-alto, alto padrão e luxo, e atende o segmento econômico pela marca Novvo. Parte dos projetos é feita em parceria com outras incorporadoras, como a Cyrela, com resultado reconhecido por equivalência patrimonial. A receita é pontual, reconhecida conforme a evolução das obras, com R$ 2,9 bi de receita a apropriar em set/26.",
+ "segmentos": [
+  {
+   "nome": "Lavvi (médio a luxo)",
+   "peso_receita": 0.85,
+   "periodo": "9M26",
+   "obs": "R$ 1.184 mi de receita líquida."
+  },
+  {
+   "nome": "Novvo (econômico)",
+   "peso_receita": 0.15,
+   "periodo": "9M26",
+   "obs": "R$ 216 mi."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Atua só na cidade de São Paulo, com banco de terrenos de R$ 9,1 bi de VGV potencial (visão 100%) em set/26; não há operação no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais; a dívida bruta de R$ 1,54 bi em set/26 é formada por CRI emitidos pela companhia e por financiamento à produção (SFH). Alta do dólar não tem efeito direto."
+ },
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita líquida foi de R$ 532 mi (+28% sobre o 3T25), a margem bruta ajustada de 38,2% e o lucro líquido de R$ 91 mi (-13%), com margem líquida de 17,0% ante 25,1%, por menor equivalência patrimonial e maiores juros de CRI. Em 9M26 a receita somou R$ 1,4 bi (+14%) e o lucro R$ 243 mi (-21%). Os lançamentos do trimestre foram de R$ 538 mi (Well Perdizes, da Novvo, e Zen Apartments, com a Cyrela) e as vendas líquidas de R$ 420 mi (-20%). A dívida líquida chegou a R$ 583 mi (32,3% do patrimônio líquido, ante 4,1% um ano antes); a empresa paga R$ 200 mi em dividendos em quatro parcelas em 2026 (a última em 13/11/2026) e aprovou recompra de até 10% das ações em circulação em 04/08/2026.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Juro menor reduz o custo dos CRI e do SFH e facilita o financiamento dos compradores, além de melhorar a demanda por imóveis de médio e alto padrão."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida em reais, sem exposição direta ao câmbio."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Insumos de obra pesam no custo via INCC, sem exposição direta a preços de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda e emprego ajudam vendas, sobretudo na Novvo, que perdeu ritmo em 2026 com o cenário econômico, segundo a empresa."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação maior eleva o custo de obra (INCC) e tende a manter os juros altos, o que encarece a dívida."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Risco fiscal maior pressiona juros longos, encarece a dívida em CRI e reduz a disposição de compra de imóveis."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Lavvi, Release de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/50f83e42-efa0-4e0d-b868-f60078bf8325/aa7f2834-cd44-4c93-8fae-7e848571a8b3",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "InfoMoney: Lavvi, Méliuz, Pague Menos, Mills e Iochpe-Maxion divulgam resultados no 3T26",
+   "url": "https://www.infomoney.com.br/mercados/lavvi-meliuz-pague-menos-mills-e-iochpe-maxion-divulgam-resultados-no-3t26/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Lavvi RI, Central de Resultados",
+   "url": "https://ri.lavvi.com.br/informacoes-financeiras/central-de-resultados/",
+   "data": "2026-11-18"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "ticker": "PLPL3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Incorporadora de moradia econômica concentrada na cidade de São Paulo, com foco nas Faixas 2 e 3 do Minha Casa Minha Vida. Receita 100% em reais; margem pressionada por alta de custos de obra em 2026.",
+ "modelo": "A Plano&Plano incorpora e constrói apartamentos para famílias de baixa e média renda, principalmente dentro do Minha Casa Minha Vida, com financiamento da Caixa via FGTS. A receita é reconhecida pelo avanço físico das obras (POC), a partir de vendas feitas antes e durante a construção; o negócio é cíclico e depende de lançamentos e repasses. Uma fatia pequena e decrescente vem do Mercado Público, com obras do programa Pode Entrar, da Prefeitura de São Paulo. A empresa compra 84% dos terrenos a prazo, por permuta financeira.",
+ "segmentos": [
+  {
+   "nome": "Mercado Privado",
+   "peso_receita": 0.96,
+   "periodo": "3T26",
+   "obs": "R$ 836,2 mi de receita líquida, com margem bruta ajustada de 30,9%."
+  },
+  {
+   "nome": "Mercado Público (Pode Entrar)",
+   "peso_receita": 0.04,
+   "periodo": "3T26",
+   "obs": "R$ 36,4 mi; obras em fase final, com receita a apropriar residual de R$ 21,2 mi."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Atua na Região Metropolitana de São Paulo; 93% do banco de terrenos (R$ 34,8 bi de VGV potencial) fica no município de São Paulo. O primeiro lançamento em Goiânia está planejado para 2026 e ainda não gera receita."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais; a dívida é majoritariamente atrelada ao CDI, com séries de debêntures em IPCA e prefixadas trocadas para CDI por swap. O dólar afeta apenas de forma indireta, via insumos derivados do petróleo e importados."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), a receita líquida foi de R$ 872,6 mi (+7,1% sobre o 3T25) e o lucro líquido 100% somou R$ 70,5 mi (-26,0%), com margem líquida de 8,1%; o lucro atribuível aos controladores foi de R$ 54,5 mi. A margem bruta ajustada ficou em 30,2% (31,1% no 3T25), afetada pela revisão de orçamentos de obra feita no 1S26 por alta de insumos, e a empresa espera melhora gradual no fim de 2026 e em 2027. As vendas líquidas caíram 24%, para R$ 775,3 mi, com distratos de 25,1% das vendas brutas. A dívida líquida subiu para R$ 378,3 mi (29,5% do patrimônio, ante 13,4% no 2T26) após consumo de caixa de R$ 115,1 mi, atrasos de recebimentos da Caixa (greve em setembro) e do Pode Entrar, e R$ 100 mi em dividendos. Em outubro captou R$ 150 mi em debêntures do programa Eco Invest Brasil e teve o rating brAA+ mantido pela S&P.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "A dívida é quase toda em CDI e parte das vendas usa SBPE e Faixa 4, que ganham com juro menor; a maior parte do crédito ao cliente, porém, é FGTS com taxa subsidiada."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em dólar; o efeito indireto via insumos é pequeno."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Insumos de obra encarecem, mas o efeito líquido é captado melhor no cenário de inflação; não há receita ligada a commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais emprego formal e renda ampliam o número de famílias aptas ao financiamento do MCMV e tendem a reduzir distratos."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "A alta de insumos em 2026 já obrigou a revisar orçamentos e reduziu a margem bruta, enquanto os tetos de preço do MCMV não acompanham no mesmo ritmo."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "O negócio depende do orçamento do MCMV, do FGTS e de pagamentos de programas públicos como o Pode Entrar, que já tiveram atraso em 2026."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Plano&Plano, ITR 3T26 com Relatório da Administração (via CVM)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/PLPL3/52423/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "InfoMoney: Ser, Melnick, Vitru, Unifique, Desktop e mais empresas divulgam resultados no 3T (inclui Plano&Plano)",
+   "url": "https://www.infomoney.com.br/mercados/ser-melnick-vitru-unifique-desktop-e-mais-empresas-divulgam-resultados-no-3t/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "InfoMoney: Plano&Plano tem queda de 24% nas vendas líquidas no 3º tri",
+   "url": "https://www.infomoney.com.br/mercados/planoplano-plpl3-tem-queda-de-24-nas-vendas-liquidas-de-r-7753-no-3o-tri/",
+   "data": "2026-10-15"
+  },
+  {
+   "titulo": "Visno Invest: Plano & Plano registra lucro líquido de R$ 70,5 mi no 3T26",
+   "url": "https://visnoinvest.com.br/news/16418/plano-plano-plpl3-registra-lucro-liquido-de-r-705-mi-no-3t26",
+   "data": "2026-11-11"
+  }
+ ]
+}

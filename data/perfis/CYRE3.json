@@ -1,0 +1,94 @@
+{
+ "ticker": "CYRE3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior incorporadora residencial de alto padrão do país, com braço de moradia econômica (Vivaz) e a fintech de crédito imobiliário CashMe. Receita toda no Brasil, concentrada em São Paulo.",
+ "modelo": "A Cyrela incorpora e constrói imóveis residenciais em três faixas: alto padrão (marcas Cyrela, Living de médio padrão) e econômico (Vivaz, no Minha Casa Minha Vida Faixas 2 e 3). A receita é reconhecida conforme o avanço das obras e depende do ciclo de lançamentos e vendas. Tem ainda a CashMe, que concede crédito com garantia de imóvel e gera receita financeira recorrente, e participações em outras incorporadoras (Cury, Lavvi, Plano&Plano), que entram no resultado por equivalência patrimonial (R$ 148 mi no 3T26).",
+ "segmentos": [
+  {
+   "nome": "Alto padrão",
+   "peso_receita": 0.38,
+   "periodo": "9M26",
+   "obs": "R$ 2,63 bi em vendas contratadas."
+  },
+  {
+   "nome": "MCMV 2 e 3 (Vivaz)",
+   "peso_receita": 0.36,
+   "periodo": "9M26",
+   "obs": "R$ 2,48 bi em vendas contratadas; segmento com maior peso na melhora da margem."
+  },
+  {
+   "nome": "Médio padrão",
+   "peso_receita": 0.25,
+   "periodo": "9M26",
+   "obs": "R$ 1,72 bi em vendas contratadas."
+  },
+  {
+   "nome": "Vivaz Prime",
+   "peso_receita": 0.01,
+   "periodo": "9M26",
+   "obs": "Valor residual no período (R$ 6 mi)."
+  }
+ ],
+ "segmentos_base": "Vendas contratadas líquidas, ex-permuta, parte Cyrela (R$ 6,84 bi nos 9M26). A empresa não divulga a receita líquida por segmento.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Atua só no Brasil. Dos lançamentos de 2026 (parte Cyrela), 68% foram em São Paulo, 20% no Rio de Janeiro e 12% em outras praças, como Sul e Centro-Oeste."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em moeda nacional: financiamentos de obra (SFH) e dívida corporativa em CDI, com séries em IPCA trocadas para CDI por swap. O dólar afeta apenas de forma indireta, via juros e custo de insumos."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita líquida foi de R$ 2,38 bi (+12% sobre o 3T25) e o lucro líquido de R$ 481 mi (-21%; +7% sobre o 2T26), com margem líquida de 20,2% (28,6% no 3T25) e margem bruta de 34,0% (+1,0 p.p.). As vendas contratadas caíram 14%, para R$ 2,12 bi, e os lançamentos 16%, para R$ 2,86 bi, num trimestre que a administração descreveu como de maior incerteza por eleições e tensões geopolíticas. A geração de caixa foi de R$ 341 mi e a dívida líquida ajustada caiu para R$ 1,71 bi (14,4% do patrimônio; 28,5% sem a CashMe). Em outubro, a empresa aprovou emissão de R$ 400 mi em debêntures, recomprou R$ 154,8 mi em ações ON e PN e vendeu 350 mil ações da Cury.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Alto e médio padrão dependem de crédito SBPE e de juro real menor para vender; juro em queda também favorece o crédito da CashMe e reduz o custo da dívida em CDI."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em dólar; o efeito indireto via insumos é pequeno."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Não há receita ligada a commodities; aço e cimento pesam no custo, mas são parcialmente repassados via INCC."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda e confiança estimulam a compra de imóveis, inclusive no médio padrão e no segmento econômico da Vivaz."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "A alta de custos de obra pressiona a margem dos projetos em andamento e tende a manter os juros altos, ainda que a carteira de recebíveis seja corrigida por INCC e IPCA."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Risco fiscal eleva juros longos, que pesam diretamente na demanda por imóveis de alto padrão financiados e no custo do crédito da CashMe."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Cyrela, Release de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/d7617e78-1c42-4341-83ae-a1faa8569ca8/96dbe325-7127-4bd4-9965-20454e4897bf",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Cyrela RI, central de resultados (release e ITR 3T26)",
+   "url": "https://ri.cyrela.com.br/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Money Times: Cyrela lucra R$ 481 milhões no 3º trimestre, 21% menos que um ano antes",
+   "url": "https://www.moneytimes.com.br/cyrela-cyre3-lucra-r-481-milhoes-no-3o-trimestre-21-menos-que-um-ano-antes-bdap/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "InfoMoney: Cyrela apresentou lucro líquido de R$ 481 milhões no terceiro trimestre",
+   "url": "https://www.infomoney.com.br/mercados/cyrela-cyre3-resultados-terceiro-trimestre-2026/",
+   "data": "2026-11-12"
+  }
+ ]
+}

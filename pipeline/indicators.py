@@ -3,7 +3,7 @@ Fórmulas dos indicadores fundamentalistas.
 
 Funções puras (sem rede, sem arquivo). Toda função devolve None quando o dado
 de entrada falta ou quando a conta não faz sentido (ex.: P/L com lucro negativo
-é devolvido, mas Graham com LPA negativo devolve None). O site mostra None como "n/d".
+é devolvido). O site mostra None como "n/d".
 
 Unidades: valores monetários em unidade cheia (R$ ou US$, não milhares).
 Taxas e margens em fração (0.15 = 15%).
@@ -128,13 +128,6 @@ def queda_seguida(serie: list, anos: int = 3) -> bool:
 
 
 # ------------------------------------------------------- valuation clássico
-def graham(lpa: Num, vpa: Num) -> Num:
-    """Preço justo de Graham = raiz(22,5 x LPA x VPA). Só com LPA e VPA positivos."""
-    if not ok(lpa, vpa) or lpa <= 0 or vpa <= 0:
-        return None
-    return math.sqrt(22.5 * lpa * vpa)
-
-
 def margem_seguranca(preco_justo: Num, preco: Num) -> Num:
     """(preço justo / preço) - 1. Positivo = preço de tela abaixo do preço justo da fórmula."""
     if not ok(preco_justo, preco) or preco <= 0:
@@ -458,8 +451,6 @@ META = {
     "pl_vs_media5": ("P/L vs média própria 5a", "P/L atual / média do P/L anual dos últimos 5 exercícios - 1. Negativo = abaixo da própria média.", -1, "Valuation", "pct"),
     "evebitda_vs_media5": ("EV/EBITDA vs média própria 5a", "EV/EBITDA atual / média dos 5 últimos exercícios - 1.", -1, "Valuation", "pct"),
     "pvp_vs_media5": ("P/VP vs média própria 5a", "P/VP atual / média dos 5 últimos exercícios - 1 (usado em bancos).", -1, "Valuation", "pct"),
-    "graham": ("Preço justo de Graham", "raiz(22,5 x LPA x VPA). Só com LPA e VPA positivos.", 0, "Valuation", "moeda"),
-    "graham_margem": ("Margem de segurança Graham", "Preço de Graham / preço - 1.", 1, "Valuation", "pct"),
     # tir
     "tir_lucro": ("TIR implícita por lucro", "Lucro médio de 3 exercícios / valor de mercado + g.", 1, "TIR", "pct"),
     "tir_caixa": ("TIR implícita por caixa", "FCL médio de 3 exercícios / valor de mercado + g.", 1, "TIR", "pct"),
