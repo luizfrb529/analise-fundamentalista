@@ -1,0 +1,93 @@
+{
+ "ticker": "EQTL3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Holding com sete distribuidoras de energia (MA, PA, PI, AL, RS, AP e GO), que geram quase 90% do Ebitda, além de renováveis e fatias de 15% na Sabesp e 30% na Copasa. Dívida líquida de R$ 52,8 bi, alavancagem de 3,1x.",
+ "modelo": "A Equatorial compra concessões de distribuição de energia com desempenho fraco e ganha com a redução de perdas, de inadimplência e de custos, remunerada por tarifa regulada pela Aneel e revisada periodicamente. Tem sete distribuidoras (Maranhão, Pará, Piauí, Alagoas, CEEE-D no Rio Grande do Sul, CEA no Amapá e Goiás), geração eólica e solar pela Echoenergia, comercialização de energia, saneamento (CSA, no Amapá) e serviços e telecom. Desde 2024 é acionista de referência da Sabesp (15%) e, desde junho de 2026, da Copasa (30%), cujos resultados entram por equivalência patrimonial. A receita é majoritariamente recorrente e regulada.",
+ "segmentos": [
+  {
+   "nome": "Distribuição de energia",
+   "peso_receita": 0.87,
+   "periodo": "3T26",
+   "obs": "Ebitda ajustado de cerca de R$ 2,79 bi, R$ 230 mi acima do 3T25, com mercado Fio B +4,9%."
+  },
+  {
+   "nome": "Saneamento (Sabesp, Copasa e CSA)",
+   "peso_receita": 0.08,
+   "periodo": "3T26",
+   "obs": "Equivalência de R$ 247 mi (R$ 184 mi da Sabesp e R$ 63 mi da Copasa) mais Ebitda de R$ 10,7 mi da CSA."
+  },
+  {
+   "nome": "Renováveis, serviços e holding",
+   "peso_receita": 0.05,
+   "periodo": "3T26",
+   "obs": "Valor líquido por diferença: Echoenergia positiva, com R$ 283,9 mi de compensação por constrained-off ajustados, e comercializadora e holding negativas."
+  }
+ ],
+ "segmentos_base": "Ebitda ajustado (calculado por diferença a partir do release)",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera apenas no Brasil, com distribuidoras no Norte, Nordeste, Centro-Oeste e Sul, parques renováveis no Nordeste e participações em saneamento em São Paulo e Minas Gerais."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita em reais, com tarifas reajustadas por IPCA ou IGP-M. O release do 3T26 descreve a dívida em CDI (custo de CDI + 0,57%) e IPCA (IPCA + 5,43%), sem citar exposição em moeda estrangeira; alta do dólar não tem efeito direto relevante."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), a receita líquida foi de R$ 13,64 bi (-1,2%), o Ebitda ajustado de R$ 3,21 bi (+4,1%, margem de 23,5%) e o lucro líquido ajustado de R$ 535 mi (-37,1%); o lucro reportado foi de R$ 934 mi, ou R$ 757 mi atribuídos aos controladores. A queda do lucro ajustado veio da comparação com o 3T25, que ainda tinha a transmissão (já vendida), da menor equivalência da Sabesp (-R$ 131 mi) e de despesa financeira ajustada 7,5% maior, de R$ 1,62 bi. A dívida bruta é de R$ 64,4 bi e a líquida para covenants de R$ 52,8 bi, com alavancagem de 3,1x (3,6x sem o ganho da venda da transmissão); o capex do trimestre foi de R$ 2,6 bi. Em junho de 2026 a Equatorial assumiu 30% da Copasa na privatização e, em setembro, rescindiu o acordo de acionistas com o governo de Minas, com multa de R$ 52 mi registrada no 3T26.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com R$ 52,8 bi de dívida líquida e parcela relevante em CDI, cada queda de juro reduz uma despesa financeira de R$ 1,6 bi por trimestre."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida são em reais, sem exposição relevante citada a moeda estrangeira."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O custo de energia comprada é repassado na tarifa, e o negócio não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda e atividade elevam o consumo nas áreas de concessão e reduzem a inadimplência, que pesa nas distribuidoras do Norte e Nordeste."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "A parcela B das tarifas é corrigida por IPCA ou IGP-M, o que compensa com folga a parte da dívida indexada ao IPCA."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal eleva juros longos, encarece a dívida alta e aumenta o risco de interferência em tarifas e subsídios do setor."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Equatorial, Release de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/62b21cba-838c-49a4-aaef-e0fb2350c169/41fe683d-6e07-4574-8667-fd2c7b567cd1",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "DGABC (Estadão Conteúdo): Equatorial tem lucro líquido ajustado de R$ 535 mi no terceiro trimestre de 2026",
+   "url": "https://www.dgabc.com.br/Noticia/4368255/equatorial-tem-lucro-liquido-ajustado-de-r-535-mi-no-terceiro-trimestre-de-2026",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Jornal do Comércio: Equatorial tem lucro líquido ajustado de R$ 535 mi no terceiro trimestre de 2026",
+   "url": "https://www.jornaldocomercio.com/economia/2026/11/1270223-equatorial-tem-lucro-liquido-ajustado-de-rs-535-mi-no-terceiro-trimestre-de-2026.html",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Money Times: Equatorial confirma participação de 30% na Copasa",
+   "url": "https://www.moneytimes.com.br/equatorial-eqtl3-confirma-participacao-de-30-na-copasa-csmg3-e-reforca-aposta-no-saneamento-veja-detalhes-igdl/",
+   "data": "2026-06-11"
+  },
+  {
+   "titulo": "Equatorial, Central de Resultados (RI)",
+   "url": "https://ri.equatorialenergia.com.br/",
+   "data": "2026-11-18"
+  }
+ ]
+}

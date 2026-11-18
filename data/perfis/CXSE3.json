@@ -1,0 +1,106 @@
+{
+ "ticker": "CXSE3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Holding de seguros, previdência, capitalização e consórcio vendidos na rede da Caixa. O seguro habitacional, ligado ao crédito imobiliário do banco, responde por quase metade dos prêmios.",
+ "modelo": "A Caixa Seguridade, controlada pela Caixa Econômica Federal, tem participações em empresas formadas com seguradoras parceiras (Caixa Vida e Previdência, Caixa Residencial, Caixa Capitalização, Caixa Consórcio e Caixa Assistência), além de negócios em extinção da antiga parceria e uma operação de bancassurance com o Banco Pan. Ganha com a equivalência patrimonial dessas empresas (R$ 927 mi no 3T26) e com comissões de corretagem e uso da rede da Caixa (R$ 605 mi). A receita é recorrente, apoiada em prêmios, taxas sobre reservas de previdência e taxas de administração de consórcio.",
+ "segmentos": [
+  {
+   "nome": "Habitacional",
+   "peso_receita": 0.47,
+   "periodo": "3T26",
+   "obs": "R$ 1.172,5 mi (+15,3%), acompanha o crédito imobiliário da Caixa."
+  },
+  {
+   "nome": "Vida",
+   "peso_receita": 0.23,
+   "periodo": "3T26",
+   "obs": "R$ 560,7 mi (-5,9%)."
+  },
+  {
+   "nome": "Residencial",
+   "peso_receita": 0.11,
+   "periodo": "3T26",
+   "obs": "R$ 275,9 mi (-10,2%); o residencial vendido junto com o habitacional cresceu 20,9%."
+  },
+  {
+   "nome": "Prestamista",
+   "peso_receita": 0.09,
+   "periodo": "3T26",
+   "obs": "R$ 230,2 mi (-40%), com juros altos e suspensão da venda ligada ao consignado INSS desde novembro de 2025."
+  },
+  {
+   "nome": "Outros (inclui auto)",
+   "peso_receita": 0.08,
+   "periodo": "3T26",
+   "obs": "R$ 189,8 mi (+28%); o ramo auto cresceu 31,8%."
+  },
+  {
+   "nome": "Assistência",
+   "peso_receita": 0.02,
+   "periodo": "3T26",
+   "obs": "R$ 54,9 mi (-27,6%)."
+  }
+ ],
+ "segmentos_base": "Prêmios emitidos de seguros (3T26, R$ 2.484,1 mi); não inclui previdência, capitalização nem consórcio",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Todas as operações são no Brasil, com venda concentrada na rede de agências e canais da Caixa; não há operação no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita, reservas e aplicações financeiras são em reais; o dólar não tem efeito direto relevante."
+ },
+ "momento": "No 3T26 (divulgado em 09/11/2026), o lucro líquido gerencial foi de R$ 1,18 bi (+3,7% sobre o 3T25), o maior trimestral da história, e o ROE recorrente de 69,6%; nos 9M26 o lucro somou R$ 3,47 bi (+8,6%). Os prêmios de seguros caíram 1,7%, para R$ 2,48 bi, afetados pela greve de setembro e pelo prestamista, enquanto o habitacional cresceu 15,3%. Na previdência, a captação líquida foi de R$ 1,3 bi (+25,1%) e as reservas chegaram a R$ 222,3 bi (+15,8%); a capitalização arrecadou o recorde de R$ 615,3 mi (+26,8%) e o estoque de cartas de consórcio alcançou R$ 56,4 bi (+28,2%). O resultado financeiro agrupado, líquido de impostos, foi de R$ 396,4 mi, 33,5% do lucro. O conselho aprovou R$ 1,08 bi em dividendos (91,3% do lucro), com pagamento em 13/01/2027.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": -1,
+   "porque": "Um terço do lucro vem do resultado financeiro, que cai com juro menor, mas crédito mais barato ajuda prestamista, habitacional e consórcio; nota corrigida de -2 para -1."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em dólar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "A carteira é voltada a habitação, vida e previdência de pessoas físicas, sem exposição relevante a commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda e crédito elevam a venda de seguros, previdência e consórcio na rede da Caixa."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "Inflação maior eleva o rendimento de aplicações atreladas a índices de preços e tende a manter o juro alto, favorecendo o resultado financeiro."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Juro maior melhora o resultado financeiro, mas pode frear o crédito imobiliário e o prestamista da Caixa; efeitos se compensam."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Caixa Seguridade, Release de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/3972906b-e50b-4f74-ab74-4d0d32125d11/026efd82-7e26-4e03-8adb-39e76f2ecd57",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "InfoMoney: Caixa Seguridade lucra R$ 1,2 bi no 3T, alta de 3,7%; anuncia R$ 1,08 bi em dividendo",
+   "url": "https://www.infomoney.com.br/mercados/caixa-seguridade-cxse3-resultados-terceiro-trimestre-2026-anuncio-dividendos/",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "BM&C News: Caixa Seguridade lucra R$ 1,18 bi no 3T26 e aprova R$ 1,08 bi em dividendos",
+   "url": "https://bmcnews.com.br/empresas-e-negocios/caixa-seguridade-lucra-r-1-18-bi-no-3t26-e-aprova-r-1-08-bi-em-dividendos/",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "Caixa Seguridade, Release de Resultados 2T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/3972906b-e50b-4f74-ab74-4d0d32125d11/460a0d8d-9a1d-b81b-5b0d-ebbf391e4cd4?origin=2",
+   "data": "2026-08-11"
+  }
+ ]
+}

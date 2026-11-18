@@ -1,0 +1,106 @@
+{
+ "ticker": "BBSE3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Holding de seguros, previdência, capitalização e corretagem vendidos nas agências do Banco do Brasil. Quase metade dos prêmios da Brasilseg vem do seguro rural, e o resultado financeiro pesa no lucro.",
+ "modelo": "A BB Seguridade, controlada pelo Banco do Brasil, reúne participações na Brasilseg (seguros de vida, prestamista, rural, residencial), na Brasilprev (previdência PGBL e VGBL), na Brasilcap (capitalização) e na Brasildental, além de 100% da BB Corretora, que recebe comissões pela venda desses produtos na rede do banco. No 3T26, do resultado das participações, cerca de 37% veio da BB Corretora, 36% da Brasilseg, 23% da Brasilprev e 3% da Brasilcap. A receita é recorrente: prêmios, taxas de gestão sobre reservas, comissões e resultado financeiro das aplicações.",
+ "segmentos": [
+  {
+   "nome": "Rural (agrícola, penhor rural, vida produtor rural)",
+   "peso_receita": 0.47,
+   "periodo": "3T26",
+   "obs": "R$ 1.680 mi (-24,3% sobre o 3T25)."
+  },
+  {
+   "nome": "Vida",
+   "peso_receita": 0.24,
+   "periodo": "3T26",
+   "obs": "R$ 865 mi (-8,9%)."
+  },
+  {
+   "nome": "Prestamista",
+   "peso_receita": 0.19,
+   "periodo": "3T26",
+   "obs": "R$ 673 mi (-26,9%), ligado à concessão de crédito do Banco do Brasil."
+  },
+  {
+   "nome": "Residencial",
+   "peso_receita": 0.05,
+   "periodo": "3T26",
+   "obs": "R$ 171 mi (+28,6%)."
+  },
+  {
+   "nome": "Habitacional",
+   "peso_receita": 0.025,
+   "periodo": "3T26",
+   "obs": "R$ 88 mi (-0,5%)."
+  },
+  {
+   "nome": "Empresarial, grandes riscos e outros",
+   "peso_receita": 0.025,
+   "periodo": "3T26",
+   "obs": "Cerca de R$ 93 mi somados."
+  }
+ ],
+ "segmentos_base": "Prêmios emitidos da Brasilseg (3T26, cerca de R$ 3,57 bi); não inclui previdência, capitalização nem corretagem",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Todas as investidas operam no Brasil e vendem principalmente pela rede do Banco do Brasil; não há operação no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita, reservas e aplicações financeiras são em reais. O dólar afeta só de forma indireta, pela renda do agronegócio, que pesa no seguro rural."
+ },
+ "momento": "No 3T26 (divulgado em 03/11/2026), o lucro líquido gerencial recorrente foi de R$ 2,43 bi (-5,1% sobre o 3T25 e +13% sobre o 2T26), acima do consenso, ajudado pelo resultado financeiro da holding. A Brasilseg contribuiu R$ 101 mi a menos, com prêmios emitidos 19% menores, queda nos ramos rural, prestamista e vida e índice combinado maior; a BB Corretora contribuiu R$ 59 mi a menos. O resultado financeiro consolidado, líquido de impostos, foi de R$ 655,7 mi (-8,3%), por menor saldo de aplicações e Selic média menor. Nos 9M26 o lucro foi de R$ 6,80 bi, estável. A empresa revisou o guidance de prêmios da Brasilseg para 2026, de -3% a +2% para -15% a -11%, e manteve as projeções de resultado operacional e de reservas da Brasilprev.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": -1,
+   "porque": "O resultado financeiro sobre reservas e caixa encolhe com juro menor, como já ocorreu no 3T26, mas crédito mais barato ajuda prestamista e rural; nota corrigida de -2 para -1."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em dólar; o efeito indireto via renda do agronegócio é difuso."
+  },
+  "commodities_subindo": {
+   "nota": 1,
+   "porque": "Preços agrícolas maiores elevam o crédito rural e a contratação de seguro agrícola, penhor rural e vida produtor rural, quase metade dos prêmios da Brasilseg."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais crédito e renda aumentam a venda de prestamista, vida e previdência na rede do Banco do Brasil."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "Parte das aplicações é atrelada a índices de preços e a inflação tende a manter o juro alto, embora o IGP-M encareça passivos antigos da Brasilprev."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Juro maior eleva o resultado financeiro, mas a marcação a mercado de títulos e a ligação com um banco estatal pesam no sentido contrário."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "BB Seguridade, Análise do Desempenho 3T26",
+   "url": "https://www.bbseguridaderi.com.br/docs/bb-seguridade-2026-09-30-mGHjhQkr.pdf",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): BB Seguridade lucra R$ 2,43 bilhões no 3º trimestre",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/bb-seguridade-lucra-r-243-bilhoes-no-3o-trimestre/",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "InfoMoney: BB Seguridade lucra acima do esperado, mas 3T é de baixa qualidade",
+   "url": "https://www.infomoney.com.br/mercados/bb-seguridade-lucra-acima-do-esperado-mas-3t-e-de-baixa-qualidade-e-acao-cai-forte/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "brapi: BB Seguridade lucra R$ 2,43 bi no 3T26, mas corta projeção de prêmios (resumo de imprensa)",
+   "url": "https://brapi.dev/news/lucro-da-bb-seguridade-supera-consenso-mas-projecao-da-brasilseg-e-cortada-bde74fc3",
+   "data": "2026-11"
+  }
+ ]
+}

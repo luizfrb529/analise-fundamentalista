@@ -1,0 +1,88 @@
+{
+ "ticker": "BRAV3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Produtora de petróleo e gás em terra e no mar, com refinaria no Rio Grande do Norte, controlada pela Ecopetrol desde agosto de 2026. Os preços seguem o Brent em dólar e a dívida líquida é de US$ 1,46 bi.",
+ "modelo": "A Brava Energia (antiga 3R Petroleum) produz petróleo e gás em campos terrestres na Bahia (Recôncavo) e no Rio Grande do Norte (Potiguar) e em campos marítimos como Atlanta (80%), Papa-Terra (62,5%), Parque das Conchas (23%), Manati e Peroá. No Ativo Industrial de Guamaré (RN) refina óleo próprio e de terceiros e vende derivados como bunker, querosene de aviação, gasolina e diesel. A receita vem da venda de óleo, derivados e gás a preços ligados ao Brent e ao dólar, parte exportada a partir dos campos marítimos.",
+ "segmentos": [
+  {
+   "nome": "Venda de óleo",
+   "peso_receita": 0.48,
+   "periodo": "3T26",
+   "obs": "R$ 1.641 mi, principalmente dos campos marítimos; o offshore teve R$ 104 mi de imposto de exportação no trimestre."
+  },
+  {
+   "nome": "Derivados (mid&downstream)",
+   "peso_receita": 0.41,
+   "periodo": "3T26",
+   "obs": "R$ 1.381 mi; bunker foi 46% da receita de derivados e a refinaria processou 28,3 mil bbl/d."
+  },
+  {
+   "nome": "Gás natural",
+   "peso_receita": 0.11,
+   "periodo": "3T26",
+   "obs": "R$ 363 mi; preço médio de US$ 7,5/MMbtu."
+  }
+ ],
+ "segmentos_base": "Receita líquida por produto (padrão), após eliminações entre segmentos; serviços somaram R$ 3 mi.",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Todas as operações ficam no Brasil (Bahia, Rio Grande do Norte, Espírito Santo e bacias de Campos e Santos). O óleo dos campos marítimos, como Atlanta, é em boa parte exportado, e analistas estimam de 30% a 40% da produção destinada ao exterior; a empresa não divulga o percentual da receita."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "média",
+  "texto": "Óleo, derivados e gás têm preços ligados ao Brent e ao dólar (receita de US$ 660 mi no 3T26). A dívida bruta de R$ 12,4 bi (US$ 2,39 bi) combina instrumentos em reais e dolarizados, e o caixa de R$ 4,8 bi ajuda a compensar; uma alta do dólar eleva receita e Ebitda em reais mais do que encarece a parcela da dívida em dólar."
+ },
+ "momento": "No 3T26 (divulgado em 09/11/2026), a receita líquida foi de R$ 3,39 bi (+11% sobre o 3T25, +17% em dólar) e o Ebitda ajustado de R$ 1,58 bi (+22%, margem de 46,8%), mas houve prejuízo líquido de R$ 156 mi, ante lucro de R$ 121 mi no 3T25, pela marcação a mercado de hedges de petróleo no resultado financeiro. A produção foi de 82,4 mil boe/dia (-10% no ano, +1% sobre o 2T26), com Potiguar em recuperação (+8% no trimestre) e lifting cost de US$ 13,4/boe (-18%). A dívida líquida era de R$ 7,58 bi (US$ 1,46 bi), com alavancagem de 2,0x e caixa de R$ 4,8 bi. A Ecopetrol concluiu em 17/08/2026 a compra do controle, com cerca de 51% do capital (26% em compra privada e 25% na OPA a R$ 23,00 por ação), e em seguida Fitch e S&P elevaram os ratings da empresa.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Parte relevante da dívida de R$ 12,4 bi está em reais, atrelada a juros locais, e juro menor reduz a despesa financeira, embora o caixa renda menos."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "Óleo, derivados e gás são precificados em dólar, enquanto boa parte dos custos de operação em terra e da refinaria é em reais."
+  },
+  "commodities_subindo": {
+   "nota": 2,
+   "porque": "Petróleo mais caro eleva diretamente a receita de óleo, derivados e gás; os hedges reduzem parte do ganho no curto prazo, como mostrou o prejuízo contábil do 3T26."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "A venda de derivados no Nordeste depende um pouco da atividade, mas o preço é definido pelo Brent no mercado global."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Custos em reais e a parcela da dívida em índices locais sobem com a inflação, compensados pelos preços em dólar."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Risco fiscal tende a enfraquecer o real, o que ajuda a receita, mas eleva juros da dívida em reais e a chance de tributos como o imposto de exportação de petróleo, que custou R$ 104 mi no 3T26."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Brava Energia, Relatório de Resultados 3T26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/BRAV3/52152/",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Cenário Energia: Brava Energia eleva Ebitda ajustado em 22% no 3T26, mas registra prejuízo de R$ 156 milhões",
+   "url": "https://cenarioenergia.com.br/2026/11/10/brava-energia-ebitda-3t26-prejuizo-hedge-atlanta-potiguar/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "InfoMoney: Imposto de exportação de petróleo é prorrogado, como afeta Petrobras, Brava e PRIO",
+   "url": "https://www.infomoney.com.br/?p=3565324",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Forbes Brasil: Ecopetrol conclui compra da Brava e assume controle",
+   "url": "https://forbes.com.br/geral/2026/08/ecopetrol-conclui-compra-brava-brav3-assume-controle/",
+   "data": "2026-08-18"
+  }
+ ]
+}

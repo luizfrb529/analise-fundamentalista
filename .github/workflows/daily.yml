@@ -1,11 +1,19 @@
-# Roda o pipeline nos dias úteis às 9h e às 18h30 (Brasília) e faz commit dos JSON.
-# Na Fase 1 o arquivo já existe, mas só é usado depois que o projeto estiver num repositório do GitHub.
+# Roda o pipeline nos dias úteis de manhã (a partir das 9h) e depois do fechamento (a partir das 18h30) e faz commit dos JSON.
+# O agendamento do GitHub atrasa ou pula disparos; por isso há horários de reserva, e cada disparo agendado
+# só roda o pipeline se a última atualização tiver mais de 4 horas (senão encerra em segundos).
 name: atualizar-dados
 
 on:
   schedule:
-    - cron: "30 21 * * 1-5"   # 18h30 em Brasília: fechamento do pregão
     - cron: "0 12 * * 1-5"    # 9h em Brasília: aluguel da B3 do pregão anterior e documentos entregues à noite
+    - cron: "40 13 * * 1-5"   # reserva da manhã
+    - cron: "20 15 * * 1-5"   # reserva da manhã
+    - cron: "30 21 * * 1-5"   # 18h30 em Brasília: fechamento do pregão
+    - cron: "10 23 * * 1-5"   # reserva da noite
+    - cron: "50 0 * * 2-6"    # reserva da noite
+  push:
+    branches: [main]
+    paths: [".github/workflows/daily.yml"]
   workflow_dispatch: {}
 
 permissions:
@@ -18,13 +26,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Já atualizado há pouco?
+        id: checar
+        run: |
+          idade=$(python3 -c "import json,datetime as d;g=d.datetime.fromisoformat(json.load(open('data/meta.json'))['gerado_em']);print(int((d.datetime.now(g.tzinfo)-g).total_seconds()))" || echo 999999)
+          echo "última atualização há $((idade/60)) min"
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$idade" -lt 14400 ]; then echo "pular=sim" >> "$GITHUB_OUTPUT"; fi
+
       - uses: actions/setup-python@v5
+        if: steps.checar.outputs.pular != 'sim'
         with:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: pipeline/requirements.txt
 
       - name: Cache filtrado da CVM e da SEC
+        if: steps.checar.outputs.pular != 'sim'
         uses: actions/cache@v4
         with:
           path: pipeline/.cache
@@ -32,21 +49,26 @@ jobs:
           restore-keys: dados-
 
       - name: Instalar dependências
+        if: steps.checar.outputs.pular != 'sim'
         run: pip install -r pipeline/requirements.txt
 
       - name: Testes das fórmulas
+        if: steps.checar.outputs.pular != 'sim'
         run: cd pipeline && python -m pytest -q
 
       - name: Rodar pipeline
+        if: steps.checar.outputs.pular != 'sim'
         env:
           BRAPI_TOKEN: ${{ secrets.BRAPI_TOKEN }}
           TZ: America/Sao_Paulo
         run: python pipeline/update.py
 
       - name: Logos de ativos novos
+        if: steps.checar.outputs.pular != 'sim'
         run: python pipeline/logos.py
 
       - name: Commit dos dados
+        if: steps.checar.outputs.pular != 'sim'
         run: |
           git config user.name "atualizacao-automatica"
           git config user.email "actions@users.noreply.github.com"

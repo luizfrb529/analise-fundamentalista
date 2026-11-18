@@ -1,0 +1,99 @@
+{
+ "ticker": "GMAT3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Rede de atacarejo, supermercados, atacado B2B e eletro no Norte e Nordeste, com toda a receita no Brasil. Em 2026, vendas mesmas lojas negativas e consolidação do Novo Atacarejo pressionam margens; a empresa cortou investimentos.",
+ "modelo": "O Grupo Mateus vende alimentos e bens de consumo em 315 unidades (set/26), sendo 236 lojas de varejo alimentar nas bandeiras Mix Mateus e Novo Atacarejo (atacarejo), Supermercado Mateus e Camino (varejo), além das lojas Eletro Mateus. Também atende mais de 63 mil clientes mensais no atacado B2B a partir de 18 centros de distribuição. A receita é de venda recorrente de itens de consumo básico, com margem baixa e ganho em escala, logística própria e serviços financeiros como cartão private label.",
+ "segmentos": [
+  {
+   "nome": "Atacarejo (Mix Mateus e Novo Atacarejo)",
+   "peso_receita": null,
+   "periodo": "1T26",
+   "obs": "141 lojas em mar/26, maior formato do grupo."
+  },
+  {
+   "nome": "Atacado B2B",
+   "peso_receita": null,
+   "periodo": "1T26",
+   "obs": "Abastece pequenos varejistas e transformadores a partir dos centros de distribuição."
+  },
+  {
+   "nome": "Varejo (Supermercado Mateus e Camino)",
+   "peso_receita": null,
+   "periodo": "1T26",
+   "obs": "86 lojas em mar/26."
+  },
+  {
+   "nome": "Eletro Mateus",
+   "peso_receita": null,
+   "periodo": "1T26",
+   "obs": "78 lojas em mar/26, ante 104 um ano antes."
+  }
+ ],
+ "segmentos_base": "Receita bruta (pesos não divulgados em texto nas fontes abertas)",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Opera somente no Brasil, em 9 estados do Norte e Nordeste, com origem no Maranhão e presença em estados como Pará, Piauí, Ceará, Sergipe e Bahia. Não há receita no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais. O dólar só afeta de forma indireta, via preço de alimentos ligados a commodities e de eletroeletrônicos."
+ },
+ "momento": "No 3T26 (divulgado em novembro de 2026), a receita líquida foi de R$ 10,7 bi (-0,4% no ano, +8,8% sobre o 2T26), com vendas mesmas lojas de -4,7%, melhora frente aos -8,0% do 2T26. O Ebitda pós-IFRS 16 foi de R$ 767,7 mi (margem de 7,2%), queda de 7,1% no ano sem efeitos extraordinários, e o lucro líquido de R$ 322,4 mi caiu 61,7% (36,1% sem o crédito de imposto do 3T25), com resultado financeiro negativo de R$ 250,1 mi (+14,4%). A empresa atribui a fraqueza das vendas ao endividamento das famílias e à queda do canal Balcão nos atacarejos. Nos 9M26, o lucro soma R$ 755,3 mi; o grupo reduziu fortemente o capex e o ritmo de aberturas, com duas lojas Mix Mateus inauguradas no trimestre.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "A empresa cita o endividamento das famílias como causa da queda de vendas; juro menor alivia a renda dos clientes e a despesa financeira, mas a dívida do grupo é baixa."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Não há receita nem dívida em moeda estrangeira; o efeito indireto via preço de alimentos e eletro é difuso."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Alimentos mais caros elevam o tíquete nominal, mas reduzem volume e pressionam margem de um varejo de margem baixa."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais emprego e renda no Nordeste favorecem vendas de eletro e do atacado B2B, embora alimentos sejam pouco sensíveis ao ciclo."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "A deflação de alimentos pesou nas vendas mesmas lojas em 2026, então inflação de alimentos ajuda a receita nominal, mas corrói a renda do público de baixa renda."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior mantém juros altos e pode afetar transferências de renda relevantes para o consumo no Norte e Nordeste."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Grupo Mateus, Release de Resultados 1T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/8ea287f8-ae0a-4b88-b20b-80c1f1b86a1e/ae84a66d-3e7f-2ea0-104e-3ff3b110781e?origin=2",
+   "data": "2026-05"
+  },
+  {
+   "titulo": "SuperVarejo: Grupo Mateus registra lucro líquido de R$ 322 milhões no terceiro trimestre",
+   "url": "https://supervarejo.com.br/varejo/grupo-mateus-registra-lucro-liquido-de-r-322-milhoes-no-terceiro-trimestre",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "Eu Quero Investir: Grupo Mateus, balanço do 3T26",
+   "url": "https://euqueroinvestir.com/mercados/grupo-mateus-balanco-3t26-lucro",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "Mercado & Consumo: Grupo Mateus vê consumo pressionado por endividamento e vendas mesmas lojas caem 8%",
+   "url": "https://mercadoeconsumo.com.br/14/08/2026/noticias/grupo-mateus-ve-consumo-pressionado-por-endividamento-e-vendas-mesmas-lojas-caem-8/",
+   "data": "2026-08-14"
+  },
+  {
+   "titulo": "Brapi (a partir de reportagem da Exame): Grupo Mateus lucra R$ 322,4 mi no 3º tri",
+   "url": "https://brapi.dev/news/grupo-mateus-lucra-r-322-4-mi-no-3-tri-e-prioriza-56f4df24",
+   "data": "2026-11-15"
+  }
+ ]
+}

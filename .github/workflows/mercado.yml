@@ -1,11 +1,23 @@
-# Dados ao vivo do site, gravados no ramo "mercado" (um único commit, sobrescrito), sem mexer no histórico do main:
-#  - a cada 15 minutos em dias úteis, das 9h às 19h (Brasília = 12h a 22h UTC): cotações da faixa e preço de tela das empresas;
-#  - na primeira rodada de cada hora: notícias da imprensa de todas as empresas.
+# Dados ao vivo do site, gravados no ramo "mercado" (um único commit, sobrescrito), sem mexer no histórico do main.
+# O agendamento do GitHub atrasa e pula disparos curtos, então o robô não depende de um disparo a cada 15 minutos:
+# uma vez ligado, ele fica rodando em laço até as 19h30 de Brasília, atualizando a cada 5 minutos
+# (cotações da faixa e preço de tela das empresas) e, a cada hora, as notícias da imprensa.
+# Vários horários de disparo funcionam como reserva: se um falhar ou atrasar, o seguinte liga o laço;
+# se o laço já estiver rodando, o novo disparo espera na fila e encerra sozinho quando não houver mais o que fazer.
 name: cotacoes-faixa
 
 on:
   schedule:
-    - cron: "*/15 12-22 * * 1-5"
+    - cron: "50 11 * * 1-5"   # 8h50
+    - cron: "20 13 * * 1-5"   # reservas
+    - cron: "50 14 * * 1-5"
+    - cron: "20 16 * * 1-5"
+    - cron: "50 17 * * 1-5"
+    - cron: "20 19 * * 1-5"
+    - cron: "50 20 * * 1-5"
+  push:
+    branches: [main]
+    paths: [".github/workflows/mercado.yml"]
   workflow_dispatch: {}
 
 permissions:
@@ -18,7 +30,7 @@ concurrency:
 jobs:
   cotacoes:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
 
@@ -31,32 +43,40 @@ jobs:
       - name: Instalar dependências
         run: pip install -r pipeline/requirements.txt
 
-      - name: Cotações e preço de tela
+      - name: Atualizar em laço até o fim do pregão
         env:
           TZ: America/Sao_Paulo
-        run: |
-          mkdir -p saida
-          python pipeline/mercado.py saida/mercado.json
-          python pipeline/ao_vivo.py precos saida/precos.json
-
-      - name: Notícias (de hora em hora)
-        env:
-          TZ: America/Sao_Paulo
-        run: |
-          if [ "$(date +%M)" -lt 15 ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            python pipeline/ao_vivo.py noticias saida/noticias.json
-          else
-            curl -sf "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/refs/heads/mercado/noticias.json" -o saida/noticias.json || true
-          fi
-
-      - name: Publicar no ramo mercado
-        working-directory: saida
-        env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git init -q -b mercado
-          git config user.name "atualizacao-automatica"
-          git config user.email "actions@users.noreply.github.com"
-          git add .
-          git commit -q -m "Dados ao vivo de $(date '+%d/%m/%Y %H:%M')"
-          git push -q -f "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" mercado
+          inicio=$(date +%s)
+          limite=$(( inicio + 345*60 ))          # o GitHub encerra um job em 6 horas
+          ultima_noticia=0
+          rodada=0
+          publicar() {
+            ( cd saida
+              rm -rf .git
+              git init -q -b mercado
+              git config user.name "atualizacao-automatica"
+              git config user.email "actions@users.noreply.github.com"
+              git add .
+              git commit -q -m "Dados ao vivo de $(date '+%d/%m/%Y %H:%M')"
+              git push -q -f "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" mercado )
+          }
+          mkdir -p saida
+          curl -sf "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/refs/heads/mercado/noticias.json" -o saida/noticias.json || true
+          while :; do
+            agora=$(date +%s); hhmm=$(date +%H%M)
+            # fora do horário (antes das 8h50 ou depois das 19h30) só roda se for a primeira rodada de um disparo manual
+            if [ "$rodada" -gt 0 ] && { [ "$hhmm" -gt 1930 ] || [ "$agora" -ge "$limite" ]; }; then break; fi
+            if [ "$rodada" -eq 0 ] && [ "$hhmm" -gt 1935 ] && [ "${{ github.event_name }}" = "schedule" ]; then break; fi
+            rodada=$((rodada + 1))
+            python pipeline/mercado.py saida/mercado.json || echo "falha nas cotações da faixa"
+            python pipeline/ao_vivo.py precos saida/precos.json || echo "falha no preço de tela"
+            if [ $(( agora - ultima_noticia )) -ge 3300 ]; then
+              python pipeline/ao_vivo.py noticias saida/noticias.json.novo && mv saida/noticias.json.novo saida/noticias.json || echo "falha nas notícias"
+              ultima_noticia=$agora
+            fi
+            publicar || echo "falha ao publicar"
+            echo "rodada $rodada publicada às $(date +%H:%M)"
+            sleep 300
+          done
