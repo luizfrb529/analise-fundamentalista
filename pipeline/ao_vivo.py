@@ -29,10 +29,11 @@ def universo() -> list:
 def precos() -> dict:
     tickers = [a["ticker"] for a in universo()]
     df = yf.download([t + ".SA" for t in tickers], period="7d", interval="1d", group_by="ticker", progress=False, auto_adjust=False, threads=True)
-    out = {}
+    out, fatores = {}, S.fatores_cotacao()
     for t in tickers:
         try:
-            c = (df[t + ".SA"] if isinstance(df.columns, pd.MultiIndex) else df)["Close"].dropna()
+            bruto = (df[t + ".SA"] if isinstance(df.columns, pd.MultiIndex) else df)
+            c = S.normalizar_cotacao(bruto, fatores.get(t + ".SA"))["Close"].dropna()
         except KeyError:
             continue
         if len(c) < 2:

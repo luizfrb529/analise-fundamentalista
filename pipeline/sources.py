@@ -141,11 +141,46 @@ def cvm_arquivo(doc: str, ano: int, codigos: set[str], cnpjs: set[str], ttl_dias
 
 
 # ------------------------------------------------------------------ preços
+def fatores_cotacao() -> dict:
+    """{'RAIZ55.SA': {...}} para papéis que passaram a ser cotados por lote (campo fator_cotacao do universe.json).
+    O código anterior recebe a mesma regra, porque o Yahoo devolve a mesma série nos dois."""
+    try:
+        univ = json.loads((Path(__file__).resolve().parents[1] / "data" / "universe.json").read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    out = {}
+    for a in univ:
+        fc = a.get("fator_cotacao")
+        if fc:
+            out[a["ticker"] + ".SA"] = fc
+            if fc.get("codigo_anterior"):
+                out[fc["codigo_anterior"] + ".SA"] = fc
+    return out
+
+
+def normalizar_cotacao(df: pd.DataFrame, fc: dict) -> pd.DataFrame:
+    """Põe a série inteira em preço por ação: divide pelo fator a partir da data da mudança e descarta pregões com dado suspeito."""
+    if df is None or df.empty or not fc:
+        return df
+    d = df.copy()
+    idx = d.index.tz_localize(None) if getattr(d.index, "tz", None) is not None else d.index
+    novo = idx >= pd.Timestamp(fc["desde"])
+    for c in ("Open", "High", "Low", "Close", "Adj Close", "Dividends"):
+        if c in d.columns:
+            d.loc[novo, c] = d.loc[novo, c] / fc["fator"]
+    if "Volume" in d.columns:
+        d.loc[novo, "Volume"] = d.loc[novo, "Volume"] * fc["fator"]
+    if fc.get("ignorar_de"):
+        fora = (idx >= pd.Timestamp(fc["ignorar_de"])) & (idx <= pd.Timestamp(fc.get("ignorar_ate") or fc["ignorar_de"]))
+        d = d[~fora]
+    return d
+
+
 def precos_yf(tickers: list[str], anos: int = 11) -> dict[str, pd.DataFrame]:
     """Histórico diário (Close não ajustado por proventos, mas ajustado por desdobramento; Adj Close; Volume)."""
     """Inclui as colunas Dividends e Stock Splits (actions=True), para não precisar de uma chamada por ticker."""
     import yfinance as yf
-    out = {}
+    out, fatores = {}, fatores_cotacao()
     for i in range(0, len(tickers), 60):   # lotes, para o Yahoo não recusar
         lote = tickers[i:i + 60]
         df = yf.download(lote, period=f"{anos}y", auto_adjust=False, actions=True, progress=False, group_by="ticker", threads=True)
@@ -157,7 +192,7 @@ def precos_yf(tickers: list[str], anos: int = 11) -> dict[str, pd.DataFrame]:
                 continue
             if len(d):
                 cols = [c for c in ("Close", "Adj Close", "Volume", "Dividends", "Stock Splits") if c in d.columns]
-                out[t] = d[cols].copy()
+                out[t] = normalizar_cotacao(d[cols].copy(), fatores.get(t))
         time.sleep(1)
     return out
 

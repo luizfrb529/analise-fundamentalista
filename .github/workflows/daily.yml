@@ -1,6 +1,7 @@
 # Roda o pipeline nos dias úteis de manhã (a partir das 9h) e depois do fechamento (a partir das 18h30) e faz commit dos JSON.
 # O agendamento do GitHub atrasa ou pula disparos; por isso há horários de reserva, e cada disparo agendado
 # só roda o pipeline se a última atualização tiver mais de 4 horas (senão encerra em segundos).
+# Uma mudança neste arquivo dispara uma rodada completa na hora.
 name: atualizar-dados
 
 on:

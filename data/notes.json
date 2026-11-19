@@ -446,20 +446,6 @@
     ],
     "manuais": {}
   },
-  "RAIZ4": {
-    "resumo": "Raízen, joint venture de Cosan e Shell, maior produtora de etanol de cana do mundo e distribuidora de combustíveis com a marca Shell no Brasil e na Argentina. A receita vem de açúcar, etanol, energia e distribuição de combustíveis. Concorrentes: Vibra, Ipiranga, São Martinho e outras usinas.",
-    "tese": "",
-    "riscos": [
-      "Endividamento alto e geração de caixa fraca",
-      "Safras ruins e preço do açúcar",
-      "Possível capitalização pelos sócios"
-    ],
-    "oportunidades": [
-      "Venda de ativos",
-      "Etanol de segunda geração"
-    ],
-    "manuais": {}
-  },
   "BRKM5": {
     "resumo": "Braskem, maior petroquímica das Américas, produtora de resinas como polietileno, polipropileno e PVC, com fábricas no Brasil, EUA, México e Alemanha. Controlada por Novonor e Petrobras. Concorrentes: Dow, LyondellBasell e produtores asiáticos.",
     "tese": "",
@@ -1907,6 +1893,20 @@
     "tese": "",
     "riscos": [],
     "oportunidades": [],
+    "manuais": {}
+  },
+  "RAIZ55": {
+    "resumo": "Raízen, joint venture de Cosan e Shell, maior produtora de etanol de cana do mundo e distribuidora de combustíveis com a marca Shell no Brasil e na Argentina. A receita vem de açúcar, etanol, energia e distribuição de combustíveis. Concorrentes: Vibra, Ipiranga, São Martinho e outras usinas.",
+    "tese": "",
+    "riscos": [
+      "Endividamento alto e geração de caixa fraca",
+      "Safras ruins e preço do açúcar",
+      "Possível capitalização pelos sócios"
+    ],
+    "oportunidades": [
+      "Venda de ativos",
+      "Etanol de segunda geração"
+    ],
     "manuais": {}
   }
 }

@@ -90,9 +90,19 @@
    "data": "2026-11-17"
   },
   {
-   "titulo": "Digital Trends: Jensen Huang steps down as Nvidia chief",
-   "url": "https://digitaltrends.com/computing/jensen-huang-steps-down-as-nvidia-chief-and-the-hunt-for-a-new-ceo-begins",
+   "titulo": "CNBC: Nvidia CEO Jensen Huang resigns",
+   "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html",
    "data": "2026-11-12"
+  },
+  {
+   "titulo": "CNN: CFO Colette Kress to serve as interim leader after Jensen Huang resignation",
+   "url": "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Fortune: Nvidia's Jensen Huang resigns, CFO Colette Kress named interim CEO",
+   "url": "https://fortune.com/2026/11/11/nvidia-oust-jensen-huang-spy-affairs/",
+   "data": "2026-11-11"
   }
  ]
 }

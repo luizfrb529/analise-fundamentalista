@@ -48,7 +48,17 @@ def mensal_bcb(serie: int) -> list:
         b = min(hoje, a.replace(year=a.year + 9))
         url = (f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{serie}/dados?formato=json"
                f"&dataInicial={a:%d/%m/%Y}&dataFinal={b:%d/%m/%Y}")
-        for x in S.get(url, headers={"Cache-Control": "no-cache"}).json():
+        dados = None
+        for tentativa in range(4):                    # a API do BCB às vezes responde vazio; tenta de novo furando o cache
+            try:
+                dados = S.get(f"{url}&_={int(dt.datetime.now().timestamp())}{tentativa}", headers={"Cache-Control": "no-cache"}).json()
+                break
+            except Exception:
+                import time
+                time.sleep(3 * (tentativa + 1))
+        if dados is None:
+            raise RuntimeError(f"BCB série {serie} indisponível")
+        for x in dados:
             d, m, y = x["data"].split("/")
             out.append([f"{y}-{m}", float(x["valor"]) / 100])
         a = b + dt.timedelta(days=1)
@@ -72,9 +82,17 @@ def main():
             continue
         gravar(SAIDA / f"{t}.json", {"ticker": t, "fonte": "Yahoo Finance (B3)", "colunas": ["data", "fechamento", "ajustado", "proventos"], "semanal": serie_semanal(df)})
         n += 1
+    anterior = {}
+    if (SAIDA / "_benchmarks.json").exists():
+        anterior = json.loads((SAIDA / "_benchmarks.json").read_text(encoding="utf-8"))
     bench = {"atualizado_em": dt.datetime.now().isoformat(timespec="seconds"),
-             "fonte": "Banco Central (SGS 4391 CDI mensal e 433 IPCA mensal) e Yahoo Finance (Ibovespa)",
-             "cdi": mensal_bcb(4391), "ipca": mensal_bcb(433)}
+             "fonte": "Banco Central (SGS 4391 CDI mensal e 433 IPCA mensal) e Yahoo Finance (Ibovespa)"}
+    for chave, serie in (("cdi", 4391), ("ipca", 433)):
+        try:
+            bench[chave] = mensal_bcb(serie)
+        except Exception as e:                        # mantém a série anterior em vez de apagar a página
+            print(f"{chave}: {e}; mantida a série anterior")
+            bench[chave] = anterior.get(chave, [])
     ib = dfs.get("^BVSP")
     if ib is not None and not ib.empty:
         bench["ibov"] = [[d.strftime("%Y-%m-%d"), round(float(v), 2)] for d, v in ib["Close"].resample("W-FRI").last().dropna().items()]
