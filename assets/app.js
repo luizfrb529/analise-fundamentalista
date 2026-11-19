@@ -1414,6 +1414,7 @@ async function pgRetorno(app, q) {
   };
   app.innerHTML = `${trilha([["Retorno total"]])}<div class="cab-pagina"><div><h1>Retorno total</h1>
     <p>Quanto R$ 1.000 investidos viraram, somando a variação do preço e os proventos. Compare com CDI, IPCA + juro real e Ibovespa.</p></div></div>
+  <div class="aviso-rt"><b>Estimativa.</b> Cálculo próprio com preços e proventos brutos do Yahoo Finance (JCP antes do IR de 15%), sem custos e impostos. Calculadoras que descontam IR ou usam outras datas chegam a números diferentes; use como referência de ordem de grandeza, não como extrato.</div>
   <div class="cartao rt-ctrl">
     <div class="linha"><div class="chips">${sel.map((t, i) => `<button class="chip ativo" data-rm="${t}"><i class="rt-cor" style="background:${RT_CORES[i]}"></i>${logo(t)}${t}<span class="x">✕</span></button>`).join("") || '<span class="muted">Escolha até 6 ações.</span>'}</div>
       <select id="rt-add"><option value="">Adicionar ação</option>${D.univ.filter((a) => !sel.includes(a.ticker)).map((a) => `<option value="${a.ticker}">${a.ticker} · ${esc(a.nome)}</option>`).join("")}</select></div>
