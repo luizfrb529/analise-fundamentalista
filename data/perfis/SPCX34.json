@@ -1,0 +1,88 @@
+{
+ "ticker": "SPCX34",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR da SpaceX, que reúne lançamentos espaciais, internet via satélite Starlink e o negócio de IA (antiga xAI, com Grok, X e Cursor). A receita é em dólar e o investimento em data centers é muito alto.",
+ "modelo": "A SpaceX opera três segmentos: Space (lançamentos com Falcon 9, Falcon Heavy e Starship e missões para a NASA e o governo dos EUA), Connectivity (internet via satélite Starlink para consumidores, empresas, aviação e governos em 174 países e territórios) e Super Intelligence, ou SI (infraestrutura de IA para empresas, o modelo Grok, a plataforma de programação Cursor e a rede social X). A Starlink gera receita recorrente por assinatura; lançamentos são contratos de preço fixo; a SI combina contratos de nuvem, assinaturas e publicidade. A empresa abriu capital em junho de 2026 e o BDR SPCX34 representa ações listadas na Nasdaq.",
+ "segmentos": [
+  {
+   "nome": "Connectivity (Starlink)",
+   "peso_receita": 0.47,
+   "periodo": "9M26",
+   "obs": "US$ 12,80 bilhões; no 3T26 cresceu 69% e teve lucro operacional de US$ 2,37 bilhões."
+  },
+  {
+   "nome": "Super Intelligence (Grok, X, Cursor, infraestrutura de IA)",
+   "peso_receita": 0.4,
+   "periodo": "9M26",
+   "obs": "US$ 10,94 bilhões; no 3T26 somou US$ 7,56 bilhões e passou a 52% da receita do trimestre."
+  },
+  {
+   "nome": "Space (lançamentos e desenvolvimento)",
+   "peso_receita": 0.12,
+   "periodo": "9M26",
+   "obs": "US$ 3,35 bilhões, com prejuízo operacional pelo investimento no Starship."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão).",
+ "geografia": {
+  "brasil_pct": 0.0,
+  "exterior_pct": 1.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Do ponto de vista do investidor brasileiro, a receita é externa: a empresa é sediada nos EUA e a Starlink atende clientes em 174 países e territórios, inclusive o Brasil. A divisão da receita por país não é divulgada no 10-Q."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "alta",
+  "texto": "Os resultados são em dólar e o BDR replica a ação convertida para reais, então a alta do dólar valoriza o BDR na B3. A dívida é em dólar e grande (US$ 38,0 bilhões em set/26, dos quais US$ 25,0 bilhões em títulos emitidos em jun/26), mas menor que caixa e aplicações de US$ 89,9 bilhões; em out/26 assumiu compromisso de arrendamento de GPUs com a Apollo de cerca de US$ 40 bilhões."
+ },
+ "momento": "No 3T26 (divulgado em 20/10/2026), a receita subiu 161%, para US$ 14,58 bilhões, o lucro operacional foi de US$ 2,79 bilhões (prejuízo de US$ 273 milhões no 3T25) e o lucro líquido de US$ 4,40 bilhões, ajudado por receitas financeiras, ganho de US$ 561 milhões com a participação na The Boring Company e benefício fiscal; nos 9M26 houve prejuízo líquido de US$ 413 milhões. A Starlink chegou a 13,6 milhões de assinantes consumidores (7,2 milhões um ano antes) e o Starship fez seu primeiro voo comercial. O investimento (capex) foi de US$ 19,6 bilhões no trimestre, 84% na SI, e somou US$ 48,1 bilhões nos 9M26. Em 2026 a empresa incorporou a xAI (fev), abriu capital a US$ 135 por ação levantando US$ 85,7 bilhões líquidos (jun) e comprou a Cursor por valor implícito de US$ 60 bilhões (ago).",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A empresa não tem crédito no Brasil; a Selic só afeta o BDR indiretamente, pela comparação com a renda fixa local."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "O BDR é a ação em dólar convertida para reais: cada alta do dólar se soma diretamente ao retorno em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Metais e combustível de foguetes pesam nos custos, mas a receita é dominada por assinaturas e IA; efeito líquido pequeno."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O Brasil é um dos mercados da Starlink, mas parcela não divulgada e pequena do total; o que pesa é a demanda global por conectividade e IA."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação brasileira não afeta de forma relevante a operação, que é global e em dólar."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal no Brasil tende a desvalorizar o real, o que eleva o BDR em reais e funciona como proteção para o investidor local."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "SpaceX: release de resultados do 3T26 (Form 8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
+   "data": "2026-10-20"
+  },
+  {
+   "titulo": "SpaceX: Form 10-Q do trimestre encerrado em 30/09/2026 (IPO, fusão com a xAI, dívida, caixa)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm",
+   "data": "2026-10-22"
+  },
+  {
+   "titulo": "SpaceX: Form 8-K sobre arrendamento de GPUs com a Apollo",
+   "url": "https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm",
+   "data": "2026-10-26"
+  },
+  {
+   "titulo": "Pulse 2.0: SpaceX Q3 revenue surges 161% to $14.6 billion",
+   "url": "https://pulse2.com/spacex-q3-revenue-surges-161-to-14-6-billion-as-super-intelligence-and-starlink-growth-accelerate/",
+   "data": "2026-10-20"
+  }
+ ]
+}

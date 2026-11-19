@@ -1,0 +1,82 @@
+{
+ "ticker": "QUBT34",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR da Quantum Computing Inc., de tecnologia quântica e fotônica, com receita ainda pequena e vinda quase toda de empresas compradas em 2026. Tem cerca de US$ 1,3 bilhão em caixa e aplicações.",
+ "modelo": "A Quantum Computing Inc. (QCi) desenvolve máquinas quânticas baseadas em fotônica que operam em temperatura ambiente (otimização, computação de reservatório, sensores e comunicação segura) e, desde 2026, vende componentes fotônicos, produtos de comunicação quântica e serviços de encapsulamento avançado de semicondutores. Os clientes são principalmente dos setores aeroespacial, de governo e industrial. A receita é pontual, por pedidos e contratos, e a empresa ainda opera com prejuízo. O BDR QUBT34 é negociado na B3 e representa ações listadas na Nasdaq.",
+ "segmentos": [
+  {
+   "nome": "Negócios adquiridos em 2026 (LSI, NuCrypt e NHanced)",
+   "peso_receita": 0.93,
+   "periodo": "9M26",
+   "obs": "US$ 17,4 milhões: componentes fotônicos, comunicação quântica e encapsulamento de chips."
+  },
+  {
+   "nome": "Operação original (máquinas quânticas e serviços)",
+   "peso_receita": 0.07,
+   "periodo": "9M26",
+   "obs": "Cerca de US$ 1,3 milhão, alta de US$ 0,9 milhão em um ano."
+  }
+ ],
+ "segmentos_base": "Receita líquida. A empresa reporta segmento único; a divisão acima usa a contribuição das aquisições informada no 10-Q.",
+ "geografia": {
+  "brasil_pct": 0.0,
+  "exterior_pct": 1.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Toda a receita é externa, com operações e fábricas nos Estados Unidos. A LSI vende também para clientes fora dos EUA, mas a empresa não divulga a divisão por país; não há operação no Brasil."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Os resultados são em dólar e o BDR replica a ação convertida para reais, então a alta do dólar valoriza o BDR na B3. Não há dívida financeira relevante informada; o balanço é sustentado por caixa e aplicações de cerca de US$ 1,3 bilhão."
+ },
+ "momento": "No 3T26 (divulgado em 09/11/2026), a receita foi de US$ 9,5 milhões, contra US$ 384 mil no 3T25, com US$ 8,8 milhões vindos das empresas adquiridas no 1S26 (Luminar Semiconductor, NuCrypt e NHanced). A margem bruta foi de 4,5%, por baixa utilização das fábricas, e as despesas operacionais subiram para US$ 29,0 milhões; o prejuízo líquido foi de US$ 15,1 milhões, amortecido por US$ 13,0 milhões de receitas financeiras. A carteira de contratos somava US$ 39,1 milhões e o caixa com aplicações, cerca de US$ 1,3 bilhão em set/26. A empresa não divulga projeção de receita.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A empresa não opera no Brasil; a Selic só afeta o BDR indiretamente, pela comparação com a renda fixa local."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "O BDR é a ação em dólar convertida para reais: cada alta do dólar se soma diretamente ao retorno em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Os insumos (como wafers de niobato de lítio e componentes ópticos) são especializados, sem exposição relevante a commodities negociadas em bolsa."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "A receita depende de clientes aeroespaciais, de governo e industriais nos EUA, não da atividade brasileira."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação brasileira não afeta a operação, que é toda no exterior e em dólar."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal no Brasil tende a desvalorizar o real, o que eleva o BDR em reais e funciona como proteção para o investidor local."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Quantum Computing Inc.: release de resultados do 3T26 (Form 8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1758009/000162828026072163/q3-26earningspressreleasex.htm",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Quantum Computing Inc.: Form 10-Q do trimestre encerrado em 30/09/2026 (aquisições e contribuição para a receita)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1758009/000162828026072119/qubt-20260930.htm",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Quiver Quantitative: Quantum Computing (QUBT) reports $9.5 million third-quarter revenue",
+   "url": "https://www.quiverquant.com/news/Quantum+Computing+QUBT+Reports+%249.5+Million+Third-Quarter+Revenue",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Quantum Computing Inc.: Form 8-K sobre mudança na diretoria comercial",
+   "url": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026080443/ea0298923-8k_quantum.htm",
+   "data": "2026-07-22"
+  }
+ ]
+}
