@@ -3,59 +3,125 @@
   "ticker": "RURA11",
   "nome": "Itaú Asset Rural Fiagro",
   "tipo": "fiagro",
-  "setor": "Fiagro"
+  "setor": "Agro",
+  "objetivo": {
+   "texto": "Investir nas cadeias produtivas do agronegócio (insumos, produtores rurais, agroindústrias, usinas) por meio de uma carteira diversificada de crédito privado do agro, como CRA, CPR, cotas de Fiagro e LCA, buscando retorno de longo prazo acima do CDI.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1385016&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "KNCA11",
   "nome": "Kinea Crédito Agro",
   "tipo": "fiagro",
-  "setor": "Fiagro"
+  "setor": "Agro",
+  "objetivo": {
+   "texto": "Investir em valores mobiliários do agronegócio e do setor imobiliário, especialmente CRA, CRI, cotas de Fiagro, LCA e LCI.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1373192&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "RZTR11",
   "nome": "Riza Terrax",
-  "setor": "Terrenos e desenvolvimento"
+  "setor": "Agro",
+  "objetivo": {
+   "texto": "Gerar retorno de longo prazo com o arrendamento, a compra e a venda de propriedades agrícolas, em três estratégias (sale & leaseback, buy to lease e land equity), com foco nas regiões consolidadas de produção de grãos e fibras.",
+   "fonte": "Relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1358017&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "TRXF11",
   "nome": "TRX Real Estate",
   "cnpj": "28548288000152",
-  "setor": "Renda urbana"
+  "setor": "Renda urbana",
+  "objetivo": {
+   "texto": "Gerar renda recorrente e valor no longo prazo com gestão ativa: aquisição de imóveis, estruturação de operações imobiliárias e reciclagem do portfólio, com foco na previsibilidade das receitas.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1371440&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "TGAR11",
   "nome": "TG Ativo Real",
-  "setor": "Terrenos e desenvolvimento"
+  "setor": "Desenvolvimento",
+  "objetivo": {
+   "texto": "Buscar valorização e rentabilidade das cotas com investimentos em ativos imobiliários e ativos financeiros imobiliários, conforme a política de investimento do regulamento.",
+   "fonte": "Relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1365779&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "RBRX11",
   "nome": "Pátria Plus Multiestratégia",
-  "setor": "Híbridos"
+  "setor": "Híbridos",
+  "objetivo": {
+   "texto": "Aplicar principalmente em imóveis e direitos reais sobre imóveis, ações ou cotas de sociedades de propósito específico (SPE), cotas de FIP e de outros FIIs e CRI.",
+   "fonte": "Relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1356176&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "KFOF11",
   "nome": "Kinea FoF",
-  "setor": "Fundos de fundos"
+  "setor": "Fundos de fundos",
+  "objetivo": {
+   "texto": "Gerar renda mensal e ganho de capital com uma carteira diversificada de cotas de outros fundos imobiliários.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1370330&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "BTHF11",
   "nome": "BTG Pactual Hedge Fund",
-  "setor": "Híbridos"
+  "setor": "Híbridos",
+  "objetivo": {
+   "texto": "Transitar entre carteiras de renda fixa e de renda variável imobiliárias, com carteira diversificada e previsibilidade de renda, protegendo o patrimônio em períodos de volatilidade e aproveitando ciclos favoráveis.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1371513&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "KNHF11",
   "nome": "Kinea Hedge Fund",
-  "setor": "Híbridos"
+  "setor": "Híbridos",
+  "objetivo": {
+   "texto": "Gerar retorno absoluto, com renda recorrente e ganhos de capital, por meio de gestão ativa de uma carteira com diferentes ativos do setor imobiliário, gerida por várias equipes da Kinea.",
+   "fonte": "Relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1353831&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "ALZR11",
   "nome": "Alianza Trust Renda Imobiliária",
-  "setor": "Renda urbana"
+  "setor": "Renda urbana",
+  "objetivo": {
+   "texto": "Investimento de longo prazo focado em renda, com portfólio híbrido de imóveis, prioritariamente por contratos de locação atípicos (built to suit e sale & leaseback).",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1388132&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "KNRI11",
   "nome": "Kinea Renda Imobiliária",
-  "setor": "Tijolo multissetorial"
+  "setor": "Tijolo multissetorial",
+  "objetivo": {
+   "texto": "Gerar renda de aluguel mensal com a locação de um portfólio diversificado de prédios corporativos e galpões logísticos.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1368920&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "JURO11",
@@ -63,7 +129,12 @@
   "tipo": "infra",
   "cnpj": "42730834000100",
   "nome_cvm": "SPARTA INFRA FI EM COTAS DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRAESTRUTURA RENDA FIXA",
-  "setor": "FI-Infra"
+  "setor": "FI-Infra",
+  "objetivo": {
+   "texto": "Investir em cotas de fundos incentivados de investimento em infraestrutura (debêntures da Lei 12.431), conforme a denominação e a classificação do fundo na CVM.",
+   "fonte": "Denominação e classificação na CVM",
+   "link": null
+  }
  },
  {
   "ticker": "CDII11",
@@ -71,7 +142,12 @@
   "tipo": "infra",
   "cnpj": "48973783000116",
   "nome_cvm": "SPARTA INFRA CDI FI FINANCEIRO EM COTAS DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRAESTRUTURA RF",
-  "setor": "FI-Infra"
+  "setor": "FI-Infra",
+  "objetivo": {
+   "texto": "Investir em cotas de fundos incentivados de investimento em infraestrutura (debêntures da Lei 12.431), conforme a denominação e a classificação do fundo na CVM.",
+   "fonte": "Denominação e classificação na CVM",
+   "link": null
+  }
  },
  {
   "ticker": "KDIF11",
@@ -79,7 +155,12 @@
   "tipo": "infra",
   "cnpj": "26324298000189",
   "nome_cvm": "KINEA INFRA FIF CIC DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRA RF CRED PRIV RESP LIMITADA",
-  "setor": "FI-Infra"
+  "setor": "FI-Infra",
+  "objetivo": {
+   "texto": "Investir em cotas de fundos incentivados de investimento em infraestrutura (debêntures da Lei 12.431), conforme a denominação e a classificação do fundo na CVM.",
+   "fonte": "Denominação e classificação na CVM",
+   "link": null
+  }
  },
  {
   "ticker": "IFRA11",
@@ -87,7 +168,12 @@
   "tipo": "infra",
   "cnpj": "34633510000118",
   "nome_cvm": "ITAÚ FIF - CIC FIF INCENTIVADOS EM INFRA RF CRED PRIV - RESP LIMITADA",
-  "setor": "FI-Infra"
+  "setor": "FI-Infra",
+  "objetivo": {
+   "texto": "Investir em cotas de fundos incentivados de investimento em infraestrutura (debêntures da Lei 12.431), conforme a denominação e a classificação do fundo na CVM.",
+   "fonte": "Denominação e classificação na CVM",
+   "link": null
+  }
  },
  {
   "ticker": "BDIF11",
@@ -95,153 +181,345 @@
   "tipo": "infra",
   "cnpj": "40502607000194",
   "nome_cvm": "BTG PACTUAL DÍVIDA INFRA FIF EM COTAS DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRA RENDA FIXA",
-  "setor": "FI-Infra"
+  "setor": "FI-Infra",
+  "objetivo": {
+   "texto": "Investir em cotas de fundos incentivados de investimento em infraestrutura (debêntures da Lei 12.431), conforme a denominação e a classificação do fundo na CVM.",
+   "fonte": "Denominação e classificação na CVM",
+   "link": null
+  }
  },
  {
   "ticker": "PVBI11",
   "nome": "VBI Prime Properties",
-  "setor": "Lajes corporativas"
+  "setor": "Lajes corporativas",
+  "objetivo": {
+   "texto": "Obter renda e ganho de capital investindo no mínimo dois terços do patrimônio em imóveis do segmento corporativo ou comercial, diretamente ou por meio de sociedades de propósito específico.",
+   "fonte": "Relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1356186&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "FATN11",
   "nome": "BRC Renda Corporativa",
-  "setor": "Lajes corporativas"
+  "setor": "Lajes corporativas",
+  "objetivo": {
+   "texto": "Adquirir e gerar renda com a locação de lajes corporativas entregues prontas para uso (plug and play), com contratos atípicos (built to suit), com foco no middle market.",
+   "fonte": "Relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1366812&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "BRCR11",
   "nome": "BC Fund",
-  "setor": "Lajes corporativas"
+  "setor": "Lajes corporativas",
+  "objetivo": {
+   "texto": "Gerar renda com escritórios de laje corporativa em grandes centros comerciais, com gestão ativa e reciclagem do portfólio.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1375210&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "LVBI11",
   "nome": "VBI Logístico",
-  "setor": "Logística"
+  "setor": "Logística",
+  "objetivo": {
+   "texto": "Obter renda e ganho de capital investindo no mínimo dois terços do patrimônio em imóveis do segmento logístico ou industrial, diretamente ou por meio de sociedades de propósito específico e cotas de FII.",
+   "fonte": "Relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1356177&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "BTLG11",
   "nome": "BTG Pactual Logística",
-  "setor": "Logística"
+  "setor": "Logística",
+  "objetivo": {
+   "texto": "Obter renda e ganho de capital com a exploração de empreendimentos imobiliários do segmento de logística.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1369174&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "BRCO11",
   "nome": "Bresco Logística",
-  "setor": "Logística"
+  "setor": "Logística",
+  "objetivo": {
+   "texto": "Fundo de galpões logísticos: o relatório gerencial descreve um portfólio de 14 propriedades, com 591 mil m² de área bruta locável e receita concentrada em ativos last mile.",
+   "fonte": "Descrição do relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1353667&cvm=true",
+   "tipo": "descricao"
+  }
  },
  {
   "ticker": "XPLG11",
   "nome": "XP Log",
-  "setor": "Logística"
+  "setor": "Logística",
+  "objetivo": {
+   "texto": "Obter ganhos com a aquisição e a exploração comercial de empreendimentos principalmente da área logística e industrial.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1373062&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "HGLG11",
   "nome": "Pátria Log",
-  "setor": "Logística"
+  "setor": "Logística",
+  "objetivo": {
+   "texto": "Explorar empreendimentos imobiliários voltados principalmente a operações logísticas e industriais, com aquisição de terrenos para construção ou de imóveis prontos para locação, arrendamento ou venda.",
+   "fonte": "Relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1348097&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "VILG11",
   "nome": "Vinci Logística",
-  "setor": "Logística"
+  "setor": "Logística",
+  "objetivo": {
+   "texto": "Fundo de galpões logísticos: o relatório gerencial descreve a carteira de imóveis logísticos locados e o resultado gerado por eles.",
+   "fonte": "Descrição do relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1373431&cvm=true",
+   "tipo": "descricao"
+  }
  },
  {
   "ticker": "MCRE11",
   "nome": "Mauá Capital Recebíveis",
-  "setor": "Híbridos"
+  "setor": "Híbridos",
+  "objetivo": {
+   "texto": "FII multiestratégia: a carteira investe em diversas classes de ativos, com parte relevante em crédito imobiliário (CRI) e outra parte em ativos estruturados e imóveis.",
+   "fonte": "Descrição do relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1366154&cvm=true",
+   "tipo": "descricao"
+  }
  },
  {
   "ticker": "KNHY11",
   "nome": "Kinea High Yield CRI",
-  "setor": "Recebíveis (CRI)"
+  "setor": "Recebíveis (CRI)",
+  "objetivo": {
+   "texto": "Investir em ativos de renda fixa de natureza imobiliária, especialmente CRI, predominantemente indexados à inflação.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1371505&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "VGIP11",
   "nome": "Valora CRI Índice de Preço",
-  "setor": "Recebíveis (CRI)"
+  "setor": "Recebíveis (CRI)",
+  "objetivo": {
+   "texto": "Investir de forma preponderante em Certificados de Recebíveis Imobiliários (CRI), conforme os critérios de elegibilidade da política de investimento.",
+   "fonte": "Relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1354381&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "BCRI11",
   "nome": "Banestes Recebíveis Imobiliários",
-  "setor": "Recebíveis (CRI)"
+  "setor": "Recebíveis (CRI)",
+  "objetivo": {
+   "texto": "Adquirir ativos financeiros de base imobiliária, como CRI, LCI, letras hipotecárias, cotas de FII, de FIDC e de fundos de renda fixa e debêntures, com referência de retorno de IGP-M + 6% ao ano.",
+   "fonte": "Relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1356958&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "KNIP11",
   "nome": "Kinea Índices de Preços",
-  "setor": "Recebíveis (CRI)"
+  "setor": "Recebíveis (CRI)",
+  "objetivo": {
+   "texto": "Investir em ativos de renda fixa imobiliários predominantemente indexados à inflação e com baixo risco de crédito, especialmente CRI.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1371506&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "IRIM11",
   "nome": "Iridium Recebíveis Imobiliários",
-  "setor": "Recebíveis (CRI)"
+  "setor": "Recebíveis (CRI)",
+  "objetivo": {
+   "texto": "Fundo de recebíveis imobiliários: o relatório gerencial descreve uma carteira de CRI, com uso pontual de operações compromissadas reversas casadas com o fluxo das amortizações.",
+   "fonte": "Descrição do relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1381643&cvm=true",
+   "tipo": "descricao"
+  }
  },
  {
   "ticker": "KNSC11",
   "nome": "Kinea Securities",
-  "setor": "Recebíveis (CRI)"
+  "setor": "Recebíveis (CRI)",
+  "objetivo": {
+   "texto": "Investir em valores mobiliários de natureza imobiliária, especialmente CRI e cotas de FII.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1371507&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "VRTA11",
   "nome": "Fator Verità",
-  "setor": "Recebíveis (CRI)"
+  "setor": "Recebíveis (CRI)",
+  "objetivo": {
+   "texto": "Adquirir ativos financeiros de base imobiliária, como CRI, LCI, letras hipotecárias, cotas de FII, de FIDC e de fundos de renda fixa e debêntures, com referência de retorno de IGP-M + 6% ao ano.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1388624&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "AFHI11",
   "nome": "AF Invest CRI",
-  "setor": "Recebíveis (CRI)"
+  "setor": "Recebíveis (CRI)",
+  "objetivo": {
+   "texto": "Gerar rendimentos e ganho de capital investindo majoritariamente em Certificados de Recebíveis Imobiliários (CRI).",
+   "fonte": "Relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1360885&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "MXRF11",
   "nome": "Maxi Renda",
-  "setor": "Recebíveis (CRI)"
+  "setor": "Recebíveis (CRI)",
+  "objetivo": {
+   "texto": "Obter ganhos com ativos financeiros de lastro imobiliário (CRI, debêntures, LCI, letras hipotecárias e cotas de FII) e com imóveis, como imóveis comerciais e projetos residenciais.",
+   "fonte": "Relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1367646&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "KNCR11",
   "nome": "Kinea Rendimentos Imobiliários",
-  "setor": "Recebíveis (CRI)"
+  "setor": "Recebíveis (CRI)",
+  "objetivo": {
+   "texto": "Investir em ativos de renda fixa imobiliários predominantemente pós-fixados e com baixo risco de crédito, especialmente CRI.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1387208&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "CPTS11",
   "nome": "Capitânia Securities II",
-  "setor": "Híbridos"
+  "setor": "Híbridos",
+  "objetivo": {
+   "texto": "Fundo multiestratégia: o relatório gerencial descreve uma carteira com cerca de 90 FIIs (perto de 70% dos ativos) e 12 CRIs (perto de 24%), além de operações de carrego de cotas.",
+   "fonte": "Descrição do relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1366529&cvm=true",
+   "tipo": "descricao"
+  }
  },
  {
   "ticker": "RECR11",
   "nome": "REC Recebíveis Imobiliários",
-  "setor": "Recebíveis (CRI)"
+  "setor": "Recebíveis (CRI)",
+  "objetivo": {
+   "texto": "Investir e gerir ativamente ativos de renda fixa imobiliários, com preponderância em Certificados de Recebíveis Imobiliários (CRI).",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1373276&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "PCIP11",
   "nome": "Pátria Crédito Imobiliário Índice de Preços",
   "cnpj": "28729197000113",
-  "setor": "Recebíveis (CRI)"
+  "setor": "Recebíveis (CRI)",
+  "objetivo": {
+   "texto": "Obter renda e ganho de capital investindo no mínimo dois terços do patrimônio em renda fixa imobiliária: CRI, letras hipotecárias, LCI e letras imobiliárias garantidas.",
+   "fonte": "Relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1356052&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "HGRU11",
   "nome": "Pátria Renda Urbana",
-  "setor": "Renda urbana"
+  "setor": "Renda urbana",
+  "objetivo": {
+   "texto": "Explorar empreendimentos imobiliários urbanos de uso institucional e comercial, que gerem renda por locação, arrendamento ou venda.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1384714&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "HSML11",
   "nome": "HSI Malls",
-  "setor": "Shoppings"
+  "setor": "Shoppings",
+  "objetivo": {
+   "texto": "Obter renda e ganho de capital com imóveis prontos do segmento de shopping centers, para locação, arrendamento, exploração do direito de superfície ou venda.",
+   "fonte": "Relatório gerencial de novembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1373074&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "PMLL11",
   "nome": "Pátria Malls",
   "cnpj": "26499833000132",
-  "setor": "Shoppings"
+  "setor": "Shoppings",
+  "objetivo": {
+   "texto": "Fundo de shopping centers: o relatório gerencial descreve participações em shoppings de diferentes regiões, ampliadas na 7ª emissão de cotas com a incorporação do RBR Malls.",
+   "fonte": "Descrição do relatório gerencial de setembro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1356230&cvm=true",
+   "tipo": "descricao"
+  }
  },
  {
   "ticker": "HGBS11",
   "nome": "Hedge Brasil Shopping",
-  "setor": "Shoppings"
+  "setor": "Shoppings",
+  "objetivo": {
+   "texto": "Obter rendimentos com participações em shopping centers prontos e em operação, com pelo menos 15 mil m² de área bruta locável, em regiões com no mínimo 500 mil habitantes e administrados por empresas especializadas.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1388726&cvm=true",
+   "tipo": "objetivo"
+  }
  },
  {
   "ticker": "VISC11",
   "nome": "Vinci Shopping Centers",
-  "setor": "Shoppings"
+  "setor": "Shoppings",
+  "objetivo": {
+   "texto": "Fundo de shopping centers: o relatório gerencial descreve participações em shoppings de diversas regiões do país, como BH Shopping, Shopping Paralela e Midway Mall.",
+   "fonte": "Descrição do relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1373305&cvm=true",
+   "tipo": "descricao"
+  }
  },
  {
   "ticker": "XPML11",
   "nome": "XP Malls",
-  "setor": "Shoppings"
+  "setor": "Shoppings",
+  "objetivo": {
+   "texto": "Obter renda com a exploração imobiliária de shopping centers e ganho de capital com a compra e venda de shoppings.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1373061&cvm=true",
+   "tipo": "objetivo"
+  }
+ },
+ {
+  "ticker": "SNEL11",
+  "nome": "Suno Energias Limpas",
+  "setor": "Energia",
+  "objetivo": {
+   "texto": "FII focado em empreendimentos imobiliários ligados à geração de energia limpa (usinas solares), alugados com contratos de longo prazo, buscando previsibilidade das receitas.",
+   "fonte": "Relatório gerencial de outubro de 2026",
+   "link": "https://fnet.bmfbovespa.com.br/fnet/publico/exibirDocumento?id=1388694&cvm=true",
+   "tipo": "objetivo"
+  },
+  "perfil": "energia (usinas solares)",
+  "rotulo_outros": "participações em sociedades donas das usinas"
  }
 ]

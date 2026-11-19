@@ -170,6 +170,10 @@ def cnpj_por_ticker(geral: pd.DataFrame, ticker: str) -> str | None:
 # ---------------------------------------------------------------- segmentos
 def classificar_imovel(nome: str, setor: str = "") -> str:
     n = f"{nome} {setor}".lower()
+    if any(p in n for p in ("fazenda", "faz.", "gleba", "zona rural", "sítio", "sitio", "agrícola", "agricola")):
+        return "Terras agrícolas"
+    if any(p in n for p in ("usina", "solar", "fotovolt", "ufv", "energia", "eólic", "eolic", "pch")):
+        return "Energia"
     if "shopping" in n or "mall" in n or "outlet" in n:
         return "Shoppings"
     if any(p in n for p in ("galp", "logíst", "logist", "centro de distribui", "condomínio logístico")):
@@ -487,7 +491,8 @@ def montar(fii: dict, cvm: dict, geral_todos: pd.DataFrame, px: pd.DataFrame | N
         partes.append(f"{pct(grupos['caixa'])} em caixa e renda fixa")
     if grupos.get("outros"):
         partes.append(f"{pct(grupos['outros'])} em ações e outros ativos")
-    perfil = "papel" if grupos.get("papel", 0) >= 0.67 else "tijolo" if grupos.get("tijolo", 0) >= 0.67 else "fundo de fundos" if grupos.get("fiis", 0) >= 0.67 else "híbrido"
+    dom_tijolo = max(tijolo.items(), key=lambda x: x[1])[0] if tijolo else None
+    perfil = "agro (terras agrícolas)" if dom_tijolo == "Terras agrícolas" and tijolo[dom_tijolo] >= 0.5 else "energia" if dom_tijolo == "Energia" and tijolo[dom_tijolo] >= 0.5 else "papel" if grupos.get("papel", 0) >= 0.67 else "tijolo" if grupos.get("tijolo", 0) >= 0.67 else "fundo de fundos" if grupos.get("fiis", 0) >= 0.67 else "híbrido"
     publico = (cad.get("Publico_Alvo") if cad is not None else "") or ""
     publico_txt = "investidores qualificados" if "QUALIF" in publico.upper() and "NAO" not in publico.upper() else "investidores profissionais" if "PROFISS" in publico.upper() else "qualquer investidor (público em geral)"
     sobre = {
@@ -674,6 +679,17 @@ def main():
         except Exception as e:
             print(f"{t}: {e}")
             continue
+        # objetivo oficial do fundo (relatório gerencial ou regulamento), cadastrado no fiis.json
+        sb = d.setdefault("sobre", {})
+        if f.get("objetivo"):
+            sb["objetivo"] = f["objetivo"]
+        else:
+            print(f"{t}: ATENÇÃO, sem objetivo oficial cadastrado em data/fiis.json (ler o relatório gerencial ou o regulamento)")
+        if f.get("perfil") and sb.get("perfil"):
+            sb["texto"] = (sb.get("texto") or "").replace(f"Fundo {sb['perfil']} ", f"FII de {f['perfil']} ", 1)
+            sb["perfil"] = f["perfil"]
+        if f.get("rotulo_outros"):
+            sb["texto"] = (sb.get("texto") or "").replace("em ações e outros ativos", f"em {f['rotulo_outros']}")
         ev = ajustar_desdobramentos(d, eventos_fundo_b3(t, f.get("tipo")))
         if ev:
             print(f"{t}: desdobramentos {ev}")

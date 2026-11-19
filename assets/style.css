@@ -642,3 +642,6 @@ details.recolhe[open] > summary { margin-bottom: 12px; }
 .grade > .cartao + .cartao, .grade > details.cartao + .cartao { margin-top: 0; }   /* cartões lado a lado ficam alinhados */
 .grade.fii-carteira { align-items: stretch; }
 .fii-carteira .grafico.rosca { height: 300px; }
+.fii-objetivo { border-left: 3px solid var(--acento, #33c47a); padding: 2px 0 2px 12px; margin: 6px 0 14px; }
+.fii-objetivo .rot { font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--txt-3); }
+.fii-objetivo p { margin: 4px 0 6px; line-height: 1.55; }
