@@ -555,6 +555,73 @@ def limpo(x):
     return x
 
 
+def ajustar_desdobramentos(d: dict) -> list:
+    """Desdobramento de cotas (ex.: 1 para 10) quebra as séries por cota. Detecta pelo informe mensal (número de cotas
+    multiplica e valor patrimonial divide pelo mesmo fator) e deixa o histórico na base de cotas atual, como faz a B3.
+    O valor anunciado fica em valor_original."""
+    m = d.get("mensal") or []
+    eventos = []
+    for a, b in zip(m, m[1:]):
+        if a.get("cotas") and b.get("cotas") and a.get("vp_cota") and b.get("vp_cota"):
+            rc, rv = b["cotas"] / a["cotas"], a["vp_cota"] / b["vp_cota"]
+            f = round(rc)
+            if f >= 2 and abs(rc / f - 1) < 0.05 and abs(rv / f - 1) < 0.15:
+                eventos.append((b["ref"], f))
+    for ref, f in eventos:
+        for x in m:
+            if x["ref"] < ref:
+                x["vp_cota"] = x["vp_cota"] / f if x.get("vp_cota") else x.get("vp_cota")
+                x["cotas"] = x["cotas"] * f if x.get("cotas") else x.get("cotas")
+        provs = [p for p in d.get("proventos", []) if p.get("data_base") and not str(p.get("fonte", "")).startswith("Yahoo")]
+        depois = [p["valor"] for p in provs if p["data_base"][:7] > ref and p["tipo"] == "Rendimento"][:3]
+        ref_pos = sorted(depois)[len(depois) // 2] if depois else None
+        for p in provs:
+            mes = p["data_base"][:7]
+            if mes < ref or (mes == ref and ref_pos and p["valor"] > ref_pos * f / 2):
+                p.setdefault("valor_original", p["valor"])
+                p["valor"] = p["valor"] / f
+    if eventos:
+        d["desdobramentos"] = [{"mes": r, "fator": f} for r, f in eventos]
+        i, ms = d["indicadores"], m
+        vp = i.get("vp_cota")
+        i["cagr_vp_3a"] = (vp / ms[-37]["vp_cota"]) ** (1 / 3) - 1 if len(ms) >= 37 and ms[-37].get("vp_cota") and vp else None
+        r12 = [p for p in d["proventos"] if p["tipo"] == "Rendimento" and p.get("data_base") and p["data_base"] >= (HOJE - dt.timedelta(days=365)).isoformat()]
+        if r12:
+            i["rend_12m"] = sum(p["valor"] for p in r12)
+            i["rend_medio_12m"] = i["rend_12m"] / len(r12)
+            i["dy_12m"] = i["rend_12m"] / i["preco"] if i.get("preco") else None
+    return eventos
+
+
+def setor_padrao(d: dict) -> str:
+    """Setor para fundos novos sem classificação no fiis.json, pela carteira informada à CVM."""
+    if d.get("tipo") == "infra":
+        return "FI-Infra"
+    if d.get("tipo") == "fiagro":
+        return "Fiagro"
+    g = (d.get("sobre") or {}).get("grupos") or {}
+    if g.get("papel", 0) >= 0.6:
+        return "Recebíveis (CRI)"
+    if g.get("fiis", 0) >= 0.5:
+        return "Fundos de fundos"
+    if g.get("tijolo", 0) >= 0.6:
+        return "Tijolo multissetorial"
+    return "Híbridos"
+
+
+def cagr_rendimentos(proventos: list[dict], anos: int = 3) -> float | None:
+    """Crescimento anual dos rendimentos: soma dos últimos 12 meses contra a soma de 12 meses de 3 anos antes."""
+    r = [p for p in proventos if p.get("tipo") == "Rendimento" and p.get("data_base") and p.get("valor")]
+    fim = HOJE
+    soma = lambda a, b: sum(p["valor"] for p in r if a.isoformat() < p["data_base"] <= b.isoformat())  # noqa: E731
+    agora = soma(fim - dt.timedelta(days=365), fim)
+    antes = soma(fim - dt.timedelta(days=365 * (anos + 1)), fim - dt.timedelta(days=365 * anos))
+    primeiro = min((p["data_base"] for p in r), default=None)
+    if not agora or not antes or not primeiro or primeiro > (fim - dt.timedelta(days=365 * (anos + 1) - 45)).isoformat():
+        return None
+    return (agora / antes) ** (1 / anos) - 1
+
+
 def main():
     lista = json.loads((DATA / "fiis.json").read_text(encoding="utf-8"))
     anos = list(range(HOJE.year - 3, HOJE.year + 1))
@@ -574,11 +641,19 @@ def main():
         except Exception as e:
             print(f"{t}: {e}")
             continue
+        ev = ajustar_desdobramentos(d)
+        if ev:
+            print(f"{t}: desdobramentos {ev}")
         d = limpo(d)
         (SAIDA / f"{t}.json").write_text(json.dumps(d, ensure_ascii=False, separators=(",", ":"), allow_nan=False), encoding="utf-8")
         i = d["indicadores"]
+        hoje = HOJE.isoformat()
+        prox = next((p for p in d["proventos"] if p.get("pagamento") and p["pagamento"] > hoje), None)
+        docs = [{k: x.get(k) for k in ("entrega", "categoria", "tipo", "link")} for x in d["documentos"] if "informes periódicos" not in (x.get("categoria") or "").lower()][:4]
         indice.append({"ticker": t, "tipo": d.get("tipo") or "fii", "nome": d["cadastro"]["nome_curto"] or d["cadastro"]["nome"], "segmento": d["cadastro"]["segmento"],
-                       **{k: i.get(k) for k in ("preco", "p_vp", "dy_12m", "ultimo_rendimento", "pl", "cotistas", "liquidez_21", "var_12m")}})
+                       "setor": f.get("setor") or setor_padrao(d), "cagr_rend_3a": cagr_rendimentos(d["proventos"]),
+                       "prox": {k: prox.get(k) for k in ("valor", "data_base", "pagamento", "referencia")} if prox else None, "docs": docs,
+                       **{k: i.get(k) for k in ("preco", "p_vp", "dy_12m", "rend_12m", "ultimo_rendimento", "pl", "cotistas", "liquidez_21", "var_12m", "cagr_vp_3a", "vp_cota")}})
         c = d["conferencia_proventos"] or {}
         print(f"{t}: PL {i.get('pl')}, P/VP {i.get('p_vp')}, DY 12m {i.get('dy_12m')}, {len(d['proventos'])} rendimentos; conferência Yahoo: {c.get('meses_comparados')} meses, divergentes {c.get('divergentes')}")
     (SAIDA / "_index.json").write_text(json.dumps(limpo({"atualizado_em": dt.datetime.now().isoformat(timespec="seconds"), "fiis": indice}), ensure_ascii=False, allow_nan=False), encoding="utf-8")

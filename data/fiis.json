@@ -2,201 +2,246 @@
  {
   "ticker": "RURA11",
   "nome": "Itaú Asset Rural Fiagro",
-  "tipo": "fiagro"
+  "tipo": "fiagro",
+  "setor": "Fiagro"
  },
  {
   "ticker": "KNCA11",
   "nome": "Kinea Crédito Agro",
-  "tipo": "fiagro"
+  "tipo": "fiagro",
+  "setor": "Fiagro"
  },
  {
   "ticker": "RZTR11",
-  "nome": "Riza Terrax"
+  "nome": "Riza Terrax",
+  "setor": "Terrenos e desenvolvimento"
  },
  {
   "ticker": "TRXF11",
   "nome": "TRX Real Estate",
-  "cnpj": "28548288000152"
+  "cnpj": "28548288000152",
+  "setor": "Renda urbana"
  },
  {
   "ticker": "TGAR11",
-  "nome": "TG Ativo Real"
+  "nome": "TG Ativo Real",
+  "setor": "Terrenos e desenvolvimento"
  },
  {
   "ticker": "RBRX11",
-  "nome": "Pátria Plus Multiestratégia"
+  "nome": "Pátria Plus Multiestratégia",
+  "setor": "Híbridos"
  },
  {
   "ticker": "KFOF11",
-  "nome": "Kinea FoF"
+  "nome": "Kinea FoF",
+  "setor": "Fundos de fundos"
  },
  {
   "ticker": "BTHF11",
-  "nome": "BTG Pactual Hedge Fund"
+  "nome": "BTG Pactual Hedge Fund",
+  "setor": "Híbridos"
  },
  {
   "ticker": "KNHF11",
-  "nome": "Kinea Hedge Fund"
+  "nome": "Kinea Hedge Fund",
+  "setor": "Híbridos"
  },
  {
   "ticker": "ALZR11",
-  "nome": "Alianza Trust Renda Imobiliária"
+  "nome": "Alianza Trust Renda Imobiliária",
+  "setor": "Renda urbana"
  },
  {
   "ticker": "KNRI11",
-  "nome": "Kinea Renda Imobiliária"
+  "nome": "Kinea Renda Imobiliária",
+  "setor": "Tijolo multissetorial"
  },
  {
   "ticker": "JURO11",
   "nome": "Sparta Infra",
   "tipo": "infra",
   "cnpj": "42730834000100",
-  "nome_cvm": "SPARTA INFRA FI EM COTAS DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRAESTRUTURA RENDA FIXA"
+  "nome_cvm": "SPARTA INFRA FI EM COTAS DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRAESTRUTURA RENDA FIXA",
+  "setor": "FI-Infra"
  },
  {
   "ticker": "CDII11",
   "nome": "Sparta Infra CDI",
   "tipo": "infra",
   "cnpj": "48973783000116",
-  "nome_cvm": "SPARTA INFRA CDI FI FINANCEIRO EM COTAS DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRAESTRUTURA RF"
+  "nome_cvm": "SPARTA INFRA CDI FI FINANCEIRO EM COTAS DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRAESTRUTURA RF",
+  "setor": "FI-Infra"
  },
  {
   "ticker": "KDIF11",
   "nome": "Kinea Infra",
   "tipo": "infra",
   "cnpj": "26324298000189",
-  "nome_cvm": "KINEA INFRA FIF CIC DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRA RF CRED PRIV RESP LIMITADA"
+  "nome_cvm": "KINEA INFRA FIF CIC DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRA RF CRED PRIV RESP LIMITADA",
+  "setor": "FI-Infra"
  },
  {
   "ticker": "IFRA11",
   "nome": "Itaú Infra",
   "tipo": "infra",
   "cnpj": "34633510000118",
-  "nome_cvm": "ITAÚ FIF - CIC FIF INCENTIVADOS EM INFRA RF CRED PRIV - RESP LIMITADA"
+  "nome_cvm": "ITAÚ FIF - CIC FIF INCENTIVADOS EM INFRA RF CRED PRIV - RESP LIMITADA",
+  "setor": "FI-Infra"
  },
  {
   "ticker": "BDIF11",
   "nome": "BTG Pactual Dívida Infra",
   "tipo": "infra",
   "cnpj": "40502607000194",
-  "nome_cvm": "BTG PACTUAL DÍVIDA INFRA FIF EM COTAS DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRA RENDA FIXA"
+  "nome_cvm": "BTG PACTUAL DÍVIDA INFRA FIF EM COTAS DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRA RENDA FIXA",
+  "setor": "FI-Infra"
  },
  {
   "ticker": "PVBI11",
-  "nome": "VBI Prime Properties"
+  "nome": "VBI Prime Properties",
+  "setor": "Lajes corporativas"
  },
  {
   "ticker": "FATN11",
-  "nome": "BRC Renda Corporativa"
+  "nome": "BRC Renda Corporativa",
+  "setor": "Lajes corporativas"
  },
  {
   "ticker": "BRCR11",
-  "nome": "BC Fund"
+  "nome": "BC Fund",
+  "setor": "Lajes corporativas"
  },
  {
   "ticker": "LVBI11",
-  "nome": "VBI Logístico"
+  "nome": "VBI Logístico",
+  "setor": "Logística"
  },
  {
   "ticker": "BTLG11",
-  "nome": "BTG Pactual Logística"
+  "nome": "BTG Pactual Logística",
+  "setor": "Logística"
  },
  {
   "ticker": "BRCO11",
-  "nome": "Bresco Logística"
+  "nome": "Bresco Logística",
+  "setor": "Logística"
  },
  {
   "ticker": "XPLG11",
-  "nome": "XP Log"
+  "nome": "XP Log",
+  "setor": "Logística"
  },
  {
   "ticker": "HGLG11",
-  "nome": "Pátria Log"
+  "nome": "Pátria Log",
+  "setor": "Logística"
  },
  {
   "ticker": "VILG11",
-  "nome": "Vinci Logística"
+  "nome": "Vinci Logística",
+  "setor": "Logística"
  },
  {
   "ticker": "MCRE11",
-  "nome": "Mauá Capital Recebíveis"
+  "nome": "Mauá Capital Recebíveis",
+  "setor": "Híbridos"
  },
  {
   "ticker": "KNHY11",
-  "nome": "Kinea High Yield CRI"
+  "nome": "Kinea High Yield CRI",
+  "setor": "Recebíveis (CRI)"
  },
  {
   "ticker": "VGIP11",
-  "nome": "Valora CRI Índice de Preço"
+  "nome": "Valora CRI Índice de Preço",
+  "setor": "Recebíveis (CRI)"
  },
  {
   "ticker": "BCRI11",
-  "nome": "Banestes Recebíveis Imobiliários"
+  "nome": "Banestes Recebíveis Imobiliários",
+  "setor": "Recebíveis (CRI)"
  },
  {
   "ticker": "KNIP11",
-  "nome": "Kinea Índices de Preços"
+  "nome": "Kinea Índices de Preços",
+  "setor": "Recebíveis (CRI)"
  },
  {
   "ticker": "IRIM11",
-  "nome": "Iridium Recebíveis Imobiliários"
+  "nome": "Iridium Recebíveis Imobiliários",
+  "setor": "Recebíveis (CRI)"
  },
  {
   "ticker": "KNSC11",
-  "nome": "Kinea Securities"
+  "nome": "Kinea Securities",
+  "setor": "Recebíveis (CRI)"
  },
  {
   "ticker": "VRTA11",
-  "nome": "Fator Verità"
+  "nome": "Fator Verità",
+  "setor": "Recebíveis (CRI)"
  },
  {
   "ticker": "AFHI11",
-  "nome": "AF Invest CRI"
+  "nome": "AF Invest CRI",
+  "setor": "Recebíveis (CRI)"
  },
  {
   "ticker": "MXRF11",
-  "nome": "Maxi Renda"
+  "nome": "Maxi Renda",
+  "setor": "Recebíveis (CRI)"
  },
  {
   "ticker": "KNCR11",
-  "nome": "Kinea Rendimentos Imobiliários"
+  "nome": "Kinea Rendimentos Imobiliários",
+  "setor": "Recebíveis (CRI)"
  },
  {
   "ticker": "CPTS11",
-  "nome": "Capitânia Securities II"
+  "nome": "Capitânia Securities II",
+  "setor": "Híbridos"
  },
  {
   "ticker": "RECR11",
-  "nome": "REC Recebíveis Imobiliários"
+  "nome": "REC Recebíveis Imobiliários",
+  "setor": "Recebíveis (CRI)"
  },
  {
   "ticker": "PCIP11",
   "nome": "Pátria Crédito Imobiliário Índice de Preços",
-  "cnpj": "28729197000113"
+  "cnpj": "28729197000113",
+  "setor": "Recebíveis (CRI)"
  },
  {
   "ticker": "HGRU11",
-  "nome": "Pátria Renda Urbana"
+  "nome": "Pátria Renda Urbana",
+  "setor": "Renda urbana"
  },
  {
   "ticker": "HSML11",
-  "nome": "HSI Malls"
+  "nome": "HSI Malls",
+  "setor": "Shoppings"
  },
  {
   "ticker": "PMLL11",
   "nome": "Pátria Malls",
-  "cnpj": "26499833000132"
+  "cnpj": "26499833000132",
+  "setor": "Shoppings"
  },
  {
   "ticker": "HGBS11",
-  "nome": "Hedge Brasil Shopping"
+  "nome": "Hedge Brasil Shopping",
+  "setor": "Shoppings"
  },
  {
   "ticker": "VISC11",
-  "nome": "Vinci Shopping Centers"
+  "nome": "Vinci Shopping Centers",
+  "setor": "Shoppings"
  },
  {
   "ticker": "XPML11",
-  "nome": "XP Malls"
+  "nome": "XP Malls",
+  "setor": "Shoppings"
  }
 ]

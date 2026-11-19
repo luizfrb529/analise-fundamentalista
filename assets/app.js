@@ -477,6 +477,21 @@ function topLista(L, base, n = 5) {
   return base.filter(L.f).map((t) => [t, val(t, L.k)]).filter(([, v]) => ok(v))
     .sort((a, b) => (L.dir > 0 ? b[1] - a[1] : a[1] - b[1]) || (L.desempate ? (ind(b[0])[L.desempate] || 0) - (ind(a[0])[L.desempate] || 0) : 0)).slice(0, n);
 }
+const fiiPvp = (f) => { const p = fiiPreco(f.ticker, f.preco); return ok(p) && ok(f.vp_cota) && f.vp_cota > 0 ? p / f.vp_cota : f.p_vp; };
+const fiiDy = (f) => { const p = fiiPreco(f.ticker, f.preco); return ok(p) && ok(f.rend_12m) && p > 0 ? f.rend_12m / p : f.dy_12m; };
+const FII_METRICAS = {
+  dy: { nome: "Maiores dividend yield", curto: "DY 12m", desc: "Rendimentos dos últimos 12 meses sobre o preço da cota.", v: fiiDy, dir: 1, fmt: (v) => fmtU(v, "pct") },
+  pl: { nome: "Maior patrimônio líquido", curto: "Patrimônio", desc: "Tamanho do fundo pelo último informe entregue à CVM.", v: (f) => f.pl, dir: 1, fmt: (v) => "R$ " + grande(v) },
+  pvp: { nome: "Menor P/VP", curto: "P/VP", desc: "Preço da cota sobre o valor patrimonial por cota.", v: (f) => { const x = fiiPvp(f); return ok(x) && x > 0 ? x : null; }, dir: -1, fmt: (v) => fmtU(v, "x") },
+  cresc: { nome: "Rendimentos que mais cresceram", curto: "Rend. 3 anos", desc: "Crescimento anual dos rendimentos por cota em 3 anos, ajustado por desdobramentos.", v: (f) => f.cagr_rend_3a, dir: 1, fmt: (v) => fmtU(v, "pct") },
+  liq: { nome: "Maior liquidez diária", curto: "Liquidez diária", desc: "Volume médio negociado nos últimos 21 pregões.", v: (f) => f.liquidez_21, dir: 1, fmt: (v) => "R$ " + grande(v) },
+  vp: { nome: "Valor patrimonial que mais cresceu", curto: "VP 3 anos", desc: "Crescimento anual da cota patrimonial em 3 anos, ajustado por desdobramentos.", v: (f) => f.cagr_vp_3a, dir: 1, fmt: (v) => fmtU(v, "pct") },
+};
+function topFii(k, lista, n = 5) {
+  const M = FII_METRICAS[k];
+  return lista.map((f) => [f, M.v(f)]).filter(([, v]) => ok(v)).sort((a, b) => M.dir > 0 ? b[1] - a[1] : a[1] - b[1]).slice(0, n);
+}
+const fundoHtml = (f, link = false) => `<${link ? `a href="#/fii/${f.ticker}"` : "span"} class="empresa">${logo(f.ticker)}<span class="nomes"><span class="tk">${f.ticker}</span><span class="nm">${esc(f.nome || "")}</span></span></${link ? "a" : "span"}>`;
 const SETORES_PERENES = ["Energia elétrica", "Saneamento", "Seguros", "Telecom", "Financeiro"];
 async function feedNoticias() {
   if (!D.cache.feed) {
@@ -486,16 +501,16 @@ async function feedNoticias() {
   return D.cache.feed;
 }
 function pgHome(app) {
-  const nome = () => EST.homeSeg === "BDR" ? "BDRs" : "ações";
+  const nome = () => EST.homeSeg === "BDR" ? "BDRs" : EST.homeSeg === "FII" ? "FIIs" : "ações";
   EST.homeSetores = EST.homeSetores || [];
   EST.homeFeed = EST.homeFeed || { aba: "noticias", n: 15 };
   app.innerHTML = `
   <section class="hero">
     <h1>Análise fundamentalista das empresas da B3</h1>
-    <p>Indicadores, qualidade e valuation de ${D.tickers.length} ações e BDRs, calculados a partir das demonstrações oficiais.</p>
+    <p>Indicadores, qualidade e valuation de ${D.tickers.length} ações e BDRs${(D.fiis || []).length ? ` e ${D.fiis.length} fundos imobiliários` : ""}, calculados a partir das demonstrações e informes oficiais.</p>
     <div class="busca-grande busca"><input type="search" id="busca-home" placeholder="Digite o nome da empresa, o código ou o setor" autocomplete="off" aria-label="Buscar ativo">
       <button class="ir" id="busca-home-ir" aria-label="Buscar">${ICONE_LUPA}</button><div class="busca-lista" id="busca-home-lista" hidden></div></div>
-    <div class="linha centro" style="margin-top:26px"><div class="segmentado" id="home-seg"><button data-s="ACAO_BR" class="${EST.homeSeg === "ACAO_BR" ? "ativo" : ""}">Ações</button><button data-s="BDR" class="${EST.homeSeg === "BDR" ? "ativo" : ""}">BDRs</button></div></div>
+    <div class="linha centro" style="margin-top:26px"><div class="segmentado" id="home-seg"><button data-s="ACAO_BR" class="${EST.homeSeg === "ACAO_BR" ? "ativo" : ""}">Ações</button><button data-s="BDR" class="${EST.homeSeg === "BDR" ? "ativo" : ""}">BDRs</button><button data-s="FII" class="${EST.homeSeg === "FII" ? "ativo" : ""}">FIIs</button></div></div>
   </section>
   <div class="filtro-setores">
     <div class="linha">
@@ -514,20 +529,23 @@ function pgHome(app) {
     <div class="linha centro" style="margin-top:22px"><a class="btn-contorno" id="link-tabela" href="#/ativos">Ver tabela completa ›</a></div>
   </section>
   <section class="secao">
-    <div class="secao-cab"><h2 class="titulo-barra">Próximos resultados</h2><div class="linha"><button class="btn peq" id="home-ag-xls">Baixar Excel</button><a class="lk" href="#/calendario">Ver calendário completo →</a></div></div>
+    <div class="secao-cab"><h2 class="titulo-barra" id="tit-agenda">Próximos resultados</h2><div class="linha" id="home-ag-acoes"><button class="btn peq" id="home-ag-xls">Baixar Excel</button><a class="lk" href="#/calendario">Ver calendário completo →</a></div></div>
     <div class="ag-faixa" id="home-agenda"></div>
   </section>
   <section class="secao">
-    <div class="secao-cab"><h2 class="titulo-barra" id="tit-setores"></h2><span class="sub">Medianas de P/L, ROE e dividend yield de cada setor</span></div>
+    <div class="secao-cab"><h2 class="titulo-barra" id="tit-setores"></h2><span class="sub" id="sub-setores">Medianas de P/L, ROE e dividend yield de cada setor</span></div>
     <div class="setores" id="setores"></div>
   </section>
   <section class="secao">
-    <div class="secao-cab"><h2 class="titulo-barra">Notícias e comunicados</h2>
+    <div class="secao-cab"><h2 class="titulo-barra" id="tit-feed">Notícias e comunicados</h2>
       <div class="abas" id="feed-abas" style="margin:0"><button data-a="noticias">Imprensa</button><button data-a="comunicados">Relações com investidores</button></div></div>
     <div class="cartao" id="feed"><div class="carregando"><span></span>Carregando</div></div>
   </section>`;
   ligarBusca($("#busca-home"), $("#busca-home-lista"), $("#busca-home-ir"));
-  const setoresDoSeg = () => [...new Set(filtroSeg(D.tickers, EST.homeSeg).map((t) => A(t).setor_macro))].sort((a, b) => a.localeCompare(b, "pt-BR"));
+  const ehFii = () => EST.homeSeg === "FII";
+  const setoresDoSeg = () => ehFii() ? [...new Set((D.fiis || []).map((f) => f.setor || "Outros"))].sort((a, b) => a.localeCompare(b, "pt-BR"))
+    : [...new Set(filtroSeg(D.tickers, EST.homeSeg).map((t) => A(t).setor_macro))].sort((a, b) => a.localeCompare(b, "pt-BR"));
+  const baseFii = () => (D.fiis || []).filter((f) => !EST.homeSetores.length || EST.homeSetores.includes(f.setor || "Outros"));
   const base = () => {
     const l = filtroSeg(D.tickers, EST.homeSeg);
     return EST.homeSetores.length ? l.filter((t) => EST.homeSetores.includes(A(t).setor_macro)) : l;
@@ -535,13 +553,14 @@ function pgHome(app) {
   const painel = () => {
     const ss = setoresDoSeg();
     $("#fs-painel").innerHTML = `<div><b>Escolha um ou mais setores</b></div>
-      ${ss.map((x) => `<label><input type="checkbox" value="${esc(x)}" ${EST.homeSetores.includes(x) ? "checked" : ""}> ${esc(x)}${SETORES_PERENES.includes(x) ? ' <span class="badge pos">perene</span>' : ""}</label>`).join("")}`;
+      ${ss.map((x) => `<label><input type="checkbox" value="${esc(x)}" ${EST.homeSetores.includes(x) ? "checked" : ""}> ${esc(x)}${!ehFii() && SETORES_PERENES.includes(x) ? ' <span class="badge pos">perene</span>' : ""}</label>`).join("")}`;
     $("#fs-painel").onchange = (e) => { const v = e.target.value; EST.homeSetores = e.target.checked ? [...EST.homeSetores, v] : EST.homeSetores.filter((x) => x !== v); desenhar(); };
   };
   $("#fs-btn").onclick = (e) => { e.stopPropagation(); painel(); $("#fs-painel").hidden = !$("#fs-painel").hidden; };
   document.addEventListener("click", (e) => { const p = $("#fs-painel"); if (p && !p.contains(e.target) && e.target.id !== "fs-btn") p.hidden = true; });
   $("#fs-perenes").onclick = () => { EST.homeSetores = SETORES_PERENES.filter((x) => setoresDoSeg().includes(x)); desenhar(); };
   const desenharFeed = async () => {
+    if (ehFii()) return desenharFeedFii();
     const f = await feedNoticias(), perm = new Set(base()), aba = EST.homeFeed.aba;
     $$("#feed-abas button").forEach((b) => b.classList.toggle("ativo", b.dataset.a === aba));
     const itens = (f[aba] || []).filter((x) => (x.tickers || []).some((t) => perm.has(t)));
@@ -558,9 +577,74 @@ function pgHome(app) {
     if ($("#feed-mais")) $("#feed-mais").onclick = () => { EST.homeFeed.n += 15; desenharFeed(); };
   };
   $$("#feed-abas button").forEach((b) => b.onclick = () => { EST.homeFeed = { aba: b.dataset.a, n: 15 }; desenharFeed(); });
+  let nDocsFii = 15;
+  const desenharFeedFii = () => {
+    const docs = baseFii().flatMap((f) => (f.docs || []).map((x) => ({ ...x, f }))).sort((a, b) => String(b.entrega || "").localeCompare(String(a.entrega || "")));
+    const mostra = docs.slice(0, nDocsFii);
+    $("#feed").innerHTML = mostra.length ? `<div class="feed">${mostra.map((x) => `<div class="feed-item"><div class="feed-logos"><a href="#/fii/${x.f.ticker}" data-tip="${esc(x.f.nome)}">${logo(x.f.ticker, "p")}</a></div>
+        <div style="min-width:0"><a class="feed-tit" href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.tipo || x.categoria)}</a>
+        <div class="meta"><a href="#/fii/${x.f.ticker}"><b>${x.f.ticker}</b></a> · ${esc(x.categoria || "")} · ${dataBR(String(x.entrega || "").slice(0, 10))}</div></div></div>`).join("")}</div>
+      ${docs.length > mostra.length ? `<div class="linha centro" style="margin-top:12px"><button class="btn-contorno" id="feed-mais">Ver mais (${docs.length - mostra.length})</button></div>` : ""}
+      <p class="sub" style="margin-top:10px">Documentos oficiais mais recentes de cada fundo: FundosNet (B3) para FIIs e Fiagros, CVM para FI-Infra.</p>`
+      : '<p class="vazio">Sem documentos para os setores selecionados.</p>';
+    if ($("#feed-mais")) $("#feed-mais").onclick = () => { nDocsFii += 15; desenharFeedFii(); };
+  };
+  const desenharFii = (sufixo) => {
+    const lista = baseFii(), um = EST.homeSetores.length === 1 ? EST.homeSetores[0] : "";
+    $("#tit-agenda").textContent = "Próximos pagamentos de rendimentos";
+    $("#home-ag-acoes").hidden = true;
+    $("#tit-feed").textContent = "Comunicados dos fundos";
+    $("#feed-abas").hidden = true;
+    $("#sub-setores").textContent = "Medianas de P/VP e dividend yield e soma do patrimônio de cada setor";
+    $("#link-tabela").href = `#/fiis${um ? "?setor=" + encodeURIComponent(um) : ""}`;
+    $("#link-tabela").textContent = "Ver todos os fundos ›";
+    const hoje = new Date().toISOString().slice(0, 10);
+    const prox = lista.filter((f) => f.prox && f.prox.pagamento && f.prox.pagamento > hoje).sort((a, b) => a.prox.pagamento.localeCompare(b.prox.pagamento));
+    $("#home-agenda").innerHTML = prox.slice(0, 8).map((f) => { const dtx = new Date(f.prox.pagamento + "T12:00:00");
+      return `<a class="ag-linha" href="#/fii/${f.ticker}" data-tip="${esc(`${f.ticker}: R$ ${nf2.format(f.prox.valor)} por cota, data com ${dataBR(f.prox.data_base)}, pagamento ${dataBR(f.prox.pagamento)}.`)}">
+        <div class="ag-data"><b>${String(dtx.getDate()).padStart(2, "0")}</b><span>${MESES[dtx.getMonth()].slice(0, 3)}</span></div>
+        <div style="min-width:0">${fundoHtml(f)}</div>
+        <div class="ag-info"><span class="badge pos">R$ ${new Intl.NumberFormat("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 4 }).format(f.prox.valor)}</span><span class="ag-conf muted">data com ${dataBR(f.prox.data_base)}</span><small class="muted">${DIAS[dtx.getDay()]}</small></div></a>`; }).join("")
+      || '<p class="vazio">Nenhum pagamento anunciado para os próximos dias. Os avisos costumam sair no fim de cada mês.</p>';
+    $("#listas").innerHTML = Object.entries(FII_METRICAS).map(([k, M]) => {
+      const top = topFii(k, lista);
+      if (!top.length) return "";
+      return `<div class="lista"><h3>${esc(M.nome)}</h3><p class="sub">${esc(M.desc)}</p>
+        ${top.map(([f, v]) => `<div class="lin"><div>${fundoHtml(f)}<div class="valor">${M.fmt(v)}</div></div><a class="btn-ver" href="#/fii/${f.ticker}">Ver fundo</a></div>`).join("")}
+        <a class="btn-contorno" href="#/fiis?ordem=${k}${um ? "&setor=" + encodeURIComponent(um) : ""}">Ver lista ›</a></div>`;
+    }).join("") || '<p class="vazio">Sem fundos neste recorte.</p>';
+    const por = {};
+    for (const f of lista) (por[f.setor || "Outros"] = por[f.setor || "Outros"] || []).push(f);
+    $("#setores").innerHTML = Object.entries(por).sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0], "pt-BR")).map(([s0, l]) => {
+      const top = [...l].sort((a, b) => (b.pl || 0) - (a.pl || 0)).slice(0, 5);
+      return `<a class="setor" href="#/fiis?setor=${encodeURIComponent(s0)}"><b class="setor-nome" title="${esc(s0)}">${esc(s0)}</b><div class="setor-meta"><span class="qtd">${l.length} fundo${l.length === 1 ? "" : "s"}</span></div>
+        <div class="logos-pilha">${top.map((f) => logo(f.ticker, "p")).join("")}</div>
+        <div class="setor-nums"><div>P/VP<b>${fmtU(mediana(l.map(fiiPvp).filter((v) => ok(v) && v > 0)), "x")}</b></div><div>DY<b>${fmtU(mediana(l.map(fiiDy)), "pct")}</b></div><div>PL (R$)<b>${grande(l.reduce((a, f) => a + (f.pl || 0), 0))}</b></div></div></a>`;
+    }).join("");
+    desenharFeedFii();
+  };
   const desenhar = () => {
     const seg = EST.homeSeg;
     EST.homeSetores = EST.homeSetores.filter((x) => setoresDoSeg().includes(x));
+    $("#perenes").hidden = ehFii();
+    if (ehFii()) {
+      const filtradoF = EST.homeSetores.length > 0;
+      const sufixoF = filtradoF ? ` · ${EST.homeSetores.length === 1 ? EST.homeSetores[0] : `${EST.homeSetores.length} setores`}` : "";
+      $("#fs-qtd").textContent = filtradoF ? `(${EST.homeSetores.length})` : "";
+      $("#fs-limpar").hidden = !filtradoF;
+      $("#fs-limpar").onclick = () => { EST.homeSetores = []; $("#fs-painel").hidden = true; desenhar(); };
+      $("#fs-chips").innerHTML = EST.homeSetores.map((x) => `<button class="chip ativo" data-tira="${esc(x)}">${esc(x)}<span class="x">✕</span></button>`).join("");
+      $$("#fs-chips [data-tira]").forEach((b) => b.onclick = () => { EST.homeSetores = EST.homeSetores.filter((x) => x !== b.dataset.tira); desenhar(); });
+      $("#tit-listas").textContent = `Rankings de FIIs${sufixoF}`;
+      $("#tit-setores").textContent = `Setores de FIIs${sufixoF}`;
+      return desenharFii(sufixoF);
+    }
+    $("#tit-agenda").textContent = "Próximos resultados";
+    $("#home-ag-acoes").hidden = false;
+    $("#tit-feed").textContent = "Notícias e comunicados";
+    $("#feed-abas").hidden = false;
+    $("#sub-setores").textContent = "Medianas de P/L, ROE e dividend yield de cada setor";
+    $("#link-tabela").textContent = "Ver tabela completa ›";
     const lista = base(), perm = new Set(lista), filtrado = EST.homeSetores.length > 0;
     const sufixo = filtrado ? ` · ${EST.homeSetores.length === 1 ? EST.homeSetores[0] : `${EST.homeSetores.length} setores`}` : "";
     $("#fs-qtd").textContent = filtrado ? `(${EST.homeSetores.length})` : "";
@@ -592,7 +676,7 @@ function pgHome(app) {
     }).join("");
     desenharFeed();
   };
-  $$("#home-seg button").forEach((b) => b.onclick = () => { EST.homeSeg = b.dataset.s; $$("#home-seg button").forEach((x) => x.classList.toggle("ativo", x === b)); desenhar(); });
+  $$("#home-seg button").forEach((b) => b.onclick = () => { if (EST.homeSeg !== b.dataset.s) EST.homeSetores = []; EST.homeSeg = b.dataset.s; $$("#home-seg button").forEach((x) => x.classList.toggle("ativo", x === b)); desenhar(); });
   desenhar();
 }
 
@@ -1605,19 +1689,27 @@ function pgMapa(app, q) {
    ===================================================================== */
 const TIPO_FUNDO = { fii: "FII", fiagro: "Fiagro", infra: "FI-Infra" };
 function pgFiis(app, q) {
-  const tipo = (q && q.get && q.get("tipo")) || "todos";
+  const tipo = (q && q.get && q.get("tipo")) || "todos", setor = (q && q.get && q.get("setor")) || "", ordem = FII_METRICAS[(q && q.get && q.get("ordem")) || ""] ? q.get("ordem") : "pl";
   const todos = D.fiis || [];
-  const l = todos.filter((f) => tipo === "todos" || (f.tipo || "fii") === tipo).sort((a, b) => (b.pl || 0) - (a.pl || 0));
+  const M = FII_METRICAS[ordem];
+  const l = todos.filter((f) => (tipo === "todos" || (f.tipo || "fii") === tipo) && (!setor || f.setor === setor))
+    .sort((a, b) => { const va = M.v(a), vb = M.v(b); if (!ok(va)) return 1; if (!ok(vb)) return -1; return M.dir > 0 ? vb - va : va - vb; });
+  const url = (o) => { const p = new URLSearchParams(); const x = { tipo, setor, ordem, ...o }; if (x.tipo && x.tipo !== "todos") p.set("tipo", x.tipo); if (x.setor) p.set("setor", x.setor); if (x.ordem && x.ordem !== "pl") p.set("ordem", x.ordem); const s0 = p.toString(); return "#/fiis" + (s0 ? "?" + s0 : ""); };
+  const setores = [...new Set(todos.map((f) => f.setor).filter(Boolean))].sort((a, b) => a.localeCompare(b, "pt-BR"));
   const qtd = (k) => todos.filter((f) => (f.tipo || "fii") === k).length;
   app.innerHTML = `${trilha([["Fundos imobiliários"]])}<div class="cab-pagina"><div><h1>Fundos imobiliários</h1>
     <p>FIIs, Fiagros e FI-Infra listados na B3: rendimentos, patrimônio e carteira, com dados oficiais da CVM e da B3.</p></div></div>
-  <div class="chips" id="fii-tipo" style="margin-bottom:14px">${[["todos", "Todos", todos.length], ["fii", "FII", qtd("fii")], ["fiagro", "Fiagro", qtd("fiagro")], ["infra", "FI-Infra", qtd("infra")]].filter(([k, , n]) => k === "todos" || n).map(([k, n, c]) => `<a class="chip${tipo === k ? " ativo" : ""}" href="#/fiis${k === "todos" ? "" : "?tipo=" + k}">${n} <span class="muted">${c}</span></a>`).join("")}</div>
-  <div class="cartao"><div class="tabela-wrap"><table class="resp"><thead><tr><th>Fundo</th><th>Segmento</th><th class="n">Preço</th><th class="n">P/VP</th><th class="n">DY 12m</th><th class="n">Último rend.</th><th class="n">Patrimônio</th><th class="n">Liquidez diária</th><th class="n">12 meses</th></tr></thead><tbody>
-  ${l.map((f) => { const pv = fiiPreco(f.ticker, f.preco); return `<tr><td data-label="Fundo" class="cel-empresa"><a class="empresa" href="#/fii/${f.ticker}">${logo(f.ticker)}<span class="nomes"><span class="tk">${f.ticker}</span><span class="nm">${esc(f.nome)}</span></span></a></td><td data-label="Segmento">${(f.tipo || "fii") !== "fii" ? `<span class="badge">${TIPO_FUNDO[f.tipo]}</span> ` : ""}${esc(f.tipo === "infra" ? "Debêntures incentivadas" : f.segmento || "n/d")}</td>
-    <td class="n" data-label="Preço">${ok(pv) ? "R$ " + nf2.format(pv) : ND}</td><td class="n" data-label="P/VP">${fmtU(f.p_vp, "x")}</td><td class="n" data-label="DY 12m">${fmtU(f.dy_12m, "pct")}</td>
+  <div class="chips" id="fii-tipo" style="margin-bottom:14px">${[["todos", "Todos", todos.length], ["fii", "FII", qtd("fii")], ["fiagro", "Fiagro", qtd("fiagro")], ["infra", "FI-Infra", qtd("infra")]].filter(([k, , n]) => k === "todos" || n).map(([k, n, c]) => `<a class="chip${tipo === k ? " ativo" : ""}" href="${url({ tipo: k })}">${n} <span class="muted">${c}</span></a>`).join("")}</div>
+  <div class="linha" style="gap:10px;margin-bottom:14px"><label class="sub">Setor <select id="fii-setor"><option value="">Todos os setores</option>${setores.map((x) => `<option${x === setor ? " selected" : ""}>${esc(x)}</option>`).join("")}</select></label>
+    <label class="sub">Ordenar por <select id="fii-ordem">${Object.entries(FII_METRICAS).map(([k, x]) => `<option value="${k}"${k === ordem ? " selected" : ""}>${esc(x.nome)}</option>`).join("")}</select></label></div>
+  <div class="cartao"><div class="tabela-wrap"><table class="resp"><thead><tr><th>Fundo</th><th>Setor</th><th class="n">Preço</th><th class="n">P/VP</th><th class="n">DY 12m</th><th class="n">Último rend.</th><th class="n">Patrimônio</th><th class="n">Liquidez diária</th><th class="n">Rend. 3 anos</th><th class="n">VP 3 anos</th><th class="n">12 meses</th></tr></thead><tbody>
+  ${l.map((f) => { const pv = fiiPreco(f.ticker, f.preco); return `<tr><td data-label="Fundo" class="cel-empresa"><a class="empresa" href="#/fii/${f.ticker}">${logo(f.ticker)}<span class="nomes"><span class="tk">${f.ticker}</span><span class="nm">${esc(f.nome)}</span></span></a></td><td data-label="Setor">${esc(f.setor || f.segmento || "n/d")}</td>
+    <td class="n" data-label="Preço">${ok(pv) ? "R$ " + nf2.format(pv) : ND}</td><td class="n" data-label="P/VP">${fmtU(fiiPvp(f), "x")}</td><td class="n" data-label="DY 12m">${fmtU(fiiDy(f), "pct")}</td>
     <td class="n" data-label="Último rend.">${ok(f.ultimo_rendimento) ? "R$ " + nf2.format(f.ultimo_rendimento) : ND}</td><td class="n" data-label="Patrimônio">${ok(f.pl) ? "R$ " + grande(f.pl) : ND}</td>
-    <td class="n" data-label="Liquidez diária">${ok(f.liquidez_21) ? "R$ " + grande(f.liquidez_21) : ND}</td><td class="n" data-label="12 meses">${varHtml(f.var_12m)}</td></tr>`; }).join("") || '<tr><td colspan="9" class="vazio">Nenhum fundo cadastrado.</td></tr>'}
-  </tbody></table></div><p class="sub" style="margin-top:10px">Preço da B3 (Yahoo Finance, atraso de até 15 minutos). Patrimônio e valor patrimonial: Informe Mensal da CVM (FII e Fiagro) e Informe Diário (FI-Infra). Rendimentos: avisos aos cotistas no FundosNet (FII e Fiagro) e proventos da B3 (FI-Infra).</p></div>`;
+    <td class="n" data-label="Liquidez diária">${ok(f.liquidez_21) ? "R$ " + grande(f.liquidez_21) : ND}</td><td class="n" data-label="Rend. 3 anos">${fmtU(f.cagr_rend_3a, "pct")}</td><td class="n" data-label="VP 3 anos">${fmtU(f.cagr_vp_3a, "pct")}</td><td class="n" data-label="12 meses">${varHtml(f.var_12m)}</td></tr>`; }).join("") || '<tr><td colspan="11" class="vazio">Nenhum fundo neste recorte.</td></tr>'}
+  </tbody></table></div><p class="sub" style="margin-top:10px">Preço da B3 (Yahoo Finance, atraso de até 15 minutos). Patrimônio e valor patrimonial: Informe Mensal da CVM (FII e Fiagro) e Informe Diário (FI-Infra). Rendimentos: avisos aos cotistas no FundosNet (FII e Fiagro) e proventos da B3 (FI-Infra). Crescimento de 3 anos ajustado por desdobramentos de cotas.</p></div>`;
+  $("#fii-setor").onchange = (e) => { location.hash = url({ setor: e.target.value }); };
+  $("#fii-ordem").onchange = (e) => { location.hash = url({ ordem: e.target.value }); };
 }
 function fiiPreco(t, padrao) { const v = D.vivoFii && D.vivoFii[t]; return v && ok(v.preco) ? v.preco : padrao; }
 const CORES_FII = ["#33c47a", "#5b8def", "#e8a33d", "#c678dd", "#e06c75", "#56b6c2", "#d19a66", "#98c379", "#be5046", "#7f8c99", "#b8bb26", "#ff79c6"];
