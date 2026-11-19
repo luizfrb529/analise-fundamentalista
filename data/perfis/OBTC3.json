@@ -1,0 +1,82 @@
+{
+ "ticker": "OBTC3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Empresa de tesouraria em bitcoin, com 3.950 BTC (cerca de R$ 1,71 bi em set/26) e receita operacional ainda irrelevante. O valor da ação acompanha o bitcoin em reais, logo o dólar.",
+ "modelo": "A OranjeBTC tem como atividade central acumular bitcoin e aumentar a quantidade de bitcoin por ação, comprando o ativo com caixa, dívida e emissões e recomprando ações quando negociam abaixo do valor da reserva. Em paralelo, desenvolve fontes de receita ligadas ao ecossistema: consultoria e formação de mercado do fundo DIGY11, lançado na B3 em setembro de 2026, e o portal de educação e informação Bitcoin.com.br. O resultado contábil é dominado pela marcação a valor justo do bitcoin.",
+ "segmentos": [
+  {
+   "nome": "Reserva em bitcoin",
+   "peso_receita": 0.91,
+   "periodo": "3T26",
+   "obs": "3.950 BTC, cerca de R$ 1,71 bi a R$ 434,6 mil por BTC em 30/09/2026."
+  },
+  {
+   "nome": "Caixa e instrumentos de renda (STRC, DIGY11, USDC)",
+   "peso_receita": 0.09,
+   "periodo": "3T26",
+   "obs": "R$ 161,8 mi, dos quais R$ 61,9 mi em instrumentos de renda."
+  }
+ ],
+ "segmentos_base": "Ativos de tesouraria a valor de mercado (a empresa não tem receita operacional relevante)",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "A empresa é brasileira e listada na B3, mas seu principal ativo, o bitcoin, é global e cotado em dólar. Mantém ainda ações preferenciais STRC (da americana Strategy), saldos em USDC e conta em banco nos EUA."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "alta",
+  "texto": "O bitcoin, que é mais de 90% dos ativos, tem preço formado em dólar, e a dívida (debênture conversível com o Itaú, vencimento em 2031, e empréstimo em USDC com a Maple) também é atrelada ao dólar. Como a dívida equivale a cerca de 12,7% do valor da reserva, a alta do dólar eleva o patrimônio em reais; a empresa mantém dólar futuro na B3 como proteção parcial da dívida."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a OranjeBTC registrou o primeiro lucro trimestral de sua história, de R$ 518,1 mi, quase todo vindo de R$ 510,3 mi de ganho com a avaliação a valor justo do bitcoin, que subiu cerca de 42,9% em reais no trimestre (de R$ 304,2 mil para R$ 434,6 mil). A reserva passou de 3.898 para 3.950 BTC (52 BTC comprados por R$ 17,3 mi) e foram recompradas 9,4 mi de ações por R$ 46,7 mi, elevando o bitcoin por ação para cerca de 2.795 satoshis (BTC Yield bruto de 8,08% no trimestre e 22,02% em 2026). A dívida total era de R$ 379,4 mi e a líquida de R$ 217,6 mi, após a entrada em setembro de R$ 210 mi da debênture estruturada com o Itaú; ao fim de setembro as ações negociavam a cerca de 0,74 vez o valor da reserva (mNAV). Assembleia convocada para 10/12/2026 vai deliberar a criação de duas novas classes de ações preferenciais (C e D).",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor costuma favorecer ativos de risco como o bitcoin e o desconto da ação frente à reserva, embora reduza o rendimento do caixa aplicado em CDI."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "A reserva de 3.950 BTC é precificada em dólar e vale mais em reais com a alta da moeda; a dívida em dólar equivale a apenas cerca de 13% da reserva."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O preço do bitcoin não tem relação direta e estável com commodities."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "Sem receita operacional relevante, o crescimento brasileiro não muda o resultado, que depende do preço global do bitcoin."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "O efeito da inflação brasileira passa sobretudo pelo câmbio e pelo juro, sem impacto direto sobre o ativo."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Estresse fiscal tende a desvalorizar o real, o que eleva em reais o valor da reserva em bitcoin, cotada em dólar."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "OranjeBTC, Release de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/1c906e2c-8d06-4a32-a1a8-a240167c77f2/1eeccc60-4eb0-4d09-983c-98b38b1aa4ca",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "OranjeBTC, ITR de 30/09/2026",
+   "url": "https://filemanager-cdn.mziq.com/published/1c906e2c-8d06-4a32-a1a8-a240167c77f2/4ac3699e-839d-44cf-9930-b86bc115e794",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "OranjeBTC, Edital de Convocação da AGE de 10/12/2026",
+   "url": "https://filemanager-cdn.mziq.com/published/1c906e2c-8d06-4a32-a1a8-a240167c77f2/df97230f-42ec-4255-954c-902ae2f6da2e",
+   "data": "2026-11-14"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): OranjeBTC recompra ações e mantém reservas de bitcoin",
+   "url": "https://timesbrasil.com.br/cripto-brasil/bitcoin/oranjebtc-recompra-acoes-reservas-bitcoin/",
+   "data": "2026-08-24"
+  }
+ ]
+}
