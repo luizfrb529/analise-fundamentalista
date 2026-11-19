@@ -631,3 +631,11 @@ tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72re
 .rend-cartao.ult .rend-valor { color: var(--acento); }
 .rend-grade { border-top-color: var(--borda); }
 .rend-grade span { color: var(--txt-3); opacity: 1; }
+.doc-data { font-size: .72rem; color: var(--txt-3); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 2px; }
+#fii-doc-filtro { flex-wrap: wrap; }
+details.recolhe > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 10px; }
+details.recolhe > summary::-webkit-details-marker { display: none; }
+details.recolhe > summary h3 { margin: 0; }
+details.recolhe > summary::before { content: ""; width: 8px; height: 8px; border-right: 2px solid var(--txt-3); border-bottom: 2px solid var(--txt-3); transform: rotate(-45deg); transition: transform .15s; flex: none; }
+details.recolhe[open] > summary::before { transform: rotate(45deg); }
+details.recolhe[open] > summary { margin-bottom: 12px; }

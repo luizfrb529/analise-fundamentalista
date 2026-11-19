@@ -152,8 +152,10 @@ def fnet_documentos(cnpj: str, maximo: int = 400) -> list[dict]:
 
 
 def data_br(s: str | None) -> str | None:
-    m = re.match(r"(\d{2})/(\d{2})/(\d{4})", s or "")
-    return f"{m[3]}-{m[2]}-{m[1]}" if m else None
+    m = re.match(r"(\d{2})/(\d{2})/(\d{4})(?:\s+(\d{2}:\d{2}))?", s or "")
+    if not m:
+        return None
+    return f"{m[3]}-{m[2]}-{m[1]}" + (f"T{m[4]}" if m[4] else "")
 
 
 def rendimento_xml(doc_id: int) -> list[dict]:
@@ -316,7 +318,8 @@ def montar(fii: dict, cvm: dict, geral_todos: pd.DataFrame, px: pd.DataFrame | N
     proventos.sort(key=lambda x: x["data_base"] or "")
     documentos = [{"id": d["id"], "entrega": data_br(d.get("dataEntrega")), "categoria": (d.get("categoriaDocumento") or "").strip(), "tipo": (d.get("tipoDocumento") or "").strip(),
                    "especie": (d.get("especieDocumento") or "").strip(), "referencia": (d.get("dataReferencia") or "").strip(), "link": link_doc(d["id"])}
-                  for d in docs[:60]]
+                  for d in docs[:120]]
+    documentos.sort(key=lambda x: x["entrega"] or "", reverse=True)
     rel = next((d for d in documentos if "relatório gerencial" in d["tipo"].lower()), None)
 
     # conferência dos rendimentos com o Yahoo (segunda fonte)

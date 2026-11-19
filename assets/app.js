@@ -1636,7 +1636,10 @@ async function pgFii(app, t) {
   const hoje = new Date().toISOString().slice(0, 10);
   const prox = (d.proventos || []).find((x) => x.pagamento && x.pagamento > hoje);
   const conf = d.conferencia_proventos || {};
-  const docs = (d.documentos || []).filter((x) => !/informes periódicos/i.test(x.categoria));
+  const GRUPOS_DOC = [["todos", "Todos"], ["gerencial", "Relatórios gerenciais"], ["rendimentos", "Rendimentos"], ["fato", "Fatos relevantes"], ["comunicado", "Comunicados"], ["assembleia", "Assembleias"], ["informe", "Informes da CVM"], ["outros", "Outros"]];
+  const grupoDoc = (x) => { const k = `${x.categoria} ${x.tipo}`.toLowerCase(); return /gerencial/.test(k) ? "gerencial" : /rendimento|amortiza/.test(k) ? "rendimentos" : /fato relevante/.test(k) ? "fato" : /comunicado|aviso aos cotistas/.test(k) ? "comunicado" : /assembl|edital|ata\b/.test(k) ? "assembleia" : /informes periódicos|informe|demonstra/.test(k) ? "informe" : "outros"; };
+  const docs = [...(d.documentos || [])].sort((x, y) => String(y.entrega || "").localeCompare(String(x.entrega || "")));
+  const quando = (e) => e ? `${dataBR(e.slice(0, 10))}${e.length > 10 ? " às " + e.slice(11, 16) : ""}` : "n/d";
   const rel = d.relatorio_gerencial;
   const ind = (rot, val, det = "", dest = false) => `<div class="ind${dest ? " principal" : ""}"><div class="rot">${rot}</div><div class="val">${val}</div><div class="det">${det || "&nbsp;"}</div></div>`;
   const pctTot = (lst, k = "valor") => { const tot = lst.reduce((a, x) => a + (x[k] || 0), 0) || 1; return lst.map((x) => [x.nome || x.faixa || x.indexador, (x[k] || 0) / tot]); };
@@ -1698,17 +1701,28 @@ async function pgFii(app, t) {
       ${(comp.vencimento_contratos || []).length ? `<div class="cartao"><h3>Vencimento dos contratos</h3><div class="grafico rosca"><canvas id="g-fii-venc"></canvas></div><p class="sub">Percentual da receita contratada por prazo até o vencimento.</p></div>` : ""}
       ${(comp.indexador_contratos || []).length ? `<div class="cartao"><h3>Indexador dos contratos</h3><div class="grafico rosca"><canvas id="g-fii-idx"></canvas></div></div>` : ""}
     </div>
-    ${(d.imoveis || []).length ? `<div class="cartao" style="margin-top:16px"><h3>Imóveis</h3><div class="tabela-wrap"><table class="resp"><thead><tr><th>Imóvel</th><th>Segmento</th><th>Local</th><th class="n">Área (m²)</th><th class="n">Vacância</th><th class="n">% da receita</th></tr></thead><tbody>
+    ${(d.imoveis || []).length ? `<details class="cartao recolhe" style="margin-top:16px"><summary><h3>Imóveis <span class="muted">${d.imoveis.length}</span></h3></summary><div class="tabela-wrap"><table class="resp"><thead><tr><th>Imóvel</th><th>Segmento</th><th>Local</th><th class="n">Área (m²)</th><th class="n">Vacância</th><th class="n">% da receita</th></tr></thead><tbody>
       ${d.imoveis.map((m) => `<tr><td data-label="Imóvel"><b>${esc(m.nome)}</b><br><span class="muted">${esc(m.classe)}</span></td><td data-label="Segmento">${esc(m.segmento)}</td><td data-label="Local">${esc(m.endereco)}</td><td class="n" data-label="Área">${ok(m.area) ? nf2.format(m.area) : ND}</td><td class="n" data-label="Vacância">${fmtU(m.vacancia, "pct")}</td><td class="n" data-label="% da receita">${fmtU(m.pct_receitas, "pct")}</td></tr>`).join("")}
-    </tbody></table></div></div>` : ""}
-    ${(comp.carteira_top || []).length ? `<div class="cartao" style="margin-top:16px"><h3>Maiores posições</h3><div class="tabela-wrap"><table class="resp"><thead><tr><th>Ativo</th><th>Tipo</th><th>Segmento</th><th class="n">Valor</th></tr></thead><tbody>
+    </tbody></table></div></details>` : ""}
+    ${(comp.carteira_top || []).length ? `<details class="cartao recolhe" style="margin-top:16px"><summary><h3>Maiores posições <span class="muted">${comp.carteira_top.length}</span></h3></summary><div class="tabela-wrap"><table class="resp"><thead><tr><th>Ativo</th><th>Tipo</th><th>Segmento</th><th class="n">Valor</th></tr></thead><tbody>
       ${comp.carteira_top.map((x) => `<tr><td data-label="Ativo">${esc(x.nome || "n/d")}</td><td data-label="Tipo">${esc(x.tipo)}</td><td data-label="Segmento">${esc(x.segmento)}</td><td class="n" data-label="Valor">R$ ${grande(x.valor)}</td></tr>`).join("")}
-    </tbody></table></div></div>` : ""}
+    </tbody></table></div></details>` : ""}
   </section>
 
   <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Relatórios e comunicados</h2><p class="sub" style="margin:0">Documentos oficiais do fundo no FundosNet (B3); notícias de jornal não entram.</p></div>
-    <div class="cartao">${docs.slice(0, 15).map((x) => `<div class="noticia"><a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.tipo || x.categoria)}${x.especie ? ` · ${esc(x.especie)}` : ""}</a>${/gerencial/i.test(x.tipo) ? ' <span class="badge pos">Relatório</span>' : /fato relevante/i.test(x.categoria + x.tipo) ? ' <span class="badge alerta">Fato relevante</span>' : ""}<div class="meta">${esc(x.categoria)} · referência ${esc(x.referencia || "n/d")} · entregue em ${dataBR(x.entrega)}</div></div>`).join("") || '<p class="vazio">Sem documentos.</p>'}</div></section>`;
+    <div class="cartao"><div class="chips" id="fii-doc-filtro" style="margin-bottom:10px">${GRUPOS_DOC.filter(([k]) => k === "todos" || docs.some((x) => grupoDoc(x) === k)).map(([k, n], i) => `<button class="chip${i === 0 ? " ativo" : ""}" data-g="${k}">${n} <span class="muted">${k === "todos" ? docs.length : docs.filter((x) => grupoDoc(x) === k).length}</span></button>`).join("")}</div>
+      <div id="fii-docs"></div><button class="btn peq" id="fii-docs-mais" hidden>Ver mais</button></div></section>`;
 
+  // documentos com filtro
+  let filtroDoc = "todos", limiteDoc = 15;
+  const desenharDocs = () => {
+    const l = docs.filter((x) => filtroDoc === "todos" || grupoDoc(x) === filtroDoc);
+    $("#fii-docs").innerHTML = l.slice(0, limiteDoc).map((x) => `<div class="noticia"><div class="doc-data">Entregue em ${quando(x.entrega)}</div><a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.tipo || x.categoria)}${x.especie ? ` · ${esc(x.especie)}` : ""}</a>${grupoDoc(x) === "gerencial" ? ' <span class="badge pos">Relatório</span>' : grupoDoc(x) === "fato" ? ' <span class="badge alerta">Fato relevante</span>' : ""}<div class="meta">${esc(x.categoria)}${x.referencia ? ` · ${/assembl/i.test(x.categoria) ? "assembleia em" : "referente a"} ${esc(x.referencia)}` : ""}</div></div>`).join("") || '<p class="vazio">Nenhum documento deste tipo.</p>';
+    $("#fii-docs-mais").hidden = l.length <= limiteDoc;
+  };
+  desenharDocs();
+  $$("#fii-doc-filtro button").forEach((b) => b.onclick = () => { $$("#fii-doc-filtro button").forEach((x) => x.classList.toggle("ativo", x === b)); filtroDoc = b.dataset.g; limiteDoc = 15; desenharDocs(); });
+  $("#fii-docs-mais").onclick = () => { limiteDoc += 15; desenharDocs(); };
   // gráficos
   const graficoPrecoFii = async (anos) => {
     const r = D.cache["rt" + t] || (D.cache["rt" + t] = await j(`data/retorno/${t}.json`, null));
