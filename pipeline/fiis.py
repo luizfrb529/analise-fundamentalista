@@ -176,14 +176,20 @@ def rendimento_xml(doc_id: int) -> list[dict]:
             for r in p.iter(tag):
                 v = num(r.findtext("ValorProvento"))
                 base, pag = (r.findtext("DataBase") or "")[:10], (r.findtext("DataPagamento") or "")[:10]
-                if base and pag and pag < base:                   # erro de digitação no ano da data base: o pagamento vem depois da data base
-                    try:
-                        b = dt.date.fromisoformat(base).replace(year=int(pag[:4]))
-                        if b.isoformat() > pag:
-                            b = b.replace(year=b.year - 1)
-                        base = b.isoformat()
-                    except ValueError:
-                        pass
+                if base and pag and pag < base:                   # data base com erro de digitação (o pagamento vem depois dela)
+                    ref = (r.findtext("PeriodoReferencia") or "").strip().lower()
+                    m = re.match(r"([a-zç]+)\s+(\d{4})", ref)
+                    meses = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+                    if m and m.group(1) in meses:                 # usa o mês de referência do próprio aviso: último dia útil dele
+                        base = (pd.Timestamp(int(m.group(2)), meses.index(m.group(1)) + 1, 1) + pd.offsets.BMonthEnd(0)).date().isoformat()
+                    else:
+                        try:
+                            b = dt.date.fromisoformat(base).replace(year=int(pag[:4]))
+                            if b.isoformat() > pag:
+                                b = b.replace(year=b.year - 1)
+                            base = b.isoformat()
+                        except ValueError:
+                            pass
                 if v:
                     out.append({"codigo": cod, "tipo": tipo, "valor": v, "data_base": base or None,
                                 "pagamento": pag or None, "referencia": (r.findtext("PeriodoReferencia") or "").strip().capitalize() or None,

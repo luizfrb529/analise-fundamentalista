@@ -1669,20 +1669,17 @@ async function pgFii(app, t) {
     ${ind("Valor patrimonial 3 anos", fmtU(i.cagr_vp_3a, "pct"), "crescimento anual da cota patrimonial")}
   </div></section>
 
-  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Rendimentos</h2></div>
+  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Rendimentos e patrimônio</h2></div>
     <div class="grade g2 fii-rend">
       <div class="cartao rend-cartao ult"><h3>Último rendimento</h3>${ult ? `<div class="rend-valor">${reais(ult.valor, 4)}</div><div class="rend-grade"><div><span>Rendimento</span><b>${fmtU(i.ultimo_yield, "pct")}</b></div><div><span>Cotação base</span><b>${reais(i.cota_base)}</b></div><div><span>Data base</span><b>${dataBR(ult.data_base)}</b></div><div><span>Pagamento</span><b>${dataBR(ult.pagamento)}</b></div></div>` : '<p class="vazio">Sem rendimentos.</p>'}</div>
       <div class="cartao rend-cartao prox"><h3>Próximo rendimento</h3>${prox ? `<div class="rend-valor">${reais(prox.valor, 4)}</div><div class="rend-grade"><div><span>Data base</span><b>${dataBR(prox.data_base)}</b></div><div><span>Pagamento</span><b>${dataBR(prox.pagamento)}</b></div><div><span>Referência</span><b>${esc(prox.referencia || "")}</b></div></div>` : '<p class="sub" style="margin-top:8px">Ainda não anunciado. O aviso costuma sair no último dia útil do mês.</p>'}</div>
     </div>
-    <div class="cartao" style="margin-top:16px"><div class="cartao-cab"><h3>Rendimentos distribuídos por cota</h3><div class="abas" id="fii-rend-ab" style="margin:0"><button data-v="mes" class="ativo">Por mês</button><button data-v="ano">Por ano</button></div></div>
-      <div class="grafico"><canvas id="g-fii-rend"></canvas></div>
-      <p class="sub" style="margin-top:8px">Fonte: avisos aos cotistas no FundosNet (B3)${conf.meses_comparados ? `, conferidos com o Yahoo Finance: ${conf.divergentes && conf.divergentes.length ? `diferença em ${conf.divergentes.join(", ")}` : `os ${conf.meses_comparados} últimos batem`}` : ""}.</p></div>
+    <div class="cartao" style="margin-top:16px"><div class="cartao-cab"><div><h3>Rendimento, valor patrimonial e patrimônio</h3>
+      <p class="sub">Barras: rendimento por cota. Linha cheia: valor patrimonial por cota. Tracejado: patrimônio líquido (valor no balão). Por ano: rendimento somado no ano e posição do último mês.</p></div>
+      <div class="abas" id="fii-evol-ab" style="margin:0"><button data-v="mes" class="ativo">Por mês</button><button data-v="ano">Por ano</button></div></div>
+      <div class="grafico alto"><canvas id="g-fii-evol"></canvas></div>
+      <p class="sub" style="margin-top:8px">Fontes: rendimentos nos avisos aos cotistas do FundosNet (B3)${conf.meses_comparados ? `, conferidos com o Yahoo Finance: ${conf.divergentes && conf.divergentes.length ? `diferença em ${conf.divergentes.join(", ")}` : `os ${conf.meses_comparados} últimos batem`}` : ""}; patrimônio e valor patrimonial no Informe Mensal da CVM.</p></div>
   </section>
-
-  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Patrimônio</h2></div>
-    <div class="cartao"><div class="cartao-cab"><div><h3>Patrimônio líquido e valor patrimonial da cota</h3><p class="sub">Barras: patrimônio líquido (R$ milhões). Linha: valor patrimonial por cota (R$). Por ano: posição do último mês de cada ano. Fonte: Informe Mensal da CVM.</p></div>
-      <div class="abas" id="fii-pl-ab" style="margin:0"><button data-v="mes" class="ativo">Por mês</button><button data-v="ano">Por ano</button></div></div>
-      <div class="grafico"><canvas id="g-fii-pl"></canvas></div></div></section>
 
   <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Sobre o fundo</h2></div>
     <div class="grade g2" style="align-items:start">
@@ -1737,31 +1734,45 @@ async function pgFii(app, t) {
   };
   graficoPrecoFii(1);
   $$("#fii-per button").forEach((b) => b.onclick = () => { $$("#fii-per button").forEach((x) => x.classList.toggle("ativo", x === b)); graficoPrecoFii(+b.dataset.p); });
-  const graficoRend = (modo) => {
-    const el = $("#g-fii-rend"); if (!el) return;
-    charts = charts.filter((ch) => { if (ch.canvas === el) { ch.destroy(); return false; } return true; });
-    let rot, val;
-    if (modo === "ano") { const m = {}; prov.forEach((x) => { const y = x.data_base.slice(0, 4); m[y] = (m[y] || 0) + x.valor; }); rot = Object.keys(m).sort(); val = rot.map((y) => m[y]); }
-    else { const u = prov.slice(-24); rot = u.map((x) => (x.referencia || x.data_base.slice(0, 7))); val = u.map((x) => x.valor); }
-    const o = optGraf({ legenda: false, moeda: "R$ " });
-    charts.push(new Chart(el, { type: "bar", data: { labels: rot, datasets: [{ label: "Rendimento por cota", data: val, backgroundColor: cor("--serie"), borderRadius: 4 }] }, options: o }));
-  };
-  graficoRend("mes");
-  $$("#fii-rend-ab button").forEach((b) => b.onclick = () => { $$("#fii-rend-ab button").forEach((x) => x.classList.toggle("ativo", x === b)); graficoRend(b.dataset.v); });
   const ms = d.mensal || [];
-  const graficoPl = (modo) => {
-    const el = $("#g-fii-pl"); if (!el || !ms.length) return;
+  const graficoEvol = (modo) => {
+    const el = $("#g-fii-evol"); if (!el) return;
     charts = charts.filter((ch) => { if (ch.canvas === el) { ch.destroy(); return false; } return true; });
-    let l = ms;
-    if (modo === "ano") { const por = {}; ms.forEach((m) => { por[m.ref.slice(0, 4)] = m; }); l = Object.keys(por).sort().map((y) => ({ ...por[y], rot: y })); }
+    const rendMes = {};
+    prov.forEach((x) => { const k = x.data_base.slice(0, 7); rendMes[k] = (rendMes[k] || 0) + x.valor; });
+    const posMes = Object.fromEntries(ms.map((m) => [m.ref, m]));
+    let chaves = [...new Set([...Object.keys(rendMes), ...Object.keys(posMes)])].sort();
+    let rot, rend, vp, pl;
+    if (modo === "ano") {
+      const anos = [...new Set(chaves.map((k) => k.slice(0, 4)))].sort();
+      const ultimoDoAno = (y) => { const l = ms.filter((m) => m.ref.startsWith(y)); return l[l.length - 1] || {}; };
+      rot = anos;
+      rend = anos.map((y) => Object.entries(rendMes).filter(([k]) => k.startsWith(y)).reduce((acc, [, v]) => acc + v, 0) || null);
+      vp = anos.map((y) => ultimoDoAno(y).vp_cota ?? null);
+      pl = anos.map((y) => ok(ultimoDoAno(y).pl) ? ultimoDoAno(y).pl / 1e6 : null);
+    } else {
+      rot = chaves.map((k) => k.slice(5) + "/" + k.slice(2, 4));
+      rend = chaves.map((k) => rendMes[k] ?? null);
+      vp = chaves.map((k) => (posMes[k] || {}).vp_cota ?? null);
+      pl = chaves.map((k) => ok((posMes[k] || {}).pl) ? posMes[k].pl / 1e6 : null);
+    }
     const o = optGraf({ eixo2: true, legenda: true });
-    o.plugins.tooltip.callbacks.label = (cx) => cx.dataset.yAxisID === "y2" ? `VP por cota: R$ ${nf2.format(cx.parsed.y)}` : `Patrimônio: R$ ${nf2.format(cx.parsed.y)} mi`;
-    charts.push(new Chart(el, { data: { labels: l.map((m) => m.rot || (m.ref.slice(5) + "/" + m.ref.slice(2, 4))), datasets: [
-      { type: "bar", label: "Patrimônio líquido (R$ mi)", data: l.map((m) => ok(m.pl) ? m.pl / 1e6 : null), backgroundColor: cor("--serie"), borderRadius: 3, yAxisID: "y" },
-      { type: "line", label: "VP por cota (R$)", data: l.map((m) => m.vp_cota), borderColor: cor("--serie-2"), backgroundColor: cor("--serie-2"), borderWidth: 2, pointRadius: modo === "ano" ? 3 : 0, yAxisID: "y2" }] }, options: o }));
+    o.scales.y.title = { display: true, text: "Rendimento por cota (R$)", color: cor("--txt-3") };
+    o.scales.y2.title = { display: true, text: "VP por cota (R$)", color: cor("--txt-3") };
+    o.scales.y3 = { display: false, position: "right", grid: { display: false } };
+    o.plugins.tooltip.callbacks.label = (cx) => {
+      const v = cx.parsed.y; if (!ok(v)) return `${cx.dataset.label}: n/d`;
+      if (cx.dataset.yAxisID === "y3") return `Patrimônio líquido: R$ ${nf2.format(v)} mi`;
+      if (cx.dataset.yAxisID === "y2") return `VP por cota: R$ ${nf2.format(v)}`;
+      return `Rendimento por cota: R$ ${nf2.format(v)}`;
+    };
+    charts.push(new Chart(el, { data: { labels: rot, datasets: [
+      { type: "bar", label: "Rendimento por cota", data: rend, backgroundColor: cor("--serie"), borderRadius: 3, yAxisID: "y", order: 3 },
+      { type: "line", label: "VP por cota", data: vp, borderColor: cor("--serie-2"), backgroundColor: cor("--serie-2"), borderWidth: 2, pointRadius: modo === "ano" ? 3 : 0, spanGaps: true, yAxisID: "y2", order: 1 },
+      { type: "line", label: "Patrimônio líquido", data: pl, borderColor: "#e8a33d", backgroundColor: "#e8a33d", borderDash: [6, 4], borderWidth: 2, pointRadius: modo === "ano" ? 3 : 0, spanGaps: true, yAxisID: "y3", order: 2 }] }, options: o }));
   };
-  graficoPl("mes");
-  $$("#fii-pl-ab button").forEach((b) => b.onclick = () => { $$("#fii-pl-ab button").forEach((x) => x.classList.toggle("ativo", x === b)); graficoPl(b.dataset.v); });
+  graficoEvol("mes");
+  $$("#fii-evol-ab button").forEach((b) => b.onclick = () => { $$("#fii-evol-ab button").forEach((x) => x.classList.toggle("ativo", x === b)); graficoEvol(b.dataset.v); });
   const seg = pctTot(comp.por_segmento || []), tp = pctTot(comp.por_tipo || []);
   rosca($("#g-fii-seg"), seg.map((x) => x[0]), seg.map((x) => x[1]));
   rosca($("#g-fii-tipo"), tp.map((x) => x[0]), tp.map((x) => x[1]));
