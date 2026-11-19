@@ -1,0 +1,107 @@
+{
+ "ticker": "ANIM3",
+ "revisado_em": "2026-11-19",
+ "resumo": "Grupo de ensino superior com universidades presenciais, escolas de medicina (Inspirali) e ensino digital, com receita 100% no Brasil. Negocia a recompra da FMU, que depende do Cade.",
+ "modelo": "A Ânima vende cursos de graduação, pós-graduação e educação continuada. O Ânima Core reúne as universidades presenciais, como São Judas, Una e Anhembi Morumbi; a Inspirali concentra os cursos de medicina, de ticket alto; o Ensino Digital oferece cursos a distância. A receita é recorrente, vinda de mensalidades pagas pelo aluno ou por programas como Fies e ProUni.",
+ "segmentos": [
+  {
+   "nome": "Ânima Core",
+   "peso_receita": 0.57,
+   "periodo": "3T26",
+   "obs": "R$ 617,2 mi de receita líquida (+11,7%), com tíquete médio de R$ 1.033 por mês (+14,8%)."
+  },
+  {
+   "nome": "Inspirali (medicina)",
+   "peso_receita": 0.37,
+   "periodo": "3T26",
+   "obs": "R$ 404 mi de receita líquida (+6,9%)."
+  },
+  {
+   "nome": "Ensino Digital",
+   "peso_receita": 0.06,
+   "periodo": "3T26",
+   "obs": "R$ 64,6 mi de receita líquida (-14,2%)."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Toda a operação e a receita estão no Brasil, com campi concentrados no Sudeste e no Sul e polos de ensino a distância. Não há atividade no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita em reais, vinda de mensalidades, e dívida em reais. Uma alta do dólar não tem efeito direto relevante."
+ },
+ "momento": "No 3T26, divulgado em 06/11/2026, a receita líquida foi de R$ 1,09 bi (+7,9% sobre o 3T25) e o lucro aos controladores de R$ 88,7 mi (+142,7%). O Ebitda ajustado ex-IFRS 16 subiu 14,6%, para R$ 347,3 mi, com margem de 32,0%. A alavancagem caiu para 2,18x o Ebitda ajustado ex-IFRS 16, de 2,40x um ano antes. Em julho de 2026 a empresa anunciou a recompra da FMU, com cerca de 51 mil alunos, por R$ 410 mi, operação que depende do Cade.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-06",
+  "positivos": [
+   "Lucro aos controladores de R$ 88,7 mi, alta de 142,7% sobre os R$ 36,5 mi do 3T25",
+   "Ebitda ajustado ex-IFRS 16 de R$ 347,3 mi (+14,6%), com margem de 32,0%, 1,9 p.p. acima do 3T25",
+   "Receita do Ânima Core de R$ 617,2 mi (+11,7%), com tíquete médio 14,8% maior",
+   "Alavancagem de 2,18x, ante 2,41x no 2T26 e 2,40x no 3T25"
+  ],
+  "negativos": [
+   "Receita do Ensino Digital de R$ 64,6 mi, queda de 14,2% sobre o 3T25",
+   "Resultado operacional ajustado do Ensino Digital de R$ 36,7 mi, queda de 15%"
+  ],
+  "atencao": [
+   "Aprovação do Cade para a recompra da FMU (R$ 410 mi, cerca de 51 mil alunos) e efeito da operação na dívida",
+   "Regras do MEC para o ensino a distância, que vêm reduzindo a receita do Ensino Digital"
+  ]
+ },
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "A dívida é em reais e corrigida pelo CDI, então juro menor reduz a despesa financeira, que pesa no lucro, e facilita o pagamento de mensalidades."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida são em reais; não há custo ou receita relevante em dólar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Educação não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Emprego e renda ajudam a captação e a adimplência no ensino presencial; a medicina, cerca de 37% da receita, depende menos do ciclo."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Salários de professores e aluguéis sobem com a inflação, e o repasse para mensalidades é limitado pela renda do aluno."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Pressiona os juros, encarecendo a dívida em CDI, e ameaça o orçamento de Fies e programas públicos de que parte dos alunos depende."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Money Times: lucro da Ânima mais que dobra para R$ 88,7 mi no 3º trimestre",
+   "url": "https://www.moneytimes.com.br/lucro-da-anima-anim3-mais-que-dobra-para-r887-mi-no-3o-trimestre-lmrs/",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "BP Money: Ânima mais que dobra lucro no 3T26 e soma R$ 88,7 milhões",
+   "url": "https://bpmoney.com.br/negocios/empresas-na-bolsa/anima-anim3-lucro-887-milhoes-3t26-alta-142/",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Bloomberg Línea: Ânima recompra a FMU por R$ 410 milhões",
+   "url": "https://www.bloomberglinea.com.br/negocios/anima-recompra-a-fmu-por-r-410-milhoes-e-reforca-aposta-no-ensino-superior-em-sp/",
+   "data": "2026-07-16"
+  },
+  {
+   "titulo": "Money Times: Ânima compra FMU por R$ 410 milhões",
+   "url": "https://www.moneytimes.com.br/anima-anim3-compra-fmu-por-r-410-milhoes-e-amplia-presenca-no-ensino-superior-vtra/",
+   "data": "2026-07-16"
+  }
+ ],
+ "ultimo_resultado": "3T26"
+}

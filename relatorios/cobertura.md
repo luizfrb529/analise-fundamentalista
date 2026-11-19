@@ -1,6 +1,6 @@
 # Relatório de cobertura de dados
 
-Gerado em 19/11/2026 10:11 | Preços de fechamento de 2026-11-18 | Balanços até 3T2026
+Gerado em 19/11/2026 17:10 | Preços de fechamento de 2026-11-18 | Balanços até 3T2026
 
 | Ticker | Modelo | Balanço | Fonte | Indicadores com valor | Faltando |
 |---|---|---|---|---|---|
@@ -10,7 +10,7 @@ Gerado em 19/11/2026 10:11 | Preços de fechamento de 2026-11-18 | Balanços at�
 | BBDC4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 63/68 | 5 |
 | ITUB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 63/68 | 5 |
 | BRSR6 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 59/68 | 9 |
-| BMEB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 58/68 | 10 |
+| BMEB4 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 57/68 | 11 |
 | SANB11 | BANCO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 55/68 | 13 |
 | ROXO34 | BANCO | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 43/67 | 24 |
 | INBR34 | BANCO | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 54/67 | 13 |
@@ -105,7 +105,7 @@ Gerado em 19/11/2026 10:11 | Preços de fechamento de 2026-11-18 | Balanços at�
 | RADL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/102 | 1 |
 | PGMN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 88/102 | 14 |
 | PNVL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/102 | 1 |
-| VIVT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
+| VIVT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
 | TIMS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 84/102 | 18 |
 | FIQE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
 | COGN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
@@ -144,12 +144,11 @@ Gerado em 19/11/2026 10:11 | Preços de fechamento de 2026-11-18 | Balanços at�
 | MLAS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/102 | 7 |
 | INTB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
 | SEER3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/102 | 2 |
+| ANIM3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
 | ABEV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/102 | 1 |
 
 ## B3SA3
 
-Avisos do pipeline:
-- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22B3%22+OR+B3SA3%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 Indicadores sem valor e motivo:
 
@@ -159,8 +158,6 @@ Indicadores sem valor e motivo:
 
 ## BBAS3
 
-Avisos do pipeline:
-- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22Banco+do+Brasil%22+OR+BBAS3%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 Indicadores sem valor e motivo:
 
@@ -174,7 +171,6 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - sem preço da classe PN; usado preço do papel
-- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22BTG+Pactual%22+OR+BPAC11%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 Indicadores sem valor e motivo:
 
@@ -192,7 +188,6 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - total de ações CVM (10,570,712,028) difere da B3 (11,196,864,781); usado CVM
-- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22Bradesco+PN%22+OR+BBDC4%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 Indicadores sem valor e motivo:
 
@@ -204,8 +199,6 @@ Indicadores sem valor e motivo:
 
 ## ITUB4
 
-Avisos do pipeline:
-- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22Ita%C3%BA+Unibanco+PN%22+OR+ITUB4%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 Indicadores sem valor e motivo:
 
@@ -217,8 +210,6 @@ Indicadores sem valor e motivo:
 
 ## BRSR6
 
-Avisos do pipeline:
-- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22Banrisul%22+OR+BRSR6%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 Indicadores sem valor e motivo:
 
@@ -235,10 +226,12 @@ Indicadores sem valor e motivo:
 ## BMEB4
 
 Avisos do pipeline:
-- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22Banco+Mercantil+do+Brasil%22+OR+BMEB4%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
+- Desdobramento de 2021-12-02: Yahoo 2, B3 200; usado o da B3
+- Grupamento de 2021-12-02: Yahoo 200, B3 0.01; usado o da B3
 
 Indicadores sem valor e motivo:
 
+- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
@@ -252,8 +245,6 @@ Indicadores sem valor e motivo:
 
 ## SANB11
 
-Avisos do pipeline:
-- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22Santander+Brasil%22+OR+SANB11%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 Indicadores sem valor e motivo:
 
@@ -806,6 +797,8 @@ Indicadores sem valor e motivo:
 
 ## AXIA3
 
+Avisos do pipeline:
+- Bonificacao de 2025-12-19 (fator 1.26284) só consta na B3; incluído no ajuste de preços, proventos e ações
 
 Indicadores sem valor e motivo:
 
@@ -1253,6 +1246,8 @@ Indicadores sem valor e motivo:
 
 ## CYRE3
 
+Avisos do pipeline:
+- Bonificacao de 2025-12-30 (fator 1.18958) só consta na B3; incluído no ajuste de preços, proventos e ações
 
 Indicadores sem valor e motivo:
 
@@ -1455,6 +1450,8 @@ Indicadores sem valor e motivo:
 
 ## RENT3
 
+Avisos do pipeline:
+- Bonificacao de 2025-12-29 (fator 1.03846) só consta na B3; incluído no ajuste de preços, proventos e ações
 
 Indicadores sem valor e motivo:
 
@@ -1701,15 +1698,22 @@ Indicadores sem valor e motivo:
 
 ## VIVT3
 
+Avisos do pipeline:
+- Desdobramento de 2025-04-14: Yahoo 2, B3 80; usado o da B3
+- Grupamento de 2025-04-14: Yahoo 80, B3 0.025; usado o da B3
 
 Indicadores sem valor e motivo:
 
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 
 ## TIMS3
 
+Avisos do pipeline:
+- Desdobramento de 2025-07-02 (fator 100) consta na B3, mas o preço não confirma (salto 0.97); não aplicado
+- Grupamento de 2025-07-02 (fator 0.01) consta na B3, mas o preço não confirma (salto 0.97); não aplicado
 
 Indicadores sem valor e motivo:
 
@@ -2016,6 +2020,9 @@ Indicadores sem valor e motivo:
 
 ## CASH3
 
+Avisos do pipeline:
+- Desdobramento de 2023-05-31: Yahoo 0.1, B3 10; usado o da B3
+- Grupamento de 2023-05-31: Yahoo 10, B3 0.01; usado o da B3
 
 Indicadores sem valor e motivo:
 
@@ -2560,6 +2567,22 @@ Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+
+## ANIM3
+
+Avisos do pipeline:
+- total de ações CVM (351,894,205) difere da B3 (403,868,805); usado CVM
+
+Indicadores sem valor e motivo:
+
+- P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
+- TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
+- CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
+- CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
+- CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## ABEV3
 

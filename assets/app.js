@@ -1273,7 +1273,8 @@ const PLUGIN_MEDIR = {
     if (!m || m.a == null || m.b == null || m.a === m.b) return;
     const { ctx, chartArea: { top, bottom, left, right } } = ch, xs = ch.scales.x, d = ch.data.datasets[0].data;
     const [i, j] = m.a < m.b ? [m.a, m.b] : [m.b, m.a];
-    const x1 = xs.getPixelForValue(i), x2 = xs.getPixelForValue(j), v1 = d[i], v2 = d[j];
+    const xy = d[i] !== null && typeof d[i] === "object";
+    const x1 = xs.getPixelForValue(xy ? d[i].x : i), x2 = xs.getPixelForValue(xy ? d[j].x : j), v1 = xy ? d[i].y : d[i], v2 = xy ? d[j].y : d[j];
     if (!ok(v1) || !ok(v2) || v1 === 0) return;
     const pct = v2 / v1 - 1, corV = pct >= 0 ? cor("--pos") : cor("--neg");
     ctx.save();
@@ -1283,7 +1284,8 @@ const PLUGIN_MEDIR = {
     ctx.setLineDash([]);
     for (const [x, v] of [[x1, v1], [x2, v2]]) { ctx.beginPath(); ctx.arc(x, ch.scales.y.getPixelForValue(v), 3.5, 0, 2 * Math.PI); ctx.fillStyle = corV; ctx.fill(); }
     const l1 = `${pct >= 0 ? "+" : ""}${nf2.format(pct * 100)}%`;
-    const l2 = `${ch.data.labels[i]} a ${ch.data.labels[j]} · ${m.mo} ${nf2.format(v1)} para ${m.mo} ${nf2.format(v2)}`;
+    const rot_ = (k) => xy ? new Date(d[k].x).toLocaleDateString("pt-BR", { timeZone: "UTC" }) : ch.data.labels[k];
+    const l2 = `${rot_(i)} a ${rot_(j)} · ${m.mo} ${nf2.format(v1)} para ${m.mo} ${nf2.format(v2)}`;
     ctx.font = "700 14px Inter, sans-serif"; const w1 = ctx.measureText(l1).width;
     ctx.font = "500 11px Inter, sans-serif"; const w2 = ctx.measureText(l2).width;
     const w = Math.max(w1, w2) + 20, hgt = 44;
@@ -1445,6 +1447,74 @@ function modalHistorico(t, k, h) {
   }
 }
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") fecharModal(); });
+
+/* ---------------- histórico de um item da faixa de cotações (abre ao clicar) */
+const MERC_PERIODOS = [["1M", 1 / 12], ["6M", 0.5], ["1A", 1], ["5A", 5], ["10A", 10], ["Máx.", 0]];
+async function modalMercado(k) {
+  fecharModal();
+  const div = document.createElement("div");
+  div.id = "modal"; div.className = "modal-fundo";
+  div.innerHTML = `<div class="modal modal-merc" role="dialog" aria-label="Histórico"><p class="vazio">Carregando histórico...</p></div>`;
+  document.body.appendChild(div);
+  div.onclick = (e) => { if (e.target === div) fecharModal(); };
+  if (!D.cache["merc_" + k]) D.cache["merc_" + k] = await j(`data/mercado/${k}.json?v=${encodeURIComponent(D.meta.gerado_em || "")}`, null);
+  const h = D.cache["merc_" + k];
+  if (document.getElementById("modal") !== div) return;
+  const caixa = div.querySelector(".modal");
+  if (!h || !h.serie || !h.serie.length) {
+    caixa.innerHTML = `<div class="cartao-cab"><h3>Histórico</h3><button class="btn peq" id="modal-x">Fechar</button></div><p class="vazio">Histórico indisponível.</p>`;
+    $("#modal-x").onclick = fecharModal; return;
+  }
+  const taxa = h.unidade === "pct", pre = h.unidade === "R$" ? "R$ " : h.unidade === "US$" ? "US$ " : "";
+  const fv = (v) => ok(v) ? (taxa ? nf2.format(v * 100) + "%" : pre + nf2.format(v)) : "n/d";
+  const ult = h.serie[h.serie.length - 1];
+  const proj = h.projecao && h.projecao.pontos && h.projecao.pontos.length ? h.projecao : null;
+  const anosHist = (Date.parse(ult[0]) - Date.parse(h.serie[0][0])) / 3.156e10;
+  const periodos = MERC_PERIODOS.filter(([, a]) => !a || a < anosHist + 0.5);
+  let per = EST.mercPer && periodos.some(([n]) => n === EST.mercPer) ? EST.mercPer : (taxa ? "5A" : "1A");
+  caixa.innerHTML = `<div class="cartao-cab"><div><h3>${esc(h.nome)}</h3><p class="sub">Último fechamento: <b>${fv(ult[1])}${h.unidade === "pts" ? " pts" : ""}</b> em ${dataBR(ult[0])}</p></div><button class="btn peq" id="modal-x">Fechar</button></div>
+    <div class="segmentado" id="merc-per" style="margin:4px 0 12px">${periodos.map(([n]) => `<button data-p="${n}">${n}</button>`).join("")}</div>
+    <div class="merc-nums" id="merc-nums"></div>
+    <div class="grafico"><canvas id="g-modal"></canvas></div>
+    ${proj ? `<div class="merc-proj"><div class="merc-proj-t">Projeção do mercado (Boletim Focus de ${dataBR(proj.data)})</div><div class="merc-proj-l">${proj.pontos.map(([d, v]) => `<div>Fim de ${d.slice(0, 4)}<b>${fv(v)}</b></div>`).join("")}</div></div>` : ""}
+    <p class="sub" style="margin-top:10px">Fonte: ${esc(h.fonte)}.${proj ? " Projeção: mediana das estimativas de instituições financeiras coletadas pelo Banco Central; não é previsão do site." : ""}${taxa ? "" : " Segure o botão do mouse e arraste no gráfico para medir a variação entre dois pontos."}${anosHist > 5 ? " Antes dos últimos 5 anos, o gráfico usa um ponto por semana." : ""}</p>`;
+  $("#modal-x").onclick = fecharModal;
+  const desenhar = () => {
+    EST.mercPer = per;
+    $$("#merc-per button").forEach((b) => b.classList.toggle("ativo", b.dataset.p === per));
+    const anos = MERC_PERIODOS.find(([n]) => n === per)[1];
+    const corte = anos ? new Date(Date.parse(ult[0]) - anos * 3.156e10).toISOString().slice(0, 10) : "";
+    const s = h.serie.filter(([d]) => d >= corte);
+    const vs = s.map((x) => x[1]), v0 = vs[0], v1 = vs[vs.length - 1];
+    const dv = taxa ? v1 - v0 : v1 / v0 - 1;
+    const varTxt = `${dv >= 0 ? "+" : ""}${nf2.format(dv * 100)}${taxa ? " p.p." : "%"}`;
+    const anosS = (Date.parse(s[s.length - 1][0]) - Date.parse(s[0][0])) / 3.156e10;
+    const anual = !taxa && anosS >= 2 ? `<div>Variação média por ano<b>${nf2.format((Math.pow(v1 / v0, 1 / anosS) - 1) * 100)}%</b></div>` : "";
+    $("#merc-nums").innerHTML = `<div>Variação no período<b class="${sinal(dv)}">${varTxt}</b></div><div>Mínima<b>${fv(Math.min(...vs))}</b></div><div>Máxima<b>${fv(Math.max(...vs))}</b></div>${anual}`;
+    if (graficoModal) { try { graficoModal.destroy(); } catch (e) {} graficoModal = null; }
+    if (!window.Chart) return;
+    const el = $("#g-modal"), f = taxa ? 100 : 1;
+    const pontos = s.map(([d, v]) => ({ x: Date.parse(d), y: v * f }));
+    const linha = taxa ? cor("--serie") : dv >= 0 ? cor("--pos") : cor("--neg");
+    const g = el.getContext("2d").createLinearGradient(0, 0, 0, 300); g.addColorStop(0, linha + "40"); g.addColorStop(1, linha + "00");
+    const ds = [{ label: h.nome, data: pontos, borderColor: linha, backgroundColor: g, borderWidth: 1.6, pointRadius: 0, fill: true, tension: 0.1 }];
+    if (proj && (!anos || anos >= 1)) ds.push({ label: "Projeção Focus", data: [pontos[pontos.length - 1], ...proj.pontos.map(([d, v]) => ({ x: Date.parse(d), y: v * f }))],
+      borderColor: cor("--txt-2"), borderDash: [5, 4], borderWidth: 1.6, pointRadius: 3, pointBackgroundColor: cor("--txt-2"), fill: false, tension: 0 });
+    const o = optGraf({ legenda: ds.length > 1 });
+    const curto = anos && anos <= 1 && ds.length === 1;
+    const ultX = ds[ds.length - 1].data[ds[ds.length - 1].data.length - 1].x;
+    o.scales.x = { ...o.scales.x, type: "linear", min: pontos[0].x, max: ultX, ticks: { ...o.scales.x.ticks, callback: (v) => new Date(v).toLocaleDateString("pt-BR", curto ? { day: "2-digit", month: "2-digit", timeZone: "UTC" } : { month: "2-digit", year: "numeric", timeZone: "UTC" }) } };
+    o.scales.y.ticks.callback = (v) => nf2.format(v) + (taxa ? "%" : "");
+    o.interaction = { mode: "nearest", axis: "x", intersect: false };
+    o.plugins.tooltip.callbacks.title = (it) => it.length ? new Date(it[0].parsed.x).toLocaleDateString("pt-BR", { timeZone: "UTC" }) : "";
+    o.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: ${fv(ctx.parsed.y / f)}`;
+    graficoModal = new Chart(el, { type: "line", data: { datasets: ds }, options: o, plugins: taxa ? [] : [PLUGIN_MEDIR] });
+    if (!taxa) ativarMedicao(graficoModal, el, pre.trim());
+  };
+  $$("#merc-per button").forEach((b) => b.onclick = () => { per = b.dataset.p; desenhar(); });
+  desenhar();
+}
+
 
 /* =====================================================================
    CALENDÁRIO DE RESULTADOS
@@ -2105,19 +2175,19 @@ function faixaMercado() {
   const taxa = (x, campo = "valor") => x && ok(x[campo]) ? { v: nf2.format(x[campo] * 100) + "%" } : null;
   const venc = m.ntnb_longa && m.ntnb_longa.vencimento ? m.ntnb_longa.vencimento.slice(0, 4) : "";
   const itens = [
-    ["Ibovespa", pts(m.ibovespa), "pts"], ["SMLL", pts(m.smll), "pts"], ["IFIX", pts(m.ifix), "pts"], ["S&P 500", pts(m.sp500), "pts"], ["Nasdaq", pts(m.nasdaq), "pts"], ["EWZ", pts(m.ewz, "US$ ")],
-    ["Dólar", pts(m.dolar, "R$ ")], ["Euro", pts(m.euro, "R$ ")], ["Bitcoin", pts(m.bitcoin_brl, "R$ ")],
-    ["Brent", pts(m.brent, "US$ ")], ["Ouro", pts(m.ouro, "US$ "), "onça"],
-    ["Selic", taxa(m.selic), "a.a."], ["CDI", taxa(m.cdi), "a.a."], ["IPCA 12m", taxa(m.ipca_12m)],
-    [`NTN-B ${venc}`, m.ntnb_longa && ok(m.ntnb_longa.taxa) ? { v: "IPCA + " + nf2.format(m.ntnb_longa.taxa * 100) + "%" } : null],
-    ["Treasury 10a", taxa(m.treasury_10y, "taxa")], ["Treasury 20a", taxa(m.treasury_20y, "taxa")],
+    ["Ibovespa", pts(m.ibovespa), "pts", "ibovespa"], ["SMLL", pts(m.smll), "pts", "smll"], ["IFIX", pts(m.ifix), "pts", "ifix"], ["S&P 500", pts(m.sp500), "pts", "sp500"], ["Nasdaq", pts(m.nasdaq), "pts", "nasdaq"], ["EWZ", pts(m.ewz, "US$ "), "", "ewz"],
+    ["Dólar", pts(m.dolar, "R$ "), "", "dolar"], ["Euro", pts(m.euro, "R$ "), "", "euro"], ["Bitcoin", pts(m.bitcoin_brl, "R$ "), "", "bitcoin_brl"],
+    ["Brent", pts(m.brent, "US$ "), "", "brent"], ["Ouro", pts(m.ouro, "US$ "), "onça", "ouro"],
+    ["Selic", taxa(m.selic), "a.a.", "selic"], ["CDI", taxa(m.cdi), "a.a.", "cdi"], ["IPCA 12m", taxa(m.ipca_12m), "", "ipca_12m"],
+    [`NTN-B ${venc}`, m.ntnb_longa && ok(m.ntnb_longa.taxa) ? { v: "IPCA + " + nf2.format(m.ntnb_longa.taxa * 100) + "%" } : null, "", "ntnb_longa"],
+    ["Treasury 10a", taxa(m.treasury_10y, "taxa"), "", "treasury_10y"], ["Treasury 20a", taxa(m.treasury_20y, "taxa"), "", "treasury_20y"],
   ].filter(([, x]) => x);
   const hora = FAIXA.hora
     ? `<i class="ponto-vivo"></i><span class="tempo-real">Tempo real</span><span class="v">${FAIXA.hora.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}</span>`
     : `<span>Fechamento</span><span class="v">${dataBR(D.meta.data_fechamento)}</span>`;
   $("#faixa-status").innerHTML = hora;
   $("#faixa-status").title = FAIXA.hora ? `Última atualização das cotações às ${FAIXA.hora.toLocaleTimeString("pt-BR")}` : "Dados de fechamento";
-  const html = itens.map(([r, x, u]) => `<span class="fx"><span class="r">${esc(r)}</span><span class="v">${x.v}</span>${u ? `<span class="u">${u}</span>` : ""}${ok(x.d) ? `<span class="d ${sinal(x.d)}">${x.d > 0 ? "▲" : x.d < 0 ? "▼" : ""} ${nf2.format(Math.abs(x.d) * 100)}%</span>` : ""}</span>`).join("");
+  const html = itens.map(([r, x, u, k]) => `<span class="fx clicavel" data-k="${k}" title="Clique para ver o histórico"><span class="r">${esc(r)}</span><span class="v">${x.v}</span>${u ? `<span class="u">${u}</span>` : ""}${ok(x.d) ? `<span class="d ${sinal(x.d)}">${x.d > 0 ? "▲" : x.d < 0 ? "▼" : ""} ${nf2.format(Math.abs(x.d) * 100)}%</span>` : ""}</span>`).join("");
   $("#faixa-trilho").innerHTML = html + html;
   $("#faixa").title = FAIXA.hora
     ? `Cotações atualizadas às ${FAIXA.hora.toLocaleTimeString("pt-BR")}: câmbio e bitcoin em tempo real (AwesomeAPI); índices e commodities com atraso de até 15 minutos (Yahoo Finance). Arraste para rolar.`
@@ -2140,7 +2210,11 @@ function animarFaixa() {
   faixa.addEventListener("mouseleave", () => { FAIXA.pausado = false; });
   faixa.addEventListener("pointerdown", (e) => { FAIXA.arrastando = true; FAIXA.ultX = e.clientX; FAIXA.moveu = 0; faixa.setPointerCapture(e.pointerId); faixa.classList.add("arrastando"); });
   faixa.addEventListener("pointermove", (e) => { if (!FAIXA.arrastando) return; const d = e.clientX - FAIXA.ultX; FAIXA.x += d; FAIXA.moveu += Math.abs(d); FAIXA.ultX = e.clientX; });
-  const soltar = (e) => { FAIXA.arrastando = false; faixa.classList.remove("arrastando"); if (e.pointerType !== "mouse") FAIXA.pausado = false; };
+  const soltar = (e) => {
+    const clique = FAIXA.arrastando && FAIXA.moveu < 6 && e.type === "pointerup";
+    FAIXA.arrastando = false; faixa.classList.remove("arrastando"); if (e.pointerType !== "mouse") FAIXA.pausado = false;
+    if (clique) { const alvo = document.elementFromPoint(e.clientX, e.clientY); const fx = alvo && alvo.closest(".fx[data-k]"); if (fx) modalMercado(fx.dataset.k); }
+  };
   faixa.addEventListener("pointerup", soltar);
   faixa.addEventListener("pointercancel", soltar);
 }

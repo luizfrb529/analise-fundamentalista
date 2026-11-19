@@ -72,6 +72,10 @@ jobs:
         if: steps.checar.outputs.pular != 'sim'
         run: python pipeline/retorno.py || echo "retorno total falhou; mantém os dados anteriores"
 
+      - name: Histórico dos itens da faixa de cotações (B3, Yahoo, BCB, Tesouro, FRED e Focus)
+        if: steps.checar.outputs.pular != 'sim'
+        run: python pipeline/mercado_hist.py || echo "histórico da faixa falhou; mantém os dados anteriores"
+
       - name: Logos de ativos novos
         if: steps.checar.outputs.pular != 'sim'
         run: python pipeline/logos.py
