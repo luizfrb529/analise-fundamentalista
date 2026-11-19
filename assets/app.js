@@ -1693,45 +1693,95 @@ function valMapa(t, k) {
   if (k === "payout" && ok(v) && v < 0) return null;
   return v;
 }
+// Visões prontas do mapa: cada uma escolhe os dois eixos e diz como ler, para não precisar montar na mão.
+const MAPA_FII_EIXOS = {
+  pvp: ["P/VP", "x", 0.3, 1.5], dy: ["Dividend yield 12m", "pct", 0, 0.25], cresc: ["Crescimento dos rendimentos (3 anos, ao ano)", "pct", -0.3, 0.3],
+  vp: ["Crescimento do valor patrimonial (3 anos, ao ano)", "pct", -0.2, 0.15],
+};
+const MAPA_VISOES = {
+  acoes: [
+    { id: "preco_qualidade", nome: "Preço x rentabilidade", x: "pl", y: "roe", ler: "Mais à esquerda: menor P/L (paga-se menos por real de lucro). Mais acima: maior ROE (mais lucro sobre o patrimônio)." },
+    { id: "dividendos", nome: "Dividendos", x: "payout", y: "dy", ler: "Mais acima: maior dividend yield de 12 meses. Mais à direita: maior parte do lucro distribuída; à direita da linha de 100% a empresa pagou mais do que lucrou." },
+    { id: "divida", nome: "Rentabilidade x dívida", x: "divliq_ebitda", y: "roic", ler: "Mais à esquerda: menos dívida em relação ao EBITDA (abaixo de zero, caixa líquido). Mais acima: maior retorno sobre o capital investido." },
+    { id: "crescimento", nome: "Crescimento x preço", x: "ev_ebitda", y: "cagr_lucro_5a", ler: "Mais à esquerda: menor EV/EBITDA. Mais acima: lucro que mais cresceu por ano nos últimos 5 anos." },
+  ],
+  fii: [
+    { id: "preco_renda", nome: "Preço x renda", x: "pvp", y: "dy", ler: "Mais à esquerda: cota negociada mais abaixo do valor patrimonial. Mais acima: maior dividend yield de 12 meses." },
+    { id: "renda_crescendo", nome: "Renda crescendo", x: "dy", y: "cresc", ler: "Mais à direita: maior dividend yield de 12 meses. Mais acima: rendimento por cota que mais cresceu por ano em 3 anos." },
+    { id: "patrimonio", nome: "Patrimônio", x: "pvp", y: "vp", ler: "Mais à esquerda: menor P/VP. Mais acima: valor patrimonial por cota que mais cresceu por ano em 3 anos." },
+  ],
+};
 function pgMapa(app, q) {
-  const kx = MAPA_EIXOS[q.get("x")] ? q.get("x") : "payout", ky = MAPA_EIXOS[q.get("y")] ? q.get("y") : "roe";
-  const seg = q.get("seg") || "ACAO_BR", setor = q.get("setor") || "";
-  const dest = (q.get("d") || "").split(",").map((x) => x.trim().toUpperCase()).filter((x) => D.univMap[x]);
-  const ir = (o) => { const st = { x: kx, y: ky, seg, setor, d: dest.join(","), ...o }; location.hash = `#/mapa?x=${st.x}&y=${st.y}&seg=${st.seg}&setor=${encodeURIComponent(st.setor)}&d=${st.d}`; };
-  const doSeg = D.tickers.filter((t) => seg === "TODOS" || (seg === "ACAO_BR" ? emAcoes(t) : !emAcoes(t)));
-  const setores = [...new Set(doSeg.map((t) => A(t).setor_macro))].sort((a, b) => a.localeCompare(b, "pt-BR"));
-  const lista = doSeg.filter((t) => !setor || A(t).setor_macro === setor);
-  const fmtE = (k, v) => !ok(v) ? ND : MAPA_EIXOS[k][1] === "pct" ? nf2.format(v * 100) + "%" : nf2.format(v) + "x";
-  const md = (k) => mediana(lista.map((t) => valMapa(t, k)));
-  const cartoes = [["roe", "ROE mediano"], ["dy", "DY mediano 12m"], ["payout", "Payout mediano"], ["momentum", "Momentum 12-1 mediano"]];
-  const opcoes = (sel) => Object.entries(MAPA_EIXOS).map(([k, [n]]) => `<option value="${k}" ${k === sel ? "selected" : ""}>${n}</option>`).join("");
-  app.innerHTML = `${trilha([["Mapa"]])}<div class="cab-pagina"><div><h1>Mapa das empresas</h1>
-    <p>Cada ponto é uma empresa: escolha os dois indicadores e o setor. O tamanho do ponto é o valor de mercado. Dados dos últimos 12 meses (realizados, não projeções).</p></div></div>
-  <div class="mapa-kpis">${cartoes.map(([k, n]) => `<div class="cartao mapa-kpi"><span>${n}</span><b>${fmtE(k, md(k))}</b><small>${k === "momentum" ? "Retorno de 12 meses excluindo o último" : k === "payout" ? "Proventos 12m / lucro 12m" : `${lista.filter((t) => ok(valMapa(t, k))).length} empresas`}</small></div>`).join("")}</div>
+  const seg = ["ACAO_BR", "BDR", "TODOS", "FII"].includes(q.get("seg")) ? q.get("seg") : "ACAO_BR";
+  const ehFii = seg === "FII";
+  const visoes = MAPA_VISOES[ehFii ? "fii" : "acoes"], EIXOS = ehFii ? MAPA_FII_EIXOS : MAPA_EIXOS;
+  const vis = visoes.find((v) => v.id === q.get("v")) || visoes[0];
+  // eixos personalizados (opcional): só valem se forem do mesmo tipo de ativo
+  const kx = EIXOS[q.get("x")] ? q.get("x") : vis.x, ky = EIXOS[q.get("y")] ? q.get("y") : vis.y;
+  const custom = kx !== vis.x || ky !== vis.y;
+  const setor = q.get("setor") || "";
+  const dest = (q.get("d") || "").split(",").map((x) => x.trim().toUpperCase()).filter((x) => ehFii ? D.fiiMap[x] : D.univMap[x]);
+  const ir = (o) => {
+    const st = { v: vis.id, x: custom ? kx : "", y: custom ? ky : "", seg, setor, d: dest.join(","), ...o };
+    location.hash = `#/mapa?seg=${st.seg}&v=${st.v}${st.x ? `&x=${st.x}` : ""}${st.y ? `&y=${st.y}` : ""}&setor=${encodeURIComponent(st.setor)}&d=${st.d}`;
+  };
+  // fonte dos pontos: empresas ou fundos
+  const fundo = (t) => D.fiiMap[t];
+  const base = ehFii ? D.fiis.map((f) => f.ticker) : D.tickers.filter((t) => seg === "TODOS" || (seg === "ACAO_BR" ? emAcoes(t) : !emAcoes(t)));
+  const setorDe = (t) => ehFii ? fundo(t).setor : A(t).setor_macro;
+  const nomeDe = (t) => ehFii ? fundo(t).nome : A(t).nome;
+  const valor = (t, k) => {
+    if (!ehFii) return valMapa(t, k);
+    const f = fundo(t);
+    if (k === "pvp") { const v = fiiPvp(f); return ok(v) && v > 0 ? v : null; }
+    if (k === "dy") return fiiDy(f);
+    if (k === "cresc") return f.cagr_rend_3a;
+    if (k === "vp") return f.cagr_vp_3a;
+    return null;
+  };
+  const tamanho = (t) => ehFii ? fundo(t).pl : ind(t).valor_mercado_brl;
+  const setores = [...new Set(base.map(setorDe).filter(Boolean))].sort((a, b) => a.localeCompare(b, "pt-BR"));
+  const lista = base.filter((t) => !setor || setorDe(t) === setor);
+  const fmtE = (k, v) => !ok(v) ? ND : EIXOS[k][1] === "pct" ? nf2.format(v * 100) + "%" : nf2.format(v) + "x";
+  const md = (k) => mediana(lista.map((t) => valor(t, k)).filter(ok));
+  const cartoes = ehFii
+    ? [["pvp", "P/VP mediano", "Preço da cota / valor patrimonial"], ["dy", "DY mediano 12m", ""], ["cresc", "Crescimento mediano dos rendimentos", "3 anos, ao ano"], ["vp", "Crescimento mediano do VP", "3 anos, ao ano"]]
+    : [["roe", "ROE mediano", ""], ["dy", "DY mediano 12m", ""], ["payout", "Payout mediano", "Proventos 12m / lucro 12m"], ["momentum", "Momentum 12-1 mediano", "Retorno de 12 meses excluindo o último"]];
+  const opcoes = (sel) => Object.entries(EIXOS).map(([k, [n]]) => `<option value="${k}" ${k === sel ? "selected" : ""}>${n}</option>`).join("");
+  app.innerHTML = `${trilha([["Mapa"]])}<div class="cab-pagina"><div><h1>Mapa ${ehFii ? "dos fundos" : "das empresas"}</h1>
+    <p>Cada ponto é ${ehFii ? "um fundo; o tamanho é o patrimônio líquido" : "uma empresa; o tamanho é o valor de mercado"}. Escolha uma visão pronta; os eixos já vêm definidos. Dados realizados, não projeções.</p></div></div>
+  <div class="mapa-kpis">${cartoes.map(([k, n, sub]) => `<div class="cartao mapa-kpi"><span>${n}</span><b>${fmtE(k, md(k))}</b><small>${sub || `${lista.filter((t) => ok(valor(t, k))).length} ${ehFii ? "fundos" : "empresas"}`}</small></div>`).join("")}</div>
   <div class="cartao" style="margin-top:16px">
     <div class="linha mapa-ctrl">
-      <div class="abas" id="mp-seg" style="margin:0">${[["ACAO_BR", "Ações"], ["BDR", "BDRs"], ["TODOS", "Todos"]].map(([v, n]) => `<button data-v="${v}" class="${v === seg ? "ativo" : ""}">${n}</button>`).join("")}</div>
+      <div class="abas" id="mp-seg" style="margin:0">${[["ACAO_BR", "Ações"], ["BDR", "BDRs"], ["TODOS", "Ações e BDRs"], ["FII", "FIIs"]].map(([v, n]) => `<button data-v="${v}" class="${v === seg ? "ativo" : ""}">${n}</button>`).join("")}</div>
       <select id="mp-setor"><option value="">Todos os setores</option>${setores.map((x) => `<option ${x === setor ? "selected" : ""}>${esc(x)}</option>`).join("")}</select>
-      <label class="mapa-eixo">Eixo horizontal <select id="mp-x">${opcoes(kx)}</select></label>
-      <label class="mapa-eixo">Eixo vertical <select id="mp-y">${opcoes(ky)}</select></label>
-      <select id="mp-dest"><option value="">Destacar empresa</option>${lista.filter((t) => !dest.includes(t)).map((t) => `<option value="${t}">${t} · ${esc(A(t).nome)}</option>`).join("")}</select>
+      <select id="mp-dest"><option value="">Destacar ${ehFii ? "fundo" : "empresa"}</option>${lista.filter((t) => !dest.includes(t)).map((t) => `<option value="${t}">${t} · ${esc(nomeDe(t))}</option>`).join("")}</select>
       ${dest.length ? `<div class="chips">${dest.map((t) => `<button class="chip ativo" data-rm="${t}">${t}<span class="x">✕</span></button>`).join("")}</div>` : ""}
     </div>
-    <h3 style="margin:16px 0 4px">${esc(MAPA_EIXOS[ky][0])} × ${esc(MAPA_EIXOS[kx][0])}</h3>
+    <div class="mapa-visoes" id="mp-vis">${visoes.map((v) => `<button data-v="${v.id}" class="${v.id === vis.id && !custom ? "ativo" : ""}">${esc(v.nome)}</button>`).join("")}</div>
+    <h3 style="margin:14px 0 2px">${esc(EIXOS[ky][0])} × ${esc(EIXOS[kx][0])}</h3>
+    <p class="sub mapa-ler">${custom ? "Eixos escolhidos manualmente." : esc(vis.ler)} Arraste para mover o quadro; use os botões + e − (ou Ctrl + rodinha do mouse) para aproximar; duplo clique volta ao início.</p>
     <div class="grafico mapa-graf"><canvas id="g-mapa"></canvas></div>
-    <p class="sub" style="margin-top:8px">Valores fora da escala ficam encostados na borda (o balão mostra o valor real). Empresas em recuperação ficam fora dos múltiplos de lucro. Clique num ponto para abrir a empresa.</p>
+    <p class="sub" style="margin-top:8px">Valores fora da escala ficam encostados na borda (o balão mostra o valor real). ${ehFii ? "Fundos com menos de 12 meses de rendimentos na bolsa ficam fora do DY." : "Empresas em recuperação ficam fora dos múltiplos de lucro."} Clique num ponto para abrir ${ehFii ? "o fundo" : "a empresa"}.</p>
+    <details class="mapa-custom"${custom ? " open" : ""}><summary>Escolher os eixos manualmente</summary>
+      <div class="linha mapa-ctrl" style="margin-top:10px">
+        <label class="mapa-eixo">Eixo horizontal <select id="mp-x">${opcoes(kx)}</select></label>
+        <label class="mapa-eixo">Eixo vertical <select id="mp-y">${opcoes(ky)}</select></label>
+      </div></details>
   </div>`;
-  $$("#mp-seg button").forEach((b) => b.onclick = () => ir({ seg: b.dataset.v, setor: "" }));
+  $$("#mp-seg button").forEach((b) => b.onclick = () => ir({ seg: b.dataset.v, setor: "", d: "", v: "", x: "", y: "" }));
+  $$("#mp-vis button").forEach((b) => b.onclick = () => ir({ v: b.dataset.v, x: "", y: "" }));
   $("#mp-setor").onchange = (e) => ir({ setor: e.target.value });
-  $("#mp-x").onchange = (e) => ir({ x: e.target.value });
-  $("#mp-y").onchange = (e) => ir({ y: e.target.value });
+  $("#mp-x").onchange = (e) => ir({ x: e.target.value, y: ky });
+  $("#mp-y").onchange = (e) => ir({ y: e.target.value, x: kx });
   $("#mp-dest").onchange = (e) => e.target.value && ir({ d: [...dest, e.target.value].join(",") });
   $$("[data-rm]").forEach((b) => b.onclick = () => ir({ d: dest.filter((x) => x !== b.dataset.rm).join(",") }));
-  const [, ux, x0, x1] = MAPA_EIXOS[kx], [, uy, y0, y1] = MAPA_EIXOS[ky];
+  if (!window.Chart) { $("#g-mapa").parentNode.innerHTML = '<p class="vazio">Gráfico indisponível.</p>'; return; }
+  const [, ux, x0, x1] = EIXOS[kx], [, uy, y0, y1] = EIXOS[ky];
   const esc_ = (u) => (u === "pct" ? 100 : 1);
-  const pts = lista.map((t) => ({ t, vx: valMapa(t, kx), vy: valMapa(t, ky), vm: ind(t).valor_mercado_brl })).filter((p) => ok(p.vx) && ok(p.vy));
+  const pts = lista.map((t) => ({ t, vx: valor(t, kx), vy: valor(t, ky), vm: tamanho(t) })).filter((p) => ok(p.vx) && ok(p.vy));
   const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
-  // rótulos: destacadas + extremos (maiores no eixo vertical e no horizontal)
+  // rótulos: destacados + extremos (maiores no eixo vertical e no horizontal)
   const rot = new Set(dest);
   [...pts].sort((a, b) => b.vy - a.vy).slice(0, 5).forEach((p) => rot.add(p.t));
   [...pts].sort((a, b) => b.vx - a.vx).slice(0, 3).forEach((p) => rot.add(p.t));
@@ -1739,20 +1789,77 @@ function pgMapa(app, q) {
   const dados = pts.map((p) => ({ x: clamp(p.vx, x0, x1) * esc_(ux), y: clamp(p.vy, y0, y1) * esc_(uy), r: 3 + 11 * Math.sqrt((p.vm || 0) / vmMax), t: p.t, vx: p.vx, vy: p.vy }));
   const azul = cor("--serie-2"), cinza = "rgba(140,148,158,.55)";
   const PLUGIN_ROT = { id: "rotMapa", afterDatasetsDraw(ch) {
-    const { ctx } = ch, meta = ch.getDatasetMeta(0);
-    ctx.save(); ctx.font = "600 12px Inter, sans-serif"; ctx.fillStyle = cor("--txt"); ctx.textBaseline = "middle";
-    meta.data.forEach((el, i) => { const d = dados[i]; if (!rot.has(d.t)) return; const dir = el.x > ch.chartArea.right - 70; ctx.textAlign = dir ? "right" : "left"; ctx.fillText(d.t, el.x + (dir ? -1 : 1) * (d.r + 5), el.y); });
-    if (kx === "payout") { const xs = ch.scales.x, px = xs.getPixelForValue(100); ctx.strokeStyle = cor("--txt-3"); ctx.setLineDash([4, 4]); ctx.beginPath(); ctx.moveTo(px, ch.chartArea.top); ctx.lineTo(px, ch.chartArea.bottom); ctx.stroke(); ctx.setLineDash([]); ctx.fillStyle = cor("--txt-3"); ctx.textAlign = "left"; ctx.fillText("100%: paga todo o lucro", px + 6, ch.chartArea.bottom - 10); }
+    const { ctx } = ch, meta = ch.getDatasetMeta(0), a = ch.chartArea;
+    ctx.save(); ctx.beginPath(); ctx.rect(a.left, a.top, a.right - a.left, a.bottom - a.top); ctx.clip();
+    ctx.font = "600 12px Inter, sans-serif"; ctx.fillStyle = cor("--txt"); ctx.textBaseline = "middle";
+    meta.data.forEach((el, i) => { const d = dados[i]; if (!rot.has(d.t)) return; const dir = el.x > a.right - 70; ctx.textAlign = dir ? "right" : "left"; ctx.fillText(d.t, el.x + (dir ? -1 : 1) * (d.r + 5), el.y); });
+    const linha = (eixo, v, txt) => {
+      const sc = ch.scales[eixo], px = sc.getPixelForValue(v);
+      if (px < (eixo === "x" ? a.left : a.top) || px > (eixo === "x" ? a.right : a.bottom)) return;
+      ctx.strokeStyle = cor("--txt-3"); ctx.setLineDash([4, 4]); ctx.beginPath();
+      if (eixo === "x") { ctx.moveTo(px, a.top); ctx.lineTo(px, a.bottom); } else { ctx.moveTo(a.left, px); ctx.lineTo(a.right, px); }
+      ctx.stroke(); ctx.setLineDash([]); ctx.fillStyle = cor("--txt-3"); ctx.textAlign = "left";
+      if (eixo === "x") ctx.fillText(txt, px + 6, a.bottom - 10); else ctx.fillText(txt, a.left + 6, px - 9);
+    };
+    if (kx === "payout") linha("x", 100, "100%: paga todo o lucro");
+    if (ehFii && kx === "pvp") linha("x", 1, "P/VP 1: preço igual ao valor patrimonial");
+    if (ehFii && ky === "pvp") linha("y", 1, "P/VP 1");
     ctx.restore();
   } };
   const o = optGraf({ legenda: false });
   o.interaction = { mode: "nearest", intersect: true };
-  o.scales.x = { min: x0 * esc_(ux), max: x1 * esc_(ux), title: { display: true, text: MAPA_EIXOS[kx][0], color: cor("--txt-3") }, ticks: { color: cor("--txt-3"), callback: (v) => nf0.format(v) + (ux === "pct" ? "%" : "x") }, grid: { color: cor("--borda") } };
-  o.scales.y = { min: y0 * esc_(uy), max: y1 * esc_(uy), title: { display: true, text: MAPA_EIXOS[ky][0], color: cor("--txt-3") }, ticks: { color: cor("--txt-3"), callback: (v) => nf0.format(v) + (uy === "pct" ? "%" : "x") }, grid: { color: cor("--borda") } };
-  o.plugins.tooltip.callbacks = { title: (it) => { const d = dados[it[0].dataIndex]; return `${d.t} · ${A(d.t).nome}`; }, label: (ctx) => { const d = dados[ctx.dataIndex]; return [`${MAPA_EIXOS[ky][0]}: ${fmtE(ky, d.vy)}`, `${MAPA_EIXOS[kx][0]}: ${fmtE(kx, d.vx)}`]; } };
-  o.onClick = (e, els) => { if (els.length) location.hash = `#/ativo/${dados[els[0].index].t}`; };
-  o.onHover = (e, els) => { e.native.target.style.cursor = els.length ? "pointer" : ""; };
-  charts.push(new Chart($("#g-mapa"), { type: "bubble", data: { datasets: [{ data: dados, backgroundColor: dados.map((d) => rot.has(d.t) ? azul : cinza), borderColor: "transparent" }] }, options: o, plugins: [PLUGIN_ROT] }));
+  const mx = (x1 - x0) * esc_(ux) * 0.04, my = (y1 - y0) * esc_(uy) * 0.05;
+  const BASE = { x: [x0 * esc_(ux) - mx, x1 * esc_(ux) + mx], y: [y0 * esc_(uy) - my, y1 * esc_(uy) + my] };
+  const dec = (u, lo, hi) => (u === "pct" ? 0 : (hi - lo) <= 3 ? 1 : 0);
+  const fmtT = (u, lo, hi) => (v) => v < lo * esc_(u) - 1e-9 || v > hi * esc_(u) + 1e-9 ? "" : new Intl.NumberFormat("pt-BR", { minimumFractionDigits: dec(u, lo, hi), maximumFractionDigits: dec(u, lo, hi) }).format(v) + (u === "pct" ? "%" : "x");
+  o.scales.x = { min: BASE.x[0], max: BASE.x[1], title: { display: true, text: EIXOS[kx][0], color: cor("--txt-3") }, ticks: { color: cor("--txt-3"), callback: fmtT(ux, x0, x1) }, grid: { color: cor("--borda") } };
+  o.scales.y = { min: BASE.y[0], max: BASE.y[1], title: { display: true, text: EIXOS[ky][0], color: cor("--txt-3") }, ticks: { color: cor("--txt-3"), callback: fmtT(uy, y0, y1) }, grid: { color: cor("--borda") } };
+  o.plugins.tooltip.callbacks = { title: (it) => { const d = dados[it[0].dataIndex]; return `${d.t} · ${nomeDe(d.t)}`; }, label: (ctx) => { const d = dados[ctx.dataIndex]; return [`${EIXOS[ky][0]}: ${fmtE(ky, d.vy)}`, `${EIXOS[kx][0]}: ${fmtE(kx, d.vx)}`]; } };
+  o.onClick = (e, els) => { if (els.length && !ch.$arrastou) location.hash = `#/${ehFii ? "fii" : "ativo"}/${dados[els[0].index].t}`; };
+  o.onHover = (e, els) => { if (!ch.$pan) e.native.target.style.cursor = els.length ? "pointer" : "grab"; };
+  const ch = new Chart($("#g-mapa"), { type: "bubble", data: { datasets: [{ data: dados, backgroundColor: dados.map((d) => rot.has(d.t) ? azul : cinza), borderColor: "transparent" }] }, options: o, plugins: [PLUGIN_ROT] });
+  charts.push(ch);
+  zoomMapa(ch, BASE);
+}
+// Mapa: arrastar com o mouse move o quadro; botões + e − (ou Ctrl + rodinha) aproximam e afastam; duplo clique volta ao enquadramento inicial.
+function zoomMapa(ch, BASE) {
+  const el = ch.canvas, sx = ch.options.scales.x, sy = ch.options.scales.y;
+  const larg = { x: BASE.x[1] - BASE.x[0], y: BASE.y[1] - BASE.y[0] };
+  const aplicar = (x, y) => {
+    const lim = (r, b, w) => { let [a, z] = r; const t = Math.min(z - a, w * 1.5); if (z - a > t) { const c = (a + z) / 2; a = c - t / 2; z = c + t / 2; } return [a, z]; };
+    [sx.min, sx.max] = lim(x, BASE.x, larg.x); [sy.min, sy.max] = lim(y, BASE.y, larg.y);
+    ch.update("none");
+  };
+  const zoom = (f, px, py) => {
+    const xs = ch.scales.x, ys = ch.scales.y, a = ch.chartArea;
+    const cx = xs.getValueForPixel(px ?? (a.left + a.right) / 2), cy = ys.getValueForPixel(py ?? (a.top + a.bottom) / 2);
+    aplicar([cx - (cx - xs.min) * f, cx + (xs.max - cx) * f], [cy - (cy - ys.min) * f, cy + (ys.max - cy) * f]);
+  };
+  const reset = () => aplicar([...BASE.x], [...BASE.y]);
+  el.addEventListener("wheel", (e) => { if (!e.ctrlKey && !e.metaKey) return; e.preventDefault(); zoom(e.deltaY < 0 ? 0.8 : 1.25, e.offsetX, e.offsetY); }, { passive: false });
+  el.addEventListener("dblclick", reset);
+  el.addEventListener("pointerdown", (e) => {
+    if (e.button !== 0) return;
+    ch.$pan = { x: e.clientX, y: e.clientY, sx: [ch.scales.x.min, ch.scales.x.max], sy: [ch.scales.y.min, ch.scales.y.max] }; ch.$arrastou = false;
+    el.setPointerCapture(e.pointerId); el.style.cursor = "grabbing";
+  });
+  el.addEventListener("pointermove", (e) => {
+    const p = ch.$pan; if (!p) return;
+    const dx = e.clientX - p.x, dy = e.clientY - p.y;
+    if (Math.abs(dx) + Math.abs(dy) > 4) ch.$arrastou = true;
+    if (!ch.$arrastou) return;
+    const a = ch.chartArea, kx = (p.sx[1] - p.sx[0]) / (a.right - a.left), ky = (p.sy[1] - p.sy[0]) / (a.bottom - a.top);
+    aplicar([p.sx[0] - dx * kx, p.sx[1] - dx * kx], [p.sy[0] + dy * ky, p.sy[1] + dy * ky]);
+  });
+  const fim = () => { ch.$pan = null; el.style.cursor = "grab"; setTimeout(() => { ch.$arrastou = false; }, 0); };
+  el.addEventListener("pointerup", fim); el.addEventListener("pointercancel", fim);
+  el.style.touchAction = "pan-y";
+  const bar = document.createElement("div");
+  bar.className = "mapa-zoom";
+  bar.innerHTML = `<button class="btn peq" data-z="in" title="Aproximar">+</button><button class="btn peq" data-z="out" title="Afastar">−</button><button class="btn peq" data-z="reset" title="Voltar ao enquadramento inicial">Restaurar</button>`;
+  el.parentNode.style.position = "relative";
+  el.parentNode.appendChild(bar);
+  bar.onclick = (e) => { const z = e.target.dataset.z; if (z === "in") zoom(0.7); else if (z === "out") zoom(1 / 0.7); else if (z === "reset") reset(); };
 }
 /* =====================================================================
    FUNDOS IMOBILIÁRIOS

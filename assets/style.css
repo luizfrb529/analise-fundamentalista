@@ -663,3 +663,14 @@ details.recolhe[open] > summary { margin-bottom: 12px; }
 .merc-proj-l > div { border: 1px dashed var(--borda-forte); border-radius: 10px; padding: 6px 10px; font-size: .74rem; color: var(--txt-3); font-weight: 600; }
 .merc-proj-l b { display: block; font-size: .92rem; color: var(--txt); font-variant-numeric: tabular-nums; }
 @media (max-width: 600px) { .modal-merc { padding: 16px; width: 100%; } .modal-merc .grafico { height: 240px; } #merc-per { display: flex; width: 100%; } #merc-per button { flex: 1; padding-left: 0; padding-right: 0; min-width: 0; } .merc-nums { grid-template-columns: 1fr 1fr; } }
+
+/* ---------------- mapa: visões prontas e zoom */
+.mapa-visoes { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.mapa-visoes button { border: 1px solid var(--borda); background: var(--sup-2); color: var(--txt-2); border-radius: 999px; padding: 7px 14px; font: inherit; font-size: .82rem; font-weight: 600; cursor: pointer; }
+.mapa-visoes button:hover { color: var(--txt); border-color: var(--borda-forte); }
+.mapa-visoes button.ativo { background: var(--txt); color: var(--sup); border-color: var(--txt); }
+.mapa-ler { max-width: 900px; }
+.mapa-zoom { position: absolute; top: 6px; right: 6px; display: flex; gap: 6px; }
+.mapa-zoom .btn { min-width: 32px; justify-content: center; }
+.mapa-custom { margin-top: 12px; font-size: .82rem; color: var(--txt-3); }
+.mapa-custom summary { cursor: pointer; font-weight: 600; }
