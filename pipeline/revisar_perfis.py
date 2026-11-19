@@ -51,6 +51,8 @@ def pendentes(universo: list, fundamentals: dict) -> list[tuple[str, str]]:
             novos.append((t, f"resultado novo {rotulo} (perfil cobre {perfil.get('ultimo_resultado')})"))
         elif rotulo and ult.get("entrega") and ult["entrega"] > revisado:
             novos.append((t, f"resultado {rotulo} entregue em {ult['entrega']}, depois da revisão de {revisado}"))
+        elif not perfil.get("destaques_resultado"):
+            velhos.insert(0, (t, "sem os destaques do último resultado"))
         elif (dt.date.today() - dt.date.fromisoformat(revisado[:10])).days > REVISAO_MAXIMA_DIAS:
             velhos.append((t, f"perfil revisado há mais de {REVISAO_MAXIMA_DIAS} dias"))
     return novos + velhos

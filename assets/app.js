@@ -1013,7 +1013,11 @@ async function blocoSobre(t) {
   const ult = ((D.fund[t] || {}).agenda || {}).ultima || {};
   const defasado = pf && ult.rotulo && ((pf.ultimo_resultado && pf.ultimo_resultado !== ult.rotulo) || (ult.entrega && pf.revisado_em && ult.entrega > pf.revisado_em));
   const avisoRev = defasado ? `<p class="aviso-rev">Saiu o resultado do <b>${esc(ult.rotulo)}</b>${ult.entrega ? ` em ${esc(dataBR(ult.entrega))}` : ""}. O texto abaixo é anterior a ele e está na fila de revisão automática; os números do trimestre já estão em <a href="#" data-sec-ir="resultados">Resultados</a>.</p>` : "";
-  $("#sobre").innerHTML = `<div class="grade g2">
+  const dr = pf && pf.destaques_resultado;
+  const lista = (itens, cls, titulo) => itens && itens.length ? `<div class="dr-col ${cls}"><h4>${titulo}</h4><ul>${itens.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>` : "";
+  const blocoDr = dr ? `<div class="cartao dr-cartao"><div class="cartao-cab"><div><h3>Último resultado: ${esc(dr.trimestre)}</h3><p class="sub">${dr.divulgado_em ? `Divulgado em ${esc(dataBR(dr.divulgado_em))}. ` : ""}Fatos do trimestre segundo o release e o ITR da empresa; a comparação de cada item vem indicada no texto.</p></div></div>
+    <div class="dr-grade">${lista(dr.positivos, "pos", "Pontos positivos")}${lista(dr.negativos, "neg", "Pontos negativos")}${lista(dr.atencao, "aten", "Pontos de atenção")}</div></div>` : "";
+  $("#sobre").innerHTML = blocoDr + `<div class="grade g2">
     <div class="cartao"><h3>O negócio</h3>${avisoRev}<p style="color:var(--txt-2)">${esc((pf && pf.resumo) || n.resumo || "Resumo não preenchido.")}</p>${destaques}${detalhe}</div>
     <div class="cartao"><h3>Sensibilidade a cenários</h3><p class="sub">De -2 (perde muito) a +2 (ganha muito).${porques.length ? " Passe o mouse para ver o motivo." : ""}</p>
       <div class="barras" style="margin-top:12px">${Object.entries(sens).map(([c, { nota: v, porque }]) => `<div class="linha-barra"${porque ? ` data-tip="${esc(porque)}"` : ""}><span>${CENARIOS[c]}</span><span class="barra centro"><i style="left:${v < 0 ? 50 + v * 25 : 50}%;width:${Math.abs(v) * 25}%;background:${v >= 0 ? "var(--pos)" : "var(--neg)"}"></i></span><span class="num ${sinal(v)}">${v > 0 ? "+" : ""}${v}</span></div>`).join("")}</div>

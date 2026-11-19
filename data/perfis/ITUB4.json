@@ -91,5 +91,23 @@
   }
  ],
  "segmentos_base": "Carteira de crédito",
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-03",
+  "positivos": [
+   "Lucro recorrente gerencial de R$ 12,6 bi no 3T26, alta de 6,2% sobre o 3T25.",
+   "Carteira de crédito de R$ 1,544 tri, alta de 10,2% em 12 meses.",
+   "Margem financeira com clientes cresceu 6,9% no ano."
+  ],
+  "negativos": [
+   "ROE de 23,6% no 3T26, abaixo dos 24,3% do 2T26.",
+   "Inadimplência acima de 90 dias subiu de 1,9% para 2,0%, puxada por pequenas e médias empresas.",
+   "Custo do crédito de R$ 10,4 bi, alta de 10,2% no ano."
+  ],
+  "atencao": [
+   "Projeções de 2026 mantidas: carteira de +5,5% a 9,5% e custo do crédito de R$ 38,5 a 43,5 bi.",
+   "Evolução da inadimplência em pequenas e médias empresas nos próximos trimestres."
+  ]
+ }
 }

@@ -39,6 +39,15 @@ def validar(j: dict, ticker: str) -> list[str]:
     segs = [x for x in j.get("segmentos") or [] if isinstance(x, dict) and isinstance(x.get("peso_receita"), (int, float))]
     if segs and not 0.9 <= sum(x["peso_receita"] for x in segs) <= 1.1:
         erros.append(f"pesos dos segmentos somam {sum(x['peso_receita'] for x in segs):.2f}")
+    dr = j.get("destaques_resultado")
+    if dr is not None:
+        if not isinstance(dr, dict) or not dr.get("trimestre"):
+            erros.append("destaques_resultado sem trimestre")
+        else:
+            for k, (mi, ma) in {"positivos": (1, 5), "negativos": (1, 5), "atencao": (1, 4)}.items():
+                itens = dr.get(k)
+                if not isinstance(itens, list) or not mi <= len(itens) <= ma or not all(isinstance(x, str) and x.strip() for x in itens):
+                    erros.append(f"destaques_resultado.{k} precisa de {mi} a {ma} itens de texto")
     moeda = j.get("moeda") or {}
     for k in ("receita_em_dolar", "divida_em_dolar"):
         if moeda.get(k) not in NIVEIS:
