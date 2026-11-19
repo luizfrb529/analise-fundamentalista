@@ -1,0 +1,94 @@
+{
+ "ticker": "MUTC34",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR da Micron, fabricante americana de memórias DRAM, HBM e NAND. A receita quadruplicou no ano fiscal 2026 com a demanda de data centers de IA, mas o setor de memória é historicamente cíclico.",
+ "modelo": "A Micron projeta e fabrica chips de memória DRAM (incluindo HBM, usada em aceleradores de IA) e memória NAND, vendidos como componentes, módulos e SSDs para provedores de nuvem, fabricantes de servidores, PCs, celulares e carros. A receita depende do volume e do preço da memória, que oscilam com oferta e demanda; parte das vendas agora segue acordos estratégicos plurianuais com volume mínimo garantido (take-or-pay), com bandas de preço e pagamentos antecipados. Tem fábricas nos EUA, Taiwan, Japão, Singapura, Malásia, China e Índia. O BDR MUTC34 é negociado na B3 e representa ações listadas na Nasdaq.",
+ "segmentos": [
+  {
+   "nome": "Cloud Memory (hiperescaladores e HBM)",
+   "peso_receita": 0.32,
+   "periodo": "Ano fiscal 2026 (set/25 a ago/26)",
+   "obs": "US$ 43,1 bilhões."
+  },
+  {
+   "nome": "Core Data Center (SSDs e memória para servidores)",
+   "peso_receita": 0.28,
+   "periodo": "Ano fiscal 2026 (set/25 a ago/26)",
+   "obs": "US$ 37,6 bilhões."
+  },
+  {
+   "nome": "Mobile and Client (celulares e PCs)",
+   "peso_receita": 0.27,
+   "periodo": "Ano fiscal 2026 (set/25 a ago/26)",
+   "obs": "US$ 36,6 bilhões."
+  },
+  {
+   "nome": "Automotive and Embedded",
+   "peso_receita": 0.12,
+   "periodo": "Ano fiscal 2026 (set/25 a ago/26)",
+   "obs": "US$ 15,9 bilhões."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão).",
+ "geografia": {
+  "brasil_pct": 0.0,
+  "exterior_pct": 1.0,
+  "periodo": "Ano fiscal 2026 (set/25 a ago/26)",
+  "base": null,
+  "texto": "Do ponto de vista do investidor brasileiro, toda a receita é externa. Pela sede do cliente, 69% vieram dos EUA, 13% de Taiwan, 6% da China continental, 5% de Hong Kong, 4% de outros países da Ásia-Pacífico, 2% do Japão e 1% da Europa; cerca de 70% dos produtos são embarcados para fora dos EUA."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "baixa",
+  "texto": "A maior parte das vendas é em dólar e o BDR replica a ação em dólar convertida para reais, então a alta do dólar valoriza o BDR na B3. A dívida é pequena (US$ 5,2 bilhões em ago/26) frente a US$ 73,5 bilhões em caixa e aplicações; parte relevante de custos e investimentos é em iene, dólar de Taiwan, dólar de Singapura e outras moedas asiáticas."
+ },
+ "momento": "No 4T do ano fiscal 2026 (encerrado em 03/09/2026 e divulgado em 30/09/2026), a receita foi de US$ 54,2 bilhões, contra US$ 11,3 bilhões um ano antes, com margem bruta de 86,8% e lucro líquido de US$ 37,7 bilhões. No ano fiscal 2026, a receita somou US$ 133,2 bilhões (US$ 37,4 bilhões em 2025) e o lucro líquido US$ 85,0 bilhões, com fluxo de caixa livre ajustado de US$ 62,3 bilhões. A projeção para o 1T do ano fiscal 2027 é de receita de US$ 61,5 bilhões, mais ou menos US$ 1,5 bilhão, e margem bruta perto de 86%. O balanço mostra US$ 12,9 bilhões em obrigações de longo prazo com clientes (ago/26, ante US$ 142 milhões um ano antes), ligadas aos acordos estratégicos. O próximo resultado sai em dezembro de 2026.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A empresa não depende de crédito no Brasil; a Selic só afeta o BDR pela comparação com a renda fixa local."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "O BDR é a ação em dólar convertida para reais: cada alta do dólar se soma diretamente ao retorno em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Gás, metais e energia pesam no custo das fábricas, mas o resultado é dominado pelo preço da memória, não pelas commodities clássicas."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O Brasil não é mercado relevante; a demanda depende do investimento global em IA e do ciclo de PCs e celulares."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação brasileira não afeta a operação, precificada em dólar."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal no Brasil tende a desvalorizar o real, o que eleva o BDR em reais e funciona como proteção para o investidor local."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Micron Reports Record Fiscal Fourth Quarter and Full-Year 2026 Results (Exhibit 99.1 ao 8-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm",
+   "data": "2026-09-30"
+  },
+  {
+   "titulo": "Micron, Form 10-K do ano fiscal 2026 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm",
+   "data": "2026-10-09"
+  },
+  {
+   "titulo": "Unite.AI: Micron posts record revenue and earnings for fiscal 2026",
+   "url": "https://www.unite.ai/micron-posts-record-revenue-and-earnings-for-fiscal-2026/",
+   "data": "2026-09-30"
+  },
+  {
+   "titulo": "Micron, Form 8-K de 05/11/2026: mudança no conselho (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000110465926123389/tm2629062d1_8k.htm",
+   "data": "2026-11-05"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "ticker": "SMFT3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior rede de academias da América Latina, com 2.259 unidades em 17 países e o agregador TotalPass. México e outros países já geram 64% da receita das academias Smart Fit (3T26).",
+ "modelo": "O Grupo Smart Fit opera academias de baixo custo (Smart Fit, próprias e franquias), academias premium (Bio Ritmo) e estúdios (BeOn), cobrando mensalidades recorrentes de 5,7 mi de clientes. Também tem o TotalPass, benefício corporativo de academia vendido a empresas no Brasil e no México (2,5 mi de clientes), além de royalties de franquias e plataformas digitais (Queima Diária, FitMaster). A receita é recorrente e cresce sobretudo com a abertura de novas unidades próprias.",
+ "segmentos": [
+  {
+   "nome": "Smart Fit, outros países",
+   "peso_receita": 0.35,
+   "periodo": "3T26",
+   "obs": "R$ 828,9 mi (+34%), inclui Colômbia, Chile, Peru, Panamá, Costa Rica e demais mercados."
+  },
+  {
+   "nome": "Smart Fit, Brasil",
+   "peso_receita": 0.31,
+   "periodo": "3T26",
+   "obs": "R$ 729,3 mi (+20%), inclui a Evolve, consolidada desde agosto de 2026."
+  },
+  {
+   "nome": "Smart Fit, México",
+   "peso_receita": 0.21,
+   "periodo": "3T26",
+   "obs": "R$ 486,6 mi (+24%)."
+  },
+  {
+   "nome": "Outras (TotalPass, royalties, BeOn, Queima Diária, FitMaster)",
+   "peso_receita": 0.1,
+   "periodo": "3T26",
+   "obs": "R$ 226,1 mi (+50%)."
+  },
+  {
+   "nome": "Bio Ritmo e outras",
+   "peso_receita": 0.03,
+   "periodo": "3T26",
+   "obs": "R$ 77,9 mi (+40%)."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 0.36,
+  "exterior_pct": 0.64,
+  "periodo": "3T26",
+  "base": "receita das academias próprias Smart Fit",
+  "texto": "Das 2.259 academias, 48% estão no Brasil, 22% no México e 30% em outros países da América Latina. Considerando toda a receita do grupo, Brasil responde por cerca de 40% a 45%, já que Bio Ritmo, TotalPass Brasil e outras marcas são majoritariamente brasileiras."
+ },
+ "moeda": {
+  "receita_em_dolar": "média",
+  "divida_em_dolar": "baixa",
+  "texto": "A maior parte da receita é gerada em moedas latino-americanas (peso mexicano, colombiano, chileno e outras) e em dólar no Panamá, que valem mais em reais quando o real se desvaloriza. A dívida é captada localmente em cada país (51% Brasil, 22% México e 27% outros países, na dívida líquida do 3T26), o que reduz o descasamento; equipamentos importados encarecem com o dólar."
+ },
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita líquida foi de R$ 2,35 bi (+29% sobre o 3T25), o Ebitda ajustado de R$ 763 mi (+30%, margem de 32,5%), o lucro líquido de R$ 255,3 mi (+50%) e o lucro recorrente de R$ 247,7 mi (+40%, margem de 10,5%). A rede somou 392 academias em 12 meses, recorde, incluindo 30 unidades da Evolve, adquirida em agosto de 2026, e a companhia mantém a previsão de 330 a 350 aberturas líquidas em 2026 (197 até outubro). A dívida líquida ajustada subiu para R$ 4,99 bi (R$ 3,40 bi um ano antes), com alavancagem de 1,21 vez o Ebitda pela definição das debêntures (1,80 vez excluindo arrendamentos de imóveis), após investimento de R$ 631,6 mi no trimestre e recompra de ações. No trimestre emitiu R$ 1,2 bi em debêntures a CDI mais 0,65% a 1,05% para pré-pagar dívidas mais caras.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Metade da dívida líquida é no Brasil e indexada ao CDI, então juro menor reduz a despesa financeira, que subiu para R$ 161,9 mi no 3T26, e favorece a expansão financiada com dívida."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Cerca de 64% da receita das academias vem de México e outros países, que rende mais em reais quando o real perde valor; a dívida local em cada país e o custo de equipamentos importados reduzem o ganho."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities; energia elétrica é custo relevante, mas regulado."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais emprego e renda no Brasil elevam adesões e o TotalPass corporativo, mas o país responde por menos da metade da receita e a base brasileira cresce pouco."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Salários, aluguéis e energia sobem com a inflação, e o repasse ao tíquete de academias de baixo custo é limitado pela sensibilidade do cliente a preço."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior eleva os juros futuros e o custo da dívida em CDI no Brasil, que financia o plano de aberturas."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Grupo Smart Fit, Divulgação de Resultados 3T26 (PDF do comunicado à CVM)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/SMFT3/51808/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "DGABC (Estadão Conteúdo): Smart Fit tem lucro líquido recorrente de R$ 248 mi no 3º trimestre, alta anual de 40%",
+   "url": "https://www.dgabc.com.br/Noticia/4366919/smart-fit-tem-lucro-liquido-recorrente-de-r-248-mi-no-3-trimestre-alta-anual-de-40",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Mercado & Consumo: Smart Fit tem lucro de R$ 248 mi no 3º trimestre, alta de 40%",
+   "url": "https://mercadoeconsumo.com.br/05/11/2026/mc-capital/smart-fit-tem-lucro-de-r-248-mi-no-3o-trimestre-alta-de-40/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Investidor10: Lucro da Smart Fit dispara 40% no terceiro trimestre de 2026 (busca, título)",
+   "url": "https://investidor10.com.br/noticias/lucro-da-smart-fit-smft3-dispara-40-no-terceiro-trimestre-de-2026-123697/",
+   "data": "2026-11-05"
+  }
+ ]
+}
