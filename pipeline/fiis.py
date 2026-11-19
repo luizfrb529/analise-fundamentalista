@@ -555,33 +555,63 @@ def limpo(x):
     return x
 
 
-def ajustar_desdobramentos(d: dict) -> list:
-    """Desdobramento de cotas (ex.: 1 para 10) quebra as séries por cota. Detecta pelo informe mensal (número de cotas
-    multiplica e valor patrimonial divide pelo mesmo fator) e deixa o histórico na base de cotas atual, como faz a B3.
-    O valor anunciado fica em valor_original."""
+def eventos_fundo_b3(ticker: str, tipo: str | None) -> list[dict]:
+    """Desdobramentos, grupamentos e bonificações do fundo informados pela B3."""
+    import base64
+    p = base64.b64encode(json.dumps({"cnpj": "0", "identifierFund": ticker[:4], "typeFund": 27 if tipo == "infra" else 7}).encode()).decode()
+    try:
+        d = S.get(f"https://sistemaswebb3-listados.b3.com.br/fundsProxy/fundsCall/GetListedSupplementFunds/{p}", headers={"User-Agent": "Mozilla/5.0"}).json()
+    except Exception as e:
+        print(f"{ticker}: eventos B3: {e}")
+        return []
+    return S.eventos_b3(d.get("stockDividends"), lambda isin: isin.startswith("BR" + ticker[:4] + "CTF"))
+
+
+def ajustar_desdobramentos(d: dict, eventos_b3: list[dict] | None = None) -> list:
+    """Desdobramento, grupamento ou bonificação de cotas quebram as séries por cota. Fonte principal: eventos da B3
+    (fator e data com oficiais). Reserva: o informe mensal (número de cotas multiplica ou divide e o valor patrimonial
+    faz o inverso pelo mesmo fator), para evento que a B3 ainda não mostra. O histórico fica na base de cotas atual,
+    como faz a B3; o valor anunciado fica em valor_original."""
     m = d.get("mensal") or []
-    eventos = []
+    eventos = [{"data_com": e["data_com"], "fator": e["fator"], "fonte": "B3", "evento": e["evento"]} for e in (eventos_b3 or [])]
     for a, b in zip(m, m[1:]):
-        if a.get("cotas") and b.get("cotas") and a.get("vp_cota") and b.get("vp_cota"):
-            rc, rv = b["cotas"] / a["cotas"], a["vp_cota"] / b["vp_cota"]
-            f = round(rc)
-            if f >= 2 and abs(rc / f - 1) < 0.05 and abs(rv / f - 1) < 0.15:
-                eventos.append((b["ref"], f))
-    for ref, f in eventos:
+        if not (a.get("cotas") and b.get("cotas") and a.get("vp_cota") and b.get("vp_cota")):
+            continue
+        rc, rv = b["cotas"] / a["cotas"], a["vp_cota"] / b["vp_cota"]
+        if rc >= 1.8:
+            f = float(round(rc))
+        elif rc <= 0.55:
+            f = 1 / round(1 / rc)
+        else:
+            continue
+        if abs(rc / f - 1) < 0.05 and abs(rv / f - 1) < 0.15:
+            ja = any(abs((dt.date.fromisoformat(e["data_com"]) - dt.date.fromisoformat(b["ref"] + "-15")).days) <= 75 for e in eventos)
+            if not ja:
+                eventos.append({"data_com": None, "ref": b["ref"], "fator": f, "fonte": "Informe Mensal da CVM", "evento": "Desdobramento" if f > 1 else "Grupamento"})
+    provs = [p for p in d.get("proventos", []) if p.get("data_base") and not str(p.get("fonte", "")).startswith("Yahoo")]
+    for e in eventos:
+        f = e["fator"]
+        mes_ex = (e["data_com"] or "")[:7] if e["data_com"] else e["ref"]
+        if e["data_com"]:
+            # mês em que a cota já é a nova: o do pregão seguinte à data com
+            ex = dt.date.fromisoformat(e["data_com"]) + dt.timedelta(days=1)
+            mes_ex = ex.strftime("%Y-%m")
         for x in m:
-            if x["ref"] < ref:
+            if x["ref"] < mes_ex:
                 x["vp_cota"] = x["vp_cota"] / f if x.get("vp_cota") else x.get("vp_cota")
                 x["cotas"] = x["cotas"] * f if x.get("cotas") else x.get("cotas")
-        provs = [p for p in d.get("proventos", []) if p.get("data_base") and not str(p.get("fonte", "")).startswith("Yahoo")]
-        depois = [p["valor"] for p in provs if p["data_base"][:7] > ref and p["tipo"] == "Rendimento"][:3]
-        ref_pos = sorted(depois)[len(depois) // 2] if depois else None
-        for p in provs:
-            mes = p["data_base"][:7]
-            if mes < ref or (mes == ref and ref_pos and p["valor"] > ref_pos * f / 2):
-                p.setdefault("valor_original", p["valor"])
-                p["valor"] = p["valor"] / f
+        if e["data_com"]:
+            antes = [p for p in provs if p["data_base"] <= e["data_com"]]
+        else:   # sem data oficial: pelo mês e, no próprio mês, pelo tamanho do valor
+            depois = [p["valor"] for p in provs if p["data_base"][:7] > e["ref"] and p["tipo"] == "Rendimento"][:3]
+            ref_pos = sorted(depois)[len(depois) // 2] if depois else None
+            lim = (lambda v: v > ref_pos * f / 2) if f > 1 else (lambda v: v < ref_pos * f * 2)
+            antes = [p for p in provs if p["data_base"][:7] < e["ref"] or (p["data_base"][:7] == e["ref"] and ref_pos and lim(p["valor"]))]
+        for p in antes:
+            p.setdefault("valor_original", p["valor"])
+            p["valor"] = p["valor"] / f
     if eventos:
-        d["desdobramentos"] = [{"mes": r, "fator": f} for r, f in eventos]
+        d["desdobramentos"] = [{"data_com": e["data_com"], "mes": e.get("ref"), "fator": e["fator"], "evento": e["evento"], "fonte": e["fonte"]} for e in eventos]
         i, ms = d["indicadores"], m
         vp = i.get("vp_cota")
         i["cagr_vp_3a"] = (vp / ms[-37]["vp_cota"]) ** (1 / 3) - 1 if len(ms) >= 37 and ms[-37].get("vp_cota") and vp else None
@@ -590,7 +620,10 @@ def ajustar_desdobramentos(d: dict) -> list:
             i["rend_12m"] = sum(p["valor"] for p in r12)
             i["rend_medio_12m"] = i["rend_12m"] / len(r12)
             i["dy_12m"] = i["rend_12m"] / i["preco"] if i.get("preco") else None
-    return eventos
+        ult = next((p for p in reversed(d["proventos"]) if p["tipo"] == "Rendimento"), None)
+        if ult:
+            i["ultimo_rendimento"] = ult["valor"]
+    return [(e["data_com"] or e["ref"], e["fator"], e["fonte"]) for e in eventos]
 
 
 def setor_padrao(d: dict) -> str:
@@ -641,7 +674,7 @@ def main():
         except Exception as e:
             print(f"{t}: {e}")
             continue
-        ev = ajustar_desdobramentos(d)
+        ev = ajustar_desdobramentos(d, eventos_fundo_b3(t, f.get("tipo")))
         if ev:
             print(f"{t}: desdobramentos {ev}")
         d = limpo(d)

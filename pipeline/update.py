@@ -256,6 +256,49 @@ def classe_isin(isin: str) -> str:
     return s
 
 
+def splits_conferidos(t: str, ativo: dict, splits, info: dict, precos_df) -> "pd.Series | None":
+    """Junta os desdobramentos/grupamentos/bonificações do Yahoo com os da B3 (fonte oficial).
+    Evento que só a B3 tem entra na série e o preço anterior é ajustado; fator diferente fica o da B3. Tudo vai para o aviso."""
+    alvo = "ON" if t.endswith("3") else "PN"
+    if t.endswith("11"):
+        alvo = "UNIT"
+    ok_isin = lambda isin: classe_isin(isin) == alvo  # noqa: E731
+    b3 = S.eventos_b3((info or {}).get("stockDividends"), ok_isin)
+    if alvo == "UNIT" and not b3:   # unit: a B3 costuma informar o evento nas ações ON e PN; usa o da ON
+        b3 = S.eventos_b3((info or {}).get("stockDividends"), lambda isin: classe_isin(isin) == "ON")
+    serie = {} if splits is None else {pd.Timestamp(d).tz_localize(None) if getattr(pd.Timestamp(d), "tz", None) else pd.Timestamp(d): float(v) for d, v in splits.items() if v}
+    for e in b3:
+        ex = pd.Timestamp(e["data_ex"])
+        perto = [d for d in serie if abs((d - ex).days) <= 7]
+        if perto:
+            d = perto[0]
+            if abs(serie[d] / e["fator"] - 1) > 0.01:
+                aviso(t, f"{e['evento']} de {e['data_com']}: Yahoo {serie[d]:g}, B3 {e['fator']:g}; usado o da B3")
+                serie[d] = e["fator"]
+            continue
+        if precos_df is None or not len(precos_df) or "Close" not in precos_df:
+            continue
+        idx = precos_df.index.tz_localize(None) if precos_df.index.tz is not None else precos_df.index
+        if ex <= idx.min() or ex > idx.max():
+            continue      # fora do histórico de preços: não afeta preço nem os proventos usados
+        antes, depois = precos_df["Close"][idx < ex].dropna(), precos_df["Close"][idx >= ex].dropna()
+        if not len(antes) or not len(depois):
+            continue
+        salto = float(antes.iloc[-1]) / float(depois.iloc[0])
+        if abs(e["fator"] - 1) >= 0.2 and abs(salto / e["fator"] - 1) > 0.25:
+            # o preço não mostra o salto: o Yahoo já ajustou com outra data, ou o evento não vale para este papel
+            aviso(t, f"{e['evento']} de {e['data_com']} (fator {e['fator']:g}) consta na B3, mas o preço não confirma (salto {salto:.2f}); não aplicado")
+            continue
+        for c in ("Close", "Adj Close"):
+            if c in precos_df:
+                precos_df.loc[idx < ex, c] = precos_df.loc[idx < ex, c] / e["fator"]
+        serie[ex] = e["fator"]
+        aviso(t, f"{e['evento']} de {e['data_com']} (fator {e['fator']:g}) só consta na B3; incluído no ajuste de preços, proventos e ações")
+    if not serie:
+        return splits
+    return pd.Series(serie).sort_index()
+
+
 def proventos_b3(info: dict, ativo: dict, splits) -> list[dict]:
     """Lista de proventos do papel (por ação do papel, ajustado por desdobramentos posteriores)."""
     comp = None
@@ -664,6 +707,7 @@ def processar(ativo: dict, ctx: dict) -> dict:
         splits = S.acoes_de(precos.get(t + ".SA"), "Stock Splits")
         divs_yf = S.acoes_de(precos.get(t + ".SA"), "Dividends")
         info_b3 = S.b3_emissor(ativo["emissor_b3"])
+        splits = splits_conferidos(t, ativo, splits, info_b3, precos.get(t + ".SA"))
         cd = info_b3["codeCVM"].lstrip("0")
         cnpj = ctx["cadastro"][cd]["cnpj"]
         res["cd_cvm"], res["cnpj"] = cd, cnpj

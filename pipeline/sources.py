@@ -66,6 +66,43 @@ def b3_emissor(codigo: str) -> dict:
     return cache_json(f"b3_{codigo}.json", 20, f)
 
 
+def fator_evento_b3(rotulo: str, fator) -> float | None:
+    """Converte o evento da B3 em fator sobre a quantidade de ações ou cotas.
+    DESDOBRAMENTO e BONIFICACAO vêm em percentual (900 = 1 vira 10; 5 = mais 5%); GRUPAMENTO vem como multiplicador (0,1 = 10 viram 1)."""
+    r, f = (rotulo or "").upper(), num_br(fator)
+    if f is None or f <= 0:
+        return None
+    if "DESDOBR" in r or "BONIFIC" in r:
+        return 1 + f / 100
+    if "GRUPAM" in r:
+        return f
+    return None
+
+
+def eventos_b3(stock_dividends: list | None, isin_ok=lambda isin: True) -> list[dict]:
+    """Desdobramentos, grupamentos e bonificações informados pela B3, com a data com e a data ex (pregão seguinte)."""
+    out = []
+    for x in stock_dividends or []:
+        f = fator_evento_b3(x.get("label"), x.get("factor"))
+        if not f or abs(f - 1) < 1e-9 or not isin_ok(x.get("isinCode") or x.get("assetIssued") or ""):
+            continue
+        try:
+            com = dt.datetime.strptime(x.get("lastDatePrior") or "", "%d/%m/%Y").date()
+        except ValueError:
+            continue
+        ex = com + dt.timedelta(days=1)
+        while ex.weekday() >= 5:
+            ex += dt.timedelta(days=1)
+        out.append({"data_com": com.isoformat(), "data_ex": ex.isoformat(), "fator": f, "evento": (x.get("label") or "").title()})
+    vistos, uniq = set(), []
+    for e in sorted(out, key=lambda e: e["data_com"]):
+        k = (e["data_com"], round(e["fator"], 6))
+        if k not in vistos:
+            vistos.add(k)
+            uniq.append(e)
+    return uniq
+
+
 def num_br(s) -> float | None:
     if s in (None, ""):
         return None
