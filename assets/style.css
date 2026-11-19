@@ -618,3 +618,16 @@ tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72re
 @media (max-width: 1366px) and (min-width: 921px) { .menu-item > a { padding: 6px 7px; font-size: .84rem; } .topo-barra { gap: 10px; } .marca-texto { font-size: .95rem; } }
 @media (max-width: 1100px) and (min-width: 921px) { .marca-texto { display: none; } }
 .grade.fii-rend { align-items: stretch !important; } .grade.fii-rend > .cartao { margin: 0; }
+.rt-valor { display: inline-flex; align-items: center; gap: 8px; font-size: .84rem; color: var(--txt-2); font-weight: 600; }
+.rt-valor-campo { display: inline-flex; align-items: center; gap: 4px; background: var(--sup-2); border: 1px solid var(--borda); border-radius: 8px; padding: 6px 10px; color: var(--txt-3); }
+.rt-valor-campo:focus-within { border-color: var(--acento); }
+.rt-valor input { width: 120px; background: transparent; border: 0; outline: none; color: var(--txt); font: inherit; font-weight: 700; font-variant-numeric: tabular-nums; }
+/* rendimentos do FII no visual do site (sem cores de terceiros) */
+.rend-cartao, .rend-cartao.ult, .rend-cartao.prox { background: var(--sup); color: var(--txt); border: 1px solid var(--borda); border-left-width: 3px; }
+.rend-cartao.ult { border-left-color: var(--acento); }
+.rend-cartao.prox { border-left-color: var(--borda-forte); }
+.rend-cartao h3 { color: var(--txt-3); }
+.rend-cartao .sub { color: var(--txt-2); }
+.rend-cartao.ult .rend-valor { color: var(--acento); }
+.rend-grade { border-top-color: var(--borda); }
+.rend-grade span { color: var(--txt-3); opacity: 1; }

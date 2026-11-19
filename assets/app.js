@@ -1422,18 +1422,20 @@ const RT_BENCH = { ifix: ["IFIX", "#c9a227"], cdi: ["CDI", "#9aa3ad"], ipca4: ["
 async function pgRetorno(app, q) {
   const sel = [...new Set((q.get("t") || "").split(",").map((x) => x.trim().toUpperCase()).filter((x) => D.univMap[x] || (D.fiiMap && D.fiiMap[x])))].slice(0, 6);
   const anos = q.get("p") || "5", modo = q.get("m") || "ambos";
+  const VI = Math.max(1, +(q.get("v") || 1000)) || 1000;            // valor investido escolhido pelo usuário
   const bench = (q.get("b") ?? "cdi,ipca6").split(",").filter((x) => RT_BENCH[x]);
   const ir = (o) => {
-    const st = { t: sel.join(","), p: anos, m: modo, b: bench.join(","), ...o };
-    location.hash = `#/retorno?t=${st.t}&p=${st.p}&m=${st.m}&b=${st.b}`;
+    const st = { t: sel.join(","), p: anos, m: modo, b: bench.join(","), v: VI, ...o };
+    location.hash = `#/retorno?t=${st.t}&p=${st.p}&m=${st.m}&b=${st.b}&v=${st.v}`;
   };
   app.innerHTML = `${trilha([["Retorno total"]])}<div class="cab-pagina"><div><h1>Retorno total</h1>
-    <p>Quanto R$ 1.000 investidos viraram, somando a variação do preço e os proventos. Compare com CDI, IPCA + juro real e Ibovespa.</p></div></div>
+    <p>Quanto o valor investido virou, somando a variação do preço e os proventos. Compare com CDI, IPCA + juro real e Ibovespa.</p></div></div>
   <div class="aviso-rt"><b>Estimativa.</b> Cálculo próprio com preços e proventos brutos do Yahoo Finance (JCP antes do IR de 15%), sem custos e impostos. Calculadoras que descontam IR ou usam outras datas chegam a números diferentes; use como referência de ordem de grandeza, não como extrato.</div>
   <div class="cartao rt-ctrl">
     <div class="linha"><div class="chips">${sel.map((t, i) => `<button class="chip ativo" data-rm="${t}"><i class="rt-cor" style="background:${RT_CORES[i]}"></i>${logo(t)}${t}<span class="x">✕</span></button>`).join("") || '<span class="muted">Escolha até 6 ações.</span>'}</div>
       <select id="rt-add"><option value="">Adicionar ação ou FII</option><optgroup label="Ações e BDRs">${D.univ.filter((a) => !sel.includes(a.ticker)).map((a) => `<option value="${a.ticker}">${a.ticker} · ${esc(a.nome)}</option>`).join("")}</optgroup><optgroup label="Fundos imobiliários">${(D.fiis || []).filter((f) => !sel.includes(f.ticker)).map((f) => `<option value="${f.ticker}">${f.ticker} · ${esc(f.nome)}</option>`).join("")}</optgroup></select></div>
     <div class="linha rt-opcoes">
+      <label class="rt-valor">Valor investido <span class="rt-valor-campo">R$ <input id="rt-valor" inputmode="decimal" value="${nf2.format(VI)}" aria-label="Valor investido em reais"></span></label>
       <div class="abas" id="rt-per" style="margin:0">${[["1", "1 ano"], ["3", "3 anos"], ["5", "5 anos"], ["10", "10 anos"], ["15", "15 anos"]].map(([v, n]) => `<button data-v="${v}" class="${v === anos ? "ativo" : ""}">${n}</button>`).join("")}</div>
       <div class="abas" id="rt-modo" style="margin:0">${[["com", "Com reinvestimento"], ["sem", "Sem reinvestimento"], ["ambos", "Os dois"]].map(([v, n]) => `<button data-v="${v}" class="${v === modo ? "ativo" : ""}">${n}</button>`).join("")}</div>
       <div class="rt-bench">${Object.entries(RT_BENCH).map(([k, [n, c]]) => `<label><input type="checkbox" value="${k}" ${bench.includes(k) ? "checked" : ""}><i class="rt-cor" style="background:${c}"></i>${n}</label>`).join("")}</div>
@@ -1442,6 +1444,10 @@ async function pgRetorno(app, q) {
   $$("[data-rm]").forEach((b) => b.onclick = () => ir({ t: sel.filter((x) => x !== b.dataset.rm).join(",") }));
   $("#rt-add").onchange = (e) => { if (e.target.value && sel.length < 6) ir({ t: [...sel, e.target.value].join(",") }); };
   $$("#rt-per button").forEach((b) => b.onclick = () => ir({ p: b.dataset.v }));
+  const lerValor = () => { const v = parseFloat($("#rt-valor").value.replace(/[^\d,.-]/g, "").replace(/\./g, "").replace(",", ".")); if (ok(v) && v > 0 && v !== VI) ir({ v: Math.round(v * 100) / 100 }); else $("#rt-valor").value = nf2.format(VI); };
+  $("#rt-valor").onchange = lerValor;
+  $("#rt-valor").onkeydown = (e) => { if (e.key === "Enter") { e.preventDefault(); lerValor(); } };
+  $("#rt-valor").onfocus = (e) => e.target.select();
   $$("#rt-modo button").forEach((b) => b.onclick = () => ir({ m: b.dataset.v }));
   $$(".rt-bench input").forEach((c) => c.onchange = () => ir({ b: $$(".rt-bench input").filter((x) => x.checked).map((x) => x.value).join(",") }));
   if (!sel.length && !bench.length) { $("#rt-saida").innerHTML = '<div class="cartao"><p class="vazio">Escolha uma ação ou uma referência.</p></div>'; return; }
@@ -1471,12 +1477,12 @@ async function pgRetorno(app, q) {
     };
   };
   const dsets = [], linhasTab = [];
-  const anual = (v, d0, d1) => { const anosP = (new Date(d1) - new Date(d0)) / (365.25 * 864e5); return anosP > 0.9 ? Math.pow(v / 1000, 1 / anosP) - 1 : null; };
+  const anual = (v, d0, d1) => { const anosP = (new Date(d1) - new Date(d0)) / (365.25 * 864e5); return anosP > 0.9 ? Math.pow(v / VI, 1 / anosP) - 1 : null; };
   const addLinha = (nome, corL, vals, extra = {}) => {
     const idx = vals.findIndex(ok); if (idx < 0) return;
     const fim = vals[vals.length - 1];
     dsets.push({ label: nome, data: vals, borderColor: corL, backgroundColor: corL, borderWidth: extra.borderWidth || 2, borderDash: extra.borderDash || [], pointRadius: 0, tension: 0.1, spanGaps: true });
-    linhasTab.push({ nome, cor: corL, fim, desde: cal[idx], total: fim / 1000 - 1, aa: anual(fim, cal[idx], cal[cal.length - 1]), tracej: !!extra.borderDash });
+    linhasTab.push({ nome, cor: corL, fim, desde: cal[idx], total: fim / VI - 1, aa: anual(fim, cal[idx], cal[cal.length - 1]), tracej: !!extra.borderDash });
   };
   sel.forEach((t, i) => {
     const s = series[i] && series[i].semanal;
@@ -1490,31 +1496,31 @@ async function pgRetorno(app, q) {
       if (d < p0[0]) { com.push(null); sem.push(null); continue; }
       while (k + 1 < s.length && s[k + 1][0] <= d) { k++; acum += s[k][3] || 0; }
       const x = s[k];
-      com.push(1000 * x[2] / p0[2]);
-      sem.push(1000 * (x[1] + acum) / p0[1]);
+      com.push(VI * x[2] / p0[2]);
+      sem.push(VI * (x[1] + acum) / p0[1]);
     }
     if (modo !== "sem") addLinha(modo === "ambos" ? `${t} com reinvestimento` : t, RT_CORES[i], com);
     if (modo !== "com") addLinha(modo === "ambos" ? `${t} sem reinvestimento` : t, RT_CORES[i], sem, { borderDash: modo === "ambos" ? [6, 4] : [], borderWidth: modo === "ambos" ? 1.6 : 2 });
   });
   const d0 = cal[0];
-  if (bench.includes("cdi")) { const f = indiceMensal(bm.cdi); addLinha("CDI", RT_BENCH.cdi[1], cal.map((d) => 1000 * f(d0, d)), { borderWidth: 1.6 }); }
-  for (const [k, x] of [["ipca4", 0.04], ["ipca5", 0.05], ["ipca6", 0.06]]) if (bench.includes(k)) { const f = indiceMensal(bm.ipca, x); addLinha(RT_BENCH[k][0], RT_BENCH[k][1], cal.map((d) => 1000 * f(d0, d)), { borderWidth: 1.6 }); }
-  if (bench.includes("ifix") && (bm.ifix || []).length) { const b0 = ultimo(bm.ifix, d0); if (b0) addLinha("IFIX (com rendimentos)", RT_BENCH.ifix[1], cal.map((d) => { const x = ultimo(bm.ifix, d); return x ? 1000 * x[1] / b0[1] : null; }), { borderWidth: 1.6 }); }
-  if (bench.includes("ibov")) { const b0 = ultimo(bm.ibov, d0)[1]; addLinha("Ibovespa (só pontos)", RT_BENCH.ibov[1], cal.map((d) => 1000 * ultimo(bm.ibov, d)[1] / b0), { borderWidth: 1.6 }); }
+  if (bench.includes("cdi")) { const f = indiceMensal(bm.cdi); addLinha("CDI", RT_BENCH.cdi[1], cal.map((d) => VI * f(d0, d)), { borderWidth: 1.6 }); }
+  for (const [k, x] of [["ipca4", 0.04], ["ipca5", 0.05], ["ipca6", 0.06]]) if (bench.includes(k)) { const f = indiceMensal(bm.ipca, x); addLinha(RT_BENCH[k][0], RT_BENCH[k][1], cal.map((d) => VI * f(d0, d)), { borderWidth: 1.6 }); }
+  if (bench.includes("ifix") && (bm.ifix || []).length) { const b0 = ultimo(bm.ifix, d0); if (b0) addLinha("IFIX (com rendimentos)", RT_BENCH.ifix[1], cal.map((d) => { const x = ultimo(bm.ifix, d); return x ? VI * x[1] / b0[1] : null; }), { borderWidth: 1.6 }); }
+  if (bench.includes("ibov")) { const b0 = ultimo(bm.ibov, d0)[1]; addLinha("Ibovespa (só pontos)", RT_BENCH.ibov[1], cal.map((d) => VI * ultimo(bm.ibov, d)[1] / b0), { borderWidth: 1.6 }); }
 
   const o = optGraf({ legenda: true });
   o.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: R$ ${ok(ctx.parsed.y) ? nf2.format(ctx.parsed.y) : "n/d"}`;
   o.plugins.tooltip.itemSort = (a, b) => (b.parsed.y || 0) - (a.parsed.y || 0);
   linhasTab.sort((a, b) => b.fim - a.fim);
   $("#rt-saida").innerHTML = `<div class="cartao"><div class="grafico alto"><canvas id="g-rt"></canvas></div>
-    <p class="sub" style="margin-top:8px">Valor de R$ 1.000 investidos em ${dataBR(d0)}, semana a semana. ${modo === "ambos" ? "Linha cheia: proventos reinvestidos na própria ação. Linha tracejada: proventos guardados em dinheiro, sem render." : modo === "com" ? "Proventos reinvestidos na própria ação na data ex." : "Proventos guardados em dinheiro, sem render."}</p></div>
+    <p class="sub" style="margin-top:8px">Valor de R$ ${nf2.format(VI)} investidos em ${dataBR(d0)}, semana a semana. ${modo === "ambos" ? "Linha cheia: proventos reinvestidos na própria ação. Linha tracejada: proventos guardados em dinheiro, sem render." : modo === "com" ? "Proventos reinvestidos na própria ação na data ex." : "Proventos guardados em dinheiro, sem render."}</p></div>
   <div class="cartao" style="margin-top:16px"><div class="cartao-cab"><h3>Resultado no período</h3><button class="btn peq" id="rt-xls">Baixar Excel</button></div>
-    <div class="tabela-wrap"><table class="resp"><thead><tr><th>Investimento</th><th class="n">R$ 1.000 viraram</th><th class="n">Retorno no período</th><th class="n">Retorno ao ano</th></tr></thead><tbody>
-    ${linhasTab.map((l) => `<tr><td data-label="Investimento"><i class="rt-cor${l.tracej ? " tracej" : ""}" style="background:${l.cor}"></i>${esc(l.nome)}${l.desde !== d0 ? ` <span class="muted">desde ${dataBR(l.desde)}</span>` : ""}</td><td class="n" data-label="R$ 1.000 viraram"><b>R$ ${nf2.format(l.fim)}</b></td><td class="n" data-label="Retorno no período">${varHtml(l.total)}</td><td class="n" data-label="Retorno ao ano">${ok(l.aa) ? varHtml(l.aa) : '<span class="muted">menos de 1 ano</span>'}</td></tr>`).join("")}
+    <div class="tabela-wrap"><table class="resp"><thead><tr><th>Investimento</th><th class="n">Valor final</th><th class="n">Retorno no período</th><th class="n">Retorno ao ano</th></tr></thead><tbody>
+    ${linhasTab.map((l) => `<tr><td data-label="Investimento"><i class="rt-cor${l.tracej ? " tracej" : ""}" style="background:${l.cor}"></i>${esc(l.nome)}${l.desde !== d0 ? ` <span class="muted">desde ${dataBR(l.desde)}</span>` : ""}</td><td class="n" data-label="Valor final"><b>R$ ${nf2.format(l.fim)}</b></td><td class="n" data-label="Retorno no período">${varHtml(l.total)}</td><td class="n" data-label="Retorno ao ano">${ok(l.aa) ? varHtml(l.aa) : '<span class="muted">menos de 1 ano</span>'}</td></tr>`).join("")}
     </tbody></table></div>
     <p class="sub" style="margin-top:10px">Fontes: preços e proventos da B3 via Yahoo Finance, pela data ex, com proventos brutos (JCP antes do IR de 15%); calculadoras que descontam IR ou usam outras datas de início e fim chegam a números diferentes; CDI e IPCA mensais do Banco Central (séries 4391 e 433); IFIX diário oficial da B3 (índice de retorno total, já considera os rendimentos), com o último mês publicado repetido até sair o próximo. Sem custos, impostos e taxas. Rentabilidade passada não garante rentabilidade futura.</p></div>`;
   charts.push(new Chart($("#g-rt"), { type: "line", data: { labels: cal.map(dataBR), datasets: dsets }, options: o }));
-  $("#rt-xls").onclick = () => baixarExcel(`retorno_total_${anos}_anos`, [{ nome: "Retorno total", cab: ["Investimento", "Desde", "R$ 1.000 viraram (R$)", "Retorno no período (%)", "Retorno ao ano (%)"], linhas: linhasTab.map((l) => [l.nome, dataBR(l.desde), +l.fim.toFixed(2), +(l.total * 100).toFixed(2), ok(l.aa) ? +(l.aa * 100).toFixed(2) : null]) }]);
+  $("#rt-xls").onclick = () => baixarExcel(`retorno_total_${anos}_anos`, [{ nome: "Retorno total", cab: ["Investimento", "Desde", `Valor final de R$ ${nf2.format(VI)} (R$)`, "Retorno no período (%)", "Retorno ao ano (%)"], linhas: linhasTab.map((l) => [l.nome, dataBR(l.desde), +l.fim.toFixed(2), +(l.total * 100).toFixed(2), ok(l.aa) ? +(l.aa * 100).toFixed(2) : null]) }]);
 }
 /* =====================================================================
    MAPA: dispersão de duas métricas para todas as empresas, com medianas e filtro de setor
@@ -1639,9 +1645,10 @@ async function pgFii(app, t) {
     <div class="badges"><span class="badge">${esc(c.segmento || "Segmento n/d")}</span><span class="badge">Gestão ${esc((c.gestao || "n/d").toLowerCase())}</span><span class="badge ${/qualific|profiss/i.test(sb.publico || "") ? "alerta" : "pos"}">${esc((sb.publico || "").replace(/^qualquer investidor \(público em geral\)$/, "Público em geral"))}</span><span class="badge">Perfil: ${esc(sb.perfil || "n/d")}</span></div></div></div></div>
 
   <div class="cartao" style="margin-top:18px"><div class="cotacao-cab"><div title="Cotação com atraso de até 15 minutos."><div class="sub">Cotação</div>
-    <div class="preco-grande">${reais(preco)}${vivo && ok(vivo.var_dia) ? ` <span class="preco-var">(${varHtml(vivo.var_dia)})</span>` : ""}</div>
-    <div class="sub" style="margin-top:6px">${vivo ? `Atualizada às ${new Date(vivo.ao_vivo).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}` : `Dados de ${dataBR((d.atualizado_em || "").slice(0, 10))}`}</div>
-    <div class="sub">12 meses ${varHtml(i.var_12m)} · mín. 52 semanas ${reais(i.min_52s)} · máx. ${reais(i.max_52s)}</div></div>
+    <div class="preco-grande">${reais(preco)}${ok(vivo ? vivo.var_dia : i.var_dia) ? ` <span class="preco-var">(${varHtml(vivo ? vivo.var_dia : i.var_dia)})</span>` : ""}</div>
+    <div class="sub" style="margin-top:6px">${vivo ? `Atualizada às ${new Date(vivo.ao_vivo).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}` : `Fechamento de ${dataBR(i.data_preco)}`}</div>
+    <div class="sub">No ano ${varHtml(i.var_ano)} · 12 meses ${varHtml(i.var_12m)}</div>
+    ${ok(i.min_52s) && ok(i.max_52s) && i.max_52s > i.min_52s ? `<div class="faixa52"><div class="trilho"><span class="marc" style="left:${Math.max(0, Math.min(100, (preco - i.min_52s) / (i.max_52s - i.min_52s) * 100))}%"></span></div><div class="ext"><span>Mín. 52 semanas ${reais(i.min_52s)}</span><span>Máx. ${reais(i.max_52s)}</span></div></div>` : ""}</div>
     <div class="linha" style="gap:8px"><a class="btn peq" href="#/retorno?t=${t}&p=3&m=ambos&b=ifix,cdi">Retorno total x IFIX e CDI</a><div class="chips" id="fii-per"><button class="chip ativo" data-p="1">1A</button><button class="chip" data-p="3">3A</button><button class="chip" data-p="10">Máx.</button></div></div></div>
     <div class="grafico" style="margin-top:12px"><canvas id="g-fii-preco"></canvas></div></div>
 
@@ -1654,7 +1661,7 @@ async function pgFii(app, t) {
     ${ind("Valor de mercado", ok(preco) && ok(i.cotas) ? "R$ " + grande(preco * i.cotas) : ND, "preço x número de cotas")}
     ${ind("Cotistas", ok(i.cotistas) ? nf0.format(i.cotistas) : ND, "último informe mensal")}
     ${ind("Liquidez média diária", ok(i.liquidez_21) ? "R$ " + grande(i.liquidez_21) : ND, "21 pregões")}
-    ${ind("Caixa e renda fixa", fmtU(i.caixa_pct, "pct"), "sobre o ativo total")}
+    ${ind("Caixa e renda fixa", ok(i.caixa) ? "R$ " + grande(i.caixa) : fmtU(i.caixa_pct, "pct"), `${fmtU(i.caixa_pct, "pct")} do ativo${ok(i.caixa) && ok(preco) && ok(i.cotas) ? ` · ${nf2.format(i.caixa / (preco * i.cotas) * 100)}% do valor de mercado` : ""}`)}
     ${ind("Taxa de administração", fmtU(i.taxa_adm_12m, "pct"), "despesa dos últimos 12 meses sobre o patrimônio")}
     ${ind("Valor patrimonial 3 anos", fmtU(i.cagr_vp_3a, "pct"), "crescimento anual da cota patrimonial")}
   </div></section>
@@ -1670,7 +1677,8 @@ async function pgFii(app, t) {
   </section>
 
   <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Patrimônio</h2></div>
-    <div class="cartao"><div class="cartao-cab"><div><h3>Patrimônio líquido e valor patrimonial da cota</h3><p class="sub">Barras: patrimônio líquido (R$ milhões). Linha: valor patrimonial por cota (R$). Fonte: Informe Mensal da CVM.</p></div></div>
+    <div class="cartao"><div class="cartao-cab"><div><h3>Patrimônio líquido e valor patrimonial da cota</h3><p class="sub">Barras: patrimônio líquido (R$ milhões). Linha: valor patrimonial por cota (R$). Por ano: posição do último mês de cada ano. Fonte: Informe Mensal da CVM.</p></div>
+      <div class="abas" id="fii-pl-ab" style="margin:0"><button data-v="mes" class="ativo">Por mês</button><button data-v="ano">Por ano</button></div></div>
       <div class="grafico"><canvas id="g-fii-pl"></canvas></div></div></section>
 
   <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Sobre o fundo</h2></div>
@@ -1727,13 +1735,19 @@ async function pgFii(app, t) {
   graficoRend("mes");
   $$("#fii-rend-ab button").forEach((b) => b.onclick = () => { $$("#fii-rend-ab button").forEach((x) => x.classList.toggle("ativo", x === b)); graficoRend(b.dataset.v); });
   const ms = d.mensal || [];
-  if ($("#g-fii-pl") && ms.length) {
+  const graficoPl = (modo) => {
+    const el = $("#g-fii-pl"); if (!el || !ms.length) return;
+    charts = charts.filter((ch) => { if (ch.canvas === el) { ch.destroy(); return false; } return true; });
+    let l = ms;
+    if (modo === "ano") { const por = {}; ms.forEach((m) => { por[m.ref.slice(0, 4)] = m; }); l = Object.keys(por).sort().map((y) => ({ ...por[y], rot: y })); }
     const o = optGraf({ eixo2: true, legenda: true });
     o.plugins.tooltip.callbacks.label = (cx) => cx.dataset.yAxisID === "y2" ? `VP por cota: R$ ${nf2.format(cx.parsed.y)}` : `Patrimônio: R$ ${nf2.format(cx.parsed.y)} mi`;
-    charts.push(new Chart($("#g-fii-pl"), { data: { labels: ms.map((m) => m.ref.slice(5) + "/" + m.ref.slice(2, 4)), datasets: [
-      { type: "bar", label: "Patrimônio líquido (R$ mi)", data: ms.map((m) => ok(m.pl) ? m.pl / 1e6 : null), backgroundColor: cor("--serie"), borderRadius: 3, yAxisID: "y" },
-      { type: "line", label: "VP por cota (R$)", data: ms.map((m) => m.vp_cota), borderColor: cor("--serie-2"), backgroundColor: cor("--serie-2"), borderWidth: 2, pointRadius: 0, yAxisID: "y2" }] }, options: o }));
-  }
+    charts.push(new Chart(el, { data: { labels: l.map((m) => m.rot || (m.ref.slice(5) + "/" + m.ref.slice(2, 4))), datasets: [
+      { type: "bar", label: "Patrimônio líquido (R$ mi)", data: l.map((m) => ok(m.pl) ? m.pl / 1e6 : null), backgroundColor: cor("--serie"), borderRadius: 3, yAxisID: "y" },
+      { type: "line", label: "VP por cota (R$)", data: l.map((m) => m.vp_cota), borderColor: cor("--serie-2"), backgroundColor: cor("--serie-2"), borderWidth: 2, pointRadius: modo === "ano" ? 3 : 0, yAxisID: "y2" }] }, options: o }));
+  };
+  graficoPl("mes");
+  $$("#fii-pl-ab button").forEach((b) => b.onclick = () => { $$("#fii-pl-ab button").forEach((x) => x.classList.toggle("ativo", x === b)); graficoPl(b.dataset.v); });
   const seg = pctTot(comp.por_segmento || []), tp = pctTot(comp.por_tipo || []);
   rosca($("#g-fii-seg"), seg.map((x) => x[0]), seg.map((x) => x[1]));
   rosca($("#g-fii-tipo"), tp.map((x) => x[0]), tp.map((x) => x[1]));

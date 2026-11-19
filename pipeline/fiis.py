@@ -336,10 +336,16 @@ def montar(fii: dict, cvm: dict, geral_todos: pd.DataFrame, px: pd.DataFrame | N
         conferencia = {"meses_comparados": len(recentes), "divergentes": diverg, "fonte": "Yahoo Finance"}
 
     # preço e indicadores
-    preco = var_12m = mn = mx = liq = None
+    preco = var_12m = mn = mx = liq = var_dia = var_ano = data_preco = None
     if px is not None and len(px):
         c = px["Close"].dropna()
         preco = float(c.iloc[-1])
+        data_preco = c.index[-1].strftime("%Y-%m-%d")
+        if len(c) > 1:
+            var_dia = preco / float(c.iloc[-2]) - 1
+        fim_ano = c[c.index.year < c.index[-1].year]
+        if len(fim_ano):
+            var_ano = preco / float(fim_ano.iloc[-1]) - 1
         um_ano = c[c.index >= c.index[-1] - pd.Timedelta(days=365)]
         mn, mx = float(um_ano.min()), float(um_ano.max())
         if len(um_ano) > 1:
@@ -360,7 +366,7 @@ def montar(fii: dict, cvm: dict, geral_todos: pd.DataFrame, px: pd.DataFrame | N
         "dy_12m": soma12 / preco if soma12 and preco else None, "rend_12m": soma12, "rend_medio_12m": soma12 / len(rend12) if rend12 else None,
         "ultimo_rendimento": ult_r["valor"] if ult_r else None, "ultimo_yield": ult_r["valor"] / cota_base if ult_r and cota_base else None, "cota_base": cota_base,
         "pl": ult_m.get("pl"), "cotistas": ult_m.get("cotistas"), "cotas": ult_m.get("cotas"), "valor_mercado": preco * ult_m["cotas"] if preco and ult_m.get("cotas") else None,
-        "caixa_pct": caixa_pct, "liquidez_21": liq, "var_12m": var_12m, "min_52s": mn, "max_52s": mx,
+        "caixa": tipos.get("Caixa e renda fixa"), "caixa_pct": caixa_pct, "liquidez_21": liq, "var_12m": var_12m, "var_dia": var_dia, "var_ano": var_ano, "data_preco": data_preco, "min_52s": mn, "max_52s": mx,
         "taxa_adm_12m": sum(m["taxa_adm_mes"] or 0 for m in mensal[-12:]) if len(mensal) >= 12 else None,
         "cagr_vp_3a": (vp / mensal[-37]["vp_cota"]) ** (1 / 3) - 1 if len(mensal) >= 37 and mensal[-37].get("vp_cota") and vp else None,
     }
