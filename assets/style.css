@@ -674,3 +674,27 @@ details.recolhe[open] > summary { margin-bottom: 12px; }
 .mapa-zoom .btn { min-width: 32px; justify-content: center; }
 .mapa-custom { margin-top: 12px; font-size: .82rem; color: var(--txt-3); }
 .mapa-custom summary { cursor: pointer; font-weight: 600; }
+
+/* ---------------- simulador de carteira */
+.sim-add { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.sim-busca { position: relative; flex: 1 1 280px; }
+.sim-busca input { width: 100%; }
+.sim-busca .busca-lista { left: 0; right: auto; width: min(420px, 100%); max-height: 380px; overflow-y: auto; }
+.sim-busca .busca-lista button { display: flex; align-items: center; gap: 12px; width: 100%; padding: 8px 10px; border: 0; background: none; color: var(--txt); text-align: left; border-radius: 10px; cursor: pointer; font: inherit; }
+.sim-busca .busca-lista button:hover { background: var(--sup-3); }
+.sim-busca .busca-lista small { color: var(--txt-3); }
+#sim-n { width: 160px; }
+.sim-add input { background: var(--sup-2); border: 1px solid var(--borda); border-radius: 10px; padding: 9px 12px; color: var(--txt); font: inherit; }
+.sim-opcoes { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between; margin: 14px 0 16px; font-size: .82rem; color: var(--txt-3); }
+.sim-grupo { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; }
+.sim-opcoes label { display: inline-flex; align-items: center; gap: 6px; }
+.sim-kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.sim-kpis > .cartao { margin: 0 !important; }
+.sim-tab td { vertical-align: middle; }
+.sim-q { width: 90px; text-align: right; background: var(--sup-2); border: 1px solid var(--borda); border-radius: 8px; padding: 5px 8px; color: var(--txt); font: inherit; }
+.sim-chk { display: flex; gap: 12px; margin-top: 4px; font-size: .78rem; color: var(--txt-2); }
+.sim-chk label { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; }
+.sim-notas ul { margin: 8px 0 10px 18px; display: grid; gap: 6px; font-size: .84rem; color: var(--txt-2); }
+@media (max-width: 920px) { .sim-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { #sim-n { flex: 1 1 120px; width: auto; } .sim-add .btn { flex: 1 1 auto; } }
+.topo-barra { max-width: 1340px; }

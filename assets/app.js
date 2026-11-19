@@ -423,6 +423,7 @@ async function render() {
     else if (r === "calendario") pgCalendario(app, q);
     else if (r === "retorno") await pgRetorno(app, q);
     else if (r === "mapa") pgMapa(app, q);
+    else if (r === "simulador") await pgSimulador(app, q);
     else if (r === "fiis") pgFiis(app, q);
     else if (r === "fii") await pgFii(app, p.toUpperCase());
     else if (r === "filtros") pgFiltros(app);
@@ -1515,6 +1516,231 @@ async function modalMercado(k) {
   desenhar();
 }
 
+
+/* =====================================================================
+   SIMULADOR DE CARTEIRA: renda estimada pelos últimos proventos
+   ===================================================================== */
+const SIM_CHAVE = "simulador_carteira_v1";
+const SIM_IR = { jcp: 0.175, div: 0.10, div_limite_mes: 50000 };   // JCP: LC 224/2025; dividendos acima de R$ 50 mil/mês da mesma empresa: Lei 15.270/2025
+const SIM_MESES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+function simEstado() {
+  const s = lsGet(SIM_CHAVE, null) || {};
+  return { itens: Array.isArray(s.itens) ? s.itens : [], fiiBase: s.fiiBase === "12m" ? "12m" : "ultimo", liquido: !!s.liquido, salvas: s.salvas && typeof s.salvas === "object" ? s.salvas : {} };
+}
+function simSalvar(S) { lsSet(SIM_CHAVE, S); }
+function simClasse(t) {
+  const f = D.fiiMap && D.fiiMap[t];
+  if (f) return f.tipo === "infra" ? "FI-Infra" : f.tipo === "fiagro" ? "Fiagro" : "FII";
+  if (D.univMap[t]) return emAcoes(t) ? "Ação" : "BDR";
+  return null;
+}
+function simPreco(t) {
+  const f = D.fiiMap && D.fiiMap[t];
+  if (f) return fiiPreco(t, f.preco);
+  return (D.prices[t] || {}).preco;
+}
+function simNome(t) { const f = D.fiiMap && D.fiiMap[t]; return f ? f.nome : (D.univMap[t] || {}).nome || ""; }
+// Proventos considerados por cota/ação, cada um com o mês de pagamento (0 a 11) e a natureza para o IR.
+async function simProventos(t, it, S) {
+  const cl = simClasse(t), f = D.fiiMap && D.fiiMap[t];
+  if (f) {
+    const mensal = S.fiiBase === "12m" && ok(f.rend_12m) && !f.dy_parcial_meses ? f.rend_12m / 12 : f.ultimo_rendimento;
+    if (!ok(mensal)) return { itens: [], base: "sem rendimento informado" };
+    const base = S.fiiBase === "12m" && ok(f.rend_12m) && !f.dy_parcial_meses ? `média de 12 meses: R$ ${NF(4).format(mensal)} por mês` : `último rendimento: R$ ${NF(4).format(mensal)} por mês`;
+    return { itens: SIM_MESES.map((_, m) => ({ mes: m, valor: mensal, nat: "isento" })), base };
+  }
+  if (cl === "BDR") {
+    // BDR: rendimento de 12 meses em reais pelo dividend yield do site (já considera a proporção e o câmbio)
+    const dy = ind(t).dy, p = simPreco(t);
+    if (!ok(dy) || !ok(p) || dy <= 0) return { itens: [], base: "sem proventos em 12 meses" };
+    const pv = await proventos(t), corte = new Date(Date.now() - 365 * 864e5).toISOString().slice(0, 10);
+    const meses = (pv.lista || []).filter((x) => x.data_com >= corte).map((x) => new Date((x.pagamento || x.data_com) + "T12:00").getMonth());
+    const ms = meses.length ? meses : [11], total = dy * p;
+    return { itens: ms.map((m) => ({ mes: m, valor: total / ms.length, nat: "bdr" })), base: `proventos de 12 meses: R$ ${NF(4).format(total)} por BDR` };
+  }
+  const pv = await proventos(t), corte = new Date(Date.now() - 365 * 864e5).toISOString().slice(0, 10);
+  const doze = (pv.lista || []).filter((x) => x.data_com >= corte && x.tipo !== "Rest Cap Din");
+  const usar = doze.filter((x) => x.tipo === "JCP" ? it.jcp !== false : it.div !== false);
+  const soma = (l) => l.reduce((a, x) => a + x.valor, 0);
+  const jcp = soma(doze.filter((x) => x.tipo === "JCP")), div = soma(doze.filter((x) => x.tipo !== "JCP"));
+  return {
+    itens: usar.map((x) => ({ mes: new Date((x.pagamento || x.data_com) + "T12:00").getMonth(), valor: x.valor, nat: x.tipo === "JCP" ? "jcp" : "div" })),
+    base: `12 meses: dividendos R$ ${NF(4).format(div)} e JCP R$ ${NF(4).format(jcp)} por ${porPapel(t) > 1 ? "unit" : "ação"}`,
+    temJcp: jcp > 0, temDiv: div > 0,
+  };
+}
+async function pgSimulador(app, q) {
+  const S = simEstado();
+  // carteira recebida por link: c=PETR4:100,HGLG11:50
+  if (q.get("c")) {
+    const novos = q.get("c").split(",").map((x) => x.split(":")).map(([t, n]) => ({ t: (t || "").toUpperCase(), q: Math.max(0, Math.floor(+n || 0)) })).filter((x) => simClasse(x.t) && x.q > 0);
+    if (novos.length) { S.itens = novos; simSalvar(S); }
+    history.replaceState(null, "", "#/simulador");
+  }
+  const todos = [...D.tickers.map((t) => [t, simClasse(t), simNome(t)]), ...D.fiis.map((f) => [f.ticker, simClasse(f.ticker), f.nome])];
+  app.innerHTML = `${trilha([["Simulador de carteira"]])}<div class="cab-pagina"><div><h1>Simulador de carteira</h1>
+    <p>Monte uma carteira com ações, BDRs e fundos do site e veja a renda estimada pelos últimos proventos: o último rendimento dos fundos e os dividendos e JCP dos últimos 12 meses das ações.</p></div></div>
+  <div class="cartao sim-add">
+    <div class="sim-busca"><input type="search" id="sim-t" placeholder="Ticker ou nome (ex.: BBDC4, HGLG11)" autocomplete="off" aria-label="Ativo"><div class="busca-lista" id="sim-lista" hidden></div></div>
+    <div class="segmentado" id="sim-modo"><button data-m="q" class="ativo">Quantidade</button><button data-m="v">Valor em R$</button></div>
+    <input type="number" id="sim-n" min="0" step="1" placeholder="Quantidade" aria-label="Quantidade ou valor">
+    <button class="btn prim" id="sim-ok">Adicionar</button>
+    <p class="sub" id="sim-msg" style="flex-basis:100%;margin:0"></p>
+  </div>
+  <div class="sim-opcoes"><div class="sim-grupo">
+    <label>Renda dos fundos <select id="sim-fii"><option value="ultimo" ${S.fiiBase === "ultimo" ? "selected" : ""}>Último rendimento anunciado</option><option value="12m" ${S.fiiBase === "12m" ? "selected" : ""}>Média dos últimos 12 meses</option></select></label>
+    <label>Valores <select id="sim-liq"><option value="0" ${!S.liquido ? "selected" : ""}>Brutos</option><option value="1" ${S.liquido ? "selected" : ""}>Líquidos do IR retido na fonte</option></select></label>
+    </div><div class="sim-grupo">
+    <select id="sim-carregar"><option value="">Carteiras salvas</option>${Object.keys(S.salvas).sort().map((n) => `<option>${esc(n)}</option>`).join("")}</select>
+    <button class="btn peq" id="sim-salvar">Salvar carteira</button>
+    <button class="btn peq" id="sim-link">Copiar link</button>
+    <button class="btn peq" id="sim-xls">Baixar Excel</button>
+    <button class="btn peq" id="sim-limpar">Limpar</button>
+  </div></div>
+  <div id="sim-corpo"></div>`;
+  // ---- busca de ativos
+  let modo = "q", escolhido = null;
+  const inp = $("#sim-t"), lst = $("#sim-lista"), num = $("#sim-n"), msg = $("#sim-msg");
+  const mostrar = () => {
+    const v = inp.value.trim().toUpperCase(); escolhido = null;
+    if (!v) { lst.hidden = true; return; }
+    const sem = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toUpperCase();
+    const r = todos.filter(([t, , n]) => t.startsWith(v) || sem(n || "").includes(sem(v))).sort((a, b) => (b[0].startsWith(v)) - (a[0].startsWith(v)) || a[0].localeCompare(b[0])).slice(0, 8);
+    lst.innerHTML = r.map(([t, c, n]) => `<button type="button" data-t="${t}">${logo(t)}<span><b>${t}</b> <span class="muted">${esc(c)}</span><br><small>${esc(n)}</small></span></button>`).join("") || '<p class="vazio" style="padding:10px">Nenhum ativo encontrado.</p>';
+    lst.hidden = false;
+    $$("button", lst).forEach((b) => b.onclick = () => { escolhido = b.dataset.t; inp.value = b.dataset.t; lst.hidden = true; num.focus(); });
+  };
+  inp.oninput = mostrar;
+  inp.onkeydown = (e) => { if (e.key === "Enter") { const p = $("button", lst); if (!lst.hidden && p) p.click(); else num.focus(); } };
+  document.addEventListener("click", (e) => { if (!e.target.closest(".sim-busca")) lst.hidden = true; });
+  $$("#sim-modo button").forEach((b) => b.onclick = () => { modo = b.dataset.m; $$("#sim-modo button").forEach((x) => x.classList.toggle("ativo", x === b)); num.placeholder = modo === "q" ? "Quantidade" : "Valor em R$"; num.step = modo === "q" ? "1" : "0.01"; });
+  const adicionar = () => {
+    const t = (escolhido || inp.value.trim().toUpperCase());
+    if (!simClasse(t)) { msg.textContent = "Escolha um ativo da lista."; return; }
+    const n = +num.value, p = simPreco(t);
+    if (!(n > 0)) { msg.textContent = "Informe a quantidade ou o valor."; return; }
+    let qtd = modo === "q" ? Math.floor(n) : (ok(p) && p > 0 ? Math.floor(n / p) : 0);
+    if (qtd < 1) { msg.textContent = `O valor não compra uma ${simClasse(t) === "Ação" ? "ação" : "cota"} de ${t} (preço R$ ${ok(p) ? nf2.format(p) : "n/d"}).`; return; }
+    const ex = S.itens.find((x) => x.t === t);
+    if (ex) ex.q += qtd; else S.itens.push({ t, q: qtd });
+    msg.textContent = modo === "v" ? `${t}: ${nf0.format(qtd)} ${simClasse(t) === "Ação" ? "ações" : "cotas"} pelo preço de R$ ${nf2.format(p)}.` : "";
+    inp.value = ""; num.value = ""; escolhido = null;
+    simSalvar(S); desenhar();
+  };
+  $("#sim-ok").onclick = adicionar;
+  num.onkeydown = (e) => { if (e.key === "Enter") adicionar(); };
+  $("#sim-fii").onchange = (e) => { S.fiiBase = e.target.value; simSalvar(S); desenhar(); };
+  $("#sim-liq").onchange = (e) => { S.liquido = e.target.value === "1"; simSalvar(S); desenhar(); };
+  $("#sim-salvar").onclick = () => {
+    if (!S.itens.length) { msg.textContent = "A carteira está vazia."; return; }
+    const nome = prompt("Nome da carteira:"); if (!nome) return;
+    S.salvas[nome] = S.itens.map((x) => ({ ...x })); simSalvar(S); pgSimulador(app, new URLSearchParams());
+  };
+  $("#sim-carregar").onchange = (e) => {
+    const n = e.target.value; if (!n || !S.salvas[n]) return;
+    if (confirm(`Abrir a carteira "${n}"? A carteira atual será substituída (salve antes se quiser mantê-la).\n\nPara apagar a carteira salva, clique em Cancelar e depois em OK na próxima pergunta.`)) { S.itens = S.salvas[n].map((x) => ({ ...x })); simSalvar(S); desenhar(); }
+    else if (confirm(`Apagar a carteira salva "${n}"?`)) { delete S.salvas[n]; simSalvar(S); pgSimulador(app, new URLSearchParams()); return; }
+    e.target.value = "";
+  };
+  $("#sim-limpar").onclick = () => { if (S.itens.length && confirm("Remover todos os ativos da carteira?")) { S.itens = []; simSalvar(S); desenhar(); } };
+  $("#sim-link").onclick = async () => {
+    const url = `${location.origin}${location.pathname}#/simulador?c=${S.itens.map((x) => `${x.t}:${x.q}`).join(",")}`;
+    try { await navigator.clipboard.writeText(url); msg.textContent = "Link copiado. Quem abrir verá esta mesma carteira."; } catch (e) { prompt("Copie o link:", url); }
+  };
+  let linhasXls = [];
+  $("#sim-xls").onclick = () => { if (linhasXls.length) baixarExcel("simulador_carteira", [{ nome: "Carteira", cab: ["Ticker", "Classe", "Nome", "Quantidade", "Preço (R$)", "Valor (R$)", "Peso", "Renda 12 meses (R$)", "Renda média mensal (R$)", "Yield", "Base"], linhas: linhasXls }]); };
+
+  async function desenhar() {
+    const corpo = $("#sim-corpo");
+    if (!S.itens.length) { corpo.innerHTML = `<div class="cartao"><p class="vazio">Adicione ativos acima para montar a carteira. Dá para informar a quantidade ou o valor em reais; o valor é convertido em quantidade pelo preço atual.</p></div>`; linhasXls = []; return; }
+    if (!D.cache.div) corpo.innerHTML = '<div class="cartao"><p class="vazio">Carregando proventos...</p></div>';
+    const linhas = [];
+    for (const it of S.itens) {
+      const t = it.t, cl = simClasse(t), p = simPreco(t);
+      if (!cl) continue;
+      const pv = await simProventos(t, it, S);
+      linhas.push({ it, t, cl, p, pv, valor: ok(p) ? p * it.q : null });
+    }
+    // renda por mês (bruta), por ativo; IR por natureza
+    const emissor = (t) => (D.univMap[t] && D.univMap[t].emissor_b3) || t;
+    const divMes = {};   // dividendos por empresa e mês, para a regra dos R$ 50 mil
+    for (const l of linhas) for (const x of l.pv.itens) if (x.nat === "div") { const k = emissor(l.t) + "|" + x.mes; divMes[k] = (divMes[k] || 0) + x.valor * l.it.q; }
+    const liquido = (l, x) => {
+      const bruto = x.valor * l.it.q;
+      if (!S.liquido) return bruto;
+      if (x.nat === "jcp") return bruto * (1 - SIM_IR.jcp);
+      if (x.nat === "div" && (divMes[emissor(l.t) + "|" + x.mes] || 0) > SIM_IR.div_limite_mes) return bruto * (1 - SIM_IR.div);
+      return bruto;
+    };
+    const total = linhas.reduce((a, l) => a + (l.valor || 0), 0);
+    const porMes = SIM_MESES.map(() => ({}));
+    for (const l of linhas) {
+      l.renda = 0;
+      for (const x of l.pv.itens) { const v = liquido(l, x); l.renda += v; porMes[x.mes][l.cl] = (porMes[x.mes][l.cl] || 0) + v; }
+    }
+    const renda = linhas.reduce((a, l) => a + l.renda, 0);
+    const temDiv50 = S.liquido && Object.values(divMes).some((v) => v > SIM_IR.div_limite_mes);
+    // próximos 12 meses a partir do mês que vem
+    const hoje = new Date(), ordem = Array.from({ length: 12 }, (_, i) => (hoje.getMonth() + 1 + i) % 12);
+    const anoDe = (i) => hoje.getFullYear() + (hoje.getMonth() + 1 + i >= 12 ? 1 : 0);
+    const classes = ["FII", "Fiagro", "FI-Infra", "Ação", "BDR"].filter((c) => linhas.some((l) => l.cl === c));
+    const corC = { FII: cor("--serie"), "Ação": cor("--serie-2"), Fiagro: "#c9a227", "FI-Infra": "#9b7be0", BDR: "#e07b5b" };
+    const porClasse = classes.map((c) => [c, linhas.filter((l) => l.cl === c).reduce((a, l) => a + (l.valor || 0), 0), linhas.filter((l) => l.cl === c).reduce((a, l) => a + l.renda, 0)]);
+    const pct = (v) => ok(v) ? nf2.format(v * 100) + "%" : ND;
+    const R = (v) => ok(v) ? "R$ " + nf2.format(v) : ND;
+    linhasXls = linhas.map((l) => [l.t, l.cl, simNome(l.t), l.it.q, l.p, l.valor, total ? l.valor / total : null, l.renda, l.renda / 12, l.valor ? l.renda / l.valor : null, l.pv.base]);
+    corpo.innerHTML = `
+    <div class="sim-kpis">
+      <div class="cartao mapa-kpi"><span>Valor da carteira</span><b>${R(total)}</b><small>${linhas.length} ${linhas.length === 1 ? "ativo" : "ativos"} pelo preço atual</small></div>
+      <div class="cartao mapa-kpi"><span>Renda estimada em 12 meses</span><b>${R(renda)}</b><small>${S.liquido ? "líquida do IR retido na fonte" : "bruta"}</small></div>
+      <div class="cartao mapa-kpi"><span>Média por mês</span><b>${R(renda / 12)}</b><small>renda de 12 meses dividida por 12</small></div>
+      <div class="cartao mapa-kpi"><span>Yield da carteira</span><b>${total ? pct(renda / total) : ND}</b><small>renda de 12 meses / valor da carteira</small></div>
+    </div>
+    <div class="cartao" style="margin-top:16px"><div class="tabela-wrap"><table class="resp sim-tab"><thead><tr><th>Ativo</th><th>Classe</th><th class="n">Quantidade</th><th class="n">Preço</th><th class="n">Valor</th><th class="n">Peso</th><th>Proventos considerados</th><th class="n">Renda 12m</th><th class="n">Média mensal</th><th class="n">Yield</th><th></th></tr></thead><tbody>
+    ${linhas.map((l, i) => `<tr>
+      <td data-label="Ativo">${D.fiiMap[l.t] ? fundoHtml(D.fiiMap[l.t], true) : empresa(l.t)}</td>
+      <td data-label="Classe">${esc(l.cl)}</td>
+      <td class="n" data-label="Quantidade"><input type="number" class="sim-q" data-i="${i}" min="0" step="1" value="${l.it.q}" aria-label="Quantidade de ${l.t}"></td>
+      <td class="n" data-label="Preço">${R(l.p)}</td>
+      <td class="n" data-label="Valor">${R(l.valor)}</td>
+      <td class="n" data-label="Peso">${total ? pct(l.valor / total) : ND}</td>
+      <td data-label="Proventos considerados"><small class="muted">${esc(l.pv.base)}</small>${l.cl === "Ação" ? `<div class="sim-chk"><label><input type="checkbox" data-i="${i}" data-k="div" ${l.it.div !== false ? "checked" : ""} ${l.pv.temDiv ? "" : "disabled"}> Dividendos</label><label><input type="checkbox" data-i="${i}" data-k="jcp" ${l.it.jcp !== false ? "checked" : ""} ${l.pv.temJcp ? "" : "disabled"}> JCP</label></div>` : ""}</td>
+      <td class="n" data-label="Renda 12m">${R(l.renda)}</td>
+      <td class="n" data-label="Média mensal">${R(l.renda / 12)}</td>
+      <td class="n" data-label="Yield">${l.valor ? pct(l.renda / l.valor) : ND}</td>
+      <td><button class="btn peq sim-rm" data-i="${i}" title="Remover ${l.t}" aria-label="Remover ${l.t}">✕</button></td></tr>`).join("")}
+    </tbody></table></div></div>
+    <div class="grade g2" style="margin-top:16px">
+      <div class="cartao"><div class="cartao-cab"><div><h3>Renda estimada por mês</h3><p class="sub">Próximos 12 meses, repetindo os meses em que cada ativo pagou nos últimos 12.</p></div></div><div class="grafico"><canvas id="g-sim-mes"></canvas></div></div>
+      <div class="cartao"><div class="cartao-cab"><div><h3>Composição</h3><p class="sub">Peso de cada classe no valor e na renda.</p></div></div>
+        <div class="grafico peq"><canvas id="g-sim-comp"></canvas></div>
+        <div class="tabela-wrap" style="margin-top:12px"><table><thead><tr><th>Classe</th><th class="n">Valor</th><th class="n">Peso</th><th class="n">Renda 12m</th><th class="n">Peso na renda</th></tr></thead><tbody>
+        ${porClasse.map(([c, v, r]) => `<tr><td>${esc(c)}</td><td class="n">${R(v)}</td><td class="n">${total ? pct(v / total) : ND}</td><td class="n">${R(r)}</td><td class="n">${renda ? pct(r / renda) : ND}</td></tr>`).join("")}
+        </tbody></table></div></div>
+    </div>
+    <div class="cartao sim-notas" style="margin-top:16px"><h3>Como a renda é calculada</h3><ul>
+      <li><b>Fundos (FII, Fiagro e FI-Infra):</b> ${S.fiiBase === "12m" ? "média mensal dos rendimentos dos últimos 12 meses" : "último rendimento anunciado"}, repetido nos 12 meses. Fundo com menos de 12 meses de rendimentos na bolsa usa sempre o último.</li>
+      <li><b>Ações:</b> soma dos dividendos e JCP com data com nos últimos 12 meses, publicados pela B3. Dá para tirar dividendos ou JCP de cada ação nas caixas da tabela. Restituição de capital não entra.</li>
+      <li><b>BDRs:</b> proventos de 12 meses em reais pelo dividend yield do site, que já considera a proporção do BDR e o câmbio. O imposto do BDR é pago pelo investidor (carnê-leão ou declaração) e não é descontado aqui.</li>
+      <li><b>Valores líquidos:</b> JCP com ${nf2.format(SIM_IR.jcp * 100)}% de IR retido na fonte (Lei Complementar 224/2025); dividendos com ${nf0.format(SIM_IR.div * 100)}% retidos só quando a mesma empresa paga mais de R$ 50 mil no mês à mesma pessoa física (Lei 15.270/2025)${temDiv50 ? ", o que acontece nesta carteira" : ""}. Rendimentos de fundos considerados isentos para pessoa física, o que depende das condições da lei (cotista com menos de 10% das cotas, fundo com pelo menos 100 cotistas e cotas negociadas em bolsa). A tributação mínima anual sobre altas rendas não está incluída.</li>
+      <li><b>Preços:</b> último preço disponível no site. A carteira fica salva só neste navegador.</li>
+    </ul><p class="sub">Simulação com base em proventos já pagos ou anunciados. Proventos futuros podem ser maiores, menores ou não acontecer; não é promessa de renda nem recomendação de investimento.</p></div>`;
+    $$(".sim-q").forEach((x) => x.onchange = () => { const i = +x.dataset.i, v = Math.floor(+x.value || 0); if (v > 0) S.itens[i].q = v; else S.itens.splice(i, 1); simSalvar(S); desenhar(); });
+    $$(".sim-rm").forEach((b) => b.onclick = () => { S.itens.splice(+b.dataset.i, 1); simSalvar(S); desenhar(); });
+    $$(".sim-chk input").forEach((c) => c.onchange = () => { S.itens[+c.dataset.i][c.dataset.k] = c.checked; simSalvar(S); desenhar(); });
+    destruirGraficos();
+    if (!window.Chart) return;
+    const o = optGraf({ stacked: true, moeda: "R$ " });
+    o.plugins.tooltip.callbacks.footer = (it) => `Total: R$ ${nf2.format(it.reduce((a, x) => a + (x.parsed.y || 0), 0))}`;
+    charts.push(new Chart($("#g-sim-mes"), { type: "bar", data: { labels: ordem.map((m, i) => `${SIM_MESES[m]}/${String(anoDe(i)).slice(2)}`),
+      datasets: classes.map((c) => ({ label: c === "Ação" ? "Ações" : c === "BDR" ? "BDRs" : c, data: ordem.map((m) => porMes[m][c] || 0), backgroundColor: corC[c], borderRadius: 3 })) }, options: o }));
+    const oc = optGraf({ legenda: true });
+    delete oc.scales;
+    oc.plugins.tooltip.callbacks.label = (ctx) => `${ctx.label}: R$ ${nf2.format(ctx.parsed)} (${total ? nf2.format(ctx.parsed / total * 100) : 0}%)`;
+    charts.push(new Chart($("#g-sim-comp"), { type: "doughnut", data: { labels: porClasse.map(([c]) => c), datasets: [{ data: porClasse.map(([, v]) => v), backgroundColor: porClasse.map(([c]) => corC[c]), borderColor: cor("--sup"), borderWidth: 2 }] }, options: { ...oc, cutout: "62%" } }));
+  }
+  desenhar();
+}
 
 /* =====================================================================
    CALENDÁRIO DE RESULTADOS
