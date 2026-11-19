@@ -639,3 +639,6 @@ details.recolhe > summary h3 { margin: 0; }
 details.recolhe > summary::before { content: ""; width: 8px; height: 8px; border-right: 2px solid var(--txt-3); border-bottom: 2px solid var(--txt-3); transform: rotate(-45deg); transition: transform .15s; flex: none; }
 details.recolhe[open] > summary::before { transform: rotate(45deg); }
 details.recolhe[open] > summary { margin-bottom: 12px; }
+.grade > .cartao + .cartao, .grade > details.cartao + .cartao { margin-top: 0; }   /* cartões lado a lado ficam alinhados */
+.grade.fii-carteira { align-items: stretch; }
+.fii-carteira .grafico.rosca { height: 300px; }

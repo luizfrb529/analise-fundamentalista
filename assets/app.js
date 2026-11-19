@@ -1620,7 +1620,7 @@ function rosca(el, rotulos, valores, sufixo = "%") {
   if (!el || !window.Chart) return;
   const tot = valores.reduce((a, b) => a + b, 0) || 1;
   charts.push(new Chart(el, { type: "doughnut", data: { labels: rotulos, datasets: [{ data: valores, backgroundColor: rotulos.map((_, i) => CORES_FII[i % CORES_FII.length]), borderColor: cor("--sup"), borderWidth: 2 }] },
-    options: { responsive: true, maintainAspectRatio: false, cutout: "62%", plugins: { legend: { position: "right", labels: { color: cor("--txt-2"), boxWidth: 10, boxHeight: 10, font: { family: "Inter", size: 11 } } },
+    options: { responsive: true, maintainAspectRatio: false, cutout: "62%", plugins: { legend: { position: rotulos.length > 9 ? "bottom" : "right", labels: { color: cor("--txt-2"), boxWidth: 10, boxHeight: 10, padding: rotulos.length > 9 ? 8 : 10, font: { family: "Inter", size: 11 } } },
       tooltip: { callbacks: { label: (c) => `${c.label}: ${nf2.format(c.parsed / tot * 100)}%` } } } } }));
 }
 async function pgFii(app, t) {
@@ -1692,12 +1692,13 @@ async function pgFii(app, t) {
     </div></section>
 
   <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Carteira</h2><p class="sub" style="margin:0">Informe Trimestral da CVM de ${dataBR(comp.ref_trimestral)} e Informe Mensal de ${esc(comp.ref_mensal || "")}.</p></div>
-    <div class="grade g2">
-      <div class="cartao"><h3>Por segmento</h3><div class="grafico rosca"><canvas id="g-fii-seg"></canvas></div><p class="sub">Cotas de outros FIIs entram pelo segmento declarado à CVM por cada fundo; imóveis repartidos pela receita de cada um.</p></div>
+    <div class="grade g2 fii-carteira">
+      <div class="cartao"><h3>Por segmento</h3><div class="grafico rosca"><canvas id="g-fii-seg"></canvas></div></div>
       <div class="cartao"><h3>Por tipo de ativo</h3><div class="grafico rosca"><canvas id="g-fii-tipo"></canvas></div></div>
-      ${(comp.vencimento_contratos || []).length ? `<div class="cartao"><h3>Vencimento dos contratos</h3><div class="grafico rosca"><canvas id="g-fii-venc"></canvas></div><p class="sub">Percentual da receita contratada por prazo até o vencimento.</p></div>` : ""}
+      ${(comp.vencimento_contratos || []).length ? `<div class="cartao"><h3>Vencimento dos contratos</h3><div class="grafico rosca"><canvas id="g-fii-venc"></canvas></div></div>` : ""}
       ${(comp.indexador_contratos || []).length ? `<div class="cartao"><h3>Indexador dos contratos</h3><div class="grafico rosca"><canvas id="g-fii-idx"></canvas></div></div>` : ""}
     </div>
+    <p class="sub" style="margin-top:10px">Por segmento: cotas de outros FIIs entram pelo segmento declarado à CVM por cada fundo, e os imóveis são repartidos pela receita de cada um. Vencimento: percentual da receita contratada por prazo até o vencimento.</p>
     ${(d.imoveis || []).length ? `<details class="cartao recolhe" style="margin-top:16px"><summary><h3>Imóveis <span class="muted">${d.imoveis.length}</span></h3></summary><div class="tabela-wrap"><table class="resp"><thead><tr><th>Imóvel</th><th>Segmento</th><th>Local</th><th class="n">Área (m²)</th><th class="n">Vacância</th><th class="n">% da receita</th></tr></thead><tbody>
       ${d.imoveis.map((m) => `<tr><td data-label="Imóvel"><b>${esc(m.nome)}</b><br><span class="muted">${esc(m.classe)}</span></td><td data-label="Segmento">${esc(m.segmento)}</td><td data-label="Local">${esc(m.endereco)}</td><td class="n" data-label="Área">${ok(m.area) ? nf2.format(m.area) : ND}</td><td class="n" data-label="Vacância">${fmtU(m.vacancia, "pct")}</td><td class="n" data-label="% da receita">${fmtU(m.pct_receitas, "pct")}</td></tr>`).join("")}
     </tbody></table></div></details>` : ""}
