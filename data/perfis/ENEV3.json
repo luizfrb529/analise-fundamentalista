@@ -1,0 +1,109 @@
+{
+ "ticker": "ENEV3",
+ "revisado_em": "2026-11-19",
+ "resumo": "Empresa integrada de gás natural e energia: produz gás no Maranhão e no Amazonas e o usa em termelétricas próprias, com receita 100% no Brasil. Alavancagem perto de 3x.",
+ "modelo": "A Eneva explora e produz gás natural em terra, nas bacias do Parnaíba e do Amazonas, e o transforma em energia nas próprias termelétricas (modelo reservatório-usina). A maior parte da receita vem de contratos regulados de longo prazo, com receita fixa por disponibilidade e variável quando as usinas são acionadas. Também comercializa gás, inclusive de terceiros, e tem usinas solares e eólicas.",
+ "segmentos": [
+  {
+   "nome": "Termelétricas a gás integradas (produção de gás e geração)",
+   "peso_receita": null,
+   "periodo": "3T26",
+   "obs": "Usinas no Maranhão e no Amazonas; Azulão I entrou em operação comercial em agosto de 2026."
+  },
+  {
+   "nome": "Comercialização de gás",
+   "peso_receita": null,
+   "periodo": "3T26",
+   "obs": "Ebitda de R$ 163 mi no 3T26; o gás de terceiros teve forte queda e explica a receita menor."
+  },
+  {
+   "nome": "Renováveis e outras térmicas",
+   "peso_receita": null,
+   "periodo": "3T26",
+   "obs": "Complexos solares e eólicos e térmicas contratadas em leilões de capacidade."
+  }
+ ],
+ "segmentos_base": "Receita líquida (sem divisão percentual confirmada)",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Campos de gás e usinas no Maranhão, no Amazonas e em outros estados. Não há operação no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "Receitas em reais, em contratos regulados, e dívida majoritariamente em reais. Uma alta do dólar tem efeito direto limitado."
+ },
+ "momento": "No 3T26, divulgado em 11/11/2026, o lucro líquido foi de R$ 322,9 mi (-8,2%) e a receita líquida de R$ 3,24 bi (-26,9%), com a queda do gás de terceiros. O Ebitda caiu 22,8%, para R$ 1,41 bi, com margem de 43,5% (41,2% no 3T25). A dívida líquida ficou em R$ 17,3 bi e a alavancagem em 2,97x, ante 3,2x em junho, ajudada pela venda da térmica Itaqui (R$ 365 mi). A usina Azulão I começou a operar em agosto.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-11",
+  "positivos": [
+   "Margem Ebitda de 43,5%, ante 41,2% no 3T25",
+   "Alavancagem de 2,97x, ante 3,2x no 2T26",
+   "Azulão I, no Amazonas, entrou em operação comercial em agosto e gerou Ebitda de R$ 50 mi no trimestre",
+   "Fluxo de caixa operacional de R$ 1,73 bi, o segundo maior da história da empresa"
+  ],
+  "negativos": [
+   "Receita líquida de R$ 3,24 bi, queda de 26,9% sobre o 3T25, puxada pelo gás de terceiros",
+   "Ebitda de R$ 1,41 bi, queda de 22,8% sobre o 3T25",
+   "Lucro líquido de R$ 322,9 mi, queda de 8,2% sobre o 3T25"
+  ],
+  "atencao": [
+   "Dívida líquida de R$ 17,3 bi, 11,5% maior em 12 meses, com investimentos de R$ 1,77 bi no trimestre",
+   "Entrada em operação das térmicas do leilão de capacidade e da segunda fase de Azulão, prevista para 2027"
+  ]
+ },
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com dívida líquida de R$ 17,3 bi e alavancagem perto de 3x, juro menor reduz bastante a despesa financeira."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita em reais; parte de equipamentos tem referência em dólar, mas o efeito líquido é pequeno."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "A maior parte da receita é fixa por disponibilidade; o preço do gás pesa mais na comercialização."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais consumo de energia aumenta o acionamento das térmicas e a demanda por gás."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "As receitas fixas dos contratos regulados são corrigidas pela inflação."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Eleva juros e encarece a dívida de uma empresa alavancada e com grande plano de investimentos."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "InfoMoney: Eneva lucra R$ 322,9 milhões no terceiro trimestre",
+   "url": "https://www.infomoney.com.br/mercados/eneva-enev3-resultados-terceiro-trimestre-2026/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Terra (Reuters): Eneva tem lucro de R$ 323 mi no 3º tri, queda de 8%",
+   "url": "https://www.terra.com.br/economia/eneva-tem-lucro-de-r323-mi-no-3-tri-queda-de-8,e974a35e48968af9ce2287c2154f4fddgqzk81hl.html",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Visno: Eneva registra lucro de R$ 323 mi no 3T26",
+   "url": "https://visnoinvest.com.br/news/16425/eneva-enev3-registra-lucro-de-r-323-mi-no-3t26",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Brasil em Folhas: Eneva registra lucro de R$ 322,9 milhões no terceiro trimestre",
+   "url": "https://brasilemfolhas.com.br/2026/11/eneva-registra-lucro-de-r-322-9-milhoes-no-terceiro-trimestre/",
+   "data": "2026-11-11"
+  }
+ ],
+ "pendencias": "Divisão percentual da receita por segmento não confirmada em duas fontes; venda de Pecém II e aporte do Itaú na Eneva III apareceram em uma só fonte e ficaram de fora.",
+ "ultimo_resultado": "3T26"
+}

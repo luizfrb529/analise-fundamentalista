@@ -1,6 +1,6 @@
 # Relatório de cobertura de dados
 
-Gerado em 19/11/2026 17:10 | Preços de fechamento de 2026-11-18 | Balanços até 3T2026
+Gerado em 19/11/2026 19:55 | Preços de fechamento de 2026-11-19 | Balanços até 3T2026
 
 | Ticker | Modelo | Balanço | Fonte | Indicadores com valor | Faltando |
 |---|---|---|---|---|---|
@@ -50,13 +50,15 @@ Gerado em 19/11/2026 17:10 | Preços de fechamento de 2026-11-18 | Balanços at�
 | CMIG4 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
 | EQTL3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
 | CPFE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
+| CPLE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
+| ENEV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/102 | 9 |
 | SBSP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 85/102 | 17 |
 | SAPR11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
 | CSMG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/102 | 6 |
 | MGLU3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/102 | 10 |
 | BHIA3 | RECUPERACAO | 2026-06-30 | CVM (DFP/ITR, consolidado) | 66/92 | 26 |
 | LJQQ3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 82/102 | 20 |
-| GMAT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/102 | 6 |
+| GMAT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/102 | 7 |
 | AZZA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/102 | 1 |
 | GRND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/102 | 1 |
 | LREN3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/102 | 1 |
@@ -141,6 +143,7 @@ Gerado em 19/11/2026 17:10 | Preços de fechamento de 2026-11-18 | Balanços at�
 | QUBT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 56/101 | 45 |
 | SPCX34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 34/101 | 67 |
 | MULT3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/102 | 1 |
+| IGTI11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/102 | 16 |
 | MLAS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/102 | 7 |
 | INTB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
 | SEER3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/102 | 2 |
@@ -911,6 +914,32 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 
+## CPLE3
+
+Avisos do pipeline:
+- sem preço da classe PN; usado preço do papel
+
+Indicadores sem valor e motivo:
+
+- P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+
+## ENEV3
+
+
+Indicadores sem valor e motivo:
+
+- P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
+- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
+- CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
+- % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
+- Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
+
 ## SBSP3
 
 Avisos do pipeline:
@@ -1042,6 +1071,7 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 
 ## AZZA3
 
@@ -2537,6 +2567,28 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+
+## IGTI11
+
+
+Indicadores sem valor e motivo:
+
+- P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
+- TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
+- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
+- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
+- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 11 exercícios ou extremos negativos
+- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 11 exercícios ou extremos negativos
+- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 11 exercícios ou extremos negativos
+- CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- Capex (`capex`): conta não encontrada na fonte ou não aplicável ao modelo
+- FCL (`fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
+- Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
+- Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
+- Tag along (`tag_along`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## MLAS3
 

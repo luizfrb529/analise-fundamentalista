@@ -1,0 +1,114 @@
+{
+ "ticker": "IGTI11",
+ "revisado_em": "2026-11-19",
+ "resumo": "Dona e administradora de shoppings de alta renda e outlets, como Iguatemi São Paulo e JK Iguatemi, com receita 100% no Brasil. Vendeu fatias de cinco shoppings ao TRXF11 em setembro de 2026.",
+ "modelo": "A Iguatemi tem participação em shoppings centers e outlets voltados ao público de alta renda, sobretudo no Sudeste e no Sul, e administra esses ativos. Ganha com aluguel mínimo e percentual sobre as vendas dos lojistas, estacionamento e taxas de administração, receitas recorrentes ligadas a contratos de longo prazo. Também recicla o portfólio, vendendo participações e investindo em expansões.",
+ "segmentos": [
+  {
+   "nome": "Aluguéis de shoppings e outlets",
+   "peso_receita": null,
+   "periodo": "3T26",
+   "obs": "Aluguel mínimo, aluguel percentual sobre vendas e cessão de espaços; principal fonte de receita."
+  },
+  {
+   "nome": "Estacionamento",
+   "peso_receita": null,
+   "periodo": "3T26",
+   "obs": "Receita dos estacionamentos dos shoppings."
+  },
+  {
+   "nome": "Administração e serviços",
+   "peso_receita": null,
+   "periodo": "3T26",
+   "obs": "Taxas de gestão, inclusive das participações vendidas ao TRXF11, que seguem administradas pela Iguatemi."
+  }
+ ],
+ "segmentos_base": "Receita líquida (a empresa não divulga a divisão percentual de forma comparável)",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Todos os shoppings e outlets ficam no Brasil, com concentração em São Paulo, no interior paulista e no Rio Grande do Sul. Não há operação no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Aluguéis e dívida em reais. Uma alta do dólar não tem efeito direto relevante."
+ },
+ "momento": "No 3T26, divulgado em 10/11/2026, o lucro líquido ajustado foi de R$ 438 mi, ante R$ 129 mi no 3T25, puxado pelo ganho de capital de R$ 353,5 mi com a venda de participações em cinco shoppings ao TRXF11 por R$ 876,1 mi, concluída em 30/09/2026. Sem esse efeito, o lucro ajustado foi de R$ 140,9 mi (+9,3%). O NOI ficou estável em R$ 299 mi e as vendas nas mesmas lojas subiram 0,1%, ante 5,8% um ano antes. A alavancagem caiu para 1,04x o Ebitda ajustado, de 1,62x no 2T26.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-10",
+  "positivos": [
+   "Lucro ajustado sem o ganho da venda de R$ 140,9 mi, alta de 9,3% sobre o 3T25",
+   "Ocupação de 96,7%, ante 96,1% no 3T25",
+   "Alavancagem de 1,04x o Ebitda ajustado, ante 1,62x no 2T26, após a venda ao TRXF11",
+   "Vendas dos lojistas de R$ 6,1 bi, alta de 1,6% sobre o 3T25"
+  ],
+  "negativos": [
+   "Vendas nas mesmas lojas subiram 0,1%, ante alta de 5,8% no 3T25",
+   "NOI de R$ 299 mi, praticamente estável sobre o 3T25"
+  ],
+  "atencao": [
+   "Lucro do 3T26 inclui ganho não recorrente de R$ 353,5 mi com a venda das participações",
+   "Parte do pagamento da venda vem em parcelas corrigidas pelo CDI e em cotas do TRXF11, o que mantém exposição indireta aos shoppings vendidos",
+   "Ritmo das vendas nas mesmas lojas nos próximos trimestres"
+  ]
+ },
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Juro menor reduz a despesa da dívida em CDI e tende a valorizar imóveis de renda, além de estimular o consumo."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida em reais; efeito indireto pequeno via consumo de importados."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Shoppings não dependem de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Vendas dos lojistas e aluguel percentual acompanham o consumo, mas o público de alta renda oscila menos com o ciclo."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "Os contratos de aluguel são reajustados por índices de inflação, embora inflação alta pressione juros e consumo."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Pressiona os juros, encarecendo a dívida e reduzindo o valor dos imóveis de renda."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "InfoMoney (Reuters): lucro da Iguatemi salta mais de 3 vezes no 3º tri e vai a R$ 438 milhões",
+   "url": "https://www.infomoney.com.br/mercados/iguatemi-igti11-resultados-terceiro-trimestre-2026/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Money Times: Iguatemi fecha 3º trimestre com salto no lucro",
+   "url": "https://www.moneytimes.com.br/iguatemi-igti11-fecha-3o-trimestre-com-salto-no-lucro-em-resultado-acima-do-esperado-fets/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Business Moment: Iguatemi tem lucro ajustado de R$ 438 milhões no 3T26",
+   "url": "https://businessmoment.com.br/iguatemi-resultado-3t26-lucro-venda-trxf11/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "XP Investimentos: Iguatemi, lucro abaixo das estimativas",
+   "url": "https://conteudos.xpi.com.br/acoes/relatorios/iguatemi-igti11-lucro-abaixo-das-nossas-estimativas/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Space Money: Iguatemi vende participação em 5 ativos por R$ 876 milhões",
+   "url": "https://www.spacemoney.com.br/investimentos/fundos-imobiliarios/iguatemi-vende-participacao-em-5-ativos-por-r-876-milhoes/",
+   "data": "2026-08"
+  }
+ ],
+ "pendencias": "Receita líquida do 3T26 aparece com bases diferentes nas fontes (R$ 388 mi ex-linearização e R$ 407,3 mi); ficou de fora até conferir no release.",
+ "ultimo_resultado": "3T26"
+}

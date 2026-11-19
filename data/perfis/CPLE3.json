@@ -1,0 +1,108 @@
+{
+ "ticker": "CPLE3",
+ "revisado_em": "2026-11-19",
+ "resumo": "Elétrica paranaense com distribuição, geração hidrelétrica e eólica, transmissão e comercialização, receita 100% no Brasil. Privatizada, virou corporação sem controlador; o Paraná tem golden share.",
+ "modelo": "A Copel distribui energia no Paraná pela Copel Distribuição, com tarifa regulada pela Aneel e revisada a cada ciclo, e gera energia em usinas hidrelétricas e parques eólicos, vendida em contratos regulados e no mercado livre. Também tem linhas de transmissão com receita anual permitida e uma comercializadora. A maior parte da receita é recorrente, ligada a tarifas e contratos de longo prazo.",
+ "segmentos": [
+  {
+   "nome": "Distribuição",
+   "peso_receita": 0.61,
+   "periodo": "3T26",
+   "obs": "Ebitda recorrente de R$ 1,11 bi, alta de 70,2%, com a revisão tarifária de junho de 2026."
+  },
+  {
+   "nome": "Geração e transmissão",
+   "peso_receita": 0.38,
+   "periodo": "3T26",
+   "obs": "Ebitda recorrente de R$ 688,5 mi, queda de 4,5%, por cortes de geração eólica e menor venda em contratos bilaterais."
+  },
+  {
+   "nome": "Comercialização",
+   "peso_receita": 0.01,
+   "periodo": "3T26",
+   "obs": "Volume comercializado 6,8% maior."
+  }
+ ],
+ "segmentos_base": "Ebitda recorrente",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Distribuição concentrada no Paraná; usinas e linhas de transmissão no Paraná e em outros estados, incluindo parques eólicos no Nordeste. Não há operação no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Tarifas, contratos e dívida em reais. Uma alta do dólar não tem efeito direto relevante."
+ },
+ "momento": "No 3T26, divulgado em 12/11/2026, o lucro líquido foi de R$ 688,4 mi e o lucro recorrente de R$ 673,1 mi (+79,6%). O Ebitda recorrente subiu 35%, para R$ 1,81 bi, puxado pela distribuição após a revisão tarifária, enquanto geração e transmissão recuou 4,5%. A receita líquida foi de R$ 6,95 bi (+2,1%). A alavancagem ficou em 2,7x o Ebitda, dentro da faixa de 2,6x a 3,2x definida pela empresa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Lucro recorrente de R$ 673,1 mi, alta de 79,6% sobre o 3T25",
+   "Ebitda recorrente de R$ 1,81 bi, alta de 35% sobre o 3T25",
+   "Ebitda recorrente da distribuição de R$ 1,11 bi, alta de 70,2%, com a revisão tarifária de 2026",
+   "Mercado faturado da distribuição 5,8% maior que no 3T25"
+  ],
+  "negativos": [
+   "Ebitda recorrente de geração e transmissão de R$ 688,5 mi, queda de 4,5%, por cortes na geração eólica",
+   "Resultado financeiro recorrente negativo em R$ 482,9 mi, 9,1% pior que no 3T25"
+  ],
+  "atencao": [
+   "Cortes de geração eólica (curtailment) determinados pelo operador do sistema",
+   "Alavancagem de 2,7x, dentro da faixa-alvo de 2,6x a 3,2x, com investimentos de R$ 991,1 mi no trimestre"
+  ]
+ },
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Reduz o custo da dívida líquida de cerca de R$ 19,8 bi, atrelada em boa parte ao CDI e ao IPCA."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida em reais; não há exposição relevante ao dólar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "A receita vem de tarifas e contratos de energia, não de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade aumenta o consumo de energia na área de concessão e o volume comercializado."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "Tarifas, receitas de transmissão e contratos de energia são corrigidos por índices de inflação."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Eleva juros e prêmio de risco, encarecendo a dívida e reduzindo o valor de ativos de longo prazo."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Eu Quero Investir: Copel tem lucro de R$ 688,4 milhões no 3T26",
+   "url": "https://euqueroinvestir.com/acoes/copel-cple3-lucro-3t26-ebitda-resultados",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Sim Notícias (CNN Brasil): lucro da Copel cresce 79,7% no 3º trimestre",
+   "url": "https://simnoticias.com.br/cnn-brasil/lucro-da-copel-cresce-797-no-3o-trimestre-para-r-6884-milhoes/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "ADVFN: Copel dispara lucro em 79,6% no 3T26",
+   "url": "https://br.advfn.com/jornal/2026/11/copel-dispara-lucro-em-79-6-no-3t26-com-avanco-da-distribuicao-de-energia-e-melhora-operacional",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Suno: Copel conclui processo para se tornar corporação",
+   "url": "https://www.suno.com.br/noticias/?p=441978",
+   "data": "2023-08-14"
+  }
+ ],
+ "pendencias": "A variação do lucro líquido difere entre as fontes (+79,7% e +89%) por causa da base do 3T25; o texto usa o lucro recorrente, que bate nas duas.",
+ "ultimo_resultado": "3T26"
+}
