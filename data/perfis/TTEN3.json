@@ -1,0 +1,88 @@
+{
+ "ticker": "TTEN3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Revenda de insumos, originação de grãos e indústria de soja, biodiesel e etanol de milho no RS e no Centro-Oeste. Cerca de 48% da receita bruta dos 9M26 veio de exportação.",
+ "modelo": "A 3tentos vende sementes, fertilizantes e defensivos ao produtor rural em 83 lojas em seis estados, recebe parte do pagamento em grãos (barter) e comercializa soja, milho e trigo no Brasil e no exterior. Na indústria, processa soja em farelo e óleo, produz biodiesel em Ijuí, Cruz Alta e Vera e, desde junho de 2026, etanol de milho e DDG em Porto Alegre do Norte (MT). A receita é recorrente, ligada ao ciclo de safra, e a TentosCap financia o produtor (carteira de R$ 510 mi em set/26). As exportações são centralizadas na trading 3T International, em Montevidéu.",
+ "segmentos": [
+  {
+   "nome": "Indústria (farelo, óleo, biodiesel, etanol e DDG)",
+   "peso_receita": 0.46,
+   "periodo": "9M26",
+   "obs": "R$ 6.758,5 mi (+13,6%); no 3T26 a planta de etanol somou R$ 321,2 mi de receita."
+  },
+  {
+   "nome": "Grãos",
+   "peso_receita": 0.37,
+   "periodo": "9M26",
+   "obs": "R$ 5.523,1 mi (+37,8%), com safra recorde de soja e milho; margem bruta do 3T26 caiu para 7,2%."
+  },
+  {
+   "nome": "Insumos",
+   "peso_receita": 0.17,
+   "periodo": "9M26",
+   "obs": "R$ 2.479,9 mi (+18,2%); fertilizantes são 58,9% da receita do segmento no 3T26."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 0.52,
+  "exterior_pct": 0.48,
+  "periodo": "9M26",
+  "base": "receita bruta (mercado interno x externo)",
+  "texto": "Opera no RS, MT, GO, MG, PA e TO; o Mato Grosso respondeu por 39% da receita de Insumos, 46% de Grãos e 54% da Indústria nos 9M26. A venda ao mercado externo somou R$ 7,1 bi de R$ 14,9 bi de receita bruta consolidada nos 9M26, via a trading 3T International, no Uruguai."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "média",
+  "texto": "Quase metade da receita é exportação e os grãos têm preço formado em dólar, mas os insumos comprados também seguem o câmbio. Cerca de 26% da dívida consolidada estava em dólar em set/26 (PPE e adiantamentos de exportação), e a empresa vende dólar a termo (NDF) para travar exportações futuras, o que suaviza o efeito de uma alta do dólar no curto prazo."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita líquida foi de R$ 5,85 bi (+17,2%), o Ebitda ajustado com hedge de R$ 226,7 mi (-38,5%, margem de 3,9%) e o lucro líquido de R$ 208,2 mi (+2,5%); nos 9M26 o lucro caiu 31,3%, para R$ 499,3 mi. Menores margens em Grãos e custo logístico maior pesaram, enquanto a indústria teve lucro bruto 89% maior, com a nova planta de etanol já em plena capacidade e crédito de PIS/Cofins de R$ 81,2 mi no biodiesel. A liberação de capital de giro gerou fluxo de caixa livre recorde de R$ 1,1 bi, e a alavancagem sem a TentosCap caiu de 3,05x para 2,44x Ebitda, com dívida líquida consolidada de R$ 2,67 bi. Em 2026 a empresa concluiu as expansões de esmagamento e biodiesel e abriu 10 lojas em GO, MG, PA e TO.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Com dívida líquida de R$ 2,67 bi e alavancagem de 2,44x, juro menor reduz a despesa financeira e barateia o crédito ao produtor, que compra insumos a prazo."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Exportações e preços de grãos em reais sobem, mas insumos importados e 26% da dívida em dólar também, e o hedge com NDF limita o ganho imediato."
+  },
+  "commodities_subindo": {
+   "nota": 2,
+   "porque": "Soja e milho mais caros elevam a renda do produtor e a demanda por insumos, e a própria empresa cita a alta das commodities como motor do varejo no 3T26."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "A demanda vem da safra e do mercado externo de grãos e biocombustíveis, pouco ligada ao ciclo do PIB doméstico."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Preços de venda acompanham as cotações de commodities, enquanto frete e custos logísticos sobem com a inflação, sem efeito líquido claro."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Real mais fraco ajuda exportações, mas juros maiores encarecem o capital de giro e o crédito rural, efeitos que se compensam."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "3tentos, Comentário de desempenho e ITR 3T26 (via Investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/TTEN3/52872/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "BP Money: 3tentos tem lucro de R$ 208 milhões no 3T26, mas Ebitda ajustado cai 38,5%",
+   "url": "https://bpmoney.com.br/?p=436228",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Investidor10: 3tentos lucra R$ 208 milhões no 3T26, com geração recorde de caixa",
+   "url": "https://investidor10.com.br/noticias/3tentos-tten3-lucra-r-208-milhoes-no-3t26-com-geracao-recorde-de-caixa-123872/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Revista Cultivar: Lucro da 3tentos cresce 2,5% no terceiro trimestre",
+   "url": "https://revistacultivar.com.br/noticias/lucro-da-3tentos-cresce-2-5-no-terceiro-trimestre",
+   "data": "2026-11-13"
+  }
+ ]
+}

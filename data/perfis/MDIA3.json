@@ -1,0 +1,88 @@
+{
+ "ticker": "MDIA3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Líder nacional em biscoitos e massas, também com moinhos de trigo e gorduras. Trigo e óleo cotados em dólar são o principal custo, e a empresa tem caixa líquido de R$ 1,2 bi.",
+ "modelo": "A M. Dias Branco fabrica e vende biscoitos, massas, margarinas, farinhas, gorduras, snacks, bolos e saudáveis para varejo, atacado e food service, com marcas como Vitarella, Piraquê, Adria, Isabela, Jasmine, Finna e Frontera. Tem moinhos de trigo e refino de óleo próprios, o que integra a cadeia de custos. A receita é recorrente, de consumo básico, e a margem depende do preço do trigo e do óleo de palma e do repasse ao consumidor.",
+ "segmentos": [
+  {
+   "nome": "Produtos principais (biscoitos, massas e margarinas)",
+   "peso_receita": 0.76,
+   "periodo": "9M26",
+   "obs": "R$ 5.850,1 mi; no 3T26, R$ 2.094,2 mi (-3,1%) com mercado de biscoitos e massas em queda de volume."
+  },
+  {
+   "nome": "Moinhos de trigo e refino de óleos vegetais",
+   "peso_receita": 0.18,
+   "periodo": "9M26",
+   "obs": "R$ 1.371,3 mi; no 3T26, R$ 490,2 mi (+1,4%), puxado por farinhas para panificação e food service."
+  },
+  {
+   "nome": "Adjacências (saudáveis, snacks, bolos, molhos e outros)",
+   "peso_receita": 0.06,
+   "periodo": "9M26",
+   "obs": "R$ 433,5 mi; no 3T26, R$ 153,9 mi (+9,3%)."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Quase toda a receita é gerada no Brasil, com forte presença no Nordeste e no Sudeste. Há operações menores no exterior, como as adquiridas Las Acacias (Uruguai) e Latinex, cujo peso na receita não é divulgado."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "baixa",
+  "texto": "A receita é quase toda em reais, enquanto trigo e óleo de palma, maior parte do custo, têm preço em dólar; a empresa usa estoques e hedge para suavizar. A dívida em moeda estrangeira caiu para R$ 15,5 mi (1% do total) em set/26, ante R$ 545,7 mi um ano antes, então alta do dólar pesa sobretudo pelo custo."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita líquida foi de R$ 2,74 bi (-1,7%), com volume 2,1% maior e preço médio 3,6% menor; o Ebitda caiu 19,6%, para R$ 255,9 mi (margem de 9,3%), e o lucro líquido 27,0%, para R$ 157,7 mi. A margem bruta subiu para 32,9%, mas embalagens (+14,2%, pela alta do petróleo) e verbas rescisórias de ajustes de estrutura pressionaram o resultado. A empresa gerou R$ 589 mi de caixa operacional e terminou setembro com caixa líquido de R$ 1,17 bi e rating AAA reafirmado pela Fitch. Em 19/10/2026 anunciou a compra de 80% da Grespan, de pães congelados (receita bruta de R$ 138,7 mi em 2025), ainda dependente do Cade.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula o consumo de alimentos e o crédito ao varejo; o efeito financeiro é pequeno porque a empresa tem caixa líquido."
+  },
+  "dolar_subindo": {
+   "nota": -1,
+   "porque": "Trigo e óleo de palma, cotados em dólar, encarecem o principal custo, sem receita relevante em moeda estrangeira para compensar."
+  },
+  "commodities_subindo": {
+   "nota": -1,
+   "porque": "Trigo, óleo e resinas de embalagem mais caros comprimem a margem até o repasse de preços, como a empresa relatou no 3T26."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Renda maior recupera volumes em biscoitos e massas, mercados que caíram 2% em volume no 3T26."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Custos sobem antes do repasse e o consumidor de baixa renda migra para marcas mais baratas, como mostra a retração em cracker e massa comum."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Sem dívida líquida, o efeito vem só indiretamente, via dólar mais alto no custo e consumo mais fraco."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "M. Dias Branco, Divulgação de resultados 3T26 e 9M26 (via Investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/MDIA3/52847/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "NovaCana (Agência Estado): M. Dias Branco tem lucro líquido de R$ 157,7 milhões no 3º trimestre de 2026",
+   "url": "https://www.novacana.com/noticias/m-dias-branco-tem-lucro-liquido-de-r-157-7-milhoes-no-3-trimestre-de-2026-queda-de-27",
+   "data": "2026-11-16"
+  },
+  {
+   "titulo": "Compre Rural: M. Dias Branco vende 493 mil toneladas no trimestre, mas receita recua com menor preço médio",
+   "url": "https://comprerural.com/m-dias-branco-volumes-terceiro-trimestre/",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Economic News Brasil: M. Dias Branco anuncia compra da Grespan",
+   "url": "https://economicnewsbrasil.com.br/2026/10/19/m-dias-branco-acoes-mdia3-alta-grespan/",
+   "data": "2026-10-19"
+  }
+ ]
+}

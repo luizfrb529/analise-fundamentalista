@@ -1,0 +1,100 @@
+{
+ "ticker": "MULT3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Dona e administradora de 20 shoppings de alto padrão no Brasil, com receita quase toda de aluguel, estacionamento e serviços. Opera só no Brasil e toda a dívida é em reais, 96% atrelada ao CDI.",
+ "modelo": "A Multiplan planeja, desenvolve, detém e administra shopping centers, com participação média de 79% em 20 shoppings (905,9 mil m² de ABL e cerca de 6.500 lojas em set/26), entre eles BarraShopping, MorumbiShopping, BH Shopping e ParkShoppingBarigüi, além de duas torres corporativas. A receita recorrente vem de aluguel dos lojistas (mínimo corrigido pelo IGP-DI ou percentual das vendas), estacionamento e taxas de administração. Há ainda receita pontual com incorporação residencial e comercial ao redor dos shoppings e com venda de participações em ativos.",
+ "segmentos": [
+  {
+   "nome": "Locação (shoppings e torres)",
+   "peso_receita": 0.55,
+   "periodo": "9M26",
+   "obs": "R$ 1,32 bi (+4,2%); no 3T26, R$ 443,6 mi (+2,8%), recorde para um terceiro trimestre."
+  },
+  {
+   "nome": "Venda de imóveis",
+   "peso_receita": 0.26,
+   "periodo": "9M26",
+   "obs": "R$ 627,0 mi (+120,9%), inclui R$ 250 mi da venda de 9,33% do ParkShoppingBarigüi no 3T26 e os residenciais Lake Victoria e Lake Eyre."
+  },
+  {
+   "nome": "Estacionamento",
+   "peso_receita": 0.12,
+   "periodo": "9M26",
+   "obs": "R$ 282,2 mi (+15,5%)."
+  },
+  {
+   "nome": "Serviços",
+   "peso_receita": 0.06,
+   "periodo": "9M26",
+   "obs": "R$ 141,8 mi (+8,1%), taxas de administração e corretagem."
+  },
+  {
+   "nome": "Aluguel linear e outras",
+   "peso_receita": 0.01,
+   "periodo": "9M26",
+   "obs": "Líquido de cessão de direitos negativa."
+  }
+ ],
+ "segmentos_base": "Receita bruta (R$ 2,41 bi no 9M26)",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Todos os shoppings, torres e projetos imobiliários ficam no Brasil, concentrados em Rio de Janeiro, São Paulo, Minas Gerais, Paraná, Rio Grande do Sul e Distrito Federal. Não há operação nem projeto anunciado no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "A receita é toda em reais e o release informa que a dívida é toda em moeda local (96,1% em CDI e 3,9% em TR, set/26). Alta do dólar não tem efeito direto; o efeito indireto vem apenas pelo consumo e pelos juros."
+ },
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita líquida foi de R$ 846,0 mi (+37,0% sobre o 3T25), o Ebitda de R$ 598,2 mi (+37,3%, margem de 70,7%) e o lucro líquido de R$ 383,2 mi (+73,3%), com forte peso da venda de 9,33% do ParkShoppingBarigüi por R$ 250 mi em agosto. Sem esse efeito, a operação cresceu menos: receita de locação +2,8%, NOI de R$ 509 mi (+2,2%, margem de 91,6%), vendas dos lojistas de R$ 6,4 bi (+5,9%) e ocupação de 96,0%. A dívida líquida fechou setembro em R$ 4,44 bi, ou 1,76x o Ebitda de 12 meses (1,93x em junho), após emissão de CRI de R$ 300 mi a 96,5% do CDI; o custo médio da dívida caiu para 14,16% ao ano. A empresa aprovou R$ 569 mi em JCP em 12 meses e seguiu recomprando ações.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "96% da dívida bruta de R$ 5,37 bi é em CDI, então juro menor reduz a despesa financeira na hora, além de valorizar os shoppings e ajudar a venda de imóveis."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida são todas em reais; não há efeito direto relevante."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio de aluguel e estacionamento não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais consumo eleva vendas dos lojistas, aluguel percentual e estacionamento, mas a maior parte do aluguel é mínimo contratado e a ocupação já está em 96%, o que limita o ganho."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "Os contratos de aluguel são reajustados pelo IGP-DI e a dívida não é indexada a IPCA, então inflação maior eleva a receita nominal mais que o custo."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior pressiona juros futuros, encarece a dívida em CDI e reduz o valor de imóveis de renda."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Multiplan, Relatório de resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/08dd2899-a019-4531-a90c-f00c9f91b0ff/44012371-21e3-4e38-b7fa-be3e26f81c16",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Money Times: Lucro líquido da Multiplan (MULT3) sobe 73,3% no 3T26, para R$ 383,2 milhões",
+   "url": "https://www.moneytimes.com.br/lucro-liquido-da-multiplan-mult3-sobe-733-no-3t26-para-r-3832-milhoes-bdap/",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "InfoMoney: Multiplan (MULT3), lucro líquido salta 73,3% no ano e chega a R$ 383 mi no 3º tri",
+   "url": "https://www.infomoney.com.br/mercados/multiplan-mult3-resultados-terceiro-trimestre-2026/",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Mercado & Consumo: Multiplan tem alta de 73,3% no 3º trimestre",
+   "url": "https://mercadoeconsumo.com.br/30/10/2026/mc-capital/multiplan-tem-alta-de-733-no-3o-trimestre-impulsionada-por-imoveis-e-shoppings/",
+   "data": "2026-10-30"
+  }
+ ]
+}

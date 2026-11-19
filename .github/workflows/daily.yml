@@ -63,6 +63,10 @@ jobs:
           TZ: America/Sao_Paulo
         run: python pipeline/update.py
 
+      - name: Retorno total (preço ajustado, proventos, CDI e IPCA)
+        if: steps.checar.outputs.pular != 'sim'
+        run: python pipeline/retorno.py || echo "retorno total falhou; mantém os dados anteriores"
+
       - name: Logos de ativos novos
         if: steps.checar.outputs.pular != 'sim'
         run: python pipeline/logos.py

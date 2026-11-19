@@ -1,0 +1,106 @@
+{
+ "ticker": "AGRO3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Compra, desenvolve e vende terras agrícolas, com produção de cana, soja e milho no Brasil, Paraguai e Bolívia. O lucro depende muito do ganho com venda de fazendas; receita e recebíveis seguem preços em dólar.",
+ "modelo": "A BrasilAgro adquire áreas com potencial de valorização, transforma-as em fazendas produtivas e as vende anos depois; o ganho na venda de terras é pontual e concentra boa parte do lucro. Enquanto desenvolve as áreas, vende soja, milho, algodão, cana-de-açúcar e gado, receita recorrente atrelada a preços internacionais. O portfólio soma 254,5 mil hectares, e há R$ 626 mi a receber por fazendas já vendidas, em boa parte corrigidos pelo preço da soja.",
+ "segmentos": [
+  {
+   "nome": "Cana-de-açúcar",
+   "peso_receita": 0.33,
+   "periodo": "1T27",
+   "obs": "R$ 116,3 mi (-10%); trimestre julho a setembro de 2026, primeiro do ano-safra 2026/27."
+  },
+  {
+   "nome": "Soja",
+   "peso_receita": 0.32,
+   "periodo": "1T27",
+   "obs": "R$ 112,1 mi (-7%)."
+  },
+  {
+   "nome": "Milho",
+   "peso_receita": 0.16,
+   "periodo": "1T27",
+   "obs": "R$ 55,2 mi, ante R$ 19,5 mi no 1T26."
+  },
+  {
+   "nome": "Venda de fazendas",
+   "peso_receita": 0.14,
+   "periodo": "1T27",
+   "obs": "Ganho de R$ 50,8 mi com parte da Fazenda Rio do Meio (BA)."
+  },
+  {
+   "nome": "Algodão",
+   "peso_receita": 0.03,
+   "periodo": "1T27",
+   "obs": "R$ 9,0 mi entre pluma e caroço (-56%)."
+  },
+  {
+   "nome": "Pecuária, arrendamento e outros",
+   "peso_receita": 0.02,
+   "periodo": "1T27",
+   "obs": "R$ 8,2 mi."
+  }
+ ],
+ "segmentos_base": "Receita líquida (inclui o ganho com venda de fazenda). O ano fiscal vai de julho a junho; 1T27 = julho a setembro de 2026.",
+ "geografia": {
+  "brasil_pct": 0.78,
+  "exterior_pct": 0.22,
+  "periodo": "1T27",
+  "base": "área útil",
+  "texto": "Da área útil de 190,1 mil hectares, 147,8 mil ficam em seis estados brasileiros, 32,2 mil no Paraguai e 10,1 mil na Bolívia, todos já em operação. A divisão da receita por país não é divulgada no release."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "baixa",
+  "texto": "Soja, milho e algodão têm preço em dólar e os recebíveis de vendas de fazendas são em boa parte cotados em sacas de soja; a empresa trava parte do câmbio (65% da soja 2026/27 a R$ 5,51). A cana é vendida em reais. O release não detalha a fatia da dívida em moeda estrangeira; o efeito líquido de alta do dólar é positivo, como a própria empresa registra para a parcela não protegida."
+ },
+ "momento": "No 1T27 (julho a setembro de 2026, divulgado em 03/11/2026), o lucro líquido foi de R$ 81,3 mi, ante prejuízo de R$ 64,3 mi no 1T26, puxado pelo ganho de R$ 50,8 mi com a venda de 2.593 hectares da Fazenda Rio do Meio, em Correntina (BA), a cerca de R$ 45 mil por hectare útil, e pela valorização de R$ 76,0 mi dos recebíveis de fazendas. A receita operacional ficou estável em R$ 300,9 mi e o Ebitda ajustado das operações caiu 32%, para R$ 43,8 mi, com perda em derivativos e menor margem de soja e milho. A dívida líquida ajustada pelos recebíveis caiu 51% no trimestre, para R$ 136,3 mi, com alavancagem de 1,05x (2,82x em junho). Foram aprovados R$ 30 mi em dividendos (R$ 0,3012 por ação), pagos a partir de 16/11/2026, e 57% da soja 2026/27 já está travada a US$ 12,26 por bushel.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor reduz a despesa com a dívida bruta média de cerca de R$ 1,07 bi e tende a valorizar terras e facilitar a venda de fazendas, motor do lucro."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "Grãos e recebíveis atrelados à soja ganham valor em reais, e terras agrícolas se valorizam com a exportação mais rentável."
+  },
+  "commodities_subindo": {
+   "nota": 2,
+   "porque": "Preço maior de soja e milho eleva receita, valor das terras e o valor dos recebíveis cotados em sacas de soja."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "A demanda e os preços são globais, pouco ligados à atividade doméstica."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "Terra agrícola é ativo real que tende a acompanhar a inflação, e a receita em commodities também reage, o que protege o patrimônio."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "A alta do dólar que costuma acompanhar o risco fiscal favorece receita e recebíveis, enquanto a alavancagem líquida baixa (1,05x) limita o efeito de juros maiores."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "BrasilAgro, Release de Resultados 1T27",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/AGRO3/51608/",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "CNN Brasil: Brasilagro reverte prejuízo e lucra R$ 81,3 milhões no trimestre",
+   "url": "https://www.cnnbrasil.com.br/agro/brasilagro-reverte-prejuizo-e-lucra-r-813-milhoes-no-trimestre/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "BrasilAgro, Release de Resultados 1T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/2c1e0dd9-31eb-4dc0-ab4d-844683600488/621982bf-d8fd-e54e-b60d-9e2cc2ce1cd2?origin=2",
+   "data": "2025-11-06"
+  },
+  {
+   "titulo": "Bloomberg Línea: BrasilAgro sente efeito da cana, mas vê recuperação com grãos e gado, diz CFO",
+   "url": "https://www.bloomberglinea.com.br/agro/brasilagro-sente-efeito-da-cana-mas-ve-recuperacao-a-frente-com-graos-e-gado-diz-cfo/",
+   "data": "2026-02"
+  }
+ ]
+}

@@ -417,6 +417,7 @@ async function render() {
     else if (r === "ativo") await pgAtivo(app, p.toUpperCase());
     else if (r === "comparar") pgComparar(app, q);
     else if (r === "calendario") pgCalendario(app, q);
+    else if (r === "retorno") await pgRetorno(app, q);
     else if (r === "filtros") pgFiltros(app);
     else app.innerHTML = '<div class="cartao"><h1>Página não encontrada</h1><p><a class="lk" href="#/">Voltar ao início</a></p></div>';
   } catch (e) {
@@ -912,7 +913,7 @@ async function pgAtivo(app, t) {
       <div class="sub" style="margin-top:6px">${p.ao_vivo ? `Atualizada às ${new Date(p.ao_vivo).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}` : `Fechamento de ${dataBR(p.data)}`}</div>
       <div class="sub">No ano ${varHtml(p.var_ano)} · 12 meses ${varHtml(p.var_12m)}</div>
       ${pos52 !== null ? `<div class="faixa52"><div class="trilho"><span class="marc" style="left:${pos52}%"></span></div><div class="ext"><span>Mín. 52 semanas R$ ${nf2.format(p.min_52s)}</span><span>Máx. R$ ${nf2.format(p.max_52s)}</span></div></div>` : ""}</div>
-      <div class="chips" id="px-per"><button class="chip ativo" data-p="1">1A</button><button class="chip" data-p="5">5A</button><button class="chip" data-p="10">10A</button></div></div>
+      <div class="linha" style="gap:8px"><a class="btn peq" href="#/retorno?t=${t}&p=10&m=ambos&b=cdi,ipca6">Retorno total com proventos</a><div class="chips" id="px-per"><button class="chip ativo" data-p="1">1A</button><button class="chip" data-p="5">5A</button><button class="chip" data-p="10">10A</button></div></div></div>
     <div class="grafico" style="margin-top:12px"><canvas id="g-preco"></canvas></div>
     <div class="badges" style="margin-top:12px">${[a.setor_macro, a.setor_micro, i.porte, SEGMENTO_B3[a.segmento_listagem], TIPO_CURTO[a.tipo]].filter(Boolean).map((b) => `<span class="badge">${esc(b)}</span>`).join("")}</div>
   </div>
@@ -1396,6 +1397,106 @@ const LIDERES = [
   { k: "dy", nome: "Maior dividend yield", dir: 1 }, { k: "tir_implicita", nome: "Maior TIR implícita", dir: 1 },
 ];
 const MINIS = ["pl", "pvp", "roe", "margem_liquida", "margem_fcl", "fcf_yield", "dy", "tir_implicita", "nota_criterios"];
+/* =====================================================================
+   RETORNO TOTAL: ações com e sem reinvestimento de proventos contra CDI, IPCA + X% e Ibovespa
+   ===================================================================== */
+const RT_CORES = ["#33c47a", "#5b8def", "#e8a33d", "#c678dd", "#e06c75", "#56b6c2"];
+const RT_BENCH = { cdi: ["CDI", "#9aa3ad"], ipca4: ["IPCA + 4%", "#b08968"], ipca5: ["IPCA + 5%", "#d4a373"], ipca6: ["IPCA + 6%", "#e9c46a"], ibov: ["Ibovespa", "#7f8c99"] };
+async function pgRetorno(app, q) {
+  const sel = [...new Set((q.get("t") || "").split(",").map((x) => x.trim().toUpperCase()).filter((x) => D.univMap[x]))].slice(0, 6);
+  const anos = q.get("p") || "5", modo = q.get("m") || "ambos";
+  const bench = (q.get("b") ?? "cdi,ipca6").split(",").filter((x) => RT_BENCH[x]);
+  const ir = (o) => {
+    const st = { t: sel.join(","), p: anos, m: modo, b: bench.join(","), ...o };
+    location.hash = `#/retorno?t=${st.t}&p=${st.p}&m=${st.m}&b=${st.b}`;
+  };
+  app.innerHTML = `${trilha([["Retorno total"]])}<div class="cab-pagina"><div><h1>Retorno total</h1>
+    <p>Quanto R$ 1.000 investidos viraram, somando a variação do preço e os proventos. Compare com CDI, IPCA + juro real e Ibovespa.</p></div></div>
+  <div class="cartao rt-ctrl">
+    <div class="linha"><div class="chips">${sel.map((t, i) => `<button class="chip ativo" data-rm="${t}"><i class="rt-cor" style="background:${RT_CORES[i]}"></i>${logo(t)}${t}<span class="x">✕</span></button>`).join("") || '<span class="muted">Escolha até 6 ações.</span>'}</div>
+      <select id="rt-add"><option value="">Adicionar ação</option>${D.univ.filter((a) => !sel.includes(a.ticker)).map((a) => `<option value="${a.ticker}">${a.ticker} · ${esc(a.nome)}</option>`).join("")}</select></div>
+    <div class="linha rt-opcoes">
+      <div class="abas" id="rt-per" style="margin:0">${[["1", "1 ano"], ["3", "3 anos"], ["5", "5 anos"], ["10", "10 anos"], ["15", "15 anos"]].map(([v, n]) => `<button data-v="${v}" class="${v === anos ? "ativo" : ""}">${n}</button>`).join("")}</div>
+      <div class="abas" id="rt-modo" style="margin:0">${[["com", "Com reinvestimento"], ["sem", "Sem reinvestimento"], ["ambos", "Os dois"]].map(([v, n]) => `<button data-v="${v}" class="${v === modo ? "ativo" : ""}">${n}</button>`).join("")}</div>
+      <div class="rt-bench">${Object.entries(RT_BENCH).map(([k, [n, c]]) => `<label><input type="checkbox" value="${k}" ${bench.includes(k) ? "checked" : ""}><i class="rt-cor" style="background:${c}"></i>${n}</label>`).join("")}</div>
+    </div></div>
+  <div id="rt-saida"><div class="carregando"><span></span>Carregando</div></div>`;
+  $$("[data-rm]").forEach((b) => b.onclick = () => ir({ t: sel.filter((x) => x !== b.dataset.rm).join(",") }));
+  $("#rt-add").onchange = (e) => { if (e.target.value && sel.length < 6) ir({ t: [...sel, e.target.value].join(",") }); };
+  $$("#rt-per button").forEach((b) => b.onclick = () => ir({ p: b.dataset.v }));
+  $$("#rt-modo button").forEach((b) => b.onclick = () => ir({ m: b.dataset.v }));
+  $$(".rt-bench input").forEach((c) => c.onchange = () => ir({ b: $$(".rt-bench input").filter((x) => x.checked).map((x) => x.value).join(",") }));
+  if (!sel.length && !bench.length) { $("#rt-saida").innerHTML = '<div class="cartao"><p class="vazio">Escolha uma ação ou uma referência.</p></div>'; return; }
+
+  const bm = D.cache.rtBench || (D.cache.rtBench = await j("data/retorno/_benchmarks.json", null));
+  const series = await Promise.all(sel.map((t) => D.cache["rt" + t] ? D.cache["rt" + t] : j(`data/retorno/${t}.json`, null).then((x) => (D.cache["rt" + t] = x))));
+  if (!bm) { $("#rt-saida").innerHTML = '<div class="cartao"><p class="vazio">Dados de retorno total indisponíveis no momento.</p></div>'; return; }
+  const inicio = new Date(); inicio.setFullYear(inicio.getFullYear() - +anos);
+  const ini = inicio.toISOString().slice(0, 10);
+  // calendário semanal: sextas do Ibovespa no período
+  const cal = (bm.ibov || []).map(([d]) => d).filter((d) => d >= ini);
+  if (cal.length < 2) { $("#rt-saida").innerHTML = '<div class="cartao"><p class="vazio">Sem dados para o período.</p></div>'; return; }
+  const ultimo = (lista, d, k) => { let lo = 0, hi = lista.length - 1, r = null; while (lo <= hi) { const m = (lo + hi) >> 1; if (lista[m][0] <= d) { r = lista[m]; lo = m + 1; } else hi = m - 1; } return r; };
+  // taxa mensal com composição por fração do mês; meses sem dado usam a última taxa publicada
+  const indiceMensal = (lista, extra = 0) => {
+    const mapa = Object.fromEntries(lista), ultimaTaxa = lista[lista.length - 1][1];
+    return (d0, d1) => {
+      let f = 1, a = new Date(d0 + "T12:00:00"); const b = new Date(d1 + "T12:00:00");
+      while (a < b) {
+        const y = a.getFullYear(), m = a.getMonth(), fimMes = new Date(y, m + 1, 1, 12), ate = fimMes < b ? fimMes : b;
+        const dias = new Date(y, m + 1, 0).getDate(), frac = (ate - a) / 864e5 / dias;
+        const r = mapa[`${y}-${String(m + 1).padStart(2, "0")}`] ?? ultimaTaxa;
+        f *= Math.pow((1 + r) * Math.pow(1 + extra, 1 / 12), frac);
+        a = ate;
+      }
+      return f;
+    };
+  };
+  const dsets = [], linhasTab = [];
+  const anual = (v, d0, d1) => { const anosP = (new Date(d1) - new Date(d0)) / (365.25 * 864e5); return anosP > 0.9 ? Math.pow(v / 1000, 1 / anosP) - 1 : null; };
+  const addLinha = (nome, corL, vals, extra = {}) => {
+    const idx = vals.findIndex(ok); if (idx < 0) return;
+    const fim = vals[vals.length - 1];
+    dsets.push({ label: nome, data: vals, borderColor: corL, backgroundColor: corL, borderWidth: extra.borderWidth || 2, borderDash: extra.borderDash || [], pointRadius: 0, tension: 0.1, spanGaps: true });
+    linhasTab.push({ nome, cor: corL, fim, desde: cal[idx], total: fim / 1000 - 1, aa: anual(fim, cal[idx], cal[cal.length - 1]), tracej: !!extra.borderDash });
+  };
+  sel.forEach((t, i) => {
+    const s = series[i] && series[i].semanal;
+    if (!s || !s.length) return;
+    const pos = s.filter((x) => x[0] >= ini);
+    if (!pos.length) return;
+    const p0 = pos[0];
+    let acum = 0, k = s.indexOf(p0);
+    const com = [], sem = [];
+    for (const d of cal) {
+      if (d < p0[0]) { com.push(null); sem.push(null); continue; }
+      while (k + 1 < s.length && s[k + 1][0] <= d) { k++; acum += s[k][3] || 0; }
+      const x = s[k];
+      com.push(1000 * x[2] / p0[2]);
+      sem.push(1000 * (x[1] + acum) / p0[1]);
+    }
+    if (modo !== "sem") addLinha(modo === "ambos" ? `${t} com reinvestimento` : t, RT_CORES[i], com);
+    if (modo !== "com") addLinha(modo === "ambos" ? `${t} sem reinvestimento` : t, RT_CORES[i], sem, { borderDash: modo === "ambos" ? [6, 4] : [], borderWidth: modo === "ambos" ? 1.6 : 2 });
+  });
+  const d0 = cal[0];
+  if (bench.includes("cdi")) { const f = indiceMensal(bm.cdi); addLinha("CDI", RT_BENCH.cdi[1], cal.map((d) => 1000 * f(d0, d)), { borderWidth: 1.6 }); }
+  for (const [k, x] of [["ipca4", 0.04], ["ipca5", 0.05], ["ipca6", 0.06]]) if (bench.includes(k)) { const f = indiceMensal(bm.ipca, x); addLinha(RT_BENCH[k][0], RT_BENCH[k][1], cal.map((d) => 1000 * f(d0, d)), { borderWidth: 1.6 }); }
+  if (bench.includes("ibov")) { const b0 = ultimo(bm.ibov, d0)[1]; addLinha("Ibovespa (só pontos)", RT_BENCH.ibov[1], cal.map((d) => 1000 * ultimo(bm.ibov, d)[1] / b0), { borderWidth: 1.6 }); }
+
+  const o = optGraf({ legenda: true });
+  o.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: R$ ${ok(ctx.parsed.y) ? nf2.format(ctx.parsed.y) : "n/d"}`;
+  o.plugins.tooltip.itemSort = (a, b) => (b.parsed.y || 0) - (a.parsed.y || 0);
+  linhasTab.sort((a, b) => b.fim - a.fim);
+  $("#rt-saida").innerHTML = `<div class="cartao"><div class="grafico alto"><canvas id="g-rt"></canvas></div>
+    <p class="sub" style="margin-top:8px">Valor de R$ 1.000 investidos em ${dataBR(d0)}, semana a semana. ${modo === "ambos" ? "Linha cheia: proventos reinvestidos na própria ação. Linha tracejada: proventos guardados em dinheiro, sem render." : modo === "com" ? "Proventos reinvestidos na própria ação na data ex." : "Proventos guardados em dinheiro, sem render."}</p></div>
+  <div class="cartao" style="margin-top:16px"><div class="cartao-cab"><h3>Resultado no período</h3><button class="btn peq" id="rt-xls">Baixar Excel</button></div>
+    <div class="tabela-wrap"><table class="resp"><thead><tr><th>Investimento</th><th class="n">R$ 1.000 viraram</th><th class="n">Retorno no período</th><th class="n">Retorno ao ano</th></tr></thead><tbody>
+    ${linhasTab.map((l) => `<tr><td data-label="Investimento"><i class="rt-cor${l.tracej ? " tracej" : ""}" style="background:${l.cor}"></i>${esc(l.nome)}${l.desde !== d0 ? ` <span class="muted">desde ${dataBR(l.desde)}</span>` : ""}</td><td class="n" data-label="R$ 1.000 viraram"><b>R$ ${nf2.format(l.fim)}</b></td><td class="n" data-label="Retorno no período">${varHtml(l.total)}</td><td class="n" data-label="Retorno ao ano">${ok(l.aa) ? varHtml(l.aa) : '<span class="muted">menos de 1 ano</span>'}</td></tr>`).join("")}
+    </tbody></table></div>
+    <p class="sub" style="margin-top:10px">Fontes: preços e proventos da B3 via Yahoo Finance (fechamento ajustado por proventos para o reinvestimento; proventos em dinheiro, antes do IR, para o sem reinvestimento); CDI e IPCA mensais do Banco Central (séries 4391 e 433), com o último mês publicado repetido até sair o próximo. Sem custos, impostos e taxas. Rentabilidade passada não garante rentabilidade futura.</p></div>`;
+  charts.push(new Chart($("#g-rt"), { type: "line", data: { labels: cal.map(dataBR), datasets: dsets }, options: o }));
+  $("#rt-xls").onclick = () => baixarExcel(`retorno_total_${anos}_anos`, [{ nome: "Retorno total", cab: ["Investimento", "Desde", "R$ 1.000 viraram (R$)", "Retorno no período (%)", "Retorno ao ano (%)"], linhas: linhasTab.map((l) => [l.nome, dataBR(l.desde), +l.fim.toFixed(2), +(l.total * 100).toFixed(2), ok(l.aa) ? +(l.aa * 100).toFixed(2) : null]) }]);
+}
 function pgComparar(app, q) {
   let sel = (q.get("t") || "").split(",").map((x) => x.trim().toUpperCase()).filter((x) => D.fund[x]);
   const setor = q.get("setor");

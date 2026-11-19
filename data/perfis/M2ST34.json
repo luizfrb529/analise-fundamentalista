@@ -1,0 +1,94 @@
+{
+ "ticker": "M2ST34",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR da Strategy (antiga MicroStrategy), maior empresa de capital aberto com bitcoin em caixa: 850.849 BTC em nov/26. O valor acompanha o bitcoin, o dólar e o custo das ações preferenciais emitidas.",
+ "modelo": "A Strategy capta recursos com venda de ações ordinárias (MSTR), ações preferenciais perpétuas (STRF, STRC, STRK, STRD e a STRE, em euro) e dívida conversível, e usa o dinheiro para comprar bitcoin. O resultado contábil depende quase todo da variação do preço do bitcoin, registrado a valor justo desde 2025. Mantém também o negócio original de software de análise de dados, com receita recorrente de assinaturas e suporte, pequena frente ao bitcoin. O BDR M2ST34 é negociado na B3 e representa ações listadas na Nasdaq.",
+ "segmentos": [
+  {
+   "nome": "Software: assinaturas em nuvem",
+   "peso_receita": 0.55,
+   "periodo": "3T26",
+   "obs": "US$ 68,6 milhões, alta de 49%."
+  },
+  {
+   "nome": "Software: suporte de produtos",
+   "peso_receita": 0.3,
+   "periodo": "3T26",
+   "obs": "US$ 37,7 milhões, queda de 26% com a migração de licenças para nuvem."
+  },
+  {
+   "nome": "Software: outros serviços",
+   "peso_receita": 0.12,
+   "periodo": "3T26",
+   "obs": "US$ 15,3 milhões."
+  },
+  {
+   "nome": "Software: licenças",
+   "peso_receita": 0.03,
+   "periodo": "3T26",
+   "obs": "US$ 3,8 milhões."
+  }
+ ],
+ "segmentos_base": "Receita líquida do software (US$ 125,4 milhões no 3T26). O principal ativo e motor do resultado é a carteira de bitcoin, que não gera receita.",
+ "geografia": {
+  "brasil_pct": 0.0,
+  "exterior_pct": 1.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Do ponto de vista do investidor brasileiro, toda a receita é externa. Na receita de software dos 9M26, 56% vieram dos EUA, 35% de Europa, Oriente Médio e África e 9% de outras regiões, que incluem América Latina; o bitcoin é custodiado e contabilizado nos EUA."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "média",
+  "texto": "Ativos e passivos são em dólar e o BDR replica a ação em dólar convertida para reais, então a alta do dólar valoriza o BDR na B3. Em set/26 havia US$ 6,72 bilhões em dívida conversível e US$ 14,11 bilhões em preferenciais (valor de liquidação), contra bitcoin avaliado em US$ 68,90 bilhões em out/26 e reserva em dólar de US$ 4,75 bilhões em nov/26."
+ },
+ "momento": "No 3T26 (divulgado em 29/10/2026), o lucro operacional foi recorde, de US$ 20,91 bilhões, e o lucro líquido de US$ 19,53 bilhões (US$ 44,75 por ação), contra US$ 2,79 bilhões no 3T25, efeito da alta do bitcoin no trimestre; nos 9M26 houve prejuízo líquido de US$ 1,23 bilhão. A receita do software caiu 3%, para US$ 125,4 milhões. Para sustentar a preferencial STRC perto de US$ 100, a empresa recomprou cerca de US$ 2,04 bilhões dessas ações no ano até out/26, manteve o dividendo em 12% ao ano, vendeu US$ 431,8 milhões em bitcoin para pagar dividendos e recompras e passou a pagar dividendos diários. Em 15/11/2026 detinha 850.849 BTC, com custo médio de US$ 75.452 por unidade. O CFO Andrew Kang deixou o cargo em 05/11/2026; Reza Virasteh assume em 01/01/2027.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A empresa não tem operação de crédito no Brasil; a Selic só afeta o BDR pela comparação com a renda fixa local."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "Bitcoin e ação são cotados em dólar: cada alta do dólar se soma diretamente ao retorno do BDR em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities; o valor segue o bitcoin."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O PIB brasileiro não interfere na carteira de bitcoin nem no software, vendido sobretudo nos EUA e na Europa."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação brasileira não afeta a operação; o efeito sobre o bitcoin vem de juros e liquidez globais."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal no Brasil tende a desvalorizar o real, o que eleva o BDR em reais, mas a forte volatilidade do bitcoin limita o efeito de proteção."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Strategy, Press Release 3T26 (Exhibit 99.1 ao 8-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1050446/000105044626000047/mstr-20261029x8kxex9912.htm",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Strategy, Form 10-Q do 3T26 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1050446/000105044626000060/mstr-20260930.htm",
+   "data": "2026-11-02"
+  },
+  {
+   "titulo": "Strategy, Form 8-K de 16/11/2026: compras de bitcoin, recompras e reserva em dólar (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526462151/mstr-20261116.htm",
+   "data": "2026-11-16"
+  },
+  {
+   "titulo": "Bitcoin Treasuries: Strategy reports record $21 billion Q3 operating income as CFO steps down",
+   "url": "https://bitcointreasuries.net/news/strategy-reports-record-dollar21-billion-q3-operating-income-as-cfo-steps-down",
+   "data": "2026-10-29"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "ticker": "COGN3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Grupo de educação com ensino superior (Kroton, cerca de 65% da receita) e educação básica (Somos, com Vasta e Saber). Dívida toda em CDI e receita sensível a programas do governo, como PNLD e Fies.",
+ "modelo": "A Cogna atua em duas frentes. No ensino superior, a Kroton (Anhanguera, Unopar, Pitágoras e outras marcas) cobra mensalidades em cursos presenciais, semipresenciais e a distância, com parte dos alunos financiada por Fies e bolsas do Prouni. Na educação básica, a unidade Somos reúne Vasta (sistemas de ensino e serviços para escolas privadas, por assinatura) e Saber (livros didáticos e venda ao governo via PNLD e compras de estados e municípios, o B2G). A receita do ensino superior e das assinaturas é recorrente; a do PNLD e do B2G é pontual e segue o calendário de compras públicas.",
+ "segmentos": [
+  {
+   "nome": "Ensino superior (Kroton)",
+   "peso_receita": 0.65,
+   "periodo": "9M26",
+   "obs": "Calculado por diferença; no 3T26 somou R$ 1,13 bi, estável, com alta no presencial e semipresencial e queda de 12,1% no EAD."
+  },
+  {
+   "nome": "Educação básica (Vasta e Saber)",
+   "peso_receita": 0.35,
+   "periodo": "9M26",
+   "obs": "R$ 1,92 bi no 9M26 (+40,0%), puxados pelo PNLD; no 3T26 caiu 18,6%, para R$ 315,5 mi."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Opera só no Brasil, com faculdades e polos em todo o país e materiais didáticos vendidos a escolas privadas e redes públicas. A Vasta deixou a Nasdaq no início de 2026, e a Cogna não tem mais ações negociadas no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita em reais e 100% da dívida bruta corporativa atrelada ao CDI após hedge, ao custo médio de CDI + 1,55%. A alta do dólar só afeta de forma indireta o custo do papel usado nos livros."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), a receita líquida foi de R$ 1,44 bi (-5,2% sobre o 3T25), o Ebitda recorrente de R$ 320,4 mi (-24,2%, margem de 22,2% ante 27,7%) e houve prejuízo de R$ 37,3 mi, ante lucro de R$ 191,6 mi um ano antes, base que incluía R$ 126,3 mi de imposto diferido; o lucro ajustado foi de R$ 22,8 mi (-90,9%). A empresa atribuiu a queda ao calendário do PNLD, cuja receita caiu 75,6% no trimestre, ao ritmo mais lento de contratos com governos no período eleitoral e à base forte do ensino superior em 2025, antes do novo marco regulatório do EAD. No 9M26, a receita cresceu 15,3% e o Ebitda recorrente 3,9%. A dívida líquida caiu R$ 239,2 mi no trimestre, para R$ 2,54 bi, e a alavancagem chegou a 1,04x, a menor da história da empresa; em julho foi concluído o fechamento de capital da Vasta e iniciada a integração da Educbank.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Toda a dívida corporativa é em CDI, e juro menor também barateia o crédito estudantil e alivia a inadimplência de alunos de renda média e baixa."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida em reais; o dólar afeta só indiretamente o custo do papel dos livros."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities; a celulose influencia o papel, mas é custo pequeno frente ao total."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Mais emprego e renda elevam matrículas e rematrículas no ensino superior, pago em boa parte pelo próprio aluno, e reduzem evasão e inadimplência."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Mensalidades são reajustadas uma vez por ano, mas inflação alta corrói a renda do aluno e eleva salários de professores, com repasse limitado pela concorrência."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Parte relevante da receita depende de verbas públicas (PNLD, compras de estados e municípios, Fies e Prouni), que ficam mais incertas com aperto fiscal, além do efeito de juros mais altos."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Cogna, Resultados 3T26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/COGN3/52537/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Cogna, Release de Resultados 3T25",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/e1110a12-6e58-4cb0-be24-ed1d5f18049a/31d126b0-b7b4-d40e-552e-7ea97b8b6256?origin=1",
+   "data": "2025-11-06"
+  },
+  {
+   "titulo": "DGABC (Estadão Conteúdo): Cogna registrou prejuízo líquido de R$ 37,3 milhões no terceiro trimestre de 2026",
+   "url": "https://www.dgabc.com.br/Noticia/4368261/cogna-registrou-prejuizo-liquido-de-r-37-3-milhoes-no-terceiro-trimestre-de-2026",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Reuters, via Prensa Mercosur: Cogna tem prejuízo de R$ 37 mi no 3º tri com sazonalidade",
+   "url": "https://prensamercosur.org/2026/11/12/cogna-cogn3-tem-prejuizo-de-r37-mi-no-3o-tri-com-sazonalidade/",
+   "data": "2026-11-12"
+  }
+ ]
+}

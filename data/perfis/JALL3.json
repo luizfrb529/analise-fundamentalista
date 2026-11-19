@@ -1,0 +1,94 @@
+{
+ "ticker": "JALL3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Produtora de açúcar, inclusive orgânico, etanol e energia em Goiás e Minas Gerais. Formou estoque de etanol no 2T27 para vender na entressafra, o que derrubou a receita do trimestre.",
+ "modelo": "A Jalles mói cana em três unidades (Jalles Machado e Otávio Lage, em Goiás, e Santa Vitória, em Minas Gerais) e vende açúcar cristal, VHP e orgânico, etanol anidro, hidratado e orgânico, energia elétrica, levedura, CBIOs e saneantes da marca Albertina. É uma das maiores exportadoras mundiais de açúcar orgânico. A receita é recorrente e depende de safra e preços; a empresa fixa preços de açúcar com antecedência e o ano fiscal vai de abril a março.",
+ "segmentos": [
+  {
+   "nome": "Açúcar (cristal, VHP e orgânico)",
+   "peso_receita": 0.47,
+   "periodo": "6M27 (abr a set/26)",
+   "obs": "Cerca de R$ 367 mi de receita bruta, incluindo exportações de VHP e orgânico."
+  },
+  {
+   "nome": "Etanol (anidro, hidratado e orgânico)",
+   "peso_receita": 0.4,
+   "periodo": "6M27 (abr a set/26)",
+   "obs": "Cerca de R$ 310 mi; a empresa fechou setembro com 200,2 mil m³ em estoque (+79,5%)."
+  },
+  {
+   "nome": "Energia elétrica",
+   "peso_receita": 0.09,
+   "periodo": "6M27 (abr a set/26)",
+   "obs": "R$ 68,5 mi."
+  },
+  {
+   "nome": "Saneantes, levedura, CBIOs e outros",
+   "peso_receita": 0.04,
+   "periodo": "6M27 (abr a set/26)",
+   "obs": "Cerca de R$ 32 mi."
+  }
+ ],
+ "segmentos_base": "Receita operacional bruta (o release abre os produtos só na receita bruta)",
+ "geografia": {
+  "brasil_pct": 0.84,
+  "exterior_pct": 0.16,
+  "periodo": "6M27",
+  "base": "receita bruta (mercado interno x externo)",
+  "texto": "As usinas ficam em Goiás e Minas Gerais. As exportações, de açúcar VHP e orgânico, somaram R$ 121,0 mi de R$ 778,3 mi de receita bruta nos 6M27, fatia menor que a de anos anteriores por causa de menor volume vendido."
+ },
+ "moeda": {
+  "receita_em_dolar": "média",
+  "divida_em_dolar": "baixa",
+  "texto": "Cerca de 16% da receita bruta dos 6M27 veio de exportação, e o preço do açúcar vendido no Brasil segue a paridade internacional. Só 8,4% da dívida estava em dólar em set/26, incluindo US$ 60 mi da IFC trocados por CDI via swap; o açúcar de 2027/28 (196 mil t) e 2028/29 (76,4 mil t) já está parcialmente fixado em reais."
+ },
+ "momento": "No 2T27 (jul a set/26, divulgado em 12/11/2026), a receita líquida caiu 47,5%, para R$ 336,3 mi, porque a empresa reteve etanol em estoque, e o Ebitda ajustado após hedge foi de R$ 270,1 mi (-40,8%); o lucro líquido subiu 118,8%, para R$ 41,4 mi, mas o semestre teve prejuízo de R$ 32,7 mi. A produtividade agrícola subiu 17,4%, para 86,6 t/ha, e o custo por tonelada de ATR caiu 5,9% no semestre. A dívida líquida ficou em R$ 2,0 bi e a alavancagem subiu de 1,2x para 2,0x Ebitda em 12 meses, com caixa de R$ 2,07 bi e custo médio da dívida de CDI + 0,15%. Em 12/11/2026 o conselho aprovou recompra de até 4 milhões de ações em 18 meses, e a S&P reafirmou o rating brAAA em setembro.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Com dívida majoritariamente em CDI e alavancagem de 2,0x, juro menor reduz a despesa financeira, embora o caixa de R$ 2,07 bi também renda menos."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Exportações e a paridade do açúcar sobem em reais, mas a receita externa foi só 16% nos 6M27 e parte das próximas safras já está fixada em reais."
+  },
+  "commodities_subindo": {
+   "nota": 2,
+   "porque": "Açúcar e etanol mais caros elevam a margem e valorizam os 200 mil m³ de etanol em estoque para venda na entressafra."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O resultado depende de safra, clima e preços de açúcar e etanol, mais do que do ritmo da economia."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Etanol acompanha a gasolina, enquanto diesel, fertilizantes e mão de obra também sobem, sem efeito líquido claro."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Real mais fraco ajuda o açúcar em reais, mas juros maiores encarecem a dívida em CDI, efeitos que se compensam."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Jalles, Release de resultados 2T27 safra 2026/27 (via Investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/JALL3/52792/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Jalles, Fato Relevante: aprovação de programa de recompra de ações (via Investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/JALL3/52790/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "NovaCana (Money Times): Jalles amplia lucro em 118,8% no 2º trimestre de 2026/27 apesar de queda na receita",
+   "url": "https://www.novacana.com/noticias/jalles-amplia-lucro-em-118-8-no-2-trimestre-de-2026-27-apesar-de-queda-na-receita",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Compre Rural (Estadão Conteúdo): Jalles Machado tem lucro líquido de R$ 41,4 mi no 2º tri 2026/27",
+   "url": "https://comprerural.com/jalles-machado-tem-lucro-liquido-de-r-414-mi-no-2o-tri-2026-27/",
+   "data": "2026-11-13"
+  }
+ ]
+}

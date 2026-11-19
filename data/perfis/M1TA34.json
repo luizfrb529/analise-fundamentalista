@@ -1,0 +1,93 @@
+{
+ "ticker": "M1TA34",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR da Meta, dona de Facebook, Instagram, WhatsApp e Messenger. Quase toda a receita vem de publicidade e é gerada fora do Brasil, então o BDR acompanha a ação em dólar e o câmbio.",
+ "modelo": "A Meta vende anúncios exibidos em seus aplicativos (Facebook, Instagram, Messenger, WhatsApp e Threads), que somavam 3,64 bilhões de pessoas ativas por dia em set/26. A receita é recorrente, ligada ao volume de anúncios e ao preço médio cobrado de anunciantes do mundo todo. O segmento Reality Labs (óculos e realidade virtual) é pequeno e dá prejuízo, e a empresa investe pesado em data centers e modelos de inteligência artificial. O BDR M1TA34 é negociado na B3 e representa ações listadas na Nasdaq.",
+ "segmentos": [
+  {
+   "nome": "Family of Apps: publicidade",
+   "peso_receita": 0.976,
+   "periodo": "3T26",
+   "obs": "US$ 63,1 bilhões, alta de 26%; impressões +10% e preço médio por anúncio +14%."
+  },
+  {
+   "nome": "Family of Apps: outras receitas",
+   "peso_receita": 0.017,
+   "periodo": "3T26",
+   "obs": "US$ 1,1 bilhão, inclui WhatsApp Business e assinaturas."
+  },
+  {
+   "nome": "Reality Labs",
+   "peso_receita": 0.007,
+   "periodo": "3T26",
+   "obs": "US$ 443 milhões de receita e prejuízo operacional de US$ 4,13 bilhões."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão).",
+ "geografia": {
+  "brasil_pct": 0.0,
+  "exterior_pct": 1.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Do ponto de vista do investidor brasileiro, toda a receita é externa. Pelo endereço do cliente, 40,6% vieram de EUA e Canadá, 26,3% da Ásia-Pacífico, 21,7% da Europa e 11,4% do resto do mundo, grupo que inclui a América Latina; a fatia do Brasil não é divulgada."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "média",
+  "texto": "Os resultados são em dólar e o BDR replica a ação em dólar convertida para reais, então a alta do dólar valoriza o BDR na B3. A dívida de longo prazo subiu para US$ 80,9 bilhões em set/26 (US$ 58,7 bilhões em dez/25), contra US$ 82,5 bilhões em caixa e aplicações, e em novembro a empresa emitiu mais US$ 15 bilhões e 9 bilhões de euros em títulos para financiar data centers."
+ },
+ "momento": "No 3T26 (divulgado em 21/10/2026), a receita cresceu 26%, para US$ 64,6 bilhões, e o lucro líquido foi de US$ 9,86 bilhões (alta de 264% sobre uma base reduzida por encargo tributário em 2025). O lucro operacional caiu 37%, para US$ 12,99 bilhões, por uma provisão de US$ 9,89 bilhões ligada ao acordo de até US$ 18,59 bilhões com 52 procuradores-gerais dos EUA sobre saúde mental de adolescentes; sem ela, seria de US$ 22,88 bilhões. O investimento no trimestre foi de US$ 34,9 bilhões e o fluxo de caixa livre ficou negativo em US$ 2,1 bilhões; a projeção de investimento em 2026 é de US$ 135 a 145 bilhões e a de receita do 4T26, de US$ 73 a 76 bilhões. Para financiar a expansão em IA, a Meta levantou cerca de US$ 12,5 bilhões em preferenciais conversíveis obrigatórias e acertou a venda futura de 40 milhões de ações (out/26), além de criar uma classe C de ações sem voto, a ser distribuída a partir de 19/01/2027.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A empresa não depende de crédito no Brasil; a Selic só afeta o BDR pela comparação com a renda fixa local."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "O BDR é a ação em dólar convertida para reais: cada alta do dólar se soma diretamente ao retorno em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Publicidade digital tem baixa dependência de commodities; energia para data centers é o custo mais próximo, com efeito limitado."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O Brasil é parte pequena da receita; o que importa é o gasto global com publicidade."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação brasileira não afeta a operação, que é global e precificada em leilões de anúncios."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal no Brasil tende a desvalorizar o real, o que eleva o BDR em reais e funciona como proteção para o investidor local."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Meta Reports Third Quarter 2026 Results (Exhibit 99.1 ao 8-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "Meta, Form 10-Q do 3T26: receita por região (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+   "data": "2026-10-22"
+  },
+  {
+   "titulo": "Meta, Form 8-K de 29/10/2026: preferenciais conversíveis e venda futura de ações (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526438017/d183592d8k.htm",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Meta, Forms 8-K de 05/11 e 12/11/2026: emissões de títulos em dólar e em euro (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "PPC Land: Meta takes $9.89bn teen settlement charge as ad revenue gains 26%",
+   "url": "https://ppc.land/meta-takes-9-89bn-teen-settlement-charge-as-ad-revenue-gains-26/",
+   "data": "2026-10-21"
+  }
+ ]
+}

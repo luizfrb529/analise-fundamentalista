@@ -1,0 +1,82 @@
+{
+ "ticker": "SOJA3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior vendedora de sementes de soja do país, com vendas concentradas no segundo semestre, época do plantio. O lucro do 3T26 caiu 44% pela alta da despesa financeira, embora a margem operacional tenha subido.",
+ "modelo": "A Boa Safra produz sementes de soja com produtores integrados, beneficia em unidades próprias em Goiás, Minas Gerais, Bahia, Tocantins e Mato Grosso e vende a produtores rurais, em parte a prazo. Vem ampliando a oferta de outras culturas, serviços e insumos, que já são 22% da carteira de pedidos. A receita é recorrente a cada safra, mas sazonal, concentrada entre julho e dezembro.",
+ "segmentos": [
+  {
+   "nome": "Sementes de soja",
+   "peso_receita": 0.82,
+   "periodo": "3T26",
+   "obs": "R$ 889 mi de receita bruta (-6%), de um total de R$ 1.089 mi."
+  },
+  {
+   "nome": "Novas culturas, serviços, insumos e outras receitas",
+   "peso_receita": 0.18,
+   "periodo": "3T26",
+   "obs": "Cerca de R$ 200 mi, por diferença; nos 9M26, novas culturas, serviços e insumos somaram R$ 238 mi (+17%)."
+  }
+ ],
+ "segmentos_base": "Receita operacional bruta",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Produção e vendas no Brasil, com foco em Mato Grosso, Goiás, Minas Gerais, Tocantins e Bahia. Não há receita relevante no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "nenhuma",
+  "texto": "As sementes são vendidas em reais, mas o preço acompanha a soja, cotada em dólar, o que liga indiretamente a receita ao câmbio. A dívida é em CRAs em reais. Dólar mais alto melhora a renda do produtor e tende a favorecer a demanda e o recebimento."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), a receita líquida foi de R$ 1,03 bi (-7% sobre o 3T25, sem o fundo SNAG11, desconsolidado no 1T26), mas o lucro bruto subiu 25%, para R$ 128,9 mi (margem de 13% ante 9%), e o Ebitda ajustado 33%, para R$ 121,3 mi. O lucro das operações continuadas caiu 44%, para R$ 26,3 mi, porque o resultado financeiro foi negativo em R$ 59,7 mi (R$ 12,9 mi no 3T25), com juros de CRAs subindo de R$ 15 mi para R$ 55 mi. A dívida líquida fechou setembro em R$ 866 mi (R$ 652 mi um ano antes), com dívida bruta de R$ 1,93 bi, 92% no longo prazo, e caixa de R$ 1,06 bi. A carteira de pedidos atingiu R$ 1,18 bi (+37%), recorde para um terceiro trimestre, e o estoque de sementes de soja era de R$ 419 mi.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "A despesa financeira com CRAs já consome metade do Ebitda do trimestre, e juro menor também barateia o crédito do produtor que compra a prazo."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Soja mais cara em reais melhora a renda do produtor e a demanda por sementes, sem dívida ou custo relevante em dólar."
+  },
+  "commodities_subindo": {
+   "nota": 2,
+   "porque": "Preço da soja maior capitaliza o produtor, sustenta o investimento em sementes de maior tecnologia e reduz o risco de inadimplência."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "A demanda depende da área plantada e do preço da soja, não da atividade doméstica."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Custos em reais sobem, mas o preço da semente é reajustado a cada safra junto com o da soja."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Juros mais altos elevam a despesa com a dívida de R$ 1,93 bi e encarecem o crédito rural, efeito só em parte compensado pelo dólar mais forte."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Boa Safra, Release de Resultados 3T26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/SOJA3/52842/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Boa Safra, Apresentação de Resultados 3T26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/SOJA3/52844/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "CNN Brasil: Lucro da Boa Safra recua 44% no 3º trimestre de 2026",
+   "url": "https://www.cnnbrasil.com.br/agro/lucro-da-boa-safra-recua-44-no-terceiro-trimestre-de-2026/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Eu Quero Investir: Boa Safra, balanço do 3T26, lucro e carteira de pedidos",
+   "url": "https://euqueroinvestir.com/mercados/boa-safra-balanco-3t26-lucro-pedidos",
+   "data": "2026-11-12"
+  }
+ ]
+}

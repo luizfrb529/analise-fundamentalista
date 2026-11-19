@@ -1,0 +1,94 @@
+{
+ "ticker": "SMTO3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Produtora de etanol, açúcar e energia de cana em SP e GO, com planta de etanol de milho. Etanol virou a maior receita nos 6M27 e o açúcar já está fixado em reais até a safra 2028/29.",
+ "modelo": "A São Martinho mói cana própria e de fornecedores em usinas em São Paulo e Goiás e produz açúcar, etanol anidro e hidratado, energia elétrica a partir do bagaço, levedura e CBIOs. Na unidade Boa Vista (GO), processa milho para etanol, DDG e óleo, com uma segunda fase em construção. A receita é recorrente, mas depende de safra, clima e preços de açúcar e etanol; o ano fiscal vai de abril a março.",
+ "segmentos": [
+  {
+   "nome": "Etanol",
+   "peso_receita": 0.49,
+   "periodo": "6M27 (abr a set/26)",
+   "obs": "R$ 1.680,9 mi (+19,1%), com volume 34,4% maior e subvenção ao etanol hidratado de cerca de R$ 47,1 mi."
+  },
+  {
+   "nome": "Açúcar",
+   "peso_receita": 0.37,
+   "periodo": "6M27 (abr a set/26)",
+   "obs": "R$ 1.261,1 mi (-27,0%), por preço médio 27,3% menor."
+  },
+  {
+   "nome": "Energia elétrica",
+   "peso_receita": 0.05,
+   "periodo": "6M27 (abr a set/26)",
+   "obs": "R$ 181,6 mi (-9,7%)."
+  },
+  {
+   "nome": "Outros (CBIOs, levedura, DDG e demais)",
+   "peso_receita": 0.09,
+   "periodo": "6M27 (abr a set/26)",
+   "obs": "Diferença até a receita líquida de R$ 3.402,8 mi."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "6M27",
+  "base": null,
+  "texto": "Toda a produção é feita no Brasil, em São Paulo e Goiás. O etanol é vendido principalmente no mercado interno e o açúcar tem preço formado no mercado internacional, com parte exportada; a fatia da receita de exportação não foi confirmada nas fontes abertas."
+ },
+ "moeda": {
+  "receita_em_dolar": "média",
+  "divida_em_dolar": "baixa",
+  "texto": "O preço do açúcar segue o dólar, mas em 31/10/2026 todo o volume de açúcar em aberto estava fixado em reais (R$ 2.120/t em 2026/27, R$ 2.197/t em 2027/28 e R$ 2.323/t em 2028/29). A empresa usa hedge accounting para dívida em moeda estrangeira; o valor dessa dívida não foi confirmado, e o efeito líquido de alta do dólar no curto prazo fica limitado."
+ },
+ "momento": "No 2T27 (jul a set/26, divulgado em 09/11/2026), a receita líquida foi de R$ 1,87 bi (+7,7%), o Ebitda ajustado de R$ 760,9 mi (-6,9%, margem de 40,6% ante 47,0%) e o lucro líquido de R$ 50,9 mi (-71,1%), com mais etanol vendido e preços menores de açúcar e etanol. Chuvas levaram a empresa a cortar a projeção da safra 2026/27: moagem de 22,8 mi t (-3,5%) e ATR produzido 10,5% menor, com cerca de 2 mi t de cana deixadas para 2027/28. A dívida líquida subiu 14,2% desde março, para R$ 5,7 bi, e a alavancagem foi a 1,75x Ebitda, com captações para a segunda fase do etanol de milho, prevista para o segundo semestre de 2027. O capex da safra está estimado em R$ 2,9 bi.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Com dívida líquida de R$ 5,7 bi em alta e capex de R$ 2,9 bi na safra, juro menor reduz a despesa financeira, que somou R$ 104,8 mi no 2T27."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Açúcar e paridade de exportação do etanol ganham em reais, mas o açúcar das próximas três safras já está fixado em reais, o que limita o ganho imediato."
+  },
+  "commodities_subindo": {
+   "nota": 2,
+   "porque": "Etanol, cerca de metade da receita, não está fixado e acompanha o preço da gasolina e do petróleo; açúcar mais caro favorece novas fixações."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "Mais atividade eleva o consumo de combustível, mas o resultado depende mais de safra, clima e preços internacionais."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Etanol tende a acompanhar a gasolina, enquanto insumos, diesel e arrendamentos atrelados ao Consecana também sobem."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Real mais fraco ajudaria preços em reais, mas o hedge já fixado limita esse ganho e juros maiores encarecem a dívida crescente."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "São Martinho, Release de resultados 2T27 safra 2026/27 (via Investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/SMTO3/52227/",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "BB Investimentos (Investalk): São Martinho 2T27 e revisão de preço",
+   "url": "https://investalk.bb.com.br/noticias/mercado/sao-martinho-SMTO3-resultado-2T27",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "NovaCana (Globo Rural): Lucro líquido da São Martinho caiu 71,1% no 2º trimestre de 2026/27",
+   "url": "https://www.novacana.com/noticias/lucro-liquido-da-sao-martinho-caiu-71-1-no-2-trimestre-de-2026-27-a-r-50-9-milhoes",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "NovaCana (CNN Brasil): Chuvas levam São Martinho a reduzir projeção de produção em 2026/27",
+   "url": "https://www.novacana.com/noticias/chuvas-levam-sao-martinho-a-reduzir-projecao-de-producao-em-2026-27",
+   "data": "2026-11-10"
+  }
+ ]
+}

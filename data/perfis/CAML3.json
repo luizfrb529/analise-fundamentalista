@@ -1,0 +1,82 @@
+{
+ "ticker": "CAML3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Dona das marcas Camil, União e Coqueiro, com arroz, feijão, açúcar, pescados, massas e café, e operações em cinco países da América do Sul. Alavancagem de 4,7x Ebitda deixa o resultado sensível a juros.",
+ "modelo": "A Camil compra, beneficia e vende grãos (arroz e feijão), açúcar, pescados enlatados, massas, biscoitos e café para o varejo, com marcas como Camil, União, Coqueiro, Santa Amália e Café União. No Brasil, divide o negócio em alto giro (grãos e açúcar) e alto valor (pescados, massas, biscoitos e café); fora do país atua no Uruguai, Chile, Peru, Equador e Paraguai, sobretudo com arroz. A receita é recorrente e a margem depende do preço da matéria-prima agrícola e do repasse. O ano fiscal vai de março a fevereiro.",
+ "segmentos": [
+  {
+   "nome": "Brasil (alto giro e alto valor)",
+   "peso_receita": 0.75,
+   "periodo": "2T26 (jun a ago/26)",
+   "obs": "R$ 2.079,9 mi; o volume de alto valor cresceu 14,1% e o de alto giro caiu 4,6%."
+  },
+  {
+   "nome": "Internacional (Uruguai, Chile, Peru, Equador e Paraguai)",
+   "peso_receita": 0.25,
+   "periodo": "2T26 (jun a ago/26)",
+   "obs": "R$ 684,9 mi (-25,1%), com volume 8,3% menor e preço líquido 18,3% menor."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 0.75,
+  "exterior_pct": 0.25,
+  "periodo": "2T26 (jun a ago/26)",
+  "base": null,
+  "texto": "No Brasil vende em todas as regiões. No exterior, já gera receita com operações próprias no Uruguai, Chile, Peru, Equador e Paraguai, onde o preço do arroz caiu no período."
+ },
+ "moeda": {
+  "receita_em_dolar": "média",
+  "divida_em_dolar": "baixa",
+  "texto": "Cerca de um quarto da receita vem de países sul-americanos, em moedas locais e com exportações de arroz do Uruguai, que tendem a ganhar em reais com dólar alto. No Brasil, açúcar e arroz seguem a paridade de exportação, o que encarece a matéria-prima. A dívida é majoritariamente local (debêntures e CRAs); a parcela em moeda estrangeira não foi confirmada."
+ },
+ "momento": "No 2T26 (jun a ago/26, divulgado em 08/10/2026), a receita líquida foi de R$ 2,76 bi (-7,2%), o Ebitda de R$ 225,3 mi (-10,1%, margem de 8,2%) e o lucro líquido de R$ 41,3 mi (-47,5%), com margem bruta maior (24,7%, +2,1 p.p.) e preços de arroz mais baixos no exterior. O volume consolidado caiu 4,6%, para 604,7 mil t, pela normalização do açúcar após exportações pontuais no 2T25. A dívida líquida foi de R$ 4,08 bi e a alavancagem ficou em 4,7x Ebitda, estável sobre o 1T26 e acima dos 4,1x de um ano antes, com despesa financeira de R$ 127,6 mi no trimestre. O capex caiu 66% com o fim das obras em Cambaí (RS), e a empresa paga R$ 420 mi em dividendos em 12 parcelas até dezembro de 2028.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Com alavancagem de 4,7x e despesa financeira de R$ 127,6 mi no trimestre, mais da metade do Ebitda, juro menor é o fator que mais melhora o lucro."
+  },
+  "dolar_subindo": {
+   "nota": -1,
+   "porque": "Arroz e açúcar no Brasil seguem a paridade de exportação e encarecem o custo, efeito só em parte compensado pela receita internacional."
+  },
+  "commodities_subindo": {
+   "nota": -1,
+   "porque": "Matéria-prima agrícola mais cara pressiona a margem até o repasse ao varejo, ainda que eleve a receita em reais."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Renda maior ajuda as categorias de alto valor, como café, pescados e biscoitos, que crescem mais que os grãos."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Alimentos básicos têm repasse com atraso e o consumidor troca de marca, enquanto custos de embalagem e frete sobem."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Juros mais altos encarecem uma dívida líquida de R$ 4,1 bi e o real fraco eleva o custo de arroz e açúcar."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Camil, Divulgação de resultados 2T26 (via Investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/CAML3/50631/",
+   "data": "2026-10-08"
+  },
+  {
+   "titulo": "Investidor10: Camil lucra R$ 41,3 milhões no 2T26, queda de 47,5% em um ano",
+   "url": "https://investidor10.com.br/noticias/camil-caml3-lucra-r-41-3-milhoes-no-2t26-queda-de-47-5-em-um-ano-123149/",
+   "data": "2026-10-08"
+  },
+  {
+   "titulo": "InfoMoney: Camil, dados mostram cenário desafiador e ação cai após resultado",
+   "url": "https://www.infomoney.com.br/mercados/camil-caml3-dados-mostram-cenario-desafiador-e-acao-cai-15-apos-resultado-fraco/amp/",
+   "data": "2026-10-09"
+  },
+  {
+   "titulo": "Super Varejo: Camil registra lucro líquido de R$ 41,3 milhões no 2T26",
+   "url": "https://supervarejo.com.br/industria/camil-registra-lucro-liquido-de-r-413-milhoes-no-2t26-queda-de-475-na-comparacao-anual",
+   "data": "2026-10-09"
+  }
+ ]
+}

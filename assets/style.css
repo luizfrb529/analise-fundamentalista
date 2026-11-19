@@ -549,3 +549,20 @@ tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72re
 #sobre .grade { align-items: start; }
 .ind-grade-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 @media (max-width: 720px) { .ind-grade-3 { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------------- retorno total */
+.rt-ctrl .linha { flex-wrap: wrap; gap: 10px; }
+.rt-opcoes { margin-top: 12px; }
+.rt-bench { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: .84rem; color: var(--txt-2); }
+.rt-bench label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.rt-cor { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: middle; }
+.rt-cor.tracej { height: 3px; border-radius: 0; }
+.grafico.alto { height: 420px; }
+@media (max-width: 720px) { .grafico.alto { height: 300px; } }
+@media (max-width: 1240px) { .menu-item > a { padding: 7px 9px; font-size: .86rem; } .topo-barra { gap: 14px; } }
+@media (max-width: 1100px) and (min-width: 921px) { .marca-texto span { display: none; } .marca-texto { font-size: .95rem; } .menu-item > a { padding: 6px 7px; font-size: .84rem; } .topo-barra { gap: 10px; } }
+.topo .busca input { width: 170px; }
+@media (max-width: 1360px) { .faixa-status .tempo-real { display: none; } }
+@media (max-width: 1240px) and (min-width: 921px) { .topo .busca input { width: 130px; } }
+@media (max-width: 1100px) and (min-width: 921px) { .topo .busca input { width: 100px; } }
+.topo-barra { max-width: 1340px; }

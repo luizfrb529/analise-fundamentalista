@@ -1,0 +1,94 @@
+{
+ "ticker": "CASH3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Plataforma de cashback e fidelidade com 56,6 mi de contas, que também mantém uma tesouraria em bitcoin (526,7 BTC em set/26). A receita depende do e-commerce brasileiro; o bitcoin traz exposição ao dólar.",
+ "modelo": "O Méliuz recebe comissões de lojas parceiras quando seus usuários compram por meio do aplicativo e devolve parte ao cliente como cashback; a diferença é o net take rate (2,2% no 3T26). Fora do e-commerce (beyond e-commerce), vende cartão de crédito, gift cards, Clube Méliuz, pesquisas remuneradas e outros produtos de alta frequência, que já são 28,7% da receita do Shopping Brasil. Opera também o Picodi, site de cupons em mercados internacionais. Desde março de 2025 adota estratégia de tesouraria em bitcoin, com objetivo declarado de aumentar a quantidade de bitcoin por ação, hoje via recompra de ações.",
+ "segmentos": [
+  {
+   "nome": "Shopping Brasil (e-commerce e beyond e-commerce)",
+   "peso_receita": 0.74,
+   "periodo": "3T26",
+   "obs": "R$ 70,7 mi (-28,0%), afetado pela recuperação judicial da Casas Bahia, parceira relevante."
+  },
+  {
+   "nome": "Outras companhias",
+   "peso_receita": 0.13,
+   "periodo": "3T26",
+   "obs": "R$ 12,6 mi (+8,8%)."
+  },
+  {
+   "nome": "Serviços financeiros (Méliuz)",
+   "peso_receita": 0.11,
+   "periodo": "3T26",
+   "obs": "R$ 10,5 mi, inclui cartão de crédito."
+  },
+  {
+   "nome": "Shopping internacional (Picodi)",
+   "peso_receita": 0.02,
+   "periodo": "3T26",
+   "obs": "R$ 2,3 mi (-47,6%)."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 0.98,
+  "exterior_pct": 0.02,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Quase toda a receita vem do Brasil (segmento B2C Nacional, R$ 93,8 mi no 3T26). O Picodi, plataforma de cupons fora do país, gerou R$ 2,3 mi e vem encolhendo. A carteira de bitcoin é um ativo global, mas não gera receita operacional."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "nenhuma",
+  "texto": "A receita operacional é em reais e a empresa não tem dívida financeira. A carteira de 526,7 bitcoins (R$ 228,0 mi em set/26), cotada em dólar, é a principal exposição cambial: dólar mais alto eleva seu valor em reais, embora a contabilidade só reconheça perdas por impairment e reversões até o custo de aquisição."
+ },
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita líquida consolidada caiu 22,3%, para R$ 96,1 mi, com o e-commerce recuando 35,3% após o pedido de recuperação judicial da Casas Bahia em agosto; o Ebitda ajustado foi de R$ 17,0 mi (-37,7%, margem de 17,7%). O lucro líquido consolidado chegou a R$ 113,7 mi (R$ 14,2 mi no 3T25), puxado pela reversão contábil de R$ 78,5 mi do impairment do bitcoin, sem efeito caixa; o lucro ajustado foi de R$ 19,6 mi (+28,4%). Em agosto de 2026 a empresa concluiu o primeiro programa de recompra (9,1 mi de ações canceladas), lançou um segundo de até 10% do free float e passou a gerir caixa e bitcoin de forma integrada; no 3T26 vendeu 78 bitcoins por R$ 29,4 mi para financiar recompras, com opções para recomprá-los em 2027. Terminou setembro com R$ 106,3 mi em caixa e aplicações e sem endividamento financeiro.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Juro menor alivia o endividamento das famílias e reativa o varejo on-line, base das comissões de cashback, e costuma valorizar ativos de risco como o bitcoin."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "A carteira de bitcoin, cotada em dólar e relevante frente ao tamanho da empresa, ganha valor em reais; a receita operacional, porém, é toda em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "A receita acompanha diretamente o volume de compras on-line e de produtos financeiros dos usuários, muito sensível ao consumo."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação corrói a renda disponível e reduz compras discricionárias no e-commerce, que geram a maior parte da comissão."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Juros longos maiores pesam sobre o consumo e o valor da ação, mas a desvalorização do real que costuma acompanhar o estresse fiscal valoriza a carteira de bitcoin, efeitos que se compensam."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Méliuz, Release de Resultados 3T26",
+   "url": "https://ri.meliuz.com.br/Download.aspx?Arquivo=NjwnFh3wkMExxuSRW20S7w==&linguagem=pt",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Méliuz, ITR de 30/09/2026 (demonstrações financeiras)",
+   "url": "https://ri.meliuz.com.br/Download.aspx?Arquivo=dc10Vrt/wfPIXOvomfSjPA==&linguagem=pt",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Méliuz RI, Central de resultados",
+   "url": "https://ri.meliuz.com.br/listresultados.aspx?idCanal=PNx0OjlakPh0eYMCVmDXAQ==&linguagem=pt",
+   "data": "2026-11-18"
+  },
+  {
+   "titulo": "Forbes Brasil: Méliuz conclui recompra e lança novo programa ligado à estratégia em bitcoin",
+   "url": "https://forbes.com.br/forbes-money/2026/08/meliuz-recompra-acoes-novo-programa-bitcoin/",
+   "data": "2026-08-06"
+  }
+ ]
+}
