@@ -1,0 +1,88 @@
+{
+ "ticker": "INTB3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Fabricante catarinense de equipamentos de segurança eletrônica, redes e energia, com 63% da receita em Segurança. Vende quase só no Brasil, mas importa boa parte dos insumos em dólar, com hedge parcial.",
+ "modelo": "A Intelbras desenvolve, fabrica e importa produtos sob marca própria: câmeras e soluções IP, controle de acesso, fechaduras digitais e alarmes (Segurança); cabeamento estruturado, redes empresariais e telefonia (TIC); nobreaks, carregadores veiculares e microgeração solar (Energia). Vende por uma rede de distribuidores e revendas para empresas, instaladores, integradores e consumidores. A receita é de venda de produtos, recorrente pela base de clientes, mas sem contratos de longo prazo; as fábricas ficam em Santa Catarina e na Zona Franca de Manaus, onde há uma nova unidade em obras.",
+ "segmentos": [
+  {
+   "nome": "Segurança",
+   "peso_receita": 0.63,
+   "periodo": "3T26",
+   "obs": "R$ 741,4 mi (+5,6%), com destaque para controle de acesso e fechaduras digitais."
+  },
+  {
+   "nome": "Tecnologia da Informação e Comunicação (TIC)",
+   "peso_receita": 0.22,
+   "periodo": "3T26",
+   "obs": "R$ 257,4 mi (+3,4%), em descontinuação da linha de GPON."
+  },
+  {
+   "nome": "Energia",
+   "peso_receita": 0.15,
+   "periodo": "3T26",
+   "obs": "R$ 177,8 mi (+2,4%), após saída de grandes projetos solares em 2025."
+  }
+ ],
+ "segmentos_base": "Receita operacional líquida",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "A operação e as vendas estão concentradas no Brasil. Há uma subsidiária na Colômbia, com contas a receber de R$ 23,8 mi em set/26, e compras de insumos na Ásia; a empresa não divulga a receita do exterior, que é pequena frente ao total."
+ },
+ "moeda": {
+  "receita_em_dolar": "baixa",
+  "divida_em_dolar": "nenhuma",
+  "texto": "A dívida bruta de R$ 876 mi é em reais, salvo R$ 34 mi em pesos colombianos, mas a empresa tinha R$ 887 mi a pagar a fornecedores em dólar em set/26; descontado caixa em dólar e NDF de US$ 92,5 mi, a exposição líquida era de R$ 196 mi passiva em dólar. Alta do dólar encarece a reposição de estoques e exige reajuste de preços."
+ },
+ "momento": "No 3T26 (divulgado em 28/10/2026), a receita líquida foi de R$ 1,18 bi (+4,6% sobre o 3T25), o Ebitda de R$ 170,1 mi (+18,1%, margem de 14,5%) e o lucro líquido de R$ 177,1 mi (+19,7%, margem de 15,0%), acima do consenso LSEG de R$ 154 mi. A margem bruta subiu para 32,7% (+1,8 p.p.) com reajustes de preço e mix, e o ROIC antes de impostos chegou a 20,0%. No 9M26, a receita somou R$ 3,44 bi (+4%) e o lucro R$ 488,4 mi (+41%). A empresa terminou setembro com caixa líquido de R$ 680,3 mi (R$ 585,1 mi em junho) e segue investindo na nova fábrica em Manaus; a administração descreve demanda cautelosa, com clientes adiando projetos e migrando para soluções mais baratas.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula obras, projetos de segurança e microgeração solar financiada, mas, com caixa líquido de R$ 680 mi, a empresa perde parte da receita financeira."
+  },
+  "dolar_subindo": {
+   "nota": -1,
+   "porque": "Grande parte dos insumos é importada e paga em dólar, com exposição líquida passiva de R$ 196 mi após hedge; o efeito é parcial porque a empresa tem histórico de repassar preços."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O custo relevante é de componentes eletrônicos e frete, sem ligação direta com o ciclo de commodities; cobre pesa só no cabeamento."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade eleva investimentos de empresas e famílias em segurança, redes e energia, mas parte da demanda é de reposição e manutenção, menos cíclica."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Custos de reposição sobem, mas a empresa vem repassando reajustes de preços e não tem dívida indexada à inflação; efeitos que se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal tende a enfraquecer o real e a elevar juros, o que encarece importações e adia projetos de clientes."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Intelbras, Release de Resultados 3T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/660c9d23-3bb0-4bd4-9707-c9fe5ad308b4/3f5a75b8-664d-af98-42e0-f58fba663024?origin=2",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "Intelbras, ITR 30/09/2026",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/660c9d23-3bb0-4bd4-9707-c9fe5ad308b4/19a63f88-ff9c-8922-52ec-186be235eb25?origin=2",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "Intelbras, Apresentação de Resultados 3T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/660c9d23-3bb0-4bd4-9707-c9fe5ad308b4/1e65bd29-dc35-d811-0f79-0fe5eecdbf1a?origin=2",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "InfoMoney: Intelbras (INTB3) eleva lucro em quase 20% no 3º tri, a R$ 177 milhões",
+   "url": "https://www.infomoney.com.br/mercados/intelbras-intb3-resultados-terceiro-trimestre-2026/",
+   "data": "2026-10-28"
+  }
+ ]
+}

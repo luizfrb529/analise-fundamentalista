@@ -1,0 +1,94 @@
+{
+ "ticker": "SEER3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Grupo de ensino superior privado com sede em Recife e forte presença no Norte e Nordeste. Cerca de 91% da receita bruta vem do ensino presencial, com peso crescente de Medicina e cursos de saúde.",
+ "modelo": "A Ser Educacional opera faculdades, centros universitários e universidades (marcas como UNINASSAU, UNAMA, UNG, Univeritas, UNINORTE, UNIFAEL e UNESC), com cursos de graduação presencial, semipresencial e a distância, pós-graduação e Medicina. A receita é recorrente, vinda de mensalidades pagas pelos alunos, por financiamento privado (PRAVALER) ou público (FIES), e é reduzida por descontos e pelo PROUNI, que concede bolsas em troca de isenção de impostos. A base presencial tem 185,4 mil alunos de graduação, dos quais cerca de 65% em cursos de saúde.",
+ "segmentos": [
+  {
+   "nome": "Ensino presencial (graduação e pós)",
+   "peso_receita": 0.91,
+   "periodo": "9M26",
+   "obs": "Mensalidades brutas de R$ 3,71 bi (+8,9%); inclui Medicina, com ticket médio líquido de R$ 9,5 mil no 3T26."
+  },
+  {
+   "nome": "Ensino a distância (EAD)",
+   "peso_receita": 0.06,
+   "periodo": "9M26",
+   "obs": "R$ 253,9 mi (-25,1%), em queda após o novo marco regulatório do EAD."
+  },
+  {
+   "nome": "Ensino semipresencial",
+   "peso_receita": 0.01,
+   "periodo": "9M26",
+   "obs": "R$ 34,3 mi, modalidade criada pelo novo marco do EAD em 2026."
+  },
+  {
+   "nome": "Outras",
+   "peso_receita": 0.02,
+   "periodo": "9M26",
+   "obs": "R$ 83,0 mi (+22,2%)."
+  }
+ ],
+ "segmentos_base": "Receita operacional bruta (R$ 4,08 bi no 9M26), antes de descontos e PROUNI; a receita líquida foi de R$ 1,74 bi.",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Opera somente no Brasil, com concentração no Norte e Nordeste e presença em São Paulo e no Sul pela UNIFAEL e pela UNESC. Não há operação nem plano anunciado no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais; as debêntures são atreladas ao CDI e as parcelas de aquisições, ao IPCA. Alta do dólar não tem efeito direto."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), a receita líquida foi de R$ 531,0 mi (+3,2% sobre o 3T25), o Ebitda ajustado de R$ 109,1 mi (+6,7%, margem de 20,6%) e o lucro líquido de R$ 36,6 mi (+145,1%; ajustado de R$ 39,2 mi, +62,4%). A base presencial cresceu 1,7%, para 185,4 mil alunos, com ticket médio líquido 6,0% maior, enquanto a captação de EAD e semipresencial caiu 31,1% sob o novo marco regulatório do EAD. A dívida líquida caiu 36,5%, para R$ 366,0 mi, ou 0,61x o Ebitda ajustado de 12 meses (1,08x um ano antes), após refinanciamento de R$ 250 mi a CDI + 1,1% em abril de 2026. A empresa distribuiu R$ 87,1 mi em dividendos até setembro e pagará mais R$ 26,0 mi no 4T26; segundo o NeoFeed, mira alavancagem pouco abaixo de 0,5x e expansão orgânica com unidades menores no Norte e Nordeste.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor barateia o crédito estudantil privado e reduz a despesa com as debêntures em CDI, mas o ganho financeiro diminuiu porque a alavancagem caiu para 0,61x."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida são todas em reais, sem efeito direto."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio de educação não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais emprego e renda elevam matrículas e reduzem evasão e inadimplência, em especial no presencial de menor ticket."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Mensalidades são reajustadas uma vez por ano, enquanto salários de professores e aluguéis sobem com a inflação, e parte do público de renda média perde capacidade de pagamento."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Pressão fiscal pode reduzir vagas do FIES (7,1% dos alunos presenciais) e eleva juros, o que encarece o crédito estudantil."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Ser Educacional, Release de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/4e9e23d7-cea5-42fd-bf06-7a7ca01880fc/6da7e46e-bd4e-4f3e-b141-42bc3c21fcfa",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Ser Educacional RI, página de Resultados (ITR, release e apresentação 3T26)",
+   "url": "https://ri.sereducacional.com/informacoes-financeiras/resultados/",
+   "data": "2026-11-18"
+  },
+  {
+   "titulo": "NeoFeed: Menos EAD, mais medicina, Ser Educacional ajusta rumo e lucro cresce 62%",
+   "url": "https://neofeed.com.br/negocios/menos-ead-mais-medicina-ser-educacional-ajusta-rumo-e-lucro-cresce-62/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "InfoMoney: Ações de Cogna e Vitru avançam após balanços, enquanto Ser Educacional cai",
+   "url": "https://www.infomoney.com.br/mercados/acoes-de-cogna-e-vitru-avancam-apos-balancos-enquanto-ser-educacional-cai/",
+   "data": "2026-11-12"
+  }
+ ]
+}

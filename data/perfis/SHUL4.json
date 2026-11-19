@@ -1,0 +1,82 @@
+{
+ "ticker": "SHUL4",
+ "revisado_em": "2026-11-18",
+ "resumo": "Fabricante de Joinville de autopeças pesadas e compressores de ar. Cerca de 22% da receita bruta vem de exportações, e a empresa tem caixa líquido.",
+ "modelo": "A Schulz tem duas unidades. A Automotiva fornece componentes fundidos, usinados e montados para fabricantes de caminhões, máquinas agrícolas, de construção e energia eólica, no Brasil e no exterior, além de peças de reposição e soluções de gestão de frotas (Schulz Tech). A unidade Compressores vende compressores de ar e equipamentos para uso industrial, profissional e residencial, por revendas, e-commerce e pela subsidiária Schulz of America. A receita é recorrente, mas acompanha o ciclo de caminhões, agronegócio e investimento industrial.",
+ "segmentos": [
+  {
+   "nome": "Indústria (unidades Automotiva e Compressores)",
+   "peso_receita": 0.84,
+   "periodo": "9M26",
+   "obs": "R$ 1,26 bi de receita líquida de clientes; no 3T26, exportações da Automotiva em dólar +34,8% e faturamento bruto de Compressores -12,4%."
+  },
+  {
+   "nome": "Comércio (distribuição e subsidiárias comerciais)",
+   "peso_receita": 0.16,
+   "periodo": "9M26",
+   "obs": "R$ 241,8 mi de receita líquida de clientes."
+  }
+ ],
+ "segmentos_base": "Receita líquida (segmentos oficiais da nota 29 do ITR; a empresa não abre a receita por unidade Automotiva x Compressores)",
+ "geografia": {
+  "brasil_pct": 0.78,
+  "exterior_pct": 0.22,
+  "periodo": "9M26",
+  "base": "receita bruta",
+  "texto": "As exportações somaram R$ 384,7 mi da receita bruta de R$ 1,79 bi no 9M26 e foram para Europa (49,9%), Estados Unidos e Canadá (32,6%), América Latina (9,0%) e outros (8,6%). Nos EUA, opera pela Schulz of America e pela Schulz Automotive of America, sujeitas a tarifas de importação de até 37,5% sobre produtos do Brasil no 3T26."
+ },
+ "moeda": {
+  "receita_em_dolar": "média",
+  "divida_em_dolar": "média",
+  "texto": "Cerca de 22% da receita bruta vem de exportações, em dólar e euro. Dos R$ 933 mi de dívida bruta, R$ 402 mi (43%) estão em dólar, euro e renminbi, mas swaps, aplicações e recebíveis em moeda estrangeira deixam a exposição líquida de balanço levemente ativa em dólar (US$ 15,7 mi) e passiva em euro (EUR 4,5 mi) em set/26; com caixa líquido de R$ 168 mi, alta do dólar tende a ser positiva pela receita."
+ },
+ "momento": "No 3T26 (ITR de 30/09/2026, aprovado pela administração em 29/10/2026), a receita líquida foi de R$ 538,7 mi (+4,9% sobre o 3T25), puxada por exportações 18,3% maiores, e o Ebitda de R$ 81,8 mi (+4%, margem de 15%). O lucro líquido foi de R$ 54,0 mi (margem de 10%), ante R$ 68,8 mi um ano antes, por ociosidade fabril, alta de matérias-primas e menor efeito de impostos diferidos. No 9M26, a receita líquida somou R$ 1,50 bi (-3,0%) e o lucro R$ 170,3 mi (-20,5%). A empresa encerrou setembro com caixa líquido de R$ 168 mi, após R$ 62 mi de investimentos e R$ 92,3 mi pagos aos acionistas no ano.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor destrava crédito para revendas de compressores e investimento industrial, que a empresa cita como travados; com caixa líquido, perde um pouco de receita financeira."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Exportações, cerca de 22% da receita bruta, ganham valor em reais e competitividade; a dívida em moeda estrangeira é relevante, mas está protegida por swaps e ativos em dólar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Aço e ferro pesam no custo, enquanto preços agrícolas mais altos ajudam a venda de peças para máquinas agrícolas; efeitos que se compensam."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade eleva a produção de caminhões e as compras de compressores pela indústria e pelo varejo no Brasil."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "A empresa citou pressão inflacionária sobre matérias-primas e logística, mas busca repassar via reajustes de preço."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Risco fiscal tende a enfraquecer o real, o que ajuda as exportações, e a elevar juros, o que pesa no mercado interno; efeitos que se compensam."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Schulz, ITR 3T26 (inclui release de resultados)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/007e4c09-d021-4f52-95b7-a39e836a974c/782ad8d0-85d6-1c43-5874-d547f71c23f6?origin=2",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Schulz RI, Central de Resultados",
+   "url": "https://ri.schulzsa.com/informacoes-financeiras/central-de-resultados/",
+   "data": "2026-11-18"
+  },
+  {
+   "titulo": "InfoMoney: Grupo Mateus, IMC, Serena, Orizon e mais empresas divulgam resultados no 3T (Schulz 3T25, base de comparação)",
+   "url": "https://www.infomoney.com.br/mercados/grupo-mateus-imc-serena-orizon-e-mais-empresas-divulgam-resultados-no-3t/",
+   "data": "2025-11-14"
+  },
+  {
+   "titulo": "NSC Total: Schulz bate lucro de R$ 55 milhões em três meses (1T26)",
+   "url": "https://www.nsctotal.com.br/economia/lider-na-fabricacao-de-compressores-de-ar-com-sede-em-joinville-bate-lucro-de-r-55-milhoes-em-tres-meses",
+   "data": "2026-06-02"
+  }
+ ]
+}
