@@ -1,6 +1,6 @@
 # Relatório de cobertura de dados
 
-Gerado em 19/11/2026 09:37 | Preços de fechamento de 2026-11-18 | Balanços até 3T2026
+Gerado em 19/11/2026 10:11 | Preços de fechamento de 2026-11-18 | Balanços até 3T2026
 
 | Ticker | Modelo | Balanço | Fonte | Indicadores com valor | Faltando |
 |---|---|---|---|---|---|
@@ -148,6 +148,8 @@ Gerado em 19/11/2026 09:37 | Preços de fechamento de 2026-11-18 | Balanços at�
 
 ## B3SA3
 
+Avisos do pipeline:
+- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22B3%22+OR+B3SA3%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 Indicadores sem valor e motivo:
 
@@ -157,6 +159,8 @@ Indicadores sem valor e motivo:
 
 ## BBAS3
 
+Avisos do pipeline:
+- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22Banco+do+Brasil%22+OR+BBAS3%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 Indicadores sem valor e motivo:
 
@@ -170,6 +174,7 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - sem preço da classe PN; usado preço do papel
+- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22BTG+Pactual%22+OR+BPAC11%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 Indicadores sem valor e motivo:
 
@@ -187,6 +192,7 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - total de ações CVM (10,570,712,028) difere da B3 (11,196,864,781); usado CVM
+- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22Bradesco+PN%22+OR+BBDC4%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 Indicadores sem valor e motivo:
 
@@ -198,6 +204,8 @@ Indicadores sem valor e motivo:
 
 ## ITUB4
 
+Avisos do pipeline:
+- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22Ita%C3%BA+Unibanco+PN%22+OR+ITUB4%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 Indicadores sem valor e motivo:
 
@@ -209,6 +217,8 @@ Indicadores sem valor e motivo:
 
 ## BRSR6
 
+Avisos do pipeline:
+- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22Banrisul%22+OR+BRSR6%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 Indicadores sem valor e motivo:
 
@@ -224,6 +234,8 @@ Indicadores sem valor e motivo:
 
 ## BMEB4
 
+Avisos do pipeline:
+- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22Banco+Mercantil+do+Brasil%22+OR+BMEB4%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 Indicadores sem valor e motivo:
 
@@ -240,6 +252,8 @@ Indicadores sem valor e motivo:
 
 ## SANB11
 
+Avisos do pipeline:
+- notícias: HTTP 503 em https://news.google.com/rss/search?q=%28%22Santander+Brasil%22+OR+SANB11%29+%28a%C3%A7%C3%B5es+OR+resultado+OR+lucro+OR+preju%C3%ADzo+OR+receita+OR+dividendos+OR+balan%C3%A7o+OR+trimestre+OR+d%C3%ADvida+OR+aquisi%C3%A7%C3%A3o+OR+bolsa%29&hl=pt-BR&gl=BR&ceid=BR:pt-419
 
 Indicadores sem valor e motivo:
 
