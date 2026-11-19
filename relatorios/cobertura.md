@@ -1,6 +1,6 @@
 # Relatório de cobertura de dados
 
-Gerado em 19/11/2026 04:59 | Preços de fechamento de 2026-11-17 | Balanços até 3T2026
+Gerado em 19/11/2026 09:37 | Preços de fechamento de 2026-11-18 | Balanços até 3T2026
 
 | Ticker | Modelo | Balanço | Fonte | Indicadores com valor | Faltando |
 |---|---|---|---|---|---|
@@ -144,6 +144,7 @@ Gerado em 19/11/2026 04:59 | Preços de fechamento de 2026-11-17 | Balanços at�
 | MLAS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 95/102 | 7 |
 | INTB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
 | SEER3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/102 | 2 |
+| ABEV3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/102 | 1 |
 
 ## B3SA3
 
@@ -2545,6 +2546,13 @@ Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+
+## ABEV3
+
+
+Indicadores sem valor e motivo:
+
+- P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 
 ## Sinais de estresse financeiro
 
