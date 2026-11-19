@@ -1006,16 +1006,21 @@ async function blocoSobre(t) {
       ${pf.moeda && pf.moeda.texto ? `<h4>Exposição a moeda</h4><p>${esc(pf.moeda.texto)}</p>` : ""}
       ${pf.momento ? `<h4>Momento atual</h4><p>${esc(pf.momento)}</p>` : ""}
       ${(pf.fontes || []).length ? `<h4>Fontes</h4><ul class="sobre-fontes">${pf.fontes.map((f) => `<li><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.titulo)}</a>${f.data ? ` <span class="sub">${esc(dataBR(f.data))}</span>` : ""}</li>`).join("")}</ul>` : ""}
-      <p class="sub">Revisado em ${esc(dataBR(pf.revisado_em))}.</p></div>
+      <p class="sub">Texto revisado em ${esc(dataBR(pf.revisado_em))}${pf.ultimo_resultado ? `, com base no resultado do ${esc(pf.ultimo_resultado)}` : ""}${pf.revisao === "automática" ? " (revisão automática)" : ""}.</p></div>
     <button class="btn peq" id="sobre-ver">Ver mais</button>` : (n.qualitativo ? Object.entries(n.qualitativo).map(([k, v]) => `<p class="sub"><b>${esc(({ regulacao: "Regulação", concessoes: "Concessões", vso: "VSO", banco_terrenos: "Banco de terrenos", caixa: "Caixa" })[k] || k.replace(/_/g, " "))}:</b> ${esc(v)}</p>`).join("") : "");
   const porques = Object.entries(sens).filter(([, v]) => v.porque);
+  // resultado mais novo do que o texto: avisa; os números do trimestre já estão na seção Resultados, que se atualiza sozinha
+  const ult = ((D.fund[t] || {}).agenda || {}).ultima || {};
+  const defasado = pf && ult.rotulo && ((pf.ultimo_resultado && pf.ultimo_resultado !== ult.rotulo) || (ult.entrega && pf.revisado_em && ult.entrega > pf.revisado_em));
+  const avisoRev = defasado ? `<p class="aviso-rev">Saiu o resultado do <b>${esc(ult.rotulo)}</b>${ult.entrega ? ` em ${esc(dataBR(ult.entrega))}` : ""}. O texto abaixo é anterior a ele e está na fila de revisão automática; os números do trimestre já estão em <a href="#" data-sec-ir="resultados">Resultados</a>.</p>` : "";
   $("#sobre").innerHTML = `<div class="grade g2">
-    <div class="cartao"><h3>O negócio</h3><p style="color:var(--txt-2)">${esc((pf && pf.resumo) || n.resumo || "Resumo não preenchido.")}</p>${destaques}${detalhe}</div>
+    <div class="cartao"><h3>O negócio</h3>${avisoRev}<p style="color:var(--txt-2)">${esc((pf && pf.resumo) || n.resumo || "Resumo não preenchido.")}</p>${destaques}${detalhe}</div>
     <div class="cartao"><h3>Sensibilidade a cenários</h3><p class="sub">De -2 (perde muito) a +2 (ganha muito).${porques.length ? " Passe o mouse para ver o motivo." : ""}</p>
       <div class="barras" style="margin-top:12px">${Object.entries(sens).map(([c, { nota: v, porque }]) => `<div class="linha-barra"${porque ? ` data-tip="${esc(porque)}"` : ""}><span>${CENARIOS[c]}</span><span class="barra centro"><i style="left:${v < 0 ? 50 + v * 25 : 50}%;width:${Math.abs(v) * 25}%;background:${v >= 0 ? "var(--pos)" : "var(--neg)"}"></i></span><span class="num ${sinal(v)}">${v > 0 ? "+" : ""}${v}</span></div>`).join("")}</div>
       ${porques.length ? `<div class="sobre-mais" id="sens-mais" hidden>${porques.map(([c, v]) => `<p><b>${CENARIOS[c]}:</b> ${esc(v.porque)}</p>`).join("")}</div><button class="btn peq" id="sens-ver">Ver motivos</button>` : ""}</div></div>`;
   const alterna = (bt, box, abrir, fechar) => { const b = $(bt); if (!b) return; b.onclick = () => { const x = $(box); x.hidden = !x.hidden; b.textContent = x.hidden ? abrir : fechar; }; };
   alterna("#sobre-ver", "#sobre-mais", "Ver mais", "Ver menos");
+  $$("[data-sec-ir]").forEach((a) => a.onclick = (e) => { e.preventDefault(); $(`#sec-${a.dataset.secIr}`).scrollIntoView({ behavior: "smooth", block: "start" }); });
   alterna("#sens-ver", "#sens-mais", "Ver motivos", "Ocultar motivos");
 }
 function tabelaHistorica(t, h, nAnos) {
