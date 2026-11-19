@@ -1,0 +1,106 @@
+{
+ "ticker": "ABEV3",
+ "revisado_em": "2026-11-19",
+ "resumo": "Maior cervejaria da América Latina, controlada pela AB InBev. Nos 9M26, 58% da receita veio do Brasil e 42% de CAC, LAS e Canadá; custos em dólar (alumínio, açúcar, cereais) pesam mais que a receita externa.",
+ "modelo": "A Ambev produz e distribui cervejas (Brahma, Skol, Antarctica, Original, Spaten, Stella Artois, Corona, Michelob Ultra), refrigerantes e outras bebidas não alcoólicas (Guaraná Antarctica e engarrafamento PepsiCo) no Brasil, na América Central e Caribe, na América Latina Sul (Argentina, Bolívia, Paraguai, Uruguai, Chile) e no Canadá. A receita é recorrente, vem da venda de grandes volumes a bares, supermercados e distribuidores, com repasse de preço anual e ganho de mix em marcas premium. Opera ainda a plataforma B2B BEES, com marketplace de produtos de terceiros, e o Zé Delivery, de venda direta ao consumidor.",
+ "segmentos": [
+  {
+   "nome": "Cerveja Brasil",
+   "peso_receita": 0.481,
+   "periodo": "9M26",
+   "obs": "R$ 30,9 bi (+7,8% orgânico); no 3T26 o volume cresceu 0,5% e o Ebitda ajustado 1,0%, com margem caindo 130 pontos-base."
+  },
+  {
+   "nome": "América Latina Sul (LAS)",
+   "peso_receita": 0.192,
+   "periodo": "9M26",
+   "obs": "R$ 12,3 bi; Argentina é o maior mercado e tem contabilidade hiperinflacionária (IAS 29)."
+  },
+  {
+   "nome": "Canadá",
+   "peso_receita": 0.114,
+   "periodo": "9M26",
+   "obs": "R$ 7,3 bi; volume caiu 1,5% em 9M26, com ganho de participação de mercado segundo a empresa."
+  },
+  {
+   "nome": "América Central e Caribe (CAC)",
+   "peso_receita": 0.111,
+   "periodo": "9M26",
+   "obs": "R$ 7,1 bi; República Dominicana é o principal mercado."
+  },
+  {
+   "nome": "Bebidas não alcoólicas Brasil (NAB)",
+   "peso_receita": 0.102,
+   "periodo": "9M26",
+   "obs": "R$ 6,6 bi; volume voltou a crescer no 3T26 (+3,6%)."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 0.583,
+  "exterior_pct": 0.417,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Dos R$ 64,2 bi de receita líquida nos 9M26, R$ 37,5 bi vieram do Brasil e R$ 26,7 bi de fora: LAS (19,2%), Canadá (11,4%) e CAC (11,1%). No 3T26 a fatia do Brasil foi de 57,2%; fora do Brasil a empresa responde por cerca de 40% do Ebitda ajustado nos 9M26."
+ },
+ "moeda": {
+  "receita_em_dolar": "média",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Cerca de 42% da receita é gerada em moedas estrangeiras (dólar canadense, peso dominicano, peso argentino e outras), mas no Brasil boa parte do custo é cotado em dólar: alumínio das latas, açúcar, cereais e resinas; a empresa protege essa exposição com derivativos (US$ 1,9 bi de hedge cambial no Brasil no 3T26) e já fez o hedge de BRL/USD de todo o ano de 2027. A dívida bruta é pequena (R$ 2,7 bi, quase toda arrendamentos) frente a R$ 19,2 bi em caixa; no 3T26 o real mais forte reduziu a receita convertida em R$ 529 mi e o Ebitda em R$ 404 mi (R$ 2,8 bi de receita nos 9M26), por isso o reportado cresceu menos que o orgânico."
+ },
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita líquida foi de R$ 21,59 bi (+3,6% reportado e +7,6% orgânico), o Ebitda ajustado de R$ 7,27 bi (+8,9% orgânico, margem de 33,7%) e o lucro líquido ajustado de R$ 4,39 bi (+14,3%); o lucro reportado caiu 10,2%, para R$ 4,37 bi, porque o 3T25 teve ganhos não recorrentes. O volume consolidado subiu 0,8%, com Cerveja Brasil +0,5% contra uma indústria que cresceu cerca de 4% (Nielsen) e LAS com queda de 1,4%, mas Ebitda 41,5% maior. O guidance de CPV/hl de Cerveja Brasil para 2026 (alta de 4,5% a 7,5%) foi mantido. A empresa tem caixa líquido (R$ 19,2 bi de caixa contra R$ 2,7 bi de dívida em set/26), o fluxo de caixa operacional do trimestre subiu 11,0%, para R$ 7,7 bi, e em 28/10/2026 o conselho aprovou recompra de até 190 milhões de ações em 18 meses (cerca de R$ 2,9 bi), sem anúncio de dividendos junto ao balanço.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula o consumo de bebidas no Brasil, que gera 58% da receita; o ganho é parcialmente reduzido pela queda da receita financeira sobre o caixa líquido de cerca de R$ 16 bi."
+  },
+  "dolar_subindo": {
+   "nota": -1,
+   "porque": "Alumínio, açúcar e cereais comprados em dólar encarecem o custo no Brasil; o hedge adia o efeito em 12 a 18 meses e a conversão da receita de CAC e Canadá compensa só em parte."
+  },
+  "commodities_subindo": {
+   "nota": -1,
+   "porque": "Alumínio, açúcar, cereais e resina PET são os principais custos; no 3T26 a pressão de commodities elevou o CPV/hl de Cerveja Brasil em 5,4% e reduziu a margem."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda e emprego aumentam o volume em bares e o espaço para marcas premium, que crescem mais que o portfólio total."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "A empresa repassa preço acima da inflação (ROL/hl +6,8% orgânico no 3T26), mas inflação alta corrói a renda do consumidor das marcas mais baratas, efeitos que se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior tende a desvalorizar o real e pressionar a renda disponível, o que encarece insumos em dólar e reduz o consumo no Brasil."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Ambev, Release de Resultados 3T26 (RI)",
+   "url": "https://filemanager-cdn.mziq.com/published/c8182463-4b7e-408c-9d0f-42797662435e/3dd87ad9-1e38-4642-9267-a929b8d0a1b8",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Ambev, Demonstrações contábeis intermediárias 30/09/2026 (ITR 3T26, RI)",
+   "url": "https://filemanager-cdn.mziq.com/published/c8182463-4b7e-408c-9d0f-42797662435e/a2eacbe2-c186-4697-98ae-51b1076bf372",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Mercado&Consumo (Estadão Conteúdo): Lucro líquido da Ambev no 3º tri soma R$ 4,3 bi, alta anual de 14,3%",
+   "url": "https://mercadoeconsumo.com.br/29/10/2026/mc-capital/lucro-liquido-da-ambev-no-3o-tri-soma-r-43-bi-alta-anual-de-143/",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Diário do Grande ABC: Lucro líquido ajustado da Ambev no 3º tri soma R$ 4,3 bi",
+   "url": "https://www.dgabc.com.br/Noticia/4365678/lucro-liquido-ajustado-da-ambev-no-3-tri-soma-r-4-3-bi-alta-anual-de-14-3",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "InfoMoney: resultado do 3T25 da Ambev (base de comparação)",
+   "url": "https://www.infomoney.com.br/mercados/ambev-traz-surpresa-positiva-e-sobe-4-apos-balanco-veja-o-que-animou-investidores/",
+   "data": "2025-10-30"
+  }
+ ],
+ "ultimo_resultado": "3T26"
+}
