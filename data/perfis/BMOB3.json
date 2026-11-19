@@ -1,0 +1,88 @@
+{
+ "ticker": "BMOB3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Plataforma de pagamentos digitais e software para empresas de serviços recorrentes (telecom, energia, saneamento, educação, saúde). Pagamentos já são 52% da receita; 28% da receita vem do exterior.",
+ "modelo": "A Bemobi processa cobranças recorrentes (cartão, pix automático, boleto) para grandes empresas de contas mensais e cobra uma taxa sobre o volume transacionado (TPV de R$ 4,6 bi no 3T26). Também vende licenças de software (SaaS) para escolas, provedores de internet e atendimento ao cliente com IA (Wave Tech, Grace IA, Agenda Edu), e mantém o negócio original de assinaturas de aplicativos e microfinanças de crédito pré-pago, distribuídos por operadoras de telefonia em dezenas de países. A Paytime, adquirida e consolidada desde o 1T26, adiciona adquirência para redes e ecossistemas. A receita é majoritariamente recorrente.",
+ "segmentos": [
+  {
+   "nome": "Pagamentos digitais",
+   "peso_receita": 0.52,
+   "periodo": "3T26",
+   "obs": "Cresceu 73% (34% orgânico), com a Paytime 100% alocada nesta vertical."
+  },
+  {
+   "nome": "SaaS",
+   "peso_receita": 0.18,
+   "periodo": "3T26",
+   "obs": "Cresceu 14%, com licenças em educação básica e provedores de internet."
+  },
+  {
+   "nome": "Outros negócios (assinaturas de apps e microfinanças)",
+   "peso_receita": 0.3,
+   "periodo": "3T26",
+   "obs": "Queda de 2%, praticamente estável sem efeito câmbio; concentrado em operadoras no exterior."
+  }
+ ],
+ "segmentos_base": "Receita líquida ajustada (harmonizada após incorporação da M4U)",
+ "geografia": {
+  "brasil_pct": 0.72,
+  "exterior_pct": 0.28,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Pagamentos e SaaS estão concentrados no Brasil, que chegou a 71,9% da receita (+10,4 p.p. em um ano). A receita externa vem de assinaturas de aplicativos e microfinanças vendidas por operadoras de telefonia em países como Paquistão e Egito, além de outros mercados da América Latina, Ásia e África, por meio de controladas com moeda funcional em dólar."
+ },
+ "moeda": {
+  "receita_em_dolar": "média",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Cerca de 28% da receita é gerada no exterior por controladas com moeda funcional em dólar, e a empresa divulga o crescimento sem efeito cambial (FXN), que no 3T26 foi 1 p.p. maior que o reportado. A dívida é pequena e em reais (BNDES), e a empresa tem caixa de R$ 319 mi, então dólar mais alto eleva a receita convertida em reais."
+ },
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita líquida ajustada foi de R$ 245,3 mi (+30,8% sobre o 3T25; +15% orgânico, sem a Paytime), o Ebitda ajustado de R$ 86,8 mi (+38%, margem de 35,4%, +2,0 p.p.) e o lucro líquido ajustado de R$ 51,0 mi (+20%), com o lucro contábil consolidado em R$ 46,9 mi. No 9M26 a receita somou R$ 694,6 mi (+31%). O lucro cresceu menos que o Ebitda porque o resultado financeiro caiu de R$ 16,7 mi para R$ 4,6 mi, após dividendos extraordinários em 2025, a primeira parcela da compra da Paytime e a recompra de ações de maio; o caixa terminou setembro em R$ 319 mi. A empresa conquistou Cruzeiro do Sul e Afya em educação superior, encerrou o swap sobre as próprias ações em setembro e outubro e declarou R$ 16 mi em JCP (R$ 0,19 por ação), mantendo a meta de distribuir 100% do lucro de 2026.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Juro menor valoriza empresas de crescimento e reduz o custo de antecipação de recebíveis na operação de pagamentos, embora diminua a receita financeira sobre o caixa de R$ 319 mi."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "Cerca de 28% da receita vem de controladas no exterior com moeda funcional em dólar, que rendem mais em reais quando o dólar sobe; não há dívida em moeda estrangeira."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais atividade eleva o volume de contas pagas e a adesão a novos serviços, mas a receita vem de contas essenciais (energia, telefone, escola), pouco sensíveis ao ciclo."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Contas de serviços recorrentes reajustadas pela inflação elevam o TPV, enquanto salários e custos de processamento também sobem, efeitos que se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Juros longos maiores reduzem o valor de empresas de tecnologia em crescimento; a parcela de receita em dólar compensa só em parte."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Bemobi, Relatório de Resultados 3T26 (inclui ITR)",
+   "url": "https://filemanager-cdn.mziq.com/published/deed72f2-beae-4c6f-b423-db57178bae31/c6926384-6ffa-4c34-9d5c-1945f9793061",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Bemobi, Apresentação de Resultados 3T26",
+   "url": "https://filemanager-cdn.mziq.com/published/deed72f2-beae-4c6f-b423-db57178bae31/66f4a925-9d34-45fd-af6f-1ff4b8a3050a",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Bemobi, Relatório de Resultados 2T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/deed72f2-beae-4c6f-b423-db57178bae31/87491ab0-9e3c-bcb7-22fa-d9e94d1d2bd2?origin=2",
+   "data": "2026-08-12"
+  },
+  {
+   "titulo": "Let's Money: Bemobi, receita do 3T26",
+   "url": "https://www.letsmoney.com.br/noticias/bemobi-receita-3t26/",
+   "data": "2026-11-13"
+  }
+ ]
+}

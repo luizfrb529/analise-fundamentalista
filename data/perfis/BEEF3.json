@@ -1,0 +1,102 @@
+{
+ "ticker": "BEEF3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior exportadora de carne bovina da América do Sul, com frigoríficos em seis países. Cerca de 80% da receita do 3T26 foi vendida fora do Brasil e 65% da dívida está em moeda estrangeira.",
+ "modelo": "A Minerva abate bovinos e ovinos e vende carne in natura e processada para varejo, food service e importadores, com plantas no Brasil, Paraguai, Argentina, Uruguai, Colômbia e Austrália. Ganha a diferença entre o preço da carne no mercado internacional e o custo do gado comprado localmente. A receita é recorrente, mas a margem oscila com o ciclo do gado, o câmbio e a abertura de mercados importadores, como EUA e China.",
+ "segmentos": [
+  {
+   "nome": "Brasil",
+   "peso_receita": 0.51,
+   "periodo": "3T26",
+   "obs": "Operações brasileiras; 60,2% da receita bruta de bovinos no Brasil veio de exportação."
+  },
+  {
+   "nome": "Paraguai",
+   "peso_receita": 0.16,
+   "periodo": "3T26"
+  },
+  {
+   "nome": "Argentina",
+   "peso_receita": 0.11,
+   "periodo": "3T26"
+  },
+  {
+   "nome": "Uruguai",
+   "peso_receita": 0.1,
+   "periodo": "3T26"
+  },
+  {
+   "nome": "Austrália",
+   "peso_receita": 0.04,
+   "periodo": "3T26",
+   "obs": "Inclui ovinos, com 71,2% da receita exportada."
+  },
+  {
+   "nome": "Colômbia e outros",
+   "peso_receita": 0.07,
+   "periodo": "3T26"
+  }
+ ],
+ "segmentos_base": "Receita bruta por país de origem da operação",
+ "geografia": {
+  "brasil_pct": 0.2,
+  "exterior_pct": 0.8,
+  "periodo": "3T26",
+  "base": "receita bruta por destino",
+  "texto": "Produz em seis países e exporta para todos os continentes. No 3T26, o Brasil foi destino de 20% da receita bruta; América do Norte respondeu por 19% (EUA 14%), Ásia por 13% (China 5%), Oriente Médio por 11%, CEI por 9% e União Europeia por 6%."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "alta",
+  "texto": "Exportações foram 55% da receita bruta do 3T26 e o restante vem em boa parte de mercados domésticos fora do Brasil. Cerca de 65% da dívida total estava em moeda estrangeira em set/26, com pelo menos metade da exposição cambial de longo prazo protegida por hedge; alta do dólar eleva a receita em reais, mas também a dívida, e a variação cambial somou R$ 159 mi à dívida líquida no 3T26."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), a receita líquida foi de R$ 14,5 bi (-6,4%), com exportações de 55% da receita bruta; o Ebitda ajustado caiu 13,6%, para R$ 1,2 bi (margem de 8,3%), e houve prejuízo líquido de R$ 717,3 mi, ante lucro de R$ 120 mi no 3T25, por resultado financeiro negativo. A dívida líquida foi a R$ 15,2 bi e a alavancagem subiu para 3,2x Ebitda (2,9x no 2T26), com caixa de R$ 13,9 bi e fluxo de caixa livre negativo de R$ 402,7 mi. Em 2026 a empresa recomprou US$ 234,6 mi em bonds e, em 13/11/2026, cancelou 45,4 mi de ações em tesouraria e aprovou nova recompra de até 40,9 mi de ações.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor alivia a parcela da dívida em reais e o custo do capital de giro, mas 65% da dívida está em moeda estrangeira e o caixa de R$ 13,9 bi também rende menos."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "Com cerca de 80% da receita vendida fora do Brasil e gado comprado em moedas locais, dólar alto amplia a margem de exportação, apesar do aumento da dívida em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Carne mais cara no mercado externo eleva a receita, mas o gado, principal custo, sobe junto, e o efeito depende do ciclo pecuário."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O Brasil é destino de só 20% da receita, e a demanda vem principalmente de importadores como EUA, China e Oriente Médio."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Preços de venda são formados em dólar, enquanto custos locais de mão de obra e frete sobem, sem efeito líquido claro."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Real mais fraco ajuda as exportações, mas juros maiores e a dívida em moeda estrangeira pesam no balanço, efeitos que se compensam."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Minerva, Apresentação de resultados 3T26 (via Investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/BEEF3/52665/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Minerva, Fato Relevante: cancelamento de ações e novo programa de recompra (via Investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/BEEF3/53079/",
+   "data": "2026-11-17"
+  },
+  {
+   "titulo": "Eu Quero Investir: Minerva reverte lucro e tem prejuízo líquido de R$ 717,3 milhões no 3T26",
+   "url": "https://euqueroinvestir.com/acoes/minerva-reverte-lucro-e-tem-prejuizo-liquido-de-r-7173-milhoes-no-3t26",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Minerva, Aviso aos Acionistas: aumento de capital por exercício de bônus de subscrição (via Investidor10)",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/BEEF3/53201/",
+   "data": "2026-11-17"
+  }
+ ]
+}

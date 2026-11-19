@@ -1,0 +1,82 @@
+{
+ "ticker": "N1OW34",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR da ServiceNow, de software em nuvem para automatizar processos de empresas, com 97% da receita em assinaturas. O BDR acompanha a ação em dólar e o câmbio.",
+ "modelo": "A ServiceNow vende a plataforma ServiceNow AI Platform, que automatiza fluxos de trabalho de TI, atendimento ao cliente (CRM), RH, segurança e finanças, com agentes de IA. Os clientes são grandes empresas e governos, com contratos de assinatura plurianuais, em geral não canceláveis durante a vigência, o que torna a receita altamente recorrente. Em 2025 e 2026 comprou Moveworks (US$ 2,4 bilhões), Veza (US$ 1,2 bilhão) e Armis (US$ 7,6 bilhões) para ampliar busca corporativa e segurança. O BDR N1OW34 é negociado na B3 e representa ações listadas na NYSE.",
+ "segmentos": [
+  {
+   "nome": "Assinaturas",
+   "peso_receita": 0.97,
+   "periodo": "9M26",
+   "obs": "US$ 11,54 bilhões, alta de 23%."
+  },
+  {
+   "nome": "Serviços profissionais e outros",
+   "peso_receita": 0.03,
+   "periodo": "9M26",
+   "obs": "US$ 327 milhões, alta de 12%."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão).",
+ "geografia": {
+  "brasil_pct": 0.0,
+  "exterior_pct": 1.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Do ponto de vista do investidor brasileiro, toda a receita é externa: 63% na América do Norte (95% disso nos EUA), 25% em Europa, Oriente Médio e África e 12% em Ásia-Pacífico e outros nos 9M26. A participação do Brasil não é divulgada."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "média",
+  "texto": "A receita é reportada em dólar, com parte relevante em euro e libra, e o BDR replica a ação convertida para reais, então a alta do dólar valoriza o BDR na B3. A dívida é em dólar: US$ 5,5 bilhões em títulos e US$ 2,1 bilhões em commercial paper em set/26, contra US$ 2,4 bilhões em caixa e US$ 2,2 bilhões em aplicações de curto prazo."
+ },
+ "momento": "No 3T26 (divulgado em 28/10/2026), a receita total subiu 20,5%, para US$ 4,11 bilhões, e a de assinaturas subiu 21%, para US$ 3,99 bilhões. O lucro líquido contábil caiu de US$ 502 milhões para US$ 277 milhões e a margem operacional contábil recuou de 17% para 9,5%, pesada pelas aquisições do ano; a margem operacional ajustada ficou em 32,5%. A receita contratada para os próximos 12 meses (cRPO) chegou a US$ 13,65 bilhões, alta de 20,5%, e a empresa elevou a projeção de receita de assinaturas de 2026 para US$ 15,78 a 15,79 bilhões e a de margem de fluxo de caixa livre para 36%. Para pagar a Armis, tomou empréstimo de US$ 4,0 bilhões em abril e o substituiu por emissão de títulos de US$ 4,0 bilhões em maio de 2026.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A empresa não tem crédito nem operação relevante no Brasil; a Selic só afeta o BDR indiretamente, pela comparação com a renda fixa local."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "O BDR é a ação em dólar convertida para reais: cada alta do dólar se soma diretamente ao retorno em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Software em nuvem tem baixa dependência de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O Brasil é parcela pequena da receita; o que importa é o gasto global de grandes empresas com software e IA."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação brasileira não afeta a operação; contratos de assinatura permitem reajuste no mercado global."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal no Brasil tende a desvalorizar o real, o que eleva o BDR em reais e funciona como proteção para o investidor local."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "ServiceNow: release de resultados do 3T26 (Form 8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000092/erq3fy26.htm",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "ServiceNow: Form 10-Q do trimestre encerrado em 30/09/2026 (receita por região, dívida, aquisições)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "ServiceNow Investor Relations: ServiceNow Reports Third Quarter 2026 Financial Results",
+   "url": "https://investor.servicenow.com/news/news-details/2026/ServiceNow-Reports-Third-Quarter-2026-Financial-Results/default.aspx",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "Diginomica: resultados do 3T26 da ServiceNow",
+   "url": "https://diginomica.com/node/31392",
+   "data": "2026-10-28"
+  }
+ ]
+}

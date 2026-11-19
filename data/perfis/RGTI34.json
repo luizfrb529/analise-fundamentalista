@@ -1,0 +1,76 @@
+{
+ "ticker": "RGTI34",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR da Rigetti, que desenvolve computadores quânticos supercondutores, ainda com receita pequena e prejuízo operacional. O caixa de US$ 497 milhões, sem dívida, financia a operação.",
+ "modelo": "A Rigetti projeta e fabrica, em fábrica própria na Califórnia, processadores quânticos supercondutores baseados em chiplets. Vende sistemas instalados no cliente (Novera de 9 qubits e Cepheus de 36 a 108 qubits), acesso pela nuvem e contratos de pesquisa, principalmente para laboratórios nacionais, centros de pesquisa e governos. A receita é pequena, pontual e concentrada em poucos contratos, enquanto as despesas com pesquisa são altas. O BDR RGTI34 é negociado na B3 e representa ações listadas na Nasdaq.",
+ "segmentos": [
+  {
+   "nome": "Sistemas, nuvem e contratos de pesquisa (segmento único)",
+   "peso_receita": 1.0,
+   "periodo": "9M26",
+   "obs": "US$ 10,9 bilhões não; US$ 10,9 milhões, alta de cerca de 110%, puxada pela venda de sistemas Novera de 9 qubits."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão). A empresa reporta um único segmento.",
+ "geografia": {
+  "brasil_pct": 0.0,
+  "exterior_pct": 1.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Toda a receita é externa: 55% nos Estados Unidos, 9% na Europa e 36% na Ásia e outros nos 9M26. Há um pedido de US$ 8,4 milhões para entregar um sistema de 108 qubits ao C-DAC, na Índia, previsto para o 4T26; não há operação no Brasil."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Os resultados são em dólar e o BDR replica a ação convertida para reais, então a alta do dólar valoriza o BDR na B3. A empresa não tinha dívida em set/26."
+ },
+ "momento": "No 3T26 (divulgado em 10/11/2026), a receita caiu cerca de 28%, para US$ 1,4 milhão, pela redução de contratos de pesquisa e serviços; nos 9M26 somou US$ 10,9 milhões, alta de cerca de 110%. O prejuízo operacional foi de US$ 33,2 milhões; o prejuízo líquido contábil ficou em US$ 3,1 milhões porque foi reduzido por receitas financeiras e ganhos com a variação de valor de warrants (prejuízo ajustado de US$ 20,5 milhões). Em set/26 assinou acordo de até US$ 100 milhões com o Departamento de Comércio dos EUA (CHIPS Act), que recebeu cerca de 7,7 milhões de ações e virou acionista minoritário. A projeção de receita de 2026, de cerca de US$ 20 milhões, depende da aceitação do sistema pelo C-DAC no 4T26; caixa e aplicações somavam US$ 497,1 milhões.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A empresa não opera no Brasil; a Selic só afeta o BDR indiretamente, pela comparação com a renda fixa local."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "O BDR é a ação em dólar convertida para reais: cada alta do dólar se soma diretamente ao retorno em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "A empresa usa insumos especializados (como hélio e componentes criogênicos), sem exposição relevante a commodities negociadas em bolsa."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "A receita depende de orçamentos de pesquisa de governos e laboratórios fora do Brasil, não da atividade brasileira."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação brasileira não afeta a operação, que é toda no exterior e em dólar."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal no Brasil tende a desvalorizar o real, o que eleva o BDR em reais e funciona como proteção para o investidor local."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Rigetti: release de resultados do 3T26 (Form 8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1838359/000110465926125152/rgti-ex99d1.htm",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Rigetti: Form 10-Q do trimestre encerrado em 30/09/2026 (receita por região, acordo com o Departamento de Comércio, C-DAC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1838359/000110465926125161/rgti-20260930x10q.htm",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "The Quantum Insider: Rigetti reports Q3 2026 results and updates quantum computing roadmap",
+   "url": "https://thequantuminsider.com/2026/11/11/rigetti-q3-2026-results-quantum-computing-roadmap/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Quantum Zeitgeist: Rigetti Computing, receita do terceiro trimestre de US$ 1,4 milhão",
+   "url": "https://quantumzeitgeist.com/?p=369340",
+   "data": "2026-11-11"
+  }
+ ]
+}

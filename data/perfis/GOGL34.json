@@ -1,0 +1,106 @@
+{
+ "ticker": "GOGL34",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR da Alphabet, controladora do Google: busca, YouTube, Android e nuvem. Metade da receita vem de anúncios na busca e a nuvem já é 24%; o BDR acompanha a ação em dólar e o câmbio.",
+ "modelo": "A Alphabet ganha dinheiro sobretudo com publicidade na busca do Google, no YouTube e em sites parceiros (rede Google), receita recorrente ligada ao gasto global de anunciantes. Vende também assinaturas (YouTube Premium, Google One), aplicativos e aparelhos, e serviços de nuvem e infraestrutura de IA pelo Google Cloud, incluindo seus chips TPU. Other Bets reúne apostas como a Waymo, com receita pequena. O BDR GOGL34 é negociado na B3 e representa ações listadas na Nasdaq.",
+ "segmentos": [
+  {
+   "nome": "Google Search e outros",
+   "peso_receita": 0.5,
+   "periodo": "3T26",
+   "obs": "US$ 63,4 bilhões, alta de 12%."
+  },
+  {
+   "nome": "Google Cloud",
+   "peso_receita": 0.24,
+   "periodo": "3T26",
+   "obs": "US$ 30,7 bilhões, alta de 103%, com lucro operacional de US$ 11,1 bilhões."
+  },
+  {
+   "nome": "Assinaturas, plataformas e dispositivos",
+   "peso_receita": 0.11,
+   "periodo": "3T26",
+   "obs": "US$ 14,3 bilhões, alta de 11%."
+  },
+  {
+   "nome": "Anúncios no YouTube",
+   "peso_receita": 0.09,
+   "periodo": "3T26",
+   "obs": "US$ 11,2 bilhões, alta de 9%."
+  },
+  {
+   "nome": "Google Network",
+   "peso_receita": 0.06,
+   "periodo": "3T26",
+   "obs": "US$ 7,5 bilhões, alta de 1%."
+  },
+  {
+   "nome": "Other Bets",
+   "peso_receita": 0.003,
+   "periodo": "3T26",
+   "obs": "US$ 372 milhões, prejuízo operacional de US$ 2,0 bilhões."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão).",
+ "geografia": {
+  "brasil_pct": 0.0,
+  "exterior_pct": 1.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Do ponto de vista do investidor brasileiro, toda a receita é externa: 53% nos EUA, 26% em Europa, Oriente Médio e África, 16% na Ásia-Pacífico e 6% nas outras Américas, grupo que inclui Brasil, Canadá e América Latina, sem abertura por país."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "baixa",
+  "texto": "Os resultados são em dólar e o BDR replica a ação em dólar convertida para reais, então a alta do dólar valoriza o BDR na B3. A dívida de longo prazo subiu de US$ 46,5 bilhões (dez/25) para US$ 125,1 bilhões (set/26), com emissões em dólar e em euro, mas segue abaixo dos US$ 265,1 bilhões em caixa e aplicações financeiras."
+ },
+ "momento": "No 3T26 (divulgado em 28/10/2026), a receita cresceu 25%, para US$ 127,6 bilhões, e o lucro operacional 30%, para US$ 40,6 bilhões (margem de 31,8%). O lucro líquido caiu 25%, para US$ 26,2 bilhões, por perda de US$ 8,7 bilhões na marcação de participações em outras empresas; nos 9M26, ganhos com essas participações elevaram o lucro para US$ 201,2 bilhões. O investimento somou US$ 51,4 bilhões no trimestre (US$ 132,0 bilhões nos 9M26, o dobro de 2025) e o fluxo de caixa livre ficou negativo em US$ 9,1 bilhões. Para financiar data centers, a empresa emitiu ações em jun/26 (US$ 20,5 bilhões em oferta pública e US$ 10,0 bilhões para afiliada da Berkshire Hathaway), US$ 19,0 bilhões em preferenciais conversíveis obrigatórias, US$ 12,4 bilhões em ações via programa ATM e US$ 28,7 bilhões em títulos no 3T26, além de 6 bilhões de euros em títulos em nov/26.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A empresa não depende de crédito no Brasil; a Selic só afeta o BDR pela comparação com a renda fixa local."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "O BDR é a ação em dólar convertida para reais: cada alta do dólar se soma diretamente ao retorno em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Publicidade e nuvem têm baixa dependência de commodities; energia para data centers é o custo mais próximo, com efeito limitado."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O Brasil é parte pequena da receita; o que importa é o gasto global com publicidade e nuvem."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação brasileira não afeta a operação, que é global e precificada em dólar."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal no Brasil tende a desvalorizar o real, o que eleva o BDR em reais e funciona como proteção para o investidor local."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Alphabet Announces Third Quarter 2026 Results (Exhibit 99.1 ao 8-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "Alphabet, Form 10-Q do 3T26: receita por região, capex e emissões de ações (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Alphabet, Form 8-K de 05/11/2026: emissão de 6 bilhões de euros em títulos (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "9to5Google: resultados do 3T26 da Alphabet",
+   "url": "https://9to5google.com/2026/10/28/alphabet-q3-2",
+   "data": "2026-10-28"
+  }
+ ]
+}

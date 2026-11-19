@@ -1,0 +1,100 @@
+{
+ "ticker": "QCOM34",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR da Qualcomm, de chips para celulares (Snapdragon) e licenças de patentes de 4G e 5G. Celulares ainda são 56% da receita e caem; carros, IoT e data center são a aposta de crescimento.",
+ "modelo": "A Qualcomm vende chips (processadores, modems e radiofrequência) para fabricantes de celulares, carros, PCs e dispositivos conectados, no segmento QCT, e cobra royalties pelo uso de suas patentes de comunicação móvel no segmento QTL, de alta margem. A venda de chips é por volume e depende de poucos grandes clientes, como Apple e Samsung; os royalties são recorrentes, por contratos plurianuais. Desde o ano fiscal 2027 inclui no QCT o negócio de data center, reforçado pela compra da Alphawave. O BDR QCOM34 é negociado na B3 e representa ações listadas na Nasdaq.",
+ "segmentos": [
+  {
+   "nome": "QCT: celulares",
+   "peso_receita": 0.56,
+   "periodo": "Ano fiscal 2026 (out/25 a set/26)",
+   "obs": "US$ 24,1 bilhões, queda de 13%; no 4T caiu 26%."
+  },
+  {
+   "nome": "QCT: IoT",
+   "peso_receita": 0.17,
+   "periodo": "Ano fiscal 2026 (out/25 a set/26)",
+   "obs": "US$ 7,1 bilhões, alta de 8%."
+  },
+  {
+   "nome": "QCT: automotivo",
+   "peso_receita": 0.14,
+   "periodo": "Ano fiscal 2026 (out/25 a set/26)",
+   "obs": "US$ 6,0 bilhões, alta de 52%; no 4T passou de US$ 2 bilhões pela primeira vez."
+  },
+  {
+   "nome": "QTL: licenciamento",
+   "peso_receita": 0.13,
+   "periodo": "Ano fiscal 2026 (out/25 a set/26)",
+   "obs": "US$ 5,6 bilhões, margem antes de impostos de 72%."
+  },
+  {
+   "nome": "Outros (inclui data center)",
+   "peso_receita": 0.01,
+   "periodo": "Ano fiscal 2026 (out/25 a set/26)",
+   "obs": "Diferença entre a receita total e os segmentos acima."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão).",
+ "geografia": {
+  "brasil_pct": 0.0,
+  "exterior_pct": 1.0,
+  "periodo": "Ano fiscal 2026 (out/25 a set/26)",
+  "base": null,
+  "texto": "Do ponto de vista do investidor brasileiro, toda a receita é externa. Pela sede do cliente, 42% vieram da China e Hong Kong, 25% dos EUA, 22% da Coreia do Sul e 11% de outros países; o local de venda do aparelho final pode ser outro."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "média",
+  "texto": "Vendas e royalties são em dólar e o BDR replica a ação em dólar convertida para reais, então a alta do dólar valoriza o BDR na B3. Em set/26 a dívida era de US$ 15,1 bilhões, contra US$ 7,7 bilhões em caixa e aplicações, e em nov/26 a empresa emitiu mais US$ 4,0 bilhões em títulos."
+ },
+ "momento": "No 4T do ano fiscal 2026 (encerrado em 27/09/2026 e divulgado em 04/11/2026), a receita caiu 8%, para US$ 10,3 bilhões, com queda de 26% em chips para celulares e alta de 89% em automotivo. O lucro líquido contábil foi de US$ 1,25 bilhão, ante prejuízo de US$ 3,1 bilhões no 4T25, e o lucro ajustado caiu 28%. No ano fiscal 2026, a receita recuou 3%, para US$ 43,1 bilhões, e o lucro líquido de US$ 13,6 bilhões inclui crédito tributário de US$ 5,7 bilhões. A projeção para o 1T do ano fiscal 2027 é de receita entre US$ 10,4 e 11,2 bilhões; a empresa mantém a meta de US$ 5 bilhões em data center no ano fiscal 2027 e repassa aos preços a alta de custos de memória e fabricação. A Apple, um dos maiores clientes, vem trocando os modems Qualcomm pelos próprios, mas renovou o contrato de licença de patentes.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A empresa não depende de crédito no Brasil; a Selic só afeta o BDR pela comparação com a renda fixa local."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "O BDR é a ação em dólar convertida para reais: cada alta do dólar se soma diretamente ao retorno em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O custo relevante é de memória, wafers e encapsulamento, não de commodities clássicas."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O Brasil é mercado pequeno; a demanda depende do ciclo global de celulares, sobretudo na China."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação brasileira não afeta a operação, precificada em dólar."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal no Brasil tende a desvalorizar o real, o que eleva o BDR em reais e funciona como proteção para o investidor local."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Qualcomm Announces Fourth Quarter and Fiscal 2026 Results (Exhibit 99.1 ao 8-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Qualcomm, Form 10-K do ano fiscal 2026 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000128/qcom-20260927.htm",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Qualcomm, Form 8-K de 13/11/2026: emissão de US$ 4,0 bilhões em títulos (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/804328/000110465926127163/tm2629667d1_8k.htm",
+   "data": "2026-11-13"
+  },
+  {
+   "titulo": "Securities.io: Qualcomm keeps $5 billion data center target as handset revenue falls",
+   "url": "https://www.securities.io/qualcomm-keeps-5-billion-data-center-target-as-handset-revenue-falls/",
+   "data": "2026-11-04"
+  }
+ ]
+}

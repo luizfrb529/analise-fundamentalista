@@ -28,7 +28,7 @@
  "moeda": {
   "receita_em_dolar": "média",
   "divida_em_dolar": "baixa",
-  "texto": "Cerca de um quarto da receita vem de países sul-americanos, em moedas locais e com exportações de arroz do Uruguai, que tendem a ganhar em reais com dólar alto. No Brasil, açúcar e arroz seguem a paridade de exportação, o que encarece a matéria-prima. A dívida é majoritariamente local (debêntures e CRAs); a parcela em moeda estrangeira não foi confirmada."
+  "texto": "Cerca de um quarto da receita vem de países sul-americanos, em moedas locais e com exportações de arroz do Uruguai, que tendem a ganhar em reais com dólar alto. No Brasil, açúcar e arroz seguem a paridade de exportação, o que encarece a matéria-prima. A dívida de R$ 5,9 bi combina empréstimos, financiamentos e debêntures; a parcela em moeda estrangeira não foi confirmada."
  },
  "momento": "No 2T26 (jun a ago/26, divulgado em 08/10/2026), a receita líquida foi de R$ 2,76 bi (-7,2%), o Ebitda de R$ 225,3 mi (-10,1%, margem de 8,2%) e o lucro líquido de R$ 41,3 mi (-47,5%), com margem bruta maior (24,7%, +2,1 p.p.) e preços de arroz mais baixos no exterior. O volume consolidado caiu 4,6%, para 604,7 mil t, pela normalização do açúcar após exportações pontuais no 2T25. A dívida líquida foi de R$ 4,08 bi e a alavancagem ficou em 4,7x Ebitda, estável sobre o 1T26 e acima dos 4,1x de um ano antes, com despesa financeira de R$ 127,6 mi no trimestre. O capex caiu 66% com o fim das obras em Cambaí (RS), e a empresa paga R$ 420 mi em dividendos em 12 parcelas até dezembro de 2028.",
  "sensibilidade": {
@@ -69,13 +69,13 @@
    "data": "2026-10-08"
   },
   {
-   "titulo": "InfoMoney: Camil, dados mostram cenário desafiador e ação cai após resultado",
-   "url": "https://www.infomoney.com.br/mercados/camil-caml3-dados-mostram-cenario-desafiador-e-acao-cai-15-apos-resultado-fraco/amp/",
+   "titulo": "Super Varejo: Camil registra lucro líquido de R$ 41,3 milhões no 2T26",
+   "url": "https://supervarejo.com.br/industria/camil-registra-lucro-liquido-de-r-413-milhoes-no-2t26-queda-de-475-na-comparacao-anual",
    "data": "2026-10-09"
   },
   {
-   "titulo": "Super Varejo: Camil registra lucro líquido de R$ 41,3 milhões no 2T26",
-   "url": "https://supervarejo.com.br/industria/camil-registra-lucro-liquido-de-r-413-milhoes-no-2t26-queda-de-475-na-comparacao-anual",
+   "titulo": "AUVP Analítica: Camil registra queda de 47,5% no lucro do 2º tri de 2026, mas mostra recuperação",
+   "url": "https://analitica.auvp.com.br/noticias/camil-registra-queda-de-475-no-lucro-do-2-tri-de-2026-mas-mostra-recuperacao",
    "data": "2026-10-09"
   }
  ]

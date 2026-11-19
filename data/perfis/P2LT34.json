@@ -1,0 +1,82 @@
+{
+ "ticker": "P2LT34",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR da Palantir, de software de análise de dados e IA para governos e empresas. Cerca de 81% da receita vem dos EUA e o BDR acompanha a ação em dólar e o câmbio.",
+ "modelo": "A Palantir vende plataformas de software para integrar e analisar dados e operar IA: Gotham (defesa e inteligência), Foundry (empresas), AIP (plataforma de IA generativa) e Apollo (implantação). Os clientes são órgãos de governo, sobretudo dos EUA, e empresas de setores como indústria, saúde e energia. A receita vem de contratos plurianuais de assinatura e serviços associados, em grande parte recorrente, mas muitos contratos permitem rescisão. O BDR P2LT34 é negociado na B3 e representa ações listadas na Nasdaq.",
+ "segmentos": [
+  {
+   "nome": "Governo",
+   "peso_receita": 0.51,
+   "periodo": "9M26",
+   "obs": "US$ 2,99 bilhões, alta de 79%; no 3T26, governo dos EUA somou US$ 953 milhões, alta de 96%."
+  },
+  {
+   "nome": "Comercial",
+   "peso_receita": 0.49,
+   "periodo": "9M26",
+   "obs": "US$ 2,89 bilhões, alta de 107%; no 3T26, o comercial dos EUA (US$ 984 milhões, alta de 148%) superou pela primeira vez o governo dos EUA."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão).",
+ "geografia": {
+  "brasil_pct": 0.0,
+  "exterior_pct": 1.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Do ponto de vista do investidor brasileiro, toda a receita é externa: 81% nos Estados Unidos (US$ 4,79 bilhões) e 19% no resto do mundo (US$ 1,09 bilhão) nos 9M26. A fatia dos EUA subiu de 73% para 81% em um ano; a participação do Brasil não é divulgada."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Os contratos são majoritariamente em dólar e o BDR replica a ação convertida para reais, então a alta do dólar valoriza o BDR na B3. A empresa não tinha dívida em set/26 e mantinha US$ 10,4 bilhões em caixa e títulos do Tesouro americano."
+ },
+ "momento": "No 3T26 (divulgado em 02/11/2026), a receita subiu 96%, para US$ 2,31 bilhões, primeira vez acima de US$ 2 bilhões em um trimestre. O lucro operacional contábil foi de US$ 1,08 bilhão (margem de 47%) e o lucro líquido de US$ 1,13 bilhão (margem de 49%), ante US$ 476 milhões no 3T25. A empresa elevou a projeção de receita de 2026 para US$ 8,53 bilhões (alta de cerca de 91%) e a de fluxo de caixa livre ajustado para US$ 4,8 a 5,0 bilhões. O valor total de contratos fechados no trimestre (TCV) foi de US$ 2,92 bilhões, alta de apenas 6%, ritmo bem menor que o da receita.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A empresa não tem crédito nem operação relevante no Brasil; a Selic só afeta o BDR indiretamente, pela comparação com a renda fixa local."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "O BDR é a ação em dólar convertida para reais e a receita é quase toda em dólar: a alta do dólar se soma diretamente ao retorno em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Software tem baixa dependência de commodities; clientes de energia e indústria são parte da base, mas sem efeito direto relevante."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O Brasil não é mercado relevante para a receita; o que pesa é o gasto de governo e empresas dos EUA com dados e IA."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação brasileira não afeta a operação, que é em dólar e concentrada nos EUA."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal no Brasil tende a desvalorizar o real, o que eleva o BDR em reais e funciona como proteção para o investidor local."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Palantir: release de resultados do 3T26 (Form 8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/a2026q3ex991pressrelease.htm",
+   "data": "2026-11-02"
+  },
+  {
+   "titulo": "Palantir: Form 10-Q do trimestre encerrado em 30/09/2026 (receita por cliente e região, dívida)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000048/pltr-20260930.htm",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "Constellation Research: Palantir's Q3 highlights enterprise inflection point",
+   "url": "https://www.constellationr.com/insights/news/palantirs-q3-highlights-enterprise-inflection-point",
+   "data": "2026-11-02"
+  },
+  {
+   "titulo": "Securities.io: Palantir raises full year 2026 guidance as Q3 revenue grows 96%",
+   "url": "https://www.securities.io/palantir-raises-full-year-2026-guidance-as-q3-revenue-grows-96/",
+   "data": "2026-11-03"
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "ticker": "MLAS3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Fabricante e importadora de eletrônicos e bens de consumo com marcas próprias, com 61% da receita no segmento Corporativo. Vende quase só no Brasil, mas compra insumos em dólar, o que torna o câmbio o principal risco de custo.",
+ "modelo": "O Grupo Multilaser importa, fabrica (complexos de Extrema, MG, e Manaus, AM) e distribui eletrônicos, informática, eletroportáteis, brinquedos e produtos de saúde e bebê, com marcas próprias e licenciadas. O segmento Corporativo vende equipamentos de rede para operadoras e provedores, PCs e tablets para governo, memórias e componentes para fabricantes (OEM), mobilidade elétrica e áudio profissional; Consumer Tech e Consumer Especializado vendem ao varejo físico e online. A receita é de venda de produtos, sem componente recorrente contratual relevante, e parte dela depende de licitações públicas.",
+ "segmentos": [
+  {
+   "nome": "Corporativo",
+   "peso_receita": 0.61,
+   "periodo": "9M26",
+   "obs": "R$ 1,69 bi (+20,3%); no 3T26 caiu 8,2% com entregas mais espaçadas ao governo e memórias mais caras."
+  },
+  {
+   "nome": "Consumer Tech",
+   "peso_receita": 0.31,
+   "periodo": "9M26",
+   "obs": "R$ 852,9 mi (-20,3%), com menor volume de TVs por decisão de priorizar margem."
+  },
+  {
+   "nome": "Consumer Especializado",
+   "peso_receita": 0.08,
+   "periodo": "9M26",
+   "obs": "R$ 204,1 mi (-29,7%); saúde, bebê e brinquedos, margem bruta de 49,9% no 3T26."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Fábricas, centros de distribuição e clientes ficam no Brasil; a empresa não divulga receita de exportação. No exterior há uma subsidiária de compras em Hong Kong, que negocia com fornecedores asiáticos, e não uma operação de venda relevante."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "alta",
+  "texto": "A receita é em reais, mas boa parte do custo é importado: o saldo a pagar a fornecedores estrangeiros em dólar era de R$ 1,28 bi em set/26, mais financiamentos de importação (FINIMP), com proteção parcial por NDF de US$ 36 mi. Alta do dólar encarece estoques e exige repasse de preço, com efeito líquido negativo."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), a receita líquida foi de R$ 911,9 mi (-14,7% sobre o 3T25), mas a margem bruta subiu para 31,1% (+6,0 p.p.), o Ebitda chegou a R$ 97,8 mi (margem de 10,7%) e o lucro líquido a R$ 101,9 mi (+55,3%). O Ebitda foi afetado por provisão de R$ 20 mi para perdas com recebíveis do Grupo Casas Bahia, que pediu recuperação judicial em 16/08/2026; sem ela, seria de R$ 117,8 mi. No 9M26, a receita ficou estável (-0,7%, R$ 2,74 bi) e o lucro somou R$ 367,5 mi (+145,0%). A empresa terminou setembro com caixa líquido de R$ 652,9 mi (R$ 405,9 mi em junho) e dívida bruta de R$ 317,8 mi, e a receita financeira de tesouraria (R$ 74,6 mi no trimestre) tem peso relevante no lucro. A gestão diz manter cautela para o fim de 2026, com consumo discricionário pressionado e custos internacionais de componentes e frete em alta.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor ajuda o crédito ao consumo e o varejo que revende os produtos, mas, com caixa líquido de R$ 653 mi, a empresa perde parte da receita financeira que hoje pesa no lucro."
+  },
+  "dolar_subindo": {
+   "nota": -2,
+   "porque": "Receita em reais e custo em dólar, com R$ 1,28 bi a pagar a fornecedores estrangeiros e hedge parcial; dólar alto comprime margem até o repasse de preço."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O custo relevante é de memórias, semicondutores e frete internacional, cujos preços não seguem diretamente o ciclo de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 2,
+   "porque": "Eletrônicos, eletroportáteis e brinquedos são bens discricionários, e mais renda e investimento de operadoras de telecomunicações elevam volumes nos três segmentos."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação corrói a renda das famílias, reduz a compra de bens discricionários e pressiona custos de logística e pessoal."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -2,
+   "porque": "Risco fiscal tende a enfraquecer o real, encarecendo importações, e pode reduzir compras do governo, canal relevante do segmento Corporativo."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Grupo Multilaser, Release de Resultados 3T26",
+   "url": "https://d169uzu5o4xu1k.cloudfront.net/bd29b583-7473-436e-b539-7cf2a377348e/2026/dfa5381d-fa3d-4080-9a27-1ffa420bd809.pdf",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Grupo Multilaser, ITR 30/09/2026",
+   "url": "https://d169uzu5o4xu1k.cloudfront.net/bd29b583-7473-436e-b539-7cf2a377348e/2026/8e88217f-e8be-494f-9601-a88e8e146a31.pdf",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Multi projeta perdas de R$ 20 milhões após pedido de recuperação judicial da Casas Bahia",
+   "url": "https://timesbrasil.com.br/brasil/casas-bahia-multi-projeta-perdas-de-r-20-milhoes-apos-pedido-de-recuperacao-judicial-da-varejista/",
+   "data": "2026-08-19"
+  },
+  {
+   "titulo": "NeoFeed: o motor silencioso que levou a Multilaser do prejuízo ao caixa recorde",
+   "url": "https://neofeed.com.br/negocios/menos-prateleira-mais-servidores-o-motor-silencioso-que-levou-a-multilaser-do-prejuizo-ao-caixa-recorde/",
+   "data": "2026-08-26"
+  },
+  {
+   "titulo": "Multilaser RI, Central de Resultados",
+   "url": "https://ri.multilaser.com.br/pt/informacoes-financeiras/central-de-resultados",
+   "data": "2026-11-18"
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "ticker": "V1RT34",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR da Vertiv, fabricante de equipamentos de energia e refrigeração para data centers. A receita é em dólar, puxada pela expansão de IA, e cobre, aço e alumínio são insumos relevantes.",
+ "modelo": "A Vertiv projeta, fabrica e mantém a infraestrutura física de data centers e redes: sistemas de energia ininterrupta (UPS), distribuição elétrica, refrigeração a ar e líquida, racks e soluções pré-fabricadas, além de serviços e peças. Os clientes são operadores de nuvem, empresas de colocation, telecomunicações e indústria. Cerca de 81% da receita vem da venda de produtos, mais ligada a ciclos de investimento, e 19% de serviços e peças, mais recorrentes. O BDR V1RT34 é negociado na B3 e representa ações listadas na NYSE.",
+ "segmentos": [
+  {
+   "nome": "Américas",
+   "peso_receita": 0.67,
+   "periodo": "9M26",
+   "obs": "US$ 6,87 bilhões; no 3T26 cresceu 75% (66% orgânico)."
+  },
+  {
+   "nome": "Ásia-Pacífico",
+   "peso_receita": 0.2,
+   "periodo": "9M26",
+   "obs": "US$ 2,01 bilhões; no 3T26 cresceu 50% (48% orgânico)."
+  },
+  {
+   "nome": "Europa, Oriente Médio e África",
+   "peso_receita": 0.13,
+   "periodo": "9M26",
+   "obs": "US$ 1,35 bilhão; no 3T26 cresceu 23% (19% orgânico)."
+  }
+ ],
+ "segmentos_base": "Receita líquida (padrão). Os segmentos da Vertiv são geográficos.",
+ "geografia": {
+  "brasil_pct": 0.0,
+  "exterior_pct": 1.0,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Do ponto de vista do investidor brasileiro, toda a receita é externa: 67% nas Américas, 20% na Ásia-Pacífico (China, Índia e demais países) e 13% em Europa, Oriente Médio e África nos 9M26. A participação do Brasil, incluída em Américas, não é divulgada."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "média",
+  "texto": "Os resultados são em dólar e o BDR replica a ação convertida para reais, então a alta do dólar valoriza o BDR na B3. Em set/26 a dívida era de US$ 2,95 bilhões em títulos em dólar, contra US$ 3,51 bilhões em caixa (caixa líquido); a compra da UIG, paga em out/26 com cerca de US$ 1,45 bilhão em dinheiro, reduz essa folga."
+ },
+ "momento": "No 3T26 (divulgado em 28/10/2026), as vendas líquidas subiram 61%, para US$ 4,31 bilhões (55% de crescimento orgânico), e as encomendas orgânicas mais que dobraram. O lucro operacional subiu 90%, para US$ 984 milhões, a margem operacional ajustada foi de 25,2% (alta de 2,9 pontos) e o lucro líquido subiu de US$ 399 milhões para US$ 765 milhões. A empresa elevou a projeção de vendas de 2026 para US$ 14,45 a 14,85 bilhões e a de fluxo de caixa livre ajustado para US$ 2,6 a 2,8 bilhões. Em 27/10/2026 concluiu a compra da UtilityInnovation Group (microrredes e geração no local para data centers) por cerca de US$ 1,45 bilhão, com pagamento adicional de até US$ 1,15 bilhão condicionado a metas de Ebitda.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A empresa não tem crédito nem operação relevante no Brasil; a Selic só afeta o BDR indiretamente, pela comparação com a renda fixa local."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "O BDR é a ação em dólar convertida para reais e a receita é em dólar: a alta do dólar se soma diretamente ao retorno em reais."
+  },
+  "commodities_subindo": {
+   "nota": -1,
+   "porque": "Cobre, alumínio e aço são insumos dos equipamentos; a empresa usa hedge para parte das compras, mas alta forte desses metais pressiona custos e margens."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "O Brasil é parcela pequena da receita; o que importa é o investimento global em data centers e IA."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Inflação brasileira não afeta a operação, que é global e em dólar."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal no Brasil tende a desvalorizar o real, o que eleva o BDR em reais e funciona como proteção para o investidor local."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Vertiv: release de resultados do 3T26 (Form 8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026067707/q32026exhibit991vrt10282026.htm",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "Vertiv: Form 10-Q do trimestre encerrado em 30/09/2026 (receita por região, dívida, hedge de metais)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026067893/vrt-20260930.htm",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "Vertiv: conclusão da aquisição da UtilityInnovation Group (Form 8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026067393/exhibit991vrt-q42026102720.htm",
+   "data": "2026-10-27"
+  },
+  {
+   "titulo": "Quartr: Vertiv (VRT) Q3 2026 earnings summary",
+   "url": "https://quartr.com/events/vertiv-holdings-co-vrt-q3-2026_ozNH5KWH",
+   "data": "2026-10-28"
+  }
+ ]
+}
