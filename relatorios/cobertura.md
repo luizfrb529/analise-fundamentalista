@@ -1,6 +1,6 @@
 # Relatório de cobertura de dados
 
-Gerado em 18/11/2026 16:40 | Preços de fechamento de 2026-11-17 | Balanços até 3T2026
+Gerado em 18/11/2026 22:33 | Preços de fechamento de 2026-11-18 | Balanços até 3T2026
 
 | Ticker | Modelo | Balanço | Fonte | Indicadores com valor | Faltando |
 |---|---|---|---|---|---|
@@ -34,8 +34,8 @@ Gerado em 18/11/2026 16:40 | Preços de fechamento de 2026-11-17 | Balanços at�
 | UGPA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
 | PASS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 89/102 | 13 |
 | CSAN3 | HOLDING | 2026-09-30 | CVM (DFP/ITR, consolidado) | 86/104 | 18 |
-| RAIZ4 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 68/92 | 24 |
-| BRKM5 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 73/102 | 29 |
+| RAIZ55 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 73/92 | 19 |
+| BRKM5 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 72/92 | 20 |
 | UNIP6 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
 | DEXP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 96/102 | 6 |
 | SUZB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 93/102 | 9 |
@@ -131,7 +131,7 @@ Gerado em 18/11/2026 16:40 | Preços de fechamento de 2026-11-17 | Balanços at�
 | MSFT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 98/101 | 3 |
 | M1TA34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 92/101 | 9 |
 | GOGL34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 94/101 | 7 |
-| NVDC34 | GERAL | 2026-07-26 | SEC EDGAR (XBRL) | 90/101 | 11 |
+| NVDC34 | GERAL | 2026-07-26 | SEC EDGAR (XBRL) | 89/101 | 12 |
 | MUTC34 | GERAL | 2026-09-03 | SEC EDGAR (XBRL) | 94/101 | 7 |
 | QCOM34 | GERAL | 2026-09-27 | SEC EDGAR (XBRL) | 81/101 | 20 |
 | P2LT34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 67/101 | 34 |
@@ -693,10 +693,11 @@ Indicadores sem valor e motivo:
 - Soma das partes listadas (`soma_partes`): conta não encontrada na fonte ou não aplicável ao modelo
 - Desconto de holding (`desconto_holding`): conta não encontrada na fonte ou não aplicável ao modelo
 
-## RAIZ4
+## RAIZ55
 
 Avisos do pipeline:
 - sem preço da classe ON; usado preço do papel
+- sem preço da classe PN; usado preço do papel
 
 Indicadores sem valor e motivo:
 
@@ -704,7 +705,6 @@ Indicadores sem valor e motivo:
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - ROE (`roe`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
@@ -715,34 +715,21 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
-- DY médio 5a (`dy_medio_5a`): sem proventos suficientes nos últimos 5 anos
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
-- Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 - WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
-- Posição vendida em R$ (`aluguel_valor`): conta não encontrada na fonte ou não aplicável ao modelo
 - Posição vendida sobre o free float (`aluguel_pct_ff`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dias para cobrir (`aluguel_dias`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## BRKM5
 
 
 Indicadores sem valor e motivo:
 
-- P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/VP (`pvp`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita (principal) (`tir_implicita`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR - título de referência (`tir_spread_ref`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - ROE (`roe`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
@@ -2322,6 +2309,7 @@ Indicadores sem valor e motivo:
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
+- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Capex (`capex`): conta não encontrada na fonte ou não aplicável ao modelo
 - FCL (`fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -2682,5 +2670,5 @@ Empresas fora do modelo RECUPERACAO com dois ou mais entre PL negativo, Dív.lí
 | OBTC3 | TESOURARIA_CRIPTO | dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-7.44x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 
 ## Geral
-- selic: HTTP 304 em https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/1?formato=json&_=1795030854
+- selic: HTTP 304 em https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/1?formato=json&_=1795051994
 - sem histórico: ['BPAC4.SA', 'MGLU4.SA', 'RAIZ3.SA', 'TFCO3.SA']
