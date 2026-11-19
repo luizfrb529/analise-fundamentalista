@@ -1,0 +1,105 @@
+{
+ "ticker": "PGMN3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Terceira maior rede de farmácias do país, com 1.705 lojas e cerca de 62% delas no Nordeste. A receita é toda no Brasil; o ponto sensível é o custo da dívida e das antecipações de recebíveis, atrelado ao CDI.",
+ "modelo": "A Pague Menos vende medicamentos de marca, genéricos, medicamentos sem prescrição (OTC) e produtos de higiene e beleza em lojas próprias (marcas Pague Menos e Extrafarma, esta comprada em 2022 e em conversão) e por canais digitais, que já respondem por cerca de um quarto das vendas. O público é majoritariamente de classes B e C, com foco em clientes de uso contínuo de medicamentos. A receita é recorrente e de baixa margem (margem Ebitda perto de 6%), apoiada em escala de compras, marcas próprias e serviços farmacêuticos.",
+ "segmentos": [
+  {
+   "nome": "Medicamentos de marca (prescrição)",
+   "peso_receita": 0.42,
+   "periodo": "2T26",
+   "obs": "Inclui análogos de GLP-1, que chegaram a 8,5% das vendas totais no 3T26."
+  },
+  {
+   "nome": "Higiene e beleza",
+   "peso_receita": 0.24,
+   "periodo": "2T26",
+   "obs": "Categoria que mais cresceu no 3T26 (+11,6%)."
+  },
+  {
+   "nome": "Medicamentos sem prescrição (OTC)",
+   "peso_receita": 0.21,
+   "periodo": "2T26",
+   "obs": "Menor crescimento entre as categorias no 2T26 (+4,7%)."
+  },
+  {
+   "nome": "Genéricos",
+   "peso_receita": 0.13,
+   "periodo": "2T26",
+   "obs": "Cresceram 15,1% no 2T26."
+  },
+  {
+   "nome": "Serviços",
+   "peso_receita": 0.004,
+   "periodo": "2T26",
+   "obs": "Vacinas, exames e atendimento farmacêutico."
+  }
+ ],
+ "segmentos_base": "Receita bruta (mix de vendas do release do 2T26; o release do 3T26 não foi aberto)",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera só no Brasil, presente em todas as regiões. O Nordeste concentra cerca de 62% das lojas (1.043 de 1.695 em jun/26) e o Ceará é a maior praça (293 lojas); a expansão recente prioriza Norte, Nordeste e Centro-Oeste."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "Toda a receita é em reais. Parte da dívida é captada em moeda estrangeira, mas protegida por swap cambial, de modo que o custo final fica atrelado ao CDI; o efeito direto de uma alta do dólar é pequeno, com algum impacto indireto via custo de medicamentos importados, cujos preços são regulados pela CMED."
+ },
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita bruta foi de R$ 4,43 bi (+6,9% sobre o 3T25), o Ebitda ajustado de R$ 278,8 mi (+7,2%, margem de 6,3%) e o lucro líquido ajustado de R$ 96,3 mi (+19,5%, margem de 2,2%); as vendas em mesmas lojas cresceram 5,6%, desacelerando frente aos 8,0% do 2T26. Os canais digitais somaram cerca de R$ 1,1 bi (24,6% das vendas, +32,8%) e os análogos de GLP-1 chegaram a 8,5% das vendas, com a semaglutida em volume crescente e preço médio 54% menor após a queda da patente em 2026. No último dado oficial consultado (jun/26), a dívida líquida com antecipações de recebíveis era de R$ 1,80 bi, ou 1,8x o Ebitda (2,6x um ano antes), no 12º trimestre seguido de desalavancagem. A rede fechou setembro com 1.705 lojas (14 aberturas e 4 fechamentos no trimestre) e segue convertendo lojas Extrafarma.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 2,
+   "porque": "Dívida e antecipação de recebíveis são atrelados ao CDI e a despesa financeira ainda pesa frente a um lucro de margem baixa (cerca de 2% da receita); juro menor eleva o lucro de forma relevante."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita toda em reais e dívida em moeda estrangeira protegida por swap; o repasse de custos de medicamentos é limitado pela regulação de preços da CMED."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda nas classes B e C favorece higiene e beleza e o tíquete médio, mas a venda de medicamentos é pouco sensível ao ciclo."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "O reajuste anual da CMED gera ganho sobre estoques, mas inflação alta corrói a renda do público popular e eleva despesas com pessoal e aluguel."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Risco fiscal maior mantém juros altos por mais tempo, encarecendo dívida e antecipação de recebíveis, e pesa sobre o consumo no Norte e Nordeste."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Pague Menos, Release de Resultados 2T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/2cf06553-5bc1-44cd-b75f-6f3cd49d155d/07b599d9-f09f-55c3-f459-f4b25268b0c5?origin=2",
+   "data": "2026-08-03"
+  },
+  {
+   "titulo": "Mercado & Consumo: Pague Menos amplia lucro em 19,5% no 3T26; vendas digitais crescem 32,8%",
+   "url": "https://mercadoeconsumo.com.br/04/11/2026/noticias/pague-menos-amplia-lucro-em-195-no-3t26-vendas-digitais-crescem-328/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "O Povo: Quebra da patente da semaglutida alavanca resultado da Pague Menos",
+   "url": "https://mais.opovo.com.br/jornal/economia/2026/11/06/quebra-da-patente-da-semaglutida-alavanca-resultado-da-pague-menos-e-lucro-vai-a-rs-963-mi.html",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Giro News: Pague Menos registra alta de 19,5% no lucro líquido ajustado no terceiro trimestre",
+   "url": "https://gironews.com/farma-cosmeticos/pague-menos-registra-alta-de-195-no-lucro-liquido-ajustado-no-terceiro-trimestre/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Pague Menos, Release de Resultados 3T25",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/2cf06553-5bc1-44cd-b75f-6f3cd49d155d/84e77a00-7fd4-1d9a-6b98-fbc2fa0f4954?origin=1",
+   "data": "2025-11"
+  }
+ ]
+}

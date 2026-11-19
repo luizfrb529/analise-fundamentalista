@@ -1,0 +1,88 @@
+{
+ "ticker": "TIMS3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Operadora móvel controlada pela italiana TIM, com 61,6 milhões de clientes; 91% da receita vem de serviço móvel. Receita e dívida em reais, com caixa líquido sem arrendamentos.",
+ "modelo": "A TIM S.A. vende planos de telefonia e internet móvel pós e pré-pagos, banda larga por fibra (TIM Ultrafibra) e soluções para empresas, como conectividade IoT para agronegócio e veículos, além da V8.TECH (TI e nuvem) e da I-Systems (rede neutra de fibra, hoje 100% da TIM). A receita é quase toda recorrente, de assinaturas mensais, com receitas complementares de publicidade móvel, seguros e parcerias. A controladora é o grupo italiano TIM (Telecom Italia).",
+ "segmentos": [
+  {
+   "nome": "Serviço móvel",
+   "peso_receita": 0.91,
+   "periodo": "3T26",
+   "obs": "R$ 6,45 bi (+4,0%); pós-pago cresce e pré-pago recua 9% em base de clientes."
+  },
+  {
+   "nome": "Serviço fixo (Ultrafibra, I-Systems e B2B)",
+   "peso_receita": 0.06,
+   "periodo": "3T26",
+   "obs": "R$ 430 mi (+30,1%), com consolidação da V8.TECH e da I-Systems."
+  },
+  {
+   "nome": "Produtos (aparelhos e equipamentos)",
+   "peso_receita": 0.03,
+   "periodo": "3T26",
+   "obs": "R$ 188 mi (+6,0%)."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera só no Brasil, com cobertura móvel nacional e fibra (TIM Ultrafibra e rede neutra da I-Systems) em cidades selecionadas; não há receita no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida financeira estão em reais (debêntures, BNDES e BNB, atrelados ao IPCA) e o arrendamento de torres é corrigido por IPCA e IGP-M. Uma alta do dólar afeta só o custo de equipamentos de rede e aparelhos."
+ },
+ "momento": "No 3T26 (divulgado em 09/11/2026), a receita líquida foi de R$ 7,07 bi (+5,3% sobre o 3T25), o Ebitda normalizado de R$ 3,70 bi (+6,7%, margem de 52,4%) e o lucro líquido normalizado de R$ 1,11 bi (-7,8%); o lucro reportado caiu 18%, para R$ 991 mi, afetado por R$ 207 mi de ajuste de preço na compra da I-Systems, maior imposto de renda (menos juros sobre capital declarados) e piora do resultado financeiro. A receita fixa cresceu 30,1% com V8.TECH e Ultrafibra. A alavancagem total, incluindo arrendamentos, caiu para 0,78x o Ebitda; sem arrendamentos, há caixa líquido de R$ 3,45 bi. A empresa prevê distribuir de R$ 5,3 bi a 5,5 bi aos acionistas em 2026, aprovou nova recompra de até R$ 1 bi em agosto e submete a incorporação da I-Systems à assembleia de 30/11/2026.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Há caixa líquido sem arrendamentos, mas a dívida e os arrendamentos são indexados a IPCA; juro menor ajuda sobretudo pela valorização do fluxo de dividendos e pelo crédito ao consumidor de pós-pago."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida em reais; o dólar afeta apenas o custo de equipamentos e aparelhos."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities; a receita de IoT no agronegócio ainda é pequena."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda favorece migração do pré para o pós-pago e reduz a inadimplência."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "Planos são reajustados anualmente pela inflação, o que compensa dívida e arrendamentos atrelados a IPCA e IGP-M."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Negócio recorrente e pouco endividado; o ponto de atenção é a TFF (taxa de fiscalização), com pagamento suspenso desde 2020 e R$ 5,1 bi registrados no balanço, que um governo com caixa apertado tende a disputar com mais força."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "TIM S.A., Earnings Release 3Q26 (Form 6-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1826168/000129281426005199/timbpr3q26_6k.htm",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "InfoMoney: TIM registra queda de 7,8% no lucro líquido normalizado do 3º tri, a R$ 1,113 bilhão",
+   "url": "https://www.infomoney.com.br/?p=3569312",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): TIM fatura R$ 7,1 bilhões no 3º tri e vê receita do negócio fixo crescer 30%",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/tim-fatura-r-71-bilhoes-no-3o-tri-e-ve-receita-do-negocio-fixo-crescer-30/",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "DGABC (Estadão Conteúdo): TIM apresentou queda de 7,8% no lucro líquido normalizado do terceiro trimestre de 2026",
+   "url": "https://www.dgabc.com.br/Noticia/4367800/tim-apresentou-queda-de-7-8-no-lucro-liquido-normalizado-do-terceiro-trimestre-de-2026",
+   "data": "2026-11-09"
+  }
+ ]
+}

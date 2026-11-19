@@ -1,0 +1,106 @@
+{
+ "ticker": "SLCE3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Uma das maiores produtoras de soja, algodão e milho do país, com 860 mil hectares previstos na safra 2026/27. A receita segue preços em dólar, e a alavancagem subiu para 3,00x após compras de terras.",
+ "modelo": "A SLC Agrícola planta e vende soja, algodão em pluma e caroço, milho, sementes e gado, em fazendas próprias e arrendadas no Cerrado (Mato Grosso, Bahia, Maranhão, Piauí, Goiás e Mato Grosso do Sul). A receita depende do volume colhido e dos preços internacionais, fixados com antecedência por hedge de commodity e de câmbio. Há também ganho pontual com venda de terras valorizadas.",
+ "segmentos": [
+  {
+   "nome": "Soja",
+   "peso_receita": 0.43,
+   "periodo": "9M26",
+   "obs": "R$ 2,72 bi (+7,0%), produtividade recorde de 4.125 kg/ha na safra 2025/26."
+  },
+  {
+   "nome": "Algodão (pluma e caroço)",
+   "peso_receita": 0.33,
+   "periodo": "9M26",
+   "obs": "R$ 2,04 bi (-19,6%), por menor volume faturado da safra 2024/25."
+  },
+  {
+   "nome": "Resultado de hedge",
+   "peso_receita": 0.08,
+   "periodo": "9M26",
+   "obs": "R$ 527 mi, ganho com proteção de câmbio e preço reconhecido na receita."
+  },
+  {
+   "nome": "Milho",
+   "peso_receita": 0.07,
+   "periodo": "9M26",
+   "obs": "R$ 454 mi (-30,0%)."
+  },
+  {
+   "nome": "Pecuária",
+   "peso_receita": 0.05,
+   "periodo": "9M26",
+   "obs": "R$ 296 mi (+33,4%)."
+  },
+  {
+   "nome": "Sementes e outros",
+   "peso_receita": 0.04,
+   "periodo": "9M26",
+   "obs": "R$ 223 mi."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": null,
+  "exterior_pct": null,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Toda a produção ocorre no Brasil, em fazendas no Cerrado. Parte relevante do algodão e da soja é exportada, mas o release não divulga a divisão da receita entre mercado interno e externo."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "baixa",
+  "texto": "Soja, algodão e milho têm preço formado em dólar, e cerca de 57% do custo de produção também é indexado ao dólar; a empresa trava câmbio e preço com antecedência (soja 2026/27 com 39% do câmbio fixado a R$ 5,53). A parcela da dívida em moeda estrangeira é trocada para reais por swap ou usada como hedge, e o custo médio era de 96,5% do CDI no 3T26. Alta do dólar favorece a receita das safras ainda não travadas."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), a receita líquida caiu 13,1%, para R$ 1,81 bi, pelo menor volume de algodão e milho faturado, mas o lucro bruto subiu 30,2%, para R$ 810,9 mi (margem de 44,7% ante 29,8%), puxado pela soja; o lucro líquido foi de R$ 192,4 mi, ante prejuízo de R$ 14,5 mi no 3T25, e o Ebitda ajustado recuou 12,8%, para R$ 463,5 mi. A dívida líquida ajustada chegou a R$ 7,13 bi (R$ 5,24 bi em dez/25) e a alavancagem a 3,00x, após investimentos e pagamentos por aquisições (Sierentz, fazenda Paladino, Unaí e primeira parcela das terras do Grupo Radar). O Cade aprovou em 30/10/2026 a compra de 8,9 mil hectares do Grupo Radar em Mato Grosso, por R$ 669,6 mi. Para a safra 2026/27, a área prevista é de 860,8 mil hectares (+3,2%).",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "A dívida líquida de R$ 7,1 bi é atrelada ao CDI e a alavancagem está em 3,00x, então juro menor reduz a despesa financeira e valoriza as terras."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "A receita segue preços em dólar e 43% dos custos são em reais, o que amplia a margem em reais das safras ainda não travadas e valoriza as terras."
+  },
+  "commodities_subindo": {
+   "nota": 2,
+   "porque": "Soja, algodão e milho são toda a base da receita; preços maiores elevam margem, apesar do hedge que adia parte do ganho."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "A demanda é global e o preço é formado em Chicago e Nova York, pouco ligado à atividade doméstica."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Custos em reais sobem, mas terras e preços agrícolas tendem a acompanhar a inflação, efeitos que se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "O dólar mais alto favorece a receita, mas juros maiores encarecem a dívida de R$ 7,1 bi em CDI; os efeitos se compensam com a alavancagem atual."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "SLC Agrícola, Earnings Release 3Q26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/SLCE3/52451/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "The Rio Times: SLC Agrícola third quarter profit, soy record",
+   "url": "https://www.riotimesonline.com/slc-agricola-third-quarter-profit-soy-record/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "CompreRural: SLC Agrícola lucra R$ 192,4 milhões no 3º trimestre",
+   "url": "https://comprerural.com/slc-agricola-lucro-192-milhoes-3t26/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Brapi (com base em Money Times e InfoMoney): SLC lucra R$ 192,4 mi no 3T26",
+   "url": "https://brapi.dev/news/slc-lucra-r-192-4-mi-no-3t26-com-soja-recorde-alavancagem-f8579688",
+   "data": "2026-11-12"
+  }
+ ]
+}

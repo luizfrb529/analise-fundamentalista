@@ -1,0 +1,82 @@
+{
+ "ticker": "CSUD3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Processadora de cartões e prestadora de tecnologia para bancos, varejistas e fintechs. Receita 100% no Brasil e recorrente, com 60% vindo da CSU Pays (pagamentos) no 3T26.",
+ "modelo": "A CSU Digital vende processamento de cartões e contas digitais, banking as a service e programas de fidelidade (CSU Pays), além de gestão de processos de negócios com automação e inteligência artificial para atendimento e back office (CSU DX). Os clientes são bancos, varejistas, emissores de cartões e empresas de outros setores, com contratos de longo prazo. A receita da CSU Pays depende da quantidade de contas e transações processadas, e não do valor financeiro transacionado, o que dá previsibilidade.",
+ "segmentos": [
+  {
+   "nome": "CSU Pays (pagamentos, embedded finance e fidelidade)",
+   "peso_receita": 0.6,
+   "periodo": "3T26",
+   "obs": "Receita recorde de R$ 105,0 mi (+9,7%), 38,6 mi de contas e cartões e 81% do lucro bruto."
+  },
+  {
+   "nome": "CSU DX (experiência digital e hiperautomação)",
+   "peso_receita": 0.4,
+   "periodo": "3T26",
+   "obs": "R$ 69,3 mi (+19,5%), com seis novos contratos assinados em 2026."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera e vende apenas no Brasil, para clientes brasileiros. Não há operação ou receita relevante no exterior divulgada."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida são em reais. A alta do dólar afeta apenas custos indiretos, como licenças de software e infraestrutura de tecnologia, sem efeito relevante no resultado."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), a receita líquida foi de R$ 174,3 mi (+13,4% sobre o 3T25), o lucro bruto de R$ 74,1 mi (+19,8%, margem de 42,5%), o Ebitda de R$ 47,4 mi (+1,9%, margem de 27,2%) e o lucro líquido de R$ 21,2 mi (-11,0%, margem de 12,2%). A compressão de margem vem de R$ 10,2 mi em investimentos em novas avenidas de crescimento e despesas rescisórias; sem eles, o Ebitda ajustado seria de R$ 57,6 mi (margem de 33,0%). A empresa passou de caixa líquido para dívida líquida de R$ 74,5 mi com arrendamentos (0,43 vez o Ebitda de 12 meses), após tomar empréstimos e encerrar a operação de banking as a service de um cliente, que levou à devolução de R$ 24,5 mi em depósitos. Declarou R$ 17,1 mi em JCP (R$ 0,41 por ação) relativos ao 3T26.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor estimula emissão de cartões e transações nos clientes, base da receita da CSU Pays, e reduz o custo da pequena dívida."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida são em reais; o dólar afeta apenas custos de software e infraestrutura."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais consumo eleva o número de transações e contas ativas processadas e a demanda de clientes por atendimento e automação."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Contratos de longo prazo costumam ter reajuste, mas a folha de pagamento, principal custo da CSU DX, também sobe, efeitos que se compensam."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Juros longos mais altos encarecem o crédito ao consumidor, reduzem o ritmo de novos projetos dos clientes e pesam no valor de empresas de tecnologia."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "CSU Digital, Release de Resultados 3T26",
+   "url": "https://d169uzu5o4xu1k.cloudfront.net/cda8bfad-7383-4b57-bede-6ce1af8a28ba/2026/def358d5-83a4-4e2d-bb39-54950c1c9516.pdf",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "CSU Digital, site de RI (página inicial com link do release)",
+   "url": "https://ri.csu.com.br/pt",
+   "data": "2026-11-18"
+  },
+  {
+   "titulo": "TradeMap: CSU Digital, resultado do 3T26 (dados do ITR)",
+   "url": "https://trademap.com.br/noticias/news-8590987",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "CSU Digital, Release de Resultados 3T25 (base de comparação)",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/56692f27-e4c1-4f76-a296-4c07b78583e4/d11095eb-e9c8-510e-7fa9-6608530e7da6?origin=2",
+   "data": "2025-11-05"
+  }
+ ]
+}

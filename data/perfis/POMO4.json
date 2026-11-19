@@ -1,58 +1,58 @@
 {
  "ticker": "POMO4",
  "revisado_em": "2026-11-18",
- "resumo": "Maior fabricante de carrocerias de ônibus do Brasil, com fábricas em seis países. No 3T26, cerca de 47% da receita veio de exportações e operações no exterior, o que dá peso relevante ao câmbio.",
+ "resumo": "Maior fabricante de carrocerias de ônibus do Brasil, com fábricas em seis países. Nos 9M26, cerca de 43% da receita veio de exportações e operações no exterior, o que dá peso relevante ao câmbio.",
  "modelo": "A Marcopolo fabrica carrocerias de ônibus rodoviários, urbanos e micro-ônibus, além dos veículos Volare, vendidos a empresas de transporte, frotistas, governos e programas públicos como o Caminho da Escola. A receita é majoritariamente pontual, ligada a pedidos e ciclos de renovação de frota, com complemento de peças e serviços. O Banco Moneo, braço financeiro, repassa linhas do BNDES (Finame) a clientes. Tem fábricas no Brasil, México, Argentina, Austrália (Volgren), África do Sul e China, e participações em coligadas como a canadense NFI e a colombiana Superpolo.",
  "segmentos": [
   {
    "nome": "Rodoviários",
-   "peso_receita": 0.29,
-   "periodo": "1S26",
-   "obs": "R$ 1.151,4 mi, queda de 24% sobre o 1S25; segmento de maior margem."
+   "peso_receita": 0.31,
+   "periodo": "9M26",
+   "obs": "R$ 1.967,1 mi (queda de 22,8%); segmento de maior margem."
   },
   {
    "nome": "Urbanos",
-   "peso_receita": 0.27,
-   "periodo": "1S26",
-   "obs": "R$ 1.078,9 mi, 72% vendidos no mercado externo."
+   "peso_receita": 0.28,
+   "periodo": "9M26",
+   "obs": "R$ 1.755,3 mi, 71% vendidos no mercado externo."
   },
   {
    "nome": "Volares",
-   "peso_receita": 0.2,
-   "periodo": "1S26",
-   "obs": "R$ 811,3 mi, inclui o chassi."
+   "peso_receita": 0.18,
+   "periodo": "9M26",
+   "obs": "R$ 1.168,7 mi, inclui o chassi."
   },
   {
    "nome": "Micros",
-   "peso_receita": 0.15,
-   "periodo": "1S26",
-   "obs": "R$ 589,6 mi, quase o dobro do 1S25 com entregas a programas públicos."
+   "peso_receita": 0.12,
+   "periodo": "9M26",
+   "obs": "R$ 760,3 mi (+58%), com entregas a programas públicos."
   },
   {
    "nome": "Peças, chassis e outros",
-   "peso_receita": 0.06,
-   "periodo": "1S26",
-   "obs": "R$ 250,7 mi."
+   "peso_receita": 0.07,
+   "periodo": "9M26",
+   "obs": "R$ 442,8 mi."
   },
   {
    "nome": "Banco Moneo",
    "peso_receita": 0.04,
-   "periodo": "1S26",
-   "obs": "R$ 146,6 mi de receita financeira."
+   "periodo": "9M26",
+   "obs": "R$ 227,8 mi de receita financeira."
   }
  ],
  "segmentos_base": "Receita líquida",
  "geografia": {
-  "brasil_pct": 0.53,
-  "exterior_pct": 0.47,
-  "periodo": "3T26",
+  "brasil_pct": 0.57,
+  "exterior_pct": 0.43,
+  "periodo": "9M26",
   "base": null,
-  "texto": "No 3T26, as receitas no Brasil foram de cerca de R$ 1,21 bi, as exportações a partir do Brasil de R$ 377,8 mi e as operações no exterior de R$ 703,2 mi (queda de 21,4%). As fábricas fora do Brasil ficam no México, Argentina, Austrália, África do Sul e China, todas já em operação."
+  "texto": "Nos 9M26, as receitas no Brasil foram de R$ 3.574,2 mi, as exportações a partir do Brasil de R$ 827,0 mi e as operações no exterior de R$ 1.920,7 mi (queda de 13,0%). No 3T26, o exterior somou R$ 703,2 mi (queda de 21,4%). As fábricas fora do Brasil ficam no México, Argentina, Austrália, África do Sul e China, todas já em operação."
  },
  "moeda": {
   "receita_em_dolar": "alta",
   "divida_em_dolar": "baixa",
-  "texto": "Quase metade da receita vem de exportações cotadas em dólar e de controladas no exterior em moedas locais. A empresa faz hedge das exportações na confirmação do pedido; a alta do dólar eleva a receita em reais e a rentabilidade das exportações, efeito líquido positivo, enquanto a valorização do real em 2026 pressionou as margens."
+  "texto": "Cerca de 43% da receita vem de exportações cotadas em dólar e de controladas no exterior em moedas locais. A empresa faz hedge das exportações na confirmação do pedido; a alta do dólar eleva a receita em reais e a rentabilidade das exportações, efeito líquido positivo, enquanto a valorização do real em 2026 pressionou as margens."
  },
  "momento": "No 3T26 (divulgado em 03/11/2026), a receita líquida foi de R$ 2.293,5 mi (queda de 8,5% sobre o 3T25), o Ebitda de R$ 274,1 mi (queda de 34,7%, margem de 12,0% ante 16,8%) e o lucro líquido de R$ 186,5 mi (queda de 43,4%). A produção caiu 25,2%, para 3.085 unidades, com queda de 59,3% no exterior; houve R$ 19,9 mi de custos de reestruturação no Brasil e no México. A dívida líquida do segmento industrial era de R$ 341,1 mi em setembro (R$ 475,1 mi em junho). A empresa disse não esperar recuperação consistente de vendas no fim de 2026 e início de 2027, citando antecipação de compras ligada ao programa Mover, a pausa entre fases do Caminho da Escola e o diesel caro pesando sobre urbanos.",
  "sensibilidade": {
@@ -62,7 +62,7 @@
   },
   "dolar_subindo": {
    "nota": 2,
-   "porque": "Cerca de 47% da receita vem de exportações e operações no exterior; o dólar mais alto melhora a rentabilidade das exportações, como mostrou o efeito inverso da valorização do real em 2026."
+   "porque": "Cerca de 43% da receita vem de exportações e operações no exterior; o dólar mais alto melhora a rentabilidade das exportações, como mostrou o efeito inverso da valorização do real em 2026."
   },
   "commodities_subindo": {
    "nota": 0,
@@ -82,6 +82,11 @@
   }
  },
  "fontes": [
+  {
+   "titulo": "Marcopolo, ITR 3T26 com Comentário do Desempenho (CVM)",
+   "url": "http://www.rad.cvm.gov.br/ENETCONSULTA/frmDownloadDocumento.aspx?CodigoInstituicao=1&NumeroSequencialDocumento=161942",
+   "data": "2026-11-03"
+  },
   {
    "titulo": "Marcopolo, Informações Consolidadas 2T26 (release)",
    "url": "https://api.mziq.com/mzfilemanager/v2/d/1d587592-1c8f-4722-9db0-d79a28b81387/4ee7c23c-3d50-180e-c1eb-31427b96b41c?origin=2",

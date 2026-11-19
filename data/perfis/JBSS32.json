@@ -1,0 +1,106 @@
+{
+ "ticker": "JBSS32",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior processadora de proteína animal do mundo, listada em Nova York e com BDR na B3. Cerca de 70% das vendas vêm de operações fora do Brasil, e o resultado é apurado em dólar.",
+ "modelo": "A JBS N.V. produz e vende carne bovina, suína, de frango e alimentos processados para varejo, food service e exportação, com marcas como Friboi, Seara, Swift e Pilgrim's. Opera nos Estados Unidos (JBS Beef North America, JBS USA Pork e Pilgrim's Pride, que também atua em México e Europa), no Brasil (JBS Brasil e Seara) e na Austrália. A receita é recorrente, mas a margem depende do ciclo do gado, do custo de grãos e do preço da carne em cada mercado. A holding holandesa tem ações na NYSE desde junho de 2025, e o BDR JBSS32 é negociado na B3.",
+ "segmentos": [
+  {
+   "nome": "JBS Beef North America",
+   "peso_receita": 0.33,
+   "periodo": "3T26",
+   "obs": "US$ 7,56 bi de vendas (+4,3%); Ebitda ajustado IFRS próximo de zero, com oferta de gado nos EUA no menor nível em décadas."
+  },
+  {
+   "nome": "Pilgrim's Pride (frango EUA, México e Europa)",
+   "peso_receita": 0.2,
+   "periodo": "3T26",
+   "obs": "US$ 4,65 bi (-2,2%), margem Ebitda de 9,9%."
+  },
+  {
+   "nome": "JBS Brasil (Friboi e outros)",
+   "peso_receita": 0.18,
+   "periodo": "3T26",
+   "obs": "US$ 4,09 bi (-1,6%), margem de 3,4%, afetada pelo fim da cota chinesa de 2026."
+  },
+  {
+   "nome": "Seara",
+   "peso_receita": 0.11,
+   "periodo": "3T26",
+   "obs": "US$ 2,51 bi (+6,4%), margem de 13,2%, a maior do grupo."
+  },
+  {
+   "nome": "JBS Australia",
+   "peso_receita": 0.11,
+   "periodo": "3T26",
+   "obs": "US$ 2,49 bi (+13,7%), margem de 7,9%."
+  },
+  {
+   "nome": "JBS USA Pork",
+   "peso_receita": 0.08,
+   "periodo": "3T26",
+   "obs": "US$ 1,88 bi (-15,3%), margem de 2,0%."
+  }
+ ],
+ "segmentos_base": "Receita líquida por unidade de negócio antes das eliminações entre segmentos (soma de US$ 23,2 bi contra US$ 22,7 bi consolidados).",
+ "geografia": {
+  "brasil_pct": 0.28,
+  "exterior_pct": 0.72,
+  "periodo": "3T26",
+  "base": "receita das unidades por país de operação",
+  "texto": "Os Estados Unidos concentram a maior parte das vendas (carne bovina, suína e Pilgrim's), seguidos de Brasil, Austrália, México e Europa. As unidades brasileiras também exportam, sobretudo para China e Ásia, de modo que a receita efetivamente gerada no mercado interno brasileiro é menor que 28%."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "alta",
+  "texto": "A empresa reporta em dólar e a maior parte da receita vem de EUA, Austrália e exportações cotadas em moeda forte. A dívida líquida de US$ 19,3 bi também é majoritariamente em dólar, mas para o investidor do BDR, cotado em reais, a alta do dólar eleva o valor do ativo em reais."
+ },
+ "momento": "No 3T26 (divulgado em 09/11/2026), a receita líquida foi de US$ 22,7 bi (+1% sobre o 3T25), o Ebitda ajustado IFRS caiu 36% para US$ 1,18 bi (margem de 5,2%, ante 8,1%) e o lucro líquido atribuível recuou 72% para US$ 164 mi; no 9M26 a receita somou US$ 68,2 bi (+8,1%) e o lucro US$ 283 mi (-82%), com prejuízo de US$ 102 mi no 2T26. A alavancagem líquida subiu para 3,54 vezes o Ebitda (2,39 vezes um ano antes), com dívida líquida de US$ 19,3 bi, prazo médio de 14,4 anos, mais de 95% a taxa fixa e fluxo de caixa livre negativo de US$ 167 mi no trimestre. Carne bovina nos EUA voltou a Ebitda positivo pelo critério US GAAP, enquanto suínos e frango sofreram com excesso de oferta e o Brasil foi afetado pelo esgotamento da cota chinesa de 2026. A empresa pagou US$ 1,07 bi em dividendos no 9M26 e anunciou que Wesley Batista Filho, hoje CEO da JBS USA, assume como CEO global em 2027, no lugar de Gilberto Tomazoni.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 0,
+   "porque": "A dívida é em dólar e quase toda a taxa fixa, e o Brasil responde por menos de um terço das vendas, então juro brasileiro menor tem efeito pequeno."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "Resultado e patrimônio são em dólar, então o BDR ganha valor em reais com a alta da moeda; Seara e JBS Brasil ainda exportam mais competitivamente."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Milho e soja mais caros encarecem a ração de frango e suínos, mas preços maiores de carne e gado favorecem receita, efeitos que tendem a se compensar."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda no Brasil eleva o consumo de carne e de processados da Seara e da Friboi, mas a maior parte do negócio está fora do país."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "A inflação brasileira pesa em custos locais, mas o grupo repassa preço e a maior parte das operações não é afetada por ela."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Estresse fiscal no Brasil costuma desvalorizar o real, o que valoriza em reais um ativo com resultado em dólar."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "JBS N.V., Earnings Release 3Q26 (SEC, Form 8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001791942/000179194226000009/a991earningsrelease3q26.htm",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "InfoMoney (Reuters): JBS tem lucro 72% menor no 3T, a US$ 164 mi, mas vê melhora em carne bovina nos EUA",
+   "url": "https://www.infomoney.com.br/mercados/jbs-jbss32-resultados-terceiro-trimestre-2026/",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "DGABC (Estadão Conteúdo): JBS, lucro líquido atribuível cai 71,7% no 3º trimestre de 2026",
+   "url": "https://www.dgabc.com.br/Noticia/4367802/jbs-lucro-liquido-atribuivel-cai-71-7-no-3-trimestre-de-2026-para-us-164-milhoes",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Forbes Brasil: JBS aponta queda de 72% no lucro no 3º trimestre com expectativa positiva para 2027 nos EUA",
+   "url": "https://forbes.com.br/forbes-money/2026/11/jbs-aponta-queda-de-72-no-lucro-no-3o-trimestre-com-expectativa-positiva-para-2027-nos-eua/",
+   "data": "2026-11-10"
+  }
+ ]
+}

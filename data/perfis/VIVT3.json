@@ -1,0 +1,88 @@
+{
+ "ticker": "VIVT3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Maior operadora do país, com 120 milhões de acessos móveis e de fibra. Receita em reais e recorrente, caixa líquido sem arrendamentos e compromisso de distribuir ao menos 100% do lucro de 2026.",
+ "modelo": "A Telefônica Brasil, controlada pela espanhola Telefónica, opera a marca Vivo em telefonia móvel (pós e pré-pago), banda larga por fibra (FTTH), dados e TI para empresas e serviços digitais (Vivo Pay, Vale Saúde, streaming, nuvem e cibersegurança). A receita é quase toda recorrente, de assinaturas mensais; a venda de aparelhos e eletrônicos é a parte pontual. A empresa paga a maior parte do lucro em dividendos, juros sobre capital e redução de capital.",
+ "segmentos": [
+  {
+   "nome": "Serviço móvel",
+   "peso_receita": 0.65,
+   "periodo": "3T26",
+   "obs": "R$ 10,44 bi (+7,4%); pós-pago cresce 9,1% e pré-pago recua."
+  },
+  {
+   "nome": "Fixa (fibra, dados corporativos, TI e outros)",
+   "peso_receita": 0.28,
+   "periodo": "3T26",
+   "obs": "R$ 4,47 bi (+2,7%); fibra +5,7% e dados, TIC e digital B2B somaram R$ 1,45 bi (+4,9%)."
+  },
+  {
+   "nome": "Aparelhos e eletrônicos",
+   "peso_receita": 0.07,
+   "periodo": "3T26",
+   "obs": "Cerca de R$ 1,1 bi (+26,6%), calculado por diferença entre receita total e móvel mais fixa."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera só no Brasil, com rede 5G em 1.012 municípios e fibra passando por 32,4 milhões de domicílios; não há operação nem receita no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "baixa",
+  "texto": "Toda a receita é em reais. Só 1% da dívida bruta está em moeda estrangeira e a exposição é totalmente protegida por derivativos; uma alta do dólar afeta mais o custo de aparelhos e equipamentos de rede, em parte repassado aos preços."
+ },
+ "momento": "No 3T26 (divulgado em 10/11/2026), a receita líquida foi de R$ 16,02 bi (+7,2% sobre o 3T25), o Ebitda de R$ 7,14 bi (+10,0%, margem de 44,5%, +1,1 p.p.) e o lucro líquido de R$ 2,46 bi (+30,1%), ajudado por R$ 366 mi de ganhos com venda de ativos ligados à rede de cobre e pela queda da depreciação. O capex caiu 1,6%, para R$ 2,56 bi (16,0% da receita). Sem arrendamentos, a empresa tinha caixa líquido de R$ 2,42 bi em setembro; com arrendamentos, dívida líquida de R$ 13,76 bi, que subiu com a incorporação da FiBrasil e de R$ 0,9 bi em debêntures dela. A remuneração aos acionistas de 2026 soma R$ 7,32 bi, com R$ 1 bi ainda disponível para recompra até fevereiro de 2027.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Com caixa líquido sem arrendamentos, o ganho com juro menor vem sobretudo da valorização de um fluxo de dividendos estável, não da redução de despesa financeira."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita em reais e dívida em moeda estrangeira de só 1%, protegida; o efeito fica no custo de aparelhos e equipamentos de rede."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais emprego e renda favorecem migração para pós-pago, fibra e serviços digitais, além da demanda corporativa por dados e TI."
+  },
+  "inflacao_subindo": {
+   "nota": 1,
+   "porque": "Planos são reajustados anualmente em linha com a inflação e a dívida financeira é pequena, o que tende a preservar margens."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Receita recorrente, pouca dívida financeira e nenhuma dependência de contratos públicos limitam o efeito; juros longos maiores pesam só no valor do fluxo de dividendos."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Telefônica Brasil, Results 3Q26 (Form 6-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1066119/000129281426005216/vivpr3q26_6k.htm",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Vivo eleva lucro em 30,1% no 3º trimestre",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/vivo-eleva-lucro-em-301-no-3o-trimestre/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Mobile Time: Vivo 3T26",
+   "url": "https://www.mobiletime.com.br/noticias/10/11/2026/vivo-3t26/",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "DGABC (Estadão Conteúdo): Telefônica Brasil tem lucro líquido de R$ 2,456 bilhões no 3º trimestre de 2026",
+   "url": "https://www.dgabc.com.br/Noticia/4368016/telefonica-brasil-tem-lucro-liquido-de-r-2-456-bilhoes-no-terceiro-trimestre-de-2026",
+   "data": "2026-11-10"
+  }
+ ]
+}

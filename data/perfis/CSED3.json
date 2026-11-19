@@ -1,0 +1,82 @@
+{
+ "ticker": "CSED3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Grupo de ensino superior com 539 mil alunos, cerca de 70% da receita no ensino presencial, puxado por saúde e medicina. Teve prejuízo contábil no 3T26 por despesa de earn-out da FAPI, sem efeito equivalente no caixa.",
+ "modelo": "A Cruzeiro do Sul Educacional opera universidades e centros universitários (Cruzeiro do Sul, Universidade Positivo, Unicid, Braz Cubas, FAPI, Módulo, entre outros) em 28 campi e 1.363 polos de ensino a distância. Vende graduação, pós e medicina, com 1.275 vagas anuais de medicina, cerca de 80% em São Paulo e no Paraná. A receita é recorrente, vinda de mensalidades; os cursos de saúde representam cerca de 72% da receita do presencial.",
+ "segmentos": [
+  {
+   "nome": "Presencial",
+   "peso_receita": 0.7,
+   "periodo": "3T26",
+   "obs": "R$ 489,4 mi (+2,5%), com 167 mil alunos e ticket médio de R$ 982 por mês (+3,4%)."
+  },
+  {
+   "nome": "Digital (EAD e semipresencial)",
+   "peso_receita": 0.3,
+   "periodo": "3T26",
+   "obs": "Cerca de R$ 209 mi, por diferença; base de 372 mil alunos (-8,3%) após o novo marco regulatório do EAD."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Toda a receita é gerada no Brasil, com campi concentrados em São Paulo e no Paraná e polos de ensino a distância em todo o país. Não há operação no exterior."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita em reais e dívida em debêntures com custo médio de CDI + 1,2%. Alta do dólar não tem efeito direto relevante."
+ },
+ "momento": "No 3T26 (divulgado em 10/11/2026), a receita líquida foi de R$ 698,2 mi (+0,6% sobre o 3T25), com o presencial compensando a queda do digital. O resultado contábil foi prejuízo de R$ 133,5 mi (lucro de R$ 113,2 mi no 3T25), por despesa não recorrente de R$ 167,9 mi com o earn-out da FAPI, acionado pela autorização de 146 vagas de medicina, e por R$ 74 mi de efeitos não caixa na provisão para devedores duvidosos; o lucro ajustado caiu 53,8%, para R$ 52,3 mi, e o Ebitda comparável recuou 2,0%, para R$ 272,6 mi (margem de 39,0%). A dívida líquida ex-IFRS 16 subiu para R$ 596 mi, com alavancagem de 1,1x (0,8x em junho), após pagar R$ 93 mi do earn-out; o restante vence em 2027 e 2028. Nos 9M26, a receita somou R$ 2,2 bi (+4,5%) e o lucro comparável R$ 295 mi (+12,0%).",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Reduz o custo da dívida em CDI e alivia o aluno, mas a alavancagem é baixa (1,1x) e a receita é puxada por medicina e saúde, menos sensíveis a crédito."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida são em reais, sem custo relevante em moeda estrangeira."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Educação não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Emprego e renda ajudam captação e adimplência, sobretudo no digital, mas medicina tem demanda estável ao longo do ciclo."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Salários e dissídio de professores sobem com a inflação, e o repasse às mensalidades é limitado no ensino a distância."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Juros mais altos encarecem a dívida e o crédito estudantil, e cortes em Fies e ProUni afetariam parte dos alunos do presencial."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Cruzeiro do Sul Educacional, Divulgação de Resultados 3T26 (release, cópia do arquivo da CVM)",
+   "url": "https://content.btgpactual.com/research/files/file/insights-b3/rad/1587393.pdf",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "TradeMap: Cruzeiro do Sul tem prejuízo de R$ 133,5 mi no 3T26",
+   "url": "https://trademap.com.br/noticias/news-8582305",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Brapi (com base no Valor Econômico): prejuízo de R$ 133,5 mi no 3º trimestre inverte ganho anual",
+   "url": "https://brapi.dev/news/prejuizo-de-r-133-5-mi-no-3-trimestre-inverte-ganho-anual-af36cad8",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Mercado & Consumo: Cruzeiro do Sul tem lucro de R$ 100,7 milhões no 2º trimestre",
+   "url": "https://mercadoeconsumo.com.br/12/08/2026/mc-capital/cruzeiro-do-sul-tem-lucro-de-r-1007-milhoes-no-2o-trimestre-alta-anual-de-606/amp/",
+   "data": "2026-08-12"
+  }
+ ]
+}

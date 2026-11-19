@@ -2,53 +2,53 @@
  "ticker": "RAPT4",
  "revisado_em": "2026-11-18",
  "resumo": "Grupo de autopeças, freios, eixos e semirreboques ligado ao ciclo de caminhões e do agronegócio. Cerca de um terço da receita vem do exterior e a alavancagem segue elevada, o que deixa o resultado sensível a juros.",
- "modelo": "A Randoncorp fabrica componentes para veículos comerciais e reposição (Fras-le, freios, fundidos, eixos e suspensões pela Suspensys e Master), semirreboques e vagões ferroviários (Randon Implementos) e oferece serviços financeiros por meio do Banco Randon e da Randon Consórcios. Vende a montadoras de caminhões, transportadores, agronegócio e ao mercado de reposição, que responde por cerca de 44% da receita e é a parte mais recorrente; implementos e peças para montadoras seguem o ciclo de investimento. Tem fábricas no Brasil, Argentina, México, EUA, China e Índia, ampliadas pelas aquisições de Dacomsa, EBS e AXN.",
+ "modelo": "A Randoncorp fabrica componentes para veículos comerciais e reposição (Fras-le, freios, fundidos, eixos e suspensões pela Suspensys e Master), semirreboques e vagões ferroviários (Randon Implementos) e oferece serviços financeiros por meio do Banco Randon e da Randon Consórcios. Vende a montadoras de caminhões, transportadores, agronegócio e ao mercado de reposição, que respondeu por cerca de 41% da receita no 3T26 e é a parte mais recorrente; implementos e peças para montadoras seguem o ciclo de investimento. Tem fábricas no Brasil, Argentina, México, EUA, China e Índia, ampliadas pelas aquisições de Dacomsa, EBS e AXN.",
  "segmentos": [
   {
    "nome": "Controle de Movimentos",
-   "peso_receita": 0.39,
-   "periodo": "3T25",
+   "peso_receita": 0.37,
+   "periodo": "3T26",
    "obs": "Freios, eixos, suspensões e fundidos (Fras-le, Master, Suspensys)."
   },
   {
    "nome": "Autopeças",
-   "peso_receita": 0.3,
-   "periodo": "3T25",
+   "peso_receita": 0.31,
+   "periodo": "3T26",
    "obs": "Peças para reposição e montadoras, inclui operações compradas no exterior."
   },
   {
    "nome": "Montadora",
-   "peso_receita": 0.22,
-   "periodo": "3T25",
-   "obs": "Semirreboques, reboques e vagões ferroviários."
+   "peso_receita": 0.24,
+   "periodo": "3T26",
+   "obs": "Semirreboques, reboques e vagões ferroviários; 95 vagões somaram R$ 85,8 mi no trimestre."
   },
   {
    "nome": "Soluções Financeiras e Serviços",
-   "peso_receita": 0.08,
-   "periodo": "3T25",
+   "peso_receita": 0.06,
+   "periodo": "3T26",
    "obs": "Banco Randon, Randon Consórcios e serviços."
   },
   {
-   "nome": "Tecnologia Avançada e Headquarter",
-   "peso_receita": 0.01,
-   "periodo": "3T25",
+   "nome": "Tecnologia Avançada e Estratégias Digitais",
+   "peso_receita": 0.02,
+   "periodo": "3T26",
    "obs": null
   }
  ],
  "segmentos_base": "Receita líquida das verticais antes das eliminações intercompany",
  "geografia": {
-  "brasil_pct": 0.69,
-  "exterior_pct": 0.31,
-  "periodo": "3T25",
+  "brasil_pct": 0.7,
+  "exterior_pct": 0.3,
+  "periodo": "3T26",
   "base": null,
-  "texto": "O mercado externo (exportações a partir do Brasil e receitas das fábricas no exterior) somou US$ 210,5 mi no 3T26, alta de 8,1% sobre o 3T25, com destaque para EUA, México e Mercosul. A meta da empresa para 2026 é de US$ 780 a 840 mi de receita externa."
+  "texto": "No 3T26, o mercado interno somou R$ 2.468,2 mi e o mercado externo (exportações a partir do Brasil e receitas das fábricas no exterior) R$ 1.081,3 mi, ou US$ 210,5 mi (+8,1%), com destaque para EUA, México e Mercosul. A meta da empresa para 2026 é de US$ 780 a 840 mi de receita externa."
  },
  "moeda": {
   "receita_em_dolar": "média",
   "divida_em_dolar": "média",
-  "texto": "Cerca de 31% da receita vem de exportações e operações no exterior, e cerca de 18% da dívida bruta era em moeda estrangeira em setembro de 2025. A alta do dólar eleva receita e Ebitda em reais, mas também o saldo dessa dívida, com efeito líquido levemente positivo."
+  "texto": "Cerca de 30% da receita vem de exportações e operações no exterior, e cerca de 11% da dívida era indexada a variação cambial no 3T26. A alta do dólar eleva receita e Ebitda em reais mais do que o saldo dessa dívida, com efeito líquido levemente positivo."
  },
- "momento": "No 3T26 (divulgado em 13/11/2026), a receita líquida foi de R$ 3,55 bi (alta de 3,5% sobre o 3T25), com margem bruta de 27,6% (+1,1 ponto) e Ebitda ajustado de R$ 450,0 mi (queda de 6,9%, margem de 12,7%). O lucro líquido foi de R$ 19,2 mi, ante R$ 23,1 mi no 3T25 e prejuízo de R$ 90,5 mi no 2T26; nos 9M26 o resultado atribuído aos controladores foi prejuízo de R$ 118,8 mi. O programa federal Move Brasil sustentou vendas de caminhões e semirreboques e a linha de vagões ferroviários concluiu sua rampa. A orientação para 2026 é de receita de R$ 12,5 a 14,0 bi e margem Ebitda ajustada de 12% a 14%; a S&P mantém rating brAAA com perspectiva negativa e estimava dívida líquida sobre Ebitda perto de 3,0x no fim de 2026.",
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita líquida foi de R$ 3,55 bi (alta de 3,5% sobre o 3T25), com margem bruta de 27,6% (+1,1 ponto) e Ebitda ajustado de R$ 450,0 mi (queda de 6,9%, margem de 12,7%). O lucro líquido foi de R$ 19,2 mi, ante R$ 23,1 mi no 3T25 e prejuízo de R$ 90,5 mi no 2T26; nos 9M26 o resultado atribuído aos controladores foi prejuízo de R$ 118,8 mi. O programa federal Move Brasil sustentou vendas de caminhões e semirreboques e a linha de vagões ferroviários concluiu sua rampa. A orientação para 2026 é de receita de R$ 12,5 a 14,0 bi e margem Ebitda ajustada de 12% a 14%; a dívida líquida sem o Banco Randon era de R$ 4.284,3 mi em setembro (R$ 5.462,6 mi um ano antes), com alavancagem de 3,00x, e a S&P mantém rating brAAA com perspectiva negativa.",
  "sensibilidade": {
   "selic_caindo": {
    "nota": 2,
@@ -56,7 +56,7 @@
   },
   "dolar_subindo": {
    "nota": 1,
-   "porque": "Cerca de 31% da receita vem do exterior e ganha valor em reais, compensado em parte pela dívida em moeda estrangeira."
+   "porque": "Cerca de 30% da receita vem do exterior e ganha valor em reais, compensado em parte pela dívida em moeda estrangeira."
   },
   "commodities_subindo": {
    "nota": 1,
@@ -76,6 +76,11 @@
   }
  },
  "fontes": [
+  {
+   "titulo": "Randoncorp, ITR 3T26 com Comentário do Desempenho (CVM)",
+   "url": "http://www.rad.cvm.gov.br/ENETCONSULTA/frmDownloadDocumento.aspx?CodigoInstituicao=1&NumeroSequencialDocumento=162494",
+   "data": "2026-11-12"
+  },
   {
    "titulo": "Randoncorp, Release de Resultados 3T25",
    "url": "https://api.mziq.com/mzfilemanager/v2/d/a8409c46-1419-4694-b935-b868e0b64e35/445cc922-197b-7b56-b3d8-64ac2105936a?origin=1",

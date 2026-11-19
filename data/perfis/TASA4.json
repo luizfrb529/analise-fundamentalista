@@ -1,0 +1,82 @@
+{
+ "ticker": "TASA4",
+ "revisado_em": "2026-11-18",
+ "resumo": "Fabricante de armas leves com fábricas no Brasil e nos EUA, controlada pela CBC. Cerca de 78% da receita vem do exterior, sobretudo dos EUA, o que deixa o resultado ligado ao dólar e às tarifas americanas.",
+ "modelo": "A Taurus fabrica pistolas, revólveres, fuzis e espingardas (marcas Taurus e Heritage), além de capacetes e peças por injeção de metal (MIM). Vende ao varejo civil nos EUA, principal mercado, e a consumidores, forças policiais e militares no Brasil e em outros países; a receita é de venda de produto, ligada à demanda civil americana e a contratos institucionais pontuais. Tem fábricas em São Leopoldo (RS) e Bainbridge (Geórgia, EUA) e uma joint venture na Índia (JD Taurus).",
+ "segmentos": [
+  {
+   "nome": "Armas e acessórios",
+   "peso_receita": 0.92,
+   "periodo": "3T26",
+   "obs": "R$ 369,8 mi (+29,3%); nos 9M26, 75,8% desta receita veio dos EUA."
+  },
+  {
+   "nome": "Capacetes, MIM e outros",
+   "peso_receita": 0.08,
+   "periodo": "3T26",
+   "obs": "Capacetes para motociclistas, peças MIM e lojas AMTT Taurus."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "brasil_pct": 0.22,
+  "exterior_pct": 0.78,
+  "periodo": "9M26",
+  "base": null,
+  "texto": "Nos 9M26, o mercado externo somou R$ 871,0 mi e o interno R$ 248,9 mi. Em armas, os EUA responderam por 70,7% da receita do 3T26, com 235 mil armas vendidas (+33,5%), e os demais países, incluindo contratos institucionais, por 13,7%."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "alta",
+  "texto": "Cerca de 78% da receita é exportada ou vendida nos EUA em dólar. Em setembro de 2026, 59,3% da dívida bruta era em dólar, boa parte em adiantamentos de contrato de câmbio (ACC) de R$ 400,7 mi; como a receita em dólar é bem maior que a dívida, a alta do dólar tem efeito líquido positivo, e a cotação média mais baixa em 2026 reduziu a receita em reais."
+ },
+ "momento": "No 3T26 (divulgado em 10/11/2026), a receita líquida foi de R$ 404,1 mi (+26,2% sobre o 3T25), com volume vendido 35% maior e margem bruta de 32,6%, mas o Ebitda caiu 40,2%, para R$ 29,8 mi (margem de 7,4%), e houve prejuízo de R$ 4,0 mi ante lucro de R$ 31,5 mi. A tarifa americana sobre produtos brasileiros caiu de 50% para 10% em fevereiro de 2026, após decisão da Suprema Corte dos EUA, e voltou a 37,5% no fim de julho; o 2T26 teve R$ 91,1 mi de reembolso de tarifas. A dívida líquida recuou para R$ 398,7 mi (R$ 572,0 mi em dezembro de 2025) e a relação dívida líquida/Ebitda foi de 2,96 vezes, ante 5,40 vezes no fim de 2025. A empresa espera redução do IPI sobre armas de 55% para zero a partir de 2027.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Efeito pequeno: ajuda o consumo de armas no Brasil (22% da receita) e barateia a parcela da dívida em reais, que já tem custo baixo por linhas da Finep e do BNDES."
+  },
+  "dolar_subindo": {
+   "nota": 2,
+   "porque": "Cerca de 78% da receita é em dólar contra custo majoritariamente em reais; a queda do dólar médio de R$ 5,45 para R$ 5,14 em um ano reduziu a receita em reais."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "Aço e insumos pesam no custo, mas sem efeito relevante identificado no resultado."
+  },
+  "pib_acelerando": {
+   "nota": 0,
+   "porque": "A demanda principal é o consumo civil nos EUA, pouco ligada ao PIB brasileiro."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Mão de obra e insumos no Brasil encarecem, mas a maior parte dos preços é fixada em dólar no mercado americano."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 1,
+   "porque": "Risco fiscal maior tende a desvalorizar o real, o que eleva em reais a receita de exportação, efeito que supera o encarecimento do crédito local."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Taurus, ITR 3T26 com Comentário do Desempenho (CVM)",
+   "url": "http://www.rad.cvm.gov.br/ENETCONSULTA/frmDownloadDocumento.aspx?CodigoInstituicao=1&NumeroSequencialDocumento=162218",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "CVM Dados Abertos: ITR de companhias abertas 2026 (DRE consolidada)",
+   "url": "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/ITR/DADOS/itr_cia_aberta_2026.zip",
+   "data": "2026-11-18"
+  },
+  {
+   "titulo": "BP Money: Taurus reverte lucro e registra prejuízo de R$ 4 mi no 3º trimestre",
+   "url": "https://bpmoney.com.br/?p=435582",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Times Brasil (CNBC): Fim da tarifa de 50% torna Taurus muito mais competitiva, diz CEO",
+   "url": "https://timesbrasil.com.br/empresas-e-negocios/exclusivo-fim-da-tarifa-de-50-torna-taurus-muito-mais-competitiva-e-abre-caminho-para-credito-de-us-18-milhoes-diz-ceo/",
+   "data": "2026-02-20"
+  }
+ ]
+}

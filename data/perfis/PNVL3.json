@@ -1,0 +1,100 @@
+{
+ "ticker": "PNVL3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Rede de farmácias líder no Sul, com 677 lojas, 63% delas no Rio Grande do Sul. Receita toda no Brasil, dívida baixa (0,8x Ebitda) e quase metade das vendas já feita por canais digitais no 3T26.",
+ "modelo": "A Panvel (Dimed S.A.) vende medicamentos de marca, genéricos, OTC e produtos de higiene e beleza em lojas próprias no Rio Grande do Sul, Santa Catarina, Paraná e São Paulo e por aplicativo e site, com entrega própria. Tem marca própria relevante (Produtos Panvel, 7,3% das vendas no 3T26), fabricada em laboratório do grupo, o que sustenta margem em higiene e beleza. A receita é recorrente e de margem baixa (Ebitda perto de 5,7% da receita bruta); a operação de atacado foi encerrada em 2024.",
+ "segmentos": [
+  {
+   "nome": "Higiene e beleza",
+   "peso_receita": 0.37,
+   "periodo": "2025",
+   "obs": "Categoria em que a marca própria tem maior peso; market share de 16,7% no Sul no 4T25."
+  },
+  {
+   "nome": "Medicamentos de marca",
+   "peso_receita": 0.365,
+   "periodo": "2025",
+   "obs": "Cresceram 19,2% em 2025, puxados por uso contínuo e GLP-1."
+  },
+  {
+   "nome": "Medicamentos sem prescrição (OTC)",
+   "peso_receita": 0.15,
+   "periodo": "2025",
+   "obs": "Percentual lido do gráfico de mix do release do 4T25."
+  },
+  {
+   "nome": "Genéricos",
+   "peso_receita": 0.105,
+   "periodo": "2025",
+   "obs": "Vendas +19% no 3T26."
+  },
+  {
+   "nome": "Serviços",
+   "peso_receita": 0.01,
+   "periodo": "2025",
+   "obs": "Vacinação, testes e serviços farmacêuticos."
+  }
+ ],
+ "segmentos_base": "Receita bruta do varejo (mix anual de 2025 do release do 4T25)",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera só no Brasil. O Rio Grande do Sul concentra 425 das 677 lojas (set/26), com 22,4% de participação de mercado no estado; Santa Catarina, Paraná e São Paulo recebem a maior parte das novas lojas (das 14 aberturas do 3T26, 9 foram fora do RS)."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida estão em reais. A alta do dólar só afeta de forma indireta, via custo de insumos e medicamentos importados, cujos preços ao consumidor são regulados pela CMED."
+ },
+ "momento": "No 3T26 (divulgado em 06/11/2026), a receita bruta do varejo foi de R$ 1,70 bi (+15,3% sobre o 3T25), o Ebitda ajustado de R$ 96,8 mi (+21,2%, margem de 5,7% ante 5,4%) e o lucro líquido ajustado de R$ 46,4 mi (+35,4%). As vendas digitais somaram R$ 792,4 mi, 46,6% da receita bruta do varejo (26,4% um ano antes), com o aplicativo respondendo por 78,5% delas; as vendas em mesmas lojas cresceram 13,3%. A alavancagem ficou em 0,8x dívida líquida sobre Ebitda (1,0x no 3T25), e a empresa encerrou setembro com 677 lojas, 26 a mais em 12 meses, e participação de 13,5% no mercado do Sul (+0,7 p.p.).",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Com dívida líquida de só 0,8x o Ebitda, o ganho de juro menor vem mais do consumo e da expansão de lojas do que da despesa financeira (R$ 12 mi no 3T26)."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida em reais; o efeito via custo de importados é indireto e limitado pela regulação de preços."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities; o efeito via renda do agronegócio gaúcho é difuso."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda favorece higiene e beleza, categoria de maior peso, mas a venda de medicamentos é pouco sensível ao ciclo."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "O reajuste anual da CMED gera ganho sobre estoques, compensado por despesas com pessoal e aluguel corrigidas pela inflação."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Baixa alavancagem e demanda pouco cíclica limitam o efeito de juros longos mais altos sobre o negócio."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Grupo Panvel, Release de Resultados 4T25",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/d19425c2-0ba6-490e-af3b-87fc04d4fc88/56723a75-7ee1-831e-6269-e3fe16fae948?origin=2",
+   "data": "2026-03-19"
+  },
+  {
+   "titulo": "Mercado & Consumo: Panvel tem lucro líquido de R$ 46,3 mi no 3T, alta de 35,4%",
+   "url": "https://mercadoeconsumo.com.br/06/11/2026/mc-capital/panvel-tem-lucro-liquido-de-r-463mi-no-3t-alta-de-354-canais-digitais-avancam-466/",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Jornal do Comércio: Vendas digitais da Panvel mais que dobram e lucro cresce 35% no trimestre",
+   "url": "https://www.jornaldocomercio.com/economia/2026/11/1269653-vendas-digitais-da-panvel-mais-que-dobram-e-lucro-cresce-35-no-trimestre.html",
+   "data": "2026-11-07"
+  },
+  {
+   "titulo": "NeoFeed: Panvel cresce no digital com canetas emagrecedoras mais baratas e chega a R$ 1,7 bilhão de receita",
+   "url": "https://neofeed.com.br/negocios/panvel-cresce-no-digital-com-canetas-emagrecedoras-mais-baratas-e-chega-a-r-17-bilhao-de-receita/",
+   "data": "2026-11-05"
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "ticker": "MELI34",
+ "revisado_em": "2026-11-18",
+ "resumo": "BDR do MercadoLibre, maior grupo de e-commerce e fintech da América Latina. O Brasil gera 56% da receita, mas a ação é cotada em dólar, então a alta do dólar valoriza o BDR em reais.",
+ "modelo": "O MercadoLibre opera o marketplace Mercado Livre, onde cobra comissões, frete, armazenagem e publicidade de vendedores, além de vender produtos próprios (1P). O Mercado Pago, braço de fintech, ganha com processamento de pagamentos, conta digital, investimentos e principalmente crédito a consumidores e vendedores, com carteira de quase US$ 18 bi em set/26. A receita é recorrente, ligada ao volume de vendas e à carteira de crédito; a logística própria (Mercado Envios) e o programa de fidelidade MELI+ sustentam o ecossistema.",
+ "segmentos": [
+  {
+   "nome": "Commerce",
+   "peso_receita": 0.57,
+   "periodo": "3T26",
+   "obs": "US$ 6,14 bi (+47%): comissões, frete, publicidade e vendas próprias."
+  },
+  {
+   "nome": "Fintech (Mercado Pago)",
+   "peso_receita": 0.43,
+   "periodo": "3T26",
+   "obs": "US$ 4,61 bi (+42%), dos quais US$ 2,42 bi de receita de crédito."
+  }
+ ],
+ "segmentos_base": "Receita líquida e receita financeira (net revenues and financial income), em dólares, conforme 10-Q.",
+ "geografia": {
+  "brasil_pct": 0.558,
+  "exterior_pct": 0.442,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Brasil foi 55,8% da receita no 3T26, México 22,6%, Argentina 16,9% e demais países 4,7% (Chile, Colômbia, Uruguai, Peru e outros). A empresa é sediada no Uruguai, registrada nos EUA e reporta em dólar; o pedido de licença bancária no México ainda aguarda aprovação."
+ },
+ "moeda": {
+  "receita_em_dolar": "alta",
+  "divida_em_dolar": "média",
+  "texto": "Para o investidor brasileiro, o BDR acompanha a ação em dólar, então alta do dólar ante o real eleva o valor em reais. Em sentido oposto, a receita do Brasil, gerada em reais, vale menos dólares; há dívida e notas em dólar em subsidiárias, com hedge cambial parcial, e perdas cambiais de US$ 72 mi no 3T26."
+ },
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita líquida e financeira foi de US$ 10,75 bi (+45,1% em dólares e +40,8% em moeda local) e o lucro líquido de US$ 448 mi (+6%), abaixo do consenso de cerca de US$ 473 mi a US$ 476 mi. O lucro operacional caiu para US$ 676 mi (US$ 724 mi no 3T25) e a margem operacional para 6,3% (9,8%), com mais gastos em frete, logística, marketing e provisão para devedores duvidosos (US$ 1,34 bi). No Brasil a receita chegou a US$ 6,0 bi (+50% em dólares); a carteira de crédito cresceu 62%, para quase US$ 18 bi, e o volume de pagamentos (TPV) 53%, para US$ 109 bi. A dívida líquida subiu para US$ 8,0 bi em setembro (US$ 4,7 bi em dez/25), e as ações caíram cerca de 13% em Nova York no dia seguinte ao balanço.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "Juro menor no Brasil barateia o funding da carteira de crédito do Mercado Pago e estimula o consumo online, mas o efeito se limita à parcela brasileira do negócio."
+  },
+  "dolar_subindo": {
+   "nota": 1,
+   "porque": "O BDR segue a ação cotada em dólar, então a alta da moeda eleva seu valor em reais; o ganho é parcial porque 56% da receita é gerada em reais e vale menos em dólar."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de commodities; o efeito indireto via renda das economias exportadoras da região é difuso."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda no Brasil eleva vendas no marketplace e reduz inadimplência no crédito, mas 44% da receita vem de outros países que seguem ciclos próprios."
+  },
+  "inflacao_subindo": {
+   "nota": -1,
+   "porque": "Inflação maior no Brasil corrói a renda do consumidor, eleva a inadimplência da carteira de crédito e tende a manter juros altos."
+  },
+  "risco_fiscal_subindo": {
+   "nota": 0,
+   "porque": "Risco fiscal maior no Brasil encarece crédito e reduz consumo, mas costuma depreciar o real, o que valoriza o BDR em reais; os efeitos tendem a se compensar."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "MercadoLibre, Form 10-Q do trimestre encerrado em 30/09/2026 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1099590/000109959026000029/meli-20260930.htm",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Bloomberg Línea: CFO do Mercado Livre defende investimentos ousados após lucro abaixo das estimativas",
+   "url": "https://www.bloomberglinea.com.br/negocios/cfo-do-mercado-livre-defende-investimentos-ousados-apos-lucro-abaixo-das-estimativas/",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "InfoMoney (Reuters): Mercado Livre (MELI34) tem lucro líquido abaixo do esperado e registra US$ 448 mi",
+   "url": "https://www.infomoney.com.br/mercados/resultado-mercado-livre-meli34-terceiro-trimestre-2026/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Exame: Mercado Livre lucra US$ 448 milhões no 3º tri, mas margem volta a cair",
+   "url": "https://exame.com/invest/mercados/mercado-livre-lucra-us-448-milhoes-no-3o-tri-mas-margem-volta-a-cair/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Money Times: Ação do Mercado Livre desaba 13% em NY após lucro abaixo do esperado no 3º tri",
+   "url": "https://www.moneytimes.com.br/acao-do-mercado-livre-desaba-13-em-ny-apos-lucro-abaixo-do-esperado-no-3o-tri/",
+   "data": "2026-11-05"
+  }
+ ]
+}

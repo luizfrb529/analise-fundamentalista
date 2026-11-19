@@ -1,0 +1,100 @@
+{
+ "ticker": "FIQE3",
+ "revisado_em": "2026-11-18",
+ "resumo": "Operadora regional de fibra e telefonia móvel em Santa Catarina, Rio Grande do Sul e Paraná. O controlador lançou em out/26 oferta de R$ 6 por ação para tirar a empresa do Novo Mercado, hoje em disputa com minoritários.",
+ "modelo": "A Unifique vende banda larga por fibra óptica, telefonia móvel 4G/5G com rede própria, TV, telefonia fixa e datacenter para residências e empresas, com 927,6 mil acessos de banda larga e 381,5 mil acessos móveis em set/26. A receita é recorrente, de assinaturas mensais, e 80% vem do varejo (B2C). A empresa cresce por expansão de rede, venda de combos fibra mais móvel e compra de provedores regionais, como a 3D Telecom (agosto de 2026).",
+ "segmentos": [
+  {
+   "nome": "Internet (banda larga)",
+   "peso_receita": 0.57,
+   "periodo": "3T26",
+   "obs": "R$ 243,2 mi (+13,5%)."
+  },
+  {
+   "nome": "TV e Mídia (inclui serviços de valor adicionado e OTT)",
+   "peso_receita": 0.27,
+   "periodo": "3T26",
+   "obs": "R$ 117,8 mi (+11,4%); o peso reflete a reestruturação dos planos de banda larga em jul/25, que separou parte do valor dos combos nessa linha."
+  },
+  {
+   "nome": "Telefonia móvel",
+   "peso_receita": 0.1,
+   "periodo": "3T26",
+   "obs": "R$ 42,1 mi (+118,1%), com rede própria em 246 cidades."
+  },
+  {
+   "nome": "Telefonia fixa",
+   "peso_receita": 0.03,
+   "periodo": "3T26",
+   "obs": "R$ 14,3 mi (-3,4%)."
+  },
+  {
+   "nome": "Datacenter e demais serviços",
+   "peso_receita": 0.03,
+   "periodo": "3T26",
+   "obs": "R$ 11,9 mi somados (energia, telemedicina, câmeras e outros)."
+  }
+ ],
+ "segmentos_base": "Receita bruta",
+ "geografia": {
+  "brasil_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "base": null,
+  "texto": "Opera só no Brasil: Santa Catarina concentra cerca de 78% dos acessos de banda larga (720,7 mil), seguida do Rio Grande do Sul (174,0 mil) e do Paraná (32,9 mil, em expansão). A rede móvel própria cobre 133 cidades catarinenses e 113 gaúchas."
+ },
+ "moeda": {
+  "receita_em_dolar": "nenhuma",
+  "divida_em_dolar": "nenhuma",
+  "texto": "Receita e dívida estão em reais; 90% da dívida bruta é atrelada ao CDI, 6% à TR e 3% ao IPCA. A alta do dólar pesa só de forma indireta, no custo de equipamentos de rede e de rádio importados usados na expansão."
+ },
+ "momento": "No 3T26 (divulgado em 11/11/2026), a receita bruta foi de R$ 429,3 mi (+16,8% sobre o 3T25), a líquida de R$ 360,0 mi (+17,6%), o Ebitda ajustado de R$ 178,3 mi (+11,0%, margem de 49,5% ante 52,5%) e o lucro líquido de R$ 67,4 mi (+4,0%), com margem pressionada pelo custo da expansão móvel. O capex subiu 46,2%, para R$ 110,5 mi; a dívida bruta quase dobrou no ano com a 4ª emissão de debêntures (R$ 500 mi, março de 2026), mas a alavancagem segue baixa, em 0,62x dívida líquida sobre Ebitda. Em 02/10/2026 a controladora Unitá Participações (65,04% do capital) propôs oferta de R$ 6,00 por ação para sair do Novo Mercado; minoritários pediram nova avaliação, o registro da oferta foi suspenso e a assembleia especial de 16/11/2026 foi interrompida, com retomada prevista para 18/11/2026, e a Unitá informou que desiste da oferta se a nova avaliação for aprovada. Em 23/10/2026 a empresa fechou acordo com a AST SpaceMobile para internet móvel via satélite.",
+ "sensibilidade": {
+  "selic_caindo": {
+   "nota": 1,
+   "porque": "A dívida é 90% em CDI, mas o caixa também rende CDI e a alavancagem é de 0,62x; o ganho de juro menor é moderado e vem mais do custo de financiar a expansão móvel."
+  },
+  "dolar_subindo": {
+   "nota": 0,
+   "porque": "Receita e dívida em reais; o efeito fica no custo de equipamentos importados do capex."
+  },
+  "commodities_subindo": {
+   "nota": 0,
+   "porque": "O negócio não depende de preço de commodities."
+  },
+  "pib_acelerando": {
+   "nota": 1,
+   "porque": "Mais renda no Sul favorece adesão a combos de fibra e móvel e reduz cancelamentos, hoje em 1,48% ao mês na banda larga."
+  },
+  "inflacao_subindo": {
+   "nota": 0,
+   "porque": "Planos são reajustados pelo IGP-M a cada julho, mas a concorrência regional limita o repasse e custos de pessoal e energia sobem junto."
+  },
+  "risco_fiscal_subindo": {
+   "nota": -1,
+   "porque": "Juros longos mais altos encarecem o financiamento da expansão e reduzem o valor de uma empresa ainda em fase de investimento elevado."
+  }
+ },
+ "fontes": [
+  {
+   "titulo": "Unifique, Resultados 3T26",
+   "url": "https://investidor10.com.br/acoes/link_comunicado/FIQE3/52586/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "Unifique, Resultados 1T26",
+   "url": "https://api.mziq.com/mzfilemanager/v2/d/848cf37d-212c-4382-923e-761739d46650/b68a9722-eda9-123d-64c6-94ac3239dc8c?origin=2",
+   "data": "2026-05-13"
+  },
+  {
+   "titulo": "Teletime: Unifique recebe proposta de fechamento de capital",
+   "url": "https://teletime.com.br/05/10/2026/unifique-proposta-fechamento-capital/",
+   "data": "2026-10-05"
+  },
+  {
+   "titulo": "Teletime: Unifique interrompe assembleia sobre OPA",
+   "url": "https://teletime.com.br/16/11/2026/unifique-interrompe-assembleia-opa/",
+   "data": "2026-11-16"
+  }
+ ]
+}
