@@ -1525,7 +1525,15 @@ const SIM_IR = { jcp: 0.175, div: 0.10, div_limite_mes: 50000 };   // JCP: LC 22
 const SIM_MESES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
 function simEstado() {
   const s = lsGet(SIM_CHAVE, null) || {};
-  return { itens: Array.isArray(s.itens) ? s.itens : [], fiiBase: s.fiiBase === "12m" ? "12m" : "ultimo", liquido: !!s.liquido, salvas: s.salvas && typeof s.salvas === "object" ? s.salvas : {} };
+  let itens = Array.isArray(s.itens) ? s.itens.filter((x) => x && x.t) : [];
+  let total = ok(s.total) && s.total > 0 ? s.total : 0;
+  // versão anterior guardava quantidades: converte em porcentagem pelo preço atual
+  if (itens.some((x) => !ok(x.pct)) && itens.length) {
+    const vals = itens.map((x) => (ok(x.q) && ok(simPreco(x.t)) ? x.q * simPreco(x.t) : 0)), soma = vals.reduce((a, v) => a + v, 0);
+    if (!total) total = Math.round(soma);
+    itens = itens.map((x, i) => ({ t: x.t, pct: soma ? Math.round(vals[i] / soma * 10000) / 100 : 0, div: x.div, jcp: x.jcp }));
+  }
+  return { total, itens, fiiBase: s.fiiBase === "12m" ? "12m" : "ultimo", liquido: !!s.liquido, salvas: s.salvas && typeof s.salvas === "object" ? s.salvas : {} };
 }
 function simSalvar(S) { lsSet(SIM_CHAVE, S); }
 function simClasse(t) {
@@ -1571,26 +1579,31 @@ async function simProventos(t, it, S) {
 }
 async function pgSimulador(app, q) {
   const S = simEstado();
-  // carteira recebida por link: c=PETR4:100,HGLG11:50
+  // carteira recebida por link: v=100000&c=PETR4:20,HGLG11:30
   if (q.get("c")) {
-    const novos = q.get("c").split(",").map((x) => x.split(":")).map(([t, n]) => ({ t: (t || "").toUpperCase(), q: Math.max(0, Math.floor(+n || 0)) })).filter((x) => simClasse(x.t) && x.q > 0);
-    if (novos.length) { S.itens = novos; simSalvar(S); }
+    const novos = q.get("c").split(",").map((x) => x.split(":")).map(([t, n]) => ({ t: (t || "").toUpperCase(), pct: Math.max(0, +n || 0) })).filter((x) => simClasse(x.t));
+    if (novos.length) { S.itens = novos; if (+q.get("v") > 0) S.total = +q.get("v"); simSalvar(S); }
     history.replaceState(null, "", "#/simulador");
   }
   const todos = [...D.tickers.map((t) => [t, simClasse(t), simNome(t)]), ...D.fiis.map((f) => [f.ticker, simClasse(f.ticker), f.nome])];
+  const nfPct = new Intl.NumberFormat("pt-BR", { maximumFractionDigits: 2 });
+  const somaPct = () => S.itens.reduce((a, x) => a + (ok(x.pct) ? x.pct : 0), 0);
   app.innerHTML = `${trilha([["Simulador de carteira"]])}<div class="cab-pagina"><div><h1>Simulador de carteira</h1>
-    <p>Monte uma carteira com ações, BDRs e fundos do site e veja a renda estimada pelos últimos proventos: o último rendimento dos fundos e os dividendos e JCP dos últimos 12 meses das ações.</p></div></div>
-  <div class="cartao sim-add">
-    <div class="sim-busca"><input type="search" id="sim-t" placeholder="Ticker ou nome (ex.: BBDC4, HGLG11)" autocomplete="off" aria-label="Ativo"><div class="busca-lista" id="sim-lista" hidden></div></div>
-    <div class="segmentado" id="sim-modo"><button data-m="q" class="ativo">Quantidade</button><button data-m="v">Valor em R$</button></div>
-    <input type="number" id="sim-n" min="0" step="1" placeholder="Quantidade" aria-label="Quantidade ou valor">
-    <button class="btn prim" id="sim-ok">Adicionar</button>
-    <p class="sub" id="sim-msg" style="flex-basis:100%;margin:0"></p>
+    <p>Informe quanto quer investir, escolha os ativos e a porcentagem de cada um. A quantidade de cada ativo e a renda estimada se ajustam sozinhas, pelo preço atual e pelos últimos proventos.</p></div></div>
+  <div class="cartao sim-topo">
+    <label class="sim-total"><span>Valor para investir</span><div class="sim-reais"><i>R$</i><input type="text" inputmode="decimal" id="sim-total" value="${S.total ? nf2.format(S.total) : ""}" placeholder="100.000,00" aria-label="Valor para investir em reais"></div></label>
+    <div class="sim-add">
+      <div class="sim-busca"><input type="search" id="sim-t" placeholder="Adicionar ativo: ticker ou nome (ex.: BBDC4, HGLG11)" autocomplete="off" aria-label="Ativo"><div class="busca-lista" id="sim-lista" hidden></div></div>
+      <div class="sim-pct-in"><input type="text" inputmode="decimal" id="sim-p" placeholder="%" aria-label="Porcentagem da carteira"><i>%</i></div>
+      <button class="btn prim" id="sim-ok">Adicionar</button>
+    </div>
+    <p class="sub" id="sim-msg" style="margin:0"></p>
   </div>
   <div class="sim-opcoes"><div class="sim-grupo">
     <label>Renda dos fundos <select id="sim-fii"><option value="ultimo" ${S.fiiBase === "ultimo" ? "selected" : ""}>Último rendimento anunciado</option><option value="12m" ${S.fiiBase === "12m" ? "selected" : ""}>Média dos últimos 12 meses</option></select></label>
     <label>Valores <select id="sim-liq"><option value="0" ${!S.liquido ? "selected" : ""}>Brutos</option><option value="1" ${S.liquido ? "selected" : ""}>Líquidos do IR retido na fonte</option></select></label>
     </div><div class="sim-grupo">
+    <button class="btn peq" id="sim-igual" title="Mesma porcentagem para todos os ativos">Dividir igualmente</button>
     <select id="sim-carregar"><option value="">Carteiras salvas</option>${Object.keys(S.salvas).sort().map((n) => `<option>${esc(n)}</option>`).join("")}</select>
     <button class="btn peq" id="sim-salvar">Salvar carteira</button>
     <button class="btn peq" id="sim-link">Copiar link</button>
@@ -1598,9 +1611,15 @@ async function pgSimulador(app, q) {
     <button class="btn peq" id="sim-limpar">Limpar</button>
   </div></div>
   <div id="sim-corpo"></div>`;
+  const lerNum = (s) => { const v = parseFloat(String(s || "").replace(/[^\d,.-]/g, "").replace(/\.(?=\d{3}(\D|$))/g, "").replace(",", ".")); return isFinite(v) ? v : NaN; };
+  const inp = $("#sim-t"), lst = $("#sim-lista"), pin = $("#sim-p"), msg = $("#sim-msg"), tot = $("#sim-total");
+  let escolhido = null;
+  const dicaPct = () => { const r = 100 - somaPct(); pin.placeholder = r > 0.004 ? nfPct.format(r) : "0"; };
+  dicaPct();
+  // ---- valor total
+  tot.onchange = () => { const v = lerNum(tot.value); S.total = v > 0 ? v : 0; tot.value = S.total ? nf2.format(S.total) : ""; simSalvar(S); desenhar(); };
+  tot.onkeydown = (e) => { if (e.key === "Enter") tot.blur(); };
   // ---- busca de ativos
-  let modo = "q", escolhido = null;
-  const inp = $("#sim-t"), lst = $("#sim-lista"), num = $("#sim-n"), msg = $("#sim-msg");
   const mostrar = () => {
     const v = inp.value.trim().toUpperCase(); escolhido = null;
     if (!v) { lst.hidden = true; return; }
@@ -1608,62 +1627,69 @@ async function pgSimulador(app, q) {
     const r = todos.filter(([t, , n]) => t.startsWith(v) || sem(n || "").includes(sem(v))).sort((a, b) => (b[0].startsWith(v)) - (a[0].startsWith(v)) || a[0].localeCompare(b[0])).slice(0, 8);
     lst.innerHTML = r.map(([t, c, n]) => `<button type="button" data-t="${t}">${logo(t)}<span><b>${t}</b> <span class="muted">${esc(c)}</span><br><small>${esc(n)}</small></span></button>`).join("") || '<p class="vazio" style="padding:10px">Nenhum ativo encontrado.</p>';
     lst.hidden = false;
-    $$("button", lst).forEach((b) => b.onclick = () => { escolhido = b.dataset.t; inp.value = b.dataset.t; lst.hidden = true; num.focus(); });
+    $$("button", lst).forEach((b) => b.onclick = () => { escolhido = b.dataset.t; inp.value = b.dataset.t; lst.hidden = true; pin.focus(); });
   };
   inp.oninput = mostrar;
-  inp.onkeydown = (e) => { if (e.key === "Enter") { const p = $("button", lst); if (!lst.hidden && p) p.click(); else num.focus(); } };
+  inp.onkeydown = (e) => { if (e.key === "Enter") { const p = $("button", lst); if (!lst.hidden && p) p.click(); else pin.focus(); } };
   document.addEventListener("click", (e) => { if (!e.target.closest(".sim-busca")) lst.hidden = true; });
-  $$("#sim-modo button").forEach((b) => b.onclick = () => { modo = b.dataset.m; $$("#sim-modo button").forEach((x) => x.classList.toggle("ativo", x === b)); num.placeholder = modo === "q" ? "Quantidade" : "Valor em R$"; num.step = modo === "q" ? "1" : "0.01"; });
   const adicionar = () => {
     const t = (escolhido || inp.value.trim().toUpperCase());
     if (!simClasse(t)) { msg.textContent = "Escolha um ativo da lista."; return; }
-    const n = +num.value, p = simPreco(t);
-    if (!(n > 0)) { msg.textContent = "Informe a quantidade ou o valor."; return; }
-    let qtd = modo === "q" ? Math.floor(n) : (ok(p) && p > 0 ? Math.floor(n / p) : 0);
-    if (qtd < 1) { msg.textContent = `O valor não compra uma ${simClasse(t) === "Ação" ? "ação" : "cota"} de ${t} (preço R$ ${ok(p) ? nf2.format(p) : "n/d"}).`; return; }
+    let p = lerNum(pin.value);
+    if (!(p >= 0)) p = Math.max(0, Math.round((100 - somaPct()) * 100) / 100);   // vazio: usa o que falta para 100%
     const ex = S.itens.find((x) => x.t === t);
-    if (ex) ex.q += qtd; else S.itens.push({ t, q: qtd });
-    msg.textContent = modo === "v" ? `${t}: ${nf0.format(qtd)} ${simClasse(t) === "Ação" ? "ações" : "cotas"} pelo preço de R$ ${nf2.format(p)}.` : "";
-    inp.value = ""; num.value = ""; escolhido = null;
-    simSalvar(S); desenhar();
+    if (ex) ex.pct = Math.round((ex.pct + p) * 100) / 100; else S.itens.push({ t, pct: p });
+    msg.textContent = p === 0 ? `${t} entrou com 0%; ajuste a porcentagem na tabela.` : "";
+    inp.value = ""; pin.value = ""; escolhido = null;
+    simSalvar(S); dicaPct(); desenhar(); inp.focus();
   };
   $("#sim-ok").onclick = adicionar;
-  num.onkeydown = (e) => { if (e.key === "Enter") adicionar(); };
+  pin.onkeydown = (e) => { if (e.key === "Enter") adicionar(); };
   $("#sim-fii").onchange = (e) => { S.fiiBase = e.target.value; simSalvar(S); desenhar(); };
   $("#sim-liq").onchange = (e) => { S.liquido = e.target.value === "1"; simSalvar(S); desenhar(); };
+  $("#sim-igual").onclick = () => {
+    if (!S.itens.length) return;
+    const n = S.itens.length, base = Math.floor(10000 / n) / 100;
+    S.itens.forEach((x, i) => { x.pct = i === n - 1 ? Math.round((100 - base * (n - 1)) * 100) / 100 : base; });
+    simSalvar(S); dicaPct(); desenhar();
+  };
   $("#sim-salvar").onclick = () => {
     if (!S.itens.length) { msg.textContent = "A carteira está vazia."; return; }
     const nome = prompt("Nome da carteira:"); if (!nome) return;
-    S.salvas[nome] = S.itens.map((x) => ({ ...x })); simSalvar(S); pgSimulador(app, new URLSearchParams());
+    S.salvas[nome] = { total: S.total, itens: S.itens.map((x) => ({ ...x })) }; simSalvar(S); pgSimulador(app, new URLSearchParams());
   };
   $("#sim-carregar").onchange = (e) => {
-    const n = e.target.value; if (!n || !S.salvas[n]) return;
-    if (confirm(`Abrir a carteira "${n}"? A carteira atual será substituída (salve antes se quiser mantê-la).\n\nPara apagar a carteira salva, clique em Cancelar e depois em OK na próxima pergunta.`)) { S.itens = S.salvas[n].map((x) => ({ ...x })); simSalvar(S); desenhar(); }
-    else if (confirm(`Apagar a carteira salva "${n}"?`)) { delete S.salvas[n]; simSalvar(S); pgSimulador(app, new URLSearchParams()); return; }
+    const n = e.target.value, c = S.salvas[n]; if (!n || !c) return;
+    if (confirm(`Abrir a carteira "${n}"? A carteira atual será substituída (salve antes se quiser mantê-la).\n\nPara apagar a carteira salva, clique em Cancelar e depois em OK na próxima pergunta.`)) {
+      if (Array.isArray(c)) { S.itens = c.map((x) => ({ ...x })); } else { S.itens = c.itens.map((x) => ({ ...x })); S.total = c.total || S.total; }
+      simSalvar(S); pgSimulador(app, new URLSearchParams()); return;
+    } else if (confirm(`Apagar a carteira salva "${n}"?`)) { delete S.salvas[n]; simSalvar(S); pgSimulador(app, new URLSearchParams()); return; }
     e.target.value = "";
   };
-  $("#sim-limpar").onclick = () => { if (S.itens.length && confirm("Remover todos os ativos da carteira?")) { S.itens = []; simSalvar(S); desenhar(); } };
+  $("#sim-limpar").onclick = () => { if (S.itens.length && confirm("Remover todos os ativos da carteira?")) { S.itens = []; simSalvar(S); dicaPct(); desenhar(); } };
   $("#sim-link").onclick = async () => {
-    const url = `${location.origin}${location.pathname}#/simulador?c=${S.itens.map((x) => `${x.t}:${x.q}`).join(",")}`;
+    const url = `${location.origin}${location.pathname}#/simulador?v=${Math.round(S.total)}&c=${S.itens.map((x) => `${x.t}:${x.pct}`).join(",")}`;
     try { await navigator.clipboard.writeText(url); msg.textContent = "Link copiado. Quem abrir verá esta mesma carteira."; } catch (e) { prompt("Copie o link:", url); }
   };
   let linhasXls = [];
-  $("#sim-xls").onclick = () => { if (linhasXls.length) baixarExcel("simulador_carteira", [{ nome: "Carteira", cab: ["Ticker", "Classe", "Nome", "Quantidade", "Preço (R$)", "Valor (R$)", "Peso", "Renda 12 meses (R$)", "Renda média mensal (R$)", "Yield", "Base"], linhas: linhasXls }]); };
+  $("#sim-xls").onclick = () => { if (linhasXls.length) baixarExcel("simulador_carteira", [{ nome: "Carteira", cab: ["Ticker", "Classe", "Nome", "Porcentagem", "Quantidade", "Preço (R$)", "Valor investido (R$)", "Renda 12 meses (R$)", "Renda média mensal (R$)", "Yield", "Base"], linhas: linhasXls }]); };
 
   async function desenhar() {
     const corpo = $("#sim-corpo");
-    if (!S.itens.length) { corpo.innerHTML = `<div class="cartao"><p class="vazio">Adicione ativos acima para montar a carteira. Dá para informar a quantidade ou o valor em reais; o valor é convertido em quantidade pelo preço atual.</p></div>`; linhasXls = []; return; }
+    if (!S.itens.length) { corpo.innerHTML = `<div class="cartao"><p class="vazio">Informe o valor para investir e adicione os ativos com a porcentagem de cada um. Se deixar a porcentagem em branco, o ativo recebe o que falta para 100%. Depois dá para ajustar tudo na tabela ou usar "Dividir igualmente".</p></div>`; linhasXls = []; return; }
     if (!D.cache.div) corpo.innerHTML = '<div class="cartao"><p class="vazio">Carregando proventos...</p></div>';
     const linhas = [];
     for (const it of S.itens) {
       const t = it.t, cl = simClasse(t), p = simPreco(t);
       if (!cl) continue;
       const pv = await simProventos(t, it, S);
-      linhas.push({ it, t, cl, p, pv, valor: ok(p) ? p * it.q : null });
+      const alvo = S.total * (it.pct || 0) / 100;
+      it.q = ok(p) && p > 0 ? Math.floor(alvo / p + 1e-9) : 0;
+      linhas.push({ it, t, cl, p, pv, alvo, valor: ok(p) ? p * it.q : 0 });
     }
-    // renda por mês (bruta), por ativo; IR por natureza
+    // IR: dividendos por empresa e mês, para a regra dos R$ 50 mil
     const emissor = (t) => (D.univMap[t] && D.univMap[t].emissor_b3) || t;
-    const divMes = {};   // dividendos por empresa e mês, para a regra dos R$ 50 mil
+    const divMes = {};
     for (const l of linhas) for (const x of l.pv.itens) if (x.nat === "div") { const k = emissor(l.t) + "|" + x.mes; divMes[k] = (divMes[k] || 0) + x.valor * l.it.q; }
     const liquido = (l, x) => {
       const bruto = x.valor * l.it.q;
@@ -1672,7 +1698,8 @@ async function pgSimulador(app, q) {
       if (x.nat === "div" && (divMes[emissor(l.t) + "|" + x.mes] || 0) > SIM_IR.div_limite_mes) return bruto * (1 - SIM_IR.div);
       return bruto;
     };
-    const total = linhas.reduce((a, l) => a + (l.valor || 0), 0);
+    const investido = linhas.reduce((a, l) => a + (l.valor || 0), 0), soma = somaPct();
+    const naoAloc = S.total * Math.max(0, 100 - soma) / 100, arred = Math.max(0, linhas.reduce((a, l) => a + (l.alvo - l.valor), 0));
     const porMes = SIM_MESES.map(() => ({}));
     for (const l of linhas) {
       l.renda = 0;
@@ -1680,68 +1707,78 @@ async function pgSimulador(app, q) {
     }
     const renda = linhas.reduce((a, l) => a + l.renda, 0);
     const temDiv50 = S.liquido && Object.values(divMes).some((v) => v > SIM_IR.div_limite_mes);
-    // próximos 12 meses a partir do mês que vem
     const hoje = new Date(), ordem = Array.from({ length: 12 }, (_, i) => (hoje.getMonth() + 1 + i) % 12);
     const anoDe = (i) => hoje.getFullYear() + (hoje.getMonth() + 1 + i >= 12 ? 1 : 0);
     const classes = ["FII", "Fiagro", "FI-Infra", "Ação", "BDR"].filter((c) => linhas.some((l) => l.cl === c));
     const corC = { FII: cor("--serie"), "Ação": cor("--serie-2"), Fiagro: "#c9a227", "FI-Infra": "#9b7be0", BDR: "#e07b5b" };
-    const porClasse = classes.map((c) => [c, linhas.filter((l) => l.cl === c).reduce((a, l) => a + (l.valor || 0), 0), linhas.filter((l) => l.cl === c).reduce((a, l) => a + l.renda, 0)]);
+    const nomeC = (c) => (c === "Ação" ? "Ações" : c === "BDR" ? "BDRs" : c === "FII" ? "FIIs" : c);
+    const porClasse = classes.map((c) => [c, linhas.filter((l) => l.cl === c).reduce((a, l) => a + (l.valor || 0), 0), linhas.filter((l) => l.cl === c).reduce((a, l) => a + l.renda, 0), linhas.filter((l) => l.cl === c).reduce((a, l) => a + (l.it.pct || 0), 0)]);
     const pct = (v) => ok(v) ? nf2.format(v * 100) + "%" : ND;
     const R = (v) => ok(v) ? "R$ " + nf2.format(v) : ND;
-    linhasXls = linhas.map((l) => [l.t, l.cl, simNome(l.t), l.it.q, l.p, l.valor, total ? l.valor / total : null, l.renda, l.renda / 12, l.valor ? l.renda / l.valor : null, l.pv.base]);
+    const un = (l) => (l.cl === "Ação" || l.cl === "BDR" ? (l.it.q === 1 ? (l.cl === "BDR" ? "BDR" : "ação") : (l.cl === "BDR" ? "BDRs" : "ações")) : (l.it.q === 1 ? "cota" : "cotas"));
+    linhasXls = linhas.map((l) => [l.t, l.cl, simNome(l.t), (l.it.pct || 0) / 100, l.it.q, l.p, l.valor, l.renda, l.renda / 12, l.valor ? l.renda / l.valor : null, l.pv.base]);
+    const avisoPct = Math.abs(soma - 100) < 0.005 ? `<span class="sim-ok-pct">100% distribuído</span>`
+      : soma < 100 ? `<span class="sim-falta">Faltam ${nfPct.format(100 - soma)}% (${R(naoAloc)}) para distribuir</span>`
+      : `<span class="sim-passou">A soma passou de 100% em ${nfPct.format(soma - 100)} pontos; o valor investido fica acima do total</span>`;
     corpo.innerHTML = `
+    ${!S.total ? `<div class="cartao sim-alerta"><p>Informe o <b>valor para investir</b> no alto da página para calcular as quantidades e a renda.</p></div>` : ""}
     <div class="sim-kpis">
-      <div class="cartao mapa-kpi"><span>Valor da carteira</span><b>${R(total)}</b><small>${linhas.length} ${linhas.length === 1 ? "ativo" : "ativos"} pelo preço atual</small></div>
+      <div class="cartao mapa-kpi"><span>Valor investido</span><b>${R(investido)}</b><small>de ${R(S.total)}${S.total ? ` · sobra ${R(Math.max(0, S.total - investido))}` : ""}</small></div>
       <div class="cartao mapa-kpi"><span>Renda estimada em 12 meses</span><b>${R(renda)}</b><small>${S.liquido ? "líquida do IR retido na fonte" : "bruta"}</small></div>
       <div class="cartao mapa-kpi"><span>Média por mês</span><b>${R(renda / 12)}</b><small>renda de 12 meses dividida por 12</small></div>
-      <div class="cartao mapa-kpi"><span>Yield da carteira</span><b>${total ? pct(renda / total) : ND}</b><small>renda de 12 meses / valor da carteira</small></div>
+      <div class="cartao mapa-kpi"><span>Yield da carteira</span><b>${investido ? pct(renda / investido) : ND}</b><small>renda de 12 meses / valor investido</small></div>
     </div>
-    <div class="cartao" style="margin-top:16px"><div class="tabela-wrap"><table class="resp sim-tab"><thead><tr><th>Ativo</th><th>Classe</th><th class="n">Quantidade</th><th class="n">Preço</th><th class="n">Valor</th><th class="n">Peso</th><th>Proventos considerados</th><th class="n">Renda 12m</th><th class="n">Média mensal</th><th class="n">Yield</th><th></th></tr></thead><tbody>
+    <div class="cartao" style="margin-top:16px">
+      <div class="linha entre sim-status">${avisoPct}<span class="sub">${arred > 0.5 ? `Sobra de ${R(arred)} porque as quantidades são arredondadas para baixo (não dá para comprar fração de ${linhas.some((l) => l.cl === "Ação" || l.cl === "BDR") ? "ação ou cota" : "cota"}).` : ""}</span></div>
+      <div class="tabela-wrap"><table class="resp sim-tab"><thead><tr><th>Ativo</th><th>Classe</th><th class="n">% da carteira</th><th class="n">Quantidade</th><th class="n">Preço</th><th class="n">Valor investido</th><th>Proventos considerados</th><th class="n">Renda 12m</th><th class="n">Média mensal</th><th class="n">Yield</th><th></th></tr></thead><tbody>
     ${linhas.map((l, i) => `<tr>
-      <td data-label="Ativo">${D.fiiMap[l.t] ? fundoHtml(D.fiiMap[l.t], true) : empresa(l.t)}</td>
+      <td class="cel-empresa" data-label="Ativo">${D.fiiMap[l.t] ? fundoHtml(D.fiiMap[l.t], true) : empresa(l.t)}</td>
       <td data-label="Classe">${esc(l.cl)}</td>
-      <td class="n" data-label="Quantidade"><input type="number" class="sim-q" data-i="${i}" min="0" step="1" value="${l.it.q}" aria-label="Quantidade de ${l.t}"></td>
+      <td class="n" data-label="% da carteira"><div class="sim-pct-in peq"><input type="text" inputmode="decimal" class="sim-pct" data-i="${i}" value="${nfPct.format(l.it.pct || 0)}" aria-label="Porcentagem de ${l.t}"><i>%</i></div></td>
+      <td class="n" data-label="Quantidade"><span>${nf0.format(l.it.q)} <small class="muted">${un(l)}</small></span></td>
       <td class="n" data-label="Preço">${R(l.p)}</td>
-      <td class="n" data-label="Valor">${R(l.valor)}</td>
-      <td class="n" data-label="Peso">${total ? pct(l.valor / total) : ND}</td>
-      <td data-label="Proventos considerados"><small class="muted">${esc(l.pv.base)}</small>${l.cl === "Ação" ? `<div class="sim-chk"><label><input type="checkbox" data-i="${i}" data-k="div" ${l.it.div !== false ? "checked" : ""} ${l.pv.temDiv ? "" : "disabled"}> Dividendos</label><label><input type="checkbox" data-i="${i}" data-k="jcp" ${l.it.jcp !== false ? "checked" : ""} ${l.pv.temJcp ? "" : "disabled"}> JCP</label></div>` : ""}</td>
+      <td class="n" data-label="Valor investido">${R(l.valor)}</td>
+      <td class="cel-largo sim-base" data-label="Proventos considerados"><small class="muted">${esc(l.pv.base)}</small>${l.cl === "Ação" ? `<div class="sim-chk"><label><input type="checkbox" data-i="${i}" data-k="div" ${l.it.div !== false ? "checked" : ""} ${l.pv.temDiv ? "" : "disabled"}> Dividendos</label><label><input type="checkbox" data-i="${i}" data-k="jcp" ${l.it.jcp !== false ? "checked" : ""} ${l.pv.temJcp ? "" : "disabled"}> JCP</label></div>` : ""}</td>
       <td class="n" data-label="Renda 12m">${R(l.renda)}</td>
       <td class="n" data-label="Média mensal">${R(l.renda / 12)}</td>
       <td class="n" data-label="Yield">${l.valor ? pct(l.renda / l.valor) : ND}</td>
-      <td><button class="btn peq sim-rm" data-i="${i}" title="Remover ${l.t}" aria-label="Remover ${l.t}">✕</button></td></tr>`).join("")}
-    </tbody></table></div></div>
+      <td class="sim-rm-cel"><button class="btn peq sim-rm" data-i="${i}" title="Remover ${l.t}" aria-label="Remover ${l.t}">✕</button></td></tr>`).join("")}
+    </tbody><tfoot><tr class="sim-tot"><td class="cel-empresa" data-label="Total"><b>Total</b></td><td class="vazia"></td><td class="n" data-label="% da carteira"><b>${nfPct.format(soma)}%</b></td><td class="vazia"></td><td class="vazia"></td><td class="n" data-label="Valor investido"><b>${R(investido)}</b></td><td class="vazia"></td><td class="n" data-label="Renda 12m"><b>${R(renda)}</b></td><td class="n" data-label="Média mensal"><b>${R(renda / 12)}</b></td><td class="n" data-label="Yield"><b>${investido ? pct(renda / investido) : ND}</b></td><td class="vazia"></td></tr></tfoot></table></div></div>
     <div class="grade g2" style="margin-top:16px">
       <div class="cartao"><div class="cartao-cab"><div><h3>Renda estimada por mês</h3><p class="sub">Próximos 12 meses, repetindo os meses em que cada ativo pagou nos últimos 12.</p></div></div><div class="grafico"><canvas id="g-sim-mes"></canvas></div></div>
       <div class="cartao"><div class="cartao-cab"><div><h3>Composição</h3><p class="sub">Peso de cada classe no valor e na renda.</p></div></div>
         <div class="grafico peq"><canvas id="g-sim-comp"></canvas></div>
-        <div class="tabela-wrap" style="margin-top:12px"><table><thead><tr><th>Classe</th><th class="n">Valor</th><th class="n">Peso</th><th class="n">Renda 12m</th><th class="n">Peso na renda</th></tr></thead><tbody>
-        ${porClasse.map(([c, v, r]) => `<tr><td>${esc(c)}</td><td class="n">${R(v)}</td><td class="n">${total ? pct(v / total) : ND}</td><td class="n">${R(r)}</td><td class="n">${renda ? pct(r / renda) : ND}</td></tr>`).join("")}
+        <div class="tabela-wrap" style="margin-top:12px"><table><thead><tr><th>Classe</th><th class="n">%</th><th class="n">Valor</th><th class="n">Renda 12m</th><th class="n">Peso na renda</th></tr></thead><tbody>
+        ${porClasse.map(([c, v, r, p]) => `<tr><td>${esc(nomeC(c))}</td><td class="n">${nfPct.format(p)}%</td><td class="n">${R(v)}</td><td class="n">${R(r)}</td><td class="n">${renda ? pct(r / renda) : ND}</td></tr>`).join("")}
         </tbody></table></div></div>
     </div>
     <div class="cartao sim-notas" style="margin-top:16px"><h3>Como a renda é calculada</h3><ul>
+      <li><b>Quantidades:</b> valor para investir vezes a porcentagem de cada ativo, dividido pelo preço atual e arredondado para baixo. O que não compra uma ação ou cota inteira fica como sobra.</li>
       <li><b>Fundos (FII, Fiagro e FI-Infra):</b> ${S.fiiBase === "12m" ? "média mensal dos rendimentos dos últimos 12 meses" : "último rendimento anunciado"}, repetido nos 12 meses. Fundo com menos de 12 meses de rendimentos na bolsa usa sempre o último.</li>
       <li><b>Ações:</b> soma dos dividendos e JCP com data com nos últimos 12 meses, publicados pela B3. Dá para tirar dividendos ou JCP de cada ação nas caixas da tabela. Restituição de capital não entra.</li>
       <li><b>BDRs:</b> proventos de 12 meses em reais pelo dividend yield do site, que já considera a proporção do BDR e o câmbio. O imposto do BDR é pago pelo investidor (carnê-leão ou declaração) e não é descontado aqui.</li>
       <li><b>Valores líquidos:</b> JCP com ${nf2.format(SIM_IR.jcp * 100)}% de IR retido na fonte (Lei Complementar 224/2025); dividendos com ${nf0.format(SIM_IR.div * 100)}% retidos só quando a mesma empresa paga mais de R$ 50 mil no mês à mesma pessoa física (Lei 15.270/2025)${temDiv50 ? ", o que acontece nesta carteira" : ""}. Rendimentos de fundos considerados isentos para pessoa física, o que depende das condições da lei (cotista com menos de 10% das cotas, fundo com pelo menos 100 cotistas e cotas negociadas em bolsa). A tributação mínima anual sobre altas rendas não está incluída.</li>
       <li><b>Preços:</b> último preço disponível no site. A carteira fica salva só neste navegador.</li>
     </ul><p class="sub">Simulação com base em proventos já pagos ou anunciados. Proventos futuros podem ser maiores, menores ou não acontecer; não é promessa de renda nem recomendação de investimento.</p></div>`;
-    $$(".sim-q").forEach((x) => x.onchange = () => { const i = +x.dataset.i, v = Math.floor(+x.value || 0); if (v > 0) S.itens[i].q = v; else S.itens.splice(i, 1); simSalvar(S); desenhar(); });
-    $$(".sim-rm").forEach((b) => b.onclick = () => { S.itens.splice(+b.dataset.i, 1); simSalvar(S); desenhar(); });
+    $$(".sim-pct").forEach((x) => {
+      x.onchange = () => { const v = lerNum(x.value); S.itens[+x.dataset.i].pct = v >= 0 ? Math.round(v * 100) / 100 : 0; simSalvar(S); dicaPct(); desenhar(); };
+      x.onkeydown = (e) => { if (e.key === "Enter") x.blur(); };
+    });
+    $$(".sim-rm").forEach((b) => b.onclick = () => { S.itens.splice(+b.dataset.i, 1); simSalvar(S); dicaPct(); desenhar(); });
     $$(".sim-chk input").forEach((c) => c.onchange = () => { S.itens[+c.dataset.i][c.dataset.k] = c.checked; simSalvar(S); desenhar(); });
     destruirGraficos();
     if (!window.Chart) return;
     const o = optGraf({ stacked: true, moeda: "R$ " });
     o.plugins.tooltip.callbacks.footer = (it) => `Total: R$ ${nf2.format(it.reduce((a, x) => a + (x.parsed.y || 0), 0))}`;
     charts.push(new Chart($("#g-sim-mes"), { type: "bar", data: { labels: ordem.map((m, i) => `${SIM_MESES[m]}/${String(anoDe(i)).slice(2)}`),
-      datasets: classes.map((c) => ({ label: c === "Ação" ? "Ações" : c === "BDR" ? "BDRs" : c, data: ordem.map((m) => porMes[m][c] || 0), backgroundColor: corC[c], borderRadius: 3 })) }, options: o }));
+      datasets: classes.map((c) => ({ label: nomeC(c), data: ordem.map((m) => porMes[m][c] || 0), backgroundColor: corC[c], borderRadius: 3 })) }, options: o }));
     const oc = optGraf({ legenda: true });
     delete oc.scales;
-    oc.plugins.tooltip.callbacks.label = (ctx) => `${ctx.label}: R$ ${nf2.format(ctx.parsed)} (${total ? nf2.format(ctx.parsed / total * 100) : 0}%)`;
-    charts.push(new Chart($("#g-sim-comp"), { type: "doughnut", data: { labels: porClasse.map(([c]) => c), datasets: [{ data: porClasse.map(([, v]) => v), backgroundColor: porClasse.map(([c]) => corC[c]), borderColor: cor("--sup"), borderWidth: 2 }] }, options: { ...oc, cutout: "62%" } }));
+    oc.plugins.tooltip.callbacks.label = (ctx) => `${ctx.label}: R$ ${nf2.format(ctx.parsed)} (${investido ? nf2.format(ctx.parsed / investido * 100) : 0}%)`;
+    charts.push(new Chart($("#g-sim-comp"), { type: "doughnut", data: { labels: porClasse.map(([c]) => nomeC(c)), datasets: [{ data: porClasse.map(([, v]) => v), backgroundColor: porClasse.map(([c]) => corC[c]), borderColor: cor("--sup"), borderWidth: 2 }] }, options: { ...oc, cutout: "62%" } }));
   }
   desenhar();
 }
-
 /* =====================================================================
    CALENDÁRIO DE RESULTADOS
    ===================================================================== */

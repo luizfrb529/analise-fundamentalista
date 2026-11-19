@@ -683,7 +683,6 @@ details.recolhe[open] > summary { margin-bottom: 12px; }
 .sim-busca .busca-lista button { display: flex; align-items: center; gap: 12px; width: 100%; padding: 8px 10px; border: 0; background: none; color: var(--txt); text-align: left; border-radius: 10px; cursor: pointer; font: inherit; }
 .sim-busca .busca-lista button:hover { background: var(--sup-3); }
 .sim-busca .busca-lista small { color: var(--txt-3); }
-#sim-n { width: 160px; }
 .sim-add input { background: var(--sup-2); border: 1px solid var(--borda); border-radius: 10px; padding: 9px 12px; color: var(--txt); font: inherit; }
 .sim-opcoes { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between; margin: 14px 0 16px; font-size: .82rem; color: var(--txt-3); }
 .sim-grupo { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; }
@@ -696,5 +695,34 @@ details.recolhe[open] > summary { margin-bottom: 12px; }
 .sim-chk label { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; }
 .sim-notas ul { margin: 8px 0 10px 18px; display: grid; gap: 6px; font-size: .84rem; color: var(--txt-2); }
 @media (max-width: 920px) { .sim-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 600px) { #sim-n { flex: 1 1 120px; width: auto; } .sim-add .btn { flex: 1 1 auto; } }
+@media (max-width: 600px) { .sim-add .btn { flex: 1 1 auto; } .sim-total input { width: 100%; } }
 .topo-barra { max-width: 1340px; }
+
+.sim-topo { display: grid; gap: 12px; }
+.sim-total { display: grid; gap: 6px; }
+.sim-total > span { font-size: .8rem; font-weight: 600; color: var(--txt-3); }
+.sim-reais { display: flex; align-items: center; gap: 8px; }
+.sim-reais i { font-style: normal; font-size: 1.3rem; font-weight: 700; color: var(--txt-3); }
+.sim-reais input { font-size: 1.5rem; font-weight: 700; width: min(320px, 100%); background: var(--sup-2); border: 1px solid var(--borda); border-radius: 10px; padding: 8px 12px; color: var(--txt); font-variant-numeric: tabular-nums; }
+.sim-pct-in { position: relative; display: inline-flex; align-items: center; }
+.sim-pct-in input { width: 110px; padding-right: 26px !important; text-align: right; }
+.sim-pct-in i { position: absolute; right: 10px; font-style: normal; color: var(--txt-3); font-size: .85rem; pointer-events: none; }
+.sim-pct-in.peq input { width: 84px; background: var(--sup-2); border: 1px solid var(--borda); border-radius: 8px; padding: 5px 8px; color: var(--txt); font: inherit; }
+.sim-status { margin-bottom: 10px; gap: 10px; flex-wrap: wrap; font-size: .84rem; }
+.sim-ok-pct { color: var(--pos); font-weight: 600; }
+.sim-falta { color: var(--alerta, #c27a12); font-weight: 600; }
+.sim-passou { color: var(--neg); font-weight: 600; }
+.sim-alerta { margin-bottom: 16px; border-color: var(--borda-forte); }
+.sim-tab tfoot td { border-top: 1px solid var(--borda-forte); }
+@media (max-width: 680px) {
+  table.sim-tab tfoot, table.sim-tab tfoot tr, table.sim-tab tfoot td { display: block; width: 100%; }
+  table.sim-tab tr { grid-template-columns: minmax(0, 1fr); }
+  table.sim-tab tfoot tr { display: grid; padding: 10px 14px; }
+  table.sim-tab td { border: 0; padding: 4px 0; display: flex; justify-content: space-between; gap: 8px; text-align: right; }
+  table.sim-tab td::before { content: attr(data-label); color: var(--txt-3); font-size: .74rem; text-align: left; }
+  table.sim-tab td.cel-empresa::before, table.sim-tab td.sim-rm-cel::before { display: none; }
+  table.sim-tab td.vazia { display: none; }
+  table.sim-tab td.sim-base { flex-direction: column; align-items: flex-end; }
+  table.sim-tab td.sim-base::before { align-self: flex-start; }
+  table.sim-tab td.sim-rm-cel { justify-content: flex-end; }
+}
