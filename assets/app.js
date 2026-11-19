@@ -418,6 +418,7 @@ async function render() {
     else if (r === "comparar") pgComparar(app, q);
     else if (r === "calendario") pgCalendario(app, q);
     else if (r === "retorno") await pgRetorno(app, q);
+    else if (r === "mapa") pgMapa(app, q);
     else if (r === "filtros") pgFiltros(app);
     else app.innerHTML = '<div class="cartao"><h1>Página não encontrada</h1><p><a class="lk" href="#/">Voltar ao início</a></p></div>';
   } catch (e) {
@@ -1497,6 +1498,84 @@ async function pgRetorno(app, q) {
     <p class="sub" style="margin-top:10px">Fontes: preços e proventos da B3 via Yahoo Finance, pela data ex, com proventos brutos (JCP antes do IR de 15%); calculadoras que descontam IR ou usam outras datas de início e fim chegam a números diferentes; CDI e IPCA mensais do Banco Central (séries 4391 e 433), com o último mês publicado repetido até sair o próximo. Sem custos, impostos e taxas. Rentabilidade passada não garante rentabilidade futura.</p></div>`;
   charts.push(new Chart($("#g-rt"), { type: "line", data: { labels: cal.map(dataBR), datasets: dsets }, options: o }));
   $("#rt-xls").onclick = () => baixarExcel(`retorno_total_${anos}_anos`, [{ nome: "Retorno total", cab: ["Investimento", "Desde", "R$ 1.000 viraram (R$)", "Retorno no período (%)", "Retorno ao ano (%)"], linhas: linhasTab.map((l) => [l.nome, dataBR(l.desde), +l.fim.toFixed(2), +(l.total * 100).toFixed(2), ok(l.aa) ? +(l.aa * 100).toFixed(2) : null]) }]);
+}
+/* =====================================================================
+   MAPA: dispersão de duas métricas para todas as empresas, com medianas e filtro de setor
+   ===================================================================== */
+const MAPA_EIXOS = {
+  roe: ["ROE", "pct", 0, 0.8], payout: ["Payout", "pct", 0, 1.5], dy: ["Dividend yield 12m", "pct", 0, 0.2],
+  pl: ["P/L", "x", 0, 40], ev_ebitda: ["EV/EBITDA", "x", 0, 25], roic: ["ROIC", "pct", 0, 0.6],
+  margem_liquida: ["Margem líquida", "pct", -0.2, 0.6], divliq_ebitda: ["Dív. líq./EBITDA", "x", -2, 6],
+  cagr_lucro_5a: ["CAGR lucro 5a", "pct", -0.3, 0.6], cagr_receita_5a: ["CAGR receita 5a", "pct", -0.1, 0.4],
+  momentum: ["Momentum 12-1", "pct", -0.6, 1.0], var_12m: ["Retorno 12 meses", "pct", -0.6, 1.2],
+};
+function valMapa(t, k) {
+  if (k === "momentum") { const p = D.prices[t] || {}; return ok(p.var_12m) && ok(p.var_mes) && p.var_mes > -1 ? (1 + p.var_12m) / (1 + p.var_mes) - 1 : null; }
+  if (suprimido(t, k)) return null;
+  const v = val(t, k);
+  if (k === "payout" && ok(v) && v < 0) return null;
+  return v;
+}
+function pgMapa(app, q) {
+  const kx = MAPA_EIXOS[q.get("x")] ? q.get("x") : "payout", ky = MAPA_EIXOS[q.get("y")] ? q.get("y") : "roe";
+  const seg = q.get("seg") || "ACAO_BR", setor = q.get("setor") || "";
+  const dest = (q.get("d") || "").split(",").map((x) => x.trim().toUpperCase()).filter((x) => D.univMap[x]);
+  const ir = (o) => { const st = { x: kx, y: ky, seg, setor, d: dest.join(","), ...o }; location.hash = `#/mapa?x=${st.x}&y=${st.y}&seg=${st.seg}&setor=${encodeURIComponent(st.setor)}&d=${st.d}`; };
+  const doSeg = D.tickers.filter((t) => seg === "TODOS" || (seg === "ACAO_BR" ? emAcoes(t) : !emAcoes(t)));
+  const setores = [...new Set(doSeg.map((t) => A(t).setor_macro))].sort((a, b) => a.localeCompare(b, "pt-BR"));
+  const lista = doSeg.filter((t) => !setor || A(t).setor_macro === setor);
+  const fmtE = (k, v) => !ok(v) ? ND : MAPA_EIXOS[k][1] === "pct" ? nf2.format(v * 100) + "%" : nf2.format(v) + "x";
+  const md = (k) => mediana(lista.map((t) => valMapa(t, k)));
+  const cartoes = [["roe", "ROE mediano"], ["dy", "DY mediano 12m"], ["payout", "Payout mediano"], ["momentum", "Momentum 12-1 mediano"]];
+  const opcoes = (sel) => Object.entries(MAPA_EIXOS).map(([k, [n]]) => `<option value="${k}" ${k === sel ? "selected" : ""}>${n}</option>`).join("");
+  app.innerHTML = `${trilha([["Mapa"]])}<div class="cab-pagina"><div><h1>Mapa das empresas</h1>
+    <p>Cada ponto é uma empresa: escolha os dois indicadores e o setor. O tamanho do ponto é o valor de mercado. Dados dos últimos 12 meses (realizados, não projeções).</p></div></div>
+  <div class="mapa-kpis">${cartoes.map(([k, n]) => `<div class="cartao mapa-kpi"><span>${n}</span><b>${fmtE(k, md(k))}</b><small>${k === "momentum" ? "Retorno de 12 meses excluindo o último" : k === "payout" ? "Proventos 12m / lucro 12m" : `${lista.filter((t) => ok(valMapa(t, k))).length} empresas`}</small></div>`).join("")}</div>
+  <div class="cartao" style="margin-top:16px">
+    <div class="linha mapa-ctrl">
+      <div class="abas" id="mp-seg" style="margin:0">${[["ACAO_BR", "Ações"], ["BDR", "BDRs"], ["TODOS", "Todos"]].map(([v, n]) => `<button data-v="${v}" class="${v === seg ? "ativo" : ""}">${n}</button>`).join("")}</div>
+      <select id="mp-setor"><option value="">Todos os setores</option>${setores.map((x) => `<option ${x === setor ? "selected" : ""}>${esc(x)}</option>`).join("")}</select>
+      <label class="mapa-eixo">Eixo horizontal <select id="mp-x">${opcoes(kx)}</select></label>
+      <label class="mapa-eixo">Eixo vertical <select id="mp-y">${opcoes(ky)}</select></label>
+      <select id="mp-dest"><option value="">Destacar empresa</option>${lista.filter((t) => !dest.includes(t)).map((t) => `<option value="${t}">${t} · ${esc(A(t).nome)}</option>`).join("")}</select>
+      ${dest.length ? `<div class="chips">${dest.map((t) => `<button class="chip ativo" data-rm="${t}">${t}<span class="x">✕</span></button>`).join("")}</div>` : ""}
+    </div>
+    <h3 style="margin:16px 0 4px">${esc(MAPA_EIXOS[ky][0])} × ${esc(MAPA_EIXOS[kx][0])}</h3>
+    <div class="grafico mapa-graf"><canvas id="g-mapa"></canvas></div>
+    <p class="sub" style="margin-top:8px">Valores fora da escala ficam encostados na borda (o balão mostra o valor real). Empresas em recuperação ficam fora dos múltiplos de lucro. Clique num ponto para abrir a empresa.</p>
+  </div>`;
+  $$("#mp-seg button").forEach((b) => b.onclick = () => ir({ seg: b.dataset.v, setor: "" }));
+  $("#mp-setor").onchange = (e) => ir({ setor: e.target.value });
+  $("#mp-x").onchange = (e) => ir({ x: e.target.value });
+  $("#mp-y").onchange = (e) => ir({ y: e.target.value });
+  $("#mp-dest").onchange = (e) => e.target.value && ir({ d: [...dest, e.target.value].join(",") });
+  $$("[data-rm]").forEach((b) => b.onclick = () => ir({ d: dest.filter((x) => x !== b.dataset.rm).join(",") }));
+  const [, ux, x0, x1] = MAPA_EIXOS[kx], [, uy, y0, y1] = MAPA_EIXOS[ky];
+  const esc_ = (u) => (u === "pct" ? 100 : 1);
+  const pts = lista.map((t) => ({ t, vx: valMapa(t, kx), vy: valMapa(t, ky), vm: ind(t).valor_mercado_brl })).filter((p) => ok(p.vx) && ok(p.vy));
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  // rótulos: destacadas + extremos (maiores no eixo vertical e no horizontal)
+  const rot = new Set(dest);
+  [...pts].sort((a, b) => b.vy - a.vy).slice(0, 5).forEach((p) => rot.add(p.t));
+  [...pts].sort((a, b) => b.vx - a.vx).slice(0, 3).forEach((p) => rot.add(p.t));
+  const vmMax = Math.max(...pts.map((p) => p.vm || 0), 1);
+  const dados = pts.map((p) => ({ x: clamp(p.vx, x0, x1) * esc_(ux), y: clamp(p.vy, y0, y1) * esc_(uy), r: 3 + 11 * Math.sqrt((p.vm || 0) / vmMax), t: p.t, vx: p.vx, vy: p.vy }));
+  const azul = cor("--serie-2"), cinza = "rgba(140,148,158,.55)";
+  const PLUGIN_ROT = { id: "rotMapa", afterDatasetsDraw(ch) {
+    const { ctx } = ch, meta = ch.getDatasetMeta(0);
+    ctx.save(); ctx.font = "600 12px Inter, sans-serif"; ctx.fillStyle = cor("--txt"); ctx.textBaseline = "middle";
+    meta.data.forEach((el, i) => { const d = dados[i]; if (!rot.has(d.t)) return; const dir = el.x > ch.chartArea.right - 70; ctx.textAlign = dir ? "right" : "left"; ctx.fillText(d.t, el.x + (dir ? -1 : 1) * (d.r + 5), el.y); });
+    if (kx === "payout") { const xs = ch.scales.x, px = xs.getPixelForValue(100); ctx.strokeStyle = cor("--txt-3"); ctx.setLineDash([4, 4]); ctx.beginPath(); ctx.moveTo(px, ch.chartArea.top); ctx.lineTo(px, ch.chartArea.bottom); ctx.stroke(); ctx.setLineDash([]); ctx.fillStyle = cor("--txt-3"); ctx.textAlign = "left"; ctx.fillText("100%: paga todo o lucro", px + 6, ch.chartArea.bottom - 10); }
+    ctx.restore();
+  } };
+  const o = optGraf({ legenda: false });
+  o.interaction = { mode: "nearest", intersect: true };
+  o.scales.x = { min: x0 * esc_(ux), max: x1 * esc_(ux), title: { display: true, text: MAPA_EIXOS[kx][0], color: cor("--txt-3") }, ticks: { color: cor("--txt-3"), callback: (v) => nf0.format(v) + (ux === "pct" ? "%" : "x") }, grid: { color: cor("--borda") } };
+  o.scales.y = { min: y0 * esc_(uy), max: y1 * esc_(uy), title: { display: true, text: MAPA_EIXOS[ky][0], color: cor("--txt-3") }, ticks: { color: cor("--txt-3"), callback: (v) => nf0.format(v) + (uy === "pct" ? "%" : "x") }, grid: { color: cor("--borda") } };
+  o.plugins.tooltip.callbacks = { title: (it) => { const d = dados[it[0].dataIndex]; return `${d.t} · ${A(d.t).nome}`; }, label: (ctx) => { const d = dados[ctx.dataIndex]; return [`${MAPA_EIXOS[ky][0]}: ${fmtE(ky, d.vy)}`, `${MAPA_EIXOS[kx][0]}: ${fmtE(kx, d.vx)}`]; } };
+  o.onClick = (e, els) => { if (els.length) location.hash = `#/ativo/${dados[els[0].index].t}`; };
+  o.onHover = (e, els) => { e.native.target.style.cursor = els.length ? "pointer" : ""; };
+  charts.push(new Chart($("#g-mapa"), { type: "bubble", data: { datasets: [{ data: dados, backgroundColor: dados.map((d) => rot.has(d.t) ? azul : cinza), borderColor: "transparent" }] }, options: o, plugins: [PLUGIN_ROT] }));
 }
 function pgComparar(app, q) {
   let sel = (q.get("t") || "").split(",").map((x) => x.trim().toUpperCase()).filter((x) => D.fund[x]);

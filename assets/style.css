@@ -566,3 +566,15 @@ tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72re
 @media (max-width: 1240px) and (min-width: 921px) { .topo .busca input { width: 130px; } }
 @media (max-width: 1100px) and (min-width: 921px) { .topo .busca input { width: 100px; } }
 .topo-barra { max-width: 1340px; }
+
+/* ---------------- mapa */
+.mapa-kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.mapa-kpi { display: flex; flex-direction: column; gap: 6px; }
+.mapa-kpi span { font-size: .8rem; color: var(--txt-3); }
+.mapa-kpi b { font-size: 1.7rem; font-weight: 700; letter-spacing: -.01em; }
+.mapa-kpi small { font-size: .76rem; color: var(--txt-3); }
+.mapa-ctrl { flex-wrap: wrap; gap: 10px; }
+.mapa-eixo { display: inline-flex; align-items: center; gap: 6px; font-size: .8rem; color: var(--txt-3); }
+.mapa-graf { height: 560px; }
+@media (max-width: 920px) { .mapa-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } .mapa-graf { height: 420px; } }
+.mapa-kpis > .cartao { margin: 0 !important; }
