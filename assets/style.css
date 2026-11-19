@@ -595,3 +595,26 @@ tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72re
 .dr-col ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: .86rem; color: var(--txt-2); line-height: 1.45; }
 @media (max-width: 920px) { .dr-grade { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 1100px) and (min-width: 921px) { .topo .busca input { width: 84px; } .menu-item > a { padding: 6px 6px; } .topo-barra { gap: 8px; } }
+
+/* ---------------- fundos imobiliários */
+.rend-cartao { color: #fff; border: 0; }
+.rend-cartao.ult { background: linear-gradient(135deg, #0f9f8a, #0b5d8a); }
+.rend-cartao.prox { background: linear-gradient(135deg, #b4521c, #8a2f12); }
+.rend-cartao h3 { color: #fff; margin: 0 0 6px; font-size: .86rem; text-transform: uppercase; letter-spacing: .06em; }
+.rend-cartao .sub { color: rgba(255,255,255,.85); }
+.rend-valor { font-size: 2rem; font-weight: 800; letter-spacing: -.02em; }
+.rend-grade { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 16px; margin-top: 10px; border-top: 1px solid rgba(255,255,255,.25); padding-top: 10px; }
+.rend-grade span { display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; opacity: .85; }
+.rend-grade b { font-size: 1.02rem; }
+.grafico.rosca { height: 260px; }
+.ficha { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 16px; margin-top: 10px; }
+.ficha span { display: block; font-size: .72rem; color: var(--txt-3); }
+.ficha b { font-size: .88rem; font-weight: 600; }
+.ativo-id { display: flex; align-items: center; gap: 14px; }
+@media (max-width: 720px) { .ficha, .rend-grade { grid-template-columns: minmax(0, 1fr); } }
+.sobre-destaques.q4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 720px) { .sobre-destaques.q4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.fii-rend { align-items: stretch; }
+@media (max-width: 1366px) and (min-width: 921px) { .menu-item > a { padding: 6px 7px; font-size: .84rem; } .topo-barra { gap: 10px; } .marca-texto { font-size: .95rem; } }
+@media (max-width: 1100px) and (min-width: 921px) { .marca-texto { display: none; } }
+.grade.fii-rend { align-items: stretch !important; } .grade.fii-rend > .cartao { margin: 0; }

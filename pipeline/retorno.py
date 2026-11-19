@@ -21,6 +21,7 @@ import sources as S  # noqa: E402
 RAIZ = Path(__file__).resolve().parents[1]
 SAIDA = RAIZ / "data" / "retorno"
 ANOS = 16
+HOJE_ANO = dt.date.today().year
 
 
 def gravar(caminho: Path, obj):
@@ -70,9 +71,38 @@ def mensal_bcb(serie: int) -> list:
     return lim
 
 
+def ifix_b3() -> list:
+    """Fechamento diário oficial do IFIX (B3, estatísticas do índice), agrupado por semana (sexta-feira)."""
+    import base64
+    serie = {}
+    for ano in range(HOJE_ANO - ANOS, HOJE_ANO + 1):
+        chave = base64.b64encode(json.dumps({"index": "IFIX", "language": "pt-br", "year": str(ano)}).encode()).decode()
+        try:
+            j = S.get(f"https://sistemaswebb3-listados.b3.com.br/indexStatisticsProxy/IndexCall/GetPortfolioDay/{chave}").json()
+        except Exception as e:
+            print(f"IFIX {ano}: {e}")
+            continue
+        for linha in j.get("results") or []:
+            dia = linha.get("day")
+            for mes in range(1, 13):
+                v = linha.get(f"rateValue{mes}")
+                if v:
+                    try:
+                        serie[dt.date(ano, mes, int(dia))] = float(v.replace(".", "").replace(",", "."))
+                    except ValueError:
+                        pass
+    if not serie:
+        return []
+    s = pd.Series(serie).sort_index()
+    s.index = pd.to_datetime(s.index)
+    return [[d.strftime("%Y-%m-%d"), round(float(v), 2)] for d, v in s.resample("W-FRI").last().dropna().items()]
+
+
 def main():
     universo = json.loads((RAIZ / "data" / "universe.json").read_text(encoding="utf-8"))
-    tickers = [a["ticker"] for a in universo]
+    fiis_ = RAIZ / "data" / "fiis.json"
+    fiis = json.loads(fiis_.read_text(encoding="utf-8")) if fiis_.exists() else []
+    tickers = [a["ticker"] for a in universo] + [f["ticker"] for f in fiis]
     dfs = S.precos_yf([t + ".SA" for t in tickers] + ["^BVSP"], anos=ANOS)
     n = 0
     for t in tickers:
@@ -96,6 +126,8 @@ def main():
     ib = dfs.get("^BVSP")
     if ib is not None and not ib.empty:
         bench["ibov"] = [[d.strftime("%Y-%m-%d"), round(float(v), 2)] for d, v in ib["Close"].resample("W-FRI").last().dropna().items()]
+    ifix = ifix_b3()
+    bench["ifix"] = ifix or anterior.get("ifix", [])
     gravar(SAIDA / "_benchmarks.json", bench)
     print(f"retorno total: {n} ativos; CDI {len(bench['cdi'])} meses; IPCA {len(bench['ipca'])} meses")
 

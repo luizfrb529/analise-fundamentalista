@@ -43,6 +43,9 @@ def main():
     todos = "--todos" in sys.argv
     DESTINO.mkdir(parents=True, exist_ok=True)
     universo = json.loads((RAIZ / "data" / "universe.json").read_text(encoding="utf-8"))
+    fiis = RAIZ / "data" / "fiis.json"
+    if fiis.exists():
+        universo += [{"ticker": f["ticker"]} for f in json.loads(fiis.read_text(encoding="utf-8"))]
     sessao = requests.Session()
     sessao.headers["User-Agent"] = "analise-fundamentalista/1.0"
     baixados, falhas = 0, []

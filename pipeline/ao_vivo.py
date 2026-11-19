@@ -27,7 +27,8 @@ def universo() -> list:
 
 
 def precos() -> dict:
-    tickers = [a["ticker"] for a in universo()]
+    fiis = RAIZ / "data" / "fiis.json"
+    tickers = [a["ticker"] for a in universo()] + ([f["ticker"] for f in json.loads(fiis.read_text(encoding="utf-8"))] if fiis.exists() else [])
     df = yf.download([t + ".SA" for t in tickers], period="7d", interval="1d", group_by="ticker", progress=False, auto_adjust=False, threads=True)
     out, fatores = {}, S.fatores_cotacao()
     for t in tickers:

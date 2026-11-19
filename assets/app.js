@@ -314,13 +314,16 @@ async function j(url, opcional) {
   catch (e) { if (opcional !== undefined) return opcional; throw new Error(`Falha ao carregar ${url}: ${e.message}`); }
 }
 async function carregar() {
-  const [meta_, macro, prices, fund, univ, imeta, notes, config, logos] = await Promise.all([
+  const [meta_, macro, prices, fund, univ, imeta, notes, config, logos, fiisIdx] = await Promise.all([
     j("data/meta.json"), j("data/macro.json", {}), j("data/prices.json"), j("data/fundamentals.json"), j("data/universe.json"),
-    j("data/indicators_meta.json"), j("data/notes.json", {}), j("data/config.json", {}), j("assets/logos/_index.json", [])]);
+    j("data/indicators_meta.json"), j("data/notes.json", {}), j("data/config.json", {}), j("assets/logos/_index.json", []), j("data/fiis/_index.json", { fiis: [] })]);
   Object.assign(D, { meta: meta_, macro, prices, fund, imeta, notes, config, cache: {}, logos: new Set(logos) });
   D.univ = univ.filter((a) => fund[a.ticker]);
   D.univMap = Object.fromEntries(univ.map((a) => [a.ticker, a]));
   D.tickers = D.univ.map((a) => a.ticker);
+  D.fiis = (fiisIdx && fiisIdx.fiis) || [];
+  D.fiiMap = Object.fromEntries(D.fiis.map((f) => [f.ticker, f]));
+  D.vivoFii = {};
 }
 const RAMO_VIVO = "https://raw.githubusercontent.com/luizfrb529/analise-fundamentalista/refs/heads/mercado/";
 async function jsonVivo(arquivo) {
@@ -336,6 +339,7 @@ async function precosAoVivo() {
   if (!j) return;
   for (const [t, v] of Object.entries(j.precos || {})) {
     const p = D.prices[t];
+    if (D.fiiMap && D.fiiMap[t] && ok(v.preco)) { D.vivoFii[t] = { ...v, ao_vivo: j.atualizado_em }; continue; }
     if (!p || !ok(v.preco) || (p.data && v.data < p.data)) continue;
     D.prices[t] = { ...p, preco: v.preco, var_dia: v.var_dia, data: v.data, ao_vivo: j.atualizado_em };
   }
@@ -419,6 +423,8 @@ async function render() {
     else if (r === "calendario") pgCalendario(app, q);
     else if (r === "retorno") await pgRetorno(app, q);
     else if (r === "mapa") pgMapa(app, q);
+    else if (r === "fiis") pgFiis(app);
+    else if (r === "fii") await pgFii(app, p.toUpperCase());
     else if (r === "filtros") pgFiltros(app);
     else app.innerHTML = '<div class="cartao"><h1>Página não encontrada</h1><p><a class="lk" href="#/">Voltar ao início</a></p></div>';
   } catch (e) {
@@ -1412,9 +1418,9 @@ const MINIS = ["pl", "pvp", "roe", "margem_liquida", "margem_fcl", "fcf_yield", 
    RETORNO TOTAL: ações com e sem reinvestimento de proventos contra CDI, IPCA + X% e Ibovespa
    ===================================================================== */
 const RT_CORES = ["#33c47a", "#5b8def", "#e8a33d", "#c678dd", "#e06c75", "#56b6c2"];
-const RT_BENCH = { cdi: ["CDI", "#9aa3ad"], ipca4: ["IPCA + 4%", "#b08968"], ipca5: ["IPCA + 5%", "#d4a373"], ipca6: ["IPCA + 6%", "#e9c46a"], ibov: ["Ibovespa", "#7f8c99"] };
+const RT_BENCH = { ifix: ["IFIX", "#c9a227"], cdi: ["CDI", "#9aa3ad"], ipca4: ["IPCA + 4%", "#b08968"], ipca5: ["IPCA + 5%", "#d4a373"], ipca6: ["IPCA + 6%", "#e9c46a"], ibov: ["Ibovespa", "#7f8c99"] };
 async function pgRetorno(app, q) {
-  const sel = [...new Set((q.get("t") || "").split(",").map((x) => x.trim().toUpperCase()).filter((x) => D.univMap[x]))].slice(0, 6);
+  const sel = [...new Set((q.get("t") || "").split(",").map((x) => x.trim().toUpperCase()).filter((x) => D.univMap[x] || (D.fiiMap && D.fiiMap[x])))].slice(0, 6);
   const anos = q.get("p") || "5", modo = q.get("m") || "ambos";
   const bench = (q.get("b") ?? "cdi,ipca6").split(",").filter((x) => RT_BENCH[x]);
   const ir = (o) => {
@@ -1426,7 +1432,7 @@ async function pgRetorno(app, q) {
   <div class="aviso-rt"><b>Estimativa.</b> Cálculo próprio com preços e proventos brutos do Yahoo Finance (JCP antes do IR de 15%), sem custos e impostos. Calculadoras que descontam IR ou usam outras datas chegam a números diferentes; use como referência de ordem de grandeza, não como extrato.</div>
   <div class="cartao rt-ctrl">
     <div class="linha"><div class="chips">${sel.map((t, i) => `<button class="chip ativo" data-rm="${t}"><i class="rt-cor" style="background:${RT_CORES[i]}"></i>${logo(t)}${t}<span class="x">✕</span></button>`).join("") || '<span class="muted">Escolha até 6 ações.</span>'}</div>
-      <select id="rt-add"><option value="">Adicionar ação</option>${D.univ.filter((a) => !sel.includes(a.ticker)).map((a) => `<option value="${a.ticker}">${a.ticker} · ${esc(a.nome)}</option>`).join("")}</select></div>
+      <select id="rt-add"><option value="">Adicionar ação ou FII</option><optgroup label="Ações e BDRs">${D.univ.filter((a) => !sel.includes(a.ticker)).map((a) => `<option value="${a.ticker}">${a.ticker} · ${esc(a.nome)}</option>`).join("")}</optgroup><optgroup label="Fundos imobiliários">${(D.fiis || []).filter((f) => !sel.includes(f.ticker)).map((f) => `<option value="${f.ticker}">${f.ticker} · ${esc(f.nome)}</option>`).join("")}</optgroup></select></div>
     <div class="linha rt-opcoes">
       <div class="abas" id="rt-per" style="margin:0">${[["1", "1 ano"], ["3", "3 anos"], ["5", "5 anos"], ["10", "10 anos"], ["15", "15 anos"]].map(([v, n]) => `<button data-v="${v}" class="${v === anos ? "ativo" : ""}">${n}</button>`).join("")}</div>
       <div class="abas" id="rt-modo" style="margin:0">${[["com", "Com reinvestimento"], ["sem", "Sem reinvestimento"], ["ambos", "Os dois"]].map(([v, n]) => `<button data-v="${v}" class="${v === modo ? "ativo" : ""}">${n}</button>`).join("")}</div>
@@ -1493,6 +1499,7 @@ async function pgRetorno(app, q) {
   const d0 = cal[0];
   if (bench.includes("cdi")) { const f = indiceMensal(bm.cdi); addLinha("CDI", RT_BENCH.cdi[1], cal.map((d) => 1000 * f(d0, d)), { borderWidth: 1.6 }); }
   for (const [k, x] of [["ipca4", 0.04], ["ipca5", 0.05], ["ipca6", 0.06]]) if (bench.includes(k)) { const f = indiceMensal(bm.ipca, x); addLinha(RT_BENCH[k][0], RT_BENCH[k][1], cal.map((d) => 1000 * f(d0, d)), { borderWidth: 1.6 }); }
+  if (bench.includes("ifix") && (bm.ifix || []).length) { const b0 = ultimo(bm.ifix, d0); if (b0) addLinha("IFIX (com rendimentos)", RT_BENCH.ifix[1], cal.map((d) => { const x = ultimo(bm.ifix, d); return x ? 1000 * x[1] / b0[1] : null; }), { borderWidth: 1.6 }); }
   if (bench.includes("ibov")) { const b0 = ultimo(bm.ibov, d0)[1]; addLinha("Ibovespa (só pontos)", RT_BENCH.ibov[1], cal.map((d) => 1000 * ultimo(bm.ibov, d)[1] / b0), { borderWidth: 1.6 }); }
 
   const o = optGraf({ legenda: true });
@@ -1505,7 +1512,7 @@ async function pgRetorno(app, q) {
     <div class="tabela-wrap"><table class="resp"><thead><tr><th>Investimento</th><th class="n">R$ 1.000 viraram</th><th class="n">Retorno no período</th><th class="n">Retorno ao ano</th></tr></thead><tbody>
     ${linhasTab.map((l) => `<tr><td data-label="Investimento"><i class="rt-cor${l.tracej ? " tracej" : ""}" style="background:${l.cor}"></i>${esc(l.nome)}${l.desde !== d0 ? ` <span class="muted">desde ${dataBR(l.desde)}</span>` : ""}</td><td class="n" data-label="R$ 1.000 viraram"><b>R$ ${nf2.format(l.fim)}</b></td><td class="n" data-label="Retorno no período">${varHtml(l.total)}</td><td class="n" data-label="Retorno ao ano">${ok(l.aa) ? varHtml(l.aa) : '<span class="muted">menos de 1 ano</span>'}</td></tr>`).join("")}
     </tbody></table></div>
-    <p class="sub" style="margin-top:10px">Fontes: preços e proventos da B3 via Yahoo Finance, pela data ex, com proventos brutos (JCP antes do IR de 15%); calculadoras que descontam IR ou usam outras datas de início e fim chegam a números diferentes; CDI e IPCA mensais do Banco Central (séries 4391 e 433), com o último mês publicado repetido até sair o próximo. Sem custos, impostos e taxas. Rentabilidade passada não garante rentabilidade futura.</p></div>`;
+    <p class="sub" style="margin-top:10px">Fontes: preços e proventos da B3 via Yahoo Finance, pela data ex, com proventos brutos (JCP antes do IR de 15%); calculadoras que descontam IR ou usam outras datas de início e fim chegam a números diferentes; CDI e IPCA mensais do Banco Central (séries 4391 e 433); IFIX diário oficial da B3 (índice de retorno total, já considera os rendimentos), com o último mês publicado repetido até sair o próximo. Sem custos, impostos e taxas. Rentabilidade passada não garante rentabilidade futura.</p></div>`;
   charts.push(new Chart($("#g-rt"), { type: "line", data: { labels: cal.map(dataBR), datasets: dsets }, options: o }));
   $("#rt-xls").onclick = () => baixarExcel(`retorno_total_${anos}_anos`, [{ nome: "Retorno total", cab: ["Investimento", "Desde", "R$ 1.000 viraram (R$)", "Retorno no período (%)", "Retorno ao ano (%)"], linhas: linhasTab.map((l) => [l.nome, dataBR(l.desde), +l.fim.toFixed(2), +(l.total * 100).toFixed(2), ok(l.aa) ? +(l.aa * 100).toFixed(2) : null]) }]);
 }
@@ -1586,6 +1593,154 @@ function pgMapa(app, q) {
   o.onClick = (e, els) => { if (els.length) location.hash = `#/ativo/${dados[els[0].index].t}`; };
   o.onHover = (e, els) => { e.native.target.style.cursor = els.length ? "pointer" : ""; };
   charts.push(new Chart($("#g-mapa"), { type: "bubble", data: { datasets: [{ data: dados, backgroundColor: dados.map((d) => rot.has(d.t) ? azul : cinza), borderColor: "transparent" }] }, options: o, plugins: [PLUGIN_ROT] }));
+}
+/* =====================================================================
+   FUNDOS IMOBILIÁRIOS
+   ===================================================================== */
+function pgFiis(app) {
+  const l = [...(D.fiis || [])].sort((a, b) => (b.pl || 0) - (a.pl || 0));
+  app.innerHTML = `${trilha([["Fundos imobiliários"]])}<div class="cab-pagina"><div><h1>Fundos imobiliários</h1>
+    <p>Rendimentos, patrimônio e carteira dos fundos acompanhados, com dados da CVM e do FundosNet (B3).</p></div></div>
+  <div class="cartao"><div class="tabela-wrap"><table class="resp"><thead><tr><th>Fundo</th><th>Segmento</th><th class="n">Preço</th><th class="n">P/VP</th><th class="n">DY 12m</th><th class="n">Último rend.</th><th class="n">Patrimônio</th><th class="n">Liquidez diária</th><th class="n">12 meses</th></tr></thead><tbody>
+  ${l.map((f) => { const pv = fiiPreco(f.ticker, f.preco); return `<tr><td data-label="Fundo" class="cel-empresa"><a class="empresa" href="#/fii/${f.ticker}">${logo(f.ticker)}<span class="nomes"><span class="tk">${f.ticker}</span><span class="nm">${esc(f.nome)}</span></span></a></td><td data-label="Segmento">${esc(f.segmento || "n/d")}</td>
+    <td class="n" data-label="Preço">${ok(pv) ? "R$ " + nf2.format(pv) : ND}</td><td class="n" data-label="P/VP">${fmtU(f.p_vp, "x")}</td><td class="n" data-label="DY 12m">${fmtU(f.dy_12m, "pct")}</td>
+    <td class="n" data-label="Último rend.">${ok(f.ultimo_rendimento) ? "R$ " + nf2.format(f.ultimo_rendimento) : ND}</td><td class="n" data-label="Patrimônio">${ok(f.pl) ? "R$ " + grande(f.pl) : ND}</td>
+    <td class="n" data-label="Liquidez diária">${ok(f.liquidez_21) ? "R$ " + grande(f.liquidez_21) : ND}</td><td class="n" data-label="12 meses">${varHtml(f.var_12m)}</td></tr>`; }).join("") || '<tr><td colspan="9" class="vazio">Nenhum fundo cadastrado.</td></tr>'}
+  </tbody></table></div><p class="sub" style="margin-top:10px">Preço da B3 (Yahoo Finance, atraso de até 15 minutos). Patrimônio e valor patrimonial: Informe Mensal da CVM. Rendimentos: avisos aos cotistas no FundosNet.</p></div>`;
+}
+function fiiPreco(t, padrao) { const v = D.vivoFii && D.vivoFii[t]; return v && ok(v.preco) ? v.preco : padrao; }
+const CORES_FII = ["#33c47a", "#5b8def", "#e8a33d", "#c678dd", "#e06c75", "#56b6c2", "#d19a66", "#98c379", "#be5046", "#7f8c99", "#b8bb26", "#ff79c6"];
+function rosca(el, rotulos, valores, sufixo = "%") {
+  if (!el || !window.Chart) return;
+  const tot = valores.reduce((a, b) => a + b, 0) || 1;
+  charts.push(new Chart(el, { type: "doughnut", data: { labels: rotulos, datasets: [{ data: valores, backgroundColor: rotulos.map((_, i) => CORES_FII[i % CORES_FII.length]), borderColor: cor("--sup"), borderWidth: 2 }] },
+    options: { responsive: true, maintainAspectRatio: false, cutout: "62%", plugins: { legend: { position: "right", labels: { color: cor("--txt-2"), boxWidth: 10, boxHeight: 10, font: { family: "Inter", size: 11 } } },
+      tooltip: { callbacks: { label: (c) => `${c.label}: ${nf2.format(c.parsed / tot * 100)}%` } } } } }));
+}
+async function pgFii(app, t) {
+  const d = D.cache["fii" + t] || (D.cache["fii" + t] = await j(`data/fiis/${t}.json`, null));
+  if (!d) { app.innerHTML = `<div class="cartao"><h1>${esc(t)}</h1><p>Fundo não encontrado.</p><p><a class="lk" href="#/fiis">Ver fundos imobiliários</a></p></div>`; return; }
+  await precosAoVivo();
+  const i = d.indicadores || {}, c = d.cadastro || {}, comp = d.composicao || {}, sb = d.sobre || {};
+  const vivo = D.vivoFii[t];
+  const preco = fiiPreco(t, i.preco), pvp = ok(preco) && ok(i.vp_cota) ? preco / i.vp_cota : i.p_vp, dy = ok(preco) && ok(i.rend_12m) ? i.rend_12m / preco : i.dy_12m;
+  const reais = (v, dec = 2) => ok(v) ? "R$ " + new Intl.NumberFormat("pt-BR", { minimumFractionDigits: dec, maximumFractionDigits: dec }).format(v) : ND;
+  const prov = (d.proventos || []).filter((x) => x.tipo === "Rendimento");
+  const ult = prov[prov.length - 1];
+  const hoje = new Date().toISOString().slice(0, 10);
+  const prox = (d.proventos || []).find((x) => x.pagamento && x.pagamento > hoje);
+  const conf = d.conferencia_proventos || {};
+  const docs = (d.documentos || []).filter((x) => !/informes periódicos/i.test(x.categoria));
+  const rel = d.relatorio_gerencial;
+  const ind = (rot, val, det = "", dest = false) => `<div class="ind${dest ? " principal" : ""}"><div class="rot">${rot}</div><div class="val">${val}</div><div class="det">${det || "&nbsp;"}</div></div>`;
+  const pctTot = (lst, k = "valor") => { const tot = lst.reduce((a, x) => a + (x[k] || 0), 0) || 1; return lst.map((x) => [x.nome || x.faixa || x.indexador, (x[k] || 0) / tot]); };
+  app.innerHTML = `${trilha([["Fundos imobiliários", "#/fiis"], [t]])}
+  <div class="ativo-cab"><div class="ativo-id">${logo(t, "g")}<div><h1>${t} <span class="badge">FII</span></h1><div class="nm">${esc(c.nome || "")}</div>
+    <div class="badges"><span class="badge">${esc(c.segmento || "Segmento n/d")}</span><span class="badge">Gestão ${esc((c.gestao || "n/d").toLowerCase())}</span><span class="badge ${/qualific|profiss/i.test(sb.publico || "") ? "alerta" : "pos"}">${esc((sb.publico || "").replace(/^qualquer investidor \(público em geral\)$/, "Público em geral"))}</span><span class="badge">Perfil: ${esc(sb.perfil || "n/d")}</span></div></div></div></div>
+
+  <div class="cartao" style="margin-top:18px"><div class="cotacao-cab"><div title="Cotação com atraso de até 15 minutos."><div class="sub">Cotação</div>
+    <div class="preco-grande">${reais(preco)}${vivo && ok(vivo.var_dia) ? ` <span class="preco-var">(${varHtml(vivo.var_dia)})</span>` : ""}</div>
+    <div class="sub" style="margin-top:6px">${vivo ? `Atualizada às ${new Date(vivo.ao_vivo).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}` : `Dados de ${dataBR((d.atualizado_em || "").slice(0, 10))}`}</div>
+    <div class="sub">12 meses ${varHtml(i.var_12m)} · mín. 52 semanas ${reais(i.min_52s)} · máx. ${reais(i.max_52s)}</div></div>
+    <div class="linha" style="gap:8px"><a class="btn peq" href="#/retorno?t=${t}&p=3&m=ambos&b=ifix,cdi">Retorno total x IFIX e CDI</a><div class="chips" id="fii-per"><button class="chip ativo" data-p="1">1A</button><button class="chip" data-p="3">3A</button><button class="chip" data-p="10">Máx.</button></div></div></div>
+    <div class="grafico" style="margin-top:12px"><canvas id="g-fii-preco"></canvas></div></div>
+
+  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Indicadores</h2></div><div class="ind-grade">
+    ${ind("Dividend yield 12m", fmtU(dy, "pct"), `${reais(i.rend_12m)} por cota em 12 meses`, true)}
+    ${ind("P/VP", fmtU(pvp, "x"), `valor patrimonial ${reais(i.vp_cota)} por cota`, true)}
+    ${ind("Último rendimento", reais(i.ultimo_rendimento), ok(i.ultimo_yield) ? `${nf2.format(i.ultimo_yield * 100)}% sobre a cota de ${reais(i.cota_base)}` : "", true)}
+    ${ind("Rendimento médio 12m", reais(i.rend_medio_12m), "média mensal por cota")}
+    ${ind("Patrimônio líquido", ok(i.pl) ? "R$ " + grande(i.pl) : ND, `${ok(i.cotas) ? nf0.format(i.cotas) : "n/d"} cotas`)}
+    ${ind("Valor de mercado", ok(preco) && ok(i.cotas) ? "R$ " + grande(preco * i.cotas) : ND, "preço x número de cotas")}
+    ${ind("Cotistas", ok(i.cotistas) ? nf0.format(i.cotistas) : ND, "último informe mensal")}
+    ${ind("Liquidez média diária", ok(i.liquidez_21) ? "R$ " + grande(i.liquidez_21) : ND, "21 pregões")}
+    ${ind("Caixa e renda fixa", fmtU(i.caixa_pct, "pct"), "sobre o ativo total")}
+    ${ind("Taxa de administração", fmtU(i.taxa_adm_12m, "pct"), "despesa dos últimos 12 meses sobre o patrimônio")}
+    ${ind("Valor patrimonial 3 anos", fmtU(i.cagr_vp_3a, "pct"), "crescimento anual da cota patrimonial")}
+  </div></section>
+
+  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Rendimentos</h2></div>
+    <div class="grade g2 fii-rend">
+      <div class="cartao rend-cartao ult"><h3>Último rendimento</h3>${ult ? `<div class="rend-valor">${reais(ult.valor, 4)}</div><div class="rend-grade"><div><span>Rendimento</span><b>${fmtU(i.ultimo_yield, "pct")}</b></div><div><span>Cotação base</span><b>${reais(i.cota_base)}</b></div><div><span>Data base</span><b>${dataBR(ult.data_base)}</b></div><div><span>Pagamento</span><b>${dataBR(ult.pagamento)}</b></div></div>` : '<p class="vazio">Sem rendimentos.</p>'}</div>
+      <div class="cartao rend-cartao prox"><h3>Próximo rendimento</h3>${prox ? `<div class="rend-valor">${reais(prox.valor, 4)}</div><div class="rend-grade"><div><span>Data base</span><b>${dataBR(prox.data_base)}</b></div><div><span>Pagamento</span><b>${dataBR(prox.pagamento)}</b></div><div><span>Referência</span><b>${esc(prox.referencia || "")}</b></div></div>` : '<p class="sub" style="margin-top:8px">Ainda não anunciado. O aviso costuma sair no último dia útil do mês.</p>'}</div>
+    </div>
+    <div class="cartao" style="margin-top:16px"><div class="cartao-cab"><h3>Rendimentos distribuídos por cota</h3><div class="abas" id="fii-rend-ab" style="margin:0"><button data-v="mes" class="ativo">Por mês</button><button data-v="ano">Por ano</button></div></div>
+      <div class="grafico"><canvas id="g-fii-rend"></canvas></div>
+      <p class="sub" style="margin-top:8px">Fonte: avisos aos cotistas no FundosNet (B3)${conf.meses_comparados ? `, conferidos com o Yahoo Finance: ${conf.divergentes && conf.divergentes.length ? `diferença em ${conf.divergentes.join(", ")}` : `os ${conf.meses_comparados} últimos batem`}` : ""}.</p></div>
+  </section>
+
+  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Patrimônio</h2></div>
+    <div class="cartao"><div class="cartao-cab"><div><h3>Patrimônio líquido e valor patrimonial da cota</h3><p class="sub">Barras: patrimônio líquido (R$ milhões). Linha: valor patrimonial por cota (R$). Fonte: Informe Mensal da CVM.</p></div></div>
+      <div class="grafico"><canvas id="g-fii-pl"></canvas></div></div></section>
+
+  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Sobre o fundo</h2></div>
+    <div class="grade g2" style="align-items:start">
+      <div class="cartao"><h3>Perfil e carteira hoje</h3><p style="color:var(--txt-2);line-height:1.55">${esc(sb.texto || "")}</p>
+        <div class="sobre-destaques q4">${[["papel", "Papel (CRI e CRA)"], ["tijolo", "Tijolo"], ["fiis", "Cotas de FII"], ["caixa", "Caixa"]].map(([k, n]) => `<div><span>${n}</span><b>${fmtU((sb.grupos || {})[k] || 0, "pct")}</b></div>`).join("")}</div>
+        ${rel ? `<a class="btn peq" href="${esc(rel.link)}" target="_blank" rel="noopener">Último relatório gerencial (${esc(rel.referencia)}) ↗</a>` : ""}</div>
+      <div class="cartao"><h3>Ficha</h3><div class="ficha">
+        ${[["Público-alvo", sb.publico ? sb.publico[0].toUpperCase() + sb.publico.slice(1) : null], ["Segmento (CVM)", c.segmento], ["Mandato", c.mandato], ["Gestão", c.gestao], ["Administrador", c.administrador], ["Início", dataBR(c.inicio)], ["Prazo", c.prazo], ["CNPJ", (d.cnpj || "").replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, "$1.$2.$3/$4-$5")]].filter(([, v]) => v).map(([k, v]) => `<div><span>${k}</span><b>${esc(v)}</b></div>`).join("")}
+      </div></div>
+    </div></section>
+
+  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Carteira</h2><p class="sub" style="margin:0">Informe Trimestral da CVM de ${dataBR(comp.ref_trimestral)} e Informe Mensal de ${esc(comp.ref_mensal || "")}.</p></div>
+    <div class="grade g2">
+      <div class="cartao"><h3>Por segmento</h3><div class="grafico rosca"><canvas id="g-fii-seg"></canvas></div><p class="sub">Cotas de outros FIIs entram pelo segmento declarado à CVM por cada fundo; imóveis repartidos pela receita de cada um.</p></div>
+      <div class="cartao"><h3>Por tipo de ativo</h3><div class="grafico rosca"><canvas id="g-fii-tipo"></canvas></div></div>
+      ${(comp.vencimento_contratos || []).length ? `<div class="cartao"><h3>Vencimento dos contratos</h3><div class="grafico rosca"><canvas id="g-fii-venc"></canvas></div><p class="sub">Percentual da receita contratada por prazo até o vencimento.</p></div>` : ""}
+      ${(comp.indexador_contratos || []).length ? `<div class="cartao"><h3>Indexador dos contratos</h3><div class="grafico rosca"><canvas id="g-fii-idx"></canvas></div></div>` : ""}
+    </div>
+    ${(d.imoveis || []).length ? `<div class="cartao" style="margin-top:16px"><h3>Imóveis</h3><div class="tabela-wrap"><table class="resp"><thead><tr><th>Imóvel</th><th>Segmento</th><th>Local</th><th class="n">Área (m²)</th><th class="n">Vacância</th><th class="n">% da receita</th></tr></thead><tbody>
+      ${d.imoveis.map((m) => `<tr><td data-label="Imóvel"><b>${esc(m.nome)}</b><br><span class="muted">${esc(m.classe)}</span></td><td data-label="Segmento">${esc(m.segmento)}</td><td data-label="Local">${esc(m.endereco)}</td><td class="n" data-label="Área">${ok(m.area) ? nf2.format(m.area) : ND}</td><td class="n" data-label="Vacância">${fmtU(m.vacancia, "pct")}</td><td class="n" data-label="% da receita">${fmtU(m.pct_receitas, "pct")}</td></tr>`).join("")}
+    </tbody></table></div></div>` : ""}
+    ${(comp.carteira_top || []).length ? `<div class="cartao" style="margin-top:16px"><h3>Maiores posições</h3><div class="tabela-wrap"><table class="resp"><thead><tr><th>Ativo</th><th>Tipo</th><th>Segmento</th><th class="n">Valor</th></tr></thead><tbody>
+      ${comp.carteira_top.map((x) => `<tr><td data-label="Ativo">${esc(x.nome || "n/d")}</td><td data-label="Tipo">${esc(x.tipo)}</td><td data-label="Segmento">${esc(x.segmento)}</td><td class="n" data-label="Valor">R$ ${grande(x.valor)}</td></tr>`).join("")}
+    </tbody></table></div></div>` : ""}
+  </section>
+
+  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Relatórios e comunicados</h2><p class="sub" style="margin:0">Documentos oficiais do fundo no FundosNet (B3); notícias de jornal não entram.</p></div>
+    <div class="cartao">${docs.slice(0, 15).map((x) => `<div class="noticia"><a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.tipo || x.categoria)}${x.especie ? ` · ${esc(x.especie)}` : ""}</a>${/gerencial/i.test(x.tipo) ? ' <span class="badge pos">Relatório</span>' : /fato relevante/i.test(x.categoria + x.tipo) ? ' <span class="badge alerta">Fato relevante</span>' : ""}<div class="meta">${esc(x.categoria)} · referência ${esc(x.referencia || "n/d")} · entregue em ${dataBR(x.entrega)}</div></div>`).join("") || '<p class="vazio">Sem documentos.</p>'}</div></section>`;
+
+  // gráficos
+  const graficoPrecoFii = async (anos) => {
+    const r = D.cache["rt" + t] || (D.cache["rt" + t] = await j(`data/retorno/${t}.json`, null));
+    const el = $("#g-fii-preco"); if (!el || !r) return;
+    const corte = new Date(); corte.setFullYear(corte.getFullYear() - anos);
+    const serie = r.semanal.filter(([dd]) => new Date(dd) >= corte);
+    charts = charts.filter((ch) => { if (ch.canvas === el) { ch.destroy(); return false; } return true; });
+    const subiu = serie.length > 1 && serie[serie.length - 1][1] >= serie[0][1], linha = subiu ? cor("--pos") : cor("--neg");
+    const g = el.getContext("2d").createLinearGradient(0, 0, 0, 300); g.addColorStop(0, linha + "40"); g.addColorStop(1, linha + "00");
+    const ch = new Chart(el, { type: "line", data: { labels: serie.map(([dd]) => dataBR(dd)), datasets: [{ label: t, data: serie.map((x) => x[1]), borderColor: linha, backgroundColor: g, borderWidth: 1.6, pointRadius: 0, fill: true, tension: 0.1 }] }, options: optGraf({ moeda: "R$ ", legenda: false }), plugins: [PLUGIN_MEDIR] });
+    charts.push(ch); ativarMedicao(ch, el, "R$");
+  };
+  graficoPrecoFii(1);
+  $$("#fii-per button").forEach((b) => b.onclick = () => { $$("#fii-per button").forEach((x) => x.classList.toggle("ativo", x === b)); graficoPrecoFii(+b.dataset.p); });
+  const graficoRend = (modo) => {
+    const el = $("#g-fii-rend"); if (!el) return;
+    charts = charts.filter((ch) => { if (ch.canvas === el) { ch.destroy(); return false; } return true; });
+    let rot, val;
+    if (modo === "ano") { const m = {}; prov.forEach((x) => { const y = x.data_base.slice(0, 4); m[y] = (m[y] || 0) + x.valor; }); rot = Object.keys(m).sort(); val = rot.map((y) => m[y]); }
+    else { const u = prov.slice(-24); rot = u.map((x) => (x.referencia || x.data_base.slice(0, 7))); val = u.map((x) => x.valor); }
+    const o = optGraf({ legenda: false, moeda: "R$ " });
+    charts.push(new Chart(el, { type: "bar", data: { labels: rot, datasets: [{ label: "Rendimento por cota", data: val, backgroundColor: cor("--serie"), borderRadius: 4 }] }, options: o }));
+  };
+  graficoRend("mes");
+  $$("#fii-rend-ab button").forEach((b) => b.onclick = () => { $$("#fii-rend-ab button").forEach((x) => x.classList.toggle("ativo", x === b)); graficoRend(b.dataset.v); });
+  const ms = d.mensal || [];
+  if ($("#g-fii-pl") && ms.length) {
+    const o = optGraf({ eixo2: true, legenda: true });
+    o.plugins.tooltip.callbacks.label = (cx) => cx.dataset.yAxisID === "y2" ? `VP por cota: R$ ${nf2.format(cx.parsed.y)}` : `Patrimônio: R$ ${nf2.format(cx.parsed.y)} mi`;
+    charts.push(new Chart($("#g-fii-pl"), { data: { labels: ms.map((m) => m.ref.slice(5) + "/" + m.ref.slice(2, 4)), datasets: [
+      { type: "bar", label: "Patrimônio líquido (R$ mi)", data: ms.map((m) => ok(m.pl) ? m.pl / 1e6 : null), backgroundColor: cor("--serie"), borderRadius: 3, yAxisID: "y" },
+      { type: "line", label: "VP por cota (R$)", data: ms.map((m) => m.vp_cota), borderColor: cor("--serie-2"), backgroundColor: cor("--serie-2"), borderWidth: 2, pointRadius: 0, yAxisID: "y2" }] }, options: o }));
+  }
+  const seg = pctTot(comp.por_segmento || []), tp = pctTot(comp.por_tipo || []);
+  rosca($("#g-fii-seg"), seg.map((x) => x[0]), seg.map((x) => x[1]));
+  rosca($("#g-fii-tipo"), tp.map((x) => x[0]), tp.map((x) => x[1]));
+  const resto = (l) => { const s0 = l.reduce((a, x) => a + x[1], 0); return s0 > 0 && s0 < 0.995 ? [...l, ["Outros ou não informado", 1 - s0]] : l; };
+  const vc = resto((comp.vencimento_contratos || []).map((x) => [x.faixa, x.pct])), ix = resto((comp.indexador_contratos || []).map((x) => [x.indexador, x.pct]));
+  rosca($("#g-fii-venc"), vc.map((x) => x[0]), vc.map((x) => x[1]));
+  rosca($("#g-fii-idx"), ix.map((x) => x[0]), ix.map((x) => x[1]));
 }
 function pgComparar(app, q) {
   let sel = (q.get("t") || "").split(",").map((x) => x.trim().toUpperCase()).filter((x) => D.fund[x]);
@@ -1854,11 +2009,12 @@ function ligarBusca(inp, lista, botao) {
   const achar = () => {
     const q = inp.value.trim().toLowerCase();
     if (!q || !D.univ) return [];
-    return D.univ.filter((a) => a.ticker.toLowerCase().includes(q) || a.nome.toLowerCase().includes(q) || a.setor_macro.toLowerCase().includes(q) || a.setor_micro.toLowerCase().includes(q))
+    const fiis = (D.fiis || []).map((f) => ({ ticker: f.ticker, nome: f.nome, setor_macro: "Fundo imobiliário", setor_micro: "FII " + (f.segmento || ""), fii: true }));
+    return [...D.univ, ...fiis].filter((a) => a.ticker.toLowerCase().includes(q) || a.nome.toLowerCase().includes(q) || a.setor_macro.toLowerCase().includes(q) || a.setor_micro.toLowerCase().includes(q))
       .sort((a, b) => (b.ticker.toLowerCase().startsWith(q) - a.ticker.toLowerCase().startsWith(q))).slice(0, 8);
   };
-  const desenhar = () => { const r = achar(); lista.hidden = !r.length; lista.innerHTML = r.map((a, i) => `<a href="#/ativo/${a.ticker}" class="${i === sel ? "sel" : ""}">${logo(a.ticker)}<span><b>${a.ticker}</b><span class="sub">${esc(a.nome)} · ${esc(a.setor_micro)}</span></span></a>`).join(""); };
-  const ir = () => { const r = achar(); if (r[sel]) location.hash = `#/ativo/${r[sel].ticker}`; else if (inp.value.trim()) { EST.tab.busca = inp.value.trim(); location.hash = "#/ativos?seg=TODOS"; } inp.value = ""; lista.hidden = true; inp.blur(); };
+  const desenhar = () => { const r = achar(); lista.hidden = !r.length; lista.innerHTML = r.map((a, i) => `<a href="#/${a.fii ? "fii" : "ativo"}/${a.ticker}" class="${i === sel ? "sel" : ""}">${logo(a.ticker)}<span><b>${a.ticker}</b><span class="sub">${esc(a.nome)} · ${esc(a.setor_micro)}</span></span></a>`).join(""); };
+  const ir = () => { const r = achar(); if (r[sel]) location.hash = `#/${r[sel].fii ? "fii" : "ativo"}/${r[sel].ticker}`; else if (inp.value.trim()) { EST.tab.busca = inp.value.trim(); location.hash = "#/ativos?seg=TODOS"; } inp.value = ""; lista.hidden = true; inp.blur(); };
   inp.oninput = () => { sel = 0; desenhar(); };
   inp.onkeydown = (e) => {
     const r = achar();
