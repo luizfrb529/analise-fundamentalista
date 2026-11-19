@@ -478,7 +478,7 @@ function topLista(L, base, n = 5) {
     .sort((a, b) => (L.dir > 0 ? b[1] - a[1] : a[1] - b[1]) || (L.desempate ? (ind(b[0])[L.desempate] || 0) - (ind(a[0])[L.desempate] || 0) : 0)).slice(0, n);
 }
 const fiiPvp = (f) => { const p = fiiPreco(f.ticker, f.preco); return ok(p) && ok(f.vp_cota) && f.vp_cota > 0 ? p / f.vp_cota : f.p_vp; };
-const fiiDy = (f) => { const p = fiiPreco(f.ticker, f.preco); return ok(p) && ok(f.rend_12m) && p > 0 ? f.rend_12m / p : f.dy_12m; };
+const fiiDy = (f) => { if (f.dy_parcial_meses) return null; const p = fiiPreco(f.ticker, f.preco); return ok(p) && ok(f.rend_12m) && p > 0 ? f.rend_12m / p : f.dy_12m; };
 const FII_METRICAS = {
   dy: { nome: "Maiores dividend yield", curto: "DY 12m", desc: "Rendimentos dos últimos 12 meses sobre o preço da cota.", v: fiiDy, dir: 1, fmt: (v) => fmtU(v, "pct") },
   pl: { nome: "Maior patrimônio líquido", curto: "Patrimônio", desc: "Tamanho do fundo pelo último informe entregue à CVM.", v: (f) => f.pl, dir: 1, fmt: (v) => "R$ " + grande(v) },
@@ -1754,7 +1754,7 @@ async function pgFii(app, t) {
     <div class="grafico" style="margin-top:12px"><canvas id="g-fii-preco"></canvas></div></div>
 
   <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Indicadores</h2></div><div class="ind-grade">
-    ${ind("Dividend yield 12m", fmtU(dy, "pct"), `${reais(i.rend_12m)} por cota em 12 meses`, true)}
+    ${i.dy_parcial_meses ? ind("Dividend yield", fmtU(dy, "pct"), `${reais(i.rend_12m)} por cota; só ${i.dy_parcial_meses} meses de rendimentos na bolsa, não é um ano completo`, true) : ind("Dividend yield 12m", fmtU(dy, "pct"), `${reais(i.rend_12m)} por cota em 12 meses`, true)}
     ${ind("P/VP", fmtU(pvp, "x"), `valor patrimonial ${reais(i.vp_cota)} por cota`, true)}
     ${ind("Último rendimento", reais(i.ultimo_rendimento), ok(i.ultimo_yield) ? `${nf2.format(i.ultimo_yield * 100)}% sobre a cota de ${reais(i.cota_base)}` : "", true)}
     ${ind("Rendimento médio 12m", reais(i.rend_medio_12m), "média mensal por cota")}

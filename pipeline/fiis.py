@@ -702,7 +702,7 @@ def main():
         indice.append({"ticker": t, "tipo": d.get("tipo") or "fii", "nome": d["cadastro"]["nome_curto"] or d["cadastro"]["nome"], "segmento": d["cadastro"]["segmento"],
                        "setor": f.get("setor") or setor_padrao(d), "cagr_rend_3a": cagr_rendimentos(d["proventos"]),
                        "prox": {k: prox.get(k) for k in ("valor", "data_base", "pagamento", "referencia")} if prox else None, "docs": docs,
-                       **{k: i.get(k) for k in ("preco", "p_vp", "dy_12m", "rend_12m", "ultimo_rendimento", "pl", "cotistas", "liquidez_21", "var_12m", "cagr_vp_3a", "vp_cota")}})
+                       **{k: i.get(k) for k in ("preco", "p_vp", "dy_12m", "dy_parcial_meses", "rend_12m", "ultimo_rendimento", "pl", "cotistas", "liquidez_21", "var_12m", "cagr_vp_3a", "vp_cota")}})
         c = d["conferencia_proventos"] or {}
         print(f"{t}: PL {i.get('pl')}, P/VP {i.get('p_vp')}, DY 12m {i.get('dy_12m')}, {len(d['proventos'])} rendimentos; conferência Yahoo: {c.get('meses_comparados')} meses, divergentes {c.get('divergentes')}")
     (SAIDA / "_index.json").write_text(json.dumps(limpo({"atualizado_em": dt.datetime.now().isoformat(timespec="seconds"), "fiis": indice}), ensure_ascii=False, allow_nan=False), encoding="utf-8")

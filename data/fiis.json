@@ -189,6 +189,19 @@
   }
  },
  {
+  "ticker": "BCDI11",
+  "nome": "BTG Pactual Dívida Infra CDI",
+  "tipo": "infra",
+  "cnpj": "55432303000175",
+  "nome_cvm": "BTG PACTUAL DÍVIDA INFRA CDI FI EM COTAS DE FUNDOS INCENT DE INV EM INFRA RENDA FIXA CP RESP LIM",
+  "setor": "FI-Infra",
+  "objetivo": {
+   "texto": "Investir em cotas de fundos incentivados de investimento em infraestrutura (debêntures da Lei 12.431), com retorno referenciado ao CDI, conforme a denominação e a classificação do fundo na CVM.",
+   "fonte": "Denominação e classificação na CVM",
+   "link": null
+  }
+ },
+ {
   "ticker": "PVBI11",
   "nome": "VBI Prime Properties",
   "setor": "Lajes corporativas",

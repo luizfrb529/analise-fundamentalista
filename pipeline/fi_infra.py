@@ -304,6 +304,8 @@ def montar(fii: dict, hist: dict, cda: tuple[str | None, dict], px: pd.DataFrame
     r12 = [p for p in rend if p["data_base"] >= (HOJE - dt.timedelta(days=365)).isoformat()]
     soma12 = sum(p["valor"] for p in r12) if r12 else None
     ult_r = rend[-1] if rend else None
+    # fundo com menos de 12 meses de rendimentos conhecidos: o DY de 12 meses fica parcial e é sinalizado
+    parcial = len({p["data_base"][:7] for p in r12}) if rend and rend[0]["data_base"] > (HOJE - dt.timedelta(days=330)).isoformat() else None
     if ult_r and px is not None and len(px):
         idx = px.index.tz_localize(None) if getattr(px.index, "tz", None) is not None else px.index
         antes = px["Close"][idx <= pd.Timestamp(ult_r["data_base"])]
@@ -312,7 +314,7 @@ def montar(fii: dict, hist: dict, cda: tuple[str | None, dict], px: pd.DataFrame
     vp = diario[-1][1] if diario else ult["vp_cota"]
     caixa = tipos.get("Caixa (compromissadas e disponível)")
     ind = {"preco": preco, "vp_cota": vp, "vp_data": diario[-1][0] if diario else None, "p_vp": preco / vp if preco and vp else None,
-           "dy_12m": soma12 / preco if soma12 and preco else None, "rend_12m": soma12, "rend_medio_12m": soma12 / len(r12) if r12 else None,
+           "dy_12m": soma12 / preco if soma12 and preco else None, "rend_12m": soma12, "rend_medio_12m": soma12 / len(r12) if r12 else None, "dy_parcial_meses": parcial,
            "ultimo_rendimento": ult_r["valor"] if ult_r else None, "ultimo_yield": ult_r["valor"] / cota_base if ult_r and cota_base else None, "cota_base": cota_base,
            "pl": ult["pl"], "cotistas": ult["cotistas"], "cotas": ult["cotas"], "valor_mercado": preco * ult["cotas"] if preco and ult["cotas"] else None,
            "caixa": caixa, "caixa_pct": caixa / tot if caixa else None, "liquidez_21": liq, "var_12m": var_12m, "var_dia": var_dia, "var_ano": var_ano,
