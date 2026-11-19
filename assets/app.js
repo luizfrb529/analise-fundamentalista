@@ -423,7 +423,7 @@ async function render() {
     else if (r === "calendario") pgCalendario(app, q);
     else if (r === "retorno") await pgRetorno(app, q);
     else if (r === "mapa") pgMapa(app, q);
-    else if (r === "fiis") pgFiis(app);
+    else if (r === "fiis") pgFiis(app, q);
     else if (r === "fii") await pgFii(app, p.toUpperCase());
     else if (r === "filtros") pgFiltros(app);
     else app.innerHTML = '<div class="cartao"><h1>Página não encontrada</h1><p><a class="lk" href="#/">Voltar ao início</a></p></div>';
@@ -1603,16 +1603,21 @@ function pgMapa(app, q) {
 /* =====================================================================
    FUNDOS IMOBILIÁRIOS
    ===================================================================== */
-function pgFiis(app) {
-  const l = [...(D.fiis || [])].sort((a, b) => (b.pl || 0) - (a.pl || 0));
+const TIPO_FUNDO = { fii: "FII", fiagro: "Fiagro", infra: "FI-Infra" };
+function pgFiis(app, q) {
+  const tipo = (q && q.get && q.get("tipo")) || "todos";
+  const todos = D.fiis || [];
+  const l = todos.filter((f) => tipo === "todos" || (f.tipo || "fii") === tipo).sort((a, b) => (b.pl || 0) - (a.pl || 0));
+  const qtd = (k) => todos.filter((f) => (f.tipo || "fii") === k).length;
   app.innerHTML = `${trilha([["Fundos imobiliários"]])}<div class="cab-pagina"><div><h1>Fundos imobiliários</h1>
-    <p>Rendimentos, patrimônio e carteira dos fundos acompanhados, com dados da CVM e do FundosNet (B3).</p></div></div>
+    <p>FIIs, Fiagros e FI-Infra listados na B3: rendimentos, patrimônio e carteira, com dados oficiais da CVM e da B3.</p></div></div>
+  <div class="chips" id="fii-tipo" style="margin-bottom:14px">${[["todos", "Todos", todos.length], ["fii", "FII", qtd("fii")], ["fiagro", "Fiagro", qtd("fiagro")], ["infra", "FI-Infra", qtd("infra")]].filter(([k, , n]) => k === "todos" || n).map(([k, n, c]) => `<a class="chip${tipo === k ? " ativo" : ""}" href="#/fiis${k === "todos" ? "" : "?tipo=" + k}">${n} <span class="muted">${c}</span></a>`).join("")}</div>
   <div class="cartao"><div class="tabela-wrap"><table class="resp"><thead><tr><th>Fundo</th><th>Segmento</th><th class="n">Preço</th><th class="n">P/VP</th><th class="n">DY 12m</th><th class="n">Último rend.</th><th class="n">Patrimônio</th><th class="n">Liquidez diária</th><th class="n">12 meses</th></tr></thead><tbody>
-  ${l.map((f) => { const pv = fiiPreco(f.ticker, f.preco); return `<tr><td data-label="Fundo" class="cel-empresa"><a class="empresa" href="#/fii/${f.ticker}">${logo(f.ticker)}<span class="nomes"><span class="tk">${f.ticker}</span><span class="nm">${esc(f.nome)}</span></span></a></td><td data-label="Segmento">${esc(f.segmento || "n/d")}</td>
+  ${l.map((f) => { const pv = fiiPreco(f.ticker, f.preco); return `<tr><td data-label="Fundo" class="cel-empresa"><a class="empresa" href="#/fii/${f.ticker}">${logo(f.ticker)}<span class="nomes"><span class="tk">${f.ticker}</span><span class="nm">${esc(f.nome)}</span></span></a></td><td data-label="Segmento">${(f.tipo || "fii") !== "fii" ? `<span class="badge">${TIPO_FUNDO[f.tipo]}</span> ` : ""}${esc(f.tipo === "infra" ? "Debêntures incentivadas" : f.segmento || "n/d")}</td>
     <td class="n" data-label="Preço">${ok(pv) ? "R$ " + nf2.format(pv) : ND}</td><td class="n" data-label="P/VP">${fmtU(f.p_vp, "x")}</td><td class="n" data-label="DY 12m">${fmtU(f.dy_12m, "pct")}</td>
     <td class="n" data-label="Último rend.">${ok(f.ultimo_rendimento) ? "R$ " + nf2.format(f.ultimo_rendimento) : ND}</td><td class="n" data-label="Patrimônio">${ok(f.pl) ? "R$ " + grande(f.pl) : ND}</td>
     <td class="n" data-label="Liquidez diária">${ok(f.liquidez_21) ? "R$ " + grande(f.liquidez_21) : ND}</td><td class="n" data-label="12 meses">${varHtml(f.var_12m)}</td></tr>`; }).join("") || '<tr><td colspan="9" class="vazio">Nenhum fundo cadastrado.</td></tr>'}
-  </tbody></table></div><p class="sub" style="margin-top:10px">Preço da B3 (Yahoo Finance, atraso de até 15 minutos). Patrimônio e valor patrimonial: Informe Mensal da CVM. Rendimentos: avisos aos cotistas no FundosNet.</p></div>`;
+  </tbody></table></div><p class="sub" style="margin-top:10px">Preço da B3 (Yahoo Finance, atraso de até 15 minutos). Patrimônio e valor patrimonial: Informe Mensal da CVM (FII e Fiagro) e Informe Diário (FI-Infra). Rendimentos: avisos aos cotistas no FundosNet (FII e Fiagro) e proventos da B3 (FI-Infra).</p></div>`;
 }
 function fiiPreco(t, padrao) { const v = D.vivoFii && D.vivoFii[t]; return v && ok(v.preco) ? v.preco : padrao; }
 const CORES_FII = ["#33c47a", "#5b8def", "#e8a33d", "#c678dd", "#e06c75", "#56b6c2", "#d19a66", "#98c379", "#be5046", "#7f8c99", "#b8bb26", "#ff79c6"];
@@ -1642,17 +1647,18 @@ async function pgFii(app, t) {
   const quando = (e) => e ? `${dataBR(e.slice(0, 10))}${e.length > 10 ? " às " + e.slice(11, 16) : ""}` : "n/d";
   const rel = d.relatorio_gerencial;
   const ind = (rot, val, det = "", dest = false) => `<div class="ind${dest ? " principal" : ""}"><div class="rot">${rot}</div><div class="val">${val}</div><div class="det">${det || "&nbsp;"}</div></div>`;
+  const tipo = d.tipo || "fii", ehInfra = tipo === "infra", ehAgro = tipo === "fiagro";
   const pctTot = (lst, k = "valor") => { const tot = lst.reduce((a, x) => a + (x[k] || 0), 0) || 1; return lst.map((x) => [x.nome || x.faixa || x.indexador, (x[k] || 0) / tot]); };
   app.innerHTML = `${trilha([["Fundos imobiliários", "#/fiis"], [t]])}
-  <div class="ativo-cab"><div class="ativo-id">${logo(t, "g")}<div><h1>${t} <span class="badge">FII</span></h1><div class="nm">${esc(c.nome || "")}</div>
-    <div class="badges"><span class="badge">${esc(c.segmento || "Segmento n/d")}</span><span class="badge">Gestão ${esc((c.gestao || "n/d").toLowerCase())}</span><span class="badge ${/qualific|profiss/i.test(sb.publico || "") ? "alerta" : "pos"}">${esc((sb.publico || "").replace(/^qualquer investidor \(público em geral\)$/, "Público em geral"))}</span><span class="badge">Perfil: ${esc(sb.perfil || "n/d")}</span></div></div></div></div>
+  <div class="ativo-cab"><div class="ativo-id">${logo(t, "g")}<div><h1>${t} <span class="badge">${TIPO_FUNDO[tipo] || "FII"}</span></h1><div class="nm">${esc(c.nome || "")}</div>
+    <div class="badges"><span class="badge">${esc(c.segmento || "Segmento n/d")}</span>${c.gestao ? `<span class="badge">Gestão ${esc(c.gestao.toLowerCase())}</span>` : ""}<span class="badge ${/qualific|profiss/i.test(sb.publico || "") ? "alerta" : "pos"}">${esc((sb.publico || "").replace(/^qualquer investidor \(público em geral\)$/, "Público em geral"))}</span><span class="badge">Perfil: ${esc(sb.perfil || "n/d")}</span></div></div></div></div>
 
   <div class="cartao" style="margin-top:18px"><div class="cotacao-cab"><div title="Cotação com atraso de até 15 minutos."><div class="sub">Cotação</div>
     <div class="preco-grande">${reais(preco)}${ok(vivo ? vivo.var_dia : i.var_dia) ? ` <span class="preco-var">(${varHtml(vivo ? vivo.var_dia : i.var_dia)})</span>` : ""}</div>
     <div class="sub" style="margin-top:6px">${vivo ? `Atualizada às ${new Date(vivo.ao_vivo).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}` : `Fechamento de ${dataBR(i.data_preco)}`}</div>
     <div class="sub">No ano ${varHtml(i.var_ano)} · 12 meses ${varHtml(i.var_12m)}</div>
     ${ok(i.min_52s) && ok(i.max_52s) && i.max_52s > i.min_52s ? `<div class="faixa52"><div class="trilho"><span class="marc" style="left:${Math.max(0, Math.min(100, (preco - i.min_52s) / (i.max_52s - i.min_52s) * 100))}%"></span></div><div class="ext"><span>Mín. 52 semanas ${reais(i.min_52s)}</span><span>Máx. ${reais(i.max_52s)}</span></div></div>` : ""}</div>
-    <div class="linha" style="gap:8px"><a class="btn peq" href="#/retorno?t=${t}&p=3&m=ambos&b=ifix,cdi">Retorno total x IFIX e CDI</a><div class="chips" id="fii-per"><button class="chip ativo" data-p="1">1A</button><button class="chip" data-p="3">3A</button><button class="chip" data-p="10">Máx.</button></div></div></div>
+    <div class="linha" style="gap:8px"><a class="btn peq" href="#/retorno?t=${t}&p=3&m=ambos&b=${ehInfra ? "cdi,ipca5" : "ifix,cdi"}">Retorno total x ${ehInfra ? "CDI e IPCA+5%" : "IFIX e CDI"}</a><div class="chips" id="fii-per"><button class="chip ativo" data-p="1">1A</button><button class="chip" data-p="3">3A</button><button class="chip" data-p="10">Máx.</button></div></div></div>
     <div class="grafico" style="margin-top:12px"><canvas id="g-fii-preco"></canvas></div></div>
 
   <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Indicadores</h2></div><div class="ind-grade">
@@ -1662,10 +1668,10 @@ async function pgFii(app, t) {
     ${ind("Rendimento médio 12m", reais(i.rend_medio_12m), "média mensal por cota")}
     ${ind("Patrimônio líquido", ok(i.pl) ? "R$ " + grande(i.pl) : ND, `${ok(i.cotas) ? nf0.format(i.cotas) : "n/d"} cotas`)}
     ${ind("Valor de mercado", ok(preco) && ok(i.cotas) ? "R$ " + grande(preco * i.cotas) : ND, "preço x número de cotas")}
-    ${ind("Cotistas", ok(i.cotistas) ? nf0.format(i.cotistas) : ND, "último informe mensal")}
+    ${ind("Cotistas", ok(i.cotistas) ? nf0.format(i.cotistas) : ND, ehInfra ? "informe diário da CVM" : "último informe mensal")}
     ${ind("Liquidez média diária", ok(i.liquidez_21) ? "R$ " + grande(i.liquidez_21) : ND, "21 pregões")}
-    ${ind("Caixa e renda fixa", ok(i.caixa) ? "R$ " + grande(i.caixa) : fmtU(i.caixa_pct, "pct"), `${fmtU(i.caixa_pct, "pct")} do ativo${ok(i.caixa) && ok(preco) && ok(i.cotas) ? ` · ${nf2.format(i.caixa / (preco * i.cotas) * 100)}% do valor de mercado` : ""}`)}
-    ${ind("Taxa de administração", fmtU(i.taxa_adm_12m, "pct"), "despesa dos últimos 12 meses sobre o patrimônio")}
+    ${ind(ehInfra ? "Caixa" : "Caixa e renda fixa", ok(i.caixa) ? "R$ " + grande(i.caixa) : fmtU(i.caixa_pct, "pct"), `${fmtU(i.caixa_pct, "pct")} do ativo${ok(i.caixa) && ok(preco) && ok(i.cotas) ? ` · ${nf2.format(i.caixa / (preco * i.cotas) * 100)}% do valor de mercado` : ""}`)}
+    ${ok(i.taxa_adm_12m) ? ind("Taxa de administração", fmtU(i.taxa_adm_12m, "pct"), "despesa dos últimos 12 meses sobre o patrimônio") : ""}
     ${ind("Valor patrimonial 3 anos", fmtU(i.cagr_vp_3a, "pct"), "crescimento anual da cota patrimonial")}
   </div></section>
 
@@ -1678,27 +1684,28 @@ async function pgFii(app, t) {
       <p class="sub">Barras: rendimento por cota. Linha cheia: valor patrimonial por cota. Tracejado: patrimônio líquido (valor no balão). Por ano: rendimento somado no ano e posição do último mês.</p></div>
       <div class="abas" id="fii-evol-ab" style="margin:0"><button data-v="mes" class="ativo">Por mês</button><button data-v="ano">Por ano</button></div></div>
       <div class="grafico alto"><canvas id="g-fii-evol"></canvas></div>
-      <p class="sub" style="margin-top:8px">Fontes: rendimentos nos avisos aos cotistas do FundosNet (B3)${conf.meses_comparados ? `, conferidos com o Yahoo Finance: ${conf.divergentes && conf.divergentes.length ? `diferença em ${conf.divergentes.join(", ")}` : `os ${conf.meses_comparados} últimos batem`}` : ""}; patrimônio e valor patrimonial no Informe Mensal da CVM.</p></div>
+      <p class="sub" style="margin-top:8px">Fontes: rendimentos ${ehInfra ? "nos proventos do fundo publicados pela B3 (anos antigos pelo Yahoo Finance)" : "nos avisos aos cotistas do FundosNet (B3)"}${conf.meses_comparados ? `, conferidos com o Yahoo Finance: ${conf.divergentes && conf.divergentes.length ? `diferença em ${conf.divergentes.join(", ")}` : `os ${conf.meses_comparados} últimos batem`}` : ""}; patrimônio e valor patrimonial no ${ehInfra ? "Informe Diário" : ehAgro ? "Informe Mensal de Fiagro (antes de 2025, no de FII)" : "Informe Mensal"} da CVM.</p></div>
   </section>
 
   <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Sobre o fundo</h2></div>
     <div class="grade g2" style="align-items:start">
       <div class="cartao"><h3>Perfil e carteira hoje</h3><p style="color:var(--txt-2);line-height:1.55">${esc(sb.texto || "")}</p>
-        <div class="sobre-destaques q4">${[["papel", "Papel (CRI e CRA)"], ["tijolo", "Tijolo"], ["fiis", "Cotas de FII"], ["caixa", "Caixa"]].map(([k, n]) => `<div><span>${n}</span><b>${fmtU((sb.grupos || {})[k] || 0, "pct")}</b></div>`).join("")}</div>
+        <div class="sobre-destaques q4">${(ehInfra ? [["papel", "Debêntures"], ["publicos", "Títulos públicos"], ["caixa", "Caixa"], ["outros", "Outros"]] : ehAgro ? [["papel", "Papel do agro"], ["fiis", "Cotas de fundos"], ["caixa", "Caixa"], ["tijolo", "Imóveis rurais"]] : [["papel", "Papel (CRI e CRA)"], ["tijolo", "Tijolo"], ["fiis", "Cotas de FII"], ["caixa", "Caixa"]]).map(([k, n]) => `<div><span>${n}</span><b>${fmtU((sb.grupos || {})[k] || 0, "pct")}</b></div>`).join("")}</div>
         ${rel ? `<a class="btn peq" href="${esc(rel.link)}" target="_blank" rel="noopener">Último relatório gerencial (${esc(rel.referencia)}) ↗</a>` : ""}</div>
       <div class="cartao"><h3>Ficha</h3><div class="ficha">
-        ${[["Público-alvo", sb.publico ? sb.publico[0].toUpperCase() + sb.publico.slice(1) : null], ["Segmento (CVM)", c.segmento], ["Mandato", c.mandato], ["Gestão", c.gestao], ["Administrador", c.administrador], ["Início", dataBR(c.inicio)], ["Prazo", c.prazo], ["CNPJ", (d.cnpj || "").replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, "$1.$2.$3/$4-$5")]].filter(([, v]) => v).map(([k, v]) => `<div><span>${k}</span><b>${esc(v)}</b></div>`).join("")}
+        ${[["Público-alvo", sb.publico ? sb.publico[0].toUpperCase() + sb.publico.slice(1) : null], [ehInfra ? "Tipo" : "Segmento (CVM)", c.segmento], ["Mandato", c.mandato], ["Gestão", c.gestao], ["Administrador", c.administrador], ["Início", c.inicio ? dataBR(c.inicio) : null], ["Prazo", c.prazo], ["CNPJ", (d.cnpj || "").replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, "$1.$2.$3/$4-$5")]].filter(([, v]) => v).map(([k, v]) => `<div><span>${k}</span><b>${esc(v)}</b></div>`).join("")}
       </div></div>
     </div></section>
 
-  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Carteira</h2><p class="sub" style="margin:0">Informe Trimestral da CVM de ${dataBR(comp.ref_trimestral)} e Informe Mensal de ${esc(comp.ref_mensal || "")}.</p></div>
+  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Carteira</h2><p class="sub" style="margin:0">${ehInfra ? `Carteira (CDA) entregue à CVM, posição de ${esc(fMes(comp.ref_mensal))}, olhando através dos fundos master.` : ehAgro ? `Informe Mensal de Fiagro da CVM, posição de ${esc(fMes(comp.ref_mensal))}.` : `Informe Trimestral da CVM de ${dataBR(comp.ref_trimestral)} e Informe Mensal de ${esc(fMes(comp.ref_mensal))}.`}</p></div>
     <div class="grade g2 fii-carteira">
-      <div class="cartao"><h3>Por segmento</h3><div class="grafico rosca"><canvas id="g-fii-seg"></canvas></div></div>
+      ${(comp.por_segmento || []).length ? `<div class="cartao"><h3>Por segmento</h3><div class="grafico rosca"><canvas id="g-fii-seg"></canvas></div></div>` : ""}
       <div class="cartao"><h3>Por tipo de ativo</h3><div class="grafico rosca"><canvas id="g-fii-tipo"></canvas></div></div>
       ${(comp.vencimento_contratos || []).length ? `<div class="cartao"><h3>Vencimento dos contratos</h3><div class="grafico rosca"><canvas id="g-fii-venc"></canvas></div></div>` : ""}
       ${(comp.indexador_contratos || []).length ? `<div class="cartao"><h3>Indexador dos contratos</h3><div class="grafico rosca"><canvas id="g-fii-idx"></canvas></div></div>` : ""}
+      ${(comp.vencimento_ativos || []).length ? `<div class="cartao"><h3>Prazo dos ativos até o vencimento</h3><div class="grafico rosca"><canvas id="g-fii-prazo"></canvas></div></div>` : ""}
     </div>
-    <p class="sub" style="margin-top:10px">Por segmento: cotas de outros FIIs entram pelo segmento declarado à CVM por cada fundo, e os imóveis são repartidos pela receita de cada um. Vencimento: percentual da receita contratada por prazo até o vencimento.</p>
+    <p class="sub" style="margin-top:10px">${ehInfra ? `Debêntures e títulos dos fundos master entram na proporção das cotas que o fundo tem em cada um; derivativos de proteção e valores a pagar ou receber ficam de fora.${comp.sigilo > 0 ? ` A CVM permite manter a lista de ativos sob sigilo por alguns meses: ${fmtU(comp.sigilo / ((comp.por_tipo || []).reduce((a, x) => a + x.valor, 0) || 1), "pct")} da carteira aparece só pelo total do tipo, e as maiores posições abaixo mostram apenas o que já é público.` : ""}` : ehAgro ? "Por tipo de ativo: valores do Informe Mensal de Fiagro. Prazo: percentual dos ativos com vencimento em cada faixa." : "Por segmento: cotas de outros FIIs entram pelo segmento declarado à CVM por cada fundo, e os imóveis são repartidos pela receita de cada um. Vencimento: percentual da receita contratada por prazo até o vencimento."}</p>
     ${(d.imoveis || []).length ? `<details class="cartao recolhe" style="margin-top:16px"><summary><h3>Imóveis <span class="muted">${d.imoveis.length}</span></h3></summary><div class="tabela-wrap"><table class="resp"><thead><tr><th>Imóvel</th><th>Segmento</th><th>Local</th><th class="n">Área (m²)</th><th class="n">Vacância</th><th class="n">% da receita</th></tr></thead><tbody>
       ${d.imoveis.map((m) => `<tr><td data-label="Imóvel"><b>${esc(m.nome)}</b><br><span class="muted">${esc(m.classe)}</span></td><td data-label="Segmento">${esc(m.segmento)}</td><td data-label="Local">${esc(m.endereco)}</td><td class="n" data-label="Área">${ok(m.area) ? nf2.format(m.area) : ND}</td><td class="n" data-label="Vacância">${fmtU(m.vacancia, "pct")}</td><td class="n" data-label="% da receita">${fmtU(m.pct_receitas, "pct")}</td></tr>`).join("")}
     </tbody></table></div></details>` : ""}
@@ -1707,7 +1714,7 @@ async function pgFii(app, t) {
     </tbody></table></div></details>` : ""}
   </section>
 
-  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Relatórios e comunicados</h2><p class="sub" style="margin:0">Documentos oficiais do fundo no FundosNet (B3); notícias de jornal não entram.</p></div>
+  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Relatórios e comunicados</h2><p class="sub" style="margin:0">${ehInfra ? "Documentos oficiais enviados à CVM (regulamento, demonstrações, fatos relevantes e assembleias); o relatório mensal do gestor fica no site da gestora. Notícias de jornal não entram." : "Documentos oficiais do fundo no FundosNet (B3); notícias de jornal não entram."}</p></div>
     <div class="cartao"><div class="chips" id="fii-doc-filtro" style="margin-bottom:10px">${GRUPOS_DOC.filter(([k]) => k === "todos" || docs.some((x) => grupoDoc(x) === k)).map(([k, n], i) => `<button class="chip${i === 0 ? " ativo" : ""}" data-g="${k}">${n} <span class="muted">${k === "todos" ? docs.length : docs.filter((x) => grupoDoc(x) === k).length}</span></button>`).join("")}</div>
       <div id="fii-docs"></div><button class="btn peq" id="fii-docs-mais" hidden>Ver mais</button></div></section>`;
 
@@ -1781,7 +1788,10 @@ async function pgFii(app, t) {
   const vc = resto((comp.vencimento_contratos || []).map((x) => [x.faixa, x.pct])), ix = resto((comp.indexador_contratos || []).map((x) => [x.indexador, x.pct]));
   rosca($("#g-fii-venc"), vc.map((x) => x[0]), vc.map((x) => x[1]));
   rosca($("#g-fii-idx"), ix.map((x) => x[0]), ix.map((x) => x[1]));
+  const pz = resto((comp.vencimento_ativos || []).map((x) => [x.faixa, x.pct]));
+  rosca($("#g-fii-prazo"), pz.map((x) => x[0]), pz.map((x) => x[1]));
 }
+function fMes(ref) { const M = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]; return ref && /^\d{4}-\d{2}/.test(ref) ? `${M[+ref.slice(5, 7) - 1]} de ${ref.slice(0, 4)}` : (ref || "n/d"); }
 function pgComparar(app, q) {
   let sel = (q.get("t") || "").split(",").map((x) => x.trim().toUpperCase()).filter((x) => D.fund[x]);
   const setor = q.get("setor");

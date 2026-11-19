@@ -93,7 +93,70 @@ def carregar_cvm(anos: list[int]) -> dict:
         for p in t:
             t[p].append(tabela(zt, p))
     junta = lambda lst: pd.concat([x for x in lst if not x.empty], ignore_index=True) if any(not x.empty for x in lst) else pd.DataFrame()  # noqa: E731
-    return {"mensal": {k: junta(v) for k, v in m.items()}, "trimestral": {k: junta(v) for k, v in t.items()}}
+    return {"mensal": {k: junta(v) for k, v in m.items()}, "trimestral": {k: junta(v) for k, v in t.items()}, "fiagro": carregar_fiagro()}
+
+
+def carregar_fiagro(desde: str = "2025-05") -> pd.DataFrame:
+    """Informe Mensal de Fiagro da CVM (os Fiagros saíram do informe de FII em 2025). Um zip por mês."""
+    pasta, partes = CACHE / "fiagro", []
+    pasta.mkdir(parents=True, exist_ok=True)
+    m = dt.date(int(desde[:4]), int(desde[5:7]), 1)
+    while m <= HOJE:
+        ym = f"{m.year}{m.month:02d}"
+        arq = pasta / f"inf_mensal_fiagro_{ym}.zip"
+        recente = (HOJE.year * 12 + HOJE.month) - (m.year * 12 + m.month) <= 3
+        if not arq.exists() or (recente and time.time() - arq.stat().st_mtime > 86400):
+            try:
+                r = S.get(f"https://dados.cvm.gov.br/dados/FIAGRO/DOC/INF_MENSAL/DADOS/inf_mensal_fiagro_{ym}.zip")
+                arq.write_bytes(r.content)
+            except Exception as e:
+                if recente:
+                    print(f"Fiagro {ym}: {e}")
+        if arq.exists():
+            try:
+                z = zipfile.ZipFile(arq)
+                nome = next((n for n in z.namelist() if re.search(r"inf_mensal_fiagro_\d{6}\.csv$", n)), None)
+                if nome:
+                    partes.append(pd.read_csv(z.open(nome), sep=";", encoding="latin1", dtype=str))
+            except zipfile.BadZipFile:
+                arq.unlink(missing_ok=True)
+        m = dt.date(m.year + (m.month == 12), m.month % 12 + 1, 1)
+    if not partes:
+        return pd.DataFrame()
+    df = pd.concat(partes, ignore_index=True)
+    df["_cnpj"] = df["CNPJ_Classe"].map(so_digitos)
+    return df
+
+
+def mensal_fiagro(fg: pd.DataFrame) -> list[dict]:
+    """Série mensal no mesmo formato do informe de FII (o de Fiagro traz percentuais em %, aqui em fração)."""
+    out = []
+    for _, r in fg.iterrows():
+        taxa = sum(abs(num(r.get(c)) or 0) for c in ("Percentual_Despesas_Taxa_Administracao", "Percentual_Despesas_Taxa_Gestao", "Percentual_Despesas_Taxa_Distribuicao")) / 100
+        pct = lambda c: num(r.get(c)) / 100 if num(r.get(c)) is not None else None  # noqa: E731
+        out.append({"ref": r["Data_Referencia"][:7], "pl": num(r["Patrimonio_Liquido"]), "vp_cota": num(r["Valor_Patrimonial_Cotas"]), "cotas": num(r["Cotas_Emitidas"]),
+                    "cotistas": num(r["Numero_Cotistas"]), "ativo": num(r["Valor_Ativo"]), "dy_mes": pct("Dividend_Yield_Mes"),
+                    "rent_efetiva": pct("Rentabilidade_Efetiva_Mes"), "rent_patrimonial": pct("Rentabilidade_Patrimonial_Mes"),
+                    "taxa_adm_mes": taxa if 0 < taxa < 0.003 else None})
+    return out
+
+
+def composicao_fiagro(a) -> dict:
+    """Composição do ativo de um Fiagro pelo informe mensal (os campos são o detalhe do Total_Investido)."""
+    v = lambda *cs: sum(num(a.get(c)) or 0 for c in cs)  # noqa: E731
+    tipos = {"Caixa e renda fixa": v("Total_Necessidades_Liquidez"), "CRA": v("CRA", "Outros_Titulos_Securitizacao"), "CRI": v("CRI"),
+             "CPR, CDCA e outros títulos do agro": v("Valor_Titulos_Credito"), "Direitos creditórios": v("Demais_Direitos_Creditorios"),
+             "Cotas de fundos": v("Cotas_Fundos_Investimento"), "LCA, LCI e títulos bancários": v("Ativos_Financeiros"),
+             "Debêntures e notas comerciais": v("Titulos_Divida_Corporativa"), "Imóveis rurais": v("Imoveis_Rurais"),
+             "Participações e ações": v("Participacoes_Societarias", "Titulos_Participacoes_Societarias"),
+             "Créditos de carbono": v("Creditos_Carbono_Agronegocio", "Creditos_Descarbonizacao")}
+    tipos = {k: x for k, x in tipos.items() if x > 0}
+    faixas = [("Até 30 dias", "A_Vencer_Ate30Dias"), ("31 a 60 dias", "A_Vencer_31a60Dias"), ("61 a 90 dias", "A_Vencer_61a90Dias"), ("91 a 120 dias", "A_Vencer_91a120Dias"),
+              ("121 a 180 dias", "A_Vencer_121a180Dias"), ("181 a 360 dias", "A_Vencer_181a360Dias"), ("1 a 2 anos", "A_Vencer_361a720Dias"), ("2 a 3 anos", "A_Vencer_721a1080Dias"),
+              ("Acima de 3 anos", "A_Vencer_Acima1080_Dias"), ("Vencidos", "Vencidos")]
+    tot = v("Total_Ativos_Prazo_Vencimento") or sum(v(c) for _, c in faixas)
+    venc = [{"faixa": rot, "pct": v(c) / tot} for rot, c in faixas if tot and v(c) > 0]
+    return {"tipos": tipos, "vencimento": venc}
 
 
 def cnpj_por_ticker(geral: pd.DataFrame, ticker: str) -> str | None:
@@ -128,8 +191,13 @@ SEG_CVM = {
 }
 
 
+def tx(*v) -> str:
+    """Primeiro texto não vazio (as tabelas da CVM trazem NaN em campos vazios)."""
+    return next((x.strip() for x in v if isinstance(x, str) and x.strip()), "")
+
+
 def segmento_fii(seg: str) -> str:
-    s = (seg or "").strip().lower()
+    s = (seg if isinstance(seg, str) else "").strip().lower()
     return SEG_CVM.get(s, "Outros FIIs")
 
 
@@ -217,6 +285,14 @@ def montar(fii: dict, cvm: dict, geral_todos: pd.DataFrame, px: pd.DataFrame | N
                "cotistas": num(r["Total_Numero_Cotistas"]), "ativo": num(r["Valor_Ativo"]), "dy_mes": num(r["Percentual_Dividend_Yield_Mes"]),
                "rent_efetiva": num(r["Percentual_Rentabilidade_Efetiva_Mes"]), "rent_patrimonial": num(r["Percentual_Rentabilidade_Patrimonial_Mes"]),
                "taxa_adm_mes": num(r["Percentual_Despesas_Taxa_Administracao"])} for _, r in comp.iterrows()]
+    fg = pd.DataFrame()
+    if fii.get("tipo") == "fiagro" and len(cvm.get("fiagro", [])):
+        F = cvm["fiagro"]
+        fg = F[F["_cnpj"] == cnpj].sort_values(["Data_Referencia", "Versao"]).drop_duplicates("Data_Referencia", keep="last")
+        if len(fg):
+            novos = {m["ref"]: m for m in mensal_fiagro(fg)}
+            mensal = [m for m in mensal if m["ref"] not in novos] + list(novos.values())
+            mensal.sort(key=lambda m: m["ref"])
     ult_m = mensal[-1] if mensal else {}
 
     # composição do ativo (informe mensal, mês mais recente)
@@ -237,6 +313,10 @@ def montar(fii: dict, cvm: dict, geral_todos: pd.DataFrame, px: pd.DataFrame | N
         ref_ativo = a["Data_Referencia"][:7]
     else:
         ref_ativo = None
+    venc_fiagro = []
+    if len(fg):
+        cf = composicao_fiagro(fg.iloc[-1])
+        tipos, venc_fiagro, ref_ativo = cf["tipos"], cf["vencimento"], fg.iloc[-1]["Data_Referencia"][:7]
 
     # trimestral: carteira, imóveis, contratos
     def ultimo(df):
@@ -244,21 +324,24 @@ def montar(fii: dict, cvm: dict, geral_todos: pd.DataFrame, px: pd.DataFrame | N
         return x[x["Data_Referencia"] == x["Data_Referencia"].max()] if len(x) else x
     ativos, imoveis, ctr, inq = ultimo(T["ativo"]), ultimo(T["imovel"]), ultimo(T["complemento"]), ultimo(T["imovel_renda_acabado_inquilino"])
     ref_tri = ativos["Data_Referencia"].iloc[0] if len(ativos) else (imoveis["Data_Referencia"].iloc[0] if len(imoveis) else None)
+    if ref_tri and ref_tri < (HOJE - dt.timedelta(days=450)).isoformat():
+        ativos, imoveis, ctr, inq = ativos.iloc[0:0], imoveis.iloc[0:0], ctr.iloc[0:0], inq.iloc[0:0]
+        ref_tri = None
 
     seg_por_cnpj = {r["_cnpj"]: r.get("Segmento_Atuacao") for _, r in geral_todos.iterrows()}
     nome_por_cnpj = {r["_cnpj"]: r.get("Nome_Fundo_Classe") for _, r in geral_todos.iterrows()}
     segmentos, carteira = {}, []
     for _, r in ativos.iterrows():
         v = num(r["Valor"]) or 0
-        tipo = (r["Tipo"] or "").strip()
+        tipo = tx(r["Tipo"])
         emissor = so_digitos(r["CNPJ_Emissor"])
         if tipo.upper() == "FII":
             seg = segmento_fii(seg_por_cnpj.get(emissor))
-            nome = (nome_por_cnpj.get(emissor) or r.get("Emissor") or "").strip()
+            nome = tx(nome_por_cnpj.get(emissor), r.get("Emissor"))
         elif "CRI" in tipo.upper() or "CRA" in tipo.upper():
-            seg, nome = "Papéis (CRI e CRA)", (r.get("Emissor") or "").strip()
+            seg, nome = "Papéis (CRI e CRA)", tx(r.get("Emissor"))
         else:
-            seg, nome = "Ações e outros", (r.get("Emissor") or r.get("Nome_Ativo") or "").strip()
+            seg, nome = "Ações e outros", tx(r.get("Emissor"), r.get("Nome_Ativo"))
         segmentos[seg] = segmentos.get(seg, 0) + v
         carteira.append({"tipo": tipo, "nome": nome, "valor": v, "segmento": seg})
     # imóveis entram pelo valor do informe mensal, repartido pela receita de cada imóvel (aproximação)
@@ -281,9 +364,9 @@ def montar(fii: dict, cvm: dict, geral_todos: pd.DataFrame, px: pd.DataFrame | N
 
     lista_imoveis = []
     for _, r in imoveis.iterrows():
-        end = (r.get("Endereco") or "").strip()
+        end = tx(r.get("Endereco"))
         uf = re.search(r"\b([A-Z]{2})\b\s*$", end) or re.search(r"[-/,]\s*([A-Z]{2})\b", end)
-        lista_imoveis.append({"nome": (r["Nome_Imovel"] or "").strip(), "classe": (r.get("Classe") or "").strip(), "endereco": end, "uf": uf.group(1) if uf else None,
+        lista_imoveis.append({"nome": tx(r["Nome_Imovel"]), "classe": tx(r.get("Classe")), "endereco": end, "uf": uf.group(1) if uf else None,
                               "area": num(r.get("Area")), "vacancia": num(r.get("Percentual_Vacancia")), "inadimplencia": num(r.get("Percentual_Inadimplencia")),
                               "pct_receitas": num(r.get("Percentual_Receitas_FII")), "segmento": classificar_imovel(r["Nome_Imovel"])})
     vencimento, indexador = [], []
@@ -303,7 +386,7 @@ def montar(fii: dict, cvm: dict, geral_todos: pd.DataFrame, px: pd.DataFrame | N
                 indexador.append({"indexador": m.group(1).replace("_", " ").replace("IGPM", "IGP-M").replace("IGPDI", "IGP-DI"), "pct": v})
     setores_inq = {}
     for _, r in inq.iterrows():
-        s = (r.get("Setor_Atuacao") or "Outros").strip()
+        s = (tx(r.get("Setor_Atuacao")) or "Outros")
         setores_inq[s] = setores_inq.get(s, 0) + (num(r.get("Percentual_Receitas_FII")) or 0)
 
     # FundosNet: documentos e rendimentos
@@ -376,7 +459,7 @@ def montar(fii: dict, cvm: dict, geral_todos: pd.DataFrame, px: pd.DataFrame | N
         "ultimo_rendimento": ult_r["valor"] if ult_r else None, "ultimo_yield": ult_r["valor"] / cota_base if ult_r and cota_base else None, "cota_base": cota_base,
         "pl": ult_m.get("pl"), "cotistas": ult_m.get("cotistas"), "cotas": ult_m.get("cotas"), "valor_mercado": preco * ult_m["cotas"] if preco and ult_m.get("cotas") else None,
         "caixa": tipos.get("Caixa e renda fixa"), "caixa_pct": caixa_pct, "liquidez_21": liq, "var_12m": var_12m, "var_dia": var_dia, "var_ano": var_ano, "data_preco": data_preco, "min_52s": mn, "max_52s": mx,
-        "taxa_adm_12m": sum(m["taxa_adm_mes"] or 0 for m in mensal[-12:]) if len(mensal) >= 12 else None,
+        "taxa_adm_12m": sum(m["taxa_adm_mes"] for m in mensal[-12:]) if len(mensal) >= 12 and all(m.get("taxa_adm_mes") is not None for m in mensal[-12:]) else None,
         "cagr_vp_3a": (vp / mensal[-37]["vp_cota"]) ** (1 / 3) - 1 if len(mensal) >= 37 and mensal[-37].get("vp_cota") and vp else None,
     }
     # resumo automático do perfil e da carteira (papel x tijolo x cotas de FII x caixa)
@@ -414,8 +497,26 @@ def montar(fii: dict, cvm: dict, geral_todos: pd.DataFrame, px: pd.DataFrame | N
                   + (f"Pela carteira informada à CVM em {mes_extenso(ref_tri or ref_ativo)}: " + "; ".join(partes) + "." if partes else "")),
     }
 
+    if len(fg):
+        # Fiagro: cadastro, perfil e resumo da carteira pelo informe mensal de Fiagro
+        a = fg.iloc[-1]
+        tot = sum(tipos.values()) or 1
+        papel = sum(tipos.get(k, 0) for k in ("CRA", "CRI", "CPR, CDCA e outros títulos do agro", "Direitos creditórios", "Debêntures e notas comerciais")) / tot
+        publico = tx(a.get("Publico_Alvo")).upper()
+        publico_txt = "investidores qualificados" if "QUALIF" in publico and "NAO" not in publico else "investidores profissionais" if "PROFISS" in publico else "qualquer investidor (público em geral)"
+        partes = [f"{k} {pct(v / tot)}" for k, v in sorted(tipos.items(), key=lambda x: -x[1])]
+        sobre = {"perfil": "Fiagro de papel" if papel >= 0.67 else "Fiagro", "publico": publico_txt,
+                 "grupos": {"papel": papel, "caixa": tipos.get("Caixa e renda fixa", 0) / tot, "fiis": tipos.get("Cotas de fundos", 0) / tot,
+                            "tijolo": tipos.get("Imóveis rurais", 0) / tot, "outros": max(0.0, 1 - papel - (tipos.get("Caixa e renda fixa", 0) + tipos.get("Cotas de fundos", 0) + tipos.get("Imóveis rurais", 0)) / tot)},
+                 "texto": (f"Fiagro (fundo de investimento nas cadeias do agronegócio) gerido por {tx(a.get('Nome_Gestor')).title() or 'gestor não informado'}, "
+                           f"aberto a {publico_txt}. Desde 2025 informa à CVM pelo Informe Mensal de Fiagro. "
+                           f"Pela carteira de {mes_extenso(ref_ativo)}: " + "; ".join(partes) + ".")}
+        cad = {"Nome_Fundo_Classe": tx(a.get("Nome_Classe")), "Segmento_Atuacao": "Fiagro", "Mandato": None, "Tipo_Gestao": None,
+               "Nome_Administrador": tx(a.get("Nome_Administrador")), "Publico_Alvo": tx(a.get("Publico_Alvo")),
+               "Data_Funcionamento": cad.get("Data_Funcionamento") if cad is not None else None, "Prazo_Duracao": "Indeterminado" if tx(a.get("Prazo_Duracao")).startswith("0 ") else tx(a.get("Prazo_Duracao")), "Site": tx(a.get("Site"))}
+        vencimento, indexador, segmentos, carteira, lista_imoveis = [], [], {}, [], []
     return {
-        "ticker": t, "cnpj": cnpj, "atualizado_em": dt.datetime.now().isoformat(timespec="seconds"), "sobre": sobre,
+        "ticker": t, "cnpj": cnpj, "tipo": fii.get("tipo") or "fii", "atualizado_em": dt.datetime.now().isoformat(timespec="seconds"), "sobre": sobre,
         "cadastro": {"nome": (cad["Nome_Fundo_Classe"] if cad is not None else fii.get("nome")), "nome_curto": fii.get("nome"),
                      "segmento": cad["Segmento_Atuacao"] if cad is not None else None, "mandato": cad.get("Mandato") if cad is not None else None,
                      "gestao": cad.get("Tipo_Gestao") if cad is not None else None, "administrador": cad.get("Nome_Administrador") if cad is not None else None,
@@ -425,11 +526,11 @@ def montar(fii: dict, cvm: dict, geral_todos: pd.DataFrame, px: pd.DataFrame | N
         "composicao": {"ref_mensal": ref_ativo, "ref_trimestral": ref_tri,
                        "por_tipo": sorted([{"nome": k, "valor": v} for k, v in tipos.items()], key=lambda x: -x["valor"]),
                        "por_segmento": sorted([{"nome": k, "valor": v} for k, v in segmentos.items() if v > 0], key=lambda x: -x["valor"]),
-                       "vencimento_contratos": vencimento, "indexador_contratos": indexador,
+                       "vencimento_contratos": vencimento, "indexador_contratos": indexador, "vencimento_ativos": venc_fiagro,
                        "setor_inquilinos": sorted([{"nome": k, "pct": v} for k, v in setores_inq.items()], key=lambda x: -x["pct"]),
                        "carteira_top": sorted(carteira, key=lambda x: -x["valor"])[:15]},
         "imoveis": lista_imoveis, "documentos": documentos, "relatorio_gerencial": rel,
-        "fontes": {"cvm": "CVM Dados Abertos: Informe Mensal e Informe Trimestral de FII", "fundosnet": "FundosNet (B3): avisos de rendimentos e documentos", "preco": "Yahoo Finance (B3)"},
+        "fontes": {"cvm": "CVM Dados Abertos: Informe Mensal de Fiagro (desde 2025) e Informe Mensal de FII (histórico)" if len(fg) else "CVM Dados Abertos: Informe Mensal e Informe Trimestral de FII", "fundosnet": "FundosNet (B3): avisos de rendimentos e documentos", "preco": "Yahoo Finance (B3)"},
     }
 
 
@@ -462,17 +563,21 @@ def main():
     pxs = S.precos_yf([f["ticker"] + ".SA" for f in lista], anos=11)
     SAIDA.mkdir(parents=True, exist_ok=True)
     indice = []
+    import fi_infra  # FI-Infra: fontes próprias (informe diário e carteira da CVM, proventos da B3)
+    infra = {d["ticker"]: d for d in fi_infra.montar_todos(lista, pxs)}
     for f in lista:
         t = f["ticker"]
         try:
-            d = montar(f, cvm, geral, pxs.get(t + ".SA"))
+            d = infra[t] if f.get("tipo") == "infra" else montar(f, cvm, geral, pxs.get(t + ".SA"))
+        except KeyError:
+            continue
         except Exception as e:
             print(f"{t}: {e}")
             continue
         d = limpo(d)
         (SAIDA / f"{t}.json").write_text(json.dumps(d, ensure_ascii=False, separators=(",", ":"), allow_nan=False), encoding="utf-8")
         i = d["indicadores"]
-        indice.append({"ticker": t, "nome": d["cadastro"]["nome_curto"] or d["cadastro"]["nome"], "segmento": d["cadastro"]["segmento"],
+        indice.append({"ticker": t, "tipo": d.get("tipo") or "fii", "nome": d["cadastro"]["nome_curto"] or d["cadastro"]["nome"], "segmento": d["cadastro"]["segmento"],
                        **{k: i.get(k) for k in ("preco", "p_vp", "dy_12m", "ultimo_rendimento", "pl", "cotistas", "liquidez_21", "var_12m")}})
         c = d["conferencia_proventos"] or {}
         print(f"{t}: PL {i.get('pl')}, P/VP {i.get('p_vp')}, DY 12m {i.get('dy_12m')}, {len(d['proventos'])} rendimentos; conferência Yahoo: {c.get('meses_comparados')} meses, divergentes {c.get('divergentes')}")

@@ -1,3 +1,202 @@
 [
-  {"ticker": "KNHF11", "nome": "Kinea Hedge Fund"}
+ {
+  "ticker": "RURA11",
+  "nome": "Itaú Asset Rural Fiagro",
+  "tipo": "fiagro"
+ },
+ {
+  "ticker": "KNCA11",
+  "nome": "Kinea Crédito Agro",
+  "tipo": "fiagro"
+ },
+ {
+  "ticker": "RZTR11",
+  "nome": "Riza Terrax"
+ },
+ {
+  "ticker": "TRXF11",
+  "nome": "TRX Real Estate",
+  "cnpj": "28548288000152"
+ },
+ {
+  "ticker": "TGAR11",
+  "nome": "TG Ativo Real"
+ },
+ {
+  "ticker": "RBRX11",
+  "nome": "Pátria Plus Multiestratégia"
+ },
+ {
+  "ticker": "KFOF11",
+  "nome": "Kinea FoF"
+ },
+ {
+  "ticker": "BTHF11",
+  "nome": "BTG Pactual Hedge Fund"
+ },
+ {
+  "ticker": "KNHF11",
+  "nome": "Kinea Hedge Fund"
+ },
+ {
+  "ticker": "ALZR11",
+  "nome": "Alianza Trust Renda Imobiliária"
+ },
+ {
+  "ticker": "KNRI11",
+  "nome": "Kinea Renda Imobiliária"
+ },
+ {
+  "ticker": "JURO11",
+  "nome": "Sparta Infra",
+  "tipo": "infra",
+  "cnpj": "42730834000100",
+  "nome_cvm": "SPARTA INFRA FI EM COTAS DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRAESTRUTURA RENDA FIXA"
+ },
+ {
+  "ticker": "CDII11",
+  "nome": "Sparta Infra CDI",
+  "tipo": "infra",
+  "cnpj": "48973783000116",
+  "nome_cvm": "SPARTA INFRA CDI FI FINANCEIRO EM COTAS DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRAESTRUTURA RF"
+ },
+ {
+  "ticker": "KDIF11",
+  "nome": "Kinea Infra",
+  "tipo": "infra",
+  "cnpj": "26324298000189",
+  "nome_cvm": "KINEA INFRA FIF CIC DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRA RF CRED PRIV RESP LIMITADA"
+ },
+ {
+  "ticker": "IFRA11",
+  "nome": "Itaú Infra",
+  "tipo": "infra",
+  "cnpj": "34633510000118",
+  "nome_cvm": "ITAÚ FIF - CIC FIF INCENTIVADOS EM INFRA RF CRED PRIV - RESP LIMITADA"
+ },
+ {
+  "ticker": "BDIF11",
+  "nome": "BTG Pactual Dívida Infra",
+  "tipo": "infra",
+  "cnpj": "40502607000194",
+  "nome_cvm": "BTG PACTUAL DÍVIDA INFRA FIF EM COTAS DE FUNDOS INCENTIVADOS DE INVESTIMENTO EM INFRA RENDA FIXA"
+ },
+ {
+  "ticker": "PVBI11",
+  "nome": "VBI Prime Properties"
+ },
+ {
+  "ticker": "FATN11",
+  "nome": "BRC Renda Corporativa"
+ },
+ {
+  "ticker": "BRCR11",
+  "nome": "BC Fund"
+ },
+ {
+  "ticker": "LVBI11",
+  "nome": "VBI Logístico"
+ },
+ {
+  "ticker": "BTLG11",
+  "nome": "BTG Pactual Logística"
+ },
+ {
+  "ticker": "BRCO11",
+  "nome": "Bresco Logística"
+ },
+ {
+  "ticker": "XPLG11",
+  "nome": "XP Log"
+ },
+ {
+  "ticker": "HGLG11",
+  "nome": "Pátria Log"
+ },
+ {
+  "ticker": "VILG11",
+  "nome": "Vinci Logística"
+ },
+ {
+  "ticker": "MCRE11",
+  "nome": "Mauá Capital Recebíveis"
+ },
+ {
+  "ticker": "KNHY11",
+  "nome": "Kinea High Yield CRI"
+ },
+ {
+  "ticker": "VGIP11",
+  "nome": "Valora CRI Índice de Preço"
+ },
+ {
+  "ticker": "BCRI11",
+  "nome": "Banestes Recebíveis Imobiliários"
+ },
+ {
+  "ticker": "KNIP11",
+  "nome": "Kinea Índices de Preços"
+ },
+ {
+  "ticker": "IRIM11",
+  "nome": "Iridium Recebíveis Imobiliários"
+ },
+ {
+  "ticker": "KNSC11",
+  "nome": "Kinea Securities"
+ },
+ {
+  "ticker": "VRTA11",
+  "nome": "Fator Verità"
+ },
+ {
+  "ticker": "AFHI11",
+  "nome": "AF Invest CRI"
+ },
+ {
+  "ticker": "MXRF11",
+  "nome": "Maxi Renda"
+ },
+ {
+  "ticker": "KNCR11",
+  "nome": "Kinea Rendimentos Imobiliários"
+ },
+ {
+  "ticker": "CPTS11",
+  "nome": "Capitânia Securities II"
+ },
+ {
+  "ticker": "RECR11",
+  "nome": "REC Recebíveis Imobiliários"
+ },
+ {
+  "ticker": "PCIP11",
+  "nome": "Pátria Crédito Imobiliário Índice de Preços",
+  "cnpj": "28729197000113"
+ },
+ {
+  "ticker": "HGRU11",
+  "nome": "Pátria Renda Urbana"
+ },
+ {
+  "ticker": "HSML11",
+  "nome": "HSI Malls"
+ },
+ {
+  "ticker": "PMLL11",
+  "nome": "Pátria Malls",
+  "cnpj": "26499833000132"
+ },
+ {
+  "ticker": "HGBS11",
+  "nome": "Hedge Brasil Shopping"
+ },
+ {
+  "ticker": "VISC11",
+  "nome": "Vinci Shopping Centers"
+ },
+ {
+  "ticker": "XPML11",
+  "nome": "XP Malls"
+ }
 ]
