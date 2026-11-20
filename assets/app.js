@@ -2641,6 +2641,18 @@ function tooltips() {
     tt.style.left = Math.max(8, Math.min(e.clientX + 12, innerWidth - w - 8)) + "px";
     tt.style.top = (e.clientY + 16 + h > innerHeight ? e.clientY - h - 10 : e.clientY + 16) + "px";
   });
+  // toque (celular): abre a dica embaixo do ícone; tocar fora fecha
+  document.addEventListener("click", (e) => {
+    if (!matchMedia("(hover: none)").matches) return;
+    const el = e.target.closest("[data-tip]");
+    if (!el || !el.dataset.tip) { tt.hidden = true; return; }
+    e.preventDefault(); e.stopPropagation();
+    tt.textContent = el.dataset.tip; tt.hidden = false;
+    const b = el.getBoundingClientRect(), w = tt.offsetWidth, h = tt.offsetHeight;
+    tt.style.left = Math.max(8, Math.min(b.left + b.width / 2 - w / 2, innerWidth - w - 8)) + "px";
+    tt.style.top = (b.bottom + 8 + h > innerHeight ? b.top - h - 8 : b.bottom + 8) + "px";
+  }, true);
+  addEventListener("scroll", () => { if (matchMedia("(hover: none)").matches) tt.hidden = true; }, { passive: true });
 }
 async function sha256(txt) {
   const b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(txt));

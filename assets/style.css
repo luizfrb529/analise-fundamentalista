@@ -729,3 +729,25 @@ details.recolhe[open] > summary { margin-bottom: 12px; }
 
 .rend-hoje { font-size: .84rem; color: var(--txt-2); margin: 0 0 10px; line-height: 1.5; }
 .rend-hoje b { color: var(--txt); font-variant-numeric: tabular-nums; }
+
+/* ---------------- celular: ajustes finais (ficam no fim para valer sobre as regras de desktop acima) */
+select { max-width: 100%; }
+@media (max-width: 680px) {
+  .topo .busca input { width: 38px; }
+  .topo .busca input:focus { width: auto; }
+  .faixa-status .tempo-real { display: none; }
+  #rt-add, .mapa-ctrl select, .sim-opcoes select { width: 100%; }
+}
+@media (max-width: 680px) {
+  th, td { padding: 9px 8px; }
+  th { white-space: normal; }
+  td small, td .muted { white-space: normal; }
+  a.btn.peq, .btn.peq { display: inline-flex; align-items: center; min-height: 34px; }
+  .info { width: 16px; height: 16px; font-size: 11px; }
+  .tag-principal { font-size: .7rem; }
+}
+@media (max-width: 680px) {
+  table.resp, table.resp tbody, table.resp tr, table.resp td { box-sizing: border-box; min-width: 0; }
+  table.resp td { overflow-wrap: anywhere; }
+}
+@media (max-width: 680px) { .legenda-crit td { white-space: normal; } }
