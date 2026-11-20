@@ -1,6 +1,6 @@
 {
  "ticker": "N1OW34",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-20",
  "resumo": "BDR da ServiceNow, de software em nuvem para automatizar processos de empresas, com 97% da receita em assinaturas. O BDR acompanha a ação em dólar e o câmbio.",
  "modelo": "A ServiceNow vende a plataforma ServiceNow AI Platform, que automatiza fluxos de trabalho de TI, atendimento ao cliente (CRM), RH, segurança e finanças, com agentes de IA. Os clientes são grandes empresas e governos, com contratos de assinatura plurianuais, em geral não canceláveis durante a vigência, o que torna a receita altamente recorrente. Em 2025 e 2026 comprou Moveworks (US$ 2,4 bilhões), Veza (US$ 1,2 bilhão) e Armis (US$ 7,6 bilhões) para ampliar busca corporativa e segurança. O BDR N1OW34 é negociado na B3 e representa ações listadas na NYSE.",
  "segmentos": [
@@ -79,5 +79,24 @@
    "data": "2026-10-28"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "Receita de assinaturas de US$ 3,99 bi no 3T26, alta de 21% sobre o 3T25.",
+   "Receita total de US$ 4,11 bi, alta de 20,5%.",
+   "cRPO de US$ 13,65 bi, alta de 20,5%.",
+   "Projeção de receita de assinaturas de 2026 elevada para US$ 15,78 a 15,79 bi e de margem de fluxo de caixa livre para 36%."
+  ],
+  "negativos": [
+   "Lucro líquido contábil de US$ 277 mi, contra US$ 502 mi no 3T25.",
+   "Margem operacional contábil de 9,5%, ante 17% no 3T25, pesada pelas aquisições do ano."
+  ],
+  "atencao": [
+   "Efeito da aquisição da Armis (financiada com títulos de US$ 4,0 bi em maio/26) sobre crescimento e dívida.",
+   "Parte da receita de grandes contratos de IA migra para serviços profissionais, segundo a empresa."
+  ]
+ },
+ "revisao": "automática"
 }
