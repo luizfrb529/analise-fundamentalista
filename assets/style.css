@@ -751,3 +751,18 @@ select { max-width: 100%; }
   table.resp td { overflow-wrap: anywhere; }
 }
 @media (max-width: 680px) { .legenda-crit td { white-space: normal; } }
+
+/* ---------------- início: mercado aberto ou fechado hoje */
+.mercados-hoje { position: absolute; top: 16px; right: 24px; display: grid; gap: 8px; width: 210px; text-align: left; z-index: 2; }
+.merc-hoje { background: var(--sup); border: 1px solid var(--borda); border-radius: 12px; padding: 9px 12px; box-shadow: var(--sombra, none); }
+.mh-cab { display: flex; align-items: center; gap: 8px; font-size: .78rem; font-weight: 600; color: var(--txt-2); }
+.mh-cab svg { width: 22px; height: 16px; flex-shrink: 0; border-radius: 3px; }
+.mh-st { display: flex; align-items: center; gap: 7px; margin-top: 4px; font-size: .95rem; font-weight: 700; }
+.mh-st i { width: 8px; height: 8px; border-radius: 50%; background: var(--txt-3); }
+.merc-hoje.aberto .mh-st { color: var(--pos); } .merc-hoje.aberto .mh-st i { background: var(--pos); box-shadow: 0 0 0 3px var(--pos-fundo); }
+.merc-hoje.fechado .mh-st { color: var(--neg); } .merc-hoje.fechado .mh-st i { background: var(--neg); box-shadow: 0 0 0 3px var(--neg-fundo); }
+.mh-mot { margin-top: 2px; font-size: .74rem; color: var(--txt-3); line-height: 1.35; }
+@media (max-width: 1180px) {
+  .mercados-hoje { position: static; width: auto; max-width: 520px; margin: 0 auto 22px; grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 680px) { .mercados-hoje { margin: 0 0 18px; } .merc-hoje { padding: 8px 10px; } }

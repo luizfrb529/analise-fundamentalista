@@ -314,9 +314,9 @@ async function j(url, opcional) {
   catch (e) { if (opcional !== undefined) return opcional; throw new Error(`Falha ao carregar ${url}: ${e.message}`); }
 }
 async function carregar() {
-  const [meta_, macro, prices, fund, univ, imeta, notes, config, logos, fiisIdx] = await Promise.all([
+  const [meta_, macro, prices, fund, univ, imeta, notes, config, logos, fiisIdx, mercados] = await Promise.all([
     j("data/meta.json"), j("data/macro.json", {}), j("data/prices.json"), j("data/fundamentals.json"), j("data/universe.json"),
-    j("data/indicators_meta.json"), j("data/notes.json", {}), j("data/config.json", {}), j("assets/logos/_index.json", []), j("data/fiis/_index.json", { fiis: [] })]);
+    j("data/indicators_meta.json"), j("data/notes.json", {}), j("data/config.json", {}), j("assets/logos/_index.json", []), j("data/fiis/_index.json", { fiis: [] }), j("data/mercados.json", null)]);
   Object.assign(D, { meta: meta_, macro, prices, fund, imeta, notes, config, cache: {}, logos: new Set(logos) });
   D.univ = univ.filter((a) => fund[a.ticker]);
   D.univMap = Object.fromEntries(univ.map((a) => [a.ticker, a]));
@@ -324,6 +324,30 @@ async function carregar() {
   D.fiis = (fiisIdx && fiisIdx.fiis) || [];
   D.fiiMap = Object.fromEntries(D.fiis.map((f) => [f.ticker, f]));
   D.vivoFii = {};
+  D.mercados = mercados;
+}
+/* ---------------- mercado aberto ou fechado hoje (B3 e bolsa americana) */
+const BANDEIRA = {
+  brasil: '<svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="3" fill="#009b3a"/><path d="M14 3 25 10 14 17 3 10z" fill="#fedf00"/><circle cx="14" cy="10" r="4.2" fill="#002776"/><path d="M10.2 9.3c2.6-.6 5.3-.3 7.6.9" stroke="#fff" stroke-width=".8" fill="none"/></svg>',
+  eua: '<svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="3" fill="#fff"/><g fill="#b22234">' + [0, 2, 4, 6, 8, 10, 12].map((i) => `<rect y="${i * 20 / 13}" width="28" height="${20 / 13}"/>`).join("") + '</g><rect width="12" height="10.8" fill="#3c3b6e"/><rect width="28" height="20" rx="3" fill="none" stroke="rgba(0,0,0,.15)"/></svg>',
+};
+function statusMercado(chave) {
+  const m = D.mercados && D.mercados[chave];
+  const fuso = chave === "brasil" ? "America/Sao_Paulo" : "America/New_York";
+  const hoje = new Intl.DateTimeFormat("en-CA", { timeZone: fuso, year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+  const dia = new Date(hoje + "T12:00:00Z").getUTCDay();
+  if (dia === 0 || dia === 6) return { aberto: false, motivo: "final de semana" };
+  if (!m) return { aberto: null, motivo: "Calendário indisponível" };
+  if (m.feriados && m.feriados[hoje]) return { aberto: false, motivo: m.feriados[hoje] === "Sem pregão" ? "dia sem pregão" : `feriado (${m.feriados[hoje]})` };
+  if (m.sessoes && m.sessoes[hoje]) return { aberto: true, motivo: "" };
+  return { aberto: null, motivo: "Calendário desatualizado" };
+}
+function quadrosMercado() {
+  return `<div class="mercados-hoje" aria-label="Funcionamento das bolsas hoje">${[["brasil", "Mercado Brasil"], ["eua", "Mercado EUA"]].map(([k, n]) => {
+    const st = statusMercado(k), cls = st.aberto === true ? "aberto" : st.aberto === false ? "fechado" : "nd";
+    return `<div class="merc-hoje ${cls}" title="${k === "brasil" ? "B3" : "NYSE e Nasdaq"}"><div class="mh-cab">${BANDEIRA[k]}<span>${n}</span></div>
+      <div class="mh-st"><i></i>${st.aberto === true ? "Aberto" : st.aberto === false ? "Fechado" : "Sem informação"}</div>${st.motivo ? `<div class="mh-mot">${st.aberto === false ? "Motivo: " : ""}${esc(st.motivo)}</div>` : ""}</div>`;
+  }).join("")}</div>`;
 }
 const RAMO_VIVO = "https://raw.githubusercontent.com/luizfrb529/analise-fundamentalista/refs/heads/mercado/";
 async function jsonVivo(arquivo) {
@@ -507,6 +531,7 @@ function pgHome(app) {
   EST.homeFeed = EST.homeFeed || { aba: "noticias", n: 15 };
   app.innerHTML = `
   <section class="hero">
+    ${quadrosMercado()}
     <h1>Análise fundamentalista das empresas da B3</h1>
     <p>Indicadores, qualidade e valuation de ${D.tickers.length} ações e BDRs${(D.fiis || []).length ? ` e ${D.fiis.length} fundos imobiliários` : ""}, calculados a partir das demonstrações e informes oficiais.</p>
     <div class="busca-grande busca"><input type="search" id="busca-home" placeholder="Digite o nome da empresa, o código ou o setor" autocomplete="off" aria-label="Buscar ativo">

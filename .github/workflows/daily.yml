@@ -76,6 +76,10 @@ jobs:
         if: steps.checar.outputs.pular != 'sim'
         run: python pipeline/mercado_hist.py || echo "histórico da faixa falhou; mantém os dados anteriores"
 
+      - name: Calendário das bolsas (B3 e NYSE) para o quadro aberto ou fechado
+        if: steps.checar.outputs.pular != 'sim'
+        run: python pipeline/mercados.py || echo "calendário das bolsas falhou; mantém o anterior"
+
       - name: Logos de ativos novos
         if: steps.checar.outputs.pular != 'sim'
         run: python pipeline/logos.py
