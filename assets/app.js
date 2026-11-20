@@ -1916,8 +1916,8 @@ async function pgRetornoReal(app, q) {
     if (vis === "ano") {
       const porAno = {};
       for (const x of r) (porAno[x.mes.slice(0, 4)] ||= []).push(x);
-      const linhas = Object.keys(porAno).sort().map((ano) => { const l = porAno[ano], nn = acum("nom", l), ii = acum("ipca", l); return { a: ano, nom: nn, real: (1 + nn) / (1 + ii) - 1, usd: acum("usd", l), ipca: ii, fx: acum("fx", l), parcial: l.length < 12 }; });
-      $("#rr-tab").innerHTML = linhas.slice().reverse().map((x) => `<tr><td data-label="Ano">${x.a}${x.parcial ? ` <small class="muted">(${mesBR(porAno[x.a][0].mes)} a ${mesBR(porAno[x.a][porAno[x.a].length - 1].mes)})</small>` : ""}</td><td class="n ${sinal(x.nom)}" data-label="Nominal (R$)">${pct(x.nom)}</td><td class="n ${sinal(x.real)}" data-label="Real">${pct(x.real)}</td><td class="n ${sinal(x.usd)}" data-label="Em dólar">${pct(x.usd)}</td><td class="n" data-label="IPCA">${pct(x.ipca, false)}</td><td class="n" data-label="Dólar">${pct(x.fx)}</td></tr>`).join("");
+      const linhas = Object.keys(porAno).sort().map((ano) => { const l = porAno[ano], nn = acum("nom", l), ii = acum("ipca", l); return { a: ano, nom: nn, real: (1 + nn) / (1 + ii) - 1, usd: acum("usd", l), ipca: ii, fx: acum("fx", l), parcial: l.length < 12, meses: l.length }; });
+      $("#rr-tab").innerHTML = linhas.slice().reverse().map((x) => `<tr><td data-label="Ano">${x.a}${x.parcial ? ` <small class="muted">(${x.meses} ${x.meses === 1 ? "mês" : "meses"}: ${mesBR(porAno[x.a][0].mes)} a ${mesBR(porAno[x.a][porAno[x.a].length - 1].mes)})</small>` : ""}</td><td class="n ${sinal(x.nom)}" data-label="Nominal (R$)">${pct(x.nom)}${x.parcial ? `<br><small class="muted">equivale a ${pct(Math.pow(1 + x.nom, 12 / x.meses) - 1, false)} ao ano</small>` : ""}</td><td class="n ${sinal(x.real)}" data-label="Real">${pct(x.real)}</td><td class="n ${sinal(x.usd)}" data-label="Em dólar">${pct(x.usd)}</td><td class="n" data-label="IPCA">${pct(x.ipca, false)}</td><td class="n" data-label="Dólar">${pct(x.fx)}</td></tr>`).join("");
     }
   };
   $$("#rr-ativo button").forEach((b) => b.onclick = () => { ativo = b.dataset.v; desenhar(); });
