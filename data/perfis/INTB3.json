@@ -1,6 +1,6 @@
 {
  "ticker": "INTB3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-20",
  "resumo": "Fabricante catarinense de equipamentos de segurança eletrônica, redes e energia, com 63% da receita em Segurança. Vende quase só no Brasil, mas importa boa parte dos insumos em dólar, com hedge parcial.",
  "modelo": "A Intelbras desenvolve, fabrica e importa produtos sob marca própria: câmeras e soluções IP, controle de acesso, fechaduras digitais e alarmes (Segurança); cabeamento estruturado, redes empresariais e telefonia (TIC); nobreaks, carregadores veiculares e microgeração solar (Energia). Vende por uma rede de distribuidores e revendas para empresas, instaladores, integradores e consumidores. A receita é de venda de produtos, recorrente pela base de clientes, mas sem contratos de longo prazo; as fábricas ficam em Santa Catarina e na Zona Franca de Manaus, onde há uma nova unidade em obras.",
  "segmentos": [
@@ -85,5 +85,25 @@
    "data": "2026-10-28"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "Lucro líquido de R$ 177,1 mi no 3T26, alta de 19,7% sobre o 3T25, com margem líquida de 15,0%.",
+   "Ebitda de R$ 170,1 mi, alta de 18,1% sobre o 3T25, com margem de 14,5%.",
+   "Margem bruta de 32,7%, alta de 1,8 ponto percentual sobre o 3T25.",
+   "Caixa líquido de R$ 680,3 mi em set/26, ante R$ 585,1 mi em jun/26."
+  ],
+  "negativos": [
+   "Receita líquida de R$ 1,18 bi, alta de apenas 4,6% sobre o 3T25, bem abaixo da expansão do lucro.",
+   "Margem bruta caiu 0,4 ponto percentual frente ao 2T26."
+  ],
+  "atencao": [
+   "Lucro cresce mais que a receita: parte da melhora vem de margem e de resultado financeiro.",
+   "Demanda descrita pela administração como cautelosa, com clientes adiando projetos.",
+   "Obras da nova fábrica em Manaus."
+  ]
+ },
+ "revisao": "automática"
 }
