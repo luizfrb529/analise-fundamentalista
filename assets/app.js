@@ -1823,7 +1823,6 @@ const RR_ATIVOS = {
 };
 // linhas de comparação, todas em reais (para comparar com a linha nominal do ativo)
 const RR_COMP = {
-  dolar: { nome: "Dólar (só câmbio)", cor: "#9aa3ad", taxa: 0 },
   dolar4: { nome: "Dólar + 4% ao ano", cor: "#c678dd", taxa: 0.04 },
   dolar5: { nome: "Dólar + 5% ao ano", cor: "#e06c9f", taxa: 0.05 },
   sp500: { nome: "S&P 500 em R$", cor: "#4fbf7a", sp: true },
@@ -1892,7 +1891,7 @@ async function pgRetornoReal(app, q) {
         <li><b>Nominal:</b> ${esc(A.obs)}</li>
         <li><b>Real:</b> (1 + retorno nominal) / (1 + IPCA do período) - 1. IPCA do IBGE, mês a mês.</li>
         <li><b>Em dólar:</b> (1 + retorno nominal em reais) / (1 + variação da PTAX de fim de mês) - 1${A.moeda === "USD" ? "; para ativo cotado em dólar, é a própria variação em dólares" : ""}.</li>
-        <li><b>Comparações (linhas tracejadas, em reais):</b> "Dólar (só câmbio)" é a variação da PTAX; "Dólar + 4%" e "Dólar + 5%" somam ao câmbio um rendimento de 4% ou 5% ao ano em dólares (por exemplo, um título americano); "S&P 500 em R$" é o índice em dólares convertido pela PTAX, só pelo preço, sem dividendos. Servem para comparar com a linha nominal.</li>
+        <li><b>Comparações (linhas tracejadas, em reais):</b> "Dólar + 4%" e "Dólar + 5%" somam ao câmbio um rendimento de 4% ou 5% ao ano em dólares (por exemplo, um título americano); "S&P 500 em R$" é o índice em dólares convertido pela PTAX, só pelo preço, sem dividendos. Servem para comparar com a linha nominal.</li>
         <li><b>Período:</b> do fechamento de ${inicioTxt} ao de ${fimTxt}; só meses fechados entram. ${vis === "ano" ? "No ano corrente, o retorno vai até o último mês fechado." : ""}</li>
       </ul><p class="sub">Fontes: Banco Central (CDI, IPCA e PTAX), B3 (Ibovespa e IFIX) e Yahoo Finance (S&P 500 e ouro). Retorno passado não garante retorno futuro.</p></div>`;
     destruirGraficos();
