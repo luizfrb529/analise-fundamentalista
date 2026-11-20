@@ -1827,27 +1827,29 @@ async function pgRetornoReal(app, q) {
   const M = D.cache.mensal;
   if (!M || !M.meses) { app.innerHTML = '<div class="cartao"><p class="vazio">Séries mensais indisponíveis.</p></div>'; return; }
   const st = lsGet("retorno_real_v1", {}) || {};
-  let ativo = RR_ATIVOS[st.ativo] ? st.ativo : "cdi", per = RR_PERIODOS.some(([n]) => n === st.per) ? st.per : "10A", vis = st.vis === "ano" ? "ano" : "mes";
-  const salvar = () => lsSet("retorno_real_v1", { ativo, per, vis });
+  let ativo = RR_ATIVOS[st.ativo] ? st.ativo : "cdi", per = RR_PERIODOS.some(([n]) => n === st.per) ? st.per : "10A";
+  const vis = "ano";
+  const salvar = () => lsSet("retorno_real_v1", { ativo, per });
   const mesBR = (m) => { const [a, b] = m.split("-"); return `${SIM_MESES[+b - 1]}/${a}`; };
   app.innerHTML = `<p class="sub sim-intro">Quanto um investimento rendeu de verdade: o retorno em reais (nominal), o retorno descontada a inflação (real, pelo IPCA) e o retorno em dólares (pela variação do câmbio). Atualiza sozinho a cada fechamento de mês; último mês fechado: <b>${mesBR(M.ultimo_mes)}</b>.</p>
   <div class="rr-ctrl">
     <div class="segmentado" id="rr-ativo">${Object.entries(RR_ATIVOS).map(([k, a]) => `<button data-v="${k}">${esc(a.nome)}</button>`).join("")}</div>
     <div class="segmentado" id="rr-per">${RR_PERIODOS.map(([n]) => `<button data-v="${n}">${n}</button>`).join("")}</div>
-    <div class="segmentado" id="rr-vis"><button data-v="mes">Mês a mês</button><button data-v="ano">Ano a ano</button></div>
   </div>
   <div id="rr-corpo"></div>`;
   const desenhar = () => {
     salvar();
     $$("#rr-ativo button").forEach((b) => b.classList.toggle("ativo", b.dataset.v === ativo));
     $$("#rr-per button").forEach((b) => b.classList.toggle("ativo", b.dataset.v === per));
-    $$("#rr-vis button").forEach((b) => b.classList.toggle("ativo", b.dataset.v === vis));
     const A = RR_ATIVOS[ativo], serie = M[A.fonte], n = M.meses.length;
     // primeiro mês com dado do ativo (o retorno do mês i usa o valor do mês i-1 como base)
     let primeiro = 1;
     if (A.fonte !== "cdi") while (primeiro < n && !(ok(serie[primeiro]) && ok(serie[primeiro - 1]))) primeiro++;
     const anos = RR_PERIODOS.find(([x]) => x === per)[1];
-    const ini = Math.max(primeiro, anos ? n - anos * 12 : primeiro);
+    const anoUlt = +M.ultimo_mes.slice(0, 4), dezIni = M.meses.indexOf(`${anoUlt - anos}-12`);
+    let dezMax = primeiro - 1;   // "Máx.": começa no primeiro fechamento de dezembro com dado
+    while (dezMax < n - 1 && !M.meses[dezMax].endsWith("-12")) dezMax++;
+    const ini = Math.max(primeiro, anos && dezIni >= 0 ? dezIni + 1 : dezMax + 1);
     const r = [];   // retornos mensais: nominal em reais, IPCA, câmbio, em dólar (ativo)
     for (let i = ini; i < n; i++) {
       const fx = M.dolar[i] / M.dolar[i - 1] - 1;
@@ -1874,7 +1876,7 @@ async function pgRetornoReal(app, q) {
         <div class="cartao mapa-kpi"><span>IPCA acumulado</span><b>${pct(ipca)}</b><small>${ok(aa(ipca)) ? `${pct(aa(ipca), false)} ao ano` : ""}</small></div>
         <div class="cartao mapa-kpi"><span>Variação do dólar</span><b>${pct(fx)}</b><small>PTAX de R$ ${nf2.format(M.dolar[ini - 1])} para R$ ${nf2.format(M.dolar[n - 1])}</small></div>
       </div>
-      <div class="cartao" style="margin-top:16px"><h3>Retorno acumulado</h3><p class="sub">${vis === "mes" ? "Mês a mês." : "Posição no fim de cada ano; a tabela abaixo traz o retorno de cada ano."}</p><div class="grafico rr-graf"><canvas id="g-rr"></canvas></div></div>
+      <div class="cartao" style="margin-top:16px"><h3>Retorno acumulado</h3><p class="sub">Posição no fechamento de cada ano. O ano corrente vai até o último mês fechado (${mesBR(M.ultimo_mes)}). A tabela abaixo traz o retorno de cada ano.</p><div class="grafico rr-graf"><canvas id="g-rr"></canvas></div></div>
       ${vis === "ano" ? `<div class="cartao" style="margin-top:16px"><div class="tabela-wrap"><table class="resp"><thead><tr><th>Ano</th><th class="n">Nominal (R$)</th><th class="n">Real</th><th class="n">Em dólar</th><th class="n">IPCA</th><th class="n">Dólar</th></tr></thead><tbody id="rr-tab"></tbody></table></div></div>` : ""}
       <div class="cartao sim-notas" style="margin-top:16px"><h3>Como é calculado</h3><ul>
         <li><b>Nominal:</b> ${esc(A.obs)}</li>
@@ -1887,7 +1889,7 @@ async function pgRetornoReal(app, q) {
     const cN = cor("--serie-2"), cR = "#3fb8c4", cU = "#e8862e";
     // acumulado mês a mês; no "ano a ano" a linha usa só o fim de cada ano (e o último mês fechado)
     let a = 1, b = 1, c = 1;
-    const pts = [{ rot: inicioTxt, nom: 0, real: 0, usd: 0 }];
+    const pts = [{ rot: M.meses[ini - 1].endsWith("-12") ? M.meses[ini - 1].slice(0, 4) : inicioTxt, nom: 0, real: 0, usd: 0 }];
     r.forEach((x, k) => {
       a *= 1 + x.nom; b *= 1 + x.ipca; c *= 1 + x.usd;
       const fimAno = k === r.length - 1 || r[k + 1].mes.slice(0, 4) !== x.mes.slice(0, 4);
@@ -1920,7 +1922,6 @@ async function pgRetornoReal(app, q) {
   };
   $$("#rr-ativo button").forEach((b) => b.onclick = () => { ativo = b.dataset.v; desenhar(); });
   $$("#rr-per button").forEach((b) => b.onclick = () => { per = b.dataset.v; desenhar(); });
-  $$("#rr-vis button").forEach((b) => b.onclick = () => { vis = b.dataset.v; desenhar(); });
   desenhar();
 }
 

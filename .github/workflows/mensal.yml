@@ -1,10 +1,10 @@
 # Séries mensais do simulador "Retorno real e em dólar". O IBGE divulga o IPCA por volta do dia 10 do mês seguinte,
-# então a rotina tenta do dia 10 ao 16; no primeiro dia em que houver mês novo fechado ela grava, nos outros não muda nada.
+# então a rotina tenta do dia 10 ao 28 (folga para atraso na divulgação); no primeiro dia em que houver mês novo fechado ela grava, nos outros não muda nada.
 name: retorno-mensal
 
 on:
   schedule:
-    - cron: "0 13 10-16 * *"   # 10h de Brasília, dias 10 a 16
+    - cron: "0 13 10-28 * *"   # 10h de Brasília, dias 10 a 28
   workflow_dispatch: {}
 
 permissions:
