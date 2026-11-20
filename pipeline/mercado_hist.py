@@ -233,11 +233,6 @@ def main():
                 out["projecao"] = f
         (SAIDA / f"{k}.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         print(f"{k}: {len(out['serie'])} pontos de {out['serie'][0][0]} a {out['serie'][-1][0]}{' + Focus' if out.get('projecao') else ''}")
-    try:
-        mensal(fim_mes)
-    except Exception as e:
-        print("mensal:", e)
-        falhas.append("mensal")
     if falhas:
         print("falharam:", falhas)
 
