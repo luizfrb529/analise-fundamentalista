@@ -1270,7 +1270,7 @@ function optGraf({ stacked = false, eixo2 = false, moeda = "", legenda = true } 
   const c = cor("--txt-3"), g = cor("--borda");
   const o = { responsive: true, maintainAspectRatio: false, interaction: { mode: "index", intersect: false },
     plugins: { legend: { display: legenda, labels: { color: cor("--txt-2"), boxWidth: 10, boxHeight: 10, usePointStyle: true, font: { family: "Inter" } } },
-      tooltip: { backgroundColor: cor("--sup-3"), titleColor: cor("--txt"), bodyColor: cor("--txt"), borderColor: cor("--borda-forte"), borderWidth: 1, padding: 10,
+      tooltip: { itemSort: (p, q) => (q.parsed.y ?? -Infinity) - (p.parsed.y ?? -Infinity), backgroundColor: cor("--sup-3"), titleColor: cor("--txt"), bodyColor: cor("--txt"), borderColor: cor("--borda-forte"), borderWidth: 1, padding: 10,
         callbacks: { label: (ctx) => `${ctx.dataset.label}: ${moeda}${ok(ctx.parsed.y) ? nf2.format(ctx.parsed.y) : "n/d"}` } } },
     scales: { x: { stacked, ticks: { color: c, maxTicksLimit: 8, autoSkip: true, font: { family: "Inter" } }, grid: { display: false }, border: { color: g } },
       y: { stacked, ticks: { color: c, font: { family: "Inter" }, callback: (v) => nf2.format(v) }, grid: { color: g }, border: { display: false } } } };
