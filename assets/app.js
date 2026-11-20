@@ -1908,9 +1908,9 @@ async function pgRetornoReal(app, q) {
       if (vis === "mes" || fimAno) pts.push({ rot: vis === "mes" ? mesBR(x.mes) : (x.mes.endsWith("-12") ? x.mes.slice(0, 4) : mesBR(x.mes)), nom: (a - 1) * 100, real: (a / b - 1) * 100, usd: (c - 1) * 100, comp: Object.fromEntries(Object.keys(RR_COMP).map((kk) => [kk, (ac[kk] - 1) * 100])) });
     });
     const ds = [
-      { label: "Nominal (R$)", data: pts.map((x) => x.nom), borderColor: cN, backgroundColor: cN },
-      { label: "Real (descontado o IPCA)", data: pts.map((x) => x.real), borderColor: cR, backgroundColor: cR },
-      { label: "Em dólar", data: pts.map((x) => x.usd), borderColor: cU, backgroundColor: cU },
+      { label: `${A.nome} Nominal (R$)`, data: pts.map((x) => x.nom), borderColor: cN, backgroundColor: cN },
+      { label: `${A.nome} Real (descontado IPCA)`, data: pts.map((x) => x.real), borderColor: cR, backgroundColor: cR },
+      { label: `${A.nome} em Dólar`, data: pts.map((x) => x.usd), borderColor: cU, backgroundColor: cU },
     ].map((d) => ({ ...d, borderWidth: 2.2, pointRadius: vis === "ano" ? 3 : 0, pointHoverRadius: 4, tension: vis === "ano" ? 0.25 : 0.15, fill: false }));
     for (const k of comp) {
       if (k === "sp500" && ativo === "sp500") continue;
