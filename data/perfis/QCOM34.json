@@ -1,6 +1,6 @@
 {
  "ticker": "QCOM34",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-20",
  "resumo": "BDR da Qualcomm, de chips para celulares (Snapdragon) e licenças de patentes de 4G e 5G. Celulares ainda são 56% da receita e caem; carros, IoT e data center são a aposta de crescimento.",
  "modelo": "A Qualcomm vende chips (processadores, modems e radiofrequência) para fabricantes de celulares, carros, PCs e dispositivos conectados, no segmento QCT, e cobra royalties pelo uso de suas patentes de comunicação móvel no segmento QTL, de alta margem. A venda de chips é por volume e depende de poucos grandes clientes, como Apple e Samsung; os royalties são recorrentes, por contratos plurianuais. Desde o ano fiscal 2027 inclui no QCT o negócio de data center, reforçado pela compra da Alphawave. O BDR QCOM34 é negociado na B3 e representa ações listadas na Nasdaq.",
  "segmentos": [
@@ -97,5 +97,25 @@
    "data": "2026-11-04"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "4T do ano fiscal 2026",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Receita automotiva de US$ 1,99 bi, alta de 89% sobre o 4T do ano fiscal 2025.",
+   "Lucro líquido contábil de US$ 1,25 bi, ante prejuízo de US$ 3,1 bi no 4T25.",
+   "Meta de US$ 5 bi em receita de data center no ano fiscal 2027 mantida."
+  ],
+  "negativos": [
+   "Receita de US$ 10,3 bi, queda de 8% sobre o ano anterior.",
+   "Receita de chips para celulares de cerca de US$ 5,14 bi, queda de 26%.",
+   "Lucro líquido ajustado caiu 28% sobre o 4T25 (LPA ajustado de US$ 2,17)."
+  ],
+  "atencao": [
+   "Projeção para o 1T do ano fiscal 2027: receita de US$ 10,4 a 11,2 bi.",
+   "Troca gradual dos modems da Qualcomm pelos próprios da Apple, que renovou a licença de patentes.",
+   "Repasse de alta de custos de memória e fabricação aos preços."
+  ]
+ },
+ "revisao": "automática"
 }
