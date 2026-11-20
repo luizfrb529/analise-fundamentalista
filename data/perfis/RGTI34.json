@@ -1,6 +1,6 @@
 {
  "ticker": "RGTI34",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-20",
  "resumo": "BDR da Rigetti, que desenvolve computadores quânticos supercondutores, ainda com receita pequena e prejuízo operacional. O caixa de US$ 497 milhões, sem dívida, financia a operação.",
  "modelo": "A Rigetti projeta e fabrica, em fábrica própria na Califórnia, processadores quânticos supercondutores baseados em chiplets. Vende sistemas instalados no cliente (Novera de 9 qubits e Cepheus de 36 a 108 qubits), acesso pela nuvem e contratos de pesquisa, principalmente para laboratórios nacionais, centros de pesquisa e governos. A receita é pequena, pontual e concentrada em poucos contratos, enquanto as despesas com pesquisa são altas. O BDR RGTI34 é negociado na B3 e representa ações listadas na Nasdaq.",
  "segmentos": [
@@ -73,5 +73,24 @@
    "data": "2026-11-11"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-10",
+  "positivos": [
+   "Receita acumulada de US$ 10,9 mi nos 9M26, alta de cerca de 110% sobre os 9M25.",
+   "Caixa e aplicações de US$ 497,1 mi em set/26, sem dívida.",
+   "Acordo de até US$ 100 mi com o Departamento de Comércio dos EUA (CHIPS Act), que virou acionista minoritário."
+  ],
+  "negativos": [
+   "Receita de US$ 1,4 mi no 3T26, queda de cerca de 28% sobre o 3T25.",
+   "Prejuízo operacional de US$ 33,2 mi no 3T26; o prejuízo ajustado foi de US$ 20,5 mi.",
+   "Prejuízo líquido contábil de US$ 3,1 mi foi reduzido por ganhos com warrants, não pela operação."
+  ],
+  "atencao": [
+   "Projeção de receita de 2026 de cerca de US$ 20 mi depende da aceitação do sistema pelo C-DAC no 4T26.",
+   "Evolução do sistema de 108 qubits e da fidelidade de portas de dois qubits."
+  ]
+ },
+ "revisao": "automática"
 }
