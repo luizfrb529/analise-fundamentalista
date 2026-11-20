@@ -1,6 +1,6 @@
 {
  "ticker": "SEER3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-20",
  "resumo": "Grupo de ensino superior privado com sede em Recife e forte presença no Norte e Nordeste. Cerca de 91% da receita bruta vem do ensino presencial, com peso crescente de Medicina e cursos de saúde.",
  "modelo": "A Ser Educacional opera faculdades, centros universitários e universidades (marcas como UNINASSAU, UNAMA, UNG, Univeritas, UNINORTE, UNIFAEL e UNESC), com cursos de graduação presencial, semipresencial e a distância, pós-graduação e Medicina. A receita é recorrente, vinda de mensalidades pagas pelos alunos, por financiamento privado (PRAVALER) ou público (FIES), e é reduzida por descontos e pelo PROUNI, que concede bolsas em troca de isenção de impostos. A base presencial tem 185,4 mil alunos de graduação, dos quais cerca de 65% em cursos de saúde.",
  "segmentos": [
@@ -91,5 +91,24 @@
    "data": "2026-11-12"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-11",
+  "positivos": [
+   "Lucro líquido ajustado de R$ 39,2 mi no 3T26, alta de 62,4% sobre o 3T25; o lucro reportado foi de R$ 36,6 mi (+145,1%).",
+   "Ebitda ajustado de R$ 109,1 mi, alta de 6,7% sobre o 3T25, com margem de 20,6%.",
+   "Receita líquida de R$ 531,0 mi, alta de 3,2% sobre o 3T25.",
+   "Base presencial de 185,4 mil alunos, alta de 1,7%, com ticket médio líquido 6,0% maior."
+  ],
+  "negativos": [
+   "Captação de EAD e semipresencial caiu 31,1% no 3T26 sobre o 3T25, sob o novo marco regulatório do EAD."
+  ],
+  "atencao": [
+   "Efeito do novo marco regulatório do EAD sobre a captação e a receita nos próximos trimestres.",
+   "Expansão orgânica com unidades menores no Norte e Nordeste e o foco em medicina, segundo o NeoFeed.",
+   "Evolução da alavancagem e dos dividendos (R$ 26,0 mi previstos para o 4T26)."
+  ]
+ },
+ "revisao": "automática"
 }
