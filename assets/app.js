@@ -2208,6 +2208,10 @@ async function pgFii(app, t) {
   </div></section>
 
   <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Rendimentos e patrimônio</h2></div>
+    ${ok(preco) && preco > 0 && (ult || prox) ? (() => {
+      const pc = (v) => ok(v) ? `<b>${nf2.format(v / preco * 100)}%</b> <span class="muted">(${nf2.format(v / preco * 1200)}% em 12 meses se repetido)</span>` : '<span class="muted">ainda não anunciado</span>';
+      return `<p class="rend-hoje">Pela cota de hoje, ${reais(preco)}${D.vivoFii[t] ? "" : ` (fechamento de ${dataBR(i.data_preco)})`}: último rendimento ${pc(ult && ult.valor)} · próximo rendimento ${pc(prox && prox.valor)}</p>`;
+    })() : ""}
     <div class="grade g2 fii-rend">
       <div class="cartao rend-cartao ult"><h3>Último rendimento</h3>${ult ? `<div class="rend-valor">${reais(ult.valor, 4)}</div><div class="rend-grade"><div><span>Rendimento</span><b>${fmtU(i.ultimo_yield, "pct")}</b></div><div><span>Cotação base</span><b>${reais(i.cota_base)}</b></div><div><span>Data base</span><b>${dataBR(ult.data_base)}</b></div><div><span>Pagamento</span><b>${dataBR(ult.pagamento)}</b></div></div>` : '<p class="vazio">Sem rendimentos.</p>'}</div>
       <div class="cartao rend-cartao prox"><h3>Próximo rendimento</h3>${prox ? `<div class="rend-valor">${reais(prox.valor, 4)}</div><div class="rend-grade"><div><span>Data base</span><b>${dataBR(prox.data_base)}</b></div><div><span>Pagamento</span><b>${dataBR(prox.pagamento)}</b></div><div><span>Referência</span><b>${esc(prox.referencia || "")}</b></div></div>` : '<p class="sub" style="margin-top:8px">Ainda não anunciado. O aviso costuma sair no último dia útil do mês.</p>'}</div>

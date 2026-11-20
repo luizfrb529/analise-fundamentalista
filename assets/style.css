@@ -726,3 +726,6 @@ details.recolhe[open] > summary { margin-bottom: 12px; }
   table.sim-tab td.sim-base::before { align-self: flex-start; }
   table.sim-tab td.sim-rm-cel { justify-content: flex-end; }
 }
+
+.rend-hoje { font-size: .84rem; color: var(--txt-2); margin: 0 0 10px; line-height: 1.5; }
+.rend-hoje b { color: var(--txt); font-variant-numeric: tabular-nums; }
