@@ -1,6 +1,6 @@
 {
  "ticker": "ABEV3",
- "revisado_em": "2026-11-19",
+ "revisado_em": "2026-11-20",
  "resumo": "Maior cervejaria da América Latina, controlada pela AB InBev. Nos 9M26, 58% da receita veio do Brasil e 42% de CAC, LAS e Canadá; custos em dólar (alumínio, açúcar, cereais) pesam mais que a receita externa.",
  "modelo": "A Ambev produz e distribui cervejas (Brahma, Skol, Antarctica, Original, Spaten, Stella Artois, Corona, Michelob Ultra), refrigerantes e outras bebidas não alcoólicas (Guaraná Antarctica e engarrafamento PepsiCo) no Brasil, na América Central e Caribe, na América Latina Sul (Argentina, Bolívia, Paraguai, Uruguai, Chile) e no Canadá. A receita é recorrente, vem da venda de grandes volumes a bares, supermercados e distribuidores, com repasse de preço anual e ganho de mix em marcas premium. Opera ainda a plataforma B2B BEES, com marketplace de produtos de terceiros, e o Zé Delivery, de venda direta ao consumidor.",
  "segmentos": [
@@ -102,5 +102,27 @@
    "data": "2025-10-30"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Receita líquida de R$ 21,59 bi no 3T26, alta de 7,6% orgânica sobre o 3T25 (3,6% reportada).",
+   "Ebitda ajustado de R$ 7,27 bi, alta orgânica de 8,9% sobre o 3T25, com margem de 33,7%.",
+   "Lucro líquido ajustado de R$ 4,39 bi, alta de 14,3% sobre os R$ 3,84 bi do 3T25.",
+   "Fluxo de caixa operacional de R$ 7,7 bi, alta de 11,0% sobre o 3T25; caixa de R$ 19,2 bi contra dívida de R$ 2,7 bi em set/26."
+  ],
+  "negativos": [
+   "Lucro líquido reportado de R$ 4,37 bi, queda de 10,2% sobre o 3T25, que teve ganhos não recorrentes.",
+   "Volume de Cerveja Brasil subiu só 0,5% no 3T26, abaixo da indústria (cerca de 4%, segundo a Nielsen).",
+   "Margem de Cerveja Brasil caiu 130 pontos-base no 3T26, com CPV/hl subindo 5,4%.",
+   "Câmbio reduziu a receita convertida em R$ 529 mi e o Ebitda em R$ 404 mi no 3T26."
+  ],
+  "atencao": [
+   "Guidance de CPV/hl de Cerveja Brasil em 2026 (alta de 4,5% a 7,5%) foi mantido.",
+   "Programa de recompra de até 190 milhões de ações em 18 meses, aprovado em 28/10/2026.",
+   "Ritmo de volume de Cerveja Brasil frente à indústria nos próximos trimestres."
+  ]
+ },
+ "revisao": "automática"
 }
