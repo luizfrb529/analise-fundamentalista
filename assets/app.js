@@ -2623,6 +2623,7 @@ function tema() {
   $("#tema").onclick = () => {
     const novo = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
     document.documentElement.setAttribute("data-theme", novo);
+    const mt = document.querySelector('meta[name="theme-color"]'); if (mt) mt.setAttribute("content", novo === "light" ? "#f6f7f9" : "#0b0c0e");
     try { localStorage.setItem("tema", novo); } catch (e) {}
     render();
   };
