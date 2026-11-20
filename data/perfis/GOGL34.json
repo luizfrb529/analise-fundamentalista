@@ -1,6 +1,6 @@
 {
  "ticker": "GOGL34",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-20",
  "resumo": "BDR da Alphabet, controladora do Google: busca, YouTube, Android e nuvem. Metade da receita vem de anúncios na busca e a nuvem já é 24%; o BDR acompanha a ação em dólar e o câmbio.",
  "modelo": "A Alphabet ganha dinheiro sobretudo com publicidade na busca do Google, no YouTube e em sites parceiros (rede Google), receita recorrente ligada ao gasto global de anunciantes. Vende também assinaturas (YouTube Premium, Google One), aplicativos e aparelhos, e serviços de nuvem e infraestrutura de IA pelo Google Cloud, incluindo seus chips TPU. Other Bets reúne apostas como a Waymo, com receita pequena. O BDR GOGL34 é negociado na B3 e representa ações listadas na Nasdaq.",
  "segmentos": [
@@ -103,5 +103,24 @@
    "data": "2026-10-28"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "Receita de US$ 127,6 bi no 3T26, alta de 25% sobre o 3T25.",
+   "Lucro operacional de US$ 40,6 bi, alta de 30%, com margem de 31,8%.",
+   "Receita do Google Cloud de US$ 30,7 bi, alta de 103%, com lucro operacional de US$ 11,1 bi (US$ 3,6 bi no 3T25)."
+  ],
+  "negativos": [
+   "Lucro líquido de US$ 26,2 bi, queda de 25%, por perda de US$ 8,7 bi na marcação de participações em outras empresas.",
+   "Fluxo de caixa livre negativo em US$ 9,1 bi, ante positivo de US$ 24,6 bi no 3T25.",
+   "Investimento de US$ 51,4 bi no trimestre, ante US$ 24,0 bi no 3T25."
+  ],
+  "atencao": [
+   "Projeção de investimento de US$ 195 a 205 bi em 2026 e sinalização de mais de US$ 300 bi em 2027.",
+   "Financiamento dos data centers com emissão de ações, preferenciais e títulos de dívida."
+  ]
+ },
+ "revisao": "automática"
 }
