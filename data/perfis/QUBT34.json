@@ -1,6 +1,6 @@
 {
  "ticker": "QUBT34",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-20",
  "resumo": "BDR da Quantum Computing Inc., de tecnologia quântica e fotônica, com receita ainda pequena e vinda quase toda de empresas compradas em 2026. Tem cerca de US$ 1,3 bilhão em caixa e aplicações.",
  "modelo": "A Quantum Computing Inc. (QCi) desenvolve máquinas quânticas baseadas em fotônica que operam em temperatura ambiente (otimização, computação de reservatório, sensores e comunicação segura) e, desde 2026, vende componentes fotônicos, produtos de comunicação quântica e serviços de encapsulamento avançado de semicondutores. Os clientes são principalmente dos setores aeroespacial, de governo e industrial. A receita é pontual, por pedidos e contratos, e a empresa ainda opera com prejuízo. O BDR QUBT34 é negociado na B3 e representa ações listadas na Nasdaq.",
  "segmentos": [
@@ -79,5 +79,25 @@
    "data": "2026-07-22"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-09",
+  "positivos": [
+   "Receita de US$ 9,5 mi no 3T26, contra US$ 384 mil no 3T25, com US$ 8,8 mi das empresas adquiridas no 1S26.",
+   "Carteira de contratos de US$ 39,1 mi e caixa com aplicações de cerca de US$ 1,3 bi em set/26.",
+   "Receitas financeiras de US$ 13,0 mi amorteceram o prejuízo do trimestre."
+  ],
+  "negativos": [
+   "Prejuízo líquido de US$ 15,1 mi no 3T26.",
+   "Despesas operacionais de US$ 29,0 mi, ante US$ 10,5 mi no 3T25.",
+   "Margem bruta de apenas 4,5%, por baixa utilização das fábricas."
+  ],
+  "atencao": [
+   "Entregas dos primeiros sistemas Dirac-3S previstas para o 4T26.",
+   "A empresa não divulga projeção de receita.",
+   "Quase toda a receita vem de empresas recém-adquiridas."
+  ]
+ },
+ "revisao": "automática"
 }
