@@ -1821,7 +1821,7 @@ const RR_ATIVOS = {
   sp500: { nome: "S&P 500", moeda: "USD", fonte: "sp500", obs: "S&P 500 só pelo preço, sem dividendos; em reais pela PTAX de fim de mês." },
   ouro: { nome: "Ouro", moeda: "USD", fonte: "ouro", obs: "Ouro pelo contrato futuro em dólares por onça; em reais pela PTAX de fim de mês." },
 };
-const RR_PERIODOS = [["1A", 1], ["3A", 3], ["5A", 5], ["10A", 10], ["15A", 15], ["20A", 20], ["Máx.", 0]];
+const RR_PERIODOS = [["1A", 1], ["3A", 3], ["5A", 5], ["10A", 10], ["15A", 15], ["20A", 20], ["30A", 30], ["Plano Real", 0]];
 async function pgRetornoReal(app, q) {
   if (!D.cache.mensal) D.cache.mensal = await j(`data/mercado/mensal.json?v=${encodeURIComponent(D.meta.gerado_em || "")}`, null);
   const M = D.cache.mensal;
@@ -1847,9 +1847,8 @@ async function pgRetornoReal(app, q) {
     if (A.fonte !== "cdi") while (primeiro < n && !(ok(serie[primeiro]) && ok(serie[primeiro - 1]))) primeiro++;
     const anos = RR_PERIODOS.find(([x]) => x === per)[1];
     const anoUlt = +M.ultimo_mes.slice(0, 4), dezIni = M.meses.indexOf(`${anoUlt - anos}-12`);
-    let dezMax = primeiro - 1;   // "Máx.": começa no primeiro fechamento de dezembro com dado
-    while (dezMax < n - 1 && !M.meses[dezMax].endsWith("-12")) dezMax++;
-    const ini = Math.max(primeiro, anos && dezIni >= 0 ? dezIni + 1 : dezMax + 1);
+    // "Plano Real": desde o fechamento de junho de 1994 (o real começou em 1º de julho), ou desde o primeiro mês com dado do ativo
+    const ini = Math.max(primeiro, anos && dezIni >= 0 ? dezIni + 1 : primeiro);
     const r = [];   // retornos mensais: nominal em reais, IPCA, câmbio, em dólar (ativo)
     for (let i = ini; i < n; i++) {
       const fx = M.dolar[i] / M.dolar[i - 1] - 1;
@@ -1865,10 +1864,11 @@ async function pgRetornoReal(app, q) {
     const nom = acum("nom"), ipca = acum("ipca"), fx = acum("fx"), usd = acum("usd"), real = (1 + nom) / (1 + ipca) - 1;
     const anosP = r.length / 12, aa = (v) => (anosP >= 1 ? Math.pow(1 + v, 1 / anosP) - 1 : null);
     const pct = (v, s = true) => ok(v) ? `${s && v > 0 ? "+" : ""}${nf2.format(v * 100)}%` : ND;
+    const desdeReal = M.meses[ini - 1] === "1994-06";
     const inicioTxt = mesBR(M.meses[ini - 1]), fimTxt = mesBR(M.ultimo_mes);
     const corp = $("#rr-corpo");
     corp.innerHTML = `
-      <p class="rr-frase">De ${inicioTxt} a ${fimTxt}, ${esc(A.nome)} rendeu <b>${pct(nom)}</b> em reais. Descontada a inflação, foram <b>${pct(real)}</b>. Em dólares, <b>${pct(usd)}</b>.</p>
+      <p class="rr-frase">${desdeReal ? `Desde o Plano Real (julho de 1994) até ${fimTxt}` : `De ${inicioTxt} a ${fimTxt}`}, ${esc(A.nome)} rendeu <b>${pct(nom)}</b> em reais. Descontada a inflação, foram <b>${pct(real)}</b>. Em dólares, <b>${pct(usd)}</b>.</p>
       <div class="rr-kpis">
         <div class="cartao mapa-kpi rr-k nom"><span>Retorno nominal (R$)</span><b>${pct(nom)}</b><small>${ok(aa(nom)) ? `${pct(aa(nom), false)} ao ano` : "período menor que 1 ano"}</small></div>
         <div class="cartao mapa-kpi rr-k real"><span>Retorno real (descontado o IPCA)</span><b>${pct(real)}</b><small>${ok(aa(real)) ? `${pct(aa(real), false)} ao ano` : ""}</small></div>
@@ -1889,7 +1889,7 @@ async function pgRetornoReal(app, q) {
     const cN = cor("--serie-2"), cR = "#3fb8c4", cU = "#e8862e";
     // acumulado mês a mês; no "ano a ano" a linha usa só o fim de cada ano (e o último mês fechado)
     let a = 1, b = 1, c = 1;
-    const pts = [{ rot: M.meses[ini - 1].endsWith("-12") ? M.meses[ini - 1].slice(0, 4) : inicioTxt, nom: 0, real: 0, usd: 0 }];
+    const pts = [{ rot: desdeReal ? "Plano Real" : M.meses[ini - 1].endsWith("-12") ? M.meses[ini - 1].slice(0, 4) : inicioTxt, nom: 0, real: 0, usd: 0 }];
     r.forEach((x, k) => {
       a *= 1 + x.nom; b *= 1 + x.ipca; c *= 1 + x.usd;
       const fimAno = k === r.length - 1 || r[k + 1].mes.slice(0, 4) !== x.mes.slice(0, 4);

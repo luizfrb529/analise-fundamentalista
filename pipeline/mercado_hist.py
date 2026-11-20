@@ -69,7 +69,22 @@ def b3_indice(cod: str, desde: int) -> list:
                         out.append([dt.date(ano, mes, dia).isoformat(), v])
                     except ValueError:
                         pass
-    return sorted(out)
+    return ajustar_divisoes(sorted(out), cod)
+
+
+def ajustar_divisoes(serie: list, nome: str = "") -> list:
+    """O Ibovespa teve o valor dividido por 10 em fev/1994 e mar/1997 (mudança de base, não queda).
+    Um dia com o índice caindo para cerca de 1/10 do anterior é tratado como divisão: tudo antes dele é dividido por 10."""
+    fatores = []
+    for k in range(1, len(serie)):
+        r = serie[k][1] / serie[k - 1][1] if serie[k - 1][1] else 1
+        if 0.07 <= r <= 0.14:
+            fatores.append(k)
+            print(f"  {nome}: divisão por 10 em {serie[k][0]} (de {serie[k - 1][1]:,.2f} para {serie[k][1]:,.2f}); série anterior ajustada")
+    for k in fatores:
+        for i in range(k):
+            serie[i] = [serie[i][0], serie[i][1] / 10]
+    return serie
 
 
 def yahoo(t: str) -> pd.Series:
@@ -140,6 +155,7 @@ def enxugar(serie: list) -> list:
 
 
 FIM_MES_ITENS = ("ibovespa", "ifix", "sp500", "ouro")
+PLANO_REAL_BASE = "1994-06"   # fechamento de junho de 1994: base do Plano Real (o real começou em 1º de julho)
 
 
 def fim_de_mes(serie: list) -> dict:
@@ -156,7 +172,8 @@ def mensal(fim_mes: dict) -> None:
     mes_atual = hoje.strftime("%Y-%m")
     # CDI do mês composto a partir do CDI diário (SGS 12, % ao dia), mais preciso que a série mensal arredondada
     cdi = {}
-    for x in S.bcb_sgs_periodo(12, 26):
+    anos = hoje.year - 1993
+    for x in S.bcb_sgs_periodo(12, anos):
         try:
             d = pd.to_datetime(x["data"], dayfirst=True)
             cdi.setdefault(d.strftime("%Y-%m"), []).append(float(x["valor"]) / 100)
@@ -168,11 +185,13 @@ def mensal(fim_mes: dict) -> None:
         for r in l:
             f *= 1 + r
         cdi_m[m] = f - 1
-    ipca = {pd.to_datetime(x["data"], dayfirst=True).strftime("%Y-%m"): float(x["valor"]) / 100 for x in S.bcb_sgs_periodo(433, 26)}
-    ptax = {pd.to_datetime(x["data"], dayfirst=True).strftime("%Y-%m"): float(x["valor"]) for x in S.bcb_sgs_periodo(3696, 26)}
+    ipca = {pd.to_datetime(x["data"], dayfirst=True).strftime("%Y-%m"): float(x["valor"]) / 100 for x in S.bcb_sgs_periodo(433, anos)}
+    ptax = {pd.to_datetime(x["data"], dayfirst=True).strftime("%Y-%m"): float(x["valor"]) for x in S.bcb_sgs_periodo(3696, anos)}
+    # até junho de 1994 a PTAX está em cruzeiros reais; R$ 1 = CR$ 2.750 (conversão oficial do Plano Real)
+    ptax = {m: (v / 2750 if m <= "1994-06" else v) for m, v in ptax.items()}
     # último mês fechado: tem IPCA divulgado, PTAX de fim de mês e não é o mês corrente
     ultimo = max(m for m in ipca if m in ptax and m in cdi_m and m < mes_atual)
-    meses = sorted(m for m in cdi_m if m <= ultimo and m in ipca and m in ptax)
+    meses = sorted(m for m in cdi_m if PLANO_REAL_BASE <= m <= ultimo and m in ipca and m in ptax)
     # confere a PTAX de fim de mês com o dólar do Yahoo (fim de mês)
     yus = fim_mes.get("dolar") or {}
     dif = [abs(ptax[m] / yus[m] - 1) for m in meses[-60:] if yus.get(m)]
