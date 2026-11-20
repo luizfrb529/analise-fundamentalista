@@ -1,6 +1,6 @@
 {
  "ticker": "MUTC34",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-20",
  "resumo": "BDR da Micron, fabricante americana de memórias DRAM, HBM e NAND. A receita quadruplicou no ano fiscal 2026 com a demanda de data centers de IA, mas o setor de memória é historicamente cíclico.",
  "modelo": "A Micron projeta e fabrica chips de memória DRAM (incluindo HBM, usada em aceleradores de IA) e memória NAND, vendidos como componentes, módulos e SSDs para provedores de nuvem, fabricantes de servidores, PCs, celulares e carros. A receita depende do volume e do preço da memória, que oscilam com oferta e demanda; parte das vendas agora segue acordos estratégicos plurianuais com volume mínimo garantido (take-or-pay), com bandas de preço e pagamentos antecipados. Tem fábricas nos EUA, Taiwan, Japão, Singapura, Malásia, China e Índia. O BDR MUTC34 é negociado na B3 e representa ações listadas na Nasdaq.",
  "segmentos": [
@@ -91,5 +91,23 @@
    "data": "2026-11-05"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "4T do ano fiscal 2026",
+  "divulgado_em": "2026-09-30",
+  "positivos": [
+   "Receita de US$ 54,2 bi no 4T do ano fiscal 2026, contra US$ 11,3 bi um ano antes (alta de cerca de 379%).",
+   "Margem bruta de 86,8% e lucro líquido de US$ 37,7 bi no trimestre.",
+   "Receita do ano fiscal 2026 de US$ 133,2 bi, contra US$ 37,4 bi em 2025."
+  ],
+  "negativos": [
+   "Obrigações de longo prazo com clientes de US$ 12,9 bi em ago/26, ante US$ 142 mi um ano antes, ligadas aos acordos estratégicos."
+  ],
+  "atencao": [
+   "Projeção para o 1T do ano fiscal 2027: receita de US$ 61,5 bi, mais ou menos US$ 1,5 bi, e margem bruta perto de 86%.",
+   "A diretoria de finanças indicou que o 1T27 deve ser o piso de margem bruta do ano fiscal, com alta de preços desacelerando.",
+   "Próximo resultado em dezembro de 2026."
+  ]
+ },
+ "revisao": "automática"
 }
