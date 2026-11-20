@@ -1,6 +1,6 @@
 {
  "ticker": "MULT3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-20",
  "resumo": "Dona e administradora de 20 shoppings de alto padrão no Brasil, com receita quase toda de aluguel, estacionamento e serviços. Opera só no Brasil e toda a dívida é em reais, 96% atrelada ao CDI.",
  "modelo": "A Multiplan planeja, desenvolve, detém e administra shopping centers, com participação média de 79% em 20 shoppings (905,9 mil m² de ABL e cerca de 6.500 lojas em set/26), entre eles BarraShopping, MorumbiShopping, BH Shopping e ParkShoppingBarigüi, além de duas torres corporativas. A receita recorrente vem de aluguel dos lojistas (mínimo corrigido pelo IGP-DI ou percentual das vendas), estacionamento e taxas de administração. Há ainda receita pontual com incorporação residencial e comercial ao redor dos shoppings e com venda de participações em ativos.",
  "segmentos": [
@@ -97,5 +97,25 @@
    "data": "2026-10-30"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Lucro líquido de R$ 383,2 mi no 3T26, alta de 73,3% sobre o 3T25, com peso da venda de 9,33% do ParkShopping Barigui por R$ 250 mi.",
+   "Ebitda de R$ 598,2 mi, alta de 37,3% sobre o 3T25; sem a venda de imóveis, o Ebitda de propriedades foi de R$ 479,6 mi (+8,6%).",
+   "Vendas dos lojistas de R$ 6,4 bi, alta de 5,9% sobre o 3T25, com aceleração a 8,1% em setembro.",
+   "Dívida líquida/Ebitda de 12 meses de 1,76x em set/26, ante 1,93x em jun/26."
+  ],
+  "negativos": [
+   "Margem de NOI de 91,6% no 3T26, abaixo dos 94,1% do 3T25, embora o NOI tenha subido 2,2%, para R$ 509 mi.",
+   "Ocupação média de 96,0% no 3T26, ante 96,3% no 3T25."
+  ],
+  "atencao": [
+   "O lucro do trimestre inclui ganho pontual da venda de participação no Barigui, que não se repete como base recorrente.",
+   "Inadimplência líquida negativa (-1,0%) no 3T26 reflete recuperação de aluguéis em atraso e sustenta a margem de NOI.",
+   "Evolução do custo médio da dívida (14,16% ao ano em set/26) e das recompras de ações."
+  ]
+ },
+ "revisao": "automática"
 }
