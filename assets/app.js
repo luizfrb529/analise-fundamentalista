@@ -1874,7 +1874,7 @@ async function pgRetornoReal(app, q) {
         <div class="cartao mapa-kpi"><span>IPCA acumulado</span><b>${pct(ipca)}</b><small>${ok(aa(ipca)) ? `${pct(aa(ipca), false)} ao ano` : ""}</small></div>
         <div class="cartao mapa-kpi"><span>Variação do dólar</span><b>${pct(fx)}</b><small>PTAX de R$ ${nf2.format(M.dolar[ini - 1])} para R$ ${nf2.format(M.dolar[n - 1])}</small></div>
       </div>
-      <div class="cartao" style="margin-top:16px"><h3>${vis === "mes" ? "Retorno acumulado" : "Retorno de cada ano"}</h3><div class="grafico rr-graf"><canvas id="g-rr"></canvas></div></div>
+      <div class="cartao" style="margin-top:16px"><h3>Retorno acumulado</h3><p class="sub">${vis === "mes" ? "Mês a mês." : "Posição no fim de cada ano; a tabela abaixo traz o retorno de cada ano."}</p><div class="grafico rr-graf"><canvas id="g-rr"></canvas></div></div>
       ${vis === "ano" ? `<div class="cartao" style="margin-top:16px"><div class="tabela-wrap"><table class="resp"><thead><tr><th>Ano</th><th class="n">Nominal (R$)</th><th class="n">Real</th><th class="n">Em dólar</th><th class="n">IPCA</th><th class="n">Dólar</th></tr></thead><tbody id="rr-tab"></tbody></table></div></div>` : ""}
       <div class="cartao sim-notas" style="margin-top:16px"><h3>Como é calculado</h3><ul>
         <li><b>Nominal:</b> ${esc(A.obs)}</li>
@@ -1885,37 +1885,37 @@ async function pgRetornoReal(app, q) {
     destruirGraficos();
     if (!window.Chart) return;
     const cN = cor("--serie-2"), cR = "#3fb8c4", cU = "#e8862e";
-    if (vis === "mes") {
-      const lab = [inicioTxt, ...r.map((x) => mesBR(x.mes))];
-      const linha = (f) => { const out = [0]; let a = 1, b = 1, c = 1; for (const x of r) { a *= 1 + x.nom; b *= 1 + x.ipca; c *= 1 + x.usd; out.push(f(a, b, c) * 100); } return out; };
-      const ds = [
-        { label: "Nominal (R$)", data: linha((a) => a - 1), borderColor: cN },
-        { label: "Real (descontado o IPCA)", data: linha((a, b) => a / b - 1), borderColor: cR },
-        { label: "Em dólar", data: linha((a, b, c) => c - 1), borderColor: cU },
-      ].map((d) => ({ ...d, borderWidth: 2, pointRadius: 0, tension: 0.15, fill: false }));
-      const o = optGraf({});
-      o.scales.y.ticks.callback = (v) => nf0.format(v) + "%";
-      o.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: ${nf2.format(ctx.parsed.y)}%`;
-      const ROT = { id: "rrRot", afterDatasetsDraw(ch) {
-        const { ctx } = ch; ctx.save(); ctx.font = "700 12px Inter, sans-serif"; ctx.textBaseline = "middle"; ctx.textAlign = "right";
-        ch.data.datasets.forEach((d, i) => { const m = ch.getDatasetMeta(i); if (m.hidden) return; const p = m.data[m.data.length - 1]; ctx.fillStyle = d.borderColor; ctx.fillText(`${nf0.format(d.data[d.data.length - 1])}%`, p.x - 4, p.y - 10); });
-        ctx.restore();
-      } };
-      charts.push(new Chart($("#g-rr"), { type: "line", data: { labels: lab, datasets: ds }, options: o, plugins: [ROT] }));
-    } else {
+    // acumulado mês a mês; no "ano a ano" a linha usa só o fim de cada ano (e o último mês fechado)
+    let a = 1, b = 1, c = 1;
+    const pts = [{ rot: inicioTxt, nom: 0, real: 0, usd: 0 }];
+    r.forEach((x, k) => {
+      a *= 1 + x.nom; b *= 1 + x.ipca; c *= 1 + x.usd;
+      const fimAno = k === r.length - 1 || r[k + 1].mes.slice(0, 4) !== x.mes.slice(0, 4);
+      if (vis === "mes" || fimAno) pts.push({ rot: vis === "mes" ? mesBR(x.mes) : (x.mes.endsWith("-12") ? x.mes.slice(0, 4) : mesBR(x.mes)), nom: (a - 1) * 100, real: (a / b - 1) * 100, usd: (c - 1) * 100 });
+    });
+    const ds = [
+      { label: "Nominal (R$)", data: pts.map((x) => x.nom), borderColor: cN, backgroundColor: cN },
+      { label: "Real (descontado o IPCA)", data: pts.map((x) => x.real), borderColor: cR, backgroundColor: cR },
+      { label: "Em dólar", data: pts.map((x) => x.usd), borderColor: cU, backgroundColor: cU },
+    ].map((d) => ({ ...d, borderWidth: 2.2, pointRadius: vis === "ano" ? 3 : 0, pointHoverRadius: 4, tension: vis === "ano" ? 0.25 : 0.15, fill: false }));
+    const o = optGraf({});
+    o.scales.y.ticks.callback = (v) => nf0.format(v) + "%";
+    o.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: ${nf2.format(ctx.parsed.y)}%`;
+    o.layout = { padding: { right: 44 } };
+    const ROT = { id: "rrRot", afterDatasetsDraw(ch) {
+      const { ctx } = ch; ctx.save(); ctx.font = "700 12px Inter, sans-serif"; ctx.textBaseline = "middle"; ctx.textAlign = "left";
+      // rótulos no fim das linhas, afastados para não encavalar
+      const fins = ch.data.datasets.map((d, i) => { const m = ch.getDatasetMeta(i); const p = m.data[m.data.length - 1]; return { y: p.y, x: p.x, v: d.data[d.data.length - 1], cor: d.borderColor, oculto: m.hidden }; }).filter((f) => !f.oculto).sort((p, q) => p.y - q.y);
+      for (let k = 1; k < fins.length; k++) if (fins[k].y - fins[k - 1].y < 15) fins[k].y = fins[k - 1].y + 15;
+      fins.forEach((f) => { ctx.fillStyle = f.cor; ctx.fillText(`${nf0.format(f.v)}%`, f.x + 6, f.y); });
+      ctx.restore();
+    } };
+    charts.push(new Chart($("#g-rr"), { type: "line", data: { labels: pts.map((x) => x.rot), datasets: ds }, options: o, plugins: [ROT] }));
+    if (vis === "ano") {
       const porAno = {};
       for (const x of r) (porAno[x.mes.slice(0, 4)] ||= []).push(x);
-      const anosL = Object.keys(porAno).sort();
-      const linhas = anosL.map((a) => { const l = porAno[a], nn = acum("nom", l), ii = acum("ipca", l); return { a, nom: nn, real: (1 + nn) / (1 + ii) - 1, usd: acum("usd", l), ipca: ii, fx: acum("fx", l), parcial: l.length < 12 }; });
-      $("#rr-tab").innerHTML = linhas.slice().reverse().map((x) => `<tr><td data-label="Ano">${x.a}${x.parcial ? ` <small class="muted">(até ${mesBR(porAno[x.a][porAno[x.a].length - 1].mes)})</small>` : ""}</td><td class="n ${sinal(x.nom)}" data-label="Nominal (R$)">${pct(x.nom)}</td><td class="n ${sinal(x.real)}" data-label="Real">${pct(x.real)}</td><td class="n ${sinal(x.usd)}" data-label="Em dólar">${pct(x.usd)}</td><td class="n" data-label="IPCA">${pct(x.ipca, false)}</td><td class="n" data-label="Dólar">${pct(x.fx)}</td></tr>`).join("");
-      const o = optGraf({});
-      o.scales.y.ticks.callback = (v) => nf0.format(v) + "%";
-      o.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: ${nf2.format(ctx.parsed.y)}%`;
-      charts.push(new Chart($("#g-rr"), { type: "bar", data: { labels: linhas.map((x) => x.a + (x.parcial ? "*" : "")), datasets: [
-        { label: "Nominal (R$)", data: linhas.map((x) => x.nom * 100), backgroundColor: cN, borderRadius: 3 },
-        { label: "Real (descontado o IPCA)", data: linhas.map((x) => x.real * 100), backgroundColor: cR, borderRadius: 3 },
-        { label: "Em dólar", data: linhas.map((x) => x.usd * 100), backgroundColor: cU, borderRadius: 3 },
-      ] }, options: o }));
+      const linhas = Object.keys(porAno).sort().map((ano) => { const l = porAno[ano], nn = acum("nom", l), ii = acum("ipca", l); return { a: ano, nom: nn, real: (1 + nn) / (1 + ii) - 1, usd: acum("usd", l), ipca: ii, fx: acum("fx", l), parcial: l.length < 12 }; });
+      $("#rr-tab").innerHTML = linhas.slice().reverse().map((x) => `<tr><td data-label="Ano">${x.a}${x.parcial ? ` <small class="muted">(${mesBR(porAno[x.a][0].mes)} a ${mesBR(porAno[x.a][porAno[x.a].length - 1].mes)})</small>` : ""}</td><td class="n ${sinal(x.nom)}" data-label="Nominal (R$)">${pct(x.nom)}</td><td class="n ${sinal(x.real)}" data-label="Real">${pct(x.real)}</td><td class="n ${sinal(x.usd)}" data-label="Em dólar">${pct(x.usd)}</td><td class="n" data-label="IPCA">${pct(x.ipca, false)}</td><td class="n" data-label="Dólar">${pct(x.fx)}</td></tr>`).join("");
     }
   };
   $$("#rr-ativo button").forEach((b) => b.onclick = () => { ativo = b.dataset.v; desenhar(); });
