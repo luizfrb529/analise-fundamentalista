@@ -766,3 +766,22 @@ select { max-width: 100%; }
   .mercados-hoje { position: static; width: auto; max-width: 520px; margin: 0 auto 22px; grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 680px) { .mercados-hoje { margin: 0 0 18px; } .merc-hoje { padding: 8px 10px; } }
+
+/* ---------------- simulador: abas e retorno real e em dólar */
+.sim-abas { margin: 4px 0 16px; }
+.sim-intro { max-width: 820px; margin: 0 0 14px; }
+.rr-ctrl { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+.rr-frase { font-size: 1rem; color: var(--txt-2); margin: 0 0 12px; }
+.rr-frase b { color: var(--txt); }
+.rr-kpis { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.rr-kpis > .cartao { margin: 0 !important; }
+.rr-k.nom { border-top: 3px solid var(--serie-2); } .rr-k.real { border-top: 3px solid #3fb8c4; } .rr-k.usd { border-top: 3px solid #e8862e; }
+.rr-graf { height: 380px; }
+@media (max-width: 1100px) { .rr-kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 680px) {
+  .rr-kpis { grid-template-columns: 1fr 1fr; }
+  .rr-graf { height: 280px; }
+  .rr-ctrl .segmentado { width: 100%; overflow-x: auto; flex-wrap: nowrap; }
+  .rr-ctrl .segmentado button { flex: 1 0 auto; }
+  .sim-abas { display: flex; width: 100%; } .sim-abas button { flex: 1; }
+}

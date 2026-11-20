@@ -1602,7 +1602,7 @@ async function simProventos(t, it, S) {
     temJcp: jcp > 0, temDiv: div > 0,
   };
 }
-async function pgSimulador(app, q) {
+async function pgSimCarteira(app, q) {
   const S = simEstado();
   // carteira recebida por link: v=100000&c=PETR4:20,HGLG11:30
   if (q.get("c")) {
@@ -1613,8 +1613,7 @@ async function pgSimulador(app, q) {
   const todos = [...D.tickers.map((t) => [t, simClasse(t), simNome(t)]), ...D.fiis.map((f) => [f.ticker, simClasse(f.ticker), f.nome])];
   const nfPct = new Intl.NumberFormat("pt-BR", { maximumFractionDigits: 2 });
   const somaPct = () => S.itens.reduce((a, x) => a + (ok(x.pct) ? x.pct : 0), 0);
-  app.innerHTML = `${trilha([["Simulador de carteira"]])}<div class="cab-pagina"><div><h1>Simulador de carteira</h1>
-    <p>Informe quanto quer investir, escolha os ativos e a porcentagem de cada um. A quantidade de cada ativo e a renda estimada se ajustam sozinhas, pelo preço atual e pelos últimos proventos.</p></div></div>
+  app.innerHTML = `<p class="sub sim-intro">Informe quanto quer investir, escolha os ativos e a porcentagem de cada um. A quantidade de cada ativo e a renda estimada se ajustam sozinhas, pelo preço atual e pelos últimos proventos.</p>
   <div class="cartao sim-topo">
     <label class="sim-total"><span>Valor para investir</span><div class="sim-reais"><i>R$</i><input type="text" inputmode="decimal" id="sim-total" value="${S.total ? nf2.format(S.total) : ""}" placeholder="100.000,00" aria-label="Valor para investir em reais"></div></label>
     <div class="sim-add">
@@ -1681,14 +1680,14 @@ async function pgSimulador(app, q) {
   $("#sim-salvar").onclick = () => {
     if (!S.itens.length) { msg.textContent = "A carteira está vazia."; return; }
     const nome = prompt("Nome da carteira:"); if (!nome) return;
-    S.salvas[nome] = { total: S.total, itens: S.itens.map((x) => ({ ...x })) }; simSalvar(S); pgSimulador(app, new URLSearchParams());
+    S.salvas[nome] = { total: S.total, itens: S.itens.map((x) => ({ ...x })) }; simSalvar(S); pgSimCarteira(app, new URLSearchParams());
   };
   $("#sim-carregar").onchange = (e) => {
     const n = e.target.value, c = S.salvas[n]; if (!n || !c) return;
     if (confirm(`Abrir a carteira "${n}"? A carteira atual será substituída (salve antes se quiser mantê-la).\n\nPara apagar a carteira salva, clique em Cancelar e depois em OK na próxima pergunta.`)) {
       if (Array.isArray(c)) { S.itens = c.map((x) => ({ ...x })); } else { S.itens = c.itens.map((x) => ({ ...x })); S.total = c.total || S.total; }
-      simSalvar(S); pgSimulador(app, new URLSearchParams()); return;
-    } else if (confirm(`Apagar a carteira salva "${n}"?`)) { delete S.salvas[n]; simSalvar(S); pgSimulador(app, new URLSearchParams()); return; }
+      simSalvar(S); pgSimCarteira(app, new URLSearchParams()); return;
+    } else if (confirm(`Apagar a carteira salva "${n}"?`)) { delete S.salvas[n]; simSalvar(S); pgSimCarteira(app, new URLSearchParams()); return; }
     e.target.value = "";
   };
   $("#sim-limpar").onclick = () => { if (S.itens.length && confirm("Remover todos os ativos da carteira?")) { S.itens = []; simSalvar(S); dicaPct(); desenhar(); } };
@@ -1804,6 +1803,127 @@ async function pgSimulador(app, q) {
   }
   desenhar();
 }
+/* ---------------- Simulador: abas (carteira e retorno real e em dólar) */
+async function pgSimulador(app, q) {
+  const aba = q.get("aba") === "retorno" ? "retorno" : "carteira";
+  app.innerHTML = `${trilha([["Simulador"]])}<div class="cab-pagina"><div><h1>Simulador</h1></div></div>
+    <div class="segmentado sim-abas" id="sim-abas"><button data-a="carteira" class="${aba === "carteira" ? "ativo" : ""}">Carteira e renda</button><button data-a="retorno" class="${aba === "retorno" ? "ativo" : ""}">Retorno real e em dólar</button></div>
+    <div id="sim-pagina"></div>`;
+  $$("#sim-abas button").forEach((b) => b.onclick = () => { location.hash = b.dataset.a === "retorno" ? "#/simulador?aba=retorno" : "#/simulador"; });
+  const alvo = $("#sim-pagina");
+  if (aba === "retorno") await pgRetornoReal(alvo, q);
+  else await pgSimCarteira(alvo, q);
+}
+const RR_ATIVOS = {
+  cdi: { nome: "CDI", moeda: "BRL", fonte: "cdi", obs: "CDI acumulado mês a mês (Banco Central)." },
+  ibovespa: { nome: "Ibovespa", moeda: "BRL", fonte: "ibovespa", obs: "O Ibovespa é um índice de retorno total: considera os proventos reinvestidos." },
+  ifix: { nome: "IFIX", moeda: "BRL", fonte: "ifix", obs: "O IFIX é um índice de retorno total: considera os rendimentos reinvestidos. Começa em dez/2010." },
+  sp500: { nome: "S&P 500", moeda: "USD", fonte: "sp500", obs: "S&P 500 só pelo preço, sem dividendos; em reais pela PTAX de fim de mês." },
+  ouro: { nome: "Ouro", moeda: "USD", fonte: "ouro", obs: "Ouro pelo contrato futuro em dólares por onça; em reais pela PTAX de fim de mês." },
+};
+const RR_PERIODOS = [["1A", 1], ["3A", 3], ["5A", 5], ["10A", 10], ["15A", 15], ["20A", 20], ["Máx.", 0]];
+async function pgRetornoReal(app, q) {
+  if (!D.cache.mensal) D.cache.mensal = await j(`data/mercado/mensal.json?v=${encodeURIComponent(D.meta.gerado_em || "")}`, null);
+  const M = D.cache.mensal;
+  if (!M || !M.meses) { app.innerHTML = '<div class="cartao"><p class="vazio">Séries mensais indisponíveis.</p></div>'; return; }
+  const st = lsGet("retorno_real_v1", {}) || {};
+  let ativo = RR_ATIVOS[st.ativo] ? st.ativo : "cdi", per = RR_PERIODOS.some(([n]) => n === st.per) ? st.per : "10A", vis = st.vis === "ano" ? "ano" : "mes";
+  const salvar = () => lsSet("retorno_real_v1", { ativo, per, vis });
+  const mesBR = (m) => { const [a, b] = m.split("-"); return `${SIM_MESES[+b - 1]}/${a}`; };
+  app.innerHTML = `<p class="sub sim-intro">Quanto um investimento rendeu de verdade: o retorno em reais (nominal), o retorno descontada a inflação (real, pelo IPCA) e o retorno em dólares (pela variação do câmbio). Atualiza sozinho a cada fechamento de mês; último mês fechado: <b>${mesBR(M.ultimo_mes)}</b>.</p>
+  <div class="rr-ctrl">
+    <div class="segmentado" id="rr-ativo">${Object.entries(RR_ATIVOS).map(([k, a]) => `<button data-v="${k}">${esc(a.nome)}</button>`).join("")}</div>
+    <div class="segmentado" id="rr-per">${RR_PERIODOS.map(([n]) => `<button data-v="${n}">${n}</button>`).join("")}</div>
+    <div class="segmentado" id="rr-vis"><button data-v="mes">Mês a mês</button><button data-v="ano">Ano a ano</button></div>
+  </div>
+  <div id="rr-corpo"></div>`;
+  const desenhar = () => {
+    salvar();
+    $$("#rr-ativo button").forEach((b) => b.classList.toggle("ativo", b.dataset.v === ativo));
+    $$("#rr-per button").forEach((b) => b.classList.toggle("ativo", b.dataset.v === per));
+    $$("#rr-vis button").forEach((b) => b.classList.toggle("ativo", b.dataset.v === vis));
+    const A = RR_ATIVOS[ativo], serie = M[A.fonte], n = M.meses.length;
+    // primeiro mês com dado do ativo (o retorno do mês i usa o valor do mês i-1 como base)
+    let primeiro = 1;
+    if (A.fonte !== "cdi") while (primeiro < n && !(ok(serie[primeiro]) && ok(serie[primeiro - 1]))) primeiro++;
+    const anos = RR_PERIODOS.find(([x]) => x === per)[1];
+    const ini = Math.max(primeiro, anos ? n - anos * 12 : primeiro);
+    const r = [];   // retornos mensais: nominal em reais, IPCA, câmbio, em dólar (ativo)
+    for (let i = ini; i < n; i++) {
+      const fx = M.dolar[i] / M.dolar[i - 1] - 1;
+      let nomBRL, usd;
+      if (A.fonte === "cdi") { nomBRL = M.cdi[i]; usd = (1 + nomBRL) / (1 + fx) - 1; }
+      else {
+        const p = serie[i] / serie[i - 1] - 1;
+        if (A.moeda === "USD") { usd = p; nomBRL = (1 + p) * (1 + fx) - 1; } else { nomBRL = p; usd = (1 + p) / (1 + fx) - 1; }
+      }
+      r.push({ mes: M.meses[i], nom: ok(nomBRL) ? nomBRL : 0, ipca: M.ipca[i], fx, usd: ok(usd) ? usd : 0 });
+    }
+    const acum = (campo, lst = r) => lst.reduce((f, x) => f * (1 + x[campo]), 1) - 1;
+    const nom = acum("nom"), ipca = acum("ipca"), fx = acum("fx"), usd = acum("usd"), real = (1 + nom) / (1 + ipca) - 1;
+    const anosP = r.length / 12, aa = (v) => (anosP >= 1 ? Math.pow(1 + v, 1 / anosP) - 1 : null);
+    const pct = (v, s = true) => ok(v) ? `${s && v > 0 ? "+" : ""}${nf2.format(v * 100)}%` : ND;
+    const inicioTxt = mesBR(M.meses[ini - 1]), fimTxt = mesBR(M.ultimo_mes);
+    const corp = $("#rr-corpo");
+    corp.innerHTML = `
+      <p class="rr-frase">De ${inicioTxt} a ${fimTxt}, ${esc(A.nome)} rendeu <b>${pct(nom)}</b> em reais. Descontada a inflação, foram <b>${pct(real)}</b>. Em dólares, <b>${pct(usd)}</b>.</p>
+      <div class="rr-kpis">
+        <div class="cartao mapa-kpi rr-k nom"><span>Retorno nominal (R$)</span><b>${pct(nom)}</b><small>${ok(aa(nom)) ? `${pct(aa(nom), false)} ao ano` : "período menor que 1 ano"}</small></div>
+        <div class="cartao mapa-kpi rr-k real"><span>Retorno real (descontado o IPCA)</span><b>${pct(real)}</b><small>${ok(aa(real)) ? `${pct(aa(real), false)} ao ano` : ""}</small></div>
+        <div class="cartao mapa-kpi rr-k usd"><span>Retorno em dólar</span><b>${pct(usd)}</b><small>${ok(aa(usd)) ? `${pct(aa(usd), false)} ao ano` : ""}</small></div>
+        <div class="cartao mapa-kpi"><span>IPCA acumulado</span><b>${pct(ipca)}</b><small>${ok(aa(ipca)) ? `${pct(aa(ipca), false)} ao ano` : ""}</small></div>
+        <div class="cartao mapa-kpi"><span>Variação do dólar</span><b>${pct(fx)}</b><small>PTAX de R$ ${nf2.format(M.dolar[ini - 1])} para R$ ${nf2.format(M.dolar[n - 1])}</small></div>
+      </div>
+      <div class="cartao" style="margin-top:16px"><h3>${vis === "mes" ? "Retorno acumulado" : "Retorno de cada ano"}</h3><div class="grafico rr-graf"><canvas id="g-rr"></canvas></div></div>
+      ${vis === "ano" ? `<div class="cartao" style="margin-top:16px"><div class="tabela-wrap"><table class="resp"><thead><tr><th>Ano</th><th class="n">Nominal (R$)</th><th class="n">Real</th><th class="n">Em dólar</th><th class="n">IPCA</th><th class="n">Dólar</th></tr></thead><tbody id="rr-tab"></tbody></table></div></div>` : ""}
+      <div class="cartao sim-notas" style="margin-top:16px"><h3>Como é calculado</h3><ul>
+        <li><b>Nominal:</b> ${esc(A.obs)}</li>
+        <li><b>Real:</b> (1 + retorno nominal) / (1 + IPCA do período) - 1. IPCA do IBGE, mês a mês.</li>
+        <li><b>Em dólar:</b> (1 + retorno nominal em reais) / (1 + variação da PTAX de fim de mês) - 1${A.moeda === "USD" ? "; para ativo cotado em dólar, é a própria variação em dólares" : ""}.</li>
+        <li><b>Período:</b> do fechamento de ${inicioTxt} ao de ${fimTxt}; só meses fechados entram. ${vis === "ano" ? "No ano corrente, o retorno vai até o último mês fechado." : ""}</li>
+      </ul><p class="sub">Fontes: Banco Central (CDI, IPCA e PTAX), B3 (Ibovespa e IFIX) e Yahoo Finance (S&P 500 e ouro). Retorno passado não garante retorno futuro.</p></div>`;
+    destruirGraficos();
+    if (!window.Chart) return;
+    const cN = cor("--serie-2"), cR = "#3fb8c4", cU = "#e8862e";
+    if (vis === "mes") {
+      const lab = [inicioTxt, ...r.map((x) => mesBR(x.mes))];
+      const linha = (f) => { const out = [0]; let a = 1, b = 1, c = 1; for (const x of r) { a *= 1 + x.nom; b *= 1 + x.ipca; c *= 1 + x.usd; out.push(f(a, b, c) * 100); } return out; };
+      const ds = [
+        { label: "Nominal (R$)", data: linha((a) => a - 1), borderColor: cN },
+        { label: "Real (descontado o IPCA)", data: linha((a, b) => a / b - 1), borderColor: cR },
+        { label: "Em dólar", data: linha((a, b, c) => c - 1), borderColor: cU },
+      ].map((d) => ({ ...d, borderWidth: 2, pointRadius: 0, tension: 0.15, fill: false }));
+      const o = optGraf({});
+      o.scales.y.ticks.callback = (v) => nf0.format(v) + "%";
+      o.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: ${nf2.format(ctx.parsed.y)}%`;
+      const ROT = { id: "rrRot", afterDatasetsDraw(ch) {
+        const { ctx } = ch; ctx.save(); ctx.font = "700 12px Inter, sans-serif"; ctx.textBaseline = "middle"; ctx.textAlign = "right";
+        ch.data.datasets.forEach((d, i) => { const m = ch.getDatasetMeta(i); if (m.hidden) return; const p = m.data[m.data.length - 1]; ctx.fillStyle = d.borderColor; ctx.fillText(`${nf0.format(d.data[d.data.length - 1])}%`, p.x - 4, p.y - 10); });
+        ctx.restore();
+      } };
+      charts.push(new Chart($("#g-rr"), { type: "line", data: { labels: lab, datasets: ds }, options: o, plugins: [ROT] }));
+    } else {
+      const porAno = {};
+      for (const x of r) (porAno[x.mes.slice(0, 4)] ||= []).push(x);
+      const anosL = Object.keys(porAno).sort();
+      const linhas = anosL.map((a) => { const l = porAno[a], nn = acum("nom", l), ii = acum("ipca", l); return { a, nom: nn, real: (1 + nn) / (1 + ii) - 1, usd: acum("usd", l), ipca: ii, fx: acum("fx", l), parcial: l.length < 12 }; });
+      $("#rr-tab").innerHTML = linhas.slice().reverse().map((x) => `<tr><td data-label="Ano">${x.a}${x.parcial ? ` <small class="muted">(até ${mesBR(porAno[x.a][porAno[x.a].length - 1].mes)})</small>` : ""}</td><td class="n ${sinal(x.nom)}" data-label="Nominal (R$)">${pct(x.nom)}</td><td class="n ${sinal(x.real)}" data-label="Real">${pct(x.real)}</td><td class="n ${sinal(x.usd)}" data-label="Em dólar">${pct(x.usd)}</td><td class="n" data-label="IPCA">${pct(x.ipca, false)}</td><td class="n" data-label="Dólar">${pct(x.fx)}</td></tr>`).join("");
+      const o = optGraf({});
+      o.scales.y.ticks.callback = (v) => nf0.format(v) + "%";
+      o.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: ${nf2.format(ctx.parsed.y)}%`;
+      charts.push(new Chart($("#g-rr"), { type: "bar", data: { labels: linhas.map((x) => x.a + (x.parcial ? "*" : "")), datasets: [
+        { label: "Nominal (R$)", data: linhas.map((x) => x.nom * 100), backgroundColor: cN, borderRadius: 3 },
+        { label: "Real (descontado o IPCA)", data: linhas.map((x) => x.real * 100), backgroundColor: cR, borderRadius: 3 },
+        { label: "Em dólar", data: linhas.map((x) => x.usd * 100), backgroundColor: cU, borderRadius: 3 },
+      ] }, options: o }));
+    }
+  };
+  $$("#rr-ativo button").forEach((b) => b.onclick = () => { ativo = b.dataset.v; desenhar(); });
+  $$("#rr-per button").forEach((b) => b.onclick = () => { per = b.dataset.v; desenhar(); });
+  $$("#rr-vis button").forEach((b) => b.onclick = () => { vis = b.dataset.v; desenhar(); });
+  desenhar();
+}
+
 /* =====================================================================
    CALENDÁRIO DE RESULTADOS
    ===================================================================== */

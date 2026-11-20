@@ -139,9 +139,62 @@ def enxugar(serie: list) -> list:
     return antigo + novo
 
 
+FIM_MES_ITENS = ("ibovespa", "ifix", "sp500", "ouro")
+
+
+def fim_de_mes(serie: list) -> dict:
+    """Último valor de cada mês: {'AAAA-MM': valor}."""
+    out = {}
+    for d, v in serie:
+        out[d[:7]] = v
+    return out
+
+
+def mensal(fim_mes: dict) -> None:
+    """Séries mensais para o simulador de retorno real e em dólar (só meses fechados)."""
+    hoje = dt.date.today()
+    mes_atual = hoje.strftime("%Y-%m")
+    # CDI do mês composto a partir do CDI diário (SGS 12, % ao dia), mais preciso que a série mensal arredondada
+    cdi = {}
+    for x in S.bcb_sgs_periodo(12, 26):
+        try:
+            d = pd.to_datetime(x["data"], dayfirst=True)
+            cdi.setdefault(d.strftime("%Y-%m"), []).append(float(x["valor"]) / 100)
+        except (ValueError, TypeError):
+            pass
+    cdi_m = {}
+    for m, l in cdi.items():
+        f = 1.0
+        for r in l:
+            f *= 1 + r
+        cdi_m[m] = f - 1
+    ipca = {pd.to_datetime(x["data"], dayfirst=True).strftime("%Y-%m"): float(x["valor"]) / 100 for x in S.bcb_sgs_periodo(433, 26)}
+    ptax = {pd.to_datetime(x["data"], dayfirst=True).strftime("%Y-%m"): float(x["valor"]) for x in S.bcb_sgs_periodo(3696, 26)}
+    # último mês fechado: tem IPCA divulgado, PTAX de fim de mês e não é o mês corrente
+    ultimo = max(m for m in ipca if m in ptax and m in cdi_m and m < mes_atual)
+    meses = sorted(m for m in cdi_m if m <= ultimo and m in ipca and m in ptax)
+    # confere a PTAX de fim de mês com o dólar do Yahoo (fim de mês)
+    yus = fim_mes.get("dolar") or {}
+    dif = [abs(ptax[m] / yus[m] - 1) for m in meses[-60:] if yus.get(m)]
+    if dif:
+        print(f"PTAX x Yahoo (60 meses): diferença máxima {max(dif):.2%}")
+    out = {"atualizado_em": hoje.isoformat(), "ultimo_mes": ultimo, "meses": meses,
+           "cdi": [round(cdi_m[m], 8) for m in meses], "ipca": [ipca[m] for m in meses], "dolar": [ptax[m] for m in meses],
+           "fontes": {"cdi": "Banco Central, SGS 12 (CDI diário), composto por mês", "ipca": "IBGE via Banco Central, SGS 433",
+                      "dolar": "Banco Central, SGS 3696 (PTAX de venda, fim de mês)", "ibovespa": "B3 (fechamento do último pregão do mês)",
+                      "ifix": "B3 (fechamento do último pregão do mês)", "sp500": "Yahoo Finance (fechamento do mês, em dólares)",
+                      "ouro": "Yahoo Finance (contrato futuro, fechamento do mês, em dólares por onça)"}}
+    for k in FIM_MES_ITENS:
+        fm = fim_mes.get(k) or {}
+        out[k] = [fm.get(m) for m in meses]
+    (SAIDA / "mensal.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    print(f"mensal: {meses[0]} a {ultimo} ({len(meses)} meses)")
+
+
 def main():
     SAIDA.mkdir(parents=True, exist_ok=True)
     falhas = []
+    fim_mes = {}
     for k, c in ITENS.items():
         extra = {}
         try:
@@ -171,6 +224,7 @@ def main():
             print(f"{k}: série curta ({len(serie)}), mantém o arquivo anterior")
             falhas.append(k)
             continue
+        fim_mes[k] = fim_de_mes(serie)
         out = {"chave": k, "nome": c["nome"], "unidade": c["unidade"], "fonte": fonte, "atualizado_em": HOJE.isoformat(),
                "serie": enxugar(serie), **extra}
         if c.get("focus"):
@@ -179,6 +233,11 @@ def main():
                 out["projecao"] = f
         (SAIDA / f"{k}.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         print(f"{k}: {len(out['serie'])} pontos de {out['serie'][0][0]} a {out['serie'][-1][0]}{' + Focus' if out.get('projecao') else ''}")
+    try:
+        mensal(fim_mes)
+    except Exception as e:
+        print("mensal:", e)
+        falhas.append("mensal")
     if falhas:
         print("falharam:", falhas)
 
