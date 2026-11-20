@@ -785,3 +785,8 @@ select { max-width: 100%; }
   .rr-ctrl .segmentado button { flex: 1 0 auto; }
   .sim-abas { display: flex; width: 100%; } .sim-abas button { flex: 1; }
 }
+
+.rr-comp { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin: 10px 0 4px; font-size: .82rem; color: var(--txt-2); }
+.rr-comp > span { color: var(--txt-3); font-weight: 600; }
+.rr-comp label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.rr-comp i { width: 18px; height: 0; border-top: 2px dashed; display: inline-block; }

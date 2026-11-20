@@ -1821,6 +1821,13 @@ const RR_ATIVOS = {
   sp500: { nome: "S&P 500", moeda: "USD", fonte: "sp500", obs: "S&P 500 só pelo preço, sem dividendos; em reais pela PTAX de fim de mês." },
   ouro: { nome: "Ouro", moeda: "USD", fonte: "ouro", obs: "Ouro pelo contrato futuro em dólares por onça; em reais pela PTAX de fim de mês." },
 };
+// linhas de comparação, todas em reais (para comparar com a linha nominal do ativo)
+const RR_COMP = {
+  dolar: { nome: "Dólar (só câmbio)", cor: "#9aa3ad", taxa: 0 },
+  dolar4: { nome: "Dólar + 4% ao ano", cor: "#c678dd", taxa: 0.04 },
+  dolar5: { nome: "Dólar + 5% ao ano", cor: "#e06c9f", taxa: 0.05 },
+  sp500: { nome: "S&P 500 em R$", cor: "#4fbf7a", sp: true },
+};
 const RR_PERIODOS = [["1A", 1], ["3A", 3], ["5A", 5], ["10A", 10], ["15A", 15], ["20A", 20], ["30A", 30], ["Plano Real", 0]];
 async function pgRetornoReal(app, q) {
   if (!D.cache.mensal) D.cache.mensal = await j(`data/mercado/mensal.json?v=${encodeURIComponent(D.meta.gerado_em || "")}`, null);
@@ -1829,7 +1836,8 @@ async function pgRetornoReal(app, q) {
   const st = lsGet("retorno_real_v1", {}) || {};
   let ativo = RR_ATIVOS[st.ativo] ? st.ativo : "cdi", per = RR_PERIODOS.some(([n]) => n === st.per) ? st.per : "10A";
   const vis = "ano";
-  const salvar = () => lsSet("retorno_real_v1", { ativo, per });
+  let comp = new Set(Array.isArray(st.comp) ? st.comp.filter((k) => RR_COMP[k]) : []);
+  const salvar = () => lsSet("retorno_real_v1", { ativo, per, comp: [...comp] });
   const mesBR = (m) => { const [a, b] = m.split("-"); return `${SIM_MESES[+b - 1]}/${a}`; };
   app.innerHTML = `<p class="sub sim-intro">Quanto um investimento rendeu de verdade: o retorno em reais (nominal), o retorno descontada a inflação (real, pelo IPCA) e o retorno em dólares (pela variação do câmbio). Atualiza sozinho a cada fechamento de mês; último mês fechado: <b>${mesBR(M.ultimo_mes)}</b>.</p>
   <div class="rr-ctrl">
@@ -1858,7 +1866,8 @@ async function pgRetornoReal(app, q) {
         const p = serie[i] / serie[i - 1] - 1;
         if (A.moeda === "USD") { usd = p; nomBRL = (1 + p) * (1 + fx) - 1; } else { nomBRL = p; usd = (1 + p) / (1 + fx) - 1; }
       }
-      r.push({ mes: M.meses[i], nom: ok(nomBRL) ? nomBRL : 0, ipca: M.ipca[i], fx, usd: ok(usd) ? usd : 0 });
+      const sp = ok(M.sp500[i]) && ok(M.sp500[i - 1]) ? M.sp500[i] / M.sp500[i - 1] - 1 : 0;
+      r.push({ mes: M.meses[i], nom: ok(nomBRL) ? nomBRL : 0, ipca: M.ipca[i], fx, usd: ok(usd) ? usd : 0, sp });
     }
     const acum = (campo, lst = r) => lst.reduce((f, x) => f * (1 + x[campo]), 1) - 1;
     const nom = acum("nom"), ipca = acum("ipca"), fx = acum("fx"), usd = acum("usd"), real = (1 + nom) / (1 + ipca) - 1;
@@ -1876,12 +1885,14 @@ async function pgRetornoReal(app, q) {
         <div class="cartao mapa-kpi"><span>IPCA acumulado</span><b>${pct(ipca)}</b><small>${ok(aa(ipca)) ? `${pct(aa(ipca), false)} ao ano` : ""}</small></div>
         <div class="cartao mapa-kpi"><span>Variação do dólar</span><b>${pct(fx)}</b><small>PTAX de R$ ${nf2.format(M.dolar[ini - 1])} para R$ ${nf2.format(M.dolar[n - 1])}</small></div>
       </div>
-      <div class="cartao" style="margin-top:16px"><h3>Retorno acumulado</h3><p class="sub">Posição no fechamento de cada ano. O ano corrente vai até o último mês fechado (${mesBR(M.ultimo_mes)}). A tabela abaixo traz o retorno de cada ano.</p><div class="grafico rr-graf"><canvas id="g-rr"></canvas></div></div>
+      <div class="cartao" style="margin-top:16px"><h3>Retorno acumulado</h3><p class="sub">Posição no fechamento de cada ano. O ano corrente vai até o último mês fechado (${mesBR(M.ultimo_mes)}). A tabela abaixo traz o retorno de cada ano.</p>
+      <div class="rr-comp" id="rr-comp"><span>Comparar com (em reais):</span>${Object.entries(RR_COMP).filter(([k]) => !(k === "sp500" && ativo === "sp500")).map(([k, c]) => `<label><input type="checkbox" value="${k}"><i style="border-color:${c.cor}"></i>${esc(c.nome)}</label>`).join("")}</div><div class="grafico rr-graf"><canvas id="g-rr"></canvas></div></div>
       ${vis === "ano" ? `<div class="cartao" style="margin-top:16px"><div class="tabela-wrap"><table class="resp"><thead><tr><th>Ano</th><th class="n">Nominal (R$)</th><th class="n">Real</th><th class="n">Em dólar</th><th class="n">IPCA</th><th class="n">Dólar</th></tr></thead><tbody id="rr-tab"></tbody></table></div></div>` : ""}
       <div class="cartao sim-notas" style="margin-top:16px"><h3>Como é calculado</h3><ul>
         <li><b>Nominal:</b> ${esc(A.obs)}</li>
         <li><b>Real:</b> (1 + retorno nominal) / (1 + IPCA do período) - 1. IPCA do IBGE, mês a mês.</li>
         <li><b>Em dólar:</b> (1 + retorno nominal em reais) / (1 + variação da PTAX de fim de mês) - 1${A.moeda === "USD" ? "; para ativo cotado em dólar, é a própria variação em dólares" : ""}.</li>
+        <li><b>Comparações (linhas tracejadas, em reais):</b> "Dólar (só câmbio)" é a variação da PTAX; "Dólar + 4%" e "Dólar + 5%" somam ao câmbio um rendimento de 4% ou 5% ao ano em dólares (por exemplo, um título americano); "S&P 500 em R$" é o índice em dólares convertido pela PTAX, só pelo preço, sem dividendos. Servem para comparar com a linha nominal.</li>
         <li><b>Período:</b> do fechamento de ${inicioTxt} ao de ${fimTxt}; só meses fechados entram. ${vis === "ano" ? "No ano corrente, o retorno vai até o último mês fechado." : ""}</li>
       </ul><p class="sub">Fontes: Banco Central (CDI, IPCA e PTAX), B3 (Ibovespa e IFIX) e Yahoo Finance (S&P 500 e ouro). Retorno passado não garante retorno futuro.</p></div>`;
     destruirGraficos();
@@ -1889,17 +1900,25 @@ async function pgRetornoReal(app, q) {
     const cN = cor("--serie-2"), cR = "#3fb8c4", cU = "#e8862e";
     // acumulado mês a mês; no "ano a ano" a linha usa só o fim de cada ano (e o último mês fechado)
     let a = 1, b = 1, c = 1;
-    const pts = [{ rot: desdeReal ? "Plano Real" : M.meses[ini - 1].endsWith("-12") ? M.meses[ini - 1].slice(0, 4) : inicioTxt, nom: 0, real: 0, usd: 0 }];
+    const ac = Object.fromEntries(Object.keys(RR_COMP).map((k) => [k, 1]));
+    const pts = [{ rot: desdeReal ? "Plano Real" : M.meses[ini - 1].endsWith("-12") ? M.meses[ini - 1].slice(0, 4) : inicioTxt, nom: 0, real: 0, usd: 0, comp: Object.fromEntries(Object.keys(RR_COMP).map((k) => [k, 0])) }];
     r.forEach((x, k) => {
       a *= 1 + x.nom; b *= 1 + x.ipca; c *= 1 + x.usd;
+      for (const [kk, cfg] of Object.entries(RR_COMP)) ac[kk] *= cfg.sp ? (1 + x.sp) * (1 + x.fx) : (1 + x.fx) * Math.pow(1 + cfg.taxa, 1 / 12);
       const fimAno = k === r.length - 1 || r[k + 1].mes.slice(0, 4) !== x.mes.slice(0, 4);
-      if (vis === "mes" || fimAno) pts.push({ rot: vis === "mes" ? mesBR(x.mes) : (x.mes.endsWith("-12") ? x.mes.slice(0, 4) : mesBR(x.mes)), nom: (a - 1) * 100, real: (a / b - 1) * 100, usd: (c - 1) * 100 });
+      if (vis === "mes" || fimAno) pts.push({ rot: vis === "mes" ? mesBR(x.mes) : (x.mes.endsWith("-12") ? x.mes.slice(0, 4) : mesBR(x.mes)), nom: (a - 1) * 100, real: (a / b - 1) * 100, usd: (c - 1) * 100, comp: Object.fromEntries(Object.keys(RR_COMP).map((kk) => [kk, (ac[kk] - 1) * 100])) });
     });
     const ds = [
       { label: "Nominal (R$)", data: pts.map((x) => x.nom), borderColor: cN, backgroundColor: cN },
       { label: "Real (descontado o IPCA)", data: pts.map((x) => x.real), borderColor: cR, backgroundColor: cR },
       { label: "Em dólar", data: pts.map((x) => x.usd), borderColor: cU, backgroundColor: cU },
     ].map((d) => ({ ...d, borderWidth: 2.2, pointRadius: vis === "ano" ? 3 : 0, pointHoverRadius: 4, tension: vis === "ano" ? 0.25 : 0.15, fill: false }));
+    for (const k of comp) {
+      if (k === "sp500" && ativo === "sp500") continue;
+      const cfg = RR_COMP[k];
+      ds.push({ label: cfg.nome, data: pts.map((x) => x.comp[k]), borderColor: cfg.cor, backgroundColor: cfg.cor, borderWidth: 1.8, borderDash: [6, 4], pointRadius: 2, pointHoverRadius: 4, tension: 0.25, fill: false });
+    }
+    $$("#rr-comp input").forEach((i) => { i.checked = comp.has(i.value); i.onchange = () => { if (i.checked) comp.add(i.value); else comp.delete(i.value); desenhar(); }; });
     const o = optGraf({});
     o.scales.y.ticks.callback = (v) => nf0.format(v) + "%";
     o.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: ${nf2.format(ctx.parsed.y)}%`;
