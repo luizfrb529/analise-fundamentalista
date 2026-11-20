@@ -1,6 +1,6 @@
 {
  "ticker": "SPCX34",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-20",
  "resumo": "BDR da SpaceX, que reúne lançamentos espaciais, internet via satélite Starlink e o negócio de IA (antiga xAI, com Grok, X e Cursor). A receita é em dólar e o investimento em data centers é muito alto.",
  "modelo": "A SpaceX opera três segmentos: Space (lançamentos com Falcon 9, Falcon Heavy e Starship e missões para a NASA e o governo dos EUA), Connectivity (internet via satélite Starlink para consumidores, empresas, aviação e governos em 174 países e territórios) e Super Intelligence, ou SI (infraestrutura de IA para empresas, o modelo Grok, a plataforma de programação Cursor e a rede social X). A Starlink gera receita recorrente por assinatura; lançamentos são contratos de preço fixo; a SI combina contratos de nuvem, assinaturas e publicidade. A empresa abriu capital em junho de 2026 e o BDR SPCX34 representa ações listadas na Nasdaq.",
  "segmentos": [
@@ -85,5 +85,24 @@
    "data": "2026-10-20"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-20",
+  "positivos": [
+   "Receita de US$ 14,58 bi no 3T26, alta de 161% sobre o 3T25.",
+   "Starlink com 13,6 milhões de assinantes consumidores em set/26, ante 7,2 milhões um ano antes (+1,6 milhão no trimestre).",
+   "Lucro operacional de US$ 2,79 bi no 3T26, contra prejuízo operacional de US$ 273 mi no 3T25."
+  ],
+  "negativos": [
+   "Capex de US$ 19,6 bi no 3T26 e de US$ 48,1 bi nos 9M26, em forte alta.",
+   "Nos 9M26 houve prejuízo líquido de US$ 413 mi, apesar do lucro do 3T26."
+  ],
+  "atencao": [
+   "O lucro líquido do 3T26 teve ajuda de receitas financeiras, de ganho com a Boring Company (US$ 561 mi) e de benefício fiscal, itens pontuais.",
+   "Integração da xAI e da Cursor e o ritmo de investimento em inteligência artificial.",
+   "Projeção da empresa de receita de US$ 33 a 37 bi no 1T27, segundo a imprensa."
+  ]
+ },
+ "revisao": "automática"
 }
