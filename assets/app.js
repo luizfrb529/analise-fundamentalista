@@ -2569,19 +2569,24 @@ function faixaMercado() {
 }
 function animarFaixa() {
   const faixa = $("#faixa"), trilho = $("#faixa-trilho");
-  const parado = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const passo = (ts) => {
+  // mesma velocidade sempre, independente das configurações de movimento do aparelho
+  const velocidade = 0.045;
+  const avancar = (ts) => {
     const dt = FAIXA.ultimo ? Math.min(64, ts - FAIXA.ultimo) : 0;
     FAIXA.ultimo = ts;
-    if (!FAIXA.pausado && !FAIXA.arrastando && !parado) FAIXA.x -= dt * 0.045;
+    if (!FAIXA.pausado && !FAIXA.arrastando) FAIXA.x -= dt * velocidade;
     const meio = trilho.scrollWidth / 2;
     if (meio > 0) { while (FAIXA.x <= -meio) FAIXA.x += meio; while (FAIXA.x > 0) FAIXA.x -= meio; }
     trilho.style.transform = `translate3d(${FAIXA.x}px,0,0)`;
-    requestAnimationFrame(passo);
   };
+  const passo = (ts) => { FAIXA.quadro = performance.now(); avancar(performance.now()); requestAnimationFrame(passo); };
   requestAnimationFrame(passo);
-  faixa.addEventListener("mouseenter", () => { FAIXA.pausado = true; });
-  faixa.addEventListener("mouseleave", () => { FAIXA.pausado = false; });
+  // plano B: se o aparelho suspender a animação (economia de bateria, app em segundo plano que volta), um relógio mantém a faixa andando
+  setInterval(() => { if (!document.hidden && performance.now() - (FAIXA.quadro || 0) > 250) avancar(performance.now()); }, 40);
+  // só o mouse pausa ao passar por cima; no celular o toque não deixa a faixa parada
+  faixa.addEventListener("pointerenter", (e) => { if (e.pointerType === "mouse") FAIXA.pausado = true; });
+  faixa.addEventListener("pointerleave", (e) => { if (e.pointerType === "mouse") FAIXA.pausado = false; });
+  document.addEventListener("visibilitychange", () => { FAIXA.ultimo = 0; if (!matchMedia("(hover: hover)").matches) FAIXA.pausado = false; });
   faixa.addEventListener("pointerdown", (e) => { FAIXA.arrastando = true; FAIXA.ultX = e.clientX; FAIXA.moveu = 0; faixa.setPointerCapture(e.pointerId); faixa.classList.add("arrastando"); });
   faixa.addEventListener("pointermove", (e) => { if (!FAIXA.arrastando) return; const d = e.clientX - FAIXA.ultX; FAIXA.x += d; FAIXA.moveu += Math.abs(d); FAIXA.ultX = e.clientX; });
   const soltar = (e) => {
