@@ -1,6 +1,6 @@
 {
  "ticker": "P2LT34",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-20",
  "resumo": "BDR da Palantir, de software de análise de dados e IA para governos e empresas. Cerca de 81% da receita vem dos EUA e o BDR acompanha a ação em dólar e o câmbio.",
  "modelo": "A Palantir vende plataformas de software para integrar e analisar dados e operar IA: Gotham (defesa e inteligência), Foundry (empresas), AIP (plataforma de IA generativa) e Apollo (implantação). Os clientes são órgãos de governo, sobretudo dos EUA, e empresas de setores como indústria, saúde e energia. A receita vem de contratos plurianuais de assinatura e serviços associados, em grande parte recorrente, mas muitos contratos permitem rescisão. O BDR P2LT34 é negociado na B3 e representa ações listadas na Nasdaq.",
  "segmentos": [
@@ -79,5 +79,24 @@
    "data": "2026-11-03"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-02",
+  "positivos": [
+   "Receita de US$ 2,31 bi no 3T26, alta de 96% sobre o 3T25, primeira vez acima de US$ 2 bi em um trimestre.",
+   "Lucro operacional contábil de US$ 1,08 bi (margem de 47%) e lucro líquido de US$ 1,13 bi, ante US$ 476 mi no 3T25.",
+   "Projeção de receita de 2026 elevada para US$ 8,53 bi (alta de cerca de 91%) e de fluxo de caixa livre ajustado para US$ 4,8 a 5,0 bi.",
+   "Receita comercial nos EUA de US$ 984 mi, alta de 148% sobre o 3T25."
+  ],
+  "negativos": [
+   "Valor total de contratos fechados (TCV) de US$ 2,92 bi, alta de apenas 6%, bem abaixo do ritmo da receita.",
+   "TCV comercial nos EUA de US$ 1,46 bi, alta de 11% sobre o 3T25, contra 148% de alta da receita do segmento."
+  ],
+  "atencao": [
+   "Descompasso entre o crescimento da receita e o de novos contratos.",
+   "Projeção de receita de US$ 2,649 a 2,653 bi para o 4T26."
+  ]
+ },
+ "revisao": "automática"
 }
