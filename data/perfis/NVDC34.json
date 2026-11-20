@@ -1,6 +1,6 @@
 {
  "ticker": "NVDC34",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-20",
  "resumo": "BDR da NVIDIA, líder em chips e sistemas para inteligência artificial; 93% da receita vem de data centers. Jensen Huang deixou o comando em 11/11/2026 e a CFO Colette Kress é CEO interina.",
  "modelo": "A NVIDIA projeta, sem fábricas próprias, processadores gráficos (GPUs), CPUs, redes e sistemas completos de data center (plataformas Blackwell e Vera Rubin) usados para treinar e rodar modelos de IA, além de software como CUDA. Os principais clientes são grandes provedores de nuvem, laboratórios de IA e empresas; a receita vem da venda de hardware em grandes pedidos, concentrada em poucos clientes. Também vende GPUs para estações de trabalho, PCs, carros e robótica (Edge Computing). O BDR NVDC34 é negociado na B3 e representa ações listadas na Nasdaq.",
  "segmentos": [
@@ -36,7 +36,7 @@
   "divida_em_dolar": "baixa",
   "texto": "Vendas e resultados são em dólar e o BDR replica a ação em dólar convertida para reais, então a alta do dólar valoriza o BDR na B3. A dívida de longo prazo subiu para US$ 32,4 bilhões em out/26 após emissão de US$ 25 bilhões em jun/26, pequena frente ao lucro trimestral de US$ 65 bilhões e aos US$ 53,5 bilhões em caixa."
  },
- "momento": "No 3T do ano fiscal 2027 (encerrado em 25/10/2026 e divulgado em 17/11/2026), a receita foi recorde, de US$ 115,8 bilhões (alta de 103% no ano e de 20% no trimestre), com margem bruta de 74,8% e lucro líquido de US$ 65,3 bilhões (alta de 105%). A receita de data center cresceu 110%, para US$ 107,6 bilhões, com o início das entregas da plataforma Vera Rubin. A projeção para o 4T (com uma semana a mais) é de receita de US$ 130 bilhões, mais ou menos 3%, e margem bruta de 71% a 72%. Em 11/11/2026, Jensen Huang renunciou ao cargo de CEO e ao conselho, sem motivo divulgado pela empresa; Colette Kress acumula CEO interina e CFO, e Harvey Jones virou o primeiro presidente do conselho. A empresa devolveu US$ 28,1 bilhões aos acionistas no trimestre, tem compromissos de compra e capacidade de US$ 518 bilhões e anunciou acordo para comprar a Hugging Face.",
+ "momento": "No 3T do ano fiscal 2027 (encerrado em 25/10/2026 e divulgado em 17/11/2026), a receita foi recorde, de US$ 115,8 bilhões (alta de 103% no ano e de 20% no trimestre), com margem bruta de 74,8% e lucro líquido de US$ 65,3 bilhões (alta de 105%). A receita de data center cresceu 110%, para US$ 107,6 bilhões, com o início das entregas da plataforma Vera Rubin. A projeção para o 4T (com uma semana a mais) é de receita de US$ 130 bilhões, mais ou menos 3%, e margem bruta de 71% a 72%. Em 12/11/2026, Jensen Huang renunciou ao cargo de CEO e ao conselho, sem motivo divulgado pela empresa; Colette Kress acumula CEO interina e CFO, e Harvey Jones virou o primeiro presidente do conselho. A empresa devolveu US$ 28,1 bilhões aos acionistas no trimestre, tem compromissos de compra e capacidade de US$ 518 bilhões e anunciou acordo para comprar a Hugging Face.",
  "sensibilidade": {
   "selic_caindo": {
    "nota": 0,
@@ -105,5 +105,23 @@
    "data": "2026-11-11"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "3T do ano fiscal 2027",
+  "divulgado_em": "2026-11-17",
+  "positivos": [
+   "Receita recorde de US$ 115,8 bi, alta de 103% sobre o ano anterior e de 20% sobre o trimestre anterior.",
+   "Receita de data center de US$ 107,6 bi, alta de 110%, com início das entregas da plataforma Vera Rubin.",
+   "Lucro líquido de US$ 65,3 bi, alta de 105%; margem bruta de 74,8%."
+  ],
+  "negativos": [
+   "Projeção de margem bruta de 71% a 72% no 4T, abaixo dos 74,8% do 3T."
+  ],
+  "atencao": [
+   "Renúncia de Jensen Huang ao cargo de CEO em novembro de 2026, com CEO interina e sem sucessor definido.",
+   "Projeção do 4T (com uma semana a mais): receita de US$ 130 bi, mais ou menos 3%, sem receita de computação de data center na China.",
+   "Compromissos de compra e capacidade de US$ 518 bi e acordo para comprar a Hugging Face."
+  ]
+ },
+ "revisao": "automática"
 }
