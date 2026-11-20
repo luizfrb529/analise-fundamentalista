@@ -1,6 +1,6 @@
 {
  "ticker": "MLAS3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-20",
  "resumo": "Fabricante e importadora de eletrônicos e bens de consumo com marcas próprias, com 61% da receita no segmento Corporativo. Vende quase só no Brasil, mas compra insumos em dólar, o que torna o câmbio o principal risco de custo.",
  "modelo": "O Grupo Multilaser importa, fabrica (complexos de Extrema, MG, e Manaus, AM) e distribui eletrônicos, informática, eletroportáteis, brinquedos e produtos de saúde e bebê, com marcas próprias e licenciadas. O segmento Corporativo vende equipamentos de rede para operadoras e provedores, PCs e tablets para governo, memórias e componentes para fabricantes (OEM), mobilidade elétrica e áudio profissional; Consumer Tech e Consumer Especializado vendem ao varejo físico e online. A receita é de venda de produtos, sem componente recorrente contratual relevante, e parte dela depende de licitações públicas.",
  "segmentos": [
@@ -90,5 +90,25 @@
    "data": "2026-11-18"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-11",
+  "positivos": [
+   "Lucro líquido de R$ 101,9 mi no 3T26, alta de 55,3% sobre os R$ 65,6 mi do 3T25.",
+   "Margem bruta de 31,1%, alta de 6,0 pontos percentuais sobre o 3T25.",
+   "Caixa líquido de R$ 652,9 mi em set/26, ante R$ 405,9 mi em jun/26."
+  ],
+  "negativos": [
+   "Receita líquida de R$ 911,9 mi, queda de 14,7% sobre o 3T25.",
+   "Ebitda de R$ 97,8 mi (margem de 10,7%) com provisão de R$ 20 mi para recebíveis do Grupo Casas Bahia; sem ela, R$ 117,8 mi (12,9%).",
+   "Lucro líquido caiu 28,3% frente ao 2T26."
+  ],
+  "atencao": [
+   "Recuperação judicial do Grupo Casas Bahia (pedida em 16/08/2026) e o risco sobre os recebíveis da empresa.",
+   "A receita financeira de tesouraria (R$ 74,6 mi no 3T26) tem peso relevante no lucro.",
+   "Consumo discricionário pressionado e custos de componentes e frete em alta, segundo a gestão."
+  ]
+ },
+ "revisao": "automática"
 }
