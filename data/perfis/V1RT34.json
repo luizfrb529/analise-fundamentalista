@@ -1,6 +1,6 @@
 {
  "ticker": "V1RT34",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-20",
  "resumo": "BDR da Vertiv, fabricante de equipamentos de energia e refrigeração para data centers. A receita é em dólar, puxada pela expansão de IA, e cobre, aço e alumínio são insumos relevantes.",
  "modelo": "A Vertiv projeta, fabrica e mantém a infraestrutura física de data centers e redes: sistemas de energia ininterrupta (UPS), distribuição elétrica, refrigeração a ar e líquida, racks e soluções pré-fabricadas, além de serviços e peças. Os clientes são operadores de nuvem, empresas de colocation, telecomunicações e indústria. Cerca de 81% da receita vem da venda de produtos, mais ligada a ciclos de investimento, e 19% de serviços e peças, mais recorrentes. O BDR V1RT34 é negociado na B3 e representa ações listadas na NYSE.",
  "segmentos": [
@@ -85,5 +85,24 @@
    "data": "2026-10-28"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "Vendas líquidas de US$ 4,31 bi no 3T26, alta de 61% sobre o 3T25 (55% orgânica).",
+   "Encomendas orgânicas mais que dobraram sobre o 3T25.",
+   "Lucro operacional de US$ 984 mi (+90%) e margem operacional ajustada de 25,2%, alta de 2,9 pontos.",
+   "Projeção de vendas de 2026 elevada para US$ 14,45 a 14,85 bi."
+  ],
+  "negativos": [
+   "Sem itens negativos relevantes nos números principais; parte do crescimento (cerca de 6 pontos) veio de aquisições."
+  ],
+  "atencao": [
+   "Integração da UtilityInnovation Group, comprada por cerca de US$ 1,45 bi, com pagamento adicional de até US$ 1,15 bi ligado a metas de Ebitda.",
+   "Dependência dos investimentos em data centers de inteligência artificial.",
+   "Projeção de fluxo de caixa livre ajustado de US$ 2,6 a 2,8 bi em 2026."
+  ]
+ },
+ "revisao": "automática"
 }
