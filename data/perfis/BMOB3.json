@@ -1,6 +1,6 @@
 {
  "ticker": "BMOB3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-21",
  "resumo": "Plataforma de pagamentos digitais e software para empresas de serviços recorrentes (telecom, energia, saneamento, educação, saúde). Pagamentos já são 52% da receita; 28% da receita vem do exterior.",
  "modelo": "A Bemobi processa cobranças recorrentes (cartão, pix automático, boleto) para grandes empresas de contas mensais e cobra uma taxa sobre o volume transacionado (TPV de R$ 4,6 bi no 3T26). Também vende licenças de software (SaaS) para escolas, provedores de internet e atendimento ao cliente com IA (Wave Tech, Grace IA, Agenda Edu), e mantém o negócio original de assinaturas de aplicativos e microfinanças de crédito pré-pago, distribuídos por operadoras de telefonia em dezenas de países. A Paytime, adquirida e consolidada desde o 1T26, adiciona adquirência para redes e ecossistemas. A receita é majoritariamente recorrente.",
  "segmentos": [
@@ -85,5 +85,23 @@
    "data": "2026-11-13"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Receita líquida ajustada de R$ 245,3 mi no 3T26, alta de 30,8% sobre o 3T25 (+15% orgânico, sem a Paytime).",
+   "Ebitda ajustado de R$ 86,8 mi, alta de 38%, com margem de 35,4% (+2,0 p.p.).",
+   "Lucro líquido ajustado de R$ 51,0 mi, alta de 20%; receita de R$ 694,6 mi nos 9M26, alta de 31%."
+  ],
+  "negativos": [
+   "Resultado financeiro de R$ 4,6 mi, contra R$ 16,7 mi no 3T25, o que fez o lucro crescer menos que o Ebitda.",
+   "Lucro contábil consolidado de R$ 46,9 mi, abaixo do ajustado de R$ 51,0 mi."
+  ],
+  "atencao": [
+   "Caixa de R$ 319 mi ao fim de setembro, após dividendos extraordinários, parcela da Paytime e recompra.",
+   "Declarou R$ 16 mi em JCP (R$ 0,19 por ação); meta de distribuir 100% do lucro de 2026."
+  ]
+ }
 }
