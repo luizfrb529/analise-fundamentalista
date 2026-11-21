@@ -894,6 +894,10 @@ def processar(ativo: dict, ctx: dict) -> dict:
             except Exception as e:
                 aviso(t, f"LTM pelo yfinance: {e}")
         yx = S.acoes_yf(ext)
+        if stock and acoes and hist_sh and (dt.date.today() - dt.date.fromisoformat(hist_sh[-1][0])).days > 540:
+            # a SEC parou de receber o número de ações nesse formato (ex.: Comcast, só até 2009): descarta e usa o Yahoo
+            aviso(t, f"ações da SEC desatualizadas (última em {hist_sh[-1][0]}); usado o número do Yahoo")
+            acoes, hist_sh = None, []
         if not acoes:
             try:
                 acoes = float(yx.fast_info.get("shares") or yx.info.get("sharesOutstanding"))

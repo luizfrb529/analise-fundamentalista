@@ -40,6 +40,7 @@ CONCEITOS = {
     "passivo_total": ["Liabilities"],
     "pl": ["StockholdersEquity", "EquityAttributableToOwnersOfParent"],
     "pl_total": ["StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest", "Equity"],
+    "_nci": ["MinorityInterest"],
     "caixa": ["CashCashEquivalentsAndShortTermInvestments", "CashAndCashEquivalentsAtCarryingValue", "CashAndCashEquivalents"],
     "receber": ["AccountsReceivableNetCurrent"],
     "estoques": ["InventoryNet"],
@@ -48,7 +49,7 @@ CONCEITOS = {
     "divida_lp": ["LongTermDebtNoncurrent", "LongTermDebt", "Borrowings"],
     "carteira": ["LoansAndAdvancesToCustomers"],
 }
-SALDOS = {"ativo", "ativo_circ", "passivo_circ", "passivo_total", "pl", "pl_total", "caixa", "receber", "estoques",
+SALDOS = {"ativo", "ativo_circ", "passivo_circ", "passivo_total", "pl", "pl_total", "_nci", "caixa", "receber", "estoques",
           "fornecedores", "divida_cp", "divida_lp", "carteira"}
 
 
@@ -219,6 +220,10 @@ def _saldo_em(series, fim):
 def _ajustar(d: dict, fim: str) -> dict:
     if d is None:
         return None
+    nci = d.pop("_nci", None)
+    if d.get("pl") is None and d.get("pl_total") is not None:
+        # empresa que só informa o patrimônio total (AT&T, Visa): controladores = total menos minoritários
+        d["pl"] = d["pl_total"] - (nci or 0.0)
     if d.get("pl_total") is not None and d.get("pl") is not None:
         d["minoritarios"] = d["pl_total"] - d["pl"]
     else:
