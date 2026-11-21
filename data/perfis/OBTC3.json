@@ -1,6 +1,6 @@
 {
  "ticker": "OBTC3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-21",
  "resumo": "Empresa de tesouraria em bitcoin, com 3.950 BTC (cerca de R$ 1,71 bi em set/26) e receita operacional ainda irrelevante. O valor da ação acompanha o bitcoin em reais, logo o dólar.",
  "modelo": "A OranjeBTC tem como atividade central acumular bitcoin e aumentar a quantidade de bitcoin por ação, comprando o ativo com caixa, dívida e emissões e recomprando ações quando negociam abaixo do valor da reserva. Em paralelo, desenvolve fontes de receita ligadas ao ecossistema: consultoria e formação de mercado do fundo DIGY11, lançado na B3 em setembro de 2026, e o portal de educação e informação Bitcoin.com.br. O resultado contábil é dominado pela marcação a valor justo do bitcoin.",
  "segmentos": [
@@ -79,5 +79,24 @@
    "data": "2026-08-24"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Primeiro lucro trimestral da história: R$ 518,1 mi no 3T26, quase todo de ganho de R$ 510,3 mi na avaliação do bitcoin a valor justo.",
+   "Bitcoin subiu cerca de 42,9% em reais no trimestre, de R$ 304,2 mil para R$ 434,6 mil por unidade.",
+   "Reserva de 3.950 BTC, ante 3.898 no 2T26, com BTC Yield bruto de 8,08% no trimestre e 22,02% em 2026."
+  ],
+  "negativos": [
+   "Dívida total de R$ 379,4 mi e líquida de R$ 217,6 mi ao fim de set/26, após captação de R$ 210 mi em debênture estruturada com o Itaú.",
+   "Recompra de 9,4 mi de ações por R$ 46,7 mi no 3T26, consumindo caixa."
+  ],
+  "atencao": [
+   "Ações negociavam a cerca de 0,74 vez o valor da reserva (mNAV) ao fim de setembro.",
+   "Assembleia de 10/12/2026 vai deliberar a criação de duas novas classes de ações preferenciais (C e D).",
+   "O lucro depende da marcação a mercado do bitcoin, sem caixa operacional equivalente."
+  ]
+ }
 }
