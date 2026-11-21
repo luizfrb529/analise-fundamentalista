@@ -1,6 +1,6 @@
 {
  "ticker": "MSFT34",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-21",
  "resumo": "BDR da Microsoft, de software e nuvem (Azure, Microsoft 365). Para o investidor brasileiro, o valor acompanha a ação em dólar e a variação do câmbio.",
  "modelo": "A Microsoft vende software e serviços de nuvem para empresas e consumidores: infraestrutura e IA na nuvem Azure, assinaturas do Microsoft 365, Dynamics, LinkedIn e GitHub, além de Windows, Xbox e dispositivos Surface. A maior parte da receita é recorrente, por assinatura ou consumo de nuvem, com contratos plurianuais (carteira comercial contratada de US$ 677 bilhões em set/26). Desde o ano fiscal de 2027 reporta dois segmentos: Agents and Infra (nuvem, software corporativo e IA) e Devices and Consumer. O BDR MSFT34 é negociado na B3 e representa ações listadas na Nasdaq.",
  "segmentos": [
@@ -77,5 +77,23 @@
    "data": "2026-09-02"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "1T27 (ano fiscal)",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "Receita de US$ 92,3 bilhões, alta de 19% sobre o mesmo trimestre do ano anterior (trimestre encerrado em 30/09/2026).",
+   "Receita do Azure de US$ 33,2 bilhões, alta de 48% sobre o ano anterior; Microsoft Cloud somou US$ 63,9 bilhões, alta de 30%.",
+   "Lucro operacional de US$ 45,9 bilhões, alta de 21%, e lucro líquido contábil de US$ 36,6 bilhões, alta de 32%."
+  ],
+  "negativos": [
+   "Fluxo de caixa livre de US$ 18,6 bilhões, queda de 27% sobre os US$ 25,7 bilhões do ano anterior, com mais gasto em data centers.",
+   "Receita de Devices and Consumer de US$ 15,5 bilhões, queda de 3% sobre o ano anterior."
+  ],
+  "atencao": [
+   "Investimento em data centers de US$ 45,2 bilhões no trimestre, incluindo arrendamentos financeiros; a empresa projeta mais de US$ 50 bilhões no trimestre seguinte.",
+   "Projeção de receita de US$ 96 a 97,1 bilhões para o próximo trimestre; acompanhar a conversão do investimento em receita do Azure."
+  ]
+ }
 }
