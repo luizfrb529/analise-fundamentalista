@@ -1,6 +1,6 @@
 {
  "ticker": "MDIA3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-21",
  "resumo": "Líder nacional em biscoitos e massas, também com moinhos de trigo e gorduras. Trigo e óleo cotados em dólar são o principal custo, e a empresa tem caixa líquido de R$ 1,2 bi.",
  "modelo": "A M. Dias Branco fabrica e vende biscoitos, massas, margarinas, farinhas, gorduras, snacks, bolos e saudáveis para varejo, atacado e food service, com marcas como Vitarella, Piraquê, Adria, Isabela, Jasmine, Finna e Frontera. Tem moinhos de trigo e refino de óleo próprios, o que integra a cadeia de custos. A receita é recorrente, de consumo básico, e a margem depende do preço do trigo e do óleo de palma e do repasse ao consumidor.",
  "segmentos": [
@@ -85,5 +85,23 @@
    "data": "2026-10-19"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Volume 2,1% maior sobre o 3T25 e margem bruta de 32,9%.",
+   "Geração de caixa operacional de R$ 589 mi e caixa líquido de R$ 1,17 bi ao fim de setembro.",
+   "Rating AAA reafirmado pela Fitch."
+  ],
+  "negativos": [
+   "Receita líquida de R$ 2,74 bi, queda de 1,7%, com preço médio 3,6% menor.",
+   "Ebitda de R$ 255,9 mi, queda de 19,6% (margem de 9,3%); lucro líquido de R$ 157,7 mi, queda de 27,0%.",
+   "Custo de embalagens subiu 14,2%, pela alta do petróleo, e houve verbas rescisórias."
+  ],
+  "atencao": [
+   "Compra de 80% da Grespan (pães congelados; receita bruta de R$ 138,7 mi em 2025), anunciada em 19/10/2026, depende do Cade."
+  ]
+ }
 }
