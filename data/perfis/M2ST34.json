@@ -1,6 +1,6 @@
 {
  "ticker": "M2ST34",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-21",
  "resumo": "BDR da Strategy (antiga MicroStrategy), maior empresa de capital aberto com bitcoin em caixa: 850.849 BTC em nov/26. O valor acompanha o bitcoin, o dólar e o custo das ações preferenciais emitidas.",
  "modelo": "A Strategy capta recursos com venda de ações ordinárias (MSTR), ações preferenciais perpétuas (STRF, STRC, STRK, STRD e a STRE, em euro) e dívida conversível, e usa o dinheiro para comprar bitcoin. O resultado contábil depende quase todo da variação do preço do bitcoin, registrado a valor justo desde 2025. Mantém também o negócio original de software de análise de dados, com receita recorrente de assinaturas e suporte, pequena frente ao bitcoin. O BDR M2ST34 é negociado na B3 e representa ações listadas na Nasdaq.",
  "segmentos": [
@@ -91,5 +91,25 @@
    "data": "2026-10-29"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Lucro operacional de US$ 20,91 bilhões no 3T26, recorde, ligado à valorização do bitcoin no trimestre.",
+   "Lucro líquido de US$ 19,53 bilhões (US$ 44,75 por ação), contra US$ 2,79 bilhões no 3T25.",
+   "Posição de 850.849 BTC em 15/11/2026, com custo médio de US$ 75.452 por unidade."
+  ],
+  "negativos": [
+   "Receita de software de US$ 125,4 milhões no 3T26, queda de 3% sobre o 3T25.",
+   "Prejuízo líquido de US$ 1,23 bilhão nos 9M26, apesar do lucro do 3T26.",
+   "Venda de US$ 431,8 milhões em bitcoin para pagar dividendos e recomprar preferenciais, até meados de novembro."
+  ],
+  "atencao": [
+   "Resultado depende do preço do bitcoin: sem a marcação a mercado, o negócio de software opera perto do zero.",
+   "CFO Andrew Kang deixou o cargo em 05/11/2026; Reza Virasteh assume em 01/01/2027.",
+   "Dividendo da preferencial STRC de 12% ao ano e recompras para mantê-la perto de US$ 100 pressionam o caixa."
+  ]
+ }
 }
