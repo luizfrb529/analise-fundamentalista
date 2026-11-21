@@ -1,6 +1,6 @@
 {
  "ticker": "CASH3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-21",
  "resumo": "Plataforma de cashback e fidelidade com 56,6 mi de contas, que também mantém uma tesouraria em bitcoin (526,7 BTC em set/26). A receita depende do e-commerce brasileiro; o bitcoin traz exposição ao dólar.",
  "modelo": "O Méliuz recebe comissões de lojas parceiras quando seus usuários compram por meio do aplicativo e devolve parte ao cliente como cashback; a diferença é o net take rate (2,2% no 3T26). Fora do e-commerce (beyond e-commerce), vende cartão de crédito, gift cards, Clube Méliuz, pesquisas remuneradas e outros produtos de alta frequência, que já são 28,7% da receita do Shopping Brasil. Opera também o Picodi, site de cupons em mercados internacionais. Desde março de 2025 adota estratégia de tesouraria em bitcoin, com objetivo declarado de aumentar a quantidade de bitcoin por ação, hoje via recompra de ações.",
  "segmentos": [
@@ -91,5 +91,23 @@
    "data": "2026-08-06"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Lucro líquido consolidado de R$ 113,7 mi no 3T26, contra R$ 14,2 mi no 3T25, com reversão contábil de R$ 78,5 mi do impairment do bitcoin.",
+   "Lucro ajustado de R$ 19,6 mi, alta de 28,4% sobre o 3T25.",
+   "Sem endividamento financeiro e com R$ 106,3 mi em caixa e aplicações ao fim de setembro."
+  ],
+  "negativos": [
+   "Receita líquida de R$ 96,1 mi, queda de 22,3%; e-commerce recuou 35,3% após a recuperação judicial da Casas Bahia.",
+   "Ebitda ajustado de R$ 17,0 mi, queda de 37,7%, com margem de 17,7%."
+  ],
+  "atencao": [
+   "Vendeu 78 bitcoins por R$ 29,4 mi para financiar recompras, com opções de recompra em 2027.",
+   "Segundo programa de recompra de até 10% do free float; a reversão do impairment não tem efeito caixa."
+  ]
+ }
 }
