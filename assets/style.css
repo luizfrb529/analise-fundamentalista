@@ -172,10 +172,14 @@ main { max-width: 1240px; margin: 0 auto; padding: 26px 24px 40px; outline: none
 .segmentado button { border: 1px solid transparent; background: none; padding: 8px 22px; border-radius: 9px; cursor: pointer; font-weight: 700; color: var(--txt-2); font-size: .9rem; }
 .segmentado button.ativo { background: var(--acento-fundo); border-color: var(--acento); color: var(--acento); }
 .listas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px 28px; }
+.lista { display: grid; grid-template-rows: subgrid; grid-row: span 3; row-gap: 0; align-content: start; }   /* títulos, linhas e botões alinhados entre as colunas */
+.lista-cab { align-self: start; }
+.lista-lins { align-self: start; }
+.lista > .btn-contorno { justify-self: start; align-self: start; }
 .lista h3 { font-size: 1.02rem; }
 .lista .sub { margin: 2px 0 10px; font-size: .8rem; }
 .lin { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 10px 0; border-top: 1px solid var(--borda); }
-.lin:last-of-type { border-bottom: 1px solid var(--borda); }
+.lista-lins .lin:last-child { border-bottom: 1px solid var(--borda); }
 .lin .valor { font-weight: 700; font-size: .9rem; margin-top: 1px; }
 .btn-ver { padding: 7px 12px; border-radius: 8px; background: var(--sup-3); font-size: .78rem; font-weight: 600; white-space: nowrap; border: 1px solid transparent; }
 .btn-ver:hover { border-color: var(--borda-forte); }

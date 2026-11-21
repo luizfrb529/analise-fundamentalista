@@ -14,6 +14,7 @@ const CONFIG = {
     armadilha_pl_max: 8, gap_crescimento_max: 0.05, bdr_agio_max: 0.05, liquidez_min: 5e6 },
   FORTALEZAS: { piotroski_min: 7, roe_min: 0.15, roic_min: 0.12, divliq_ebitda_max: 1, anos_pagando_min: 8, bdr_desagio_min: 0.03 },
   SMALL_CAP_MAX: 10e9,
+  SMALL_CAP_MAX_USD: 2e9,
   NOVO_HORAS: 48,
 };
 
@@ -507,12 +508,17 @@ function montarMenus() {
    ===================================================================== */
 const LISTAS_HOME = [
   { id: "dy", nome: "Maiores dividend yield", desc: "Últimos 12 meses, de quem distribui menos do que lucra.", k: "dy", dir: 1, f: (t) => ok(ind(t).payout) && ind(t).payout > 0 && ind(t).payout < 1, link: "#/rankings?foco=dy" },
-  { id: "vm", nome: "Maiores por valor de mercado", desc: "Empresas ordenadas pelo valor de mercado em reais.", k: "valor_mercado_brl", dir: 1, f: () => true, link: "#/ativos" },
+  { id: "vm", nome: "Maiores por valor de mercado", desc: (seg) => seg === "STOCK" ? "Empresas ordenadas pelo valor de mercado em dólares." : "Empresas ordenadas pelo valor de mercado em reais.", k: "valor_mercado_brl", dir: 1, f: () => true, link: "#/ativos" },
   { id: "roe", nome: "Maior ROE", desc: "Lucro de 12 meses sobre o patrimônio líquido.", k: "roe", dir: 1, f: (t) => !isRec(t), link: "#/rankings?foco=roe" },
   { id: "nota", nome: "Melhor nota por critérios", desc: "Critérios fundamentalistas ponderados por importância, de 0 a 10.", k: "nota_criterios", dir: 1, f: (t) => entraNota(t), link: "#/rankings", desempate: "roe" },
   { id: "pl", nome: "Menor P/L", desc: "Preço sobre lucro, só empresas com lucro positivo.", k: "pl", dir: -1, f: (t) => !semValuation(t) && ind(t).pl > 0, link: "#/rankings?foco=pl" },
-  { id: "small", nome: "Small caps com maior ROE", desc: "Valor de mercado até R$ 10 bilhões.", k: "roe", dir: 1, f: (t) => !isRec(t) && ok(ind(t).valor_mercado_brl) && ind(t).valor_mercado_brl <= CONFIG.SMALL_CAP_MAX, link: "#/ativos?porte=small" },
+  { id: "small", nome: "Small caps com maior ROE", desc: (seg) => seg === "STOCK" ? "Valor de mercado até US$ 2 bilhões." : "Valor de mercado até R$ 10 bilhões.", k: "roe", dir: 1, f: (t) => !isRec(t) && ehSmall(t), link: "#/ativos?porte=small" },
 ];
+/* small cap: até R$ 10 bi na B3; nas stocks americanas, até US$ 2 bi (corte usual do mercado americano) */
+function ehSmall(t) {
+  if (isStock(t)) { const v = ind(t).valor_mercado_brl, px = ((D.macro || {}).ptax || {}).valor; return ok(v) && !!px && v / px <= CONFIG.SMALL_CAP_MAX_USD; }
+  return ok(ind(t).valor_mercado_brl) && ind(t).valor_mercado_brl <= CONFIG.SMALL_CAP_MAX;
+}
 function topLista(L, base, n = 5) {
   return base.filter(L.f).map((t) => [t, val(t, L.k)]).filter(([, v]) => ok(v))
     .sort((a, b) => (L.dir > 0 ? b[1] - a[1] : a[1] - b[1]) || (L.desempate ? (ind(b[0])[L.desempate] || 0) - (ind(a[0])[L.desempate] || 0) : 0)).slice(0, n);
@@ -650,8 +656,8 @@ function pgHome(app) {
     $("#listas").innerHTML = Object.entries(FII_METRICAS).map(([k, M]) => {
       const top = topFii(k, lista);
       if (!top.length) return "";
-      return `<div class="lista"><h3>${esc(M.nome)}</h3><p class="sub">${esc(M.desc)}</p>
-        ${top.map(([f, v]) => `<div class="lin"><div>${fundoHtml(f)}<div class="valor">${M.fmt(v)}</div></div><a class="btn-ver" href="#/fii/${f.ticker}">Ver fundo</a></div>`).join("")}
+      return `<div class="lista"><div class="lista-cab"><h3>${esc(M.nome)}</h3><p class="sub">${esc(M.desc)}</p></div>
+        <div class="lista-lins">${top.map(([f, v]) => `<div class="lin"><div>${fundoHtml(f)}<div class="valor">${M.fmt(v)}</div></div><a class="btn-ver" href="#/fii/${f.ticker}">Ver fundo</a></div>`).join("")}</div>
         <a class="btn-contorno" href="#/fiis?ordem=${k}${um ? "&setor=" + encodeURIComponent(um) : ""}">Ver lista ›</a></div>`;
     }).join("") || '<p class="vazio">Sem fundos neste recorte.</p>';
     const por = {};
@@ -702,8 +708,8 @@ function pgHome(app) {
     $("#listas").innerHTML = LISTAS_HOME.map((L) => {
       const top = topLista(L, lista);
       if (!top.length) return "";
-      return `<div class="lista"><h3>${esc(L.nome)}</h3><p class="sub">${esc(L.desc)}</p>
-        ${top.map(([t, v]) => `<div class="lin"><div>${empresa(t, { semBadge: true })}<div class="valor">${fmt(t, L.k, v)}</div></div><a class="btn-ver" href="#/ativo/${t}">Ver ativo</a></div>`).join("")}
+      return `<div class="lista"><div class="lista-cab"><h3>${esc(L.nome)}</h3><p class="sub">${esc(typeof L.desc === "function" ? L.desc(seg) : L.desc)}</p></div>
+        <div class="lista-lins">${top.map(([t, v]) => `<div class="lin"><div>${empresa(t, { semBadge: true })}<div class="valor">${fmt(t, L.k, v)}</div></div><a class="btn-ver" href="#/ativo/${t}">Ver ativo</a></div>`).join("")}</div>
         <a class="btn-contorno" href="${L.link}${L.link.includes("?") ? "&" : "?"}seg=${seg}">Ver lista ›</a></div>`;
     }).join("") || '<p class="vazio">Sem empresas neste recorte.</p>';
     const por = {};
@@ -859,7 +865,7 @@ function pgAtivos(app, q) {
   app.innerHTML = `${trilha([[titulo]])}
   <div class="cab-pagina"><div><div class="linha"><h1>${esc(titulo)}</h1>
     <div class="segmentado" id="t-seg">${[["TODOS", "Todos"], ["ACAO_BR", "Ações"], ["BDR", "BDRs"], ["STOCK", "Stocks"]].map(([k, n]) => `<button data-s="${k}" class="${(T.seg === k || (k === "BDR" && T.seg.startsWith("BDR"))) ? "ativo" : ""}">${n}</button>`).join("")}</div></div>
-    ${T.setor ? `<p>Setor: <b>${esc(T.setor)}</b> · <a class="lk" href="#/ativos?seg=${T.seg}">ver todos os setores</a></p>` : ""}${T.porte === "small" ? `<p>Small caps: valor de mercado até R$ 10 bilhões · <a class="lk" href="#/ativos?seg=${T.seg}">ver todas</a></p>` : ""}</div>${pilulasData()}</div>
+    ${T.setor ? `<p>Setor: <b>${esc(T.setor)}</b> · <a class="lk" href="#/ativos?seg=${T.seg}">ver todos os setores</a></p>` : ""}${T.porte === "small" ? `<p>Small caps: valor de mercado até ${T.seg === "STOCK" ? "US$ 2 bilhões" : "R$ 10 bilhões"} · <a class="lk" href="#/ativos?seg=${T.seg}">ver todas</a></p>` : ""}</div>${pilulasData()}</div>
   <div class="linha entre" style="margin-bottom:14px">
     <div class="chips" id="t-preset">${Object.entries(PRESETS).map(([k, p]) => `<button class="chip ${T.preset === k ? "ativo" : ""}" data-p="${k}">${p.nome}</button>`).join("")}</div>
     <div class="linha">
@@ -876,7 +882,7 @@ function pgAtivos(app, q) {
   const lista = () => {
     let l = filtroSeg(D.tickers, T.seg);
     if (T.setor) l = l.filter((t) => A(t).setor_macro === T.setor);
-    if (T.porte === "small") l = l.filter((t) => ok(ind(t).valor_mercado_brl) && ind(t).valor_mercado_brl <= CONFIG.SMALL_CAP_MAX);
+    if (T.porte === "small") l = l.filter(ehSmall);
     const b = T.busca.trim().toLowerCase();
     if (b) l = l.filter((t) => t.toLowerCase().includes(b) || A(t).nome.toLowerCase().includes(b) || A(t).setor_macro.toLowerCase().includes(b) || A(t).setor_micro.toLowerCase().includes(b));
     return ordenar(l, T.sort.k, T.sort.d);
