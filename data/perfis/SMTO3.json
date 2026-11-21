@@ -1,6 +1,6 @@
 {
  "ticker": "SMTO3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-21",
  "resumo": "Produtora de etanol, açúcar e energia de cana em SP e GO, com planta de etanol de milho. Etanol virou a maior receita nos 6M27 e o açúcar já está fixado em reais até a safra 2028/29.",
  "modelo": "A São Martinho mói cana própria e de fornecedores em usinas em São Paulo e Goiás e produz açúcar, etanol anidro e hidratado, energia elétrica a partir do bagaço, levedura e CBIOs. Na unidade Boa Vista (GO), processa milho para etanol, DDG e óleo, com uma segunda fase em construção. A receita é recorrente, mas depende de safra, clima e preços de açúcar e etanol; o ano fiscal vai de abril a março.",
  "segmentos": [
@@ -91,5 +91,22 @@
    "data": "2026-11-10"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "2T27 (jul a set/26)",
+  "divulgado_em": "2026-11-09",
+  "positivos": [
+   "Receita líquida de R$ 1,87 bi, alta de 7,7% sobre o mesmo trimestre do ano anterior, com mais etanol vendido."
+  ],
+  "negativos": [
+   "Ebitda ajustado de R$ 760,9 mi, queda de 6,9%, com margem de 40,6% (47,0% antes).",
+   "Lucro líquido de R$ 50,9 mi, queda de 71,1%, com preços menores de açúcar e etanol.",
+   "Dívida líquida de R$ 5,7 bi, alta de 14,2% desde março; alavancagem de 1,75x Ebitda."
+  ],
+  "atencao": [
+   "Projeção da safra 2026/27 cortada por chuvas: moagem de 22,8 mi t (-3,5%) e ATR 10,5% menor.",
+   "Cerca de 2 mi t de cana ficaram para 2027/28; segunda fase do etanol de milho prevista para o segundo semestre de 2027; capex da safra de R$ 2,9 bi."
+  ]
+ }
 }
