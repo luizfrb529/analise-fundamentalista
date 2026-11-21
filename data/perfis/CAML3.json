@@ -1,6 +1,6 @@
 {
  "ticker": "CAML3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-21",
  "resumo": "Dona das marcas Camil, União e Coqueiro, com arroz, feijão, açúcar, pescados, massas e café, e operações em cinco países da América do Sul. Alavancagem de 4,7x Ebitda deixa o resultado sensível a juros.",
  "modelo": "A Camil compra, beneficia e vende grãos (arroz e feijão), açúcar, pescados enlatados, massas, biscoitos e café para o varejo, com marcas como Camil, União, Coqueiro, Santa Amália e Café União. No Brasil, divide o negócio em alto giro (grãos e açúcar) e alto valor (pescados, massas, biscoitos e café); fora do país atua no Uruguai, Chile, Peru, Equador e Paraguai, sobretudo com arroz. A receita é recorrente e a margem depende do preço da matéria-prima agrícola e do repasse. O ano fiscal vai de março a fevereiro.",
  "segmentos": [
@@ -79,5 +79,23 @@
    "data": "2026-10-09"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26 (jun a ago/26)",
+  "divulgado_em": "2026-10-08",
+  "positivos": [
+   "Margem bruta de 24,7%, alta de 2,1 p.p., no trimestre encerrado em agosto de 2026.",
+   "Capex caiu 66% com o fim das obras em Cambaí (RS)."
+  ],
+  "negativos": [
+   "Receita líquida de R$ 2,76 bi, queda de 7,2%; volume de 604,7 mil t, queda de 4,6%.",
+   "Ebitda de R$ 225,3 mi, queda de 10,1% (margem de 8,2%).",
+   "Lucro líquido de R$ 41,3 mi, queda de 47,5%, com preços de arroz mais baixos no exterior."
+  ],
+  "atencao": [
+   "Alavancagem de 4,7x Ebitda, ante 4,1x um ano antes; dívida líquida de R$ 4,08 bi e despesa financeira de R$ 127,6 mi.",
+   "Dividendos de R$ 420 mi em 12 parcelas até dezembro de 2028."
+  ]
+ }
 }
