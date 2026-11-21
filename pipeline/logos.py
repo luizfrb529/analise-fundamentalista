@@ -15,6 +15,19 @@ RAIZ = Path(__file__).resolve().parents[1]
 DESTINO = RAIZ / "assets" / "logos"
 URL = "https://icons.brapi.dev/icons/{}.svg"
 URL_EUA = "https://cdn.jsdelivr.net/gh/nvstly/icons@main/ticker_icons/{}.png"   # reserva para stocks americanas
+URL_FMP = "https://financialmodelingprep.com/image-stock/{}.png"               # segunda reserva (logos públicos da Financial Modeling Prep)
+
+
+def so_branco(conteudo: bytes) -> bool:
+    """Logo desenhado em branco sobre fundo transparente (feito para fundo escuro): some no círculo claro do site."""
+    from io import BytesIO
+    try:
+        from PIL import Image
+        im = Image.open(BytesIO(conteudo)).convert("RGBA").resize((64, 64))
+    except Exception:
+        return False
+    vis = [(r, g, b) for r, g, b, a in im.getdata() if a > 40]
+    return bool(vis) and sum(1 for c in vis if sum(c) < 600) / 4096 < 0.03
 
 
 def png_em_svg(conteudo: bytes) -> str:
@@ -27,7 +40,8 @@ def png_em_svg(conteudo: bytes) -> str:
     except Exception:
         w = h = 256
     b64 = base64.b64encode(conteudo).decode()
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}"><image width="{w}" height="{h}" href="data:image/png;base64,{b64}"/></svg>\n'
+    fundo = f'<rect width="{w}" height="{h}" fill="#1f2937"/>' if so_branco(conteudo) else ""   # logo branco: fundo escuro
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}">{fundo}<image width="{w}" height="{h}" href="data:image/png;base64,{b64}"/></svg>\n'
 
 
 def svg_valido(txt: str) -> bool:
@@ -73,10 +87,16 @@ def main():
             if r.status_code == 200 and svg_valido(r.text):
                 arq.write_text(normalizar(r.text), encoding="utf-8")
                 baixados += 1
-            elif a.get("tipo") == "STOCK_US":
-                r2 = sessao.get(URL_EUA.format(t), timeout=20)
-                if r2.status_code == 200 and r2.headers.get("content-type", "").startswith("image/png") and len(r2.content) > 500:
-                    arq.write_text(png_em_svg(r2.content), encoding="utf-8")
+            elif a.get("ticker_exterior") and (a.get("tipo") == "STOCK_US" or str(a.get("tipo", "")).startswith("BDR")):
+                # stocks e BDRs: logo pelo código americano, em dois repositórios públicos de ícones;
+                # prefere a versão colorida (a toda branca ganha fundo escuro em png_em_svg)
+                pngs = []
+                for url in (URL_FMP, URL_EUA):
+                    r2 = sessao.get(url.format(a["ticker_exterior"]), timeout=20)
+                    if r2.status_code == 200 and r2.headers.get("content-type", "").startswith("image/png") and len(r2.content) > 500:
+                        pngs.append(r2.content)
+                if pngs:
+                    arq.write_text(png_em_svg(next((x for x in pngs if not so_branco(x)), pngs[0])), encoding="utf-8")
                     baixados += 1
                 else:
                     falhas.append(t)
