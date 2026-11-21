@@ -1,6 +1,6 @@
 {
  "ticker": "CSUD3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-21",
  "resumo": "Processadora de cartões e prestadora de tecnologia para bancos, varejistas e fintechs. Receita 100% no Brasil e recorrente, com 60% vindo da CSU Pays (pagamentos) no 3T26.",
  "modelo": "A CSU Digital vende processamento de cartões e contas digitais, banking as a service e programas de fidelidade (CSU Pays), além de gestão de processos de negócios com automação e inteligência artificial para atendimento e back office (CSU DX). Os clientes são bancos, varejistas, emissores de cartões e empresas de outros setores, com contratos de longo prazo. A receita da CSU Pays depende da quantidade de contas e transações processadas, e não do valor financeiro transacionado, o que dá previsibilidade.",
  "segmentos": [
@@ -79,5 +79,24 @@
    "data": "2025-11-05"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-11",
+  "positivos": [
+   "Receita líquida de R$ 174,3 mi no 3T26, alta de 13,4% sobre o 3T25.",
+   "Lucro bruto de R$ 74,1 mi, alta de 19,8%, com margem de 42,5%.",
+   "Sem R$ 10,2 mi de investimentos em novas frentes e rescisões, o Ebitda ajustado seria de R$ 57,6 mi (margem de 33,0%)."
+  ],
+  "negativos": [
+   "Lucro líquido de R$ 21,2 mi, queda de 11,0% sobre o 3T25.",
+   "Ebitda de R$ 47,4 mi, alta de apenas 1,9%, e margem de 27,2%.",
+   "Passou de caixa líquido para dívida líquida de R$ 74,5 mi com arrendamentos."
+  ],
+  "atencao": [
+   "Encerramento de operação de banking as a service de um cliente levou à devolução de R$ 24,5 mi em depósitos.",
+   "Declarou R$ 17,1 mi em JCP (R$ 0,41 por ação); alavancagem em 0,43 vez o Ebitda de 12 meses."
+  ]
+ }
 }
