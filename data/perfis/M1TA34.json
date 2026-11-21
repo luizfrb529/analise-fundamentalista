@@ -1,6 +1,6 @@
 {
  "ticker": "M1TA34",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-21",
  "resumo": "BDR da Meta, dona de Facebook, Instagram, WhatsApp e Messenger. Quase toda a receita vem de publicidade e é gerada fora do Brasil, então o BDR acompanha a ação em dólar e o câmbio.",
  "modelo": "A Meta vende anúncios exibidos em seus aplicativos (Facebook, Instagram, Messenger, WhatsApp e Threads), que somavam 3,64 bilhões de pessoas ativas por dia em set/26. A receita é recorrente, ligada ao volume de anúncios e ao preço médio cobrado de anunciantes do mundo todo. O segmento Reality Labs (óculos e realidade virtual) é pequeno e dá prejuízo, e a empresa investe pesado em data centers e modelos de inteligência artificial. O BDR M1TA34 é negociado na B3 e representa ações listadas na Nasdaq.",
  "segmentos": [
@@ -90,5 +90,24 @@
    "data": "2026-10-21"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-21",
+  "positivos": [
+   "Receita de US$ 64,6 bilhões no 3T26, alta de 26% sobre os US$ 51,2 bilhões do 3T25.",
+   "Receita de publicidade de US$ 63,1 bilhões, alta de 26%, com impressões +10% e preço médio por anúncio +14% sobre o 3T25.",
+   "Lucro líquido de US$ 9,86 bilhões (US$ 3,83 por ação), contra US$ 2,71 bilhões no 3T25, mesmo com a provisão de US$ 9,89 bilhões."
+  ],
+  "negativos": [
+   "Lucro operacional de US$ 12,99 bilhões, queda de 37% sobre o 3T25, com despesas totais 68% maiores, em US$ 51,6 bilhões.",
+   "Fluxo de caixa livre negativo em US$ 2,1 bilhões no 3T26, com investimento de US$ 34,9 bilhões no trimestre.",
+   "Reality Labs com prejuízo operacional de US$ 4,13 bilhões no 3T26, sobre receita de US$ 443 milhões."
+  ],
+  "atencao": [
+   "Projeção de receita do 4T26 de US$ 73 a 76 bilhões e de investimento em 2026 de US$ 135 a 145 bilhões.",
+   "Despesas totais de 2026 projetadas em US$ 175 a 179 bilhões; acompanhar o efeito das emissões de dívida e das ações de classe C a partir de 19/01/2027."
+  ]
+ }
 }
