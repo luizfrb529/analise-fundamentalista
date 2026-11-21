@@ -1,18 +1,14 @@
 # Dados ao vivo do site, gravados no ramo "mercado" (um único commit, sobrescrito), sem mexer no histórico do main.
 # O agendamento do GitHub atrasa várias horas e pula disparos, então o robô funciona em corrente:
-# cada execução dura até ~5h45 e, ao terminar, dispara a próxima. De segunda a sexta, das 8h50 às 19h30 (Brasília),
-# atualiza a cada 5 minutos (cotações da faixa e preço de tela) e, a cada hora, as notícias; fora desse horário só espera.
-# A corrente para na sexta à noite e recomeça no domingo à noite pelos agendamentos abaixo, que também servem de reserva
-# caso ela se rompa. A fila de concorrência garante uma execução por vez, então a corrente nunca se duplica.
+# cada execução dura até ~5h45 e, ao terminar, dispara a próxima. Roda 24 horas por dia, 7 dias por semana: a faixa de
+# cotações (Bitcoin negocia o tempo todo; bolsas americanas e moedas têm horários próprios) é atualizada a cada 5 minutos
+# sempre. No pregão da B3 (dias úteis, 8h50 às 19h30) também o preço de tela das ações; as notícias, a cada hora.
+# Os agendamentos abaixo são reserva caso a corrente se rompa. A fila de concorrência garante uma execução por vez.
 name: cotacoes-faixa
 
 on:
   schedule:
-    - cron: "0 21 * * 0"      # domingo 18h: religa a corrente para a semana
-    - cron: "0 1 * * 1"       # reserva (domingo 22h)
-    - cron: "50 11 * * 1-5"   # reservas durante a semana
-    - cron: "50 14 * * 1-5"
-    - cron: "50 17 * * 1-5"
+    - cron: "17 */3 * * *"    # reservas a cada 3 horas, todos os dias (só valem se a corrente tiver parado)
   push:
     branches: [main]
     paths: [".github/workflows/mercado.yml"]
@@ -42,7 +38,7 @@ jobs:
       - name: Instalar dependências
         run: pip install -r pipeline/requirements.txt
 
-      - name: Atualizar em laço (pregão) e esperar fora dele
+      - name: Atualizar em laço, o tempo todo
         env:
           TZ: America/Sao_Paulo
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -64,21 +60,19 @@ jobs:
           no_pregao() { local d h; d=$(date +%u); h=$(date +%H%M); [ "$d" -le 5 ] && [ "$h" -ge 0850 ] && [ "$h" -le 1930 ]; }
           mkdir -p saida
           curl -sf "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/refs/heads/mercado/noticias.json" -o saida/noticias.json || true
+          curl -sf "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/refs/heads/mercado/precos.json" -o saida/precos.json || rm -f saida/precos.json
           while [ "$(date +%s)" -lt "$limite" ]; do
-            if no_pregao || { [ "$rodada" -eq 0 ] && [ "${{ github.event_name }}" = "workflow_dispatch" ]; }; then
-              agora=$(date +%s); rodada=$((rodada + 1))
-              python pipeline/mercado.py saida/mercado.json || echo "falha nas cotações da faixa"
+            agora=$(date +%s); rodada=$((rodada + 1))
+            python pipeline/mercado.py saida/mercado.json || echo "falha nas cotações da faixa"
+            if no_pregao || [ "$rodada" -eq 1 ] || [ ! -f saida/precos.json ]; then
               python pipeline/ao_vivo.py precos saida/precos.json || echo "falha no preço de tela"
-              if [ $(( agora - ultima_noticia )) -ge 3300 ]; then
-                python pipeline/ao_vivo.py noticias saida/noticias.json.novo && mv saida/noticias.json.novo saida/noticias.json || echo "falha nas notícias"
-                ultima_noticia=$agora
-              fi
-              publicar || echo "falha ao publicar"
-              echo "rodada $rodada publicada às $(date +%H:%M)"
             fi
-            # fim de semana: depois da sexta 19h30 a corrente para (volta no domingo à noite)
-            d=$(date +%u); h=$(date +%H%M)
-            if { [ "$d" -eq 5 ] && [ "$h" -gt 1935 ]; } || [ "$d" -eq 6 ] || { [ "$d" -eq 7 ] && [ "$h" -lt 1700 ]; }; then echo "fim de semana: corrente encerrada"; exit 0; fi
+            if [ $(( agora - ultima_noticia )) -ge 3300 ]; then
+              python pipeline/ao_vivo.py noticias saida/noticias.json.novo && mv saida/noticias.json.novo saida/noticias.json || echo "falha nas notícias"
+              ultima_noticia=$agora
+            fi
+            publicar || echo "falha ao publicar"
+            echo "rodada $rodada publicada às $(date +%H:%M)"
             sleep 300
           done
           # passa o bastão para a próxima execução

@@ -553,7 +553,7 @@ function pgHome(app) {
   app.innerHTML = `
   <section class="hero">
     ${quadrosMercado()}
-    <h1>Análise fundamentalista das empresas da B3</h1>
+    <h1>Análise fundamentalista</h1>
     <p>Indicadores, qualidade e valuation de ${D.tickers.length} ações e BDRs${(D.fiis || []).length ? `, ${D.fiis.length} fundos imobiliários` : ""}${D.stocks.length ? ` e ${D.stocks.length} stocks americanas` : ""}, calculados a partir das demonstrações e informes oficiais.</p>
     <div class="busca-grande busca"><input type="search" id="busca-home" placeholder="Digite o nome da empresa, o código ou o setor" autocomplete="off" aria-label="Buscar ativo">
       <button class="ir" id="busca-home-ir" aria-label="Buscar">${ICONE_LUPA}</button><div class="busca-lista" id="busca-home-lista" hidden></div></div>
@@ -2737,7 +2737,7 @@ async function cotacoesAoVivo() {
       const j = await r.json();
       const usa = (par, chave) => { const x = j[par]; if (x && isFinite(+x.bid)) m[chave] = { ...(m[chave] || {}), valor: +x.bid, var_dia: +x.pctChange / 100 }; };
       usa("USDBRL", "dolar"); usa("EURBRL", "euro"); usa("BTCBRL", "bitcoin_brl");
-      if (j.USDBRL && j.USDBRL.timestamp) { const q = new Date(+j.USDBRL.timestamp * 1000); if (!hora || q > hora) hora = q; }
+      for (const par of ["USDBRL", "EURBRL", "BTCBRL"]) if (j[par] && +j[par].timestamp) { const q = new Date(+j[par].timestamp * 1000); if (!hora || q > hora) hora = q; }   // o Bitcoin negocia 24h: o relógio mostra a cotação mais recente
     }
   } catch (e) { /* idem */ }
   FAIXA.hora = hora;

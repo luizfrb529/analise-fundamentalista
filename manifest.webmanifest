@@ -1,7 +1,7 @@
 {
-  "name": "Análise Fundamentalista B3",
-  "short_name": "Análise B3",
-  "description": "Indicadores fundamentalistas de ações, BDRs e fundos imobiliários da B3.",
+  "name": "Análise Fundamentalista",
+  "short_name": "Análise Fund.",
+  "description": "Indicadores fundamentalistas de ações, BDRs e fundos imobiliários da B3 e de stocks americanas.",
   "lang": "pt-BR",
   "start_url": "./#/",
   "scope": "./",
