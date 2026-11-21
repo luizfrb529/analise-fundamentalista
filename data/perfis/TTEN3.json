@@ -1,6 +1,6 @@
 {
  "ticker": "TTEN3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-21",
  "resumo": "Revenda de insumos, originação de grãos e indústria de soja, biodiesel e etanol de milho no RS e no Centro-Oeste. Cerca de 48% da receita bruta dos 9M26 veio de exportação.",
  "modelo": "A 3tentos vende sementes, fertilizantes e defensivos ao produtor rural em 83 lojas em seis estados, recebe parte do pagamento em grãos (barter) e comercializa soja, milho e trigo no Brasil e no exterior. Na indústria, processa soja em farelo e óleo, produz biodiesel em Ijuí, Cruz Alta e Vera e, desde junho de 2026, etanol de milho e DDG em Porto Alegre do Norte (MT). A receita é recorrente, ligada ao ciclo de safra, e a TentosCap financia o produtor (carteira de R$ 510 mi em set/26). As exportações são centralizadas na trading 3T International, em Montevidéu.",
  "segmentos": [
@@ -85,5 +85,22 @@
    "data": "2026-11-13"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Receita líquida de R$ 5,85 bi no 3T26, alta de 17,2%; lucro líquido de R$ 208,2 mi, alta de 2,5%.",
+   "Lucro bruto da indústria 89% maior, com a planta de etanol em plena capacidade e crédito de PIS/Cofins de R$ 81,2 mi no biodiesel.",
+   "Fluxo de caixa livre recorde de R$ 1,1 bi; alavancagem sem a TentosCap caiu de 3,05x para 2,44x Ebitda."
+  ],
+  "negativos": [
+   "Ebitda ajustado com hedge de R$ 226,7 mi, queda de 38,5%, com margem de 3,9%.",
+   "Lucro líquido de R$ 499,3 mi nos 9M26, queda de 31,3%, com menores margens em Grãos e custo logístico maior."
+  ],
+  "atencao": [
+   "Dívida líquida consolidada de R$ 2,67 bi; expansões de esmagamento e biodiesel concluídas em 2026, com 10 lojas abertas no ano."
+  ]
+ }
 }
