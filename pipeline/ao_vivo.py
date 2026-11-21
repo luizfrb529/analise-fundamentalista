@@ -28,13 +28,16 @@ def universo() -> list:
 
 def precos() -> dict:
     fiis = RAIZ / "data" / "fiis.json"
-    tickers = [a["ticker"] for a in universo()] + ([f["ticker"] for f in json.loads(fiis.read_text(encoding="utf-8"))] if fiis.exists() else [])
-    df = yf.download([t + ".SA" for t in tickers], period="7d", interval="1d", group_by="ticker", progress=False, auto_adjust=False, threads=True)
+    univ = universo()
+    stocks = {a["ticker"] for a in univ if a.get("tipo") == "STOCK_US"}
+    tickers = [a["ticker"] for a in univ] + ([f["ticker"] for f in json.loads(fiis.read_text(encoding="utf-8"))] if fiis.exists() else [])
+    sim = {t: (t if t in stocks else t + ".SA") for t in tickers}   # stocks americanas não levam .SA
+    df = yf.download(list(sim.values()), period="7d", interval="1d", group_by="ticker", progress=False, auto_adjust=False, threads=True)
     out, fatores = {}, S.fatores_cotacao()
     for t in tickers:
         try:
-            bruto = (df[t + ".SA"] if isinstance(df.columns, pd.MultiIndex) else df)
-            c = S.normalizar_cotacao(bruto, fatores.get(t + ".SA"))["Close"].dropna()
+            bruto = (df[sim[t]] if isinstance(df.columns, pd.MultiIndex) else df)
+            c = S.normalizar_cotacao(bruto, fatores.get(sim[t]))["Close"].dropna()
         except KeyError:
             continue
         if len(c) < 2:

@@ -39,7 +39,7 @@ def ler(caminho: Path, padrao=None):
 def pendentes(universo: list, fundamentals: dict) -> list[tuple[str, str]]:
     """[(ticker, motivo)] em ordem de prioridade: resultado novo primeiro, depois perfis mais antigos."""
     novos, velhos = [], []
-    for a in universo:
+    for a in [x for x in universo if x.get("tipo") != "STOCK_US"]:   # stocks americanas ainda sem perfil
         t = a["ticker"]
         perfil = ler(PASTA / f"{t}.json", {}) or {}
         ult = ((fundamentals.get(t) or {}).get("agenda") or {}).get("ultima") or {}

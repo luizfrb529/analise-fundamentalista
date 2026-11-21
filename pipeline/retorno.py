@@ -102,15 +102,19 @@ def main():
     universo = json.loads((RAIZ / "data" / "universe.json").read_text(encoding="utf-8"))
     fiis_ = RAIZ / "data" / "fiis.json"
     fiis = json.loads(fiis_.read_text(encoding="utf-8")) if fiis_.exists() else []
+    stocks = {a["ticker"] for a in universo if a.get("tipo") == "STOCK_US"}
     tickers = [a["ticker"] for a in universo] + [f["ticker"] for f in fiis]
-    dfs = S.precos_yf([t + ".SA" for t in tickers] + ["^BVSP"], anos=ANOS)
+    sim = {t: (t if t in stocks else t + ".SA") for t in tickers}   # stocks americanas não levam .SA
+    dfs = S.precos_yf(list(sim.values()) + ["^BVSP", "^SP500TR"], anos=ANOS)
     n = 0
     for t in tickers:
-        df = dfs.get(t + ".SA")
+        df = dfs.get(sim[t])
         if df is None or df.empty:
             print(f"{t}: sem preço")
             continue
-        gravar(SAIDA / f"{t}.json", {"ticker": t, "fonte": "Yahoo Finance (B3)", "colunas": ["data", "fechamento", "ajustado", "proventos"], "semanal": serie_semanal(df)})
+        fonte = "Yahoo Finance (bolsa americana, em US$)" if t in stocks else "Yahoo Finance (B3)"
+        gravar(SAIDA / f"{t}.json", {"ticker": t, "fonte": fonte, "moeda": "USD" if t in stocks else "BRL",
+                                     "colunas": ["data", "fechamento", "ajustado", "proventos"], "semanal": serie_semanal(df)})
         n += 1
     anterior = {}
     if (SAIDA / "_benchmarks.json").exists():
@@ -128,6 +132,11 @@ def main():
         bench["ibov"] = [[d.strftime("%Y-%m-%d"), round(float(v), 2)] for d, v in ib["Close"].resample("W-FRI").last().dropna().items()]
     ifix = ifix_b3()
     bench["ifix"] = ifix or anterior.get("ifix", [])
+    sp = dfs.get("^SP500TR")   # S&P 500 com dividendos reinvestidos (Total Return), em US$: referência das stocks
+    if sp is not None and not sp.empty:
+        bench["sp500"] = [[d.strftime("%Y-%m-%d"), round(float(v), 2)] for d, v in sp["Close"].resample("W-FRI").last().dropna().items()]
+    else:
+        bench["sp500"] = anterior.get("sp500", [])
     gravar(SAIDA / "_benchmarks.json", bench)
     print(f"retorno total: {n} ativos; CDI {len(bench['cdi'])} meses; IPCA {len(bench['ipca'])} meses")
 

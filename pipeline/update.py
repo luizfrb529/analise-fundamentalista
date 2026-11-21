@@ -670,6 +670,20 @@ def cagr_serie(series: dict, chave: str, anos: int):
     return None, None
 
 
+def simbolo(a: dict) -> str:
+    """Código do papel no Yahoo: ações e BDRs da B3 levam .SA; stocks americanas usam o próprio ticker."""
+    return a["ticker"] if a.get("tipo") == "STOCK_US" else a["ticker"] + ".SA"
+
+
+def eh_stock(a: dict) -> bool:
+    return a.get("tipo") == "STOCK_US"
+
+
+def usa_juros_eua(a: dict) -> bool:
+    """Taxas de referência americanas (Treasury) para quem reporta em dólar e para stocks que não reportam em reais."""
+    return a.get("moeda_reporte") == "USD" or (eh_stock(a) and a.get("moeda_reporte") != "BRL")
+
+
 def processar(ativo: dict, ctx: dict) -> dict:
     t = ativo["ticker"]
     tipo = ativo["tipo"]
@@ -679,22 +693,23 @@ def processar(ativo: dict, ctx: dict) -> dict:
     mac = ctx["macro"]
     precos = ctx["precos"]
     res = {"ticker": t, "erros": []}
-    bdr = tipo.startswith("BDR")
-    infl = mac["inflacao_lp_eua"]["valor"] if ativo.get("moeda_reporte") == "USD" else mac["inflacao_lp_brasil"]["valor"]
+    stock = tipo == "STOCK_US"
+    bdr = tipo.startswith("BDR") or stock   # BDRs e stocks usam o balanço da SEC
+    usd = usa_juros_eua(ativo)
+    infl = mac["inflacao_lp_eua"]["valor"] if usd else mac["inflacao_lp_brasil"]["valor"]
     g = infl + cfg["g_real_por_setor_micro"].get(ativo["setor_micro"], cfg["g_real_padrao"])
-    usd = ativo.get("moeda_reporte") == "USD"
     taxa_ref = mac["taxa_ref_exterior"] if usd else mac["taxa_ref_brasil"]
     titulo_ref = (mac.get("treasury_10y") or {}).get("taxa") if usd else mac.get("ntnb_nominal")
     ptax = (mac.get("ptax") or {}).get("valor")
 
     # ---------------- mercado do papel na B3
-    df_papel = serie_completa(precos.get(t + ".SA"))
+    df_papel = serie_completa(precos.get(simbolo(ativo)))
     if df_papel is None or df_papel.empty:
         aviso(t, "sem preço no yfinance")
         return res
-    idx = precos.get("^GSPC") if tipo == "BDR_EXTERIOR" else precos.get("^BVSP")
+    idx = precos.get("^GSPC") if tipo in ("BDR_EXTERIOR", "STOCK_US") else precos.get("^BVSP")
     mercado = stats_preco(df_papel, serie_completa(idx) if tipo != "BDR_EXTERIOR" else None)
-    bq = ctx["brapi"].get(t)
+    bq = None if stock else ctx["brapi"].get(t)
     if bq and bq.get("regularMarketPrice"):
         mercado["preco_brapi"] = bq["regularMarketPrice"]
     res["mercado"] = mercado
@@ -832,7 +847,7 @@ def processar(ativo: dict, ctx: dict) -> dict:
             aviso(t, f"sem preço do papel no exterior {ext}")
             return res
         mercado_ext = stats_preco(df_ext, serie_completa(precos.get("^GSPC")))
-        if tipo == "BDR_EXTERIOR":
+        if tipo in ("BDR_EXTERIOR", "STOCK_US"):
             mercado["beta"] = mercado_ext.get("beta")
         else:
             mercado["beta"] = stats_preco(df_papel, serie_completa(precos.get("^BVSP"))).get("beta")
@@ -868,6 +883,16 @@ def processar(ativo: dict, ctx: dict) -> dict:
             for a, d in sec.anuais_yfinance(ext).items():
                 if a not in anuais:
                     anuais[a] = d
+        elif stock and data_ref and data_ref < (AGORA - dt.timedelta(days=200)).date().isoformat():
+            # balanço da SEC parado (empresa deixou de mandar trimestrais em XBRL): LTM mais recente pelo Yahoo, se houver
+            try:
+                ly = sec.ltm_yfinance(ext)
+                if ly.get("lucro_liq") is not None and (ly.get("_fim") or "") > data_ref:
+                    aviso(t, f"SEC em XBRL só até {data_ref}; LTM até {ly.get('_fim')} pelo yfinance")
+                    ltm, data_ref = ly, ly.get("_fim")
+                    fonte_fund = "SEC EDGAR (XBRL anual) + yfinance (LTM trimestral)"
+            except Exception as e:
+                aviso(t, f"LTM pelo yfinance: {e}")
         yx = S.acoes_yf(ext)
         if not acoes:
             try:
@@ -875,19 +900,52 @@ def processar(ativo: dict, ctx: dict) -> dict:
                 aviso(t, "número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)")
             except Exception:
                 acoes = None
+        if stock and acoes and hist_sh:
+            # desdobramento ou grupamento depois da data das ações informadas à SEC: o preço já está ajustado, a quantidade também precisa estar
+            fs = fator_splits(S.acoes_de(precos.get(ext), "Stock Splits"), hist_sh[-1][0])
+            if fs != 1:
+                aviso(t, f"ações da SEC ({acoes:,.0f}, em {hist_sh[-1][0]}) ajustadas por desdobramento/grupamento posterior (fator {fs:g})")
+                acoes *= fs
+        if stock and acoes:
+            # confere o número de ações com o valor de mercado do Yahoo (classes A/B, ADRs): se divergir muito, usa o implícito
+            try:
+                mc_y = float(yx.info.get("marketCap") or 0)
+                impl = mc_y / mercado_ext["preco"] * (ativo.get("acoes_por_adr") or 1) if mc_y and mercado_ext.get("preco") else None
+                if impl and abs(acoes / impl - 1) > 0.25:
+                    fc = impl / acoes
+                    aviso(t, f"ações da SEC ({acoes:,.0f}) incompatíveis com o valor de mercado do Yahoo; usadas {impl:,.0f} (fator {fc:.4g}, classes ou ADR)")
+                    acoes = impl
+                    hist_sh = [(e, v * fc) for e, v in hist_sh]
+            except Exception as e:
+                aviso(t, f"conferência do número de ações: {e}")
         splits = S.acoes_de(precos.get(ext), "Stock Splits")
-        # empresa que reporta em reais (XP, Inter): preço lá fora convertido pela PTAX para casar com o balanço
-        conv = ptax if moeda_rep == "BRL" and ptax else 1.0
-        preco_calc = mercado_ext["preco"] * conv
+        # empresa que reporta em reais (XP, Inter): preço lá fora convertido pela PTAX para casar com o balanço;
+        # em outra moeda (TSMC, SK hynix, ASML, Cameco): pela cotação da moeda contra o dólar no Yahoo
+        fx_serie = None
+        if moeda_rep == "BRL":
+            conv = ptax if ptax else 1.0
+        elif moeda_rep != "USD":
+            fx_serie = serie_completa(precos.get(f"{moeda_rep}=X"))
+            conv = float(fx_serie["Close"].dropna().iloc[-1]) if fx_serie is not None and len(fx_serie) else None
+            if conv is None:
+                aviso(t, f"sem cotação {moeda_rep}=X; indicadores de preço ficam sem conversão")
+                conv = 1.0
+        else:
+            conv = 1.0
+        adr = (ativo.get("acoes_por_adr") or 1) if stock else 1
+        preco_calc = mercado_ext["preco"] * conv / adr
         fator = 1
         moeda = moeda_rep
         vm = preco_calc * acoes if acoes else None
-        vm_brl = vm * (1.0 if moeda_rep == "BRL" else ptax) if vm and ptax else None
+        vm_usd = vm / conv if vm and conv else None
+        vm_brl = vm_usd * ptax if vm_usd and ptax else None
         res["mercado_exterior"] = mercado_ext
-        dpa_lista = proventos_yf(S.acoes_de(precos.get(ext), "Dividends"))
-        for p_ in dpa_lista:
-            p_["valor"] *= conv
-        fonte_prov = "yfinance (proventos do papel no exterior" + (", convertidos pela PTAX atual)" if conv != 1 else ", US$)")
+        dpa_bruto = proventos_yf(S.acoes_de(precos.get(ext), "Dividends"))
+        dpa_lista = [{**p_, "valor": p_["valor"] * conv / adr} for p_ in dpa_bruto]
+        if stock:
+            fonte_prov = "yfinance (dividendos em US$ por " + ("ADR" if adr != 1 else "ação") + ")"
+        else:
+            fonte_prov = "yfinance (proventos do papel no exterior" + (", convertidos pela PTAX atual)" if conv != 1 else ", US$)")
         dpa_ano = dpa_por_ano(dpa_lista)
         acoes_ano = {}
         for a, d in anuais.items():
@@ -898,32 +956,40 @@ def processar(ativo: dict, ctx: dict) -> dict:
             elif acoes:
                 acoes_ano[a] = (acoes, True)
         df_hist = df_ext
-        if conv != 1 and ctx.get("ptax_hist"):
-            px = pd.Series(ctx["ptax_hist"])
+        fx_hist = {}
+        if moeda_rep == "BRL" and conv != 1 and ctx.get("ptax_hist"):
+            fx_hist = ctx["ptax_hist"]
+        elif fx_serie is not None and len(fx_serie):
+            fx_hist = {d.strftime("%Y-%m-%d"): float(v) for d, v in fx_serie["Close"].dropna().items()}
+        if fx_hist or adr != 1:
+            px = pd.Series(fx_hist or {df_ext.index[-1].strftime("%Y-%m-%d"): 1.0})
             px.index = pd.to_datetime(px.index)
-            px = px.sort_index().reindex(df_ext.index.union(px.index)).ffill().reindex(df_ext.index).fillna(conv)
+            idx_ext = df_ext.index.tz_localize(None) if getattr(df_ext.index, "tz", None) is not None else df_ext.index
+            px = px.sort_index().reindex(idx_ext.union(px.index)).ffill().reindex(idx_ext).fillna(conv if fx_hist else 1.0)
             df_hist = df_ext.copy()
-            df_hist["Close"] = df_ext["Close"] * px.values
+            df_hist["Close"] = df_ext["Close"] * px.values / adr
         res["_facts"] = facts
         comunic = comunicados_sec(cik) if cik else []
         calendario = None
         res["governanca"] = {"segmento_listagem": ativo.get("segmento_listagem"), "tag_along": None}
 
-        ptax_hist = ctx.get("ptax_hist") or {}
-
         def vm_em(data, q):
             p = preco_em(df_ext, data)
-            if p and conv != 1:   # histórico em reais: PTAX da data (ou a mais próxima anterior)
-                ds = [d for d in ptax_hist if d <= data]
-                p *= ptax_hist[max(ds)] if ds else conv
-            return p * q if p and q else None
+            if p and fx_hist:   # histórico na moeda do balanço: câmbio da data (ou o mais próximo anterior)
+                ds = [d for d in fx_hist if d <= data]
+                p *= fx_hist[max(ds)] if ds else conv
+            return p * q / adr if p and q else None
 
+        if stock:
+            res["stock"] = {"bolsa": ativo.get("bolsa_exterior"), "pais": ativo.get("pais"), "moeda_balanco": moeda_rep,
+                            "acoes_por_adr": adr if adr != 1 else None, "cambio": conv if moeda_rep != "USD" else None,
+                            "valor_mercado_usd": vm_usd}
         # bloco BDR (sempre em US$ no exterior)
         px_ext = mercado_ext["preco"]
-        prop = ativo.get("proporcao_bdr")
+        prop = ativo.get("proporcao_bdr") if not stock else None
         justo = px_ext * ptax / prop if prop and ptax else None
         implicita = px_ext * ptax / preco_papel if ptax and preco_papel else None
-        res["bdr"] = {"ticker_exterior": ext, "bolsa_exterior": ativo.get("bolsa_exterior"), "proporcao": prop,
+        res["bdr"] = None if stock else {"ticker_exterior": ext, "bolsa_exterior": ativo.get("bolsa_exterior"), "proporcao": prop,
                       "proporcao_fonte": ativo.get("proporcao_fonte"), "preco_exterior": px_ext,
                       "data_exterior": mercado_ext["data"], "ptax": ptax, "preco_justo": justo,
                       "agio": preco_papel / justo - 1 if justo else None, "proporcao_implicita": implicita,
@@ -950,6 +1016,8 @@ def processar(ativo: dict, ctx: dict) -> dict:
         por_tipo[a][p["tipo"] if p["tipo"] in ("DIVIDENDO", "JCP") else "OUTROS"] += p["valor"]
     res["proventos"] = {"lista": dpa_lista[:60], "por_ano": dpa_ano, "por_ano_tipo": por_tipo, "fonte": fonte_prov,
                         "fonte_por_ano": res.get("proventos_ano_fonte"), "moeda": "USD" if bdr else "BRL"}
+    if stock and (conv != 1 or adr != 1):   # exibição em US$ como pago; o cálculo acima usa a moeda do balanço
+        res["proventos"].update({"lista": dpa_bruto[:60], "por_ano": dpa_por_ano(dpa_bruto), "por_ano_tipo": {}, "fonte_por_ano": None})
     dpa_12m_calc = dpa_12m
     if not bdr and fator != 1:
         pass  # proventos da B3 já vêm por papel (unit = 1 ON + 2 PN)
@@ -1138,7 +1206,7 @@ def processar(ativo: dict, ctx: dict) -> dict:
         c0 = (saldo_ant or {}).get("carteira")
         ind["cresc_carteira"] = ltm.get("carteira") / c0 - 1 if I.ok(ltm.get("carteira"), c0) and c0 > 0 else None
     # BDR
-    if bdr:
+    if bdr and not stock:
         ind["bdr_preco_justo"] = res["bdr"]["preco_justo"]
         ind["bdr_agio"] = res["bdr"]["agio"]
 
@@ -1179,10 +1247,11 @@ def grupos(universo: list[dict]) -> dict[str, list[str]]:
     n = CFG["grupo_minimo_pares"]
     out = {}
     for a in universo:
-        micro = [b["ticker"] for b in universo if b["setor_micro"] == a["setor_micro"]]
-        macro = [b["ticker"] for b in universo if b["setor_macro"] == a["setor_macro"]]
+        mesmo = [b for b in universo if eh_stock(b) == eh_stock(a)]   # stocks americanas comparadas só entre si
+        micro = [b["ticker"] for b in mesmo if b["setor_micro"] == a["setor_micro"]]
+        macro = [b["ticker"] for b in mesmo if b["setor_macro"] == a["setor_macro"]]
         fam_fin = a["modelo_analise"] in FIN
-        familia = [b["ticker"] for b in universo if (b["modelo_analise"] in FIN) == fam_fin]
+        familia = [b["ticker"] for b in mesmo if (b["modelo_analise"] in FIN) == fam_fin]
         if len(micro) >= n:
             out[a["ticker"]] = ("setor_micro", a["setor_micro"], micro)
         elif len(macro) >= n:
@@ -1246,7 +1315,9 @@ def main():
     print("Preços (yfinance)...")
     tks = set()
     for a in universo:
-        tks.add(a["ticker"] + ".SA")
+        tks.add(simbolo(a))
+        if eh_stock(a) and a.get("moeda_reporte") not in ("USD", "BRL"):
+            tks.add(f"{a['moeda_reporte']}=X")
         for c in (a.get("classes") or {}).values():
             tks.add(c + ".SA")
         for p in a.get("participacoes_listadas", []):
@@ -1258,7 +1329,7 @@ def main():
     faltam = sorted(tks - set(precos))
     if faltam:
         aviso("PRECOS", f"sem histórico: {faltam}")
-    brapi = S.brapi_quote([a["ticker"] for a in universo])
+    brapi = S.brapi_quote([a["ticker"] for a in universo if not eh_stock(a)])
 
     base = cvm.BaseCVM(dfp, itr)
     ctx = {"macro": mac, "precos": precos, "brapi": brapi, "cadastro": cad, "base": base, "dfp": dfp, "itr": itr,
@@ -1332,7 +1403,8 @@ def main():
                 unicos.append(m)
         membros = unicos
         med, pct = {}, {}
-        micro = [b["ticker"] for b in universo if b["setor_micro"] == next(x for x in universo if x["ticker"] == t)["setor_micro"]]
+        a_t = next(x for x in universo if x["ticker"] == t)
+        micro = [b["ticker"] for b in universo if b["setor_micro"] == a_t["setor_micro"] and eh_stock(b) == eh_stock(a_t)]
         med_micro = {}
         for k in chaves:
             pop = [resultados[m]["ind"].get(k) for m in membros if m in resultados and "ind" in resultados[m]]
@@ -1410,14 +1482,14 @@ def main():
         r = resultados.get(t, {})
         if not r.get("mercado"):
             continue
-        df = serie_completa(precos.get(t + ".SA"))
+        df = serie_completa(precos.get(simbolo(a)))
         spark = [round(float(x), 4) for x in df["Close"].iloc[-63:]]
         prices[t] = {**{k: r["mercado"].get(k) for k in ("preco", "data", "var_dia", "var_mes", "var_ano", "var_12m", "var_5a", "max_52s", "min_52s", "liquidez_21", "liquidez_63", "preco_brapi")},
                      "spark_3m": spark}
         fundamentals[t] = {"ind": r.get("ind", {}), "medias_5a": r.get("medias_5a", {}), "setor": setor_stats.get(t, {}),
                            "data_balanco": r.get("data_balanco"), "trimestre": tri(r["data_balanco"]) if r.get("data_balanco") else None,
                            "fonte": r.get("fonte_fundamentos"), "moeda": r.get("moeda_fundamentos"), "governanca": r.get("governanca"),
-                           "bdr": r.get("bdr"), "mercado_exterior": {k: (r.get("mercado_exterior") or {}).get(k) for k in ("preco", "data", "var_dia")} if r.get("mercado_exterior") else None,
+                           "bdr": r.get("bdr"), "stock": r.get("stock"), "mercado_exterior": {k: (r.get("mercado_exterior") or {}).get(k) for k in ("preco", "data", "var_dia")} if r.get("mercado_exterior") else None,
                            "valor_mercado_partes": r.get("valor_mercado_partes"), "cd_cvm": r.get("cd_cvm"), "cik": r.get("cik"),
                            "holding": r.get("holding"), "cripto": r.get("cripto"), "piotroski": r.get("piotroski"), "agenda": r.get("agenda"), "acoes_por_papel": r.get("acoes_por_papel"),
                            "classes": r.get("classes"), "composicao_unit": a.get("composicao_unit"), "manuais_fonte": r.get("manuais_fonte"),
@@ -1447,7 +1519,7 @@ def main():
         noticias = antigo.get("noticias", [])
         if not sem_noticias:
             try:
-                ext = a.get("ticker_exterior") if a["tipo"].startswith("BDR") else None
+                ext = a.get("ticker_exterior") if a["tipo"].startswith("BDR") or eh_stock(a) else None
                 noticias = S.noticias_empresa(a["nome"], t, ext, 15)
             except Exception as e:
                 aviso(t, f"notícias: {e}")
@@ -1456,7 +1528,7 @@ def main():
         prox = None
         try:
             if a["tipo"] == "ACAO_BR" or a.get("ticker_exterior"):
-                cal = S.acoes_yf(a["ticker_exterior"] if a["tipo"] == "BDR_EXTERIOR" or a["tipo"] == "BDR_EXPOSICAO_BR" else t + ".SA").calendar
+                cal = S.acoes_yf(a["ticker_exterior"] if a["tipo"] in ("BDR_EXTERIOR", "BDR_EXPOSICAO_BR", "STOCK_US") else t + ".SA").calendar
                 ed = cal.get("Earnings Date") if isinstance(cal, dict) else None
                 if ed:
                     d0 = ed[0] if isinstance(ed, list) else ed
@@ -1525,7 +1597,7 @@ def aplicar_criterios(fundamentals: dict, mac: dict, univ: dict):
     for t, f in fundamentals.items():
         i = f.get("ind") or {}
         a = univ.get(t) or {}
-        usd = a.get("moeda_reporte") == "USD"
+        usd = usa_juros_eua(a)
         base_kd = ust if usd else selic
         kd = base_kd + CFG.get("spread_divida", 0.02) if base_kd is not None else None
         ir = CFG.get("ir_eua", 0.21) if usd else CFG.get("ir_brasil", 0.34)
@@ -1626,6 +1698,8 @@ def aplicaveis(a):
     if a["tipo"].startswith("BDR"):
         base += ["bdr_preco_justo", "bdr_agio"]
         base = [k for k in base if k not in ("free_float", "controlador_pct", "tag_along")]
+    if a["tipo"] == "STOCK_US":
+        base = [k for k in base if k not in ("free_float", "controlador_pct", "tag_along", "aluguel_valor", "aluguel_pct_ff", "aluguel_dias")]
     if a["tipo"] == "ACAO_BR" and len(a.get("classes", {})) < 2:
         pass
     return [k for k in base if k not in ("preco", "valor_mercado")]

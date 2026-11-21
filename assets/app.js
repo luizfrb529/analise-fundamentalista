@@ -21,7 +21,8 @@ const CENARIOS = {
   selic_caindo: "Selic caindo", dolar_subindo: "Dólar subindo", commodities_subindo: "Commodities subindo",
   pib_acelerando: "PIB acelerando", inflacao_subindo: "Inflação subindo", risco_fiscal_subindo: "Risco fiscal subindo",
 };
-const TIPO_CURTO = { ACAO_BR: "Ação", BDR_EXPOSICAO_BR: "BDR (empresa brasileira)", BDR_EXTERIOR: "BDR" };
+const TIPO_CURTO = { ACAO_BR: "Ação", BDR_EXPOSICAO_BR: "BDR (empresa brasileira)", BDR_EXTERIOR: "BDR", STOCK_US: "Stock (bolsa americana)" };
+const SIMBOLO_MOEDA = { USD: "US$", BRL: "R$", EUR: "€", TWD: "NT$", KRW: "₩", CAD: "C$" };
 const SEGMENTO_B3 = { NM: "Novo Mercado", N1: "Nível 1", N2: "Nível 2", MA: "Bovespa Mais", M2: "Bovespa Mais Nível 2", BOLSA: "Tradicional", DR3: "BDR Nível III" };
 const NAO_FIN = new Set(["divida_bruta", "divida_liquida", "ev", "p_ebitda", "p_ebit", "psr", "p_capital_giro", "p_acl", "ev_ebitda", "ev_ebit",
   "ev_receita", "earnings_yield", "fcf_yield", "divliq_pl", "divliq_ebitda", "divliq_ebit", "liquidez_corrente", "liquidez_seca",
@@ -79,7 +80,9 @@ function grande(v) {
 }
 function meta(k) { return (D.imeta.indicadores[k]) || EXTRA_META[k] || { nome: k, unidade: "x", direcao: 0, formula: "" }; }
 function rot(k) { return ROT[k] || meta(k).nome; }
-function moedaDe(t) { return (D.fund[t] && D.fund[t].moeda === "USD") ? "US$" : "R$"; }
+function moedaDe(t) { const m = D.fund[t] && D.fund[t].moeda; return SIMBOLO_MOEDA[m] || "R$"; }
+// moeda em que o papel é negociado (preço, liquidez): reais na B3, dólar nas stocks americanas
+function moedaPreco(t) { return isStock(t) ? "US$" : "R$"; }
 function fmtU(v, u, moeda = "R$") {
   if (v === null || v === undefined || (typeof v === "number" && !isFinite(v))) return ND;
   if (typeof v === "boolean") return v ? "sim" : "não";
@@ -102,6 +105,9 @@ function fmtU(v, u, moeda = "R$") {
 function fmt(t, k, v) {
   if (v === undefined) v = val(t, k);
   if (k === "piotroski") return pioHtml(v);
+  if (k === "preco" || k === "liquidez_21" || k === "liquidez_63") return fmtU(v, meta(k).unidade, moedaPreco(t));
+  // stocks: valor de mercado em dólar (o campo guarda reais pela PTAX para comparar com a B3)
+  if (k === "valor_mercado_brl" && isStock(t)) { const px = ((D.macro || {}).ptax || {}).valor; return ok(v) && px ? "US$ " + grande(v / px) : ND; }
   return fmtU(v, meta(k).unidade, moedaDe(t));
 }
 function pioHtml(v) {
@@ -112,6 +118,7 @@ function A(t) { return D.univMap[t]; }
 function isBDR(t) { return A(t).tipo.startsWith("BDR"); }
 // empresas brasileiras listadas via BDR (Nu, Inter, XP...) aparecem junto das ações
 function emAcoes(t) { const a = A(t); return a.tipo === "ACAO_BR" || a.grupo_site === "acoes"; }
+function isStock(t) { return (A(t) || {}).tipo === "STOCK_US"; }
 function isFin(t) { return ["BANCO", "SEGURADORA"].includes(A(t).modelo_analise); }
 function isRec(t) { return A(t).modelo_analise === "RECUPERACAO"; }
 function isCripto(t) { return A(t).modelo_analise === "TESOURARIA_CRIPTO"; }
@@ -301,6 +308,7 @@ function cor(v) { return getComputedStyle(document.documentElement).getPropertyV
 function stripTags(s) { return String(s).replace(/<[^>]+>/g, ""); }
 function filtroSeg(lista, seg) {
   if (!seg || seg === "TODOS") return lista;
+  if (seg === "STOCK") return (lista === D.tickers ? D.stocks : lista).filter(isStock);
   if (seg === "BDR") return lista.filter((t) => !emAcoes(t));
   if (seg === "ACAO_BR") return lista.filter(emAcoes);
   return lista.filter((t) => A(t).tipo === seg);
@@ -320,7 +328,8 @@ async function carregar() {
   Object.assign(D, { meta: meta_, macro, prices, fund, imeta, notes, config, cache: {}, logos: new Set(logos) });
   D.univ = univ.filter((a) => fund[a.ticker]);
   D.univMap = Object.fromEntries(univ.map((a) => [a.ticker, a]));
-  D.tickers = D.univ.map((a) => a.ticker);
+  D.tickers = D.univ.filter((a) => a.tipo !== "STOCK_US").map((a) => a.ticker);   // ações e BDRs da B3
+  D.stocks = D.univ.filter((a) => a.tipo === "STOCK_US").map((a) => a.ticker);     // stocks americanas, em dólar
   D.fiis = (fiisIdx && fiisIdx.fiis) || [];
   D.fiiMap = Object.fromEntries(D.fiis.map((f) => [f.ticker, f]));
   D.vivoFii = {};
@@ -433,8 +442,8 @@ async function render() {
   fecharModal();
   const { r, p, q } = rota();
   let ativoMenu = r;
-  if (r === "ativos" || r === "filtros") ativoMenu = q.get("seg") === "BDR" ? "bdrs" : "acoes";
-  if (r === "ativo" && D.univMap[p.toUpperCase()]) ativoMenu = emAcoes(p.toUpperCase()) ? "acoes" : "bdrs";
+  if (r === "ativos" || r === "filtros") ativoMenu = q.get("seg") === "BDR" ? "bdrs" : q.get("seg") === "STOCK" ? "stocks" : "acoes";
+  if (r === "ativo" && D.univMap[p.toUpperCase()]) ativoMenu = isStock(p.toUpperCase()) ? "stocks" : emAcoes(p.toUpperCase()) ? "acoes" : "bdrs";
   $$(".menu-item > a").forEach((a) => a.classList.toggle("ativo", a.dataset.rota === ativoMenu));
   $("#menu").classList.remove("aberto");
   const app = $("#app");
@@ -484,6 +493,12 @@ function montarMenus() {
     <div class="mega-col"><h5>Listas rápidas</h5><a class="item" href="#/rankings?seg=BDR">Nota por critérios</a><a class="item" href="#/rankings?foco=roe&seg=BDR">Maior ROE</a><a class="item" href="#/rankings?foco=margem&seg=BDR">Maior margem líquida</a>
       <a class="item" href="#/rankings?foco=cresc&seg=BDR">Crescimento do lucro</a><a class="item" href="#/rankings?foco=piotroski&seg=BDR">Qualidade contábil</a></div>
     <div class="rodape-mega"><a class="lk" href="#/ativos?seg=BDR">Ver todos os BDRs →</a></div>`;
+  const mg = $("#mega-stocks");
+  if (mg) mg.innerHTML = `
+    <div class="mega-col"><h5>Setores</h5>${[...new Set(D.stocks.map((t) => A(t).setor_macro))].sort((a, b) => a.localeCompare(b, "pt-BR")).map((x) => `<a class="item" href="#/ativos?seg=STOCK&setor=${encodeURIComponent(x)}">${esc(x)}</a>`).join("")}</div>
+    <div class="mega-col"><h5>Listas rápidas</h5><a class="item" href="#/rankings?seg=STOCK">Nota por critérios</a><a class="item" href="#/rankings?foco=roe&seg=STOCK">Maior ROE</a><a class="item" href="#/rankings?foco=pl&seg=STOCK">Menor P/L</a>
+      <a class="item" href="#/rankings?foco=cresc&seg=STOCK">Crescimento do lucro</a><a class="item" href="#/rankings?foco=piotroski&seg=STOCK">Qualidade contábil</a><a class="item" href="#/mapa?seg=STOCK">Mapa das stocks</a></div>
+    <div class="rodape-mega"><a class="lk" href="#/ativos?seg=STOCK">Ver todas as stocks →</a></div>`;
   $$(".mega a").forEach((a) => a.addEventListener("click", () => { a.blur(); document.activeElement && document.activeElement.blur(); }));
 }
 
@@ -526,17 +541,17 @@ async function feedNoticias() {
   return D.cache.feed;
 }
 function pgHome(app) {
-  const nome = () => EST.homeSeg === "BDR" ? "BDRs" : EST.homeSeg === "FII" ? "FIIs" : "ações";
+  const nome = () => EST.homeSeg === "BDR" ? "BDRs" : EST.homeSeg === "FII" ? "FIIs" : EST.homeSeg === "STOCK" ? "stocks" : "ações";
   EST.homeSetores = EST.homeSetores || [];
   EST.homeFeed = EST.homeFeed || { aba: "noticias", n: 15 };
   app.innerHTML = `
   <section class="hero">
     ${quadrosMercado()}
     <h1>Análise fundamentalista das empresas da B3</h1>
-    <p>Indicadores, qualidade e valuation de ${D.tickers.length} ações e BDRs${(D.fiis || []).length ? ` e ${D.fiis.length} fundos imobiliários` : ""}, calculados a partir das demonstrações e informes oficiais.</p>
+    <p>Indicadores, qualidade e valuation de ${D.tickers.length} ações e BDRs${(D.fiis || []).length ? `, ${D.fiis.length} fundos imobiliários` : ""}${D.stocks.length ? ` e ${D.stocks.length} stocks americanas` : ""}, calculados a partir das demonstrações e informes oficiais.</p>
     <div class="busca-grande busca"><input type="search" id="busca-home" placeholder="Digite o nome da empresa, o código ou o setor" autocomplete="off" aria-label="Buscar ativo">
       <button class="ir" id="busca-home-ir" aria-label="Buscar">${ICONE_LUPA}</button><div class="busca-lista" id="busca-home-lista" hidden></div></div>
-    <div class="linha centro" style="margin-top:26px"><div class="segmentado" id="home-seg"><button data-s="ACAO_BR" class="${EST.homeSeg === "ACAO_BR" ? "ativo" : ""}">Ações</button><button data-s="BDR" class="${EST.homeSeg === "BDR" ? "ativo" : ""}">BDRs</button><button data-s="FII" class="${EST.homeSeg === "FII" ? "ativo" : ""}">FIIs</button></div></div>
+    <div class="linha centro" style="margin-top:26px"><div class="segmentado" id="home-seg"><button data-s="ACAO_BR" class="${EST.homeSeg === "ACAO_BR" ? "ativo" : ""}">Ações</button><button data-s="BDR" class="${EST.homeSeg === "BDR" ? "ativo" : ""}">BDRs</button><button data-s="FII" class="${EST.homeSeg === "FII" ? "ativo" : ""}">FIIs</button><button data-s="STOCK" class="${EST.homeSeg === "STOCK" ? "ativo" : ""}">Stocks</button></div></div>
   </section>
   <div class="filtro-setores">
     <div class="linha">
@@ -814,7 +829,7 @@ function celula(t, k) {
   const m = meta(k), r = esc(rot(k)), v = val(t, k);
   if (k === "empresa") return `<td class="cel-empresa">${empresa(t)}</td>`;
   if (k === "setor_micro") return `<td data-label="${r}"><span class="tag-setor">${esc(v)}</span></td>`;
-  if (k === "preco") return `<td class="n" data-label="${r}">${ok(v) ? "R$ " + nf2.format(v) : ND}</td>`;
+  if (k === "preco") return `<td class="n" data-label="${r}">${ok(v) ? moedaPreco(t) + " " + nf2.format(v) : ND}</td>`;
   if (k.startsWith("var_")) return `<td class="n" data-label="${r}">${varHtml(v)}</td>`;
   if (m.unidade === "txt") return `<td data-label="${r}">${v ? esc(v) : ND}</td>`;
   return `<td class="n" data-label="${r}">${suprimido(t, k) ? ND : fmt(t, k, v)}</td>`;
@@ -839,11 +854,11 @@ function pgAtivos(app, q) {
   T.setor = q.get("setor") || "";
   T.porte = q.get("porte") || "";
   T.colunas = T.colunas || lsGet("colunas_v3", PRESETS.padrao.cols);
-  const titulo = T.seg === "ACAO_BR" ? "Ações" : T.seg === "BDR" ? "BDRs" : T.seg === "BDR_EXTERIOR" ? "BDRs de empresas estrangeiras" : T.seg === "BDR_EXPOSICAO_BR" ? "BDRs com risco Brasil" : "Ativos";
+  const titulo = T.seg === "ACAO_BR" ? "Ações" : T.seg === "BDR" ? "BDRs" : T.seg === "STOCK" ? "Stocks (EUA, em US$)" : T.seg === "BDR_EXTERIOR" ? "BDRs de empresas estrangeiras" : T.seg === "BDR_EXPOSICAO_BR" ? "BDRs com risco Brasil" : "Ativos";
   const setores = [...new Set(filtroSeg(D.tickers, T.seg).map((t) => A(t).setor_macro))].sort((a, b) => a.localeCompare(b, "pt-BR"));
   app.innerHTML = `${trilha([[titulo]])}
   <div class="cab-pagina"><div><div class="linha"><h1>${esc(titulo)}</h1>
-    <div class="segmentado" id="t-seg">${[["TODOS", "Todos"], ["ACAO_BR", "Ações"], ["BDR", "BDRs"]].map(([k, n]) => `<button data-s="${k}" class="${(T.seg === k || (k === "BDR" && T.seg.startsWith("BDR"))) ? "ativo" : ""}">${n}</button>`).join("")}</div></div>
+    <div class="segmentado" id="t-seg">${[["TODOS", "Todos"], ["ACAO_BR", "Ações"], ["BDR", "BDRs"], ["STOCK", "Stocks"]].map(([k, n]) => `<button data-s="${k}" class="${(T.seg === k || (k === "BDR" && T.seg.startsWith("BDR"))) ? "ativo" : ""}">${n}</button>`).join("")}</div></div>
     ${T.setor ? `<p>Setor: <b>${esc(T.setor)}</b> · <a class="lk" href="#/ativos?seg=${T.seg}">ver todos os setores</a></p>` : ""}${T.porte === "small" ? `<p>Small caps: valor de mercado até R$ 10 bilhões · <a class="lk" href="#/ativos?seg=${T.seg}">ver todas</a></p>` : ""}</div>${pilulasData()}</div>
   <div class="linha entre" style="margin-bottom:14px">
     <div class="chips" id="t-preset">${Object.entries(PRESETS).map(([k, p]) => `<button class="chip ${T.preset === k ? "ativo" : ""}" data-p="${k}">${p.nome}</button>`).join("")}</div>
@@ -920,7 +935,7 @@ function pgRankings(app, q) {
   const foco = q.get("foco");
   const macros = [...new Set(D.univ.map((a) => a.setor_macro))].sort((a, b) => a.localeCompare(b, "pt-BR"));
   app.innerHTML = `${trilha([["Rankings"]])}<div class="cab-pagina"><div><h1>Rankings</h1><p>Cada ranking ordena por um único indicador, descrito no próprio cartão. Empresas em recuperação ficam fora dos rankings de preço e rentabilidade.</p></div>${pilulasData()}</div>
-  <div class="linha entre" style="margin-bottom:16px"><div class="segmentado" id="rk-seg">${[["TODOS", "Todos"], ["ACAO_BR", "Ações"], ["BDR", "BDRs"]].map(([k, n]) => `<button data-s="${k}" class="${EST.rkSeg === k ? "ativo" : ""}">${n}</button>`).join("")}</div>
+  <div class="linha entre" style="margin-bottom:16px"><div class="segmentado" id="rk-seg">${[["TODOS", "Todos"], ["ACAO_BR", "Ações"], ["BDR", "BDRs"], ["STOCK", "Stocks"]].map(([k, n]) => `<button data-s="${k}" class="${EST.rkSeg === k ? "ativo" : ""}">${n}</button>`).join("")}</div>
     <select id="rk-setor"><option value="">Todos os setores</option>${macros.map((s) => `<option ${EST.rkSetor === s ? "selected" : ""}>${esc(s)}</option>`).join("")}</select></div>
   <section><div class="secao-cab"><button class="btn peq prim" id="crit-xls" style="order:2">Baixar Excel</button><div><h2 class="titulo-barra">Classificação por critérios</h2><p class="sub" style="margin-top:6px">Nota de 0 a 10: soma das estrelas dos critérios que a empresa atende sobre as estrelas dos critérios avaliados. Passe o mouse no nome de cada critério para ver o parâmetro e o peso. Empresas em recuperação ficam de fora. <i class="q-estatal"></i> controle ou influência estatal (alerta, não entra na nota).</p></div></div>
     <div id="rk-criterios"></div>
@@ -1007,7 +1022,7 @@ async function pgAtivo(app, t) {
   if (!D.univMap[t] || !D.fund[t]) { app.innerHTML = `<div class="cartao"><h1>${esc(t)}</h1><p>Ativo não encontrado.</p><p><a class="lk" href="#/">Voltar ao início</a></p></div>`; return; }
   const a = A(t), f = D.fund[t], i = f.ind, p = D.prices[t] || {}, n = D.notes[t] || {}, mo = moedaDe(t), st = f.setor || {};
   const h = await historico(t);
-  const segTab = emAcoes(t) ? "ACAO_BR" : "BDR";
+  const segTab = isStock(t) ? "STOCK" : emAcoes(t) ? "ACAO_BR" : "BDR", pm = moedaPreco(t), stk = isStock(t);
   const pos52 = ok(p.preco) && ok(p.min_52s) && ok(p.max_52s) && p.max_52s > p.min_52s ? (p.preco - p.min_52s) / (p.max_52s - p.min_52s) * 100 : null;
   const rec = a.recuperacao || {};
   const classes = Object.values(f.classes || a.classes || {}).filter((x) => x && x !== t);
@@ -1018,26 +1033,27 @@ async function pgAtivo(app, t) {
   const kv = (r, v) => `<div class="kv"><span>${r}</span><b>${v}</b></div>`;
   const din = (v) => ok(v) ? `${mo} ${grande(v)}` : ND;
 
-  app.innerHTML = `${trilha([[emAcoes(t) ? "Ações" : "BDRs", `#/ativos?seg=${segTab}`], [a.setor_macro, `#/ativos?seg=${segTab}&setor=${encodeURIComponent(a.setor_macro)}`], [t]])}
+  app.innerHTML = `${trilha([[stk ? "Stocks" : emAcoes(t) ? "Ações" : "BDRs", `#/ativos?seg=${segTab}`], [a.setor_macro, `#/ativos?seg=${segTab}&setor=${encodeURIComponent(a.setor_macro)}`], [t]])}
   <div class="ativo-topo">
     <div class="ativo-id">${logo(t, "g")}<div><h1>${t}${classes.length ? classes.map((c) => `<span class="badge">${c}</span>`).join("") : ""}${isRec(t) ? `<span class="badge rec">${esc(recNome(t))}</span>` : ""}${estado(t) ? `<span class="badge estatal" data-tip="${esc(estado(t).resumo)}"><i class="q-estatal"></i>${rotEstado(t)}</span>` : ""}</h1><div class="nm">${esc(a.nome)}</div>${proxResultado(t)}</div></div>
-    <nav class="secoes-nav" id="secoes">${[["indicadores", "Indicadores"], ["criterios", "Critérios"], ["resultados", "Resultados"], ["proventos", "Proventos"], ["sobre", "Sobre a empresa"], ["governanca", "Governança"], ["acionistas", "Acionistas"], ["noticias", "Comunicados"]].map(([id, nm]) => `<a href="#" data-sec="${id}">${nm}</a>`).join("")}</nav>
+    <nav class="secoes-nav" id="secoes">${[["indicadores", "Indicadores"], ["criterios", "Critérios"], ["resultados", "Resultados"], ["proventos", "Proventos"], ["sobre", "Sobre a empresa"], ["governanca", "Governança"], ["acionistas", "Acionistas"], ["noticias", "Comunicados"]].filter(([id]) => !(stk && (id === "governanca" || id === "acionistas"))).map(([id, nm]) => `<a href="#" data-sec="${id}">${nm}</a>`).join("")}</nav>
   </div>
 
   <div class="cartao" style="margin-top:18px">
     <div class="cotacao-cab"><div title="Cotação com atraso de até 15 minutos. Indicadores calculados com o preço de fechamento de ${dataBR(D.meta.data_fechamento)}."><div class="sub">Cotação</div>
-      <div class="preco-grande">R$ ${ok(p.preco) ? nf2.format(p.preco) : "n/d"}${ok(p.var_dia) ? ` <span class="preco-var">(${varHtml(p.var_dia)})</span>` : ""}</div>
+      <div class="preco-grande">${pm} ${ok(p.preco) ? nf2.format(p.preco) : "n/d"}${ok(p.var_dia) ? ` <span class="preco-var">(${varHtml(p.var_dia)})</span>` : ""}</div>
       ${a.fator_cotacao && ok(p.preco) ? `<div class="sub">Preço por ação. Na B3, ${t} é cotado por lote de ${a.fator_cotacao.fator}: R$ ${nf2.format(p.preco * a.fator_cotacao.fator)}.</div>` : ""}
       <div class="sub" style="margin-top:6px">${p.ao_vivo ? `Atualizada às ${new Date(p.ao_vivo).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}` : `Fechamento de ${dataBR(p.data)}`}</div>
       <div class="sub">No ano ${varHtml(p.var_ano)} · 12 meses ${varHtml(p.var_12m)}</div>
-      ${pos52 !== null ? `<div class="faixa52"><div class="trilho"><span class="marc" style="left:${pos52}%"></span></div><div class="ext"><span>Mín. 52 semanas R$ ${nf2.format(p.min_52s)}</span><span>Máx. R$ ${nf2.format(p.max_52s)}</span></div></div>` : ""}</div>
-      <div class="linha" style="gap:8px"><a class="btn peq" href="#/retorno?t=${t}&p=10&m=ambos&b=cdi,ipca6">Retorno total com proventos</a><div class="chips" id="px-per"><button class="chip ativo" data-p="1">1A</button><button class="chip" data-p="5">5A</button><button class="chip" data-p="10">10A</button></div></div></div>
+      ${pos52 !== null ? `<div class="faixa52"><div class="trilho"><span class="marc" style="left:${pos52}%"></span></div><div class="ext"><span>Mín. 52 semanas ${pm} ${nf2.format(p.min_52s)}</span><span>Máx. ${pm} ${nf2.format(p.max_52s)}</span></div></div>` : ""}</div>
+      <div class="linha" style="gap:8px"><a class="btn peq" href="#/retorno?t=${t}&p=10&m=ambos&b=${stk ? "sp500" : "cdi,ipca6"}">Retorno total com ${stk ? "dividendos" : "proventos"}</a><div class="chips" id="px-per"><button class="chip ativo" data-p="1">1A</button><button class="chip" data-p="5">5A</button><button class="chip" data-p="10">10A</button></div></div></div>
     <div class="grafico" style="margin-top:12px"><canvas id="g-preco"></canvas></div>
     <div class="badges" style="margin-top:12px">${[a.setor_macro, a.setor_micro, i.porte, SEGMENTO_B3[a.segmento_listagem], TIPO_CURTO[a.tipo]].filter(Boolean).map((b) => `<span class="badge">${esc(b)}</span>`).join("")}</div>
   </div>
   ${isRec(t) ? `<div class="aviso-rec"><b>${esc(recNome(t))}</b>${rec.pedido ? ` desde ${esc(dataBR(rec.pedido))}` : ""}. ${esc(rec.situacao || "")}<div class="sub" style="margin-top:4px">Múltiplos de lucro, TIR implícita e preço justo não são exibidos: os fluxos de uma empresa em recuperação não representam a operação normal. Fonte: ${esc(rec.fonte || "comunicados da companhia")}.</div></div>` : ""}
   ${estado(t) ? `<div class="aviso-estatal"><i class="q-estatal"></i><div><b>${rotEstado(t)}</b>. ${esc(estado(t).resumo)}<div class="sub" style="margin-top:4px">Decisões de preço, investimento, dividendos ou gestão podem seguir interesses do governo, não só dos acionistas. Fonte: ${esc(estado(t).fonte)}.</div></div></div>` : ""}
   ${isCripto(t) ? `<div class="aviso-info">Tesouraria em bitcoin: o valor da empresa acompanha o bitcoin em caixa. Os indicadores centrais são mNAV e BTC por ação.</div>` : ""}
+  ${stk ? `<div class="aviso-info">Stock da bolsa americana (${esc(a.bolsa_exterior || "EUA")}): preço e dividendos em dólar; comparação com o S&P 500 e com as outras stocks do site.${mo !== "US$" ? ` A empresa reporta o balanço em ${esc(mo)}; os múltiplos convertem o preço pelo câmbio do dia${(f.stock || {}).acoes_por_adr ? ` e consideram ${f.stock.acoes_por_adr} ações por ADR` : ""}.` : ""}</div>` : ""}
   ${isBDR(t) ? `<div class="aviso-info">BDR: fundamentos em ${mo === "US$" ? "dólar" : "reais (a empresa reporta em R$)"}. A tributação de proventos de BDR difere da de ações brasileiras.</div>` : ""}
 
   <section class="secao" id="sec-indicadores">
@@ -1069,7 +1085,7 @@ async function pgAtivo(app, t) {
 
   <section class="secao" id="sec-sobre"><div class="secao-cab"><h2 class="titulo-barra">Sobre ${esc(a.nome)}</h2></div><div id="sobre"><div class="carregando"><span></span>Carregando</div></div></section>
 
-  <section class="secao" id="sec-governanca"><div class="secao-cab"><h2 class="titulo-barra">Governança</h2></div>
+  ${stk ? "" : `<section class="secao" id="sec-governanca"><div class="secao-cab"><h2 class="titulo-barra">Governança</h2></div>
     <div class="gov">
       <div class="ind"><div class="rot">Tag along</div><div class="val">${ok(i.tag_along) ? nf0.format(i.tag_along) + "%" : ND}</div><p>Percentual do preço pago ao controlador que o minoritário recebe se o controle for vendido.</p></div>
       <div class="ind"><div class="rot">Free float</div><div class="val">${fmt(t, "free_float")}</div><p>Parte das ações livre para negociação, fora do controlador e da tesouraria.</p></div>
@@ -1079,7 +1095,7 @@ async function pgAtivo(app, t) {
   </section>
 
   <section class="secao" id="sec-acionistas"><div class="secao-cab"><h2 class="titulo-barra">Composição acionária</h2></div>${blocoAcionistas(t)}</section>
-  <section class="secao" id="sec-vendida"><div class="secao-cab"><h2 class="titulo-barra">Posição vendida</h2></div>${blocoVendida(t)}</section>
+  <section class="secao" id="sec-vendida"><div class="secao-cab"><h2 class="titulo-barra">Posição vendida</h2></div>${blocoVendida(t)}</section>`}
 
   <section class="secao" id="sec-noticias"><div class="secao-cab"><h2 class="titulo-barra">Comunicados e notícias</h2></div><div id="noticias" class="cartao"><div class="carregando"><span></span>Carregando</div></div></section>
 
@@ -1133,6 +1149,14 @@ async function blocoSobre(t) {
   const lista = (itens, cls, titulo) => itens && itens.length ? `<div class="dr-col ${cls}"><h4>${titulo}</h4><ul>${itens.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>` : "";
   const blocoDr = dr ? `<div class="cartao dr-cartao"><div class="cartao-cab"><div><h3>Último resultado: ${esc(dr.trimestre)}</h3><p class="sub">${dr.divulgado_em ? `Divulgado em ${esc(dataBR(dr.divulgado_em))}. ` : ""}Fatos do trimestre segundo o release e o ITR da empresa; a comparação de cada item vem indicada no texto.</p></div></div>
     <div class="dr-grade">${lista(dr.positivos, "pos", "Pontos positivos")}${lista(dr.negativos, "neg", "Pontos negativos")}${lista(dr.atencao, "aten", "Pontos de atenção")}</div></div>` : "";
+  if (isStock(t) && !pf) {   // stocks americanas: sem perfil escrito por enquanto e sem os cenários do Brasil
+    const st = (D.fund[t] || {}).stock || {};
+    $("#sobre").innerHTML = `<div class="cartao"><h3>O negócio</h3><div class="sobre-destaques">
+      <div><span>Setor</span><b>${esc(a.setor_macro)}</b></div><div><span>Segmento</span><b>${esc(a.setor_micro)}</b></div>
+      <div><span>Bolsa</span><b>${esc(a.bolsa_exterior || "EUA")}</b></div><div><span>Sede</span><b>${esc(a.pais || st.pais || "n/d")}</b></div></div>
+      <p class="sub" style="margin-top:10px">Perfil escrito ainda não preparado para as stocks americanas. Indicadores, resultados e dividendos vêm do balanço entregue à SEC e do Yahoo Finance.</p></div>`;
+    return;
+  }
   $("#sobre").innerHTML = blocoDr + `<div class="grade g2">
     <div class="cartao"><h3>O negócio</h3>${avisoRev}<p style="color:var(--txt-2)">${esc((pf && pf.resumo) || n.resumo || "Resumo não preenchido.")}</p>${destaques}${detalhe}</div>
     <div class="cartao"><h3>Sensibilidade a cenários</h3><p class="sub">De -2 (perde muito) a +2 (ganha muito).${porques.length ? " Passe o mouse para ver o motivo." : ""}</p>
@@ -1260,7 +1284,7 @@ async function abaNoticias(t) {
 function pares(t, n = 5) {
   const st = D.fund[t].setor || {};
   let ps = (st.pares_micro || []).filter((x) => x !== t && D.fund[x]);
-  const macro = D.tickers.filter((x) => x !== t && A(x).setor_macro === A(t).setor_macro);
+  const macro = (isStock(t) ? D.stocks : D.tickers).filter((x) => x !== t && A(x).setor_macro === A(t).setor_macro);
   ps = [...new Set([...ps, ...(st.grupo_membros || []).filter((x) => x !== t && D.fund[x]), ...macro])];
   return ps.slice(0, n);
 }
@@ -1287,9 +1311,9 @@ function graficoPreco(t, h, anos) {
   const linha = subiu ? cor("--pos") : cor("--neg");
   const ctx = el.getContext("2d"), grad = ctx.createLinearGradient(0, 0, 0, 300);
   grad.addColorStop(0, linha + "40"); grad.addColorStop(1, linha + "00");
-  const ch = new Chart(el, { type: "line", data: { labels: serie.map(([d]) => dataBR(d)), datasets: [{ label: t, data: serie.map(([, v]) => v), borderColor: linha, backgroundColor: grad, borderWidth: 1.6, pointRadius: 0, fill: true, tension: 0.1 }] }, options: optGraf({ moeda: "R$ ", legenda: false }), plugins: [PLUGIN_MEDIR] });
+  const ch = new Chart(el, { type: "line", data: { labels: serie.map(([d]) => dataBR(d)), datasets: [{ label: t, data: serie.map(([, v]) => v), borderColor: linha, backgroundColor: grad, borderWidth: 1.6, pointRadius: 0, fill: true, tension: 0.1 }] }, options: optGraf({ moeda: moedaPreco(t) + " ", legenda: false }), plugins: [PLUGIN_MEDIR] });
   charts.push(ch);
-  ativarMedicao(ch, el, moedaDe(t));
+  ativarMedicao(ch, el, moedaPreco(t));
 }
 // Segurar o botão do mouse sobre o gráfico e arrastar mostra quanto o preço subiu ou caiu entre os dois pontos.
 const PLUGIN_MEDIR = {
@@ -1976,7 +2000,7 @@ function pgCalendario(app, q) {
   for (const [t, x] of prox) { const k = x.data.slice(0, 7); (porMes[k] = porMes[k] || []).push([t, x]); }
   app.innerHTML = `${trilha([["Calendário"]])}<div class="cab-pagina"><div><h1>Calendário de resultados</h1>
     <p>Próximas divulgações de resultados trimestrais e anuais. Para ações brasileiras, a data é estimada pela entrega do mesmo período no ano anterior, sem passar do prazo legal da CVM; para BDRs, vem do calendário informado ao Yahoo Finance ou do prazo da SEC. Passe o mouse para ver o critério de cada data.</p></div></div>
-  <div class="linha entre" style="margin-bottom:18px"><div class="segmentado" id="cal-seg">${[["TODOS", "Todos"], ["ACAO_BR", "Ações"], ["BDR", "BDRs"]].map(([k, n]) => `<button data-s="${k}" class="${seg === k ? "ativo" : ""}">${n}</button>`).join("")}</div><button class="btn prim" id="cal-xls">Baixar Excel</button></div>
+  <div class="linha entre" style="margin-bottom:18px"><div class="segmentado" id="cal-seg">${[["TODOS", "Todos"], ["ACAO_BR", "Ações"], ["BDR", "BDRs"], ["STOCK", "Stocks"]].map(([k, n]) => `<button data-s="${k}" class="${seg === k ? "ativo" : ""}">${n}</button>`).join("")}</div><button class="btn prim" id="cal-xls">Baixar Excel</button></div>
   <div class="grade g-3-2">
     <div>${Object.entries(porMes).map(([m, l]) => `<div class="cartao" style="margin-bottom:16px"><h3>${MESES[+m.slice(5) - 1].replace(/^./, (c) => c.toUpperCase())} de ${m.slice(0, 4)} <span class="muted" style="font-weight:500">· ${l.length} empresa${l.length === 1 ? "" : "s"}</span></h3>
       <div class="ag-lista">${l.map(([t, x]) => linhaAgenda(t, x)).join("")}</div></div>`).join("") || '<div class="cartao"><p class="vazio">Sem datas futuras neste recorte.</p></div>'}</div>
@@ -1999,27 +2023,32 @@ const MINIS = ["pl", "pvp", "roe", "margem_liquida", "margem_fcl", "fcf_yield", 
    RETORNO TOTAL: ações com e sem reinvestimento de proventos contra CDI, IPCA + X% e Ibovespa
    ===================================================================== */
 const RT_CORES = ["#33c47a", "#5b8def", "#e8a33d", "#c678dd", "#e06c75", "#56b6c2"];
-const RT_BENCH = { ifix: ["IFIX", "#c9a227"], cdi: ["CDI", "#9aa3ad"], ipca4: ["IPCA + 4%", "#b08968"], ipca5: ["IPCA + 5%", "#d4a373"], ipca6: ["IPCA + 6%", "#e9c46a"], ibov: ["Ibovespa", "#7f8c99"] };
+const RT_BENCH = { ifix: ["IFIX", "#c9a227"], cdi: ["CDI", "#9aa3ad"], ipca4: ["IPCA + 4%", "#b08968"], ipca5: ["IPCA + 5%", "#d4a373"], ipca6: ["IPCA + 6%", "#e9c46a"], ibov: ["Ibovespa", "#7f8c99"], sp500: ["S&P 500", "#4fbf7a"] };
+const RT_BENCH_BR = ["ifix", "cdi", "ipca4", "ipca5", "ipca6", "ibov"];
 async function pgRetorno(app, q) {
   const sel = [...new Set((q.get("t") || "").split(",").map((x) => x.trim().toUpperCase()).filter((x) => D.univMap[x] || (D.fiiMap && D.fiiMap[x])))].slice(0, 6);
   const anos = q.get("p") || "5", modo = q.get("m") || "ambos";
   const VI = Math.max(1, +(q.get("v") || 1000)) || 1000;            // valor investido escolhido pelo usuário
-  const bench = (q.get("b") ?? "cdi,ipca6").split(",").filter((x) => RT_BENCH[x]);
+  const eua = sel.length > 0 && sel.every(isStock);   // só stocks: tudo em dólar, contra o S&P 500
+  const misto = sel.some(isStock) && !eua;
+  const mo = eua ? "US$" : "R$";
+  const bench = (q.get("b") ?? (eua ? "sp500" : "cdi,ipca6")).split(",").filter((x) => RT_BENCH[x] && (eua ? x === "sp500" : x !== "sp500"));
   const ir = (o) => {
     const st = { t: sel.join(","), p: anos, m: modo, b: bench.join(","), v: VI, ...o };
     location.hash = `#/retorno?t=${st.t}&p=${st.p}&m=${st.m}&b=${st.b}&v=${st.v}`;
   };
   app.innerHTML = `${trilha([["Retorno total"]])}<div class="cab-pagina"><div><h1>Retorno total</h1>
-    <p>Quanto o valor investido virou, somando a variação do preço e os proventos. Compare com CDI, IPCA + juro real e Ibovespa.</p></div></div>
+    <p>${eua ? "Quanto o valor investido virou em dólares, somando a variação do preço e os dividendos. Compare com o S&P 500 com dividendos reinvestidos." : "Quanto o valor investido virou, somando a variação do preço e os proventos. Compare com CDI, IPCA + juro real e Ibovespa."}</p></div></div>
+  ${misto ? '<div class="aviso-info">Stocks americanas estão em dólar e ações da B3 em reais: para comparar, escolha só stocks (contra o S&P 500) ou só ativos da B3.</div>' : ""}
   <div class="aviso-rt"><b>Estimativa.</b> Cálculo próprio com preços e proventos brutos do Yahoo Finance (JCP antes do IR de 15%), sem custos e impostos. Calculadoras que descontam IR ou usam outras datas chegam a números diferentes; use como referência de ordem de grandeza, não como extrato.</div>
   <div class="cartao rt-ctrl">
     <div class="linha"><div class="chips">${sel.map((t, i) => `<button class="chip ativo" data-rm="${t}"><i class="rt-cor" style="background:${RT_CORES[i]}"></i>${logo(t)}${t}<span class="x">✕</span></button>`).join("") || '<span class="muted">Escolha até 6 ações.</span>'}</div>
-      <select id="rt-add"><option value="">Adicionar ação ou FII</option><optgroup label="Ações e BDRs">${D.univ.filter((a) => !sel.includes(a.ticker)).map((a) => `<option value="${a.ticker}">${a.ticker} · ${esc(a.nome)}</option>`).join("")}</optgroup><optgroup label="Fundos imobiliários">${(D.fiis || []).filter((f) => !sel.includes(f.ticker)).map((f) => `<option value="${f.ticker}">${f.ticker} · ${esc(f.nome)}</option>`).join("")}</optgroup></select></div>
+      <select id="rt-add"><option value="">Adicionar ação ou FII</option><optgroup label="Ações e BDRs">${D.univ.filter((a) => !sel.includes(a.ticker) && a.tipo !== "STOCK_US").map((a) => `<option value="${a.ticker}">${a.ticker} · ${esc(a.nome)}</option>`).join("")}</optgroup><optgroup label="Stocks (EUA, em US$)">${D.stocks.filter((x) => !sel.includes(x)).map((x) => `<option value="${x}">${x} · ${esc(A(x).nome)}</option>`).join("")}</optgroup><optgroup label="Fundos imobiliários">${(D.fiis || []).filter((f) => !sel.includes(f.ticker)).map((f) => `<option value="${f.ticker}">${f.ticker} · ${esc(f.nome)}</option>`).join("")}</optgroup></select></div>
     <div class="linha rt-opcoes">
-      <label class="rt-valor">Valor investido <span class="rt-valor-campo">R$ <input id="rt-valor" inputmode="decimal" value="${nf2.format(VI)}" aria-label="Valor investido em reais"></span></label>
+      <label class="rt-valor">Valor investido <span class="rt-valor-campo">${mo} <input id="rt-valor" inputmode="decimal" value="${nf2.format(VI)}" aria-label="Valor investido"></span></label>
       <div class="abas" id="rt-per" style="margin:0">${[["1", "1 ano"], ["3", "3 anos"], ["5", "5 anos"], ["10", "10 anos"], ["15", "15 anos"]].map(([v, n]) => `<button data-v="${v}" class="${v === anos ? "ativo" : ""}">${n}</button>`).join("")}</div>
       <div class="abas" id="rt-modo" style="margin:0">${[["com", "Com reinvestimento"], ["sem", "Sem reinvestimento"], ["ambos", "Os dois"]].map(([v, n]) => `<button data-v="${v}" class="${v === modo ? "ativo" : ""}">${n}</button>`).join("")}</div>
-      <div class="rt-bench">${Object.entries(RT_BENCH).map(([k, [n, c]]) => `<label><input type="checkbox" value="${k}" ${bench.includes(k) ? "checked" : ""}><i class="rt-cor" style="background:${c}"></i>${n}</label>`).join("")}</div>
+      <div class="rt-bench">${Object.entries(RT_BENCH).filter(([k]) => eua ? k === "sp500" : k !== "sp500").map(([k, [n, c]]) => `<label><input type="checkbox" value="${k}" ${bench.includes(k) ? "checked" : ""}><i class="rt-cor" style="background:${c}"></i>${n}</label>`).join("")}</div>
     </div></div>
   <div id="rt-saida"><div class="carregando"><span></span>Carregando</div></div>`;
   $$("[data-rm]").forEach((b) => b.onclick = () => ir({ t: sel.filter((x) => x !== b.dataset.rm).join(",") }));
@@ -2039,7 +2068,7 @@ async function pgRetorno(app, q) {
   const inicio = new Date(); inicio.setFullYear(inicio.getFullYear() - +anos);
   const ini = inicio.toISOString().slice(0, 10);
   // calendário semanal: sextas do Ibovespa no período
-  const cal = (bm.ibov || []).map(([d]) => d).filter((d) => d >= ini);
+  const cal = ((eua ? bm.sp500 : bm.ibov) || []).map(([d]) => d).filter((d) => d >= ini);
   if (cal.length < 2) { $("#rt-saida").innerHTML = '<div class="cartao"><p class="vazio">Sem dados para o período.</p></div>'; return; }
   const ultimo = (lista, d, k) => { let lo = 0, hi = lista.length - 1, r = null; while (lo <= hi) { const m = (lo + hi) >> 1; if (lista[m][0] <= d) { r = lista[m]; lo = m + 1; } else hi = m - 1; } return r; };
   // taxa mensal com composição por fração do mês; meses sem dado usam a última taxa publicada
@@ -2087,21 +2116,22 @@ async function pgRetorno(app, q) {
   if (bench.includes("cdi")) { const f = indiceMensal(bm.cdi); addLinha("CDI", RT_BENCH.cdi[1], cal.map((d) => VI * f(d0, d)), { borderWidth: 1.6 }); }
   for (const [k, x] of [["ipca4", 0.04], ["ipca5", 0.05], ["ipca6", 0.06]]) if (bench.includes(k)) { const f = indiceMensal(bm.ipca, x); addLinha(RT_BENCH[k][0], RT_BENCH[k][1], cal.map((d) => VI * f(d0, d)), { borderWidth: 1.6 }); }
   if (bench.includes("ifix") && (bm.ifix || []).length) { const b0 = ultimo(bm.ifix, d0); if (b0) addLinha("IFIX (com rendimentos)", RT_BENCH.ifix[1], cal.map((d) => { const x = ultimo(bm.ifix, d); return x ? VI * x[1] / b0[1] : null; }), { borderWidth: 1.6 }); }
+  if (bench.includes("sp500") && (bm.sp500 || []).length) { const b0 = ultimo(bm.sp500, d0); if (b0) addLinha("S&P 500 (com dividendos)", RT_BENCH.sp500[1], cal.map((d) => { const x = ultimo(bm.sp500, d); return x ? VI * x[1] / b0[1] : null; }), { borderWidth: 1.6 }); }
   if (bench.includes("ibov")) { const b0 = ultimo(bm.ibov, d0)[1]; addLinha("Ibovespa (só pontos)", RT_BENCH.ibov[1], cal.map((d) => VI * ultimo(bm.ibov, d)[1] / b0), { borderWidth: 1.6 }); }
 
   const o = optGraf({ legenda: true });
-  o.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: R$ ${ok(ctx.parsed.y) ? nf2.format(ctx.parsed.y) : "n/d"}`;
+  o.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: ${mo} ${ok(ctx.parsed.y) ? nf2.format(ctx.parsed.y) : "n/d"}`;
   o.plugins.tooltip.itemSort = (a, b) => (b.parsed.y || 0) - (a.parsed.y || 0);
   linhasTab.sort((a, b) => b.fim - a.fim);
   $("#rt-saida").innerHTML = `<div class="cartao"><div class="grafico alto"><canvas id="g-rt"></canvas></div>
-    <p class="sub" style="margin-top:8px">Valor de R$ ${nf2.format(VI)} investidos em ${dataBR(d0)}, semana a semana. ${modo === "ambos" ? "Linha cheia: proventos reinvestidos na própria ação. Linha tracejada: proventos guardados em dinheiro, sem render." : modo === "com" ? "Proventos reinvestidos na própria ação na data ex." : "Proventos guardados em dinheiro, sem render."}</p></div>
+    <p class="sub" style="margin-top:8px">Valor de ${mo} ${nf2.format(VI)} investidos em ${dataBR(d0)}, semana a semana. ${modo === "ambos" ? "Linha cheia: proventos reinvestidos na própria ação. Linha tracejada: proventos guardados em dinheiro, sem render." : modo === "com" ? "Proventos reinvestidos na própria ação na data ex." : "Proventos guardados em dinheiro, sem render."}</p></div>
   <div class="cartao" style="margin-top:16px"><div class="cartao-cab"><h3>Resultado no período</h3><button class="btn peq" id="rt-xls">Baixar Excel</button></div>
     <div class="tabela-wrap"><table class="resp"><thead><tr><th>Investimento</th><th class="n">Valor final</th><th class="n">Retorno no período</th><th class="n">Retorno ao ano</th></tr></thead><tbody>
-    ${linhasTab.map((l) => `<tr><td data-label="Investimento"><i class="rt-cor${l.tracej ? " tracej" : ""}" style="background:${l.cor}"></i>${esc(l.nome)}${l.desde !== d0 ? ` <span class="muted">desde ${dataBR(l.desde)}</span>` : ""}</td><td class="n" data-label="Valor final"><b>R$ ${nf2.format(l.fim)}</b></td><td class="n" data-label="Retorno no período">${varHtml(l.total)}</td><td class="n" data-label="Retorno ao ano">${ok(l.aa) ? varHtml(l.aa) : '<span class="muted">menos de 1 ano</span>'}</td></tr>`).join("")}
+    ${linhasTab.map((l) => `<tr><td data-label="Investimento"><i class="rt-cor${l.tracej ? " tracej" : ""}" style="background:${l.cor}"></i>${esc(l.nome)}${l.desde !== d0 ? ` <span class="muted">desde ${dataBR(l.desde)}</span>` : ""}</td><td class="n" data-label="Valor final"><b>${mo} ${nf2.format(l.fim)}</b></td><td class="n" data-label="Retorno no período">${varHtml(l.total)}</td><td class="n" data-label="Retorno ao ano">${ok(l.aa) ? varHtml(l.aa) : '<span class="muted">menos de 1 ano</span>'}</td></tr>`).join("")}
     </tbody></table></div>
-    <p class="sub" style="margin-top:10px">Fontes: preços e proventos da B3 via Yahoo Finance, pela data ex, com proventos brutos (JCP antes do IR de 15%); calculadoras que descontam IR ou usam outras datas de início e fim chegam a números diferentes; CDI e IPCA mensais do Banco Central (séries 4391 e 433); IFIX diário oficial da B3 (índice de retorno total, já considera os rendimentos), com o último mês publicado repetido até sair o próximo. Sem custos, impostos e taxas. Rentabilidade passada não garante rentabilidade futura.</p></div>`;
+    ${eua ? `<p class="sub" style="margin-top:10px">Fontes: preços e dividendos das stocks pelo Yahoo Finance (bolsa americana, em US$), pela data ex, com dividendos brutos (antes do imposto retido nos EUA); S&P 500 com dividendos reinvestidos (S&P 500 Total Return). Sem custos, impostos e câmbio. Rentabilidade passada não garante rentabilidade futura.</p>` : `<p class="sub" style="margin-top:10px">Fontes: preços e proventos da B3 via Yahoo Finance, pela data ex, com proventos brutos (JCP antes do IR de 15%); calculadoras que descontam IR ou usam outras datas de início e fim chegam a números diferentes; CDI e IPCA mensais do Banco Central (séries 4391 e 433); IFIX diário oficial da B3 (índice de retorno total, já considera os rendimentos), com o último mês publicado repetido até sair o próximo. Sem custos, impostos e taxas. Rentabilidade passada não garante rentabilidade futura.</p>`}</div>`;
   charts.push(new Chart($("#g-rt"), { type: "line", data: { labels: cal.map(dataBR), datasets: dsets }, options: o }));
-  $("#rt-xls").onclick = () => baixarExcel(`retorno_total_${anos}_anos`, [{ nome: "Retorno total", cab: ["Investimento", "Desde", `Valor final de R$ ${nf2.format(VI)} (R$)`, "Retorno no período (%)", "Retorno ao ano (%)"], linhas: linhasTab.map((l) => [l.nome, dataBR(l.desde), +l.fim.toFixed(2), +(l.total * 100).toFixed(2), ok(l.aa) ? +(l.aa * 100).toFixed(2) : null]) }]);
+  $("#rt-xls").onclick = () => baixarExcel(`retorno_total_${anos}_anos`, [{ nome: "Retorno total", cab: ["Investimento", "Desde", `Valor final de ${mo} ${nf2.format(VI)} (${mo})`, "Retorno no período (%)", "Retorno ao ano (%)"], linhas: linhasTab.map((l) => [l.nome, dataBR(l.desde), +l.fim.toFixed(2), +(l.total * 100).toFixed(2), ok(l.aa) ? +(l.aa * 100).toFixed(2) : null]) }]);
 }
 /* =====================================================================
    MAPA: dispersão de duas métricas para todas as empresas, com medianas e filtro de setor
@@ -2139,7 +2169,7 @@ const MAPA_VISOES = {
   ],
 };
 function pgMapa(app, q) {
-  const seg = ["ACAO_BR", "BDR", "TODOS", "FII"].includes(q.get("seg")) ? q.get("seg") : "ACAO_BR";
+  const seg = ["ACAO_BR", "BDR", "TODOS", "FII", "STOCK"].includes(q.get("seg")) ? q.get("seg") : "ACAO_BR";
   const ehFii = seg === "FII";
   const visoes = MAPA_VISOES[ehFii ? "fii" : "acoes"], EIXOS = ehFii ? MAPA_FII_EIXOS : MAPA_EIXOS;
   const vis = visoes.find((v) => v.id === q.get("v")) || visoes[0];
@@ -2154,7 +2184,7 @@ function pgMapa(app, q) {
   };
   // fonte dos pontos: empresas ou fundos
   const fundo = (t) => D.fiiMap[t];
-  const base = ehFii ? D.fiis.map((f) => f.ticker) : D.tickers.filter((t) => seg === "TODOS" || (seg === "ACAO_BR" ? emAcoes(t) : !emAcoes(t)));
+  const base = ehFii ? D.fiis.map((f) => f.ticker) : seg === "STOCK" ? D.stocks : D.tickers.filter((t) => seg === "TODOS" || (seg === "ACAO_BR" ? emAcoes(t) : !emAcoes(t)));
   const setorDe = (t) => ehFii ? fundo(t).setor : A(t).setor_macro;
   const nomeDe = (t) => ehFii ? fundo(t).nome : A(t).nome;
   const valor = (t, k) => {
@@ -2180,7 +2210,7 @@ function pgMapa(app, q) {
   <div class="mapa-kpis">${cartoes.map(([k, n, sub]) => `<div class="cartao mapa-kpi"><span>${n}</span><b>${fmtE(k, md(k))}</b><small>${sub || `${lista.filter((t) => ok(valor(t, k))).length} ${ehFii ? "fundos" : "empresas"}`}</small></div>`).join("")}</div>
   <div class="cartao" style="margin-top:16px">
     <div class="linha mapa-ctrl">
-      <div class="abas" id="mp-seg" style="margin:0">${[["ACAO_BR", "Ações"], ["BDR", "BDRs"], ["TODOS", "Ações e BDRs"], ["FII", "FIIs"]].map(([v, n]) => `<button data-v="${v}" class="${v === seg ? "ativo" : ""}">${n}</button>`).join("")}</div>
+      <div class="abas" id="mp-seg" style="margin:0">${[["ACAO_BR", "Ações"], ["BDR", "BDRs"], ["TODOS", "Ações e BDRs"], ["FII", "FIIs"], ["STOCK", "Stocks"]].map(([v, n]) => `<button data-v="${v}" class="${v === seg ? "ativo" : ""}">${n}</button>`).join("")}</div>
       <select id="mp-setor"><option value="">Todos os setores</option>${setores.map((x) => `<option ${x === setor ? "selected" : ""}>${esc(x)}</option>`).join("")}</select>
       <select id="mp-dest"><option value="">Destacar ${ehFii ? "fundo" : "empresa"}</option>${lista.filter((t) => !dest.includes(t)).map((t) => `<option value="${t}">${t} · ${esc(nomeDe(t))}</option>`).join("")}</select>
       ${dest.length ? `<div class="chips">${dest.map((t) => `<button class="chip ativo" data-rm="${t}">${t}<span class="x">✕</span></button>`).join("")}</div>` : ""}
@@ -2552,7 +2582,7 @@ function linhaCmp(k, sel) {
   return `<tr><td>${esc(m.nome)} ${tip(k)}</td>${sel.map((t, i) => {
     const v = vs[i];
     const cls = ok(v) && v === best ? "melhor" : ok(v) && v === worst ? "pior" : "";
-    const txt = k === "preco" ? (ok(v) ? "R$ " + nf2.format(v) : ND) : k.startsWith("var_") ? varHtml(v) : m.unidade === "txt" ? esc(v || "n/d") : fmt(t, k, v);
+    const txt = k === "preco" ? (ok(v) ? moedaPreco(t) + " " + nf2.format(v) : ND) : k.startsWith("var_") ? varHtml(v) : m.unidade === "txt" ? esc(v || "n/d") : fmt(t, k, v);
     return `<td class="n ${cls}">${txt}</td>`;
   }).join("")}</tr>`;
 }
@@ -2567,7 +2597,7 @@ function pgFiltros(app) {
   const favs = lsGet("filtros_favoritos", {});
   app.innerHTML = `${trilha([["Ações", "#/ativos?seg=ACAO_BR"], ["Filtros avançados"]])}<div class="cab-pagina"><div><h1>Filtros avançados</h1><p>Combine critérios. O resultado atualiza na hora e pode ser exportado.</p></div></div>
   <div class="cartao">
-    <div class="segmentado" id="scr-seg">${[["TODOS", "Todos"], ["ACAO_BR", "Ações"], ["BDR", "BDRs"]].map(([k, n]) => `<button data-s="${k}" class="${s.seg === k ? "ativo" : ""}">${n}</button>`).join("")}</div><div class="espaco"></div>
+    <div class="segmentado" id="scr-seg">${[["TODOS", "Todos"], ["ACAO_BR", "Ações"], ["BDR", "BDRs"], ["STOCK", "Stocks"]].map(([k, n]) => `<button data-s="${k}" class="${s.seg === k ? "ativo" : ""}">${n}</button>`).join("")}</div><div class="espaco"></div>
     <div class="grade g4">
       <label class="campo">Setor<select id="f-macro"><option value="">Todos</option>${macros.map((x) => `<option ${s.macro === x ? "selected" : ""}>${esc(x)}</option>`).join("")}</select></label>
       <label class="campo">Subsetor<select id="f-micro"><option value="">Todos</option>${micros.map((x) => `<option ${s.micro === x ? "selected" : ""}>${esc(x)}</option>`).join("")}</select></label>

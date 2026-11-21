@@ -790,3 +790,9 @@ select { max-width: 100%; }
 .rr-comp > span { color: var(--txt-3); font-weight: 600; }
 .rr-comp label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
 .rr-comp i { width: 18px; height: 0; border-top: 2px dashed; display: inline-block; }
+@media (max-width: 680px) {
+  .cab-pagina .linha { flex-wrap: wrap; }
+  .cab-pagina .segmentado, #rk-seg, #cal-seg, #scr-seg { max-width: 100%; overflow-x: auto; flex-wrap: nowrap; }
+  .cab-pagina .segmentado button, #rk-seg button, #cal-seg button, #scr-seg button { flex: 0 0 auto; }
+}
+@media (max-width: 680px) { .cab-pagina > div { min-width: 0; max-width: 100%; } .cab-pagina .segmentado { min-width: 0; } }

@@ -14,6 +14,20 @@ import requests
 RAIZ = Path(__file__).resolve().parents[1]
 DESTINO = RAIZ / "assets" / "logos"
 URL = "https://icons.brapi.dev/icons/{}.svg"
+URL_EUA = "https://cdn.jsdelivr.net/gh/nvstly/icons@main/ticker_icons/{}.png"   # reserva para stocks americanas
+
+
+def png_em_svg(conteudo: bytes) -> str:
+    """Logo em PNG embutido num SVG, para o site continuar lendo um único formato."""
+    import base64
+    from io import BytesIO
+    try:
+        from PIL import Image
+        w, h = Image.open(BytesIO(conteudo)).size
+    except Exception:
+        w = h = 256
+    b64 = base64.b64encode(conteudo).decode()
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}"><image width="{w}" height="{h}" href="data:image/png;base64,{b64}"/></svg>\n'
 
 
 def svg_valido(txt: str) -> bool:
@@ -59,6 +73,13 @@ def main():
             if r.status_code == 200 and svg_valido(r.text):
                 arq.write_text(normalizar(r.text), encoding="utf-8")
                 baixados += 1
+            elif a.get("tipo") == "STOCK_US":
+                r2 = sessao.get(URL_EUA.format(t), timeout=20)
+                if r2.status_code == 200 and r2.headers.get("content-type", "").startswith("image/png") and len(r2.content) > 500:
+                    arq.write_text(png_em_svg(r2.content), encoding="utf-8")
+                    baixados += 1
+                else:
+                    falhas.append(t)
             else:
                 falhas.append(t)
         except requests.RequestException:
