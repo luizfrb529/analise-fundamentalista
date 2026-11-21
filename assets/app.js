@@ -386,11 +386,24 @@ async function historico(t) {
   if (!D.cache["h" + t]) D.cache["h" + t] = await j(`data/history/${t}.json`, { anual: {}, precos: { semanal: [], diario: [] } });
   return D.cache["h" + t];
 }
+/* título em inglês? (mesma regra do pipeline, indicators.eh_ingles). Ações da B3 só mostram notícias em português;
+   o inglês fica para BDRs e stocks americanas */
+const _EN = new Set("the and of to for in on with is are was were its from by at as an this that how why what who will vs after over into new stock stocks shares earnings revenue profit call highlights quarter retirees better buy sell rating price target says said".split(" "));
+const _PT = new Set("de da do das dos e em no na nos nas para com que os as um uma por ao aos sobre após ações ação lucro receita dividendos resultado trimestre bolsa veja diz alta queda sobe cai mais seu sua não".split(" "));
+function ehIngles(x) {
+  if (x.lingua === "en") return true;
+  const t = String(x.titulo || "").toLowerCase();
+  if (/[ãõçáéíóúâêô]/.test(t)) return false;
+  const ws = t.match(/[a-z']+/g) || [];
+  return ws.filter((w) => _EN.has(w)).length > ws.filter((w) => _PT.has(w)).length;
+}
+const aceitaIngles = (t) => !!A(t) && (isStock(t) || String(A(t).tipo || "").startsWith("BDR"));
 async function noticias(t) {
   if (!D.cache["n" + t]) {
     const [base, vivo] = await Promise.all([j(`data/news/${t}.json`, { noticias: [], comunicados: [] }), noticiasAoVivo()]);
     const nv = vivo && vivo.por_ticker && vivo.por_ticker[t];
-    D.cache["n" + t] = nv && nv.length ? { ...base, noticias: nv } : base;
+    const r = nv && nv.length ? { ...base, noticias: nv } : base;
+    D.cache["n" + t] = aceitaIngles(t) ? r : { ...r, noticias: (r.noticias || []).filter((x) => !ehIngles(x)) };
   }
   return D.cache["n" + t];
 }
@@ -610,7 +623,10 @@ function pgHome(app) {
     if (ehFii()) return desenharFeedFii();
     const f = await feedNoticias(), perm = new Set(base()), aba = EST.homeFeed.aba;
     $$("#feed-abas button").forEach((b) => b.classList.toggle("ativo", b.dataset.a === aba));
-    const itens = (f[aba] || []).filter((x) => (x.tickers || []).some((t) => perm.has(t)));
+    // notícia em inglês só nos recortes de BDRs e stocks; nas ações, só português
+    const soPt = aba === "noticias" && EST.homeSeg !== "BDR" && EST.homeSeg !== "STOCK";
+    const itens = (f[aba] || []).filter((x) => !(soPt && ehIngles(x)))
+      .filter((x) => (x.tickers || []).some((t) => perm.has(t)));
     const mostra = itens.slice(0, EST.homeFeed.n);
     $("#feed").innerHTML = mostra.length ? `<div class="feed">${mostra.map((x) => {
       const ts = (x.tickers || []).filter((t) => perm.has(t)).slice(0, 4);

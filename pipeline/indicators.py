@@ -844,6 +844,21 @@ def noticia_financeira(titulo: str, veiculo: str, nome: str, ticker: str) -> boo
     return bool(TERMOS_FINANCEIROS.search(t)) or bool(VEICULOS_FINANCEIROS.search(veiculo or ""))
 
 
+# ---------------------------------------------------------------- idioma do título
+_EN = set("the and of to for in on with is are was were its from by at as an this that how why what who will vs after over into new stock stocks shares earnings revenue profit call highlights quarter retirees better buy sell rating price target says said".split())
+_PT = set("de da do das dos e em no na nos nas para com que os as um uma por ao aos sobre após ações ação lucro receita dividendos resultado trimestre bolsa veja diz alta queda sobe cai mais seu sua não".split())
+
+
+def eh_ingles(titulo: str) -> bool:
+    """Título em inglês? Conta palavras típicas de cada língua; acentos e cedilha contam como português."""
+    t = (titulo or "").lower()
+    if re.search(r"[ãõçáéíóúâêô]", t):
+        return False
+    ws = re.findall(r"[a-z']+", t)
+    en, pt = sum(w in _EN for w in ws), sum(w in _PT for w in ws)
+    return en > pt
+
+
 # ---------------------------------------------------------------- notícias repetidas
 _PALAVRAS_VAZIAS = set("""a o as os de da do das dos e em no na nos nas um uma para por com sem que se ao aos sua seu suas seus mais
 menos sobre apos ate entre como diz the of and to in for on with its at by from is are as after acoes acao empresa companhia

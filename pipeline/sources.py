@@ -374,6 +374,10 @@ def noticias_empresa(nome: str, ticker: str, ticker_exterior: str | None = None,
     termos = "(ações OR resultado OR lucro OR prejuízo OR receita OR dividendos OR balanço OR trimestre OR dívida OR aquisição OR bolsa)"
     itens = [x for x in google_news(f'("{nome}" OR {ticker}) {termos}', "pt-BR", "BR", 40)
              if I.noticia_financeira(x["titulo"], x["veiculo"], nome, ticker)]
+    # a busca em português também devolve textos em inglês: só BDRs e stocks (com ticker no exterior) ficam com eles
+    itens = [dict(x, lingua="en") if I.eh_ingles(x["titulo"]) else x for x in itens]
+    if not ticker_exterior:
+        itens = [x for x in itens if x.get("lingua") != "en"]
     if ticker_exterior:
         en = [dict(x, lingua="en") for x in google_news(f'("{nome}" OR {ticker_exterior}) (stock OR earnings OR shares OR revenue OR profit)', "en-US", "US", 40)
               if I.noticia_financeira(x["titulo"], x["veiculo"], nome, ticker_exterior)]
