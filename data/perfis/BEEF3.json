@@ -1,6 +1,6 @@
 {
  "ticker": "BEEF3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-21",
  "resumo": "Maior exportadora de carne bovina da América do Sul, com frigoríficos em seis países. Cerca de 80% da receita do 3T26 foi vendida fora do Brasil e 65% da dívida está em moeda estrangeira.",
  "modelo": "A Minerva abate bovinos e ovinos e vende carne in natura e processada para varejo, food service e importadores, com plantas no Brasil, Paraguai, Argentina, Uruguai, Colômbia e Austrália. Ganha a diferença entre o preço da carne no mercado internacional e o custo do gado comprado localmente. A receita é recorrente, mas a margem oscila com o ciclo do gado, o câmbio e a abertura de mercados importadores, como EUA e China.",
  "segmentos": [
@@ -99,5 +99,23 @@
    "data": "2026-11-17"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-11",
+  "positivos": [
+   "Exportações responderam por 55% da receita bruta no 3T26.",
+   "Caixa de R$ 13,9 bi ao fim do trimestre; em 2026 recomprou US$ 234,6 mi em bonds.",
+   "Em 13/11/2026 cancelou 45,4 mi de ações em tesouraria e aprovou recompra de até 40,9 mi de ações."
+  ],
+  "negativos": [
+   "Receita líquida de R$ 14,5 bi, queda de 6,4%; Ebitda ajustado de R$ 1,2 bi, queda de 13,6% (margem de 8,3%).",
+   "Prejuízo líquido de R$ 717,3 mi, contra lucro de R$ 120 mi no 3T25, por resultado financeiro negativo.",
+   "Fluxo de caixa livre negativo em R$ 402,7 mi."
+  ],
+  "atencao": [
+   "Alavancagem de 3,2x Ebitda, ante 2,9x no 2T26; dívida líquida de R$ 15,2 bi."
+  ]
+ }
 }
