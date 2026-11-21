@@ -1,6 +1,6 @@
 {
  "ticker": "JALL3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-21",
  "resumo": "Produtora de açúcar, inclusive orgânico, etanol e energia em Goiás e Minas Gerais. Formou estoque de etanol no 2T27 para vender na entressafra, o que derrubou a receita do trimestre.",
  "modelo": "A Jalles mói cana em três unidades (Jalles Machado e Otávio Lage, em Goiás, e Santa Vitória, em Minas Gerais) e vende açúcar cristal, VHP e orgânico, etanol anidro, hidratado e orgânico, energia elétrica, levedura, CBIOs e saneantes da marca Albertina. É uma das maiores exportadoras mundiais de açúcar orgânico. A receita é recorrente e depende de safra e preços; a empresa fixa preços de açúcar com antecedência e o ano fiscal vai de abril a março.",
  "segmentos": [
@@ -91,5 +91,24 @@
    "data": "2026-11-13"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "2T27 (jul a set/26)",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Lucro líquido de R$ 41,4 mi, alta de 118,8% sobre o mesmo trimestre do ano anterior.",
+   "Produtividade agrícola de 86,6 t/ha, alta de 17,4%; custo por tonelada de ATR caiu 5,9% no semestre.",
+   "Caixa de R$ 2,07 bi e custo médio da dívida de CDI + 0,15%."
+  ],
+  "negativos": [
+   "Receita líquida de R$ 336,3 mi, queda de 47,5%, porque a empresa reteve etanol em estoque.",
+   "Ebitda ajustado após hedge de R$ 270,1 mi, queda de 40,8%; prejuízo de R$ 32,7 mi no semestre.",
+   "Alavancagem subiu de 1,2x para 2,0x Ebitda em 12 meses; dívida líquida de R$ 2,0 bi."
+  ],
+  "atencao": [
+   "Recompra de até 4 milhões de ações em 18 meses, aprovada em 12/11/2026.",
+   "Etanol retido em estoque deve ser vendido em trimestres seguintes; acompanhar o efeito na receita."
+  ]
+ }
 }
