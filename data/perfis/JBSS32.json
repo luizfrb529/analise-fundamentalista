@@ -1,6 +1,6 @@
 {
  "ticker": "JBSS32",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-21",
  "resumo": "Maior processadora de proteína animal do mundo, listada em Nova York e com BDR na B3. Cerca de 70% das vendas vêm de operações fora do Brasil, e o resultado é apurado em dólar.",
  "modelo": "A JBS N.V. produz e vende carne bovina, suína, de frango e alimentos processados para varejo, food service e exportação, com marcas como Friboi, Seara, Swift e Pilgrim's. Opera nos Estados Unidos (JBS Beef North America, JBS USA Pork e Pilgrim's Pride, que também atua em México e Europa), no Brasil (JBS Brasil e Seara) e na Austrália. A receita é recorrente, mas a margem depende do ciclo do gado, do custo de grãos e do preço da carne em cada mercado. A holding holandesa tem ações na NYSE desde junho de 2025, e o BDR JBSS32 é negociado na B3.",
  "segmentos": [
@@ -103,5 +103,25 @@
    "data": "2026-11-10"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-09",
+  "positivos": [
+   "Receita líquida de US$ 22,7 bi no 3T26, alta de 1% sobre o 3T25; US$ 68,2 bi nos 9M26, alta de 8,1%.",
+   "Carne bovina nos EUA voltou a Ebitda positivo pelo critério US GAAP.",
+   "Dívida com prazo médio de 14,4 anos e mais de 95% a taxa fixa."
+  ],
+  "negativos": [
+   "Ebitda ajustado IFRS de US$ 1,18 bi, queda de 36%, com margem de 5,2% (8,1% no 3T25).",
+   "Lucro líquido atribuível de US$ 164 mi, queda de 72%; US$ 283 mi nos 9M26, queda de 82%.",
+   "Fluxo de caixa livre negativo em US$ 167 mi no trimestre."
+  ],
+  "atencao": [
+   "Alavancagem líquida de 3,54 vezes o Ebitda, contra 2,39 vezes um ano antes; dívida líquida de US$ 19,3 bi.",
+   "Suínos e frango com excesso de oferta e Brasil afetado pelo fim da cota chinesa de 2026.",
+   "Wesley Batista Filho assume como CEO global em 2027, no lugar de Gilberto Tomazoni."
+  ]
+ }
 }
