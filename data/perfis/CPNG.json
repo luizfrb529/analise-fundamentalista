@@ -1,0 +1,68 @@
+{
+ "ticker": "CPNG",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior empresa de comércio eletrônico da Coreia do Sul, com entrega no dia seguinte ou no mesmo dia (Rocket Delivery), além de delivery de comida, streaming e expansão em Taiwan. Receita perto de US$ 10 bi por trimestre, mas prejuízo em 2026 por incêndio e multas.",
+ "modelo": "A Coupang compra e vende produtos diretamente e opera marketplace, com uma rede própria de centros de distribuição e entregadores que permite entregas muito rápidas. A assinatura Rocket WOW dá frete grátis, delivery de comida (Coupang Eats) e streaming (Coupang Play). Investe em Taiwan e na Farfetch (moda de luxo).",
+ "segmentos": [
+  {"nome": "Comércio de produtos (Coreia)", "peso_receita": 0.84, "periodo": "3T26", "obs": "US$ 8,37 bi, alta de 8% a câmbio constante."},
+  {"nome": "Ofertas em desenvolvimento (Eats, Taiwan, Farfetch, Play)", "peso_receita": 0.16, "periodo": "3T26", "obs": "US$ 1,59 bi, alta de 27% a câmbio constante; prejuízo de US$ 269 mi."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": 0.0, "exterior_pct": 1.0, "periodo": "3T26", "texto": "Sede formal nos EUA (Seattle), operação principal na Coreia do Sul, com expansão em Taiwan e a Farfetch global."},
+ "temas": [
+  {"tema": "Comércio eletrônico e logística", "relacao": "A rede própria de entrega rápida é o centro do negócio; um incêndio no centro de Incheon gerou perdas de cerca de US$ 248 mi no trimestre."},
+  {"tema": "Proteção de dados", "relacao": "Após vazamento de dados de clientes, a empresa registrou US$ 410 mi em multas administrativas em 2026."}
+ ],
+ "diferencial": {
+  "texto": "A Coupang construiu na Coreia uma rede logística própria tão densa que entrega a maior parte dos pedidos em menos de um dia, o que fideliza clientes da assinatura e é caro de replicar. Os pontos fracos são a margem baixa, os problemas recentes (incêndio, vazamento de dados), a concorrência de Naver, AliExpress e Temu e os prejuízos das novas apostas.",
+  "vantagem": {"nivel": "moderada", "resumo": "Rede logística própria de entrega em menos de um dia na Coreia, cara de replicar, mas com margens baixas e concorrência chinesa crescente."},
+  "concorrentes": ["Naver", "AliExpress (Alibaba)", "Temu", "Gmarket", "Baemin", "Amazon"]
+ },
+ "potencial": {
+  "texto": "A empresa projeta receita crescendo de 13% a 14% a câmbio constante no 4T26, segundo a imprensa. O potencial vem do aumento do gasto por cliente, de Taiwan e da redução dos prejuízos das ofertas em desenvolvimento.",
+  "metricas": [
+   {"rotulo": "Clientes ativos", "valor": "25,2 milhões", "periodo": "3T26"},
+   {"rotulo": "Receita por cliente ativo", "valor": "US$ 332", "periodo": "3T26"},
+   {"rotulo": "Crescimento da receita", "valor": "11% a câmbio constante", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo líquido de US$ 501 mi no 3T26, com cerca de US$ 248 mi de perdas do incêndio de Incheon; o Ebitda ajustado caiu para US$ 116 mi (margem de 1,2%). O fluxo de caixa livre foi negativo em US$ 409 mi em 12 meses. A empresa tinha US$ 5,4 bi em caixa e US$ 1,8 bi em dívida, e recomprou US$ 1,05 bi em ações em nove meses.",
+  "caixa": "US$ 5,4 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Multas e processos pelo vazamento de dados.",
+  "Margens baixas.",
+  "Concorrência chinesa na Coreia.",
+  "Prejuízo das novas apostas."
+ ],
+ "momento": "No 3T26 (divulgado em 03/11/2026), a receita subiu 11% a câmbio constante, para US$ 10,0 bi, acima da projeção, mas o incêndio em Incheon levou a prejuízo de US$ 501 mi e margens e caixa livre em mínimas, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-03",
+  "positivos": [
+   "Receita acima da projeção, com aceleração do crescimento.",
+   "Ofertas em desenvolvimento cresceram 27%.",
+   "Recompra de US$ 201 mi no trimestre."
+  ],
+  "negativos": [
+   "Prejuízo líquido de US$ 501 mi.",
+   "Perdas de US$ 248 mi com o incêndio.",
+   "Margem Ebitda ajustada de 1,2%."
+  ],
+  "atencao": [
+   "Recuperação do centro de Incheon.",
+   "Desdobramentos do vazamento de dados."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Coupang: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1834584/000183458426000084/cpng-09302026ex991.htm", "data": "2026-11-03"},
+  {"titulo": "Finviz: Coupang beats on a fire-adjusted loss but margins and free cash flow hit new lows", "url": "https://finviz.com/news/415062/coupang-beats-on-a-fire-adjusted-loss-as-revenue-re-accelerates-but-margins-and-free-cash-flow-hit-new-lows", "data": "2026-11"},
+  {"titulo": "StockStory: Coupang Q3 2026 sales beat estimates", "url": "https://stockstory.org/us/stocks/nyse/cpng/news/earnings/coupangs-nysecpng-q3-2026-sales-beat-estimates", "data": "2026-11"},
+  {"titulo": "Kyunghyang Shinmun: Coupang Q3 2026", "url": "https://www.khan.co.kr/en/article/202611041112017", "data": "2026-11-04"}
+ ],
+ "ultimo_resultado": "3T26"
+}

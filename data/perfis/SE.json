@@ -1,0 +1,69 @@
+{
+ "ticker": "SE",
+ "revisado_em": "2026-11-22",
+ "resumo": "Grupo de Singapura dono da Shopee (comércio eletrônico no Sudeste Asiático e no Brasil), do Monee (serviços financeiros e crédito) e da Garena (jogos, como Free Fire). Lucrativo, com receita crescendo 43%.",
+ "modelo": "A Sea ganha com comissões, publicidade e logística na Shopee; com crédito ao consumidor e a vendedores, pagamentos e carteira digital no Monee; e com a venda de itens dentro de jogos na Garena, principalmente o Free Fire, muito popular em mercados emergentes como o Brasil.",
+ "segmentos": [
+  {"nome": "Shopee (comércio eletrônico)", "peso_receita": 0.71, "periodo": "3T26", "obs": "US$ 6,07 bi, alta de 41%; volume de mercadorias de US$ 39,7 bi."},
+  {"nome": "Monee (serviços financeiros)", "peso_receita": 0.19, "periodo": "3T26", "obs": "US$ 1,62 bi, alta de 64%."},
+  {"nome": "Garena (jogos)", "peso_receita": 0.10, "periodo": "3T26", "obs": "US$ 840 mi, alta de 29%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": 0.0, "exterior_pct": 1.0, "periodo": "3T26", "texto": "Sede em Singapura; opera no Sudeste Asiático (Indonésia, Tailândia, Vietnã, Filipinas, Malásia), Taiwan e Brasil."},
+ "temas": [
+  {"tema": "Comércio eletrônico em mercados emergentes", "relacao": "A Shopee teve volume de US$ 39,7 bi e pedidos em alta de 25%, com Ebitda ajustado recorde; é uma das líderes no Brasil."},
+  {"tema": "Crédito digital", "relacao": "A carteira de crédito do Monee subiu 60%, para US$ 12,6 bi, com inadimplência acima de 90 dias de 1,3%."},
+  {"tema": "Jogos", "relacao": "A Garena tem 672 milhões de usuários ativos por trimestre, com o Free Fire como principal jogo."}
+ ],
+ "diferencial": {
+  "texto": "A Sea tem escala líder em comércio eletrônico no Sudeste Asiático, logística própria e um ecossistema que une compras, pagamentos e crédito, além de um jogo de enorme sucesso que gera caixa. Os pontos fracos são a concorrência do TikTok Shop, Lazada e Mercado Livre, o risco de crédito e a dependência de um único jogo na Garena.",
+  "vantagem": {"nivel": "moderada", "resumo": "Escala líder em comércio eletrônico no Sudeste Asiático com pagamentos e crédito integrados, mas com rivais fortes como TikTok Shop e Mercado Livre."},
+  "concorrentes": ["TikTok Shop", "Lazada (Alibaba)", "Mercado Livre", "Tokopedia", "Temu", "Tencent"]
+ },
+ "potencial": {
+  "texto": "O crescimento vem da Shopee, que ganha escala e lucro, do crédito do Monee e da Garena. A empresa não divulga projeção no release e aprovou mais US$ 1 bi em recompra de ações.",
+  "metricas": [
+   {"rotulo": "Volume de mercadorias da Shopee", "valor": "US$ 39,7 bi (+23%)", "periodo": "3T26"},
+   {"rotulo": "Carteira de crédito do Monee", "valor": "US$ 12,6 bi (+60%)", "periodo": "set/2026"},
+   {"rotulo": "Ebitda ajustado total", "valor": "US$ 931 mi", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 502,5 mi no 3T26, alta de 34%, e de US$ 1,4 bi em nove meses. A empresa tinha cerca de US$ 11,3 bi em caixa e aplicações, US$ 1,2 bi em empréstimos, quitou suas notas conversíveis e aprovou mais US$ 1 bi em recompra de ações.",
+  "caixa": "cerca de US$ 11,3 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concorrência do TikTok Shop e de rivais regionais.",
+  "Inadimplência do crédito.",
+  "Dependência do Free Fire.",
+  "Regulação em vários países."
+ ],
+ "momento": "No 3T26 (divulgado em 10/11/2026), a receita subiu 43%, para US$ 8,58 bi, e o lucro 34%, com a Shopee batendo recorde de Ebitda; o lucro por ação ficou um pouco abaixo do esperado, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-10",
+  "positivos": [
+   "Receita de US$ 8,58 bi, alta de 43%.",
+   "Ebitda ajustado da Shopee subiu 45%.",
+   "Nova recompra de US$ 1 bi."
+  ],
+  "negativos": [
+   "Provisão para perdas de crédito subiu 82%.",
+   "Inadimplência subiu de 1,1% para 1,3%."
+  ],
+  "atencao": [
+   "Concorrência no Brasil e no Sudeste Asiático.",
+   "Possível listagem separada do Monee."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Sea: resultados do 3T26 (6-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1703399/000119312526455420/d17880dex991.htm", "data": "2026-11-10"},
+  {"titulo": "Morningstar (Dow Jones): Sea profit rises on broad-based growth", "url": "https://www.morningstar.com/news/dow-jones/202611104447/sea-profit-rises-on-broad-based-growth-beating-expectations", "data": "2026-11-10"},
+  {"titulo": "DealStreetAsia: Sea Ltd's Q3 profit rises 34% as Shopee posts record earnings", "url": "https://www.dealstreetasia.com/stories/sea-ltd-q3-2026-profit", "data": "2026-11"},
+  {"titulo": "Quartr: Sea Q3 2026 earnings summary", "url": "https://quartr.com/events/sea-limited-se-q3-2026_3eUtip0X", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

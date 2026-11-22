@@ -1,0 +1,71 @@
+{
+ "ticker": "BABA",
+ "revisado_em": "2026-11-22",
+ "resumo": "Gigante chinesa de comércio eletrônico (Taobao e Tmall), entrega rápida, nuvem e inteligência artificial (modelos Qwen). Lucrativa, com a nuvem de IA crescendo 53%, mas com o comércio eletrônico doméstico encolhendo e grande investimento em IA.",
+ "modelo": "O Alibaba ganha com publicidade e comissões cobradas de lojistas no Taobao e Tmall, com o novo negócio de entregas rápidas (quick commerce), com a nuvem (Alibaba Cloud, maior da China) e chips próprios (T-Head), e com comércio internacional (AliExpress, Lazada, Trendyol). Desenvolve os modelos de IA Qwen. Valores em yuan (RMB).",
+ "segmentos": [
+  {"nome": "Comércio eletrônico na China (Taobao e Tmall)", "peso_receita": 0.36, "periodo": "3T26", "obs": "RMB 98,5 bi, queda de 5%."},
+  {"nome": "Nuvem e computação de IA", "peso_receita": 0.22, "periodo": "3T26", "obs": "RMB 61,0 bi, alta de 53%; Ebita ajustado de RMB 8,8 bi."},
+  {"nome": "Entrega rápida (quick commerce)", "peso_receita": 0.22, "periodo": "3T26", "obs": "RMB 58,8 bi, alta de 22%."},
+  {"nome": "Comércio internacional e outros", "peso_receita": 0.20, "periodo": "3T26", "obs": "Internacional RMB 25,7 bi (-8%); outros RMB 27,7 bi."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Hangzhou (China), listada em Nova York e Hong Kong; a maior parte da receita vem da China."},
+ "temas": [
+  {"tema": "Inteligência artificial e nuvem", "relacao": "A receita de produtos de IA cresceu a três dígitos pelo 13º trimestre seguido e a nuvem acelerou para 53%; lançou o modelo Qwen4-Max."},
+  {"tema": "Geopolítica e chips", "relacao": "Uma regra americana de 16/11/2026 sobre acesso remoto a chips avançados pode afetar seu acesso a capacidade de computação fora da China."},
+  {"tema": "Consumo na China", "relacao": "O comércio eletrônico doméstico caiu 5% em meio à concorrência acirrada e consumo fraco."}
+ ],
+ "diferencial": {
+  "texto": "O Alibaba tem a maior nuvem da China, modelos de IA próprios competitivos e o maior ecossistema de comércio eletrônico do país, com dados e lojistas em escala enorme. Os pontos fracos são a concorrência feroz de PDD, JD e Douyin, a regulação chinesa, as restrições americanas a chips e os prejuízos em entrega rápida e no aplicativo Qwen.",
+  "vantagem": {"nivel": "moderada", "resumo": "Maior nuvem da China e ecossistema de comércio enorme, mas o comércio doméstico perde espaço para rivais e há riscos regulatórios e geopolíticos."},
+  "concorrentes": ["PDD (Temu)", "JD.com", "ByteDance (Douyin)", "Tencent", "Meituan", "Huawei Cloud"]
+ },
+ "potencial": {
+  "texto": "O crescimento vem da nuvem e da IA: a receita externa recorrente da nuvem subiu 67%. O investimento foi de RMB 50,5 bi no trimestre, alta de 60%, o que deixou o fluxo de caixa livre negativo. A empresa não divulga projeção numérica.",
+  "metricas": [
+   {"rotulo": "Crescimento da nuvem de IA", "valor": "53%", "periodo": "3T26"},
+   {"rotulo": "Receita de produtos de IA", "valor": "RMB 17,9 bi", "periodo": "3T26"},
+   {"rotulo": "Investimento no trimestre", "valor": "RMB 50,5 bi", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de RMB 64,4 bi no trimestre, mais que triplicado por ganhos com investimentos; o lucro ajustado foi de RMB 19,9 bi, alta de 92%, abaixo do esperado segundo a imprensa. O fluxo de caixa livre foi negativo em RMB 34,5 bi pelo investimento em nuvem. A empresa tem RMB 488 bi em caixa e aplicações e recomprou US$ 221 mi em ações no trimestre.",
+  "caixa": "RMB 488 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Restrições americanas a chips e tensões EUA-China.",
+  "Concorrência no comércio eletrônico chinês.",
+  "Regulação na China.",
+  "Fluxo de caixa livre negativo pelo investimento em IA."
+ ],
+ "momento": "No trimestre encerrado em setembro (3T26 no calendário, 2T27 fiscal da empresa, divulgado em 19/11/2026), a receita subiu 10%, para RMB 271,5 bi, acima do esperado, com a nuvem de IA crescendo 53%, mas o lucro ajustado ficou abaixo das estimativas e o prejuízo do braço de IA aumentou, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-19",
+  "positivos": [
+   "Nuvem de IA cresceu 53%.",
+   "Receita de IA com alta de três dígitos pelo 13º trimestre.",
+   "Entrega rápida cresceu 22% e reduziu prejuízo."
+  ],
+  "negativos": [
+   "Taobao e Tmall caíram 5%.",
+   "Prejuízo de RMB 10,5 bi no braço de IA e Qwen.",
+   "Fluxo de caixa livre negativo de RMB 34,5 bi."
+  ],
+  "atencao": [
+   "Efeito das novas regras americanas sobre chips.",
+   "Monetização dos modelos Qwen."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Alibaba: resultados do trimestre de setembro de 2026 (6-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1577552/000110465926130115/tm2630263d1_ex99-1.htm", "data": "2026-11-19"},
+  {"titulo": "South China Morning Post: Alibaba's AI bet paying, cloud services drive 10% revenue jump", "url": "https://www.scmp.com/tech/big-tech/article/3375093/alibabas-ai-bet-paying-cloud-services-drive-10-revenue-jump", "data": "2026-11"},
+  {"titulo": "The Next Web: Alibaba's profit triples as AI cloud revenue jumps 53%", "url": "https://thenextweb.com/news/alibaba-results-profit-triples-ai-cloud-revenue-53", "data": "2026-11"},
+  {"titulo": "Finviz: Alibaba AI cloud revenue surges 53% as earnings miss forecasts", "url": "https://finviz.com/news/425055/alibaba-ai-cloud-revenue-surges-53-as-quarterly-earnings-miss-analyst-forecasts", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

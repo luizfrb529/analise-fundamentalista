@@ -1,0 +1,69 @@
+{
+ "ticker": "MELI",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior plataforma de comércio eletrônico e de serviços financeiros da América Latina (Mercado Livre e Mercado Pago), com forte presença no Brasil, México e Argentina. Lucrativa, com receita crescendo 45%, mas com margens pressionadas por frete grátis e crédito.",
+ "modelo": "O Mercado Livre ganha com comissões e anúncios no marketplace, com a logística própria (Mercado Envios) e com o Mercado Pago: pagamentos, conta digital, cartões e crédito a consumidores e vendedores. A carteira de crédito, de quase US$ 18 bi, gera receita financeira relevante e risco de inadimplência.",
+ "segmentos": [
+  {"nome": "Brasil", "peso_receita": 0.56, "periodo": "3T26", "obs": "US$ 6,0 bi, alta de 50%."},
+  {"nome": "México", "peso_receita": 0.23, "periodo": "3T26", "obs": "US$ 2,4 bi, alta de 47%."},
+  {"nome": "Argentina", "peso_receita": 0.17, "periodo": "3T26", "obs": "US$ 1,8 bi, alta de 26%."},
+  {"nome": "Outros países", "peso_receita": 0.04, "periodo": "3T26", "obs": "calculado pela diferença."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": 0.0, "exterior_pct": 1.0, "periodo": "3T26", "texto": "Sede em Montevidéu (Uruguai), listada nos EUA; toda a receita vem da América Latina, com o Brasil como maior mercado."},
+ "temas": [
+  {"tema": "Comércio eletrônico no Brasil", "relacao": "Reduziu o valor mínimo para frete grátis no Brasil, o que elevou as vendas (itens vendidos +45%) mas cortou a margem; a concorrência é descrita como intensa porém estável."},
+  {"tema": "Fintech e crédito", "relacao": "A carteira de crédito do Mercado Pago subiu 62%, para quase US$ 18 bi, com inadimplência de 15 a 90 dias de 7,0%; o Mercado Pago tem 93 milhões de usuários ativos por mês."}
+ ],
+ "diferencial": {
+  "texto": "O Mercado Livre combina o maior marketplace da região com logística própria de entrega rápida e um ecossistema financeiro, o que cria efeito de rede (compradores atraem vendedores) e dados de crédito difíceis de copiar. Os pontos fracos são a competição de Shopee, Temu, Amazon e Magazine Luiza, a volatilidade cambial e econômica da região e o risco de crédito.",
+  "vantagem": {"nivel": "forte", "resumo": "Maior marketplace da América Latina com logística própria e ecossistema financeiro integrado, efeito de rede e escala difíceis de copiar."},
+  "concorrentes": ["Shopee (Sea)", "Amazon", "Temu", "Magazine Luiza", "Nubank", "Shein"]
+ },
+ "potencial": {
+  "texto": "O crescimento vem do avanço do comércio eletrônico na região, da expansão do crédito e da conta digital e da publicidade no marketplace. A empresa não divulga projeção numérica. O volume de pagamentos (TPV) subiu 53% e o de mercadorias (GMV) 38% no trimestre.",
+  "metricas": [
+   {"rotulo": "Volume de mercadorias (GMV)", "valor": "US$ 22,8 bi (+38%)", "periodo": "3T26"},
+   {"rotulo": "Volume de pagamentos (TPV)", "valor": "US$ 108,8 bi (+53%)", "periodo": "3T26"},
+   {"rotulo": "Carteira de crédito", "valor": "quase US$ 18 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 448 mi no 3T26 (US$ 8,83 por ação), alta de 6%, mas a margem operacional caiu para 6,3% com frete e marketing; as provisões para calote subiram 65%, segundo a imprensa. A empresa tinha US$ 7,4 bi em caixa e aplicações e US$ 13,2 bi em empréstimos, boa parte para financiar a carteira de crédito.",
+  "caixa": "US$ 7,4 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Inadimplência da carteira de crédito.",
+  "Concorrência de Shopee, Temu e Amazon.",
+  "Câmbio e economia da América Latina.",
+  "Margem pressionada por frete grátis."
+ ],
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita subiu 45%, para US$ 10,75 bi, e o lucro 6%, para US$ 448 mi, com a margem operacional caindo pelo frete grátis no Brasil e por mais provisões de crédito.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Receita de US$ 10,75 bi, alta de 45%.",
+   "Itens vendidos no Brasil subiram 45%.",
+   "Carteira de crédito cresceu 62%."
+  ],
+  "negativos": [
+   "Margem operacional caiu para 6,3%.",
+   "Lucro operacional caiu 6,5%."
+  ],
+  "atencao": [
+   "Inadimplência do crédito.",
+   "Efeito do frete grátis na margem."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Mercado Livre: carta aos acionistas do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1099590/000109959026000027/meli-20260930xex991.htm", "data": "2026-11-04"},
+  {"titulo": "The Rio Times: MercadoLibre earns US$448 million in Q3 2026", "url": "https://www.riotimesonline.com/mercadolibre-earns-us448-million-q3-2026/", "data": "2026-11"},
+  {"titulo": "Panabee: MercadoLibre revenue climbs amid strategic margin compression", "url": "https://www.panabee.com/news/mercadolibre-earnings-q3-2026", "data": "2026-11"},
+  {"titulo": "DolarHoy: Mercado Libre facturó USD 10.750 millones en el tercer trimestre", "url": "https://dolarhoy.com/empresas/mercado-libre-facturo-usd-10-750-millones-y-crecio-un-45-en-el-tercer-trimestre-de-2026-2026115111845", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}
