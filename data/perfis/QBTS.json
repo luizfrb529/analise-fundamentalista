@@ -1,0 +1,70 @@
+{
+ "ticker": "QBTS",
+ "revisado_em": "2026-11-22",
+ "resumo": "Pioneira em computação quântica por recozimento (annealing), voltada a problemas de otimização, e agora também em computação quântica universal após comprar a Quantum Circuits. Receita ainda pequena, prejuízo alto e cerca de US$ 503 mi em caixa.",
+ "modelo": "A D-Wave vende acesso a seus computadores quânticos pela nuvem (QCaaS), sistemas completos instalados no cliente, como o Advantage2 de mais de 4.400 qubits, e serviços profissionais para criar aplicações de otimização em logística, telecomunicações e finanças. Tem mais de 100 clientes com receita no ano, 48% deles empresas. Desde janeiro de 2026 desenvolve também computadores quânticos de portas lógicas (gate-model).",
+ "segmentos": [
+  {"nome": "Nuvem quântica (QCaaS)", "peso_receita": 0.49, "periodo": "3T26", "obs": "US$ 2,2 mi, contra US$ 1,4 mi no 3T25."},
+  {"nome": "Serviços profissionais", "peso_receita": 0.44, "periodo": "3T26", "obs": "US$ 2,0 mi, contra US$ 0,5 mi."},
+  {"nome": "Venda de sistemas", "peso_receita": 0.07, "periodo": "3T26", "obs": "cerca de US$ 0,3 mi (calculado), contra US$ 1,8 mi."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Palo Alto (EUA) e origem no Canadá; clientes nos EUA, Europa (sistema na Itália) e Ásia (NTT Docomo, LG CNS)."},
+ "temas": [
+  {"tema": "Computação quântica", "relacao": "É a única com computadores de recozimento quântico em uso comercial e, com a compra da Quantum Circuits, entrou na disputa da computação universal, com meta de 100 qubits lógicos em 2032."},
+  {"tema": "Política industrial dos EUA", "relacao": "Fechou em setembro acordo de até US$ 100 mi com o Departamento de Comércio (CHIPS) e emitiu 7,1 milhões de ações ao governo a US$ 14,09."},
+  {"tema": "Otimização com IA", "relacao": "Clientes como a NTT Docomo usam os sistemas em produção para otimizar redes de telecomunicações."}
+ ],
+ "diferencial": {
+  "texto": "A D-Wave tem mais de 25 anos em computação quântica e é uma das poucas com aplicações rodando em produção para clientes comerciais, graças ao recozimento quântico, que já resolve certos problemas de otimização. A base de mais de 100 clientes e a experiência em sistemas instalados são vantagens. Os pontos fracos são que o recozimento não serve para todos os problemas, o programa de computação universal está atrasado frente a IBM, Google e IonQ, e a receita ainda é muito pequena para o tamanho da empresa.",
+  "concorrentes": ["IBM", "Google", "IonQ", "Rigetti", "Quantinuum", "Pasqal"]
+ },
+ "potencial": {
+  "texto": "Os contratos a receber (RPO) subiram para US$ 38,3 mi, 13 vezes mais que um ano antes, e as reservas de nove meses somaram US$ 37,4 mi, alta de 611%, puxadas por uma venda de sistema de US$ 20 mi. O roteiro de computação universal prevê 49 qubits físicos em 2027, 181 em 2028 e 10 qubits lógicos em 2030. A empresa não divulga projeção de receita.",
+  "metricas": [
+   {"rotulo": "Contratos a receber (RPO)", "valor": "US$ 38,3 mi", "periodo": "set/2026"},
+   {"rotulo": "Reservas em nove meses", "valor": "US$ 37,4 mi", "periodo": "9M26"},
+   {"rotulo": "Meta de qubits lógicos", "valor": "100", "periodo": "2032"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo líquido de US$ 48,2 mi no 3T26 e Ebitda ajustado negativo de US$ 37,7 mi, alta de 83% em um ano. A operação consumiu US$ 109 mi em nove meses e a compra da Quantum Circuits custou US$ 253 mi em dinheiro. O caixa e as aplicações caíram para US$ 503 mi, e a dívida é de US$ 42 mi. Em 2025 a empresa levantou US$ 537 mi com venda de ações em bolsa; em 2026 só emitiu ações ao governo americano.",
+  "caixa": "US$ 503 mi",
+  "queima_anual": "cerca de US$ 150 mi (operação, ritmo de 2026)",
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Receita pequena e irregular, dependente de poucas vendas de sistemas.",
+  "Programa de computação universal ainda em fase inicial.",
+  "Diluição futura por venda de ações.",
+  "Tecnologia sem uso comercial em larga escala comprovado."
+ ],
+ "momento": "No 3T26 (divulgado em 10/11/2026), a receita subiu 21% em um ano, para US$ 4,5 mi, mas o prejuízo por ação veio pior que o esperado e as ações caíram, segundo a imprensa. As reservas do trimestre caíram para US$ 1,9 mi. A empresa entregou o primeiro computador quântico da Itália e lançou programa beta do simulador de computação universal.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-10",
+  "positivos": [
+   "Receita de US$ 4,5 mi, alta de 21% em um ano.",
+   "Contratos a receber de US$ 38,3 mi, contra US$ 2,9 mi.",
+   "Acordo de até US$ 100 mi com o Departamento de Comércio."
+  ],
+  "negativos": [
+   "Prejuízo líquido de US$ 48,2 mi.",
+   "Ebitda ajustado negativo de US$ 37,7 mi, piora de 83%.",
+   "Reservas do trimestre caíram 19%, para US$ 1,9 mi."
+  ],
+  "atencao": [
+   "Conversão dos contratos a receber em receita.",
+   "Novas vendas de sistemas completos."
+  ]
+ },
+ "fontes": [
+  {"titulo": "D-Wave: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1907982/000190798226000180/qbts-20261110xexx991.htm", "data": "2026-11-10"},
+  {"titulo": "D-Wave: apresentação do 3T26 (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1907982/000190798226000180/d-wavequantum3q26earning.htm", "data": "2026-11-10"},
+  {"titulo": "D-Wave: acordo de emissão de ações ao Departamento de Comércio (8-K/A, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1907982/000190798226000144/0001907982-26-000144-index.htm", "data": "2026-09-09"},
+  {"titulo": "Quantum Computing Report: D-Wave reports Q3 2026 results", "url": "https://quantumcomputingreport.com/d-wave-reports-q3-2026-results-revenue-up-21-yoy-rpo-surges-1221-to-38-3m-and-finalizes-100m-chips-act-agreement/", "data": "2026-11-10"},
+  {"titulo": "Motley Fool: Why D-Wave Quantum stock crashed today", "url": "https://www.fool.com/investing/2026/11/10/why-d-wave-quantum-stock-crashed-today/", "data": "2026-11-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
