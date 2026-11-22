@@ -1,0 +1,63 @@
+{
+ "ticker": "CEG",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior geradora de energia nuclear dos EUA e, após comprar a Calpine em 2026, também uma das maiores em gás natural, vendendo energia firme a grandes empresas de tecnologia. Muito lucrativa, com contratos de 20 anos com Amazon e Google.",
+ "modelo": "A Constellation opera a maior frota nuclear do país e, com a Calpine, dezenas de usinas a gás e geotérmicas, vendendo energia no atacado, em contratos de longo prazo e no varejo a empresas. O diferencial recente são contratos de 15 a 20 anos com empresas de tecnologia para abastecer data centers, que pagam investimentos para ampliar a capacidade das usinas.",
+ "segmentos": [],
+ "segmentos_base": "Empresa reporta por região; geração nuclear de 46.677 GWh no 3T26",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Baltimore (EUA), com usinas em Illinois, Pensilvânia, Nova York, Nova Jersey, Maryland, Texas e Califórnia, entre outros."},
+ "temas": [
+  {"tema": "Energia para data centers", "relacao": "Fechou contrato de 20 anos com a Amazon para 690 MW da usina Calvert Cliffs e com o Google para cerca de 890 MW de aumento de capacidade em 11 reatores, além de um acordo de 2.700 MW com o Google no PJM."},
+  {"tema": "Energia nuclear", "relacao": "Obteve compromisso condicional de empréstimo de até US$ 5 bi do Departamento de Energia para aumentar a potência dos reatores."},
+  {"tema": "Gás natural", "relacao": "Com a Calpine, ganhou grande frota a gás e vai comprar a usina Rhode Island State Energy Center, de 609 MW, por US$ 715 mi."}
+ ],
+ "diferencial": {
+  "texto": "A Constellation tem a maior e mais eficiente frota nuclear dos EUA (fator de capacidade de 97%), energia firme e sem carbono que as empresas de tecnologia disputam e que não se replica em menos de uma década. A Calpine acrescenta flexibilidade a gás. Os pontos fracos são a exposição a preços de energia, a regulação sobre contratos diretos com data centers e a dívida elevada após a aquisição.",
+  "concorrentes": ["Vistra", "NRG Energy", "Talen Energy", "NextEra Energy", "Dominion Energy", "Southern Company"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro operacional ajustado de 2026 deve ficar entre US$ 12,50 e US$ 12,80 por ação, faixa elevada. Os contratos com Amazon e Google, que começam a gerar receita a partir de 2028, sustentam o crescimento de longo prazo. Não há projeção para 2027 no release.",
+  "metricas": [
+   {"rotulo": "Lucro operacional ajustado projetado", "valor": "US$ 12,50 a US$ 12,80 por ação", "periodo": "2026"},
+   {"rotulo": "Aumento de capacidade para o Google", "valor": "cerca de 890 MW", "periodo": "a partir de 2028"},
+   {"rotulo": "Contrato com a Amazon", "valor": "690 MW por 20 anos", "periodo": "Calvert Cliffs"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 1,84 bi no 3T26 (US$ 5,19 por ação), contra US$ 2,97 um ano antes, e lucro ajustado de US$ 5,06 por ação. A dívida soma cerca de US$ 23,4 bi, incluindo a usada na compra da Calpine. A empresa recomprou US$ 3,0 bi em ações em nove meses e paga dividendos.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Preço da energia no atacado.",
+  "Regulação de contratos diretos com data centers.",
+  "Dívida elevada após a Calpine.",
+  "Paradas de reatores."
+ ],
+ "momento": "No 3T26 (divulgado em 09/11/2026), o lucro ajustado subiu para US$ 5,06 por ação, bem acima do esperado, com a Calpine e preços melhores; a empresa elevou a projeção do ano pela segunda vez e anunciou contratos com Amazon e Google.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-09",
+  "positivos": [
+   "Lucro ajustado de US$ 5,06 por ação, contra US$ 3,04.",
+   "Contratos de 20 anos com Amazon e Google.",
+   "Compromisso de empréstimo de até US$ 5 bi do governo."
+  ],
+  "negativos": [
+   "Dívida maior após a compra da Calpine."
+  ],
+  "atencao": [
+   "Projeção para 2027.",
+   "Aprovação da compra da usina em Rhode Island."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Constellation: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1168165/000186827526000116/ceg-20261109991.htm", "data": "2026-11-09"},
+  {"titulo": "Constellation: comunicado do 3T26", "url": "https://www.constellationenergy.com/news/2026/11/constellation-reports-third-quarter-2026-results.html", "data": "2026-11-09"},
+  {"titulo": "Stocktwits: Constellation raises 2026 earnings outlook after Q3 beat", "url": "https://stocktwits.com/news-articles/markets/equity/constellation-energy-raises-2026-earnings-outlook-after-q3-beat-ceo-highlights-growing-demand-for-reliable-power/cNGrQIqR9ew", "data": "2026-11"},
+  {"titulo": "Pulse 2.0: Constellation Energy $1.8 billion Q3 net income", "url": "https://pulse2.com/constellation-energy-1-8-billion-q3-net-income-raised-2026-guidance-and-5-billion-nuclear-financing-commitment/", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

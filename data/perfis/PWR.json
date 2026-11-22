@@ -1,0 +1,65 @@
+{
+ "ticker": "PWR",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior empresa de engenharia e construção de infraestrutura elétrica dos EUA, que constrói linhas de transmissão, subestações, usinas e conexões de data centers. Lucrativa, com receita crescendo 57% e carteira recorde de US$ 63,7 bi.",
+ "modelo": "A Quanta Services projeta, constrói e mantém redes elétricas, linhas de transmissão e distribuição, subestações, usinas renováveis e infraestrutura de gás e dutos para concessionárias, geradoras, indústrias e empresas de tecnologia. Ganha com contratos de serviço de longo prazo (acordos-mestre) e grandes projetos. Também fabrica equipamentos, como transformadores e torres.",
+ "segmentos": [
+  {"nome": "Infraestrutura elétrica", "peso_receita": 0.82, "periodo": "3T26", "obs": "US$ 9,80 bi, alta de 59%."},
+  {"nome": "Subterrâneo e infraestrutura (gás, dutos, indústria)", "peso_receita": 0.18, "periodo": "3T26", "obs": "US$ 2,22 bi, alta de 52%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Houston (EUA); opera principalmente nos EUA, com atuação no Canadá e na Austrália."},
+ "temas": [
+  {"tema": "Rede elétrica e data centers", "relacao": "A demanda se amplia entre concessionárias, geradoras, indústria e empresas de tecnologia; a carteira de infraestrutura elétrica chegou a US$ 51,9 bi."},
+  {"tema": "Mão de obra qualificada", "relacao": "A escassez de eletricistas e engenheiros limita concorrentes; a Quanta tem a maior força de trabalho especializada do setor."}
+ ],
+ "diferencial": {
+  "texto": "A Quanta tem a maior força de trabalho especializada em rede elétrica dos EUA, centros de treinamento próprios e relação de décadas com concessionárias, o que é difícil de replicar quando todos querem construir ao mesmo tempo. A diversificação em fabricação de equipamentos reduz gargalos. Os pontos fracos são a margem baixa típica de construção, riscos de execução em grandes projetos e a dependência dos investimentos das concessionárias.",
+  "concorrentes": ["MasTec", "EMCOR", "Primoris", "MYR Group", "Dycom", "Fluor"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 41,3 bi e US$ 41,6 bi, com lucro ajustado de US$ 17,90 a US$ 18,30 por ação e fluxo de caixa livre de US$ 2,5 bi a US$ 3,0 bi; foi a terceira elevação seguida. A carteira de US$ 63,7 bi, alta de 63% em um ano, dá visibilidade para os próximos anos.",
+  "metricas": [
+   {"rotulo": "Carteira de pedidos", "valor": "US$ 63,7 bi", "periodo": "set/2026"},
+   {"rotulo": "Receita projetada", "valor": "US$ 41,3 bi a US$ 41,6 bi", "periodo": "2026"},
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 17,90 a US$ 18,30 por ação", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 695 mi no 3T26 (US$ 4,55 por ação), mais que o dobro de um ano antes, e Ebitda ajustado de US$ 1,45 bi. O fluxo de caixa livre foi de US$ 1,2 bi. A empresa tinha US$ 2,3 bi em caixa e US$ 7,0 bi em dívida, e fez cinco aquisições nos nove meses.",
+  "caixa": "US$ 2,3 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Riscos de execução em grandes projetos.",
+  "Dependência dos investimentos das concessionárias.",
+  "Escassez de mão de obra e materiais.",
+  "Integração de aquisições."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita subiu 57%, para US$ 12,0 bi, a carteira atingiu recorde de US$ 63,7 bi e a empresa elevou a projeção do ano; as ações subiram após o resultado, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Receita de US$ 12,0 bi, alta de 57%.",
+   "Carteira recorde de US$ 63,7 bi.",
+   "Fluxo de caixa livre de US$ 1,2 bi."
+  ],
+  "negativos": [
+   "Parte do crescimento veio de aquisições."
+  ],
+  "atencao": [
+   "Conversão da carteira em receita.",
+   "Novos grandes projetos de transmissão."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Quanta: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1050915/000119312526436949/d77812dex991.htm", "data": "2026-10-29"},
+  {"titulo": "Zacks: PWR Q3 earnings beat on electric strength, 2026 view raised", "url": "https://www.zacks.com/stock/news/3018963/pwr-q3-earnings-beat-on-electric-strength-2026-view-raised-stock-up", "data": "2026-10"},
+  {"titulo": "StockStory: Quanta beats expectations in strong Q3 2026", "url": "https://stockstory.org/us/stocks/nyse/pwr/news/earnings/quanta-nysepwr-beats-expectations-in-strong-q3-2026-stock-soars", "data": "2026-10"},
+  {"titulo": "Ariva: Quanta Services reports third quarter 2026 results", "url": "https://www.ariva.de/news/quanta-services-reports-third-quarter-2026-results-12186732", "data": "2026-10-29"}
+ ],
+ "ultimo_resultado": "3T26"
+}

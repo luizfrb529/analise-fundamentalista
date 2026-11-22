@@ -1,0 +1,67 @@
+{
+ "ticker": "BWXT",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana de reatores nucleares para submarinos e porta-aviões da Marinha dos EUA e de componentes e combustível para usinas nucleares, isótopos médicos e microrreatores. Lucrativa, com carteira de US$ 8,6 bi.",
+ "modelo": "A BWX Technologies é a única fornecedora dos reatores nucleares da Marinha americana (segmento de Governo), em contratos de longo prazo com o Departamento de Energia, e também opera instalações nucleares do governo e produz urânio de alta pureza. No segmento Comercial, fabrica componentes para reatores no Canadá e nos EUA, presta serviços a usinas e produz isótopos médicos.",
+ "segmentos": [
+  {"nome": "Governo (reatores navais e materiais especiais)", "peso_receita": 0.67, "periodo": "3T26", "obs": "US$ 639 mi, alta de 4%."},
+  {"nome": "Comercial (usinas, isótopos médicos)", "peso_receita": 0.33, "periodo": "3T26", "obs": "US$ 314 mi, alta de 25%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Virgínia (EUA), com fábricas nos EUA e no Canadá."},
+ "temas": [
+  {"tema": "Defesa", "relacao": "Fornece os reatores de todos os submarinos e porta-aviões nucleares americanos, área prioritária com o programa de submarinos AUKUS."},
+  {"tema": "Energia nuclear", "relacao": "Seu microrreator BANR foi selecionado para o programa Janus do Exército em Fort Campbell, e fornece componentes para reatores modulares no Canadá."},
+  {"tema": "Medicina nuclear", "relacao": "Produz isótopos médicos usados em diagnóstico e tratamento de câncer."}
+ ],
+ "diferencial": {
+  "texto": "A BWXT tem monopólio de fato na fabricação de reatores navais americanos, com licenças, instalações e conhecimento únicos, e contratos de décadas com o governo, o que torna a receita muito previsível. Os pontos fracos são a dependência do orçamento de defesa, o crescimento moderado dos reatores navais e a execução de novos negócios comerciais, como microrreatores.",
+  "concorrentes": ["Huntington Ingalls", "General Dynamics", "Westinghouse", "Framatome", "Centrus", "X-energy"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ser de cerca de US$ 3,8 bi, com Ebitda ajustado de cerca de US$ 667 mi e lucro ajustado de US$ 4,72 a US$ 4,77 por ação, e a de 2027 deve crescer em ritmo alto de um dígito. A carteira de pedidos subiu 18% no ano, para US$ 8,6 bi.",
+  "metricas": [
+   {"rotulo": "Carteira de pedidos", "valor": "US$ 8,6 bi", "periodo": "set/2026"},
+   {"rotulo": "Receita projetada", "valor": "cerca de US$ 3,8 bi", "periodo": "2026"},
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 4,72 a US$ 4,77 por ação", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 102 mi no 3T26 (US$ 1,11 por ação), alta de 25%, e Ebitda ajustado de US$ 180 mi. O fluxo de caixa livre foi de US$ 150,5 mi no trimestre. A empresa tinha US$ 569 mi em caixa e US$ 2,0 bi em dívida de longo prazo.",
+  "caixa": "US$ 569 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dependência do orçamento de defesa.",
+  "Atrasos em novos contratos, como encomenda de construção adiada.",
+  "Execução de projetos comerciais.",
+  "Dívida elevada."
+ ],
+ "momento": "No 3T26 (divulgado em 02/11/2026), a receita subiu 10%, para US$ 953 mi, abaixo do esperado, e os pedidos do trimestre caíram para US$ 538 mi; a margem melhorou e a empresa indicou crescimento em 2027, mas as ações ficaram perto da mínima, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-02",
+  "positivos": [
+   "Lucro ajustado por ação subiu 26%.",
+   "Comercial cresceu 25%.",
+   "Carteira de US$ 8,6 bi."
+  ],
+  "negativos": [
+   "Receita abaixo do esperado.",
+   "Pedidos do trimestre de US$ 538 mi, contra US$ 2,25 bi um ano antes."
+  ],
+  "atencao": [
+   "Encomenda de novas construções adiada.",
+   "Contratos de microrreatores."
+  ]
+ },
+ "fontes": [
+  {"titulo": "BWXT: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1486957/000148695726000053/bwxt_93026xerexhibit991.htm", "data": "2026-11-02"},
+  {"titulo": "Investing News: BWX Technologies reports third quarter 2026 results", "url": "https://investingnews.com/bwx-technologies-reports-third-quarter-2026-results/", "data": "2026-11-02"},
+  {"titulo": "Finviz: BWXT beats on margins and sets a firmer 2027 outlook", "url": "https://finviz.com/news/413784/bwxt-beats-on-margins-and-sets-a-firmer-2027-outlook-but-slowing-revenue-and-a-delayed-new-build-order-keep-the-stock-near-its-lows", "data": "2026-11"},
+  {"titulo": "Webull: BWX misses Q3 2026 sales expectations", "url": "https://www.webull.com/news/15856414560394240", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}
