@@ -1,0 +1,69 @@
+{
+ "ticker": "LQDT",
+ "revisado_em": "2026-11-22",
+ "resumo": "Operadora americana de leilões online de bens excedentes de governos e empresas (GovDeals, AllSurplus) e de devoluções do varejo. Lucrativa, sem dívida e com US$ 225 mi em caixa, ampliou o negócio com a compra da Invaluable.",
+ "modelo": "A Liquidity Services administra marketplaces onde governos, empresas e varejistas vendem bens excedentes, usados, devolvidos ou fora de linha (veículos, máquinas, imóveis, eletrônicos) a compradores do mundo todo. Ganha principalmente comissões sobre o volume vendido (GMV) e, no varejo, também compra e revende mercadorias. Comprou a Invaluable, de leilões de arte e colecionáveis, em outubro de 2026.",
+ "segmentos": [
+  {"nome": "Varejo (RSCG)", "peso_receita": 0.60, "periodo": "3T26", "obs": "Receita de US$ 64,1 mi (-18%), com revenda de devoluções."},
+  {"nome": "Governos (GovDeals)", "peso_receita": 0.23, "periodo": "3T26", "obs": "Volume de US$ 237,8 mi; receita de US$ 24,3 mi (+3%)."},
+  {"nome": "Ativos industriais (CAG)", "peso_receita": 0.12, "periodo": "3T26", "obs": "Receita de US$ 12,6 mi (+18%)."},
+  {"nome": "Machinio e software", "peso_receita": 0.05, "periodo": "3T26", "obs": "Receita de US$ 5,4 mi, estável."}
+ ],
+ "segmentos_base": "Receita (trimestre fiscal encerrado em set/2026)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Bethesda, Maryland (EUA); opera nos EUA, Canadá, Europa e outros mercados."},
+ "temas": [
+  {"tema": "Economia circular", "relacao": "Revende bens usados e devolvidos, prolongando a vida útil de produtos e equipamentos."},
+  {"tema": "Comércio eletrônico", "relacao": "Seus marketplaces reúnem milhões de compradores; com a Invaluable, a empresa mira volume acima de US$ 2 bi no ano fiscal 2027."}
+ ],
+ "diferencial": {
+  "texto": "A GovDeals tem uma rede ampla de órgãos públicos americanos que usam a plataforma há anos e uma base grande de compradores, o que cria efeito de rede: mais vendedores atraem mais compradores e vice-versa. Os pontos fracos são o segmento de varejo, de margem menor e mais volátil, e a concorrência de outras plataformas de leilão.",
+  "vantagem": {"nivel": "moderada", "resumo": "Efeito de rede na GovDeals, com muitos órgãos públicos vendedores e grande base de compradores, mas varejo de margem baixa e volátil."},
+  "concorrentes": ["Ritchie Bros. (RB Global)", "Copart", "eBay", "B-Stock", "Public Surplus"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o volume vendido (GMV) do ano fiscal 2027 deve passar de US$ 2 bi, e o primeiro trimestre fiscal deve ter GMV de US$ 580 mi a US$ 640 mi e Ebitda ajustado de US$ 19 mi a US$ 22 mi, já com a Invaluable.",
+  "metricas": [
+   {"rotulo": "GMV projetado", "valor": "acima de US$ 2 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Ebitda ajustado", "valor": "US$ 79,1 mi (+30%)", "periodo": "ano fiscal 2026"},
+   {"rotulo": "Caixa", "valor": "US$ 225,2 mi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 37,3 mi no ano fiscal 2026 (+33%), com Ebitda ajustado de US$ 79,1 mi. Tem US$ 225,2 mi em caixa e aplicações e nenhuma dívida financeira; pagou à vista os US$ 80 mi da Invaluable em outubro.",
+  "caixa": "US$ 225,2 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Volatilidade do segmento de varejo.",
+  "Integração da Invaluable.",
+  "Dependência de contratos com governos.",
+  "Concorrência de outras plataformas."
+ ],
+ "momento": "No trimestre fiscal até setembro (divulgado em 19/11/2026), o volume ficou estável em US$ 404 mi e a receita caiu 10%, mas o lucro subiu 52% e o Ebitda ajustado, 20%.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-19",
+  "positivos": [
+   "Lucro do trimestre subiu 52%.",
+   "Ebitda ajustado do ano subiu 30%.",
+   "Sem dívida."
+  ],
+  "negativos": [
+   "Receita do trimestre caiu 10%.",
+   "Volume abaixo da projeção da empresa."
+  ],
+  "atencao": [
+   "Contribuição da Invaluable.",
+   "Recuperação do varejo."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Liquidity Services: resultados do ano fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1235468/000119312526467778/lqdt-ex99_1.htm", "data": "2026-11-19"},
+  {"titulo": "Liquidity Services: 10-K do ano fiscal 2026 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/0001235468/000119312526468147/lqdt-20260930.htm", "data": "2026-11"},
+  {"titulo": "Grafa: Liquidity Services fiscal 2026 net income rises 33 percent", "url": "https://grafa.com/en/news/united-states/liquidity-services-fiscal-2026-net-income-rises-33-percent", "data": "2026-11"},
+  {"titulo": "Panabee: Liquidity Services FY26 adjusted EBITDA rises 30%", "url": "https://www.panabee.com/news/liquidity-earnings-q4-2026", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

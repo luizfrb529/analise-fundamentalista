@@ -1,0 +1,63 @@
+{
+ "ticker": "INTR",
+ "revisado_em": "2026-11-22",
+ "resumo": "Banco digital brasileiro com cerca de 47 milhões de clientes, que reúne conta, cartão, crédito, investimentos, seguros e marketplace num só aplicativo. Lucrativo, com lucro recorde e crescendo 26%, mas com ROE ainda abaixo dos grandes bancos.",
+ "modelo": "O Inter ganha com juros de crédito (imobiliário, consignado, cartão, antecipação de FGTS, empresas), tarifas e intercâmbio de cartões, receitas de investimentos e seguros e comissões do marketplace (Inter Shop). Capta barato com depósitos de milhões de clientes digitais e tem custo operacional baixo por não ter agências.",
+ "segmentos": [],
+ "segmentos_base": "Receita de R$ 2,72 bi no 3T26 (+26%); carteira de crédito de R$ 58,1 bi (+25%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede formal nas Ilhas Cayman e operacional em Belo Horizonte (Brasil); a maior parte dos clientes está no Brasil, com conta global para brasileiros e operação nos EUA."},
+ "temas": [
+  {"tema": "Bancos digitais no Brasil", "relacao": "Chegou a 46,8 milhões de clientes, 27,1 milhões ativos, disputando espaço com Nubank e os grandes bancos."},
+  {"tema": "Juros altos no Brasil", "relacao": "A Selic elevada encarece o crédito e pressiona a inadimplência, mas também aumenta a margem financeira."}
+ ],
+ "diferencial": {
+  "texto": "O Inter tem um ecossistema digital completo e custo por cliente muito baixo, com índice de eficiência de 41,9%, e forte presença em crédito imobiliário e consignado, linhas de menor risco. Mas o mercado de bancos digitais é muito competitivo, o Nubank tem escala maior, e o ROE de 15,8% ainda fica abaixo dos maiores bancos brasileiros.",
+  "vantagem": {"nivel": "moderada", "resumo": "Ecossistema digital completo e custo por cliente baixo, mas enfrenta o Nubank, de escala maior, e tem ROE abaixo dos grandes bancos."},
+  "concorrentes": ["Nubank", "Itaú", "Bradesco", "Banco do Brasil", "C6 Bank", "Mercado Pago"]
+ },
+ "potencial": {
+  "texto": "O potencial vem do aumento da rentabilidade com escala, da expansão do crédito e da venda de mais produtos por cliente. O plano 60/30/30 (60 milhões de clientes, 30% de eficiência e 30% de ROE) segue como ambição, mas, segundo a imprensa, deixou de ser meta com prazo para 2027.",
+  "metricas": [
+   {"rotulo": "Clientes", "valor": "46,8 milhões", "periodo": "set/2026"},
+   {"rotulo": "ROE anualizado", "valor": "15,8%", "periodo": "3T26"},
+   {"rotulo": "Índice de eficiência", "valor": "41,9%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro recorde de R$ 425 mi no 3T26 (+26%), com ROE de 15,8% e margem financeira de cerca de 10%. A inadimplência acima de 90 dias é de 5,3% e o custo de risco, de 5,9%. O índice de Basileia do banco é de 15,6%, com R$ 2,6 bi de capital excedente na holding.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Inadimplência em ambiente de juros altos.",
+  "Concorrência de bancos digitais e tradicionais.",
+  "Rentabilidade ainda abaixo dos grandes bancos.",
+  "Risco cambial para o investidor em dólar."
+ ],
+ "momento": "No 3T26 (divulgado em 12/11/2026), o lucro foi recorde de R$ 425 mi, alta de 26%, e a inadimplência de curto prazo recuou, mas o ROE caiu frente ao 2T26.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Lucro recorde, alta de 26%.",
+   "Eficiência melhorou 3,2 pontos.",
+   "Inadimplência de curto prazo recuou."
+  ],
+  "negativos": [
+   "ROE caiu para 15,8%."
+  ],
+  "atencao": [
+   "Evolução da inadimplência.",
+   "Metas de rentabilidade."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Inter&Co: release do 3T26 (6-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1864163/000186416326000089/a1-interco3q26earningsre.htm", "data": "2026-11-12"},
+  {"titulo": "Inter: lucro líquido recorde no 3T26", "url": "https://blog.inter.co/inter-alcanca-lucro-liquido-recorde-no-3t26-e-avanca-em-crescimento-e-eficiencia/", "data": "2026-11-12"},
+  {"titulo": "NeoFeed: Lucro do Inter cresce 26%, mas ROE é ponto de atenção", "url": "https://neofeed.com.br/negocios/lucro-do-inter-cresce-26-e-inadimplencia-de-curto-prazo-recua-mas-roe-e-um-ponto-de-atencao/", "data": "2026-11"},
+  {"titulo": "Brapi: Inter tem lucro recorde de R$ 425 mi no 3T", "url": "https://brapi.dev/news/inter-tem-lucro-recorde-de-r-425-mi-no-3-tri-com-90f89828", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

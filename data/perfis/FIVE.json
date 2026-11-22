@@ -1,0 +1,63 @@
+{
+ "ticker": "FIVE",
+ "revisado_em": "2026-11-22",
+ "resumo": "Rede americana de lojas de preço baixo voltada a jovens e famílias, com a maioria dos produtos até US$ 5 e uma seção até US$ 10 ou mais. Lucrativa, sem dívida, com mais de 2.000 lojas e vendas crescendo forte em 2026.",
+ "modelo": "A Five Below vende brinquedos, doces, acessórios, eletrônicos, artigos de festa e itens de tendência a preços baixos e fixos em lojas próprias, a maioria em centros comerciais. Cresce abrindo cerca de 150 lojas por ano e com vendas maiores nas lojas existentes, apoiada em compras em grande escala de fornecedores, muitos na Ásia.",
+ "segmentos": [],
+ "segmentos_base": "Vendas de US$ 1,26 bi no 2º tri fiscal 2026 (+22,9%); vendas mesmas lojas +14,1%",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede na Filadélfia (EUA); 2.022 lojas nos EUA."},
+ "temas": [
+  {"tema": "Consumo de baixa renda", "relacao": "Ganha clientes que buscam preço baixo; o crescimento veio de mais transações, não de preço maior."},
+  {"tema": "Tarifas de importação", "relacao": "Recebeu US$ 163,6 mi em devolução de tarifas no trimestre, após decisão sobre as tarifas IEEPA, o que inflou o lucro contábil."}
+ ],
+ "diferencial": {
+  "texto": "A Five Below tem um formato próprio, focado em jovens e em produtos de tendência a preço fixo baixo, com compras em escala e lojas padronizadas que se pagam rápido, além de muito espaço para abrir lojas. Mas a barreira de entrada é moderada: concorre com Dollar Tree, Walmart, Target e lojas online como Temu, e depende de produtos importados sujeitos a tarifas.",
+  "vantagem": {"nivel": "moderada", "resumo": "Formato próprio para jovens, com preço fixo baixo e compras em escala, mas concorre com grandes varejistas e lojas online baratas."},
+  "concorrentes": ["Dollar Tree", "Walmart", "Target", "Dollar General", "Temu", "Amazon"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas do ano fiscal 2026 devem ficar entre US$ 5,63 bi e US$ 5,71 bi, com vendas mesmas lojas subindo 10% a 12% e lucro ajustado de US$ 9,83 a US$ 10,31 por ação. A empresa prevê abrir cerca de 150 lojas em 2026.",
+  "metricas": [
+   {"rotulo": "Vendas projetadas", "valor": "US$ 5,63 bi a US$ 5,71 bi", "periodo": "ano fiscal 2026"},
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 9,83 a US$ 10,31 por ação", "periodo": "ano fiscal 2026"},
+   {"rotulo": "Novas lojas previstas", "valor": "cerca de 150", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 221,4 mi no trimestre (US$ 3,99 por ação), inflado pela devolução de tarifas; o lucro ajustado foi de US$ 1,68 por ação, ante US$ 0,81 um ano antes. Tem US$ 1,19 bi em caixa e aplicações e não usa a linha de crédito.",
+  "caixa": "US$ 1,19 bi",
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Tarifas sobre produtos importados.",
+  "Concorrência de varejistas e lojas online.",
+  "Dependência de produtos de tendência.",
+  "Execução da abertura de lojas."
+ ],
+ "momento": "No 2º tri fiscal 2026 (divulgado em 02/09/2026), as vendas subiram 22,9% e as vendas mesmas lojas, 14,1%, e a empresa elevou a projeção do ano; a CEO é Winnie Park.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-02",
+  "positivos": [
+   "Vendas mesmas lojas subiram 14,1%.",
+   "Lucro ajustado dobrou.",
+   "Projeção anual elevada."
+  ],
+  "negativos": [
+   "Lucro contábil inflado por devolução de tarifas não recorrente."
+  ],
+  "atencao": [
+   "Vendas de fim de ano.",
+   "Política de tarifas."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Five Below: resultados do 2º tri fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1177609/000117760926000023/q22026fivebelowexhibit991.htm", "data": "2026-09-02"},
+  {"titulo": "Seeking Alpha (GlobeNewswire): Five Below announces second quarter fiscal 2026 results", "url": "https://seekingalpha.com/pr/20638954", "data": "2026-09-02"},
+  {"titulo": "Retail Dive: Five Below's maniacal focus on the customer pays off", "url": "https://www.retaildive.com/news/five-belows-maniacal-focus-on-the-customer-pays-off/829565/", "data": "2026-09"},
+  {"titulo": "Chain Store Age: Five Below tops Street, sales soar, track 150 new stores", "url": "https://chainstoreage.com/five-below-tops-street-sales-soar-track-150-new-stores", "data": "2026-09"}
+ ],
+ "ultimo_resultado": "3T26"
+}
