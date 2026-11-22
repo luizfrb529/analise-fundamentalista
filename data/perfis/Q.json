@@ -1,0 +1,65 @@
+{
+ "ticker": "Q",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fornecedora americana de materiais para a fabricação de semicondutores e placas eletrônicas, separada da DuPont em novembro de 2025. Lucrativa, com vendas crescendo 22% puxadas por chips de IA.",
+ "modelo": "A Qnity vende materiais consumidos na fabricação de chips (químicos de polimento, fotorresinas, materiais de limpeza e de deposição) e de placas e encapsulamentos eletrônicos (laminados, químicos de metalização, materiais térmicos) para fábricas de chips e de componentes. A receita cresce com o volume de wafers produzidos.",
+ "segmentos": [
+  {"nome": "Tecnologias para semicondutores", "peso_receita": 0.51, "periodo": "3T26", "obs": "Vendas de US$ 797 mi (+15%)."},
+  {"nome": "Soluções de interconexão", "peso_receita": 0.49, "periodo": "3T26", "obs": "Vendas de US$ 759 mi (+30%)."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Wilmington, Delaware (EUA); fábricas e clientes principalmente na Ásia, onde estão as fábricas de chips."},
+ "temas": [
+  {"tema": "Chips de IA", "relacao": "A demanda por chips de IA e computação de alto desempenho, com chips cada vez menores e empilhados, impulsionou as vendas."},
+  {"tema": "Cisões corporativas", "relacao": "Foi separada da DuPont em 01/11/2025 para focar em eletrônicos."}
+ ],
+ "diferencial": {
+  "texto": "A Qnity tem materiais especializados qualificados nas linhas de produção dos maiores fabricantes de chips, que são caros e arriscados de trocar, e uma longa história de pesquisa herdada da DuPont. Os pontos fracos são a dependência do ciclo de semicondutores e de eletrônicos de consumo, a concorrência de grupos japoneses e coreanos e a dívida assumida na cisão.",
+  "vantagem": {"nivel": "moderada", "resumo": "Materiais qualificados nas linhas dos grandes fabricantes de chips, caros de trocar, mas dependentes do ciclo de semicondutores."},
+  "concorrentes": ["Entegris", "Merck KGaA (EMD Electronics)", "JSR", "Shin-Etsu", "Resonac"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas de 2026 devem ficar entre US$ 5,77 bi e US$ 5,83 bi, com Ebitda ajustado de US$ 1,785 bi a US$ 1,805 bi e lucro ajustado de US$ 4,95 a US$ 5,05 por ação, acima da projeção anterior.",
+  "metricas": [
+   {"rotulo": "Vendas projetadas", "valor": "US$ 5,77 bi a US$ 5,83 bi", "periodo": "2026"},
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 4,95 a US$ 5,05 por ação", "periodo": "2026"},
+   {"rotulo": "Margem de Ebitda ajustada", "valor": "32,3%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 0,87 por ação no 3T26 (US$ 1,46 ajustado), com Ebitda ajustado de US$ 503 mi e caixa livre ajustado de US$ 320 mi. A dívida líquida é de cerca de US$ 2,9 bi (cálculo pelo balanço), herdada da separação.",
+  "caixa": "US$ 1,12 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Ciclo de semicondutores.",
+  "Sazonalidade de eletrônicos de consumo.",
+  "Dívida da separação.",
+  "Tensões comerciais na Ásia."
+ ],
+ "momento": "No 3T26 (divulgado em 04/11/2026), as vendas subiram 22%, para US$ 1,56 bi, e o lucro ajustado, 55%, e a empresa elevou a projeção de 2026; o CEO é Jon Kemp.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Vendas subiram 22%.",
+   "Interconexão cresceu 30%.",
+   "Projeção de 2026 elevada."
+  ],
+  "negativos": [
+   "Lucro contábil caiu 14% por juros e custos de separação."
+  ],
+  "atencao": [
+   "Crescimento de cerca de 26% previsto no 4T26.",
+   "Redução da dívida."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Qnity: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2058873/000205887326000039/exhibit991supplementalsche.htm", "data": "2026-11-04"},
+  {"titulo": "MyChesCo: Qnity raises 2026 outlook as semiconductor sales jump 22%", "url": "https://www.mychesco.com/a/news/regional/qnity-raises-2026-outlook-as-semiconductor-sales-jump-22/", "data": "2026-11"},
+  {"titulo": "24/7 Wall St.: Qnity Electronics Q3 2026, EPS beats, guidance raised", "url": "https://247wallst.com/cards/qnity-electronics-q3-2026-earnings-q-01m6k46vxjrxchgspw0dvhphpn", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

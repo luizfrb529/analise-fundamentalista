@@ -1,0 +1,66 @@
+{
+ "ticker": "ADBE",
+ "revisado_em": "2026-11-22",
+ "resumo": "Gigante americana de software criativo e de marketing (Photoshop, Premiere, Acrobat, Firefly, Experience Cloud), com mais de US$ 27 bi em receita recorrente anual. Muito lucrativa, mas pressionada pela concorrência de ferramentas de IA generativa.",
+ "modelo": "A Adobe vende assinaturas de software para criação de imagens, vídeos e design (Creative Cloud), documentos (Acrobat) e marketing digital para empresas (Experience Cloud, GenStudio), além de créditos de IA generativa (Firefly). Quase toda a receita é recorrente, por assinatura.",
+ "segmentos": [
+  {"nome": "Profissionais criativos e de marketing", "peso_receita": 0.71, "periodo": "3T26", "obs": "Receita de US$ 4,65 bi (+13%)."},
+  {"nome": "Profissionais de negócios e consumidores", "peso_receita": 0.29, "periodo": "3T26", "obs": "Receita de US$ 1,91 bi (+16%)."}
+ ],
+ "segmentos_base": "Receita de assinaturas por grupo de clientes",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em San José, Califórnia (EUA); clientes no mundo todo."},
+ "temas": [
+  {"tema": "IA generativa", "relacao": "A receita recorrente de produtos nativos de IA cresceu mais de 150% em um ano, mas ferramentas como Canva, Midjourney e geradores de vídeo competem com a Adobe."},
+  {"tema": "Sucessão de liderança", "relacao": "Anil Chakravarthy assume como CEO em 01/12/2026, e Shantanu Narayen passa a presidente executivo do conselho."}
+ ],
+ "diferencial": {
+  "texto": "A Adobe tem os padrões da indústria criativa (Photoshop, Illustrator, Premiere, PDF), ensinados em escolas e exigidos por empresas, com alto custo de troca e bilhões em receita recorrente. A IA generativa, porém, reduz a barreira para criar conteúdo e fortalece rivais mais baratos, o que pressiona o crescimento.",
+  "vantagem": {"nivel": "forte", "resumo": "Padrões da indústria criativa e do PDF, com alto custo de troca e receita recorrente, embora a IA generativa fortaleça rivais mais baratos."},
+  "concorrentes": ["Canva", "Figma", "Microsoft", "Salesforce", "Midjourney", "OpenAI"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2026 deve ficar entre US$ 26,58 bi e US$ 26,63 bi, com lucro ajustado de US$ 24,45 a US$ 24,50 por ação e receita recorrente anual crescendo 10,2%. O potencial vem da monetização da IA e das recompras.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 26,58 bi a US$ 26,63 bi", "periodo": "ano fiscal 2026"},
+   {"rotulo": "Receita recorrente anual", "valor": "US$ 27,50 bi", "periodo": "ago/2026"},
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 24,45 a US$ 24,50 por ação", "periodo": "ano fiscal 2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 4,62 por ação no trimestre (US$ 6,13 ajustado), com margem operacional ajustada de 44% e caixa operacional recorde de US$ 2,52 bi. Recomprou US$ 2,23 bi em ações no trimestre; a carteira de contratos a cumprir é de US$ 22,2 bi.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Concorrência de ferramentas de IA generativa.",
+  "Desaceleração do crescimento.",
+  "Transição de CEO.",
+  "Pressão de preços de rivais mais baratos."
+ ],
+ "momento": "No 3º tri fiscal 2026 (divulgado em 10/09/2026), a receita subiu 13%, para US$ 6,76 bi, e a empresa elevou as metas do ano; em setembro, anunciou Anil Chakravarthy como novo CEO a partir de dezembro.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-10",
+  "positivos": [
+   "Receita subiu 13%.",
+   "Receita de IA cresceu mais de 150%.",
+   "Caixa operacional recorde."
+  ],
+  "negativos": [
+   "Saída do chefe da área criativa, segundo a imprensa."
+  ],
+  "atencao": [
+   "Resultado do 4º tri fiscal em dezembro.",
+   "Estratégia do novo CEO."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Adobe: resultados do 3º tri fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm", "data": "2026-09-10"},
+  {"titulo": "Adobe: Anil Chakravarthy to become president and CEO", "url": "https://news.adobe.com/news/2026/09/adobe-announces-anil-chakravarthy-to-become-president-and-ceo", "data": "2026-09-03"},
+  {"titulo": "Nasdaq: Adobe names Anil Chakravarthy next CEO", "url": "https://www.nasdaq.com/articles/adobe-names-anil-chakravarthy-next-ceo", "data": "2026-09"}
+ ],
+ "pendencias": ["Segunda fonte jornalística para os números do 3º tri fiscal não localizada; números vêm do documento oficial na SEC."],
+ "ultimo_resultado": "3T26"
+}

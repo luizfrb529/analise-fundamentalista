@@ -1,0 +1,66 @@
+{
+ "ticker": "TER",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das duas maiores fabricantes mundiais de equipamentos de teste de semicondutores, também dona da Universal Robots (robôs colaborativos). Lucrativa, com receita crescendo 70% puxada por chips de IA e memória.",
+ "modelo": "A Teradyne vende máquinas que testam chips (processadores, memórias, HBM) antes de saírem das fábricas, para fabricantes e empresas de encapsulamento, além de equipamentos para testar placas e discos e serviços. Também vende robôs colaborativos (Universal Robots) e robôs móveis (MiR) para fábricas.",
+ "segmentos": [
+  {"nome": "Teste de semicondutores", "peso_receita": 0.82, "periodo": "3T26", "obs": "Receita de US$ 1,07 bi; memória com recorde de US$ 301 mi."},
+  {"nome": "Teste de produtos", "peso_receita": 0.11, "periodo": "3T26", "obs": "Receita de US$ 138 mi."},
+  {"nome": "Robótica", "peso_receita": 0.07, "periodo": "3T26", "obs": "Receita de US$ 96 mi; primeiro trimestre com lucro, segundo a imprensa."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em North Reading, Massachusetts (EUA); vende principalmente para fábricas de chips na Ásia."},
+ "temas": [
+  {"tema": "Chips de IA", "relacao": "Mais de 60% da receita veio de demanda ligada à IA, segundo o CEO, incluindo processadores, memória HBM e conexões de alta velocidade."},
+  {"tema": "Robótica e automação", "relacao": "A Universal Robots é líder em robôs colaborativos, que trabalham ao lado de pessoas nas fábricas."}
+ ],
+ "diferencial": {
+  "texto": "A Teradyne forma com a japonesa Advantest um duopólio no teste de chips avançados, com equipamentos e software que os clientes levam anos para qualificar, o que cria alto custo de troca. Os pontos fracos são a dependência de poucos grandes clientes e do ciclo de investimento em chips, e a liderança da Advantest em processadores de IA.",
+  "vantagem": {"nivel": "forte", "resumo": "Duopólio com a Advantest no teste de chips avançados, com longos ciclos de qualificação que geram alto custo de troca."},
+  "concorrentes": ["Advantest", "Cohu", "FormFactor", "ABB (robôs)", "Fanuc"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 4T26 deve ficar entre US$ 1,25 bi e US$ 1,35 bi, com lucro ajustado de US$ 1,95 a US$ 2,25 por ação. O potencial vem da complexidade crescente dos chips de IA e da memória HBM, que exigem mais tempo de teste.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 1,25 bi a US$ 1,35 bi", "periodo": "4T26"},
+   {"rotulo": "Margem bruta", "valor": "59,1%", "periodo": "3T26"},
+   {"rotulo": "Receita ligada à IA", "valor": "mais de 60%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 2,17 por ação no 3T26 (US$ 2,29 ajustado), mais que o dobro de um ano antes, com margem bruta de 59,1% e caixa operacional de US$ 314 mi. Tem cerca de US$ 625 mi em caixa e aplicações e recomprou US$ 99 mi em ações.",
+  "caixa": "US$ 624,8 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Ciclo de investimento em fábricas de chips.",
+  "Concentração em poucos grandes clientes.",
+  "Concorrência da Advantest.",
+  "Restrições de exportação para a China."
+ ],
+ "momento": "No 3T26 (divulgado em 27/10/2026), a receita subiu 70%, para US$ 1,31 bi, com recorde em teste de memória e lucro mais que dobrando; o CEO é Greg Smith.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-27",
+  "positivos": [
+   "Receita subiu 70%.",
+   "Recorde em teste de memória.",
+   "Robótica deu lucro."
+  ],
+  "negativos": [
+   "Receita levemente abaixo do 2T26."
+  ],
+  "atencao": [
+   "Crescimento em 2027.",
+   "Demanda de chips de IA."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Teradyne: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/97210/000119312526434981/ter-ex99_1.htm", "data": "2026-10-27"},
+  {"titulo": "Zacks: Teradyne Q3 earnings beat estimates", "url": "https://zacks.com/stock/news/3017640/teradyne-q3-earnings-beat-estimates-revenues-increase-year-over-year", "data": "2026-10"},
+  {"titulo": "Crypto Briefing: Teradyne posts $1.306 billion Q3 revenue as AI demand lifts results", "url": "https://cryptobriefing.com/teradyne-q3-revenue-ai-demand/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

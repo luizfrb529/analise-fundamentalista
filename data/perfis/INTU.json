@@ -1,0 +1,121 @@
+{
+ "ticker": "INTU",
+ "revisado_em": "2026-11-22",
+ "resumo": "Gigante americana de software financeiro para pequenas empresas e pessoas físicas, dona do QuickBooks, TurboTax e Credit Karma. Muito lucrativa, com dividendos crescentes e recompras, e vendendo o Mailchimp.",
+ "modelo": "A Intuit vende assinaturas de contabilidade, folha de pagamento e pagamentos para pequenas e médias empresas (QuickBooks), software e serviços de declaração de imposto de renda (TurboTax), e ganha comissões indicando cartões e empréstimos (Credit Karma). Usa IA e especialistas humanos para automatizar finanças e impostos.",
+ "segmentos": [
+  {
+   "nome": "Soluções para empresas (QuickBooks e Mailchimp)",
+   "peso_receita": 0.78,
+   "periodo": "4T26",
+   "obs": "QuickBooks Online com US$ 1,4 bi (+19%); Mailchimp com US$ 313 mi (-1%), em processo de venda."
+  },
+  {
+   "nome": "Consumidor (Credit Karma, TurboTax, ProTax)",
+   "peso_receita": 0.22,
+   "periodo": "4T26",
+   "obs": "Receita de US$ 958 mi (+7%); Credit Karma com US$ 708 mi (+9%)."
+  }
+ ],
+ "segmentos_base": "Receita (trimestre fiscal encerrado em out/2026)",
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Mountain View, Califórnia (EUA); a maior parte da receita vem dos EUA, com operações também no Canadá, Reino Unido e outros países."
+ },
+ "temas": [
+  {
+   "tema": "IA em software",
+   "relacao": "Aposta em uma plataforma de IA com especialistas humanos para automatizar contabilidade e impostos."
+  },
+  {
+   "tema": "Pequenas empresas",
+   "relacao": "O QuickBooks Online cresceu 19%, com mais serviços de pagamento e folha."
+  }
+ ],
+ "diferencial": {
+  "texto": "A Intuit tem marcas dominantes nos EUA, como QuickBooks e TurboTax, com milhões de usuários, dados financeiros acumulados e ecossistema de contadores, o que gera alto custo de troca. Os pontos fracos são a concorrência de ferramentas gratuitas de declaração de impostos, a regulação e a pressão de IA que pode simplificar esses serviços.",
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Marcas dominantes como QuickBooks e TurboTax, com dados financeiros e rede de contadores que geram alto custo de troca."
+  },
+  "concorrentes": [
+   "H&R Block",
+   "Xero",
+   "Block (Square)",
+   "Sage",
+   "NerdWallet",
+   "ADP"
+  ]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 (até jul/2027) deve crescer de 8% a 9%, para US$ 23,08 bi a US$ 23,37 bi, com lucro ajustado de US$ 22,88 a US$ 23,12 por ação, sem considerar a venda do Mailchimp por cerca de US$ 3,68 bi, cujo dinheiro será usado em recompras.",
+  "metricas": [
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 23,08 bi a US$ 23,37 bi",
+    "periodo": "ano fiscal 2027"
+   },
+   {
+    "rotulo": "Lucro ajustado projetado",
+    "valor": "US$ 22,88 a US$ 23,12 por ação",
+    "periodo": "ano fiscal 2027"
+   },
+   {
+    "rotulo": "Dividendo trimestral",
+    "valor": "US$ 1,38 (+15%)",
+    "periodo": "jan/2027"
+   }
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 2,59 por ação no trimestre (+63%) e lucro ajustado de US$ 2,91, com lucro operacional de US$ 868 mi. Recomprou US$ 1,5 bi em ações no trimestre e tem US$ 6,4 bi autorizados para novas recompras.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "out/2026"
+ },
+ "riscos": [
+  "Concorrência de declaração de impostos gratuita.",
+  "IA pode reduzir o valor de seus serviços.",
+  "Regulação de dados e crédito.",
+  "Execução da venda do Mailchimp."
+ ],
+ "momento": "No 1º tri fiscal 2027 (divulgado em 19/11/2026), a receita subiu 12%, para US$ 4,4 bi, e a empresa anunciou a venda do Mailchimp à Bending Spoons por cerca de US$ 3,68 bi; o CEO é Sasan Goodarzi.",
+ "destaques_resultado": {
+  "trimestre": "4T26",
+  "divulgado_em": "2026-11-19",
+  "positivos": [
+   "Receita subiu 12%.",
+   "QuickBooks Online cresceu 19%.",
+   "Dividendo elevado em 15%."
+  ],
+  "negativos": [
+   "Mailchimp vendido por menos de um terço do preço pago.",
+   "Projeção de lucro abaixo do esperado pelo mercado."
+  ],
+  "atencao": [
+   "Fechamento da venda do Mailchimp.",
+   "Temporada de impostos de 2027."
+  ]
+ },
+ "fontes": [
+  {
+   "titulo": "Intuit: resultados do 1º tri fiscal 2027 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000043/fy27q1earningspressrelease.htm",
+   "data": "2026-11-19"
+  },
+  {
+   "titulo": "StockAnalysis: Intuit to sell Mailchimp to Bending Spoons",
+   "url": "https://stockanalysis.com/news/intuit-to-sell-mailchimp-to-bending-spoons/",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "PPC Land: Bending Spoons agrees to buy Mailchimp from Intuit for $3.68bn",
+   "url": "https://ppc.land/bending-spoons-agrees-to-buy-mailchimp-from-intuit-for-3-68bn-in-cash/",
+   "data": "2026-11"
+  }
+ ],
+ "ultimo_resultado": "4T26"
+}
