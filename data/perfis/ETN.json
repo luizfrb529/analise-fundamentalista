@@ -1,0 +1,69 @@
+{
+ "ticker": "ETN",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante global de equipamentos de gestão de energia elétrica (painéis, transformadores, disjuntores, UPS, resfriamento líquido) e de componentes aeroespaciais. Lucrativa e uma das maiores beneficiadas pela construção de data centers.",
+ "modelo": "A Eaton vende equipamentos e serviços que distribuem, protegem e controlam energia elétrica em data centers, prédios, indústrias e redes de concessionárias, além de sistemas de combustível, hidráulicos e elétricos para aviões. Comprou a Boyd Thermal em 2026 para entrar em resfriamento líquido de chips.",
+ "segmentos": [
+  {"nome": "Elétrico Américas", "peso_receita": 0.47, "periodo": "3T26", "obs": "Vendas orgânicas +22%; data centers +54%; margem de 29,8%."},
+  {"nome": "Elétrico Global", "peso_receita": 0.30, "periodo": "3T26", "obs": "Vendas orgânicas +27%, com a Boyd Thermal; margem de 21,1%."},
+  {"nome": "Aeroespacial", "peso_receita": 0.13, "periodo": "3T26", "obs": "Vendas orgânicas +6%; margem de 24,9%."},
+  {"nome": "Mobilidade (veículos e eletromobilidade)", "peso_receita": 0.10, "periodo": "3T26", "obs": "Vendas orgânicas +9%; margem de 17,2%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede formal em Dublin (Irlanda) e operacional em Cleveland (EUA); fábricas e clientes em dezenas de países, com maior peso nas Américas."},
+ "temas": [
+  {"tema": "Infraestrutura de data centers", "relacao": "As vendas para data centers nas Américas subiram 54% no trimestre e a carteira de pedidos elétricos passou de US$ 20 bi, alta de 46%."},
+  {"tema": "Resfriamento líquido", "relacao": "Comprou a Boyd Thermal por US$ 9,55 bi em março de 2026 para oferecer resfriamento líquido para chips de IA."},
+  {"tema": "Eletrificação e redes", "relacao": "Vai comprar a europeia COL Group por cerca de US$ 921 mi para ampliar distribuição de energia para data centers e concessionárias."}
+ ],
+ "diferencial": {
+  "texto": "A Eaton tem portfólio completo de equipamentos elétricos, da subestação ao rack do servidor, marcas reconhecidas, base instalada grande que gera serviços e capacidade de fabricação difícil de replicar num mercado com falta de equipamentos. Os pontos fracos são a dependência do ciclo de investimento em data centers e a concorrência de grandes rivais globais.",
+  "vantagem": {"nivel": "forte", "resumo": "Portfólio elétrico completo, da rede ao rack, marcas fortes, base instalada que gera serviços e capacidade fabril escassa no setor."},
+  "concorrentes": ["Schneider Electric", "ABB", "Siemens", "Vertiv", "GE Vernova", "Hubbell"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro ajustado de 2026 deve ficar entre US$ 13,70 e US$ 13,80 por ação, com crescimento orgânico de 13% a 15% e margem dos segmentos de 24,1% a 24,5%. A carteira de pedidos elétricos cresceu 46% e a aeroespacial, 33%.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 13,70 a US$ 13,80 por ação", "periodo": "2026"},
+   {"rotulo": "Crescimento orgânico projetado", "valor": "13% a 15%", "periodo": "2026"},
+   {"rotulo": "Carteira de pedidos elétricos", "valor": "acima de US$ 20 bi (+46%)", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 2,77 por ação no 3T26 (US$ 3,68 ajustado), com vendas recorde de US$ 8,9 bi (+28%) e fluxo de caixa livre de US$ 1,03 bi. A dívida subiu com a compra da Boyd Thermal, mas a geração de caixa é forte.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Desaceleração dos investimentos em data centers.",
+  "Integração da Boyd Thermal.",
+  "Concorrência de Schneider, ABB e Siemens.",
+  "Tarifas e custos de matérias-primas."
+ ],
+ "momento": "No 3T26 (divulgado em 03/11/2026), as vendas bateram recorde de US$ 8,9 bi (+28%), os pedidos de data centers aceleraram e a empresa elevou a projeção de lucro de 2026.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-03",
+  "positivos": [
+   "Vendas recorde, com alta orgânica de 19%.",
+   "Vendas para data centers nas Américas subiram 54%.",
+   "Projeção de lucro de 2026 elevada."
+  ],
+  "negativos": [
+   "Lucro contábil menor que o ajustado por custos de aquisições."
+  ],
+  "atencao": [
+   "Fechamento da compra da COL Group.",
+   "Conversão da carteira de pedidos em vendas."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Eaton: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000037/etn09302026exhibit99.htm", "data": "2026-11-03"},
+  {"titulo": "Eaton: 8-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000037/0001551182-26-000037-index.htm", "data": "2026-11-03"},
+  {"titulo": "Finviz (Business Wire): Eaton reports record third quarter 2026 results", "url": "https://finviz.com/news/414001/eaton-reports-record-third-quarter-2026-results-with-strong-organic-growth-accelerating-record-orders-and-backlog-raises-organic-growth-guidance", "data": "2026-11-03"},
+  {"titulo": "Tiger Brokers: Eaton reports record orders as data center demand drives growth", "url": "https://www.itiger.com/news/2680769447", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

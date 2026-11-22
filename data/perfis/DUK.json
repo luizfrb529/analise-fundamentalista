@@ -1,0 +1,63 @@
+{
+ "ticker": "DUK",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das maiores empresas de energia elétrica dos EUA, com concessões reguladas nas Carolinas, Flórida, Indiana, Ohio e Kentucky, além de distribuição de gás. Lucrativa, com dividendos estáveis e um dos maiores planos de investimento do setor.",
+ "modelo": "A Duke ganha como concessionária regulada: gera, transmite e distribui energia, com tarifas aprovadas por reguladores estaduais que remuneram o capital investido. Também distribui gás natural em alguns estados.",
+ "segmentos": [],
+ "segmentos_base": "Lucro por ação ajustado de US$ 1,99 no 3T26 (US$ 1,81 um ano antes)",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Charlotte, Carolina do Norte (EUA); atua em seis estados americanos."},
+ "temas": [
+  {"tema": "Energia para data centers", "relacao": "Tem uma carteira de cerca de 15,4 GW de projetos de data centers que pretende converter em contratos até o primeiro semestre de 2027, segundo a imprensa."},
+  {"tema": "Expansão da geração", "relacao": "Executa um programa recorde para adicionar 16 GW de capacidade até 2031, com usinas a gás, baterias e renováveis."}
+ ],
+ "diferencial": {
+  "texto": "A Duke tem concessões exclusivas em estados com população e indústria crescendo, especialmente Carolinas e Flórida, o que garante monopólio regulado e retorno previsível. Tem um dos maiores parques nucleares dos EUA. Os pontos fracos são a dívida elevada, a dependência dos reguladores e a necessidade de muito capital.",
+  "vantagem": {"nivel": "forte", "resumo": "Monopólio regulado de energia em estados em crescimento, com grande parque nuclear e retorno previsível sobre o capital investido."},
+  "concorrentes": ["Southern Company", "NextEra Energy", "Dominion Energy", "American Electric Power", "Constellation Energy"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro ajustado de 2026 deve ficar entre US$ 6,70 e US$ 6,80 por ação, com crescimento de 5% a 7% ao ano até 2030 e confiança de ficar na metade superior da faixa a partir de 2028. O plano de investimentos de 2026 a 2030 é de US$ 103 bi, segundo a imprensa.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 6,70 a US$ 6,80 por ação", "periodo": "2026"},
+   {"rotulo": "Crescimento do lucro por ação", "valor": "5% a 7% ao ano", "periodo": "até 2030"},
+   {"rotulo": "Nova capacidade de geração", "valor": "16 GW", "periodo": "até 2031"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 1,99 por ação no 3T26, alta de 10%, e de US$ 5,34 nos nove meses. Como toda concessionária em expansão, carrega dívida elevada para financiar usinas e redes, compensada por receitas reguladas e estáveis.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Decisões dos reguladores estaduais.",
+  "Dívida elevada e juros altos.",
+  "Execução do plano de investimentos.",
+  "Furacões na Flórida e nas Carolinas."
+ ],
+ "momento": "No 3T26 (divulgado em 05/11/2026), o lucro ajustado subiu para US$ 1,99 por ação e a empresa estreitou a projeção de 2026 para US$ 6,70 a US$ 6,80.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Lucro ajustado subiu 10%.",
+   "Projeção de 2026 estreitada para cima.",
+   "Confiança no topo da faixa de crescimento a partir de 2028."
+  ],
+  "negativos": [
+   "Necessidade crescente de capital."
+  ],
+  "atencao": [
+   "Contratos com data centers.",
+   "Financiamento do plano de investimentos."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Duke Energy: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1326160/000132616026000048/er-20260930xearningsreleas.htm", "data": "2026-11-05"},
+  {"titulo": "Morningstar (PR Newswire): Duke Energy reports third-quarter 2026 financial results", "url": "https://www.morningstar.com/news/pr-newswire/20261105cl89750/duke-energy-reports-third-quarter-2026-financial-results", "data": "2026-11-05"},
+  {"titulo": "Zacks: Duke Energy Q3 earnings call highlights rising capital needs", "url": "https://zacks.com/stock/news/3025583/duke-energy-q3-earnings-call-highlights-rising-capital-needs", "data": "2026-11"},
+  {"titulo": "Quartr: Duke Energy Q3 2026 earnings summary", "url": "https://quartr.com/events/duke-energy-corporation-duk-q3-2026_3ekwER46", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

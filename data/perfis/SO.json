@@ -1,0 +1,63 @@
+{
+ "ticker": "SO",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das maiores empresas de energia elétrica dos EUA, dona da Georgia Power, Alabama Power e Mississippi Power, além de distribuidoras de gás. Lucrativa, com dividendos estáveis e forte crescimento de demanda vindo de data centers no Sudeste americano.",
+ "modelo": "A Southern ganha principalmente como concessionária regulada: gera, transmite e distribui energia na Geórgia, Alabama e Mississippi, com tarifas aprovadas por reguladores estaduais que remuneram o capital investido. Também distribui gás natural em vários estados e tem uma geradora de energia para contratos no atacado (Southern Power).",
+ "segmentos": [],
+ "segmentos_base": "Lucro por ação ajustado de US$ 1,94 no 3T26 (US$ 1,60 um ano antes)",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Atlanta (EUA); atua no Sudeste americano, com destaque para Geórgia e Alabama."},
+ "temas": [
+  {"tema": "Energia para data centers", "relacao": "Tem 21 GW em contratos assinados com grandes consumidores, a maioria data centers, e outros 7 GW em negociação avançada; o consumo de data centers subiu 59% no ano, segundo a imprensa."},
+  {"tema": "Energia nuclear", "relacao": "Opera as usinas nucleares de Vogtle, incluindo as duas unidades novas concluídas em 2023 e 2024, as primeiras construídas nos EUA em décadas."}
+ ],
+ "diferencial": {
+  "texto": "A Southern tem concessões exclusivas de energia em estados com população e indústria crescendo, o que dá monopólio regulado e retorno previsível. O Sudeste virou polo de data centers e fábricas, o que aumenta a demanda. Os pontos fracos são a dívida elevada, a dependência das decisões dos reguladores estaduais e as críticas ao custo para o consumidor residencial.",
+  "vantagem": {"nivel": "forte", "resumo": "Monopólio regulado de energia na Geórgia e no Alabama, regiões em forte crescimento, com retorno previsível sobre o capital investido."},
+  "concorrentes": ["Duke Energy", "NextEra Energy", "Dominion Energy", "Entergy", "Constellation Energy"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro ajustado de 2026 deve chegar a cerca de US$ 4,70 por ação, US$ 0,10 acima do topo da projeção original. O potencial vem dos novos contratos com data centers, que exigem investimento em geração e transmissão remunerado pelas tarifas.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado esperado", "valor": "cerca de US$ 4,70 por ação", "periodo": "2026"},
+   {"rotulo": "Contratos com grandes consumidores", "valor": "21 GW", "periodo": "set/2026"},
+   {"rotulo": "Lucro ajustado no ano", "valor": "US$ 4,40 por ação", "periodo": "9M26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 1,77 por ação no 3T26 (US$ 1,55 um ano antes) e lucro ajustado de US$ 1,94. Como toda concessionária em expansão, carrega dívida elevada para financiar usinas e redes, compensada por receitas reguladas e estáveis.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Decisões dos reguladores estaduais.",
+  "Dívida elevada e juros altos.",
+  "Pressão política contra novos data centers na Geórgia.",
+  "Eventos climáticos como furacões."
+ ],
+ "momento": "No 3T26 (divulgado em 05/11/2026), o lucro ajustado subiu para US$ 1,94 por ação, puxado pela Georgia Power, e a empresa disse esperar fechar 2026 acima da projeção original.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Lucro ajustado subiu 21%.",
+   "Contratos com grandes consumidores chegaram a 21 GW.",
+   "Vendas de energia em forte alta."
+  ],
+  "negativos": [
+   "Itens não recorrentes reduziram o lucro contábil."
+  ],
+  "atencao": [
+   "Revisão do plano de investimentos.",
+   "Debate regulatório sobre data centers na Geórgia."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Southern Company: resultados do 3T26 (8-K, Exhibit 99, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/3153/000009212226000071/ex99-pressreleaseq32026.htm", "data": "2026-11-05"},
+  {"titulo": "Southern Company: 8-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212226000071/0000092122-26-000071-index.htm", "data": "2026-11-05"},
+  {"titulo": "Zacks: Southern Q3 earnings call highlights growth and capital upside", "url": "https://zacks.com/stock/news/3025897/southern-q3-earnings-call-highlights-growth-and-capital-upside", "data": "2026-11"},
+  {"titulo": "GuruFocus: Southern Co Q3 2026 earnings call highlights", "url": "https://www.gurufocus.com/news/9177976", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

@@ -1,0 +1,68 @@
+{
+ "ticker": "CAT",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior fabricante mundial de máquinas de construção e mineração, e grande fornecedora de motores, turbinas e geradores, hoje muito usados em data centers. Lucrativa, com carteira de pedidos recorde de US$ 78 bi.",
+ "modelo": "A Caterpillar vende máquinas (escavadeiras, tratores, caminhões de mineração), motores, turbinas a gás e grupos geradores por meio de uma rede global de revendedores independentes, e ganha também com peças, serviços e financiamento (Cat Financial) ao longo da vida útil dos equipamentos.",
+ "segmentos": [
+  {"nome": "Energia (Power & Energy)", "peso_receita": 0.41, "periodo": "3T26", "obs": "Vendas de US$ 8,8 bi (+18%), com geração de energia de US$ 3,4 bi puxada por data centers."},
+  {"nome": "Construção", "peso_receita": 0.37, "periodo": "3T26", "obs": "Vendas de US$ 8,0 bi (+18%)."},
+  {"nome": "Mineração (Resource Industries)", "peso_receita": 0.22, "periodo": "3T26", "obs": "Vendas de US$ 4,6 bi (+15%)."}
+ ],
+ "segmentos_base": "Vendas por segmento (antes de eliminações)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Irving, Texas (EUA); vende em praticamente todos os países, com a América do Norte como maior mercado."},
+ "temas": [
+  {"tema": "Energia para data centers", "relacao": "Turbinas e grandes motores para geração de energia em data centers puxaram o crescimento; há pedidos que se estendem até 2029 e 2030, segundo a imprensa."},
+  {"tema": "Infraestrutura e mineração", "relacao": "Construção e mineração cresceram 18% e 15%, com demanda por obras e metais."},
+  {"tema": "Tarifas comerciais", "relacao": "Tarifas pesaram nos custos de fabricação, parcialmente compensadas por US$ 128 mi de recuperação de tarifas no trimestre."}
+ ],
+ "diferencial": {
+  "texto": "A Caterpillar tem a marca mais forte do setor, a maior rede de revendedores do mundo e uma base instalada enorme que gera receita recorrente de peças e serviços, o que dificulta a entrada de rivais. Os pontos fracos são a natureza cíclica da construção e da mineração e a exposição a tarifas e ao comércio global.",
+  "vantagem": {"nivel": "forte", "resumo": "Marca líder, maior rede de revendedores do mundo e base instalada enorme que gera receita recorrente de peças e serviços."},
+  "concorrentes": ["Komatsu", "Deere", "Volvo", "Cummins", "Siemens Energy", "GE Vernova"]
+ },
+ "potencial": {
+  "texto": "O potencial vem da carteira de pedidos recorde de US$ 78 bi, quase o dobro de um ano antes, com 58% previstos para entrega em 12 meses, e da demanda por geração de energia para data centers. A empresa não traz projeção numérica de lucro no release.",
+  "metricas": [
+   {"rotulo": "Carteira de pedidos", "valor": "US$ 78 bi (+96%)", "periodo": "set/2026"},
+   {"rotulo": "Margem operacional ajustada", "valor": "20,6%", "periodo": "3T26"},
+   {"rotulo": "Recompras de ações", "valor": "US$ 7,7 bi", "periodo": "9M26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 7,13 por ação no 3T26 (US$ 7,20 ajustado), contra US$ 4,88 um ano antes, com receita recorde de US$ 20,7 bi (+17%). Devolveu US$ 1,9 bi aos acionistas no trimestre em recompras e dividendos.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Ciclo da construção e da mineração.",
+  "Tarifas e custos de fabricação.",
+  "Dependência da demanda de data centers.",
+  "Incerteza geopolítica."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), a Caterpillar teve o maior trimestre de vendas da história, US$ 20,7 bi, e a carteira de pedidos dobrou para US$ 78 bi, puxada por geração de energia para data centers.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Receita recorde de US$ 20,7 bi (+17%).",
+   "Lucro ajustado por ação subiu 45%.",
+   "Carteira de pedidos recorde de US$ 78 bi."
+  ],
+  "negativos": [
+   "Custos de fabricação pressionados por tarifas na mineração."
+  ],
+  "atencao": [
+   "Capacidade de produção de turbinas e motores.",
+   "Evolução das tarifas."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Caterpillar: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex991toformcat3q2026earnin.htm", "data": "2026-10-29"},
+  {"titulo": "Caterpillar: press release do 3T26", "url": "https://www.caterpillar.com/en/news/corporate-press-releases/h/3q26-results-caterpillar-inc.html", "data": "2026-10-29"},
+  {"titulo": "Utility Dive: Caterpillar posts highest sales quarter ever on data centers", "url": "https://www.utilitydive.com/news/caterpillar-posts-highest-sales-quarter-ever-data-centers-q3-2026/873586/", "data": "2026-10"},
+  {"titulo": "Kalkine: Caterpillar Q3 2026 sales rise 17% to $20.7 billion", "url": "https://kalkine.com/news/announcements/caterpillar-q3-2026-sales-rise-17-to-207-billion", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
