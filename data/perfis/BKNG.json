@@ -1,0 +1,63 @@
+{
+ "ticker": "BKNG",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior agência de viagens online do mundo, dona do Booking.com, Priceline, Agoda, Kayak e OpenTable. Muito lucrativa e geradora de caixa, com recompras grandes e dividendo.",
+ "modelo": "A Booking ganha comissões de hotéis, aluguéis de temporada, companhias aéreas e locadoras quando viajantes reservam por suas plataformas, além de margens em reservas pagas pelo próprio site, publicidade e serviços de pagamento. Escala e marca permitem gastar muito em marketing com retorno.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 8,9 bi no 3T26 (-1%; +9% ajustada); reservas de US$ 54,5 bi (+10%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Norwalk, Connecticut (EUA); a maior parte do negócio vem da Europa e da Ásia, pelo Booking.com e pela Agoda."},
+ "temas": [
+  {"tema": "Turismo global", "relacao": "As diárias reservadas subiram 7%, para 345 milhões, mas a empresa prevê desaceleração no 4T26 por conflitos no Oriente Médio e passagens aéreas mais caras, segundo a imprensa."},
+  {"tema": "IA em viagens", "relacao": "Integra IA em todas as marcas e colabora com plataformas de IA para reservas, segundo a empresa."}
+ ],
+ "diferencial": {
+  "texto": "A Booking tem a maior oferta de hotéis e acomodações do mundo e milhões de viajantes, um efeito de rede forte: mais hotéis atraem mais viajantes e vice-versa, com marca conhecida e escala em marketing. Os pontos fracos são a dependência do Google para tráfego, a regulação na Europa e o risco de assistentes de IA intermediarem as reservas.",
+  "vantagem": {"nivel": "forte", "resumo": "Maior oferta de hospedagem do mundo e milhões de viajantes, com efeito de rede forte, marca conhecida e escala em marketing."},
+  "concorrentes": ["Expedia", "Airbnb", "Trip.com", "Google Travel", "Hotéis com venda direta"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, no 4T26 as diárias devem crescer de 1% a 3% e as reservas de 2% a 4%, com lucro ajustado por ação crescendo aproximadamente entre 10% e 15%; no ano, reservas, receita e Ebitda ajustados devem crescer em alta de um dígito.",
+  "metricas": [
+   {"rotulo": "Crescimento das diárias projetado", "valor": "1% a 3%", "periodo": "4T26"},
+   {"rotulo": "Diárias reservadas", "valor": "345 milhões (+7%)", "periodo": "3T26"},
+   {"rotulo": "Recompras autorizadas restantes", "valor": "US$ 12,4 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 2,72 bi no 3T26 (US$ 3,61 por ação, após desdobramento de 25 por 1 em abril), reduzido por US$ 900 mi de efeito de um processo da FTC sobre a Priceline; o lucro ajustado foi de US$ 4,66 por ação (+17%). Tem US$ 15,8 bi em caixa e US$ 20,1 bi em dívida, e recomprou US$ 2,1 bi em ações no trimestre.",
+  "caixa": "US$ 15,8 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Desaceleração do turismo.",
+  "Regulação na Europa e nos EUA.",
+  "Dependência do Google para tráfego.",
+  "Assistentes de IA como intermediários."
+ ],
+ "momento": "No 3T26 (divulgado em 03/11/2026), as reservas subiram 10% e o lucro ajustado, 17%, mas a receita contábil caiu 1% pelo processo da FTC, e a empresa projetou desaceleração no 4T26; o CEO é Glenn Fogel.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-03",
+  "positivos": [
+   "Reservas subiram 10%.",
+   "Lucro ajustado subiu 17%.",
+   "Recompras de US$ 2,1 bi."
+  ],
+  "negativos": [
+   "Efeito de US$ 900 mi do processo da FTC.",
+   "Projeção de desaceleração no 4T26."
+  ],
+  "atencao": [
+   "Demanda internacional de viagens.",
+   "Efeito da IA nas reservas."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Booking Holdings: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000044/q3-26bkngearningsrelease.htm", "data": "2026-11-03"},
+  {"titulo": "Zacks: Booking Holdings Q3 earnings beat on travel growth, revenues miss", "url": "https://www.zacks.com/stock/news/3023239/booking-holdings-q3-earnings-beat-on-travel-growth,-revenues-miss", "data": "2026-11"},
+  {"titulo": "Stock Titan: Booking Holdings Q3 2026 earnings, FTC $900 million revenue cut", "url": "https://stocktitan.net/articles/booking-holdings-q3-2026-earnings-ftc-900-million-revenue-cut", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

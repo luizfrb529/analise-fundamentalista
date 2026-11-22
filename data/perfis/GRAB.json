@@ -1,0 +1,67 @@
+{
+ "ticker": "GRAB",
+ "revisado_em": "2026-11-22",
+ "resumo": "Superaplicativo líder no Sudeste Asiático, com transporte de passageiros, entrega de comida e mercado e serviços financeiros, incluindo bancos digitais. Lucrativa, com receita crescendo 27% e muito caixa.",
+ "modelo": "A Grab ganha comissões de motoristas, restaurantes e lojas em corridas e entregas, receitas de publicidade e de serviços financeiros (pagamentos, empréstimos, seguros e bancos digitais GXS, GXBank e Superbank). O uso do mesmo aplicativo para tudo aumenta o engajamento e reduz custos de captação de clientes.",
+ "segmentos": [
+  {"nome": "Entregas", "peso_receita": 0.50, "periodo": "3T26", "obs": "Receita de US$ 561 mi (+21%)."},
+  {"nome": "Mobilidade", "peso_receita": 0.31, "periodo": "3T26", "obs": "Receita de US$ 349 mi (+10%)."},
+  {"nome": "Serviços financeiros", "peso_receita": 0.18, "periodo": "3T26", "obs": "Receita de US$ 201 mi (+124%); carteira de crédito de US$ 2,7 bi."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": 0.0, "exterior_pct": 1.0, "periodo": "3T26", "texto": "Sede em Singapura; atua em oito países do Sudeste Asiático, como Indonésia, Malásia, Filipinas, Tailândia e Vietnã."},
+ "temas": [
+  {"tema": "Mercados emergentes da Ásia", "relacao": "Os usuários mensais chegaram a 57,2 milhões (+20%) com a classe média crescendo na região."},
+  {"tema": "Bancos digitais", "relacao": "A carteira de crédito triplicou para US$ 2,7 bi e os depósitos chegaram a US$ 2,7 bi nos bancos digitais."}
+ ],
+ "diferencial": {
+  "texto": "A Grab é líder em transporte e entregas na maior parte do Sudeste Asiático, com uma base enorme de usuários, motoristas e comerciantes que se reforçam mutuamente e dados que alimentam o crédito. Os pontos fracos são a concorrência local (GoTo, ShopeeFood, Foodpanda), a regulação em vários países e margens ainda baixas.",
+  "vantagem": {"nivel": "moderada", "resumo": "Líder em transporte e entregas no Sudeste Asiático, com efeito de rede e dados para crédito, mas com rivais locais e margens ainda baixas."},
+  "concorrentes": ["GoTo (Gojek)", "Sea (ShopeeFood)", "Foodpanda", "Lalamove", "Bancos locais"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 4,15 bi e US$ 4,20 bi, com Ebitda ajustado de US$ 790 mi a US$ 800 mi, ambos acima da projeção anterior. O potencial vem dos serviços financeiros e do aumento de uso por cliente.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 4,15 bi a US$ 4,20 bi", "periodo": "2026"},
+   {"rotulo": "Ebitda ajustado projetado", "valor": "US$ 790 mi a US$ 800 mi", "periodo": "2026"},
+   {"rotulo": "Caixa líquido", "valor": "US$ 5,0 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucro recente",
+  "texto": "Lucro de US$ 18 mi no 3T26, com Ebitda ajustado recorde de US$ 237 mi (+73%) e fluxo de caixa livre ajustado de US$ 286 mi. Tem US$ 5,0 bi de caixa líquido e recomprou US$ 400 mi em ações em setembro e outubro.",
+  "caixa": "US$ 5,0 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concorrência local intensa.",
+  "Regulação em vários países.",
+  "Inadimplência no crédito.",
+  "Volatilidade cambial na região."
+ ],
+ "momento": "No 3T26 (divulgado em 03/11/2026), a receita subiu 27%, para US$ 1,11 bi, acima do esperado, e a empresa elevou a projeção de 2026; o CEO é o cofundador Anthony Tan.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-03",
+  "positivos": [
+   "Receita subiu 27%.",
+   "Ebitda ajustado subiu 73%.",
+   "Projeção de 2026 elevada."
+  ],
+  "negativos": [
+   "Lucro ainda pequeno.",
+   "Compra da Foodpanda em Taiwan barrada pelo regulador."
+  ],
+  "atencao": [
+   "Qualidade do crédito.",
+   "Recompras."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Grab: resultados do 3T26 (6-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1855612/000185561226000148/a2026q3-earningspressrelea.htm", "data": "2026-11-03"},
+  {"titulo": "Grab: reports third quarter 2026 results", "url": "https://www.grab.com/sg/press/others/grab-reports-third-quarter-2026-results-raises-full-year-guidance/", "data": "2026-11-03"},
+  {"titulo": "NST: Singapore's Grab lifts 2026 forecasts on strong ride-hailing, delivery demand", "url": "https://www.nst.com.my/amp/business/corporate/2026/11/1569533/singapores-grab-lifts-2026-forecasts-strong-ride-hailing", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

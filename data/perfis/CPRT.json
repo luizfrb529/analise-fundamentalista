@@ -1,0 +1,66 @@
+{
+ "ticker": "CPRT",
+ "revisado_em": "2026-11-22",
+ "resumo": "Líder mundial em leilões online de veículos usados e sinistrados, principalmente carros com perda total enviados por seguradoras. Muito lucrativa, sem dívida, com US$ 4,5 bi em caixa e aplicações, mas com lucro em queda em 2026.",
+ "modelo": "A Copart recebe veículos de seguradoras, locadoras, bancos e concessionárias, armazena em seus enormes pátios e os vende em leilões online para compradores do mundo todo, cobrando taxas de vendedores e compradores. Também compra e revende alguns veículos por conta própria.",
+ "segmentos": [
+  {"nome": "Serviços de leilão", "peso_receita": 0.84, "periodo": "3T26", "obs": "Receita de US$ 969,5 mi (+1,4%)."},
+  {"nome": "Venda de veículos próprios", "peso_receita": 0.16, "periodo": "3T26", "obs": "Receita de US$ 182,9 mi (+8,3%)."}
+ ],
+ "segmentos_base": "Receita (trimestre fiscal encerrado em jul/2026)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Dallas (EUA); pátios nos EUA, Canadá, Reino Unido, Brasil e outros países, com compradores em mais de cem países."},
+ "temas": [
+  {"tema": "Seguros de veículos", "relacao": "Carros mais complexos e caros de consertar aumentam os casos de perda total, a principal fonte de veículos da Copart."},
+  {"tema": "Eventos climáticos", "relacao": "Furacões aumentam o volume de veículos; o ano anterior foi beneficiado pelos furacões Helene e Milton, o que pesou na comparação."}
+ ],
+ "diferencial": {
+  "texto": "A Copart tem uma rede de pátios em terrenos próprios difícil de replicar, contratos com as principais seguradoras e a maior base global de compradores online, o que gera efeito de rede: mais compradores trazem preços maiores e atraem mais vendedores. O ponto fraco é a dependência do volume de sinistros e o crescimento modesto em 2026.",
+  "vantagem": {"nivel": "forte", "resumo": "Rede de pátios próprios difícil de replicar e maior base global de compradores online, com efeito de rede entre seguradoras e compradores."},
+  "concorrentes": ["IAA (RB Global)", "ACV Auctions", "Manheim (Cox Automotive)", "OPENLANE"]
+ },
+ "potencial": {
+  "texto": "O potencial vem do aumento de perdas totais com carros mais caros de consertar, da expansão internacional e de novos vendedores fora de seguros. A empresa não traz projeção numérica.",
+  "metricas": [
+   {"rotulo": "Receita do ano fiscal", "valor": "US$ 4,67 bi (+0,4%)", "periodo": "ano fiscal 2026"},
+   {"rotulo": "Caixa e aplicações", "valor": "cerca de US$ 4,5 bi", "periodo": "jul/2026"},
+   {"rotulo": "Recompras no ano fiscal", "valor": "US$ 1,63 bi", "periodo": "ano fiscal 2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 327 mi no trimestre (US$ 0,35 por ação), queda de 17% por custos maiores e comparação com o ano de furacões. Tem cerca de US$ 4,5 bi em caixa e aplicações, sem dívida financeira, e recomprou US$ 1,63 bi em ações no ano fiscal.",
+  "caixa": "US$ 4,49 bi",
+  "queima_anual": null,
+  "periodo": "jul/2026"
+ },
+ "riscos": [
+  "Volume de sinistros menor.",
+  "Custos crescentes dos pátios.",
+  "Concorrência da IAA.",
+  "Dependência de grandes seguradoras."
+ ],
+ "momento": "No 4º tri fiscal 2026 (divulgado em 10/09/2026), a receita subiu 2,4%, mas o lucro caiu 17% com custos maiores e a comparação com o ano de furacões.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-10",
+  "positivos": [
+   "Receita subiu 2,4%.",
+   "Recompras de US$ 1,6 bi no ano.",
+   "Sem dívida."
+  ],
+  "negativos": [
+   "Lucro caiu 17%.",
+   "Custos dos pátios subiram."
+  ],
+  "atencao": [
+   "Temporada de furacões.",
+   "Resultado do 1º tri fiscal 2027."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Copart: resultados do 4º tri fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm", "data": "2026-09-10"},
+  {"titulo": "Pulse 2.0: Copart Q4 revenue rises 2.4% as net income falls 17.4%", "url": "https://pulse2.com/copart-q4-revenue-rises-2-4-to-1-15-billion-as-net-income-falls-17-4/", "data": "2026-09"},
+  {"titulo": "24/7 Wall St.: Copart Q4 2026, revenue beat masked by a 17% profit drop", "url": "https://247wallst.com/cards/copart-q4-2026-earnings-cprt-01m26fs07y0txvecpqcg9mqkfn", "data": "2026-09"}
+ ],
+ "ultimo_resultado": "3T26"
+}

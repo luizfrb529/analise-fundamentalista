@@ -1,0 +1,63 @@
+{
+ "ticker": "DASH",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior plataforma de entrega de comida dos EUA, que se expandiu para mercados, varejo e Europa (Deliveroo) e anunciou a compra da Instacart por cerca de US$ 17 bi. Lucrativa e crescendo forte.",
+ "modelo": "A DoorDash conecta consumidores, restaurantes, lojas e entregadores autônomos, ganhando comissões dos estabelecimentos, taxas de entrega e assinaturas (DashPass), além de publicidade na plataforma. Também oferece logística e tecnologia para que restaurantes e varejistas façam entregas próprias.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 4,62 bi no 3T26 (+34%); volume de pedidos (GOV) de US$ 33,9 bi (+36%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em San Francisco (EUA); atua nos EUA, Canadá, Austrália, Japão e Europa, com a Deliveroo e a Wolt."},
+ "temas": [
+  {"tema": "Comércio eletrônico e entregas", "relacao": "Os pedidos chegaram a 993 milhões no trimestre (+28%), incluindo a Deliveroo, comprada em 2025."},
+  {"tema": "Consolidação do setor", "relacao": "Acertou a compra da Instacart a US$ 65 por ação, cerca de US$ 17 bi, com fechamento previsto entre o fim de 2027 e o 1º semestre de 2028, sujeito a aprovação antitruste."}
+ ],
+ "diferencial": {
+  "texto": "A DoorDash tem a maior rede de restaurantes, consumidores e entregadores dos EUA, o que cria efeito de rede: mais pedidos reduzem o tempo e o custo de entrega e atraem mais lojas e clientes. Com a Instacart, ganharia liderança também em mercados. Os pontos fracos são a regulação dos entregadores, a concorrência da Uber e da Amazon e o risco de aprovação da compra.",
+  "vantagem": {"nivel": "forte", "resumo": "Maior rede de restaurantes, consumidores e entregadores dos EUA, com efeito de rede que reduz custos e atrai mais lojas e clientes."},
+  "concorrentes": ["Uber Eats", "Instacart", "Amazon", "Grubhub", "Just Eat Takeaway"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o 4T26 deve ter volume de pedidos (GOV) de US$ 35,4 bi a US$ 36,4 bi e Ebitda ajustado de US$ 900 mi a US$ 1,1 bi. O potencial vem de mercados e varejo, da Europa, da publicidade e, se aprovada, da Instacart.",
+  "metricas": [
+   {"rotulo": "GOV projetado", "valor": "US$ 35,4 bi a US$ 36,4 bi", "periodo": "4T26"},
+   {"rotulo": "Ebitda ajustado projetado", "valor": "US$ 900 mi a US$ 1,1 bi", "periodo": "4T26"},
+   {"rotulo": "Fluxo de caixa livre em 12 meses", "valor": "US$ 2,2 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 466 mi no 3T26 (US$ 1,06 por ação, +91%), com Ebitda ajustado de US$ 1,06 bi e fluxo de caixa livre de US$ 787 mi. Recomprou US$ 1,0 bi em ações e tem cerca de US$ 4,0 bi autorizados; a compra da Instacart será paga principalmente em dinheiro.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Aprovação antitruste da compra da Instacart.",
+  "Regulação do trabalho dos entregadores.",
+  "Concorrência da Uber e da Amazon.",
+  "Integração de aquisições grandes."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita subiu 34%, para US$ 4,6 bi, e o lucro quase dobrou, no mesmo dia em que a empresa anunciou a compra da Instacart por cerca de US$ 17 bi.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Receita subiu 34%.",
+   "Lucro quase dobrou.",
+   "Compra da Instacart anunciada."
+  ],
+  "negativos": [
+   "Margem diluída pela Deliveroo."
+  ],
+  "atencao": [
+   "Aprovação da compra da Instacart.",
+   "Investimentos em entrega autônoma."
+  ]
+ },
+ "fontes": [
+  {"titulo": "DoorDash: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1792789/000179278926000062/proddashex991-pressrelease.htm", "data": "2026-10-29"},
+  {"titulo": "DoorDash: anúncio da compra da Instacart (8-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/0001792789/000114036126041111/ef20084547_ex99-1.htm", "data": "2026-10-29"},
+  {"titulo": "TechCrunch: DoorDash to acquire Instacart for $17B", "url": "https://techcrunch.com/2026/10/29/doordash-to-acquire-instacart-for-17b/", "data": "2026-10-29"},
+  {"titulo": "Food Business News: DoorDash set to add Instacart for $17 billion", "url": "https://www.foodbusinessnews.net/articles/31280-doordash-set-to-add-instacart-for-17-billion", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
