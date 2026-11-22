@@ -1,0 +1,63 @@
+{
+ "ticker": "QNT",
+ "revisado_em": "2026-11-22",
+ "resumo": "Empresa americana de computação quântica com íons aprisionados, controlada pela Honeywell, que abriu capital em junho de 2026. Receita ainda pequena e prejuízo alto, mas caixa de US$ 1,94 bi.",
+ "modelo": "A Quantinuum desenvolve computadores quânticos completos (hardware de íons aprisionados, software e sistema operacional) e vende acesso pela nuvem, sistemas instalados no cliente e projetos de pesquisa para governos, bancos, farmacêuticas e indústrias. O governo dos EUA é o maior cliente.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 9,05 mi no 3T26 (+233%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Broomfield, Colorado (EUA); operações também no Reino Unido e clientes nos EUA, Europa e Ásia."},
+ "temas": [
+  {"tema": "Computação quântica", "relacao": "Tem um dos computadores quânticos de maior fidelidade do mercado e bateu recordes de fidelidade lógica, segundo a imprensa especializada."},
+  {"tema": "Política industrial dos EUA", "relacao": "Assinou acordo de até US$ 100 mi com o Departamento de Comércio, no âmbito da Lei CHIPS."}
+ ],
+ "diferencial": {
+  "texto": "A Quantinuum é reconhecida pela qualidade técnica de seus computadores de íons aprisionados, com taxas de erro muito baixas, e tem o respaldo da Honeywell e uma base de clientes de governo e grandes empresas. Mas a computação quântica ainda não gera receita relevante, e há muitas abordagens tecnológicas concorrentes, de IBM e Google a startups.",
+  "vantagem": {"nivel": "moderada", "resumo": "Liderança técnica em computadores quânticos de íons aprisionados, com baixa taxa de erro, mas em mercado incipiente e com tecnologias rivais."},
+  "concorrentes": ["IBM", "Google", "IonQ", "Rigetti", "D-Wave", "PsiQuantum"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 31 mi e US$ 34 mi, as reservas de contratos devem passar de US$ 120 mi e a receita de 2027 deve mais que dobrar. O potencial de longo prazo depende de a computação quântica se tornar útil comercialmente.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 31 mi a US$ 34 mi", "periodo": "2026"},
+   {"rotulo": "Reservas de contratos projetadas", "valor": "acima de US$ 120 mi", "periodo": "2026"},
+   {"rotulo": "Caixa", "valor": "US$ 1,94 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo de US$ 117,9 mi no 3T26 e Ebitda ajustado negativo de US$ 80 mi, com receita de apenas US$ 9,05 mi. O caixa de US$ 1,94 bi, reforçado pelo IPO, cobre vários anos de prejuízo, e a empresa não tem dívida financeira relevante.",
+  "caixa": "US$ 1,94 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Computação quântica ainda sem uso comercial amplo.",
+  "Prejuízo elevado.",
+  "Concentração no governo dos EUA.",
+  "Concorrência de tecnologias alternativas."
+ ],
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita subiu 233%, para US$ 9,05 mi, e a empresa elevou a projeção de 2026 após o maior contrato de nuvem de sua história.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Receita subiu 233%.",
+   "Projeção de 2026 elevada.",
+   "Maior contrato de nuvem da história."
+  ],
+  "negativos": [
+   "Prejuízo ajustado maior que um ano antes."
+  ],
+  "atencao": [
+   "Novos contratos com governos.",
+   "Evolução técnica dos próximos sistemas."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Quantinuum: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2110105/000162828026071000/q32026earningspressrelease.htm", "data": "2026-11-05"},
+  {"titulo": "Quantinuum: 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2110105/000162828026072454/qnt-20260930.htm", "data": "2026-11-10"},
+  {"titulo": "Crypto Briefing: Quantinuum raises 2026 revenue outlook after record bookings", "url": "https://cryptobriefing.com/quantinuum-raises-2026-revenue-outlook/", "data": "2026-11"},
+  {"titulo": "Quantum Computing Report: Quantinuum reports Q3 2026 results", "url": "https://quantumcomputingreport.com/?p=48460", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

@@ -1,0 +1,64 @@
+{
+ "ticker": "UMAC",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana de componentes para drones (motores, câmeras, controladores) e de drones de corrida (Fat Shark, Rotor Riot), que aposta na troca de peças chinesas por americanas. Receita em forte alta, mas ainda com prejuízo e caixa de US$ 162 mi.",
+ "modelo": "A Unusual Machines vende componentes de drones que atendem às exigências de origem do governo americano (NDAA) para fabricantes de drones militares e civis, e vende produtos a consumidores pelas marcas Fat Shark e Rotor Riot. Ampliou a produção própria de motores nos EUA e comprou a fabricante de baterias Upgrade Energy em outubro de 2026.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 13,9 mi no 3T26 (+551%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Orlando, Flórida (EUA); produção e clientes principalmente nos EUA."},
+ "temas": [
+  {"tema": "Drones militares", "relacao": "Atende fabricantes que disputam o programa de drones do Departamento de Guerra dos EUA, de US$ 1,1 bi, e recebeu um pedido de US$ 16,9 mi da Powerus."},
+  {"tema": "Produção nos EUA", "relacao": "Instalou linha automatizada para cerca de 100 mil motores por mês, substituindo componentes chineses."}
+ ],
+ "diferencial": {
+  "texto": "A Unusual Machines saiu na frente na fabricação americana de componentes de drones num momento em que o governo restringe peças chinesas, o que lhe dá clientes e escala inicial. Mas a barreira de entrada é baixa: outros fabricantes podem produzir motores e componentes, e a empresa ainda não tem lucro nem tecnologia exclusiva.",
+  "vantagem": {"nivel": "fraca", "resumo": "Saiu na frente na produção americana de componentes de drones, mas com barreira de entrada baixa e sem tecnologia exclusiva."},
+  "concorrentes": ["Red Cat", "Ondas", "AeroVironment", "KDE Direct", "Fabricantes asiáticos"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a meta é receita de US$ 25 mi no 4T26, com capacidade praticamente vendida até o 1T27, e Ebitda ajustado positivo em 2027. O potencial depende dos programas de drones do governo americano.",
+  "metricas": [
+   {"rotulo": "Meta de receita", "valor": "US$ 25 mi", "periodo": "4T26"},
+   {"rotulo": "Margem bruta", "valor": "35,4%", "periodo": "3T26"},
+   {"rotulo": "Caixa", "valor": "US$ 162,0 mi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo de US$ 25,0 mi no 3T26, dos quais US$ 18,4 mi por perda não realizada em investimentos, e Ebitda ajustado negativo de US$ 0,7 mi. Tem US$ 162,0 mi em caixa após ofertas de ações em 2026 de US$ 150 mi e US$ 60 mi, que diluíram os acionistas.",
+  "caixa": "US$ 162,0 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dependência de programas do governo.",
+  "Barreira de entrada baixa.",
+  "Diluição por novas ofertas.",
+  "Execução da expansão fabril."
+ ],
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita subiu 551%, para US$ 13,9 mi, mas caiu frente ao 2T26 durante a instalação da nova linha de motores; a empresa manteve a meta de US$ 25 mi no 4T26.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Receita subiu 551%.",
+   "Nova linha de motores instalada.",
+   "Meta do 4T26 mantida."
+  ],
+  "negativos": [
+   "Receita caiu 17% frente ao 2T26.",
+   "Prejuízo de US$ 25,0 mi."
+  ],
+  "atencao": [
+   "Integração da Upgrade Energy.",
+   "Pedidos ligados a programas militares."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Unusual Machines: carta aos acionistas do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1956955/000168316826008346/umac_ex9901.htm", "data": "2026-11-05"},
+  {"titulo": "Unusual Machines: 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1956955/000168316826008349/umac_i10q-093026.htm", "data": "2026-11-05"},
+  {"titulo": "24/7 Wall St.: Unusual Machines Q3 2026, revenue up 551%", "url": "https://247wallst.com/cards/unusual-machines-q3-2026-earnings-umac-01m6ps7zmd8embhrsjbtc54vn6", "data": "2026-11"},
+  {"titulo": "Finviz: Unusual Machines revenue beat and reaffirmed $25M Q4 target", "url": "https://finviz.com/news/418087/unusual-machines-misses-on-gaap-investment-markdowns-but-revenue-beat-and-reaffirmed-25m-q4-target-shift-the-debate-to-execution", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

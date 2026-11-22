@@ -1,0 +1,62 @@
+{
+ "ticker": "FPS",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana de equipamentos de distribuição de energia elétrica sob encomenda (painéis, quadros, transformadores) para data centers, redes elétricas e indústrias. Abriu capital em 2026, cresce 69% e é lucrativa.",
+ "modelo": "A Forgent projeta e fabrica equipamentos elétricos personalizados, feitos sob encomenda para cada projeto, e vende diretamente a laboratórios de IA, grandes provedores de nuvem, concessionárias e indústrias, além de serviços. O ano fiscal termina em junho.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 478,6 mi no 1º tri fiscal 2027, encerrado em set/2026 (+69%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA); fábricas e clientes principalmente nos EUA."},
+ "temas": [
+  {"tema": "Infraestrutura de data centers", "relacao": "Vende equipamentos de distribuição de energia diretamente a laboratórios de IA e grandes provedores de nuvem."},
+  {"tema": "Rede elétrica", "relacao": "Atende concessionárias que expandem a rede para atender a nova demanda de energia."}
+ ],
+ "diferencial": {
+  "texto": "A Forgent se diferencia por fabricar sob encomenda com prazos curtos num mercado com falta de equipamentos elétricos, o que a torna fornecedora relevante de data centers. Mas é bem menor que Eaton, Schneider, ABB e Siemens, os produtos podem ser feitos por rivais que ampliam capacidade, e a demanda depende do ciclo de construção de data centers.",
+  "vantagem": {"nivel": "fraca", "resumo": "Fabrica sob encomenda com rapidez num mercado com falta de equipamentos, mas é bem menor que rivais globais que ampliam capacidade."},
+  "concorrentes": ["Eaton", "Schneider Electric", "ABB", "Siemens", "Vertiv", "Powell Industries"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 (até jun/2027) deve ficar entre US$ 2,45 bi e US$ 2,65 bi, com Ebitda ajustado de US$ 587 mi a US$ 637 mi; a carteira de pedidos cobre toda a projeção.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 2,45 bi a US$ 2,65 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Ebitda ajustado projetado", "valor": "US$ 587 mi a US$ 637 mi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Margem de Ebitda ajustada", "valor": "21,9%", "periodo": "1º tri fiscal 2027"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 54,8 mi no trimestre (+252%) e Ebitda ajustado de US$ 104,9 mi, com geração de caixa operacional de US$ 136 mi. Tem US$ 199,9 mi em caixa e cerca de US$ 581 mi em dívida, além de US$ 483 mi a pagar a antigos donos por acordo de benefícios fiscais (TRA).",
+  "caixa": "US$ 199,9 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dependência do ciclo de data centers.",
+  "Concorrência de grandes fabricantes globais.",
+  "Dívida e obrigações do acordo fiscal.",
+  "Venda de ações pelos antigos controladores."
+ ],
+ "momento": "No 1º tri fiscal 2027 (divulgado em 12/11/2026), a receita subiu 69%, para US$ 478,6 mi, acima da projeção, e a empresa elevou a projeção anual, mas as ações caíram após o resultado.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Receita subiu 69%.",
+   "Lucro subiu 252%.",
+   "Projeção anual elevada."
+  ],
+  "negativos": [
+   "Ações caíram após o resultado."
+  ],
+  "atencao": [
+   "Conversão da carteira de pedidos.",
+   "Ampliação de capacidade fabril."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Forgent: resultados do 1º tri fiscal 2027 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2080126/000208012626000045/exhibit991earningsrelease_.htm", "data": "2026-11-12"},
+  {"titulo": "Finviz: Forgent reports fiscal first quarter 2027 results, raises full-year outlook", "url": "https://finviz.com/news/421441/forgent-reports-fiscal-first-quarter-2027-results-above-high-end-of-guidance-raises-full-year-outlook-on-strong-commercial-and-operational-execution", "data": "2026-11-12"},
+  {"titulo": "Grafa: Forgent Power Solutions Q1 2027 revenue rises 69 percent", "url": "https://grafa.com/en/news/united-states/forgent-power-solutions-q1-2027-revenue-rises-69-percent", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "ANT",
+ "revisado_em": "2026-11-22",
+ "resumo": "Desenvolvedora americana de modelos de inteligência artificial (família Claude), que abriu capital em novembro de 2026 no maior IPO da história. A receita cresce de forma explosiva, mas o prejuízo contábil é enorme e os compromissos de gastos com computação são gigantescos.",
+ "modelo": "A Anthropic ganha vendendo acesso aos seus modelos de IA: pela API, cobrada por uso a empresas e desenvolvedores, inclusive por meio de provedores de nuvem; por assinaturas do aplicativo Claude para pessoas e empresas; e por ferramentas como o Claude Code, para programação. É uma empresa de benefício público (PBC).",
+ "segmentos": [],
+ "segmentos_base": "Receita de cerca de US$ 17,0 bi no 3T26 e US$ 33,2 bi em nove meses",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em São Francisco (EUA); clientes no mundo todo, diretamente e via provedores de nuvem."},
+ "temas": [
+  {"tema": "Inteligência artificial generativa", "relacao": "A receita de nove meses subiu cerca de 1.200%, para US$ 33,2 bi, puxada por empresas e programação com IA."},
+  {"tema": "Infraestrutura de IA", "relacao": "Assumiu compromissos de compra de computação de cerca de US$ 895 bi, segundo o prospecto revisado."},
+  {"tema": "Grandes IPOs de tecnologia", "relacao": "Levantou cerca de US$ 81 bi a US$ 83 por ação, superando o IPO da SpaceX, e estreou em 19/11/2026."}
+ ],
+ "diferencial": {
+  "texto": "A Anthropic tem modelos de ponta, forte adoção em empresas e em programação e base de clientes diversificada, sem nenhum cliente acima de 10% da receita. Mas a corrida da IA é extremamente competitiva e cara: OpenAI, Google, Meta e xAI investem volumes semelhantes, a liderança técnica pode mudar rapidamente e o custo de computação é altíssimo.",
+  "vantagem": {"nivel": "moderada", "resumo": "Modelos de ponta e forte adoção em empresas, mas num mercado em que a liderança técnica muda rápido e rivais investem volumes semelhantes."},
+  "concorrentes": ["OpenAI", "Google (Gemini)", "Meta", "xAI (SpaceX)", "Mistral", "DeepSeek"]
+ },
+ "potencial": {
+  "texto": "O potencial vem do crescimento acelerado da receita com empresas, programação e agentes de IA. O risco central é se a receita crescerá rápido o bastante para cobrir os compromissos de computação. A empresa não traz projeção numérica de receita.",
+  "metricas": [
+   {"rotulo": "Receita em nove meses", "valor": "US$ 33,2 bi", "periodo": "9M26"},
+   {"rotulo": "Receita trimestral", "valor": "cerca de US$ 17,0 bi", "periodo": "3T26"},
+   {"rotulo": "Recursos do IPO", "valor": "cerca de US$ 81,3 bi", "periodo": "nov/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo contábil de cerca de US$ 104 bi em nove meses, quase todo pela variação de valor de notas conversíveis e outros instrumentos, sem efeito no caixa; o prejuízo operacional foi de cerca de US$ 1,3 bi. Com o IPO de cerca de US$ 81 bi, o caixa é muito elevado, mas os compromissos de computação somam cerca de US$ 895 bi.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Compromissos de computação gigantescos.",
+  "Concorrência intensa na IA.",
+  "Regulação da inteligência artificial.",
+  "Volatilidade das ações recém-listadas."
+ ],
+ "momento": "A Anthropic estreou na Nasdaq em 19/11/2026, a US$ 83 por ação, abriu 34% acima e fechou o primeiro dia com alta de 17%; no dia seguinte, as ações caíram cerca de 9%.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-02",
+  "positivos": [
+   "Receita de nove meses subiu cerca de 1.200%.",
+   "Nenhum cliente acima de 10% da receita.",
+   "Maior IPO da história."
+  ],
+  "negativos": [
+   "Prejuízo contábil de cerca de US$ 104 bi.",
+   "Compromissos de computação de US$ 895 bi."
+  ],
+  "atencao": [
+   "Primeiro resultado como empresa listada.",
+   "Evolução das margens."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Anthropic: prospecto revisado S-1/A (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm", "data": "2026-11-02"},
+  {"titulo": "Anthropic: prospecto final 424B4 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/0001628280-26-074944-index.htm", "data": "2026-11-19"},
+  {"titulo": "CNBC: Anthropic reports $17 billion in Q3 revenue in revised S-1", "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html", "data": "2026-11-02"},
+  {"titulo": "CNBC: Anthropic IPO raises over $81 billion in largest offering on record", "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html", "data": "2026-11-18"},
+  {"titulo": "CBS News: Anthropic shares gain 17% on first day of trading", "url": "https://www.cbsnews.com/news/anthropic-ipo-nasdaq-debut-claude-ai/", "data": "2026-11-19"}
+ ],
+ "ultimo_resultado": "3T26"
+}
