@@ -1,0 +1,63 @@
+{
+ "ticker": "PATH",
+ "revisado_em": "2026-11-22",
+ "resumo": "Empresa americana de software de automação (robôs de software, RPA) que agora oferece agentes de IA para automatizar processos em grandes empresas. Receita recorrente de US$ 1,94 bi crescendo 12%, lucro contábil recente, caixa de US$ 1,4 bi e sem dívida.",
+ "modelo": "A UiPath vende assinaturas da sua plataforma, que permite criar robôs de software para tarefas repetitivas (preencher sistemas, ler documentos, conciliar dados) e, cada vez mais, orquestrar agentes de IA, robôs e pessoas no mesmo fluxo (Maestro). Cobra por licença e por consumo, de empresas grandes e governos.",
+ "segmentos": [],
+ "segmentos_base": "Empresa não divulga receita por segmento no release",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA), fundada na Romênia; cerca de metade da receita vem de fora dos EUA, sobretudo Europa e Japão."},
+ "temas": [
+  {"tema": "Agentes de IA nas empresas", "relacao": "Lançou o Maestro Case e o Maestro Flow, para orquestrar agentes de IA de qualquer fornecedor junto com robôs de software."},
+  {"tema": "Automação e produtividade", "relacao": "Empresas buscam reduzir custo com automação; a retenção líquida de receita é de 109%."}
+ ],
+ "diferencial": {
+  "texto": "A UiPath é líder em automação robótica de processos, com milhares de clientes corporativos e robôs já integrados a sistemas legados, o que facilita levar agentes de IA para processos reais. Ser neutra em relação aos modelos de IA é um argumento de venda. Os pontos fracos são o crescimento modesto, a ameaça de agentes de IA de Microsoft, Salesforce e ServiceNow substituírem robôs tradicionais e a concorrência de ferramentas mais baratas.",
+  "concorrentes": ["Microsoft (Power Automate)", "ServiceNow", "Automation Anywhere", "Salesforce", "Appian", "SS&C Blue Prism"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 (fevereiro de 2026 a janeiro de 2027) deve ficar entre US$ 1,789 bi e US$ 1,794 bi, com receita recorrente anual (ARR) de US$ 2,065 bi a US$ 2,070 bi e lucro operacional ajustado de cerca de US$ 445 mi. O trimestre até outubro deve ter receita de US$ 440 mi a US$ 445 mi e ser divulgado no início de dezembro.",
+  "metricas": [
+   {"rotulo": "Receita recorrente anual (ARR)", "valor": "US$ 1,938 bi", "periodo": "jul/2026"},
+   {"rotulo": "Receita projetada", "valor": "US$ 1,789 bi a US$ 1,794 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Retenção líquida de receita", "valor": "109%", "periodo": "jul/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucro recente",
+  "texto": "Lucro líquido de US$ 36,1 mi no trimestre, contra US$ 1,6 mi um ano antes, com margem operacional de 8% (22% no critério ajustado). O fluxo de caixa livre foi de US$ 161 mi no semestre. A empresa tem US$ 1,4 bi em caixa e aplicações, sem dívida, e recomprou US$ 269 mi em ações no semestre.",
+  "caixa": "US$ 1,4 bi",
+  "queima_anual": null,
+  "periodo": "jul/2026"
+ },
+ "riscos": [
+  "Agentes de IA de grandes plataformas podem substituir robôs tradicionais.",
+  "Crescimento modesto.",
+  "Concorrência da Microsoft.",
+  "Dependência de grandes contratos corporativos."
+ ],
+ "momento": "No trimestre encerrado em julho (3T26 no calendário, 2T27 fiscal da empresa, divulgado em 03/09/2026), a receita subiu 13%, para US$ 410 mi, e a empresa elevou a projeção do ano, mas a projeção do trimestre seguinte abaixo do consenso derrubou as ações cerca de 24%, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-03",
+  "positivos": [
+   "Receita de US$ 410 mi, alta de 13%.",
+   "Lucro líquido de US$ 36,1 mi.",
+   "Projeção do ano elevada."
+  ],
+  "negativos": [
+   "Nova ARR de apenas US$ 37 mi no trimestre.",
+   "Projeção do trimestre seguinte abaixo do esperado."
+  ],
+  "atencao": [
+   "Resultado do trimestre encerrado em outubro, em dezembro.",
+   "Adoção dos produtos de agentes de IA."
+  ]
+ },
+ "fontes": [
+  {"titulo": "UiPath: resultados do 2T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1734722/000173472226000047/path-2026731xex991.htm", "data": "2026-09-03"},
+  {"titulo": "Seeking Alpha (PR): UiPath reports second quarter fiscal 2027 results", "url": "https://seekingalpha.com/pr/20640625", "data": "2026-09-03"},
+  {"titulo": "Zacks: UiPath slides 24% after Q2 earnings", "url": "https://www.zacks.com/stock/news/2986531/uipath-slides-24-after-q2-earnings-is-path-stock-a-buy", "data": "2026-09"},
+  {"titulo": "Quartr: UiPath Q2 2027 earnings summary", "url": "https://quartr.com/events/uipath-path-q2-2027_332pAUxO", "data": "2026-09"}
+ ],
+ "ultimo_resultado": "3T26"
+}

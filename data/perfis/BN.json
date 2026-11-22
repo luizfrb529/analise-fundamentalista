@@ -1,0 +1,66 @@
+{
+ "ticker": "BN",
+ "revisado_em": "2026-11-22",
+ "resumo": "Conglomerado canadense de investimentos, dono de grande parte da gestora Brookfield Asset Management, de uma seguradora e de empresas de infraestrutura, energia renovável, imóveis e negócios. Lucrativo, com lucro distribuível de US$ 6,4 bi em 12 meses.",
+ "modelo": "A Brookfield Corporation ganha de três formas: com a participação na gestora Brookfield Asset Management, que cobra taxas sobre US$ 682 bi de capital de terceiros; com a Brookfield Wealth Solutions, que vende seguros e previdência e investe as reservas (cerca de US$ 190 bi); e com participações em empresas operacionais listadas (infraestrutura, energia renovável, negócios) e imóveis. Recebe também participação nos lucros dos fundos (carry).",
+ "segmentos": [
+  {"nome": "Gestão de recursos", "peso_receita": 0.44, "periodo": "3T26", "obs": "US$ 755 mi de lucro distribuível, mais US$ 222 mi de carry realizado."},
+  {"nome": "Seguros e previdência (Wealth Solutions)", "peso_receita": 0.29, "periodo": "3T26", "obs": "US$ 511 mi."},
+  {"nome": "Empresas operacionais e imóveis", "peso_receita": 0.27, "periodo": "3T26", "obs": "US$ 467 mi; imóveis US$ 236 mi, energia renovável US$ 121 mi, infraestrutura US$ 94 mi."}
+ ],
+ "segmentos_base": "Lucro distribuível por segmento, antes de custos corporativos",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Toronto (Canadá) e Nova York (EUA), com ativos em mais de 30 países, inclusive o Brasil."},
+ "temas": [
+  {"tema": "Infraestrutura para IA", "relacao": "Por meio da gestora e das empresas controladas, investe em data centers, energia e infraestrutura digital; a carta aos acionistas cita a infraestrutura de IA como tema de investimento."},
+  {"tema": "Juros e previdência", "relacao": "O negócio de seguros cresce com a venda de anuidades e se beneficia de juros mais altos para investir as reservas."}
+ ],
+ "diferencial": {
+  "texto": "A Brookfield é uma das maiores investidoras do mundo em ativos reais (infraestrutura, energia, imóveis), com décadas de experiência operacional, capacidade de levantar grandes fundos e US$ 207 bi em capital disponível para investir. A gestora gera taxas recorrentes e o braço de seguros dá capital de longo prazo. Os pontos fracos são a estrutura complexa, a dívida alta das empresas controladas e a sensibilidade a juros e ao mercado imobiliário.",
+  "concorrentes": ["Blackstone", "KKR", "Apollo", "Carlyle", "Berkshire Hathaway", "Ares"]
+ },
+ "potencial": {
+  "texto": "O crescimento esperado vem da captação da gestora, do aumento das reservas de seguros e da venda de ativos com lucro (realizações e carry). A empresa conclui em 01/12/2026 uma simplificação societária, com a nova ação classe A negociando como BN a partir de 03/12/2026. Não há projeção numérica no release.",
+  "metricas": [
+   {"rotulo": "Capital com taxas da gestora", "valor": "US$ 682 bi", "periodo": "set/2026"},
+   {"rotulo": "Capital disponível para investir", "valor": "US$ 207 bi", "periodo": "set/2026"},
+   {"rotulo": "Lucro distribuível em 12 meses", "valor": "US$ 6,4 bi (US$ 2,72 por ação)", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro distribuível de US$ 1,72 bi no 3T26 (US$ 0,73 por ação), alta de 16% em um ano, e lucro líquido de US$ 1,31 bi atribuído aos acionistas. A empresa tem US$ 5,4 bi de liquidez corporativa e US$ 207 bi de capital disponível no grupo, recomprou cerca de US$ 889 mi em ações no ano e paga dividendo trimestral de US$ 0,07. As empresas controladas carregam dívida elevada, típica de ativos reais.",
+  "caixa": "US$ 5,4 bi (liquidez corporativa)",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Estrutura complexa e difícil de avaliar.",
+  "Dívida elevada nas empresas controladas.",
+  "Sensibilidade a juros e ao mercado imobiliário.",
+  "Riscos do negócio de seguros."
+ ],
+ "momento": "No 3T26 (divulgado em 12/11/2026), o lucro distribuível subiu 16%, para US$ 0,73 por ação, pouco acima do consenso, e o capital com taxas da gestora cresceu 13%, para US$ 682 bi. A simplificação societária deve ser concluída em 01/12/2026.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Lucro distribuível de US$ 1,72 bi, alta de 16%.",
+   "Capital com taxas de US$ 682 bi, alta de 13%.",
+   "US$ 207 bi de capital disponível."
+  ],
+  "negativos": [
+   "Negócios operacionais (BBUC) contribuíram só US$ 6 mi."
+  ],
+  "atencao": [
+   "Conclusão da simplificação societária em dezembro.",
+   "Ritmo de venda de ativos e carry."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Brookfield Corporation: resultados do 3T26 (6-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1001085/000117184326007374/exh_991.htm", "data": "2026-11-12"},
+  {"titulo": "Brookfield Corporation: relatório do 3T26 (6-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1001085/000100108526000030/a2026-q3bninterimreport.htm", "data": "2026-11-16"},
+  {"titulo": "BNN Bloomberg: Brookfield reports third quarter profit up from year ago", "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/12/brookfield-reports-third-quarter-profit-up-from-year-ago/", "data": "2026-11-12"},
+  {"titulo": "Earnings Whispers: Brookfield Corporation", "url": "https://www.earningswhispers.com/epsdetails/BN/202609", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}
