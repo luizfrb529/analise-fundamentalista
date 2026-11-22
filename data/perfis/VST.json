@@ -1,0 +1,67 @@
+{
+ "ticker": "VST",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das maiores geradoras e vendedoras de energia elétrica dos EUA, com usinas nucleares, a gás e solares e milhões de clientes no varejo, principalmente no Texas. Muito lucrativa, beneficiada pela demanda de data centers.",
+ "modelo": "A Vistra gera energia em usinas próprias (nucleares, gás, carvão em desativação e solar) e vende no mercado atacado, em contratos de longo prazo e diretamente a milhões de clientes residenciais e empresariais (TXU Energy e outras marcas). Fecha contratos de compra de energia (PPA) com grandes consumidores, como empresas de tecnologia, e protege preços com hedge.",
+ "segmentos": [
+  {"nome": "Texas", "peso_receita": 0.52, "periodo": "3T26", "obs": "Ebitda ajustado de US$ 1,23 bi."},
+  {"nome": "Leste (PJM, Nova York e Nova Inglaterra)", "peso_receita": 0.41, "periodo": "3T26", "obs": "Ebitda ajustado de US$ 979 mi."},
+  {"nome": "Varejo e Oeste", "peso_receita": 0.07, "periodo": "3T26", "obs": "Varejo US$ 98 mi e Oeste US$ 76 mi."}
+ ],
+ "segmentos_base": "Ebitda ajustado por segmento",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Irving, Texas (EUA), com usinas no Texas, Ohio, Pensilvânia, Illinois e outros estados."},
+ "temas": [
+  {"tema": "Energia para data centers", "relacao": "Tem contratos solares com a Microsoft, contrato nuclear da usina Perry com a Meta, segundo a imprensa, e assinou contrato de 20 anos e 207 MW com a New Era Energy & Digital no Texas; parte da usina nuclear de Comanche Peak ainda pode ser contratada."},
+  {"tema": "Gás natural", "relacao": "Comprou a Cogentrix Energy, com cerca de 5.500 MW de usinas a gás, concluída em outubro de 2026."},
+  {"tema": "Energia nuclear", "relacao": "É dona de uma das maiores frotas nucleares dos EUA, energia firme e sem carbono valorizada por empresas de tecnologia."}
+ ],
+ "diferencial": {
+  "texto": "A Vistra combina geração nuclear e a gás em grande escala com uma das maiores bases de clientes de varejo do Texas, o que equilibra preços e reduz risco. As usinas existentes, especialmente as nucleares, são difíceis de replicar e ganham valor com a escassez de energia firme. Os pontos fracos são a exposição ao preço da energia e do gás, a regulação no Texas e a dívida elevada.",
+  "concorrentes": ["Constellation Energy", "NRG Energy", "Talen Energy", "NextEra Energy", "Calpine", "PSEG"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o Ebitda ajustado de 2026 deve ficar entre US$ 7,1 bi e US$ 7,5 bi, e a projeção inicial de 2027 é de US$ 7,7 bi a US$ 8,5 bi, com caixa livre antes de crescimento de US$ 4,3 bi a US$ 5,1 bi. O crescimento vem dos novos contratos com data centers e da Cogentrix.",
+  "metricas": [
+   {"rotulo": "Ebitda ajustado projetado", "valor": "US$ 7,7 bi a US$ 8,5 bi", "periodo": "2027"},
+   {"rotulo": "Ebitda ajustado projetado", "valor": "US$ 7,1 bi a US$ 7,5 bi", "periodo": "2026"},
+   {"rotulo": "Capacidade a gás comprada (Cogentrix)", "valor": "cerca de 5.500 MW", "periodo": "out/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 1,14 bi no 3T26, inflado por ganho não realizado de US$ 559 mi com hedge, e Ebitda ajustado recorde de US$ 2,38 bi, alta de 50%. A liquidez era de cerca de US$ 8,9 bi em setembro, e de cerca de US$ 5,4 bi após a Cogentrix e o resgate de ações preferenciais. Recomprou US$ 917 mi em ações em nove meses e tem US$ 2,5 bi autorizados até 2028.",
+  "caixa": "cerca de US$ 5,4 bi de liquidez (pós Cogentrix)",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Preço da energia e do gás.",
+  "Regulação e política energética no Texas.",
+  "Dívida elevada após aquisições.",
+  "Operação das usinas nucleares."
+ ],
+ "momento": "No 3T26 (divulgado em 06/11/2026), o Ebitda ajustado foi recorde de US$ 2,38 bi e a empresa apresentou a projeção de 2027; as ações subiram 10,6%, mas analistas citam riscos de política no Texas, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-06",
+  "positivos": [
+   "Ebitda ajustado recorde de US$ 2,38 bi.",
+   "Projeção inicial de 2027 acima de 2026.",
+   "Compra da Cogentrix concluída."
+  ],
+  "negativos": [
+   "Parte do lucro veio de ganho não realizado com hedge."
+  ],
+  "atencao": [
+   "Contratação da parcela restante de Comanche Peak.",
+   "Regras de conexão de data centers no Texas."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Vistra: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000023/vistra-20260930xearningsre.htm", "data": "2026-11-06"},
+  {"titulo": "Finviz: Vistra beats on a record EBITDA quarter and sets 2027 guidance", "url": "https://finviz.com/news/418966/vistra-beats-on-a-record-ebitda-quarter-and-sets-2027-guidance-but-texas-policy-risk-now-drives-the-stock", "data": "2026-11"},
+  {"titulo": "Zacks: VST Q3 earnings beat on strong power pricing", "url": "https://www.zacks.com/stock/news/3027394/vst-q3-earnings-beat-on-strong-power-pricing-revenues-rise-yy", "data": "2026-11"},
+  {"titulo": "Kalkine: Vistra Q3 2026 EBITDA up 50%, Cogentrix closed", "url": "https://kalkine.com/news/announcements/vistra-q3-2026-ebitda-up-50-cogentrix-closed", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

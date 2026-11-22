@@ -1,0 +1,63 @@
+{
+ "ticker": "UEC",
+ "revisado_em": "2026-11-22",
+ "resumo": "Produtora americana de urânio por recuperação in situ (ISR) em Wyoming e Texas, com grandes estoques e projetos, que planeja uma refinaria e usina de conversão nos EUA. Pequena produção, prejuízo, mas US$ 753 mi em ativos líquidos e sem dívida.",
+ "modelo": "A Uranium Energy (UEC) extrai urânio injetando solução no subsolo e bombeando o minério dissolvido (ISR), método de custo baixo, nas unidades de Christensen Ranch e Irigaray (Wyoming) e Burke Hollow (Texas). Mantém estoque físico de urânio para vender quando o preço é favorável e tem participações em outras empresas do setor. Quer montar uma refinaria e conversão de urânio nos EUA.",
+ "segmentos": [],
+ "segmentos_base": "Receita de venda de urânio (US$ 37,3 mi no ano fiscal 2026)",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "ano fiscal 2026", "texto": "Sede em Corpus Christi, Texas (EUA), com operações em Wyoming e Texas e projetos no Canadá e no Paraguai."},
+ "temas": [
+  {"tema": "Energia nuclear", "relacao": "A retomada nuclear e as restrições ao urânio russo valorizam a produção americana; a empresa vendeu urânio a US$ 93,13 por libra, acima do preço médio do mercado."},
+  {"tema": "Cadeia de combustível nos EUA", "relacao": "Desenvolve com a Fluor a United States Uranium Refining & Conversion, com estimativa de custo prevista para meados de 2027."}
+ ],
+ "diferencial": {
+  "texto": "A UEC tem uma das maiores carteiras de projetos ISR licenciados dos EUA, unidades de processamento prontas para crescer e balanço sem dívida, o que permite produzir rápido quando o preço compensar. O estoque físico dá flexibilidade de venda. Os pontos fracos são a produção ainda pequena (229 mil libras no ano), o prejuízo recorrente e a dependência do preço do urânio.",
+  "concorrentes": ["Cameco", "Energy Fuels", "enCore Energy", "Ur-Energy", "Kazatomprom", "NexGen Energy"]
+ },
+ "potencial": {
+  "texto": "O potencial vem de ampliar a produção em Wyoming e Texas, desenvolver o projeto Sweetwater (licenciamento previsto até 2027) e criar a refinaria e conversão nos EUA. A empresa tinha 1,26 milhão de libras em estoque, cerca de US$ 109 mi a preço de mercado. Não há projeção de produção no release.",
+  "metricas": [
+   {"rotulo": "Produção no ano fiscal", "valor": "229.294 libras", "periodo": "ano fiscal 2026"},
+   {"rotulo": "Preço médio realizado", "valor": "US$ 93,13 por libra", "periodo": "ano fiscal 2026"},
+   {"rotulo": "Estoque de urânio", "valor": "1,26 milhão de libras", "periodo": "jul/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Receita de US$ 37,3 mi e lucro bruto de US$ 16,9 mi no ano fiscal encerrado em julho de 2026, mas prejuízo líquido de cerca de US$ 137 mi, segundo a imprensa. A empresa tinha US$ 495 mi em caixa e US$ 753 mi em ativos líquidos (inclui estoque e participações) e nenhuma dívida. Tem cerca de 496 milhões de ações e programa de venda de ações em bolsa.",
+  "caixa": "US$ 495 mi",
+  "queima_anual": null,
+  "periodo": "jul/2026"
+ },
+ "riscos": [
+  "Preço do urânio.",
+  "Produção ainda pequena e prejuízo recorrente.",
+  "Diluição por venda de ações.",
+  "Licenciamento de novos projetos."
+ ],
+ "momento": "No ano fiscal encerrado em julho (3T26 no calendário, divulgado em 29/09/2026), a receita caiu para US$ 37,3 mi, contra US$ 66,8 mi no ano anterior, e o prejuízo aumentou, segundo a imprensa, enquanto a produção começou em Burke Hollow, no Texas.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-29",
+  "positivos": [
+   "Preço realizado de US$ 93,13 por libra.",
+   "Início da produção em Burke Hollow.",
+   "US$ 753 mi em ativos líquidos, sem dívida."
+  ],
+  "negativos": [
+   "Receita caiu de US$ 66,8 mi para US$ 37,3 mi.",
+   "Prejuízo de cerca de US$ 137 mi no ano."
+  ],
+  "atencao": [
+   "Ritmo de produção em Wyoming e Texas.",
+   "Estimativa de custo da refinaria em 2027."
+  ]
+ },
+ "fontes": [
+  {"titulo": "UEC: resultados do ano fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1334933/000143774926031416/ex_1020503.htm", "data": "2026-09-29"},
+  {"titulo": "UEC: formulário 10-K do ano fiscal 2026 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1334933/000143774926031414/uec20260731_10k.htm", "data": "2026-09-29"},
+  {"titulo": "Webull (Simply Wall St): Uranium Energy annual loss widened and sales fell", "url": "https://www.webull.com/news/15710075058979840", "data": "2026-09"},
+  {"titulo": "YCharts (PR Newswire): Uranium Energy Corp reports fiscal 2026 results", "url": "https://ycharts.com/news/story/PRN-VA58771-20260929", "data": "2026-09-29"}
+ ],
+ "ultimo_resultado": "3T26"
+}
