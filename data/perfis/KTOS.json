@@ -1,0 +1,69 @@
+{
+ "ticker": "KTOS",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fornecedora americana de defesa focada em tecnologias de custo mais baixo: drones a jato (Valkyrie), alvos aéreos, sistemas hipersônicos, motores para mísseis e drones, satélites e microondas. A receita cresce mais de 30% ao ano, mas o lucro contábil ainda é próximo de zero.",
+ "modelo": "A Kratos vende produtos e serviços principalmente ao governo dos EUA e a aliados, em contratos de desenvolvimento e produção. Atua em dois segmentos: Kratos Government Solutions (hipersônicos, foguetes, motores a jato, eletrônicos de microondas, sistemas espaciais, treinamento e cibersegurança) e Unmanned Systems (drones de combate como o Valkyrie e alvos aéreos usados em testes de mísseis). Investe capital próprio para ter produtos prontos antes de o cliente pedir.",
+ "segmentos": [
+  {"nome": "Kratos Government Solutions", "peso_receita": 0.84, "periodo": "3T26", "obs": "US$ 397,2 mi, alta de 52,5% em um ano (35,8% sem aquisições)."},
+  {"nome": "Unmanned Systems (drones)", "peso_receita": 0.16, "periodo": "3T26", "obs": "US$ 74,6 mi, contra US$ 87,2 mi no 3T25, que teve entrega internacional do Valkyrie."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em San Diego (EUA). A maior parte da receita vem do governo americano; tem operações em Israel (microondas) e clientes aliados no exterior."},
+ "temas": [
+  {"tema": "Defesa e drones", "relacao": "A guerra na Ucrânia e a tensão com a China aumentaram a procura por drones de combate baratos e em grande quantidade; o segundo lote de 12 Valkyrie está em fabricação."},
+  {"tema": "Mísseis hipersônicos", "relacao": "É peça central no programa MACH-TB de testes hipersônicos do Pentágono; a área de foguetes de defesa cresceu 149% sem aquisições no 3T26."},
+  {"tema": "Motores para mísseis e drones", "relacao": "Prevê produzir até 3.000 motores a jato pequenos em 2027, insumo escasso para mísseis de cruzeiro e drones."},
+  {"tema": "Espaço", "relacao": "Fornece sistemas de comando de satélites e antenas, e disputa grandes contratos como integradora principal."}
+ ],
+ "diferencial": {
+  "texto": "A Kratos aposta em sistemas de defesa mais baratos e produzidos em série, como drones descartáveis ou de baixo custo, enquanto grandes rivais focam em plataformas caras. Ter instalações próprias de testes hipersônicos, fabricação de motores e drones já em produção cria barreiras, porque o Pentágono exige anos de qualificação. Os pontos fracos são margens baixas, alto investimento antes de contratos firmes, dependência do orçamento americano e a concorrência de grandes grupos (Lockheed, Northrop, General Atomics) e de novas empresas como a Anduril.",
+  "concorrentes": ["General Atomics", "Anduril", "Lockheed Martin", "Northrop Grumman", "Boeing", "AeroVironment"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 1,78 bi e US$ 1,81 bi, com Ebitda ajustado de US$ 176 mi a US$ 180 mi (projeção elevada), e a projeção inicial de 2027 é de receita de US$ 2,1 bi a US$ 2,2 bi e Ebitda ajustado de US$ 230 mi a US$ 240 mi, abaixo do esperado pelo mercado, segundo a imprensa. A carteira de pedidos subiu para US$ 2,65 bi e o funil de propostas é de US$ 15,5 bi. O crescimento depende de motores, hipersônicos, drones e grandes contratos espaciais.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 2,1 bi a US$ 2,2 bi", "periodo": "2027"},
+   {"rotulo": "Carteira de pedidos", "valor": "US$ 2,65 bi", "periodo": "set/2026"},
+   {"rotulo": "Funil de propostas", "valor": "US$ 15,5 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 16,1 mi em nove meses, mas prejuízo de US$ 0,2 mi no 3T26: a margem contábil é muito baixa. O fluxo de caixa livre é negativo, porque a empresa investe pesado em fábricas e estoques, e deve consumir de US$ 110 mi a US$ 120 mi em 2026. Para isso levantou US$ 1,35 bi com venda de ações em março de 2026 e tinha US$ 1,40 bi em caixa em setembro, sem empréstimos bancários. As ações diluídas passaram de 172,9 milhões para 188,8 milhões em um ano.",
+  "caixa": "US$ 1,40 bi",
+  "queima_anual": "US$ 110 mi a US$ 120 mi de fluxo de caixa livre negativo (projeção 2026)",
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dependência do orçamento de defesa dos EUA; o governo opera com orçamento provisório desde outubro.",
+  "Investimento elevado antes de pedidos firmes, com caixa livre negativo.",
+  "Diluição por emissões de ações para financiar o crescimento.",
+  "Margem de lucro baixa e sensível a atrasos em programas."
+ ],
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita foi de US$ 471,8 mi, alta de 35,7% em um ano, com pedidos recordes de US$ 1,04 bi (2,2 vezes a receita). A empresa elevou a projeção de Ebitda de 2026, mas a projeção inicial de 2027 e o consumo de caixa desagradaram parte do mercado, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Receita de US$ 471,8 mi, alta de 35,7% (23,2% sem aquisições).",
+   "Pedidos recordes de US$ 1,04 bi e carteira de US$ 2,65 bi.",
+   "Ebitda ajustado de US$ 50,9 mi, contra US$ 30,8 mi no 3T25."
+  ],
+  "negativos": [
+   "Prejuízo líquido de US$ 0,2 mi, contra lucro de US$ 8,7 mi no 3T25.",
+   "Fluxo de caixa livre negativo de US$ 29,4 mi no trimestre.",
+   "Receita de drones caiu para US$ 74,6 mi, com prejuízo operacional no segmento."
+  ],
+  "atencao": [
+   "Aprovação do orçamento de defesa americano para 2027.",
+   "Ritmo de produção de motores e do segundo lote de Valkyrie."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Kratos: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1069258/000106925826000085/ktos202609278kexhibit991.htm", "data": "2026-11-05"},
+  {"titulo": "Kratos: 8-K da oferta de ações de março de 2026 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1069258/000106925826000024/exhibit991offering20260302.htm", "data": "2026-03-02"},
+  {"titulo": "Morningstar (GlobeNewswire): Kratos Reports Third Quarter 2026 Financial Results", "url": "https://www.morningstar.com/news/globe-newswire/9871607/kratos-reports-third-quarter-2026-financial-results", "data": "2026-11-05"},
+  {"titulo": "StockStory: Kratos posts Q3 2026 sales in line with estimates", "url": "https://stockstory.org/us/stocks/nasdaq/ktos/news/earnings/kratos-nasdaqktos-posts-q3-2026-sales-in-line-with-estimates-quarterly-revenue-guidance-slightly-exceeds-expectations", "data": "2026-11-05"}
+ ],
+ "ultimo_resultado": "3T26"
+}
