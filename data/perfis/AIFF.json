@@ -1,0 +1,64 @@
+{
+ "ticker": "AIFF",
+ "revisado_em": "2026-11-22",
+ "resumo": "Pequena empresa americana de neurotecnologia que usa eletroencefalograma (EEG) e IA para avaliar o funcionamento do cérebro, com a plataforma Evoke aprovada pela FDA. Receita muito pequena, prejuízo e dúvida sobre a continuidade.",
+ "modelo": "A Firefly aluga equipamentos de EEG e vende assinaturas de software que analisam a atividade elétrica do cérebro, ajudando médicos a avaliar condições como TDAH e problemas de atenção. Comprou a Evoke em 2025, cuja plataforma tem liberação 510(k) da FDA, e desenvolve um modelo de IA treinado com dados cerebrais.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 0,65 mi no 3T26 (+67%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede nos EUA; clínicas clientes nos EUA."},
+ "temas": [
+  {"tema": "Saúde mental e neurologia", "relacao": "O uso da plataforma Evoke em pacientes menores de 18 anos com TDAH cresceu 373% em um ano, segundo a empresa."},
+  {"tema": "IA em saúde", "relacao": "Desenvolve um modelo de IA treinado com grande base de dados de EEG."}
+ ],
+ "diferencial": {
+  "texto": "A Firefly tem plataforma de EEG com liberação da FDA e uma base de dados cerebrais acumulada, mas é muito pequena, com receita de cerca de US$ 0,6 mi por trimestre, e enfrenta outras empresas de neurodiagnóstico. A tecnologia ainda não se traduziu em escala comercial nem em barreira de entrada clara.",
+  "vantagem": {"nivel": "nenhuma clara", "resumo": "Tem plataforma de EEG liberada pela FDA e base de dados cerebrais, mas receita mínima e sem escala ou barreira de entrada comprovada."},
+  "concorrentes": ["Natus Medical", "Neuronetics", "BrainScope", "Clínicas de neurodiagnóstico tradicionais"]
+ },
+ "potencial": {
+  "texto": "O potencial vem da expansão da plataforma Evoke em clínicas, de parcerias como a da NeuroSigma em TDAH e do modelo de IA. A empresa não traz projeção numérica.",
+  "metricas": [
+   {"rotulo": "Receita em nove meses", "valor": "US$ 1,65 mi (+125%)", "periodo": "9M26"},
+   {"rotulo": "Caixa", "valor": "US$ 8,0 mi", "periodo": "set/2026"},
+   {"rotulo": "Prejuízo em nove meses", "valor": "US$ 5,5 mi", "periodo": "9M26"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo e queima de caixa",
+  "texto": "Prejuízo de US$ 1,5 mi no 3T26 e de US$ 5,5 mi em nove meses, com receita de US$ 1,65 mi. Tem US$ 8,0 mi em caixa, após levantar cerca de US$ 10 mi em colocações privadas em 2026, e o próprio balanço afirma haver dúvida relevante sobre a continuidade da empresa. Há muitos bônus de subscrição que podem diluir os acionistas.",
+  "caixa": "US$ 8,0 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dúvida sobre a continuidade da empresa.",
+  "Diluição por novas emissões e bônus.",
+  "Receita muito pequena.",
+  "Reembolso por planos de saúde."
+ ],
+ "momento": "No 3T26 (10-Q de 10/11/2026), a receita subiu 67%, para US$ 0,65 mi, e o prejuízo caiu para US$ 1,5 mi; em novembro, a empresa informou forte alta no uso da Evoke em jovens com TDAH.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-10",
+  "positivos": [
+   "Receita subiu 67%.",
+   "Prejuízo trimestral menor."
+  ],
+  "negativos": [
+   "Dúvida sobre a continuidade.",
+   "Caixa limitado."
+  ],
+  "atencao": [
+   "Novas captações e diluição.",
+   "Lançamento do modelo de IA."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Firefly Neuroscience: 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/803578/000143774926035980/aiff20260930_10q.htm", "data": "2026-11-10"},
+  {"titulo": "Finviz: Firefly reports 373% increase in U18 ADHD Evoke scans", "url": "https://finviz.com/news/423906/firefly-neuroscience-reports-373-year-over-year-increase-in-u18-adhd-evoke-scans-as-commercial-expansion-accelerates", "data": "2026-11-17"},
+  {"titulo": "TradingView: Firefly Neuroscience 2025 10-K", "url": "https://www.tradingview.com/news/tradingview%3Ac56c93f110003%3A0-firefly-neuroscience-2025-10-k-revenue-1-14m-eps-not-disclosed/", "data": "2026"},
+  {"titulo": "Finviz: Firefly and NeuroSigma partner on pediatric ADHD", "url": "https://finviz.com/news/395541/firefly-nasdaq-aiff-and-neurosigma-partner-to-expand-access-to-first-fda-cleared-non-drug-treatment-for-pediatric-adhd", "data": "2026-09"}
+ ],
+ "pendencias": ["Release de resultado do 3T26 não localizado; números vêm do 10-Q na SEC."],
+ "ultimo_resultado": "3T26"
+}

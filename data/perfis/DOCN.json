@@ -1,0 +1,62 @@
+{
+ "ticker": "DOCN",
+ "revisado_em": "2026-11-22",
+ "resumo": "Provedora americana de nuvem simples e barata para desenvolvedores, startups e pequenas e médias empresas, que vive forte aceleração com clientes de IA. Cresce 40%, tem margem de Ebitda de 45% e gera muito caixa.",
+ "modelo": "A DigitalOcean aluga servidores virtuais, armazenamento, bancos de dados gerenciados, Kubernetes e, cada vez mais, GPUs e serviços de inferência de IA (plataforma Gradient), cobrando por uso. Foca em clientes menores, que valorizam simplicidade, preço previsível e suporte, em vez das grandes nuvens.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 321,2 mi no 3T26 (+40%); receita recorrente anualizada de US$ 1,285 bi",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede nos EUA; data centers na América do Norte, Europa e Ásia e clientes no mundo todo."},
+ "temas": [
+  {"tema": "Inferência de IA", "relacao": "A receita recorrente de clientes de IA subiu 288%, para US$ 376 mi, e os serviços de inferência cresceram quase 600%, segundo a imprensa."},
+  {"tema": "Computação em nuvem", "relacao": "A receita recorrente total cresceu 40%, para US$ 1,285 bi, com recorde de US$ 160 mi adicionados no trimestre."}
+ ],
+ "diferencial": {
+  "texto": "A DigitalOcean construiu uma marca forte entre desenvolvedores, com uma nuvem simples, documentação reconhecida e preços previsíveis, o que atrai startups e empresas de IA nativas. Mas compete com AWS, Microsoft e Google, que têm escala muito maior, e com novas nuvens de GPUs, e os clientes pequenos trocam de fornecedor com mais facilidade.",
+  "vantagem": {"nivel": "fraca", "resumo": "Marca forte entre desenvolvedores e nuvem simples, mas compete com gigantes de escala muito maior e com novas nuvens de GPUs."},
+  "concorrentes": ["Amazon Web Services", "Microsoft Azure", "Google Cloud", "Akamai (Linode)", "Vultr", "CoreWeave"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 1,208 bi e US$ 1,211 bi (+34%), com margem de Ebitda ajustada de 41% a 42%, e o 4T26 deve crescer 44% a 45%. A empresa espera crescer mais de 60% em 2027, segundo a imprensa.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 1,208 bi a US$ 1,211 bi", "periodo": "2026"},
+   {"rotulo": "Receita projetada", "valor": "US$ 348 mi a US$ 351 mi", "periodo": "4T26"},
+   {"rotulo": "Receita recorrente de clientes de IA", "valor": "US$ 376 mi (+288%)", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Prejuízo contábil de US$ 42,6 mi no 3T26 por despesa de US$ 57,1 mi na recompra antecipada de dívida conversível; sem isso, o negócio é lucrativo, com Ebitda ajustado de US$ 144,2 mi (45% de margem) e caixa livre ajustado de US$ 130,2 mi. Tem US$ 845 mi em caixa e aplicações e cerca de US$ 462 mi em dívida.",
+  "caixa": "US$ 844,7 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concorrência das grandes nuvens.",
+  "Clientes pequenos trocam de fornecedor com facilidade.",
+  "Investimento alto em GPUs.",
+  "Dependência da demanda de IA."
+ ],
+ "momento": "No 3T26 (divulgado em 03/11/2026), a receita subiu 40%, para US$ 321,2 mi, com forte aceleração de clientes de IA, e a empresa elevou a projeção de 2026; o CEO é Paddy Srinivasan.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-03",
+  "positivos": [
+   "Receita subiu 40%.",
+   "Receita recorrente de IA subiu 288%.",
+   "Margem de Ebitda ajustada de 45%."
+  ],
+  "negativos": [
+   "Prejuízo contábil pela recompra de dívida conversível."
+  ],
+  "atencao": [
+   "Investimento em capacidade de GPUs.",
+   "Crescimento previsto para 2027."
+  ]
+ },
+ "fontes": [
+  {"titulo": "DigitalOcean: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1582961/000162828026069125/a2026-q3dopressrelease.htm", "data": "2026-11-03"},
+  {"titulo": "Crypto Briefing: DigitalOcean posts $321M Q3 revenue, up 40%", "url": "https://cryptobriefing.com/digitalocean-q3-revenue-321m-ai-growth/", "data": "2026-11"},
+  {"titulo": "Webull: DigitalOcean delivers strong Q3 2026 numbers", "url": "https://www.webull.com/news/15859914144572416", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

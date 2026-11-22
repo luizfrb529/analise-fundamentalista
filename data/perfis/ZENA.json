@@ -1,0 +1,66 @@
+{
+ "ticker": "ZENA",
+ "revisado_em": "2026-11-22",
+ "resumo": "Pequena empresa canadense de drones e software que cresce comprando empresas tradicionais de topografia e inspeção e passando a usar drones nelas. Receita em forte alta, mas prejuízo grande, caixa curto e diluição constante.",
+ "modelo": "A ZenaTech compra pequenas empresas de levantamento topográfico, inspeção e serviços nos EUA e no Canadá e as integra ao seu serviço de drones sob demanda (Drone as a Service), que já é mais de 90% da receita. Também desenvolve drones próprios (ZenaDrone 1000, IQ Square) e vende software corporativo.",
+ "segmentos": [
+  {"nome": "Drones como serviço", "peso_receita": 0.92, "periodo": "2T26", "obs": "Receita vinda principalmente das empresas de topografia compradas."},
+  {"nome": "Software corporativo", "peso_receita": 0.08, "periodo": "2T26", "obs": "Cerca de C$ 1,2 mi."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Vancouver (Canadá); operações nos EUA e no Canadá."},
+ "temas": [
+  {"tema": "Drones", "relacao": "Usa drones para topografia, inspeção e agricultura, mas os drones próprios ainda são usados em menos de 5% dos levantamentos, segundo a empresa."},
+  {"tema": "Consolidação por aquisições", "relacao": "Já comprou duas dezenas de pequenas empresas de topografia para formar sua rede de serviços."}
+ ],
+ "diferencial": {
+  "texto": "A estratégia de comprar empresas tradicionais e acrescentar drones é original, mas não cria barreira de entrada: as empresas compradas são pequenas e regionais, os drones próprios ainda têm uso mínimo e há muitos concorrentes em drones e em topografia. A empresa ainda não mostrou lucro nem vantagem tecnológica clara.",
+  "vantagem": {"nivel": "nenhuma clara", "resumo": "Cresce comprando pequenas empresas de topografia, mas sem tecnologia própria relevante nem barreira de entrada visível."},
+  "concorrentes": ["DroneUp", "Red Cat", "AgEagle", "Ondas", "Empresas locais de topografia"]
+ },
+ "potencial": {
+  "texto": "O potencial vem de continuar comprando e integrando empresas e de aumentar o uso de drones próprios. Segundo a empresa, a receita preliminar do 3T26 deve ficar entre C$ 13,4 mi e C$ 14,8 mi. A empresa não traz projeção anual.",
+  "metricas": [
+   {"rotulo": "Receita do semestre", "valor": "C$ 17,7 mi (+425%)", "periodo": "1S26"},
+   {"rotulo": "Receita preliminar estimada", "valor": "C$ 13,4 mi a C$ 14,8 mi", "periodo": "3T26"},
+   {"rotulo": "Caixa", "valor": "C$ 12,2 mi", "periodo": "jun/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo e queima de caixa",
+  "texto": "Prejuízo de C$ 49,1 mi no 1S26, muito acima da receita de C$ 17,7 mi. O caixa era de apenas C$ 12,2 mi em junho, com C$ 21,9 mi em empréstimos; a empresa depende de vendas contínuas de ações no mercado, que somaram C$ 65,4 mi no semestre e diluem os acionistas.",
+  "caixa": "C$ 12,2 mi",
+  "queima_anual": null,
+  "periodo": "jun/2026"
+ },
+ "riscos": [
+  "Diluição constante por venda de ações.",
+  "Caixa curto frente ao prejuízo.",
+  "Execução da integração das aquisições.",
+  "Concorrência em drones e topografia."
+ ],
+ "momento": "No 2T26 (divulgado em 24/09/2026), a receita subiu 316%, para C$ 9,3 mi, com novas aquisições, mas o prejuízo foi de C$ 22,5 mi; o resultado do 3T26 ainda não foi divulgado.",
+ "destaques_resultado": {
+  "trimestre": "2T26",
+  "divulgado_em": "2026-09-24",
+  "positivos": [
+   "Receita subiu 316%.",
+   "Sétimo trimestre seguido de crescimento."
+  ],
+  "negativos": [
+   "Prejuízo de C$ 22,5 mi.",
+   "Forte diluição dos acionistas."
+  ],
+  "atencao": [
+   "Resultado do 3T26.",
+   "Necessidade de novos financiamentos."
+  ]
+ },
+ "fontes": [
+  {"titulo": "ZenaTech: demonstrações do 2T26 (6-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1997403/000137647426000616/zt_ex99z1.htm", "data": "2026-09-24"},
+  {"titulo": "ZenaTech: relatório da administração do 2T26 (6-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1997403/000137647426000616/zt_ex99z2.htm", "data": "2026-09-24"},
+  {"titulo": "Pulse 2.0: ZenaTech reports Q2 revenue of C$9.3 million, up 316%", "url": "https://pulse2.com/zenatech-reports-q2-revenue-of-c9-3-million-up-316/", "data": "2026-09"},
+  {"titulo": "Panabee: ZenaTech Q2 earnings, rapid scale via M&A vs. liquidity pressure", "url": "https://www.panabee.com/news/zenatech-earnings-q3-2026", "data": "2026-09"}
+ ],
+ "ultimo_resultado": "2T26"
+}

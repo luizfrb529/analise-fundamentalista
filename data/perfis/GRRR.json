@@ -1,0 +1,64 @@
+{
+ "ticker": "GRRR",
+ "revisado_em": "2026-11-22",
+ "resumo": "Empresa de origem taiwanesa, com sede em Londres, de software de vídeo com IA, cidades inteligentes e segurança, que passou a construir infraestrutura de data centers de IA para governos e grandes clientes. Receita em forte alta, mas margem baixa e prejuízo.",
+ "modelo": "A Gorilla vende projetos de tecnologia para governos e empresas: análise de vídeo com IA, cibersegurança, redes e cidades inteligentes, em países como Taiwan, Tailândia e Egito. Agora ganha principalmente construindo e entregando infraestrutura de computação de IA, como o contrato Yotta, o que traz receita grande mas margem baixa.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 69,5 mi no 3T26 (+163%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Londres (Reino Unido), origem e operação em Taiwan; projetos na Ásia, Oriente Médio e outros mercados."},
+ "temas": [
+  {"tema": "Infraestrutura de IA", "relacao": "O contrato Yotta, de construção de infraestrutura de computação de IA, puxou o crescimento e deve gerar boa parte da receita de 2027."},
+  {"tema": "Cidades inteligentes e segurança", "relacao": "Vende análise de vídeo com IA e cibersegurança para governos em Taiwan, Tailândia e Egito."}
+ ],
+ "diferencial": {
+  "texto": "A Gorilla tem relacionamento com governos e experiência em projetos de vídeo com IA, mas grande parte da receita agora vem de montar infraestrutura de computação, atividade de margem baixa e sem barreira de entrada relevante. A margem bruta de 12,8% e o prejuízo mostram que a empresa ainda não tem poder de preço.",
+  "vantagem": {"nivel": "nenhuma clara", "resumo": "Relacionamento com governos, mas a receita vem cada vez mais de montar infraestrutura de IA, atividade de margem baixa sem barreira clara."},
+  "concorrentes": ["Hikvision", "Motorola Solutions", "Palantir", "Super Micro", "Integradores locais"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ser de pelo menos US$ 200 mi e a de 2027 entre US$ 450 mi e US$ 500 mi, puxada pelas fases do contrato Yotta. O potencial depende da entrega dos projetos e da melhora da margem.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "ao menos US$ 200 mi", "periodo": "2026"},
+   {"rotulo": "Meta de receita", "valor": "US$ 450 mi a US$ 500 mi", "periodo": "2027"},
+   {"rotulo": "Margem bruta", "valor": "12,8%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo de US$ 16,6 mi no 3T26 e Ebitda ajustado negativo de US$ 6,2 mi. O caixa caiu de US$ 179,4 mi em junho para US$ 56,5 mi em setembro, após cerca de US$ 218 mi em investimentos, e a empresa emitiu notas conversíveis e bônus de subscrição em outubro, com risco de diluição.",
+  "caixa": "US$ 56,5 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Margem bruta muito baixa.",
+  "Caixa em queda e necessidade de financiamento.",
+  "Diluição por notas conversíveis.",
+  "Concentração no contrato Yotta."
+ ],
+ "momento": "No 3T26 (divulgado em 19/11/2026), a receita subiu 163%, para US$ 69,5 mi, acima da faixa esperada pela empresa, e a projeção de 2026 foi mantida, mas o caixa caiu com os investimentos.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-19",
+  "positivos": [
+   "Receita subiu 163%.",
+   "Margem bruta voltou a ser positiva.",
+   "Projeções de 2026 e 2027 mantidas."
+  ],
+  "negativos": [
+   "Prejuízo de US$ 16,6 mi.",
+   "Caixa caiu para US$ 56,5 mi."
+  ],
+  "atencao": [
+   "Entrega das fases do Yotta.",
+   "Novos financiamentos e diluição."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Gorilla: resultados do 3T26 (6-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1903145/000143774926037713/ex_1009886.htm", "data": "2026-11-19"},
+  {"titulo": "Gorilla: resultados do 1S26 (6-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1903145/000143774926028827/ex_974012.htm", "data": "2026-08-24"},
+  {"titulo": "Panabee: Gorilla Q3 revenue rises 163% to $69.5 million", "url": "https://www.panabee.com/news/gorilla-earnings-q3-2026", "data": "2026-11"},
+  {"titulo": "Stocktwits: Gorilla Tech flags hidden AI upside beyond guidance", "url": "https://stocktwits.com/news-articles/markets/equity/grrr-hidden-ai-upside-beyond-guidance-unannounced-wins/cZYk0nrRJ8a", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}
