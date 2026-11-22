@@ -1,0 +1,64 @@
+{
+ "ticker": "HD",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior varejista de materiais de construção e reformas do mundo, com lojas nos EUA, Canadá e México e forte presença entre profissionais da construção após comprar SRS e GMS. Lucrativa, mas com vendas fracas pelo mercado imobiliário parado.",
+ "modelo": "A Home Depot vende ferramentas, madeira, materiais, eletrodomésticos, jardinagem e decoração para consumidores que fazem reformas e para profissionais (empreiteiros, eletricistas, encanadores). Com as distribuidoras SRS (telhados, piscinas) e GMS (drywall, forros), ampliou a venda a profissionais com entrega no canteiro de obras.",
+ "segmentos": [],
+ "segmentos_base": "Vendas de US$ 43,4 bi no 4T26; a empresa não detalha por segmento no release",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Atlanta (EUA); cerca de 2.350 lojas nos EUA, Canadá e México, com a grande maioria nos EUA."},
+ "temas": [
+  {"tema": "Mercado imobiliário", "relacao": "Juros altos e poucas vendas de casas reduzem reformas grandes; o número de transações caiu 0,5% no trimestre."},
+  {"tema": "Clientes profissionais", "relacao": "As compras de SRS e GMS reforçam a venda a empreiteiros, mercado maior e mais fiel que o do consumidor."}
+ ],
+ "diferencial": {
+  "texto": "A Home Depot tem escala de compras, rede de lojas e logística que nenhum concorrente direto iguala, além da marca mais forte entre profissionais da construção, o que dá preços e disponibilidade melhores. Os pontos fracos são a dependência do mercado imobiliário e de juros, a concorrência da Lowe's e a dívida das aquisições.",
+  "vantagem": {"nivel": "forte", "resumo": "Escala de compras, rede de lojas e logística sem igual no setor, com marca forte entre os profissionais da construção."},
+  "concorrentes": ["Lowe's", "Menards", "Amazon", "Walmart", "Floor & Decor", "Builders FirstSource"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas do ano fiscal 2026 devem crescer cerca de 4,5%, com vendas comparáveis de cerca de 1,4%, e o lucro ajustado por ação cerca de 2%. A recuperação depende da queda dos juros e da volta das vendas de casas.",
+  "metricas": [
+   {"rotulo": "Crescimento das vendas projetado", "valor": "cerca de 4,5%", "periodo": "ano fiscal 2026"},
+   {"rotulo": "Vendas comparáveis", "valor": "+2,2%", "periodo": "4T26"},
+   {"rotulo": "Margem operacional", "valor": "12,6%", "periodo": "4T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 3,7 bi no trimestre (US$ 3,72 por ação; US$ 3,86 ajustado), alta de 3%. A empresa pagou cerca de US$ 7,0 bi em dividendos em nove meses e carrega dívida elevada das aquisições, com despesa de juros de cerca de US$ 2,2 bi por ano.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "nov/2026"
+ },
+ "riscos": [
+  "Mercado imobiliário fraco e juros altos.",
+  "Dívida das aquisições.",
+  "Concorrência da Lowe's.",
+  "Tarifas de importação."
+ ],
+ "momento": "No trimestre encerrado em novembro (4T26 no calendário, 3T fiscal da empresa, divulgado em 17/11/2026), as vendas subiram 4,9%, para US$ 43,4 bi, com vendas comparáveis de 2,2%, e a empresa ajustou a projeção do ano; anunciou também troca no comando, segundo o release.",
+ "destaques_resultado": {
+  "trimestre": "4T26",
+  "divulgado_em": "2026-11-17",
+  "positivos": [
+   "Vendas de US$ 43,4 bi, alta de 4,9%.",
+   "Ticket médio subiu 3%.",
+   "Lucro ajustado por ação subiu 3,2%."
+  ],
+  "negativos": [
+   "Transações caíram 0,5%.",
+   "Margem operacional caiu para 12,6%."
+  ],
+  "atencao": [
+   "Juros e vendas de casas.",
+   "Integração da GMS."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Home Depot: resultados do 3T fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000184/hd_exhibit991x11012026.htm", "data": "2026-11-17"},
+  {"titulo": "Finviz: Home Depot reports 4.9% third-quarter sales growth", "url": "https://finviz.com/news/424013/home-depot-reports-49-third-quarter-sales-growth-to-434-billion-and-revises-2026-earnings-outlook", "data": "2026-11-17"},
+  {"titulo": "24/7 Wall St.: Home Depot Q3 2026 earnings", "url": "https://247wallst.com/cards/home-depot-q3-2026-earnings-hd-01m7mjv9xejjvk67q5cda1re5j", "data": "2026-11"},
+  {"titulo": "Panabee: Home Depot earnings Q3 2026", "url": "https://www.panabee.com/news/home-depot-earnings-q3-2026", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "4T26"
+}

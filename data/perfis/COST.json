@@ -1,0 +1,66 @@
+{
+ "ticker": "COST",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior rede de clubes de compras do mundo, que vende grandes volumes com margem mínima e ganha principalmente com as anuidades de 84 milhões de sócios pagantes. Muito lucrativa e conhecida pela fidelidade dos clientes, com renovação de 92% nos EUA e Canadá.",
+ "modelo": "A Costco cobra anuidade dos sócios e vende uma seleção limitada de produtos em grandes embalagens, com preços muito baixos e margem bruta pequena; a anuidade responde por grande parte do lucro. Opera 945 armazéns no mundo, além de postos de gasolina, farmácias, viagens e comércio eletrônico. A marca própria Kirkland é um diferencial.",
+ "segmentos": [
+  {"nome": "Vendas nos armazéns e online", "peso_receita": 0.98, "periodo": "3T26", "obs": "US$ 93,9 bi no trimestre de 16 semanas, alta de 11,2%."},
+  {"nome": "Anuidades", "peso_receita": 0.02, "periodo": "3T26", "obs": "US$ 1,85 bi, alta de 7,3%, mas parte grande do lucro."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Issaquah, Washington (EUA); 647 dos 939 armazéns ficam nos EUA e Porto Rico, com unidades no Canadá, México, Japão, Coreia, Reino Unido e outros."},
+ "temas": [
+  {"tema": "Consumo e inflação", "relacao": "Em períodos de preços altos, mais famílias buscam o clube; as vendas comparáveis subiram 6,7% sem gasolina e câmbio no trimestre."},
+  {"tema": "Comércio digital", "relacao": "As vendas comparáveis digitais cresceram cerca de 20% no ano fiscal."}
+ ],
+ "diferencial": {
+  "texto": "A Costco tem um ciclo difícil de copiar: escala de compras e poucos produtos permitem preços muito baixos, que atraem sócios fiéis, cujas anuidades financiam preços ainda menores. A renovação de 92% nos EUA e Canadá mostra a lealdade. Os pontos fracos são a avaliação de mercado alta, a margem bruta pequena e a concorrência do Sam's Club e da Amazon.",
+  "vantagem": {"nivel": "forte", "resumo": "Ciclo de escala, poucos produtos e preços muito baixos, financiado por anuidades de sócios muito fiéis (92% de renovação nos EUA e Canadá)."},
+  "concorrentes": ["Walmart (Sam's Club)", "BJ's Wholesale", "Amazon", "Target", "Kroger", "Aldi"]
+ },
+ "potencial": {
+  "texto": "O crescimento vem da abertura de novos armazéns, do aumento de sócios e do comércio digital. A empresa não dá projeções, mas declarou dividendo especial de US$ 30 por ação, cerca de US$ 13,3 bi, pago em 04/12/2026, e renovou recompra de US$ 4 bi.",
+  "metricas": [
+   {"rotulo": "Sócios pagantes", "valor": "84,1 milhões (+3,8%)", "periodo": "ago/2026"},
+   {"rotulo": "Taxa de renovação EUA e Canadá", "valor": "92,3%", "periodo": "ago/2026"},
+   {"rotulo": "Dividendo especial", "valor": "US$ 30 por ação", "periodo": "dez/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 3,0 bi no trimestre (US$ 6,75 por ação), alta de 15%, e de US$ 9,2 bi no ano fiscal 2026 (US$ 20,76 por ação). O caixa elevado permitiu o dividendo especial de cerca de US$ 13,3 bi, além do dividendo trimestral de US$ 1,47.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Avaliação de mercado alta.",
+  "Margem bruta muito pequena.",
+  "Concorrência do Sam's Club e da Amazon.",
+  "Tarifas de importação."
+ ],
+ "momento": "No trimestre encerrado em agosto (3T26 no calendário, 4T fiscal da empresa, divulgado em 24/09/2026), as vendas subiram 11,2%, para US$ 93,9 bi, e o lucro 15%; em novembro a empresa declarou dividendo especial de US$ 30 por ação, o maior de sua história, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-24",
+  "positivos": [
+   "Lucro de US$ 3,0 bi, alta de 15%.",
+   "Vendas comparáveis +6,7% sem gasolina e câmbio.",
+   "Dividendo especial de US$ 30 por ação."
+  ],
+  "negativos": [
+   "Parte do lucro veio de restituição pontual de tarifas."
+  ],
+  "atencao": [
+   "Resultado do trimestre até novembro, em dezembro.",
+   "Abertura de novos armazéns."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Costco: resultados do 4T fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000084/costex9918-k92426.htm", "data": "2026-09-24"},
+  {"titulo": "Costco: dividendo especial de US$ 30 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000134/costex9918-k111026.htm", "data": "2026-11-10"},
+  {"titulo": "investingLive: Costco declares $30 special dividend worth $13.3 billion", "url": "https://investinglive.com/stocks/costco-declares-30-special-dividend-worth-13-3-billion-renews-4-billion-buyback/", "data": "2026-11"},
+  {"titulo": "TIKR: Costco's $30 special is double its 2024 payout", "url": "https://www.tikr.com/blog/costcos-30-special-is-double-its-2024-payout-its-cash-pile-grew-6-billion-in-a-year", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

@@ -1,0 +1,68 @@
+{
+ "ticker": "WMT",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior varejista do mundo, com supermercados e hipermercados nos EUA, o clube de compras Sam's Club e operações internacionais (México, Flipkart na Índia, China). Lucrativo, com comércio eletrônico crescendo 17% e publicidade virando fonte relevante de lucro.",
+ "modelo": "O Walmart vende alimentos, itens de casa e mercadorias gerais a preços baixos, com enorme poder de compra e logística. Ganha cada vez mais com negócios de margem alta sobre essa base: comércio eletrônico e entrega rápida, publicidade para fornecedores (Walmart Connect), assinaturas (Walmart+ e Sam's Club) e marketplace.",
+ "segmentos": [
+  {"nome": "Walmart EUA", "peso_receita": 0.67, "periodo": "4T26", "obs": "Vendas comparáveis +2,9%; comércio eletrônico +23%; publicidade +37%."},
+  {"nome": "Walmart Internacional", "peso_receita": 0.19, "periodo": "4T26", "obs": "US$ 35,9 bi, alta de 7,0%."},
+  {"nome": "Sam's Club EUA", "peso_receita": 0.14, "periodo": "4T26", "obs": "US$ 25,9 bi, alta de 10%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": 0.81, "exterior_pct": 0.19, "periodo": "4T26", "texto": "Sede em Bentonville, Arkansas (EUA); operações internacionais no México, Canadá, China, Índia (Flipkart) e outros países."},
+ "temas": [
+  {"tema": "Comércio eletrônico e entregas", "relacao": "O comércio eletrônico global cresceu 17% e o da Sam's Club 30%, com entregas cada vez mais rápidas a partir das lojas."},
+  {"tema": "Publicidade no varejo", "relacao": "A publicidade nos EUA cresceu 37%, negócio de margem alta que ajuda o lucro a crescer mais que as vendas."}
+ ],
+ "diferencial": {
+  "texto": "O Walmart tem escala de compras e logística incomparável, com cerca de 90% dos americanos morando perto de uma loja, o que permite preços baixos e entregas rápidas; sobre essa base cria negócios de margem alta como publicidade e assinaturas. Os pontos fracos são as margens baixas do varejo, a concorrência da Amazon e da Costco e a sensibilidade a tarifas de importação.",
+  "vantagem": {"nivel": "forte", "resumo": "Escala de compras e logística incomparável, com lojas perto de quase todos os americanos, que sustentam preços baixos e negócios de alta margem."},
+  "concorrentes": ["Amazon", "Costco", "Target", "Kroger", "Aldi", "Mercado Livre (México)"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas do ano fiscal 2027 (fevereiro de 2026 a janeiro de 2027) devem crescer de 4,9% a 5,2% a câmbio constante, com lucro ajustado de US$ 2,84 a US$ 2,89 por ação, segunda elevação da projeção no ano. O crescimento do lucro vem de publicidade, comércio eletrônico e assinaturas.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 2,84 a US$ 2,89 por ação", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Crescimento do comércio eletrônico", "valor": "17%", "periodo": "4T26"},
+   {"rotulo": "Crescimento da publicidade", "valor": "25% (EUA 37%)", "periodo": "4T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro ajustado de US$ 0,65 por ação no trimestre (US$ 0,62 contábil), com lucro operacional de US$ 7,8 bi (+16%). A empresa recomprou US$ 7,8 bi em ações no ano e tem US$ 22,4 bi autorizados, além de pagar dividendos crescentes.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "out/2026"
+ },
+ "riscos": [
+  "Margens baixas do varejo.",
+  "Tarifas de importação.",
+  "Concorrência da Amazon.",
+  "Desaceleração do consumo."
+ ],
+ "momento": "No trimestre encerrado em outubro (4T26 no calendário, 3T27 fiscal da empresa, divulgado em 19/11/2026), a receita subiu 5,2%, para US$ 188,8 bi, acima do esperado, e a empresa elevou a projeção do ano pela segunda vez; o CEO é John Furner.",
+ "destaques_resultado": {
+  "trimestre": "4T26",
+  "divulgado_em": "2026-11-19",
+  "positivos": [
+   "Receita de US$ 188,8 bi, alta de 5,2%.",
+   "Comércio eletrônico nos EUA cresceu 23%.",
+   "Projeção do ano elevada."
+  ],
+  "negativos": [
+   "Lucro da Sam's Club caiu 15,8%.",
+   "Publicidade internacional caiu pelo calendário de vendas da Flipkart."
+  ],
+  "atencao": [
+   "Vendas de fim de ano.",
+   "Efeito das tarifas nas margens."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Walmart: resultados do 3T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningsreleasefy27q3.htm", "data": "2026-11-19"},
+  {"titulo": "FashionUnited: strong ecommerce and ad sales drive Walmart's Q3 revenue growth", "url": "https://fashionunited.com/news/business/strong-ecommerce-and-ad-sales-drive-walmarts-q3-revenue-growth-and-guidance-upgrade/2026111975860", "data": "2026-11-19"},
+  {"titulo": "Supermarket News: Walmart raises full-year outlook", "url": "https://www.supermarketnews.com/finance/walmart-raises-full-year-outlook-after-strong-third-quarter-sales-ecommerce-growth", "data": "2026-11"},
+  {"titulo": "PPC Land: Walmart's global ad growth drops to 25% as Flipkart's sale slips a quarter", "url": "https://ppc.land/walmarts-global-ad-growth-drops-to-25-as-flipkarts-sale-slips-a-quarter/", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "4T26"
+}

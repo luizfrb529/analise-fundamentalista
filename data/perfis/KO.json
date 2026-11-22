@@ -1,0 +1,64 @@
+{
+ "ticker": "KO",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior empresa de bebidas não alcoólicas do mundo, dona de Coca-Cola, Sprite, Fanta, Powerade, sucos e águas, vendidas em mais de 200 países. Muito lucrativa, com margem operacional acima de 30% e dividendos crescentes há décadas.",
+ "modelo": "A Coca-Cola vende principalmente concentrado e xaropes a engarrafadoras parceiras, que fabricam, distribuem e vendem as bebidas, modelo leve em capital e de margem alta. Investe em marcas e marketing e, aos poucos, vende as engarrafadoras que ainda controla (como a da África).",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 13,4 bi no 4T26; a empresa reporta por região",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Atlanta (EUA); a maior parte da receita vem de fora dos EUA, com forte presença na América Latina, inclusive o Brasil, Europa e Ásia."},
+ "temas": [
+  {"tema": "Consumo global", "relacao": "O volume de bebidas cresceu 5% no trimestre, com ganhos em várias regiões."},
+  {"tema": "Câmbio", "relacao": "O dólar mais fraco ajudou o lucro comparável a crescer 11% no trimestre."}
+ ],
+ "diferencial": {
+  "texto": "A Coca-Cola tem uma das marcas mais valiosas do mundo e a maior rede de distribuição de bebidas, presente em praticamente todo ponto de venda, o que é quase impossível de replicar. O modelo de vender concentrado dá margens altas com pouco capital. Os pontos fracos são o crescimento lento, a pressão contra bebidas açucaradas e a exposição ao câmbio de mercados emergentes.",
+  "vantagem": {"nivel": "forte", "resumo": "Uma das marcas mais valiosas do mundo e a maior rede de distribuição de bebidas, presente em quase todo ponto de venda, com modelo de baixo capital."},
+  "concorrentes": ["PepsiCo", "Keurig Dr Pepper", "Monster Beverage", "Nestlé", "Danone", "Red Bull"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita orgânica de 2026 deve crescer pelo menos 5% e o lucro comparável por ação pelo menos 11%, com fluxo de caixa livre de pelo menos US$ 13 bi; a projeção foi elevada. A venda da engarrafadora da África deve reduzir receita e lucro comparáveis em 2027.",
+  "metricas": [
+   {"rotulo": "Crescimento orgânico projetado", "valor": "pelo menos 5%", "periodo": "2026"},
+   {"rotulo": "Fluxo de caixa livre projetado", "valor": "pelo menos US$ 13 bi", "periodo": "2026"},
+   {"rotulo": "Margem operacional", "valor": "33,4%", "periodo": "4T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 0,93 por ação no trimestre (US$ 0,91 comparável, alta de 11%), com receita de US$ 13,4 bi (+7%) e margem operacional de 33,4%. A geração de caixa livre foi de US$ 11,4 bi em nove meses, e a empresa paga dividendos crescentes há décadas.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "out/2026"
+ },
+ "riscos": [
+  "Pressão contra bebidas açucaradas.",
+  "Câmbio de mercados emergentes.",
+  "Custos de insumos e embalagens.",
+  "Crescimento lento."
+ ],
+ "momento": "No trimestre encerrado em outubro (4T26 no calendário, 3T da empresa, divulgado em 27/10/2026), a receita orgânica subiu 7% e o lucro comparável 11%, acima do esperado, e a empresa elevou a projeção do ano; o CEO é Henrique Braun.",
+ "destaques_resultado": {
+  "trimestre": "4T26",
+  "divulgado_em": "2026-10-27",
+  "positivos": [
+   "Receita orgânica subiu 7%.",
+   "Volume cresceu 5%.",
+   "Projeção de 2026 elevada."
+  ],
+  "negativos": [
+   "Parte das vendas foi antecipação de embarques.",
+   "Venda da engarrafadora africana reduzirá resultados em 2027."
+  ],
+  "atencao": [
+   "Volume no quarto trimestre, que tem seis dias a menos.",
+   "Efeito do câmbio."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Coca-Cola: resultados do 3T26 da empresa (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026067403/a2026q3earningsreleaseex-9.htm", "data": "2026-10-27"},
+  {"titulo": "Food Business News: Speed and discipline paying off for Coca-Cola", "url": "https://www.foodbusinessnews.net/articles/31270-speed-and-discipline-paying-off-for-coca-cola", "data": "2026-10"},
+  {"titulo": "Finviz: Coca-Cola raises 2026 earnings outlook after Q3 beat", "url": "https://finviz.com/news/408889/coca-cola-raises-2026-earnings-outlook-after-q3-revenue-and-profit-exceed-estimates", "data": "2026-10"},
+  {"titulo": "StockStory: KO Q3 deep dive, broad-based volume gains", "url": "https://stockstory.org/us/stocks/nyse/ko/news/earnings-call/ko-q3-deep-dive-broad-based-volume-gains-and-disciplined-margin-expansion-amid-cost-pressures", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "4T26"
+}
