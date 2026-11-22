@@ -1,0 +1,66 @@
+{
+ "ticker": "ZTS",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior empresa de saúde animal do mundo, com remédios, vacinas e diagnósticos para pets e animais de produção. Muito lucrativa, mas com vendas para cães e gatos em queda nos EUA em 2026 pela concorrência.",
+ "modelo": "A Zoetis desenvolve e vende medicamentos (antiparasitários, dermatológicos, anti-inflamatórios para dor), vacinas e diagnósticos para cães, gatos, bovinos, suínos, aves e peixes, a veterinários, distribuidores e produtores rurais em mais de cem países.",
+ "segmentos": [
+  {"nome": "Animais de companhia", "peso_receita": 0.66, "periodo": "3T26", "obs": "Receita de US$ 1,57 bi (-5%)."},
+  {"nome": "Animais de produção", "peso_receita": 0.34, "periodo": "3T26", "obs": "Receita de US$ 797 mi (+7%)."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": 0.50, "exterior_pct": 0.50, "periodo": "3T26", "texto": "Sede em Parsippany, Nova Jersey (EUA); vendas em mais de cem países."},
+ "temas": [
+  {"tema": "Saúde animal e pets", "relacao": "A receita com cães e gatos nos EUA caiu 8%, com consumidores sensíveis a preço e concorrência em dermatologia e genéricos, segundo a imprensa."},
+  {"tema": "Agropecuária", "relacao": "Animais de produção cresceram 7%, compensando parte da queda em pets."}
+ ],
+ "diferencial": {
+  "texto": "A Zoetis tem o maior portfólio de saúde animal do mundo, marcas líderes, a maior força de vendas junto a veterinários e um setor com barreiras regulatórias e pouca pressão de planos de saúde. Mas alguns produtos de sucesso enfrentam agora concorrência e genéricos, e a demanda de pets está fraca.",
+  "vantagem": {"nivel": "forte", "resumo": "Maior portfólio de saúde animal do mundo, marcas líderes e a maior força de vendas junto a veterinários, em setor com barreiras regulatórias."},
+  "concorrentes": ["Elanco", "Merck Animal Health", "Boehringer Ingelheim", "IDEXX (diagnósticos)", "Fabricantes de genéricos"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 9,22 bi e US$ 9,32 bi, queda orgânica de 1% a 2%, com lucro ajustado de US$ 6,25 a US$ 6,35 por ação, acima da projeção anterior. O potencial vem de novos produtos e da agropecuária.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 9,22 bi a US$ 9,32 bi", "periodo": "2026"},
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 6,25 a US$ 6,35 por ação", "periodo": "2026"},
+   {"rotulo": "Receita internacional", "valor": "US$ 1,1 bi (+4%)", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 591 mi no 3T26 (US$ 1,44 por ação, -12%) e lucro ajustado de US$ 1,75 (+3%). A margem segue alta, típica do setor de saúde animal.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concorrência e genéricos em produtos-chave.",
+  "Consumidores reduzindo gastos com pets.",
+  "Segurança de produtos para dor.",
+  "Doenças em rebanhos."
+ ],
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita caiu 1%, para US$ 2,4 bi, com pets em queda e agropecuária em alta, e a empresa elevou a projeção de lucro de 2026; a CEO é Kristin Peck.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Lucro ajustado acima do esperado.",
+   "Agropecuária cresceu 7%.",
+   "Projeção de lucro elevada."
+  ],
+  "negativos": [
+   "Pets nos EUA caíram 8%.",
+   "Receita total caiu 1%."
+  ],
+  "atencao": [
+   "Concorrência em dermatologia.",
+   "Lançamentos de novos produtos."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Zoetis: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1555280/000155528026000048/exhibit99q32026.htm", "data": "2026-11-05"},
+  {"titulo": "Zoetis: announces third quarter 2026 results", "url": "https://investor.zoetis.com/news/news-details/2026/Zoetis-Announces-Third-Quarter-2026-Results-Highlights-Progress-Advancing-Innovation-Across-Diversified-Portfolio-and-Narrows-Full-Year-2026-Revenue-Guidance-Raises-Full-Year-2026-Adjusted-EPS-Guidance/default.aspx", "data": "2026-11-05"},
+  {"titulo": "Zacks: ZTS Q3 earnings call highlights competitive pressures and outlook", "url": "https://zacks.com/stock/news/3026485/zts-q3-earnings-call-highlights-competitive-pressures-and-outlook", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

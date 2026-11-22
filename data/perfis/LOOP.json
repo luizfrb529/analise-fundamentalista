@@ -1,0 +1,62 @@
+{
+ "ticker": "LOOP",
+ "revisado_em": "2026-11-22",
+ "resumo": "Pequena empresa canadense de tecnologia que despolimeriza plástico PET e fibras de poliéster para produzir resina reciclada com qualidade de nova. Receita mínima, caixa de apenas US$ 0,8 mi e dúvida declarada sobre a continuidade.",
+ "modelo": "A Loop licencia sua tecnologia de reciclagem química de PET e participa de joint ventures que constroem as fábricas: a Ester Loop Infinite, na Índia (50%), e a Infinite Loop Europe (10%, com a Reed Circular Economy). Ganha com licenças, serviços de engenharia e, no futuro, com a venda de resina.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 0,12 mi no trimestre fiscal até ago/2026, de serviços à joint venture na Índia",
+ "geografia": {"eua_pct": 0.0, "exterior_pct": 1.0, "periodo": "3T26", "texto": "Sede em Terrebonne, Quebec (Canadá); projetos na Índia e na Europa."},
+ "temas": [
+  {"tema": "Reciclagem e economia circular", "relacao": "Reduziu a primeira fábrica na Índia para 45 mil toneladas por ano, com custo de US$ 165 mi a US$ 170 mi, para facilitar o financiamento."},
+  {"tema": "Regulação europeia de embalagens", "relacao": "Novas regras europeias de conteúdo reciclado a partir de 2028 podem aumentar a demanda por resina reciclada."}
+ ],
+ "diferencial": {
+  "texto": "A Loop tem tecnologia patenteada de despolimerização de PET a baixa temperatura, capaz de reciclar materiais de baixa qualidade. Mas ainda não tem nenhuma fábrica comercial em operação, a receita é mínima, o caixa é muito curto e há concorrentes maiores em reciclagem química, sem vantagem comprovada.",
+  "vantagem": {"nivel": "nenhuma clara", "resumo": "Tecnologia patenteada de reciclagem de PET, mas sem fábrica comercial em operação, com receita mínima e caixa muito curto."},
+  "concorrentes": ["Eastman", "Carbios", "Indorama Ventures", "Alpek", "Recicladoras mecânicas"]
+ },
+ "potencial": {
+  "texto": "O potencial depende de financiar e construir a fábrica da Índia, prevista para operar em 2028, e o projeto na Europa. Um comitê especial avalia opções de financiamento, mas a empresa não garante resultado.",
+  "metricas": [
+   {"rotulo": "Liquidez total", "valor": "US$ 1,9 mi", "periodo": "ago/2026"},
+   {"rotulo": "Capacidade da fábrica na Índia", "valor": "45 mil t/ano", "periodo": "prevista para 2028"},
+   {"rotulo": "Prejuízo no semestre", "valor": "US$ 6,4 mi", "periodo": "1S fiscal 2027"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo e queima de caixa",
+  "texto": "Prejuízo de US$ 3,0 mi no trimestre e caixa de apenas US$ 0,8 mi em agosto, com liquidez total de US$ 1,9 mi. A própria empresa declara dúvida relevante sobre sua continuidade e recebeu aviso da Nasdaq por valor de mercado abaixo do mínimo.",
+  "caixa": "US$ 0,8 mi",
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Dúvida sobre a continuidade da empresa.",
+  "Possível saída da Nasdaq.",
+  "Diluição por novas emissões.",
+  "Falta de financiamento para as fábricas."
+ ],
+ "momento": "No 2º tri fiscal 2027 (divulgado em 15/10/2026), a Loop reduziu o porte da fábrica da Índia, formou comitê para buscar financiamento e declarou dúvida sobre sua continuidade; em novembro, recebeu aviso da Nasdaq.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-15",
+  "positivos": [
+   "Custo da fábrica da Índia reduzido."
+  ],
+  "negativos": [
+   "Caixa de US$ 0,8 mi.",
+   "Alerta de continuidade."
+  ],
+  "atencao": [
+   "Financiamento da fábrica da Índia.",
+   "Prazo da Nasdaq até maio de 2027."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Loop Industries: 10-Q do 2º tri fiscal 2027 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1504678/000143774926032746/loop20260831_10q.htm", "data": "2026-10-15"},
+  {"titulo": "Loop Industries: comunicado de resultado (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1504678/000143774926032729/ex_991809.htm", "data": "2026-10-15"},
+  {"titulo": "Seeking Alpha: Loop Industries reports second quarter fiscal 2027 results", "url": "https://seekingalpha.com/pr/20688666", "data": "2026-10-15"},
+  {"titulo": "Panabee: Loop reports $1.9 million liquidity, shifts India strategy to 45 KTA", "url": "https://www.panabee.com/news/loop-earnings-q3-2026", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

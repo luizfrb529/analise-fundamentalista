@@ -1,0 +1,64 @@
+{
+ "ticker": "VJET",
+ "revisado_em": "2026-11-22",
+ "resumo": "Pequena empresa americana de aviação privada de curta distância com jatos Cirrus Vision Jet, que até 2026 se chamava Catheter Precision e atuava em equipamentos cardíacos. Receita pequena, prejuízo e caixa de US$ 2,4 mi.",
+ "modelo": "A Flyte Aviation vende voos fretados de curta distância em jatos leves Cirrus Vision Jet, operados pela subsidiária Ponderosa Air, com reserva direta pelo consumidor e por parceiros. Comprou a Fly Flyte em 2026 e está vendendo o antigo negócio de equipamentos cardíacos (VIVO e LockeT).",
+ "segmentos": [],
+ "segmentos_base": "Receita de aviação de US$ 1,84 mi no 3T26",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Fort Mill, Carolina do Sul (EUA); voos nos EUA, Canadá e Caribe."},
+ "temas": [
+  {"tema": "Aviação privada", "relacao": "Opera cinco jatos Cirrus Vision Jet e recebeu autorização para voos fretados nas Bahamas e no Caribe em setembro."},
+  {"tema": "Mudança de negócio", "relacao": "Trocou de nome e de sigla (de VTAK para VJET) em 05/10/2026, com grupamento de ações de 10 para 1."}
+ ],
+ "diferencial": {
+  "texto": "A Flyte aposta num nicho de voos privados curtos com jatos leves de custo mais baixo, mas tem frota pequena, receita mínima e concorre com operadoras muito maiores. A empresa acabou de mudar de negócio e não tem vantagem competitiva clara.",
+  "vantagem": {"nivel": "nenhuma clara", "resumo": "Nicho de voos privados curtos com jatos leves, mas com frota pequena, receita mínima e rivais muito maiores."},
+  "concorrentes": ["Wheels Up", "NetJets (Berkshire)", "flyExclusive", "Blade (Joby)", "Operadoras regionais de fretamento"]
+ },
+ "potencial": {
+  "texto": "O potencial depende de ampliar a frota, com três jatos previstos no 4T26, e a demanda por voos curtos, e de concluir a venda do negócio cardíaco para reduzir custos. A empresa não traz projeção numérica.",
+  "metricas": [
+   {"rotulo": "Receita de aviação", "valor": "US$ 1,84 mi", "periodo": "3T26"},
+   {"rotulo": "Caixa", "valor": "US$ 2,4 mi", "periodo": "set/2026"},
+   {"rotulo": "Ações em circulação após grupamento", "valor": "cerca de 2,1 milhões", "periodo": "out/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo e queima de caixa",
+  "texto": "Prejuízo de US$ 15,1 mi no 3T26, dos quais US$ 13,3 mi por baixa contábil; o prejuízo das operações continuadas foi de US$ 1,9 mi. Tem apenas US$ 2,4 mi em caixa e dívidas de cerca de US$ 6,2 mi, e fez grupamento de 10 para 1 em outubro.",
+  "caixa": "US$ 2,4 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Caixa muito curto.",
+  "Diluição por novas emissões.",
+  "Execução do novo negócio de aviação.",
+  "Concorrência de operadoras maiores."
+ ],
+ "momento": "No 3T26 (divulgado em 16/11/2026), o primeiro resultado como Flyte Aviation, a receita de aviação foi de US$ 1,84 mi e a empresa assinou carta de intenção para vender o negócio cardíaco até o fim de 2026.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-16",
+  "positivos": [
+   "Receita de aviação começou a aparecer.",
+   "Autorização para voos no Caribe."
+  ],
+  "negativos": [
+   "Prejuízo de US$ 15,1 mi.",
+   "Caixa de US$ 2,4 mi."
+  ],
+  "atencao": [
+   "Venda do negócio cardíaco.",
+   "Novas captações."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Flyte Aviation: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1716621/000143774926037257/ex_1046917.htm", "data": "2026-11-16"},
+  {"titulo": "Flyte Aviation: 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1716621/000143774926037231/vtak20260930_10q.htm", "data": "2026-11-16"},
+  {"titulo": "RTTNews: Catheter Precision rebrands as Flyte Aviation, ticker shifts to VJET", "url": "https://www.rttnews.com/3696323/catheter-precision-rebrands-as-flyte-aviation-ticker-shifts-to-vjet-effects-1-for-10-reverse-split.aspx", "data": "2026-10"},
+  {"titulo": "ch-aviation: Catheter Precision changes legal name to Flyte Aviation", "url": "https://www.ch-aviation.com/news/172495-uss-catheter-precision-changes-legal-name-to-flyte-aviation", "data": "2026-10"}
+ ],
+ "pendencias": ["Houve grupamento de 10 para 1 em 05/10/2026; conferir se a série de preços do site está ajustada."],
+ "ultimo_resultado": "3T26"
+}

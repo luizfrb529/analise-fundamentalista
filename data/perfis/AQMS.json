@@ -1,0 +1,62 @@
+{
+ "ticker": "AQMS",
+ "revisado_em": "2026-11-22",
+ "resumo": "Pequena empresa americana de reciclagem de baterias de lítio com tecnologia própria de refino por eletrólise (AquaRefining). Sem receita, caixa de apenas US$ 2,9 mi e dúvida declarada sobre a continuidade.",
+ "modelo": "A Aqua Metals desenvolve uma tecnologia que recupera lítio, níquel, cobalto e outros metais de baterias usadas com eletrólise, em vez de fornos ou ácidos fortes, e pretende ganhar vendendo esses metais e licenciando a tecnologia. Planeja a usina Project Headwaters ARC, ainda sem financiamento.",
+ "segmentos": [],
+ "segmentos_base": "Sem receita; empresa em fase de desenvolvimento",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Nevada (EUA)."},
+ "temas": [
+  {"tema": "Reciclagem de baterias e minerais críticos", "relacao": "Assinou cartas de intenção não vinculantes para vender carbonato de lítio e cobre e alumínio da futura usina."},
+  {"tema": "Pequenas empresas de capital aberto", "relacao": "Formou comitê para avaliar alternativas estratégicas e quer cortar mais 35% dos custos mensais."}
+ ],
+ "diferencial": {
+  "texto": "A tecnologia de refino por eletrólise da Aqua Metals promete menos emissões que os métodos tradicionais, mas não foi comprovada em escala comercial, a empresa não tem receita nem financiamento para a usina e enfrenta recicladoras maiores e capitalizadas. Não há vantagem competitiva clara.",
+  "vantagem": {"nivel": "nenhuma clara", "resumo": "Tecnologia de refino por eletrólise não comprovada em escala, sem receita nem financiamento, diante de recicladoras maiores."},
+  "concorrentes": ["Redwood Materials", "Li-Cycle (Glencore)", "Ascend Elements", "American Battery Technology", "Cirba Solutions"]
+ },
+ "potencial": {
+  "texto": "O potencial depende de conseguir financiamento para a usina Project Headwaters ARC ou de uma transação estratégica, como venda ou fusão. A empresa não traz projeção numérica.",
+  "metricas": [
+   {"rotulo": "Caixa", "valor": "US$ 2,9 mi", "periodo": "set/2026"},
+   {"rotulo": "Prejuízo em nove meses", "valor": "US$ 10,9 mi", "periodo": "9M26"},
+   {"rotulo": "Ações em circulação", "valor": "cerca de 3,6 milhões", "periodo": "nov/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo e queima de caixa",
+  "texto": "Prejuízo de US$ 2,4 mi no 3T26 e de US$ 10,9 mi em nove meses, sem receita. O caixa caiu de US$ 10,8 mi no fim de 2025 para US$ 2,9 mi, próximo das obrigações de curto prazo, e a empresa declara dúvida relevante sobre sua continuidade. Também provisionou US$ 2,5 mi de perda com a Lion Energy.",
+  "caixa": "US$ 2,9 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dúvida sobre a continuidade da empresa.",
+  "Falta de financiamento para a usina.",
+  "Diluição por novas emissões.",
+  "Perdas com a Lion Energy."
+ ],
+ "momento": "No 3T26 (divulgado em 16/11/2026), a empresa seguiu sem receita, com caixa de US$ 2,9 mi, formou um comitê para avaliar alternativas estratégicas e iniciou o fechamento do seu centro de inovação.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-16",
+  "positivos": [
+   "Cartas de intenção para vender os produtos da futura usina.",
+   "Corte de custos."
+  ],
+  "negativos": [
+   "Caixa de US$ 2,9 mi.",
+   "Alerta de continuidade."
+  ],
+  "atencao": [
+   "Resultado do comitê de alternativas estratégicas.",
+   "Financiamento da usina."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Aqua Metals: 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1621832/000143774926037167/aqms20260930_10q.htm", "data": "2026-11-16"},
+  {"titulo": "Aqua Metals: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1621832/000143774926037175/ex_997852.htm", "data": "2026-11-16"},
+  {"titulo": "Panabee: Aqua Metals forms transaction committee as cash falls to $2.9 million", "url": "https://www.panabee.com/news/aqua-metals-earnings-q3-2026", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}
