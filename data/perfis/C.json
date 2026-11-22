@@ -1,0 +1,70 @@
+{
+ "ticker": "C",
+ "revisado_em": "2026-11-22",
+ "resumo": "Banco americano mais global, líder em serviços de tesouraria e pagamentos para multinacionais, com mercados, banco de investimento, gestão de patrimônio e cartões. Em reestruturação há anos, com lucro em alta e retorno ainda abaixo dos rivais.",
+ "modelo": "O Citigroup ganha com serviços de tesouraria, câmbio, custódia e pagamentos para grandes empresas em mais de 90 países (Services), negociação de ações e renda fixa (Markets), assessoria (Banking), gestão de patrimônio (Wealth) e cartões de crédito nos EUA. Vem vendendo operações de varejo no exterior, como o Banamex no México.",
+ "segmentos": [
+  {"nome": "Serviços (tesouraria e custódia)", "peso_receita": 0.30, "periodo": "3T26", "obs": "US$ 6,6 bi, alta de 15%."},
+  {"nome": "Mercados", "peso_receita": 0.27, "periodo": "3T26", "obs": "US$ 6,1 bi, alta de 6%."},
+  {"nome": "Cartões nos EUA", "peso_receita": 0.21, "periodo": "3T26", "obs": "US$ 4,7 bi, estável."},
+  {"nome": "Gestão de patrimônio", "peso_receita": 0.15, "periodo": "3T26", "obs": "US$ 3,3 bi, alta de 15%."},
+  {"nome": "Banco de investimento", "peso_receita": 0.07, "periodo": "3T26", "obs": "US$ 1,7 bi, alta de 2%."}
+ ],
+ "segmentos_base": "Receita dos segmentos",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA), presente em mais de 90 países; boa parte da receita vem de fora dos EUA."},
+ "temas": [
+  {"tema": "Comércio global", "relacao": "A área de serviços para multinacionais cresceu 15%, com mais pagamentos internacionais e juros."},
+  {"tema": "Reestruturação", "relacao": "Concordou em vender 25% do Banamex e reduziu gastos de transformação; o CEO diz que o banco vai superar a meta de retorno de 2026."}
+ ],
+ "diferencial": {
+  "texto": "O Citi tem a rede bancária global mais ampla entre os bancos americanos, com licenças e infraestrutura de pagamentos em dezenas de países, difícil de replicar para atender multinacionais. Os pontos fracos são a rentabilidade abaixo dos rivais, a longa reestruturação, exigências regulatórias e a exposição a mercados emergentes.",
+  "vantagem": {"nivel": "moderada", "resumo": "Rede global de tesouraria e pagamentos para multinacionais em mais de 90 países, difícil de replicar, mas com rentabilidade abaixo dos rivais."},
+  "concorrentes": ["JPMorgan Chase", "HSBC", "Bank of America", "BNY", "Deutsche Bank", "Goldman Sachs"]
+ },
+ "potencial": {
+  "texto": "O potencial vem de elevar o retorno sobre patrimônio tangível, hoje em 11,5%, para a faixa sustentável de 14% a 15% citada pela administração, com corte de custos, crescimento em serviços e patrimônio e venda de ativos. O banco devolveu US$ 4,1 bi aos acionistas no trimestre.",
+  "metricas": [
+   {"rotulo": "Retorno sobre patrimônio tangível", "valor": "11,5%", "periodo": "3T26"},
+   {"rotulo": "Índice de capital (CET1)", "valor": "12,8%", "periodo": "set/2026"},
+   {"rotulo": "Valor patrimonial tangível por ação", "valor": "US$ 101,59", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 5,2 bi no 3T26 (US$ 2,85 por ação), alta de 40%, com receita de US$ 23,8 bi (+8%) e despesas em queda de 2%. O índice CET1 é de 12,8%, com folga para recompras.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Execução da reestruturação.",
+  "Exigências regulatórias.",
+  "Exposição a mercados emergentes.",
+  "Rentabilidade abaixo dos rivais."
+ ],
+ "momento": "No 3T26 (divulgado em 13/10/2026), a receita subiu 8%, para US$ 23,8 bi, e o lucro 40%, para US$ 5,2 bi, com serviços e patrimônio crescendo 15%, segundo o release e a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-13",
+  "positivos": [
+   "Lucro de US$ 5,2 bi, alta de 40%.",
+   "Serviços e patrimônio cresceram 15%.",
+   "Retorno subiu de 8,0% para 11,5%."
+  ],
+  "negativos": [
+   "Cartões estáveis.",
+   "Retorno ainda abaixo dos rivais."
+  ],
+  "atencao": [
+   "Venda de parte do Banamex.",
+   "Meta de retorno de longo prazo."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Citigroup: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/831001/000110465926115323/c-ex99d1.htm", "data": "2026-10-13"},
+  {"titulo": "Morningstar (Dow Jones): JPMorgan, Goldman profits jump as banks kick off earnings", "url": "https://www.morningstar.com/news/dow-jones/202610134282/jpmorgan-goldman-profits-jump-as-banks-kick-off-earnings", "data": "2026-10-13"},
+  {"titulo": "Stocktwits: JPM, Citi, Wells Fargo or Goldman, which big bank after Q3", "url": "https://stocktwits.com/news-articles/markets/equity/jpm-citi-wells-fargo-or-goldman-sachs-which-big-bank-is-the-better-buy-after-q3-results/cZxfWqERBpB", "data": "2026-10"},
+  {"titulo": "Citigroup: suplemento financeiro do 3T26 (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/831001/000110465926115323/c-ex99d2.htm", "data": "2026-10-13"}
+ ],
+ "ultimo_resultado": "3T26"
+}

@@ -1,0 +1,68 @@
+{
+ "ticker": "V",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior rede de pagamentos com cartão do mundo, que processa mais de 280 bilhões de transações por ano sem emprestar dinheiro nem assumir risco de crédito. Extremamente lucrativa, com receita de US$ 45,9 bi no ano fiscal.",
+ "modelo": "A Visa conecta bancos emissores de cartões, lojistas e seus bancos, cobrando pequenas taxas por volume pago, por transação processada e por operações internacionais. Não empresta dinheiro: o crédito e o risco ficam com os bancos. Vende também serviços de valor agregado, como prevenção a fraudes e dados.",
+ "segmentos": [
+  {"nome": "Processamento de dados", "peso_receita": 0.36, "periodo": "3T26", "obs": "US$ 6,2 bi, alta de 16% (antes de incentivos a clientes)."},
+  {"nome": "Serviços (volume pago)", "peso_receita": 0.30, "periodo": "3T26", "obs": "US$ 5,3 bi, alta de 14%."},
+  {"nome": "Transações internacionais", "peso_receita": 0.24, "periodo": "3T26", "obs": "US$ 4,1 bi, alta de 8%."},
+  {"nome": "Outros", "peso_receita": 0.10, "periodo": "3T26", "obs": "US$ 1,6 bi, alta de 40%."}
+ ],
+ "segmentos_base": "Receita bruta por tipo, antes de incentivos a clientes",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em San Francisco (EUA); opera em mais de 200 países, com boa parte da receita vinda de fora dos EUA."},
+ "temas": [
+  {"tema": "Pagamentos digitais", "relacao": "As transações processadas subiram 10% e os pagamentos internacionais 14%, com a migração do dinheiro em espécie para cartões e carteiras digitais."},
+  {"tema": "Prevenção a fraudes", "relacao": "Vai comprar a BioCatch, de biometria comportamental contra fraudes, por US$ 2,4 bi em dinheiro."}
+ ],
+ "diferencial": {
+  "texto": "A Visa tem um dos maiores efeitos de rede do mundo: bilhões de cartões aceitos por milhões de lojistas, o que torna a rede indispensável para bancos e comerciantes e muito difícil de replicar. Opera com margens altíssimas e sem risco de crédito. Os pontos fracos são a pressão regulatória e judicial sobre tarifas, a concorrência de pagamentos instantâneos (como o Pix) e de carteiras digitais.",
+  "vantagem": {"nivel": "forte", "resumo": "Efeito de rede gigante entre bilhões de cartões e milhões de lojistas, com margens altíssimas e sem risco de crédito."},
+  "concorrentes": ["Mastercard", "American Express", "PayPal", "Pix e pagamentos instantâneos", "UnionPay", "Apple Pay"]
+ },
+ "potencial": {
+  "texto": "Para o ano fiscal 2027 (outubro de 2026 a setembro de 2027), a empresa projeta crescimento da receita líquida ajustada na casa de dois dígitos baixos, segundo a imprensa. O crescimento vem de volume de pagamentos, pagamentos internacionais e serviços de valor agregado.",
+  "metricas": [
+   {"rotulo": "Receita do ano fiscal", "valor": "US$ 45,9 bi (+15%)", "periodo": "ano fiscal 2026"},
+   {"rotulo": "Transações processadas no ano", "valor": "281,3 bilhões", "periodo": "ano fiscal 2026"},
+   {"rotulo": "Recompras no ano", "valor": "US$ 20,5 bi", "periodo": "ano fiscal 2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 3,19 por ação no trimestre (US$ 3,48 ajustado, alta de 17%) e de US$ 12,32 no ano fiscal. A empresa recomprou US$ 20,5 bi em ações no ano, tem US$ 24,4 bi autorizados e elevou o dividendo em 16%, para US$ 0,78 por trimestre. Reservou US$ 1,7 bi no ano para processos sobre tarifas.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Processos e regulação sobre tarifas.",
+  "Concorrência de pagamentos instantâneos.",
+  "Desaceleração do consumo.",
+  "Dependência de viagens internacionais."
+ ],
+ "momento": "No trimestre encerrado em setembro (3T26 no calendário, 4T fiscal da empresa, divulgado em 27/10/2026), a receita subiu 13%, para US$ 12,1 bi, acima do esperado, e a empresa elevou o dividendo em 16%.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-27",
+  "positivos": [
+   "Receita de US$ 12,1 bi, alta de 13%.",
+   "Pagamentos internacionais cresceram 14%.",
+   "Dividendo elevado em 16%."
+  ],
+  "negativos": [
+   "Despesa de US$ 469 mi com processo de tarifas."
+  ],
+  "atencao": [
+   "Decisões sobre tarifas nos EUA.",
+   "Fechamento da compra da BioCatch."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Visa: resultados do 4T fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000126/q42026earningsrelease.htm", "data": "2026-10-27"},
+  {"titulo": "Zacks: Visa Q4 earnings beat estimates on strong payment volumes", "url": "https://www.zacks.com/stock/news/3017346/visa-q4-earnings-beat-estimates-on-strong-payment-volumes", "data": "2026-10"},
+  {"titulo": "Digital Transactions: Visa posts a robust final quarter to fiscal 2026", "url": "https://www.digitaltransactions.net/visa-posts-a-robust-final-quarter-to-fiscal-2026/", "data": "2026-10-28"},
+  {"titulo": "James Sharp: Visa Q4 and full year results", "url": "https://www.jamessharp.co.uk/market-news/visa-q4-full-year-results-2/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

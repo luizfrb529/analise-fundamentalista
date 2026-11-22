@@ -1,0 +1,69 @@
+{
+ "ticker": "WFC",
+ "revisado_em": "2026-11-22",
+ "resumo": "Um dos quatro grandes bancos dos EUA, focado em varejo, empresas e hipotecas, que voltou a crescer depois de ter o limite de ativos imposto pelo regulador retirado em 2025. Lucrativo, com empréstimos e depósitos crescendo 11%.",
+ "modelo": "O Wells Fargo ganha principalmente com juros de empréstimos a pessoas e empresas financiados por uma grande base de depósitos, e com tarifas de cartões, contas, banco de investimento e gestão de patrimônio. Por anos foi impedido de crescer pelo limite de ativos do Federal Reserve, retirado em 2025.",
+ "segmentos": [
+  {"nome": "Varejo e crédito ao consumidor", "peso_receita": 0.43, "periodo": "3T26", "obs": "Lucro de US$ 2,8 bi, alta de 21%."},
+  {"nome": "Banco corporativo e de investimento", "peso_receita": 0.30, "periodo": "3T26", "obs": "Lucro de US$ 1,9 bi."},
+  {"nome": "Banco comercial", "peso_receita": 0.18, "periodo": "3T26", "obs": "Lucro de US$ 1,2 bi."},
+  {"nome": "Gestão de patrimônio", "peso_receita": 0.09, "periodo": "3T26", "obs": "Lucro de US$ 603 mi, alta de 19%."}
+ ],
+ "segmentos_base": "Lucro líquido por segmento (antes de Corporate)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em San Francisco (EUA); a grande maioria da receita vem dos EUA."},
+ "temas": [
+  {"tema": "Fim do limite de ativos", "relacao": "Sem a restrição do regulador, os empréstimos e depósitos médios cresceram 11% em um ano."},
+  {"tema": "Juros nos EUA", "relacao": "A receita líquida de juros subiu 5%, para US$ 12,5 bi."}
+ ],
+ "diferencial": {
+  "texto": "O Wells Fargo tem uma das maiores redes de agências e bases de depósitos dos EUA, com custo de captação baixo, e agora pode voltar a crescer o balanço. Os pontos fracos são o histórico de escândalos e multas, a eficiência inferior à dos rivais e a sensibilidade a juros e ao crédito.",
+  "vantagem": {"nivel": "moderada", "resumo": "Grande rede de agências e base de depósitos com captação barata, mas com eficiência abaixo dos rivais e histórico de escândalos."},
+  "concorrentes": ["JPMorgan Chase", "Bank of America", "Citigroup", "U.S. Bancorp", "PNC", "Capital One"]
+ },
+ "potencial": {
+  "texto": "O crescimento vem do aumento do balanço após o fim do limite de ativos, de cartões, gestão de patrimônio e banco de investimento, e de ganhos de eficiência. O banco recompra ações. Não há projeção numérica no release.",
+  "metricas": [
+   {"rotulo": "Retorno sobre patrimônio tangível", "valor": "16,3%", "periodo": "3T26"},
+   {"rotulo": "Crescimento dos empréstimos médios", "valor": "11%", "periodo": "3T26"},
+   {"rotulo": "Índice de eficiência", "valor": "63%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 6,0 bi no 3T26 (US$ 1,87 por ação), alta de 6%, com receita de US$ 21,9 bi (+2%), abaixo do esperado. As provisões para perdas subiram para US$ 1,0 bi. O índice CET1 caiu para 10,0% com o crescimento e as recompras (US$ 2,5 bi no trimestre).",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Inadimplência em alta.",
+  "Queda de juros.",
+  "Capital mais justo com o crescimento.",
+  "Riscos regulatórios e de reputação."
+ ],
+ "momento": "No 3T26 (divulgado em 13/10/2026), o lucro por ação subiu 13%, para US$ 1,87, levemente acima do esperado, mas a receita de US$ 21,9 bi ficou abaixo das estimativas, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-13",
+  "positivos": [
+   "Lucro por ação subiu 13%.",
+   "Empréstimos e depósitos cresceram 11%.",
+   "Retorno subiu para 16,3%."
+  ],
+  "negativos": [
+   "Receita abaixo do esperado.",
+   "Provisões para perdas subiram."
+  ],
+  "atencao": [
+   "Qualidade do crédito.",
+   "Índice de capital em queda."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Wells Fargo: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000318/wfc3qer10-13x26ex991xrelea.htm", "data": "2026-10-13"},
+  {"titulo": "If You Spent: bank earnings results JPMorgan, Goldman, Citi, Wells", "url": "https://news.ifyouspent.com/en/news/bank-earnings-results-jpmorgan-goldman-citi-wells-october-2026", "data": "2026-10"},
+  {"titulo": "INDmoney: US bank earnings Q3 analysis", "url": "https://www.indmoney.com/blog/us-stocks/us-bank-earnings-q3-jpm-bac-gs-wfc-citi-blk-ms-stock-earnings-analysis", "data": "2026-10"},
+  {"titulo": "Stocktwits: which big bank is the better buy after Q3 results", "url": "https://stocktwits.com/news-articles/markets/equity/jpm-citi-wells-fargo-or-goldman-sachs-which-big-bank-is-the-better-buy-after-q3-results/cZxfWqERBpB", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

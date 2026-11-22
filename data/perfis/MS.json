@@ -1,0 +1,68 @@
+{
+ "ticker": "MS",
+ "revisado_em": "2026-11-22",
+ "resumo": "Um dos maiores bancos de investimento e a maior gestora de patrimônio de pessoas físicas dos EUA, com US$ 10,5 trilhões em ativos de clientes. Muito lucrativo, com retorno sobre patrimônio tangível de 22,6%.",
+ "modelo": "O Morgan Stanley ganha com gestão de patrimônio (assessores, plataformas digitais como E*Trade e planos de ações de funcionários), que cobra taxas recorrentes sobre os ativos dos clientes; com o banco de investimento (assessoria, emissões e negociação de ações e renda fixa); e com gestão de fundos.",
+ "segmentos": [
+  {"nome": "Banco de investimento e mercados", "peso_receita": 0.49, "periodo": "3T26", "obs": "US$ 10,0 bi; ações US$ 5,8 bi (+41%), renda fixa US$ 2,0 bi, assessoria US$ 2,2 bi."},
+  {"nome": "Gestão de patrimônio", "peso_receita": 0.44, "periodo": "3T26", "obs": "US$ 9,1 bi, recorde, alta de 10%; margem de 30,4%."},
+  {"nome": "Gestão de fundos", "peso_receita": 0.07, "periodo": "3T26", "obs": "US$ 1,5 bi, queda de 12%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA), com operações em Londres, Tóquio e outros centros financeiros; a gestão de patrimônio é sobretudo americana."},
+ "temas": [
+  {"tema": "Gestão de patrimônio", "relacao": "Captou US$ 232 bi em novos ativos líquidos no trimestre, quase o triplo de um ano antes."},
+  {"tema": "Mercado de capitais", "relacao": "A receita de ações subiu 41% com negociação e financiamento intensos."}
+ ],
+ "diferencial": {
+  "texto": "O Morgan Stanley combina um banco de investimento de primeira linha com a maior plataforma de gestão de patrimônio dos EUA, que gera receita recorrente e estável e reduz a dependência do humor dos mercados. Os pontos fracos são a receita de mercados volátil e a concorrência de Goldman, JPMorgan, Schwab e plataformas digitais.",
+  "vantagem": {"nivel": "forte", "resumo": "Maior plataforma de gestão de patrimônio dos EUA, com US$ 10,5 trilhões de clientes e receita recorrente, somada a um banco de investimento de ponta."},
+  "concorrentes": ["Goldman Sachs", "JPMorgan Chase", "Charles Schwab", "Bank of America (Merrill)", "UBS", "Raymond James"]
+ },
+ "potencial": {
+  "texto": "O crescimento vem da captação na gestão de patrimônio, que aumenta a receita recorrente, e do ciclo de mercado de capitais. O banco paga dividendo trimestral de US$ 1,15 e recompra ações. Não há projeção numérica no release.",
+  "metricas": [
+   {"rotulo": "Ativos de clientes", "valor": "US$ 10,5 trilhões", "periodo": "set/2026"},
+   {"rotulo": "Novos ativos líquidos", "valor": "US$ 232 bi", "periodo": "3T26"},
+   {"rotulo": "Retorno sobre patrimônio tangível", "valor": "22,6%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 4,9 bi no 3T26 (US$ 3,03 por ação), alta de 6%, com receita de US$ 20,3 bi (+12%). O índice CET1 é de 14,9%. O banco recomprou US$ 1,5 bi em ações e paga dividendo trimestral de US$ 1,15.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Queda dos mercados reduz taxas e negociação.",
+  "Receita de mercados volátil.",
+  "Concorrência em gestão de patrimônio.",
+  "Regulação de capital."
+ ],
+ "momento": "No 3T26 (divulgado em 14/10/2026), a receita subiu 12%, para US$ 20,3 bi, com ações em alta de 41% e gestão de patrimônio recorde, segundo o release e a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-14",
+  "positivos": [
+   "Gestão de patrimônio com receita recorde.",
+   "Novos ativos líquidos de US$ 232 bi.",
+   "Ações cresceram 41%."
+  ],
+  "negativos": [
+   "Renda fixa caiu 7%.",
+   "Gestão de fundos caiu 12%."
+  ],
+  "atencao": [
+   "Ritmo de captação de ativos.",
+   "Ciclo de fusões e emissões."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Morgan Stanley: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/895421/000089542126000288/a3q26msearningsrelease.htm", "data": "2026-10-14"},
+  {"titulo": "INDmoney: US bank earnings Q3 (JPM, BAC, GS, WFC, Citi, MS)", "url": "https://www.indmoney.com/blog/us-stocks/us-bank-earnings-q3-jpm-bac-gs-wfc-citi-blk-ms-stock-earnings-analysis", "data": "2026-10"},
+  {"titulo": "Family Wealth Report: summary of major US bank results, Q3 2026", "url": "https://www.familywealthreport.com/article.php/Summary-Of-Major-US-Bank%2C-Wealth-Management-Financial-Results%2C-Q3-2026--", "data": "2026-10"},
+  {"titulo": "If You Spent: Bank of America and Morgan Stanley earnings results", "url": "https://news.ifyouspent.com/en/news/bank-of-america-morgan-stanley-earnings-results-october-2026", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
