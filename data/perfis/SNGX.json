@@ -1,0 +1,62 @@
+{
+ "ticker": "SNGX",
+ "revisado_em": "2026-11-22",
+ "resumo": "Pequena biotecnológica americana em fase clínica que encerrou em 2026 seu principal programa, o HyBryte para linfoma cutâneo, após falha em estudo de fase 3. Sem receita, com caixa de US$ 9 mi e dúvida declarada sobre a continuidade.",
+ "modelo": "A Soligenix desenvolve remédios para doenças raras, como o dusquetide (SGX945) para a doença de Behçet, e vacinas de biodefesa, como a RiVax contra ricina, com financiamento do governo americano. Ainda não vende produtos.",
+ "segmentos": [],
+ "segmentos_base": "Sem receita; empresa em fase clínica",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Princeton, Nova Jersey (EUA)."},
+ "temas": [
+  {"tema": "Doenças raras", "relacao": "O estudo de fase 3 FLASH2 do HyBryte foi interrompido por falta de eficácia em abril de 2026, e o programa foi encerrado; o foco passou para o SGX945 na doença de Behçet."},
+  {"tema": "Biodefesa", "relacao": "A vacina RiVax contra ricina segue em desenvolvimento com recursos do governo."}
+ ],
+ "diferencial": {
+  "texto": "Depois do fim do HyBryte, a Soligenix ficou com programas em estágio inicial e sem produto aprovado. É uma empresa muito pequena, com caixa limitado e emissões frequentes de ações, sem vantagem competitiva clara.",
+  "vantagem": {"nivel": "nenhuma clara", "resumo": "Sem produto aprovado e com o principal programa encerrado após falha em estudo de fase 3; restam projetos em estágio inicial."},
+  "concorrentes": ["Grandes farmacêuticas em imunologia", "Biotecnológicas de doenças raras", "Emergent BioSolutions (biodefesa)"]
+ },
+ "potencial": {
+  "texto": "O potencial depende de avançar o SGX945 na doença de Behçet e de alternativas estratégicas que a empresa avalia. Não há projeção de receita.",
+  "metricas": [
+   {"rotulo": "Caixa", "valor": "US$ 9,0 mi", "periodo": "set/2026"},
+   {"rotulo": "Caixa suficiente até", "valor": "2º tri de 2028", "periodo": "set/2026"},
+   {"rotulo": "Ações em circulação", "valor": "cerca de 23,4 milhões", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo de US$ 1,1 mi no 3T26 e de US$ 5,9 mi em nove meses, sem receita. Tem US$ 9,0 mi em caixa, mas declara dúvida relevante sobre sua continuidade; o número de ações mais que dobrou em 2026 com vendas no mercado, e há aviso da Nasdaq por preço baixo, com prazo em dezembro de 2026.",
+  "caixa": "US$ 9,0 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dúvida sobre a continuidade da empresa.",
+  "Possível saída da Nasdaq.",
+  "Diluição por novas emissões.",
+  "Falhas em estudos clínicos."
+ ],
+ "momento": "No 3T26 (10-Q de 06/11/2026), a empresa seguiu sem receita, com prejuízo menor após encerrar o programa do HyBryte, e prepara um estudo de fase 2 com o SGX945.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-06",
+  "positivos": [
+   "Prejuízo trimestral menor.",
+   "Caixa até 2028, segundo a empresa."
+  ],
+  "negativos": [
+   "Programa principal encerrado.",
+   "Forte diluição."
+  ],
+  "atencao": [
+   "Prazo da Nasdaq em dezembro de 2026.",
+   "Alternativas estratégicas."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Soligenix: 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/812796/000110465926123855/sngx-20260930x10q.htm", "data": "2026-11-06"},
+  {"titulo": "OncLive: DMC recommends halting phase 3 study of HyBryte in CTCL due to futility", "url": "https://www.onclive.com/view/dmc-recommends-halting-phase-3-confirmatory-study-of-hybryte-in-ctcl-due-to-futility", "data": "2026-04-28"},
+  {"titulo": "Barchart: Soligenix announces second quarter 2026 results", "url": "https://www.barchart.com/story/news/3716208/soligenix-announces-recent-updates-and-second-quarter-2026-financial-results", "data": "2026-08"}
+ ],
+ "ultimo_resultado": "3T26"
+}

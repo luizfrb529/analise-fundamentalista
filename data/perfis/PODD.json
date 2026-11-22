@@ -1,0 +1,65 @@
+{
+ "ticker": "PODD",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana do Omnipod, bomba de insulina sem tubo que fica colada ao corpo e é controlada por algoritmo automático. Lucrativa, crescendo quase 20% e ganhando espaço fora dos EUA e no diabetes tipo 2.",
+ "modelo": "A Insulet vende o Omnipod 5, sistema descartável de aplicação automática de insulina integrado a sensores de glicose, principalmente por farmácias, o que facilita o acesso e o reembolso. A receita é recorrente, pois o paciente troca o pod a cada três dias.",
+ "segmentos": [
+  {"nome": "Omnipod EUA", "peso_receita": 0.68, "periodo": "3T26", "obs": "Receita de US$ 570 mi (+14,7%)."},
+  {"nome": "Omnipod internacional", "peso_receita": 0.32, "periodo": "3T26", "obs": "Receita de US$ 266 mi (+31,7%)."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": 0.68, "exterior_pct": 0.32, "periodo": "3T26", "texto": "Sede em Acton, Massachusetts (EUA); vendas nos EUA, Europa e outros mercados."},
+ "temas": [
+  {"tema": "Diabetes e tecnologia médica", "relacao": "Avança no diabetes tipo 2 com um plano de ação dedicado e estudos clínicos, e o lançamento do Omnipod Discover nos EUA."},
+  {"tema": "Expansão internacional", "relacao": "A receita internacional cresceu 31,7%, com integração a sensores Libre 3 Plus em mais países europeus."}
+ ],
+ "diferencial": {
+  "texto": "A Insulet é líder em bombas de insulina sem tubo, com tecnologia própria, distribuição por farmácias que reduz o custo para o paciente e receita recorrente. A base de usuários cria custo de troca. Os pontos fracos são a concorrência de Tandem, Medtronic e novas bombas, e o risco de remédios GLP-1 reduzirem o uso de insulina no tipo 2.",
+  "vantagem": {"nivel": "forte", "resumo": "Líder em bombas de insulina sem tubo, com tecnologia própria, venda por farmácias e receita recorrente com custo de troca."},
+  "concorrentes": ["Tandem Diabetes", "Medtronic (MiniMed)", "Embecta", "Roche", "Beta Bionics"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve crescer de 21% a 22% em moeda constante, com expansão de cerca de 1,5 ponto na margem operacional ajustada e lucro ajustado por ação crescendo mais de 30%. O potencial vem do tipo 2 e do exterior.",
+  "metricas": [
+   {"rotulo": "Crescimento de receita projetado", "valor": "21% a 22%", "periodo": "2026"},
+   {"rotulo": "Margem bruta", "valor": "75,1%", "periodo": "3T26"},
+   {"rotulo": "Receita internacional", "valor": "US$ 266 mi (+31,7%)", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 2,03 por ação no 3T26 (US$ 1,99 ajustado), com margem bruta de 75% e margem operacional de 22,5%. Tem US$ 584 mi em caixa e US$ 962 mi em dívida, e anunciou recompra de US$ 1 bi, segundo a imprensa.",
+  "caixa": "US$ 584,4 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concorrência em bombas de insulina.",
+  "Remédios GLP-1 reduzindo o uso de insulina.",
+  "Reembolso e preços.",
+  "Problemas de qualidade ou recalls."
+ ],
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita subiu 19,2%, para US$ 842 mi, com o exterior crescendo 31,7%, e a empresa elevou a projeção de margem do ano; a CEO é Ashley McEvoy.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Receita subiu 19,2%.",
+   "Exterior cresceu 31,7%.",
+   "Projeção de margem elevada."
+  ],
+  "negativos": [
+   "Receita de entrega de remédios caiu 22,7%."
+  ],
+  "atencao": [
+   "Adoção no diabetes tipo 2.",
+   "Recompra de ações no 4T26."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Insulet: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1145197/000114519726000190/podd2026-09x30ex991.htm", "data": "2026-11-04"},
+  {"titulo": "24/7 Wall St.: Insulet Q3 2026, EPS beats, buyback and raised guidance", "url": "https://247wallst.com/cards/insulet-q3-2026-earnings-podd-01m6k9cpcvcstfxqqht5892py7", "data": "2026-11"},
+  {"titulo": "Quartr: Insulet Q3 2026 earnings summary", "url": "https://quartr.com/events/insulet-corporation-podd-q3-2026_ozsReq7k", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

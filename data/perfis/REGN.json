@@ -1,0 +1,62 @@
+{
+ "ticker": "REGN",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das maiores biotecnológicas dos EUA, com Dupixent (dermatite, asma, DPOC, em parceria com a Sanofi), EYLEA HD (doenças da retina) e Libtayo (câncer). Muito lucrativa, com receita crescendo 36% e US$ 18,9 bi em caixa.",
+ "modelo": "A Regeneron descobre e desenvolve anticorpos e outros remédios com plataformas próprias de pesquisa genética. Vende diretamente EYLEA HD, Libtayo e outros nos EUA e divide os lucros do Dupixent e do Kevzara com a Sanofi, que registra essas vendas. Reinveste muito em pesquisa.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 5,12 bi no 3T26 (+36%); vendas globais do Dupixent de US$ 6,54 bi (+35%), registradas pela Sanofi",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Tarrytown, Nova York (EUA); vendas nos EUA e, via parceiros, no mundo todo."},
+ "temas": [
+  {"tema": "Doenças inflamatórias e imunologia", "relacao": "O Dupixent cresceu 35%, com novas indicações como DPOC, e a parceria com a Sanofi foi ampliada com US$ 1 bi de pagamento inicial no 4T26."},
+  {"tema": "Concorrência de biossimilares", "relacao": "As vendas do EYLEA antigo caíram 41% nos EUA, enquanto o EYLEA HD subiu 62%."}
+ ],
+ "diferencial": {
+  "texto": "A Regeneron tem plataformas de pesquisa próprias muito produtivas, que geraram vários remédios de grande sucesso, patentes e uma das maiores bases de dados genéticos do mundo. O Dupixent é um dos remédios mais vendidos do mundo. Os pontos fracos são a concorrência de biossimilares no EYLEA e a dependência da parceria com a Sanofi.",
+  "vantagem": {"nivel": "forte", "resumo": "Plataformas de pesquisa muito produtivas, patentes e grandes sucessos como o Dupixent, um dos remédios mais vendidos do mundo."},
+  "concorrentes": ["Amgen", "Eli Lilly", "Roche", "AbbVie", "Novartis", "Fabricantes de biossimilares"]
+ },
+ "potencial": {
+  "texto": "O potencial vem do crescimento do Dupixent em novas indicações, do EYLEA HD, de novos remédios como o Pasatru, aprovado para FOP, e do pipeline em câncer, obesidade e doenças raras. A empresa não dá projeção de receita, só de despesas.",
+  "metricas": [
+   {"rotulo": "Vendas globais do Dupixent", "valor": "US$ 6,54 bi (+35%)", "periodo": "3T26"},
+   {"rotulo": "Caixa e aplicações", "valor": "US$ 18,9 bi", "periodo": "set/2026"},
+   {"rotulo": "Dividendo trimestral", "valor": "US$ 0,94", "periodo": "dez/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 1,95 bi no 3T26 (US$ 18,45 por ação, +35%) e lucro ajustado de US$ 20,07 por ação (+70%). Tem US$ 18,9 bi em caixa e aplicações, recomprou US$ 2,3 bi em ações no ano e paga dividendo trimestral de US$ 0,94.",
+  "caixa": "US$ 18,9 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Biossimilares do EYLEA.",
+  "Dependência da parceria com a Sanofi.",
+  "Falhas em estudos clínicos.",
+  "Pressão política sobre preços de remédios."
+ ],
+ "momento": "No 3T26 (divulgado em 30/10/2026), a receita subiu 36%, para US$ 5,1 bi, com Dupixent e EYLEA HD, e o lucro ajustado subiu 70%, bem acima do esperado; o CEO é Leonard Schleifer.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-30",
+  "positivos": [
+   "Receita subiu 36%.",
+   "EYLEA HD cresceu 62%.",
+   "Parceria com a Sanofi ampliada."
+  ],
+  "negativos": [
+   "EYLEA antigo caiu 41%."
+  ],
+  "atencao": [
+   "Decisão da FDA sobre o cemdisiran.",
+   "Resultados de estudos em obesidade."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Regeneron: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000032/exhibit991q32026.htm", "data": "2026-10-30"},
+  {"titulo": "Zacks: REGN Q3 earnings beat on Dupixent profits and EYLEA HD growth", "url": "https://www.zacks.com/stock/news/3019989/regn-q3-earnings-beat-on-dupixent-profits-&-eylea-hd-growth,-stock-up", "data": "2026-10"},
+  {"titulo": "Grafa: Regeneron Q3 2026 revenue rises 36 percent", "url": "https://grafa.com/en/news/united-states/regeneron-q3-2026-revenue-rises-36-percent", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

@@ -1,0 +1,64 @@
+{
+ "ticker": "MEDS",
+ "revisado_em": "2026-11-22",
+ "resumo": "Pequena empresa americana de saúde, antes chamada Wellgistics Health, que opera uma farmácia de dispensação de remédios GLP-1 (Corexa), um aplicativo de saúde e um laboratório. Receita pequena, caixa mínimo e dúvida declarada sobre a continuidade.",
+ "modelo": "A DataMeds AI ganha com a venda de remédios, principalmente GLP-1 para emagrecimento, pela farmácia Corexa, com consultas e acompanhamento pelo aplicativo Health Lives Here, e com testes de laboratório da Helomics. Trocou de nome em julho de 2026.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 2,7 mi no 3T26 (-11% em um ano; +50% frente ao 2T26)",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Tampa, Flórida (EUA)."},
+ "temas": [
+  {"tema": "Remédios para obesidade (GLP-1)", "relacao": "A farmácia Corexa passou de US$ 1 mi de receita mensal em setembro, com remédios GLP-1 vendidos pelo aplicativo, segundo a empresa."},
+  {"tema": "Pequenas empresas de capital aberto", "relacao": "Recuperou o enquadramento nas regras da Nasdaq em 19/10/2026."}
+ ],
+ "diferencial": {
+  "texto": "A DataMeds AI é uma farmácia e plataforma de saúde digital muito pequena, num mercado de GLP-1 disputado por grandes redes, telemedicinas e os próprios fabricantes. Não tem escala, tecnologia exclusiva nem vantagem competitiva clara.",
+  "vantagem": {"nivel": "nenhuma clara", "resumo": "Farmácia e plataforma de saúde digital muito pequena, num mercado de GLP-1 disputado por grandes redes e telemedicinas."},
+  "concorrentes": ["Hims & Hers", "Ro", "CVS Health", "Walgreens", "LillyDirect (Eli Lilly)"]
+ },
+ "potencial": {
+  "texto": "O potencial depende de crescer a farmácia Corexa e o aplicativo e de concluir a licença da plataforma REBOOT de GLP-1, prevista para o 4T26. A empresa não traz projeção numérica.",
+  "metricas": [
+   {"rotulo": "Receita do trimestre", "valor": "US$ 2,7 mi", "periodo": "3T26"},
+   {"rotulo": "Caixa", "valor": "US$ 0,5 mi", "periodo": "set/2026"},
+   {"rotulo": "Ações em circulação", "valor": "cerca de 5,7 milhões", "periodo": "nov/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo e queima de caixa",
+  "texto": "Lucro contábil de US$ 10,5 mi no 3T26 apenas por ganho de US$ 19,1 mi com a extinção de dívidas; o prejuízo operacional foi de US$ 3,4 mi e o de nove meses, de US$ 15,6 mi. Tem só US$ 0,5 mi em caixa e cerca de US$ 18 mi em dívidas, e declara dúvida relevante sobre sua continuidade.",
+  "caixa": "US$ 0,5 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dúvida sobre a continuidade da empresa.",
+  "Caixa mínimo e dívidas elevadas.",
+  "Diluição por novas emissões.",
+  "Regulação de farmácias de GLP-1."
+ ],
+ "momento": "No 3T26 (divulgado em 13/11/2026), a receita subiu 50% frente ao 2T26, para US$ 2,7 mi, e a empresa teve lucro contábil pela renegociação de dívidas, mas segue com caixa mínimo.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-13",
+  "positivos": [
+   "Receita subiu 50% frente ao 2T26.",
+   "Dívidas reduzidas.",
+   "Enquadramento na Nasdaq recuperado."
+  ],
+  "negativos": [
+   "Caixa de US$ 0,5 mi.",
+   "Alerta de continuidade."
+  ],
+  "atencao": [
+   "Licença da plataforma REBOOT.",
+   "Novas captações."
+  ]
+ },
+ "fontes": [
+  {"titulo": "DataMeds AI: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2030763/000149315226051734/ex99-1.htm", "data": "2026-11-13"},
+  {"titulo": "DataMeds AI: 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2030763/000149315226051830/form10-q.htm", "data": "2026-11-13"},
+  {"titulo": "Panabee: DataMeds AI Q3 profit includes $19.1 million debt gain as revenue falls 11%", "url": "https://www.panabee.com/news/datameds-ai-earnings-q3-2026", "data": "2026-11"},
+  {"titulo": "Newswire: DataMeds AI reports 50% sequential revenue growth in Q3 2026", "url": "https://www.newswire.com/news/datameds-ai-reports-50-sequential-revenue-growth-in-third-quarter-2026-from", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}
