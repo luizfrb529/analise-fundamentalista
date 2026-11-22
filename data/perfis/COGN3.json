@@ -1,6 +1,6 @@
 {
  "ticker": "COGN3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-22",
  "resumo": "Grupo de educação com ensino superior (Kroton, cerca de 65% da receita) e educação básica (Somos, com Vasta e Saber). Dívida toda em CDI e receita sensível a programas do governo, como PNLD e Fies.",
  "modelo": "A Cogna atua em duas frentes. No ensino superior, a Kroton (Anhanguera, Unopar, Pitágoras e outras marcas) cobra mensalidades em cursos presenciais, semipresenciais e a distância, com parte dos alunos financiada por Fies e bolsas do Prouni. Na educação básica, a unidade Somos reúne Vasta (sistemas de ensino e serviços para escolas privadas, por assinatura) e Saber (livros didáticos e venda ao governo via PNLD e compras de estados e municípios, o B2G). A receita do ensino superior e das assinaturas é recorrente; a do PNLD e do B2G é pontual e segue o calendário de compras públicas.",
  "segmentos": [
@@ -79,5 +79,24 @@
    "data": "2026-11-12"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-11",
+  "positivos": [
+   "Dívida líquida de R$ 2,54 bi em setembro de 2026, com redução de R$ 239,2 mi no trimestre.",
+   "Alavancagem de 1,04x, a menor da história da empresa.",
+   "Receita de 9M26 em alta de 15,3% e Ebitda recorrente em alta de 3,9%."
+  ],
+  "negativos": [
+   "Receita líquida de R$ 1,44 bi no 3T26, queda de 5,2% sobre o 3T25.",
+   "Ebitda recorrente de R$ 320,4 mi no 3T26, queda de 24,2%, com margem de 22,2% ante 27,7%.",
+   "Prejuízo de R$ 37,3 mi no 3T26, ante lucro de R$ 191,6 mi no 3T25 (base com R$ 126,3 mi de imposto diferido)."
+  ],
+  "atencao": [
+   "Receita do PNLD caiu 75,6% no trimestre pelo calendário; acompanhar a recuperação no 4T26.",
+   "Integração da Educbank e ritmo de contratos com governos após o período eleitoral."
+  ]
+ }
 }
