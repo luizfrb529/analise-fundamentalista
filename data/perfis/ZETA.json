@@ -1,0 +1,62 @@
+{
+ "ticker": "ZETA",
+ "revisado_em": "2026-11-22",
+ "resumo": "Empresa americana de software de marketing com IA e grande base de dados de consumidores, que ajuda grandes marcas a encontrar e reter clientes. Receita crescendo 46% com aquisições, lucro contábil recente e caixa livre positivo.",
+ "modelo": "A Zeta Global vende a plataforma Zeta Marketing Platform e o Zeta Data Cloud, que combinam dados próprios de centenas de milhões de consumidores com os dados do cliente para segmentar campanhas por e-mail, aplicativos, redes sociais e TV conectada. Cobra assinaturas e por uso. O agente de IA Athena permite operar a plataforma conversando em linguagem natural.",
+ "segmentos": [],
+ "segmentos_base": "Empresa não divulga receita por segmento no release",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA); a maior parte da receita vem dos EUA, com expansão internacional após a compra do negócio corporativo da Marigold."},
+ "temas": [
+  {"tema": "IA em marketing", "relacao": "O diretor financeiro atribui parte da alta da projeção à adoção do Athena, agente de IA da plataforma, segundo a imprensa."},
+  {"tema": "Dados de consumidores", "relacao": "A base de dados própria é o diferencial, num momento em que o fim dos cookies dificulta a segmentação de anúncios."}
+ ],
+ "diferencial": {
+  "texto": "A Zeta combina uma das maiores bases de dados de consumidores dos EUA com software de marketing e IA na mesma plataforma, o que permite às marcas medir e otimizar campanhas sem depender de cookies de terceiros. A base de 212 clientes de grande porte cresce em gasto por cliente. Os pontos fracos são a concorrência de grandes plataformas (Salesforce, Adobe), a regulação de privacidade de dados e o crescimento recente apoiado em aquisições.",
+  "concorrentes": ["Salesforce", "Adobe", "Braze", "HubSpot", "Oracle", "Klaviyo"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 1,853 bi e US$ 1,857 bi (alta de 42%), com Ebitda ajustado de cerca de US$ 415 mi e caixa livre de cerca de US$ 271 mi; a projeção foi elevada. O 4T26 deve ter receita de US$ 521 mi a US$ 525 mi. Sem a Marigold e a receita eleitoral, o crescimento foi de 30% no trimestre.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 1,853 bi a US$ 1,857 bi", "periodo": "2026"},
+   {"rotulo": "Clientes de grande porte", "valor": "212", "periodo": "3T26"},
+   {"rotulo": "Receita média por cliente de grande porte", "valor": "US$ 2,0 mi", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucro recente",
+  "texto": "Lucro líquido de US$ 38,3 mi no 3T26, contra prejuízo de US$ 3,6 mi um ano antes, com margem Ebitda ajustada de 24,6%. O fluxo de caixa livre foi de US$ 81,5 mi. A empresa tinha US$ 340 mi em caixa e US$ 244 mi em dívida de longo prazo, e recomprou US$ 85,5 mi em ações em nove meses.",
+  "caixa": "US$ 340 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Regulação de privacidade de dados de consumidores.",
+  "Concorrência de grandes plataformas de marketing.",
+  "Crescimento apoiado em aquisições.",
+  "Dependência dos orçamentos de marketing das empresas."
+ ],
+ "momento": "No 3T26 (divulgado em 09/11/2026), a receita subiu 46%, para US$ 492,7 mi, acima da projeção, com a compra do negócio corporativo da Marigold e receita de campanhas eleitorais; a empresa elevou a projeção do ano.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-09",
+  "positivos": [
+   "Receita de US$ 492,7 mi, alta de 46%.",
+   "Lucro líquido de US$ 38,3 mi, contra prejuízo.",
+   "Projeção de 2026 elevada em US$ 37 mi."
+  ],
+  "negativos": [
+   "Parte do crescimento veio de aquisição e de receita eleitoral pontual."
+  ],
+  "atencao": [
+   "Crescimento orgânico em 2027 sem receita eleitoral.",
+   "Adoção do Athena."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Zeta Global: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1851003/000119312526453558/zeta-ex99_1.htm", "data": "2026-11-09"},
+  {"titulo": "Zacks: Zeta Q3 earnings, revenues beat estimates", "url": "https://zacks.com/stock/news/3027769/zeta-q3-earnings-revenues-beat-estimates-shares-barely-move", "data": "2026-11"},
+  {"titulo": "PPC Land: Zeta Global raises 2026 revenue forecast to $1.855bn", "url": "https://ppc.land/zeta-global-raises-2026-revenue-forecast-to-1-855bn-after-46-q3-jump/", "data": "2026-11"},
+  {"titulo": "FourWeekMBA: Zeta raises guide to $1.855B; CFO credits Athena AI adoption", "url": "https://fourweekmba.com/ai-zeta-raises-guide-to-1-855b-cfo-credits-athena-ai-adoption/", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

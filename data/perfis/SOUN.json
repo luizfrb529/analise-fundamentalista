@@ -1,0 +1,63 @@
+{
+ "ticker": "SOUN",
+ "revisado_em": "2026-11-22",
+ "resumo": "Empresa americana de IA de voz e agentes de conversação para carros, aparelhos, restaurantes e atendimento ao cliente, que cresce por aquisições, como a da LivePerson em 2026. Ainda com prejuízo, mas promete Ebitda ajustado positivo no segundo semestre de 2027.",
+ "modelo": "A SoundHound licencia sua tecnologia de reconhecimento e compreensão de voz para montadoras e fabricantes de TVs e aparelhos (cobrando por unidade ou mínimo garantido), vende agentes de voz para pedidos em restaurantes e oferece plataformas de atendimento automatizado para empresas. Com a LivePerson, comprada em setembro de 2026, ganhou uma grande base de clientes corporativos de atendimento digital.",
+ "segmentos": [],
+ "segmentos_base": "Empresa não divulga receita por segmento no release",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Santa Clara, Califórnia (EUA); clientes nos EUA, Europa e Ásia, inclusive montadoras e fornecedores chineses."},
+ "temas": [
+  {"tema": "Agentes de IA", "relacao": "Vende agentes de voz e texto que substituem atendentes em restaurantes, saúde, telecomunicações e concessionárias de energia."},
+  {"tema": "IA embarcada", "relacao": "Fechou acordo com a LG para cerca de 20 milhões de TVs nos EUA e contrato com fornecedor automotivo chinês."}
+ ],
+ "diferencial": {
+  "texto": "A SoundHound tem tecnologia própria de voz que funciona tanto na nuvem quanto dentro do aparelho, sem internet, e uma das poucas plataformas independentes das grandes empresas de tecnologia, o que atrai montadoras que não querem depender de Google, Apple ou Amazon. Os pontos fracos são o prejuízo persistente, o crescimento muito apoiado em aquisições (parte do negócio comprado está encolhendo, segundo analistas) e a concorrência de grandes modelos de IA.",
+  "concorrentes": ["Cerence", "Google", "Amazon", "Microsoft (Nuance)", "OpenAI", "Salesforce"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 250 mi e US$ 260 mi, incluindo cerca de US$ 52 mi da LivePerson, segundo a imprensa, e a de 2027 entre US$ 350 mi e US$ 400 mi, com Ebitda ajustado positivo de forma sustentada no segundo semestre de 2027. A meta de sinergias de custo é de US$ 120 mi por ano.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 250 mi a US$ 260 mi", "periodo": "2026"},
+   {"rotulo": "Receita projetada", "valor": "US$ 350 mi a US$ 400 mi", "periodo": "2027"},
+   {"rotulo": "Sinergias de custo", "valor": "US$ 120 mi por ano", "periodo": "meta"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo líquido de US$ 46,4 mi no 3T26, amenizado por ganho contábil de US$ 23,4 mi na reavaliação de pagamentos futuros de aquisições; o Ebitda ajustado foi negativo em US$ 20,7 mi. A margem bruta caiu para 34,1%, contra 42,6%. A empresa tinha US$ 207,6 mi em caixa e quitou a maior parte da dívida herdada da LivePerson. As ações médias somam cerca de 455 milhões, após emissões nos últimos anos.",
+  "caixa": "US$ 207,6 mi",
+  "queima_anual": "cerca de US$ 80 mi (Ebitda ajustado negativo, ritmo do 3T26)",
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Prejuízo e consumo de caixa até 2027.",
+  "Crescimento apoiado em aquisições, com parte encolhendo.",
+  "Concorrência de grandes modelos de IA.",
+  "Diluição por novas emissões de ações."
+ ],
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita recorde de US$ 62,4 mi subiu 48%, com quase US$ 14 mi da LivePerson, e a empresa deu pela primeira vez meta de lucro (Ebitda ajustado positivo no segundo semestre de 2027); as ações caíram cerca de 3%, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Receita recorde de US$ 62,4 mi, alta de 48%.",
+   "Meta de Ebitda ajustado positivo no 2S27.",
+   "Acordo com a LG para cerca de 20 milhões de TVs."
+  ],
+  "negativos": [
+   "Margem bruta caiu para 34,1%.",
+   "Ebitda ajustado negativo de US$ 20,7 mi."
+  ],
+  "atencao": [
+   "Integração da LivePerson e corte de custos.",
+   "Crescimento orgânico sem aquisições."
+  ]
+ },
+ "fontes": [
+  {"titulo": "SoundHound: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1840856/000184085626000025/soun-20261105ex991earnings.htm", "data": "2026-11-05"},
+  {"titulo": "24/7 Wall St.: SoundHound AI Q3 2026, record revenue and a 2027 profit target", "url": "https://247wallst.com/cards/soundhound-ai-q3-2026-earnings-soun-01m6prpwmeq057a44p6n0tv0ae", "data": "2026-11-05"},
+  {"titulo": "Finviz: SoundHound beats on EPS but LivePerson masks a shrinking legacy business", "url": "https://finviz.com/news/418161/soundhound-ai-beats-on-eps-and-offers-first-profitability-target-but-liveperson-masks-a-shrinking-legacy-business", "data": "2026-11"},
+  {"titulo": "Blockonomi: SoundHound stock slips despite record Q3 revenue", "url": "https://blockonomi.com/soundhound-ai-inc-soun-stock-slip-3-01-despite-record-q3-revenue-of-62-4-million/", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

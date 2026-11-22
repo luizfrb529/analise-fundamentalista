@@ -1,0 +1,62 @@
+{
+ "ticker": "APP",
+ "revisado_em": "2026-11-22",
+ "resumo": "Plataforma americana de publicidade digital baseada em IA (motor Axon), que ajuda anunciantes, principalmente de jogos para celular e cada vez mais de comércio eletrônico, a conseguir clientes. Extremamente lucrativa, com margem Ebitda de 84%.",
+ "modelo": "A AppLovin conecta anunciantes a espaços de anúncio em milhões de aplicativos por meio do AppDiscovery, que usa o motor de IA Axon para escolher qual anúncio mostrar a cada usuário, e da plataforma MAX, que ajuda aplicativos a vender seus espaços. Cobra uma parte do que os anunciantes gastam. Em 2025 vendeu o negócio de jogos próprios para focar só em publicidade.",
+ "segmentos": [],
+ "segmentos_base": "Receita quase toda de publicidade",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Palo Alto, Califórnia (EUA); anunciantes e aplicativos no mundo todo."},
+ "temas": [
+  {"tema": "IA aplicada à publicidade", "relacao": "As melhorias no modelo de IA explicam boa parte do crescimento, segundo a empresa, que investe em mais capacidade de computação."},
+  {"tema": "Comércio eletrônico", "relacao": "A expansão para anunciantes de fora do mundo dos jogos é a principal aposta de crescimento apontada pelo mercado."}
+ ],
+ "diferencial": {
+  "texto": "O motor Axon, treinado com dados de bilhões de interações em aplicativos, entrega retorno muito alto para anunciantes, e a plataforma MAX dá à AppLovin acesso privilegiado a espaço de anúncio em aplicativos. A combinação gera margens raras, acima de 80%. Os pontos fracos são a dependência de jogos para celular, a concorrência de Google e Meta, mudanças de regras de privacidade de Apple e Google e questionamentos de vendedores a descoberto sobre práticas de coleta de dados.",
+  "concorrentes": ["Alphabet (Google AdMob)", "Meta", "Unity", "ironSource (Unity)", "The Trade Desk", "Moloco"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 4T26 deve ficar entre US$ 2,365 bi e US$ 2,395 bi, com Ebitda ajustado de US$ 1,995 bi a US$ 2,025 bi e margem de 84% a 85%. O crescimento vem de melhorias no modelo de IA e da entrada de novos tipos de anunciante.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 2,365 bi a US$ 2,395 bi", "periodo": "4T26"},
+   {"rotulo": "Margem Ebitda ajustada", "valor": "84%", "periodo": "3T26"},
+   {"rotulo": "Crescimento da receita", "valor": "55%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 1,44 bi no 3T26 (US$ 4,30 por ação), alta de 72%, com margem líquida de 66%. O fluxo de caixa livre foi de US$ 1,42 bi. A empresa tinha US$ 3,2 bi em caixa e US$ 3,5 bi em dívida, recomprou cerca de US$ 1,4 bi em ações no trimestre e ampliou o programa de recompra para US$ 3,6 bi.",
+  "caixa": "US$ 3,2 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dependência de anunciantes de jogos para celular.",
+  "Regras de privacidade de Apple e Google.",
+  "Concorrência de Google e Meta.",
+  "Questionamentos de vendedores a descoberto e possível escrutínio regulatório."
+ ],
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita subiu 55%, para US$ 2,18 bi, cerca de US$ 100 mi acima do topo da projeção, e o lucro subiu 72%; as ações subiram cerca de 25% após o resultado, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Receita de US$ 2,18 bi, alta de 55%.",
+   "Margem Ebitda ajustada de 84%.",
+   "Recompra ampliada para US$ 3,6 bi."
+  ],
+  "negativos": [
+   "Empresa não detalha receita por tipo de anunciante."
+  ],
+  "atencao": [
+   "Ritmo de entrada de anunciantes de comércio eletrônico.",
+   "Investimentos em computação para o modelo de IA."
+  ]
+ },
+ "fontes": [
+  {"titulo": "AppLovin: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000068/exhibit991-3q26earningspre.htm", "data": "2026-11-04"},
+  {"titulo": "StockAnalysis: AppLovin's Q3 revenue grows 55% to $2.18B", "url": "https://stockanalysis.com/news/applovin-q3-2026-earnings/", "data": "2026-11-04"},
+  {"titulo": "MobileGamer.biz: AppLovin posts record revenue of $2.2bn in Q3", "url": "https://mobilegamer.biz/applovin-posts-record-revenue-of-2-2bn-in-q3-up-55/", "data": "2026-11"},
+  {"titulo": "StockStory: AppLovin delivers strong Q3 2026 numbers, stock jumps 24.9%", "url": "https://stockstory.org/us/stocks/nasdaq/app/news/earnings/applovin-nasdaqapp-delivers-strong-q3-2026-numbers-stock-jumps-249percent", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}
