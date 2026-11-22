@@ -1,0 +1,64 @@
+{
+ "ticker": "VZ",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das maiores operadoras de telefonia móvel e banda larga dos EUA, que vive recuperação sob o novo CEO Dan Schulman, com o melhor ganho de clientes em anos. Lucrativa, grande geradora de caixa e pagadora de dividendos.",
+ "modelo": "A Verizon ganha com assinaturas mensais de celular (pós-pago, pré-pago e empresas), internet residencial por fibra (Fios) e por rede 5G fixa, e serviços para empresas e governo. As receitas são recorrentes e previsíveis, mas o negócio exige investimentos altos em rede e espectro.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 34,3 bi no 3T26; serviços móveis e banda larga de cerca de US$ 23,5 bi (+2,9%)",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Nova York (EUA); opera nos EUA."},
+ "temas": [
+  {"tema": "Telecomunicações", "relacao": "Ganhou 406 mil clientes pós-pagos de celular no trimestre, o melhor terceiro trimestre em cinco anos, e 137 mil contas, o melhor em mais de uma década."},
+  {"tema": "Banda larga", "relacao": "Adicionou 314 mil clientes de internet, entre fibra e 5G fixo, e ampliou a rede de fibra com aquisições."}
+ ],
+ "diferencial": {
+  "texto": "A Verizon tem uma das redes móveis mais amplas e confiáveis dos EUA, espectro valioso e base enorme de clientes, num mercado concentrado em três grandes operadoras com barreira de entrada altíssima. Os pontos fracos são o crescimento baixo, a dívida de US$ 166 bi, a concorrência acirrada de T-Mobile e AT&T e a necessidade de investimentos constantes.",
+  "vantagem": {"nivel": "moderada", "resumo": "Rede móvel ampla em mercado concentrado em três operadoras, com barreira de entrada altíssima, mas crescimento baixo e dívida elevada."},
+  "concorrentes": ["T-Mobile", "AT&T", "Comcast", "Charter", "EchoStar", "Starlink (SpaceX)"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro ajustado de 2026 deve ficar entre US$ 5,04 e US$ 5,06 por ação, com 1,1 milhão a 1,2 milhão de novos clientes pós-pagos e caixa livre crescendo cerca de 12%; a projeção foi elevada pela terceira vez. O potencial vem da retomada do crescimento de clientes e da redução de custos.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 5,04 a US$ 5,06 por ação", "periodo": "2026"},
+   {"rotulo": "Novos clientes pós-pagos de celular", "valor": "406 mil", "periodo": "3T26"},
+   {"rotulo": "Alavancagem", "valor": "2,3 vezes o Ebitda", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 1,25 por ação no 3T26 (US$ 1,31 ajustado, alta de 8%), com fluxo de caixa livre de US$ 7,8 bi no trimestre. A dívida total é de US$ 166 bi, com alavancagem de 2,3 vezes, e a empresa elevou o dividendo trimestral para US$ 0,7075.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concorrência de T-Mobile e AT&T.",
+  "Dívida elevada.",
+  "Investimentos constantes em rede.",
+  "Crescimento baixo."
+ ],
+ "momento": "No 3T26 (divulgado em 26/10/2026), a Verizon teve o melhor ganho de clientes em anos, com 406 mil pós-pagos de celular, e elevou a projeção de 2026 pela terceira vez; o CEO Dan Schulman atribui a melhora ao foco no cliente.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-26",
+  "positivos": [
+   "406 mil novos clientes pós-pagos de celular.",
+   "Fluxo de caixa livre de US$ 7,8 bi, alta de 12%.",
+   "Projeção de 2026 elevada."
+  ],
+  "negativos": [
+   "Receita cresceu só 1,5%.",
+   "Fibra abaixo do esperado por analistas."
+  ],
+  "atencao": [
+   "Concorrência de preços no fim de ano.",
+   "Integração das aquisições de fibra."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Verizon: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271226000049/a2026q3exhibit99.htm", "data": "2026-10-26"},
+  {"titulo": "PhoneArena: Verizon Q3 2026 results", "url": "https://www.phonearena.com/news/verizon-q3-2026-results_id184329", "data": "2026-10"},
+  {"titulo": "Fierce Network: Verizon CEO Schulman says he's demanding of employees, but it's paying off", "url": "https://www.fierce-network.com/broadband/verizon-ceo-schulman-says-hes-demanding-employees-its-paying", "data": "2026-10"},
+  {"titulo": "MediaPost: Verizon posts best account gains in a decade", "url": "https://www.mediapost.com/publications/article/419002/verizon-posts-best-account-gains-in-a-decade.html", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

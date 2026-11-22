@@ -1,0 +1,68 @@
+{
+ "ticker": "DIS",
+ "revisado_em": "2026-11-22",
+ "resumo": "Gigante americana de entretenimento, dona de estúdios (Disney, Pixar, Marvel, Lucasfilm), streaming (Disney+, Hulu), ESPN e parques e cruzeiros. Lucrativa, com lucro operacional crescendo 43% no último trimestre e dividendo elevado em 33%.",
+ "modelo": "A Disney ganha com três negócios: Entretenimento (filmes, séries, streaming Disney+ e Hulu, canais de TV), Esportes (ESPN, inclusive o novo streaming ESPN Unlimited) e Experiências (parques temáticos, hotéis, cruzeiros e produtos licenciados). As marcas e personagens alimentam todos os negócios ao mesmo tempo.",
+ "segmentos": [
+  {"nome": "Experiências (parques e cruzeiros)", "peso_receita": 0.45, "periodo": "4T26", "obs": "Lucro operacional de US$ 2,25 bi, alta de 20%."},
+  {"nome": "Esportes (ESPN)", "peso_receita": 0.28, "periodo": "4T26", "obs": "Lucro operacional de US$ 1,39 bi, alta de 53%."},
+  {"nome": "Entretenimento (estúdios e streaming)", "peso_receita": 0.27, "periodo": "4T26", "obs": "Lucro operacional de US$ 1,33 bi, quase o dobro; streaming lucrou US$ 824 mi."}
+ ],
+ "segmentos_base": "Lucro operacional por segmento",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Burbank, Califórnia (EUA); parques nos EUA, França, Japão, Hong Kong e China, e streaming no mundo todo, inclusive o Brasil."},
+ "temas": [
+  {"tema": "Streaming", "relacao": "A receita de assinaturas de streaming subiu 19% e o lucro do segmento dobrou, para US$ 824 mi no trimestre."},
+  {"tema": "Turismo e lazer", "relacao": "Parques e cruzeiros tiveram lucro 20% maior, com novos navios e expansão de parques."},
+  {"tema": "Esportes ao vivo", "relacao": "A ESPN lançou o streaming ESPN Unlimited, e o lucro de esportes subiu 53%."}
+ ],
+ "diferencial": {
+  "texto": "A Disney tem uma das bibliotecas de personagens e marcas mais valiosas do mundo, usada em filmes, streaming, parques e produtos ao mesmo tempo, algo que nenhum concorrente replica; os parques são ativos únicos e caros de construir. Os pontos fracos são o declínio da TV a cabo, a concorrência no streaming (Netflix, YouTube) e a sensibilidade dos parques à economia.",
+  "vantagem": {"nivel": "forte", "resumo": "Biblioteca de personagens e marcas única, usada ao mesmo tempo em filmes, streaming, parques e produtos, com parques impossíveis de replicar rápido."},
+  "concorrentes": ["Netflix", "Comcast (Universal)", "Warner Bros. Discovery", "Amazon", "YouTube (Alphabet)", "Paramount Skydance"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro ajustado por ação do ano fiscal 2027 deve crescer dois dígitos (sem a 53ª semana de 2026), com lucro operacional dos segmentos cerca de 8% maior, caixa livre de cerca de US$ 11 bi e recompras de cerca de US$ 9 bi. O novo CEO, Josh D'Amaro, busca US$ 3 bi em economia de custos, segundo a imprensa.",
+  "metricas": [
+   {"rotulo": "Fluxo de caixa livre projetado", "valor": "cerca de US$ 11 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Recompras projetadas", "valor": "cerca de US$ 9 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Dividendo anual", "valor": "US$ 2,00 por ação (+33%)", "periodo": "ano fiscal 2027"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 1,51 por ação no trimestre (US$ 1,77 ajustado, alta de 59%) e receita de US$ 102,3 bi no ano fiscal 2026 (+8%), com fluxo de caixa livre de US$ 10,6 bi. A empresa recomprou US$ 9,0 bi em ações no ano e elevou o dividendo em 33%.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "out/2026"
+ },
+ "riscos": [
+  "Declínio da TV a cabo.",
+  "Concorrência no streaming.",
+  "Parques sensíveis à economia.",
+  "Execução da nova gestão."
+ ],
+ "momento": "No trimestre encerrado em outubro (4T26 no calendário, 4T fiscal da empresa, divulgado em 17/11/2026), a receita subiu 16%, para US$ 25,9 bi, e o lucro ajustado por ação 59%, acima do esperado, ajudado por uma semana a mais; a empresa elevou o dividendo em 33%.",
+ "destaques_resultado": {
+  "trimestre": "4T26",
+  "divulgado_em": "2026-11-17",
+  "positivos": [
+   "Lucro operacional dos segmentos subiu 43%.",
+   "Lucro do streaming dobrou.",
+   "Dividendo elevado em 33%."
+  ],
+  "negativos": [
+   "Parte do crescimento veio da 53ª semana."
+  ],
+  "atencao": [
+   "Plano de US$ 3 bi de corte de custos.",
+   "Crescimento do ESPN Unlimited."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Disney: resultados do 4T fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000065/fy2026_q4xerxex991.htm", "data": "2026-11-17"},
+  {"titulo": "Disney: comunicado do 4T fiscal 2026", "url": "https://thewaltdisneycompany.com/news/disney-q4-earnings-2026/", "data": "2026-11-17"},
+  {"titulo": "AP (WSLS): Disney theme parks and streaming thrive as new CEO seeks $3 billion in cost savings", "url": "https://www.wsls.com/business/2026/11/17/disney-theme-parks-and-streaming-services-thrive-as-new-ceo-seeks-3-billion-in-cost-savings/", "data": "2026-11-17"},
+  {"titulo": "Crypto Briefing: Walt Disney Q4 revenue rises 16% to $25.9 billion", "url": "https://cryptobriefing.com/walt-disney-earnings-q4-fiscal-2026-2026-11/", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "4T26"
+}

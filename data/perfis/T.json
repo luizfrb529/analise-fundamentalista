@@ -1,0 +1,64 @@
+{
+ "ticker": "T",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das maiores operadoras de telefonia móvel e internet por fibra dos EUA, que ampliou a rede de fibra com a compra de ativos da Lumen e comprou espectro da EchoStar. Lucrativa e geradora de caixa, com dívida alta.",
+ "modelo": "A AT&T ganha com assinaturas de celular (pós-pago e pré-pago), internet residencial por fibra e por rede sem fio (Internet Air) e serviços para empresas. A estratégia é vender celular e fibra juntos para reduzir a troca de operadora. Está saindo do México e de negócios de cobre antigos.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 32,3 bi no 3T26; serviços de celular de US$ 17,8 bi (+5%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Dallas (EUA); opera nos EUA e no México, cuja operação de celular está à venda."},
+ "temas": [
+  {"tema": "Fibra e convergência", "relacao": "Adicionou 442 mil clientes de fibra e 327 mil de internet sem fio no trimestre, recorde de 769 mil, após comprar a rede de fibra da Lumen."},
+  {"tema": "Espectro", "relacao": "Concluiu a compra de espectro da EchoStar, o que aumentou a dívida líquida."}
+ ],
+ "diferencial": {
+  "texto": "A AT&T tem uma das maiores redes de fibra e móvel dos EUA, num mercado concentrado com barreira de entrada altíssima, e a combinação de celular e fibra reduz a troca de clientes. Os pontos fracos são a dívida de cerca de US$ 160 bi, o crescimento modesto e a concorrência de T-Mobile, Verizon e operadoras de cabo.",
+  "vantagem": {"nivel": "moderada", "resumo": "Grande rede de fibra e móvel em mercado concentrado e de entrada difícil, com venda combinada que segura clientes, mas dívida elevada."},
+  "concorrentes": ["Verizon", "T-Mobile", "Comcast", "Charter", "Frontier", "Starlink (SpaceX)"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro ajustado de 2026 deve ficar na faixa de US$ 2,40 por ação, com Ebitda ajustado crescendo na parte alta de 3% a 4% e caixa livre acima de US$ 18 bi; a empresa espera voltar à alavancagem de cerca de 2,5 vezes em 2029 e recomprar cerca de US$ 10 bi em ações em 2026.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "cerca de US$ 2,40 por ação", "periodo": "2026"},
+   {"rotulo": "Novos clientes de fibra", "valor": "442 mil", "periodo": "3T26"},
+   {"rotulo": "Fluxo de caixa livre projetado", "valor": "acima de US$ 18 bi", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro contábil de apenas US$ 0,13 por ação no 3T26 por baixa de US$ 2,6 bi na operação do México; o lucro ajustado foi de US$ 0,65, alta de 20%. O fluxo de caixa livre foi de US$ 5,0 bi. A dívida líquida é de US$ 149,8 bi; a empresa devolveu US$ 4,8 bi aos acionistas no trimestre e paga dividendo anual de US$ 1,11.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dívida elevada.",
+  "Concorrência de preços.",
+  "Investimentos altos em fibra e espectro.",
+  "Execução da venda do México."
+ ],
+ "momento": "No 3T26 (divulgado em 21/10/2026), a receita subiu 5,3%, para US$ 32,3 bi, com o maior crescimento de serviços em mais de quatro anos, e a empresa elevou a projeção de lucro; o lucro contábil caiu pela baixa no México.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-21",
+  "positivos": [
+   "Recorde de 769 mil novos clientes de internet.",
+   "Lucro ajustado subiu 20%.",
+   "Projeção de 2026 elevada."
+  ],
+  "negativos": [
+   "Baixa de US$ 2,6 bi no México.",
+   "Dívida líquida subiu com a compra de espectro."
+  ],
+  "atencao": [
+   "Conclusão da venda do México.",
+   "Redução da alavancagem."
+  ]
+ },
+ "fontes": [
+  {"titulo": "AT&T: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000370/t-3q2026exhibit991.htm", "data": "2026-10-21"},
+  {"titulo": "AT&T Newsroom: third-quarter 2026 results", "url": "https://about.att.com/story/2026/3q-earnings.html", "data": "2026-10-21"},
+  {"titulo": "Finviz: AT&T delivers strong Q3 2026 results", "url": "https://finviz.com/news/405039/att-delivers-strong-third-quarter-2026-results-with-its-best-consolidated-service-revenue-growth-in-more-than-four-years", "data": "2026-10"},
+  {"titulo": "RTTNews: AT&T shares drop on weak Q3 profit despite positive outlook", "url": "https://www.rttnews.com/3701170/at-t-shares-drop-on-weak-q3-profit-despite-positive-outlook.aspx?type=ern", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

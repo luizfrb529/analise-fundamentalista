@@ -1,0 +1,67 @@
+{
+ "ticker": "TTWO",
+ "revisado_em": "2026-11-22",
+ "resumo": "Produtora americana de videogames, dona da Rockstar (Grand Theft Auto, Red Dead), 2K (NBA 2K, Borderlands) e Zynga (jogos de celular). Lançou em 19/11/2026 o GTA VI, que pode ser o jogo de maior faturamento da história.",
+ "modelo": "A Take-Two vende jogos para consoles, PC e celular e ganha muito com gastos recorrentes dentro dos jogos (moedas virtuais, itens, modos online como GTA Online e NBA 2K), que são cerca de 80% das vendas. Os grandes lançamentos da Rockstar levam anos para serem feitos e geram receita por mais de uma década.",
+ "segmentos": [
+  {"nome": "Gastos recorrentes dos jogadores", "peso_receita": 0.81, "periodo": "3T26", "obs": "US$ 1,30 bi em vendas líquidas (net bookings)."},
+  {"nome": "Vendas de jogos e outros", "peso_receita": 0.19, "periodo": "3T26", "obs": "Antes do lançamento do GTA VI."}
+ ],
+ "segmentos_base": "Vendas líquidas (net bookings)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA); estúdios nos EUA, Reino Unido (Rockstar North) e outros países, com jogadores no mundo todo."},
+ "temas": [
+  {"tema": "Grand Theft Auto VI", "relacao": "Lançado em 19/11/2026 para PS5 e Xbox; a Sensor Tower estima US$ 1,84 bi em receita até o dia do lançamento, mais que o dobro do recorde do GTA V, segundo a imprensa."},
+  {"tema": "Jogos como serviço", "relacao": "Cerca de 81% das vendas vêm de gastos recorrentes dentro dos jogos, como NBA 2K e GTA Online."}
+ ],
+ "diferencial": {
+  "texto": "A Take-Two tem algumas das franquias mais valiosas dos videogames, em especial Grand Theft Auto, cujo lançamento é um evento global, e a Rockstar é considerada um dos estúdios de maior qualidade do setor. As franquias geram anos de receita recorrente online. Os pontos fracos são a dependência de poucos lançamentos gigantes, atrasos frequentes e o custo crescente de produção.",
+  "vantagem": {"nivel": "forte", "resumo": "Franquias únicas como Grand Theft Auto, cujo lançamento é evento global, e a Rockstar, um dos estúdios de maior qualidade do setor."},
+  "concorrentes": ["Electronic Arts", "Microsoft (Activision Blizzard)", "Sony", "Nintendo", "Ubisoft", "Tencent"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas líquidas do ano fiscal 2027 (abril de 2026 a março de 2027) devem ficar entre US$ 8,0 bi e US$ 8,2 bi, quase todo o crescimento vindo do GTA VI, com lucro de US$ 0,57 a US$ 0,75 por ação. Uma corretora elevou a estimativa de vendas do jogo no ano fiscal para cerca de 65 milhões de unidades, segundo a imprensa.",
+  "metricas": [
+   {"rotulo": "Vendas líquidas projetadas", "valor": "US$ 8,0 bi a US$ 8,2 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Receita estimada do GTA VI até o lançamento", "valor": "US$ 1,84 bi", "periodo": "Sensor Tower"},
+   {"rotulo": "Lançamento do GTA VI", "valor": "19/11/2026", "periodo": "PS5 e Xbox"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo líquido de US$ 54 mi no trimestre até setembro, antes do lançamento do GTA VI, menor que o de um ano antes, por amortização de aquisições e custos de desenvolvimento. A empresa tinha US$ 1,7 bi em caixa e aplicações e US$ 2,5 bi em dívida, e projeta voltar ao lucro no ano fiscal com o GTA VI.",
+  "caixa": "US$ 1,7 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dependência do sucesso do GTA VI.",
+  "Custo e prazo de grandes produções.",
+  "Concorrência pelo tempo dos jogadores.",
+  "Regulação de compras dentro de jogos."
+ ],
+ "momento": "No trimestre encerrado em setembro (3T26 no calendário, 2T27 fiscal da empresa, divulgado em 09/11/2026), as vendas líquidas caíram 18% antes do GTA VI. O jogo foi lançado em 19/11/2026 com recorde estimado de vendas, e as ações subiram mais de 8% com as primeiras avaliações, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-09",
+  "positivos": [
+   "Projeção do ano mantida antes do lançamento.",
+   "Gastos recorrentes são 81% das vendas.",
+   "Lançamento do GTA VI com recorde estimado."
+  ],
+  "negativos": [
+   "Vendas líquidas caíram 18% no trimestre.",
+   "Prejuízo de US$ 54 mi."
+  ],
+  "atencao": [
+   "Números oficiais de vendas do GTA VI.",
+   "Ritmo de vendas após a pré-venda."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Take-Two: resultados do 2T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/946581/000162828026072175/ttwo2q27earningsrelease.htm", "data": "2026-11-09"},
+  {"titulo": "Fox 5: GTA VI pulls in estimated $1.84 billion by release day", "url": "https://www.fox5dc.com/news/gta-vi-pulls-estimated-1-84-billion-release-day-more-than-double-gta-vs-launch-record", "data": "2026-11"},
+  {"titulo": "Game Developer: Take-Two financials steady, GTA VI pre-orders exceeding expectations", "url": "https://www.gamedeveloper.com/business/take-two-financials-are-steady-while-the-ceo-claims-that-grand-theft-auto-vi-pre-orders-are-exceeding-expectations", "data": "2026-11"},
+  {"titulo": "Business Today: Take-Two shares surge over 8% as GTA VI reviews fuel optimism", "url": "https://www.businesstoday.com.my/2026/11/19/take-two-shares-surge-over-8-as-gta-vi-reviews-fuel-sales-optimism/", "data": "2026-11-19"}
+ ],
+ "ultimo_resultado": "3T26"
+}
