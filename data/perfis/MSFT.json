@@ -1,0 +1,67 @@
+{
+ "ticker": "MSFT",
+ "revisado_em": "2026-11-22",
+ "resumo": "Gigante americana de software e nuvem: Windows, Office (Microsoft 365), Azure, LinkedIn, Xbox e ferramentas de IA como o Copilot, com participação na OpenAI. Muito lucrativa, com o Azure crescendo 48% ao ano e investimentos recordes em data centers.",
+ "modelo": "A Microsoft vende assinaturas de software para empresas e pessoas (Microsoft 365, Dynamics, LinkedIn), capacidade de nuvem e IA (Azure), licenças do Windows, publicidade em buscas (Bing) e jogos (Xbox). Desde o ano fiscal 2027 reporta dois segmentos: Agents and Infra (nuvem, IA e software empresarial) e Devices and Consumer (Windows, dispositivos, jogos e buscas).",
+ "segmentos": [
+  {"nome": "Agents and Infra (nuvem, IA, software empresarial)", "peso_receita": 0.83, "periodo": "3T26", "obs": "US$ 76,8 bi, alta de 25%; Azure US$ 33,2 bi, alta de 48%."},
+  {"nome": "Devices and Consumer (Windows, Xbox, buscas)", "peso_receita": 0.17, "periodo": "3T26", "obs": "US$ 15,5 bi, queda de 3%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Redmond, Washington (EUA); cerca de metade da receita vem de fora dos EUA, com data centers em dezenas de países."},
+ "temas": [
+  {"tema": "Nuvem e IA", "relacao": "O Azure cresceu 48% e as obrigações contratadas (RPO) comerciais subiram 73%, para US$ 677 bi; a empresa projeta Azure crescendo 49% a 50% no trimestre seguinte, segundo a imprensa."},
+  {"tema": "OpenAI", "relacao": "É grande sócia e parceira de nuvem da OpenAI; a participação gerou ganho de US$ 207 mi no trimestre, contra perda de US$ 3,1 bi um ano antes."},
+  {"tema": "Data centers", "relacao": "Investiu US$ 39,4 bi em imóveis e equipamentos no trimestre, o dobro de um ano antes, e prevê mais de US$ 50 bi no seguinte."}
+ ],
+ "diferencial": {
+  "texto": "A Microsoft tem a base instalada mais ampla do software corporativo (Windows, Office, Teams, Azure, segurança), o que permite vender IA como extensão de produtos que as empresas já usam. A escala da nuvem e a parceria com a OpenAI a colocam entre as líderes em IA. Os pontos fracos são o investimento enorme em data centers, a dependência da relação com a OpenAI e a concorrência da Amazon e do Google na nuvem.",
+  "concorrentes": ["Amazon (AWS)", "Alphabet (Google Cloud)", "Oracle", "Salesforce", "Apple", "Sony (PlayStation)"]
+ },
+ "potencial": {
+  "texto": "A empresa não traz projeção no release; segundo a imprensa, prevê Azure crescendo 49% a 50% no trimestre até dezembro e investimento acima de US$ 50 bi. As obrigações contratadas de US$ 677 bi, com prazo médio de 2,3 anos, indicam demanda para os próximos anos. A Microsoft Cloud faturou US$ 63,9 bi no trimestre, alta de 30%.",
+  "metricas": [
+   {"rotulo": "Obrigações contratadas comerciais (RPO)", "valor": "US$ 677 bi", "periodo": "set/2026"},
+   {"rotulo": "Crescimento do Azure", "valor": "48%", "periodo": "3T26"},
+   {"rotulo": "Receita da Microsoft Cloud", "valor": "US$ 63,9 bi", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 36,6 bi no trimestre (US$ 4,92 por ação), alta de 32%, com margem operacional de 50%. A operação gerou US$ 58,0 bi de caixa, mas o investimento consumiu US$ 39,4 bi. A empresa tinha US$ 64,5 bi em caixa e aplicações e US$ 35,5 bi em dívida, e devolveu US$ 10,2 bi aos acionistas em dividendos e recompras.",
+  "caixa": "US$ 64,5 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Retorno do investimento recorde em data centers.",
+  "Dependência da parceria com a OpenAI.",
+  "Concorrência na nuvem e em IA.",
+  "Regulação antitruste nos EUA e na Europa."
+ ],
+ "momento": "No trimestre encerrado em setembro (3T26 no calendário, 1T27 fiscal da empresa, divulgado em 28/10/2026), a receita foi recorde de US$ 92,3 bi, alta de 19%, acima do esperado, e o Azure cresceu 48%. A empresa passou a divulgar a receita do Azure em dólares e reorganizou os segmentos.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "Receita de US$ 92,3 bi, alta de 19%.",
+   "Azure cresceu 48%, para US$ 33,2 bi.",
+   "Obrigações contratadas de US$ 677 bi, alta de 73%."
+  ],
+  "negativos": [
+   "Windows e dispositivos caíram 22%.",
+   "Investimento dobrou, para US$ 39,4 bi."
+  ],
+  "atencao": [
+   "Capacidade de data centers para atender a demanda do Azure.",
+   "Relação com a OpenAI."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Microsoft: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm", "data": "2026-10-28"},
+  {"titulo": "24/7 Wall St.: Azure grew 48% in fiscal Q1 2027 as capex doubled", "url": "https://247wallst.com/cards/microsoft-q1-2027-earnings-msft-01m6223bcjxyqzvby9cw8yzzqb", "data": "2026-10-28"},
+  {"titulo": "Redmond Magazine: Microsoft revenue jumps as Azure and AI demand fuel growth", "url": "https://redmondmag.com/articles/2026/10/30/microsoft-revenue-jumps-as-azure-and-ai-demand--fuel-growth.aspx", "data": "2026-10-30"},
+  {"titulo": "Zacks: Microsoft Q1 earnings beat estimates as cloud accelerates", "url": "https://www.zacks.com/stock/news/3018768/microsoft-q1-earnings-beat-estimates-as-cloud-accelerates", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
