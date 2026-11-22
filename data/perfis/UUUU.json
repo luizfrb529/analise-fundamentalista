@@ -1,0 +1,69 @@
+{
+ "ticker": "UUUU",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior produtora de urânio dos EUA, que usa a mesma usina em Utah para separar terras raras usadas em ímãs. Está comprando a alemã VAC, fabricante de ímãs. Tem prejuízo, mas US$ 880 mi em caixa e títulos.",
+ "modelo": "A Energy Fuels extrai minério de urânio (mina Pinyon Plain, no Arizona) e o processa na White Mesa Mill, em Utah, única usina convencional de urânio em operação nos EUA, vendendo em contratos de longo prazo e no mercado à vista. Na mesma usina separa óxido de NdPr e, em escala piloto, disprósio e térbio, a partir de monazita. Com a compra da ASM, ganhou uma fábrica de metais e ligas de terras raras na Coreia e planeja integrar toda a cadeia até o ímã com a VAC.",
+ "segmentos": [
+  {"nome": "Urânio", "peso_receita": 0.97, "periodo": "3T26", "obs": "320 mil libras a US$ 88,90 por libra, US$ 28,4 mi."},
+  {"nome": "Terras raras e ligas", "peso_receita": 0.01, "periodo": "3T26", "obs": "US$ 0,4 mi em ligas NdFeB da fábrica coreana."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede no Colorado (EUA), com usina em Utah e minas no Arizona e Utah; projetos de terras raras na Austrália (Donald e Dubbo), Madagascar (Toliara) e Brasil (Bahia), e fábrica de metais na Coreia do Sul."},
+ "temas": [
+  {"tema": "Energia nuclear", "relacao": "A retomada nuclear e as restrições ao urânio russo valorizam a produção americana; a empresa prevê extrair de 2,0 a 2,5 milhões de libras em 2026."},
+  {"tema": "Terras raras e ímãs", "relacao": "A China domina a cadeia de terras raras; a empresa é uma das poucas a separá-las nos EUA e quer chegar ao ímã pronto com a compra da VAC, que conta com empréstimo condicional de até US$ 725 mi de um órgão do Pentágono."},
+  {"tema": "Carros elétricos e defesa", "relacao": "Ímãs de NdFeB com disprósio e térbio são usados em motores de carros elétricos, turbinas eólicas e armamentos."}
+ ],
+ "diferencial": {
+  "texto": "A White Mesa Mill é licenciada para processar materiais radioativos como a monazita, licença rara e demorada de obter, o que permite separar terras raras nos EUA a partir do mesmo ativo do urânio. Com minas próprias, projetos de areias minerais e as compras da ASM e da VAC, a empresa tenta montar uma cadeia completa fora da China. Os pontos fracos são a escala ainda pequena em terras raras, a dependência do preço do urânio, os grandes investimentos e a execução de duas aquisições ao mesmo tempo.",
+  "concorrentes": ["MP Materials", "Lynas", "Cameco", "Ur-Energy", "enCore Energy", "Iluka"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a extração de urânio deve ficar entre 2,0 e 2,5 milhões de libras em 2026, com processamento na usina do 4T26 ao 2T27. A compra da VAC, de cerca de US$ 718 mi em dinheiro mais 65,85 milhões de ações (valor de cerca de US$ 1,9 bi em junho), deve fechar no início de 2027, sujeita a aprovações. O potencial em terras raras depende da fase 2 da usina e dos projetos de areias minerais, ainda sem receita relevante.",
+  "metricas": [
+   {"rotulo": "Extração de urânio projetada", "valor": "2,0 a 2,5 milhões de libras", "periodo": "2026"},
+   {"rotulo": "Preço médio realizado do urânio", "valor": "US$ 88,90 por libra", "periodo": "3T26"},
+   {"rotulo": "Compra da VAC", "valor": "cerca de US$ 1,9 bi", "periodo": "previsão 1T27"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo líquido de US$ 52,2 mi no 3T26, com perda não realizada de US$ 35,3 mi em títulos e US$ 9 mi de custos de aquisição; o prejuízo operacional foi de US$ 25,3 mi. A empresa tinha cerca de US$ 880 mi em caixa e títulos e US$ 700 mi em notas conversíveis com vencimento em 2031. Em 2026 vendeu US$ 158 mi em ações em bolsa e emitiu 14,8 milhões de ações para comprar a ASM; as ações passaram de 240 milhões para 265 milhões, e a compra da VAC acrescentará 65,85 milhões.",
+  "caixa": "cerca de US$ 880 mi (caixa e títulos)",
+  "queima_anual": "cerca de US$ 100 mi (operação e investimentos, ritmo de 2026)",
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Execução e financiamento da compra da VAC, que tem disputa com um cliente de ímãs.",
+  "Preço do urânio e das terras raras.",
+  "Diluição por emissões de ações e conversíveis.",
+  "Concorrência chinesa em terras raras."
+ ],
+ "momento": "No 3T26 (10-Q entregue em 04/11/2026), a receita subiu para US$ 29,2 mi, quase toda de urânio, e o prejuízo foi de US$ 52,2 mi, agravado por perdas em títulos. A empresa concluiu a compra da ASM em agosto e alterou em outubro o contrato de compra da VAC para tratar uma disputa de uma controlada da VAC com um cliente.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Receita de US$ 29,2 mi, contra US$ 17,7 mi no 3T25.",
+   "385 mil libras de urânio extraídas no trimestre.",
+   "Conclusão da compra da ASM, com fábrica de metais na Coreia."
+  ],
+  "negativos": [
+   "Prejuízo líquido de US$ 52,2 mi, contra US$ 16,7 mi no 3T25.",
+   "Perda não realizada de US$ 35,3 mi em títulos.",
+   "Receita de terras raras ainda irrelevante."
+  ],
+  "atencao": [
+   "Aprovações e fechamento da compra da VAC.",
+   "Processamento de urânio na usina a partir do 4T26."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Energy Fuels: formulário 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1385849/000138584926000037/efr-20260930.htm", "data": "2026-11-04"},
+  {"titulo": "Energy Fuels: emenda do contrato de compra da VAC (8-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1385849/000106299326005306/form8k.htm", "data": "2026-10-13"},
+  {"titulo": "Energy Fuels: conclusão da compra da ASM (8-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1385849/000106299326004704/form8k.htm", "data": "2026-08-28"},
+  {"titulo": "Morningstar (PR Newswire): Energy Fuels Announces Q3-2026 Results", "url": "https://www.morningstar.com/news/pr-newswire/20261104to89432/energy-fuels-announces-q3-2026-results", "data": "2026-11-04"},
+  {"titulo": "Mining Weekly: Energy Fuels advances uranium pipeline during third quarter", "url": "https://www.miningweekly.com/article/energy-fuels-advances-uranium-pipeline-during-third-quarter-2026-11-05", "data": "2026-11-05"}
+ ],
+ "ultimo_resultado": "3T26"
+}

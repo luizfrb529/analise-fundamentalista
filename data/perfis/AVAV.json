@@ -1,0 +1,68 @@
+{
+ "ticker": "AVAV",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana de drones militares pequenos (Puma, Raven, P550), munições remotas Switchblade, armas a laser antidrone e, desde a compra da BlueHalo, sistemas espaciais e cibernéticos. Receita de cerca de US$ 2 bi por ano, com lucro contábil pressionado por amortizações.",
+ "modelo": "A AeroVironment vende principalmente ao Departamento de Defesa dos EUA e a aliados, em contratos de produção e de desenvolvimento. Tem dois segmentos: Sistemas Autônomos (drones de reconhecimento, Switchblade, sistemas antidrone Titan) e Espaço, Cibernética e Energia Dirigida (laser LOCUST, antenas para satélites e telemetria, serviços de missão), vindo da BlueHalo, comprada em 2025.",
+ "segmentos": [
+  {"nome": "Sistemas Autônomos", "peso_receita": 0.72, "periodo": "3T26", "obs": "US$ 346,0 mi, contra US$ 285,3 mi; drones cresceram 71% e Switchblade e defesa 8%."},
+  {"nome": "Espaço, Cibernética e Energia Dirigida", "peso_receita": 0.28, "periodo": "3T26", "obs": "US$ 134,5 mi, contra US$ 169,4 mi, com Ebitda ajustado negativo."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Virgínia (EUA). Vende sobretudo ao governo americano, com clientes aliados como Alemanha (programa LARUS) e Ucrânia."},
+ "temas": [
+  {"tema": "Defesa e drones", "relacao": "A guerra na Ucrânia mostrou o peso de drones baratos e munições remotas; o Exército americano encomendou US$ 51 mi em Switchblade 600 e US$ 117 mi em drones P550."},
+  {"tema": "Defesa antidrone", "relacao": "O laser LOCUST foi escolhido para o programa E-HEL do Exército, de US$ 464 mi, primeiro contrato de produção de energia dirigida, e o sistema Titan foi selecionado para proteção do território americano, com teto de US$ 500 mi."},
+  {"tema": "Espaço", "relacao": "Fornece antenas de telemetria para testes hipersônicos e componentes de satélites."}
+ ],
+ "diferencial": {
+  "texto": "A AeroVironment é líder histórica em drones pequenos para o Exército americano, com décadas de contratos, qualificação e produção em escala, o que é barreira difícil para novos entrantes. O Switchblade foi um dos primeiros sistemas de munição remota usados em combate. A compra da BlueHalo ampliou o portfólio para lasers e espaço. Os pontos fracos são a margem pressionada no segmento herdado da BlueHalo, a amortização da compra que reduz o lucro contábil, e a forte concorrência de Anduril, Skydio e grandes grupos de defesa.",
+  "concorrentes": ["Anduril", "Kratos", "Skydio", "Teledyne FLIR", "Lockheed Martin", "RTX"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 (maio de 2026 a abril de 2027) deve ficar entre US$ 2,125 bi e US$ 2,225 bi, com Ebitda ajustado de US$ 305 mi a US$ 325 mi e lucro líquido de US$ 10 mi a US$ 27 mi; a projeção foi mantida em setembro. A carteira financiada é recorde, de US$ 1,5 bi, e a empresa diz ter 86% da receita do ano já visível. O segundo semestre fiscal deve ser mais forte.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 2,125 bi a US$ 2,225 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Carteira financiada", "valor": "US$ 1,5 bi", "periodo": "ago/2026"},
+   {"rotulo": "Contrato do laser LOCUST", "valor": "US$ 464 mi", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo líquido de US$ 5,1 mi no trimestre, causado por US$ 43,4 mi de amortização ligada à compra da BlueHalo; o Ebitda ajustado foi de US$ 53,4 mi. No ano fiscal 2026 houve prejuízo de US$ 265 mi, com baixa de US$ 241 mi de ágio. A empresa tinha US$ 675 mi em caixa e aplicações e US$ 730 mi de dívida, principalmente conversíveis; em 2025 levantou US$ 969 mi em ações e US$ 727 mi em conversíveis.",
+  "caixa": "US$ 675 mi (caixa e aplicações)",
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Dependência do orçamento de defesa dos EUA e de contratos pontuais.",
+  "Margem fraca no segmento vindo da BlueHalo.",
+  "Correção de demonstrações anteriores anunciada em junho de 2026.",
+  "Concorrência crescente em drones e sistemas antidrone."
+ ],
+ "momento": "No trimestre encerrado em agosto (3T26 no calendário, 1T27 fiscal da empresa, divulgado em 09/09/2026), a receita foi recorde de US$ 480,5 mi, alta de 6%, e a carteira financiada subiu 37%. A empresa ganhou contratos de laser e antidrone, ampliou a linha de crédito para US$ 450 mi em outubro e deve divulgar o trimestre seguinte no início de dezembro.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-09",
+  "positivos": [
+   "Receita recorde de US$ 480,5 mi, alta de 6%.",
+   "Carteira financiada de US$ 1,5 bi, alta de 37%.",
+   "Margem bruta de 26%, contra 21% um ano antes."
+  ],
+  "negativos": [
+   "Prejuízo líquido de US$ 5,1 mi.",
+   "Segmento de espaço e cibernética caiu 21% e teve Ebitda ajustado negativo.",
+   "Caixa caiu de US$ 377 mi para US$ 278 mi no trimestre."
+  ],
+  "atencao": [
+   "Resultado do trimestre encerrado em outubro, no início de dezembro.",
+   "Ritmo de produção do laser LOCUST e do Switchblade."
+  ]
+ },
+ "fontes": [
+  {"titulo": "AeroVironment: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1368622/000110465926106304/avav-20260909xex99d1.htm", "data": "2026-09-09"},
+  {"titulo": "AeroVironment: apresentação do 1T27 fiscal (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1368622/000110465926106304/avav-20260909xex99d2.htm", "data": "2026-09-09"},
+  {"titulo": "AeroVironment: emenda da linha de crédito (8-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1368622/000110465926122416/tm2628954d1_8k.htm", "data": "2026-11-04"},
+  {"titulo": "Nasdaq/Zacks: AVAV Q1 earnings call centers on LOCUST scale-up", "url": "https://www.nasdaq.com/articles/avav-q1-earnings-call-centers-locust-scale-second-half-ramp", "data": "2026-09"}
+ ],
+ "ultimo_resultado": "3T26"
+}
