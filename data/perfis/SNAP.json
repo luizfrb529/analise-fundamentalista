@@ -1,0 +1,63 @@
+{
+ "ticker": "SNAP",
+ "revisado_em": "2026-11-22",
+ "resumo": "Dona do Snapchat, aplicativo de mensagens com fotos e vídeos muito usado por jovens, com 495 milhões de usuários diários, e dos óculos de realidade aumentada Specs. Voltou a dar lucro, mas a publicidade cresce pouco.",
+ "modelo": "A Snap ganha principalmente com publicidade no Snapchat (Stories, Spotlight, Discover, mapas) e, cada vez mais, com assinaturas como Snapchat+, armazenamento de Memórias e Lens+, que já passam de 30 milhões de assinantes. Investe pesado em realidade aumentada e nos óculos Specs.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 1,72 bi no 3T26 (+14%); publicidade +4%, outras receitas +84%",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Santa Monica, Califórnia (EUA); usuários no mundo todo, com crescimento concentrado fora da América do Norte e da Europa."},
+ "temas": [
+  {"tema": "Redes sociais e publicidade", "relacao": "A publicidade cresceu só 4%, abaixo do esperado pela empresa, enquanto as assinaturas responderam pela maior parte do crescimento."},
+  {"tema": "Realidade aumentada", "relacao": "Lançou os óculos Specs de realidade aumentada para consumidores."}
+ ],
+ "diferencial": {
+  "texto": "O Snapchat tem forte uso entre adolescentes e jovens, formato próprio de mensagens efêmeras e liderança em lentes de realidade aumentada. Mas compete com Meta (Instagram) e TikTok, muito maiores em publicidade, os usuários na América do Norte e Europa pararam de crescer e a receita por usuário é baixa.",
+  "vantagem": {"nivel": "fraca", "resumo": "Forte uso entre jovens e liderança em realidade aumentada, mas compete com Meta e TikTok, muito maiores, e tem receita por usuário baixa."},
+  "concorrentes": ["Meta (Instagram, WhatsApp)", "TikTok", "YouTube", "Pinterest", "Reddit"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 4T26 deve ficar entre US$ 1,95 bi e US$ 1,985 bi, com Ebitda ajustado de US$ 490 mi a US$ 525 mi. O potencial vem das assinaturas e da realidade aumentada, mas depende da retomada da publicidade.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 1,95 bi a US$ 1,985 bi", "periodo": "4T26"},
+   {"rotulo": "Usuários diários", "valor": "495 milhões (+4%)", "periodo": "3T26"},
+   {"rotulo": "Assinantes pagos", "valor": "mais de 30 milhões", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucro recente",
+  "texto": "Lucro de US$ 56 mi no 3T26, ante prejuízo de US$ 104 mi um ano antes, com Ebitda ajustado de US$ 383 mi e fluxo de caixa livre de US$ 164 mi. Tem US$ 2,77 bi em caixa e aplicações e US$ 3,49 bi em dívida; recomprou US$ 601 mi em ações no ano.",
+  "caixa": "US$ 2,77 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Publicidade crescendo pouco.",
+  "Concorrência de Meta e TikTok.",
+  "Usuários estagnados em mercados ricos.",
+  "Investimentos caros em realidade aumentada."
+ ],
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita subiu 14% e a empresa teve lucro, mas a publicidade cresceu só 4% e as ações caíram cerca de 14%; o CEO é Evan Spiegel.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Lucro de US$ 56 mi.",
+   "Outras receitas cresceram 84%.",
+   "Mais de 30 milhões de assinantes."
+  ],
+  "negativos": [
+   "Publicidade cresceu só 4%.",
+   "Usuários estáveis na América do Norte e Europa."
+  ],
+  "atencao": [
+   "Vendas dos óculos Specs.",
+   "Retomada da publicidade."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Snap: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1564408/000156440826000063/snap-20261104xexx991pressr.htm", "data": "2026-11-04"},
+  {"titulo": "MediaPost: Snap Q3 ad growth underwhelms CEO", "url": "https://www.mediapost.com/publications/article/419256/snap-q3-ad-growth-underwhelms-ceo.html", "data": "2026-11"},
+  {"titulo": "Social Media Today: Snapchat posts modest user increase in Q3", "url": "https://socialmediatoday.com/news/snapchat-posts-modest-user-increase-in-q3/873823", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

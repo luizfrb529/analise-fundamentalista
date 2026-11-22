@@ -1,0 +1,66 @@
+{
+ "ticker": "APH",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das maiores fabricantes mundiais de conectores, cabos, antenas e sensores, com forte exposição a data centers de IA. Muito lucrativa, com vendas crescendo 65% e pedidos recorde.",
+ "modelo": "A Amphenol projeta e fabrica conectores e sistemas de interconexão (elétricos, de alta velocidade e de fibra óptica), cabos, antenas e sensores para data centers, redes de telecomunicação, defesa, aviação, carros e indústria. Opera de forma muito descentralizada, com dezenas de unidades autônomas, e cresce também por aquisições.",
+ "segmentos": [
+  {"nome": "Soluções de comunicação", "peso_receita": 0.64, "periodo": "3T26", "obs": "Vendas de US$ 6,58 bi (+99%; orgânico +51%)."},
+  {"nome": "Ambientes extremos", "peso_receita": 0.20, "periodo": "3T26", "obs": "Vendas de US$ 2,04 bi (+35%)."},
+  {"nome": "Interconexão e sensores", "peso_receita": 0.16, "periodo": "3T26", "obs": "Vendas de US$ 1,60 bi (+17%)."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Wallingford, Connecticut (EUA); fábricas e clientes no mundo todo, com grande presença na Ásia."},
+ "temas": [
+  {"tema": "Infraestrutura de data centers de IA", "relacao": "A demanda de TI e comunicação de dados ligada à IA teve crescimento orgânico excepcional, segundo a empresa."},
+  {"tema": "Aquisições", "relacao": "Comprou o negócio de conectividade e cabos da CommScope em 2026, que deve vender US$ 5,1 bi no ano, e tem outras compras pendentes de cerca de US$ 1,6 bi."}
+ ],
+ "diferencial": {
+  "texto": "A Amphenol tem portfólio amplíssimo de conectores, engenharia próxima do cliente, modelo descentralizado ágil e histórico de margens entre as melhores do setor, além de aquisições bem integradas. Os pontos fracos são a dependência atual do ciclo de investimento em IA e a exposição a tarifas e à Ásia.",
+  "vantagem": {"nivel": "forte", "resumo": "Portfólio amplíssimo, engenharia próxima do cliente, modelo descentralizado ágil e margens entre as melhores do setor de conectores."},
+  "concorrentes": ["TE Connectivity", "Molex (Koch)", "Corning", "Belden", "Hon Hai (Foxconn Interconnect)"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas de 2026 devem ficar entre US$ 36,9 bi e US$ 37,1 bi, com lucro ajustado de US$ 2,82 a US$ 2,84 por ação; os pedidos de US$ 12,2 bi no trimestre, 1,19 vez as vendas, indicam demanda à frente.",
+  "metricas": [
+   {"rotulo": "Vendas projetadas", "valor": "US$ 36,9 bi a US$ 37,1 bi", "periodo": "2026"},
+   {"rotulo": "Pedidos do trimestre", "valor": "US$ 12,2 bi (1,19 vez as vendas)", "periodo": "3T26"},
+   {"rotulo": "Margem operacional ajustada", "valor": "29,7%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 0,79 por ação no 3T26 (US$ 0,80 ajustado), com vendas de US$ 10,2 bi (+65%) e fluxo de caixa livre de US$ 1,62 bi. A dívida líquida é de cerca de US$ 12,6 bi (cálculo pelo balanço), após as aquisições; a empresa elevou o dividendo em 20% e aprovou recompra de US$ 4 bi em três anos.",
+  "caixa": "US$ 5,30 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Desaceleração dos investimentos em IA.",
+  "Integração de aquisições grandes.",
+  "Tarifas e tensões comerciais.",
+  "Dívida maior após a compra da CommScope."
+ ],
+ "momento": "No 3T26 (divulgado em 28/10/2026), as vendas subiram 65%, para US$ 10,2 bi, com pedidos recorde de US$ 12,2 bi, e a empresa elevou o dividendo em 20% e anunciou recompra de US$ 4 bi.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "Vendas subiram 65%, 37% orgânico.",
+   "Pedidos recorde de US$ 12,2 bi.",
+   "Dividendo elevado em 20%."
+  ],
+  "negativos": [
+   "Dívida maior após aquisições."
+  ],
+  "atencao": [
+   "Demanda de data centers em 2027.",
+   "Novas aquisições."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Amphenol: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926119421/aph-ex99d1.htm", "data": "2026-10-28"},
+  {"titulo": "Finviz: Amphenol reports record third quarter 2026 results", "url": "https://finviz.com/news/409950/amphenol-reports-record-third-quarter-2026-results-and-announces-dividend-increase-and-new-stock-repurchase-program", "data": "2026-10-28"},
+  {"titulo": "I-Connect007: Amphenol reports record Q3 results, raises dividend", "url": "https://iconnect007.com/article/152188/amphenol-reports-record-q3-results-raises-dividend/152185/pcb", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

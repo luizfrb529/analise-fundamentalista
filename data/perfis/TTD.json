@@ -1,0 +1,63 @@
+{
+ "ticker": "TTD",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior plataforma independente de compra de anúncios digitais (DSP) do mundo, usada por agências e marcas para comprar mídia em TV conectada, sites e áudio. Lucrativa e sem dívida, mas com receita estagnada em 2026.",
+ "modelo": "A The Trade Desk cobra uma porcentagem do valor que agências e anunciantes gastam comprando anúncios pela sua plataforma, que usa dados e IA (Kokai) para decidir em tempo real onde e quanto pagar. Por ser independente, não vende espaço próprio, ao contrário de Google e Amazon.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 736 mi no 3T26 (-0,5%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Ventura, Califórnia (EUA); clientes no mundo todo, com maior peso na América do Norte."},
+ "temas": [
+  {"tema": "Publicidade digital e TV conectada", "relacao": "A receita caiu 0,5%, a primeira queda anual desde o IPO de 2016, segundo a imprensa."},
+  {"tema": "IA na publicidade", "relacao": "Lançou o Kokai Zuma, com agentes de IA para planejar e otimizar campanhas."}
+ ],
+ "diferencial": {
+  "texto": "A The Trade Desk é a maior plataforma independente de compra de anúncios, com retenção de clientes acima de 95% há mais de uma década e neutralidade valorizada por agências. Mas a concorrência da Amazon e do Google, que também vendem espaço próprio, cresceu, e a receita parou de crescer, o que pressiona seu poder de cobrança.",
+  "vantagem": {"nivel": "moderada", "resumo": "Maior plataforma independente de compra de anúncios, com retenção acima de 95%, mas pressionada por Amazon e Google e com receita estagnada."},
+  "concorrentes": ["Amazon Ads", "Google (DV360)", "Meta", "Microsoft (Xandr)", "Viant"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 4T26 deve ser de pelo menos US$ 755 mi e o Ebitda ajustado de pelo menos US$ 280 mi. A reestruturação, com corte de cerca de 15% do quadro, deve gerar mais de US$ 100 mi em economia em 2027, segundo a imprensa.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "pelo menos US$ 755 mi", "periodo": "4T26"},
+   {"rotulo": "Margem de Ebitda ajustada", "valor": "36%", "periodo": "3T26"},
+   {"rotulo": "Retenção de clientes", "valor": "acima de 95%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 38 mi no 3T26 (US$ 0,08 por ação), reduzido por US$ 44 mi em custos de reestruturação; o lucro ajustado foi de US$ 0,33 por ação. Tem US$ 1,65 bi em caixa e aplicações, sem dívida, e US$ 1 bi autorizados para recompra.",
+  "caixa": "US$ 1,65 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concorrência da Amazon e do Google.",
+  "Receita estagnada.",
+  "Mudanças em privacidade e cookies.",
+  "Dependência de grandes agências."
+ ],
+ "momento": "No 3T26 (divulgado em 09/11/2026), a receita caiu 0,5%, para US$ 736 mi, a primeira queda desde o IPO, mas o lucro ajustado veio acima do esperado; a empresa cortou cerca de 15% do quadro. O CEO é Jeff Green.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-09",
+  "positivos": [
+   "Lucro ajustado acima do esperado.",
+   "Retenção acima de 95%.",
+   "Projeção de crescimento no 4T26."
+  ],
+  "negativos": [
+   "Primeira queda de receita desde o IPO.",
+   "Margem caiu de 43% para 36%."
+  ],
+  "atencao": [
+   "Retomada do crescimento.",
+   "Efeito da reestruturação."
+  ]
+ },
+ "fontes": [
+  {"titulo": "The Trade Desk: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1671933/000167193326000115/ttd-20261109x8kexx991.htm", "data": "2026-11-09"},
+  {"titulo": "Adweek: The Trade Desk clears Wall Street's low expectations as revenue stalls", "url": "https://www.adweek.com/programmatic/the-trade-desk-clears-wall-streets-low-expectations-as-revenue-stalls/", "data": "2026-11"},
+  {"titulo": "PPC Land: Trade Desk revenue drops 0.5%, its first decline since its 2016 IPO", "url": "https://ppc.land/trade-desk-revenue-drops-0-5-its-first-decline-since-its-2016-ipo/", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

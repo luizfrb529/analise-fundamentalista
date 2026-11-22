@@ -1,0 +1,66 @@
+{
+ "ticker": "RDDT",
+ "revisado_em": "2026-11-22",
+ "resumo": "Rede social americana de comunidades de discussão (subreddits), com 130 milhões de usuários diários e conteúdo valioso para buscas e modelos de IA. Lucrativa e crescendo 53%, mas com usuários nos EUA em queda.",
+ "modelo": "O Reddit ganha principalmente com publicidade exibida nas comunidades, vendida a grandes marcas e pequenos anunciantes, e também licencia seus dados para empresas de IA e outros usos. O conteúdo é criado de graça pelos próprios usuários e moderado por voluntários.",
+ "segmentos": [
+  {"nome": "Publicidade", "peso_receita": 0.95, "periodo": "3T26", "obs": "Receita de US$ 847 mi (+54%)."},
+  {"nome": "Outras receitas (inclui licenciamento de dados)", "peso_receita": 0.05, "periodo": "3T26", "obs": "Receita de US$ 48 mi (+35%)."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": 0.80, "exterior_pct": 0.20, "periodo": "3T26", "texto": "Sede em San Francisco (EUA); 80% da receita vem dos EUA, mas a maioria dos usuários diários já está fora do país."},
+ "temas": [
+  {"tema": "Publicidade digital com IA", "relacao": "A receita de anúncios cresceu 54% e a receita por usuário subiu 36%, com ferramentas de anúncio baseadas em IA."},
+  {"tema": "Buscas e IA generativa", "relacao": "A queda de visitas vindas de buscadores pode reduzir os usuários diários no 4T26, segundo a empresa; os usuários diários nos EUA caíram 2%."}
+ ],
+ "diferencial": {
+  "texto": "O Reddit tem um acervo único de conversas humanas sobre praticamente qualquer assunto, com comunidades fiéis e conteúdo criado de graça, o que é difícil de replicar e valioso para anunciantes, buscadores e IA. O ponto fraco é a dependência do tráfego vindo do Google e de respostas de IA, que pode mudar rapidamente.",
+  "vantagem": {"nivel": "moderada", "resumo": "Acervo único de conversas humanas e comunidades fiéis, difícil de replicar, mas dependente do tráfego de buscadores e de IA."},
+  "concorrentes": ["Meta", "Alphabet (Google e YouTube)", "X", "TikTok", "Discord", "Pinterest"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 4T26 deve ficar entre US$ 1,0 bi e US$ 1,03 bi, com Ebitda ajustado de US$ 480 mi a US$ 510 mi. O potencial vem da monetização maior por usuário e da expansão internacional; o risco é a possível queda de usuários diários no 4T26.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 1,0 bi a US$ 1,03 bi", "periodo": "4T26"},
+   {"rotulo": "Usuários diários", "valor": "130,3 milhões (+12%)", "periodo": "3T26"},
+   {"rotulo": "Margem de Ebitda ajustada", "valor": "44,9%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 283 mi no 3T26 (US$ 1,40 por ação), com Ebitda ajustado de US$ 402 mi e fluxo de caixa livre de US$ 363 mi. Tem US$ 3,0 bi em caixa e aplicações, sem dívida relevante, e recomprou US$ 100 mi em ações no trimestre.",
+  "caixa": "US$ 3,03 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Queda de tráfego vindo de buscadores.",
+  "Usuários nos EUA em queda.",
+  "Concorrência por verbas de publicidade.",
+  "Dependência de moderadores voluntários."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita subiu 53%, para US$ 895 mi, mas os usuários diários ficaram estáveis frente ao 2T26 e a empresa alertou para possível queda no 4T26; as ações caíram após o resultado.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Receita subiu 53%.",
+   "Margem de Ebitda de 44,9%.",
+   "Lucro de US$ 283 mi."
+  ],
+  "negativos": [
+   "Usuários diários nos EUA caíram 2%.",
+   "Alerta de queda de usuários no 4T26."
+  ],
+  "atencao": [
+   "Tráfego vindo do Google.",
+   "Crescimento internacional."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Reddit: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000114/earningspressreleaseq326.htm", "data": "2026-10-29"},
+  {"titulo": "PPC Land: Reddit ad revenue gains 54% to $847M as daily users stall", "url": "https://ppc.land/reddit-ad-revenue-gains-54-to-847m-as-daily-users-stall-at-130-3m/", "data": "2026-10"},
+  {"titulo": "StockStory: Reddit surprises with Q3 2026 sales but stock drops", "url": "https://stockstory.org/us/stocks/nyse/rddt/news/earnings/reddit-nyserddt-surprises-with-q3-2026-sales-but-stock-drops-126percent", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
