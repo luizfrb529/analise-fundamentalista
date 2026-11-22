@@ -1,0 +1,67 @@
+{
+ "ticker": "BA",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das duas grandes fabricantes de aviões comerciais do mundo (737, 787, 777) e grande empresa de defesa e espaço. Carteira recorde de US$ 745 bi, mas ainda em recuperação após anos de prejuízos, com prejuízo pequeno no último trimestre.",
+ "modelo": "A Boeing vende aviões comerciais a companhias aéreas e empresas de leasing (com pagamento em boa parte na entrega), sistemas de defesa e espaço ao governo americano e aliados (aviões militares, satélites, helicópteros) e serviços de peças, manutenção e treinamento (Global Services), o negócio mais lucrativo.",
+ "segmentos": [
+  {"nome": "Aviões comerciais", "peso_receita": 0.44, "periodo": "3T26", "obs": "US$ 10,7 bi, queda de 3%; prejuízo operacional de US$ 697 mi."},
+  {"nome": "Defesa, espaço e segurança", "peso_receita": 0.33, "periodo": "3T26", "obs": "US$ 7,9 bi, alta de 15%, margem de 6,2%."},
+  {"nome": "Serviços globais", "peso_receita": 0.23, "periodo": "3T26", "obs": "US$ 5,6 bi, alta de 4%, margem de 18,3%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Arlington, Virgínia (EUA), com fábricas em Washington e Carolina do Sul; clientes no mundo todo."},
+ "temas": [
+  {"tema": "Aviação comercial", "relacao": "A demanda por aviões supera a produção; a carteira comercial tem mais de 6.300 aviões (US$ 612 bi), e o 737-10 foi certificado em outubro."},
+  {"tema": "Defesa", "relacao": "Foi escolhida pela Marinha americana para o caça F/A-XX, ainda fora da carteira até a conclusão da seleção."}
+ ],
+ "diferencial": {
+  "texto": "A Boeing divide com a Airbus o duopólio de aviões comerciais de grande porte, mercado com barreiras enormes de tecnologia, certificação e capital, e tem carteira para muitos anos. O negócio de serviços é estável e lucrativo. Os pontos fracos são os problemas de qualidade e produção dos últimos anos, a dívida de US$ 45,9 bi, atrasos no 777X (primeira entrega prevista para 2027) e a forte concorrência da Airbus.",
+  "concorrentes": ["Airbus", "Embraer", "COMAC", "Lockheed Martin", "Northrop Grumman", "General Dynamics"]
+ },
+ "potencial": {
+  "texto": "A recuperação depende de estabilizar a produção do 737 em 47 por mês, manter o 787 em 8 por mês e entregar o primeiro 777X em 2027, transformando a carteira recorde em caixa. A empresa não divulga projeção no release.",
+  "metricas": [
+   {"rotulo": "Carteira de pedidos", "valor": "US$ 745 bi", "periodo": "set/2026"},
+   {"rotulo": "Entregas comerciais", "valor": "161 aviões", "periodo": "3T26"},
+   {"rotulo": "Meta de produção do 737", "valor": "47 por mês", "periodo": "em estabilização"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo líquido de US$ 116 mi no 3T26, contra US$ 5,3 bi um ano antes, quando houve grande despesa com o 777X; em nove meses o prejuízo foi de US$ 551 mi. O fluxo de caixa livre foi positivo em US$ 464 mi no trimestre, mas negativo em US$ 359 mi em nove meses. A empresa tinha US$ 20,7 bi em caixa e aplicações e US$ 45,9 bi em dívida.",
+  "caixa": "US$ 20,7 bi",
+  "queima_anual": "cerca de US$ 0,5 bi (fluxo de caixa livre negativo, ritmo de 2026)",
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Problemas de qualidade e produção.",
+  "Atraso no 777X.",
+  "Dívida elevada.",
+  "Concorrência da Airbus."
+ ],
+ "momento": "No 3T26 (divulgado em 27/10/2026), a receita subiu 4%, para US$ 24,2 bi, o prejuízo caiu para US$ 116 mi e o fluxo de caixa livre ficou positivo no trimestre; a carteira bateu recorde de US$ 745 bi e a empresa ganhou a seleção do caça F/A-XX.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-27",
+  "positivos": [
+   "Carteira recorde de US$ 745 bi.",
+   "Fluxo de caixa livre positivo de US$ 464 mi.",
+   "Certificação do 737-10."
+  ],
+  "negativos": [
+   "Prejuízo operacional em aviões comerciais.",
+   "Prejuízo líquido de US$ 116 mi."
+  ],
+  "atencao": [
+   "Produção do 737 em 47 por mês.",
+   "Primeira entrega do 777X em 2027."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Boeing: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm", "data": "2026-10-27"},
+  {"titulo": "Boeing Mediaroom: Boeing reports third quarter results", "url": "https://boeing.mediaroom.com/2026-10-27-Boeing-Reports-Third-Quarter-Results", "data": "2026-10-27"},
+  {"titulo": "Airways Magazine: Boeing Q3 2026 commercial loss and cash flow", "url": "https://airwaysmag.com/new-post/boeing-q3-2026-commercial-loss-cash-flow", "data": "2026-10"},
+  {"titulo": "AirData News: Boeing cuts quarterly loss from $5.3 billion to $116 million", "url": "https://www.airdatanews.com/boeing-cuts-quarterly-loss-from-us-5-3-billion-to-us-116-million/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
