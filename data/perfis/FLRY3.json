@@ -1,6 +1,6 @@
 {
  "ticker": "FLRY3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-22",
  "resumo": "Uma das maiores empresas de medicina diagnóstica do país, com laboratórios próprios e serviços a hospitais e outros laboratórios. Cerca de 70% da receita vem do atendimento direto ao paciente.",
  "modelo": "O Grupo Fleury realiza exames laboratoriais e de imagem em unidades próprias e atendimento móvel, com marcas como Fleury, a+, Labs a+, Pardini e, desde 2026, Femme e São Lucas. Recebe principalmente de operadoras de planos de saúde e de pacientes particulares (B2C), presta serviços de apoio a outros laboratórios e hospitais (B2B) e atua em novos negócios, como infusões, ortopedia e oftalmologia (Novos Elos). A receita é recorrente, ligada ao volume de exames, e a empresa cresce também por aquisições.",
  "segmentos": [
@@ -85,5 +85,23 @@
    "data": "2026-11-09"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Receita líquida de R$ 2,48 bi no 3T26, alta de 13,4% sobre o 3T25.",
+   "Lucro líquido de R$ 264,3 mi no 3T26, alta de 42,9%, com alíquota efetiva menor.",
+   "Geração de caixa operacional de R$ 798,5 mi, alta de 11,1%; capex de R$ 102,8 mi, queda de 18,4%."
+  ],
+  "negativos": [
+   "Margem Ebitda de 27,1% no 3T26, queda de 0,3 p.p., pelos custos de integração da Femme.",
+   "Crescimento orgânico da receita bruta de 9,9%, abaixo dos 13,3% totais."
+  ],
+  "atencao": [
+   "Integração da Femme, consolidada pela primeira vez no 3T26.",
+   "Alavancagem estável em 1,0x dívida líquida sobre Ebitda."
+  ]
+ }
 }
