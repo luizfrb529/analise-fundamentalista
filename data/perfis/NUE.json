@@ -1,0 +1,67 @@
+{
+ "ticker": "NUE",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior siderúrgica dos EUA, que produz aço reciclando sucata em fornos elétricos, com custo flexível e baixa emissão. Lucrativa, com balanço sólido e histórico longo de dividendos crescentes.",
+ "modelo": "A Nucor derrete sucata e ferro em minimills com fornos elétricos para produzir chapas, barras, vigas e perfis de aço, e também fabrica produtos acabados (estruturas, tubos, portas, torres e equipamentos para data centers e redes elétricas). Tem negócio próprio de sucata e ferro (David J. Joseph) que garante matéria-prima.",
+ "segmentos": [
+  {"nome": "Usinas de aço", "peso_receita": 0.76, "periodo": "4T26", "obs": "Lucro antes de impostos de US$ 1,79 bi; utilização de 89%."},
+  {"nome": "Produtos de aço", "peso_receita": 0.20, "periodo": "4T26", "obs": "Lucro antes de impostos de US$ 465 mi."},
+  {"nome": "Matérias-primas", "peso_receita": 0.04, "periodo": "4T26", "obs": "Lucro antes de impostos de US$ 105 mi."}
+ ],
+ "segmentos_base": "Lucro antes de impostos por segmento (antes de despesas corporativas)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Charlotte, Carolina do Norte (EUA); usinas e clientes principalmente na América do Norte."},
+ "temas": [
+  {"tema": "Infraestrutura e reindustrialização", "relacao": "Vende aço e estruturas para obras, data centers, redes elétricas e fábricas que voltam aos EUA."},
+  {"tema": "Proteção comercial", "relacao": "As tarifas sobre aço importado sustentam os preços no mercado americano; o preço médio subiu 9,2% no trimestre, segundo a imprensa."}
+ ],
+ "diferencial": {
+  "texto": "A Nucor tem custo baixo e flexível graças às minimills, escala nacional, matéria-prima própria e um portfólio de produtos acabados que diversifica o lucro, além de balanço sólido. Mas o aço é uma commodity cíclica: o lucro depende de preços e demanda, e há concorrentes locais como Steel Dynamics e importados.",
+  "vantagem": {"nivel": "moderada", "resumo": "Custo baixo e flexível com minimills, escala e matéria-prima própria, mas em setor de commodity cíclico e com rivais locais e importados."},
+  "concorrentes": ["Steel Dynamics", "Cleveland-Cliffs", "U.S. Steel (Nippon Steel)", "Commercial Metals", "Importadores"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro do 4T26 deve ficar em linha ou um pouco acima do 3T26, com usinas e produtos estáveis. O potencial vem da nova usina de chapas na Virgínia Ocidental, que fez a primeira corrida em setembro de 2026, e da demanda por aço de infraestrutura.",
+  "metricas": [
+   {"rotulo": "Utilização das usinas", "valor": "89%", "periodo": "3T26"},
+   {"rotulo": "Fluxo de caixa livre", "valor": "US$ 2,66 bi", "periodo": "9M26"},
+   {"rotulo": "Dividendo trimestral", "valor": "US$ 0,56", "periodo": "nov/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 1,32 bi no 3T26 (US$ 5,80 por ação), com vendas de US$ 11,25 bi (+32%). Tem US$ 3,6 bi em caixa e aplicações e cerca de US$ 7,1 bi em dívida, e devolveu US$ 629 mi aos acionistas no trimestre em recompras e dividendos.",
+  "caixa": "US$ 3,64 bi",
+  "queima_anual": null,
+  "periodo": "out/2026"
+ },
+ "riscos": [
+  "Ciclo do preço do aço.",
+  "Mudanças nas tarifas de importação.",
+  "Custos de sucata e energia.",
+  "Desaceleração da construção."
+ ],
+ "momento": "No 3T26 (divulgado em 26/10/2026), as vendas subiram 32% e o lucro por ação foi de US$ 5,80, com preços maiores, e a empresa espera lucro estável ou um pouco maior no 4T26.",
+ "destaques_resultado": {
+  "trimestre": "4T26",
+  "divulgado_em": "2026-10-26",
+  "positivos": [
+   "Vendas subiram 32%.",
+   "Lucro acima do esperado.",
+   "Nova usina na Virgínia Ocidental começou a operar."
+  ],
+  "negativos": [
+   "Utilização das usinas caiu para 89%.",
+   "Lucro de matérias-primas menor."
+  ],
+  "atencao": [
+   "Preço do aço no 4T26.",
+   "Política de tarifas."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Nucor: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526432117/d129328dex991.htm", "data": "2026-10-26"},
+  {"titulo": "SteelOrbis: Nucor's net income up 14.1 percent in Q3 2026", "url": "https://www.steelorbis.com/steel-news/latest-news/nucors-net-income-up-141-percent-in-q3-2026-1486602.htm", "data": "2026-10"},
+  {"titulo": "GMK Center: Nucor's profit beat forecasts thanks to rising steel prices", "url": "https://gmk.center/en/news/nucor-s-profit-beat-forecasts-thanks-to-rising-steel-prices/", "data": "2026-10-27"}
+ ],
+ "ultimo_resultado": "4T26"
+}

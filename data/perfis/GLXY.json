@@ -1,0 +1,67 @@
+{
+ "ticker": "GLXY",
+ "revisado_em": "2026-11-22",
+ "resumo": "Empresa americana de serviços financeiros em criptoativos (negociação, empréstimos, gestão de recursos) que também constrói data centers para IA, como o campus Helios alugado à CoreWeave. Lucro volátil, ligado ao preço das criptomoedas.",
+ "modelo": "A Galaxy ganha com negociação e empréstimos de criptoativos para instituições, gestão de fundos e ETFs, staking e banco de investimento em cripto, além de ganhos com investimentos próprios. No segmento de data centers, aluga capacidade do campus Helios, no Texas, para a CoreWeave por contratos longos. O fundador e CEO é Mike Novogratz.",
+ "segmentos": [
+  {"nome": "Data centers", "peso_receita": 0.53, "periodo": "3T26", "obs": "Lucro bruto ajustado de US$ 79,1 mi com aluguel à CoreWeave."},
+  {"nome": "Ativos digitais", "peso_receita": 0.47, "periodo": "3T26", "obs": "Lucro bruto ajustado de US$ 71,3 mi; carteira média de empréstimos de US$ 1,8 bi."}
+ ],
+ "segmentos_base": "Lucro bruto ajustado dos segmentos operacionais",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA); data centers no Texas e clientes institucionais no mundo todo."},
+ "temas": [
+  {"tema": "Infraestrutura para IA", "relacao": "Entregou 133 MW à CoreWeave no Helios e captou US$ 3,5 bi para a segunda fase, com entregas a partir do 2T27; há cerca de 830 MW aprovados ainda sem contrato."},
+  {"tema": "Criptomoedas", "relacao": "Tem US$ 10,4 bi em ativos sob gestão e em staking, e o lucro oscila com o preço das moedas."}
+ ],
+ "diferencial": {
+  "texto": "A Galaxy tem uma das plataformas institucionais de cripto mais completas, e o campus Helios, com grande capacidade de energia aprovada, virou um ativo valioso para IA. Mas o negócio de cripto é volátil e competitivo, e os data centers exigem muito capital e dependem de poucos inquilinos, hoje a CoreWeave.",
+  "vantagem": {"nivel": "fraca", "resumo": "Plataforma de cripto completa e campus com muita energia aprovada, mas negócios voláteis, de capital intensivo e dependentes de poucos clientes."},
+  "concorrentes": ["Coinbase", "Cumberland (DRW)", "BitGo", "Applied Digital", "IREN", "Core Scientific"]
+ },
+ "potencial": {
+  "texto": "O potencial vem da expansão do Helios, com a segunda fase a partir do 2T27 e capacidade aprovada ainda sem contrato, e da retomada do mercado de cripto. A empresa não traz projeção de lucro.",
+  "metricas": [
+   {"rotulo": "Capacidade entregue à CoreWeave", "valor": "133 MW", "periodo": "set/2026"},
+   {"rotulo": "Ativos sob gestão e em staking", "valor": "US$ 10,4 bi", "periodo": "set/2026"},
+   {"rotulo": "Caixa, stablecoins e títulos", "valor": "US$ 4,9 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 322,8 mi no 3T26, após prejuízo de US$ 85,3 mi no 2T26, em boa parte por ganhos com investimentos; no ano, o lucro é de apenas US$ 21 mi. Tem US$ 4,9 bi em caixa, stablecoins e títulos e emitiu US$ 3,5 bi em notas garantidas para financiar o Helios.",
+  "caixa": "US$ 4,9 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Volatilidade do preço das criptomoedas.",
+  "Dependência da CoreWeave.",
+  "Dívida para construir data centers.",
+  "Regulação de criptoativos."
+ ],
+ "momento": "No 3T26 (divulgado em 27/10/2026), a Galaxy lucrou US$ 322,8 mi com o primeiro trimestre completo de aluguel do Helios e ganhos de investimento, e garantiu US$ 3,5 bi para a próxima fase.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-27",
+  "positivos": [
+   "Lucro de US$ 322,8 mi.",
+   "Ebitda de data centers subiu para US$ 69 mi.",
+   "Financiamento de US$ 3,5 bi garantido."
+  ],
+  "negativos": [
+   "Lucro do ano quase nulo.",
+   "Lucro dependente de ganhos com investimentos."
+  ],
+  "atencao": [
+   "Novos inquilinos para o Helios.",
+   "Preço das criptomoedas."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Galaxy: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000108/glxy-20260930xpressrelease.htm", "data": "2026-10-27"},
+  {"titulo": "Galaxy: 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000112/glxy-20260930.htm", "data": "2026-11-09"},
+  {"titulo": "Finviz: Galaxy Digital reports $323 million Q3 net income as data center operations expand", "url": "https://finviz.com/news/408923/galaxy-digital-reports-323-million-q3-net-income-as-data-center-operations-expand", "data": "2026-10"},
+  {"titulo": "Quartr: Galaxy Digital Q3 2026 earnings summary", "url": "https://quartr.com/events/galaxy-digital-inc-glxy-q3-2026_3PI5i9rf", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

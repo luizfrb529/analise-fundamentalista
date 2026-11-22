@@ -1,0 +1,68 @@
+{
+ "ticker": "CRCL",
+ "revisado_em": "2026-11-22",
+ "resumo": "Emissora da USDC, a segunda maior stablecoin do mundo, lastreada em dólares e títulos do Tesouro americano. Lucrativa, mas a receita depende muito dos juros e grande parte vai para parceiros de distribuição como a Coinbase.",
+ "modelo": "A Circle emite USDC, moeda digital de valor fixo em dólar, e aplica as reservas em caixa e títulos de curto prazo do governo americano, ganhando os juros. Paga boa parte dessa receita a distribuidores, principalmente a Coinbase. Também desenvolve a rede blockchain Arc e serviços de pagamento e infraestrutura para empresas.",
+ "segmentos": [
+  {"nome": "Receita de reservas", "peso_receita": 0.76, "periodo": "3T26", "obs": "US$ 658 mi (-8%), com taxa de retorno de 3,5%."},
+  {"nome": "Outras receitas", "peso_receita": 0.24, "periodo": "3T26", "obs": "US$ 207 mi, sendo US$ 182 mi da pré-venda do token ARC."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA); USDC usada no mundo todo."},
+ "temas": [
+  {"tema": "Stablecoins e pagamentos digitais", "relacao": "A USDC terminou o trimestre com US$ 73,9 bi em circulação, estável em um ano; a média subiu 8%."},
+  {"tema": "Juros nos EUA", "relacao": "A queda de 0,61 ponto na taxa de retorno das reservas reduziu a receita de juros em 8%."},
+  {"tema": "Blockchain", "relacao": "Lançou a rede Arc em 16/09/2026, com transição para prova de participação prevista para 2027."}
+ ],
+ "diferencial": {
+  "texto": "A Circle tem uma das duas stablecoins dominantes, com reputação de transparência e conformidade regulatória nos EUA, o que atrai instituições financeiras. Mas a receita depende dos juros, a Coinbase fica com grande parte dela pela distribuição, e a concorrência cresce com a Tether e com bancos e empresas que podem lançar suas próprias stablecoins.",
+  "vantagem": {"nivel": "moderada", "resumo": "Uma das duas stablecoins dominantes, com forte conformidade regulatória, mas receita sensível aos juros e muito repassada a distribuidores."},
+  "concorrentes": ["Tether (USDT)", "PayPal (PYUSD)", "Paxos", "Stablecoins de bancos", "Ripple (RLUSD)"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a meta é crescer a circulação da USDC 40% ao ano no longo prazo, com outras receitas de US$ 310 mi a US$ 330 mi em 2026 e despesas operacionais ajustadas de US$ 570 mi a US$ 585 mi. O potencial depende da adoção de stablecoins e do nível dos juros.",
+  "metricas": [
+   {"rotulo": "USDC em circulação", "valor": "US$ 73,9 bi", "periodo": "set/2026"},
+   {"rotulo": "Outras receitas projetadas", "valor": "US$ 310 mi a US$ 330 mi", "periodo": "2026"},
+   {"rotulo": "Ebitda ajustado", "valor": "US$ 317 mi (+85%)", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 226 mi no 3T26 (+5%) e Ebitda ajustado de US$ 317 mi, ajudados pela receita não recorrente da pré-venda do token ARC. Tem cerca de US$ 1,7 bi em caixa próprio, separado das reservas que lastreiam a USDC.",
+  "caixa": "US$ 1,70 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Queda dos juros reduz a receita.",
+  "Dependência da distribuição pela Coinbase.",
+  "Concorrência da Tether e de novos emissores.",
+  "Regulação de stablecoins."
+ ],
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita subiu 17%, para US$ 865 mi, com a pré-venda do token ARC, mas a receita de juros caiu 8% e a circulação da USDC ficou estável em um ano.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Receita total subiu 17%.",
+   "Lançamento da rede Arc.",
+   "Ebitda ajustado subiu 85%."
+  ],
+  "negativos": [
+   "Receita de reservas caiu 8%.",
+   "Circulação da USDC estável em um ano."
+  ],
+  "atencao": [
+   "Trajetória dos juros.",
+   "Adoção da rede Arc."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Circle: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000309/finalq3epr-110326.htm", "data": "2026-11-04"},
+  {"titulo": "Finviz (Business Wire): Circle reports third quarter 2026 results", "url": "https://finviz.com/news/415158/circle-reports-third-quarter-2026-results", "data": "2026-11-04"},
+  {"titulo": "Blockonomi: Circle stock rises as Q3 revenue hits $865M", "url": "https://blockonomi.com/circle-crcl-stock-rises-as-q3-revenue-hits-865m-and-usdc-circulation-reaches-73-3b/", "data": "2026-11"},
+  {"titulo": "FXC Intelligence: Circle Q3 2026 earnings", "url": "https://www.fxcintel.com/research/analysis/ct-circle-q3-2026-earnings", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

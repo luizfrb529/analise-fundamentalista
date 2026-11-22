@@ -1,0 +1,66 @@
+{
+ "ticker": "LPX",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana de materiais de construção à base de madeira, líder em revestimento externo de casas (SmartSide) e em painéis OSB. Lucrativa, com pouca dívida, mas exposta ao mercado imobiliário fraco e a preços baixos de OSB.",
+ "modelo": "A LP fabrica revestimentos de madeira tratada (SmartSide) vendidos a construtoras e lojas de material de construção, que respondem pela maior parte do lucro, e painéis OSB para estruturas, cujo preço oscila muito. Também tem operações no Chile e no Brasil.",
+ "segmentos": [
+  {"nome": "Revestimentos (Siding)", "peso_receita": 0.68, "periodo": "3T26", "obs": "Vendas recorde de US$ 473 mi (+7%); Ebitda ajustado de US$ 119 mi."},
+  {"nome": "Painéis OSB", "peso_receita": 0.26, "periodo": "3T26", "obs": "Vendas de US$ 180 mi (+1%); Ebitda ajustado negativo de US$ 24 mi."},
+  {"nome": "Outros (inclui América do Sul)", "peso_receita": 0.06, "periodo": "3T26", "obs": "Vendas de US$ 38 mi."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nashville (EUA); fábricas nos EUA, Canadá, Chile e Brasil."},
+ "temas": [
+  {"tema": "Mercado imobiliário dos EUA", "relacao": "Os inícios de obras caíram para 341 mil no trimestre, ante 356 mil um ano antes, limitando a demanda."},
+  {"tema": "Reformas de casas", "relacao": "Parte das vendas de revestimento vem de reformas e substituições, menos dependentes de casas novas."}
+ ],
+ "diferencial": {
+  "texto": "A LP construiu o SmartSide como marca líder em revestimento de madeira tratada, com relação forte com construtoras e lojas e margem de cerca de 25%. Mas o OSB é uma commodity em que a empresa dá prejuízo quando os preços caem, e o revestimento compete com vinil e fibrocimento, como o da James Hardie.",
+  "vantagem": {"nivel": "moderada", "resumo": "Marca líder em revestimento de madeira tratada, com margem de cerca de 25%, mas o OSB é commodity e há concorrência de vinil e fibrocimento."},
+  "concorrentes": ["James Hardie", "Weyerhaeuser", "West Fraser", "Georgia-Pacific", "Fabricantes de vinil"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o Ebitda ajustado de 2026 deve ficar entre US$ 270 mi e US$ 280 mi, com vendas de revestimento de US$ 1,66 bi a US$ 1,67 bi e OSB com Ebitda negativo de cerca de US$ 95 mi, supondo preços de OSB estáveis. O potencial depende da recuperação do mercado imobiliário e dos preços de OSB.",
+  "metricas": [
+   {"rotulo": "Ebitda ajustado projetado", "valor": "US$ 270 mi a US$ 280 mi", "periodo": "2026"},
+   {"rotulo": "Vendas de revestimento projetadas", "valor": "US$ 1,66 bi a US$ 1,67 bi", "periodo": "2026"},
+   {"rotulo": "Liquidez", "valor": "cerca de US$ 1 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 23 mi no 3T26 (US$ 0,32 por ação; US$ 0,39 ajustado), com Ebitda ajustado de US$ 82 mi. Tem US$ 265 mi em caixa e dívida de longo prazo de apenas US$ 349 mi. Não recomprou ações em 2026 e pagou US$ 21 mi em dividendos no trimestre.",
+  "caixa": "US$ 265 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Preços baixos de OSB.",
+  "Queda dos inícios de obras.",
+  "Concorrência no revestimento.",
+  "Custos de madeira e energia."
+ ],
+ "momento": "No 3T26 (divulgado em 03/11/2026), as vendas de revestimento bateram recorde de US$ 473 mi e o lucro ajustado veio acima do esperado, mas o OSB segue no prejuízo; as ações subiram cerca de 5%.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-03",
+  "positivos": [
+   "Revestimento com vendas recorde.",
+   "Lucro acima do esperado."
+  ],
+  "negativos": [
+   "OSB com Ebitda negativo.",
+   "Projeção de prejuízo maior no OSB no 4T26."
+  ],
+  "atencao": [
+   "Preços de OSB.",
+   "Inícios de obras."
+  ]
+ },
+ "fontes": [
+  {"titulo": "LP: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/60519/000006051926000040/q32026ex991pressrelease.htm", "data": "2026-11-03"},
+  {"titulo": "Finviz: LP Building Solutions reports Q3 2026 results including record siding sales", "url": "https://finviz.com/news/413976/lp-building-solutions-reports-third-quarter-2026-results-including-record-siding-sales", "data": "2026-11-03"},
+  {"titulo": "Finviz: Louisiana-Pacific shares rise 5% as Q3 earnings beat expectations", "url": "https://finviz.com/news/414410/louisiana-pacific-shares-rise-5-as-q3-earnings-beat-expectations-and-siding-sales-reach-record-473-million", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}
