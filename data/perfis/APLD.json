@@ -1,0 +1,67 @@
+{
+ "ticker": "APLD",
+ "revisado_em": "2026-11-22",
+ "resumo": "Construtora e operadora americana de data centers para IA em Dakota do Norte e outros estados, alugados a CoreWeave e a um grande provedor de nuvem. Cresce muito rápido, mas tem prejuízo e dívida de US$ 6,4 bi.",
+ "modelo": "A Applied Digital constrói campi de data centers de alta densidade (Polaris Forge, Delta Forge) e os aluga por contratos de 15 anos a clientes de IA, cobrando aluguel e reembolso de custos de instalação. Também hospeda mineração de bitcoin e tem uma nuvem de GPUs (ChronoScale).",
+ "segmentos": [
+  {"nome": "Hospedagem de alta performance (HPC)", "peso_receita": 0.77, "periodo": "3T26", "obs": "Receita de US$ 262,6 mi, sendo US$ 183,5 mi de instalação para inquilinos."},
+  {"nome": "Nuvem de GPUs (ChronoScale)", "peso_receita": 0.12, "periodo": "3T26", "obs": "Receita de US$ 41,5 mi."},
+  {"nome": "Hospedagem para mineração de bitcoin", "peso_receita": 0.11, "periodo": "3T26", "obs": "Receita de US$ 37,8 mi, estável."}
+ ],
+ "segmentos_base": "Receita (trimestre fiscal encerrado em ago/2026)",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Dallas (EUA); campi em Dakota do Norte e outros estados americanos."},
+ "temas": [
+  {"tema": "Infraestrutura para IA", "relacao": "Tem cerca de 1,41 GW em contratos de aluguel em cinco campi, que somam cerca de US$ 36 bi de receita contratada."},
+  {"tema": "Energia para data centers", "relacao": "Escolhe locais com energia barata e clima frio; o campus Polaris Forge 1 já opera 250 MW."}
+ ],
+ "diferencial": {
+  "texto": "A Applied Digital conseguiu terrenos com energia disponível e clima frio e provou que entrega data centers de IA rapidamente, o que lhe rendeu contratos longos com clientes de grande porte. Mas é um negócio intensivo em capital, com dívida alta, concentração em poucos inquilinos e concorrência de muitos rivais que também convertem energia em capacidade de IA.",
+  "vantagem": {"nivel": "fraca", "resumo": "Acesso a energia e contratos longos com grandes clientes, mas negócio de capital intensivo, dívida alta e muitos rivais."},
+  "concorrentes": ["CoreWeave", "IREN", "Cipher Mining", "TeraWulf", "Galaxy Digital", "Digital Realty"]
+ },
+ "potencial": {
+  "texto": "O potencial vem da entrega dos campi já contratados: cerca de US$ 36 bi de receita em contratos e a meta de 300 MW em operação em Dakota do Norte até o fim de 2026. A empresa não dá projeção formal de receita.",
+  "metricas": [
+   {"rotulo": "Capacidade contratada", "valor": "cerca de 1,41 GW", "periodo": "ago/2026"},
+   {"rotulo": "Receita contratada", "valor": "cerca de US$ 36 bi", "periodo": "ago/2026"},
+   {"rotulo": "Ebitda ajustado", "valor": "US$ 64,4 mi", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Receita de US$ 341,9 mi no trimestre fiscal (+322%), mas prejuízo de US$ 184,1 mi, ou US$ 221 mi atribuível aos acionistas, inflado por itens contábeis. Tem US$ 3,7 bi em caixa e dívida de US$ 6,4 bi para financiar as obras.",
+  "caixa": "US$ 3,7 bi",
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Dívida elevada.",
+  "Concentração em poucos inquilinos.",
+  "Atrasos nas obras.",
+  "Diluição por novas emissões."
+ ],
+ "momento": "No trimestre fiscal até agosto (divulgado em 07/10/2026), a receita subiu 322%, para US$ 341,9 mi, e a empresa fechou novo aluguel de 210 MW por 15 anos com grande provedor de nuvem, de cerca de US$ 5,2 bi.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-07",
+  "positivos": [
+   "Receita subiu 322%.",
+   "Novo contrato de US$ 5,2 bi.",
+   "250 MW em operação no Polaris Forge 1."
+  ],
+  "negativos": [
+   "Prejuízo de US$ 184,1 mi.",
+   "Dívida de US$ 6,4 bi."
+  ],
+  "atencao": [
+   "Entrega do Polaris Forge 2.",
+   "Financiamento das próximas obras."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Applied Digital: resultados do 1º tri fiscal 2027 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000057/apldq127earningsrelease.htm", "data": "2026-10-07"},
+  {"titulo": "Data Centre Magazine: Applied Digital reports fiscal first quarter 2027 results", "url": "https://datacentremagazine.com/globenewswire/3376854", "data": "2026-10-07"},
+  {"titulo": "Pulse 2.0: Applied Digital Q1 revenue surges 322%", "url": "https://pulse2.com/applied-digital-q1-revenue-surges-322-to-341-9-million/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

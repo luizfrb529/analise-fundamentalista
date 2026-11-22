@@ -1,0 +1,66 @@
+{
+ "ticker": "VICR",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana de módulos de conversão de energia de alta densidade, usados para alimentar processadores de IA, e dona de patentes que geram royalties crescentes. Lucrativa, sem dívida e com caixa de US$ 513 mi.",
+ "modelo": "A Vicor projeta e fabrica, em sua própria fábrica em Andover (Massachusetts), módulos que convertem e entregam energia a chips de alto consumo, como processadores de IA, além de produtos para indústria, defesa e veículos. Também licencia suas patentes de entrega vertical de energia (VPD) e cobra royalties de quem usa a tecnologia.",
+ "segmentos": [
+  {"nome": "Produtos", "peso_receita": 0.66, "periodo": "3T26", "obs": "Receita de US$ 130,5 mi (+47%)."},
+  {"nome": "Royalties de patentes", "peso_receita": 0.34, "periodo": "3T26", "obs": "Receita de US$ 66,6 mi, cerca de três vezes a de um ano antes."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede e fábrica em Andover, Massachusetts (EUA); clientes nos EUA, Ásia e Europa."},
+ "temas": [
+  {"tema": "Energia para chips de IA", "relacao": "A segunda geração da tecnologia de entrega vertical de energia foi demonstrada a fabricantes e grandes provedores de nuvem."},
+  {"tema": "Propriedade intelectual", "relacao": "A abertura de investigação na ITC dos EUA sobre uso indevido da tecnologia VPD gerou novos pedidos de licença, e a empresa assinou a primeira licença VPD com um fabricante de servidores de IA."}
+ ],
+ "diferencial": {
+  "texto": "A Vicor tem tecnologia própria de conversão de energia com densidade muito alta, protegida por patentes que vem defendendo com sucesso, e fabricação própria nos EUA, o que hoje gera royalties de alta margem. Os pontos fracos são a dependência de poucos clientes de IA, a concorrência de fabricantes maiores e custos jurídicos altos para defender as patentes.",
+  "vantagem": {"nivel": "moderada", "resumo": "Tecnologia de alta densidade protegida por patentes que geram royalties, mas depende de poucos clientes e enfrenta rivais maiores."},
+  "concorrentes": ["Infineon", "Monolithic Power Systems", "Delta Electronics", "Analog Devices", "Renesas"]
+ },
+ "potencial": {
+  "texto": "O potencial vem dos royalties das patentes, das novas licenças de entrega vertical de energia e da ampliação da fabricação: a compra de dois terrenos próximos a Andover deve multiplicar a capacidade por quase cinco, segundo a empresa. Para o 4T26, a empresa espera ao menos US$ 43 mi em royalties sem novas licenças, segundo a imprensa.",
+  "metricas": [
+   {"rotulo": "Carteira de pedidos", "valor": "US$ 406 mi (+166%)", "periodo": "set/2026"},
+   {"rotulo": "Margem bruta", "valor": "68,3%", "periodo": "3T26"},
+   {"rotulo": "Caixa", "valor": "US$ 513,1 mi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 63,3 mi no 3T26 (US$ 1,33 por ação), com receita de US$ 197,1 mi (+78,5%) e margem bruta de 68,3% puxada pelos royalties. Tem US$ 513,1 mi em caixa e não tem dívida relevante.",
+  "caixa": "US$ 513,1 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concentração em poucos clientes de IA.",
+  "Royalties irregulares, dependentes de novos acordos.",
+  "Custos jurídicos elevados.",
+  "Concorrência de grandes fabricantes."
+ ],
+ "momento": "No 3T26 (divulgado em 20/10/2026), a receita subiu 78,5%, para US$ 197,1 mi, com royalties em forte alta, e a carteira de pedidos chegou a US$ 406 mi; as ações dispararam após o resultado.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-20",
+  "positivos": [
+   "Receita subiu 78,5%.",
+   "Royalties triplicaram.",
+   "Primeira licença VPD com fabricante de IA."
+  ],
+  "negativos": [
+   "Lucro por ação abaixo do esperado pelo mercado."
+  ],
+  "atencao": [
+   "Novas licenças de patentes.",
+   "Expansão da capacidade de fabricação."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Vicor: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/751978/000119312526425697/d153882dex991.htm", "data": "2026-10-20"},
+  {"titulo": "Finviz: Vicor reports results for the third quarter 2026", "url": "https://finviz.com/news/404384/vicor-corporation-reports-results-for-the-third-quarter-ended-september-30-2026", "data": "2026-10-20"},
+  {"titulo": "Zacks: Vicor shares gain on strong Q3 earnings growth", "url": "https://www.zacks.com/stock/news/3013064/vicor-corporation-shares-gain-45-on-strong-q3-earnings-growth", "data": "2026-10"},
+  {"titulo": "Motley Fool: Why Vicor shares are soaring today", "url": "https://www.fool.com/investing/2026/10/20/why-vicor-shares-are-soaring-today/", "data": "2026-10-20"}
+ ],
+ "ultimo_resultado": "3T26"
+}

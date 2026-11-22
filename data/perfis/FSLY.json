@@ -1,0 +1,67 @@
+{
+ "ticker": "FSLY",
+ "revisado_em": "2026-11-22",
+ "resumo": "Plataforma americana de computação na borda da rede (CDN), que acelera e protege sites e aplicativos. Cresce 20% e já gera caixa, mas ainda tem prejuízo contábil e depende de poucos grandes clientes.",
+ "modelo": "A Fastly opera uma rede global de servidores que entrega conteúdo e aplicações com rapidez (CDN), cobrando principalmente pelo uso de tráfego, e vende produtos de segurança (firewall de aplicações, proteção contra robôs e ataques, segurança de APIs e de IA) e computação na borda.",
+ "segmentos": [
+  {"nome": "Serviços de rede (entrega)", "peso_receita": 0.72, "periodo": "3T26", "obs": "Receita de US$ 138,0 mi (+16%)."},
+  {"nome": "Segurança", "peso_receita": 0.24, "periodo": "3T26", "obs": "Receita de US$ 44,7 mi (+32%)."},
+  {"nome": "Outros (computação e observabilidade)", "peso_receita": 0.04, "periodo": "3T26", "obs": "Restante da receita."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em São Francisco (EUA); rede de servidores e clientes no mundo todo."},
+ "temas": [
+  {"tema": "Segurança digital", "relacao": "A receita de segurança cresceu 32% e já é cerca de um quarto do total."},
+  {"tema": "Agentes de IA", "relacao": "Lançou produtos para proteger aplicativos e agentes de IA, como AI Firewall e controle de execução de IA."}
+ ],
+ "diferencial": {
+  "texto": "A Fastly tem uma rede programável e rápida, apreciada por desenvolvedores e grandes empresas de mídia e tecnologia, e a retenção de clientes melhorou. Mas compete com rivais muito maiores, como Cloudflare e Akamai, e os 10 maiores clientes respondem por 39% da receita, o que limita o poder de preço.",
+  "vantagem": {"nivel": "fraca", "resumo": "Rede programável e rápida, apreciada por desenvolvedores, mas compete com rivais maiores e depende muito de poucos grandes clientes."},
+  "concorrentes": ["Cloudflare", "Akamai", "Amazon CloudFront", "Google Cloud", "Microsoft Azure"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 744 mi e US$ 748 mi, com lucro operacional ajustado de US$ 107 mi a US$ 111 mi. O potencial vem da segurança, da venda de mais produtos por cliente e da retenção líquida de 119%.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 744 mi a US$ 748 mi", "periodo": "2026"},
+   {"rotulo": "Receita projetada", "valor": "US$ 198 mi a US$ 202 mi", "periodo": "4T26"},
+   {"rotulo": "Retenção líquida de receita", "valor": "119%", "periodo": "12 meses até set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo contábil de US$ 11,3 mi no 3T26 (US$ 0,07 por ação), mas lucro ajustado de US$ 0,17 por ação e fluxo de caixa livre de US$ 25,2 mi. Tem US$ 365 mi em caixa e aplicações.",
+  "caixa": "US$ 365,2 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concentração nos 10 maiores clientes.",
+  "Concorrência de Cloudflare e Akamai.",
+  "Pressão de preços no tráfego.",
+  "Mudança na estrutura de vendas."
+ ],
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita subiu 20%, para US$ 190,2 mi, acima da projeção, mas as ações caíram com dúvidas sobre a mudança na equipe de vendas.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Receita subiu 20%.",
+   "Segurança cresceu 32%.",
+   "Caixa livre de US$ 25,2 mi."
+  ],
+  "negativos": [
+   "Concentração nos 10 maiores clientes subiu para 39%.",
+   "Ainda com prejuízo contábil."
+  ],
+  "atencao": [
+   "Transição da estratégia de vendas.",
+   "Unificação da divulgação de receita em 2027."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Fastly: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1517413/000151741326000342/ex991-fslypressrelease93026.htm", "data": "2026-11-04"},
+  {"titulo": "StockStory: Fastly beats Q3 2026 sales expectations but stock drops", "url": "https://stockstory.org/us/stocks/nasdaq/fsly/news/earnings/fastly-nasdaqfsly-beats-q3-2026-sales-expectations-but-stock-drops-13percent", "data": "2026-11"},
+  {"titulo": "Quartr: Fastly Q3 2026 earnings summary", "url": "https://quartr.com/events/fastly-inc-fsly-q3-2026_3gNKaCIA", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

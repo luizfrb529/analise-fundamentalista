@@ -1,0 +1,63 @@
+{
+ "ticker": "GTLB",
+ "revisado_em": "2026-11-22",
+ "resumo": "Plataforma americana de desenvolvimento de software (DevSecOps) que reúne código, testes, segurança e entrega num só lugar, agora com agentes de IA. Cresce 21%, gera caixa ajustado e tem US$ 1,26 bi em caixa, mas ainda tem prejuízo contábil.",
+ "modelo": "A GitLab vende assinaturas por usuário de sua plataforma de desenvolvimento, na nuvem ou instalada no cliente, em planos Premium e Ultimate, além de complementos de IA (GitLab Duo e Duo Agent Platform) cobrados por uso. Tem uma versão gratuita e de código aberto que atrai desenvolvedores.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 286,3 mi no 2º tri fiscal 2027 (+21%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Empresa totalmente remota, com sede formal em São Francisco (EUA); clientes no mundo todo."},
+ "temas": [
+  {"tema": "Agentes de IA para programação", "relacao": "A Duo Agent Platform coloca agentes de IA no fluxo de desenvolvimento; um estudo da Forrester apontou retorno de 400%."},
+  {"tema": "Segurança de software", "relacao": "Integra testes de segurança ao desenvolvimento, puxando a venda do plano mais caro, o Ultimate."}
+ ],
+ "diferencial": {
+  "texto": "A GitLab oferece a plataforma mais completa de ponta a ponta para desenvolvimento, o que torna a troca custosa depois de adotada, e tem forte presença em empresas e governos que exigem instalação própria. A concorrência é dura: o GitHub, da Microsoft, é muito maior e está à frente em assistentes de IA, e novas ferramentas de programação com IA podem reduzir o valor cobrado por usuário.",
+  "vantagem": {"nivel": "moderada", "resumo": "Plataforma completa de desenvolvimento com alto custo de troca, mas enfrenta o GitHub da Microsoft e novas ferramentas de programação com IA."},
+  "concorrentes": ["GitHub (Microsoft)", "Atlassian", "JFrog", "Harness", "Cursor (Anysphere)"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 (até jan/2027) deve ficar entre US$ 1,129 bi e US$ 1,133 bi, com lucro operacional ajustado de US$ 148 mi a US$ 152 mi. O potencial vem da IA, da venda do plano Ultimate e da expansão em grandes clientes.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 1,129 bi a US$ 1,133 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Clientes acima de US$ 100 mil por ano", "valor": "1.571 (+17%)", "periodo": "jul/2026"},
+   {"rotulo": "Retenção líquida de receita", "valor": "117%", "periodo": "jul/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo contábil de US$ 36,8 mi no trimestre (US$ 0,22 por ação), mas margem operacional ajustada de 15% e caixa livre ajustado de US$ 9,8 mi. Tem US$ 1,26 bi em caixa e aplicações e recomprou US$ 104,6 mi em ações no trimestre.",
+  "caixa": "US$ 1,26 bi",
+  "queima_anual": null,
+  "periodo": "jul/2026"
+ },
+ "riscos": [
+  "Concorrência do GitHub.",
+  "Ferramentas de IA podem reduzir licenças por usuário.",
+  "Desaceleração do crescimento.",
+  "Remuneração em ações dilui acionistas."
+ ],
+ "momento": "No 2º tri fiscal 2027 (divulgado em 01/09/2026), a receita subiu 21%, para US$ 286,3 mi, acima do esperado, e a empresa elevou a projeção do ano; o CEO é Bill Staples.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-01",
+  "positivos": [
+   "Receita subiu 21%.",
+   "Projeção anual elevada.",
+   "Recompra de US$ 104,6 mi em ações."
+  ],
+  "negativos": [
+   "Prejuízo contábil de US$ 36,8 mi.",
+   "Projeção do trimestre seguinte indica crescimento menor."
+  ],
+  "atencao": [
+   "Adoção da Duo Agent Platform.",
+   "Migração para cobrança flexível."
+  ]
+ },
+ "fontes": [
+  {"titulo": "GitLab: resultados do 2º tri fiscal 2027 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1653482/000162828026059820/gitlab-ex99120260731fy27.htm", "data": "2026-09-01"},
+  {"titulo": "GitLab: Reports Second Quarter Fiscal Year 2027 Financial Results", "url": "https://about.gitlab.com/press/releases/2026-09-01-gitlab-reports-second-quarter-fiscal-year-2027-financial-results/", "data": "2026-09-01"},
+  {"titulo": "Motley Fool: Why GitLab stock surged this week", "url": "https://www.fool.com/investing/2026/09/06/why-gitlab-stock-surged-this-week/", "data": "2026-09-06"}
+ ],
+ "ultimo_resultado": "3T26"
+}
