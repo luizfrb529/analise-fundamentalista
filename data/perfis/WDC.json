@@ -1,0 +1,62 @@
+{
+ "ticker": "WDC",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das duas maiores fabricantes de discos rígidos do mundo, que após separar a SanDisk em 2025 vende quase só HDs de alta capacidade para data centers. A demanda por armazenamento para IA fez a receita subir 55% e o lucro quase triplicar.",
+ "modelo": "A Western Digital (marca WD) projeta e fabrica discos rígidos, principalmente os de grande capacidade usados por grandes nuvens para guardar dados a custo baixo, além de discos para PCs e consumidores. Vende por contratos de volume com as nuvens e com fabricantes de servidores. A capacidade vendida é medida em exabytes.",
+ "segmentos": [],
+ "segmentos_base": "Empresa não divulga receita por mercado no release; a maior parte vem de nuvem",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA), com fábricas na Ásia (Tailândia, Malásia, Filipinas) e clientes nas grandes nuvens americanas e asiáticas."},
+ "temas": [
+  {"tema": "Armazenamento para IA", "relacao": "Modelos de IA geram e consomem enormes volumes de dados; os exabytes vendidos subiram 21,6% em um ano, para 248, e a receita por exabyte subiu 28%, segundo a imprensa."},
+  {"tema": "Tecnologia HAMR", "relacao": "Está terminando a qualificação da primeira geração de discos HAMR, de maior capacidade, com duas grandes nuvens."}
+ ],
+ "diferencial": {
+  "texto": "O mercado de discos rígidos é um duopólio entre Western Digital e Seagate (a Toshiba é bem menor), com enorme barreira tecnológica e de capital, e os discos seguem bem mais baratos por terabyte que memória flash para guardar grandes volumes. Os pontos fracos são o histórico de ciclos de preço, a dependência de poucas nuvens e a concorrência da Seagate, que lançou HAMR antes.",
+  "concorrentes": ["Seagate", "Toshiba", "Samsung", "SK Hynix (Solidigm)", "Micron", "SanDisk"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do trimestre até dezembro deve ser de US$ 5,1 bi, mais ou menos US$ 100 mi (alta de 66% a 72%), com margem bruta ajustada de 60% a 61% e lucro ajustado de US$ 5,80 por ação. A segunda geração de HAMR deve começar a ser qualificada no segundo semestre de 2027.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 5,0 bi a US$ 5,2 bi", "periodo": "4T26"},
+   {"rotulo": "Margem bruta ajustada projetada", "valor": "60% a 61%", "periodo": "4T26"},
+   {"rotulo": "Exabytes vendidos", "valor": "248", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 1,78 bi no trimestre (US$ 4,63 por ação), com margem bruta de 57,8% e margem operacional de 46,7%. O fluxo de caixa livre foi de US$ 1,38 bi. A empresa recomprou US$ 1 bi em ações no trimestre, elevou o dividendo em 17% e tinha US$ 1,3 bi em caixa.",
+  "caixa": "US$ 1,3 bi",
+  "queima_anual": null,
+  "periodo": "out/2026"
+ },
+ "riscos": [
+  "Ciclos de preço e demanda de discos rígidos.",
+  "Concentração em poucas grandes nuvens.",
+  "Concorrência da Seagate em HAMR.",
+  "Substituição por memória flash."
+ ],
+ "momento": "No trimestre encerrado em outubro (4T26 no calendário, 1T27 fiscal da empresa, divulgado em 22/10/2026), a receita subiu 55%, para US$ 4,38 bi, e o lucro ajustado por ação 161%, acima do esperado. A empresa projetou nova alta forte para o trimestre seguinte.",
+ "destaques_resultado": {
+  "trimestre": "4T26",
+  "divulgado_em": "2026-10-22",
+  "positivos": [
+   "Receita de US$ 4,38 bi, alta de 55%.",
+   "Margem bruta de 57,8%.",
+   "Dividendo elevado em 17%."
+  ],
+  "negativos": [
+   "Caixa caiu de US$ 1,58 bi para US$ 1,31 bi com recompras."
+  ],
+  "atencao": [
+   "Qualificação do HAMR nas nuvens.",
+   "Sustentação dos preços por exabyte."
+  ]
+ },
+ "fontes": [
+  {"titulo": "WD: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/106040/000162828026066882/a4ex991-pressreleaseq127.htm", "data": "2026-10-22"},
+  {"titulo": "WD: comunicado do 1T27 fiscal", "url": "https://www.westerndigital.com/en-us/company/newsroom/press-releases/2026/2026-10-22-wd-reports-fiscal-first-quarter-2027-financial-results", "data": "2026-10-22"},
+  {"titulo": "Blocks & Files: WD knocks earnings out of the park again", "url": "https://www.blocksandfiles.com/disk/2026/10/23/wd-knocks-earnings-out-of-the-park-again/5304988", "data": "2026-10-23"},
+  {"titulo": "Shacknews: Western Digital Q1 2027 earnings beat expectations", "url": "https://www.shacknews.com/article/151120/western-digital-wdc-q1-2027-earnings-results", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "4T26"
+}

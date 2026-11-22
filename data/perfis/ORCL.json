@@ -1,0 +1,68 @@
+{
+ "ticker": "ORCL",
+ "revisado_em": "2026-11-22",
+ "resumo": "Gigante americana de software de banco de dados e sistemas de gestão que virou uma das maiores fornecedoras de nuvem para IA, com US$ 664 bi em contratos a cumprir. Lucrativa, mas o investimento em data centers deixou o caixa livre negativo e a dívida passou de US$ 125 bi.",
+ "modelo": "A Oracle vende licenças e suporte do seu banco de dados e de aplicações empresariais (ERP, recursos humanos, saúde com a Cerner), aplicações na nuvem (SaaS) e, cada vez mais, capacidade de computação na nuvem (OCI) para treinar e rodar modelos de IA. Os grandes contratos de IA são de longo prazo e exigem que a empresa construa data centers antes de receber.",
+ "segmentos": [
+  {"nome": "Nuvem (IaaS e SaaS)", "peso_receita": 0.60, "periodo": "3T26", "obs": "US$ 11,6 bi, alta de 62%; infraestrutura (OCI) US$ 7,4 bi, alta de 121%, e SaaS US$ 4,2 bi, alta de 10%."},
+  {"nome": "Licenças, suporte, hardware e serviços", "peso_receita": 0.40, "periodo": "3T26", "obs": "cerca de US$ 7,7 bi (calculado)."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede no Texas (EUA); vende no mundo todo, com data centers de nuvem em dezenas de países."},
+ "temas": [
+  {"tema": "Nuvem para IA", "relacao": "Fechou mais de US$ 30 bi em novos contratos de nuvem de IA no trimestre, elevando os contratos a cumprir (RPO) para US$ 664 bi, US$ 209 bi a mais que um ano antes."},
+  {"tema": "Data centers", "relacao": "Investiu US$ 28,5 bi no trimestre e cerca de US$ 76 bi em 12 meses, financiados com dívida e venda de ações."},
+  {"tema": "Banco de dados", "relacao": "O banco de dados da Oracle roda também nas nuvens da Microsoft, Google e Amazon, ampliando o alcance."}
+ ],
+ "diferencial": {
+  "texto": "A Oracle tem o banco de dados mais usado por grandes empresas, com clientes muito difíceis de migrar, o que gera receita recorrente de suporte com margem alta. Na nuvem, ganhou espaço oferecendo clusters de GPUs grandes e baratos para empresas de IA. Os pontos fracos são a concentração dos contratos de IA em poucos clientes, a dívida muito alta, o caixa livre negativo e a concorrência das três maiores nuvens.",
+  "concorrentes": ["Amazon (AWS)", "Microsoft (Azure)", "Alphabet (Google Cloud)", "SAP", "Workday", "CoreWeave"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 (junho de 2026 a maio de 2027) deve ser de pelo menos US$ 90 bi, com lucro ajustado de US$ 8,10 por ação, e a nuvem deve crescer de 65% a 71% no trimestre seguinte. Os US$ 664 bi em contratos a cumprir são a base do crescimento, mas dependem de a empresa construir e financiar os data centers a tempo.",
+  "metricas": [
+   {"rotulo": "Contratos a cumprir (RPO)", "valor": "US$ 664 bi", "periodo": "ago/2026"},
+   {"rotulo": "Receita projetada", "valor": "pelo menos US$ 90 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Crescimento da OCI", "valor": "121%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 1,56 por ação no trimestre (US$ 1,92 ajustado). A operação gerou US$ 23,1 bi de caixa, mas o investimento de US$ 28,5 bi deixou o fluxo de caixa livre negativo em US$ 5,4 bi no trimestre e em cerca de US$ 29 bi em 12 meses. A dívida soma US$ 125,3 bi e o caixa US$ 36,4 bi; a empresa vendeu US$ 20 bi em ações em bolsa no trimestre e paga dividendo de US$ 0,50.",
+  "caixa": "US$ 37,1 bi",
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Dívida muito alta e caixa livre negativo.",
+  "Concentração dos contratos de IA em poucos clientes.",
+  "Diluição pela venda de ações.",
+  "Execução da construção de data centers."
+ ],
+ "momento": "No trimestre encerrado em agosto (3T26 no calendário, 1T27 fiscal da empresa, divulgado em 10/09/2026), a receita subiu 30%, para US$ 19,3 bi, a infraestrutura de nuvem cresceu 121% e os contratos a cumprir chegaram a US$ 664 bi. O trimestre seguinte deve ser divulgado em meados de dezembro.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-10",
+  "positivos": [
+   "Receita de US$ 19,3 bi, alta de 30%.",
+   "Infraestrutura de nuvem cresceu 121%.",
+   "Contratos a cumprir de US$ 664 bi."
+  ],
+  "negativos": [
+   "Fluxo de caixa livre negativo de US$ 5,4 bi.",
+   "Venda de US$ 20 bi em ações.",
+   "SaaS cresceu só 10%."
+  ],
+  "atencao": [
+   "Resultado do trimestre encerrado em novembro, em dezembro.",
+   "Financiamento dos data centers."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Oracle: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm", "data": "2026-09-10"},
+  {"titulo": "Oracle: comunicado do 1T27 fiscal", "url": "https://www.oracle.com/news/announcement/q1fy27-earnings-release-2026-09-10/", "data": "2026-09-10"},
+  {"titulo": "Oracle: resultados do 4T26 fiscal com plano de financiamento (8-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526265848/orcl-ex99_1.htm", "data": "2026-06"},
+  {"titulo": "Oracle Investor Relations: Q1 results", "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx", "data": "2026-09-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
