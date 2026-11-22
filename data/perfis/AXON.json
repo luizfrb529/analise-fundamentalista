@@ -1,0 +1,70 @@
+{
+ "ticker": "AXON",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana das armas de choque TASER e câmeras corporais para polícias, que virou plataforma de software na nuvem para segurança pública, com IA, drones e antidrones. Lucrativa, com receita recorrente crescendo 40%.",
+ "modelo": "A Axon vende a polícias e órgãos de segurança pacotes por assinatura de vários anos que juntam equipamentos (TASER, câmeras corporais e de viaturas, drones) e software na nuvem (Evidence.com para guardar vídeos, relatórios, gestão de casos, IA que escreve relatórios). Os contratos longos geram receita recorrente e previsível.",
+ "segmentos": [
+  {"nome": "Software e serviços", "peso_receita": 0.48, "periodo": "3T26", "obs": "US$ 437 mi, alta de 43%."},
+  {"nome": "TASER", "peso_receita": 0.26, "periodo": "3T26", "obs": "US$ 233 mi, queda de 2%."},
+  {"nome": "Plataformas (drones, antidrone, frota)", "peso_receita": 0.14, "periodo": "3T26", "obs": "US$ 125 mi, alta de 106%."},
+  {"nome": "Câmeras corporais", "peso_receita": 0.12, "periodo": "3T26", "obs": "US$ 113,5 mi, alta de 6%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Scottsdale, Arizona (EUA); a maior parte da receita vem de polícias americanas, com expansão internacional e em clientes empresariais e federais."},
+ "temas": [
+  {"tema": "IA em segurança pública", "relacao": "A receita recorrente de produtos de IA passou de US$ 100 mi e as vendas de IA subiram mais de 50% no ano."},
+  {"tema": "Drones e antidrone", "relacao": "Investiu US$ 1,2 bi para chegar a 37% da Skydio e virou distribuidora exclusiva dos drones da empresa para segurança pública nos EUA e Canadá."}
+ ],
+ "diferencial": {
+  "texto": "A Axon tem posição dominante em armas de choque e câmeras corporais nas polícias americanas e prende o cliente com a plataforma de software onde ficam guardadas as provas em vídeo, difícil de trocar. Os contratos de 5 a 10 anos dão alta visibilidade. Os pontos fracos são a dependência de orçamentos públicos, atrasos em contratos federais (cortaram US$ 130 mi da projeção de 2026) e a avaliação de mercado alta.",
+  "vantagem": {"nivel": "forte", "resumo": "Domínio em TASER e câmeras corporais nas polícias, com plataforma de provas em vídeo e contratos de anos que tornam a troca muito difícil."},
+  "concorrentes": ["Motorola Solutions", "Skydio", "Flock Safety", "Wrap Technologies", "Tyler Technologies"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 3,61 bi e US$ 3,63 bi (alta de cerca de 30%, abaixo dos 32% a 34% antes), com Ebitda ajustado de cerca de US$ 925 mi e caixa livre de US$ 350 mi a US$ 400 mi. Os contratos futuros já assinados somam US$ 15,8 bi, alta de 39%.",
+  "metricas": [
+   {"rotulo": "Contratos futuros assinados", "valor": "US$ 15,8 bi", "periodo": "set/2026"},
+   {"rotulo": "Receita recorrente anual (ARR)", "valor": "US$ 1,75 bi (+40%)", "periodo": "set/2026"},
+   {"rotulo": "Receita projetada", "valor": "US$ 3,61 bi a US$ 3,63 bi", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 57 mi no 3T26 (US$ 0,68 por ação), com Ebitda ajustado de US$ 236 mi e margem de 25,9%. O fluxo de caixa livre foi negativo em US$ 19 mi pelo aumento de estoques. A empresa tinha US$ 1,6 bi em caixa e aplicações e US$ 2,9 bi em notas, e a remuneração em ações é alta.",
+  "caixa": "US$ 1,6 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dependência de orçamentos de polícias e do governo federal.",
+  "Atrasos em contratos federais.",
+  "Remuneração em ações elevada.",
+  "Avaliação de mercado alta."
+ ],
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita subiu 28%, para US$ 909 mi, abaixo do esperado, e a empresa cortou a projeção de 2026 por atraso em três contratos federais de antidrone; anunciou investimento adicional de US$ 1,2 bi na Skydio.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Receita recorrente anual de US$ 1,75 bi, alta de 40%.",
+   "Software e serviços cresceram 43%.",
+   "Contratos futuros de US$ 15,8 bi."
+  ],
+  "negativos": [
+   "Receita e lucro abaixo do esperado.",
+   "Projeção de 2026 reduzida.",
+   "Fluxo de caixa livre negativo."
+  ],
+  "atencao": [
+   "Retomada dos contratos federais de antidrone.",
+   "Integração com a Skydio."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Axon: carta aos acionistas do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1069183/000162828026071086/axon-20261105xex991.htm", "data": "2026-11-05"},
+  {"titulo": "24/7 Wall St.: Axon Q3 2026, missed estimates and a guidance cut explained", "url": "https://247wallst.com/cards/axon-enterprise-q3-2026-earnings-axon-01m6psgmwxtdc1pmwrmw60aen9", "data": "2026-11-05"},
+  {"titulo": "StockStory: Axon Q3 2026 deep dive, large drone investment and federal deal delays", "url": "https://stockstory.org/us/stocks/nasdaq/axon/news/earnings-call/axon-q3-2026-deep-dive-large-drone-investment-and-federal-deal-delays-shape-outlook", "data": "2026-11"},
+  {"titulo": "Panabee: Axon Q3 revenue rises 28% as federal contract delays temper growth", "url": "https://www.panabee.com/news/axon-enterprise-earnings-q3-2026", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

@@ -1,0 +1,70 @@
+{
+ "ticker": "NVO",
+ "revisado_em": "2026-11-22",
+ "resumo": "Farmacêutica dinamarquesa criadora do Ozempic e do Wegovy, líder histórica em diabetes e obesidade, agora pressionada pela concorrência da Eli Lilly. Muito lucrativa, mas com vendas estagnadas em 2026 e reestruturação.",
+ "modelo": "A Novo Nordisk desenvolve e vende remédios patenteados para diabetes (Ozempic, insulinas), obesidade (Wegovy em injeção e pílula) e doenças raras. Produz em grande escala e vende no mundo todo, com os EUA como maior mercado. Em 2026 lançou a pílula de Wegovy.",
+ "segmentos": [
+  {"nome": "Diabetes", "peso_receita": 0.60, "periodo": "3T26", "obs": "DKK 47,5 bi, queda de 5% a câmbio constante; Ozempic DKK 29,7 bi."},
+  {"nome": "Obesidade", "peso_receita": 0.33, "periodo": "3T26", "obs": "DKK 26,1 bi, alta de 22%; Wegovy pílula DKK 5,4 bi."},
+  {"nome": "Doenças raras", "peso_receita": 0.07, "periodo": "3T26", "obs": "calculado pela diferença."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": 0.53, "exterior_pct": 0.47, "periodo": "3T26", "texto": "Sede em Bagsværd (Dinamarca); EUA DKK 41,9 bi e resto do mundo DKK 37,3 bi no trimestre. Valores em coroas dinamarquesas."},
+ "temas": [
+  {"tema": "Obesidade e diabetes", "relacao": "A pílula de Wegovy vendeu DKK 5,4 bi no trimestre, acima do esperado, e tem cerca de 80% das novas prescrições nos EUA, segundo a empresa."},
+  {"tema": "Concorrência", "relacao": "Perde espaço para a tirzepatida da Eli Lilly; as vendas do Wegovy injetável nos EUA caíram 13%."},
+  {"tema": "Preços de remédios", "relacao": "Preços realizados menores frearam as vendas no trimestre."}
+ ],
+ "diferencial": {
+  "texto": "A Novo tem décadas de liderança em diabetes, marcas muito conhecidas (Ozempic, Wegovy), escala de produção e a primeira pílula de GLP-1 para obesidade. Os pontos fracos são a perda de liderança para a Eli Lilly, a queda de preços, o vencimento de patentes da semaglutida em alguns países e a reestruturação em curso.",
+  "vantagem": {"nivel": "moderada", "resumo": "Marcas e escala de produção em GLP-1 e a primeira pílula para obesidade, mas a vantagem vem encolhendo frente à Eli Lilly."},
+  "concorrentes": ["Eli Lilly", "Amgen", "Pfizer", "AstraZeneca", "Roche", "Sanofi"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas e o lucro operacional ajustados de 2026 devem variar de -2% a +2% a câmbio constante, projeção elevada pela terceira vez. O potencial vem da pílula de Wegovy e do lançamento do CagriSema nos EUA, previsto para o início de 2027, que em estudo levou a 21% de perda de peso.",
+  "metricas": [
+   {"rotulo": "Vendas da pílula de Wegovy", "valor": "DKK 5,4 bi", "periodo": "3T26"},
+   {"rotulo": "Crescimento de vendas projetado", "valor": "-2% a +2%", "periodo": "2026 (câmbio constante)"},
+   {"rotulo": "Lançamento do CagriSema nos EUA", "valor": "início de 2027", "periodo": "sujeito a aprovação"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de DKK 16,7 bi no 3T26, queda de 16% por baixas contábeis de DKK 8,7 bi (pesquisa e ajuste da rede de fábricas); o lucro operacional ajustado subiu 27%. Em nove meses o lucro foi de DKK 86,3 bi, e a empresa devolveu DKK 61,9 bi aos acionistas em dividendos e recompras.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Perda de mercado para a Eli Lilly.",
+  "Queda de preços e vencimento de patentes.",
+  "Execução da reestruturação.",
+  "Riscos de estudos e aprovações."
+ ],
+ "momento": "No 3T26 (divulgado em 04/11/2026), as vendas subiram 4% a câmbio constante, para DKK 79,2 bi, com a pílula de Wegovy acima do esperado, e a empresa elevou a projeção do ano pela terceira vez; o CEO é Mike Doustdar.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Pílula de Wegovy com DKK 5,4 bi, acima do esperado.",
+   "Obesidade cresceu 22%.",
+   "Projeção de 2026 elevada."
+  ],
+  "negativos": [
+   "Diabetes caiu 5%.",
+   "Baixas contábeis de DKK 8,7 bi.",
+   "Wegovy injetável caiu nos EUA."
+  ],
+  "atencao": [
+   "Aprovação e lançamento do CagriSema.",
+   "Disputa com a pílula da Eli Lilly."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Novo Nordisk: resultados de nove meses de 2026 (6-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/353278/000162828026069805/caq32026.htm", "data": "2026-11-04"},
+  {"titulo": "Fierce Pharma: Novo catches Wegovy pill tailwind in Q3", "url": "https://www.fiercepharma.com/pharma/novo-catches-wegovy-pill-tailwind-q3-ceo-eyes-new-launch-horizons-2027", "data": "2026-11"},
+  {"titulo": "pharmaphorum: Oral Wegovy bolsters Novo in Q3", "url": "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3", "data": "2026-11"},
+  {"titulo": "Finimize: Novo Nordisk raised its 2026 outlook again", "url": "https://finimize.com/content/novo-nordisk-raised-its-2026-outlook-again-on-strong-wegovy-pill-sales", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

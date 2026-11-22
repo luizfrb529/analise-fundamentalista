@@ -1,0 +1,69 @@
+{
+ "ticker": "LLY",
+ "revisado_em": "2026-11-22",
+ "resumo": "Farmacêutica americana líder em remédios para diabetes e obesidade (Mounjaro, Zepbound e a pílula Foundayo), a maior do setor em valor de mercado. Muito lucrativa, com receita crescendo 39%.",
+ "modelo": "A Eli Lilly descobre, desenvolve e vende remédios patenteados, principalmente para diabetes e obesidade (tirzepatida: Mounjaro e Zepbound), oncologia (Verzenio), imunologia e Alzheimer (Kisunla). Ganha com a exclusividade das patentes, investindo pesado em pesquisa e em novas fábricas para atender a demanda.",
+ "segmentos": [
+  {"nome": "Mounjaro (diabetes)", "peso_receita": 0.44, "periodo": "3T26", "obs": "US$ 10,7 bi, alta de 65%."},
+  {"nome": "Zepbound (obesidade)", "peso_receita": 0.22, "periodo": "3T26", "obs": "US$ 5,4 bi, alta de 49%."},
+  {"nome": "Outros produtos", "peso_receita": 0.34, "periodo": "3T26", "obs": "Verzenio, Jardiance, Kisunla, Foundayo (US$ 184 mi) e outros."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": 0.62, "exterior_pct": 0.38, "periodo": "3T26", "texto": "Sede em Indianápolis (EUA); EUA US$ 15,1 bi e exterior US$ 9,3 bi no trimestre, com o exterior crescendo mais rápido (47%)."},
+ "temas": [
+  {"tema": "Obesidade e diabetes", "relacao": "A tirzepatida é o remédio mais vendido do mundo nessa classe; a pílula Foundayo (orforglipron) foi lançada em 2026 e a retatrutida superou o Ozempic em estudo de fase 3."},
+  {"tema": "Preços de remédios nos EUA", "relacao": "Fez acordo com o governo americano sobre preços e acesso; os preços realizados nos EUA caíram 7% no trimestre."},
+  {"tema": "Produção nos EUA", "relacao": "Constrói novas fábricas na Virgínia e no Texas."}
+ ],
+ "diferencial": {
+  "texto": "A Lilly lidera a classe de remédios de incretina para obesidade e diabetes, com patentes, dados clínicos e capacidade de produção em escala que levam anos para um concorrente igualar, e uma esteira de novos remédios (pílula, retatrutida). Os pontos fracos são a dependência da tirzepatida, a pressão de preços nos EUA e a concorrência da Novo Nordisk e de novos entrantes.",
+  "vantagem": {"nivel": "forte", "resumo": "Patentes e dados clínicos da tirzepatida, líder em obesidade e diabetes, com produção em escala e nova geração de remédios já a caminho."},
+  "concorrentes": ["Novo Nordisk", "Amgen", "Pfizer", "AstraZeneca", "Roche", "Merck"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 91 bi e US$ 92 bi (antes US$ 85 bi a US$ 87 bi), com lucro ajustado de US$ 35 a US$ 36 por ação, reduzido por despesas com aquisições de pesquisa. O crescimento vem da expansão internacional da tirzepatida, da pílula Foundayo e de novos usos aprovados.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 91 bi a US$ 92 bi", "periodo": "2026"},
+   {"rotulo": "Crescimento da receita", "valor": "39%", "periodo": "3T26"},
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 35 a US$ 36 por ação", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 7,22 por ação no 3T26 (US$ 7,48 ajustado), já com US$ 4,57 por ação de despesas com aquisição de pesquisas, e margem bruta de 84%. Cerca de US$ 900 mi da receita foram pontuais, como marcos do Jardiance. A empresa paga dividendo trimestral de US$ 1,73.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dependência da tirzepatida.",
+  "Pressão de preços de remédios nos EUA.",
+  "Concorrência em obesidade.",
+  "Riscos de estudos clínicos."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita subiu 39%, para US$ 24,4 bi, com Mounjaro e Zepbound, e a empresa elevou a projeção de receita de 2026 em cerca de US$ 5 bi; a pílula Foundayo vendeu US$ 184 mi no primeiro trimestre completo.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Receita de US$ 24,4 bi, alta de 39%.",
+   "Mounjaro cresceu 65%.",
+   "Projeção de receita de 2026 elevada para US$ 91 bi a US$ 92 bi."
+  ],
+  "negativos": [
+   "Preços realizados caíram 15% no total.",
+   "Projeção de lucro ajustado por ação reduzida por aquisições."
+  ],
+  "atencao": [
+   "Ritmo de vendas da pílula Foundayo.",
+   "Aprovação da retatrutida."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Eli Lilly: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000104/q326lillysalesandearningsp.htm", "data": "2026-10-29"},
+  {"titulo": "24/7 Wall St.: Eli Lilly Q3 2026, tirzepatide fuels a massive guidance raise", "url": "https://247wallst.com/cards/eli-lilly-q3-2026-earnings-lly-01m63nk1x2d2k0eyrf4m78fs52", "data": "2026-10-29"},
+  {"titulo": "ChemXplore: Lilly raises 2026 guidance after Q3 revenue surge", "url": "https://chemxplore.com/news/lilly-q3-2026-financial-results-guidance", "data": "2026-10"},
+  {"titulo": "Fierce Pharma: Novo catches Wegovy pill tailwind in Q3 (cita vendas do Foundayo)", "url": "https://www.fiercepharma.com/pharma/novo-catches-wegovy-pill-tailwind-q3-ceo-eyes-new-launch-horizons-2027", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

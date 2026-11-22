@@ -1,0 +1,65 @@
+{
+ "ticker": "PL",
+ "revisado_em": "2026-11-22",
+ "resumo": "Operadora americana da maior frota de satélites de observação da Terra, que fotografa o planeta inteiro todo dia e vende dados e serviços de satélite a governos e empresas. Receita crescendo 58%, primeiro Ebitda ajustado positivo e US$ 865 mi em caixa.",
+ "modelo": "A Planet Labs fabrica e opera centenas de pequenos satélites (Doves, SuperDoves, Pelican de alta resolução e Tanager hiperespectral) e vende assinaturas de imagens e análises com IA a governos de defesa e inteligência, agricultura, seguros e meio ambiente. Também vende satélites e capacidade dedicada a governos (serviços de satélite), como Suécia e Alemanha.",
+ "segmentos": [],
+ "segmentos_base": "Empresa não divulga receita por segmento no release",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em San Francisco (EUA); clientes governamentais nos EUA, Europa (Alemanha, Suécia) e Ásia."},
+ "temas": [
+  {"tema": "Defesa e inteligência", "relacao": "Governos aumentam gastos com vigilância por satélite; a empresa recebeu contrato de US$ 8 mi da NGA e venceu concorrência alemã de capacidade dedicada."},
+  {"tema": "IA aplicada a imagens", "relacao": "Usa IA para transformar imagens diárias em alertas e análises, aumentando o valor por cliente."},
+  {"tema": "Espaço", "relacao": "Lançou o Pelican-11, chegando a 10 satélites de alta resolução em órbita."}
+ ],
+ "diferencial": {
+  "texto": "A Planet tem a maior frota de satélites de imagem do mundo e um arquivo de mais de uma década de imagens diárias de todo o planeta, base para treinar modelos de IA e difícil de recriar. Os pontos fracos são a concorrência de empresas de alta resolução como Maxar e de novas constelações, a dependência de governos e o histórico de prejuízo.",
+  "vantagem": {"nivel": "moderada", "resumo": "Maior frota de satélites de imagem e arquivo diário de todo o planeta por mais de uma década, difícil de recriar, mas com rivais em alta resolução."},
+  "concorrentes": ["Maxar (Vantor)", "BlackSky", "Airbus Defence and Space", "ICEYE", "Satellogic", "Capella Space"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 (fevereiro de 2026 a janeiro de 2027) deve ficar entre US$ 430 mi e US$ 441 mi (alta de 40% a 43%), com Ebitda ajustado de US$ 3 mi a US$ 10 mi; para o trimestre até outubro, a receita deve ser de US$ 101 mi a US$ 105 mi. A carteira é de US$ 815 mi, metade a receber em 12 meses.",
+  "metricas": [
+   {"rotulo": "Carteira de pedidos", "valor": "US$ 815 mi", "periodo": "jul/2026"},
+   {"rotulo": "Receita projetada", "valor": "US$ 430 mi a US$ 441 mi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Crescimento da receita", "valor": "58%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo líquido de US$ 9,4 mi no trimestre, menor que os US$ 22,6 mi de um ano antes, e primeiro Ebitda ajustado positivo, de US$ 13,9 mi. A empresa tinha US$ 865 mi em caixa e aplicações e US$ 448 mi em notas conversíveis, e levantou cerca de US$ 120 mi com venda de ações em bolsa e US$ 108 mi com exercício de bônus de subscrição em 2026.",
+  "caixa": "US$ 865 mi",
+  "queima_anual": null,
+  "periodo": "jul/2026"
+ },
+ "riscos": [
+  "Dependência de contratos com governos.",
+  "Concorrência em imagens de alta resolução.",
+  "Diluição por emissão de ações.",
+  "Falhas ou atrasos de lançamento de satélites."
+ ],
+ "momento": "No trimestre encerrado em julho (3T26 no calendário, 2T27 fiscal da empresa, divulgado em 03/09/2026), a receita recorde subiu 58%, para US$ 116 mi, com a entrega de satélites às Forças Armadas suecas, e a empresa elevou a projeção do ano; o trimestre até outubro deve ser divulgado em dezembro.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-03",
+  "positivos": [
+   "Receita recorde de US$ 116 mi, alta de 58%.",
+   "Primeiro Ebitda ajustado positivo.",
+   "Projeção do ano elevada."
+  ],
+  "negativos": [
+   "Projeção do trimestre seguinte abaixo do esperado.",
+   "Margem bruta ajustada caiu de 61% para 59%."
+  ],
+  "atencao": [
+   "Resultado do trimestre encerrado em outubro, em dezembro.",
+   "Novos contratos de capacidade dedicada com governos."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Planet Labs: resultados do 2T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526381874/pl-ex99_1.htm", "data": "2026-09-03"},
+  {"titulo": "Nasdaq: Planet Labs Q2 earnings call highlights", "url": "https://www.nasdaq.com/articles/planet-labs-pbc-q2-earnings-call-highlights", "data": "2026-09"},
+  {"titulo": "24/7 Wall St.: Planet Labs posts its first adjusted quarterly profit", "url": "https://247wallst.com/cards/planet-labs-q2-2027-earnings-pl-01m1mep30p3wq8ze8x7wrvrn08", "data": "2026-09"},
+  {"titulo": "Quartr: Planet Labs Q2 2027 earnings summary", "url": "https://quartr.com/events/planet-labs-pbc-pl-q2-2027_ojoJj29x", "data": "2026-09"}
+ ],
+ "ultimo_resultado": "3T26"
+}
