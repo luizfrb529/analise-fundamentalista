@@ -1,0 +1,69 @@
+{
+ "ticker": "MRK",
+ "revisado_em": "2026-11-22",
+ "resumo": "Farmacêutica americana dona do Keytruda, remédio de câncer mais vendido do mundo, das vacinas Gardasil e de um negócio de saúde animal. Lucrativa, mas o lucro de 2026 caiu muito com despesas de aquisições bilionárias.",
+ "modelo": "A Merck vende remédios patenteados (oncologia com o Keytruda e sua versão subcutânea Keytruda Qlex, Winrevair para hipertensão pulmonar, Ohtuvayre para DPOC), vacinas (Gardasil contra HPV) e produtos de saúde animal. Compra empresas para repor o Keytruda, cujas principais patentes vencem a partir de 2028.",
+ "segmentos": [
+  {"nome": "Keytruda e Keytruda Qlex", "peso_receita": 0.48, "periodo": "3T26", "obs": "US$ 8,6 bi, alta de 6%; Qlex US$ 830 mi."},
+  {"nome": "Vacinas (Gardasil e outras)", "peso_receita": 0.11, "periodo": "3T26", "obs": "Gardasil US$ 2,0 bi, alta de 14%."},
+  {"nome": "Saúde animal", "peso_receita": 0.09, "periodo": "3T26", "obs": "US$ 1,7 bi, alta de 4%."},
+  {"nome": "Outros remédios", "peso_receita": 0.32, "periodo": "3T26", "obs": "Winrevair US$ 694 mi (+93%), Ohtuvayre US$ 184 mi e outros."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Rahway, Nova Jersey (EUA); cerca de metade da receita vem de fora dos EUA."},
+ "temas": [
+  {"tema": "Oncologia", "relacao": "O Keytruda segue líder, e a versão subcutânea Qlex já vende US$ 830 mi por trimestre, estratégia para prolongar a franquia."},
+  {"tema": "Perda de patentes", "relacao": "As principais patentes do Keytruda começam a vencer em 2028, por isso a empresa comprou Verona, Cidara (US$ 9,0 bi) e Terns (US$ 5,7 bi)."}
+ ],
+ "diferencial": {
+  "texto": "A Merck tem o remédio de câncer mais vendido do mundo, vacinas com poucas concorrentes e grande capacidade de pesquisa e produção. Os pontos fracos são a enorme dependência do Keytruda antes do vencimento das patentes, a fraqueza do Gardasil na China nos últimos anos e o custo das aquisições para repor receita.",
+  "vantagem": {"nivel": "moderada", "resumo": "Keytruda líder em câncer e vacinas com poucos rivais, mas a vantagem tem prazo: as principais patentes do Keytruda vencem a partir de 2028."},
+  "concorrentes": ["Bristol Myers Squibb", "Roche", "AstraZeneca", "Pfizer", "GSK", "Zoetis"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas de 2026 devem ficar entre US$ 66,8 bi e US$ 67,3 bi, com lucro ajustado de US$ 2,77 a US$ 2,82 por ação, reduzido por despesas de cerca de US$ 6 por ação com aquisições. O potencial depende de novos remédios compensarem o Keytruda depois de 2028.",
+  "metricas": [
+   {"rotulo": "Vendas projetadas", "valor": "US$ 66,8 bi a US$ 67,3 bi", "periodo": "2026"},
+   {"rotulo": "Vendas de Keytruda Qlex", "valor": "US$ 830 mi", "periodo": "3T26"},
+   {"rotulo": "Vendas de Winrevair", "valor": "US$ 694 mi (+93%)", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 2,04 por ação no 3T26 (US$ 2,49 ajustado), mas prejuízo contábil em nove meses pelas despesas com a compra da Cidara e da Terns. A operação segue muito lucrativa e a empresa paga dividendos trimestrais.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Vencimento das patentes do Keytruda a partir de 2028.",
+  "Pressão de preços nos EUA.",
+  "Execução das aquisições.",
+  "Concorrência em oncologia."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), as vendas subiram 5%, para US$ 18,1 bi, e o lucro ajustado superou o esperado, com a família Keytruda em alta de 6%; a empresa elevou a projeção de lucro de 2026.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Keytruda Qlex vendeu US$ 830 mi.",
+   "Winrevair quase dobrou.",
+   "Projeção de lucro de 2026 elevada."
+  ],
+  "negativos": [
+   "Keytruda intravenoso caiu 5%.",
+   "Parte do crescimento veio de antecipação de compras."
+  ],
+  "atencao": [
+   "Migração de pacientes para o Keytruda Qlex.",
+   "Resultados das aquisições."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Merck: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465926119825/tm2628203d1_ex99-1.htm", "data": "2026-10-29"},
+  {"titulo": "Merck: tabelas do 3T26 (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465926119825/tm2628203d1_ex99-2.htm", "data": "2026-10-29"},
+  {"titulo": "Finviz: Merck reports Q3 revenue of $18.1 billion, raises 2026 guidance", "url": "https://finviz.com/news/411712/merck-reports-q3-revenue-of-181-billion-raises-2026-earnings-guidance", "data": "2026-10"},
+  {"titulo": "Finimize: Merck's Keytruda and Gardasil powered a strong Q3 beat", "url": "https://finimize.com/content/mercks-keytruda-and-gardasil-powered-a-strong-q3-beat", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

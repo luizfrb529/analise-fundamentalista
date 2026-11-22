@@ -1,0 +1,138 @@
+{
+ "ticker": "ABBV",
+ "revisado_em": "2026-11-22",
+ "resumo": "Farmacêutica americana líder em imunologia (Skyrizi e Rinvoq), que já superou a perda de patente do Humira, além de neurociência (Botox, Vraylar), estética e oncologia. Muito lucrativa, com receita crescendo 10%.",
+ "modelo": "A AbbVie vende remédios patenteados para doenças autoimunes (Skyrizi, Rinvoq), neurociência (Vraylar, Botox terapêutico), estética (Botox cosmético) e câncer (Venclexta, Imbruvica, Elahere), principalmente nos EUA. Compra empresas e projetos de pesquisa para renovar o portfólio.",
+ "segmentos": [
+  {
+   "nome": "Imunologia (Skyrizi, Rinvoq, Humira)",
+   "peso_receita": 0.53,
+   "periodo": "3T26",
+   "obs": "Skyrizi US$ 5,8 bi (+23%), Rinvoq US$ 2,7 bi (+24%), Humira US$ 683 mi (-31%)."
+  },
+  {
+   "nome": "Neurociência (Vraylar, Botox terapêutico e outros)",
+   "peso_receita": 0.22,
+   "periodo": "3T26",
+   "obs": "Vraylar US$ 1,07 bi (+14%), Botox terapêutico US$ 1,08 bi."
+  },
+  {
+   "nome": "Oncologia",
+   "peso_receita": 0.1,
+   "periodo": "3T26",
+   "obs": "US$ 1,7 bi, estável."
+  },
+  {
+   "nome": "Estética e outros",
+   "peso_receita": 0.15,
+   "periodo": "3T26",
+   "obs": "Botox cosmético US$ 669 mi (+5%)."
+  }
+ ],
+ "segmentos_base": "Receita (pesos aproximados)",
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em North Chicago, Illinois (EUA); a maior parte da receita vem dos EUA."
+ },
+ "temas": [
+  {
+   "tema": "Imunologia",
+   "relacao": "Skyrizi e Rinvoq, juntos acima de US$ 8,4 bi no trimestre, mais que compensam a queda do Humira."
+  },
+  {
+   "tema": "Aquisições",
+   "relacao": "Concluiu a compra da Apogee Therapeutics, de imunologia, em 2026."
+  }
+ ],
+ "diferencial": {
+  "texto": "A AbbVie construiu uma franquia de imunologia com dois remédios de nova geração protegidos por patentes até a próxima década, além do Botox, marca líder em estética e neurologia difícil de copiar. Os pontos fracos são a dependência da imunologia, a pressão de preços nos EUA, a dívida elevada das aquisições e a queda em oncologia.",
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Franquia de imunologia com Skyrizi e Rinvoq protegidos por patentes, mais a marca Botox, líder em estética e neurologia."
+  },
+  "concorrentes": [
+   "Johnson & Johnson",
+   "Eli Lilly",
+   "Pfizer",
+   "Bristol Myers Squibb",
+   "Amgen",
+   "Galderma"
+  ]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro ajustado de 2026 deve ficar entre US$ 13,95 e US$ 13,99 por ação, projeção elevada, e o dividendo trimestral sobe 5,2%, para US$ 1,82, em 2027. O crescimento vem de Skyrizi, Rinvoq, neurociência e novos remédios.",
+  "metricas": [
+   {
+    "rotulo": "Lucro ajustado projetado",
+    "valor": "US$ 13,95 a US$ 13,99 por ação",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Receita de Skyrizi",
+    "valor": "US$ 5,8 bi (+23%)",
+    "periodo": "3T26"
+   },
+   {
+    "rotulo": "Dividendo trimestral",
+    "valor": "US$ 1,82",
+    "periodo": "a partir de 2027"
+   }
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 2,37 por ação no 3T26 (US$ 3,82 ajustado), com receita de US$ 17,4 bi (+10%). A despesa de juros foi de US$ 700 mi no trimestre, sinal da dívida elevada das aquisições. A empresa elevou o dividendo trimestral em 5,2% para 2027.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dependência da imunologia.",
+  "Pressão de preços de remédios nos EUA.",
+  "Dívida elevada.",
+  "Queda em oncologia."
+ ],
+ "momento": "No 3T26 (divulgado em 30/10/2026), a receita subiu 10%, para US$ 17,4 bi, com Skyrizi e Rinvoq crescendo mais de 20%, e a empresa elevou a projeção de lucro e o dividendo.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-30",
+  "positivos": [
+   "Skyrizi e Rinvoq cresceram mais de 20%.",
+   "Projeção de lucro elevada.",
+   "Dividendo elevado em 5,2%."
+  ],
+  "negativos": [
+   "Humira caiu 31%.",
+   "Imbruvica caiu 26%."
+  ],
+  "atencao": [
+   "Novas indicações de Skyrizi e Rinvoq.",
+   "Pressão de preços nos EUA."
+  ]
+ },
+ "fontes": [
+  {
+   "titulo": "AbbVie: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20260930xexhibit991.htm",
+   "data": "2026-10-30"
+  },
+  {
+   "titulo": "Finviz: AbbVie reports third quarter 2026 financial results",
+   "url": "https://finviz.com/news/412500/abbvie-reports-third-quarter-2026-financial-results",
+   "data": "2026-10-30"
+  },
+  {
+   "titulo": "Fortune: AbbVie Q3 2026 earnings call transcript",
+   "url": "https://fortune.com/company/abbvie/earnings/q3-2026/",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "AbbVie: 8-K do 3T26 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/0001551152-26-000033-index.htm",
+   "data": "2026-10-30"
+  }
+ ],
+ "ultimo_resultado": "3T26"
+}

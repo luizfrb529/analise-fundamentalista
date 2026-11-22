@@ -1,0 +1,69 @@
+{
+ "ticker": "UNH",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior empresa de planos de saúde dos EUA (UnitedHealthcare) e dona da Optum, de serviços médicos, dados e farmácia. Receita de US$ 450 bi por ano; em recuperação após a crise de custos médicos de 2025.",
+ "modelo": "A UnitedHealth ganha com mensalidades de planos de saúde de empresas, pessoas, Medicare Advantage (idosos) e Medicaid (UnitedHealthcare), e com a Optum: clínicas e médicos próprios (Optum Health), software e dados para o setor (Optum Insight) e gestão de benefícios farmacêuticos (Optum Rx). O lucro depende de cobrar mais do que gasta com atendimentos.",
+ "segmentos": [
+  {"nome": "UnitedHealthcare (planos)", "peso_receita": 0.56, "periodo": "3T26", "obs": "US$ 86,3 bi; lucro operacional de US$ 2,8 bi."},
+  {"nome": "Optum Rx (farmácia)", "peso_receita": 0.26, "periodo": "3T26", "obs": "US$ 39,9 bi; lucro de US$ 1,7 bi."},
+  {"nome": "Optum Health (clínicas)", "peso_receita": 0.15, "periodo": "3T26", "obs": "US$ 22,9 bi, queda de 10%; lucro de US$ 735 mi."},
+  {"nome": "Optum Insight (dados e software)", "peso_receita": 0.04, "periodo": "3T26", "obs": "US$ 5,5 bi; lucro de US$ 1,3 bi."}
+ ],
+ "segmentos_base": "Receita dos segmentos, antes de eliminações",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Minnetonka, Minnesota (EUA); a receita vem quase toda dos EUA."},
+ "temas": [
+  {"tema": "Custos médicos", "relacao": "O índice de custo médico caiu para 88,4%, contra 89,9%, com cortes em planos pouco rentáveis e revisões de reservas favoráveis."},
+  {"tema": "Medicare e regulação", "relacao": "Reduziu a carteira de Medicare Advantage para 7,6 milhões de pessoas, e o Departamento de Justiça investiga sua participação no Medicare."}
+ ],
+ "diferencial": {
+  "texto": "A UnitedHealth tem escala sem igual em planos de saúde e um ecossistema integrado (planos, clínicas, dados e farmácia) que dá poder de negociação com hospitais e laboratórios e informações valiosas sobre custos. Os pontos fracos são a pressão de custos médicos, a regulação e investigações sobre o Medicare e a perda de confiança após 2025.",
+  "vantagem": {"nivel": "moderada", "resumo": "Escala e ecossistema integrado de planos, clínicas, dados e farmácia, com poder de negociação, mas sob forte pressão regulatória e de custos."},
+  "concorrentes": ["Elevance Health", "CVS Health (Aetna)", "Cigna", "Humana", "Centene", "Kaiser Permanente"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro ajustado de 2026 deve ser de pelo menos US$ 20,50 por ação, acima dos US$ 19,50 a US$ 20 do trimestre anterior. A recuperação depende de reajustes de preços e de controlar os custos médicos.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "pelo menos US$ 20,50 por ação", "periodo": "2026"},
+   {"rotulo": "Índice de custo médico", "valor": "88,4%", "periodo": "3T26"},
+   {"rotulo": "Clientes no Medicare Advantage", "valor": "7,6 milhões", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 4,1 bi no 3T26 (US$ 4,56 por ação), contra US$ 2,59 um ano antes, com receita de US$ 112,7 bi, levemente abaixo de 2025. A empresa pagou US$ 6,2 bi em dividendos no ano.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Custos médicos acima do previsto.",
+  "Investigações e regulação do Medicare.",
+  "Pressão política sobre planos de saúde.",
+  "Perda de clientes."
+ ],
+ "momento": "No 3T26 (divulgado em 13/10/2026), o lucro ajustado subiu para US$ 4,69 por ação, acima do esperado, com melhora do custo médico, e a empresa elevou a projeção de 2026; o CEO é Stephen Hemsley.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-13",
+  "positivos": [
+   "Lucro ajustado de US$ 4,69 por ação, contra US$ 2,92.",
+   "Índice de custo médico caiu para 88,4%.",
+   "Projeção de 2026 elevada."
+  ],
+  "negativos": [
+   "Receita levemente menor que em 2025.",
+   "Optum Health caiu 10%."
+  ],
+  "atencao": [
+   "Reajustes para 2027.",
+   "Investigação do Departamento de Justiça."
+  ]
+ },
+ "fontes": [
+  {"titulo": "UnitedHealth: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000255/earningsrelease3q26unh.htm", "data": "2026-10-13"},
+  {"titulo": "UnitedHealth: formulário 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/0000731766/000073176626000266/unh-20260930.htm", "data": "2026-10"},
+  {"titulo": "Fierce Healthcare: UnitedHealth Group beats the Street with $4.1B profit for Q3", "url": "https://www.fiercehealthcare.com/payers/unitedhealth-group-beats-street-41b-profit-q3", "data": "2026-10"},
+  {"titulo": "Healthcare Finance News: UnitedHealth targets growth, Q3 profit rises", "url": "https://www.healthcarefinancenews.com/news/unitedhealth-targets-growth-q3-profit-rises", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

@@ -1,0 +1,69 @@
+{
+ "ticker": "JNJ",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior empresa de saúde diversificada do mundo, com remédios inovadores (oncologia, imunologia, neurociência) e equipamentos médicos (cirurgia, cardiologia, ortopedia, lentes). Muito lucrativa, mas o último trimestre teve despesa de cerca de US$ 5,5 bi com processos do talco.",
+ "modelo": "A Johnson & Johnson vende remédios patenteados (Darzalex, Tremfya, Carvykti, Rybrevant e outros) e equipamentos médicos (MedTech) a hospitais, médicos e sistemas de saúde no mundo todo. Investe pesado em pesquisa e aquisições para repor remédios que perdem patente, como o Stelara. Planeja separar o negócio de ortopedia.",
+ "segmentos": [
+  {"nome": "Medicamentos inovadores", "peso_receita": 0.66, "periodo": "3T26", "obs": "US$ 16,8 bi, alta de 7,7%; queda do Stelara tirou cerca de 6,9 pontos."},
+  {"nome": "Equipamentos médicos (MedTech)", "peso_receita": 0.34, "periodo": "3T26", "obs": "US$ 8,6 bi, alta de 2,5%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": 0.59, "exterior_pct": 0.41, "periodo": "3T26", "texto": "Sede em New Brunswick, Nova Jersey (EUA); EUA US$ 15,0 bi (+9%) e exterior US$ 10,4 bi no trimestre."},
+ "temas": [
+  {"tema": "Oncologia", "relacao": "Darzalex, Carvykti, Tecvayli e Rybrevant puxam o crescimento dos remédios."},
+  {"tema": "Processos judiciais", "relacao": "Propôs acordo para os processos de câncer de ovário ligados ao talco, com despesa de cerca de US$ 5,5 bi no trimestre, segundo a imprensa."},
+  {"tema": "Perda de patentes", "relacao": "O Stelara sofre com biossimilares, o que reduz o crescimento."}
+ ],
+ "diferencial": {
+  "texto": "A J&J tem portfólio diversificado entre remédios e equipamentos, escala global, uma das maiores verbas de pesquisa do setor e balanço com nota de crédito máxima, o que permite atravessar perdas de patentes e comprar inovação. Os pontos fracos são os processos do talco, a erosão do Stelara e o crescimento mais lento em equipamentos médicos.",
+  "vantagem": {"nivel": "forte", "resumo": "Diversificação entre remédios e equipamentos, escala global, grande verba de pesquisa e balanço muito sólido para repor patentes que vencem."},
+  "concorrentes": ["Pfizer", "Merck", "AbbVie", "Roche", "Medtronic", "Abbott"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas de 2026 devem ficar entre US$ 101,0 bi e US$ 101,4 bi (alta de 7,4%), com lucro ajustado de US$ 11,05 a US$ 11,15 por ação, projeção levemente elevada. O crescimento vem de oncologia, imunologia (Tremfya) e de novos lançamentos.",
+  "metricas": [
+   {"rotulo": "Vendas projetadas", "valor": "US$ 101,0 bi a US$ 101,4 bi", "periodo": "2026"},
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 11,05 a US$ 11,15 por ação", "periodo": "2026"},
+   {"rotulo": "Crescimento das vendas", "valor": "5,9%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro contábil de apenas US$ 210 mi no 3T26 (US$ 0,09 por ação) pela despesa com o acordo do talco e aquisições; o lucro ajustado foi de US$ 2,59 por ação, queda de 7,5%. A empresa tem balanço muito sólido e paga dividendos crescentes há décadas.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Processos do talco.",
+  "Erosão do Stelara por biossimilares.",
+  "Pressão de preços de remédios nos EUA.",
+  "Separação do negócio de ortopedia."
+ ],
+ "momento": "No 3T26 (divulgado em 13/10/2026), as vendas subiram 5,9%, para US$ 25,4 bi, com oncologia forte, mas o lucro contábil quase zerou pela despesa com o acordo proposto do talco; a empresa elevou levemente a projeção do ano.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-13",
+  "positivos": [
+   "Vendas nos EUA subiram 9%.",
+   "Medicamentos inovadores cresceram 7,7%.",
+   "Projeção do ano levemente elevada."
+  ],
+  "negativos": [
+   "Despesa de cerca de US$ 5,5 bi com o talco.",
+   "MedTech cresceu só 2,5%.",
+   "Lucro ajustado por ação caiu 7,5%."
+  ],
+  "atencao": [
+   "Aprovação do acordo do talco.",
+   "Separação da ortopedia."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Johnson & Johnson: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000189/a2026q3exhibit991.htm", "data": "2026-10-13"},
+  {"titulo": "BioSpace: J&J's innovative medicines carried Q3 as medtech disappoints", "url": "https://www.biospace.com/j-js-innovative-medicines-carried-q3-as-medtech-disappoints-but-newer-medicines-absent", "data": "2026-10"},
+  {"titulo": "Panabee: JNJ Q3, oncology growth offsets Stelara erosion amid $5.5 billion legal charge", "url": "https://www.panabee.com/news/johnson-johnson-earnings-q3-2026-report", "data": "2026-10"},
+  {"titulo": "Grafa: Johnson & Johnson reports $25.4 billion Q3 2026 sales", "url": "https://grafa.com/en/news/united-states/johnson-johnson-reports-254-billion-q3-2026-sales-growth", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
