@@ -1,6 +1,6 @@
 {
  "ticker": "VIVT3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-22",
  "resumo": "Maior operadora do país, com 120 milhões de acessos móveis e de fibra. Receita em reais e recorrente, caixa líquido sem arrendamentos e compromisso de distribuir ao menos 100% do lucro de 2026.",
  "modelo": "A Telefônica Brasil, controlada pela espanhola Telefónica, opera a marca Vivo em telefonia móvel (pós e pré-pago), banda larga por fibra (FTTH), dados e TI para empresas e serviços digitais (Vivo Pay, Vale Saúde, streaming, nuvem e cibersegurança). A receita é quase toda recorrente, de assinaturas mensais; a venda de aparelhos e eletrônicos é a parte pontual. A empresa paga a maior parte do lucro em dividendos, juros sobre capital e redução de capital.",
  "segmentos": [
@@ -85,5 +85,23 @@
    "data": "2026-11-10"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-10",
+  "positivos": [
+   "Receita líquida de R$ 16,02 bi no 3T26, alta de 7,2% sobre o 3T25.",
+   "Ebitda de R$ 7,14 bi no 3T26, alta de 10,0%, com margem de 44,5% (+1,1 p.p.).",
+   "Lucro líquido de R$ 2,46 bi no 3T26, alta de 30,1%, com R$ 366 mi de ganhos com venda de ativos de cobre."
+  ],
+  "negativos": [
+   "Dívida líquida com arrendamentos de R$ 13,76 bi em setembro de 2026, em alta com a incorporação da FiBrasil.",
+   "Capex de R$ 2,56 bi no 3T26, queda de 1,6%, equivalente a 16,0% da receita."
+  ],
+  "atencao": [
+   "Parte do lucro do trimestre veio de ganhos não recorrentes com ativos de cobre.",
+   "R$ 1 bi ainda disponível para recompra até fevereiro de 2027."
+  ]
+ }
 }
