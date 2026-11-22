@@ -1,0 +1,67 @@
+{
+ "ticker": "XOM",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior petroleira de capital aberto do Ocidente, integrada da extração (Permiano, Guiana) ao refino e à química. Muito lucrativa, beneficiada em 2026 pela alta do petróleo com o conflito no Oriente Médio, e grande pagadora de dividendos e recompras.",
+ "modelo": "A ExxonMobil extrai petróleo e gás (Upstream), refina e vende combustíveis (Energy Products) e produz químicos e lubrificantes (Chemical e Specialty Products). Ganha com o preço do petróleo e com as margens de refino, e aposta em projetos de baixo custo, como a Guiana e o Permiano (com a Pioneer), além de captura de carbono e lítio.",
+ "segmentos": [
+  {"nome": "Exploração e produção (Upstream)", "peso_receita": 0.48, "periodo": "3T26", "obs": "Lucro de US$ 7,1 bi."},
+  {"nome": "Refino e combustíveis", "peso_receita": 0.44, "periodo": "3T26", "obs": "Lucro de US$ 7,2 bi (US$ 9,1 bi ajustado)."},
+  {"nome": "Químicos e especialidades", "peso_receita": 0.08, "periodo": "3T26", "obs": "Lucro de US$ 2,0 bi."}
+ ],
+ "segmentos_base": "Lucro por segmento (antes de Corporate)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Spring, Texas (EUA); produção nos EUA (Permiano), Guiana, Canadá, Austrália, Papua-Nova Guiné e outros, com refinarias no mundo todo."},
+ "temas": [
+  {"tema": "Petróleo e geopolítica", "relacao": "O conflito com o Irã, que bloqueou boa parte do tráfego no Estreito de Ormuz, levou o petróleo para acima de US$ 100, segundo a imprensa, e as margens de refino subiram."},
+  {"tema": "Transição energética", "relacao": "Iniciou captura de carbono com a Nucor e aprovou o projeto de armazenamento de carbono Rose."}
+ ],
+ "diferencial": {
+  "texto": "A ExxonMobil tem escala, integração entre petróleo, refino e química e ativos de baixíssimo custo, como a Guiana e o Permiano, que dão lucro mesmo com petróleo barato, além de balanço forte. Os pontos fracos são a dependência do preço do petróleo, a pressão regulatória e climática e o longo prazo de retorno de grandes projetos.",
+  "vantagem": {"nivel": "forte", "resumo": "Escala, integração do poço à química e ativos de baixíssimo custo (Guiana, Permiano) que dão lucro mesmo com petróleo barato."},
+  "concorrentes": ["Chevron", "Shell", "TotalEnergies", "BP", "Saudi Aramco", "ConocoPhillips"]
+ },
+ "potencial": {
+  "texto": "A empresa anunciou US$ 20 bi em recompras para 2027, se as condições de mercado permitirem, e elevou o dividendo trimestral para US$ 1,07. O lucro depende do preço do petróleo e das margens de refino; a empresa cita a recuperação do Oriente Médio como incerteza. Não há projeção de lucro.",
+  "metricas": [
+   {"rotulo": "Recompras planejadas", "valor": "US$ 20 bi", "periodo": "2027"},
+   {"rotulo": "Produção", "valor": "4,5 milhões de barris equivalentes por dia", "periodo": "3T26"},
+   {"rotulo": "Fluxo de caixa livre", "valor": "US$ 19,1 bi", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 15,4 bi no 3T26 (US$ 3,72 por ação; US$ 4,23 ajustado), com caixa operacional de US$ 25,7 bi e fluxo de caixa livre de US$ 19,1 bi. A dívida líquida caiu cerca de US$ 11 bi no ano, para US$ 22,1 bi. A empresa pagou US$ 4,3 bi em dividendos e recomprou US$ 5,1 bi em ações no trimestre.",
+  "caixa": "US$ 12,2 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Queda do preço do petróleo após o conflito.",
+  "Regulação climática.",
+  "Margens de refino voláteis.",
+  "Execução de grandes projetos."
+ ],
+ "momento": "No 3T26 (divulgado em 30/10/2026), o lucro ajustado foi de US$ 4,23 por ação, acima do esperado, com petróleo acima de US$ 100 pelo conflito no Oriente Médio, segundo a imprensa; a empresa anunciou US$ 20 bi de recompras para 2027.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-30",
+  "positivos": [
+   "Fluxo de caixa livre de US$ 19,1 bi.",
+   "Dívida líquida caiu cerca de US$ 11 bi no ano.",
+   "US$ 20 bi de recompras para 2027."
+  ],
+  "negativos": [
+   "Itens extraordinários de US$ 2,9 bi negativos."
+  ],
+  "atencao": [
+   "Preço do petróleo com a normalização no Oriente Médio.",
+   "Margens de refino."
+  ]
+ },
+ "fontes": [
+  {"titulo": "ExxonMobil: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2115436/000211543626000018/livef8k3q26991.htm", "data": "2026-10-30"},
+  {"titulo": "AP (KSAT): ExxonMobil and Chevron top Q3 estimates on higher prices", "url": "https://www.ksat.com/business/2026/10/30/exxonmobil-and-chevron-top-q3-estimates-on-higher-prices-and-strong-output/", "data": "2026-10-30"},
+  {"titulo": "Oil & Gas Journal: North American oil and gas firms report higher third-quarter earnings", "url": "https://www.ogj.com/members/article/55418960/north-american-oil-and-gas-firms-report-higher-third-quarter-earnings", "data": "2026-11"},
+  {"titulo": "ExxonMobil: 8-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2115436/000211543626000018/0002115436-26-000018-index.htm", "data": "2026-10-30"}
+ ],
+ "ultimo_resultado": "3T26"
+}

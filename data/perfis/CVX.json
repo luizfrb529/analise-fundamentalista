@@ -1,0 +1,67 @@
+{
+ "ticker": "CVX",
+ "revisado_em": "2026-11-22",
+ "resumo": "Segunda maior petroleira americana, integrada da produção ao refino, que comprou a Hess e ganhou participação na Guiana. Muito lucrativa em 2026 com a alta do petróleo, com caixa forte para dividendos e recompras.",
+ "modelo": "A Chevron extrai petróleo e gás nos EUA (Permiano, Golfo do México), Cazaquistão (Tengiz), Austrália (GNL), Guiana e outros, e refina e vende combustíveis e lubrificantes. Ganha com o preço do petróleo e gás e com as margens de refino, e devolve boa parte do caixa aos acionistas.",
+ "segmentos": [
+  {"nome": "Exploração e produção (Upstream)", "peso_receita": 0.54, "periodo": "3T26", "obs": "Lucro de US$ 5,7 bi."},
+  {"nome": "Refino e vendas (Downstream)", "peso_receita": 0.46, "periodo": "3T26", "obs": "Lucro de US$ 4,9 bi, com refinarias americanas a 98% de uso."}
+ ],
+ "segmentos_base": "Lucro por segmento (antes de outros)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Houston (EUA); produção de 2,0 milhões de barris equivalentes por dia nos EUA e 1,9 milhão no exterior."},
+ "temas": [
+  {"tema": "Petróleo e geopolítica", "relacao": "O petróleo oscilou entre US$ 68 e US$ 132 no trimestre com o conflito no Oriente Médio, segundo a imprensa, e as refinarias operaram quase no limite."},
+  {"tema": "Novos projetos", "relacao": "A produção no Golfo do México cresceu com Ballymore, Whale e Anchor, e a Austrália bateu recordes."}
+ ],
+ "diferencial": {
+  "texto": "A Chevron tem ativos de longa duração e baixo custo (Permiano, Tengiz, Guiana pela Hess), integração com refino e balanço muito forte (endividamento de 14,7%), o que permite manter dividendos em ciclos ruins. Os pontos fracos são a dependência do preço do petróleo, riscos políticos em países como Cazaquistão e Venezuela e a pressão climática.",
+  "vantagem": {"nivel": "forte", "resumo": "Ativos de longa duração e baixo custo, como Permiano, Tengiz e Guiana, integrados ao refino e com balanço muito forte."},
+  "concorrentes": ["ExxonMobil", "Shell", "TotalEnergies", "BP", "ConocoPhillips", "Occidental"]
+ },
+ "potencial": {
+  "texto": "O potencial vem do crescimento da produção com novos projetos e da Guiana, e da devolução de caixa aos acionistas. O lucro depende do preço do petróleo. A empresa não traz projeção de lucro no release.",
+  "metricas": [
+   {"rotulo": "Produção", "valor": "3,98 milhões de barris equivalentes por dia", "periodo": "3T26"},
+   {"rotulo": "Fluxo de caixa livre", "valor": "US$ 12,0 bi", "periodo": "3T26"},
+   {"rotulo": "Endividamento", "valor": "14,7%", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 9,9 bi no 3T26 (US$ 5,06 por ação; US$ 5,28 ajustado), contra US$ 3,5 bi um ano antes. O caixa operacional foi de US$ 16,0 bi e o fluxo de caixa livre de US$ 12,0 bi. A empresa recomprou US$ 2,5 bi em ações e paga dividendo trimestral de US$ 1,78.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Queda do preço do petróleo.",
+  "Riscos políticos em países produtores.",
+  "Regulação climática.",
+  "Integração da Hess."
+ ],
+ "momento": "No 3T26 (divulgado em 30/10/2026), o lucro quase triplicou em um ano, para US$ 9,9 bi, acima do esperado, com petróleo alto e refinarias cheias; a produção recuou levemente frente ao trimestre anterior.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-30",
+  "positivos": [
+   "Lucro de US$ 9,9 bi, contra US$ 3,5 bi.",
+   "Endividamento caiu para 14,7%.",
+   "Recompras de US$ 2,5 bi."
+  ],
+  "negativos": [
+   "Produção caiu frente ao 2T26.",
+   "Efeitos de prazo negativos de US$ 1,6 bi."
+  ],
+  "atencao": [
+   "Preço do petróleo.",
+   "Produção na Venezuela e no Cazaquistão."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Chevron: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000196/a09302026ex9918-k.htm", "data": "2026-10-30"},
+  {"titulo": "AP (KSAT): ExxonMobil and Chevron top Q3 estimates on higher prices", "url": "https://www.ksat.com/business/2026/10/30/exxonmobil-and-chevron-top-q3-estimates-on-higher-prices-and-strong-output/", "data": "2026-10-30"},
+  {"titulo": "Oil & Gas Journal: North American oil and gas firms report higher third-quarter earnings", "url": "https://www.ogj.com/members/article/55418960/north-american-oil-and-gas-firms-report-higher-third-quarter-earnings", "data": "2026-11"},
+  {"titulo": "Chevron: 8-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000196/0000093410-26-000196-index.htm", "data": "2026-10-30"}
+ ],
+ "ultimo_resultado": "3T26"
+}

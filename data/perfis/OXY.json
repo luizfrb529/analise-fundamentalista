@@ -1,0 +1,67 @@
+{
+ "ticker": "OXY",
+ "revisado_em": "2026-11-22",
+ "resumo": "Petroleira americana com grande produção no Permiano e no Oriente Médio, que vendeu a divisão química OxyChem para a Berkshire Hathaway e reduziu muito a dívida em 2026. Lucrativa, beneficiada pela alta do petróleo.",
+ "modelo": "A Occidental extrai petróleo e gás nos EUA (Permiano, Rochosas, Golfo do México), Omã, Emirados e Argélia, e opera dutos e comercialização (midstream). Desenvolve captura de carbono e captura direta do ar (projeto Stratos). Usou a venda da OxyChem para pagar dívida da compra da CrownRock.",
+ "segmentos": [
+  {"nome": "Petróleo e gás", "peso_receita": 0.90, "periodo": "3T26", "obs": "Lucro antes de impostos de US$ 2,6 bi; petróleo realizado a US$ 85,91 por barril."},
+  {"nome": "Dutos e comercialização", "peso_receita": 0.10, "periodo": "3T26", "obs": "Lucro ajustado de US$ 309 mi."}
+ ],
+ "segmentos_base": "Lucro por segmento (aproximado)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Houston (EUA); 1,2 milhão de barris equivalentes por dia nos EUA, de um total de 1,43 milhão, com o restante em Omã, Emirados e Argélia."},
+ "temas": [
+  {"tema": "Petróleo e geopolítica", "relacao": "O petróleo realizado de US$ 85,91 por barril reflete a alta com o conflito no Oriente Médio, onde a empresa também tem operações."},
+  {"tema": "Captura de carbono", "relacao": "Desenvolve o Stratos, uma das maiores usinas de captura direta de carbono do ar."}
+ ],
+ "diferencial": {
+  "texto": "A Occidental tem grande área de baixo custo no Permiano e é líder em recuperação avançada de petróleo com CO2, experiência que usa na captura de carbono. Tem a Berkshire Hathaway como grande acionista. Os pontos fracos são a dependência do preço do petróleo, a dívida ainda relevante e o risco de operações no Oriente Médio.",
+  "vantagem": {"nivel": "moderada", "resumo": "Grande área de baixo custo no Permiano e liderança em recuperação de petróleo com CO2, mas exposta ao preço do petróleo e à dívida."},
+  "concorrentes": ["ConocoPhillips", "EOG Resources", "Diamondback Energy", "Chevron", "ExxonMobil", "Devon Energy"]
+ },
+ "potencial": {
+  "texto": "O potencial vem da redução da dívida, que abre espaço para mais retorno aos acionistas, da produção no Permiano e da captura de carbono. O lucro depende do preço do petróleo. A empresa não traz projeção no texto do release lido.",
+  "metricas": [
+   {"rotulo": "Produção", "valor": "1,43 milhão de boe/dia", "periodo": "3T26"},
+   {"rotulo": "Dívida principal", "valor": "US$ 10,0 bi", "periodo": "set/2026"},
+   {"rotulo": "Dívida paga no ano", "valor": "US$ 10,4 bi", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 1,64 bi no 3T26 (US$ 1,61 por ação; US$ 1,91 ajustado). O caixa operacional antes do capital de giro foi de US$ 4,1 bi e o fluxo de caixa livre de US$ 2,8 bi. A dívida principal caiu para US$ 10,0 bi, com US$ 10,4 bi pagos no ano, e o dividendo subiu para US$ 0,28 por trimestre.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Queda do preço do petróleo.",
+  "Operações no Oriente Médio.",
+  "Dívida ainda relevante.",
+  "Custo e retorno da captura de carbono."
+ ],
+ "momento": "No 3T26 (divulgado em 09/11/2026), a empresa teve lucro de US$ 1,6 bi, contra US$ 661 mi um ano antes, segundo a imprensa, e pagou mais US$ 1,8 bi de dívida no trimestre.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-09",
+  "positivos": [
+   "Lucro de US$ 1,6 bi, mais que o dobro de um ano antes.",
+   "Dívida reduzida em US$ 1,8 bi no trimestre.",
+   "Dividendo elevado para US$ 0,28."
+  ],
+  "negativos": [
+   "Lucro por ação caiu frente ao 2T26.",
+   "Resultado contábil de dutos fraco."
+  ],
+  "atencao": [
+   "Preço do petróleo.",
+   "Andamento do Stratos."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Occidental: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/797468/000162828026072193/oxyex9919-30x26earningsrel.htm", "data": "2026-11-09"},
+  {"titulo": "Oil & Gas Journal: North American oil and gas firms report higher third-quarter earnings", "url": "https://www.ogj.com/members/article/55418960/north-american-oil-and-gas-firms-report-higher-third-quarter-earnings", "data": "2026-11"},
+  {"titulo": "Occidental: 8-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/797468/000162828026072193/0001628280-26-072193-index.htm", "data": "2026-11-09"},
+  {"titulo": "Mitrade: oil companies Q3 2026 results", "url": "https://www.mitrade.com/en/articulo/news/live-news/article-8-2249593-20261112", "data": "2026-11-12"}
+ ],
+ "ultimo_resultado": "3T26"
+}

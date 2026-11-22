@@ -1,0 +1,63 @@
+{
+ "ticker": "COP",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior produtora independente de petróleo e gás dos EUA (sem refino), com grande presença no Permiano, Eagle Ford, Bakken e Alasca, e projetos de gás natural liquefeito. Muito lucrativa em 2026 com a alta do petróleo.",
+ "modelo": "A ConocoPhillips só explora e produz petróleo e gás, vendendo a produção a preço de mercado, o que torna o lucro muito ligado ao preço do petróleo. Investe em bacias de baixo custo nos EUA, no projeto Willow (Alasca) e em contratos de GNL, e devolve parte fixa do caixa aos acionistas.",
+ "segmentos": [],
+ "segmentos_base": "Produção de 2,30 milhões de barris equivalentes por dia no 3T26, 66% nos EUA continentais",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Houston (EUA); produção nos EUA continentais (1,52 milhão de barris por dia), Alasca, Noruega, Catar, Austrália, Líbia e outros."},
+ "temas": [
+  {"tema": "Petróleo e geopolítica", "relacao": "O preço realizado subiu para US$ 61,40 por barril equivalente, contra US$ 46,44 um ano antes, com o conflito no Oriente Médio, que também afetou operações no Catar."},
+  {"tema": "Gás natural liquefeito", "relacao": "Tem contratos de compra de 13 milhões de toneladas por ano de GNL para revender a outros mercados."}
+ ],
+ "diferencial": {
+  "texto": "A ConocoPhillips tem uma das maiores carteiras de áreas de baixo custo dos EUA, ampliada com a compra da Marathon Oil, e disciplina de capital que permite gerar caixa em vários cenários de preço. Os pontos fracos são a falta de refino para amortecer quedas do petróleo, a produção em leve queda e o custo do projeto Willow.",
+  "vantagem": {"nivel": "moderada", "resumo": "Uma das maiores carteiras de áreas de baixo custo dos EUA, mas sem refino para amortecer quedas e com produto de preço definido pelo mercado."},
+  "concorrentes": ["EOG Resources", "ExxonMobil", "Chevron", "Occidental", "Devon Energy", "Diamondback Energy"]
+ },
+ "potencial": {
+  "texto": "A empresa prevê produção de 2,32 a 2,36 milhões de barris equivalentes por dia no 4T26 e mantém a meta de devolver 45% do caixa operacional aos acionistas em 2026. O projeto Willow, no Alasca, tem primeira produção prevista para o início de 2029.",
+  "metricas": [
+   {"rotulo": "Produção projetada", "valor": "2,32 a 2,36 milhões de boe/dia", "periodo": "4T26"},
+   {"rotulo": "Fluxo de caixa livre", "valor": "US$ 4,0 bi", "periodo": "3T26"},
+   {"rotulo": "Primeira produção do Willow", "valor": "início de 2029", "periodo": "Alasca"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 4,0 bi no 3T26 (US$ 3,34 por ação; US$ 3,27 ajustado), contra US$ 1,7 bi um ano antes. O caixa operacional foi de US$ 7,2 bi e o fluxo de caixa livre de US$ 4,0 bi. A empresa tinha US$ 11,5 bi em caixa e aplicações, devolveu US$ 3,4 bi aos acionistas e elevou o dividendo em 11%, para US$ 0,93.",
+  "caixa": "US$ 11,5 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Queda do preço do petróleo.",
+  "Produção em leve queda.",
+  "Custo e prazo do projeto Willow.",
+  "Riscos em operações no Oriente Médio."
+ ],
+ "momento": "No 3T26 (divulgado em 05/11/2026), o lucro mais que dobrou, para US$ 4,0 bi, com preços maiores, e a empresa elevou o dividendo em 11%; a produção caiu 4% em um ano.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Lucro de US$ 4,0 bi, contra US$ 1,7 bi.",
+   "Dividendo elevado em 11%.",
+   "US$ 3,4 bi devolvidos aos acionistas."
+  ],
+  "negativos": [
+   "Produção caiu 97 mil barris por dia em um ano."
+  ],
+  "atencao": [
+   "Preço do petróleo.",
+   "Andamento do Willow."
+  ]
+ },
+ "fontes": [
+  {"titulo": "ConocoPhillips: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000043/cop-20261105x8kexx991.htm", "data": "2026-11-05"},
+  {"titulo": "Oil & Gas Journal: North American oil and gas firms report higher third-quarter earnings", "url": "https://www.ogj.com/members/article/55418960/north-american-oil-and-gas-firms-report-higher-third-quarter-earnings", "data": "2026-11"},
+  {"titulo": "ConocoPhillips: 8-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000043/0001163165-26-000043-index.htm", "data": "2026-11-05"},
+  {"titulo": "Mitrade: oil companies Q3 2026 results", "url": "https://www.mitrade.com/en/articulo/news/live-news/article-8-2249593-20261112", "data": "2026-11-12"}
+ ],
+ "ultimo_resultado": "3T26"
+}
