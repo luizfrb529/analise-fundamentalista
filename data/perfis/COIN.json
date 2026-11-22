@@ -1,0 +1,127 @@
+{
+ "ticker": "COIN",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior corretora de criptomoedas dos EUA, com negociação, custódia, stablecoin USDC (em sociedade com a Circle), derivativos, mercados de previsão e a rede Base. A receita caiu 35% com o mercado cripto mais fraco, mas segue lucrativa.",
+ "modelo": "A Coinbase ganha com taxas de negociação de pessoas e instituições (transação) e com assinaturas e serviços: participação nos juros das reservas do USDC, recompensas de staking, juros e financiamento, custódia para ETFs e a assinatura Coinbase One. Comprou a Deribit, maior bolsa de opções de cripto, e opera mercados de previsão e a rede Base.",
+ "segmentos": [
+  {
+   "nome": "Transações",
+   "peso_receita": 0.51,
+   "periodo": "3T26",
+   "obs": "US$ 590 mi, queda de 44% em um ano."
+  },
+  {
+   "nome": "Assinaturas e serviços",
+   "peso_receita": 0.49,
+   "periodo": "3T26",
+   "obs": "US$ 570 mi; stablecoin US$ 307 mi."
+  }
+ ],
+ "segmentos_base": "Receita líquida",
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sem sede física (empresa remota), registrada nos EUA; a maior parte da receita vem dos EUA, com expansão internacional pela Deribit."
+ },
+ "temas": [
+  {
+   "tema": "Cripto e stablecoins",
+   "relacao": "A receita de stablecoin, ligada ao USDC, subiu 5% no trimestre e é a maior fonte recorrente; havia US$ 377 bi em ativos de clientes na plataforma."
+  },
+  {
+   "tema": "Mercados de previsão",
+   "relacao": "Os mercados de previsão passaram de US$ 200 mi de receita anualizada, com crescimento de 82% por trimestre desde o lançamento."
+  },
+  {
+   "tema": "Tokenização",
+   "relacao": "Ações tokenizadas negociadas na rede Base passaram de US$ 1 bi em volume desde o lançamento."
+  }
+ ],
+ "diferencial": {
+  "texto": "A Coinbase é a corretora de cripto mais regulada e confiável dos EUA, custodiante da maioria dos ETFs de bitcoin, com marca forte e parceria lucrativa no USDC. A diversificação para derivativos, previsões e rede própria reduz a dependência de taxas de negociação. Os pontos fracos são a sensibilidade ao preço e ao volume de cripto, a concorrência de Robinhood, Kraken e bolsas tradicionais e a regulação.",
+  "concorrentes": [
+   "Robinhood",
+   "Binance",
+   "Kraken",
+   "CME Group",
+   "Kalshi",
+   "Circle"
+  ]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de assinaturas e serviços do 4T26 deve ficar entre US$ 550 mi e US$ 630 mi, e a receita de transações somava cerca de US$ 165 mi até 25/10. As despesas ajustadas de 2026 foram reduzidas para US$ 4,15 bi a US$ 4,30 bi. O potencial depende do ciclo de cripto e do crescimento de derivativos e previsões.",
+  "metricas": [
+   {
+    "rotulo": "Ativos na plataforma",
+    "valor": "US$ 377 bi",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Receita anualizada de mercados de previsão",
+    "valor": "mais de US$ 200 mi",
+    "periodo": "3T26"
+   },
+   {
+    "rotulo": "Assinaturas e serviços projetados",
+    "valor": "US$ 550 mi a US$ 630 mi",
+    "periodo": "4T26"
+   }
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 719 mi no 3T26, alta de 66%, mas quase todo vindo de ganho de US$ 715 mi na reavaliação de cripto próprio; o Ebitda ajustado foi de US$ 333 mi. A empresa tinha US$ 8,6 bi em caixa, tem dívida em notas conversíveis e recomprou 10,2 milhões de ações, com US$ 2 bi ainda autorizados.",
+  "caixa": "US$ 8,6 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Receita muito sensível a preço e volume de cripto.",
+  "Regulação de cripto, stablecoins e mercados de previsão.",
+  "Concorrência crescente.",
+  "Lucro contábil dependente de reavaliação de cripto."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita caiu 35%, para US$ 1,22 bi, abaixo do esperado, com transações em queda de 44%, mas o lucro subiu 66% pela reavaliação de cripto; as ações caíram mais de 5% após o resultado, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Lucro líquido de US$ 719 mi.",
+   "Mercados de previsão acima de US$ 200 mi anualizados.",
+   "Integração da Deribit concluída em outubro."
+  ],
+  "negativos": [
+   "Receita total caiu 35%.",
+   "Transações caíram 44%.",
+   "Ebitda ajustado de US$ 333 mi, contra US$ 801 mi no 3T25."
+  ],
+  "atencao": [
+   "Volume de negociação no 4T26.",
+   "Regras para stablecoins e mercados de previsão."
+  ]
+ },
+ "fontes": [
+  {
+   "titulo": "Coinbase: apresentação de resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000121/q326earningsdeck_vsec.htm",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "The Block: Coinbase Q3 net income jumps 66% as prediction markets gain traction",
+   "url": "https://theblock.co/news/business/2026-10-30-coinbase-q3-net-income-jumps-432189",
+   "data": "2026-10-30"
+  },
+  {
+   "titulo": "CoinCentral: Coinbase reports higher earnings despite revenue decline",
+   "url": "https://coincentral.com/coinbase-reports-higher-earnings-despite-revenue-decline/",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "Securities.io: Coinbase earns $719 million in Q3 as prediction markets top $200 million",
+   "url": "https://www.securities.io/coinbase-earns-719-million-in-q3-as-prediction-markets-top-200-million/",
+   "data": "2026-10"
+  }
+ ],
+ "ultimo_resultado": "3T26"
+}

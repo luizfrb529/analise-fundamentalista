@@ -1,0 +1,134 @@
+{
+ "ticker": "NFLX",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior serviço de streaming de filmes e séries do mundo, presente em mais de 190 países, que cresce com publicidade, eventos ao vivo e jogos. Muito lucrativa, com margem operacional de 34,6% e forte recompra de ações.",
+ "modelo": "A Netflix ganha com assinaturas mensais (planos com e sem anúncios) e, cada vez mais, com publicidade. Investe pesado em conteúdo próprio e licenciado, incluindo produções locais em vários idiomas, esportes e eventos ao vivo (NFL, lutas) e jogos.",
+ "segmentos": [
+  {
+   "nome": "EUA e Canadá",
+   "peso_receita": 0.44,
+   "periodo": "3T26",
+   "obs": "US$ 5,63 bi, alta de 11%."
+  },
+  {
+   "nome": "Europa, Oriente Médio e África",
+   "peso_receita": 0.32,
+   "periodo": "3T26",
+   "obs": "US$ 4,11 bi, alta de 11%."
+  },
+  {
+   "nome": "América Latina",
+   "peso_receita": 0.12,
+   "periodo": "3T26",
+   "obs": "US$ 1,60 bi, alta de 17%."
+  },
+  {
+   "nome": "Ásia-Pacífico",
+   "peso_receita": 0.12,
+   "periodo": "3T26",
+   "obs": "US$ 1,54 bi, alta de 12%."
+  }
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Los Gatos, Califórnia (EUA); mais da metade da receita vem de fora dos EUA e Canadá, inclusive do Brasil."
+ },
+ "temas": [
+  {
+   "tema": "Publicidade em streaming",
+   "relacao": "A receita de anúncios de 2026 deve ser de cerca de US$ 2,7 bi, abaixo dos US$ 3 bi esperados antes, pelo atraso de algumas ferramentas; o plano com anúncios chegará a 15 novos países em 2027."
+  },
+  {
+   "tema": "Esportes e eventos ao vivo",
+   "relacao": "O 4T26 tem a maior programação ao vivo da história da empresa, com jogos da NFL e a luta Tyson Fury contra Anthony Joshua."
+  }
+ ],
+ "diferencial": {
+  "texto": "A Netflix tem a maior base de assinantes do streaming, o que permite gastar mais em conteúdo diluindo o custo por assinante e atender gostos de dezenas de países; a recomendação por dados aumenta o engajamento. Os pontos fracos são a concorrência pelo tempo de tela (YouTube, TikTok, Disney, Amazon), o custo crescente do conteúdo e dos esportes e a publicidade crescendo abaixo do esperado.",
+  "concorrentes": [
+   "YouTube (Alphabet)",
+   "Disney",
+   "Amazon Prime Video",
+   "Warner Bros. Discovery",
+   "TikTok",
+   "Apple TV"
+  ]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ser de US$ 51,1 bi (alta de 13%) e a margem operacional de 31,5%, contra 29,5% em 2025; o 4T26 deve ter receita de US$ 13,4 bi. O fluxo de caixa livre do ano deve ser de cerca de US$ 12 bi. O crescimento vem de reajustes de preço, assinantes, publicidade e eventos ao vivo.",
+  "metricas": [
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 51,1 bi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Margem operacional projetada",
+    "valor": "31,5%",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Receita de publicidade projetada",
+    "valor": "cerca de US$ 2,7 bi",
+    "periodo": "2026"
+   }
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 3,66 bi no 3T26 (US$ 0,87 por ação, após desdobramento de 10 para 1 em 2025), alta de 49%, com margem operacional de 34,6%. O fluxo de caixa livre foi de US$ 2,9 bi no trimestre. A empresa tinha US$ 8,2 bi em caixa e US$ 15,3 bi em dívida, e recomprou recorde de US$ 4,8 bi em ações no trimestre.",
+  "caixa": "US$ 8,2 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concorrência pelo tempo de tela.",
+  "Custo crescente de conteúdo e direitos esportivos.",
+  "Publicidade crescendo abaixo do esperado.",
+  "Limite para reajustes de preço."
+ ],
+ "momento": "No 3T26 (divulgado em 20/10/2026), a receita subiu 12%, para US$ 12,9 bi, e o lucro operacional 37%, mas a redução da meta de publicidade e a projeção de receita levemente menor pesaram nas ações, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-20",
+  "positivos": [
+   "Lucro operacional de US$ 4,46 bi, alta de 37%.",
+   "Margem operacional de 34,6%, contra 28,2%.",
+   "Recompra recorde de US$ 4,8 bi."
+  ],
+  "negativos": [
+   "Meta de publicidade de 2026 reduzida para cerca de US$ 2,7 bi.",
+   "Projeção de fluxo de caixa livre cortada para US$ 12 bi."
+  ],
+  "atencao": [
+   "Audiência dos eventos ao vivo no 4T26.",
+   "Expansão do plano com anúncios em 2027."
+  ]
+ },
+ "fontes": [
+  {
+   "titulo": "Netflix: carta aos acionistas do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000290/ex991_q326.htm",
+   "data": "2026-10-20"
+  },
+  {
+   "titulo": "24/7 Wall St.: Netflix Q3 2026, profit surges 37% even as ad revenue outlook is cut",
+   "url": "https://247wallst.com/cards/netflix-q3-2026-earnings-nflx-01m5deq0f119rjb4fjrht5sjde",
+   "data": "2026-10-20"
+  },
+  {
+   "titulo": "Advanced Television: Netflix Q3 revenue up 12%",
+   "url": "https://www.advanced-television.com/2026/10/20/netflix-q3-revenue-up-12-yoy/",
+   "data": "2026-10-20"
+  },
+  {
+   "titulo": "TheDesk: Netflix Q3 2026 earnings report",
+   "url": "https://thedesk.net/2026/10/netflix-q3-2026-earnings-report/",
+   "data": "2026-10"
+  }
+ ],
+ "ultimo_resultado": "3T26"
+}
