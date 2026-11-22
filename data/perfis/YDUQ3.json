@@ -1,6 +1,6 @@
 {
  "ticker": "YDUQ3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-22",
  "resumo": "Grupo de ensino superior dono de Estácio, Wyden, Idomed (medicina) e Ibmec, com receita 100% no Brasil. Está em processo de fusão com a Afya, anunciada em setembro de 2026 e ainda dependente do Cade.",
  "modelo": "A Yduqs vende cursos de graduação e pós-graduação presenciais, semipresenciais e a distância. A Estácio e a Wyden atendem o público de massa; o segmento Premium reúne o Idomed (escolas de medicina) e o Ibmec (negócios, direito e economia), de ticket alto. A receita é recorrente, vinda de mensalidades pagas pelo aluno, por financiamento privado próprio (DIS) ou por programas públicos como Fies e ProUni.",
  "segmentos": [
@@ -85,5 +85,24 @@
    "data": "2026-03-11"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-13",
+  "positivos": [
+   "Lucro líquido de R$ 117,6 mi no 3T26, alta de 20,1% sobre o 3T25.",
+   "Fluxo de caixa do acionista recorde de R$ 364 mi no 3T26, alta de 23%.",
+   "Alavancagem de 1,43x em setembro de 2026, ante 1,52x um ano antes."
+  ],
+  "negativos": [
+   "Ebitda ajustado de R$ 490 mi no 3T26, queda de 3,4%, com margem de 35,7% ante 37,6%.",
+   "Lucro ajustado de R$ 138,9 mi no 3T26, queda de 10,1%.",
+   "Base de alunos de cerca de 1,31 milhão, queda de 4,9%, com recuo no digital."
+  ],
+  "atencao": [
+   "Fusão com a Afya (assembleia em 25/11/2026), sujeita à aprovação do Cade.",
+   "Guidance de 2026 reiterado: fluxo de caixa do acionista de R$ 520 mi a R$ 620 mi."
+  ]
+ }
 }
