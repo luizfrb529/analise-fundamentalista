@@ -1,0 +1,63 @@
+{
+ "ticker": "FSLR",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior fabricante americana de painéis solares, com tecnologia própria de filme fino (telureto de cádmio) e fábricas nos EUA, Índia e Ásia. Muito lucrativa graças aos créditos fiscais de produção, mas com vendas em queda em 2026.",
+ "modelo": "A First Solar fabrica e vende módulos solares para grandes usinas de energia, em contratos plurianuais com desenvolvedores e concessionárias. Recebe créditos fiscais do governo americano por produzir nos EUA (45X) e se beneficia de tarifas sobre painéis importados.",
+ "segmentos": [],
+ "segmentos_base": "Vendas de US$ 1,23 bi no 3T26 (-23%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Tempe, Arizona (EUA); fábricas nos EUA, Índia, Malásia e Vietnã; vendas principalmente nos EUA."},
+ "temas": [
+  {"tema": "Energia solar e política industrial", "relacao": "Os créditos fiscais de produção nos EUA, estimados em US$ 2,07 bi a US$ 2,19 bi em 2026, sustentam a margem bruta de cerca de 58%."},
+  {"tema": "Tarifas comerciais", "relacao": "A tarifa da Seção 232 sobre painéis importados, com preço mínimo a partir de dezembro de 2026, gerou incerteza e adiou pedidos, segundo a imprensa."}
+ ],
+ "diferencial": {
+  "texto": "A First Solar tem tecnologia própria de filme fino, que não depende do polissilício chinês, e é a maior fabricante nos EUA, o que lhe dá acesso a créditos fiscais e proteção tarifária, além de uma carteira de 44 GW contratada até 2030. O ponto fraco é a dependência de incentivos e tarifas definidos por política pública.",
+  "vantagem": {"nivel": "moderada", "resumo": "Tecnologia própria que não depende da China e maior produção nos EUA, com créditos fiscais e tarifas, mas dependente de política pública."},
+  "concorrentes": ["JinkoSolar", "LONGi", "Canadian Solar", "Qcells (Hanwha)", "Trina Solar"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas de 2026 devem ficar entre US$ 4,6 bi e US$ 4,9 bi, com volume de 16 a 17 GW e Ebitda ajustado de US$ 2,55 bi a US$ 2,75 bi, abaixo da projeção anterior. O potencial vem da carteira de 44 GW, de cerca de US$ 13,5 bi, e de preços maiores após as tarifas.",
+  "metricas": [
+   {"rotulo": "Vendas projetadas", "valor": "US$ 4,6 bi a US$ 4,9 bi", "periodo": "2026"},
+   {"rotulo": "Carteira contratada", "valor": "44 GW", "periodo": "set/2026"},
+   {"rotulo": "Caixa líquido", "valor": "US$ 1,5 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 571 mi no 3T26 (US$ 5,30 por ação, +25%), com margem bruta de cerca de 58% e Ebitda ajustado de US$ 744 mi. Tem caixa líquido de US$ 1,5 bi e aprovou recompra de até US$ 500 mi.",
+  "caixa": "US$ 1,6 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Mudanças nos créditos fiscais e tarifas.",
+  "Queda de preços dos painéis.",
+  "Adiamento de pedidos por incerteza regulatória.",
+  "Concorrência de fabricantes asiáticos."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), as vendas caíram 23%, mas o lucro subiu 25% com créditos fiscais, e a empresa reduziu a projeção de vendas de 2026 pela incerteza com tarifas; o CEO é Mark Widmar.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Lucro por ação subiu 25%.",
+   "Margem bruta de cerca de 58%.",
+   "Recompra de até US$ 500 mi."
+  ],
+  "negativos": [
+   "Vendas caíram 23%.",
+   "Projeção de 2026 reduzida."
+  ],
+  "atencao": [
+   "Entrada em vigor das tarifas em dezembro.",
+   "Novos contratos a preços maiores."
+  ]
+ },
+ "fontes": [
+  {"titulo": "First Solar: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000211/ex991pressreleaseq3-2026.htm", "data": "2026-10-29"},
+  {"titulo": "pv magazine: First Solar cuts sales forecast as tariff uncertainty slows orders", "url": "https://pv-magazine.com/2026/10/30/first-solar-cuts-sales-forecast-as-tariff-uncertainty-slows-orders", "data": "2026-10-30"},
+  {"titulo": "PV Tech: First Solar sales down 23%, cuts full-year revenue guidance", "url": "https://www.pv-tech.org/first-solar-sales-down-23-year-on-year-cuts-full-year-revenue-guidance/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

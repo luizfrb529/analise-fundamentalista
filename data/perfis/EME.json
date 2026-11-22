@@ -1,0 +1,67 @@
+{
+ "ticker": "EME",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das maiores empresas de instalações elétricas e mecânicas dos EUA, que executa sistemas de energia, ar-condicionado e refrigeração em data centers, fábricas, hospitais e prédios. Muito lucrativa, com carteira recorde de US$ 18,6 bi.",
+ "modelo": "A EMCOR presta serviços de engenharia e instalação elétrica, hidráulica, de climatização e proteção contra incêndio em obras novas e reformas, além de manutenção e operação de prédios e instalações industriais. Ganha por contrato de obra e por serviços recorrentes.",
+ "segmentos": [
+  {"nome": "Construção mecânica", "peso_receita": 0.46, "periodo": "3T26", "obs": "Receita de US$ 2,55 bi; margem de 12,1%."},
+  {"nome": "Construção elétrica", "peso_receita": 0.33, "periodo": "3T26", "obs": "Receita de US$ 1,85 bi; margem de 13,3%."},
+  {"nome": "Serviços prediais", "peso_receita": 0.15, "periodo": "3T26", "obs": "Receita de US$ 852 mi; margem de 7,8%."},
+  {"nome": "Serviços industriais", "peso_receita": 0.06, "periodo": "3T26", "obs": "Margem de 1,8%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Norwalk, Connecticut (EUA); atua nos EUA após vender a operação no Reino Unido em 2025."},
+ "temas": [
+  {"tema": "Construção de data centers", "relacao": "A carteira recorde de US$ 18,6 bi (+47%) foi puxada por data centers e redes de comunicação, segundo a imprensa."},
+  {"tema": "Reindustrialização dos EUA", "relacao": "Atende obras de fábricas e instalações industriais, além de hospitais e prédios comerciais."}
+ ],
+ "diferencial": {
+  "texto": "A EMCOR tem escala nacional, mão de obra especializada difícil de contratar e capacidade para executar projetos complexos e críticos, como data centers, com histórico de boa execução. Os pontos fracos são a dependência do ciclo de construção e de poucos grandes projetos, e a escassez de mão de obra.",
+  "vantagem": {"nivel": "moderada", "resumo": "Escala nacional e mão de obra especializada escassa para projetos críticos como data centers, mas dependente do ciclo de construção."},
+  "concorrentes": ["Comfort Systems USA", "Quanta Services", "MasTec", "APi Group", "IES Holdings"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 20,6 bi e US$ 21,0 bi, com margem operacional ajustada de cerca de 10% e lucro ajustado de US$ 34,50 a US$ 35,50 por ação, acima da projeção anterior.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 34,50 a US$ 35,50 por ação", "periodo": "2026"},
+   {"rotulo": "Carteira de obras", "valor": "US$ 18,6 bi (+47%)", "periodo": "set/2026"},
+   {"rotulo": "Receita projetada", "valor": "US$ 20,6 bi a US$ 21,0 bi", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 9,04 por ação no 3T26 (US$ 9,60 ajustado, +46%), com margem operacional ajustada de 10,5%. Gerou cerca de US$ 990 mi de caixa livre em nove meses, tem US$ 775 mi em caixa e dívida baixa, e recomprou US$ 457 mi em ações no ano.",
+  "caixa": "US$ 774,8 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Desaceleração da construção de data centers.",
+  "Escassez de mão de obra.",
+  "Erros de execução em grandes obras.",
+  "Ciclo da construção não residencial."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita subiu 28,8%, para US$ 5,5 bi, a carteira bateu recorde e a empresa elevou a projeção de 2026; o CEO é Tony Guzzi.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Receita subiu 28,8%.",
+   "Carteira recorde de US$ 18,6 bi.",
+   "Projeção de 2026 elevada."
+  ],
+  "negativos": [
+   "Baixa de US$ 34 mi em intangíveis."
+  ],
+  "atencao": [
+   "Margens em obras maiores.",
+   "Ritmo dos data centers."
+  ]
+ },
+ "fontes": [
+  {"titulo": "EMCOR: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000132/eme-ex991_2026930xq3.htm", "data": "2026-10-29"},
+  {"titulo": "Zacks: EMCOR raises 2026 outlook as record RPOs strengthen growth visibility", "url": "https://zacks.com/stock/news/3024693/emcor-raises-2026-outlook-as-record-rpos-strengthen-growth-visibility", "data": "2026-10"},
+  {"titulo": "Motley Fool: Why Emcor Group stock popped on Thursday", "url": "https://www.fool.com/investing/2026/10/29/why-emcor-group-stock-popped-on-thursday/", "data": "2026-10-29"}
+ ],
+ "ultimo_resultado": "3T26"
+}

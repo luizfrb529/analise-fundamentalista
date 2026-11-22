@@ -1,0 +1,67 @@
+{
+ "ticker": "HON",
+ "revisado_em": "2026-11-22",
+ "resumo": "Honeywell Technologies, empresa americana de automação predial, industrial e de processos, que ficou independente depois de separar a Honeywell Aerospace em junho de 2026 e a Solstice antes. Lucrativa, com margens em alta.",
+ "modelo": "A Honeywell vende sistemas de controle, sensores, software e serviços para automatizar prédios (segurança, incêndio, climatização), refinarias, químicas e fábricas (controle de processos, catalisadores, tecnologia UOP) e armazéns e indústrias (scanners, equipamentos de segurança). Parte relevante da receita vem de serviços e software recorrentes.",
+ "segmentos": [
+  {"nome": "Automação predial", "peso_receita": 0.40, "periodo": "3T26", "obs": "Vendas de US$ 2,02 bi (orgânico +8%); margem de 27,0%."},
+  {"nome": "Automação de processos e tecnologia", "peso_receita": 0.37, "periodo": "3T26", "obs": "Vendas de US$ 1,86 bi (orgânico +8%); margem de 22,2%."},
+  {"nome": "Automação industrial", "peso_receita": 0.22, "periodo": "3T26", "obs": "Vendas de US$ 1,12 bi (orgânico +4%); margem de 18,4%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Charlotte, Carolina do Norte (EUA); clientes no mundo todo."},
+ "temas": [
+  {"tema": "Cisões corporativas", "relacao": "Concluiu em 29/06/2026 a separação da Honeywell Aerospace (sigla HONA), com grupamento de ações de 2 para 1 no mesmo dia, segundo a empresa."},
+  {"tema": "Automação e data centers", "relacao": "A automação predial e a de processos cresceram 8% cada em vendas orgânicas no trimestre."}
+ ],
+ "diferencial": {
+  "texto": "A Honeywell tem base instalada enorme de sistemas de controle em prédios, refinarias e fábricas, que gera serviços e software recorrentes e alto custo de troca, além de tecnologia própria de processos (UOP). Os pontos fracos são a exposição ao ciclo industrial e a concorrência de grandes grupos de automação.",
+  "vantagem": {"nivel": "forte", "resumo": "Base instalada enorme de sistemas de controle, com serviços recorrentes e alto custo de troca, e tecnologia própria de processos."},
+  "concorrentes": ["Siemens", "Schneider Electric", "Emerson", "Johnson Controls", "ABB", "Rockwell Automation"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas de 2026 devem ficar entre US$ 20,0 bi e US$ 20,1 bi, com crescimento orgânico de 4% a 5%, margem dos segmentos de cerca de 20,5% e lucro ajustado de US$ 8,40 a US$ 8,45 por ação, acima da projeção anterior.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 8,40 a US$ 8,45 por ação", "periodo": "2026"},
+   {"rotulo": "Margem dos segmentos", "valor": "21,3% (+3,7 pontos)", "periodo": "3T26"},
+   {"rotulo": "Carteira de pedidos", "valor": "cerca de US$ 19 bi (+7%)", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 2,40 por ação no 3T26 e lucro ajustado de US$ 2,27 (+34%), com margem dos segmentos de 21,3% e fluxo de caixa livre de US$ 688 mi. Recomprou US$ 1,0 bi em ações no ano.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Ciclo industrial e de construção.",
+  "Execução após as separações.",
+  "Concorrência de grandes grupos de automação.",
+  "Exposição a petróleo e químicos."
+ ],
+ "momento": "No 3T26 (divulgado em 22/10/2026), o primeiro trimestre como empresa independente, as vendas orgânicas subiram 7% e a margem saltou 3,7 pontos, e a empresa elevou a projeção de 2026; o CEO é Vimal Kapur.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-22",
+  "positivos": [
+   "Vendas orgânicas subiram 7%.",
+   "Margem subiu 3,7 pontos.",
+   "Projeção elevada."
+  ],
+  "negativos": [
+   "Vendas reportadas subiram só 1%."
+  ],
+  "atencao": [
+   "Desempenho como empresa independente.",
+   "Uso do caixa em aquisições."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Honeywell: resultados do 3T26 (8-K, Exhibit 99, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/773840/000077384026000141/exhibit99-q32026earningsre.htm", "data": "2026-10-22"},
+  {"titulo": "Honeywell: Aerospace completes spin-off and begins trading on Nasdaq", "url": "https://honeywell.com/us/en/news/press-releases/2026/06/honeywell-aerospace-completes-spin-off-from-honeywell-technologies-and-begins-trading-on-nasdaq", "data": "2026-06-29"},
+  {"titulo": "MMH: Honeywell Technologies launches as independent pure-play automation company", "url": "https://www.mmh.com/article/honeywell_technologies_launches_as_independent_pure_play_automation_company", "data": "2026-06"}
+ ],
+ "pendencias": ["Houve separação da Aerospace e grupamento de 2 para 1 em 29/06/2026; conferir se a série histórica de preços do site está ajustada."],
+ "ultimo_resultado": "3T26"
+}

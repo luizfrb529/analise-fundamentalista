@@ -1,0 +1,62 @@
+{
+ "ticker": "FIX",
+ "revisado_em": "2026-11-22",
+ "resumo": "Empresa americana de instalações mecânicas e elétricas (climatização, refrigeração, tubulações, energia) para data centers, fábricas, hospitais e prédios. Muito lucrativa, crescendo mais de 50% e com carteira recorde de US$ 17,8 bi.",
+ "modelo": "A Comfort Systems projeta, fabrica módulos pré-montados e instala sistemas de ar-condicionado, refrigeração, tubulações e elétrica em obras novas e reformas, além de prestar manutenção. Opera por dezenas de subsidiárias regionais e cresce também comprando empresas locais.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 3,77 bi no 3T26 (+54%); elétrica +85% e mecânica +43%, segundo a imprensa",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Houston (EUA); atua em todo o território americano."},
+ "temas": [
+  {"tema": "Construção de data centers", "relacao": "A carteira quase dobrou, para US$ 17,8 bi, no maior salto de pedidos da história da empresa, segundo a imprensa, com forte peso de tecnologia."},
+  {"tema": "Construção modular", "relacao": "Fabrica módulos mecânicos e elétricos fora do canteiro, o que acelera obras grandes e reduz a falta de mão de obra."}
+ ],
+ "diferencial": {
+  "texto": "A Comfort Systems tem mão de obra especializada, capacidade de fabricação modular e experiência em projetos complexos de tecnologia, o que a torna parceira preferida de grandes clientes de data centers. Os pontos fracos são a dependência do ciclo de construção e de poucos grandes clientes de tecnologia, e a escassez de mão de obra.",
+  "vantagem": {"nivel": "moderada", "resumo": "Mão de obra especializada e fabricação modular para projetos complexos de tecnologia, mas dependente do ciclo de construção."},
+  "concorrentes": ["EMCOR", "Quanta Services", "MasTec", "APi Group", "IES Holdings"]
+ },
+ "potencial": {
+  "texto": "O potencial vem da carteira de US$ 17,8 bi, que garante crescimento em 2027, segundo a empresa, que diz estar bem posicionada para crescer organicamente. Não há projeção numérica no release.",
+  "metricas": [
+   {"rotulo": "Carteira de obras", "valor": "US$ 17,8 bi (+90%)", "periodo": "set/2026"},
+   {"rotulo": "Margem operacional", "valor": "16,6%", "periodo": "3T26"},
+   {"rotulo": "Fluxo de caixa livre", "valor": "US$ 806 mi", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 489 mi no 3T26 (US$ 13,91 por ação, contra US$ 8,25), com margem operacional de 16,6% e fluxo de caixa livre de US$ 806 mi. Tem US$ 2,16 bi em caixa e dívida de apenas US$ 50 mi, e elevou o dividendo trimestral para US$ 0,90.",
+  "caixa": "US$ 2,16 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Desaceleração da construção de data centers.",
+  "Concentração em clientes de tecnologia.",
+  "Escassez de mão de obra.",
+  "Execução de obras muito grandes."
+ ],
+ "momento": "No 3T26 (divulgado em 22/10/2026), a receita subiu 54%, para US$ 3,8 bi, e a carteira saltou para US$ 17,8 bi, mas as ações caíram com margens elétricas menores e a troca de diretor financeiro; o CEO é Brian Lane.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-22",
+  "positivos": [
+   "Receita subiu 54%.",
+   "Carteira quase dobrou.",
+   "Lucro por ação subiu 69%."
+  ],
+  "negativos": [
+   "Margem elétrica caiu."
+  ],
+  "atencao": [
+   "Troca do diretor financeiro.",
+   "Ritmo dos data centers em 2027."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Comfort Systems: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926118156/fix-ex99d1.htm", "data": "2026-10-22"},
+  {"titulo": "Zacks: Comfort Systems Q3 earnings beat estimates, backlog surges", "url": "https://www.zacks.com/stock/news/3014213/comfort-systems-q3-earnings-revenues-beat-estimates-backlog-surges", "data": "2026-10"},
+  {"titulo": "Finviz: Comfort Systems posts a record $17.8 billion backlog", "url": "https://finviz.com/news/407457/comfort-systems-posts-a-record-178-billion-backlog-and-raises-guidance-again-as-margins-slip-and-shares-sit-near-30-lower", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
