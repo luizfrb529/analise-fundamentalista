@@ -1,0 +1,67 @@
+{
+ "ticker": "AKAM",
+ "revisado_em": "2026-11-22",
+ "resumo": "Pioneira em redes de entrega de conteúdo (CDN), hoje concentrada em segurança digital e computação em nuvem distribuída, inclusive para inferência de IA. Lucrativa, mas com margem em queda por investimentos pesados.",
+ "modelo": "A Akamai opera uma das maiores redes de servidores do mundo, com a qual entrega sites e vídeos (Delivery), protege empresas contra ataques e fraudes (Security, maior negócio) e aluga computação em nuvem distribuída (Cloud Infrastructure Services), cobrando por contratos e uso.",
+ "segmentos": [
+  {"nome": "Segurança", "peso_receita": 0.55, "periodo": "3T26", "obs": "Receita de US$ 622 mi (+9%)."},
+  {"nome": "Entrega e outras aplicações", "peso_receita": 0.35, "periodo": "3T26", "obs": "Receita de US$ 391 mi (-3%)."},
+  {"nome": "Infraestrutura de nuvem (CIS)", "peso_receita": 0.10, "periodo": "3T26", "obs": "Receita de US$ 109 mi (+34%)."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Cambridge, Massachusetts (EUA); rede de servidores e clientes no mundo todo."},
+ "temas": [
+  {"tema": "Inferência de IA", "relacao": "Lançou serviços de inferência e de execução de agentes de IA na sua nuvem distribuída e fechou mais de US$ 14 bi em contratos plurianuais de nuvem em 2026, segundo a empresa."},
+  {"tema": "Segurança digital", "relacao": "A segurança cresceu 9% e já é mais da metade da receita."}
+ ],
+ "diferencial": {
+  "texto": "A Akamai tem uma rede global distribuída construída em décadas e relação com grandes empresas e bancos em segurança, o que é difícil de replicar. Mas a entrega de conteúdo encolhe com pressão de preços, a concorrência da Cloudflare e das grandes nuvens é forte e a aposta em nuvem exige investimentos que reduzem a margem.",
+  "vantagem": {"nivel": "moderada", "resumo": "Rede global distribuída construída em décadas e forte base em segurança, mas entrega de conteúdo em declínio e concorrência da Cloudflare."},
+  "concorrentes": ["Cloudflare", "Fastly", "Amazon Web Services", "Microsoft Azure", "Zscaler", "Imperva (Thales)"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 4,44 bi e US$ 4,465 bi, e a de nuvem em 2027 entre US$ 1,1 bi e US$ 1,3 bi, com a receita total crescendo 17% a 22% em 2027 e passando de US$ 7 bi em 2028.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 4,44 bi a US$ 4,465 bi", "periodo": "2026"},
+   {"rotulo": "Receita de nuvem projetada", "valor": "US$ 1,1 bi a US$ 1,3 bi", "periodo": "2027"},
+   {"rotulo": "Receita total projetada", "valor": "acima de US$ 7,0 bi", "periodo": "2028"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 0,77 por ação no 3T26 (-21%) e lucro ajustado de US$ 1,77, com margem ajustada caindo 6 pontos, para 25%, por investimentos em nuvem de 41% da receita. Tem US$ 4,2 bi em caixa e aplicações e cerca de US$ 7,6 bi em notas conversíveis.",
+  "caixa": "US$ 4,24 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Queda da entrega de conteúdo.",
+  "Investimentos pesados reduzem a margem.",
+  "Concorrência da Cloudflare e das grandes nuvens.",
+  "Atrasos na entrega de data centers."
+ ],
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita subiu 6%, com nuvem crescendo 34%, mas a margem caiu com os investimentos e cerca de US$ 30 mi de receita de nuvem foram adiados para 2027; o CEO é Tom Leighton.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Nuvem cresceu 34%.",
+   "Mais de US$ 14 bi em contratos de nuvem em 2026.",
+   "Projeção de forte crescimento em 2027."
+  ],
+  "negativos": [
+   "Margem ajustada caiu 6 pontos.",
+   "Entrega de conteúdo caiu 3%."
+  ],
+  "atencao": [
+   "Entrega dos data centers.",
+   "Evolução da margem."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Akamai: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1086222/000108622226000097/exhibit991-q32026.htm", "data": "2026-11-05"},
+  {"titulo": "Morningstar (GlobeNewswire): Akamai reports third quarter 2026 results", "url": "https://www.morningstar.com/news/globe-newswire/9871603/akamai-reports-third-quarter-2026-financial-results", "data": "2026-11-05"},
+  {"titulo": "Quartr: Akamai Q3 2026 earnings summary", "url": "https://quartr.com/events/akamai-technologies-inc-akam-q3-2026_3sZTcYHu", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

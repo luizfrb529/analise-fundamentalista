@@ -1,0 +1,67 @@
+{
+ "ticker": "ADSK",
+ "revisado_em": "2026-11-22",
+ "resumo": "Líder mundial em software de projeto para arquitetura, engenharia, construção, manufatura e entretenimento (AutoCAD, Revit, Fusion, Maya). Muito lucrativa, com receita recorrente e crescimento de 16% em 2026.",
+ "modelo": "A Autodesk vende assinaturas de software de desenho e modelagem 3D para arquitetos, engenheiros, construtoras, fabricantes e estúdios de cinema e jogos, diretamente e por revendedores. Comprou a MaintainX em 2026 para entrar em software de manutenção industrial.",
+ "segmentos": [
+  {"nome": "Arquitetura, engenharia e construção", "peso_receita": 0.50, "periodo": "3T26", "obs": "Receita de US$ 1,03 bi (+17%)."},
+  {"nome": "AutoCAD e AutoCAD LT", "peso_receita": 0.24, "periodo": "3T26", "obs": "Receita de US$ 500 mi (+14%)."},
+  {"nome": "Manufatura", "peso_receita": 0.19, "periodo": "3T26", "obs": "Receita de US$ 385 mi (+15%)."},
+  {"nome": "Mídia, entretenimento e outros", "peso_receita": 0.07, "periodo": "3T26", "obs": "Receita de US$ 132 mi."}
+ ],
+ "segmentos_base": "Receita (trimestre fiscal encerrado em jul/2026)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em San Francisco (EUA); clientes no mundo todo, com grande parte da receita fora dos EUA."},
+ "temas": [
+  {"tema": "Infraestrutura e construção", "relacao": "O segmento de arquitetura, engenharia e construção cresceu 17%, o mais rápido entre as linhas de produtos."},
+  {"tema": "IA em projeto", "relacao": "Usa IA para automatizar tarefas de desenho e modelagem em seus produtos."}
+ ],
+ "diferencial": {
+  "texto": "O AutoCAD e o Revit são padrões da indústria, ensinados em escolas e usados em projetos compartilhados entre empresas, o que cria efeito de rede e custo de troca muito alto. Os pontos fracos são a concorrência de Dassault, Bentley e Siemens em nichos e a sensibilidade ao ciclo da construção.",
+  "vantagem": {"nivel": "forte", "resumo": "AutoCAD e Revit são padrões da indústria, com efeito de rede entre empresas e custo de troca muito alto."},
+  "concorrentes": ["Dassault Systèmes", "Bentley Systems", "Siemens", "PTC", "Trimble", "Nemetschek"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 (até jan/2027) deve ficar entre US$ 8,295 bi e US$ 8,345 bi, com lucro ajustado de US$ 12,52 a US$ 12,60 por ação e fluxo de caixa livre de US$ 2,725 bi a US$ 2,75 bi, já com a MaintainX.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 8,295 bi a US$ 8,345 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Fluxo de caixa livre projetado", "valor": "US$ 2,725 bi a US$ 2,75 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Margem operacional ajustada", "valor": "41%", "periodo": "2º tri fiscal 2027"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 2,33 por ação no trimestre (US$ 3,30 ajustado), com margem operacional ajustada de 41% e fluxo de caixa livre de US$ 561 mi (+24%). Recomprou US$ 901 mi em ações no semestre.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "jul/2026"
+ },
+ "riscos": [
+  "Ciclo da construção e da manufatura.",
+  "Integração da MaintainX, que reduz a margem.",
+  "Concorrência em nichos.",
+  "Mudanças no modelo de vendas."
+ ],
+ "momento": "No 2º tri fiscal 2027 (divulgado em 27/08/2026), a receita subiu 16%, para US$ 2,05 bi, e a empresa elevou a projeção do ano após concluir a compra da MaintainX; o CEO é Andrew Anagnost.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-08-27",
+  "positivos": [
+   "Receita subiu 16%.",
+   "Caixa livre subiu 24%.",
+   "Projeção anual elevada."
+  ],
+  "negativos": [
+   "MaintainX deve reduzir a margem em 2026."
+  ],
+  "atencao": [
+   "Resultado do 3º tri fiscal.",
+   "Integração da MaintainX."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Autodesk: resultados do 2º tri fiscal 2027 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000059/q227pressrelease.htm", "data": "2026-08-27"},
+  {"titulo": "Finviz: Autodesk announces fiscal 2027 second quarter results", "url": "https://finviz.com/news/386371/autodesk-inc-announces-fiscal-2027-second-quarter-results", "data": "2026-08-27"},
+  {"titulo": "Zacks: Autodesk Q2 earnings beat on operating leverage", "url": "https://www.zacks.com/stock/news/2981843/autodesk-q2-earnings-beat-on-operating-leverage-revenues-rise-yy", "data": "2026-08"}
+ ],
+ "ultimo_resultado": "3T26"
+}

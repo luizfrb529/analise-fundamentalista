@@ -1,0 +1,62 @@
+{
+ "ticker": "WDAY",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das líderes mundiais em software na nuvem de recursos humanos e finanças para grandes empresas, agora com agentes de IA. Lucrativa, com receita recorrente crescendo 14% e recompras grandes.",
+ "modelo": "A Workday vende assinaturas plurianuais de software de gestão de pessoas (folha, recrutamento, desempenho), finanças (contabilidade, planejamento) e agentes de IA para grandes e médias empresas e governos. Quase toda a receita é recorrente, com contratos longos e alta retenção.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 2,65 bi no 2º tri fiscal 2027 (+12,8%); assinaturas de US$ 2,47 bi (+13,9%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Pleasanton, Califórnia (EUA); clientes no mundo todo, com maior peso nos EUA."},
+ "temas": [
+  {"tema": "Agentes de IA", "relacao": "Mais de 5.500 clientes usam ao menos um agente próprio da Workday, e a IA respondeu por mais de 25% dos novos contratos, segundo a empresa."},
+  {"tema": "Software corporativo", "relacao": "A carteira de assinaturas para os próximos 12 meses cresceu 14,2%, para US$ 9,03 bi."}
+ ],
+ "diferencial": {
+  "texto": "A Workday guarda os dados de pessoas e finanças de muitas das maiores empresas do mundo, e trocar esse sistema leva anos e é arriscado, o que garante retenção altíssima e receita previsível. O ponto fraco é a desaceleração do crescimento, a concorrência de SAP e Oracle e o risco de agentes de IA reduzirem a cobrança por número de funcionários.",
+  "vantagem": {"nivel": "forte", "resumo": "Sistema central de pessoas e finanças de grandes empresas, com troca cara e demorada que garante retenção altíssima e receita previsível."},
+  "concorrentes": ["SAP", "Oracle", "ADP", "UKG", "Dayforce", "Rippling"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de assinaturas do ano fiscal 2027 (até jan/2027) deve ficar entre US$ 9,94 bi e US$ 9,95 bi (+13%), com margem operacional ajustada de 31%; para o ano fiscal 2028, a meta é crescer cerca de 11%.",
+  "metricas": [
+   {"rotulo": "Receita de assinaturas projetada", "valor": "US$ 9,94 bi a US$ 9,95 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Margem operacional ajustada", "valor": "31,1%", "periodo": "2º tri fiscal 2027"},
+   {"rotulo": "Nova autorização de recompra", "valor": "US$ 4,0 bi", "periodo": "ago/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 2,57 por ação no trimestre, inflado por benefício fiscal, e lucro ajustado de US$ 2,75, com fluxo de caixa livre de US$ 460 mi. Recomprou US$ 1,3 bi em ações no trimestre; em setembro, anunciou corte de cerca de 2,5% dos funcionários.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "jul/2026"
+ },
+ "riscos": [
+  "Desaceleração do crescimento.",
+  "IA pode reduzir a cobrança por funcionário.",
+  "Concorrência de SAP e Oracle.",
+  "Gastos de TI das empresas."
+ ],
+ "momento": "No 2º tri fiscal 2027 (divulgado em 27/08/2026), as assinaturas cresceram 13,9% e a empresa elevou a margem prevista para o ano; o CEO é o cofundador Aneel Bhusri, e em setembro houve corte de 2,5% do quadro.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-08-27",
+  "positivos": [
+   "Assinaturas cresceram 13,9%.",
+   "Margem ajustada subiu para 31,1%.",
+   "Recompra de US$ 1,3 bi."
+  ],
+  "negativos": [
+   "Crescimento previsto de cerca de 11% no ano seguinte."
+  ],
+  "atencao": [
+   "Resultado do 3º tri fiscal.",
+   "Monetização dos agentes de IA."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Workday: resultados do 2º tri fiscal 2027 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000042/wday-07312026x991.htm", "data": "2026-08-27"},
+  {"titulo": "Workday: reestruturação (8-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000048/wday-20260929.htm", "data": "2026-09-29"},
+  {"titulo": "Nasdaq: WDAY Q2 earnings beat estimates on subscription growth, margin gains", "url": "https://www.nasdaq.com/articles/wday-q2-earnings-beat-estimates-subscription-growth-margin-gains", "data": "2026-08"}
+ ],
+ "ultimo_resultado": "3T26"
+}
