@@ -1,0 +1,68 @@
+{
+ "ticker": "IONQ",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior empresa de capital aberto de computação quântica, com tecnologia de íons aprisionados. Cresce por aquisições (inclui a fábrica de chips SkyWater) e ainda tem prejuízo operacional alto, financiado por grandes emissões de ações.",
+ "modelo": "A IonQ vende computadores quânticos (instalados no cliente ou acessados pela nuvem da Amazon, Microsoft e Google), redes quânticas, sensores e relógios atômicos, e segurança de dados, para governos, universidades e empresas. Desde a compra da SkyWater também presta serviços de fabricação de chips (foundry) para terceiros. Boa parte da receita vem de contratos com governos.",
+ "segmentos": [
+  {"nome": "Plataforma IonQ (quântica, redes e sensores)", "peso_receita": 0.52, "periodo": "3T26", "obs": "US$ 90,3 mi, alta de 127% em um ano."},
+  {"nome": "SkyWater (fabricação de chips)", "peso_receita": 0.48, "periodo": "3T26", "obs": "US$ 83,5 mi, receita vinda da aquisição."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Maryland (EUA), com operações nos EUA, Europa e Ásia; a SkyWater tem fábricas em Minnesota e na Flórida."},
+ "temas": [
+  {"tema": "Computação quântica", "relacao": "É uma das líderes da tecnologia de íons aprisionados; a NVIDIA vai instalar um sistema Superion 256 da IonQ no seu centro de pesquisa quântica, e a empresa avançou para a fase C do programa de avaliação quântica da DARPA, de até US$ 300 mi."},
+  {"tema": "Defesa e governo", "relacao": "Tem contratos com DARPA (US$ 28 mi em relógios atômicos), Força Aérea e outros órgãos; governos são clientes relevantes."},
+  {"tema": "Semicondutores nos EUA", "relacao": "A compra da SkyWater dá à empresa fábrica própria de chips nos EUA, que também atende outros clientes."}
+ ],
+ "diferencial": {
+  "texto": "A tecnologia de íons aprisionados tem qubits naturalmente idênticos e alta fidelidade: a empresa atingiu 99,99% de fidelidade em portas de dois qubits em 2025. O caixa grande e as aquisições (redes, sensores, segurança, fabricação) formam uma plataforma mais ampla que a de concorrentes puramente quânticos. Os pontos fracos são que a computação quântica ainda não tem aplicação comercial em larga escala, a disputa com gigantes como Google e IBM e com rivais como Quantinuum, e o crescimento muito dependente de aquisições.",
+  "concorrentes": ["IBM", "Google", "Quantinuum", "Rigetti", "D-Wave", "PsiQuantum"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 505 mi e US$ 515 mi, com a receita de computação quântica crescendo cerca de 110% em um ano. As obrigações de desempenho a receber (contratos assinados) mais que dobraram, para US$ 1,2 bi. A empresa fechou contratos para instalar sistemas Superion 256 (US$ 33 mi com a SDT e US$ 25 mi com a FIU) e comprou a Elisity, de segurança digital. O potencial de longo prazo depende de a computação quântica se tornar útil comercialmente, o que ainda não está comprovado.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 505 mi a US$ 515 mi", "periodo": "2026"},
+   {"rotulo": "Contratos a receber (RPO)", "valor": "US$ 1,2 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "O prejuízo operacional foi de US$ 433 mi no 3T26 e o Ebitda ajustado ficou negativo em US$ 134 mi; o lucro líquido contábil de US$ 564 mi veio de um ganho de US$ 896 mi na reavaliação de bônus de subscrição (warrants), sem relação com a operação. A operação consumiu US$ 570 mi em nove meses. A empresa tinha US$ 1,66 bi em caixa e aplicações em setembro e cerca de US$ 3,7 bi considerando a oferta de ações de outubro (cerca de US$ 2 bi), além de pagar a Elisity com US$ 1,15 bi em ações.",
+  "caixa": "US$ 1,66 bi (US$ 3,7 bi com a oferta de outubro)",
+  "queima_anual": "cerca de US$ 760 mi (operação, ritmo de 2026)",
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Diluição: oferta de ações com bônus de subscrição em outubro e aquisições pagas em ações.",
+  "Lucro contábil distorcido pela reavaliação de warrants.",
+  "Tecnologia sem uso comercial comprovado em larga escala.",
+  "Integração de muitas aquisições, inclusive uma fábrica de chips."
+ ],
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita foi recorde de US$ 173,8 mi, alta de 336% em um ano, já incluindo a SkyWater, e a empresa elevou a projeção de 2026. Em outubro captou cerca de US$ 2 bi em ações e bônus com o J.P. Morgan; em novembro concluiu a compra da Elisity e trocou o diretor financeiro (Gary Merrill assume em dezembro).",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Receita recorde de US$ 173,8 mi, contra US$ 39,9 mi no 3T25.",
+   "Plataforma IonQ cresceu 127% em um ano, para US$ 90,3 mi.",
+   "Contratos a receber mais que dobraram, para US$ 1,2 bi.",
+   "Projeção de receita de 2026 elevada para US$ 505 mi a US$ 515 mi."
+  ],
+  "negativos": [
+   "Prejuízo operacional de US$ 433,1 mi.",
+   "Ebitda ajustado negativo de US$ 133,6 mi, contra US$ 48,9 mi negativos no 3T25.",
+   "Caixa e aplicações caíram de US$ 3,3 bi em dezembro para US$ 1,66 bi em setembro."
+  ],
+  "atencao": [
+   "Diluição das emissões de outubro e da compra da Elisity.",
+   "Avanço no programa da DARPA e instalação do sistema na NVIDIA."
+  ]
+ },
+ "fontes": [
+  {"titulo": "IonQ: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_1.htm", "data": "2026-11-05"},
+  {"titulo": "IonQ: conclusão da compra da Elisity (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_2.htm", "data": "2026-11-05"},
+  {"titulo": "IonQ: 8-K da oferta de ações de outubro de 2026 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526424230/ionq-20261014.htm", "data": "2026-10-14"},
+  {"titulo": "IonQ: troca de diretor financeiro (8-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526461016/ionq-ex99_1.htm", "data": "2026-11-13"}
+ ],
+ "ultimo_resultado": "3T26"
+}

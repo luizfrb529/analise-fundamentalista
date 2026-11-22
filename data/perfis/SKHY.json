@@ -1,0 +1,63 @@
+{
+ "ticker": "SKHY",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior fornecedora de memória HBM para chips de IA e segunda maior fabricante de DRAM do mundo. Lucro operacional com margem de 80% no 3T26 e contratos de longo prazo cobrindo mais da metade da produção de 2027 e 2028.",
+ "modelo": "A SK hynix fabrica, em fábricas próprias na Coreia do Sul e na China, memória DRAM (incluindo a HBM, empilhada ao lado das GPUs de IA, e a DDR5 para servidores) e memória NAND (com a Solidigm, nos EUA). Vende para fabricantes de GPUs, provedores de nuvem, fabricantes de servidores, celulares e PCs. Reporta em wons (KRW); as ações principais são negociadas em Seul e os recibos (ADRs) passaram a ser negociados nos EUA em 2026.",
+ "segmentos": [],
+ "segmentos_base": "A divisão entre DRAM e NAND não consta no comunicado do 3T26",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede e principais fábricas na Coreia do Sul (Icheon, Cheongju e o novo polo de Yongin), fábricas na China e unidade de encapsulamento em construção em Indiana (EUA)."},
+ "temas": [
+  {"tema": "Inteligência artificial", "relacao": "É a principal fornecedora de HBM, a memória das GPUs de IA; segundo a empresa, a HBM4 deve passar a HBM3E em volume e receita já no 4T26."},
+  {"tema": "Escassez de memória", "relacao": "A empresa espera que a falta de memória dure até 2030 e fechou contratos de cerca de cinco anos com 14 grandes clientes, cobrindo mais de 50% da produção de 2027 e 2028."},
+  {"tema": "Retorno ao acionista", "relacao": "Prometeu devolver cerca de 100 trilhões de wons em 2026 entre dividendos e recompras, mais de 50% do caixa livre."}
+ ],
+ "diferencial": {
+  "texto": "A SK hynix foi a primeira a produzir HBM em massa e é a principal parceira da NVIDIA nessa memória, com tecnologia de empilhamento e encapsulamento (MR-MUF) que deu vantagem de rendimento sobre Samsung e Micron. O mercado de DRAM tem só três grandes fabricantes, porque cada fábrica custa dezenas de bilhões de dólares, uma das maiores barreiras de entrada da indústria. Os contratos longos com preço em faixa reduzem a volatilidade. O ponto fraco é o ciclo da memória: quando a oferta supera a demanda, preços e lucros caem rápido.",
+  "concorrentes": ["Samsung", "Micron", "CXMT (China)", "Kioxia (NAND)", "SanDisk (NAND)"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a falta de memória deve continuar até 2030, a HBM4 vira o principal produto já no 4T26 e a fábrica M15X chega à capacidade máxima até o fim de 2026. Os contratos de longo prazo garantem mais da metade da produção de 2027 e 2028, com preço dentro de uma faixa ligada ao mercado. O investimento deve subir muito em 2027, com a primeira fase do polo de Yongin em operação plena. O ponto de atenção é o próprio ciclo, se toda a indústria ampliar capacidade ao mesmo tempo.",
+  "metricas": [
+   {"rotulo": "Produção de 2027 e 2028 contratada", "valor": "mais de 50%", "periodo": "out/2026"},
+   {"rotulo": "Retorno ao acionista previsto", "valor": "cerca de 100 trilhões de wons", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro operacional de 83,3 trilhões de wons no 3T26 (margem de 80%) e lucro líquido de 39,8 trilhões, abaixo do 2T26, que teve grande ganho com a participação na Kioxia. A empresa tinha 114,5 trilhões de wons em caixa e 15,8 trilhões em dívida, ou caixa líquido de 98,7 trilhões, em setembro. Aprovou dividendo de 20.000 wons por ação (metade extraordinário) e recompra de 20 trilhões de wons.",
+  "caixa": "114,5 trilhões de wons (cerca de US$ 80 bi)",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Ciclo da memória: excesso de oferta já derrubou o lucro do setor em poucos trimestres.",
+  "Concorrência da Samsung e da Micron na HBM4.",
+  "Fábricas na China expostas a restrições comerciais dos EUA.",
+  "Dependência da NVIDIA e de poucos grandes compradores de IA."
+ ],
+ "momento": "No 3T26 (divulgado em 28/10/2026), a receita foi recorde de 104,6 trilhões de wons, primeira vez acima de 100 trilhões, alta de 328% em um ano e de 32% no trimestre, puxada por DDR5 para servidores e pelo início das entregas em volume da HBM4. A empresa concluiu recompra de 40 trilhões de wons, desistiu da abertura de capital da Solidigm e anunciou dividendo extraordinário com parte dos ganhos na Kioxia.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "Receita de 104,6 trilhões de wons, alta de 328% sobre o 3T25 e de 32% sobre o 2T26.",
+   "Lucro operacional de 83,3 trilhões de wons, margem de 80% contra 47% no 3T25.",
+   "Caixa líquido de 98,7 trilhões de wons, com dívida em queda.",
+   "Dividendo de 20.000 wons por ação e recompra de 20 trilhões de wons aprovados."
+  ],
+  "negativos": [
+   "Lucro líquido caiu 58% sobre o 2T26, que teve ganho extraordinário com a Kioxia."
+  ],
+  "atencao": [
+   "Troca da HBM3E pela HBM4 como principal produto no 4T26.",
+   "Tamanho do investimento de 2027 no polo de Yongin."
+  ]
+ },
+ "fontes": [
+  {"titulo": "SK hynix: 3Q26 Financial Results (newsroom oficial)", "url": "https://news.skhynix.com/en/q3-2026-business-results/", "data": "2026-10-28"},
+  {"titulo": "SK hynix: teleconferência do 3T26 (newsroom oficial)", "url": "https://news.skhynix.com/en/q3-2026-earnings-conference-call/", "data": "2026-10-28"},
+  {"titulo": "The Korea Times: SK hynix launches campaign for listing depositary receipts in US", "url": "https://koreatimes.co.kr/business/companies/20260325/sk-hynix-launches-campaign-for-listing-depositary-receipts-in-us", "data": "2026-03-25"},
+  {"titulo": "Yahoo Finance: SK Hynix files US ADR listing", "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-files-us-adr-164807969.html", "data": "2026-03"}
+ ],
+ "ultimo_resultado": "3T26"
+}
