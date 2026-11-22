@@ -1,6 +1,6 @@
 {
  "ticker": "CSED3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-22",
  "resumo": "Grupo de ensino superior com 539 mil alunos, cerca de 70% da receita no ensino presencial, puxado por saúde e medicina. Teve prejuízo contábil no 3T26 por despesa de earn-out da FAPI, sem efeito equivalente no caixa.",
  "modelo": "A Cruzeiro do Sul Educacional opera universidades e centros universitários (Cruzeiro do Sul, Universidade Positivo, Unicid, Braz Cubas, FAPI, Módulo, entre outros) em 28 campi e 1.363 polos de ensino a distância. Vende graduação, pós e medicina, com 1.275 vagas anuais de medicina, cerca de 80% em São Paulo e no Paraná. A receita é recorrente, vinda de mensalidades; os cursos de saúde representam cerca de 72% da receita do presencial.",
  "segmentos": [
@@ -79,5 +79,23 @@
    "data": "2026-08-12"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-10",
+  "positivos": [
+   "Receita líquida de R$ 698,2 mi no 3T26, alta de 0,6% sobre o 3T25.",
+   "Receita de R$ 2,2 bi nos 9M26, alta de 4,5%, e lucro comparável de R$ 295 mi, alta de 12,0%."
+  ],
+  "negativos": [
+   "Prejuízo contábil de R$ 133,5 mi no 3T26 (lucro de R$ 113,2 mi no 3T25), por R$ 167,9 mi de earn-out da FAPI.",
+   "Lucro ajustado de R$ 52,3 mi no 3T26, queda de 53,8% sobre o 3T25.",
+   "Ebitda comparável de R$ 272,6 mi no 3T26, queda de 2,0%, com margem de 39,0%."
+  ],
+  "atencao": [
+   "Alavancagem de 1,1x em setembro de 2026 (0,8x em junho), com saldo do earn-out vencendo em 2027 e 2028.",
+   "Queda do digital compensada pelo presencial."
+  ]
+ }
 }
