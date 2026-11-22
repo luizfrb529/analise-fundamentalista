@@ -1,0 +1,63 @@
+{
+ "ticker": "DVA",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das duas maiores operadoras de clínicas de diálise dos EUA, que trata pacientes com insuficiência renal. Lucrativa e geradora de caixa, recompra ações de forma agressiva, mas o volume de pacientes cresce pouco.",
+ "modelo": "A DaVita opera milhares de clínicas de diálise e recebe por tratamento, pago pelo Medicare, por planos privados (que pagam bem mais) e por planos Medicare Advantage. Também faz diálise em casa e em hospitais, gestão integrada de doenças renais e tem clínicas em outros países.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 3,58 bi no 3T26; 92.780 tratamentos por dia nos EUA",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Denver (EUA); a maior parte das clínicas nos EUA, com operações em outros países."},
+ "temas": [
+  {"tema": "Doença renal crônica", "relacao": "Diabetes e hipertensão aumentam a necessidade de diálise, mas o número de tratamentos cresceu só 1,2% em um ano."},
+  {"tema": "Saúde pública americana", "relacao": "Depende das tabelas do Medicare e da mistura de pacientes com planos privados."}
+ ],
+ "diferencial": {
+  "texto": "A DaVita forma com a Fresenius um duopólio na diálise nos EUA, com rede ampla de clínicas, escala de compras e relação com nefrologistas, o que dificulta a entrada de rivais. Os pontos fracos são a dependência do Medicare e de poucos planos privados, a pressão regulatória e o risco de novos remédios reduzirem a progressão da doença renal.",
+  "vantagem": {"nivel": "moderada", "resumo": "Duopólio com a Fresenius na diálise nos EUA, com escala e rede ampla, mas dependente de tabelas do Medicare e de planos privados."},
+  "concorrentes": ["Fresenius Medical Care", "U.S. Renal Care", "American Renal Associates", "Satellite Healthcare"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro ajustado de 2026 deve ficar entre US$ 14,30 e US$ 15,20 por ação, com lucro operacional ajustado de US$ 2,175 bi a US$ 2,25 bi e caixa livre de US$ 1,0 bi a US$ 1,25 bi. O lucro por ação cresce principalmente pelas recompras, que reduzem o número de ações.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 14,30 a US$ 15,20 por ação", "periodo": "2026"},
+   {"rotulo": "Fluxo de caixa livre projetado", "valor": "US$ 1,0 bi a US$ 1,25 bi", "periodo": "2026"},
+   {"rotulo": "Alavancagem", "valor": "3,38 vezes", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 3,40 por ação no 3T26 (US$ 3,82 ajustado), com baixa de US$ 62 mi na China. A dívida é de US$ 10,8 bi, cerca de 3,4 vezes o Ebitda, em parte para financiar recompras: comprou US$ 111 mi em ações no trimestre e mais US$ 87 mi em outubro.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Mudanças nas tabelas do Medicare.",
+  "Volume de pacientes estagnado.",
+  "Dívida elevada.",
+  "Novos remédios para doença renal."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), o lucro ajustado ficou acima do esperado e a empresa elevou o piso da projeção de 2026, mas as ações caíram cerca de 6% com custos maiores e volume fraco.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Lucro ajustado acima do esperado.",
+   "Piso da projeção elevado.",
+   "Recompras continuam."
+  ],
+  "negativos": [
+   "Baixa de US$ 62 mi na China.",
+   "Volume de tratamentos quase estável."
+  ],
+  "atencao": [
+   "Tabelas do Medicare para 2027.",
+   "Crescimento do volume de pacientes."
+  ]
+ },
+ "fontes": [
+  {"titulo": "DaVita: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/927066/000092706626000132/dva93026ex991.htm", "data": "2026-10-29"},
+  {"titulo": "Securities.io: DaVita posts $3.40 Q3 EPS and raises 2026 guidance low end", "url": "https://www.securities.io/davita-posts-3-40-q3-eps-and-raises-2026-guidance-low-end/", "data": "2026-10"},
+  {"titulo": "StockStory: DaVita Q3 2026 beats on revenue but stock drops", "url": "https://stockstory.org/us/stocks/nyse/dva/news/earnings/davitas-nysedva-q3-2026-beats-on-revenue-but-stock-drops", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

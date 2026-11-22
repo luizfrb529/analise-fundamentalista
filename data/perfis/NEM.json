@@ -1,0 +1,63 @@
+{
+ "ticker": "NEM",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior produtora de ouro do mundo, com minas nas Américas, Austrália, África e Papua-Nova Guiné, além de cobre. Muito lucrativa com o ouro acima de US$ 4.300 por onça, gera muito caixa e recompra ações.",
+ "modelo": "A Newmont extrai e vende ouro, além de cobre, prata, zinco e chumbo, de um portfólio de grandes minas, incluindo a joint venture Nevada Gold Mines com a Barrick. O lucro depende principalmente da diferença entre o preço do ouro e o custo total de produção (AISC).",
+ "segmentos": [],
+ "segmentos_base": "Produção atribuível de 1,30 milhão de onças de ouro no 3T26",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Denver (EUA); minas nos EUA, Canadá, México, Peru, Argentina, Austrália, Gana e Papua-Nova Guiné."},
+ "temas": [
+  {"tema": "Ouro como reserva de valor", "relacao": "O preço médio recebido foi de US$ 4.317 por onça, com o ouro em níveis recordes."},
+  {"tema": "Cobre e eletrificação", "relacao": "Também produz cobre, com demanda puxada por redes elétricas e data centers."}
+ ],
+ "diferencial": {
+  "texto": "A Newmont tem o maior portfólio de minas de ouro de alta qualidade do mundo, reservas longas e escala, o que dilui custos e reduz o risco de cada mina. Mas o ouro é uma commodity: a empresa não controla o preço, e muitas minas estão em países com risco político, além de custos de produção crescentes.",
+  "vantagem": {"nivel": "moderada", "resumo": "Maior portfólio de minas de ouro do mundo, com reservas longas e escala, mas sem controle sobre o preço da commodity."},
+  "concorrentes": ["Agnico Eagle", "Barrick", "AngloGold Ashanti", "Gold Fields", "Kinross"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a produção de ouro de 2026 deve ser de cerca de 5,26 milhões de onças, com custo total (AISC) de cerca de US$ 1.520 por onça, abaixo da projeção anterior. O potencial depende do preço do ouro e da devolução de caixa, com US$ 2,8 bi ainda autorizados para recompra.",
+  "metricas": [
+   {"rotulo": "Produção de ouro projetada", "valor": "cerca de 5,26 milhões de onças", "periodo": "2026"},
+   {"rotulo": "Custo total projetado (AISC)", "valor": "cerca de US$ 1.520 por onça", "periodo": "2026"},
+   {"rotulo": "Fluxo de caixa livre", "valor": "US$ 7,26 bi", "periodo": "9M26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 2,48 bi no 3T26 (US$ 2,35 por ação; US$ 2,20 ajustado) e fluxo de caixa livre de US$ 1,9 bi. Tem US$ 8,8 bi em caixa e caixa líquido de US$ 3,2 bi. Paga dividendo trimestral de US$ 0,26 e recomprou US$ 1,6 bi em ações desde o último resultado.",
+  "caixa": "US$ 8,8 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Queda do preço do ouro.",
+  "Risco político nos países das minas.",
+  "Custos crescentes de produção.",
+  "Problemas operacionais e ambientais."
+ ],
+ "momento": "No 3T26 (divulgado em 22/10/2026), o lucro ajustado bateu recorde para um terceiro trimestre com o ouro em alta, mas a empresa alertou para caixa menor no 4T26 por obras e indenizações; a CEO é Natascha Viljoen.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-22",
+  "positivos": [
+   "Fluxo de caixa livre de US$ 1,9 bi.",
+   "Projeção de custo reduzida.",
+   "Recompras de US$ 1,6 bi."
+  ],
+  "negativos": [
+   "Produção menor que um ano antes.",
+   "Caixa livre caiu frente ao 2T26."
+  ],
+  "atencao": [
+   "Custo mais alto no 4T26.",
+   "Pagamento de US$ 1,95 bi à Barrick."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Newmont: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000041/newmontq32026earningsrelea.htm", "data": "2026-10-22"},
+  {"titulo": "Kitco: Newmont beats third-quarter earnings expectations", "url": "https://www.kitco.com/news/article/2026-10-22/newmont-beats-third-quarter-earnings-expectations-higher-gold-sales-boost", "data": "2026-10-22"},
+  {"titulo": "Mining.com: Newmont beats quarterly profit estimates, warns of lower cash flow ahead", "url": "https://www.mining.com/web/newmont-beats-quarterly-profit-estimates-as-record-gold-prices-offset-output-drop/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

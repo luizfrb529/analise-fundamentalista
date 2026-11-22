@@ -1,0 +1,63 @@
+{
+ "ticker": "LEN",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das duas maiores construtoras de casas dos EUA, focada em casas de preço acessível e em volume. Lucrativa e com pouca dívida, mas com margem pressionada por descontos altos num mercado imobiliário fraco.",
+ "modelo": "A Lennar compra terrenos, constrói e vende casas novas para famílias em dezenas de mercados americanos, além de oferecer financiamento imobiliário e seguro. Adota um modelo com poucos terrenos próprios: controla mais de 480 mil lotes por opções de compra, com menos de 2,5% no próprio balanço, e prioriza o volume mesmo que isso reduza a margem.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 8,05 bi no 3º tri fiscal 2026 (-9%); 20.840 casas entregues",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Miami (EUA); atua em mais de 20 estados americanos."},
+ "temas": [
+  {"tema": "Mercado imobiliário dos EUA", "relacao": "Juros altos de financiamento reduzem a demanda; a empresa dá descontos de cerca de 12% do preço para manter as vendas."},
+  {"tema": "Acessibilidade da moradia", "relacao": "O preço médio caiu para US$ 372 mil, foco em compradores de primeira casa."}
+ ],
+ "diferencial": {
+  "texto": "A Lennar tem escala nacional, custo de construção entre os mais baixos do setor e um modelo de poucos terrenos próprios que reduz o capital empregado e o risco. Mas a construção de casas é um setor cíclico e fragmentado, sem grande barreira de entrada, em que a margem depende dos juros e da demanda, e a empresa compete com D.R. Horton e muitas outras.",
+  "vantagem": {"nivel": "fraca", "resumo": "Escala e custo baixo de construção, mas em setor cíclico e sem grande barreira de entrada, com margem dependente dos juros."},
+  "concorrentes": ["D.R. Horton", "PulteGroup", "NVR", "Toll Brothers", "Taylor Morrison"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o 4º tri fiscal deve ter de 22 mil a 23 mil entregas e margem bruta de 15,5% a 16,0%; a meta do ano foi reduzida para 80 mil a 81 mil casas. O potencial depende da queda dos juros de financiamento, que reduziria a necessidade de descontos.",
+  "metricas": [
+   {"rotulo": "Entregas projetadas", "valor": "22.000 a 23.000 casas", "periodo": "4º tri fiscal 2026"},
+   {"rotulo": "Margem bruta projetada", "valor": "15,5% a 16,0%", "periodo": "4º tri fiscal 2026"},
+   {"rotulo": "Dívida sobre capital", "valor": "16,6%", "periodo": "ago/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 284 mi no trimestre (US$ 1,19 por ação), menos da metade de um ano antes, com margem bruta de 15,8%. O balanço é sólido, com dívida de 16,6% do capital e US$ 1,15 bi em caixa; recomprou US$ 256 mi em ações e quitou US$ 400 mi em dívida.",
+  "caixa": "US$ 1,15 bi",
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Juros altos de financiamento imobiliário.",
+  "Descontos elevados reduzem a margem.",
+  "Escassez de mão de obra.",
+  "Desaceleração da economia."
+ ],
+ "momento": "No 3º tri fiscal 2026 (divulgado em 16/09/2026), as entregas caíram 3% e o lucro por ação caiu quase pela metade, com descontos de 12%; a empresa reduziu a meta de entregas do ano. O CEO é Stuart Miller.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-16",
+  "positivos": [
+   "Descontos caíram de 12,9% para 12%.",
+   "Margem melhorou frente ao trimestre anterior.",
+   "Dívida baixa."
+  ],
+  "negativos": [
+   "Lucro por ação caiu 48%.",
+   "Meta de entregas do ano reduzida."
+  ],
+  "atencao": [
+   "Juros de financiamento.",
+   "Margem do 4º tri fiscal."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Lennar: resultados do 3º tri fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/920760/000162828026062287/ex991-2026831x8kq3.htm", "data": "2026-09-16"},
+  {"titulo": "HousingWire: Lennar Q3 2026 earnings", "url": "https://www.housingwire.com/articles/lennar-q3-2026-earnings/", "data": "2026-09"},
+  {"titulo": "Pulse 2.0: Lennar reports $8 billion in Q3 revenue and 20,840 deliveries", "url": "https://pulse2.com/lennar-reports-8-billion-in-q3-revenue-and-20840-home-deliveries/", "data": "2026-09"}
+ ],
+ "ultimo_resultado": "3T26"
+}
