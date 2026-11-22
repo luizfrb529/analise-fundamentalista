@@ -1,6 +1,6 @@
 {
  "ticker": "AGRO3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-22",
  "resumo": "Compra, desenvolve e vende terras agrícolas, com produção de cana, soja e milho no Brasil, Paraguai e Bolívia. O lucro depende muito do ganho com venda de fazendas; receita e recebíveis seguem preços em dólar.",
  "modelo": "A BrasilAgro adquire áreas com potencial de valorização, transforma-as em fazendas produtivas e as vende anos depois; o ganho na venda de terras é pontual e concentra boa parte do lucro. Enquanto desenvolve as áreas, vende soja, milho, algodão, cana-de-açúcar e gado, receita recorrente atrelada a preços internacionais. O portfólio soma 254,5 mil hectares, e há R$ 626 mi a receber por fazendas já vendidas, em boa parte corrigidos pelo preço da soja.",
  "segmentos": [
@@ -103,5 +103,23 @@
    "data": "2026-02"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "1T27 (jul a set/2026)",
+  "divulgado_em": "2026-11-03",
+  "positivos": [
+   "Lucro líquido de R$ 81,3 mi no trimestre (jul a set/2026), ante prejuízo de R$ 64,3 mi no mesmo período de 2025.",
+   "Alavancagem de 1,05x em setembro de 2026, ante 2,82x em junho; dívida líquida ajustada de R$ 136,3 mi (-51% no trimestre).",
+   "Ganho de R$ 50,8 mi com a venda de 2.593 hectares da Fazenda Rio do Meio (BA)."
+  ],
+  "negativos": [
+   "Ebitda ajustado das operações de R$ 43,8 mi no trimestre, queda de 32% sobre o mesmo período de 2025.",
+   "Perda em derivativos e menor margem de soja e milho pesaram no resultado operacional."
+  ],
+  "atencao": [
+   "Lucro do trimestre depende de ganhos não recorrentes (venda de fazenda e valorização de recebíveis de R$ 76,0 mi).",
+   "57% da soja 2026/27 travada a US$ 12,26 por bushel; acompanhar a safra e novos negócios com terras."
+  ]
+ }
 }
