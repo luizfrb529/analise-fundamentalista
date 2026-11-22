@@ -1,0 +1,62 @@
+{
+ "ticker": "BLK",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior gestora de recursos do mundo, com US$ 15,5 tri sob gestão, dona dos ETFs iShares e da plataforma de tecnologia Aladdin, e em expansão em mercados privados. Muito lucrativa, com dividendos crescentes.",
+ "modelo": "A BlackRock cobra taxas de administração sobre fundos de ações, renda fixa, multimercados e ETFs (iShares), além de taxas de performance e de tecnologia (Aladdin, usada por outras instituições financeiras). Ampliou a presença em infraestrutura, crédito privado e dados com as compras de GIP, HPS e Preqin.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 7,75 bi no 3T26 (+19%); ativos sob gestão de US$ 15,5 tri",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA); clientes institucionais e individuais no mundo todo."},
+ "temas": [
+  {"tema": "ETFs e investimento passivo", "relacao": "Os ETFs iShares captaram US$ 135 bi no trimestre."},
+  {"tema": "Mercados privados e infraestrutura", "relacao": "Captou US$ 15,3 bi em mercados privados no trimestre e US$ 68 bi em 12 meses, segundo a empresa."}
+ ],
+ "diferencial": {
+  "texto": "A BlackRock tem escala inigualável, que permite cobrar taxas baixas e ainda ter margens altas, a marca iShares, líder mundial em ETFs, e a plataforma Aladdin, usada por grandes instituições, o que cria relações difíceis de substituir. O ponto fraco é a dependência do valor dos mercados, já que as taxas acompanham os ativos.",
+  "vantagem": {"nivel": "forte", "resumo": "Escala inigualável, liderança mundial em ETFs com o iShares e a plataforma Aladdin, que cria relações difíceis de substituir."},
+  "concorrentes": ["Vanguard", "State Street", "Fidelity", "Blackstone", "Apollo"]
+ },
+ "potencial": {
+  "texto": "O potencial vem das captações em ETFs, mercados privados e tecnologia: o crescimento orgânico das taxas foi de 11% anualizado no trimestre. A empresa não traz projeção numérica de lucro no release.",
+  "metricas": [
+   {"rotulo": "Ativos sob gestão", "valor": "US$ 15,5 tri (+15%)", "periodo": "set/2026"},
+   {"rotulo": "Captação líquida em 12 meses", "valor": "US$ 869 bi", "periodo": "set/2026"},
+   {"rotulo": "Margem operacional ajustada", "valor": "47,8%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 10,57 por ação no 3T26 (+25%) e lucro ajustado de US$ 15,93 (+38%), com margem operacional ajustada de 47,8%. Recomprou US$ 550 mi em ações no trimestre e paga dividendo trimestral de US$ 5,73.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Queda dos mercados reduz as taxas.",
+  "Pressão por taxas menores.",
+  "Integração das aquisições em mercados privados.",
+  "Pressões políticas e regulatórias."
+ ],
+ "momento": "No 3T26 (divulgado em 14/10/2026), os ativos sob gestão bateram recorde de US$ 15,5 tri, com captação de US$ 205 bi, e o lucro ajustado por ação subiu 38%; o CEO é Larry Fink.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-14",
+  "positivos": [
+   "Ativos recorde de US$ 15,5 tri.",
+   "Captação de US$ 205 bi.",
+   "Lucro ajustado por ação subiu 38%."
+  ],
+  "negativos": [
+   "Dependência dos mercados em alta."
+  ],
+  "atencao": [
+   "Captação em mercados privados.",
+   "Captação em ETFs."
+  ]
+ },
+ "fontes": [
+  {"titulo": "BlackRock: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312526420979/blk-ex99_1.htm", "data": "2026-10-14"},
+  {"titulo": "InvestmentNews: BlackRock books Q3 earnings beat", "url": "https://www.investmentnews.com/alternatives/blackrock-books-q3-earnings-beat-as-ai-rally-offsets-rate-hike-jitters/268598", "data": "2026-10"},
+  {"titulo": "Pulse 2.0: BlackRock AUM hits $15.5 trillion following $205 billion of quarterly net inflows", "url": "https://pulse2.com/blackrock-q3-2026-results", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

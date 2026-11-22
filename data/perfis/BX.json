@@ -1,0 +1,68 @@
+{
+ "ticker": "BX",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior gestora de investimentos alternativos do mundo, com US$ 1,37 tri em imóveis, private equity, crédito, seguros e fundos multiestratégia. Lucrativa e grande pagadora de dividendos, que variam com as vendas de ativos.",
+ "modelo": "A Blackstone capta recursos de fundos de pensão, seguradoras, fundos soberanos e cada vez mais de investidores pessoas físicas, e investe em empresas, imóveis, crédito e infraestrutura. Ganha taxas de administração estáveis e uma parte dos lucros quando vende investimentos com ganho, e distribui a maior parte do lucro como dividendo.",
+ "segmentos": [
+  {"nome": "Crédito e seguros", "peso_receita": 0.35, "periodo": "3T26", "obs": "Ativos de US$ 480,0 bi (+11%)."},
+  {"nome": "Private equity", "peso_receita": 0.34, "periodo": "3T26", "obs": "Ativos de US$ 465,4 bi (+18%)."},
+  {"nome": "Imóveis", "peso_receita": 0.23, "periodo": "3T26", "obs": "Ativos de US$ 309,0 bi (-4%)."},
+  {"nome": "Multiestratégia (BXMA)", "peso_receita": 0.08, "periodo": "3T26", "obs": "Ativos de US$ 113,9 bi (+22%)."}
+ ],
+ "segmentos_base": "Ativos sob gestão por segmento",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA); investimentos e investidores no mundo todo."},
+ "temas": [
+  {"tema": "Mercados privados para pessoas físicas", "relacao": "Os ativos de investidores pessoas físicas chegaram ao recorde de US$ 330 bi (+15%), segundo a imprensa."},
+  {"tema": "Juros e mercado imobiliário", "relacao": "Os ativos em imóveis caíram 4% e o fundo de crédito BCRED teve resgates de US$ 1,4 bi, segundo a imprensa."}
+ ],
+ "diferencial": {
+  "texto": "A Blackstone tem a maior marca e escala em investimentos alternativos, histórico longo de retornos, acesso privilegiado a grandes negócios e uma rede de distribuição para pessoas físicas difícil de copiar, o que facilita captar recursos. O ponto fraco é a dependência de vendas de ativos para gerar lucros de performance e a sensibilidade aos juros, especialmente em imóveis.",
+  "vantagem": {"nivel": "forte", "resumo": "Maior marca e escala em investimentos alternativos, histórico de retornos e rede de distribuição para pessoas físicas difícil de copiar."},
+  "concorrentes": ["Apollo", "KKR", "Brookfield", "Carlyle", "Ares"]
+ },
+ "potencial": {
+  "texto": "O potencial vem dos US$ 228,9 bi em recursos ainda não investidos, da captação com pessoas físicas e seguradoras e da retomada das vendas de ativos, que geram lucros de performance. A empresa não traz projeção numérica.",
+  "metricas": [
+   {"rotulo": "Ativos sob gestão", "valor": "US$ 1,37 tri (+10%)", "periodo": "set/2026"},
+   {"rotulo": "Recursos a investir", "valor": "US$ 228,9 bi", "periodo": "set/2026"},
+   {"rotulo": "Dividendo trimestral", "valor": "US$ 1,12", "periodo": "nov/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro distribuível de US$ 1,7 bi no 3T26 (US$ 1,32 por ação), queda de 9% com menos vendas de ativos, e lucro de taxas de US$ 1,57 bi. O lucro contábil atribuível à Blackstone foi de US$ 662 mi. Paga quase todo o lucro distribuível como dividendo.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Menos vendas de ativos reduzem os lucros.",
+  "Juros altos pressionam imóveis.",
+  "Resgates em fundos para pessoas físicas.",
+  "Regulação de mercados privados."
+ ],
+ "momento": "No 3T26 (divulgado em 22/10/2026), os ativos subiram 10%, para US$ 1,37 tri, mas o lucro distribuível caiu 9% com vendas de ativos mais lentas; o CEO é Stephen Schwarzman.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-22",
+  "positivos": [
+   "Captação de US$ 63,3 bi.",
+   "Recorde de ativos de pessoas físicas.",
+   "Lucro de taxas subiu."
+  ],
+  "negativos": [
+   "Lucro distribuível caiu 9%.",
+   "Ativos em imóveis caíram 4%."
+  ],
+  "atencao": [
+   "Ritmo de vendas de ativos.",
+   "Resgates em fundos abertos."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Blackstone: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526428297/d160590dex991.htm", "data": "2026-10-22"},
+  {"titulo": "InvestmentNews: Blackstone Q3 earnings, private wealth AUM hits record $330 billion", "url": "https://www.investmentnews.com/alternatives/blackstone-q3-earnings-private-wealth-aum-hits-record-330-billion/268705", "data": "2026-10"},
+  {"titulo": "Beinsure: Blackstone Q3 2026 earnings, AUM reaches $1.37tn", "url": "https://beinsure.com/news/blackstone-bx-q3-2026-earnings-aum-reaches-1-37tn/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

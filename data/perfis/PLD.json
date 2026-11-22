@@ -1,0 +1,62 @@
+{
+ "ticker": "PLD",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior dona de galpões logísticos do mundo, um fundo imobiliário (REIT) com propriedades perto de grandes centros de consumo, agora também desenvolvendo data centers. Lucrativa, com dívida de grau de investimento e dividendos crescentes.",
+ "modelo": "A Prologis compra, desenvolve e aluga galpões logísticos para varejistas, empresas de comércio eletrônico, transportadoras e fabricantes, por contratos de vários anos. Também administra fundos imobiliários para terceiros, oferece energia solar nos telhados e converte terrenos com energia disponível em data centers.",
+ "segmentos": [],
+ "segmentos_base": "FFO ajustado de US$ 1,60 por ação no 3T26 (US$ 1,49 um ano antes)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em San Francisco (EUA); galpões nas Américas, Europa e Ásia, com maior peso nos EUA."},
+ "temas": [
+  {"tema": "Comércio eletrônico e logística", "relacao": "Assinou 60 milhões de pés quadrados de contratos no trimestre, com ocupação de 95,5%, segundo a empresa."},
+  {"tema": "Data centers", "relacao": "Tem 5,8 GW em projetos de energia para data centers, dos quais 1,7 GW garantidos e 680 MW em desenvolvimento."}
+ ],
+ "diferencial": {
+  "texto": "A Prologis tem o maior portfólio de galpões do mundo, em locais escassos perto de grandes cidades, custo de capital baixo por ser grau de investimento e escala para atender grandes clientes globais. Os aluguéis renovados ainda sobem bem acima dos atuais. Os pontos fracos são a sensibilidade a juros e ao ciclo de consumo e o excesso de oferta de galpões em alguns mercados.",
+  "vantagem": {"nivel": "forte", "resumo": "Maior portfólio de galpões do mundo em locais escassos perto de grandes cidades, com custo de capital baixo e escala global."},
+  "concorrentes": ["Rexford", "EastGroup", "Goodman", "Blackstone (Link)", "Segro"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o FFO ajustado de 2026 deve ficar entre US$ 6,25 e US$ 6,29 por ação. O potencial vem da renovação de contratos com aluguéis cerca de 38% maiores e da conversão de terrenos em data centers.",
+  "metricas": [
+   {"rotulo": "FFO ajustado projetado", "valor": "US$ 6,25 a US$ 6,29 por ação", "periodo": "2026"},
+   {"rotulo": "Aumento de aluguel na renovação", "valor": "38,0%", "periodo": "3T26"},
+   {"rotulo": "Ocupação", "valor": "95,5%", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 0,86 por ação no 3T26 e FFO ajustado de US$ 1,60 (+7%), com resultado operacional das mesmas propriedades crescendo 5,9%. A dívida é de US$ 36,8 bi, 4,5 vezes o Ebitda, com liquidez de cerca de US$ 8,8 bi; paga dividendo trimestral de US$ 1,07.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Juros altos encarecem o capital.",
+  "Desaceleração do consumo e da logística.",
+  "Excesso de oferta de galpões.",
+  "Execução dos projetos de data centers."
+ ],
+ "momento": "No 3T26 (divulgado em 15/10/2026), o FFO ajustado subiu para US$ 1,60 por ação, acima do esperado, com forte volume de contratos, e a empresa estreitou a projeção do ano; o CEO é Dan Letter.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-15",
+  "positivos": [
+   "FFO ajustado subiu 7%.",
+   "Aluguéis renovados 38% maiores.",
+   "Forte volume de contratos."
+  ],
+  "negativos": [
+   "Projeção de lucro contábil reduzida."
+  ],
+  "atencao": [
+   "Projetos de data centers.",
+   "Evolução da ocupação."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Prologis: suplemento do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526422375/pld-ex99_1.htm", "data": "2026-10-15"},
+  {"titulo": "Morningstar (PR Newswire): Prologis reports third quarter 2026 results", "url": "https://www.morningstar.com/news/pr-newswire/20261015sf72669/prologis-reports-third-quarter-2026-results", "data": "2026-10-15"},
+  {"titulo": "RTTNews: Prologis Q3 core FFO rises, updates FY26 guidance", "url": "https://www.rttnews.com/3699373/prologis-q3-core-ffo-rises-updates-fy26-guidance.aspx?type=alleco", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

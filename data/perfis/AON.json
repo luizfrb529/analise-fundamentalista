@@ -1,0 +1,66 @@
+{
+ "ticker": "AON",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das maiores corretoras de seguros e consultorias de risco, resseguro, saúde e previdência do mundo. Lucrativa, com receita recorrente, e fazendo a grande compra da corretora americana USI.",
+ "modelo": "A Aon não assume riscos: ganha comissões e honorários intermediando seguros e resseguros para empresas e governos, e assessorando em benefícios de saúde, previdência e gestão de pessoas. Usa dados e análises de risco para negociar melhores contratos para os clientes.",
+ "segmentos": [
+  {"nome": "Capital de risco (seguros e resseguros)", "peso_receita": 0.65, "periodo": "3T26", "obs": "Receita de US$ 2,68 bi (+6%); margem de 22,7%."},
+  {"nome": "Capital humano (saúde e previdência)", "peso_receita": 0.35, "periodo": "3T26", "obs": "Receita de US$ 1,42 bi (-4%); margem de 24,3%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Dublin (Irlanda), com grande operação nos EUA e no Reino Unido; clientes no mundo todo."},
+ "temas": [
+  {"tema": "Consolidação de corretoras", "relacao": "Vai comprar a USI por cerca de US$ 17 bi em dinheiro, com fechamento previsto para o 4T26, segundo a imprensa."},
+  {"tema": "Riscos climáticos e cibernéticos", "relacao": "A demanda por análise e transferência de riscos complexos sustenta o crescimento do resseguro, de 7%."}
+ ],
+ "diferencial": {
+  "texto": "A Aon está entre as três maiores corretoras globais, com relações profundas com grandes empresas e seguradoras, dados de risco acumulados e receita muito recorrente, sem assumir risco de sinistros. Os pontos fracos são a dívida maior para comprar a USI e a concorrência de Marsh, WTW e Gallagher.",
+  "vantagem": {"nivel": "forte", "resumo": "Uma das três maiores corretoras globais, com relações profundas, dados de risco e receita recorrente sem assumir risco de sinistros."},
+  "concorrentes": ["Marsh McLennan", "WTW", "Arthur J. Gallagher", "Brown & Brown", "Lockton"]
+ },
+ "potencial": {
+  "texto": "O potencial vem do crescimento orgânico, de 6% no trimestre, e da integração da USI, com foco em reduzir a dívida para 2,8 a 3,0 vezes o Ebitda em cerca de 24 meses. A empresa diz estar confiante em cumprir suas metas de 2026, sem dar números no release.",
+  "metricas": [
+   {"rotulo": "Crescimento orgânico", "valor": "6%", "periodo": "3T26"},
+   {"rotulo": "Margem operacional ajustada", "valor": "27,0%", "periodo": "3T26"},
+   {"rotulo": "Fluxo de caixa livre", "valor": "US$ 1,94 bi", "periodo": "9M26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 2,23 por ação no 3T26 (US$ 3,36 ajustado, +10%), com margem ajustada de 27%. A dívida quase dobrou, para cerca de US$ 28 bi, com o financiamento da compra da USI; a empresa suspendeu as recompras no trimestre para reduzir a dívida.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dívida elevada após a compra da USI.",
+  "Integração da USI.",
+  "Ciclo de preços de seguros.",
+  "Concorrência de grandes corretoras."
+ ],
+ "momento": "No 3T26 (divulgado em 28/10/2026), a receita orgânica cresceu 6% e o lucro ajustado, 10%, enquanto a empresa se prepara para concluir a compra da USI no 4T26; o CEO é Greg Case.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "Crescimento orgânico de 6%.",
+   "Margem ajustada subiu 0,7 ponto.",
+   "Lucro ajustado subiu 10%."
+  ],
+  "negativos": [
+   "Dívida quase dobrou.",
+   "Recompras suspensas no trimestre."
+  ],
+  "atencao": [
+   "Conclusão da compra da USI.",
+   "Redução da dívida."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Aon: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/315293/000162828026067714/ex991prq32026.htm", "data": "2026-10-28"},
+  {"titulo": "Zacks: Aon Q3 earnings beat estimates on strong organic growth", "url": "https://www.zacks.com/stock/news/3017340/aon-q3-earnings-beat-estimates-on-strong-organic-growth-margin-expansion", "data": "2026-10"},
+  {"titulo": "InsurTech Insights: Aon reports Q3 2026 revenue of $4,101m and 6% organic growth", "url": "https://www.insurtechinsights.com/news/aon-reports-q3-2026-revenue-of-4101m-and-6-organic-growth/7117", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
