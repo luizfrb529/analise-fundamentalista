@@ -851,7 +851,7 @@ def processar(ativo: dict, ctx: dict) -> dict:
             mercado["beta"] = mercado_ext.get("beta")
         else:
             mercado["beta"] = stats_preco(df_papel, serie_completa(precos.get("^BVSP"))).get("beta")
-        cik = ativo.get("cik") or S.sec_cik(ext)   # "cik" no universe.json: empresa que a lista de códigos da SEC ainda não mapeia (ex.: PSKY)
+        cik = ativo.get("cik") or S.sec_cik(ext)   # "cik" no universe.json: empresa que a lista de códigos da SEC ainda não mapeia (ex.: SKYD, ex-PSKY)
         res["cik"] = cik
         anuais, ltm, ltm_ant, saldo_ant, data_ref = {}, {}, None, None, None
         fonte_fund = "SEC EDGAR (XBRL)"
