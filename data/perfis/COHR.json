@@ -1,0 +1,69 @@
+{
+ "ticker": "COHR",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante de transceptores ópticos, lasers e materiais que ligam os servidores de IA por luz em vez de cobre. Data center e comunicações já são 82% da receita, que cresceu 56% em um ano em base comparável.",
+ "modelo": "A Coherent fabrica componentes e módulos ópticos (transceptores de 800G e 1,6T, lasers, chips de fosfeto de índio) vendidos a provedores de nuvem e fabricantes de equipamentos de rede, além de lasers e materiais para indústria, semicondutores e instrumentos (segmento Industrial). Produz grande parte dos componentes internamente, inclusive os chips laser. O ano fiscal termina em junho.",
+ "segmentos": [
+  {"nome": "Data center e comunicações", "peso_receita": 0.82, "periodo": "1T27 fiscal", "obs": "US$ 1,95 bi, alta de 79% em um ano."},
+  {"nome": "Industrial", "peso_receita": 0.18, "periodo": "1T27 fiscal", "obs": "US$ 419 mi, queda de 15% com a venda de negócios."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Pensilvânia (EUA), com fábricas nos EUA, China, Malásia, Vietnã, Suíça e outros países."},
+ "temas": [
+  {"tema": "Inteligência artificial", "relacao": "Os data centers de IA estão trocando conexões de cobre por ópticas; a empresa está subindo a produção de transceptores de 1,6T com vários clientes."},
+  {"tema": "Interligação de data centers", "relacao": "A receita de conexões entre data centers passou de US$ 200 mi no trimestre, cerca de quatro vezes a de um ano antes."},
+  {"tema": "Fotônica integrada", "relacao": "Fechou um acordo PhotonLink de cerca de US$ 20 bi em cinco anos, com receita a partir de 2028, segundo a apresentação da empresa."}
+ ],
+ "diferencial": {
+  "texto": "A Coherent é uma das poucas empresas que produzem em escala os próprios chips laser de fosfeto de índio, insumo escasso dos transceptores de alta velocidade; dobrou essa capacidade em um ano. A integração vertical, do material ao módulo, dá controle de custo e de oferta. A carteira ampla de produtos ópticos e o relacionamento com as grandes nuvens são barreiras relevantes. Os pontos fracos são a margem bruta abaixo da de concorrentes como a Lumentum, a dívida de US$ 4 bi e a concorrência de fabricantes chineses de módulos.",
+  "concorrentes": ["Lumentum", "InnoLight", "Eoptolink", "Broadcom", "Applied Optoelectronics", "Marvell"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 2T27 fiscal (outubro a dezembro de 2026) deve ficar entre US$ 2,55 bi e US$ 2,75 bi, e o crescimento do ano fiscal de 2027 em base comparável deve passar de 60%. As metas são o primeiro trimestre de US$ 3 bi até o fim do ano fiscal de 2027, o primeiro de US$ 4 bi no ano fiscal de 2028 e margem bruta ajustada acima de 45% antes do fim de 2028. A capacidade de chips de fosfeto de índio deve mais que dobrar de novo até o fim de 2027.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 2,55 bi a US$ 2,75 bi", "periodo": "2T27 fiscal"},
+   {"rotulo": "Crescimento projetado (base comparável)", "valor": "acima de 60%", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Acordo PhotonLink", "valor": "cerca de US$ 20 bi em 5 anos", "periodo": "a partir de 2028"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 384,7 mi no 1T27 fiscal, contra US$ 226,3 mi um ano antes, com margem bruta de 39,1%. No trimestre o caixa operacional foi negativo em US$ 92,7 mi e o investimento chegou a US$ 775,5 mi, para ampliar capacidade. A empresa tinha cerca de US$ 1,75 bi em caixa e aplicações e US$ 4,0 bi em dívida em setembro.",
+  "caixa": "US$ 1,75 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Investimento pesado com caixa operacional negativo no trimestre.",
+  "Dívida de US$ 4,0 bi, que subiu em relação a junho.",
+  "Concorrência de fabricantes chineses de módulos ópticos e da Lumentum, que será comprada pela Marvell.",
+  "Concentração em poucos grandes clientes de nuvem."
+ ],
+ "momento": "No 1T27 fiscal (julho a setembro de 2026, divulgado em 04/11/2026), a receita foi de US$ 2,37 bi, alta de 50% em um ano (56% sem os negócios vendidos), acima dos US$ 2,31 bi esperados pelos analistas. O lucro por ação ajustado foi de US$ 2,09, contra US$ 1,97 esperados. A empresa vendeu a unidade de Munique em janeiro de 2026 e espera volta do crescimento no segmento Industrial no 2T27 fiscal.",
+ "destaques_resultado": {
+  "trimestre": "3T26 (1T27 fiscal da empresa)",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Receita de US$ 2,37 bi, alta de 49,9% em um ano e de 15,9% no trimestre.",
+   "Data center e comunicações com US$ 1,95 bi, alta de 79,1% em um ano.",
+   "Margem bruta ajustada de 40,6%, contra 38,7% um ano antes.",
+   "Lucro líquido de US$ 384,7 mi, contra US$ 226,3 mi no 1T26 fiscal."
+  ],
+  "negativos": [
+   "Industrial caiu 14,8% em um ano e 2,8% no trimestre.",
+   "Caixa operacional negativo de US$ 92,7 mi.",
+   "Dívida subiu de US$ 3,2 bi para US$ 4,0 bi no trimestre."
+  ],
+  "atencao": [
+   "Meta do primeiro trimestre de US$ 3 bi até o fim do ano fiscal de 2027.",
+   "Efeito da combinação Marvell e Lumentum sobre a concorrência."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Coherent: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526447200/d176836dex991.htm", "data": "2026-11-04"},
+  {"titulo": "Coherent: apresentação do 1T27 fiscal (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526447200/d176836dex992.htm", "data": "2026-11-04"},
+  {"titulo": "Futurum: Coherent Q1 FY 2027, PhotonLink wins", "url": "https://futurumgroup.com/?p=97623", "data": "2026-11-05"},
+  {"titulo": "Panabee: Coherent Q1 revenue rises 56%", "url": "https://www.panabee.com/news/coherent-earnings-q1-2027", "data": "2026-11-05"}
+ ],
+ "ultimo_resultado": "3T26"
+}
