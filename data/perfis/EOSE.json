@@ -1,0 +1,114 @@
+{
+ "ticker": "EOSE",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana de baterias de zinco para armazenar energia da rede elétrica por longos períodos, alternativa às baterias de lítio. Receita crescendo forte, mas ainda vende com prejuízo bruto e depende de capital de terceiros.",
+ "modelo": "A Eos fabrica nos EUA o sistema de baterias Z3, à base de zinco e água, não inflamável, para armazenar de 3 a 12 horas de energia, e vende a desenvolvedores de projetos solares, concessionárias, data centers e indústria. Ganha com a venda dos sistemas e serviços. A maior parte das vendas recentes foi para uma parte relacionada da empresa.",
+ "segmentos": [],
+ "segmentos_base": "Receita (US$ 82,7 mi no 3T26, dos quais US$ 68,4 mi de parte relacionada)",
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede e fábricas na Pensilvânia (EUA), perto de Pittsburgh; vende principalmente nos EUA."
+ },
+ "temas": [
+  {
+   "tema": "Armazenamento de energia",
+   "relacao": "A rede elétrica precisa guardar energia solar e eólica por várias horas; a Eos tem carteira de US$ 765 mi (3,2 GWh) e funil de US$ 24,9 bi em oportunidades."
+  },
+  {
+   "tema": "Energia para data centers",
+   "relacao": "Fornece baterias para projeto da MN8 Energy com o Google na Virgínia Ocidental."
+  },
+  {
+   "tema": "Produção nos EUA",
+   "relacao": "Baterias sem lítio e feitas nos EUA atendem regras de conteúdo nacional e reduzem dependência da China."
+  }
+ ],
+ "diferencial": {
+  "texto": "A bateria de zinco usa materiais baratos e abundantes, não pega fogo e dura mais horas que as de lítio comuns, o que a torna atrativa para armazenamento longo; é toda produzida nos EUA e tem empréstimo do Departamento de Energia. Os pontos fracos são o prejuízo bruto (margem de -53%), a concentração em um cliente que é parte relacionada, a dificuldade de escalar a produção e a concorrência de baterias de lítio cada vez mais baratas, sobretudo chinesas.",
+  "concorrentes": [
+   "Tesla (Megapack)",
+   "Fluence",
+   "Form Energy",
+   "ESS Tech",
+   "CATL",
+   "BYD"
+  ]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar na metade inferior da faixa de US$ 300 mi a US$ 350 mi. A nova fábrica de Thorn Hill deve chegar a cerca de 4 GWh de capacidade anual com duas linhas, e a linha 1 deve voltar a operar perto do fim do 1T27 após mudança de local. A carteira caiu 5% no trimestre porque as entregas superaram os novos pedidos.",
+  "metricas": [
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 300 mi a US$ 325 mi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Carteira de pedidos",
+    "valor": "US$ 765 mi (3,2 GWh)",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Capacidade planejada",
+    "valor": "cerca de 4 GWh por ano",
+    "periodo": "Thorn Hill"
+   }
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo e queima de caixa",
+  "texto": "Prejuízo operacional de US$ 79,3 mi no 3T26 e Ebitda ajustado negativo de US$ 63,8 mi; o lucro líquido contábil de US$ 125 mi veio de ganhos de US$ 220 mi na reavaliação de bônus de subscrição e derivativos, sem relação com a operação. A empresa tinha US$ 344 mi em caixa, inclusive restrito, e dívidas com o Departamento de Energia, a Cerberus e conversíveis. As ações diluídas chegam a 553 milhões, contra 362 milhões básicas.",
+  "caixa": "US$ 344 mi (inclui restrito)",
+  "queima_anual": "cerca de US$ 255 mi (Ebitda ajustado negativo, ritmo do 3T26)",
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Prejuízo bruto e consumo de caixa alto.",
+  "Concentração de receita em parte relacionada.",
+  "Diluição por bônus de subscrição e conversíveis.",
+  "Concorrência de baterias de lítio mais baratas."
+ ],
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita recorde de US$ 82,7 mi subiu 171% e a margem bruta melhorou 58 pontos, mas a carteira caiu e a empresa indicou receita do ano na metade inferior da faixa; analistas citam concentração de clientes e caixa como pontos de debate, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Receita recorde de US$ 82,7 mi, alta de 171%.",
+   "Margem bruta melhorou de -111% para -53%.",
+   "Pedido de US$ 100 mi convertido de reserva de capacidade."
+  ],
+  "negativos": [
+   "Ebitda ajustado negativo de US$ 63,8 mi.",
+   "Carteira caiu 5% no trimestre.",
+   "83% da receita veio de parte relacionada."
+  ],
+  "atencao": [
+   "Retomada da linha 1 em Thorn Hill no 1T27.",
+   "Novos clientes fora da parte relacionada."
+  ]
+ },
+ "fontes": [
+  {
+   "titulo": "Eos: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1805077/000162828026070528/eoseq3fy26earningsreleas.htm",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Eos: prévia do 3T26 (8-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001805077/000162828026066229/q326prerelease_101926xfo.htm",
+   "data": "2026-10-19"
+  },
+  {
+   "titulo": "Energy-Storage.news: Eos releases preliminary Q3 results",
+   "url": "https://www.energy-storage.news/eos-releases-preliminary-q3-results-reports-record-quarterly-revenue-as-gross-margin-losses-narrow/",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "Finviz: Eos beats on record revenue but backlog, concentration and cash remain the debate",
+   "url": "https://finviz.com/news/417320/eos-energy-beats-on-record-revenue-and-margin-gains-but-guidance-backlog-concentration-and-cash-remain-the-real-debate",
+   "data": "2026-11"
+  }
+ ],
+ "ultimo_resultado": "3T26"
+}

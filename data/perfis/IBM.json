@@ -1,0 +1,69 @@
+{
+ "ticker": "IBM",
+ "revisado_em": "2026-11-22",
+ "resumo": "Gigante americana de tecnologia corporativa focada em software de nuvem híbrida (Red Hat), dados e IA, consultoria e mainframes, com programa de computação quântica. Lucrativa e grande pagadora de dividendos, com crescimento moderado.",
+ "modelo": "A IBM vende software (Red Hat, automação, dados com a Confluent, segurança e IA watsonx) por assinatura e licença, serviços de consultoria e implantação, e infraestrutura (mainframes IBM Z, servidores e armazenamento), além de financiamento a clientes. Os clientes são grandes empresas, bancos e governos.",
+ "segmentos": [
+  {"nome": "Software", "peso_receita": 0.46, "periodo": "3T26", "obs": "US$ 7,8 bi, alta de 8%; nuvem híbrida (Red Hat) +11%."},
+  {"nome": "Consultoria", "peso_receita": 0.31, "periodo": "3T26", "obs": "US$ 5,3 bi, estável."},
+  {"nome": "Infraestrutura", "peso_receita": 0.22, "periodo": "3T26", "obs": "US$ 3,7 bi, alta de 4%; mainframes caíram 20%."},
+  {"nome": "Financiamento", "peso_receita": 0.01, "periodo": "3T26", "obs": "US$ 0,2 bi."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Armonk, Nova York (EUA); cerca de metade da receita vem das Américas, com o restante na Europa e Ásia."},
+ "temas": [
+  {"tema": "IA nas empresas", "relacao": "Vende plataforma de IA (watsonx) e consultoria para empresas implantarem IA com seus dados; a área de dados cresceu 20% com a Confluent."},
+  {"tema": "Nuvem híbrida", "relacao": "O Red Hat OpenShift permite rodar aplicações em qualquer nuvem ou data center próprio."},
+  {"tema": "Computação quântica", "relacao": "É uma das líderes em computação quântica supercondutora, com roteiro de longo prazo."}
+ ],
+ "diferencial": {
+  "texto": "A IBM tem relação de décadas com as maiores empresas e bancos, e o mainframe segue padrão para transações críticas; o Red Hat é líder em software de código aberto corporativo. A receita recorrente de software dá estabilidade. Os pontos fracos são o crescimento baixo da consultoria, a dívida elevada após aquisições e a concorrência de nuvens e empresas de software maiores em IA.",
+  "concorrentes": ["Microsoft", "Accenture", "Oracle", "Amazon (AWS)", "Google", "Broadcom (VMware)"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve crescer de 4% a 5% em moeda constante, e o fluxo de caixa livre deve subir mais de US$ 1 bi em um ano (projeção elevada). O crescimento vem de software, sobretudo nuvem híbrida e dados, e do ciclo de mainframes.",
+  "metricas": [
+   {"rotulo": "Crescimento da receita projetado", "valor": "4% a 5% em moeda constante", "periodo": "2026"},
+   {"rotulo": "Fluxo de caixa livre em nove meses", "valor": "US$ 7,8 bi", "periodo": "2026"},
+   {"rotulo": "Investimento em aquisições no ano", "valor": "US$ 11,4 bi", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 2,30 por ação no 3T26 (US$ 2,95 no critério operacional), alta de 26%, com margem bruta de 56,8%. O fluxo de caixa livre foi de US$ 3,0 bi no trimestre. A empresa tinha US$ 11,1 bi em caixa e aplicações e US$ 63,8 bi em dívida (US$ 12,7 bi do braço de financiamento), após investir US$ 11,4 bi em aquisições no ano, e paga dividendo trimestral de US$ 1,69.",
+  "caixa": "US$ 11,1 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dívida elevada após aquisições.",
+  "Crescimento baixo da consultoria.",
+  "Concorrência em IA e nuvem.",
+  "Ciclos de vendas de mainframes."
+ ],
+ "momento": "No 3T26 (divulgado em 21/10/2026), a receita subiu 5%, para US$ 17,1 bi, com software crescendo 8% e dados 20% pela Confluent, e a empresa elevou a projeção de fluxo de caixa livre de 2026.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-21",
+  "positivos": [
+   "Software cresceu 8%, com nuvem híbrida em alta de 11%.",
+   "Fluxo de caixa livre de US$ 3,0 bi, alta de US$ 0,7 bi.",
+   "Lucro por ação subiu 26%."
+  ],
+  "negativos": [
+   "Mainframes caíram 20%.",
+   "Consultoria estável."
+  ],
+  "atencao": [
+   "Integração da Confluent.",
+   "Lançamentos de computação quântica."
+  ]
+ },
+ "fontes": [
+  {"titulo": "IBM: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000093/ibm-20261021xex991.htm", "data": "2026-10-21"},
+  {"titulo": "Zacks: IBM Q3 beat highlights software growth and a stronger cash outlook", "url": "https://www.zacks.com/stock/news/3013072/ibm-q3-beat-highlights-software-growth-and-a-stronger-cash-outlook", "data": "2026-10"},
+  {"titulo": "Constellation Research: IBM delivers strong Q3, sees 4% to 5% revenue growth in 2026", "url": "https://www.constellationr.com/insights/news/ibm-delivers-strong-q3-sees-4-5-revenue-growth-2026", "data": "2026-10"},
+  {"titulo": "Quartr: IBM Q3 2026 earnings summary", "url": "https://quartr.com/events/international-business-machines-corp-ibm-q3-2026_3PPXZ5Fe", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

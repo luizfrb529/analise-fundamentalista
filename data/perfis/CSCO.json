@@ -1,0 +1,69 @@
+{
+ "ticker": "CSCO",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior fabricante de equipamentos de rede do mundo (roteadores, switches, Wi-Fi), também forte em cibersegurança, colaboração (Webex) e observabilidade (Splunk). Muito lucrativa, teve o maior crescimento em 15 anos com a demanda de IA.",
+ "modelo": "A Cisco vende equipamentos de rede e software para empresas, operadoras, governos e grandes nuvens, e cobra assinaturas e serviços de suporte. Com a compra da Splunk em 2024, ganhou peso em software de segurança e monitoramento. Nas nuvens de IA vende chips de rede próprios (Silicon One), roteadores e óptica.",
+ "segmentos": [
+  {"nome": "Redes", "peso_receita": 0.60, "periodo": "4T26", "obs": "US$ 11,1 bi, alta de 43%."},
+  {"nome": "Serviços", "peso_receita": 0.21, "periodo": "4T26", "obs": "US$ 3,85 bi, alta de 1%."},
+  {"nome": "Segurança", "peso_receita": 0.11, "periodo": "4T26", "obs": "US$ 2,12 bi, alta de 7%."},
+  {"nome": "Colaboração e observabilidade", "peso_receita": 0.08, "periodo": "4T26", "obs": "US$ 1,42 bi."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em San Jose, Califórnia (EUA); cerca de 60% da receita vem das Américas, com o restante na Europa e Ásia."},
+ "temas": [
+  {"tema": "Redes para IA", "relacao": "Elevou para US$ 9 bi a expectativa de receita de infraestrutura de IA com grandes nuvens no ano fiscal 2027, mais que o dobro do ano anterior."},
+  {"tema": "Cibersegurança", "relacao": "Com a Splunk e produtos próprios, vende segurança integrada à rede."},
+  {"tema": "Renovação de redes corporativas", "relacao": "Empresas trocam equipamentos para suportar IA e mais tráfego."}
+ ],
+ "diferencial": {
+  "texto": "A Cisco tem a maior base instalada de redes do mundo, relação de décadas com empresas e governos e um portfólio que vai do chip ao software, o que facilita vender soluções completas. Os pontos fracos são o crescimento lento em serviços e segurança, a concorrência da Arista e da NVIDIA em redes de data center e a margem bruta em queda com mais vendas de hardware para nuvens.",
+  "concorrentes": ["Arista", "HPE (Juniper e Aruba)", "NVIDIA", "Palo Alto Networks", "Fortinet", "Huawei"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 (agosto de 2026 a julho de 2027) deve ficar entre US$ 74,8 bi e US$ 75,8 bi, com lucro ajustado de US$ 5,47 a US$ 5,53 por ação; a projeção foi elevada. Para o trimestre até janeiro, a receita deve ser de US$ 18,0 bi a US$ 18,2 bi. As obrigações contratadas somam US$ 46,2 bi.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 74,8 bi a US$ 75,8 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Receita de IA com grandes nuvens", "valor": "US$ 9 bi", "periodo": "meta ano fiscal 2027"},
+   {"rotulo": "Obrigações contratadas (RPO)", "valor": "US$ 46,2 bi", "periodo": "out/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 1,14 por ação no trimestre (US$ 1,40 ajustado, alta de 40%), com margem operacional de 30,2%. A operação gerou US$ 4,4 bi de caixa. A empresa tinha US$ 15,8 bi em caixa e aplicações e US$ 29,8 bi em dívida, e recomprou US$ 2,0 bi em ações e pagou US$ 1,7 bi em dividendos no trimestre.",
+  "caixa": "US$ 15,8 bi",
+  "queima_anual": null,
+  "periodo": "out/2026"
+ },
+ "riscos": [
+  "Concorrência em redes de data center.",
+  "Margem bruta em queda com mais hardware.",
+  "Crescimento lento em serviços e segurança.",
+  "Dívida da compra da Splunk."
+ ],
+ "momento": "No trimestre encerrado em outubro (4T26 no calendário, 1T27 fiscal da empresa, divulgado em 12/11/2026), a receita subiu 24%, para US$ 18,5 bi, maior crescimento em 15 anos segundo a imprensa, com redes em alta de 43%, e a empresa elevou a projeção do ano.",
+ "destaques_resultado": {
+  "trimestre": "4T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Receita de US$ 18,5 bi, alta de 24%.",
+   "Redes cresceram 43%.",
+   "Meta de IA com grandes nuvens elevada para US$ 9 bi."
+  ],
+  "negativos": [
+   "Margem bruta caiu de 65,5% para 63,7%.",
+   "Serviços cresceram só 1%."
+  ],
+  "atencao": [
+   "Pedidos de IA das grandes nuvens.",
+   "Evolução das margens."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Cisco: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000170/exhibit991pressrelease-q1f.htm", "data": "2026-11-12"},
+  {"titulo": "Fierce Network: Cisco posts strongest revenue growth in 15 years", "url": "https://www.fierce-network.com/broadband/cisco-posts-strongest-revenue-growth-15-years-ai-demand-fuels-networking-rebound", "data": "2026-11"},
+  {"titulo": "Constellation Research: Cisco delivers strong Q1, raises outlook for fiscal 2027", "url": "https://www.constellationr.com/insights/news/cisco-delivers-strong-q1-raises-outlook-fiscal-2027", "data": "2026-11"},
+  {"titulo": "SDxCentral: Cisco crushes another quarter", "url": "https://www.sdxcentral.com/news/cisco-crushes-another-quarter-touts-greater-headcount-efficiency/", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "4T26"
+}
