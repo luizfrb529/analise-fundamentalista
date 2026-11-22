@@ -1,0 +1,68 @@
+{
+ "ticker": "GEV",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana de turbinas a gás, equipamentos de rede elétrica e turbinas eólicas, separada da GE em 2024. Virou uma das grandes beneficiadas pela demanda de energia para data centers, com carteira de US$ 197 bi e forte geração de caixa.",
+ "modelo": "A GE Vernova vende e faz a manutenção de turbinas a gás e a vapor, reatores nucleares pequenos e hidrelétricas (segmento Power), transformadores, subestações e sistemas de controle da rede (Electrification) e turbinas eólicas em terra e no mar (Wind). A manutenção da enorme base instalada gera receita recorrente por décadas.",
+ "segmentos": [
+  {"nome": "Power (gás, nuclear, hidro, vapor)", "peso_receita": 0.48, "periodo": "3T26", "obs": "US$ 6,07 bi, alta de 25%, margem Ebitda de 21,4%."},
+  {"nome": "Electrification (rede elétrica)", "peso_receita": 0.31, "periodo": "3T26", "obs": "US$ 3,86 bi, alta de 51% com a Prolec GE, margem de 19,1%."},
+  {"nome": "Wind (eólica)", "peso_receita": 0.22, "periodo": "3T26", "obs": "US$ 2,74 bi, alta de 4%, margem de 2,6%."}
+ ],
+ "segmentos_base": "Receita (antes de eliminações)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Massachusetts (EUA), com fábricas e clientes no mundo todo."},
+ "temas": [
+  {"tema": "Energia para IA", "relacao": "Data centers e concessionárias disputam turbinas a gás; a carteira mais reservas de turbinas a gás subiu para 122 GW e deve passar de 130 GW até o fim de 2026."},
+  {"tema": "Rede elétrica", "relacao": "A expansão da rede exige transformadores e equipamentos de alta tensão; a empresa comprou o restante da Prolec GE e acertou a compra da Trench por cerca de US$ 9 bi."},
+  {"tema": "Energia nuclear", "relacao": "Desenvolve com a Hitachi o reator pequeno BWRX-300."}
+ ],
+ "diferencial": {
+  "texto": "A GE Vernova é uma das três grandes fabricantes de turbinas a gás pesadas do mundo (com Siemens Energy e Mitsubishi), mercado com enorme barreira técnica e de capacidade, hoje com fila de espera de anos. A base instalada gigante garante serviços recorrentes de alta margem. Os pontos fracos são o segmento eólico, que ainda dá prejuízo no ano, e o risco de a demanda atual por gás desacelerar.",
+  "concorrentes": ["Siemens Energy", "Mitsubishi Heavy Industries", "Hitachi Energy", "Schneider Electric", "Vestas", "Caterpillar"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 46,5 bi e US$ 47,5 bi, com margem Ebitda ajustada de 13,5% a 14,5% e fluxo de caixa livre de US$ 16 bi a US$ 17 bi, projeções elevadas. A carteira deve passar de US$ 200 bi no 4T26. A compra da Trench deve fechar no fim de 2027. Não há projeção para 2027 no release.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 46,5 bi a US$ 47,5 bi", "periodo": "2026"},
+   {"rotulo": "Carteira de pedidos", "valor": "US$ 197 bi", "periodo": "set/2026"},
+   {"rotulo": "Fluxo de caixa livre projetado", "valor": "US$ 16 bi a US$ 17 bi", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 1,29 bi no 3T26 (US$ 4,81 por ação), com Ebitda ajustado de US$ 1,94 bi e margem de 15,4%. O fluxo de caixa livre foi de US$ 5,4 bi no trimestre, ajudado por adiantamentos de clientes, e o caixa chegou a cerca de US$ 16,8 bi. A empresa ampliou a recompra de ações para US$ 20 bi e paga dividendo trimestral de US$ 0,50.",
+  "caixa": "cerca de US$ 16,8 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Segmento eólico com prejuízo no ano.",
+  "Capacidade de produção limitada frente à demanda.",
+  "Integração de grandes aquisições (Prolec GE e Trench).",
+  "Ciclo de investimento em energia e data centers."
+ ],
+ "momento": "No 3T26 (divulgado em 28/10/2026), os pedidos quase dobraram, para US$ 29,3 bi, a receita subiu 27%, para US$ 12,6 bi, e a empresa elevou todas as projeções de 2026. Anunciou a compra da Trench, resolveu os processos do parque eólico Vineyard Wind e dobrou o programa de recompra, segundo o release e a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "Pedidos de US$ 29,3 bi, alta orgânica de 96%.",
+   "Margem Ebitda ajustada de 15,4%, contra 8,1%.",
+   "Fluxo de caixa livre de US$ 5,4 bi."
+  ],
+  "negativos": [
+   "Pedidos de eletrificação caíram 9% em base orgânica.",
+   "Eólica ainda deve dar prejuízo de US$ 400 mi a US$ 500 mi no ano."
+  ],
+  "atencao": [
+   "Carteira acima de US$ 200 bi no 4T26.",
+   "Fechamento da compra da Trench."
+  ]
+ },
+ "fontes": [
+  {"titulo": "GE Vernova: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm", "data": "2026-10-28"},
+  {"titulo": "GE Vernova: comunicado do 3T26", "url": "https://www.gevernova.com/news/ge-vernova-reports-strong-third-quarter-2026-financial-performance", "data": "2026-10-28"},
+  {"titulo": "FourWeekMBA: GE Vernova raises 2026 free cash flow guide to $16B-$17B", "url": "https://fourweekmba.com/ai-ge-vernova-raises-2026-free-cash-flow-guide-to-16b-17b/", "data": "2026-10"},
+  {"titulo": "Inspenet: GE Vernova revenue forecasts 2026", "url": "https://inspenet.com/en/news/ge-vernova-revenue-forecasts-2026/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

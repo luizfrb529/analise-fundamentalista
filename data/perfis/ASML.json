@@ -1,0 +1,66 @@
+{
+ "ticker": "ASML",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante holandesa das máquinas de litografia que gravam os circuitos dos chips, única no mundo a produzir as de luz ultravioleta extrema (EUV), indispensáveis para os chips mais avançados. Muito lucrativa, com vendas recordes puxadas pela IA.",
+ "modelo": "A ASML vende sistemas de litografia (EUV, High-NA EUV e DUV) a fabricantes de chips como TSMC, Samsung, Intel, SK Hynix e Micron, a preços que passam de € 200 mi por máquina nas mais avançadas. Ganha também com a manutenção, atualizações e serviços da enorme base instalada (Installed Base Management), receita recorrente que cresce com o número de máquinas em uso.",
+ "segmentos": [
+  {"nome": "Venda de sistemas", "peso_receita": 0.72, "periodo": "3T26", "obs": "€ 8,4 bi; 113 sistemas novos e 8 usados."},
+  {"nome": "Base instalada (serviços e atualizações)", "peso_receita": 0.28, "periodo": "3T26", "obs": "€ 3,3 bi."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Veldhoven (Holanda), com produção na Holanda, EUA e Taiwan; vende sobretudo para Taiwan, Coreia do Sul, China e EUA, sujeita a restrições de exportação."},
+ "temas": [
+  {"tema": "Chips para IA", "relacao": "Segundo o CEO, os clientes continuam elevando as previsões de compra por causa do tamanho e da duração dos investimentos em IA, e alguns já querem encomendar máquinas para 2029 e 2030."},
+  {"tema": "Geopolítica e exportações", "relacao": "Holanda e EUA restringem a venda das máquinas mais avançadas à China, o que limita parte do mercado."},
+  {"tema": "Memória de alta largura de banda", "relacao": "Fabricantes de memória para IA também usam cada vez mais EUV."}
+ ],
+ "diferencial": {
+  "texto": "A ASML é a única fabricante de máquinas EUV no mundo, resultado de décadas de pesquisa e de uma cadeia de fornecedores exclusiva (como a óptica da Zeiss). Sem essas máquinas não é possível fabricar os chips mais avançados, o que dá à empresa um monopólio de fato e alto poder de preço. Os pontos fracos são a dependência de poucos clientes, a ciclicidade do investimento em fábricas de chips e as restrições de venda à China.",
+  "concorrentes": ["Nikon", "Canon", "Applied Materials", "Lam Research", "SMEE"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 4T26 deve ficar entre € 14,2 bi e € 15,2 bi, e a de 2026 entre € 44 bi e € 45 bi, com margem bruta de cerca de 56%. O CEO diz que a capacidade planejada para 2027 e 2028 não vai atender toda a demanda e que a empresa estuda ampliar a produção acima dos 30% já anunciados para 2028. Projeções para 2027 devem vir no dia do investidor, em 10/06/2027.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "€ 44 bi a € 45 bi", "periodo": "2026"},
+   {"rotulo": "Receita projetada", "valor": "€ 14,2 bi a € 15,2 bi", "periodo": "4T26"},
+   {"rotulo": "Margem bruta", "valor": "57,5%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de € 4,96 bi no 3T26, com margem operacional de 44,4%; cerca de € 0,5 bi veio de ganho com participações em outras empresas, segundo a imprensa. O fluxo de caixa livre foi de € 11,4 bi no trimestre, com adiantamentos de clientes, e o caixa subiu para € 12,7 bi. A empresa recomprou cerca de € 4,1 bi em ações no trimestre e paga dividendos trimestrais.",
+  "caixa": "€ 12,7 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Ciclo de investimento das fabricantes de chips.",
+  "Restrições de exportação à China.",
+  "Concentração em poucos grandes clientes.",
+  "Capacidade de produção limitada frente à demanda."
+ ],
+ "momento": "No 3T26 (divulgado em 14/10/2026), a receita foi recorde de € 11,7 bi, alta de 55% em um ano, com margem bruta de 57,5%, e a empresa elevou a projeção de 2026. Segundo a imprensa, as ações caíram cerca de 4% após o resultado.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-14",
+  "positivos": [
+   "Receita recorde de € 11,7 bi, alta de 55%.",
+   "Margem bruta de 57,5%, contra 54,0% no 2T26.",
+   "Fluxo de caixa livre de € 11,4 bi."
+  ],
+  "negativos": [
+   "Parte do lucro veio de ganho com participações, sem relação com a operação."
+  ],
+  "atencao": [
+   "Ampliação da capacidade para 2027 e 2028.",
+   "Regras de exportação para a China."
+  ]
+ },
+ "fontes": [
+  {"titulo": "ASML: resultados do 3T26 (6-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/pressreleasefinancialresul.htm", "data": "2026-10-14"},
+  {"titulo": "ASML: apresentação do 3T26 (6-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/a2026_10x14xpresentation.htm", "data": "2026-10-14"},
+  {"titulo": "investingLive: ASML says 2027 and 2028 supply will fall short of demand", "url": "https://investinglive.com/stocks/asml-says-2027-and-2028-supply-will-fall-short-of-demand-as-q3-sales-hit-a-record/", "data": "2026-10-14"},
+  {"titulo": "eeNews Europe: ASML hits record €11.7 billion sales as AI chip demand surges", "url": "https://www.eenewseurope.com/en/asml-hits-record-e11-7-billion-sales-as-ai-chip-demand-surges/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
