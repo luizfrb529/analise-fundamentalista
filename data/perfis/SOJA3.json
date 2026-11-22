@@ -1,6 +1,6 @@
 {
  "ticker": "SOJA3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-22",
  "resumo": "Maior vendedora de sementes de soja do país, com vendas concentradas no segundo semestre, época do plantio. O lucro do 3T26 caiu 44% pela alta da despesa financeira, embora a margem operacional tenha subido.",
  "modelo": "A Boa Safra produz sementes de soja com produtores integrados, beneficia em unidades próprias em Goiás, Minas Gerais, Bahia, Tocantins e Mato Grosso e vende a produtores rurais, em parte a prazo. Vem ampliando a oferta de outras culturas, serviços e insumos, que já são 22% da carteira de pedidos. A receita é recorrente a cada safra, mas sazonal, concentrada entre julho e dezembro.",
  "segmentos": [
@@ -79,5 +79,24 @@
    "data": "2026-11-12"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-11",
+  "positivos": [
+   "Lucro bruto de R$ 128,9 mi no 3T26, alta de 25% sobre o 3T25, com margem bruta de 13% ante 9%.",
+   "Ebitda ajustado de R$ 121,3 mi no 3T26, alta de 33% sobre o 3T25.",
+   "Carteira de pedidos de R$ 1,18 bi, alta de 37% em 12 meses, recorde para um terceiro trimestre."
+  ],
+  "negativos": [
+   "Lucro das operações continuadas de R$ 26,3 mi no 3T26, queda de 44% sobre o 3T25.",
+   "Resultado financeiro negativo em R$ 59,7 mi no 3T26 (R$ 12,9 mi negativos no 3T25), com juros de CRAs de R$ 55 mi ante R$ 15 mi.",
+   "Receita líquida de R$ 1,03 bi no 3T26, queda de 7% sobre o 3T25."
+  ],
+  "atencao": [
+   "Dívida líquida de R$ 866 mi em setembro de 2026 (R$ 652 mi um ano antes) e peso da despesa financeira sobre o lucro.",
+   "Conversão da carteira de pedidos em receita no 4T26, trimestre sazonalmente relevante."
+  ]
+ }
 }
