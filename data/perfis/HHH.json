@@ -1,0 +1,107 @@
+{
+ "ticker": "HHH",
+ "revisado_em": "2026-11-22",
+ "resumo": "Empresa americana dona de grandes bairros planejados (Summerlin, The Woodlands, Bridgeland, Ward Village) que, sob comando da Pershing Square de Bill Ackman, se transforma em holding diversificada após comprar a seguradora Vantage. Resultado volátil.",
+ "modelo": "A Howard Hughes vende terrenos para construtoras em seus bairros planejados, aluga escritórios, lojas e apartamentos que construiu nesses bairros e vende condomínios em Honolulu. Desde junho de 2026, é dona da seguradora e resseguradora Vantage, e a estratégia é usar o caixa do imobiliário para crescer em seguros e outros negócios, no estilo de holding.",
+ "segmentos": [],
+ "segmentos_base": "No 3T26: prêmios de seguros de US$ 315,8 mi (Vantage), vendas de terrenos de US$ 133,7 mi e resultado operacional dos imóveis de renda de US$ 73,0 mi",
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Dallas (EUA); bairros em Nevada, Texas, Arizona e Havaí; a Vantage atua em seguros e resseguros globalmente."
+ },
+ "temas": [
+  {
+   "tema": "Holding no estilo Berkshire",
+   "relacao": "Bill Ackman prioriza aplicar o caixa na Vantage e tornar o imobiliário um negócio com menos capital próprio, segundo a imprensa."
+  },
+  {
+   "tema": "Mercado imobiliário residencial",
+   "relacao": "As vendas de terrenos caíram frente a 2025, que teve venda em bloco em Summerlin; Bridgeland recuou 9%, segundo a imprensa."
+  }
+ ],
+ "diferencial": {
+  "texto": "A Howard Hughes tem terrenos em bairros planejados enormes e escassos, em regiões de rápido crescimento, que levam décadas para serem vendidos com valorização, um ativo difícil de replicar. A transformação em holding com seguros depende da capacidade de investimento de Ackman e ainda não foi comprovada.",
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Terrenos escassos em bairros planejados de regiões em crescimento, difíceis de replicar, mas a nova estratégia de holding ainda não foi comprovada."
+  },
+  "concorrentes": [
+   "Lennar",
+   "St. Joe",
+   "Forestar",
+   "Berkshire Hathaway",
+   "Markel"
+  ]
+ },
+ "potencial": {
+  "texto": "O potencial vem da venda contínua de terrenos com valorização, dos imóveis de renda e da expansão em seguros com a Vantage. A empresa não traz projeção numérica no release.",
+  "metricas": [
+   {
+    "rotulo": "Lucro antes de impostos da Vantage",
+    "valor": "US$ 76,6 mi",
+    "periodo": "3T26"
+   },
+   {
+    "rotulo": "Preço médio do terreno vendido",
+    "valor": "US$ 1,32 mi por acre",
+    "periodo": "3T26"
+   },
+   {
+    "rotulo": "Caixa consolidado",
+    "valor": "US$ 2,87 bi",
+    "periodo": "set/2026"
+   }
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Prejuízo de US$ 1,1 mi no 3T26 por perda contábil de US$ 105 mi na venda de recebíveis, mas lucro de US$ 2,81 por ação em nove meses. Tem US$ 2,87 bi em caixa consolidado, sendo US$ 764 mi na holding e o restante na Vantage, e US$ 5,7 bi em dívidas.",
+  "caixa": "US$ 2,87 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Execução da transformação em holding.",
+  "Riscos de subscrição de seguros.",
+  "Ciclo do mercado imobiliário.",
+  "Dependência de Bill Ackman e da Pershing Square."
+ ],
+ "momento": "No 3T26 (divulgado em 05/11/2026), o primeiro trimestre completo com a Vantage, a empresa ficou perto do equilíbrio pela perda na venda de recebíveis, e as vendas de terrenos caíram frente a 2025.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Vantage lucrou US$ 76,6 mi.",
+   "Imóveis de renda cresceram.",
+   "Summerlin subiu 11%."
+  ],
+  "negativos": [
+   "Perda de US$ 105 mi na venda de recebíveis.",
+   "Lucro dos terrenos caiu."
+  ],
+  "atencao": [
+   "Crescimento dos prêmios da Vantage.",
+   "Novos investimentos da holding."
+  ]
+ },
+ "fontes": [
+  {
+   "titulo": "Howard Hughes: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1981792/000162828026071028/hhhearningsreleaseq32026.htm",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Finviz: Howard Hughes beats on adjusted EPS but Vantage's slowing premiums complicate the pivot",
+   "url": "https://finviz.com/news/418544/howard-hughes-beats-on-adjusted-eps-but-vantages-slowing-premiums-and-weaker-real-estate-velocity-complicate-the-holding-company-pivot",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "Zacks: HHH Q3 earnings call highlights asset-light real estate shift",
+   "url": "https://zacks.com/stock/news/3026490/hhh-q3-earnings-call-highlights-asset-light-real-estate-shift",
+   "data": "2026-11"
+  }
+ ],
+ "ultimo_resultado": "3T26"
+}

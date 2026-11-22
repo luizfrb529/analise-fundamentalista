@@ -1,0 +1,62 @@
+{
+ "ticker": "VICI",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fundo imobiliário (REIT) dono de grandes cassinos e resorts, como Caesars Palace e o Venetian em Las Vegas, e de imóveis de entretenimento. Lucrativo, com aluguéis de muito longo prazo e dividendos crescentes.",
+ "modelo": "A VICI é dona dos imóveis de cassinos e centros de entretenimento e os aluga por contratos de décadas a operadoras como Caesars, MGM e Venetian, no modelo em que o inquilino paga todos os custos, com reajustes anuais ligados à inflação. Também financia projetos de entretenimento com empréstimos.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 1,07 bi no 3T26 (+5,8%); AFFO de US$ 0,62 por ação",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA); imóveis principalmente nos EUA, com destaque para Las Vegas, além do Canadá."},
+ "temas": [
+  {"tema": "Cassinos e turismo", "relacao": "Recebe aluguéis de cassinos em Las Vegas e regionais; o contrato regional da Caesars gerou US$ 140,5 mi no trimestre."},
+  {"tema": "Renda imobiliária e dividendos", "relacao": "Elevou o dividendo trimestral para US$ 0,46 (+2,2%) e aprovou recompra de até US$ 2,0 bi, segundo a imprensa."}
+ ],
+ "diferencial": {
+  "texto": "A VICI é dona de alguns dos cassinos mais icônicos dos EUA, ativos praticamente impossíveis de replicar, alugados por décadas a operadoras que dependem desses imóveis, o que dá receita muito previsível. Os pontos fracos são a concentração em poucos inquilinos, especialmente Caesars e MGM, e a sensibilidade aos juros.",
+  "vantagem": {"nivel": "forte", "resumo": "Dona de cassinos icônicos impossíveis de replicar, alugados por décadas com reajustes, o que dá receita muito previsível."},
+  "concorrentes": ["Gaming and Leisure Properties", "Realty Income", "Blackstone (imóveis de cassino)", "EPR Properties"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o AFFO de 2026 deve ficar entre US$ 2,47 e US$ 2,48 por ação, acima da projeção anterior. O potencial vem dos reajustes de aluguel e de novos investimentos em entretenimento, como os cassinos do Canadá.",
+  "metricas": [
+   {"rotulo": "AFFO projetado", "valor": "US$ 2,47 a US$ 2,48 por ação", "periodo": "2026"},
+   {"rotulo": "Dividendo trimestral", "valor": "US$ 0,46 (+2,2%)", "periodo": "3T26"},
+   {"rotulo": "Liquidez", "valor": "cerca de US$ 2,5 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "AFFO de US$ 685 mi no 3T26 (US$ 0,62 por ação, +4,3%); o lucro contábil caiu 55% por mudança na provisão para perdas de crédito, sem efeito no caixa. A dívida líquida é de cerca de US$ 16,9 bi, com liquidez de cerca de US$ 2,5 bi.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concentração em Caesars e MGM.",
+  "Juros altos.",
+  "Desaceleração do turismo em Las Vegas.",
+  "Saúde financeira dos inquilinos."
+ ],
+ "momento": "No 3T26 (divulgado em 28/10/2026), o AFFO por ação subiu 4,3%, para US$ 0,62, e a empresa elevou a projeção de 2026; o CEO é Edward Pitoniak.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "AFFO subiu 7,5%.",
+   "Projeção elevada.",
+   "Dividendo maior."
+  ],
+  "negativos": [
+   "Lucro contábil caiu por provisão de crédito."
+  ],
+  "atencao": [
+   "Situação da Caesars.",
+   "Novos investimentos."
+  ]
+ },
+ "fontes": [
+  {"titulo": "VICI: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1705696/000170569626000119/viciq32026earningsrelease.htm", "data": "2026-10-28"},
+  {"titulo": "Zacks: VICI Properties Q3 FFO meet estimates, revenues beat", "url": "https://www.zacks.com/stock/news/3018984/vici-properties-q3-ffo-meet-estimates-revenues-beat-on-lease-growth", "data": "2026-10"},
+  {"titulo": "24/7 Wall St.: VICI Properties Q3 2026", "url": "https://247wallst.com/cards/vici-properties-q3-2026-earnings-vici-01m624etmdqcdmawtn468gbecb", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

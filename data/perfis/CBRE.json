@@ -1,0 +1,68 @@
+{
+ "ticker": "CBRE",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior empresa de serviços imobiliários comerciais do mundo: aluguel e venda de imóveis, administração de prédios e instalações, gerenciamento de obras e investimentos. Lucrativa, com lucro ajustado crescendo 28%.",
+ "modelo": "A CBRE ganha comissões intermediando aluguéis e vendas de imóveis comerciais e financiamentos, taxas recorrentes administrando prédios e instalações de grandes empresas (incluindo data centers), honorários gerenciando obras e taxas e ganhos com desenvolvimento e gestão de investimentos imobiliários.",
+ "segmentos": [
+  {"nome": "Operação de edifícios", "peso_receita": 0.60, "periodo": "3T26", "obs": "Receita de US$ 6,86 bi (+17,4%)."},
+  {"nome": "Consultoria (aluguel e venda)", "peso_receita": 0.21, "periodo": "3T26", "obs": "Receita de US$ 2,44 bi (+11%); vendas de imóveis +28%."},
+  {"nome": "Gerenciamento de projetos", "peso_receita": 0.18, "periodo": "3T26", "obs": "Receita de US$ 2,04 bi (+2,9%)."},
+  {"nome": "Investimentos imobiliários", "peso_receita": 0.02, "periodo": "3T26", "obs": "Receita de US$ 203 mi; lucro do segmento de US$ 166 mi."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Dallas (EUA); atua no mundo todo, com maior peso nas Américas."},
+ "temas": [
+  {"tema": "Mercado imobiliário comercial", "relacao": "As vendas de imóveis cresceram 28%, mas o aluguel só 6%, e juros altos ainda pressionam o mercado de capitais, segundo a imprensa."},
+  {"tema": "Data centers e infraestrutura", "relacao": "Administra e constrói instalações críticas, como data centers, para grandes empresas."}
+ ],
+ "diferencial": {
+  "texto": "A CBRE tem a maior escala e marca do setor, presença global e uma base grande de receitas recorrentes de administração de prédios, que reduz a dependência do ciclo de transações. Os pontos fracos são a sensibilidade aos juros nas comissões de venda e financiamento e a margem baixa da administração de instalações.",
+  "vantagem": {"nivel": "moderada", "resumo": "Maior escala e marca do setor, com receitas recorrentes de administração de prédios, mas comissões sensíveis aos juros."},
+  "concorrentes": ["JLL", "Cushman & Wakefield", "Colliers", "Newmark", "Savills"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro ajustado de 2026 deve ficar entre US$ 7,80 e US$ 7,90 por ação, alta de cerca de 23%, segundo a imprensa, com caminho para crescer 15% em 2027. O potencial vem da recuperação das vendas de imóveis e das receitas recorrentes.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 7,80 a US$ 7,90 por ação", "periodo": "2026"},
+   {"rotulo": "Ebitda ajustado", "valor": "US$ 1,0 bi (+28,5%)", "periodo": "3T26"},
+   {"rotulo": "Dívida líquida sobre Ebitda", "valor": "1,36 vez", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 1,52 por ação no 3T26 (US$ 2,05 ajustado, +28%), com fluxo de caixa livre de US$ 927 mi. A dívida líquida é de US$ 5,3 bi, apenas 1,36 vez o Ebitda, e a empresa recomprou cerca de US$ 1,2 bi em ações no ano.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Juros altos travam transações.",
+  "Ciclo do mercado imobiliário comercial.",
+  "Margem baixa na administração de instalações.",
+  "Escritórios vazios após o trabalho remoto."
+ ],
+ "momento": "No 3T26 (divulgado em 22/10/2026), a receita subiu 12,7%, para US$ 11,5 bi, e o lucro ajustado, 28%, acima do esperado, com a projeção de 2026 mantida; o CEO é Bob Sulentic.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-22",
+  "positivos": [
+   "Lucro ajustado subiu 28%.",
+   "Vendas de imóveis subiram 28%.",
+   "Caixa livre de US$ 927 mi."
+  ],
+  "negativos": [
+   "Aluguel cresceu só 6%.",
+   "Administração de instalações abaixo da projeção."
+  ],
+  "atencao": [
+   "Juros e mercado de capitais.",
+   "Crescimento de 2027."
+  ]
+ },
+ "fontes": [
+  {"titulo": "CBRE: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811826000028/cbre-20261022x8kexx991.htm", "data": "2026-10-22"},
+  {"titulo": "Capital.com: CBRE maintains 2026 core EPS guidance at $7.80-$7.90", "url": "https://capital.com/en-ae/news/cbre-maintains-2026-core-eps-guidance-at-7-80-7-90", "data": "2026-10"},
+  {"titulo": "Commercial Observer: CBRE's Q3 earnings top estimates but leasing lags", "url": "https://commercialobserver.com/?p=583806", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

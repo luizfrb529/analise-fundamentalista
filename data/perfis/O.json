@@ -1,0 +1,66 @@
+{
+ "ticker": "O",
+ "revisado_em": "2026-11-22",
+ "resumo": "Um dos maiores fundos imobiliários (REIT) de imóveis comerciais alugados a longo prazo do mundo, conhecido por pagar dividendos mensais e crescentes. Lucrativo, com ocupação de 98,8% e dívida de grau de investimento.",
+ "modelo": "A Realty Income compra imóveis de varejo, indústria, logística e cassinos e os aluga por contratos longos no modelo em que o inquilino paga impostos, seguro e manutenção (net lease). Ganha com aluguéis reajustados e recicla capital comprando novos imóveis com rendimento acima do custo de financiamento.",
+ "segmentos": [
+  {"nome": "Varejo", "peso_receita": 0.77, "periodo": "3T26", "obs": "Supermercados são o maior setor, com 10,6% dos aluguéis."},
+  {"nome": "Industrial", "peso_receita": 0.17, "periodo": "3T26", "obs": "Galpões e fábricas."},
+  {"nome": "Cassinos e outros", "peso_receita": 0.06, "periodo": "3T26", "obs": "Cassinos respondem por 3,1% dos aluguéis."}
+ ],
+ "segmentos_base": "Aluguel anualizado por tipo de imóvel",
+ "geografia": {"eua_pct": 0.80, "exterior_pct": 0.20, "periodo": "3T26", "texto": "Sede em San Diego (EUA); 15.536 imóveis, com cerca de 20% dos aluguéis no Reino Unido e na Europa continental."},
+ "temas": [
+  {"tema": "Renda imobiliária e dividendos", "relacao": "Paga dividendos mensais e fez o 116º aumento trimestral seguido, com dividendo anualizado de US$ 3,26 por ação."},
+  {"tema": "Juros altos", "relacao": "Precisa refinanciar cerca de US$ 2,9 bi de dívidas que vencem em 2027 a cerca de 2,9% ao ano, a taxas mais altas, segundo a imprensa."}
+ ],
+ "diferencial": {
+  "texto": "A Realty Income tem escala, com mais de 15 mil imóveis e 1.842 inquilinos, carteira diversificada e custo de capital baixo graças ao grau de investimento A, o que lhe permite comprar imóveis com margem sobre o custo da dívida. Os pontos fracos são a sensibilidade aos juros, o crescimento modesto e inquilinos de varejo em dificuldade, como a Walgreens.",
+  "vantagem": {"nivel": "moderada", "resumo": "Escala, carteira diversificada e custo de capital baixo pelo grau de investimento A, mas sensível aos juros e com crescimento modesto."},
+  "concorrentes": ["NNN REIT", "Agree Realty", "W. P. Carey", "Essential Properties", "VICI Properties"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o AFFO de 2026 deve ficar entre US$ 4,45 e US$ 4,46 por ação, com US$ 10 bi em novos investimentos. O potencial vem das aquisições, inclusive na Europa, e dos reajustes de aluguel.",
+  "metricas": [
+   {"rotulo": "AFFO projetado", "valor": "US$ 4,45 a US$ 4,46 por ação", "periodo": "2026"},
+   {"rotulo": "Investimentos projetados", "valor": "US$ 10,0 bi", "periodo": "2026"},
+   {"rotulo": "Ocupação", "valor": "98,8%", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 0,43 por ação no 3T26 e AFFO de US$ 1,12 (+3,7%). A dívida líquida é de 5,4 vezes o Ebitda, com grau de investimento A3 (Moody's) e A- (S&P). Os maiores inquilinos são Dollar General, 7-Eleven e Walgreens, cada um com cerca de 3% dos aluguéis.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Juros altos encarecem o refinanciamento.",
+  "Dificuldades de inquilinos do varejo.",
+  "Exposição cambial na Europa.",
+  "Crescimento modesto do AFFO."
+ ],
+ "momento": "No 3T26 (divulgado em 02/11/2026), o AFFO subiu 3,7%, para US$ 1,12 por ação, e a empresa elevou a projeção pela terceira vez no ano, com US$ 2,6 bi investidos a 6,8% de rendimento inicial.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-02",
+  "positivos": [
+   "AFFO subiu 3,7%.",
+   "Projeção elevada.",
+   "Aluguéis renovados 3,5% acima dos anteriores."
+  ],
+  "negativos": [
+   "Projeção de lucro contábil reduzida."
+  ],
+  "atencao": [
+   "Refinanciamento das dívidas de 2027.",
+   "Inquilinos do varejo."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Realty Income: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672826000056/o-991q32026.htm", "data": "2026-11-02"},
+  {"titulo": "Realty Income: suplemento do 3T26 (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672826000056/realtyincomeq32026supple.htm", "data": "2026-11-02"},
+  {"titulo": "Finviz: Realty Income matches the whisper and raises guidance again", "url": "https://finviz.com/news/413839/realty-income-matches-the-whisper-and-raises-guidance-again-but-a-rate-spike-is-reshaping-how-it-grows", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}
