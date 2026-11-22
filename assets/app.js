@@ -1058,7 +1058,7 @@ async function pgAtivo(app, t) {
   app.innerHTML = `${trilha([[stk ? "Stocks" : emAcoes(t) ? "Ações" : "BDRs", `#/ativos?seg=${segTab}`], [a.setor_macro, `#/ativos?seg=${segTab}&setor=${encodeURIComponent(a.setor_macro)}`], [t]])}
   <div class="ativo-topo">
     <div class="ativo-id">${logo(t, "g")}<div><h1>${t}${classes.length ? classes.map((c) => `<span class="badge">${c}</span>`).join("") : ""}${isRec(t) ? `<span class="badge rec">${esc(recNome(t))}</span>` : ""}${estado(t) ? `<span class="badge estatal" data-tip="${esc(estado(t).resumo)}"><i class="q-estatal"></i>${rotEstado(t)}</span>` : ""}</h1><div class="nm">${esc(a.nome)}</div>${proxResultado(t)}</div></div>
-    <nav class="secoes-nav" id="secoes">${[["indicadores", "Indicadores"], ["criterios", "Critérios"], ["resultados", "Resultados"], ["proventos", "Proventos"], ["sobre", "Sobre a empresa"], ["governanca", "Governança"], ["acionistas", "Acionistas"], ["noticias", "Comunicados"]].filter(([id]) => !(stk && (id === "governanca" || id === "acionistas"))).map(([id, nm]) => `<a href="#" data-sec="${id}">${nm}</a>`).join("")}</nav>
+    <nav class="secoes-nav" id="secoes">${[["sobre", "Sobre a empresa"], ["indicadores", "Indicadores"], ["criterios", "Critérios"], ["resultados", "Resultados"], ["proventos", "Proventos"], ["governanca", "Governança"], ["acionistas", "Acionistas"], ["noticias", "Comunicados"]].filter(([id]) => !(stk && (id === "governanca" || id === "acionistas"))).map(([id, nm]) => `<a href="#" data-sec="${id}">${nm}</a>`).join("")}</nav>
   </div>
 
   <div class="cartao" style="margin-top:18px">
@@ -1077,6 +1077,8 @@ async function pgAtivo(app, t) {
   ${isCripto(t) ? `<div class="aviso-info">Tesouraria em bitcoin: o valor da empresa acompanha o bitcoin em caixa. Os indicadores centrais são mNAV e BTC por ação.</div>` : ""}
   ${stk ? `<div class="aviso-info">Stock da bolsa americana (${esc(a.bolsa_exterior || "EUA")}): preço e dividendos em dólar; comparação com o S&P 500 e com as outras stocks do site.${mo !== "US$" ? ` A empresa reporta o balanço em ${esc(mo)}; os múltiplos convertem o preço pelo câmbio do dia${(f.stock || {}).acoes_por_adr ? ` e consideram ${f.stock.acoes_por_adr} ações por ADR` : ""}.` : ""}</div>` : ""}
   ${isBDR(t) ? `<div class="aviso-info">BDR: fundamentos em ${mo === "US$" ? "dólar" : "reais (a empresa reporta em R$)"}. A tributação de proventos de BDR difere da de ações brasileiras.</div>` : ""}
+
+  <section class="secao" id="sec-sobre"><div class="secao-cab"><h2 class="titulo-barra">Sobre ${esc(a.nome)}</h2></div><div id="sobre"><div class="carregando"><span></span>Carregando</div></div></section>
 
   <section class="secao" id="sec-indicadores">
     <div class="secao-cab"><h2 class="titulo-barra">Indicadores fundamentalistas</h2><span class="sub">Últimos 12 meses · ${baseResultado(t)} · comparação com a mediana de ${esc(st.grupo_nome || "o setor")}</span></div>
@@ -1104,8 +1106,6 @@ async function pgAtivo(app, t) {
   </section>
 
   <section class="secao" id="sec-proventos"><div class="secao-cab"><h2 class="titulo-barra">Proventos</h2></div><div id="proventos"></div></section>
-
-  <section class="secao" id="sec-sobre"><div class="secao-cab"><h2 class="titulo-barra">Sobre ${esc(a.nome)}</h2></div><div id="sobre"><div class="carregando"><span></span>Carregando</div></div></section>
 
   ${stk ? "" : `<section class="secao" id="sec-governanca"><div class="secao-cab"><h2 class="titulo-barra">Governança</h2></div>
     <div class="gov">
@@ -2409,6 +2409,18 @@ async function pgFii(app, t) {
     <div class="linha" style="gap:8px"><a class="btn peq" href="#/retorno?t=${t}&p=3&m=ambos&b=${ehInfra ? "cdi,ipca5" : "ifix,cdi"}">Retorno total x ${ehInfra ? "CDI e IPCA+5%" : "IFIX e CDI"}</a><div class="chips" id="fii-per"><button class="chip ativo" data-p="1">1A</button><button class="chip" data-p="3">3A</button><button class="chip" data-p="10">Máx.</button></div></div></div>
     <div class="grafico" style="margin-top:12px"><canvas id="g-fii-preco"></canvas></div></div>
 
+  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Sobre o fundo</h2></div>
+    <div class="grade g2" style="align-items:start">
+      <div class="cartao"><h3>Perfil e carteira hoje</h3>
+        ${sb.objetivo ? `<div class="fii-objetivo"><span class="rot">${sb.objetivo.tipo === "descricao" ? "Descrição do fundo" : "Objetivo do fundo"}</span><p>${esc(sb.objetivo.texto)}</p><span class="sub">Fonte: ${sb.objetivo.link ? `<a class="lk" href="${esc(sb.objetivo.link)}" target="_blank" rel="noopener">${esc(sb.objetivo.fonte)} ↗</a>` : esc(sb.objetivo.fonte)}</span></div>` : ""}
+        <p style="color:var(--txt-2);line-height:1.55">${esc(sb.texto || "")}</p>
+        <div class="sobre-destaques q4">${(ehInfra ? [["papel", "Debêntures"], ["publicos", "Títulos públicos"], ["caixa", "Caixa"], ["outros", "Outros"]] : ehAgro ? [["papel", "Papel do agro"], ["fiis", "Cotas de fundos"], ["caixa", "Caixa"], ["tijolo", "Imóveis rurais"]] : [["papel", "Papel (CRI e CRA)"], ["tijolo", /^agro/.test(sb.perfil || "") ? "Terras agrícolas" : /^energia/.test(sb.perfil || "") ? "Imóveis" : "Tijolo"], ["fiis", "Cotas de FII"], ["caixa", "Caixa"]]).map(([k, n]) => `<div><span>${n}</span><b>${fmtU((sb.grupos || {})[k] || 0, "pct")}</b></div>`).join("")}</div>
+        ${rel ? `<a class="btn peq" href="${esc(rel.link)}" target="_blank" rel="noopener">Último relatório gerencial (${esc(rel.referencia)}) ↗</a>` : ""}</div>
+      <div class="cartao"><h3>Ficha</h3><div class="ficha">
+        ${[["Público-alvo", sb.publico ? sb.publico[0].toUpperCase() + sb.publico.slice(1) : null], [ehInfra ? "Tipo" : "Segmento (CVM)", c.segmento], ["Mandato", c.mandato], ["Gestão", c.gestao], ["Administrador", c.administrador], ["Início", c.inicio ? dataBR(c.inicio) : null], ["Prazo", c.prazo], ["CNPJ", (d.cnpj || "").replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, "$1.$2.$3/$4-$5")]].filter(([, v]) => v).map(([k, v]) => `<div><span>${k}</span><b>${esc(v)}</b></div>`).join("")}
+      </div></div>
+    </div></section>
+
   <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Indicadores</h2></div><div class="ind-grade">
     ${i.dy_parcial_meses ? ind("Dividend yield", fmtU(dy, "pct"), `${reais(i.rend_12m)} por cota; só ${i.dy_parcial_meses} meses de rendimentos na bolsa, não é um ano completo`, true) : ind("Dividend yield 12m", fmtU(dy, "pct"), `${reais(i.rend_12m)} por cota em 12 meses`, true)}
     ${ind("P/VP", fmtU(pvp, "x"), `valor patrimonial ${reais(i.vp_cota)} por cota`, true)}
@@ -2438,18 +2450,6 @@ async function pgFii(app, t) {
       <div class="grafico alto"><canvas id="g-fii-evol"></canvas></div>
       <p class="sub" style="margin-top:8px">Fontes: rendimentos ${ehInfra ? "nos proventos do fundo publicados pela B3 (anos antigos pelo Yahoo Finance)" : "nos avisos aos cotistas do FundosNet (B3)"}${conf.meses_comparados ? `, conferidos com o Yahoo Finance: ${conf.divergentes && conf.divergentes.length ? `diferença em ${conf.divergentes.join(", ")}` : `os ${conf.meses_comparados} últimos batem`}` : ""}; patrimônio e valor patrimonial no ${ehInfra ? "Informe Diário" : ehAgro ? "Informe Mensal de Fiagro (antes de 2025, no de FII)" : "Informe Mensal"} da CVM.</p></div>
   </section>
-
-  <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Sobre o fundo</h2></div>
-    <div class="grade g2" style="align-items:start">
-      <div class="cartao"><h3>Perfil e carteira hoje</h3>
-        ${sb.objetivo ? `<div class="fii-objetivo"><span class="rot">${sb.objetivo.tipo === "descricao" ? "Descrição do fundo" : "Objetivo do fundo"}</span><p>${esc(sb.objetivo.texto)}</p><span class="sub">Fonte: ${sb.objetivo.link ? `<a class="lk" href="${esc(sb.objetivo.link)}" target="_blank" rel="noopener">${esc(sb.objetivo.fonte)} ↗</a>` : esc(sb.objetivo.fonte)}</span></div>` : ""}
-        <p style="color:var(--txt-2);line-height:1.55">${esc(sb.texto || "")}</p>
-        <div class="sobre-destaques q4">${(ehInfra ? [["papel", "Debêntures"], ["publicos", "Títulos públicos"], ["caixa", "Caixa"], ["outros", "Outros"]] : ehAgro ? [["papel", "Papel do agro"], ["fiis", "Cotas de fundos"], ["caixa", "Caixa"], ["tijolo", "Imóveis rurais"]] : [["papel", "Papel (CRI e CRA)"], ["tijolo", /^agro/.test(sb.perfil || "") ? "Terras agrícolas" : /^energia/.test(sb.perfil || "") ? "Imóveis" : "Tijolo"], ["fiis", "Cotas de FII"], ["caixa", "Caixa"]]).map(([k, n]) => `<div><span>${n}</span><b>${fmtU((sb.grupos || {})[k] || 0, "pct")}</b></div>`).join("")}</div>
-        ${rel ? `<a class="btn peq" href="${esc(rel.link)}" target="_blank" rel="noopener">Último relatório gerencial (${esc(rel.referencia)}) ↗</a>` : ""}</div>
-      <div class="cartao"><h3>Ficha</h3><div class="ficha">
-        ${[["Público-alvo", sb.publico ? sb.publico[0].toUpperCase() + sb.publico.slice(1) : null], [ehInfra ? "Tipo" : "Segmento (CVM)", c.segmento], ["Mandato", c.mandato], ["Gestão", c.gestao], ["Administrador", c.administrador], ["Início", c.inicio ? dataBR(c.inicio) : null], ["Prazo", c.prazo], ["CNPJ", (d.cnpj || "").replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, "$1.$2.$3/$4-$5")]].filter(([, v]) => v).map(([k, v]) => `<div><span>${k}</span><b>${esc(v)}</b></div>`).join("")}
-      </div></div>
-    </div></section>
 
   <section class="secao"><div class="secao-cab"><h2 class="titulo-barra">Carteira</h2><p class="sub" style="margin:0">${ehInfra ? `Carteira (CDA) entregue à CVM, posição de ${esc(fMes(comp.ref_mensal))}, olhando através dos fundos master.` : ehAgro ? `Informe Mensal de Fiagro da CVM, posição de ${esc(fMes(comp.ref_mensal))}.` : `Informe Trimestral da CVM de ${dataBR(comp.ref_trimestral)} e Informe Mensal de ${esc(fMes(comp.ref_mensal))}.`}</p></div>
     <div class="grade g2 fii-carteira">
