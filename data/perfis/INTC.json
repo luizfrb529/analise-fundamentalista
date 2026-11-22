@@ -1,0 +1,69 @@
+{
+ "ticker": "INTC",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior fabricante americana de processadores para PCs e servidores, que tenta virar também fábrica de chips para terceiros (Intel Foundry). A receita voltou a crescer com a demanda de data centers, mas a fábrica ainda dá prejuízo e o investimento é muito alto.",
+ "modelo": "A Intel projeta e fabrica processadores Core para computadores, Xeon para servidores e aceleradores e chips de IA, e vende sobretudo a fabricantes de PCs e grandes nuvens. A divisão Intel Foundry fabrica os chips da própria Intel e busca clientes externos, competindo com a TSMC. Também controla a Mobileye (chips para carros autônomos) e vendeu 51% da Altera em 2025.",
+ "segmentos": [
+  {"nome": "Client Computing e Physical AI (PCs)", "peso_receita": 0.49, "periodo": "3T26", "obs": "US$ 8,1 bi, queda de 5% em um ano."},
+  {"nome": "Data Center e IA", "peso_receita": 0.44, "periodo": "3T26", "obs": "US$ 7,3 bi, alta de 78%, maior crescimento em 15 anos."},
+  {"nome": "Outros (Mobileye e outros)", "peso_receita": 0.04, "periodo": "3T26", "obs": "US$ 0,7 bi. A Intel Foundry (US$ 6,7 bi) vende quase tudo para a própria Intel e é eliminada no total."}
+ ],
+ "segmentos_base": "Receita (Foundry é interna e não entra na soma)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA), com fábricas nos EUA (Arizona, Oregon, Novo México, Ohio em construção), Irlanda, Israel e Malásia; a maior parte da receita vem de clientes na Ásia."},
+ "temas": [
+  {"tema": "Data centers para IA", "relacao": "A receita de data centers subiu 78% em um ano com servidores para IA; a Oracle vai usar os próximos Xeon (Diamond Rapids) na sua nuvem."},
+  {"tema": "Semicondutores nos EUA", "relacao": "É a principal aposta do governo americano para fabricar chips avançados no país; o governo tem participação acionária relevante na empresa desde 2025."},
+  {"tema": "Mercado de PCs", "relacao": "Os PCs ainda são metade da receita, e o diretor financeiro espera desaceleração pelo menos até o primeiro semestre de 2027."}
+ ],
+ "diferencial": {
+  "texto": "A Intel é uma das únicas três empresas do mundo capazes de fabricar chips no estado da arte (com TSMC e Samsung) e a única grande nos EUA, com décadas de liderança em processadores x86 e enorme base instalada em PCs e servidores. O apoio do governo americano e o caixa reforçado são vantagens. Os pontos fracos são a perda de participação para AMD e para chips ARM, a fábrica ainda com prejuízo operacional (US$ 1,85 bi no 3T26) e a dificuldade de atrair grandes clientes externos frente à TSMC.",
+  "concorrentes": ["AMD", "TSMC", "NVIDIA", "Qualcomm", "Samsung", "ARM"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 4T26 deve ficar entre US$ 15 bi e US$ 16 bi, com margem bruta ajustada de 38% e lucro ajustado de US$ 0,25 por ação, abaixo do 3T26. O potencial depende de a Intel Foundry ganhar clientes externos com os processos 18A e 14A (o kit de projeto 14A versão 0,9 foi liberado em outubro) e de recuperar espaço em servidores de IA. A projeção fraca para o 4T26 derrubou as ações mais de 25% no pré-mercado, segundo a Zacks.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 15 bi a US$ 16 bi", "periodo": "4T26"},
+   {"rotulo": "Receita de data centers", "valor": "US$ 7,3 bi (+78%)", "periodo": "3T26"},
+   {"rotulo": "Receita da Intel Foundry", "valor": "US$ 6,7 bi (+58%)", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucro recente",
+  "texto": "Lucro líquido de US$ 3,3 bi no 3T26, inflado por ganho de US$ 1 bi na reavaliação de ações reservadas ao governo; o lucro ajustado foi de US$ 2,76 bi, contra US$ 1,02 bi um ano antes, depois de prejuízos em 2024. O fluxo de caixa livre ajustado foi de US$ 1,6 bi no trimestre, com investimento de US$ 4,2 bi. Em 2026 a empresa fez oferta pública de ações de US$ 23 bi, ficando com US$ 54 bi em caixa e aplicações e US$ 50 bi em dívida; as ações passaram de 4,99 bi para 5,31 bi.",
+  "caixa": "US$ 54,0 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Intel Foundry ainda com prejuízo e sem grandes clientes externos.",
+  "Perda de participação em PCs e servidores para AMD e chips ARM.",
+  "Investimento muito alto em fábricas.",
+  "Diluição: emissão de US$ 23 bi em ações em 2026."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita subiu 21%, para US$ 16,5 bi, acima da projeção, puxada por data centers (+78%), mas a projeção para o 4T26 veio fraca pela desaceleração dos PCs. A empresa concluiu uma oferta de ações de US$ 23 bi e anunciou a compra da Classiq, de software quântico.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Receita de US$ 16,5 bi, alta de 21%.",
+   "Data centers e IA com US$ 7,3 bi, alta de 78%.",
+   "Margem bruta ajustada de 44,1%, contra 40,0%."
+  ],
+  "negativos": [
+   "PCs caíram 5%, para US$ 8,1 bi.",
+   "Intel Foundry com prejuízo operacional de US$ 1,85 bi.",
+   "Projeção de lucro ajustado de US$ 0,25 por ação no 4T26."
+  ],
+  "atencao": [
+   "Clientes externos para os processos 18A e 14A.",
+   "Ritmo do mercado de PCs no primeiro semestre de 2027."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Intel: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm", "data": "2026-10-29"},
+  {"titulo": "Intel: 8-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/0000050863-26-000188-index.htm", "data": "2026-10-29"},
+  {"titulo": "Verdict: Intel Q3 2026 results", "url": "https://www.verdict.co.uk/intel-q3-2026-results/", "data": "2026-10-29"},
+  {"titulo": "Anadolu Agency: Intel posts 21% revenue jump in Q3 on data center demand", "url": "https://aa.com.tr/en/world/us-chipmaker-intel-posts-21-revenue-jump-in-q3-on-data-center-demand/4105484", "data": "2026-10-30"}
+ ],
+ "ultimo_resultado": "3T26"
+}

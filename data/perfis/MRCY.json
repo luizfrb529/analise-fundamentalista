@@ -1,0 +1,64 @@
+{
+ "ticker": "MRCY",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fornecedora americana de eletrônicos de processamento de sinais e dados para defesa: radares, guerra eletrônica, mísseis e satélites. Voltou ao lucro em 2026 após anos de problemas de execução, com carteira recorde de quase US$ 2,1 bi.",
+ "modelo": "A Mercury fabrica subsistemas eletrônicos (processadores, módulos de radiofrequência, placas e computadores robustos) que vão dentro de radares, sistemas de guerra eletrônica, mísseis e satélites. Vende principalmente às grandes empresas de defesa, como Lockheed, RTX e Northrop, que montam os sistemas finais para o governo americano. Ganha em contratos de desenvolvimento e, depois, de produção por anos.",
+ "segmentos": [],
+ "segmentos_base": "Empresa reporta um único segmento",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Andover, Massachusetts (EUA), com fábricas nos EUA e operações na Europa; a maior parte da receita vem de programas do Departamento de Defesa americano."},
+ "temas": [
+  {"tema": "Defesa e mísseis", "relacao": "Recebeu no trimestre pedido relevante de produção para armamentos avançados e novo pedido para plataforma de defesa antimísseis; a reposição de estoques de mísseis eleva a demanda."},
+  {"tema": "Golden Dome e espaço", "relacao": "Recebeu os primeiros recursos ligados ao rastreamento de mísseis do escudo Golden Dome e novos pedidos para satélites de rastreamento."},
+  {"tema": "Guerra eletrônica", "relacao": "Ganhou espaço no programa do caça F-35, tomando contrato de um concorrente."}
+ ],
+ "diferencial": {
+  "texto": "A Mercury está embarcada em centenas de programas de defesa de longa duração; trocar um subsistema qualificado é caro e demorado, o que cria receita recorrente na fase de produção. Tem tecnologia própria de processamento seguro e de radiofrequência. Os pontos fracos são o histórico recente de atrasos e prejuízos em contratos de preço fixo, a dependência do orçamento americano e a concorrência de divisões internas dos grandes grupos de defesa.",
+  "concorrentes": ["L3Harris", "Curtiss-Wright", "Teledyne", "Kratos", "Anaren (TTM)", "RTX"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 (julho de 2026 a junho de 2027) deve crescer dois dígitos, para perto de US$ 1,1 bi, com Ebitda ajustado de cerca de US$ 210 mi (alta de cerca de 40%) e margem na faixa alta de 10% a 20%; a projeção foi elevada. A carteira é recorde, de US$ 2,06 bi, e a meta de longo prazo é margem de Ebitda ajustado entre 20% e 25%.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "perto de US$ 1,1 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Ebitda ajustado projetado", "valor": "cerca de US$ 210 mi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Carteira de pedidos", "valor": "US$ 2,06 bi", "periodo": "out/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucro recente",
+  "texto": "Lucro líquido de US$ 13,1 mi no trimestre, contra prejuízo de US$ 12,5 mi um ano antes, com margem de Ebitda ajustado de 22,3%. O fluxo de caixa livre foi negativo em US$ 24,4 mi com aumento de estoques, mas a empresa espera caixa positivo no próximo trimestre. Pagou US$ 100 mi de dívida: tinha US$ 110 mi em caixa e US$ 342 mi em dívida em outubro.",
+  "caixa": "US$ 110 mi",
+  "queima_anual": null,
+  "periodo": "out/2026"
+ },
+ "riscos": [
+  "Dependência do orçamento de defesa americano.",
+  "Contratos de preço fixo com risco de estouro de custo.",
+  "Caixa livre negativo no trimestre com aumento de estoques.",
+  "Troca do diretor de contabilidade em novembro de 2026."
+ ],
+ "momento": "No trimestre encerrado em outubro (4T26 no calendário, 1T27 fiscal da empresa, divulgado em 10/11/2026), a receita subiu 12,4%, para US$ 253,2 mi, os pedidos subiram 48%, para US$ 370,5 mi, e a empresa elevou a projeção do ano fiscal. Segundo a imprensa, o consumo de caixa moderou a reação ao resultado recorde.",
+ "destaques_resultado": {
+  "trimestre": "4T26",
+  "divulgado_em": "2026-11-10",
+  "positivos": [
+   "Pedidos recordes de US$ 370,5 mi (1,46 vez a receita).",
+   "Margem bruta de 35,2%, contra 27,9%.",
+   "Projeção do ano fiscal 2027 elevada."
+  ],
+  "negativos": [
+   "Fluxo de caixa livre negativo de US$ 24,4 mi.",
+   "Caixa caiu de US$ 214 mi para US$ 110 mi com pagamento de dívida."
+  ],
+  "atencao": [
+   "Geração de caixa positiva prometida para o próximo trimestre.",
+   "Contratos ligados ao Golden Dome."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Mercury: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1049521/000104952126000096/a2027q1earningsreleaseex.htm", "data": "2026-11-10"},
+  {"titulo": "Mercury: apresentação do 1T27 fiscal (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1049521/000104952126000096/q1fy27earningspresentati.htm", "data": "2026-11-10"},
+  {"titulo": "Finviz: Mercury Systems crushes estimates and raises FY27 outlook", "url": "https://finviz.com/news/420748/mercury-systems-crushes-estimates-and-raises-fy27-outlook-but-margin-peak-and-cash-burn-temper-a-record-quarter", "data": "2026-11"},
+  {"titulo": "Panabee: Mercury Q1 FY27 revenue up 12% to $253 million", "url": "https://www.panabee.com/news/mercury-earnings-q1-2027", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "4T26"
+}
