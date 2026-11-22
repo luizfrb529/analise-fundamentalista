@@ -1,6 +1,6 @@
 {
  "ticker": "TIMS3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-22",
  "resumo": "Operadora móvel controlada pela italiana TIM, com 61,6 milhões de clientes; 91% da receita vem de serviço móvel. Receita e dívida em reais, com caixa líquido sem arrendamentos.",
  "modelo": "A TIM S.A. vende planos de telefonia e internet móvel pós e pré-pagos, banda larga por fibra (TIM Ultrafibra) e soluções para empresas, como conectividade IoT para agronegócio e veículos, além da V8.TECH (TI e nuvem) e da I-Systems (rede neutra de fibra, hoje 100% da TIM). A receita é quase toda recorrente, de assinaturas mensais, com receitas complementares de publicidade móvel, seguros e parcerias. A controladora é o grupo italiano TIM (Telecom Italia).",
  "segmentos": [
@@ -85,5 +85,23 @@
    "data": "2026-11-09"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-09",
+  "positivos": [
+   "Receita líquida de R$ 7,07 bi no 3T26, alta de 5,3% sobre o 3T25.",
+   "Ebitda normalizado de R$ 3,70 bi no 3T26, alta de 6,7%, com margem de 52,4%.",
+   "Caixa líquido de R$ 3,45 bi sem arrendamentos em setembro de 2026."
+  ],
+  "negativos": [
+   "Lucro líquido normalizado de R$ 1,11 bi no 3T26, queda de 7,8%; lucro reportado de R$ 991 mi, queda de 18%.",
+   "Provisão para devedores duvidosos de R$ 249 mi no 3T26, alta de 30,0%."
+  ],
+  "atencao": [
+   "Incorporação da I-Systems em assembleia de 30/11/2026, após ajuste de preço de R$ 207 mi.",
+   "Previsão de distribuir R$ 5,3 bi a R$ 5,5 bi aos acionistas em 2026."
+  ]
+ }
 }
