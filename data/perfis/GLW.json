@@ -1,0 +1,69 @@
+{
+ "ticker": "GLW",
+ "revisado_em": "2026-11-22",
+ "resumo": "Gigante americana de materiais, líder em fibra óptica, vidros para telas (Gorilla Glass), filtros automotivos e materiais para energia solar. Lucrativa e crescendo forte com a demanda por fibra óptica de data centers de IA.",
+ "modelo": "A Corning desenvolve e fabrica materiais especiais: fibras e cabos ópticos para operadoras e data centers, vidros para TVs, celulares e notebooks, substratos e filtros cerâmicos para carros, polissilício e wafers para energia solar (Hemlock) e produtos para laboratórios. Vende muito por contratos longos com grandes clientes.",
+ "segmentos": [
+  {"nome": "Comunicações ópticas", "peso_receita": 0.47, "periodo": "3T26", "obs": "Vendas de US$ 2,38 bi (+44%); redes corporativas +84%."},
+  {"nome": "Vidros (telas e materiais especiais)", "peso_receita": 0.30, "periodo": "3T26", "obs": "Vendas de US$ 1,51 bi (-3%)."},
+  {"nome": "Automotivo", "peso_receita": 0.09, "periodo": "3T26", "obs": "Vendas de US$ 470 mi (+4%)."},
+  {"nome": "Solar", "peso_receita": 0.09, "periodo": "3T26", "obs": "Vendas de US$ 436 mi (+37%)."},
+  {"nome": "Ciências da vida e outros", "peso_receita": 0.06, "periodo": "3T26", "obs": "Vendas de US$ 290 mi (+1%)."}
+ ],
+ "segmentos_base": "Vendas ajustadas (core) por segmento",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Corning, Nova York (EUA); fábricas nos EUA, Ásia e Europa, com muitas vendas para a Ásia."},
+ "temas": [
+  {"tema": "Fibra óptica para data centers de IA", "relacao": "As vendas de produtos ligados a IA generativa mais que dobraram e as vendas de comunicações ópticas subiram 44%."},
+  {"tema": "Energia solar nos EUA", "relacao": "Produz polissilício e wafers solares nos EUA, beneficiada pela política de produção local; o segmento cresceu 37%."},
+  {"tema": "Telecomunicações", "relacao": "Fechou contratos longos de vários bilhões de dólares com Verizon e AT&T no trimestre."}
+ ],
+ "diferencial": {
+  "texto": "A Corning tem mais de um século de pesquisa em vidro e cerâmica, patentes e processos de fabricação muito difíceis de copiar, e é parceira de longo prazo de operadoras, fabricantes de celulares e provedores de nuvem. Os pontos fracos são a exposição ao ciclo de eletrônicos e telas e a concorrência de fabricantes asiáticos em fibra.",
+  "vantagem": {"nivel": "forte", "resumo": "Tecnologia de vidro e fibra óptica construída por mais de um século, com patentes, processos difíceis de copiar e contratos longos."},
+  "concorrentes": ["Prysmian", "CommScope", "Fujikura", "AGC", "Schott", "Furukawa"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas ajustadas do 4T26 devem crescer cerca de 19%, para US$ 5,2 bi a US$ 5,3 bi, com lucro ajustado de US$ 0,96 a US$ 1,00 por ação. O plano Springboard mira dobrar o ritmo anual de vendas de US$ 20 bi para US$ 40 bi até o fim de 2030.",
+  "metricas": [
+   {"rotulo": "Vendas ajustadas projetadas", "valor": "US$ 5,2 bi a US$ 5,3 bi", "periodo": "4T26"},
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 0,96 a US$ 1,00 por ação", "periodo": "4T26"},
+   {"rotulo": "Meta de vendas anualizadas", "valor": "US$ 40 bi", "periodo": "fim de 2030"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 0,78 por ação no 3T26 (+56%) e lucro ajustado de US$ 0,91 (+36%), com margem operacional ajustada de 22,7%. O fluxo de caixa livre ajustado foi de US$ 661 mi no trimestre e US$ 2,27 bi em nove meses.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Ciclo de eletrônicos e telas.",
+  "Concorrência asiática em fibra.",
+  "Dependência de investimentos em data centers.",
+  "Mudanças em incentivos à energia solar."
+ ],
+ "momento": "No 3T26 (divulgado em 27/10/2026), as vendas ajustadas subiram 19%, para US$ 5,08 bi, o maior crescimento desde o lançamento do plano Springboard, puxadas pela fibra óptica para IA.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-27",
+  "positivos": [
+   "Comunicações ópticas cresceram 44%.",
+   "Lucro ajustado por ação subiu 36%.",
+   "Contratos longos com Verizon e AT&T."
+  ],
+  "negativos": [
+   "Vendas de vidros caíram 3%."
+  ],
+  "atencao": [
+   "Execução do plano Springboard.",
+   "Demanda de provedores de nuvem."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Corning: resultados do 3T26 (8-K, Exhibit 99, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm", "data": "2026-10-27"},
+  {"titulo": "Finviz: Corning reports 19% rise in Q3 core sales to $5.08 billion", "url": "https://finviz.com/news/408933/corning-reports-19-rise-in-q3-core-sales-to-508-billion-forecasts-higher-fourth-quarter-earnings", "data": "2026-10-27"},
+  {"titulo": "24/7 Wall St.: Corning Q3 2026, Optical Communications surges 44%", "url": "https://247wallst.com/cards/corning-q3-2026-earnings-glw-01m5ygjxkpmss5xt8bhdwb8b4d", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

@@ -1,0 +1,67 @@
+{
+ "ticker": "CBRS",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana de chips gigantes para inteligência artificial (do tamanho de um wafer inteiro), hoje focada em vender capacidade de inferência na nuvem. Abriu capital em 2026, cresce rápido e tem caixa de US$ 7,8 bi, mas ainda dá prejuízo contábil.",
+ "modelo": "A Cerebras projeta o WSE, um chip do tamanho de um wafer de silício, e vende sistemas completos para empresas e governos ou, cada vez mais, aluga a capacidade em sua própria nuvem, cobrando pelo uso em inferência de modelos de IA. Tem acordos com a OpenAI e canais de venda via Oracle e outros provedores de nuvem.",
+ "segmentos": [
+  {"nome": "Nuvem e serviços", "peso_receita": 0.67, "periodo": "3T26", "obs": "Receita de US$ 141,9 mi (+265%)."},
+  {"nome": "Hardware", "peso_receita": 0.33, "periodo": "3T26", "obs": "Receita de US$ 68,9 mi (-29%)."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Sunnyvale, Califórnia (EUA); data centers nos EUA e clientes também no Oriente Médio."},
+ "temas": [
+  {"tema": "Inferência de IA", "relacao": "Vende inferência de modelos de IA com velocidade muito alta; a nuvem já é 67% da receita, ante 29% um ano antes."},
+  {"tema": "Chips de IA", "relacao": "Concorre com GPUs da Nvidia com uma arquitetura diferente, de chip único gigante."}
+ ],
+ "diferencial": {
+  "texto": "A arquitetura de chip do tamanho de um wafer é única e entrega inferência muito rápida, o que atraiu clientes como a OpenAI, e a carteira de contratos de US$ 26,1 bi dá visibilidade. Os pontos fracos são a concentração em poucos clientes, a margem ainda baixa e a concorrência da Nvidia, que domina o software e o ecossistema de IA.",
+  "vantagem": {"nivel": "moderada", "resumo": "Arquitetura única de chip gigante, com inferência muito rápida e carteira de US$ 26 bi, mas concentrada em poucos clientes e diante da Nvidia."},
+  "concorrentes": ["Nvidia", "AMD", "Groq", "Google (TPU)", "Amazon (Trainium)", "SambaNova"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita ajustada de 2026 deve ficar entre US$ 940 mi e US$ 960 mi, e o CEO espera triplicar a receita em 2027. A carteira de contratos a cumprir chegou a US$ 26,1 bi, segundo a imprensa.",
+  "metricas": [
+   {"rotulo": "Receita ajustada projetada", "valor": "US$ 940 mi a US$ 960 mi", "periodo": "2026"},
+   {"rotulo": "Receita ajustada projetada", "valor": "US$ 310 mi a US$ 330 mi", "periodo": "4T26"},
+   {"rotulo": "Carteira de contratos", "valor": "US$ 26,1 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo contábil de US$ 161,2 mi no 3T26, com margem bruta de 20%, mas lucro ajustado de US$ 29,8 mi e margem bruta ajustada de 41%. Após o IPO de 2026, que rendeu US$ 6,2 bi líquidos, tem US$ 7,8 bi em caixa e aplicações.",
+  "caixa": "US$ 7,8 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concentração em poucos clientes.",
+  "Concorrência da Nvidia.",
+  "Margem bruta ainda baixa.",
+  "Execução da expansão de data centers."
+ ],
+ "momento": "No 3T26 (divulgado em 12/11/2026), o primeiro resultado após o IPO, a receita subiu 55%, para US$ 210,8 mi, e a empresa elevou a projeção de 2026.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Receita de nuvem subiu 265%.",
+   "Projeção de 2026 elevada.",
+   "Carteira de US$ 26,1 bi."
+  ],
+  "negativos": [
+   "Prejuízo contábil de US$ 161,2 mi.",
+   "Receita de hardware caiu 29%."
+  ],
+  "atencao": [
+   "Evolução da margem bruta.",
+   "Diversificação de clientes."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Cerebras: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2021728/000162828026073366/cbrsannouncesfinancialresu.htm", "data": "2026-11-12"},
+  {"titulo": "Finviz: Cerebras delivers record revenue in Q3 2026, raises full-year outlook", "url": "https://finviz.com/news/422151/cerebras-systems-delivers-record-revenue-in-third-quarter-2026-raises-full-year-outlook", "data": "2026-11-12"},
+  {"titulo": "InvestingLive: Cerebras raises 2026 outlook, sees revenue tripling in 2027", "url": "https://investinglive.com/stocks/cerebras-raises-2026-outlook-sees-revenue-tripling-in-2027-as-26bn-backlog-builds/", "data": "2026-11"},
+  {"titulo": "Crypto Briefing: Cerebras revenue climbs 55% in Q3 2026", "url": "https://cryptobriefing.com/cerebras-q3-2026-earnings-revenue-miss/", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

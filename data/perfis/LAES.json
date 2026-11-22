@@ -1,0 +1,64 @@
+{
+ "ticker": "LAES",
+ "revisado_em": "2026-11-22",
+ "resumo": "Empresa suíça de chips de segurança e criptografia, com foco em chips resistentes a computadores quânticos (pós-quânticos). Pequena e ainda com prejuízo, mas com caixa de cerca de US$ 486 mi após várias emissões de ações.",
+ "modelo": "A SEALSQ, controlada pela WISeKey, vende chips de segurança (secure elements e TPM) que protegem dispositivos conectados, além de certificados digitais e serviços de infraestrutura de chaves (PKI). Também projeta chips para terceiros pela IC'Alps e investe em empresas de computação quântica e em centros de testes e fabricação de chips na Europa.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 11,2 mi no 1S26 (+131%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Genebra (Suíça); operações na França e na Espanha e clientes na Europa, EUA e Ásia."},
+ "temas": [
+  {"tema": "Criptografia pós-quântica", "relacao": "O chip QS7001, resistente a ataques de computadores quânticos, recebeu certificação do NIST e deve começar a gerar receita no fim de 2026."},
+  {"tema": "Computação quântica", "relacao": "Investe em empresas do setor, como a francesa Quobly, e reservou US$ 200 mi para o fundo SEALQuantum."},
+  {"tema": "Soberania em semicondutores", "relacao": "O projeto Quantix, em Múrcia (Espanha), cria um centro de testes e montagem de chips na Europa."}
+ ],
+ "diferencial": {
+  "texto": "A SEALSQ está entre as primeiras a ter chips pós-quânticos certificados e tem décadas de experiência em chips de segurança herdada da WISeKey. Mas é muito pequena frente a gigantes como Infineon, NXP e STMicro, que também desenvolvem soluções pós-quânticas, e a receita ainda é baixa. A vantagem é tecnológica e ainda não comprovada em escala comercial.",
+  "vantagem": {"nivel": "fraca", "resumo": "Saiu cedo com chips pós-quânticos certificados, mas é muito pequena frente a Infineon, NXP e STMicro, que disputam o mesmo mercado."},
+  "concorrentes": ["Infineon", "NXP Semiconductors", "STMicroelectronics", "Microchip", "Thales"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 27 mi e US$ 36 mi, alta de 50% a 100%, e há mais de US$ 100 mi em projetos pós-quânticos em negociação, ainda sujeitos a conversão. O potencial depende da adoção da criptografia pós-quântica por governos e indústria.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 27 mi a US$ 36 mi", "periodo": "2026"},
+   {"rotulo": "Projetos pós-quânticos em negociação", "valor": "acima de US$ 100 mi", "periodo": "set/2026"},
+   {"rotulo": "Caixa", "valor": "US$ 486,1 mi", "periodo": "jun/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo de US$ 27,8 mi no 1S26, maior que os US$ 20,0 mi de um ano antes, com receita de apenas US$ 11,2 mi. O caixa de US$ 486,1 mi cobre vários anos de prejuízo, mas veio de emissões de ações: o número de ações subiu de 191,5 milhões para 223,4 milhões só no semestre, diluindo os acionistas.",
+  "caixa": "US$ 486,1 mi",
+  "queima_anual": null,
+  "periodo": "jun/2026"
+ },
+ "riscos": [
+  "Diluição por novas emissões de ações.",
+  "Receita pequena e prejuízo crescente.",
+  "Concorrência de grandes fabricantes de chips.",
+  "Adoção lenta da criptografia pós-quântica."
+ ],
+ "momento": "No 1S26 (divulgado em 11/09/2026), a receita subiu 131%, para US$ 11,2 mi, e a empresa manteve a projeção de 2026; em outubro, o QS7001 avançou na certificação de segurança.",
+ "destaques_resultado": {
+  "trimestre": "1S26",
+  "divulgado_em": "2026-09-11",
+  "positivos": [
+   "Receita subiu 131%.",
+   "Projeção de 2026 mantida.",
+   "Caixa elevado."
+  ],
+  "negativos": [
+   "Prejuízo cresceu para US$ 27,8 mi.",
+   "Forte diluição dos acionistas."
+  ],
+  "atencao": [
+   "Início das vendas do QS7001.",
+   "Uso do caixa em investimentos quânticos."
+  ]
+ },
+ "fontes": [
+  {"titulo": "SEALSQ: resultados do 1S26 (6-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1951222/000121390026099027/ea030520701ex99-1.htm", "data": "2026-09-11"},
+  {"titulo": "The Quantum Insider: SEALSQ reports 131% revenue growth in H1 2026", "url": "https://thequantuminsider.com/2026/09/11/sealsq-h1-2026-results-fy2026-guidance/", "data": "2026-09-11"},
+  {"titulo": "Finviz (GlobeNewswire): SEALSQ reports H1 2026 results", "url": "https://finviz.com/news/391242/sealsq-reports-h1-2026-financial-and-operational-results-revenue-increases-131-to-112-million-fy2026-guidance-reaffirmed", "data": "2026-09-11"}
+ ],
+ "ultimo_resultado": "2T26"
+}

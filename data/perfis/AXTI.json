@@ -1,0 +1,65 @@
+{
+ "ticker": "AXTI",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante de wafers de fosfeto de índio e arseneto de gálio, base para lasers ópticos de data centers de IA, com fábricas na China. Voltou a dar lucro em 2026 com receita recorde e tem caixa elevado.",
+ "modelo": "A AXT fabrica substratos (wafers) de materiais semicondutores especiais, principalmente fosfeto de índio, arseneto de gálio e germânio, que viram lasers e receptores ópticos, chips de RF e células solares espaciais. Também vende matérias-primas como gálio e índio por empresas associadas. A produção fica na China, pela subsidiária Tongmei.",
+ "segmentos": [
+  {"nome": "Fosfeto de índio (InP)", "peso_receita": 0.74, "periodo": "3T26", "obs": "Receita recorde de US$ 54,3 mi, mais que o quádruplo de um ano antes."},
+  {"nome": "Arseneto de gálio, germânio e matérias-primas", "peso_receita": 0.26, "periodo": "3T26", "obs": "Arseneto de gálio com US$ 9,1 mi; restante em germânio e matérias-primas."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Fremont, Califórnia (EUA); fábricas na China e clientes na Ásia, Europa e EUA."},
+ "temas": [
+  {"tema": "Óptica para data centers de IA", "relacao": "O fosfeto de índio é base dos lasers dos transceptores ópticos que ligam servidores de IA; a demanda supera a oferta, segundo a empresa."},
+  {"tema": "Tensão EUA e China", "relacao": "As exportações de fosfeto de índio da China dependem de licenças do governo chinês, o que é um risco permanente."}
+ ],
+ "diferencial": {
+  "texto": "A AXT é uma das poucas fabricantes mundiais de wafers de fosfeto de índio em escala, com acesso a matérias-primas por empresas associadas na China, e o mercado está com falta de oferta. Os pontos fracos são a dependência de licenças de exportação chinesas, a concentração em poucos clientes e a concorrência de Sumitomo e JX Advanced Metals.",
+  "vantagem": {"nivel": "moderada", "resumo": "Uma das poucas fabricantes de wafers de fosfeto de índio em escala, com matéria-prima própria, mas dependente de licenças de exportação chinesas."},
+  "concorrentes": ["Sumitomo Electric", "JX Advanced Metals", "Freiberger", "Coherent", "IQE"]
+ },
+ "potencial": {
+  "texto": "O potencial vem da demanda por fosfeto de índio para óptica de IA, que supera a oferta, e da ampliação de capacidade. A carteira de pedidos passou de US$ 500 mi, segundo a imprensa. A empresa não traz projeção numérica no release.",
+  "metricas": [
+   {"rotulo": "Receita trimestral recorde", "valor": "US$ 73,4 mi (+162%)", "periodo": "3T26"},
+   {"rotulo": "Margem bruta", "valor": "56,0%", "periodo": "3T26"},
+   {"rotulo": "Caixa e equivalentes", "valor": "US$ 485,5 mi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucro recente",
+  "texto": "Lucro de US$ 25,7 mi no 3T26 (US$ 0,39 por ação), após anos de prejuízo, com margem bruta de 56%. Tem US$ 485,5 mi em caixa, além de US$ 299 mi em aplicações, o que dá folga para expandir capacidade.",
+  "caixa": "US$ 485,5 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Licenças de exportação da China.",
+  "Concentração em poucos clientes.",
+  "Ciclo de investimento em data centers.",
+  "Tensões comerciais EUA e China."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita bateu recorde de US$ 73,4 mi, alta de 162%, puxada pelo fosfeto de índio, e a empresa teve lucro de US$ 25,7 mi.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Receita recorde, alta de 162%.",
+   "Margem bruta de 56%.",
+   "Lucro de US$ 25,7 mi."
+  ],
+  "negativos": [
+   "Dependência de licenças de exportação."
+  ],
+  "atencao": [
+   "Expansão de capacidade.",
+   "Política comercial da China."
+  ]
+ },
+ "fontes": [
+  {"titulo": "AXT: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1051627/000143774926033941/ex_1013304.htm", "data": "2026-10-29"},
+  {"titulo": "Zacks: AXTI Q3 earnings beat on record InP sales and margin gains", "url": "https://zacks.com/stock/news/3019890/axti-q3-earnings-beat-on-record-inp-sales-and-margin-gains", "data": "2026-10"},
+  {"titulo": "Semiconductor Today: AXT", "url": "https://semiconductor-today.com/news_items/2026/nov/axt-161126.shtml", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}
