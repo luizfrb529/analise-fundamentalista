@@ -1,6 +1,6 @@
 {
  "ticker": "FIQE3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-22",
  "resumo": "Operadora regional de fibra e telefonia móvel em Santa Catarina, Rio Grande do Sul e Paraná. O controlador lançou em out/26 oferta de R$ 6 por ação para tirar a empresa do Novo Mercado, hoje em disputa com minoritários.",
  "modelo": "A Unifique vende banda larga por fibra óptica, telefonia móvel 4G/5G com rede própria, TV, telefonia fixa e datacenter para residências e empresas, com 927,6 mil acessos de banda larga e 381,5 mil acessos móveis em set/26. A receita é recorrente, de assinaturas mensais, e 80% vem do varejo (B2C). A empresa cresce por expansão de rede, venda de combos fibra mais móvel e compra de provedores regionais, como a 3D Telecom (agosto de 2026).",
  "segmentos": [
@@ -97,5 +97,24 @@
    "data": "2026-11-16"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-11",
+  "positivos": [
+   "Receita líquida de R$ 360,0 mi no 3T26, alta de 17,6% sobre o 3T25.",
+   "Ebitda ajustado de R$ 178,3 mi no 3T26, alta de 11,0%.",
+   "Alavancagem de 0,62x dívida líquida sobre Ebitda."
+  ],
+  "negativos": [
+   "Margem Ebitda ajustada de 49,5% no 3T26, ante 52,5% no 3T25.",
+   "Capex de R$ 110,5 mi no 3T26, alta de 46,2%.",
+   "Lucro líquido de R$ 67,4 mi no 3T26, alta de apenas 4,0%."
+  ],
+  "atencao": [
+   "Oferta de R$ 6,00 por ação da controladora para saída do Novo Mercado, com registro suspenso e nova avaliação pedida por minoritários.",
+   "Acordo de 23/10/2026 com a AST SpaceMobile para internet móvel via satélite."
+  ]
+ }
 }
