@@ -1,0 +1,62 @@
+{
+ "ticker": "AFRM",
+ "revisado_em": "2026-11-22",
+ "resumo": "Principal empresa de parcelamento de compras no ponto de venda (BNPL) dos EUA, que financia compras em parcelas para consumidores em lojas online e físicas e pelo Affirm Card. Lucrativa, com volume crescendo 34%.",
+ "modelo": "A Affirm cobra taxas dos comerciantes por oferecer parcelamento e juros dos consumidores nos planos com juros, além de vender carteiras de empréstimos a investidores e securitizá-las. Usa modelos próprios de análise de crédito para aprovar cada compra e não cobra multa por atraso.",
+ "segmentos": [],
+ "segmentos_base": "Volume (GMV) de US$ 14,4 bi no 1º tri fiscal 2027 (+34%); receita de US$ 1,26 bi (+35%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em San Francisco (EUA); opera principalmente nos EUA, com presença no Canadá e no Reino Unido."},
+ "temas": [
+  {"tema": "Crédito ao consumidor e fintechs", "relacao": "O volume cresceu acima de 30% pelo 12º trimestre seguido, e a inadimplência acima de 30 dias ficou em 2,9%."},
+  {"tema": "Pagamentos digitais", "relacao": "O Affirm Card teve volume de US$ 3,3 bi (+117%), já 23% do total, com 6 milhões de usuários ativos."}
+ ],
+ "diferencial": {
+  "texto": "A Affirm tem parcerias exclusivas com grandes varejistas e plataformas, como Amazon e Shopify, modelos de crédito treinados com anos de dados e financiamento diversificado, o que a coloca à frente de muitos rivais. Mas o BNPL é competitivo, com Klarna, PayPal e bancos, e a empresa depende do mercado de capitais para financiar os empréstimos e do comportamento do crédito ao consumidor.",
+  "vantagem": {"nivel": "moderada", "resumo": "Parcerias com grandes varejistas e modelos de crédito com anos de dados, mas em mercado competitivo e dependente de financiamento externo."},
+  "concorrentes": ["Klarna", "PayPal", "Block (Afterpay)", "Apple", "Bancos e emissores de cartão"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o volume do ano fiscal 2027 (até jun/2027) deve passar de US$ 65,25 bi, com margem operacional acima de 14,75% e margem ajustada acima de 30,75%, e o 2º tri fiscal deve ter volume de US$ 17,9 bi a US$ 18,2 bi.",
+  "metricas": [
+   {"rotulo": "Volume projetado", "valor": "acima de US$ 65,25 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Consumidores ativos", "valor": "28,7 milhões (+19%)", "periodo": "set/2026"},
+   {"rotulo": "Capacidade de financiamento", "valor": "US$ 31,7 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 164 mi no trimestre, o dobro de um ano antes, com lucro operacional de US$ 187 mi (14,8% de margem) e margem operacional ajustada de 30,1%. Tem US$ 31,7 bi em capacidade de financiamento para os empréstimos.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Piora do crédito ao consumidor.",
+  "Dependência do mercado de capitais para financiar empréstimos.",
+  "Concorrência no parcelamento.",
+  "Regulação do BNPL."
+ ],
+ "momento": "No 1º tri fiscal 2027 (divulgado em 05/11/2026), o volume subiu 34%, para US$ 14,4 bi, o lucro dobrou e a empresa elevou o piso de crescimento do ano para 30%; o CEO é o fundador Max Levchin.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Volume subiu 34%.",
+   "Lucro dobrou.",
+   "Affirm Card cresceu 117%."
+  ],
+  "negativos": [
+   "Inadimplência subiu levemente."
+  ],
+  "atencao": [
+   "Qualidade do crédito.",
+   "Custo de financiamento."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Affirm: carta aos acionistas do 1º tri fiscal 2027 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1820953/000162828026071005/affirmfq127shareholderle.htm", "data": "2026-11-05"},
+  {"titulo": "Crypto Briefing: Affirm raises growth floor and AI underwriting", "url": "https://cryptobriefing.com/affirm-raises-growth-floor-ai-underwriting/", "data": "2026-11"},
+  {"titulo": "Panabee: Affirm fiscal Q1 2027 revenue grows 35% to $1.26 billion", "url": "https://www.panabee.com/news/affirm-earnings-q1-2027", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

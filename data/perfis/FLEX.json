@@ -1,0 +1,66 @@
+{
+ "ticker": "FLEX",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das maiores fabricantes terceirizadas de eletrônicos do mundo, que monta produtos para outras marcas e fabrica infraestrutura de energia e refrigeração para data centers. Lucrativa e crescendo 25%, com plano de separar o negócio de data centers.",
+ "modelo": "A Flex projeta e fabrica, sob contrato, produtos para empresas de tecnologia, saúde, carros, indústria e consumo, ganhando uma margem sobre a montagem e cadeia de suprimentos. O segmento de nuvem e infraestrutura de energia (CPI) fabrica racks, sistemas de energia e refrigeração para data centers, e será separado na empresa Axiom.",
+ "segmentos": [
+  {"nome": "Nuvem e infraestrutura de energia (CPI)", "peso_receita": 0.29, "periodo": "3T26", "obs": "Receita de US$ 2,5 bi (+54%); margem de 10,7%, segundo a imprensa."},
+  {"nome": "Demais negócios (manufatura terceirizada)", "peso_receita": 0.71, "periodo": "3T26", "obs": "Saúde, carros, indústria e consumo."}
+ ],
+ "segmentos_base": "Receita (trimestre fiscal encerrado em set/2026)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede formal em Singapura e operacional em Austin, Texas (EUA); fábricas em cerca de 30 países."},
+ "temas": [
+  {"tema": "Infraestrutura de data centers", "relacao": "O segmento de data centers deve crescer de 75% a 85% no ano fiscal 2027, segundo a empresa, com sistemas de energia e refrigeração."},
+  {"tema": "Cisões corporativas", "relacao": "Planeja separar o segmento de nuvem e energia na empresa Axiom, com conclusão prevista para o início de 2027."}
+ ],
+ "diferencial": {
+  "texto": "A Flex tem escala global de fabricação, cadeia de suprimentos ampla e experiência em produtos complexos e regulados, além de produtos próprios de energia para data centers com margem maior. Mas a manufatura terceirizada é um negócio de margem baixa e muito competitivo, em que os clientes podem trocar de fornecedor.",
+  "vantagem": {"nivel": "fraca", "resumo": "Escala global e produtos próprios de energia para data centers, mas o grosso do negócio é manufatura terceirizada de margem baixa e competitiva."},
+  "concorrentes": ["Jabil", "Foxconn", "Celestica", "Sanmina", "Vertiv"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 (até mar/2027) deve ficar entre US$ 34,9 bi e US$ 35,9 bi, com margem ajustada de 7,6% a 7,8% e lucro ajustado de US$ 4,84 a US$ 5,16 por ação. A separação da Axiom pode destacar o valor do negócio de data centers.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 34,9 bi a US$ 35,9 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 4,84 a US$ 5,16 por ação", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Crescimento previsto do segmento CPI", "valor": "75% a 85%", "periodo": "ano fiscal 2027"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 263 mi no trimestre (US$ 0,70 por ação; US$ 1,18 ajustado), com margem operacional ajustada de 7,1% e fluxo de caixa livre de US$ 261 mi. Não recomprou ações no semestre, priorizando aquisições como a EPC Power.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Margem baixa da manufatura terceirizada.",
+  "Dependência do ciclo de data centers.",
+  "Execução da separação da Axiom.",
+  "Tarifas e cadeia de suprimentos global."
+ ],
+ "momento": "No 2º tri fiscal 2027 (divulgado em 28/10/2026), a receita subiu 25%, para US$ 8,5 bi, com o segmento de data centers crescendo 54%, e a empresa elevou a projeção do ano; a CEO é Revathi Advaithi.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "Receita subiu 25%.",
+   "Data centers cresceram 54%.",
+   "Projeção anual elevada."
+  ],
+  "negativos": [
+   "Caixa livre menor que um ano antes.",
+   "Ações caíram após o resultado."
+  ],
+  "atencao": [
+   "Separação da Axiom.",
+   "Integração da EPC Power."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Flex: resultados do 2º tri fiscal 2027 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000039/flexex991-9252026.htm", "data": "2026-10-28"},
+  {"titulo": "Seeking Alpha: Flex reports second quarter fiscal 2027 results", "url": "https://seekingalpha.com/pr/20703069", "data": "2026-10-28"},
+  {"titulo": "Barchart: Flex Q2 deep dive, AI infrastructure and spin-off strategy", "url": "https://www.barchart.com/story/news/3583870/flex-q2-deep-dive-ai-infrastructure-and-spin-off-strategy-drive-revenue-growth-market-reacts-cautiously", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

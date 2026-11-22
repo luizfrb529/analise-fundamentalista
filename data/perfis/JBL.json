@@ -1,0 +1,62 @@
+{
+ "ticker": "JBL",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das maiores fabricantes terceirizadas de eletrônicos e componentes do mundo, hoje muito ligada a data centers de IA. Lucrativa, com receita de US$ 36 bi no ano fiscal 2026 e projeção de crescer 24% em 2027.",
+ "modelo": "A Jabil fabrica, sob contrato, servidores, racks, equipamentos de rede e energia para data centers, além de componentes para saúde, carros elétricos, energia renovável, embalagens e eletrônicos de consumo, ganhando margem sobre a manufatura e a cadeia de suprimentos.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 10,6 bi no 4º tri fiscal 2026 (+28,6%) e US$ 36,0 bi no ano (+21%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em St. Petersburg, Flórida (EUA); fábricas em dezenas de países."},
+ "temas": [
+  {"tema": "Infraestrutura de data centers de IA", "relacao": "A receita ligada a IA deve subir cerca de 54%, para US$ 22,1 bi no ano fiscal 2027, segundo a imprensa."},
+  {"tema": "Cadeia de suprimentos", "relacao": "Restrições na oferta de memória afetaram a percepção do mercado após o resultado."}
+ ],
+ "diferencial": {
+  "texto": "A Jabil tem escala global, relacionamento longo com grandes empresas de tecnologia e capacidade de fabricar produtos complexos de data centers. Mas a manufatura terceirizada tem margem baixa, cerca de 6%, alta concentração em poucos clientes e concorrência forte de Foxconn, Flex e Celestica.",
+  "vantagem": {"nivel": "fraca", "resumo": "Escala global e relação com grandes empresas de tecnologia, mas margem baixa, clientes concentrados e concorrência forte."},
+  "concorrentes": ["Foxconn", "Flex", "Celestica", "Sanmina", "Wistron"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 (até ago/2027) deve chegar a cerca de US$ 44,5 bi (+24%), com margem ajustada de 6,1%, lucro ajustado de cerca de US$ 17,55 por ação e caixa livre ajustado de cerca de US$ 1,6 bi, puxada pela IA.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "cerca de US$ 44,5 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Lucro ajustado projetado", "valor": "cerca de US$ 17,55 por ação", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Margem operacional ajustada", "valor": "5,8%", "periodo": "ano fiscal 2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 9,75 por ação no ano fiscal 2026 (US$ 13,09 ajustado), com caixa livre ajustado de US$ 1,53 bi. Recomprou cerca de US$ 1,06 bi em ações no ano.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Concentração em poucos grandes clientes.",
+  "Margem baixa do setor.",
+  "Dependência do ciclo de IA.",
+  "Restrições de componentes como memória."
+ ],
+ "momento": "No 4º tri fiscal 2026 (divulgado em 30/09/2026), a receita subiu 28,6%, para US$ 10,6 bi, acima do esperado, e a empresa projetou crescer 24% em 2027, mas as ações caíram com preocupações sobre oferta de memória; o CEO é Mike Dastoor.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-30",
+  "positivos": [
+   "Receita do trimestre subiu 28,6%.",
+   "Projeção de crescer 24% em 2027.",
+   "Caixa livre acima de US$ 1,5 bi."
+  ],
+  "negativos": [
+   "Ações caíram após o resultado."
+  ],
+  "atencao": [
+   "Oferta de memória.",
+   "Conversão da receita de IA."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Jabil: resultados do 4º tri fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/898293/000162828026063890/jbl-20260930ex991.htm", "data": "2026-09-30"},
+  {"titulo": "Zacks: Jabil's FY27 AI revenue surge could redefine its growth story", "url": "https://www.zacks.com/stock/news/3003104/jabil-s-fy27-ai-revenue-surge-could-redefine-its-growth-story-in-2027", "data": "2026-10"},
+  {"titulo": "Finviz: Jabil shares fall despite Q4 earnings beat and higher FY2027 outlook", "url": "https://finviz.com/news/397095/jabil-shares-fall-4-despite-fourth-quarter-earnings-beat-and-higher-fiscal-2027-outlook", "data": "2026-09-30"}
+ ],
+ "ultimo_resultado": "3T26"
+}

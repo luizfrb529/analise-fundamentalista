@@ -1,0 +1,66 @@
+{
+ "ticker": "XYZ",
+ "revisado_em": "2026-11-22",
+ "resumo": "Empresa americana de serviços financeiros e pagamentos, dona do Cash App (conta digital e pagamentos entre pessoas) e do Square (maquininhas e software para comerciantes), além de iniciativas em bitcoin. Lucrativa e com lucro operacional ajustado quase dobrando.",
+ "modelo": "A Block ganha taxas sobre pagamentos de comerciantes no Square e, no Cash App, com cartão de débito, transferências instantâneas, empréstimos de curto prazo (Cash App Borrow, Afterpay), compra e venda de bitcoin e serviços bancários. O lucro bruto é a principal medida do negócio.",
+ "segmentos": [
+  {"nome": "Cash App", "peso_receita": 0.64, "periodo": "3T26", "obs": "Lucro bruto de US$ 2,07 bi (+27%); 60 milhões de usuários ativos."},
+  {"nome": "Square", "peso_receita": 0.36, "periodo": "3T26", "obs": "Lucro bruto de US$ 1,16 bi (+14%); volume de pagamentos +14%."}
+ ],
+ "segmentos_base": "Lucro bruto por segmento",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Oakland, Califórnia (EUA); maior parte do negócio nos EUA, com Square e Afterpay também em outros países."},
+ "temas": [
+  {"tema": "Fintechs e crédito digital", "relacao": "O crédito no Cash App impulsionou o lucro, mas as perdas com empréstimos subiram 65,6%, para US$ 602 mi, segundo a imprensa."},
+  {"tema": "Bitcoin", "relacao": "A receita com bitcoin foi de US$ 1,8 bi, mas com lucro bruto de apenas US$ 52 mi, metade de um ano antes."}
+ ],
+ "diferencial": {
+  "texto": "A Block tem duas redes com efeito de rede: o Cash App, com dezenas de milhões de usuários que trocam dinheiro entre si, e o Square, com milhões de comerciantes, o que facilita vender crédito e outros serviços. Mas enfrenta concorrência forte de PayPal (Venmo), bancos, Toast e Stripe, e o crédito ao consumidor traz risco de perdas.",
+  "vantagem": {"nivel": "moderada", "resumo": "Efeito de rede no Cash App e no Square, que facilita vender crédito e serviços, mas com concorrência forte de PayPal, bancos e Stripe."},
+  "concorrentes": ["PayPal (Venmo)", "Stripe", "Toast", "Shopify", "Chime", "Bancos tradicionais"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro bruto de 2026 deve chegar a cerca de US$ 12,63 bi (+22%), com lucro operacional ajustado de US$ 3,52 bi e lucro ajustado de US$ 4,15 por ação; a projeção preliminar de lucro bruto para 2027 é de US$ 14,52 bi, segundo a imprensa.",
+  "metricas": [
+   {"rotulo": "Lucro bruto projetado", "valor": "cerca de US$ 12,63 bi", "periodo": "2026"},
+   {"rotulo": "Lucro ajustado projetado", "valor": "cerca de US$ 4,15 por ação", "periodo": "2026"},
+   {"rotulo": "Margem operacional ajustada", "valor": "29%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 0,92 por ação no 3T26 (US$ 1,13 ajustado, mais que o dobro de um ano antes), com lucro operacional ajustado de US$ 923 mi. O crescimento do crédito aumentou as perdas com empréstimos, e a empresa recomprou cerca de US$ 700 mi em ações no ano.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Perdas com crédito ao consumidor.",
+  "Concorrência em pagamentos.",
+  "Regulação de fintechs e bitcoin.",
+  "Crescimento lento de usuários do Cash App."
+ ],
+ "momento": "No 3T26 (divulgado em 03/11/2026), o lucro bruto subiu 22% e o lucro operacional ajustado, 92%, e a empresa elevou a projeção pela terceira vez seguida; as ações subiram. O cofundador Jack Dorsey lidera a empresa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-03",
+  "positivos": [
+   "Lucro bruto subiu 22%.",
+   "Lucro operacional ajustado subiu 92%.",
+   "Projeção elevada pela terceira vez."
+  ],
+  "negativos": [
+   "Perdas com empréstimos subiram 65,6%.",
+   "Lucro com bitcoin caiu pela metade."
+  ],
+  "atencao": [
+   "Qualidade do crédito.",
+   "Usuários ativos do Cash App."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Block: carta aos acionistas do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026069513/q32026shareholderletter.htm", "data": "2026-11-03"},
+  {"titulo": "SiliconANGLE: Block shares rise after third-quarter beat and a third straight guidance raise", "url": "https://siliconangle.com/2026/11/03/block-shares-rise-after-third-quarter-beat-and-a-third-straight-guidance-raise/", "data": "2026-11-03"},
+  {"titulo": "The Star: Block raises full-year profit outlook as Cash App drives Q3 growth", "url": "https://www.thestar.com.my/tech/tech-news/2026/11/04/block-raises-full-year-profit-outlook-as-cash-app-drives-q3-growth", "data": "2026-11-04"}
+ ],
+ "ultimo_resultado": "3T26"
+}
