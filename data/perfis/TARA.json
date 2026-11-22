@@ -1,0 +1,63 @@
+{
+ "ticker": "TARA",
+ "revisado_em": "2026-11-22",
+ "resumo": "Biotecnológica americana em fase clínica, com o TARA-002, uma imunoterapia bacteriana, para câncer de bexiga e malformações linfáticas, e cloreto de colina intravenoso para nutrição. Sem receita, com caixa de US$ 143 mi até 2028.",
+ "modelo": "A Protara ainda não vende produtos: investe em pesquisa clínica e pretende ganhar com a venda de medicamentos aprovados. O TARA-002 é uma preparação de bactéria Streptococcus inativada aplicada no local da doença; o outro programa é o cloreto de colina intravenoso para pacientes em nutrição parenteral.",
+ "segmentos": [],
+ "segmentos_base": "Sem receita; empresa em fase clínica",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA); estudos clínicos principalmente nos EUA."},
+ "temas": [
+  {"tema": "Câncer de bexiga", "relacao": "O estudo ADVANCED-2, em câncer de bexiga não invasivo resistente ao BCG, deve concluir a inclusão de pacientes no 4T26."},
+  {"tema": "Doenças raras", "relacao": "O estudo STARBORN-1 em malformações linfáticas deve terminar a inclusão no início de 2027, com pedido de aprovação previsto para o segundo semestre de 2027."}
+ ],
+ "diferencial": {
+  "texto": "O TARA-002 tem um mecanismo já usado no Japão para malformações linfáticas e é aplicado localmente, o que pode dar vantagem de segurança. Mas a empresa ainda não tem produto aprovado, o mercado de câncer de bexiga resistente ao BCG tem várias terapias concorrentes avançadas, e o sucesso depende dos resultados clínicos.",
+  "vantagem": {"nivel": "nenhuma clara", "resumo": "Sem produto aprovado; o diferencial depende de resultados clínicos ainda em andamento, em mercado com várias terapias concorrentes."},
+  "concorrentes": ["Johnson & Johnson", "CG Oncology", "UroGen Pharma", "ImmunityBio", "Ferring"]
+ },
+ "potencial": {
+  "texto": "O potencial vem de resultados positivos e da aprovação do TARA-002, com pedido de aprovação em malformações linfáticas previsto para o segundo semestre de 2027, e dos resultados intermediários do THRIVE-3 esperados no 4T26.",
+  "metricas": [
+   {"rotulo": "Caixa e aplicações", "valor": "US$ 143,1 mi", "periodo": "set/2026"},
+   {"rotulo": "Caixa suficiente até", "valor": "2028", "periodo": "set/2026"},
+   {"rotulo": "Pedido de aprovação (malformações linfáticas)", "valor": "início previsto", "periodo": "2º semestre de 2027"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo de US$ 21,7 mi no 3T26, com gastos de pesquisa de US$ 16,8 mi, quase o dobro de um ano antes. O caixa de US$ 143,1 mi financia as operações até 2028, segundo a empresa, e há um programa de venda de ações de até US$ 100 mi ainda não usado.",
+  "caixa": "US$ 143,1 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Resultados clínicos negativos.",
+  "Aprovação regulatória.",
+  "Concorrência em câncer de bexiga.",
+  "Diluição por novas emissões."
+ ],
+ "momento": "No 3T26 (divulgado em 06/11/2026), a empresa manteve os prazos dos estudos, anunciou o redesenho do ADVANCED-3 e, em novembro, acertou a compra dos ativos de fabricação do TARA-002 por US$ 8,75 mi.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-06",
+  "positivos": [
+   "Caixa até 2028.",
+   "Compra de ativos de fabricação do TARA-002."
+  ],
+  "negativos": [
+   "Gastos de pesquisa quase dobraram.",
+   "Redesenho do estudo ADVANCED-3."
+  ],
+  "atencao": [
+   "Resultados do THRIVE-3 no 4T26.",
+   "Conclusão do ADVANCED-2."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Protara: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1359931/000121390026116607/ea030956701ex99-1.htm", "data": "2026-11-06"},
+  {"titulo": "Protara: 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1359931/000121390026116612/ea0309353-10q_protara.htm", "data": "2026-11-06"},
+  {"titulo": "Finviz: Protara announces third quarter 2026 results", "url": "https://finviz.com/news/418330/protara-therapeutics-announces-third-quarter-2026-financial-results-and-provides-a-business-update", "data": "2026-11-06"},
+  {"titulo": "BiopharmaWatch: Protara Q3 2026 results update", "url": "https://www.biopharmawatch.com/news/TARA/protara-therapeutics-q3-2026-results-update", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

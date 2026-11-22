@@ -1,0 +1,63 @@
+{
+ "ticker": "BMNR",
+ "revisado_em": "2026-11-22",
+ "resumo": "Empresa americana que funciona como tesouraria de Ethereum: emite ações para comprar e fazer staking de ETH, e já detém cerca de 5% de toda a oferta da moeda. O valor da ação depende quase totalmente do preço do Ethereum.",
+ "modelo": "A BitMine vende ações no mercado (ATM) e usa o dinheiro para comprar Ethereum, que mantém em carteira e coloca em staking (validação da rede) pela plataforma MAVAN, recebendo recompensas em ETH. A meta declarada é deter 5% da oferta de ETH. O presidente do conselho é o estrategista Tom Lee.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 124,8 mi no ano fiscal 2026 (até ago/2026), 97% de staking",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Las Vegas (EUA); o principal ativo é Ethereum, negociado globalmente."},
+ "temas": [
+  {"tema": "Criptomoedas", "relacao": "Detinha 6.077.745 ETH em 15/11/2026, cerca de 4,97% da oferta, a maior posição corporativa da moeda."},
+  {"tema": "Staking e tokenização", "relacao": "Tem cerca de 5,2 milhões de ETH em staking, com receita anualizada estimada em US$ 245 mi, segundo a empresa."}
+ ],
+ "diferencial": {
+  "texto": "A BitMine tem a maior posição corporativa de Ethereum do mundo e gera receita de staking, mas o negócio é essencialmente uma carteira alavancada na moeda: qualquer empresa pode comprar ETH, o valor da ação acompanha o preço do Ethereum e o crescimento depende de emitir ações, o que dilui os acionistas.",
+  "vantagem": {"nivel": "nenhuma clara", "resumo": "Maior tesouraria corporativa de Ethereum, mas o negócio é uma carteira de ETH que qualquer um pode replicar e depende de emitir ações."},
+  "concorrentes": ["SharpLink Gaming", "ETHZilla", "ETFs de Ethereum", "Strategy (bitcoin)"]
+ },
+ "potencial": {
+  "texto": "O potencial depende quase totalmente da valorização do Ethereum e, em menor grau, da receita de staking, estimada pela empresa em até US$ 285 mi por ano com todo o ETH em staking. Não há projeção de lucro operacional.",
+  "metricas": [
+   {"rotulo": "ETH em carteira", "valor": "6.077.745 (4,97% da oferta)", "periodo": "15/11/2026"},
+   {"rotulo": "ETH em staking", "valor": "5.227.037", "periodo": "15/11/2026"},
+   {"rotulo": "Caixa e títulos", "valor": "US$ 448 mi", "periodo": "15/11/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo de US$ 6,3 bi no ano fiscal 2026, quase todo por perda não realizada com a queda do Ethereum. Não tem dívida relevante e mantinha US$ 448 mi em caixa em novembro; emitiu cerca de 395 milhões de ações no ano fiscal, levantando US$ 13,2 bi, e recomprou US$ 353,8 mi.",
+  "caixa": "US$ 448 mi",
+  "queima_anual": null,
+  "periodo": "nov/2026"
+ },
+ "riscos": [
+  "Queda do preço do Ethereum.",
+  "Diluição por emissão de ações.",
+  "Ação negociada abaixo do valor dos ativos.",
+  "Regulação de criptomoedas e staking."
+ ],
+ "momento": "A BitMine divulgou o balanço do ano fiscal até agosto em 10/11/2026, com prejuízo de US$ 6,3 bi pela queda do Ethereum, e segue comprando ETH, perto da meta de 5% da oferta.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-10",
+  "positivos": [
+   "Receita de staking de US$ 121,4 mi.",
+   "Perto da meta de 5% da oferta de ETH."
+  ],
+  "negativos": [
+   "Prejuízo de US$ 6,3 bi com a queda do ETH.",
+   "Forte emissão de ações."
+  ],
+  "atencao": [
+   "Preço do Ethereum.",
+   "Mudança do ano fiscal para dezembro."
+  ]
+ },
+ "fontes": [
+  {"titulo": "BitMine: 10-K do ano fiscal 2026 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1829311/000162828026072846/bmnr-20260831.htm", "data": "2026-11-10"},
+  {"titulo": "BitMine: atualização de ETH (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1829311/000149315226052063/ex99-1.htm", "data": "2026-11-16"},
+  {"titulo": "The Block: Bitmine adds 7,653 ETH", "url": "https://theblock.co/news/business/2026-11-16-tom-lee-ethereum-waterfall-decline-price-defies-fundamentals-bitmine-adds-7653-eth-440904", "data": "2026-11-16"},
+  {"titulo": "Crypto Briefing: BitMine ETH holdings reach 6.08 million tokens", "url": "https://cryptobriefing.com/bitmine-immersion-technologies-bmnr-announces-eth-holdings-reach-6-08-million-tokens-and-total-crypto-and-total-cash-marketable-securities-holdings-of-11-8-billion/", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

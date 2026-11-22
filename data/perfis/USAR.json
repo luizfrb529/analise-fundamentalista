@@ -1,0 +1,64 @@
+{
+ "ticker": "USAR",
+ "revisado_em": "2026-11-22",
+ "resumo": "Empresa americana que monta uma cadeia de terras raras fora da China, da mineração (Serra Verde, Round Top) à fabricação de ímãs (Stillwater, Oklahoma) e metais (LCM, Reino Unido). Começou a vender ímãs em 2026, ainda dá prejuízo e tem caixa de US$ 1,1 bi.",
+ "modelo": "A USA Rare Earth fabrica ímãs permanentes de neodímio (NdFeB), usados em motores elétricos, defesa, robôs e data centers, e metais e ligas de terras raras pela britânica LCM. Comprou a mineradora Serra Verde e controla o depósito de Round Top, no Texas, para ter matéria-prima própria. Tem contrato de longo prazo com veículo de compras apoiado pelo governo americano.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 3,0 mi no 3T26 e US$ 14,5 mi em nove meses",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede nos EUA; fábrica de ímãs em Oklahoma, depósito no Texas, metais no Reino Unido e mineração no Brasil (Serra Verde)."},
+ "temas": [
+  {"tema": "Terras raras e minerais críticos", "relacao": "A China restringe exportações de terras raras; a empresa quer oferecer uma cadeia fora da Ásia, mas a falta de disprósio e samário limitou a produção no trimestre."},
+  {"tema": "Defesa e política industrial", "relacao": "Um veículo de compras apoiado pelo governo dos EUA, com US$ 750 mi do Departamento de Guerra, assinou contrato de 15 anos para comprar sua produção."}
+ ],
+ "diferencial": {
+  "texto": "A USA Rare Earth está entre as poucas fabricantes de ímãs de terras raras em escala comercial fora da Ásia e tem apoio do governo americano e matéria-prima própria a caminho. Mas a operação está no início, depende de insumos ainda controlados pela China e enfrenta a MP Materials, já mais avançada, e a experiência asiática no setor.",
+  "vantagem": {"nivel": "fraca", "resumo": "Uma das poucas fabricantes de ímãs fora da Ásia, com apoio do governo, mas operação inicial e dependente de insumos controlados pela China."},
+  "concorrentes": ["MP Materials", "Lynas", "Energy Fuels", "Neo Performance Materials", "Fabricantes chineses"]
+ },
+ "potencial": {
+  "texto": "O potencial vem da ampliação da fábrica de Stillwater de 600 para 1.200 toneladas por ano até o 2T27 e da produção da Serra Verde, que deve vender ao menos 325 toneladas de óxidos de terras raras no 4T26, segundo a imprensa. A meta de Ebitda para 2027 não foi reafirmada, segundo a imprensa.",
+  "metricas": [
+   {"rotulo": "Capacidade de ímãs", "valor": "600 t/ano (1.200 t/ano previstas)", "periodo": "2T27"},
+   {"rotulo": "Caixa", "valor": "US$ 1,09 bi", "periodo": "set/2026"},
+   {"rotulo": "Receita em nove meses", "valor": "US$ 14,5 mi", "periodo": "9M26"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo de US$ 65,6 mi em nove meses; o lucro contábil de US$ 11,7 mi no 3T26 veio de ganho não operacional de US$ 148 mi. Tem US$ 1,09 bi em caixa, mas emitiu muitas ações em aquisições: são cerca de 375 milhões de ações em circulação.",
+  "caixa": "US$ 1,09 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dependência de insumos controlados pela China.",
+  "Atrasos na ampliação da produção.",
+  "Diluição por emissão de ações.",
+  "Execução da integração das aquisições."
+ ],
+ "momento": "No 3T26 (divulgado em 09/11/2026), a empresa fez as primeiras vendas de ímãs de Stillwater, mas a receita foi de apenas US$ 3,0 mi e os prazos escorregaram; as ações caíram cerca de 11%.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-09",
+  "positivos": [
+   "Primeiras vendas comerciais de ímãs.",
+   "Compra da mineradora Serra Verde.",
+   "Caixa de US$ 1,09 bi."
+  ],
+  "negativos": [
+   "Receita muito abaixo do esperado.",
+   "Falta de insumos limitou a produção."
+  ],
+  "atencao": [
+   "Segunda linha de ímãs em 2027.",
+   "Produção da Serra Verde."
+  ]
+ },
+ "fontes": [
+  {"titulo": "USA Rare Earth: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1970622/000197062226000066/exhibit991-earningsrelease.htm", "data": "2026-11-09"},
+  {"titulo": "USA Rare Earth: 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1970622/000197062226000072/usar-20260930.htm", "data": "2026-11-12"},
+  {"titulo": "Webull: USA Rare Earth sinks 11% as Q3 miss overshadows first magnet sales", "url": "https://www.webull.com/news/15901024759508993", "data": "2026-11"},
+  {"titulo": "Motley Fool: Why USA Rare Earth stock crashed today", "url": "https://fool.com/investing/2026/11/10/why-usa-rare-earth-stock-crashed-today", "data": "2026-11-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

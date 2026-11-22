@@ -1,0 +1,106 @@
+{
+ "ticker": "VRSN",
+ "revisado_em": "2026-11-22",
+ "resumo": "Operadora exclusiva dos registros de domínios .com e .net e de parte da infraestrutura raiz da internet. Negócio de monopólio regulado, com margem operacional próxima de 67%, recompras constantes e dividendos.",
+ "modelo": "A VeriSign cobra uma taxa anual fixa por cada domínio .com e .net registrado ou renovado, por meio de registradores como GoDaddy, sob contratos com a ICANN e o governo americano que definem os preços máximos. Também opera dois dos 13 servidores raiz da internet. Quase toda a receita é recorrente.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 443,0 mi no 3T26 (+5,7%)",
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Reston, Virgínia (EUA); domínios registrados por clientes do mundo todo."
+ },
+ "temas": [
+  {
+   "tema": "Infraestrutura da internet",
+   "relacao": "A base de domínios .com e .net chegou a 182,5 milhões (+6,1%), com recorde de 13,1 milhões de novos registros no trimestre."
+  }
+ ],
+ "diferencial": {
+  "texto": "A VeriSign tem o direito exclusivo de operar o .com, o domínio mais usado do mundo, com contrato renovável e custo de troca altíssimo para empresas que já têm seus sites e e-mails nesse endereço. É um dos negócios com maior barreira de entrada do mercado. O ponto fraco é que os preços são limitados por contrato com a ICANN e o governo americano, e a taxa de renovação caiu levemente.",
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Monopólio contratual do .com, com custo de troca altíssimo para os clientes, receita recorrente e margem operacional próxima de 67%."
+  },
+  "concorrentes": [
+   "Domínios de país (.br, .uk)",
+   "Novos domínios genéricos (.ai, .io)",
+   "Identity Digital",
+   "GoDaddy Registry"
+  ]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a base de domínios deve crescer de 6,5% a 7,0% em 2026, acima da projeção anterior, segundo a imprensa. O potencial vem do crescimento da base, de reajustes de preço permitidos pelo contrato e da recompra de ações.",
+  "metricas": [
+   {
+    "rotulo": "Base de domínios .com e .net",
+    "valor": "182,5 milhões (+6,1%)",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Crescimento projetado da base",
+    "valor": "6,5% a 7,0%",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Dividendo trimestral",
+    "valor": "US$ 0,81 por ação",
+    "periodo": "nov/2026"
+   }
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 212,6 mi no 3T26 (US$ 2,35 por ação), com margem operacional de cerca de 67%. Tem US$ 476 mi em caixa e títulos e US$ 1,79 bi em dívida, e devolve quase todo o caixa gerado: recomprou US$ 189 mi em ações no trimestre e paga dividendo.",
+  "caixa": "US$ 476 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Limites de preço definidos por contrato.",
+  "Renovação do contrato com a ICANN.",
+  "Queda da taxa de renovação de domínios.",
+  "Concorrência de novos domínios."
+ ],
+ "momento": "No 3T26 (divulgado em 22/10/2026), a receita subiu 5,7%, para US$ 443 mi, com recorde de novos registros, e a empresa elevou a projeção de crescimento da base de domínios.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-22",
+  "positivos": [
+   "Recorde de 13,1 milhões de novos registros.",
+   "Base de domínios cresceu 6,1%.",
+   "Projeção da base elevada."
+  ],
+  "negativos": [
+   "Taxa de renovação caiu levemente."
+  ],
+  "atencao": [
+   "Renovação dos novos registros.",
+   "Reajustes de preço do .com."
+  ]
+ },
+ "fontes": [
+  {
+   "titulo": "VeriSign: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1014473/000101447326000038/q32026earningsrelease.htm",
+   "data": "2026-10-22"
+  },
+  {
+   "titulo": "Finviz: Verisign reports third quarter 2026 results",
+   "url": "https://finviz.com/news/406822/verisign-reports-third-quarter-2026-results",
+   "data": "2026-10-22"
+  },
+  {
+   "titulo": "WebHosting.Today: Verisign record 13.1 million new .com and .net names",
+   "url": "https://webhosting.today/2026/10/23/verisign-record-13-1-million-new-com-and-net-names-as-growth-speeds-up/",
+   "data": "2026-10-23"
+  },
+  {
+   "titulo": "Mitrade: Verisign Q3 2026 earnings call, record registrations and higher guidance",
+   "url": "https://www.mitrade.com/insights/news/live-news/article-0-2187696-20261023",
+   "data": "2026-10-23"
+  }
+ ],
+ "ultimo_resultado": "3T26"
+}
