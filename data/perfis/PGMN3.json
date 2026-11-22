@@ -1,6 +1,6 @@
 {
  "ticker": "PGMN3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-22",
  "resumo": "Terceira maior rede de farmácias do país, com 1.705 lojas e cerca de 62% delas no Nordeste. A receita é toda no Brasil; o ponto sensível é o custo da dívida e das antecipações de recebíveis, atrelado ao CDI.",
  "modelo": "A Pague Menos vende medicamentos de marca, genéricos, medicamentos sem prescrição (OTC) e produtos de higiene e beleza em lojas próprias (marcas Pague Menos e Extrafarma, esta comprada em 2022 e em conversão) e por canais digitais, que já respondem por cerca de um quarto das vendas. O público é majoritariamente de classes B e C, com foco em clientes de uso contínuo de medicamentos. A receita é recorrente e de baixa margem (margem Ebitda perto de 6%), apoiada em escala de compras, marcas próprias e serviços farmacêuticos.",
  "segmentos": [
@@ -102,5 +102,23 @@
    "data": "2025-11"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Receita bruta de R$ 4,43 bi no 3T26, alta de 6,9% sobre o 3T25.",
+   "Lucro líquido ajustado de R$ 96,3 mi no 3T26, alta de 19,5%; Ebitda ajustado de R$ 278,8 mi, alta de 7,2%.",
+   "Canais digitais de cerca de R$ 1,1 bi, 24,6% das vendas, alta de 32,8%."
+  ],
+  "negativos": [
+   "Vendas em mesmas lojas de +5,6% no 3T26, abaixo dos +8,0% do 2T26.",
+   "Margem líquida ajustada de apenas 2,2% no 3T26."
+  ],
+  "atencao": [
+   "Análogos de GLP-1 com 8,5% das vendas, com preço médio da semaglutida 54% menor após a queda da patente.",
+   "Dívida líquida de 1,8x o Ebitda em junho de 2026 (2,6x um ano antes) e conversão das lojas Extrafarma."
+  ]
+ }
 }
