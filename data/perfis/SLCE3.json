@@ -1,6 +1,6 @@
 {
  "ticker": "SLCE3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-22",
  "resumo": "Uma das maiores produtoras de soja, algodão e milho do país, com 860 mil hectares previstos na safra 2026/27. A receita segue preços em dólar, e a alavancagem subiu para 3,00x após compras de terras.",
  "modelo": "A SLC Agrícola planta e vende soja, algodão em pluma e caroço, milho, sementes e gado, em fazendas próprias e arrendadas no Cerrado (Mato Grosso, Bahia, Maranhão, Piauí, Goiás e Mato Grosso do Sul). A receita depende do volume colhido e dos preços internacionais, fixados com antecedência por hedge de commodity e de câmbio. Há também ganho pontual com venda de terras valorizadas.",
  "segmentos": [
@@ -103,5 +103,22 @@
    "data": "2026-11-12"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-11",
+  "positivos": [
+   "Lucro bruto de R$ 810,9 mi no 3T26, alta de 30,2% sobre o 3T25, com margem de 44,7% ante 29,8%.",
+   "Lucro líquido de R$ 192,4 mi no 3T26, ante prejuízo de R$ 14,5 mi no 3T25."
+  ],
+  "negativos": [
+   "Receita líquida de R$ 1,81 bi no 3T26, queda de 13,1% sobre o 3T25, por menor volume de algodão e milho.",
+   "Ebitda ajustado de R$ 463,5 mi no 3T26, queda de 12,8% sobre o 3T25."
+  ],
+  "atencao": [
+   "Alavancagem de 3,00x e dívida líquida ajustada de R$ 7,13 bi em setembro de 2026 (R$ 5,24 bi em dez/25), após aquisições.",
+   "Integração das terras do Grupo Radar (8,9 mil ha, R$ 669,6 mi, aprovadas pelo Cade em 30/10/2026) e área de 860,8 mil ha na safra 2026/27."
+  ]
+ }
 }
