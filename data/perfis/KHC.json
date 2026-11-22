@@ -1,0 +1,67 @@
+{
+ "ticker": "KHC",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das maiores empresas de alimentos industrializados do mundo, dona de marcas como Heinz, Kraft, Philadelphia e Oscar Mayer. Lucrativa e geradora de caixa, mas com vendas em queda na América do Norte e plano de divisão suspenso.",
+ "modelo": "A Kraft Heinz fabrica e vende ketchup, molhos, queijos, carnes processadas, refeições prontas, bebidas em pó e outros alimentos de marca para supermercados e restaurantes. Ganha com marcas conhecidas e escala de distribuição, mas enfrenta consumidores migrando para marcas próprias e alimentos mais saudáveis.",
+ "segmentos": [
+  {"nome": "América do Norte", "peso_receita": 0.73, "periodo": "3T26", "obs": "Vendas de US$ 4,49 bi (-3,4%)."},
+  {"nome": "Europa e Pacífico desenvolvidos", "peso_receita": 0.15, "periodo": "3T26", "obs": "Vendas de US$ 910 mi (-5,6%)."},
+  {"nome": "Mercados emergentes", "peso_receita": 0.12, "periodo": "3T26", "obs": "Vendas de US$ 720 mi (+13,8%)."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sedes em Chicago e Pittsburgh (EUA); cerca de três quartos das vendas na América do Norte."},
+ "temas": [
+  {"tema": "Consumo pressionado", "relacao": "Os consumidores trocam marcas por produtos mais baratos e marcas próprias; as vendas orgânicas caíram 1,1%."},
+  {"tema": "Reestruturação", "relacao": "A divisão em duas empresas foi suspensa em fevereiro de 2026 para priorizar a recuperação do negócio, com investimento de US$ 600 mi."}
+ ],
+ "diferencial": {
+  "texto": "A Kraft Heinz tem marcas muito conhecidas, como Heinz, e grande escala de produção e distribuição, o que lhe dá espaço nas gôndolas. Mas essas vantagens vêm perdendo força: as vendas caem há anos na América do Norte, marcas próprias e concorrentes ganham espaço e a empresa reconheceu bilhões em baixas no valor das marcas em 2026.",
+  "vantagem": {"nivel": "fraca", "resumo": "Marcas conhecidas e escala, mas perdendo espaço para marcas próprias, com vendas em queda e bilhões em baixas no valor das marcas."},
+  "concorrentes": ["Nestlé", "General Mills", "Conagra", "Unilever", "Mondelez", "Marcas próprias de varejistas"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas orgânicas de 2026 devem cair de 0,5% a 1,25% e o lucro ajustado deve ficar entre US$ 2,07 e US$ 2,13 por ação, com conversão de caixa livre de cerca de 110%. O potencial depende do sucesso da recuperação nos EUA e do crescimento nos mercados emergentes.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 2,07 a US$ 2,13 por ação", "periodo": "2026"},
+   {"rotulo": "Vendas orgânicas projetadas", "valor": "-1,25% a -0,5%", "periodo": "2026"},
+   {"rotulo": "Fluxo de caixa livre", "valor": "US$ 2,36 bi", "periodo": "9M26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 0,46 por ação no 3T26 e lucro ajustado de US$ 0,53, queda de 13%. No ano, as baixas no valor de marcas e ágio somam US$ 7,4 bi, sem efeito no caixa. Gerou US$ 2,36 bi de caixa livre em nove meses e tem dívida líquida de cerca de US$ 16 bi (cálculo pelo balanço).",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Queda contínua de vendas na América do Norte.",
+  "Inflação de custos.",
+  "Novas baixas no valor das marcas.",
+  "Concorrência de marcas próprias."
+ ],
+ "momento": "No 3T26 (divulgado em 04/11/2026), as vendas caíram 2% e o lucro ajustado, 13%, mas veio acima do esperado, e a empresa elevou a projeção de lucro do ano; o CEO é Steve Cahillane.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Lucro ajustado acima do esperado.",
+   "Mercados emergentes cresceram 13,8%.",
+   "Projeção de lucro elevada."
+  ],
+  "negativos": [
+   "Vendas na América do Norte caíram 3,4%.",
+   "Lucro operacional ajustado caiu 15%."
+  ],
+  "atencao": [
+   "Inflação de cerca de 6% no 4T26.",
+   "Destino do plano de divisão."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Kraft Heinz: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1637459/000163745926000078/ex991-erq32026.htm", "data": "2026-11-04"},
+  {"titulo": "Zacks: KHC Q3 earnings call highlights turnaround and inflation pressures", "url": "https://zacks.com/stock/news/3024046/khc-q3-earnings-call-highlights-turnaround-and-inflation-pressures", "data": "2026-11"},
+  {"titulo": "FoodNavigator: Kraft Heinz scraps breakup timeline to focus on turnaround", "url": "https://www.foodnavigator.com/Article/2026/02/11/kraft-heinz-pauses-breakup-after-sales-decline/", "data": "2026-02-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

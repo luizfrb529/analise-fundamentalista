@@ -1,0 +1,66 @@
+{
+ "ticker": "STZ",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior importadora de cerveja dos EUA, com os direitos das marcas Modelo, Corona e Pacifico no país, além de vinhos e destilados. Muito lucrativa, mas com o volume de cerveja estagnado em 2026.",
+ "modelo": "A Constellation fabrica no México e vende nos EUA, com exclusividade, cervejas mexicanas como Modelo Especial, Corona Extra, Pacifico e Victoria, por meio de distribuidores. A cerveja responde por mais de 90% das vendas e da margem. Também tem um negócio menor de vinhos e destilados de alto padrão.",
+ "segmentos": [
+  {"nome": "Cerveja", "peso_receita": 0.94, "periodo": "3T26", "obs": "Vendas de US$ 2,47 bi (+5%); margem operacional de 39,0%."},
+  {"nome": "Vinhos e destilados", "peso_receita": 0.06, "periodo": "3T26", "obs": "Vendas de US$ 159 mi (+17%)."}
+ ],
+ "segmentos_base": "Receita (trimestre fiscal encerrado em ago/2026)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Rochester, Nova York (EUA); cervejarias no México e vendas concentradas nos EUA."},
+ "temas": [
+  {"tema": "Consumo hispânico", "relacao": "Grande parte dos consumidores das marcas é hispânica; o volume vendido ao varejo (depleção) caiu 0,6%, com Corona em queda e Pacifico em alta."},
+  {"tema": "Comércio EUA e México", "relacao": "Produz no México e vende nos EUA, o que a expõe a tarifas e a mudanças nas relações comerciais."}
+ ],
+ "diferencial": {
+  "texto": "A Constellation tem os direitos perpétuos de marcas de cerveja mexicana muito fortes nos EUA, como a Modelo, uma das cervejas mais vendidas do país, e cervejarias de grande escala e baixo custo no México. Isso garante margens de cerca de 39% na cerveja. Os pontos fracos são a dependência do consumidor hispânico, o volume estagnado e o risco de tarifas.",
+  "vantagem": {"nivel": "forte", "resumo": "Direitos exclusivos nos EUA de marcas fortes como Modelo e Corona, com cervejarias de baixo custo no México e margens de cerca de 39%."},
+  "concorrentes": ["Anheuser-Busch InBev", "Molson Coors", "Heineken", "Boston Beer", "Diageo"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro comparável do ano fiscal 2027 (até fev/2027) deve ficar entre US$ 11,20 e US$ 11,90 por ação, com vendas de cerveja entre -1% e +1% e caixa livre de US$ 1,6 bi a US$ 1,7 bi. O potencial depende da retomada do volume de cerveja.",
+  "metricas": [
+   {"rotulo": "Lucro comparável projetado", "valor": "US$ 11,20 a US$ 11,90 por ação", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Fluxo de caixa livre projetado", "valor": "US$ 1,6 bi a US$ 1,7 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Dividendo trimestral", "valor": "US$ 1,03", "periodo": "nov/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 3,32 por ação no trimestre (+25%) e lucro comparável de US$ 3,74 (+3%). Gerou US$ 1,12 bi de caixa livre no semestre e recomprou US$ 530 mi em ações no ano, mantendo dividendo trimestral de US$ 1,03.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Volume de cerveja estagnado.",
+  "Fraqueza do consumidor hispânico.",
+  "Tarifas sobre importações do México.",
+  "Concorrência de bebidas alternativas e cannabis."
+ ],
+ "momento": "No 2º tri fiscal 2027 (divulgado em 06/10/2026), as vendas subiram 6%, para US$ 2,63 bi, mas o volume de cerveja vendido ao varejo caiu 0,6%; o CEO é Nicholas Fink.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-06",
+  "positivos": [
+   "Vendas subiram 6%.",
+   "Pacifico e Victoria cresceram forte.",
+   "Projeção de lucro mantida."
+  ],
+  "negativos": [
+   "Volume vendido ao varejo caiu 0,6%.",
+   "Margem da cerveja recuou."
+  ],
+  "atencao": [
+   "Diferença entre envios e vendas ao varejo.",
+   "Política de tarifas."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Constellation Brands: resultados do 2º tri fiscal 2027 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/16918/000001691826000039/stzex991_83120268kearnings.htm", "data": "2026-10-06"},
+  {"titulo": "Pulse 2.0: Constellation Brands Q2 revenue rises 6% to $2.63 billion", "url": "https://pulse2.com/constellation-brands-q2-revenue-rises-6-to-2-63-billion-as-beer-and-wine-and-spirits-sales-grow/", "data": "2026-10"},
+  {"titulo": "Zacks: Constellation Brands Q2 earnings top estimates", "url": "https://www.zacks.com/stock/news/3002088/constellation-brands-q2-earnings-top-estimates-on-beer-and-wine-growth", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

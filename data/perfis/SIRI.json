@@ -1,0 +1,66 @@
+{
+ "ticker": "SIRI",
+ "revisado_em": "2026-11-22",
+ "resumo": "Empresa americana de áudio por assinatura, dona do rádio por satélite SiriusXM, presente em boa parte dos carros novos, e do streaming Pandora. Lucrativa e geradora de caixa, mas com receita estagnada e dívida elevada.",
+ "modelo": "A SiriusXM cobra assinaturas mensais de cerca de 31 milhões de clientes pagantes, a maioria motoristas que ouvem música, esportes, notícias e programas exclusivos no carro, via satélite e aplicativo. O Pandora e o negócio de podcasts ganham principalmente com publicidade.",
+ "segmentos": [
+  {"nome": "SiriusXM (assinaturas)", "peso_receita": 0.74, "periodo": "3T26", "obs": "31,26 milhões de assinantes pagantes; churn de 1,5%."},
+  {"nome": "Pandora e outras plataformas", "peso_receita": 0.26, "periodo": "3T26", "obs": "Receita de US$ 549 mi (+1%)."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA); atua nos EUA e, por afiliada, no Canadá."},
+ "temas": [
+  {"tema": "Carros conectados", "relacao": "Depende da instalação do rádio em carros novos e da conversão de testes gratuitos em assinaturas pagas."},
+  {"tema": "Streaming de áudio", "relacao": "Compete com Spotify, Apple Music e YouTube; o Pandora tem 38,8 milhões de ouvintes mensais."}
+ ],
+ "diferencial": {
+  "texto": "A SiriusXM tem licença de espectro de satélite praticamente exclusiva nos EUA, presença de fábrica na maioria dos carros novos e conteúdo exclusivo, o que gera assinaturas recorrentes e margem alta. Mas os jovens preferem streaming no celular, o número de assinantes está estagnado e a dívida é alta.",
+  "vantagem": {"nivel": "moderada", "resumo": "Espectro de satélite exclusivo e presença de fábrica nos carros, mas assinantes estagnados e concorrência do streaming no celular."},
+  "concorrentes": ["Spotify", "Apple Music", "YouTube", "Amazon Music", "iHeartMedia"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, 2026 deve ter receita de cerca de US$ 8,55 bi, Ebitda ajustado de cerca de US$ 2,65 bi e fluxo de caixa livre de cerca de US$ 1,40 bi. O potencial vem da geração de caixa para reduzir dívida e pagar dividendos.",
+  "metricas": [
+   {"rotulo": "Fluxo de caixa livre projetado", "valor": "cerca de US$ 1,40 bi", "periodo": "2026"},
+   {"rotulo": "Margem de Ebitda ajustada", "valor": "32%", "periodo": "3T26"},
+   {"rotulo": "Dívida líquida sobre Ebitda", "valor": "3,3 vezes", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 317 mi no 3T26 (US$ 0,78 por ação), com Ebitda ajustado de US$ 694 mi (+3%) e fluxo de caixa livre de US$ 293 mi (+14%). A dívida líquida é de 3,3 vezes o Ebitda, e a empresa paga dividendo trimestral de US$ 0,27.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Assinantes estagnados.",
+  "Concorrência do streaming.",
+  "Dívida elevada.",
+  "Dependência da venda de carros novos."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita ficou estável em US$ 2,15 bi, mas o Ebitda e o caixa livre subiram, e a empresa elevou a projeção de 2026 pela segunda vez.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Fluxo de caixa livre subiu 14%.",
+   "Churn caiu para 1,5%.",
+   "Projeção de 2026 elevada."
+  ],
+  "negativos": [
+   "Receita levemente menor.",
+   "Publicidade estagnada."
+  ],
+  "atencao": [
+   "Assinantes no 4T26.",
+   "Redução da dívida."
+  ]
+ },
+ "fontes": [
+  {"titulo": "SiriusXM: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/908937/000090893726000027/siriq32026earningsrelease.htm", "data": "2026-10-29"},
+  {"titulo": "The Desk: SiriusXM and Pandora Q3 2026 earnings report", "url": "https://thedesk.net/2026/10/siriusxm-pandora-q3-2026-earnings-report/", "data": "2026-10"},
+  {"titulo": "PPC Land: Pandora loses monthly users as SiriusXM ad sales stall", "url": "https://ppc.land/pandora-loses-2-75-million-monthly-users-as-siriusxm-ad-sales-stall-at-456m/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

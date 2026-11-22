@@ -1,0 +1,66 @@
+{
+ "ticker": "NYT",
+ "revisado_em": "2026-11-22",
+ "resumo": "Dona do jornal The New York Times e de produtos digitais como Games (Wordle), Cooking, Wirecutter e The Athletic. Lucrativa, sem dívida, com 13,8 milhões de assinantes e crescimento constante de receita digital.",
+ "modelo": "O New York Times ganha principalmente com assinaturas digitais em pacote (notícias, jogos, receitas, avaliações de produtos e esportes), além de assinaturas impressas, publicidade digital e impressa e licenciamento de conteúdo. A estratégia é vender o pacote completo para aumentar a receita por assinante.",
+ "segmentos": [
+  {"nome": "Assinaturas", "peso_receita": 0.71, "periodo": "3T26", "obs": "Receita de US$ 547,5 mi (+10,7%)."},
+  {"nome": "Publicidade", "peso_receita": 0.19, "periodo": "3T26", "obs": "Receita de US$ 142,6 mi (+7,8%)."},
+  {"nome": "Licenciamento e outros", "peso_receita": 0.10, "periodo": "3T26", "obs": "Receita de US$ 78,4 mi (+6,2%)."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA); assinantes nos EUA e em muitos outros países."},
+ "temas": [
+  {"tema": "Mídia digital por assinatura", "relacao": "Adicionou cerca de 420 mil assinantes digitais no trimestre e mira 15 milhões de assinantes até o fim de 2027."},
+  {"tema": "IA e direitos autorais", "relacao": "Move ações judiciais sobre o uso de seu conteúdo por empresas de IA generativa, com custo de US$ 3,8 mi no trimestre."}
+ ],
+ "diferencial": {
+  "texto": "O New York Times tem a marca jornalística mais forte do mundo em língua inglesa, uma redação de grande porte difícil de replicar e um pacote de produtos (Games, Cooking, The Athletic) que aumenta a fidelidade. Os pontos fracos são o declínio do impresso, a dependência do tráfego de buscadores e redes sociais e as mudanças trazidas pela IA na forma de consumir notícias.",
+  "vantagem": {"nivel": "forte", "resumo": "Marca jornalística mais forte do mundo em inglês, redação difícil de replicar e pacote de produtos que aumenta a fidelidade dos assinantes."},
+  "concorrentes": ["The Washington Post", "The Wall Street Journal (News Corp)", "The Guardian", "ESPN", "Substack"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, no 4T26 a receita de assinaturas digitais deve crescer de 12% a 15% e a de publicidade digital, entre alta de um dígito e baixa de dois dígitos. O potencial vem de mais assinantes no pacote completo, de preços maiores e do licenciamento de conteúdo.",
+  "metricas": [
+   {"rotulo": "Assinantes digitais", "valor": "13,22 milhões", "periodo": "set/2026"},
+   {"rotulo": "Margem operacional ajustada", "valor": "19,5%", "periodo": "3T26"},
+   {"rotulo": "Caixa e aplicações", "valor": "US$ 1,26 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 97,4 mi no 3T26 (US$ 0,60 por ação; US$ 0,68 ajustado), com margem ajustada de 19,5%. Tem US$ 1,26 bi em caixa e aplicações e nenhuma dívida, recomprou US$ 79 mi em ações no trimestre e paga dividendo trimestral de US$ 0,23.",
+  "caixa": "US$ 1,26 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Mudança no consumo de notícias com a IA.",
+  "Declínio do jornal impresso.",
+  "Dependência de buscadores e redes sociais.",
+  "Custos de processos sobre IA."
+ ],
+ "momento": "No 3T26 (divulgado em 04/11/2026), a receita subiu 9,7%, para US$ 768,5 mi, com 420 mil novos assinantes digitais e lucro ajustado acima do esperado.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "420 mil novos assinantes digitais.",
+   "Receita de assinaturas digitais subiu 14,6%.",
+   "Sem dívida."
+  ],
+  "negativos": [
+   "Novos assinantes abaixo de um ano antes."
+  ],
+  "atencao": [
+   "Meta de 15 milhões de assinantes.",
+   "Processos sobre IA."
+  ]
+ },
+ "fontes": [
+  {"titulo": "New York Times: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/71691/000007169126000039/pressrelease9302026.htm", "data": "2026-11-04"},
+  {"titulo": "TheWrap: New York Times adds 420,000 subscribers as Q3 digital revenue rises", "url": "https://www.thewrap.com/industry-news/business/new-york-times-adds-420000-subscribers-as-q3-digital-revenue-rises/", "data": "2026-11-04"},
+  {"titulo": "Quartr: New York Times Q3 2026 earnings summary", "url": "https://quartr.com/events/the-new-york-times-company-nyt-q3-2026_3PJgPSrf", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}
