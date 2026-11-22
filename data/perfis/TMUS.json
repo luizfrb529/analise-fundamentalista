@@ -1,0 +1,63 @@
+{
+ "ticker": "TMUS",
+ "revisado_em": "2026-11-22",
+ "resumo": "Operadora de telefonia móvel americana que mais cresce, com a maior rede 5G do país e forte expansão em internet residencial via 5G. Lucrativa, com lucro crescendo 27% e grande devolução de caixa aos acionistas. Controlada pela Deutsche Telekom.",
+ "modelo": "A T-Mobile ganha com assinaturas mensais de celular (pós-pago e pré-pago Metro), internet residencial e empresarial via 5G e fibra, e serviços para empresas. Ganhou escala com a compra da Sprint em 2020 e usa o espectro de banda média para oferecer cobertura 5G ampla e rápida.",
+ "segmentos": [],
+ "segmentos_base": "Receita de serviços de US$ 19,4 bi no 3T26 (+6%); pós-pago de US$ 16,3 bi (+9%)",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Bellevue, Washington (EUA); opera nos EUA."},
+ "temas": [
+  {"tema": "Telecomunicações", "relacao": "Ganhou 274 mil contas pós-pagas no trimestre e elevou a projeção de 2026."},
+  {"tema": "Internet via 5G", "relacao": "A internet residencial por 5G tira clientes das operadoras de cabo; a empresa mira 15 milhões de clientes, segundo a imprensa."}
+ ],
+ "diferencial": {
+  "texto": "A T-Mobile tem a rede 5G mais ampla dos EUA, graças ao espectro de banda média herdado da Sprint, e custo por cliente menor, o que lhe permite crescer mais que Verizon e AT&T em mercado concentrado e de entrada difícil. Os pontos fracos são a concorrência de preços, a dívida e a dependência do controlador alemão.",
+  "vantagem": {"nivel": "forte", "resumo": "Rede 5G mais ampla dos EUA, graças ao espectro de banda média da Sprint, em mercado concentrado de três operadoras e entrada muito difícil."},
+  "concorrentes": ["Verizon", "AT&T", "Comcast", "Charter", "EchoStar", "Starlink (SpaceX)"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o Ebitda ajustado de 2026 deve ficar entre US$ 37,35 bi e US$ 37,45 bi e o caixa livre ajustado entre US$ 18,7 bi e US$ 18,8 bi, com cerca de 1 milhão de novas contas pós-pagas. A empresa pode devolver até US$ 18,2 bi aos acionistas em 2026.",
+  "metricas": [
+   {"rotulo": "Ebitda ajustado projetado", "valor": "US$ 37,35 bi a US$ 37,45 bi", "periodo": "2026"},
+   {"rotulo": "Caixa livre ajustado projetado", "valor": "US$ 18,7 bi a US$ 18,8 bi", "periodo": "2026"},
+   {"rotulo": "Dividendo trimestral", "valor": "US$ 1,17", "periodo": "dez/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 3,5 bi no 3T26 (US$ 3,22 por ação), alta de 27%, com caixa livre ajustado de US$ 5,1 bi. A dívida líquida é de US$ 80,3 bi. A empresa recomprou US$ 2,4 bi em ações no trimestre e elevou o dividendo para US$ 1,17.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concorrência de preços.",
+  "Dívida elevada.",
+  "Saturação do mercado de celular.",
+  "Influência do controlador Deutsche Telekom."
+ ],
+ "momento": "No 3T26 (divulgado em 28/10/2026), o lucro subiu 27%, para US$ 3,5 bi, acima do esperado, e a empresa elevou a projeção de 2026; o CEO é Srini Gopalan.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "Lucro por ação subiu 34%.",
+   "Receita pós-paga cresceu 9%.",
+   "Projeção de 2026 elevada."
+  ],
+  "negativos": [
+   "Novas contas pós-pagas abaixo de um ano antes."
+  ],
+  "atencao": [
+   "Concorrência no fim de ano.",
+   "Crescimento da internet via 5G."
+  ]
+ },
+ "fontes": [
+  {"titulo": "T-Mobile: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000128/tmus09302026ex991.htm", "data": "2026-10-28"},
+  {"titulo": "T-Mobile Newsroom: Q3 2026 earnings", "url": "https://www.t-mobile.com/news/business/t-mobile-q3-2026-earnings", "data": "2026-10-28"},
+  {"titulo": "Finviz: T-Mobile reports 27% rise in Q3 net income and raises 2026 outlook", "url": "https://finviz.com/news/411750/t-mobile-reports-27-rise-in-q3-net-income-to-346-billion-and-raises-2026-outlook", "data": "2026-10"},
+  {"titulo": "Cord Cutters News: T-Mobile hopes to hit 15 million 5G home internet customers", "url": "https://cordcuttersnews.com/t-mobile-hopes-to-hit-15-million-5g-home-internet-customers/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

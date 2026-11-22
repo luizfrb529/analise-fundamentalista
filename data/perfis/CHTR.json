@@ -1,0 +1,64 @@
+{
+ "ticker": "CHTR",
+ "revisado_em": "2026-11-22",
+ "resumo": "Segunda maior operadora de cabo dos EUA (Spectrum), que concluiu a fusão com a Cox em agosto de 2026. Gera Ebitda alto, mas perde clientes de internet, tem dívida muito elevada e teve prejuízo contábil no trimestre por baixa de ativos.",
+ "modelo": "A Charter vende internet, TV a cabo, telefone fixo e celular (Spectrum Mobile, usando a rede da Verizon) para residências e empresas em dezenas de estados. Investe pesado para expandir a rede a áreas rurais e para vender celular junto com internet.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 14,9 bi no 3T26 (+9%, com a Cox; -1,5% em base comparável)",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Stamford, Connecticut (EUA); opera em 41 estados americanos, com a área da Cox adicionada em 2026."},
+ "temas": [
+  {"tema": "Banda larga", "relacao": "Perdeu 233 mil clientes de internet em base comparável, pressionada por fibra e internet via 5G."},
+  {"tema": "Celular", "relacao": "Ganhou 508 mil linhas de celular, chegando a 13,5 milhões."}
+ ],
+ "diferencial": {
+  "texto": "A Charter tem uma rede de cabo enorme, agora ampliada com a Cox, que já chega a dezenas de milhões de casas, e vende celular combinado com custo baixo usando a rede da Verizon. Os pontos fracos são a perda contínua de clientes de internet, a dívida de US$ 108,6 bi e a concorrência de fibra e 5G.",
+  "vantagem": {"nivel": "fraca", "resumo": "Grande rede de cabo, ampliada com a Cox, mas perde clientes de internet para fibra e 5G e carrega dívida muito alta."},
+  "concorrentes": ["Comcast", "AT&T", "Verizon", "T-Mobile", "Frontier", "Starlink (SpaceX)"]
+ },
+ "potencial": {
+  "texto": "O potencial vem das sinergias da fusão com a Cox, do crescimento do celular e da expansão rural. A empresa não traz projeção numérica no release.",
+  "metricas": [
+   {"rotulo": "Linhas de celular", "valor": "13,5 milhões", "periodo": "set/2026"},
+   {"rotulo": "Ebitda ajustado", "valor": "US$ 5,9 bi", "periodo": "3T26"},
+   {"rotulo": "Dívida", "valor": "US$ 108,6 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Prejuízo contábil de US$ 2,4 bi no 3T26 por baixa de US$ 6,3 bi em direitos de franquia, mas o Ebitda ajustado foi de US$ 5,9 bi e o negócio segue gerando caixa (US$ 674 mi de caixa livre, menor pelo investimento). A dívida é de US$ 108,6 bi e as recompras quase pararam.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Perda de clientes de internet.",
+  "Dívida muito elevada.",
+  "Integração da Cox.",
+  "Concorrência de fibra e 5G."
+ ],
+ "momento": "No 3T26 (divulgado em 06/11/2026), o primeiro trimestre com a Cox, a receita subiu 9%, para US$ 14,9 bi, mas a empresa perdeu clientes de internet e registrou prejuízo pela baixa de US$ 6,3 bi em franquias.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-06",
+  "positivos": [
+   "Fusão com a Cox concluída.",
+   "508 mil novas linhas de celular."
+  ],
+  "negativos": [
+   "Perda de 233 mil clientes de internet.",
+   "Baixa de US$ 6,3 bi e prejuízo de US$ 2,4 bi.",
+   "Caixa livre caiu US$ 947 mi."
+  ],
+  "atencao": [
+   "Sinergias da Cox.",
+   "Redução da dívida."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Charter: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1091667/000109166726000072/chtrex991earningsrelease93.htm", "data": "2026-11-06"},
+  {"titulo": "Charter: 8-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1091667/000109166726000072/0001091667-26-000072-index.htm", "data": "2026-11-06"},
+  {"titulo": "Comcast: resultados do 3T26, concorrente (8-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026066783/ex991-9302026.htm", "data": "2026-10-22"}
+ ],
+ "pendencias": ["Segunda fonte jornalística para o 3T26 não localizada; números vêm do documento oficial na SEC."],
+ "ultimo_resultado": "3T26"
+}

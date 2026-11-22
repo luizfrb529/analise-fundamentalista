@@ -1,0 +1,67 @@
+{
+ "ticker": "NEE",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior empresa de energia elétrica dos EUA em valor de mercado, dona da Florida Power & Light e da maior geradora de energia eólica e solar do mundo, que acertou a compra da Dominion Energy. Lucrativa, com dividendos crescentes.",
+ "modelo": "A NextEra tem dois negócios: a FPL, concessionária regulada que atende cerca de metade da Flórida, com retorno previsível; e a NextEra Energy Resources, que constrói e opera usinas eólicas, solares, baterias, nucleares e a gás e vende energia em contratos longos a concessionárias e grandes empresas, inclusive de tecnologia.",
+ "segmentos": [
+  {"nome": "Florida Power & Light (regulada)", "peso_receita": 0.57, "periodo": "3T26", "obs": "Lucro de US$ 1,62 bi."},
+  {"nome": "NextEra Energy Resources (geração)", "peso_receita": 0.43, "periodo": "3T26", "obs": "Lucro ajustado de US$ 1,25 bi."}
+ ],
+ "segmentos_base": "Lucro por segmento (ajustado)",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Juno Beach, Flórida (EUA); usinas em dezenas de estados americanos e no Canadá."},
+ "temas": [
+  {"tema": "Energia para data centers", "relacao": "Desenvolve três grandes polos de geração (cerca de 16,5 GW) para data centers, um campus em Paducah com até 2 GW a gás e 2,6 GW de baterias, e vai reativar a usina nuclear Duane Arnold até 2029."},
+  {"tema": "Renováveis e baterias", "relacao": "Adicionou 3,7 GW em contratos de renováveis e baterias no trimestre, chegando a cerca de 36,7 GW em carteira."},
+  {"tema": "Consolidação do setor", "relacao": "Acertou em maio de 2026 a compra da Dominion Energy por cerca de US$ 67 bi em ações, com fechamento previsto para o segundo semestre de 2027."}
+ ],
+ "diferencial": {
+  "texto": "A NextEra combina uma concessionária regulada muito eficiente na Flórida com a maior plataforma de desenvolvimento de energia renovável e baterias do mundo, com escala de compras e experiência difíceis de igualar, o que a torna parceira natural de grandes consumidores de energia. Os pontos fracos são a sensibilidade a juros, mudanças em incentivos fiscais a renováveis e o risco de execução da compra da Dominion.",
+  "vantagem": {"nivel": "forte", "resumo": "Concessionária regulada eficiente na Flórida somada à maior plataforma de renováveis e baterias do mundo, com escala e experiência difíceis de igualar."},
+  "concorrentes": ["Duke Energy", "Southern Company", "Constellation Energy", "Vistra", "Brookfield Renewable", "AES"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro ajustado de 2026 deve ficar entre US$ 3,92 e US$ 4,02 por ação, no topo da faixa, com crescimento de pelo menos 8% ao ano até 2032 e dividendo crescendo cerca de 6% ao ano até 2028. A compra da Dominion e os contratos com data centers ampliam o potencial.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 3,92 a US$ 4,02 por ação", "periodo": "2026"},
+   {"rotulo": "Carteira de renováveis e baterias", "valor": "cerca de 36,7 GW", "periodo": "set/2026"},
+   {"rotulo": "Crescimento do lucro por ação", "valor": "8% ao ano ou mais", "periodo": "até 2032"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 4,8 bi no 3T26 (US$ 2,28 por ação), inflado por ganhos contábeis; o lucro ajustado foi de US$ 2,6 bi (US$ 1,24 por ação), alta de 10%. Como toda empresa de energia em expansão, carrega dívida elevada para financiar usinas. Obteve empréstimo do Departamento de Energia de até US$ 1,9 bi para a Duane Arnold.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Juros altos encarecem o financiamento.",
+  "Mudanças em incentivos a renováveis.",
+  "Execução da compra da Dominion.",
+  "Eventos climáticos na Flórida."
+ ],
+ "momento": "No 3T26 (divulgado em 21/10/2026), o lucro ajustado subiu para US$ 1,24 por ação e a empresa adicionou 3,7 GW em contratos; os pedidos de aprovação da compra da Dominion foram protocolados em julho.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-21",
+  "positivos": [
+   "Lucro ajustado subiu 10%.",
+   "3,7 GW de novos contratos.",
+   "Empréstimo de US$ 1,9 bi para reativar Duane Arnold."
+  ],
+  "negativos": [
+   "Lucro contábil inflado por itens não recorrentes."
+  ],
+  "atencao": [
+   "Aprovações da compra da Dominion.",
+   "Novos contratos com data centers."
+  ]
+ },
+ "fontes": [
+  {"titulo": "NextEra: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/37634/000075330826000077/neeq32026exhibit99.htm", "data": "2026-10-21"},
+  {"titulo": "S&P Global: Dominion, NextEra to merge in massive all-stock deal", "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2026/5/update-dominion-nextera-to-merge-in-massive-all-stock-deal-101811279", "data": "2026-05-18"},
+  {"titulo": "Axios: NextEra, Dominion announce merger to create U.S. power behemoth", "url": "https://www.axios.com/2026/05/18/nextera-dominion-merger-power-electricity", "data": "2026-05-18"},
+  {"titulo": "Dominion Energy: atualizações sobre a fusão", "url": "https://www.dominionenergy.com/Updates/Merger", "data": "2026"}
+ ],
+ "ultimo_resultado": "3T26"
+}

@@ -1,0 +1,64 @@
+{
+ "ticker": "CMCSA",
+ "revisado_em": "2026-11-22",
+ "resumo": "Gigante americana de cabo e internet (Xfinity), dona da NBCUniversal (estúdios Universal, rede NBC, Peacock, parques Universal) e da Sky na Europa. Lucrativa e geradora de caixa, mas perdendo clientes de internet.",
+ "modelo": "A Comcast ganha com assinaturas de internet, TV e celular (Xfinity e Comcast Business), com publicidade e conteúdo da NBCUniversal, com o streaming Peacock e com os parques Universal. Separou em 2026 os canais de TV a cabo na Versant e propõe separar também a NBCUniversal e a Sky.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 29,3 bi no 3T26 (-6%, ou +0,5% em base comparável após a saída da Versant)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Filadélfia (EUA); a Sky opera no Reino Unido, Itália e Alemanha, e há parques Universal nos EUA, Japão, China e Singapura."},
+ "temas": [
+  {"tema": "Banda larga", "relacao": "Perdeu 144 mil clientes de internet no trimestre com a concorrência de fibra e de internet via 5G, mas ganhou 368 mil linhas de celular."},
+  {"tema": "Streaming", "relacao": "O Peacock chegou a 48 milhões de assinantes (+17%) e passou a dar lucro de US$ 261 mi no trimestre."}
+ ],
+ "diferencial": {
+  "texto": "A Comcast tem uma das maiores redes de cabo dos EUA, conteúdo próprio e marcas fortes (Universal, NBC) e parques temáticos difíceis de replicar. Os pontos fracos são a perda contínua de clientes de internet para fibra e 5G, o declínio da TV paga e a complexidade da separação de empresas.",
+  "vantagem": {"nivel": "moderada", "resumo": "Grande rede de cabo, marcas de conteúdo e parques difíceis de replicar, mas perdendo clientes de internet para fibra e 5G."},
+  "concorrentes": ["Charter", "Verizon", "T-Mobile", "AT&T", "Disney", "Netflix"]
+ },
+ "potencial": {
+  "texto": "O potencial vem do crescimento do celular, do lucro do Peacock, dos parques e da criação de valor com a separação proposta da NBCUniversal e da Sky. As recompras foram suspensas até a separação. Não há projeção numérica no release.",
+  "metricas": [
+   {"rotulo": "Assinantes do Peacock", "valor": "48 milhões (+17%)", "periodo": "set/2026"},
+   {"rotulo": "Novas linhas de celular", "valor": "368 mil", "periodo": "3T26"},
+   {"rotulo": "Fluxo de caixa livre", "valor": "US$ 4,2 bi", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro ajustado de US$ 1,07 por ação no 3T26 (-4%), com Ebitda ajustado de US$ 9,1 bi e fluxo de caixa livre de US$ 4,2 bi. A dívida líquida é de cerca de US$ 80 bi (cálculo pelo balanço). A empresa pagou US$ 1,2 bi em dividendos e suspendeu as recompras até a separação.",
+  "caixa": "US$ 7,6 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Perda de clientes de internet.",
+  "Declínio da TV paga.",
+  "Execução da separação da NBCUniversal e Sky.",
+  "Parques sensíveis à economia."
+ ],
+ "momento": "No 3T26 (divulgado em 22/10/2026), a receita caiu 6%, para US$ 29,3 bi, pela saída da Versant, e a empresa perdeu 144 mil clientes de internet, mas o Peacock deu lucro; as recompras estão suspensas até a separação proposta.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-22",
+  "positivos": [
+   "Peacock com lucro de US$ 261 mi.",
+   "368 mil novas linhas de celular.",
+   "Fluxo de caixa livre de US$ 4,2 bi."
+  ],
+  "negativos": [
+   "Perda de 144 mil clientes de internet.",
+   "Ebitda dos parques caiu 17%."
+  ],
+  "atencao": [
+   "Separação da NBCUniversal e da Sky.",
+   "Retenção de clientes de internet."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Comcast: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026066783/ex991-9302026.htm", "data": "2026-10-22"},
+  {"titulo": "Comcast: 8-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026066783/0001628280-26-066783-index.htm", "data": "2026-10-22"},
+  {"titulo": "Verizon: resultados do 3T26, concorrente em banda larga (8-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271226000049/a2026q3exhibit99.htm", "data": "2026-10-26"}
+ ],
+ "pendencias": ["Segunda fonte jornalística para o 3T26 não localizada; números vêm do documento oficial na SEC."],
+ "ultimo_resultado": "3T26"
+}
