@@ -1,6 +1,6 @@
 {
  "ticker": "VTRU3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-22",
  "resumo": "Dona da Uniasselvi e da UniCesumar, líder em graduação a distância e semipresencial no Brasil. Metade da receita vem do semipresencial; operação e dívida são 100% em reais.",
  "modelo": "A Vitru oferece graduação semipresencial, a distância e presencial, além de medicina e pós-graduação, sob as marcas Uniasselvi e UniCesumar, com cerca de 2,5 mil polos e 1,03 milhão de alunos em jun/26. O público é majoritariamente de renda média e baixa, fora das capitais. A receita é recorrente, vinda de mensalidades, e parte dela é dividida com parceiros que operam os polos.",
  "segmentos": [
@@ -97,5 +97,22 @@
    "data": "2026-11-12"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-11",
+  "positivos": [
+   "Receita líquida de R$ 578,9 mi no 3T26, alta de 5,4% sobre o 3T25.",
+   "Ebitda ajustado de R$ 234,9 mi no 3T26, alta de 9,7%; lucro ajustado por imposto caixa de R$ 145,4 mi, alta de 69,1%.",
+   "Alavancagem de 1,13x em setembro de 2026, ante 1,99x em dez/25."
+  ],
+  "negativos": [
+   "Lucro líquido de R$ 95,4 mi no 3T26, queda de 2,8% sobre o 3T25, com IR de R$ 19,5 mi ante crédito de R$ 30,3 mi."
+  ],
+  "atencao": [
+   "Primeiro dividendo da nova política (R$ 0,5332 por ação, a pagar em 30/11/2026).",
+   "Troca na diretoria financeira e de RI em 05/10/2026."
+  ]
+ }
 }
