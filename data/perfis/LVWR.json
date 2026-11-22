@@ -1,0 +1,65 @@
+{
+ "ticker": "LVWR",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana de motos elétricas e de bicicletas de equilíbrio infantis (STACYC), controlada pela Harley-Davidson. Receita mínima, prejuízo alto e alerta formal de dúvida sobre a continuidade da empresa.",
+ "modelo": "A LiveWire projeta e vende motos elétricas, como a S2 Del Mar e a S4 Honcho, por concessionárias e online, e bicicletas de equilíbrio elétricas para crianças pela STACYC. Depende de financiamento da Harley-Davidson, sua controladora, que disse não pretender mais cobrir os prejuízos.",
+ "segmentos": [
+  {"nome": "Bicicletas infantis (STACYC)", "peso_receita": 0.66, "periodo": "3T26", "obs": "Receita de US$ 5,2 mi; 6.992 unidades."},
+  {"nome": "Motos elétricas", "peso_receita": 0.34, "periodo": "3T26", "obs": "Receita de US$ 2,7 mi; 241 motos vendidas."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Milwaukee (EUA); vendas nos EUA e na Europa."},
+ "temas": [
+  {"tema": "Veículos elétricos", "relacao": "O mercado de motos elétricas segue pequeno; a empresa vendeu só 241 motos no trimestre."},
+  {"tema": "Reestruturação", "relacao": "Formou um comitê de reestruturação e nomeou um diretor de reestruturação, que pode levar a venda, recapitalização ou reestruturação da dívida."}
+ ],
+ "diferencial": {
+  "texto": "A LiveWire tem a marca e a rede de concessionárias da Harley-Davidson, mas vende poucas motos, tem custo alto e enfrenta concorrentes com mais escala em motos elétricas. Sem o apoio financeiro da controladora, não mostra vantagem competitiva clara.",
+  "vantagem": {"nivel": "nenhuma clara", "resumo": "Tem o apoio da marca Harley-Davidson, mas vende pouquíssimas motos, tem custo alto e a controladora não pretende mais cobrir prejuízos."},
+  "concorrentes": ["Zero Motorcycles", "Energica", "Fabricantes asiáticos", "Strider (bicicletas infantis)"]
+ },
+ "potencial": {
+  "texto": "O potencial depende do resultado da reestruturação e de novas fontes de financiamento. A empresa retirou a projeção de prejuízo operacional de 2026.",
+  "metricas": [
+   {"rotulo": "Caixa", "valor": "US$ 39,9 mi", "periodo": "set/2026"},
+   {"rotulo": "Empréstimo da Harley-Davidson", "valor": "US$ 76,8 mi", "periodo": "vence em dez/2027"},
+   {"rotulo": "Motos vendidas", "valor": "241", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo e queima de caixa",
+  "texto": "Prejuízo de US$ 18,6 mi no 3T26, com receita de apenas US$ 7,9 mi. O caixa caiu de US$ 82,8 mi no fim de 2025 para US$ 39,9 mi, e a própria empresa declara dúvida relevante sobre sua continuidade nos próximos 12 meses.",
+  "caixa": "US$ 39,9 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dúvida sobre a continuidade da empresa.",
+  "Fim do apoio financeiro da Harley-Davidson.",
+  "Vendas muito baixas.",
+  "Diluição ou perda total em uma reestruturação."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita subiu 38%, para US$ 7,9 mi, mas a empresa emitiu alerta de continuidade, retirou a projeção e iniciou um processo de reestruturação.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Receita subiu 38%.",
+   "Novas motos S4 Honcho lançadas."
+  ],
+  "negativos": [
+   "Alerta de continuidade.",
+   "Projeção retirada."
+  ],
+  "atencao": [
+   "Resultado do comitê de reestruturação.",
+   "Posição da Harley-Davidson."
+  ]
+ },
+ "fontes": [
+  {"titulo": "LiveWire: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1898795/000189879526000107/lvwrexhibit9919-30x2026.htm", "data": "2026-10-29"},
+  {"titulo": "Electrek: Harley-Davidson's electric motorcycle brand LiveWire warns it may not survive", "url": "https://electrek.co/2026/10/29/harley-davidsons-electric-motorcycle-brand-livewire-warns-it-may-not-survive/", "data": "2026-10-29"},
+  {"titulo": "electrive: LiveWire issues going-concern warning", "url": "https://electrive.com/2026/10/31/livewire-issues-going-concern-warning-over-business-continuity-risks", "data": "2026-10-31"}
+ ],
+ "ultimo_resultado": "3T26"
+}

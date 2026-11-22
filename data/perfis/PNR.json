@@ -1,0 +1,66 @@
+{
+ "ticker": "PNR",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante de bombas, filtros e equipamentos para piscinas, tratamento de água residencial e comercial e movimentação de fluidos. Lucrativa, com margens altas e 50 anos seguidos de aumento de dividendos, mas com vendas de piscina em queda em 2026.",
+ "modelo": "A Pentair vende equipamentos de piscina (bombas, filtros, aquecedores, automação), sistemas de filtragem e tratamento de água para casas, restaurantes e empresas, e bombas e equipamentos de fluxo para residências, agricultura e indústria, principalmente por distribuidores e revendedores.",
+ "segmentos": [
+  {"nome": "Soluções de água", "peso_receita": 0.43, "periodo": "3T26", "obs": "Vendas de US$ 422 mi (+1%); margem de 28,7%."},
+  {"nome": "Piscinas", "peso_receita": 0.30, "periodo": "3T26", "obs": "Vendas de US$ 292 mi (-18%); margem de 24,6%."},
+  {"nome": "Fluxo", "peso_receita": 0.27, "periodo": "3T26", "obs": "Vendas de US$ 263 mi; margem de 26,2%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede formal em Londres (Reino Unido) e operacional em Golden Valley, Minnesota (EUA); a maior parte das vendas nos EUA."},
+ "temas": [
+  {"tema": "Mercado residencial", "relacao": "As vendas de piscinas caíram 18% com a redução de estoques nos distribuidores antes da temporada de 2027."},
+  {"tema": "Água e saneamento", "relacao": "Comprou a Taco Group Holdings para ampliar o portfólio de água e fluxo."}
+ ],
+ "diferencial": {
+  "texto": "A Pentair tem marcas líderes em equipamentos de piscina nos EUA, uma enorme base instalada que gera vendas de reposição e manutenção, e relação forte com distribuidores, o que sustenta margens altas. Os pontos fracos são a dependência do mercado residencial e do clima e os ciclos de estoque nos distribuidores.",
+  "vantagem": {"nivel": "moderada", "resumo": "Marcas líderes em equipamentos de piscina e grande base instalada que gera reposição, mas dependente do mercado residencial."},
+  "concorrentes": ["Hayward", "Fluidra", "Xylem", "A. O. Smith", "Franklin Electric"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro ajustado de 2026 deve ficar em cerca de US$ 4,70 por ação, com vendas caindo cerca de 3%, e o 4T26 deve ter vendas crescendo de 7% a 9%, já com a Taco. O potencial vem da normalização dos estoques de piscinas em 2027.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "cerca de US$ 4,70 por ação", "periodo": "2026"},
+   {"rotulo": "Margem operacional ajustada", "valor": "24,8%", "periodo": "3T26"},
+   {"rotulo": "Dividendo trimestral", "valor": "US$ 0,27", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 0,91 por ação no 3T26 (US$ 1,18 ajustado), com margem operacional ajustada de 24,8% e fluxo de caixa livre de US$ 153 mi. Recomprou US$ 350 mi em ações no ano e aumentou o dividendo pelo 50º ano seguido.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Fraqueza do mercado de piscinas.",
+  "Ciclos de estoque nos distribuidores.",
+  "Dependência do mercado residencial.",
+  "Integração da Taco."
+ ],
+ "momento": "No 3T26 (divulgado em 27/10/2026), as vendas caíram 4%, para US$ 976 mi, com piscinas em queda de 18%, mas o lucro ajustado veio acima do esperado e a empresa manteve a projeção do ano; o CEO é John Stauch.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-27",
+  "positivos": [
+   "Lucro ajustado acima do esperado.",
+   "Margens altas em água e fluxo.",
+   "50º aumento anual do dividendo."
+  ],
+  "negativos": [
+   "Vendas de piscinas caíram 18%."
+  ],
+  "atencao": [
+   "Temporada de piscinas de 2027.",
+   "Integração da Taco."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Pentair: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000055/q32026pressrelease.htm", "data": "2026-10-27"},
+  {"titulo": "Securities.io: Pentair Q3 sales fall 4% to $976 million as pool segment drops 18%", "url": "https://www.securities.io/pentair-q3-sales-fall-4-to-976-million-as-pool-segment-drops-18/", "data": "2026-10"},
+  {"titulo": "Finviz: Pentair reports Q3 earnings above estimates, maintains 2026 EPS outlook", "url": "https://finviz.com/news/408914/pentair-reports-q3-earnings-above-estimates-maintains-2026-eps-outlook-at-470", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

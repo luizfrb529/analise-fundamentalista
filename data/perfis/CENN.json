@@ -1,0 +1,63 @@
+{
+ "ticker": "CENN",
+ "revisado_em": "2026-11-22",
+ "resumo": "Pequena fabricante de veículos elétricos comerciais (vans e caminhões leves), com operações nos EUA, Europa e Ásia. Receita mínima, prejuízo constante, caixa muito curto e diluição recorrente.",
+ "modelo": "A Cenntro projeta e vende vans e caminhões elétricos leves para entregas urbanas, frotas municipais e empresas de logística, com montagem em parte nos EUA. Vende por distribuidores e diretamente a frotas, às vezes com apoio de programas públicos de incentivo.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 6,2 mi no 2T26 (-2,9%) e US$ 7,4 mi no 1S26 (-13,1%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede nos EUA; operações nos EUA, Europa e Ásia."},
+ "temas": [
+  {"tema": "Veículos elétricos comerciais", "relacao": "Entregou 20 caminhões LS450 em um programa de incentivo de Nova York, com mais de US$ 2,4 mi de receita, segundo a empresa."},
+  {"tema": "Pequenas empresas de capital aberto", "relacao": "Fez grupamento de ações de 60 para 1 em abril de 2026 para manter a listagem na Nasdaq."}
+ ],
+ "diferencial": {
+  "texto": "A Cenntro tem uma linha de veículos elétricos comerciais leves, mas vende muito pouco, não tem escala nem tecnologia exclusiva e compete com montadoras grandes e startups mais capitalizadas. Não há vantagem competitiva clara.",
+  "vantagem": {"nivel": "nenhuma clara", "resumo": "Vende veículos elétricos comerciais leves em volume muito pequeno, sem escala nem tecnologia exclusiva."},
+  "concorrentes": ["Ford (E-Transit)", "Rivian", "Workhorse", "BYD", "Mercedes-Benz Vans"]
+ },
+ "potencial": {
+  "texto": "O potencial depende de ganhar contratos de frotas e incentivos públicos e de conseguir financiamento. A empresa não traz projeção numérica.",
+  "metricas": [
+   {"rotulo": "Receita do semestre", "valor": "US$ 7,4 mi (-13,1%)", "periodo": "1S26"},
+   {"rotulo": "Caixa", "valor": "US$ 4,3 mi", "periodo": "jun/2026"},
+   {"rotulo": "Margem bruta", "valor": "cerca de 6,6%", "periodo": "2T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo e queima de caixa",
+  "texto": "Prejuízo de US$ 10,6 mi no 2T26 e de US$ 14,5 mi no semestre, com receita de US$ 7,4 mi. O caixa era de apenas US$ 4,3 mi em junho, e a empresa adiou a entrega do balanço do 3T26. Depende de novas emissões de ações, com grupamento de 60 para 1 em 2026.",
+  "caixa": "US$ 4,3 mi",
+  "queima_anual": null,
+  "periodo": "jun/2026"
+ },
+ "riscos": [
+  "Caixa muito curto.",
+  "Diluição por novas emissões.",
+  "Possível saída da Nasdaq.",
+  "Vendas muito baixas."
+ ],
+ "momento": "No 2T26 (10-Q de 14/08/2026), a receita caiu 2,9%, para US$ 6,2 mi, com prejuízo de US$ 10,6 mi; em novembro, a empresa pediu prazo extra para entregar o balanço do 3T26.",
+ "destaques_resultado": {
+  "trimestre": "2T26",
+  "divulgado_em": "2026-08-14",
+  "positivos": [
+   "Margem bruta voltou a ser positiva.",
+   "Entrega de 20 caminhões em Nova York."
+  ],
+  "negativos": [
+   "Prejuízo de US$ 10,6 mi.",
+   "Caixa de US$ 4,3 mi."
+  ],
+  "atencao": [
+   "Balanço do 3T26 atrasado.",
+   "Novas captações."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Cenntro: 10-Q do 2T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1707919/000114036126033166/ef20075171_10q.htm", "data": "2026-08-14"},
+  {"titulo": "Cenntro: entrega de caminhões em Nova York (8-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1707919/000114036126041719/ef20084695_ex99-1.htm", "data": "2026-11-03"},
+  {"titulo": "Business Wire: Cenntro announces 1-for-60 reverse stock split", "url": "https://www.businesswire.com/news/home/20260409638373/en/Cenntro-Announces-1-for-60-Reverse-Stock-Split", "data": "2026-04-09"},
+  {"titulo": "Panabee: Cenntro earnings, margin expansion amidst acute liquidity constraints", "url": "https://www.panabee.com/news/cenntro-earnings-q2-2026-report", "data": "2026-08"}
+ ],
+ "ultimo_resultado": "2T26"
+}
