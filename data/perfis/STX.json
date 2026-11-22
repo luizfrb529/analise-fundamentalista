@@ -1,0 +1,108 @@
+{
+ "ticker": "STX",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior fabricante de discos rígidos do mundo, pioneira na tecnologia HAMR de alta capacidade, vendendo sobretudo para grandes nuvens. A demanda por armazenamento para IA elevou a receita em 61% e o lucro mais que triplicou.",
+ "modelo": "A Seagate projeta e fabrica discos rígidos, principalmente os de grande capacidade (linha Exos e plataforma Mozaic, com HAMR) usados por grandes nuvens para guardar dados a custo baixo, além de discos para videovigilância, PCs e consumidores. Vende em contratos de volume e controla a oferta para sustentar preços.",
+ "segmentos": [],
+ "segmentos_base": "Empresa não divulga receita por mercado no release; a maior parte vem de nuvem",
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede formal na Irlanda e operação principal na Califórnia (EUA), com fábricas na Ásia; clientes nas grandes nuvens americanas e asiáticas."
+ },
+ "temas": [
+  {
+   "tema": "Armazenamento para IA",
+   "relacao": "A IA gera enormes volumes de dados que precisam ser guardados; a empresa mantém a meta de crescer a oferta de exabytes cerca de 25% ao ano e controlar o preço."
+  },
+  {
+   "tema": "Tecnologia HAMR",
+   "relacao": "Foi a primeira a vender discos HAMR em volume e espera enviar amostras do Mozaic 5, acima de 50 TB por disco, no fim de 2027, segundo a imprensa."
+  }
+ ],
+ "diferencial": {
+  "texto": "O mercado de discos rígidos é um duopólio entre Seagate e Western Digital, com enorme barreira tecnológica; a Seagate saiu na frente com o HAMR, que aumenta a capacidade por disco sem elevar muito o custo. Os pontos fracos são os ciclos históricos de preço, a dependência de poucas nuvens e a concorrência da Western Digital, que também lança HAMR.",
+  "concorrentes": [
+   "Western Digital",
+   "Toshiba",
+   "Samsung",
+   "Micron",
+   "SK Hynix (Solidigm)",
+   "SanDisk"
+  ]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do trimestre até dezembro deve ser de US$ 4,8 bi, mais ou menos US$ 100 mi, com lucro ajustado de US$ 9,20 por ação. O crescimento vem do HAMR, que permite vender mais terabytes por disco com margem maior.",
+  "metricas": [
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 4,7 bi a US$ 4,9 bi",
+    "periodo": "trimestre até dez/2026"
+   },
+   {
+    "rotulo": "Margem bruta ajustada",
+    "valor": "57,8%",
+    "periodo": "1T27 fiscal (out/2026)"
+   },
+   {
+    "rotulo": "Lucro ajustado por ação projetado",
+    "valor": "US$ 9,20",
+    "periodo": "trimestre até dez/2026"
+   }
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 1,76 bi no trimestre (US$ 7,59 por ação), com margem bruta de 57,3%, contra 39,4% um ano antes. O fluxo de caixa livre foi de US$ 1,48 bi. A empresa pagou cerca de US$ 1,2 bi de dívida no trimestre e mais US$ 750 mi depois, reduzindo a dívida bruta para cerca de US$ 1,6 bi, tem US$ 1,3 bi em caixa e devolveu US$ 568 mi aos acionistas.",
+  "caixa": "US$ 1,3 bi",
+  "queima_anual": null,
+  "periodo": "out/2026"
+ },
+ "riscos": [
+  "Ciclos de preço e demanda de discos.",
+  "Concentração em poucas grandes nuvens.",
+  "Concorrência em HAMR.",
+  "Substituição por memória flash."
+ ],
+ "momento": "No trimestre encerrado em outubro (4T26 no calendário, 1T27 fiscal da empresa, divulgado em 27/10/2026), a receita subiu 61%, para US$ 4,23 bi, acima do esperado, mas as ações caíram após o resultado, segundo a imprensa. A empresa elevou o dividendo em cerca de 3%.",
+ "destaques_resultado": {
+  "trimestre": "4T26",
+  "divulgado_em": "2026-10-27",
+  "positivos": [
+   "Receita de US$ 4,23 bi, alta de 61%.",
+   "Margem bruta de 57,3%.",
+   "Dívida bruta reduzida para cerca de US$ 1,6 bi."
+  ],
+  "negativos": [
+   "Lucro ajustado ficou abaixo da expectativa informal de parte do mercado."
+  ],
+  "atencao": [
+   "Adoção do HAMR pelas nuvens.",
+   "Sustentação dos preços."
+  ]
+ },
+ "fontes": [
+  {
+   "titulo": "Seagate: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000300/stxq12027pressreleasefinan.htm",
+   "data": "2026-10-27"
+  },
+  {
+   "titulo": "TechPowerUp: Seagate reports fiscal FQ1 2027 results",
+   "url": "https://www.techpowerup.com/354195/seagate-technology-reports-fiscal-fq1-2027-financial-results",
+   "data": "2026-10-27"
+  },
+  {
+   "titulo": "Zacks: Seagate Q1 earnings call highlights strong demand and HAMR expansion",
+   "url": "https://www.zacks.com/stock/news/3017300/seagate-q1-earnings-call-highlights-strong-demand-and-hamr-expansion",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "Blocks & Files: Seagate, hyperscalers hot for HAMR",
+   "url": "https://www.blocksandfiles.com/disk/2026/10/29/seagate-hyperscalers-hot-for-hamr/5306231",
+   "data": "2026-10-29"
+  }
+ ],
+ "ultimo_resultado": "4T26"
+}

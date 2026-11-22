@@ -1,0 +1,66 @@
+{
+ "ticker": "DELL",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana de computadores, servidores e armazenamento que se tornou uma das maiores vendedoras de servidores de IA do mundo, com carteira recorde de US$ 95 bi em pedidos de IA. Lucrativa, com receita crescendo 58%.",
+ "modelo": "A Dell vende servidores, sistemas de armazenamento e redes para empresas, nuvens e laboratórios de IA (Infrastructure Solutions Group, ISG) e computadores pessoais e acessórios para empresas e consumidores (Client Solutions Group, CSG). Nos servidores de IA monta racks com GPUs NVIDIA e AMD, com serviços de instalação e financiamento.",
+ "segmentos": [
+  {"nome": "Infraestrutura (servidores, IA, armazenamento)", "peso_receita": 0.68, "periodo": "3T26", "obs": "US$ 31,8 bi, alta de 89%; servidores de IA US$ 16,4 bi (+100%)."},
+  {"nome": "Computadores (CSG)", "peso_receita": 0.32, "periodo": "3T26", "obs": "US$ 15,0 bi, alta de 20%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede no Texas (EUA), com produção nas Américas, Europa e Ásia; cerca de metade da receita vem dos EUA."},
+ "temas": [
+  {"tema": "Servidores de IA", "relacao": "Recebeu US$ 60,9 bi em pedidos de servidores de IA no trimestre, recorde, e terminou com carteira de US$ 95 bi; nos 12 meses anteriores foram mais de US$ 130 bi em pedidos, segundo a empresa."},
+  {"tema": "Renovação de PCs", "relacao": "Computadores corporativos cresceram com a troca de máquinas para Windows 11 e PCs com IA."}
+ ],
+ "diferencial": {
+  "texto": "A Dell tem a maior rede de vendas corporativas e de serviços entre as fabricantes de servidores, cadeia de suprimentos em escala global e capacidade de financiar e instalar grandes projetos, o que a torna parceira preferida de empresas e novas nuvens de IA. Os pontos fracos são a margem baixa dos servidores de IA, a dependência da NVIDIA, a concorrência de Super Micro, HPE e montadoras de Taiwan e a dívida de US$ 34 bi.",
+  "concorrentes": ["HPE", "Super Micro", "Lenovo", "HP Inc.", "Foxconn", "Quanta"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 (fevereiro de 2026 a janeiro de 2027) deve ser de US$ 192 bi (alta de 69%), com US$ 74 bi de servidores de IA, contra projeção anterior de US$ 60 bi, e lucro ajustado de US$ 25,50 por ação. O trimestre até outubro deve ter receita de US$ 49 bi e ser divulgado no fim de novembro.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 192 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Carteira de pedidos de IA", "valor": "US$ 95 bi", "periodo": "jul/2026"},
+   {"rotulo": "Servidores de IA projetados", "valor": "US$ 74 bi", "periodo": "ano fiscal 2027"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 6,34 por ação no trimestre (US$ 7,04 ajustado), com lucro operacional triplicando, para US$ 5,4 bi. O caixa operacional foi de US$ 2,2 bi, pressionado por estoques para os servidores de IA. A empresa tinha US$ 11,6 bi em caixa e US$ 34,5 bi em dívida, e devolveu US$ 4,3 bi aos acionistas no trimestre.",
+  "caixa": "US$ 11,6 bi",
+  "queima_anual": null,
+  "periodo": "jul/2026"
+ },
+ "riscos": [
+  "Margem baixa dos servidores de IA.",
+  "Dependência de poucos grandes clientes de IA e da NVIDIA.",
+  "Dívida elevada.",
+  "Concorrência intensa em servidores."
+ ],
+ "momento": "No trimestre encerrado em julho (3T26 no calendário, 2T27 fiscal da empresa, divulgado em 01/09/2026), a receita subiu 58%, para US$ 47,0 bi, com pedidos recordes de IA, e a empresa elevou a projeção do ano de US$ 167 bi para US$ 192 bi. O trimestre seguinte deve ser divulgado no fim de novembro.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-01",
+  "positivos": [
+   "Receita de US$ 47,0 bi, alta de 58%.",
+   "Pedidos de IA de US$ 60,9 bi e carteira de US$ 95 bi.",
+   "Projeção do ano elevada para US$ 192 bi."
+  ],
+  "negativos": [
+   "Caixa operacional caiu 13% com estoques de IA.",
+   "Dívida de US$ 34,5 bi."
+  ],
+  "atencao": [
+   "Resultado do trimestre encerrado em outubro, no fim de novembro.",
+   "Conversão da carteira de IA em receita."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Dell: resultados do 2T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000039/exhibit991earnings8kq2fy27.htm", "data": "2026-09-01"},
+  {"titulo": "Nasdaq: Dell's $95 billion backlog answers the AI question", "url": "https://www.nasdaq.com/articles/dells-95-billion-backlog-answers-ai-question", "data": "2026-09"},
+  {"titulo": "Futurum: Dell Technologies Q2 FY 2027, AI orders fuel server and storage growth", "url": "https://futurumgroup.com/insights/dell-technologies-q2-fy-2027-ai-orders-fuel-server-and-storage-growth/", "data": "2026-09"},
+  {"titulo": "Constellation Research: Dell rides AI servers in Q2, ups annual revenue outlook", "url": "https://www.constellationr.com/insights/news/dell-technologies-rides-ai-servers-q2-ups-annual-revenue-outlook", "data": "2026-09"}
+ ],
+ "ultimo_resultado": "3T26"
+}

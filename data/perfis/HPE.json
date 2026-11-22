@@ -1,0 +1,66 @@
+{
+ "ticker": "HPE",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana de servidores, armazenamento e equipamentos de rede, que comprou a Juniper Networks em 2025 e ganhou peso em servidores de IA. Lucrativa, com receita crescendo 34% e foco cada vez maior em redes.",
+ "modelo": "A HPE vende servidores (inclusive supercomputadores e sistemas de IA com GPUs NVIDIA e AMD), armazenamento, nuvem híbrida (GreenLake) e equipamentos de rede (Aruba e Juniper) para empresas, governos, operadoras e nuvens, além de financiamento desses equipamentos. Redes têm margem bem maior que servidores.",
+ "segmentos": [
+  {"nome": "Nuvem e IA (servidores, armazenamento, financiamento)", "peso_receita": 0.74, "periodo": "3T26", "obs": "US$ 9,04 bi, alta de 25%; servidores US$ 6,77 bi (+35%); margem de 17,0%."},
+  {"nome": "Redes (inclui Juniper)", "peso_receita": 0.24, "periodo": "3T26", "obs": "US$ 2,89 bi, alta de 75%; margem de 22,0%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede no Texas (EUA); vende no mundo todo, com cerca de metade da receita fora dos EUA."},
+ "temas": [
+  {"tema": "Servidores e redes de IA", "relacao": "A carteira de sistemas de IA está em nível recorde, segundo o diretor financeiro, e a Oracle vai usar equipamentos Juniper em sua infraestrutura global de IA, segundo a imprensa."},
+  {"tema": "Redes de data center", "relacao": "Redes de data center cresceram 112% no trimestre, com a Juniper."}
+ ],
+ "diferencial": {
+  "texto": "Com a Juniper, a HPE passou a ter um dos portfólios de rede mais completos do mercado, do campus ao data center, com margem alta, e combina isso com servidores, supercomputadores (herdados da Cray) e serviços. Os pontos fracos são a margem baixa dos servidores de IA, a concorrência de Cisco, Arista, Dell e Super Micro e a dívida da compra da Juniper.",
+  "concorrentes": ["Cisco", "Arista", "Dell", "Super Micro", "Lenovo", "IBM"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2026 (novembro de 2025 a outubro de 2026) deve crescer de 34% a 37%, com lucro ajustado de US$ 3,75 a US$ 3,85 por ação e caixa livre de pelo menos US$ 3,75 bi. Para o ano fiscal 2027, a empresa projeta crescimento de 13% a 17%, lucro ajustado crescendo 16% a 20% e caixa livre de pelo menos US$ 5 bi. A meta de sinergias com a Juniper é de US$ 600 mi por ano até 2028.",
+  "metricas": [
+   {"rotulo": "Crescimento da receita projetado", "valor": "34% a 37%", "periodo": "ano fiscal 2026"},
+   {"rotulo": "Caixa livre projetado", "valor": "pelo menos US$ 5 bi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Sinergias com a Juniper", "valor": "US$ 600 mi por ano", "periodo": "até 2028"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 1,06 por ação no trimestre (US$ 1,11 ajustado), acima da projeção, com margem operacional ajustada de 16,2%. O fluxo de caixa livre foi de US$ 958 mi. A empresa tinha US$ 6,2 bi em caixa e cerca de US$ 20,2 bi em dívida, paga dividendo trimestral e planeja devolver pelo menos 75% do caixa livre do 4T aos acionistas.",
+  "caixa": "US$ 6,2 bi",
+  "queima_anual": null,
+  "periodo": "jul/2026"
+ },
+ "riscos": [
+  "Margem baixa dos servidores de IA.",
+  "Integração da Juniper.",
+  "Dívida elevada após a aquisição.",
+  "Concorrência em redes e servidores."
+ ],
+ "momento": "No trimestre encerrado em julho (3T26 no calendário, 3T fiscal da empresa, divulgado em 02/09/2026), a receita recorde de US$ 12,2 bi subiu 34% e o lucro superou a projeção; a empresa elevou as metas do ano e apresentou a projeção para o ano fiscal 2027. O resultado do ano fiscal deve sair no início de dezembro.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-02",
+  "positivos": [
+   "Receita recorde de US$ 12,2 bi, alta de 34%.",
+   "Redes cresceram 75% com a Juniper.",
+   "Margem de nuvem e IA subiu de 7,0% para 17,0%."
+  ],
+  "negativos": [
+   "Armazenamento cresceu só 10%.",
+   "Financiamento ficou estável."
+  ],
+  "atencao": [
+   "Resultado do ano fiscal no início de dezembro.",
+   "Conversão da carteira de IA."
+  ]
+ },
+ "fontes": [
+  {"titulo": "HPE: resultados do 3T fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000078/ex-991x922026x8k.htm", "data": "2026-09-02"},
+  {"titulo": "HPE Newsroom: HPE reports fiscal 2026 third quarter results", "url": "https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-reports-fiscal-2026-third-quarter-results.html", "data": "2026-09-02"},
+  {"titulo": "Constellation Research: HPE delivers strong Q3, ups fiscal 2026 outlook", "url": "https://www.constellationr.com/insights/news/hpe-delivers-strong-q3-ups-fiscal-2026-outlook-due-ai-demand", "data": "2026-09"},
+  {"titulo": "Nasdaq: Hewlett Packard Enterprise Q3 earnings call highlights", "url": "https://www.nasdaq.com/articles/hewlett-packard-enterprise-q3-earnings-call-highlights", "data": "2026-09"}
+ ],
+ "ultimo_resultado": "3T26"
+}
