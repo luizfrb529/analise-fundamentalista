@@ -1,0 +1,66 @@
+{
+ "ticker": "MCO",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das três grandes agências de classificação de risco de crédito do mundo (Moody's Investors Service), com um braço de dados e softwares de análise de risco (Moody's Analytics). Muito lucrativa, com margem ajustada acima de 50%.",
+ "modelo": "A Moody's ganha de duas formas: cobrando de empresas, governos e bancos para dar notas de crédito a títulos de dívida que emitem (MIS), com receitas de transação e de monitoramento; e vendendo assinaturas de dados, pesquisas e softwares de risco de crédito, KYC e seguros (MA), com receita recorrente.",
+ "segmentos": [
+  {"nome": "Classificação de risco (MIS)", "peso_receita": 0.54, "periodo": "3T26", "obs": "Receita de US$ 1,09 bi (-1%); margem ajustada de 64,4%."},
+  {"nome": "Dados e análises (MA)", "peso_receita": 0.46, "periodo": "3T26", "obs": "Receita de US$ 936 mi (+3%); receita recorrente anualizada de US$ 3,69 bi (+8%)."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA); atua no mundo todo, com parte relevante da receita fora dos EUA."},
+ "temas": [
+  {"tema": "Mercado de dívida", "relacao": "A emissão de títulos classificados foi a segunda maior para um terceiro trimestre, mas a receita de transação caiu 5% com menos emissões de empresas de maior risco."},
+  {"tema": "IA e dados", "relacao": "Usa seus dados proprietários de crédito em ferramentas de IA para clientes de análise de risco."}
+ ],
+ "diferencial": {
+  "texto": "A Moody's divide com a S&P a maior parte do mercado mundial de classificação de risco, um duopólio protegido por reputação construída em mais de um século, exigências regulatórias e a necessidade de investidores por notas reconhecidas. Isso garante margens altíssimas. Os pontos fracos são a dependência do volume de emissões de dívida e o risco regulatório.",
+  "vantagem": {"nivel": "forte", "resumo": "Duopólio com a S&P na classificação de risco, protegido por reputação centenária e exigências regulatórias, com margens altíssimas."},
+  "concorrentes": ["S&P Global", "Fitch Ratings", "MSCI", "Bloomberg", "LSEG"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve crescer em ritmo alto de um dígito, com lucro ajustado de US$ 16,50 a US$ 17,00 por ação e fluxo de caixa livre de US$ 2,7 bi a US$ 2,9 bi. O potencial vem do refinanciamento de dívidas, do crédito privado e da receita recorrente de análises.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 16,50 a US$ 17,00 por ação", "periodo": "2026"},
+   {"rotulo": "Fluxo de caixa livre projetado", "valor": "US$ 2,7 bi a US$ 2,9 bi", "periodo": "2026"},
+   {"rotulo": "Margem operacional ajustada", "valor": "52,6%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 4,24 por ação no 3T26 (+18%) e lucro ajustado de US$ 4,14 (+6%), com margem ajustada de 52,6%. Gerou US$ 2,2 bi de caixa livre em nove meses e devolveu US$ 3,1 bi aos acionistas. A dívida é de US$ 6,9 bi, com US$ 1,5 bi em caixa.",
+  "caixa": "US$ 1,51 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Queda nas emissões de dívida.",
+  "Regulação das agências de risco.",
+  "Danos à reputação por notas erradas.",
+  "Concorrência em dados e análises."
+ ],
+ "momento": "No 3T26 (divulgado em 21/10/2026), a receita subiu 1%, para US$ 2,02 bi, com queda na classificação de risco, e as ações caíram cerca de 3%; a empresa manteve a projeção de 2026.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-21",
+  "positivos": [
+   "Receita recorrente de análises cresceu 8%.",
+   "Lucro ajustado subiu 6%.",
+   "Projeção de 2026 mantida."
+  ],
+  "negativos": [
+   "Receita de transação caiu 5%.",
+   "Resultado abaixo do esperado pelo mercado."
+  ],
+  "atencao": [
+   "Volume de emissões no 4T26.",
+   "Crescimento de Moody's Analytics."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Moody's: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm", "data": "2026-10-21"},
+  {"titulo": "Finviz: Moody's shares decline nearly 3% as Q3 earnings and revenue miss estimates", "url": "https://finviz.com/news/405538/moodys-shares-decline-nearly-3-as-third-quarter-earnings-and-revenue-miss-estimates", "data": "2026-10-21"},
+  {"titulo": "Webull: Moody's Q3 2026 earnings call transcript", "url": "https://www.webull.com/news/15786445438331904", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

@@ -1,0 +1,64 @@
+{
+ "ticker": "CB",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior seguradora de propriedades e responsabilidade civil de capital aberto do mundo, presente em mais de 50 países, com forte disciplina de subscrição. Lucrativa, com ROE de 15% e recompras e dividendos constantes.",
+ "modelo": "A Chubb vende seguros comerciais (propriedades, responsabilidade civil, riscos especiais) para empresas de todos os portes, seguros pessoais para clientes de alta renda, seguros agrícolas, de acidentes e saúde, resseguro e seguros de vida, principalmente na Ásia. Ganha com a subscrição (prêmios acima dos sinistros) e com a aplicação das reservas.",
+ "segmentos": [],
+ "segmentos_base": "Prêmios líquidos de P&C de US$ 13,18 bi no 3T26 (+1,9%); seguros de vida de US$ 1,96 bi",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Zurique (Suíça), com operação central nos EUA; atua em mais de 50 países, com forte presença na América do Norte, Ásia e América Latina."},
+ "temas": [
+  {"tema": "Catástrofes climáticas", "relacao": "As perdas com catástrofes subiram para US$ 705 mi no trimestre, ante US$ 285 mi um ano antes."},
+  {"tema": "Juros altos", "relacao": "A renda de investimentos subiu 8,6%, para US$ 1,79 bi, com reinvestimento a taxas maiores."}
+ ],
+ "diferencial": {
+  "texto": "A Chubb tem escala global, presença em mais de 50 países, rede de corretores e capacidade técnica para riscos complexos, além de um histórico de subscrição muito disciplinada, com índice combinado entre os melhores do setor. Os pontos fracos são a exposição a catástrofes e o ciclo de preços dos seguros comerciais, que começa a desacelerar.",
+  "vantagem": {"nivel": "forte", "resumo": "Escala global, subscrição disciplinada com índice combinado entre os melhores do setor e capacidade técnica para riscos complexos."},
+  "concorrentes": ["AIG", "Travelers", "Allianz", "Zurich", "Berkshire Hathaway", "Tokio Marine"]
+ },
+ "potencial": {
+  "texto": "O potencial vem do crescimento na Ásia e em seguros de vida, da renda de investimentos e da devolução de capital por recompras e dividendos. A empresa não traz projeção numérica no release.",
+  "metricas": [
+   {"rotulo": "Índice combinado P&C", "valor": "84,1%", "periodo": "3T26"},
+   {"rotulo": "Valor patrimonial por ação", "valor": "US$ 191,43 (+5,1%)", "periodo": "set/2026"},
+   {"rotulo": "Recompras", "valor": "US$ 3,30 bi", "periodo": "9M26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 2,84 bi no 3T26 (US$ 7,30 por ação) e lucro operacional de US$ 7,66 por ação, com ROE anualizado de 15,3%. Devolveu US$ 1,57 bi aos acionistas no trimestre em recompras e dividendos, e o valor patrimonial por ação subiu 5,1% em um ano.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Catástrofes naturais.",
+  "Desaceleração dos preços de seguros comerciais.",
+  "Inflação de sinistros e processos judiciais.",
+  "Exposição a mercados emergentes."
+ ],
+ "momento": "No 3T26 (divulgado em 20/10/2026), o lucro subiu 4,4%, para US$ 2,84 bi, mas o lucro operacional ficou quase estável por catástrofes maiores; o índice combinado subiu para 84,1%.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-20",
+  "positivos": [
+   "Renda de investimentos subiu 8,6%.",
+   "Seguros de vida cresceram 11,4% no resultado.",
+   "Recompras de US$ 1,18 bi."
+  ],
+  "negativos": [
+   "Catástrofes de US$ 705 mi.",
+   "Índice combinado piorou."
+  ],
+  "atencao": [
+   "Preços de seguros comerciais.",
+   "Temporada de furacões."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Chubb: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312526426866/d160822dex991.htm", "data": "2026-10-20"},
+  {"titulo": "Insurance Journal: Chubb Q3 2026", "url": "https://www.insurancejournal.com/news/national/2026/10/21/889758.htm", "data": "2026-10-21"},
+  {"titulo": "Reinsurance News: Chubb posts record P&C underwriting income for first 9M 26", "url": "https://www.reinsurancene.ws/chubb-posts-record-5-79bn-pc-underwriting-income-for-first-nine-months-of-2026/", "data": "2026-10"},
+  {"titulo": "Zacks: Chubb Q3 earnings beat estimates on investment and life income growth", "url": "https://www.zacks.com/stock/news/3012022/chubb-q3-earnings-beat-estimates-on-investment-and-life-income-growth", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

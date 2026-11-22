@@ -1,0 +1,63 @@
+{
+ "ticker": "KR",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior rede de supermercados tradicionais dos EUA, com cerca de 2.700 lojas sob várias bandeiras, farmácias e postos de combustível. Lucrativa, com dividendos crescentes, mas vendas mesmas lojas quase estagnadas em 2026.",
+ "modelo": "A Kroger vende alimentos, produtos de higiene e limpeza, remédios e combustível em supermercados próprios (Kroger, Ralphs, Fred Meyer, Harris Teeter e outras bandeiras) e pela internet. Tem marcas próprias fortes, programa de fidelidade com muitos dados de clientes e um negócio de mídia e publicidade (Kroger Precision Marketing).",
+ "segmentos": [],
+ "segmentos_base": "Vendas de US$ 34,6 bi no 2º tri fiscal 2026; vendas mesmas lojas sem combustível +0,2%",
+ "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Cincinnati (EUA); lojas em cerca de 35 estados americanos."},
+ "temas": [
+  {"tema": "Consumo pressionado", "relacao": "Combustível mais caro, cortes no SNAP (vale-alimentação) e menor confiança limitaram os gastos, segundo a empresa."},
+  {"tema": "Comércio eletrônico", "relacao": "As vendas online ajustadas cresceram 20% no trimestre."}
+ ],
+ "diferencial": {
+  "texto": "A Kroger tem escala de compras, marcas próprias fortes e dados de fidelidade de dezenas de milhões de clientes, que alimentam um negócio de publicidade de margem alta. Mas o varejo de supermercados tem margem baixa e concorrência intensa de Walmart, Costco, Amazon e redes de desconto, que crescem mais rápido.",
+  "vantagem": {"nivel": "moderada", "resumo": "Escala, marcas próprias fortes e dados de fidelidade que geram receita de publicidade, mas em setor de margem baixa e concorrência intensa."},
+  "concorrentes": ["Walmart", "Costco", "Albertsons", "Amazon (Whole Foods)", "Aldi", "Publix"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas mesmas lojas sem combustível de 2026 devem crescer só 0,2% a 0,8%, abaixo da projeção anterior de 1% a 2%, mas o lucro ajustado deve ficar entre US$ 5,10 e US$ 5,30 por ação, com caixa livre de US$ 2,7 bi a US$ 2,9 bi.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 5,10 a US$ 5,30 por ação", "periodo": "2026"},
+   {"rotulo": "Fluxo de caixa livre projetado", "valor": "US$ 2,7 bi a US$ 2,9 bi", "periodo": "2026"},
+   {"rotulo": "Dividendo trimestral", "valor": "US$ 0,39 (+11%)", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 1,05 por ação no trimestre (US$ 1,09 ajustado), com lucro operacional de US$ 971 mi. A dívida líquida é de US$ 15,5 bi, cerca de 1,9 vez o Ebitda; a empresa recomprou US$ 1,0 bi em ações no trimestre e elevou o dividendo em 11%.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Concorrência de Walmart, Costco e Amazon.",
+  "Consumo fraco e cortes de benefícios sociais.",
+  "Margem baixa do setor.",
+  "Processos ligados à fusão cancelada com a Albertsons."
+ ],
+ "momento": "No 2º tri fiscal 2026 (divulgado em 11/09/2026), as vendas mesmas lojas cresceram só 0,2% e a empresa cortou a projeção de vendas do ano, mas manteve a de lucro; o CEO é Greg Foran.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-11",
+  "positivos": [
+   "Vendas online subiram 20%.",
+   "Lucro operacional subiu.",
+   "Dividendo elevado em 11%."
+  ],
+  "negativos": [
+   "Vendas mesmas lojas quase estáveis.",
+   "Projeção de vendas cortada."
+  ],
+  "atencao": [
+   "Resultado do 3º tri fiscal.",
+   "Estratégia do novo CEO."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Kroger: resultados do 2º tri fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/56873/000110465926106890/tm2625060d1_ex99-1.htm", "data": "2026-09-11"},
+  {"titulo": "Grocery Dive: Kroger second quarter 2026 earnings", "url": "https://www.grocerydive.com/news/kroger-earnings-second-quarter-2026-grocery-supermarkets/830070/", "data": "2026-09"},
+  {"titulo": "Supermarket News: Kroger cuts same-store sales outlook for 2026", "url": "https://www.supermarketnews.com/finance/kroger-cuts-same-store-sales-outlook-for-2026", "data": "2026-09"}
+ ],
+ "ultimo_resultado": "3T26"
+}
