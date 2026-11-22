@@ -4,27 +4,79 @@
  "resumo": "Corretora digital americana que virou plataforma financeira completa: ações, opções, cripto, mercados de previsão, aposentadoria, banco e cartão. Tem 28,7 milhões de clientes e US$ 396 bi em ativos na plataforma.",
  "modelo": "A Robinhood ganha principalmente com transações (repasse de ordens de opções, ações e cripto, contratos de eventos dos mercados de previsão), com juros sobre o caixa dos clientes, empréstimo de margem e aluguel de ações, e com assinaturas (Robinhood Gold), cartão e serviços. Opera nos EUA e expande para Europa, Reino Unido e Oriente Médio, além da corretora de cripto Bitstamp e da rede Robinhood Chain para ações tokenizadas.",
  "segmentos": [
-  {"nome": "Transações (opções, ações, cripto, eventos)", "peso_receita": 0.61, "periodo": "3T26", "obs": "US$ 867 mi; opções US$ 399 mi, eventos US$ 173 mi, ações US$ 121 mi, cripto US$ 120 mi."},
-  {"nome": "Juros", "peso_receita": 0.29, "periodo": "3T26", "obs": "US$ 415 mi, queda de 9% em um ano."},
-  {"nome": "Outras (Gold, Trump Accounts e outros)", "peso_receita": 0.10, "periodo": "3T26", "obs": "US$ 142 mi, alta de 61%."}
+  {
+   "nome": "Transações (opções, ações, cripto, eventos)",
+   "peso_receita": 0.61,
+   "periodo": "3T26",
+   "obs": "US$ 867 mi; opções US$ 399 mi, eventos US$ 173 mi, ações US$ 121 mi, cripto US$ 120 mi."
+  },
+  {
+   "nome": "Juros",
+   "peso_receita": 0.29,
+   "periodo": "3T26",
+   "obs": "US$ 415 mi, queda de 9% em um ano."
+  },
+  {
+   "nome": "Outras (Gold, Trump Accounts e outros)",
+   "peso_receita": 0.1,
+   "periodo": "3T26",
+   "obs": "US$ 142 mi, alta de 61%."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA). A maior parte da receita vem dos EUA; opera na União Europeia e no Reino Unido e recebeu autorização em Dubai, com lançamento previsto para 2027."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede na Califórnia (EUA). A maior parte da receita vem dos EUA; opera na União Europeia e no Reino Unido e recebeu autorização em Dubai, com lançamento previsto para 2027."
+ },
  "temas": [
-  {"tema": "Mercados de previsão", "relacao": "Contratos de eventos (apostas em resultados de eleições, esportes, economia) renderam US$ 173 mi no 3T26, mais de seis vezes o de um ano antes, e já superam a receita de cripto."},
-  {"tema": "Cripto e tokenização", "relacao": "A receita de cripto caiu 55% em um ano, para US$ 120 mi, com a queda dos preços; a rede Robinhood Chain para ações tokenizadas ficou entre as cinco maiores em receita no primeiro trimestre de operação."},
-  {"tema": "Juros nos EUA", "relacao": "Quase 30% da receita vem de juros; cortes de juros reduzem essa linha, que caiu 9% em um ano."}
+  {
+   "tema": "Mercados de previsão",
+   "relacao": "Contratos de eventos (apostas em resultados de eleições, esportes, economia) renderam US$ 173 mi no 3T26, mais de seis vezes o de um ano antes, e já superam a receita de cripto."
+  },
+  {
+   "tema": "Cripto e tokenização",
+   "relacao": "A receita de cripto caiu 55% em um ano, para US$ 120 mi, com a queda dos preços; a rede Robinhood Chain para ações tokenizadas ficou entre as cinco maiores em receita no primeiro trimestre de operação."
+  },
+  {
+   "tema": "Juros nos EUA",
+   "relacao": "Quase 30% da receita vem de juros; cortes de juros reduzem essa linha, que caiu 9% em um ano."
+  }
  ],
  "diferencial": {
   "texto": "A Robinhood tem marca forte entre investidores jovens, aplicativo simples e custo baixo de aquisição de clientes, e lança produtos muito rápido (17 novos produtos anunciados em setembro de 2026). Já tem 14 linhas de negócio com mais de US$ 100 mi de receita anualizada, o que reduz a dependência de uma só. Licenças de corretora, banco, cripto e mercados de previsão são barreiras regulatórias. Os pontos fracos são a sensibilidade ao humor do investidor de varejo, a dependência de opções e cripto e o risco regulatório sobre mercados de previsão e repasse de ordens.",
-  "concorrentes": ["Charles Schwab", "Interactive Brokers", "Coinbase", "Kalshi", "Webull", "SoFi"]
+  "concorrentes": [
+   "Charles Schwab",
+   "Interactive Brokers",
+   "Coinbase",
+   "Kalshi",
+   "Webull",
+   "SoFi"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Marca forte entre investidores jovens e lançamento rápido de produtos, mas em setor com custo de troca baixo."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, as despesas operacionais ajustadas mais remuneração em ações de 2026 devem ficar entre US$ 2,675 bi e US$ 2,75 bi, faixa reduzida no topo. Os depósitos líquidos de outubro passaram de US$ 13 bi, incluindo US$ 6 bi da família Dell para as contas Trump Accounts. O crescimento vem de mercados de previsão, assinaturas Gold (5,2 milhões, +34%), aposentadoria (US$ 36,6 bi, +51%), banco e expansão internacional. A empresa não divulga projeção de receita.",
   "metricas": [
-   {"rotulo": "Ativos na plataforma", "valor": "US$ 396 bi", "periodo": "set/2026"},
-   {"rotulo": "Assinantes Gold", "valor": "5,2 milhões", "periodo": "set/2026"},
-   {"rotulo": "Depósitos líquidos em 12 meses", "valor": "US$ 71 bi", "periodo": "set/2026"}
+   {
+    "rotulo": "Ativos na plataforma",
+    "valor": "US$ 396 bi",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Assinantes Gold",
+    "valor": "5,2 milhões",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Depósitos líquidos em 12 meses",
+    "valor": "US$ 71 bi",
+    "periodo": "set/2026"
+   }
   ]
  },
  "saude": {
@@ -61,10 +113,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Robinhood: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000164/q32026robinhoodexhibit991.htm", "data": "2026-10-27"},
-  {"titulo": "Robinhood: release corrigido do 3T26 (8-K/A, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000170/q32026robinhoodamendedex991.htm", "data": "2026-10-28"},
-  {"titulo": "Decrypt: Robinhood misses Q3 earnings as prediction market bets grow", "url": "https://decrypt.co/382004/robinhood-misses-q3-earnings-crypto-prediction-markets", "data": "2026-10-27"},
-  {"titulo": "FX News Group: Robinhood revenues tick up to record $1.42 billion in Q3 2026", "url": "https://fxnewsgroup.com/?p=51439", "data": "2026-10-28"}
+  {
+   "titulo": "Robinhood: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000164/q32026robinhoodexhibit991.htm",
+   "data": "2026-10-27"
+  },
+  {
+   "titulo": "Robinhood: release corrigido do 3T26 (8-K/A, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000170/q32026robinhoodamendedex991.htm",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "Decrypt: Robinhood misses Q3 earnings as prediction market bets grow",
+   "url": "https://decrypt.co/382004/robinhood-misses-q3-earnings-crypto-prediction-markets",
+   "data": "2026-10-27"
+  },
+  {
+   "titulo": "FX News Group: Robinhood revenues tick up to record $1.42 billion in Q3 2026",
+   "url": "https://fxnewsgroup.com/?p=51439",
+   "data": "2026-10-28"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

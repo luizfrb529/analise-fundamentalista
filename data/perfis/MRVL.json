@@ -4,24 +4,64 @@
  "resumo": "Fabricante de chips para conectar e processar dados em data centers, incluindo chips de IA sob medida. Data center já é 79% da receita, e a empresa anunciou em novembro de 2026 a compra da Lumentum por US$ 115 bi em ações.",
  "modelo": "A Marvell projeta chips (produção terceirizada, principalmente na TSMC) para infraestrutura de dados: processadores de sinal ópticos (DSPs) que fazem a conexão entre servidores de IA, chips sob medida (custom) desenvolvidos com grandes empresas de nuvem, switches, controladores de armazenamento e chips para redes de telecomunicação e empresas. Vende para provedores de nuvem e fabricantes de equipamentos.",
  "segmentos": [
-  {"nome": "Data center", "peso_receita": 0.79, "periodo": "2T27 fiscal", "obs": "US$ 2,17 bi, alta de 46% em um ano."},
-  {"nome": "Comunicações e outros", "peso_receita": 0.21, "periodo": "2T27 fiscal", "obs": "US$ 568 mi, alta de 10%."}
+  {
+   "nome": "Data center",
+   "peso_receita": 0.79,
+   "periodo": "2T27 fiscal",
+   "obs": "US$ 2,17 bi, alta de 46% em um ano."
+  },
+  {
+   "nome": "Comunicações e outros",
+   "peso_receita": 0.21,
+   "periodo": "2T27 fiscal",
+   "obs": "US$ 568 mi, alta de 10%."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Delaware e operação principal na Califórnia (EUA), com clientes no mundo todo."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Delaware e operação principal na Califórnia (EUA), com clientes no mundo todo."
+ },
  "temas": [
-  {"tema": "Inteligência artificial", "relacao": "Fornece chips sob medida e de conexão óptica para clusters de IA; a empresa relatou pedidos de IA muito fortes e espera aceleração forte dos chips sob medida a partir do 2S do ano fiscal de 2027."},
-  {"tema": "Conectividade óptica", "relacao": "A compra da Lumentum, de lasers e componentes ópticos, junta os chips eletrônicos da Marvell à parte óptica das conexões de IA."}
+  {
+   "tema": "Inteligência artificial",
+   "relacao": "Fornece chips sob medida e de conexão óptica para clusters de IA; a empresa relatou pedidos de IA muito fortes e espera aceleração forte dos chips sob medida a partir do 2S do ano fiscal de 2027."
+  },
+  {
+   "tema": "Conectividade óptica",
+   "relacao": "A compra da Lumentum, de lasers e componentes ópticos, junta os chips eletrônicos da Marvell à parte óptica das conexões de IA."
+  }
  ],
  "diferencial": {
   "texto": "A Marvell é uma das líderes em DSPs ópticos, peça essencial das conexões de alta velocidade em data centers de IA, e uma das poucas empresas, ao lado da Broadcom, com capacidade de desenhar chips de IA sob medida para grandes clientes. Esses projetos levam anos e criam relação longa com o cliente. Com a Lumentum, passaria a vender também lasers e componentes ópticos. Os pontos fracos são a escala menor que a da Broadcom em chips sob medida, a dependência de poucos clientes de nuvem e o risco de execução de uma aquisição desse tamanho.",
-  "concorrentes": ["Broadcom", "NVIDIA (redes)", "Credo", "Astera Labs", "MediaTek", "Coherent"]
+  "concorrentes": [
+   "Broadcom",
+   "NVIDIA (redes)",
+   "Credo",
+   "Astera Labs",
+   "MediaTek",
+   "Coherent"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Tecnologia forte em chips sob medida e ótica para data centers, mas com clientes concentrados e rivais de grande porte."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do 3T27 fiscal (agosto a outubro de 2026) deve ficar em cerca de US$ 3,15 bi, alta de cerca de 15% no trimestre, e em novembro a faixa foi estreitada para mais ou menos 2% em torno desse valor. A empresa elevou as projeções de receita dos anos fiscais de 2027 e 2028. A compra da Lumentum, de US$ 115 bi em ações (4,5 ações da Marvell por ação da Lumentum), deve ser concluída no 1S28, com economia de custos estimada pelas empresas em mais de US$ 1 bi por ano.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "cerca de US$ 3,15 bi", "periodo": "3T27 fiscal"},
-   {"rotulo": "Valor da compra da Lumentum", "valor": "US$ 115 bi (em ações)", "periodo": "nov/2026"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "cerca de US$ 3,15 bi",
+    "periodo": "3T27 fiscal"
+   },
+   {
+    "rotulo": "Valor da compra da Lumentum",
+    "valor": "US$ 115 bi (em ações)",
+    "periodo": "nov/2026"
+   }
   ]
  },
  "saude": {
@@ -56,10 +96,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Marvell: resultados do 2T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000022/q227_8kx812026ex-991.htm", "data": "2026-08-27"},
-  {"titulo": "Marvell: anúncio da combinação com a Lumentum (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1835632/000119312526442714/d81187dex991.htm", "data": "2026-11-02"},
-  {"titulo": "Light Reading: Marvell strikes $115B deal for Lumentum", "url": "https://lightreading.com/ai-machine-learning/marvell-strikes-115b-deal-for-lumentum", "data": "2026-11-02"},
-  {"titulo": "Manufacturing Dive: Marvell-Lumentum $115B stock deal", "url": "https://www.manufacturingdive.com/news/marvell-lumentum-115b-stock-deal-ai-data-centers/873783/", "data": "2026-11-03"}
+  {
+   "titulo": "Marvell: resultados do 2T27 fiscal (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000022/q227_8kx812026ex-991.htm",
+   "data": "2026-08-27"
+  },
+  {
+   "titulo": "Marvell: anúncio da combinação com a Lumentum (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1835632/000119312526442714/d81187dex991.htm",
+   "data": "2026-11-02"
+  },
+  {
+   "titulo": "Light Reading: Marvell strikes $115B deal for Lumentum",
+   "url": "https://lightreading.com/ai-machine-learning/marvell-strikes-115b-deal-for-lumentum",
+   "data": "2026-11-02"
+  },
+  {
+   "titulo": "Manufacturing Dive: Marvell-Lumentum $115B stock deal",
+   "url": "https://www.manufacturingdive.com/news/marvell-lumentum-115b-stock-deal-ai-data-centers/873783/",
+   "data": "2026-11-03"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

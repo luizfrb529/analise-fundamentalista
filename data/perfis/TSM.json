@@ -4,26 +4,72 @@
  "resumo": "Maior fábrica de chips sob encomenda do mundo, que produz os processadores mais avançados de NVIDIA, Apple, AMD e Broadcom. Lucro recorde pelo sexto trimestre seguido, com margem bruta de 66%.",
  "modelo": "A TSMC não projeta chips próprios: fabrica sob encomenda (foundry) os chips desenhados pelos clientes, cobrando por wafer produzido. A receita vem principalmente das tecnologias mais avançadas (2, 3 e 5 nanômetros), usadas em chips de IA, servidores e celulares, e também do encapsulamento avançado (CoWoS) que junta GPU e memória. Reporta em novos dólares taiwaneses (NT$); cada ADR negociado nos EUA equivale a 5 ações.",
  "segmentos": [
-  {"nome": "Computação de alto desempenho (HPC, inclui IA)", "peso_receita": 0.68, "periodo": "3T26", "obs": "Era 57% um ano antes."},
-  {"nome": "Smartphones, IoT, automóveis e outros", "peso_receita": 0.32, "periodo": "3T26", "obs": "Calculado por diferença."}
+  {
+   "nome": "Computação de alto desempenho (HPC, inclui IA)",
+   "peso_receita": 0.68,
+   "periodo": "3T26",
+   "obs": "Era 57% um ano antes."
+  },
+  {
+   "nome": "Smartphones, IoT, automóveis e outros",
+   "peso_receita": 0.32,
+   "periodo": "3T26",
+   "obs": "Calculado por diferença."
+  }
  ],
  "segmentos_base": "Receita por plataforma",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede e a maior parte das fábricas em Taiwan, com fábricas em construção ou operação no Arizona (EUA), no Japão e na Alemanha. A maior parte da receita vem de clientes americanos."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede e a maior parte das fábricas em Taiwan, com fábricas em construção ou operação no Arizona (EUA), no Japão e na Alemanha. A maior parte da receita vem de clientes americanos."
+ },
  "temas": [
-  {"tema": "Inteligência artificial", "relacao": "Fabrica praticamente todos os chips de IA de ponta; segundo o presidente C.C. Wei, a demanda de IA ainda supera a capacidade da empresa."},
-  {"tema": "Geopolítica (Taiwan e China)", "relacao": "A concentração das fábricas em Taiwan é o principal risco citado por investidores; a construção de fábricas nos EUA, Japão e Alemanha reduz parte dessa exposição."},
-  {"tema": "Smartphones", "relacao": "Produz os processadores dos principais celulares, como os da Apple e da Qualcomm, segunda maior fonte de receita."}
+  {
+   "tema": "Inteligência artificial",
+   "relacao": "Fabrica praticamente todos os chips de IA de ponta; segundo o presidente C.C. Wei, a demanda de IA ainda supera a capacidade da empresa."
+  },
+  {
+   "tema": "Geopolítica (Taiwan e China)",
+   "relacao": "A concentração das fábricas em Taiwan é o principal risco citado por investidores; a construção de fábricas nos EUA, Japão e Alemanha reduz parte dessa exposição."
+  },
+  {
+   "tema": "Smartphones",
+   "relacao": "Produz os processadores dos principais celulares, como os da Apple e da Qualcomm, segunda maior fonte de receita."
+  }
  ],
  "diferencial": {
   "texto": "A TSMC é a única empresa que produz em grande volume e com bom aproveitamento as tecnologias mais avançadas (2 e 3 nm); Samsung e Intel tentam, mas com rendimento e clientela bem menores. Cada nova geração de fábrica custa dezenas de bilhões de dólares e anos de aprendizado, barreira quase intransponível. A empresa também domina o encapsulamento avançado (CoWoS), gargalo da produção de GPUs. O ponto fraco é a concentração geográfica em Taiwan e a dependência de poucos grandes clientes.",
-  "concorrentes": ["Samsung Foundry", "Intel Foundry", "GlobalFoundries", "SMIC", "UMC"]
+  "concorrentes": [
+   "Samsung Foundry",
+   "Intel Foundry",
+   "GlobalFoundries",
+   "SMIC",
+   "UMC"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Liderança tecnológica e de escala na fabricação de chips avançados, que exige centenas de bilhões em investimento e anos de experiência."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do 4T26 deve ficar entre US$ 52,3 bi e US$ 54,3 bi, alta de cerca de 58% em um ano no ponto médio, com margem bruta de 65% a 67%, puxada pela subida da produção em 2 nm. A empresa espera crescimento de cerca de 44% da receita em dólar em 2026. Em novembro, o conselho aprovou cerca de US$ 40,9 bi em investimentos de capital. A imprensa registrou tom mais cauteloso da empresa sobre 2027.",
   "metricas": [
-   {"rotulo": "Receita projetada para o 4T26", "valor": "US$ 52,3 bi a US$ 54,3 bi", "periodo": "4T26"},
-   {"rotulo": "Crescimento esperado da receita", "valor": "cerca de 44% em dólar", "periodo": "2026"},
-   {"rotulo": "Participação de 7 nm e menores", "valor": "79% da receita de wafers", "periodo": "3T26"}
+   {
+    "rotulo": "Receita projetada para o 4T26",
+    "valor": "US$ 52,3 bi a US$ 54,3 bi",
+    "periodo": "4T26"
+   },
+   {
+    "rotulo": "Crescimento esperado da receita",
+    "valor": "cerca de 44% em dólar",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Participação de 7 nm e menores",
+    "valor": "79% da receita de wafers",
+    "periodo": "3T26"
+   }
   ]
  },
  "saude": {
@@ -59,11 +105,31 @@
   ]
  },
  "fontes": [
-  {"titulo": "TSMC: resultados do 3T26 (6-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm", "data": "2026-10-15"},
-  {"titulo": "TSMC: apresentação do 3T26 (6-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26presentatione.htm", "data": "2026-10-15"},
-  {"titulo": "TSMC: deliberações do conselho de 10/11/2026", "url": "https://pr.tsmc.com/english/news/3352", "data": "2026-11-10"},
-  {"titulo": "The Next Web: TSMC posts a sixth straight record profit but turns cautious on 2027", "url": "https://thenextweb.com/news/tsmc-q3-2026-record-profit-prudent-2027", "data": "2026-10-15"},
-  {"titulo": "CRN Asia: TSMC third quarter revenue tops guidance", "url": "https://www.crnasia.com/news/2026/components-and-peripherals/tsmc-third-quarter-revenue-tops-guidance-as-ceo-says-ai-dema", "data": "2026-10-15"}
+  {
+   "titulo": "TSMC: resultados do 3T26 (6-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+   "data": "2026-10-15"
+  },
+  {
+   "titulo": "TSMC: apresentação do 3T26 (6-K, Exhibit 99.2, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26presentatione.htm",
+   "data": "2026-10-15"
+  },
+  {
+   "titulo": "TSMC: deliberações do conselho de 10/11/2026",
+   "url": "https://pr.tsmc.com/english/news/3352",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "The Next Web: TSMC posts a sixth straight record profit but turns cautious on 2027",
+   "url": "https://thenextweb.com/news/tsmc-q3-2026-record-profit-prudent-2027",
+   "data": "2026-10-15"
+  },
+  {
+   "titulo": "CRN Asia: TSMC third quarter revenue tops guidance",
+   "url": "https://www.crnasia.com/news/2026/components-and-peripherals/tsmc-third-quarter-revenue-tops-guidance-as-ceo-says-ai-dema",
+   "data": "2026-10-15"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

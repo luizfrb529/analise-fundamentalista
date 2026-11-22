@@ -4,26 +4,73 @@
  "resumo": "Nuvem especializada em inteligência artificial, nascida da reestruturação da Yandex, com US$ 38,7 bi em contratos a receber. Projeta quadruplicar a receita em 2027, com investimento de até US$ 45 bi no ano.",
  "modelo": "A Nebius constrói e opera data centers com GPUs da NVIDIA e aluga essa capacidade para treinar e rodar modelos de IA, em contratos de vários anos com grandes clientes (como a Microsoft) e sob demanda para empresas e startups. Também vende acesso a modelos prontos por uso (Token Factory). Tem ainda a Avride (carros autônomos e robôs de entrega), a TripleTen (educação) e participações na ClickHouse e na Toloka. Sede em Amsterdã e ações listadas na NASDAQ.",
  "segmentos": [
-  {"nome": "Nuvem de IA", "peso_receita": 0.99, "periodo": "3T26", "obs": "US$ 973,8 mi, alta de 643% em um ano."},
-  {"nome": "Outros negócios (Avride, TripleTen)", "peso_receita": 0.01, "periodo": "3T26", "obs": null}
+  {
+   "nome": "Nuvem de IA",
+   "peso_receita": 0.99,
+   "periodo": "3T26",
+   "obs": "US$ 973,8 mi, alta de 643% em um ano."
+  },
+  {
+   "nome": "Outros negócios (Avride, TripleTen)",
+   "peso_receita": 0.01,
+   "periodo": "3T26",
+   "obs": null
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Data centers na Finlândia, França, Islândia, Israel, Reino Unido e EUA (Nova Jersey, Missouri, Kansas City, Alabama), com novos projetos no Canadá, Carolina do Sul e Índia."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Data centers na Finlândia, França, Islândia, Israel, Reino Unido e EUA (Nova Jersey, Missouri, Kansas City, Alabama), com novos projetos no Canadá, Carolina do Sul e Índia."
+ },
  "temas": [
-  {"tema": "Inteligência artificial", "relacao": "Todo o negócio principal é aluguel de GPUs para IA; a receita anualizada chegou a US$ 6,4 bi em setembro, contra US$ 3,0 bi em junho."},
-  {"tema": "Energia", "relacao": "A expansão depende de garantir energia: são mais de 4 GW contratados, com meta de 5 GW no fim de 2026; em Nova Jersey a energia passou a vir de células a combustível da Bloom Energy."},
-  {"tema": "Carros autônomos", "relacao": "A Avride tem 250 carros autônomos e mais de 100 mil corridas de robotáxi feitas, com operação sem motorista prevista para o 1S27."}
+  {
+   "tema": "Inteligência artificial",
+   "relacao": "Todo o negócio principal é aluguel de GPUs para IA; a receita anualizada chegou a US$ 6,4 bi em setembro, contra US$ 3,0 bi em junho."
+  },
+  {
+   "tema": "Energia",
+   "relacao": "A expansão depende de garantir energia: são mais de 4 GW contratados, com meta de 5 GW no fim de 2026; em Nova Jersey a energia passou a vir de células a combustível da Bloom Energy."
+  },
+  {
+   "tema": "Carros autônomos",
+   "relacao": "A Avride tem 250 carros autônomos e mais de 100 mil corridas de robotáxi feitas, com operação sem motorista prevista para o 1S27."
+  }
  ],
  "diferencial": {
   "texto": "A Nebius projeta o próprio hardware de servidores e o software da nuvem, herança da engenharia da Yandex, o que segundo a empresa reduz custo por GPU. Contratos longos com clientes de grau de investimento e pagamentos antecipados (mais de 100% do investimento coberto nos contratos do 3T26) reduzem a necessidade de capital próprio. Energia contratada em grande escala é uma barreira de entrada. Os pontos fracos são a concorrência com CoreWeave e as grandes nuvens, a dependência de poucos clientes e de um único fornecedor de GPUs, e o volume de dívida e investimento.",
-  "concorrentes": ["CoreWeave", "IREN", "Oracle Cloud", "Microsoft Azure", "Amazon Web Services", "Lambda"]
+  "concorrentes": [
+   "CoreWeave",
+   "IREN",
+   "Oracle Cloud",
+   "Microsoft Azure",
+   "Amazon Web Services",
+   "Lambda"
+  ],
+  "vantagem": {
+   "nivel": "fraca",
+   "resumo": "Nuvem de IA com engenharia própria, mas ainda sem escala frente às grandes nuvens e com produto relativamente padronizado."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita de 2027 deve ficar entre US$ 12 bi e US$ 13 bi, cerca de quatro vezes a de 2026, que deve fechar perto de US$ 3,0 bi, no piso da faixa anterior. A carteira de contratos a receber (RPO) era de US$ 38,7 bi em setembro, e mais de US$ 12 bi em novos contratos foram assinados desde o início do 3T26. A empresa espera lucro antes de impostos no ponto de equilíbrio só no 4T27 e quer ativar mais de 1 GW de capacidade nova por ano. Parte das entregas para a Microsoft em Nova Jersey foi adiada para o 2T27.",
   "metricas": [
-   {"rotulo": "Contratos a receber (RPO)", "valor": "US$ 38,7 bi", "periodo": "set/2026"},
-   {"rotulo": "Receita projetada", "valor": "US$ 12 bi a US$ 13 bi", "periodo": "2027"},
-   {"rotulo": "Investimento projetado", "valor": "US$ 40 bi a US$ 45 bi", "periodo": "2027"}
+   {
+    "rotulo": "Contratos a receber (RPO)",
+    "valor": "US$ 38,7 bi",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 12 bi a US$ 13 bi",
+    "periodo": "2027"
+   },
+   {
+    "rotulo": "Investimento projetado",
+    "valor": "US$ 40 bi a US$ 45 bi",
+    "periodo": "2027"
+   }
   ]
  },
  "saude": {
@@ -59,10 +106,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Nebius: resultados do 3T26 (6-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126008/tm2629571d1_ex99-1.htm", "data": "2026-11-12"},
-  {"titulo": "Nebius: carta aos acionistas do 3T26 (6-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126008/tm2629571d1_ex99-2.htm", "data": "2026-11-12"},
-  {"titulo": "Nebius newsroom: Nebius reports third quarter 2026 financial results", "url": "https://nebius.com/newsroom/nebius-reports-third-quarter-2026-financial-results", "data": "2026-11-12"},
-  {"titulo": "Nebius: índice do 6-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126008/0001104659-26-126008-index.htm", "data": "2026-11-12"}
+  {
+   "titulo": "Nebius: resultados do 3T26 (6-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126008/tm2629571d1_ex99-1.htm",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Nebius: carta aos acionistas do 3T26 (6-K, Exhibit 99.2, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126008/tm2629571d1_ex99-2.htm",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Nebius newsroom: Nebius reports third quarter 2026 financial results",
+   "url": "https://nebius.com/newsroom/nebius-reports-third-quarter-2026-financial-results",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Nebius: índice do 6-K do 3T26 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126008/0001104659-26-126008-index.htm",
+   "data": "2026-11-12"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

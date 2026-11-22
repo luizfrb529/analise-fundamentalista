@@ -4,27 +4,79 @@
  "resumo": "Fabricante americana de células a combustível que geram energia no próprio local, hoje muito usada para alimentar data centers de IA sem esperar a rede elétrica. A receita mais que dobrou em um ano e a empresa entrou no S&P 500.",
  "modelo": "A Bloom Energy fabrica nos EUA servidores de energia com células a combustível de óxido sólido, que transformam gás natural (ou hidrogênio e biogás) em eletricidade no local de consumo, com instalação em meses. Ganha com a venda dos equipamentos, a instalação, contratos de manutenção de longo prazo e venda de energia em alguns projetos. Os clientes são data centers, empresas de serviços públicos, indústrias e hospitais.",
  "segmentos": [
-  {"nome": "Produtos", "peso_receita": 0.87, "periodo": "3T26", "obs": "US$ 1,07 bi, alta de 179% em um ano."},
-  {"nome": "Instalação", "peso_receita": 0.07, "periodo": "3T26", "obs": "US$ 84,9 mi."},
-  {"nome": "Serviços e venda de energia", "peso_receita": 0.06, "periodo": "3T26", "obs": "US$ 77,4 mi."}
+  {
+   "nome": "Produtos",
+   "peso_receita": 0.87,
+   "periodo": "3T26",
+   "obs": "US$ 1,07 bi, alta de 179% em um ano."
+  },
+  {
+   "nome": "Instalação",
+   "peso_receita": 0.07,
+   "periodo": "3T26",
+   "obs": "US$ 84,9 mi."
+  },
+  {
+   "nome": "Serviços e venda de energia",
+   "peso_receita": 0.06,
+   "periodo": "3T26",
+   "obs": "US$ 77,4 mi."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA) e fábricas nos EUA; vende principalmente nos EUA, com clientes também na Ásia e na Europa."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede na Califórnia (EUA) e fábricas nos EUA; vende principalmente nos EUA, com clientes também na Ásia e na Europa."
+ },
  "temas": [
-  {"tema": "Energia para IA", "relacao": "Data centers de IA precisam de energia rápido e a rede elétrica demora anos para conectar; a Oracle concordou em comprar até 2,8 GW de energia de células da Bloom, segundo a Bloomberg, e a AEP fechou acordo de até 1 GW."},
-  {"tema": "Infraestrutura e financiamento", "relacao": "A gestora Brookfield firmou parceria de US$ 5 bi em 2025, ampliada depois para uma estrutura de até US$ 25 bi, para financiar a instalação das células em data centers."},
-  {"tema": "Gás natural", "relacao": "As células usam principalmente gás natural; o preço do gás afeta o custo da energia para o cliente."}
+  {
+   "tema": "Energia para IA",
+   "relacao": "Data centers de IA precisam de energia rápido e a rede elétrica demora anos para conectar; a Oracle concordou em comprar até 2,8 GW de energia de células da Bloom, segundo a Bloomberg, e a AEP fechou acordo de até 1 GW."
+  },
+  {
+   "tema": "Infraestrutura e financiamento",
+   "relacao": "A gestora Brookfield firmou parceria de US$ 5 bi em 2025, ampliada depois para uma estrutura de até US$ 25 bi, para financiar a instalação das células em data centers."
+  },
+  {
+   "tema": "Gás natural",
+   "relacao": "As células usam principalmente gás natural; o preço do gás afeta o custo da energia para o cliente."
+  }
  ],
  "diferencial": {
   "texto": "A Bloom tem mais de duas décadas de desenvolvimento em células de óxido sólido, com patentes e fabricação própria nos EUA, e consegue entregar energia em meses, enquanto turbinas e novas conexões à rede levam anos. A eficiência é maior que a de geradores convencionais e as emissões locais são baixas. Os pontos fracos são o custo por kW maior que o da rede, a dependência de gás natural e a concorrência de turbinas a gás (GE Vernova, Siemens Energy) e de outras soluções de geração no local.",
-  "concorrentes": ["GE Vernova", "Siemens Energy", "Caterpillar", "FuelCell Energy", "Cummins", "Plug Power"]
+  "concorrentes": [
+   "GE Vernova",
+   "Siemens Energy",
+   "Caterpillar",
+   "FuelCell Energy",
+   "Cummins",
+   "Plug Power"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Tecnologia própria de células de óxido sólido e entrega rápida de energia no local, mas com custo acima da rede e rivais em turbinas."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 4,4 bi e US$ 4,6 bi (cerca de 122% de alta no ponto médio), com margem bruta ajustada de cerca de 34% e lucro operacional ajustado de US$ 960 mi a US$ 1,03 bi; foi a terceira elevação da projeção no ano. Os acordos com Oracle, AEP, Equinix e a estrutura de financiamento com a Brookfield sustentam a demanda. A empresa não divulga carteira de pedidos nem projeção para 2027 no release.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 4,4 bi a US$ 4,6 bi", "periodo": "2026"},
-   {"rotulo": "Lucro operacional ajustado projetado", "valor": "US$ 960 mi a US$ 1,03 bi", "periodo": "2026"},
-   {"rotulo": "Contrato de energia com a Oracle", "valor": "até 2,8 GW", "periodo": "2026 e 2027"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 4,4 bi a US$ 4,6 bi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Lucro operacional ajustado projetado",
+    "valor": "US$ 960 mi a US$ 1,03 bi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Contrato de energia com a Oracle",
+    "valor": "até 2,8 GW",
+    "periodo": "2026 e 2027"
+   }
   ]
  },
  "saude": {
@@ -60,11 +112,31 @@
   ]
  },
  "fontes": [
-  {"titulo": "Bloom Energy: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm", "data": "2026-10-22"},
-  {"titulo": "Bloom Energy: apresentação do 3T26 (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex992_q32026supplemental.htm", "data": "2026-10-22"},
-  {"titulo": "Bloomberg: Oracle agrees to buy power from Bloom for AI data centers", "url": "https://www.bloomberg.com/news/articles/2026-04-13/oracle-agrees-to-buy-power-from-bloom-for-ai-data-centers", "data": "2026-04-13"},
-  {"titulo": "Power Engineering: Brookfield, Bloom Energy expand partnership to $25 billion framework", "url": "https://www.power-eng.com/news/brookfield-bloom-energy-expand-partnership-to-25-billion-framework-for-onsite-data-center-power/", "data": "2026"},
-  {"titulo": "Bloom Energy: Brookfield and Bloom Energy announce $5 billion partnership", "url": "https://www.bloomenergy.com/news/brookfield-and-bloom-energy-announce-5-billion-strategic-ai-infrastructure-partnership/", "data": "2025-10-13"}
+  {
+   "titulo": "Bloom Energy: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm",
+   "data": "2026-10-22"
+  },
+  {
+   "titulo": "Bloom Energy: apresentação do 3T26 (8-K, Exhibit 99.2, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex992_q32026supplemental.htm",
+   "data": "2026-10-22"
+  },
+  {
+   "titulo": "Bloomberg: Oracle agrees to buy power from Bloom for AI data centers",
+   "url": "https://www.bloomberg.com/news/articles/2026-04-13/oracle-agrees-to-buy-power-from-bloom-for-ai-data-centers",
+   "data": "2026-04-13"
+  },
+  {
+   "titulo": "Power Engineering: Brookfield, Bloom Energy expand partnership to $25 billion framework",
+   "url": "https://www.power-eng.com/news/brookfield-bloom-energy-expand-partnership-to-25-billion-framework-for-onsite-data-center-power/",
+   "data": "2026"
+  },
+  {
+   "titulo": "Bloom Energy: Brookfield and Bloom Energy announce $5 billion partnership",
+   "url": "https://www.bloomenergy.com/news/brookfield-and-bloom-energy-announce-5-billion-strategic-ai-infrastructure-partnership/",
+   "data": "2025-10-13"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

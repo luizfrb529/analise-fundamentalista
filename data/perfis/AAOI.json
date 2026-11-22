@@ -4,26 +4,74 @@
  "resumo": "Fabricante americana de transceptores ópticos para data centers de IA e de equipamentos para TV a cabo. Receita recorde pelo sexto trimestre seguido, de volta ao lucro no 3T26, mas com margem bruta baixa e emissões de ações.",
  "modelo": "A Applied Optoelectronics fabrica, com produção própria de lasers, transceptores ópticos de 400G, 800G e 1,6T para conexões dentro de data centers, vendidos a grandes empresas de nuvem, e amplificadores e equipamentos para redes de TV a cabo (CATV) e telecomunicações. Tem fábricas nos EUA (Texas), em Taiwan e na China e está ampliando a produção no Texas.",
  "segmentos": [
-  {"nome": "Data center", "peso_receita": 0.58, "periodo": "3T26", "obs": "US$ 155,6 mi, alta de 254% em um ano."},
-  {"nome": "TV a cabo (CATV)", "peso_receita": 0.41, "periodo": "3T26", "obs": "US$ 110,9 mi, alta de 57%."},
-  {"nome": "Telecom e outros", "peso_receita": 0.01, "periodo": "3T26", "obs": "US$ 3,4 mi."}
+  {
+   "nome": "Data center",
+   "peso_receita": 0.58,
+   "periodo": "3T26",
+   "obs": "US$ 155,6 mi, alta de 254% em um ano."
+  },
+  {
+   "nome": "TV a cabo (CATV)",
+   "peso_receita": 0.41,
+   "periodo": "3T26",
+   "obs": "US$ 110,9 mi, alta de 57%."
+  },
+  {
+   "nome": "Telecom e outros",
+   "peso_receita": 0.01,
+   "periodo": "3T26",
+   "obs": "US$ 3,4 mi."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Sugar Land, Texas (EUA), com fábricas no Texas, em Taiwan e na China; comprou em novembro de 2026 três prédios em Houston para ampliar a produção nos EUA."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Sugar Land, Texas (EUA), com fábricas no Texas, em Taiwan e na China; comprou em novembro de 2026 três prédios em Houston para ampliar a produção nos EUA."
+ },
  "temas": [
-  {"tema": "Inteligência artificial", "relacao": "Os transceptores de 800G e 1,6T conectam os servidores de IA; a receita de data center mais que triplicou em um ano e a empresa assinou acordo plurianual com um grande provedor de nuvem não identificado."},
-  {"tema": "Produção nos EUA", "relacao": "Fabricar nos EUA ajuda a escapar de tarifas sobre a Ásia; a empresa pagou US$ 102,3 mi por prédios em Houston, mas avisou que a expansão americana atrasou por demora em obter energia."},
-  {"tema": "Banda larga a cabo", "relacao": "A modernização das redes de TV a cabo (DOCSIS 4.0) sustenta o segmento CATV, que cresceu 57% em um ano."}
+  {
+   "tema": "Inteligência artificial",
+   "relacao": "Os transceptores de 800G e 1,6T conectam os servidores de IA; a receita de data center mais que triplicou em um ano e a empresa assinou acordo plurianual com um grande provedor de nuvem não identificado."
+  },
+  {
+   "tema": "Produção nos EUA",
+   "relacao": "Fabricar nos EUA ajuda a escapar de tarifas sobre a Ásia; a empresa pagou US$ 102,3 mi por prédios em Houston, mas avisou que a expansão americana atrasou por demora em obter energia."
+  },
+  {
+   "tema": "Banda larga a cabo",
+   "relacao": "A modernização das redes de TV a cabo (DOCSIS 4.0) sustenta o segmento CATV, que cresceu 57% em um ano."
+  }
  ],
  "diferencial": {
   "texto": "A empresa produz os próprios chips laser e monta os módulos, o que dá controle de custo e de oferta, e é uma das poucas com produção relevante de transceptores fora da China, vantagem com as tarifas americanas. Já é fornecedora qualificada de grandes nuvens, processo demorado. Os pontos fracos são a margem bruta baixa (28% contra mais de 50% da Lumentum), a escala menor que a de concorrentes chineses como InnoLight e Eoptolink e a dependência de poucos clientes.",
-  "concorrentes": ["InnoLight", "Eoptolink", "Coherent", "Lumentum", "Fabrinet", "Broadcom"]
+  "concorrentes": [
+   "InnoLight",
+   "Eoptolink",
+   "Coherent",
+   "Lumentum",
+   "Fabrinet",
+   "Broadcom"
+  ],
+  "vantagem": {
+   "nivel": "fraca",
+   "resumo": "Fabrica componentes ópticos com produção própria nos EUA, mas em mercado disputado e com histórico de margens baixas."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do 4T26 deve ficar entre US$ 385 mi e US$ 420 mi, alta de 43% a 56% sobre o 3T26, com lucro por ação ajustado de US$ 0,48 a US$ 0,63. A capacidade de produção de transceptores de 800G e 1,6T deve passar de 500 mil peças por mês no fim de 2026 e de 1 milhão por mês no fim de 2027. O potencial depende de entregar essa expansão, que já sofre atraso nos EUA, e de manter os pedidos dos grandes clientes.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 385 mi a US$ 420 mi", "periodo": "4T26"},
-   {"rotulo": "Capacidade de 800G e 1,6T (meta)", "valor": "mais de 1 milhão de peças por mês", "periodo": "fim de 2027"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 385 mi a US$ 420 mi",
+    "periodo": "4T26"
+   },
+   {
+    "rotulo": "Capacidade de 800G e 1,6T (meta)",
+    "valor": "mais de 1 milhão de peças por mês",
+    "periodo": "fim de 2027"
+   }
   ]
  },
  "saude": {
@@ -60,10 +108,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Applied Optoelectronics: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826008351/aaoi_ex9901.htm", "data": "2026-11-05"},
-  {"titulo": "Applied Optoelectronics: 8-K da compra dos prédios em Houston (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826008616/aaoi_8k.htm", "data": "2026-11-12"},
-  {"titulo": "Applied Optoelectronics: 8-K do programa de venda de ações (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1158114/000110465926129055/tm2629531d2_8k.htm", "data": "2026-11-17"},
-  {"titulo": "Applied Optoelectronics: resultados do 2T26 (Seeking Alpha, release)", "url": "https://seekingalpha.com/pr/20611115", "data": "2026-08-06"}
+  {
+   "titulo": "Applied Optoelectronics: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826008351/aaoi_ex9901.htm",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Applied Optoelectronics: 8-K da compra dos prédios em Houston (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826008616/aaoi_8k.htm",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Applied Optoelectronics: 8-K do programa de venda de ações (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1158114/000110465926129055/tm2629531d2_8k.htm",
+   "data": "2026-11-17"
+  },
+  {
+   "titulo": "Applied Optoelectronics: resultados do 2T26 (Seeking Alpha, release)",
+   "url": "https://seekingalpha.com/pr/20611115",
+   "data": "2026-08-06"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

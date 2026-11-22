@@ -4,27 +4,79 @@
  "resumo": "Banco digital americano com 17,1 milhões de clientes, que cresce oferecendo empréstimo pessoal, conta, investimentos e cartão no mesmo aplicativo. Lucra há 12 trimestres seguidos e projeta receita de US$ 6,4 bi em 2027.",
  "modelo": "A SoFi é uma holding bancária dona do SoFi Bank, que opera só pela internet. Ganha dinheiro principalmente com juros de empréstimos pessoais, estudantis e imobiliários financiados com os depósitos dos clientes, e com tarifas: venda de empréstimos originados para terceiros (Loan Platform Business), corretagem, cripto, cartões e assinaturas. A divisão Technology Platform vende tecnologia de processamento de contas e cartões para outros bancos e fintechs.",
  "segmentos": [
-  {"nome": "Crédito (Lending)", "peso_receita": 0.57, "periodo": "3T26", "obs": "US$ 821 mi, alta de 66% em um ano."},
-  {"nome": "Serviços financeiros", "peso_receita": 0.37, "periodo": "3T26", "obs": "US$ 525 mi (conta, investimentos, cartão, cripto), alta de 25%."},
-  {"nome": "Plataforma de tecnologia", "peso_receita": 0.06, "periodo": "3T26", "obs": "US$ 87 mi, queda de 24% pela saída de um grande cliente; sem ele, alta de 18%."}
+  {
+   "nome": "Crédito (Lending)",
+   "peso_receita": 0.57,
+   "periodo": "3T26",
+   "obs": "US$ 821 mi, alta de 66% em um ano."
+  },
+  {
+   "nome": "Serviços financeiros",
+   "peso_receita": 0.37,
+   "periodo": "3T26",
+   "obs": "US$ 525 mi (conta, investimentos, cartão, cripto), alta de 25%."
+  },
+  {
+   "nome": "Plataforma de tecnologia",
+   "peso_receita": 0.06,
+   "periodo": "3T26",
+   "obs": "US$ 87 mi, queda de 24% pela saída de um grande cliente; sem ele, alta de 18%."
+  }
  ],
  "segmentos_base": "Receita líquida por segmento (antes de ajustes entre segmentos)",
- "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Opera nos EUA, com sede em San Francisco."},
+ "geografia": {
+  "eua_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "texto": "Opera nos EUA, com sede em San Francisco."
+ },
  "temas": [
-  {"tema": "Bancos digitais (fintech)", "relacao": "Disputa clientes dos grandes bancos com um aplicativo único; somou 1,2 milhão de clientes no 3T26, recorde, e 26,7 milhões de produtos (+44% em um ano)."},
-  {"tema": "Juros nos EUA", "relacao": "A receita de juros é 2/3 do total (US$ 929 mi no 3T26); juros mais baixos tendem a aumentar a demanda por crédito e refinanciamento, mas reduzem a margem sobre os depósitos."},
-  {"tema": "Cripto", "relacao": "Relançou a compra e venda de criptomoedas no fim de 2025; já são 503 mil contas, com receita bruta de US$ 162 mi no 3T26 e ganho líquido pequeno (US$ 1,6 mi)."}
+  {
+   "tema": "Bancos digitais (fintech)",
+   "relacao": "Disputa clientes dos grandes bancos com um aplicativo único; somou 1,2 milhão de clientes no 3T26, recorde, e 26,7 milhões de produtos (+44% em um ano)."
+  },
+  {
+   "tema": "Juros nos EUA",
+   "relacao": "A receita de juros é 2/3 do total (US$ 929 mi no 3T26); juros mais baixos tendem a aumentar a demanda por crédito e refinanciamento, mas reduzem a margem sobre os depósitos."
+  },
+  {
+   "tema": "Cripto",
+   "relacao": "Relançou a compra e venda de criptomoedas no fim de 2025; já são 503 mil contas, com receita bruta de US$ 162 mi no 3T26 e ganho líquido pequeno (US$ 1,6 mi)."
+  }
  ],
  "diferencial": {
   "texto": "A licença bancária, obtida em 2022, permite financiar os empréstimos com depósitos (US$ 51,3 bi em set/2026), mais baratos que o dinheiro de mercado usado por fintechs sem banco, e é difícil de obter. O modelo de um aplicativo com vários produtos reduz o custo de conquistar cada cliente: cada cliente tem em média 1,56 produto, contra 1,47 um ano antes. A originação de empréstimos para terceiros gera tarifa sem ocupar capital. O ponto fraco é a dependência do empréstimo pessoal sem garantia, sensível à inadimplência em recessão, e a receita por produto em queda (US$ 90 contra US$ 104 um ano antes).",
-  "concorrentes": ["JPMorgan Chase", "Capital One", "Nubank", "Robinhood", "Ally Financial", "LendingClub"]
+  "concorrentes": [
+   "JPMorgan Chase",
+   "Capital One",
+   "Nubank",
+   "Robinhood",
+   "Ally Financial",
+   "LendingClub"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Banco digital com licença bancária e base crescente de clientes, mas em mercado com muitos concorrentes e produtos parecidos."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita líquida ajustada deve chegar a cerca de US$ 5,04 bi em 2026 (+40%) e a US$ 6,4 bi em 2027 (+27%), com lucro líquido ajustado de US$ 840 mi em 2026 e US$ 1,28 bi em 2027 (lucro por ação de US$ 0,61 e US$ 0,90). A meta de longo prazo é chegar a 100 milhões de produtos em 2030 e ter cinco negócios acima de US$ 1 bi de receita. O crescimento depende de manter a inadimplência controlada e de continuar captando depósitos.",
   "metricas": [
-   {"rotulo": "Receita ajustada projetada", "valor": "US$ 6,4 bi", "periodo": "2027"},
-   {"rotulo": "Lucro líquido ajustado projetado", "valor": "US$ 1,28 bi", "periodo": "2027"},
-   {"rotulo": "Clientes", "valor": "17,1 milhões", "periodo": "set/2026"}
+   {
+    "rotulo": "Receita ajustada projetada",
+    "valor": "US$ 6,4 bi",
+    "periodo": "2027"
+   },
+   {
+    "rotulo": "Lucro líquido ajustado projetado",
+    "valor": "US$ 1,28 bi",
+    "periodo": "2027"
+   },
+   {
+    "rotulo": "Clientes",
+    "valor": "17,1 milhões",
+    "periodo": "set/2026"
+   }
   ]
  },
  "saude": {
@@ -61,10 +113,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "SoFi: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1818874/000181887426000065/a2026q3earningsrelease.htm", "data": "2026-10-27"},
-  {"titulo": "SoFi: índice do 8-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1818874/000181887426000065/0001818874-26-000065-index.htm", "data": "2026-10-27"},
-  {"titulo": "Nasdaq: SoFi Technologies Q3 earnings call highlights", "url": "https://www.nasdaq.com/articles/sofi-technologies-q3-earnings-call-highlights", "data": "2026-10-27"},
-  {"titulo": "Benzinga: SoFi Q3 2026 e projeção de 2027", "url": "https://www.benzinga.com/node/62621318", "data": "2026-10-27"}
+  {
+   "titulo": "SoFi: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1818874/000181887426000065/a2026q3earningsrelease.htm",
+   "data": "2026-10-27"
+  },
+  {
+   "titulo": "SoFi: índice do 8-K do 3T26 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1818874/000181887426000065/0001818874-26-000065-index.htm",
+   "data": "2026-10-27"
+  },
+  {
+   "titulo": "Nasdaq: SoFi Technologies Q3 earnings call highlights",
+   "url": "https://www.nasdaq.com/articles/sofi-technologies-q3-earnings-call-highlights",
+   "data": "2026-10-27"
+  },
+  {
+   "titulo": "Benzinga: SoFi Q3 2026 e projeção de 2027",
+   "url": "https://www.benzinga.com/node/62621318",
+   "data": "2026-10-27"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

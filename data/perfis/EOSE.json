@@ -34,7 +34,11 @@
    "ESS Tech",
    "CATL",
    "BYD"
-  ]
+  ],
+  "vantagem": {
+   "nivel": "fraca",
+   "resumo": "Bateria de zinco não inflamável feita nos EUA, mas ainda vendida com prejuízo bruto e frente a baterias de lítio cada vez mais baratas."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita de 2026 deve ficar na metade inferior da faixa de US$ 300 mi a US$ 350 mi. A nova fábrica de Thorn Hill deve chegar a cerca de 4 GWh de capacidade anual com duas linhas, e a linha 1 deve voltar a operar perto do fim do 1T27 após mudança de local. A carteira caiu 5% no trimestre porque as entregas superaram os novos pedidos.",

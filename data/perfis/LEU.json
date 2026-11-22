@@ -4,26 +4,72 @@
  "resumo": "Fornecedora americana de urânio enriquecido para usinas nucleares e única produtora de HALEU dos EUA, que está construindo uma grande fábrica de enriquecimento em Piketon, Ohio. Tem US$ 7 bi em carteira e US$ 2,2 bi em caixa, mas a operação dá prejuízo no momento.",
  "modelo": "A Centrus compra e revende urânio enriquecido (LEU, medido em SWU) para concessionárias de energia, hoje com boa parte do produto vindo da Rússia (TENEX) e de outros fornecedores. No segmento de Soluções Técnicas opera para o Departamento de Energia a cascata de centrífugas de Piketon que produz HALEU, combustível mais enriquecido usado por reatores avançados. O plano é produzir enriquecimento próprio em escala nos EUA, com centrífugas fabricadas em Oak Ridge.",
  "segmentos": [
-  {"nome": "LEU (urânio enriquecido e urânio)", "peso_receita": 0.57, "periodo": "3T26", "obs": "US$ 31,8 mi: SWU US$ 14,1 mi e urânio US$ 17,7 mi."},
-  {"nome": "Soluções Técnicas (contrato de HALEU)", "peso_receita": 0.43, "periodo": "3T26", "obs": "US$ 23,7 mi, contra US$ 30,1 mi."}
+  {
+   "nome": "LEU (urânio enriquecido e urânio)",
+   "peso_receita": 0.57,
+   "periodo": "3T26",
+   "obs": "US$ 31,8 mi: SWU US$ 14,1 mi e urânio US$ 17,7 mi."
+  },
+  {
+   "nome": "Soluções Técnicas (contrato de HALEU)",
+   "peso_receita": 0.43,
+   "periodo": "3T26",
+   "obs": "US$ 23,7 mi, contra US$ 30,1 mi."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Maryland (EUA), com a usina de enriquecimento em Piketon (Ohio) e fabricação de centrífugas em Oak Ridge (Tennessee); clientes nos EUA e no exterior."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Maryland (EUA), com a usina de enriquecimento em Piketon (Ohio) e fabricação de centrífugas em Oak Ridge (Tennessee); clientes nos EUA e no exterior."
+ },
  "temas": [
-  {"tema": "Energia nuclear", "relacao": "A retomada da energia nuclear, inclusive para data centers, aumenta a procura por urânio enriquecido fora da Rússia; a Centrus é a única empresa de capital americano com tecnologia própria de enriquecimento."},
-  {"tema": "Combustível para reatores avançados", "relacao": "É a única produtora de HALEU nos EUA; fechou com a Oklo contrato de HALEU com entregas de 2029 a 2031."},
-  {"tema": "Geopolítica", "relacao": "A lei americana restringe importações de urânio enriquecido russo; a dependência atual da TENEX é risco e, ao mesmo tempo, motivo do plano de produção nacional."}
+  {
+   "tema": "Energia nuclear",
+   "relacao": "A retomada da energia nuclear, inclusive para data centers, aumenta a procura por urânio enriquecido fora da Rússia; a Centrus é a única empresa de capital americano com tecnologia própria de enriquecimento."
+  },
+  {
+   "tema": "Combustível para reatores avançados",
+   "relacao": "É a única produtora de HALEU nos EUA; fechou com a Oklo contrato de HALEU com entregas de 2029 a 2031."
+  },
+  {
+   "tema": "Geopolítica",
+   "relacao": "A lei americana restringe importações de urânio enriquecido russo; a dependência atual da TENEX é risco e, ao mesmo tempo, motivo do plano de produção nacional."
+  }
  ],
  "diferencial": {
   "texto": "A Centrus tem tecnologia americana de centrífugas, licença da NRC para a usina de Piketon e é a única a produzir HALEU no país, posição difícil de copiar porque enriquecimento exige anos de licenciamento e altos investimentos. Tem US$ 5,4 bi em contratos condicionados à nova capacidade de Piketon, dos quais US$ 5,1 bi já são definitivos. Os pontos fracos são a escala ainda pequena, a dependência de produto russo enquanto a fábrica não fica pronta, e a concorrência de Urenco e Orano, que também ampliam fábricas nos EUA.",
-  "concorrentes": ["Urenco", "Orano", "TENEX (Rosatom)", "General Matter", "Global Laser Enrichment"]
+  "concorrentes": [
+   "Urenco",
+   "Orano",
+   "TENEX (Rosatom)",
+   "General Matter",
+   "Global Laser Enrichment"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Única produtora de HALEU dos EUA, com tecnologia própria de enriquecimento e licença, mas ainda em escala pequena."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 450 mi e US$ 500 mi, com investimentos de US$ 350 mi a US$ 500 mi na expansão. A carteira total é de US$ 7,0 bi, até 2040. A primeira centrífuga de produção foi concluída em Oak Ridge antes do prazo, e a empresa deve detalhar os investimentos de 2027 em evento com investidores em 07/12/2026. A empresa precisa de extensão de longo prazo do arrendamento de Piketon junto ao Departamento de Energia.",
   "metricas": [
-   {"rotulo": "Carteira total", "valor": "US$ 7,0 bi", "periodo": "set/2026"},
-   {"rotulo": "Receita projetada", "valor": "US$ 450 mi a US$ 500 mi", "periodo": "2026"},
-   {"rotulo": "Investimento projetado", "valor": "US$ 350 mi a US$ 500 mi", "periodo": "2026"}
+   {
+    "rotulo": "Carteira total",
+    "valor": "US$ 7,0 bi",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 450 mi a US$ 500 mi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Investimento projetado",
+    "valor": "US$ 350 mi a US$ 500 mi",
+    "periodo": "2026"
+   }
   ]
  },
  "saude": {
@@ -59,10 +105,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Centrus: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1065059/000162828026070229/ex991-10q2026_11x04.htm", "data": "2026-11-04"},
-  {"titulo": "Centrus: compra da Westerman (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1065059/000162828026066212/ex991_101926westermanpr.htm", "data": "2026-10-19"},
-  {"titulo": "Oklo: 8-K do contrato de HALEU com a Centrus (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1849056/000184905626000055/oklo-20261111.htm", "data": "2026-11-17"},
-  {"titulo": "Zacks: LEU Q3 earnings beat estimates on warrant gain, sales decline", "url": "https://zacks.com/stock/news/3025563/leu-q3-earnings-beat-estimates-on-warrant-gain-sales-decline", "data": "2026-11"}
+  {
+   "titulo": "Centrus: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065059/000162828026070229/ex991-10q2026_11x04.htm",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Centrus: compra da Westerman (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065059/000162828026066212/ex991_101926westermanpr.htm",
+   "data": "2026-10-19"
+  },
+  {
+   "titulo": "Oklo: 8-K do contrato de HALEU com a Centrus (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1849056/000184905626000055/oklo-20261111.htm",
+   "data": "2026-11-17"
+  },
+  {
+   "titulo": "Zacks: LEU Q3 earnings beat estimates on warrant gain, sales decline",
+   "url": "https://zacks.com/stock/news/3025563/leu-q3-earnings-beat-estimates-on-warrant-gain-sales-decline",
+   "data": "2026-11"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

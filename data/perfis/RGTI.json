@@ -5,21 +5,55 @@
  "modelo": "A Rigetti projeta e fabrica processadores quânticos supercondutores montados a partir de chiplets (pequenos chips de 9 qubits combinados) e vende acesso pela nuvem, sistemas completos instalados no cliente (como o Novera, de 9 qubits, para pesquisa) e contratos de pesquisa com governos. Grande parte da receita vem de contratos governamentais e entregas pontuais de sistemas, por isso varia muito de trimestre a trimestre.",
  "segmentos": [],
  "segmentos_base": "Receita ainda pouco relevante (US$ 1,4 mi no 3T26)",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA), com fábrica de chips própria; vende também ao exterior, como o sistema para o centro indiano C-DAC e operações no Reino Unido."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede na Califórnia (EUA), com fábrica de chips própria; vende também ao exterior, como o sistema para o centro indiano C-DAC e operações no Reino Unido."
+ },
  "temas": [
-  {"tema": "Computação quântica", "relacao": "Atingiu 99,5% de fidelidade mediana em portas de dois qubits no sistema de 108 qubits, meta prometida para 2026, e mira mais de 300 qubits com 99,7% até meados de 2028."},
-  {"tema": "Política industrial dos EUA", "relacao": "Fechou em setembro acordo de até US$ 100 mi com o Departamento de Comércio (programa CHIPS) para três programas de pesquisa, em troca de participação minoritária do governo."}
+  {
+   "tema": "Computação quântica",
+   "relacao": "Atingiu 99,5% de fidelidade mediana em portas de dois qubits no sistema de 108 qubits, meta prometida para 2026, e mira mais de 300 qubits com 99,7% até meados de 2028."
+  },
+  {
+   "tema": "Política industrial dos EUA",
+   "relacao": "Fechou em setembro acordo de até US$ 100 mi com o Departamento de Comércio (programa CHIPS) para três programas de pesquisa, em troca de participação minoritária do governo."
+  }
  ],
  "diferencial": {
   "texto": "A Rigetti é uma das poucas empresas quânticas com fábrica própria de chips, o que acelera testes e reduz dependência de terceiros, e a arquitetura de chiplets facilita aumentar o número de qubits. As portas são rápidas (50 a 70 nanossegundos). Os pontos fracos são a fidelidade ainda abaixo da de rivais de íons aprisionados, a receita minúscula e irregular, e a concorrência de gigantes como IBM e Google, que usam a mesma tecnologia supercondutora com muito mais recursos.",
-  "concorrentes": ["IBM", "Google", "IonQ", "D-Wave", "Quantinuum", "IQM"]
+  "concorrentes": [
+   "IBM",
+   "Google",
+   "IonQ",
+   "D-Wave",
+   "Quantinuum",
+   "IQM"
+  ],
+  "vantagem": {
+   "nivel": "fraca",
+   "resumo": "Fábrica própria de chips quânticos, mas fidelidade abaixo de rivais, receita mínima e concorrência de gigantes."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita de 2026 deve ser de cerca de US$ 20 mi, o que exige cerca de US$ 9 mi no 4T26 e depende da aceitação do sistema pelo C-DAC, na Índia. O roteiro prevê mais de 300 qubits em meados de 2028 e cerca de 1.000 qubits com 99,9% de fidelidade em cerca de três anos. O potencial de longo prazo depende de a computação quântica ganhar uso comercial, o que ainda não está comprovado.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "cerca de US$ 20 mi", "periodo": "2026"},
-   {"rotulo": "Fidelidade mediana de 2 qubits", "valor": "99,5%", "periodo": "108 qubits, 3T26"},
-   {"rotulo": "Acordo com o Departamento de Comércio", "valor": "até US$ 100 mi", "periodo": "set/2026"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "cerca de US$ 20 mi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Fidelidade mediana de 2 qubits",
+    "valor": "99,5%",
+    "periodo": "108 qubits, 3T26"
+   },
+   {
+    "rotulo": "Acordo com o Departamento de Comércio",
+    "valor": "até US$ 100 mi",
+    "periodo": "set/2026"
+   }
   ]
  },
  "saude": {
@@ -55,10 +89,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Rigetti: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1838359/000110465926125152/rgti-ex99d1.htm", "data": "2026-11-10"},
-  {"titulo": "Rigetti: acordo com o Departamento de Comércio (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1838359/000110465926105662/tm2624940d1_ex99-1.htm", "data": "2026-09-08"},
-  {"titulo": "The Quantum Insider: Rigetti reports Q3 2026 results and updates roadmap", "url": "https://thequantuminsider.com/2026/11/11/rigetti-q3-2026-results-quantum-computing-roadmap/", "data": "2026-11-11"},
-  {"titulo": "24/7 Wall St.: Rigetti Q3 2026 revenue misses expectations", "url": "https://247wallst.com/cards/rigetti-computing-q3-2026-earnings-rgti-01m73mz4gbe9skq001603k9n31", "data": "2026-11-10"}
+  {
+   "titulo": "Rigetti: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1838359/000110465926125152/rgti-ex99d1.htm",
+   "data": "2026-11-10"
+  },
+  {
+   "titulo": "Rigetti: acordo com o Departamento de Comércio (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1838359/000110465926105662/tm2624940d1_ex99-1.htm",
+   "data": "2026-09-08"
+  },
+  {
+   "titulo": "The Quantum Insider: Rigetti reports Q3 2026 results and updates roadmap",
+   "url": "https://thequantuminsider.com/2026/11/11/rigetti-q3-2026-results-quantum-computing-roadmap/",
+   "data": "2026-11-11"
+  },
+  {
+   "titulo": "24/7 Wall St.: Rigetti Q3 2026 revenue misses expectations",
+   "url": "https://247wallst.com/cards/rigetti-computing-q3-2026-earnings-rgti-01m73mz4gbe9skq001603k9n31",
+   "data": "2026-11-10"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

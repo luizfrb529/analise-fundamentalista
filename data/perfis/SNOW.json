@@ -4,25 +4,69 @@
  "resumo": "Plataforma americana de dados na nuvem, onde empresas guardam, processam e analisam seus dados e agora rodam aplicações de IA. Receita crescendo 35% ao ano, com prejuízo contábil pela remuneração em ações, mas caixa livre positivo.",
  "modelo": "A Snowflake cobra pelo consumo: o cliente compra créditos e paga conforme usa processamento e armazenamento, rodando sobre as nuvens da Amazon, Microsoft e Google. Quanto mais dados e consultas, maior a receita. Vende também ferramentas de IA (Cortex) que permitem usar modelos de linguagem sobre os dados do cliente sem tirá-los da plataforma.",
  "segmentos": [
-  {"nome": "Produto (consumo da plataforma)", "peso_receita": 0.96, "periodo": "3T26", "obs": "US$ 1,49 bi, alta de 37%."},
-  {"nome": "Serviços profissionais", "peso_receita": 0.04, "periodo": "3T26", "obs": null}
+  {
+   "nome": "Produto (consumo da plataforma)",
+   "peso_receita": 0.96,
+   "periodo": "3T26",
+   "obs": "US$ 1,49 bi, alta de 37%."
+  },
+  {
+   "nome": "Serviços profissionais",
+   "peso_receita": 0.04,
+   "periodo": "3T26",
+   "obs": null
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Montana (EUA), operação principal na Califórnia; a maior parte da receita vem dos EUA, com crescimento na Europa e Ásia."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Montana (EUA), operação principal na Califórnia; a maior parte da receita vem dos EUA, com crescimento na Europa e Ásia."
+ },
  "temas": [
-  {"tema": "IA nas empresas", "relacao": "Empresas precisam organizar seus dados para usar IA; a ferramenta de programação com IA da Snowflake (CoCo) passou de 9.100 contas no trimestre."},
-  {"tema": "Nuvem", "relacao": "Roda sobre AWS, Azure e Google Cloud, permitindo ao cliente usar mais de uma nuvem."}
+  {
+   "tema": "IA nas empresas",
+   "relacao": "Empresas precisam organizar seus dados para usar IA; a ferramenta de programação com IA da Snowflake (CoCo) passou de 9.100 contas no trimestre."
+  },
+  {
+   "tema": "Nuvem",
+   "relacao": "Roda sobre AWS, Azure e Google Cloud, permitindo ao cliente usar mais de uma nuvem."
+  }
  ],
  "diferencial": {
   "texto": "A Snowflake separa armazenamento e processamento e funciona igual em várias nuvens, o que facilita o uso e o compartilhamento de dados entre empresas. Uma vez que os dados de uma empresa estão lá, migrar é caro, e o consumo tende a crescer (a retenção líquida de receita é de 126%). Os pontos fracos são a forte concorrência da Databricks e das próprias nuvens, o prejuízo contábil alto pela remuneração em ações e a receita sensível a cortes de consumo dos clientes.",
-  "concorrentes": ["Databricks", "Amazon (Redshift)", "Google (BigQuery)", "Microsoft (Fabric)", "Oracle", "Teradata"]
+  "concorrentes": [
+   "Databricks",
+   "Amazon (Redshift)",
+   "Google (BigQuery)",
+   "Microsoft (Fabric)",
+   "Oracle",
+   "Teradata"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Plataforma de dados com alto custo de troca e consumo crescente, mas com concorrência forte de Databricks e das grandes nuvens."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita de produto do ano fiscal 2027 (fevereiro de 2026 a janeiro de 2027) deve ser de US$ 6,07 bi, alta de 36%, projeção elevada de US$ 5,84 bi, com margem operacional ajustada de 14,5% e margem de caixa livre ajustado de 23%. As obrigações contratadas (RPO) somam US$ 9,0 bi. A IA aplicada aos dados é o principal motor apontado.",
   "metricas": [
-   {"rotulo": "Receita de produto projetada", "valor": "US$ 6,07 bi", "periodo": "ano fiscal 2027"},
-   {"rotulo": "Obrigações contratadas (RPO)", "valor": "US$ 9,0 bi", "periodo": "jul/2026"},
-   {"rotulo": "Retenção líquida de receita", "valor": "126%", "periodo": "jul/2026"}
+   {
+    "rotulo": "Receita de produto projetada",
+    "valor": "US$ 6,07 bi",
+    "periodo": "ano fiscal 2027"
+   },
+   {
+    "rotulo": "Obrigações contratadas (RPO)",
+    "valor": "US$ 9,0 bi",
+    "periodo": "jul/2026"
+   },
+   {
+    "rotulo": "Retenção líquida de receita",
+    "valor": "126%",
+    "periodo": "jul/2026"
+   }
   ]
  },
  "saude": {
@@ -57,10 +101,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Snowflake: resultados do 2T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/fy2027q2earnings.htm", "data": "2026-09-02"},
-  {"titulo": "Snowflake: 8-K do 2T27 fiscal (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/0001640147-26-000033-index.htm", "data": "2026-09-02"},
-  {"titulo": "Motley Fool: Why Snowflake stock rocketed higher today", "url": "https://www.fool.com/investing/2026/09/03/why-snowflake-stock-rocketed-higher-today/", "data": "2026-09-03"},
-  {"titulo": "IT Brief: Snowflake raises outlook after 37% product revenue growth", "url": "https://itbrief.com.au/story/snowflake-raises-outlook-after-37-product-revenue-growth", "data": "2026-09"}
+  {
+   "titulo": "Snowflake: resultados do 2T27 fiscal (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/fy2027q2earnings.htm",
+   "data": "2026-09-02"
+  },
+  {
+   "titulo": "Snowflake: 8-K do 2T27 fiscal (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/0001640147-26-000033-index.htm",
+   "data": "2026-09-02"
+  },
+  {
+   "titulo": "Motley Fool: Why Snowflake stock rocketed higher today",
+   "url": "https://www.fool.com/investing/2026/09/03/why-snowflake-stock-rocketed-higher-today/",
+   "data": "2026-09-03"
+  },
+  {
+   "titulo": "IT Brief: Snowflake raises outlook after 37% product revenue growth",
+   "url": "https://itbrief.com.au/story/snowflake-raises-outlook-after-37-product-revenue-growth",
+   "data": "2026-09"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

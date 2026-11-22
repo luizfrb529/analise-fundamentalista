@@ -4,26 +4,73 @@
  "resumo": "Maior fabricante de chips de IA sob medida para as grandes empresas de tecnologia e de chips de rede para data centers, além de dona da VMware. A receita de IA mais que triplicou em um ano e já é 56% do total.",
  "modelo": "A Broadcom projeta chips (produção terceirizada, principalmente na TSMC) e vende software corporativo. Em semicondutores, desenvolve aceleradores de IA sob medida (XPUs) em parceria com grandes clientes de nuvem e IA, e vende chips de rede (switches Tomahawk e Jericho), de banda larga, armazenamento e conectividade sem fio, inclusive para a Apple. Em software, vende licenças e assinaturas da VMware (nuvem privada), de mainframe e de segurança, com receita recorrente e margem alta.",
  "segmentos": [
-  {"nome": "Semicondutores", "peso_receita": 0.70, "periodo": "3T26 fiscal", "obs": "US$ 20,8 bi, alta de 127%; IA foi US$ 16,7 bi."},
-  {"nome": "Software de infraestrutura (VMware e outros)", "peso_receita": 0.30, "periodo": "3T26 fiscal", "obs": "US$ 8,8 bi, alta de 29%."}
+  {
+   "nome": "Semicondutores",
+   "peso_receita": 0.7,
+   "periodo": "3T26 fiscal",
+   "obs": "US$ 20,8 bi, alta de 127%; IA foi US$ 16,7 bi."
+  },
+  {
+   "nome": "Software de infraestrutura (VMware e outros)",
+   "peso_receita": 0.3,
+   "periodo": "3T26 fiscal",
+   "obs": "US$ 8,8 bi, alta de 29%."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Palo Alto, Califórnia (EUA), com clientes no mundo todo e produção terceirizada na Ásia."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Palo Alto, Califórnia (EUA), com clientes no mundo todo e produção terceirizada na Ásia."
+ },
  "temas": [
-  {"tema": "Inteligência artificial", "relacao": "A receita de chips de IA foi de US$ 16,7 bi no 3T26 fiscal (+221% em um ano); grandes empresas de tecnologia encomendam chips próprios à Broadcom como alternativa às GPUs."},
-  {"tema": "Redes de data center", "relacao": "Os switches da empresa conectam dezenas de milhares de aceleradores nos clusters de IA, demanda que cresce junto com o tamanho dos clusters."},
-  {"tema": "Software corporativo", "relacao": "A VMware garante receita recorrente e caixa, embora a mudança para assinaturas tenha gerado reclamações de clientes."}
+  {
+   "tema": "Inteligência artificial",
+   "relacao": "A receita de chips de IA foi de US$ 16,7 bi no 3T26 fiscal (+221% em um ano); grandes empresas de tecnologia encomendam chips próprios à Broadcom como alternativa às GPUs."
+  },
+  {
+   "tema": "Redes de data center",
+   "relacao": "Os switches da empresa conectam dezenas de milhares de aceleradores nos clusters de IA, demanda que cresce junto com o tamanho dos clusters."
+  },
+  {
+   "tema": "Software corporativo",
+   "relacao": "A VMware garante receita recorrente e caixa, embora a mudança para assinaturas tenha gerado reclamações de clientes."
+  }
  ],
  "diferencial": {
   "texto": "A Broadcom domina o desenho de chips sob medida em escala, com blocos próprios de comunicação de alta velocidade (SerDes) e encapsulamento avançado que poucas empresas sabem fazer, e é líder em switches de data center. O cliente que desenvolve um chip com ela por anos dificilmente troca de parceiro no meio da geração. A VMware é padrão em nuvem privada nas grandes empresas, com alto custo de troca. Os pontos fracos são a concentração em poucos clientes de IA, que podem levar projetos para concorrentes ou fazer internamente, e a dívida herdada da compra da VMware.",
-  "concorrentes": ["NVIDIA", "Marvell", "MediaTek", "Alchip", "Cisco (redes)", "Nutanix (software)"]
+  "concorrentes": [
+   "NVIDIA",
+   "Marvell",
+   "MediaTek",
+   "Alchip",
+   "Cisco (redes)",
+   "Nutanix (software)"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Chips sob medida para as maiores nuvens e redes de alta velocidade, com décadas de propriedade intelectual, além de software corporativo de difícil troca."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do 4T26 fiscal (trimestre encerrado em 01/11/2026) deve ficar em cerca de US$ 34,8 bi (+93%), com US$ 21,7 bi de chips de IA (+236%). A empresa projeta receita de IA de cerca de US$ 58 bi no ano fiscal de 2026, US$ 115 bi em 2027 e US$ 230 bi em 2028, segundo a cobertura da teleconferência. A entrega depende de os grandes clientes manterem os projetos de chips próprios e da capacidade de produção da TSMC.",
   "metricas": [
-   {"rotulo": "Receita projetada para o 4T26 fiscal", "valor": "US$ 34,8 bi", "periodo": "ago a out/2026"},
-   {"rotulo": "Receita de IA projetada", "valor": "US$ 21,7 bi", "periodo": "4T26 fiscal"},
-   {"rotulo": "Receita de IA projetada no ano", "valor": "cerca de US$ 115 bi", "periodo": "ano fiscal 2027"}
+   {
+    "rotulo": "Receita projetada para o 4T26 fiscal",
+    "valor": "US$ 34,8 bi",
+    "periodo": "ago a out/2026"
+   },
+   {
+    "rotulo": "Receita de IA projetada",
+    "valor": "US$ 21,7 bi",
+    "periodo": "4T26 fiscal"
+   },
+   {
+    "rotulo": "Receita de IA projetada no ano",
+    "valor": "cerca de US$ 115 bi",
+    "periodo": "ano fiscal 2027"
+   }
   ]
  },
  "saude": {
@@ -59,10 +106,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Broadcom: resultados do 3T26 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm", "data": "2026-09-02"},
-  {"titulo": "Broadcom: release no site de RI", "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial", "data": "2026-09-02"},
-  {"titulo": "Nasdaq: Broadcom Q3 earnings call highlights", "url": "https://www.nasdaq.com/articles/broadcom-q3-earnings-call-highlights", "data": "2026-09-03"},
-  {"titulo": "DatacenterDynamics: Broadcom AI silicon fueled Q3", "url": "https://www.datacenterdynamics.com/en/news/broadcom-slams-ai-silicon-fueled-q3-promises-double-double-on-the-way/", "data": "2026-09-03"}
+  {
+   "titulo": "Broadcom: resultados do 3T26 fiscal (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm",
+   "data": "2026-09-02"
+  },
+  {
+   "titulo": "Broadcom: release no site de RI",
+   "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+   "data": "2026-09-02"
+  },
+  {
+   "titulo": "Nasdaq: Broadcom Q3 earnings call highlights",
+   "url": "https://www.nasdaq.com/articles/broadcom-q3-earnings-call-highlights",
+   "data": "2026-09-03"
+  },
+  {
+   "titulo": "DatacenterDynamics: Broadcom AI silicon fueled Q3",
+   "url": "https://www.datacenterdynamics.com/en/news/broadcom-slams-ai-silicon-fueled-q3-promises-double-double-on-the-way/",
+   "data": "2026-09-03"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

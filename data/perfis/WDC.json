@@ -30,7 +30,11 @@
    "SK Hynix (Solidigm)",
    "Micron",
    "SanDisk"
-  ]
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Duopólio com a Seagate em discos rígidos de alta capacidade, mercado com barreira tecnológica alta, mas sujeito a ciclos de preço."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do trimestre até dezembro deve ser de US$ 5,1 bi, mais ou menos US$ 100 mi (alta de 66% a 72%), com margem bruta ajustada de 60% a 61% e lucro ajustado de US$ 5,80 por ação. A segunda geração de HAMR deve começar a ser qualificada no segundo semestre de 2027.",

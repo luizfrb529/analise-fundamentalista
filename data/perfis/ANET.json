@@ -4,25 +4,69 @@
  "resumo": "Fabricante americana de switches e software de rede de alta velocidade para data centers e nuvens, uma das principais fornecedoras de redes para clusters de IA. Muito lucrativa, com receita crescendo 58% e margem operacional acima de 45%.",
  "modelo": "A Arista vende switches Ethernet de alto desempenho com seu sistema operacional próprio (EOS) e software de gestão e segurança de redes, para grandes nuvens (como Microsoft e Meta), empresas e provedores. Os switches conectam servidores e GPUs dentro dos data centers e entre data centers. Terceiriza a fabricação.",
  "segmentos": [
-  {"nome": "Produtos", "peso_receita": 0.87, "periodo": "3T26", "obs": "US$ 3,19 bi."},
-  {"nome": "Serviços", "peso_receita": 0.13, "periodo": "3T26", "obs": "cerca de US$ 0,47 bi."}
+  {
+   "nome": "Produtos",
+   "peso_receita": 0.87,
+   "periodo": "3T26",
+   "obs": "US$ 3,19 bi."
+  },
+  {
+   "nome": "Serviços",
+   "peso_receita": 0.13,
+   "periodo": "3T26",
+   "obs": "cerca de US$ 0,47 bi."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Santa Clara, Califórnia (EUA); a maior parte da receita vem das Américas, com grandes nuvens americanas como principais clientes."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Santa Clara, Califórnia (EUA); a maior parte da receita vem das Américas, com grandes nuvens americanas como principais clientes."
+ },
  "temas": [
-  {"tema": "Redes para IA", "relacao": "Clusters de IA precisam de redes Ethernet muito rápidas para ligar milhares de GPUs; a empresa elevou a projeção de 2026 para cerca de US$ 13,3 bi, segundo a imprensa, e lançou arquiteturas de rack com Microsoft e Meta."},
-  {"tema": "Nuvem", "relacao": "As grandes nuvens são os maiores clientes e estão ampliando os investimentos em data centers."}
+  {
+   "tema": "Redes para IA",
+   "relacao": "Clusters de IA precisam de redes Ethernet muito rápidas para ligar milhares de GPUs; a empresa elevou a projeção de 2026 para cerca de US$ 13,3 bi, segundo a imprensa, e lançou arquiteturas de rack com Microsoft e Meta."
+  },
+  {
+   "tema": "Nuvem",
+   "relacao": "As grandes nuvens são os maiores clientes e estão ampliando os investimentos em data centers."
+  }
  ],
  "diferencial": {
   "texto": "A Arista tem um sistema operacional de rede único, estável e programável, usado pelas maiores nuvens, e foi pioneira em Ethernet para data centers de grande escala, ganhando espaço da Cisco. A posição em redes de IA cresce com a adoção de Ethernet frente à InfiniBand da NVIDIA. Os pontos fracos são a concentração em poucos clientes enormes, a concorrência de NVIDIA, Cisco e switches feitos sob medida pelas nuvens, e a margem bruta em leve queda.",
-  "concorrentes": ["Cisco", "NVIDIA", "Juniper (HPE)", "Celestica", "Nokia", "Huawei"]
+  "concorrentes": [
+   "Cisco",
+   "NVIDIA",
+   "Juniper (HPE)",
+   "Celestica",
+   "Nokia",
+   "Huawei"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Sistema operacional de rede próprio, usado pelas maiores nuvens, e liderança em Ethernet de alta velocidade para IA."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do 4T26 deve ficar entre US$ 3,9 bi e US$ 4,0 bi, com margem operacional ajustada de 48% a 49% e lucro ajustado de US$ 1,26 a US$ 1,30 por ação. A receita diferida subiu para US$ 6,8 bi, sinal de pedidos já faturados a reconhecer.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 3,9 bi a US$ 4,0 bi", "periodo": "4T26"},
-   {"rotulo": "Receita projetada", "valor": "cerca de US$ 13,3 bi", "periodo": "2026"},
-   {"rotulo": "Receita diferida", "valor": "US$ 6,8 bi", "periodo": "set/2026"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 3,9 bi a US$ 4,0 bi",
+    "periodo": "4T26"
+   },
+   {
+    "rotulo": "Receita projetada",
+    "valor": "cerca de US$ 13,3 bi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Receita diferida",
+    "valor": "US$ 6,8 bi",
+    "periodo": "set/2026"
+   }
   ]
  },
  "saude": {
@@ -56,10 +100,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Arista: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000252/ex991q326-earningsrelease.htm", "data": "2026-11-03"},
-  {"titulo": "Morningstar (Business Wire): Arista reports third quarter 2026 results", "url": "https://www.morningstar.com/news/business-wire/20261103862513/arista-networks-inc-reports-third-quarter-2026-financial-results", "data": "2026-11-03"},
-  {"titulo": "24/7 Wall St.: Arista Q3 2026, revenue surges 58.5% on AI demand", "url": "https://247wallst.com/cards/arista-networks-q3-2026-earnings-anet-01m6hm6v5atgmt0qczy1xw4ymp", "data": "2026-11-03"},
-  {"titulo": "Crypto Briefing: Arista posts 58.5% revenue growth as AI networking demand accelerates", "url": "https://cryptobriefing.com/arista-networks-58-percent-revenue-growth/", "data": "2026-11"}
+  {
+   "titulo": "Arista: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000252/ex991q326-earningsrelease.htm",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "Morningstar (Business Wire): Arista reports third quarter 2026 results",
+   "url": "https://www.morningstar.com/news/business-wire/20261103862513/arista-networks-inc-reports-third-quarter-2026-financial-results",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "24/7 Wall St.: Arista Q3 2026, revenue surges 58.5% on AI demand",
+   "url": "https://247wallst.com/cards/arista-networks-q3-2026-earnings-anet-01m6hm6v5atgmt0qczy1xw4ymp",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "Crypto Briefing: Arista posts 58.5% revenue growth as AI networking demand accelerates",
+   "url": "https://cryptobriefing.com/arista-networks-58-percent-revenue-growth/",
+   "data": "2026-11"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

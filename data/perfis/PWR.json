@@ -4,25 +4,69 @@
  "resumo": "Maior empresa de engenharia e construção de infraestrutura elétrica dos EUA, que constrói linhas de transmissão, subestações, usinas e conexões de data centers. Lucrativa, com receita crescendo 57% e carteira recorde de US$ 63,7 bi.",
  "modelo": "A Quanta Services projeta, constrói e mantém redes elétricas, linhas de transmissão e distribuição, subestações, usinas renováveis e infraestrutura de gás e dutos para concessionárias, geradoras, indústrias e empresas de tecnologia. Ganha com contratos de serviço de longo prazo (acordos-mestre) e grandes projetos. Também fabrica equipamentos, como transformadores e torres.",
  "segmentos": [
-  {"nome": "Infraestrutura elétrica", "peso_receita": 0.82, "periodo": "3T26", "obs": "US$ 9,80 bi, alta de 59%."},
-  {"nome": "Subterrâneo e infraestrutura (gás, dutos, indústria)", "peso_receita": 0.18, "periodo": "3T26", "obs": "US$ 2,22 bi, alta de 52%."}
+  {
+   "nome": "Infraestrutura elétrica",
+   "peso_receita": 0.82,
+   "periodo": "3T26",
+   "obs": "US$ 9,80 bi, alta de 59%."
+  },
+  {
+   "nome": "Subterrâneo e infraestrutura (gás, dutos, indústria)",
+   "peso_receita": 0.18,
+   "periodo": "3T26",
+   "obs": "US$ 2,22 bi, alta de 52%."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Houston (EUA); opera principalmente nos EUA, com atuação no Canadá e na Austrália."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Houston (EUA); opera principalmente nos EUA, com atuação no Canadá e na Austrália."
+ },
  "temas": [
-  {"tema": "Rede elétrica e data centers", "relacao": "A demanda se amplia entre concessionárias, geradoras, indústria e empresas de tecnologia; a carteira de infraestrutura elétrica chegou a US$ 51,9 bi."},
-  {"tema": "Mão de obra qualificada", "relacao": "A escassez de eletricistas e engenheiros limita concorrentes; a Quanta tem a maior força de trabalho especializada do setor."}
+  {
+   "tema": "Rede elétrica e data centers",
+   "relacao": "A demanda se amplia entre concessionárias, geradoras, indústria e empresas de tecnologia; a carteira de infraestrutura elétrica chegou a US$ 51,9 bi."
+  },
+  {
+   "tema": "Mão de obra qualificada",
+   "relacao": "A escassez de eletricistas e engenheiros limita concorrentes; a Quanta tem a maior força de trabalho especializada do setor."
+  }
  ],
  "diferencial": {
   "texto": "A Quanta tem a maior força de trabalho especializada em rede elétrica dos EUA, centros de treinamento próprios e relação de décadas com concessionárias, o que é difícil de replicar quando todos querem construir ao mesmo tempo. A diversificação em fabricação de equipamentos reduz gargalos. Os pontos fracos são a margem baixa típica de construção, riscos de execução em grandes projetos e a dependência dos investimentos das concessionárias.",
-  "concorrentes": ["MasTec", "EMCOR", "Primoris", "MYR Group", "Dycom", "Fluor"]
+  "concorrentes": [
+   "MasTec",
+   "EMCOR",
+   "Primoris",
+   "MYR Group",
+   "Dycom",
+   "Fluor"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Maior força de trabalho especializada em rede elétrica dos EUA e relação de décadas com concessionárias, difícil de replicar."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 41,3 bi e US$ 41,6 bi, com lucro ajustado de US$ 17,90 a US$ 18,30 por ação e fluxo de caixa livre de US$ 2,5 bi a US$ 3,0 bi; foi a terceira elevação seguida. A carteira de US$ 63,7 bi, alta de 63% em um ano, dá visibilidade para os próximos anos.",
   "metricas": [
-   {"rotulo": "Carteira de pedidos", "valor": "US$ 63,7 bi", "periodo": "set/2026"},
-   {"rotulo": "Receita projetada", "valor": "US$ 41,3 bi a US$ 41,6 bi", "periodo": "2026"},
-   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 17,90 a US$ 18,30 por ação", "periodo": "2026"}
+   {
+    "rotulo": "Carteira de pedidos",
+    "valor": "US$ 63,7 bi",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 41,3 bi a US$ 41,6 bi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Lucro ajustado projetado",
+    "valor": "US$ 17,90 a US$ 18,30 por ação",
+    "periodo": "2026"
+   }
   ]
  },
  "saude": {
@@ -56,10 +100,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Quanta: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1050915/000119312526436949/d77812dex991.htm", "data": "2026-10-29"},
-  {"titulo": "Zacks: PWR Q3 earnings beat on electric strength, 2026 view raised", "url": "https://www.zacks.com/stock/news/3018963/pwr-q3-earnings-beat-on-electric-strength-2026-view-raised-stock-up", "data": "2026-10"},
-  {"titulo": "StockStory: Quanta beats expectations in strong Q3 2026", "url": "https://stockstory.org/us/stocks/nyse/pwr/news/earnings/quanta-nysepwr-beats-expectations-in-strong-q3-2026-stock-soars", "data": "2026-10"},
-  {"titulo": "Ariva: Quanta Services reports third quarter 2026 results", "url": "https://www.ariva.de/news/quanta-services-reports-third-quarter-2026-results-12186732", "data": "2026-10-29"}
+  {
+   "titulo": "Quanta: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1050915/000119312526436949/d77812dex991.htm",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Zacks: PWR Q3 earnings beat on electric strength, 2026 view raised",
+   "url": "https://www.zacks.com/stock/news/3018963/pwr-q3-earnings-beat-on-electric-strength-2026-view-raised-stock-up",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "StockStory: Quanta beats expectations in strong Q3 2026",
+   "url": "https://stockstory.org/us/stocks/nyse/pwr/news/earnings/quanta-nysepwr-beats-expectations-in-strong-q3-2026-stock-soars",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "Ariva: Quanta Services reports third quarter 2026 results",
+   "url": "https://www.ariva.de/news/quanta-services-reports-third-quarter-2026-results-12186732",
+   "data": "2026-10-29"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

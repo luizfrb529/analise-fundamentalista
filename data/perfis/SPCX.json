@@ -4,27 +4,79 @@
  "resumo": "SpaceX, empresa de Elon Musk que lança foguetes, opera a rede de internet via satélite Starlink e, agora, um grande negócio de inteligência artificial. Abriu capital em junho de 2026; receita de US$ 14,6 bi no trimestre, alta de 161%, com investimento gigantesco.",
  "modelo": "A SpaceX tem três segmentos: Espaço (lançamentos com Falcon e Starship para clientes e para o governo, cápsula Dragon), Conectividade (Starlink, internet via satélite para casas, empresas, aviões, navios e governos, com 13,6 milhões de assinantes residenciais) e Super Intelligence (IA, com capacidade de computação de 1,7 GW e a Cursor, de programação com IA, comprada em 2026). Fabrica seus foguetes e satélites.",
  "segmentos": [
-  {"nome": "Super Intelligence (IA)", "peso_receita": 0.52, "periodo": "3T26", "obs": "US$ 7,56 bi; lucro operacional de US$ 431 mi."},
-  {"nome": "Conectividade (Starlink)", "peso_receita": 0.36, "periodo": "3T26", "obs": "US$ 5,25 bi, alta de 69%; lucro operacional de US$ 2,37 bi."},
-  {"nome": "Espaço (lançamentos)", "peso_receita": 0.12, "periodo": "3T26", "obs": "US$ 1,77 bi; prejuízo operacional de US$ 7 mi."}
+  {
+   "nome": "Super Intelligence (IA)",
+   "peso_receita": 0.52,
+   "periodo": "3T26",
+   "obs": "US$ 7,56 bi; lucro operacional de US$ 431 mi."
+  },
+  {
+   "nome": "Conectividade (Starlink)",
+   "peso_receita": 0.36,
+   "periodo": "3T26",
+   "obs": "US$ 5,25 bi, alta de 69%; lucro operacional de US$ 2,37 bi."
+  },
+  {
+   "nome": "Espaço (lançamentos)",
+   "peso_receita": 0.12,
+   "periodo": "3T26",
+   "obs": "US$ 1,77 bi; prejuízo operacional de US$ 7 mi."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede no Texas (EUA), com base de lançamentos Starbase; o Starlink opera em mais de 100 países, inclusive o Brasil."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede no Texas (EUA), com base de lançamentos Starbase; o Starlink opera em mais de 100 países, inclusive o Brasil."
+ },
  "temas": [
-  {"tema": "Inteligência artificial", "relacao": "O segmento de IA já é mais da metade da receita, com 1,7 GW de capacidade de computação; comprou a Cursor por valor implícito de US$ 60 bi."},
-  {"tema": "Internet via satélite", "relacao": "O Starlink ganhou 1,6 milhão de assinantes no trimestre e a receita média subiu para US$ 69 por mês; a empresa vai comprar espectro de 800 MHz para conexão direta com celulares."},
-  {"tema": "Espaço e defesa", "relacao": "O Starship fez seu primeiro voo orbital levando 26 satélites Starlink V3."}
+  {
+   "tema": "Inteligência artificial",
+   "relacao": "O segmento de IA já é mais da metade da receita, com 1,7 GW de capacidade de computação; comprou a Cursor por valor implícito de US$ 60 bi."
+  },
+  {
+   "tema": "Internet via satélite",
+   "relacao": "O Starlink ganhou 1,6 milhão de assinantes no trimestre e a receita média subiu para US$ 69 por mês; a empresa vai comprar espectro de 800 MHz para conexão direta com celulares."
+  },
+  {
+   "tema": "Espaço e defesa",
+   "relacao": "O Starship fez seu primeiro voo orbital levando 26 satélites Starlink V3."
+  }
  ],
  "diferencial": {
   "texto": "A SpaceX domina os lançamentos orbitais com foguetes reutilizáveis, o que reduz muito o custo e permite colocar sua própria constelação de satélites, impossível de igualar no curto prazo. O Starlink tem escala e tecnologia muito à frente de rivais. Os pontos fracos são o investimento enorme (US$ 48 bi em nove meses), a dependência de Elon Musk, a concorrência em IA com empresas como OpenAI e Google e a regulação espacial e de espectro.",
-  "concorrentes": ["Blue Origin", "Amazon (Project Kuiper)", "Rocket Lab", "OpenAI", "Alphabet", "AST SpaceMobile"]
+  "concorrentes": [
+   "Blue Origin",
+   "Amazon (Project Kuiper)",
+   "Rocket Lab",
+   "OpenAI",
+   "Alphabet",
+   "AST SpaceMobile"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Foguetes reutilizáveis e constelação Starlink em escala que nenhum concorrente consegue igualar no curto prazo."
+  }
  },
  "potencial": {
   "texto": "A empresa não dá projeções numéricas no release. O potencial vem da expansão do Starlink (inclusive conexão direta com celulares), do Starship para lançar mais satélites a custo menor, e do negócio de IA. A empresa planeja uma base de lançamentos na Louisiana para 2029.",
   "metricas": [
-   {"rotulo": "Assinantes residenciais do Starlink", "valor": "13,6 milhões", "periodo": "set/2026"},
-   {"rotulo": "Capacidade de computação de IA", "valor": "1,7 GW", "periodo": "set/2026"},
-   {"rotulo": "Investimento em nove meses", "valor": "US$ 48,1 bi", "periodo": "2026"}
+   {
+    "rotulo": "Assinantes residenciais do Starlink",
+    "valor": "13,6 milhões",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Capacidade de computação de IA",
+    "valor": "1,7 GW",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Investimento em nove meses",
+    "valor": "US$ 48,1 bi",
+    "periodo": "2026"
+   }
   ]
  },
  "saude": {
@@ -59,10 +111,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "SpaceX: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm", "data": "2026-10-20"},
-  {"titulo": "SpaceX: formulário 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/0001628280-26-066880-index.htm", "data": "2026-10-22"},
-  {"titulo": "Broadband Breakfast: Starlink reaches 13.6 million subscribers as SpaceX revenue jumps 161%", "url": "https://broadbandbreakfast.com/starlink-reaches-13-6-million-subscribers-globally-as-spacex-revenue-jumps-161/", "data": "2026-10"},
-  {"titulo": "investingLive: SpaceX beats Q3 forecasts across all three segments", "url": "https://investinglive.com/stocks/spacex-beats-q3-forecasts-across-all-three-segments-as-ai-revenue-tops-7-5-billion/", "data": "2026-10-20"}
+  {
+   "titulo": "SpaceX: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
+   "data": "2026-10-20"
+  },
+  {
+   "titulo": "SpaceX: formulário 10-Q do 3T26 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/0001628280-26-066880-index.htm",
+   "data": "2026-10-22"
+  },
+  {
+   "titulo": "Broadband Breakfast: Starlink reaches 13.6 million subscribers as SpaceX revenue jumps 161%",
+   "url": "https://broadbandbreakfast.com/starlink-reaches-13-6-million-subscribers-globally-as-spacex-revenue-jumps-161/",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "investingLive: SpaceX beats Q3 forecasts across all three segments",
+   "url": "https://investinglive.com/stocks/spacex-beats-q3-forecasts-across-all-three-segments-as-ai-revenue-tops-7-5-billion/",
+   "data": "2026-10-20"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

@@ -4,28 +4,85 @@
  "resumo": "Maior projetista de chips para celulares Android (Snapdragon) e dona de patentes essenciais de 4G e 5G, que diversifica para carros, internet das coisas e data centers. Lucrativa, mas a receita de celulares caiu 26% no último trimestre.",
  "modelo": "A Qualcomm ganha de duas formas: vendendo chips (QCT) para celulares, carros (Snapdragon Digital Chassis), PCs, aparelhos conectados e agora data centers, com fabricação terceirizada; e licenciando patentes de comunicação móvel (QTL), cobrando royalties sobre quase todo celular vendido no mundo, negócio de margem muito alta.",
  "segmentos": [
-  {"nome": "Chips para celulares", "peso_receita": 0.50, "periodo": "3T26", "obs": "US$ 5,14 bi, queda de 26%."},
-  {"nome": "Chips automotivos", "peso_receita": 0.19, "periodo": "3T26", "obs": "US$ 1,99 bi, alta de 89%."},
-  {"nome": "Internet das coisas e outros", "peso_receita": 0.18, "periodo": "3T26", "obs": "US$ 1,89 bi, alta de 4%."},
-  {"nome": "Licenciamento de patentes (QTL)", "peso_receita": 0.13, "periodo": "3T26", "obs": "US$ 1,30 bi, queda de 7%."}
+  {
+   "nome": "Chips para celulares",
+   "peso_receita": 0.5,
+   "periodo": "3T26",
+   "obs": "US$ 5,14 bi, queda de 26%."
+  },
+  {
+   "nome": "Chips automotivos",
+   "peso_receita": 0.19,
+   "periodo": "3T26",
+   "obs": "US$ 1,99 bi, alta de 89%."
+  },
+  {
+   "nome": "Internet das coisas e outros",
+   "peso_receita": 0.18,
+   "periodo": "3T26",
+   "obs": "US$ 1,89 bi, alta de 4%."
+  },
+  {
+   "nome": "Licenciamento de patentes (QTL)",
+   "peso_receita": 0.13,
+   "periodo": "3T26",
+   "obs": "US$ 1,30 bi, queda de 7%."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em San Diego (EUA); a maior parte da receita vem de fabricantes de celulares na China e na Ásia."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em San Diego (EUA); a maior parte da receita vem de fabricantes de celulares na China e na Ásia."
+ },
  "temas": [
-  {"tema": "IA em aparelhos e data centers", "relacao": "Mantém a meta de US$ 5 bi de receita de data centers no ano fiscal 2027 e fechou colaboração com a Amazon para data centers de IA; a receita de data center foi de cerca de US$ 650 mi no trimestre, segundo a imprensa."},
-  {"tema": "Carros conectados", "relacao": "A receita automotiva quase dobrou e chegou perto de US$ 2 bi no trimestre."},
-  {"tema": "Celulares", "relacao": "A queda em celulares reflete a perda gradual da Apple, que passou a usar modem próprio, e a concorrência da MediaTek."}
+  {
+   "tema": "IA em aparelhos e data centers",
+   "relacao": "Mantém a meta de US$ 5 bi de receita de data centers no ano fiscal 2027 e fechou colaboração com a Amazon para data centers de IA; a receita de data center foi de cerca de US$ 650 mi no trimestre, segundo a imprensa."
+  },
+  {
+   "tema": "Carros conectados",
+   "relacao": "A receita automotiva quase dobrou e chegou perto de US$ 2 bi no trimestre."
+  },
+  {
+   "tema": "Celulares",
+   "relacao": "A queda em celulares reflete a perda gradual da Apple, que passou a usar modem próprio, e a concorrência da MediaTek."
+  }
  ],
  "diferencial": {
   "texto": "A Qualcomm tem um portfólio de patentes de comunicação móvel que praticamente todo fabricante de celular precisa licenciar, e liderança em chips de alto desempenho com baixo consumo de energia. Renovou licenças com Apple, Huawei e Transsion. Os pontos fracos são a dependência de celulares, a perda da Apple como cliente de modems, a concorrência da MediaTek e o desafio de ganhar espaço em data centers frente a NVIDIA e AMD.",
-  "concorrentes": ["MediaTek", "Apple", "NVIDIA", "Samsung", "AMD", "Intel"]
+  "concorrentes": [
+   "MediaTek",
+   "Apple",
+   "NVIDIA",
+   "Samsung",
+   "AMD",
+   "Intel"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Patentes essenciais de 4G e 5G que quase todo fabricante de celular precisa licenciar, além de liderança em chips móveis."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do trimestre até dezembro deve ficar entre US$ 10,4 bi e US$ 11,2 bi, com lucro ajustado de US$ 2,15 a US$ 2,35 por ação. O CEO diz que o ano fiscal 2027 marca a virada da receita fora de celulares, que deve crescer mais de 60% em um ano, com a meta de US$ 5 bi em data centers.",
   "metricas": [
-   {"rotulo": "Meta de receita de data centers", "valor": "US$ 5 bi", "periodo": "ano fiscal 2027"},
-   {"rotulo": "Receita projetada", "valor": "US$ 10,4 bi a US$ 11,2 bi", "periodo": "4T26"},
-   {"rotulo": "Receita automotiva", "valor": "US$ 1,99 bi (+89%)", "periodo": "3T26"}
+   {
+    "rotulo": "Meta de receita de data centers",
+    "valor": "US$ 5 bi",
+    "periodo": "ano fiscal 2027"
+   },
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 10,4 bi a US$ 11,2 bi",
+    "periodo": "4T26"
+   },
+   {
+    "rotulo": "Receita automotiva",
+    "valor": "US$ 1,99 bi (+89%)",
+    "periodo": "3T26"
+   }
   ]
  },
  "saude": {
@@ -60,10 +117,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Qualcomm: resultados do 4T fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm", "data": "2026-11-04"},
-  {"titulo": "Constellation Research: Qualcomm's diversification push comes into view for Q4", "url": "https://www.constellationr.com/insights/news/qualcomms-diversification-push-comes-view-q4", "data": "2026-11"},
-  {"titulo": "Zacks: QCOM Q4 earnings beat estimates on robust automotive growth", "url": "https://zacks.com/stock/news/3024519/qcom-q4-earnings-beat-estimates-on-robust-automotive-growth", "data": "2026-11"},
-  {"titulo": "AI Weekly: Qualcomm Q4 revenue drops 8% to $10.3B, guides $5B data-center revenue", "url": "https://aiweekly.co/alerts/qualcomm-q4-revenue-drops-8-to-103b-guides-5b-data-center-revenue-in-fiscal-2027", "data": "2026-11"}
+  {
+   "titulo": "Qualcomm: resultados do 4T fiscal 2026 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Constellation Research: Qualcomm's diversification push comes into view for Q4",
+   "url": "https://www.constellationr.com/insights/news/qualcomms-diversification-push-comes-view-q4",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "Zacks: QCOM Q4 earnings beat estimates on robust automotive growth",
+   "url": "https://zacks.com/stock/news/3024519/qcom-q4-earnings-beat-estimates-on-robust-automotive-growth",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "AI Weekly: Qualcomm Q4 revenue drops 8% to $10.3B, guides $5B data-center revenue",
+   "url": "https://aiweekly.co/alerts/qualcomm-q4-revenue-drops-8-to-103b-guides-5b-data-center-revenue-in-fiscal-2027",
+   "data": "2026-11"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

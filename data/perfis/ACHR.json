@@ -5,22 +5,58 @@
  "modelo": "A Archer quer operar sua própria rede de táxi aéreo nas cidades, com o Midnight (piloto e até quatro passageiros, voos curtos de 30 a 80 km), e também vender aeronaves a companhias aéreas e governos. Na defesa, desenvolve com a Anduril o Halo/Thunder, aeronave híbrida autônoma, e já fornece baterias e motores elétricos. A pequena receita atual vem dessas entregas à Anduril.",
  "segmentos": [],
  "segmentos_base": "Receita ainda pouco relevante (US$ 5,1 mi no 3T26)",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA). Lançamento previsto em Los Angeles, onde opera o aeroporto de Hawthorne, com planos para Texas, Flórida, Nova York, Itália (ITA Airways) e Oriente Médio."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede na Califórnia (EUA). Lançamento previsto em Los Angeles, onde opera o aeroporto de Hawthorne, com planos para Texas, Flórida, Nova York, Itália (ITA Airways) e Oriente Médio."
+ },
  "temas": [
-  {"tema": "Mobilidade aérea urbana", "relacao": "É a táxi aérea oficial dos Jogos Olímpicos de Los Angeles 2028 e recebeu da FAA certificado especial que permite voos de teste com passageiros em Los Angeles dentro do programa piloto do governo."},
-  {"tema": "Defesa e drones", "relacao": "Desenvolve com a Anduril uma aeronave autônoma de grande porte para uso militar e vai comprar da Boeing a Insitu, fabricante de drones militares com mais de US$ 200 mi de receita anual, segundo a empresa."},
-  {"tema": "Eletrificação", "relacao": "Usa baterias e motores elétricos próprios, mais silenciosos e com custo operacional menor que o de helicópteros."}
+  {
+   "tema": "Mobilidade aérea urbana",
+   "relacao": "É a táxi aérea oficial dos Jogos Olímpicos de Los Angeles 2028 e recebeu da FAA certificado especial que permite voos de teste com passageiros em Los Angeles dentro do programa piloto do governo."
+  },
+  {
+   "tema": "Defesa e drones",
+   "relacao": "Desenvolve com a Anduril uma aeronave autônoma de grande porte para uso militar e vai comprar da Boeing a Insitu, fabricante de drones militares com mais de US$ 200 mi de receita anual, segundo a empresa."
+  },
+  {
+   "tema": "Eletrificação",
+   "relacao": "Usa baterias e motores elétricos próprios, mais silenciosos e com custo operacional menor que o de helicópteros."
+  }
  ],
  "diferencial": {
   "texto": "A Archer está entre as mais adiantadas no processo de certificação da FAA, na quarta e última fase, e tem apoio de grandes parceiros: Stellantis na fabricação, United Airlines como cliente e, após o acordo, a Boeing como maior acionista. A compra da Wisk, da SkyGrid e da Insitu dá tecnologia autônoma e receita de defesa. A certificação de aeronaves é cara e demorada, o que é barreira para novos entrantes. Os pontos fracos são a falta de data para a certificação final, o consumo alto de caixa e a disputa com a Joby, que também está avançada.",
-  "concorrentes": ["Joby Aviation", "Beta Technologies", "Eve (Embraer)", "Vertical Aerospace", "EHang"]
+  "concorrentes": [
+   "Joby Aviation",
+   "Beta Technologies",
+   "Eve (Embraer)",
+   "Vertical Aerospace",
+   "EHang"
+  ],
+  "vantagem": {
+   "nivel": "fraca",
+   "resumo": "Avançada na certificação de táxi aéreo elétrico e com parceiros fortes, mas ainda sem produto aprovado e com rival direta (Joby)."
+  }
  },
  "potencial": {
   "texto": "O potencial depende de obter a certificação de tipo da FAA e começar a operar comercialmente, com Los Angeles e as Olimpíadas de 2028 como vitrine. A empresa prevê receita de US$ 5 mi a US$ 6 mi no 4T26 e diz que a compra dos negócios da Boeing deve fechar em breve, com só uma de cerca de 20 aprovações pendente. A empresa não divulga data para a certificação final nem projeção de receita para 2027.",
   "metricas": [
-   {"rotulo": "Receita anual da Insitu (a comprar)", "valor": "mais de US$ 200 mi", "periodo": "estimativa da empresa"},
-   {"rotulo": "Liquidez", "valor": "US$ 1,4 bi", "periodo": "set/2026"},
-   {"rotulo": "Olimpíadas de Los Angeles", "valor": "táxi aéreo oficial", "periodo": "2028"}
+   {
+    "rotulo": "Receita anual da Insitu (a comprar)",
+    "valor": "mais de US$ 200 mi",
+    "periodo": "estimativa da empresa"
+   },
+   {
+    "rotulo": "Liquidez",
+    "valor": "US$ 1,4 bi",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Olimpíadas de Los Angeles",
+    "valor": "táxi aéreo oficial",
+    "periodo": "2028"
+   }
   ]
  },
  "saude": {
@@ -55,10 +91,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Archer: resultados do 3T26 (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1824502/000182450226000087/archerq326earningspressr.htm", "data": "2026-11-09"},
-  {"titulo": "Archer: carta aos acionistas do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1824502/000182450226000087/archerlettertoshareholde.htm", "data": "2026-11-09"},
-  {"titulo": "Archer: 8-K do acordo com a Boeing (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1824502/000110465926093056/tm2622394d1_8k.htm", "data": "2026-08-10"},
-  {"titulo": "Stocktwits: ACHR stock tumbles on earnings miss", "url": "https://stocktwits.com/news-articles/markets/equity/archer-aviation-q3-earnings-midnight-los-angeles-faa-certification-air-taxi/cNGu4h6R97j", "data": "2026-11-09"}
+  {
+   "titulo": "Archer: resultados do 3T26 (8-K, Exhibit 99.2, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1824502/000182450226000087/archerq326earningspressr.htm",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Archer: carta aos acionistas do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1824502/000182450226000087/archerlettertoshareholde.htm",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Archer: 8-K do acordo com a Boeing (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1824502/000110465926093056/tm2622394d1_8k.htm",
+   "data": "2026-08-10"
+  },
+  {
+   "titulo": "Stocktwits: ACHR stock tumbles on earnings miss",
+   "url": "https://stocktwits.com/news-articles/markets/equity/archer-aviation-q3-earnings-midnight-los-angeles-faa-certification-air-taxi/cNGu4h6R97j",
+   "data": "2026-11-09"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

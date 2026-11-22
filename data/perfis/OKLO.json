@@ -5,22 +5,59 @@
  "modelo": "A Oklo quer construir, ser dona e operar usinas nucleares pequenas (Aurora, de 75 MWe ou mais) e vender a eletricidade e o calor em contratos de longo prazo, modelo parecido com o de uma geradora de energia. Também atua em reciclagem de combustível nuclear, produção de isótopos médicos (Atomic Alchemy) e, desde 2026, serviços de engenharia e fabricação (ARMEC e CEI), que geram a pequena receita atual.",
  "segmentos": [],
  "segmentos_base": "Receita ainda pouco relevante (US$ 1,9 mi no 3T26)",
- "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede na Califórnia (EUA); a primeira usina Aurora será no Idaho National Laboratory, e há projetos em Ohio (Meta), no Texas e no Tennessee."},
+ "geografia": {
+  "eua_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "texto": "Sede na Califórnia (EUA); a primeira usina Aurora será no Idaho National Laboratory, e há projetos em Ohio (Meta), no Texas e no Tennessee."
+ },
  "temas": [
-  {"tema": "Energia nuclear", "relacao": "Faz parte do programa piloto de reatores do Departamento de Energia; seu reator de testes Groves, no Texas, atingiu a primeira reação em cadeia em agosto de 2026."},
-  {"tema": "Energia para IA", "relacao": "Tem acordo-mestre de 12 GW com a Switch e acordo com a Meta para um campus de 1,2 GW em Ohio, com pagamento antecipado."},
-  {"tema": "Combustível nuclear", "relacao": "Fechou com a Centrus contrato de urânio enriquecido HALEU com entregas de 2029 a 2031, insumo escasso que pode limitar o setor."}
+  {
+   "tema": "Energia nuclear",
+   "relacao": "Faz parte do programa piloto de reatores do Departamento de Energia; seu reator de testes Groves, no Texas, atingiu a primeira reação em cadeia em agosto de 2026."
+  },
+  {
+   "tema": "Energia para IA",
+   "relacao": "Tem acordo-mestre de 12 GW com a Switch e acordo com a Meta para um campus de 1,2 GW em Ohio, com pagamento antecipado."
+  },
+  {
+   "tema": "Combustível nuclear",
+   "relacao": "Fechou com a Centrus contrato de urânio enriquecido HALEU com entregas de 2029 a 2031, insumo escasso que pode limitar o setor."
+  }
  ],
  "diferencial": {
   "texto": "O modelo de vender energia em vez de vender reatores dá receita recorrente de longo prazo, se as usinas funcionarem. O reator rápido usa combustível de forma mais eficiente e pode usar combustível reciclado, e a empresa já garantiu combustível do governo para a primeira usina. Apoio do Departamento de Energia e grandes clientes de tecnologia são vantagens. Os pontos fracos são que nenhuma usina Aurora existe ainda, a NRC rejeitou o pedido de licença da empresa em 2022 e a própria empresa diz ser incerto quando, ou se, obterá as aprovações da NRC.",
-  "concorrentes": ["NuScale", "TerraPower", "X-energy", "Kairos Power", "GE Vernova Hitachi", "Westinghouse"]
+  "concorrentes": [
+   "NuScale",
+   "TerraPower",
+   "X-energy",
+   "Kairos Power",
+   "GE Vernova Hitachi",
+   "Westinghouse"
+  ],
+  "vantagem": {
+   "nivel": "fraca",
+   "resumo": "Modelo de vender energia e apoio do governo, mas nenhuma usina construída e licença ainda não obtida."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a primeira usina deve entrar em operação entre 2028 e 2029, no Idaho National Laboratory, com a Kiewit como construtora. Os acordos com Switch (12 GW) e Meta (1,2 GW) mostram demanda, mas boa parte das cartas de intenção (Equinix, Diamondback, Prometheus) não é vinculante. Em 2026 a empresa projeta consumir US$ 120 mi a US$ 150 mi na operação e investir US$ 400 mi a US$ 500 mi. Isótopos médicos (rádio a partir de 2027) podem gerar receita antes das usinas.",
   "metricas": [
-   {"rotulo": "Primeira usina (meta)", "valor": "2028 a 2029", "periodo": "Idaho"},
-   {"rotulo": "Acordo-mestre com a Switch", "valor": "12 GW", "periodo": "dez/2024"},
-   {"rotulo": "Investimento projetado", "valor": "US$ 400 mi a US$ 500 mi", "periodo": "2026"}
+   {
+    "rotulo": "Primeira usina (meta)",
+    "valor": "2028 a 2029",
+    "periodo": "Idaho"
+   },
+   {
+    "rotulo": "Acordo-mestre com a Switch",
+    "valor": "12 GW",
+    "periodo": "dez/2024"
+   },
+   {
+    "rotulo": "Investimento projetado",
+    "valor": "US$ 400 mi a US$ 500 mi",
+    "periodo": "2026"
+   }
   ]
  },
  "saude": {
@@ -56,10 +93,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Oklo: formulário 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828026071319/oklo-20260930.htm", "data": "2026-11-06"},
-  {"titulo": "Oklo: índice do 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828026071319/0001628280-26-071319-index.htm", "data": "2026-11-06"},
-  {"titulo": "Oklo: 8-K do contrato de HALEU com a Centrus (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1849056/000184905626000055/oklo-20261111.htm", "data": "2026-11-17"},
-  {"titulo": "Oklo: lista de comunicados 8-K (SEC EDGAR)", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1849056&type=8-K&dateb=&owner=include&count=40", "data": "2026-11-22"}
+  {
+   "titulo": "Oklo: formulário 10-Q do 3T26 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828026071319/oklo-20260930.htm",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Oklo: índice do 10-Q do 3T26 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828026071319/0001628280-26-071319-index.htm",
+   "data": "2026-11-06"
+  },
+  {
+   "titulo": "Oklo: 8-K do contrato de HALEU com a Centrus (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1849056/000184905626000055/oklo-20261111.htm",
+   "data": "2026-11-17"
+  },
+  {
+   "titulo": "Oklo: lista de comunicados 8-K (SEC EDGAR)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1849056&type=8-K&dateb=&owner=include&count=40",
+   "data": "2026-11-22"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

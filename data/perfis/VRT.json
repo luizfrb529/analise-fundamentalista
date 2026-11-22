@@ -4,27 +4,79 @@
  "resumo": "Fabricante americana de equipamentos de energia e refrigeração para data centers: sistemas de energia ininterrupta, distribuição elétrica, refrigeração a ar e líquida. Uma das maiores beneficiadas da construção de data centers de IA, com vendas crescendo 61% e pedidos dobrando.",
  "modelo": "A Vertiv vende os equipamentos que mantêm um data center ligado e resfriado (no-breaks, quadros de distribuição, barramentos, refrigeração de precisão e líquida, racks e monitoramento) e presta serviços de instalação e manutenção para a base instalada. Os clientes são grandes nuvens, operadoras de data centers, empresas de telecomunicações e indústria.",
  "segmentos": [
-  {"nome": "Américas", "peso_receita": 0.69, "periodo": "3T26", "obs": "US$ 2,99 bi, alta de 74,5% (66,2% orgânica)."},
-  {"nome": "Ásia-Pacífico", "peso_receita": 0.18, "periodo": "3T26", "obs": "US$ 779 mi, alta de 49,9%."},
-  {"nome": "Europa, Oriente Médio e África", "peso_receita": 0.13, "periodo": "3T26", "obs": "US$ 545 mi, alta de 22,8%."}
+  {
+   "nome": "Américas",
+   "peso_receita": 0.69,
+   "periodo": "3T26",
+   "obs": "US$ 2,99 bi, alta de 74,5% (66,2% orgânica)."
+  },
+  {
+   "nome": "Ásia-Pacífico",
+   "peso_receita": 0.18,
+   "periodo": "3T26",
+   "obs": "US$ 779 mi, alta de 49,9%."
+  },
+  {
+   "nome": "Europa, Oriente Médio e África",
+   "peso_receita": 0.13,
+   "periodo": "3T26",
+   "obs": "US$ 545 mi, alta de 22,8%."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Ohio (EUA), com fábricas nas Américas, Europa e Ásia; as Américas são quase 70% das vendas."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Ohio (EUA), com fábricas nas Américas, Europa e Ásia; as Américas são quase 70% das vendas."
+ },
  "temas": [
-  {"tema": "Data centers de IA", "relacao": "Racks de IA consomem muito mais energia e calor; o CEO diz que a empresa vive a maior construção de infraestrutura em curso, e os pedidos orgânicos mais que dobraram em um ano."},
-  {"tema": "Refrigeração líquida", "relacao": "Chips de IA de alta potência exigem refrigeração líquida, área em que a Vertiv é uma das principais fornecedoras."},
-  {"tema": "Energia", "relacao": "A distribuição elétrica dentro do data center é parte crescente do valor de cada projeto."}
+  {
+   "tema": "Data centers de IA",
+   "relacao": "Racks de IA consomem muito mais energia e calor; o CEO diz que a empresa vive a maior construção de infraestrutura em curso, e os pedidos orgânicos mais que dobraram em um ano."
+  },
+  {
+   "tema": "Refrigeração líquida",
+   "relacao": "Chips de IA de alta potência exigem refrigeração líquida, área em que a Vertiv é uma das principais fornecedoras."
+  },
+  {
+   "tema": "Energia",
+   "relacao": "A distribuição elétrica dentro do data center é parte crescente do valor de cada projeto."
+  }
  ],
  "diferencial": {
   "texto": "A Vertiv tem portfólio completo de energia e refrigeração e uma grande rede de serviços, o que permite entregar soluções pré-fabricadas e testadas para data centers inteiros, reduzindo prazo para o cliente. A base instalada gera receita recorrente de manutenção. Os pontos fracos são a dependência do ciclo de investimento em data centers, a concorrência de Schneider Electric e Eaton e a necessidade de ampliar a produção rapidamente.",
-  "concorrentes": ["Schneider Electric", "Eaton", "ABB", "Siemens", "nVent", "Modine"]
+  "concorrentes": [
+   "Schneider Electric",
+   "Eaton",
+   "ABB",
+   "Siemens",
+   "nVent",
+   "Modine"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Portfólio completo de energia e refrigeração para data centers e grande rede de serviços, frente a rivais grandes como Schneider e Eaton."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, as vendas de 2026 devem ficar entre US$ 14,45 bi e US$ 14,85 bi (crescimento orgânico de 37% a 39%, projeção elevada em US$ 650 mi), com margem operacional ajustada de 23,5% a 24,5%, lucro ajustado de US$ 7,10 a US$ 7,20 por ação e caixa livre ajustado de US$ 2,6 bi a US$ 2,8 bi. Para o 4T26, a projeção é de vendas de US$ 4,31 bi a US$ 4,51 bi.",
   "metricas": [
-   {"rotulo": "Vendas projetadas", "valor": "US$ 14,45 bi a US$ 14,85 bi", "periodo": "2026"},
-   {"rotulo": "Crescimento orgânico dos pedidos", "valor": "mais de 100%", "periodo": "3T26"},
-   {"rotulo": "Margem operacional ajustada", "valor": "25,2%", "periodo": "3T26"}
+   {
+    "rotulo": "Vendas projetadas",
+    "valor": "US$ 14,45 bi a US$ 14,85 bi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Crescimento orgânico dos pedidos",
+    "valor": "mais de 100%",
+    "periodo": "3T26"
+   },
+   {
+    "rotulo": "Margem operacional ajustada",
+    "valor": "25,2%",
+    "periodo": "3T26"
+   }
   ]
  },
  "saude": {
@@ -58,10 +110,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Vertiv: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026067707/q32026exhibit991vrt10282026.htm", "data": "2026-10-28"},
-  {"titulo": "DatacenterDynamics: Vertiv shares jump 14 percent as data center earnings beat", "url": "https://datacenterdynamics.com/en/news/vertiv-shares-jump-14-percent-as-data-center-earnings-beat-expectations", "data": "2026-10-28"},
-  {"titulo": "24/7 Wall St.: Vertiv Q3 2026, organic orders more than doubled", "url": "https://247wallst.com/cards/vertiv-q3-2026-earnings-vrt-01m60zybj74azc2wscfpvp2ym4", "data": "2026-10-28"},
-  {"titulo": "FourWeekMBA: Vertiv lifts 2026 sales guide by $650M as its orders double", "url": "https://fourweekmba.com/ai-vertiv-lifts-2026-sales-guide-by-650m-as-its-orders-double/", "data": "2026-10"}
+  {
+   "titulo": "Vertiv: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026067707/q32026exhibit991vrt10282026.htm",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "DatacenterDynamics: Vertiv shares jump 14 percent as data center earnings beat",
+   "url": "https://datacenterdynamics.com/en/news/vertiv-shares-jump-14-percent-as-data-center-earnings-beat-expectations",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "24/7 Wall St.: Vertiv Q3 2026, organic orders more than doubled",
+   "url": "https://247wallst.com/cards/vertiv-q3-2026-earnings-vrt-01m60zybj74azc2wscfpvp2ym4",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "FourWeekMBA: Vertiv lifts 2026 sales guide by $650M as its orders double",
+   "url": "https://fourweekmba.com/ai-vertiv-lifts-2026-sales-guide-by-650m-as-its-orders-double/",
+   "data": "2026-10"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

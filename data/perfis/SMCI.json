@@ -5,21 +5,55 @@
  "modelo": "A Super Micro projeta e monta servidores modulares e racks inteiros de IA (Data Center Building Block Solutions), entregues prontos para ligar, com refrigeração líquida, para nuvens, empresas de IA e grandes corporações. Compra GPUs e componentes e vende o sistema montado; o lucro vem da rapidez em lançar novas gerações e da escala.",
  "segmentos": [],
  "segmentos_base": "Empresa não divulga receita por segmento no release",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em San Jose, Califórnia (EUA), com fábricas nos EUA, Taiwan, Holanda e Malásia; vende no mundo todo."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em San Jose, Califórnia (EUA), com fábricas nos EUA, Taiwan, Holanda e Malásia; vende no mundo todo."
+ },
  "temas": [
-  {"tema": "Servidores de IA", "relacao": "É uma das principais montadoras de servidores com GPUs NVIDIA; a projeção do ano fiscal subiu para US$ 72 bi a US$ 82 bi."},
-  {"tema": "Refrigeração líquida", "relacao": "Racks de IA de alta potência exigem refrigeração líquida, um dos diferenciais da empresa."}
+  {
+   "tema": "Servidores de IA",
+   "relacao": "É uma das principais montadoras de servidores com GPUs NVIDIA; a projeção do ano fiscal subiu para US$ 72 bi a US$ 82 bi."
+  },
+  {
+   "tema": "Refrigeração líquida",
+   "relacao": "Racks de IA de alta potência exigem refrigeração líquida, um dos diferenciais da empresa."
+  }
  ],
  "diferencial": {
   "texto": "A Super Micro costuma ser das primeiras a lançar servidores com cada nova geração de chips, graças ao projeto modular e à proximidade com a NVIDIA, e entrega racks inteiros prontos. Os pontos fracos são a margem bruta muito baixa (12,7%), a forte concorrência de Dell, HPE e montadoras de Taiwan, a necessidade de capital de giro e o histórico de governança: em 2024 a auditoria renunciou e a empresa atrasou balanços. Os números do 1T27 fiscal ainda eram preliminares e não auditados.",
-  "concorrentes": ["Dell", "HPE", "Foxconn", "Quanta", "Wiwynn", "Lenovo"]
+  "concorrentes": [
+   "Dell",
+   "HPE",
+   "Foxconn",
+   "Quanta",
+   "Wiwynn",
+   "Lenovo"
+  ],
+  "vantagem": {
+   "nivel": "fraca",
+   "resumo": "Rapidez em lançar servidores com novos chips, mas produto com margem baixa, fácil de copiar, e histórico de governança fraco."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do trimestre até dezembro deve ficar entre US$ 19,5 bi e US$ 21,5 bi, e a do ano fiscal 2027 (julho de 2026 a junho de 2027) entre US$ 72 bi e US$ 82 bi, acima da faixa anterior de US$ 65 bi a US$ 72 bi. A margem bruta do ano deve ficar perto de 12%, segundo a imprensa.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 72 bi a US$ 82 bi", "periodo": "ano fiscal 2027"},
-   {"rotulo": "Receita projetada", "valor": "US$ 19,5 bi a US$ 21,5 bi", "periodo": "4T26"},
-   {"rotulo": "Margem bruta", "valor": "12,7%", "periodo": "3T26"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 72 bi a US$ 82 bi",
+    "periodo": "ano fiscal 2027"
+   },
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 19,5 bi a US$ 21,5 bi",
+    "periodo": "4T26"
+   },
+   {
+    "rotulo": "Margem bruta",
+    "valor": "12,7%",
+    "periodo": "3T26"
+   }
   ]
  },
  "saude": {
@@ -54,10 +88,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Supermicro: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000026/exhibit991_20260930.htm", "data": "2026-11-03"},
-  {"titulo": "Supermicro: comentários preparados do 1T27 fiscal", "url": "https://s204.q4cdn.com/707617056/files/content_files/FQ127-Prepared-Remarks.pdf", "data": "2026-11-03"},
-  {"titulo": "Crypto Briefing: Super Micro beats Q1 expectations and lifts full-year guidance", "url": "https://cryptobriefing.com/super-micro-q1-earnings-raises-guidance/", "data": "2026-11-03"},
-  {"titulo": "Stocktwits: Supermicro's Q1 and FY27 revenue outlook blasts past estimates", "url": "https://stocktwits.com/news-articles/markets/equity/supermicro-s-q1-and-fy-27-revenue-outlook-blasts-past-estimates/cZoNaxeRJXZ", "data": "2026-11-03"}
+  {
+   "titulo": "Supermicro: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000026/exhibit991_20260930.htm",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "Supermicro: comentários preparados do 1T27 fiscal",
+   "url": "https://s204.q4cdn.com/707617056/files/content_files/FQ127-Prepared-Remarks.pdf",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "Crypto Briefing: Super Micro beats Q1 expectations and lifts full-year guidance",
+   "url": "https://cryptobriefing.com/super-micro-q1-earnings-raises-guidance/",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "Stocktwits: Supermicro's Q1 and FY27 revenue outlook blasts past estimates",
+   "url": "https://stocktwits.com/news-articles/markets/equity/supermicro-s-q1-and-fy-27-revenue-outlook-blasts-past-estimates/cZoNaxeRJXZ",
+   "data": "2026-11-03"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

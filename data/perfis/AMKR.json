@@ -4,28 +4,85 @@
  "resumo": "Segunda maior empresa do mundo em encapsulamento e teste de chips (etapa final da fabricação), com fábricas na Ásia e uma grande unidade em construção no Arizona. Lucrativa, com receita de cerca de US$ 7,5 bi por ano e crescente peso de chips para IA e data centers.",
  "modelo": "A Amkor recebe os chips já gravados (wafers) de fabricantes e fundições como a TSMC e faz o encapsulamento, que protege o chip e o conecta à placa, e os testes finais. Cobra por serviço, de clientes como fabricantes de celulares, de chips para computadores e de chips automotivos. O encapsulamento avançado (flip chip, wafer-level, 2.5D) é 82% da receita.",
  "segmentos": [
-  {"nome": "Comunicações (celulares)", "peso_receita": 0.37, "periodo": "3T26", "obs": "Caiu de 51% da receita um ano antes."},
-  {"nome": "Computação (data centers e PCs)", "peso_receita": 0.26, "periodo": "3T26", "obs": "Recorde, contra 19% um ano antes."},
-  {"nome": "Automotivo e industrial", "peso_receita": 0.22, "periodo": "3T26", "obs": "Recorde."},
-  {"nome": "Consumo", "peso_receita": 0.15, "periodo": "3T26", "obs": null}
+  {
+   "nome": "Comunicações (celulares)",
+   "peso_receita": 0.37,
+   "periodo": "3T26",
+   "obs": "Caiu de 51% da receita um ano antes."
+  },
+  {
+   "nome": "Computação (data centers e PCs)",
+   "peso_receita": 0.26,
+   "periodo": "3T26",
+   "obs": "Recorde, contra 19% um ano antes."
+  },
+  {
+   "nome": "Automotivo e industrial",
+   "peso_receita": 0.22,
+   "periodo": "3T26",
+   "obs": "Recorde."
+  },
+  {
+   "nome": "Consumo",
+   "peso_receita": 0.15,
+   "periodo": "3T26",
+   "obs": null
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede no Arizona (EUA), com fábricas na Coreia do Sul, Taiwan, China, Japão, Filipinas, Malásia, Vietnã e Portugal; complexo de encapsulamento avançado em construção no Arizona."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede no Arizona (EUA), com fábricas na Coreia do Sul, Taiwan, China, Japão, Filipinas, Malásia, Vietnã e Portugal; complexo de encapsulamento avançado em construção no Arizona."
+ },
  "temas": [
-  {"tema": "Chips para IA", "relacao": "Aceleradores de IA dependem de encapsulamento avançado (2.5D, chips empilhados com memória); a receita de computação bateu recorde e a empresa recebeu adiantamentos de cerca de uma dúzia de clientes para reservar capacidade."},
-  {"tema": "Semicondutores nos EUA", "relacao": "Constrói no Arizona o maior complexo de encapsulamento avançado dos EUA, com investimento planejado de cerca de US$ 12 bi nas duas fases, perto das fábricas da TSMC."},
-  {"tema": "Celulares", "relacao": "Ainda é 37% da receita, mas o peso caiu com a fraqueza esperada em comunicações."}
+  {
+   "tema": "Chips para IA",
+   "relacao": "Aceleradores de IA dependem de encapsulamento avançado (2.5D, chips empilhados com memória); a receita de computação bateu recorde e a empresa recebeu adiantamentos de cerca de uma dúzia de clientes para reservar capacidade."
+  },
+  {
+   "tema": "Semicondutores nos EUA",
+   "relacao": "Constrói no Arizona o maior complexo de encapsulamento avançado dos EUA, com investimento planejado de cerca de US$ 12 bi nas duas fases, perto das fábricas da TSMC."
+  },
+  {
+   "tema": "Celulares",
+   "relacao": "Ainda é 37% da receita, mas o peso caiu com a fraqueza esperada em comunicações."
+  }
  ],
  "diferencial": {
   "texto": "A Amkor tem escala global, décadas de relacionamento com os maiores fabricantes de chips e capacidade em tecnologias avançadas de encapsulamento, área que virou gargalo da IA. A unidade do Arizona deve ser a principal opção de encapsulamento avançado em solo americano. Os pontos fracos são a margem bruta baixa típica do setor (18%), a concentração em poucos clientes (os dez maiores são 66% da receita) e a concorrência da ASE e da própria TSMC, que faz seu encapsulamento mais avançado (CoWoS).",
-  "concorrentes": ["ASE Technology", "TSMC", "JCET", "Powertech", "Tongfu Microelectronics", "Intel"]
+  "concorrentes": [
+   "ASE Technology",
+   "TSMC",
+   "JCET",
+   "Powertech",
+   "Tongfu Microelectronics",
+   "Intel"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Escala global em encapsulamento avançado e futura fábrica nos EUA, mas com margens baixas e rivais fortes como a ASE."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do 4T26 deve ficar entre US$ 1,9 bi e US$ 2,0 bi, com margem bruta de 18% a 19% e lucro de US$ 0,65 a US$ 0,75 por ação. O investimento de 2026 foi elevado para cerca de US$ 2,5 bi, sobretudo para capacidade avançada na Coreia e no Arizona. O crescimento esperado vem de data centers, automóveis e da nova fábrica americana.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 1,9 bi a US$ 2,0 bi", "periodo": "4T26"},
-   {"rotulo": "Investimento projetado", "valor": "cerca de US$ 2,5 bi", "periodo": "2026"},
-   {"rotulo": "Complexo do Arizona (duas fases)", "valor": "cerca de US$ 12 bi", "periodo": "planejado"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 1,9 bi a US$ 2,0 bi",
+    "periodo": "4T26"
+   },
+   {
+    "rotulo": "Investimento projetado",
+    "valor": "cerca de US$ 2,5 bi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Complexo do Arizona (duas fases)",
+    "valor": "cerca de US$ 12 bi",
+    "periodo": "planejado"
+   }
   ]
  },
  "saude": {
@@ -60,10 +117,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Amkor: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000049/amkr9302026erex-991.htm", "data": "2026-10-26"},
-  {"titulo": "Amkor: 8-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000049/0001047127-26-000049-index.htm", "data": "2026-10-26"},
-  {"titulo": "Zacks: Amkor Q3 earnings call highlights AI growth and capacity expansion", "url": "https://www.zacks.com/stock/news/3015520/amkor-q3-earnings-call-highlights-ai-growth-and-capacity-expansion", "data": "2026-10"},
-  {"titulo": "FourWeekMBA: Amkor posts record computing revenue as phones slip to 37%", "url": "https://fourweekmba.com/ai-amkor-posts-record-computing-revenue-as-phones-slip-to-37/", "data": "2026-10"}
+  {
+   "titulo": "Amkor: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000049/amkr9302026erex-991.htm",
+   "data": "2026-10-26"
+  },
+  {
+   "titulo": "Amkor: 8-K do 3T26 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000049/0001047127-26-000049-index.htm",
+   "data": "2026-10-26"
+  },
+  {
+   "titulo": "Zacks: Amkor Q3 earnings call highlights AI growth and capacity expansion",
+   "url": "https://www.zacks.com/stock/news/3015520/amkor-q3-earnings-call-highlights-ai-growth-and-capacity-expansion",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "FourWeekMBA: Amkor posts record computing revenue as phones slip to 37%",
+   "url": "https://fourweekmba.com/ai-amkor-posts-record-computing-revenue-as-phones-slip-to-37/",
+   "data": "2026-10"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

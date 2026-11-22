@@ -4,27 +4,79 @@
  "resumo": "Maior fabricante de equipamentos para produção de chips do mundo em receita, com máquinas de deposição, gravação, implantação e inspeção, além de serviços. Muito lucrativa, com receita recorde crescendo 53% no último trimestre puxada pela IA.",
  "modelo": "A Applied Materials vende equipamentos para quase todas as etapas de fabricação de chips (exceto litografia) a fabricantes como TSMC, Samsung, Intel, SK Hynix e Micron, e presta serviços, peças e atualizações para a base instalada (Applied Global Services), receita mais estável. Também vende equipamentos para telas (Display).",
  "segmentos": [
-  {"nome": "Sistemas para semicondutores", "peso_receita": 0.77, "periodo": "4T26", "obs": "US$ 8,0 bi, alta de cerca de 64%."},
-  {"nome": "Serviços (Applied Global Services)", "peso_receita": 0.18, "periodo": "4T26", "obs": "US$ 1,9 bi, alta de cerca de 26%."},
-  {"nome": "Outros (inclui Display)", "peso_receita": 0.05, "periodo": "4T26", "obs": "US$ 517 mi."}
+  {
+   "nome": "Sistemas para semicondutores",
+   "peso_receita": 0.77,
+   "periodo": "4T26",
+   "obs": "US$ 8,0 bi, alta de cerca de 64%."
+  },
+  {
+   "nome": "Serviços (Applied Global Services)",
+   "peso_receita": 0.18,
+   "periodo": "4T26",
+   "obs": "US$ 1,9 bi, alta de cerca de 26%."
+  },
+  {
+   "nome": "Outros (inclui Display)",
+   "peso_receita": 0.05,
+   "periodo": "4T26",
+   "obs": "US$ 517 mi."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Santa Clara, Califórnia (EUA); a China foi 25% da receita no trimestre e 27% no ano fiscal, seguida de Taiwan, Coreia e EUA."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Santa Clara, Califórnia (EUA); a China foi 25% da receita no trimestre e 27% no ano fiscal, seguida de Taiwan, Coreia e EUA."
+ },
  "temas": [
-  {"tema": "Chips para IA", "relacao": "A empresa diz estar a caminho de crescer mais de 40% em sistemas para semicondutores no ano de 2026, com demanda puxada pela IA."},
-  {"tema": "Encapsulamento avançado", "relacao": "Vai elevar para cerca de 20% sua participação na holandesa Besi, de equipamentos de encapsulamento avançado."},
-  {"tema": "Geopolítica", "relacao": "Pagou US$ 253 mi em acordo com o Departamento de Comércio por questões de controle de exportação."}
+  {
+   "tema": "Chips para IA",
+   "relacao": "A empresa diz estar a caminho de crescer mais de 40% em sistemas para semicondutores no ano de 2026, com demanda puxada pela IA."
+  },
+  {
+   "tema": "Encapsulamento avançado",
+   "relacao": "Vai elevar para cerca de 20% sua participação na holandesa Besi, de equipamentos de encapsulamento avançado."
+  },
+  {
+   "tema": "Geopolítica",
+   "relacao": "Pagou US$ 253 mi em acordo com o Departamento de Comércio por questões de controle de exportação."
+  }
  ],
  "diferencial": {
   "texto": "A Applied tem o portfólio mais amplo do setor, presente em quase todas as etapas de fabricação, e enorme base instalada que gera serviços recorrentes. A pesquisa em materiais e a parceria com clientes no centro EPIC dão vantagem em tecnologias novas como transistores GAA e memórias empilhadas. Os pontos fracos são a ciclicidade, a exposição à China e a concorrência de Lam Research, Tokyo Electron e KLA.",
-  "concorrentes": ["Lam Research", "Tokyo Electron", "KLA", "ASML", "ASM International", "Naura"]
+  "concorrentes": [
+   "Lam Research",
+   "Tokyo Electron",
+   "KLA",
+   "ASML",
+   "ASM International",
+   "Naura"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Portfólio mais amplo de equipamentos para fabricação de chips e enorme base instalada que gera serviços recorrentes."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do trimestre até janeiro (com 14 semanas) deve ser de US$ 11,1 bi, mais ou menos US$ 500 mi, com lucro ajustado de US$ 4,35 por ação. No ano fiscal 2026 a receita foi de US$ 34,4 bi (alta de 21%). O crescimento vem de chips de IA, memória e encapsulamento avançado.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 10,6 bi a US$ 11,6 bi", "periodo": "trimestre até jan/2027"},
-   {"rotulo": "Receita do ano fiscal", "valor": "US$ 34,4 bi (+21%)", "periodo": "ano fiscal 2026"},
-   {"rotulo": "Margem bruta ajustada", "valor": "50,6%", "periodo": "4T26"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 10,6 bi a US$ 11,6 bi",
+    "periodo": "trimestre até jan/2027"
+   },
+   {
+    "rotulo": "Receita do ano fiscal",
+    "valor": "US$ 34,4 bi (+21%)",
+    "periodo": "ano fiscal 2026"
+   },
+   {
+    "rotulo": "Margem bruta ajustada",
+    "valor": "50,6%",
+    "periodo": "4T26"
+   }
   ]
  },
  "saude": {
@@ -58,10 +110,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Applied Materials: resultados do 4T fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026073360/exhibit991q42026earningsre.htm", "data": "2026-11-12"},
-  {"titulo": "Applied Materials: comunicado do 4T e do ano fiscal 2026", "url": "https://www.appliedmaterials.com/us/en/newsroom/press-releases/111226-applied-materials-announces-fourth-qtr-fiscal-year-end-2026-results.html", "data": "2026-11-12"},
-  {"titulo": "investingLive: Applied Materials beats on Q4 and guides above forecasts", "url": "https://investinglive.com/stocks/applied-materials-beats-on-q4-and-guides-above-forecasts-as-chip-equipment-demand-holds/", "data": "2026-11-12"},
-  {"titulo": "TechPowerUp: Applied Materials announces fourth quarter and fiscal year 2026 results", "url": "https://www.techpowerup.com/354766/applied-materials-announces-fourth-quarter-and-fiscal-year-2026-results", "data": "2026-11-12"}
+  {
+   "titulo": "Applied Materials: resultados do 4T fiscal 2026 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026073360/exhibit991q42026earningsre.htm",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Applied Materials: comunicado do 4T e do ano fiscal 2026",
+   "url": "https://www.appliedmaterials.com/us/en/newsroom/press-releases/111226-applied-materials-announces-fourth-qtr-fiscal-year-end-2026-results.html",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "investingLive: Applied Materials beats on Q4 and guides above forecasts",
+   "url": "https://investinglive.com/stocks/applied-materials-beats-on-q4-and-guides-above-forecasts-as-chip-equipment-demand-holds/",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "TechPowerUp: Applied Materials announces fourth quarter and fiscal year 2026 results",
+   "url": "https://www.techpowerup.com/354766/applied-materials-announces-fourth-quarter-and-fiscal-year-2026-results",
+   "data": "2026-11-12"
+  }
  ],
  "ultimo_resultado": "4T26"
 }

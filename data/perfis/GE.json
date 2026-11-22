@@ -4,25 +4,68 @@
  "resumo": "GE Aerospace, maior fabricante de motores de avião do mundo (com a parceira Safran nos motores LEAP), que ganha sobretudo com a manutenção de dezenas de milhares de motores em uso. Muito lucrativa, com pedidos crescendo 49%.",
  "modelo": "A GE Aerospace vende motores para aviões comerciais (sozinha e pela CFM International, joint venture com a Safran) e militares, mas o grosso do lucro vem do serviço: peças e revisões dos motores instalados, pagos por horas de voo ao longo de décadas. O segmento de defesa fabrica motores para caças, helicópteros e sistemas de propulsão.",
  "segmentos": [
-  {"nome": "Motores comerciais e serviços", "peso_receita": 0.75, "periodo": "3T26", "obs": "US$ 10,3 bi, alta de 21%; lucro operacional de US$ 2,9 bi."},
-  {"nome": "Defesa e propulsão", "peso_receita": 0.25, "periodo": "3T26", "obs": "US$ 3,5 bi, alta de 7%; lucro operacional de US$ 475 mi."}
+  {
+   "nome": "Motores comerciais e serviços",
+   "peso_receita": 0.75,
+   "periodo": "3T26",
+   "obs": "US$ 10,3 bi, alta de 21%; lucro operacional de US$ 2,9 bi."
+  },
+  {
+   "nome": "Defesa e propulsão",
+   "peso_receita": 0.25,
+   "periodo": "3T26",
+   "obs": "US$ 3,5 bi, alta de 7%; lucro operacional de US$ 475 mi."
+  }
  ],
  "segmentos_base": "Receita dos segmentos",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Cincinnati, Ohio (EUA); clientes no mundo todo, companhias aéreas e fabricantes de aviões como Boeing e Airbus."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Cincinnati, Ohio (EUA); clientes no mundo todo, companhias aéreas e fabricantes de aviões como Boeing e Airbus."
+ },
  "temas": [
-  {"tema": "Aviação comercial", "relacao": "A demanda por viagens e a falta de aviões novos mantêm frotas antigas voando, o que aumenta a manutenção; os pedidos de serviços comerciais subiram 23%."},
-  {"tema": "Defesa", "relacao": "Fornece motores para caças e helicópteros americanos e de aliados; os pedidos de defesa subiram 18%."}
+  {
+   "tema": "Aviação comercial",
+   "relacao": "A demanda por viagens e a falta de aviões novos mantêm frotas antigas voando, o que aumenta a manutenção; os pedidos de serviços comerciais subiram 23%."
+  },
+  {
+   "tema": "Defesa",
+   "relacao": "Fornece motores para caças e helicópteros americanos e de aliados; os pedidos de defesa subiram 18%."
+  }
  ],
  "diferencial": {
   "texto": "A GE tem a maior base instalada de motores de avião do mundo (com a CFM) e décadas de contratos de manutenção, receita recorrente e de alta margem que cresce com cada motor vendido. Fabricar motores de avião exige tecnologia e certificações que poucas empresas têm. Os pontos fracos são a dependência da produção de Boeing e Airbus, problemas na cadeia de suprimentos e a concorrência de Pratt & Whitney e Rolls-Royce.",
-  "concorrentes": ["Pratt & Whitney (RTX)", "Rolls-Royce", "Safran", "Honeywell", "MTU Aero Engines"]
+  "concorrentes": [
+   "Pratt & Whitney (RTX)",
+   "Rolls-Royce",
+   "Safran",
+   "Honeywell",
+   "MTU Aero Engines"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Maior base instalada de motores de avião do mundo, com contratos de manutenção por décadas e certificações difíceis de obter."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, o lucro ajustado de 2026 deve ficar entre US$ 8,00 e US$ 8,10 por ação, com receita ajustada crescendo 19% a 20%, lucro operacional de US$ 10,9 bi a US$ 11,0 bi e fluxo de caixa livre de US$ 9,1 bi a US$ 9,4 bi; a projeção foi elevada. Os serviços comerciais devem crescer em ritmo de dois dígitos baixos em 2027.",
   "metricas": [
-   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 8,00 a US$ 8,10 por ação", "periodo": "2026"},
-   {"rotulo": "Fluxo de caixa livre projetado", "valor": "US$ 9,1 bi a US$ 9,4 bi", "periodo": "2026"},
-   {"rotulo": "Pedidos", "valor": "US$ 19,0 bi (+49%)", "periodo": "3T26"}
+   {
+    "rotulo": "Lucro ajustado projetado",
+    "valor": "US$ 8,00 a US$ 8,10 por ação",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Fluxo de caixa livre projetado",
+    "valor": "US$ 9,1 bi a US$ 9,4 bi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Pedidos",
+    "valor": "US$ 19,0 bi (+49%)",
+    "periodo": "3T26"
+   }
   ]
  },
  "saude": {
@@ -56,10 +99,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "GE Aerospace: resultados do 3T26 (8-K, Exhibit 99, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000063/ge3q2026earningsrelease.htm", "data": "2026-10-20"},
-  {"titulo": "GE Aerospace: comunicado do 3T26", "url": "https://www.geaerospace.com/news/press-releases/ge-aerospace-announces-third-quarter-2026-results", "data": "2026-10-20"},
-  {"titulo": "Grafa: GE Aerospace Q3 2026 revenue $14 billion, earnings guidance", "url": "https://grafa.com/en/news/united-states/ge-aerospace-q3-2026-revenue-14-billion-earnings-guidance", "data": "2026-10"},
-  {"titulo": "Quartr: GE Aerospace Q3 2026 earnings summary", "url": "https://quartr.com/events/general-electric-company-ge-q3-2026_3es7vVA2", "data": "2026-10"}
+  {
+   "titulo": "GE Aerospace: resultados do 3T26 (8-K, Exhibit 99, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000063/ge3q2026earningsrelease.htm",
+   "data": "2026-10-20"
+  },
+  {
+   "titulo": "GE Aerospace: comunicado do 3T26",
+   "url": "https://www.geaerospace.com/news/press-releases/ge-aerospace-announces-third-quarter-2026-results",
+   "data": "2026-10-20"
+  },
+  {
+   "titulo": "Grafa: GE Aerospace Q3 2026 revenue $14 billion, earnings guidance",
+   "url": "https://grafa.com/en/news/united-states/ge-aerospace-q3-2026-revenue-14-billion-earnings-guidance",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "Quartr: GE Aerospace Q3 2026 earnings summary",
+   "url": "https://quartr.com/events/general-electric-company-ge-q3-2026_3es7vVA2",
+   "data": "2026-10"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

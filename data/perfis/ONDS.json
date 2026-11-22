@@ -5,22 +5,59 @@
  "modelo": "A Ondas vende drones autônomos (Optimus e a linha ULTRA, da DZYNE), sistemas de defesa contra drones (Iron Drone e Sentrycs), munições remotamente guiadas (IonStrike), veículos terrestres não tripulados (Roboteam e outras) e redes de rádio privadas para ferrovias (Ondas Networks). Os clientes são principalmente forças armadas e órgãos de segurança dos EUA, de Israel e da Europa, em contratos por encomenda. Desde 2025 a empresa compra outras empresas em ritmo acelerado: só em 2026 foram seis aquisições.",
  "segmentos": [],
  "segmentos_base": "A empresa não divulga a receita por linha de negócio no release",
- "geografia": {"eua_pct": 0.5, "exterior_pct": 0.5, "periodo": "3T26", "texto": "Sede nos EUA, com operações em Israel, Polônia, Alemanha e Reino Unido. Segundo a empresa, os EUA já passam de metade da receita."},
+ "geografia": {
+  "eua_pct": 0.5,
+  "exterior_pct": 0.5,
+  "periodo": "3T26",
+  "texto": "Sede nos EUA, com operações em Israel, Polônia, Alemanha e Reino Unido. Segundo a empresa, os EUA já passam de metade da receita."
+ },
  "temas": [
-  {"tema": "Drones e defesa", "relacao": "A guerra na Ucrânia mostrou o peso de drones baratos e de sistemas antidrone; a empresa tem um contrato-quadro de até US$ 982 mi do Exército americano para sistemas não tripulados letais, via Mistral."},
-  {"tema": "Segurança de eventos e fronteiras", "relacao": "Os sistemas antidrone Sentrycs protegem estádios da Copa do Mundo e da NFL e fronteiras, com US$ 63,1 mi em contratos nessa área em julho de 2026."},
-  {"tema": "Inteligência artificial", "relacao": "Criou a Regna AI, empresa separada de IA soberana, e usa IA para a autonomia dos drones e robôs."}
+  {
+   "tema": "Drones e defesa",
+   "relacao": "A guerra na Ucrânia mostrou o peso de drones baratos e de sistemas antidrone; a empresa tem um contrato-quadro de até US$ 982 mi do Exército americano para sistemas não tripulados letais, via Mistral."
+  },
+  {
+   "tema": "Segurança de eventos e fronteiras",
+   "relacao": "Os sistemas antidrone Sentrycs protegem estádios da Copa do Mundo e da NFL e fronteiras, com US$ 63,1 mi em contratos nessa área em julho de 2026."
+  },
+  {
+   "tema": "Inteligência artificial",
+   "relacao": "Criou a Regna AI, empresa separada de IA soberana, e usa IA para a autonomia dos drones e robôs."
+  }
  ],
  "diferencial": {
   "texto": "A empresa monta uma plataforma completa de sistemas autônomos (drones aéreos, antidrone, robôs terrestres e munições), o que permite vender pacotes para o mesmo cliente militar. Produtos já testados em combate em Israel e aprovações em programas do Exército e da Força Aérea americanos são barreiras relevantes, porque a homologação militar é lenta. O ponto fraco é que o crescimento vem em grande parte de aquisições, com integração arriscada, margem bruta em queda (21,8% no 3T26 contra 43,1% no 2T26) e concorrentes maiores e com caixa próprio.",
-  "concorrentes": ["AeroVironment", "Kratos", "Anduril", "Red Cat", "DroneShield", "Elbit Systems"]
+  "concorrentes": [
+   "AeroVironment",
+   "Kratos",
+   "Anduril",
+   "Red Cat",
+   "DroneShield",
+   "Elbit Systems"
+  ],
+  "vantagem": {
+   "nivel": "fraca",
+   "resumo": "Portfólio de drones e sistemas antidrone para defesa, mas empresa pequena, com prejuízo e em mercado muito disputado."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita de 2026 deve ser de pelo menos US$ 550 mi, com mais de US$ 250 mi só no 4T26, e a meta inicial para 2027 é de pelo menos US$ 1,1 bi sem contar novas aquisições. A carteira de pedidos chegou a US$ 835 mi em setembro (+36% no trimestre), com US$ 214 mi de pedidos novos no 3T26. A empresa espera Ebitda ajustado positivo na plataforma operacional no 4T26 e na empresa toda no 3T27, um trimestre antes do previsto. As metas dependem de entregar os contratos militares e integrar as empresas compradas.",
   "metricas": [
-   {"rotulo": "Carteira de pedidos", "valor": "US$ 835 mi", "periodo": "set/2026"},
-   {"rotulo": "Receita projetada", "valor": "pelo menos US$ 550 mi", "periodo": "2026"},
-   {"rotulo": "Meta de receita", "valor": "pelo menos US$ 1,1 bi", "periodo": "2027"}
+   {
+    "rotulo": "Carteira de pedidos",
+    "valor": "US$ 835 mi",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Receita projetada",
+    "valor": "pelo menos US$ 550 mi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Meta de receita",
+    "valor": "pelo menos US$ 1,1 bi",
+    "periodo": "2027"
+   }
   ]
  },
  "saude": {
@@ -56,10 +93,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Ondas: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1646188/000119312526457088/onds-ex99_1.htm", "data": "2026-11-12"},
-  {"titulo": "Ondas: apresentação do 3T26 (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1646188/000119312526457088/onds-ex99_2.htm", "data": "2026-11-12"},
-  {"titulo": "Benzinga: Ondas Q3 2026", "url": "https://www.benzinga.com/node/63201636", "data": "2026-11-12"},
-  {"titulo": "Panabee: Ondas Q3 revenue climbs 16-fold", "url": "https://www.panabee.com/news/ondas-earnings-q3-2026", "data": "2026-11-12"}
+  {
+   "titulo": "Ondas: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1646188/000119312526457088/onds-ex99_1.htm",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Ondas: apresentação do 3T26 (8-K, Exhibit 99.2, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1646188/000119312526457088/onds-ex99_2.htm",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Benzinga: Ondas Q3 2026",
+   "url": "https://www.benzinga.com/node/63201636",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "Panabee: Ondas Q3 revenue climbs 16-fold",
+   "url": "https://www.panabee.com/news/ondas-earnings-q3-2026",
+   "data": "2026-11-12"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

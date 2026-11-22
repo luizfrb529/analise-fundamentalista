@@ -5,21 +5,55 @@
  "modelo": "A empresa quer construir e alugar data centers de IA no campus Texas Critical Data Centers (TCDC), em Odessa, com 493 acres e capacidade planejada acima de 1 GW, usando energia de usinas a gás vizinhas. Ganharia com aluguel de longo prazo ao inquilino. O pequeno negócio antigo de petróleo e gás gera a receita atual.",
  "segmentos": [],
  "segmentos_base": "Receita ainda pouco relevante (US$ 0,15 mi no 3T26)",
- "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede em Midland, Texas (EUA); o campus fica no condado de Ector, perto de Odessa."},
+ "geografia": {
+  "eua_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "texto": "Sede em Midland, Texas (EUA); o campus fica no condado de Ector, perto de Odessa."
+ },
  "temas": [
-  {"tema": "Energia para data centers de IA", "relacao": "Assinou em setembro contrato de 20 anos com a Luminant (Vistra) para 200 MW a 207 MW de energia firme a partir do 3T27, vinda de usina a gás vizinha; a Vistra terá 5% da parte do projeto que abastecer."},
-  {"tema": "Gás natural no Permiano", "relacao": "Planeja uma segunda fase com cerca de 550 MW de geração própria a gás, com a Thunderhead Energy Solutions."}
+  {
+   "tema": "Energia para data centers de IA",
+   "relacao": "Assinou em setembro contrato de 20 anos com a Luminant (Vistra) para 200 MW a 207 MW de energia firme a partir do 3T27, vinda de usina a gás vizinha; a Vistra terá 5% da parte do projeto que abastecer."
+  },
+  {
+   "tema": "Gás natural no Permiano",
+   "relacao": "Planeja uma segunda fase com cerca de 550 MW de geração própria a gás, com a Thunderhead Energy Solutions."
+  }
  ],
  "diferencial": {
   "texto": "O ativo principal é o acesso a energia firme contratada e a terreno grande ao lado de uma usina, num momento em que data centers de IA esperam anos por conexão à rede. Os pontos fracos são enormes: a empresa ainda não tem inquilino assinado (só uma carta de intenção não vinculante), é muito pequena para um projeto desse porte, depende de captar muito capital e tem histórico curto no setor.",
-  "concorrentes": ["Applied Digital", "IREN", "Galaxy Digital", "Crusoe", "Hut 8", "TeraWulf"]
+  "concorrentes": [
+   "Applied Digital",
+   "IREN",
+   "Galaxy Digital",
+   "Crusoe",
+   "Hut 8",
+   "TeraWulf"
+  ],
+  "vantagem": {
+   "nivel": "nenhuma clara",
+   "resumo": "Tem contrato de energia e terreno, mas ainda sem inquilino assinado, receita nula e escala pequena para o projeto."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a energia da fase 1 deve estar disponível no 3T27 e o primeiro data center pronto no 4T27, se o contrato de aluguel for fechado; há negociação avançada com um inquilino não nomeado para as fases 1 e 2. O financiamento da Macquarie prevê até US$ 200 mi após a assinatura do aluguel. Todo o potencial depende de fechar esse contrato.",
   "metricas": [
-   {"rotulo": "Energia contratada (fase 1)", "valor": "200 MW a 207 MW", "periodo": "a partir do 3T27"},
-   {"rotulo": "Geração própria planejada (fase 2)", "valor": "cerca de 550 MW", "periodo": "em licenciamento"},
-   {"rotulo": "Área do campus", "valor": "493 acres", "periodo": "Odessa, Texas"}
+   {
+    "rotulo": "Energia contratada (fase 1)",
+    "valor": "200 MW a 207 MW",
+    "periodo": "a partir do 3T27"
+   },
+   {
+    "rotulo": "Geração própria planejada (fase 2)",
+    "valor": "cerca de 550 MW",
+    "periodo": "em licenciamento"
+   },
+   {
+    "rotulo": "Área do campus",
+    "valor": "493 acres",
+    "periodo": "Odessa, Texas"
+   }
   ]
  },
  "saude": {
@@ -55,10 +89,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "New Era Energy & Digital: formulário 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2028336/000119312526456806/nuai-20260930.htm", "data": "2026-11-12"},
-  {"titulo": "New Era Energy & Digital: release do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2028336/000121390026118324/ea031194701ex99-1.htm", "data": "2026-11-12"},
-  {"titulo": "DatacenterDynamics: New Era signs 20-year gas PPA with Vistra subsidiary", "url": "https://datacenterdynamics.com/en/news/new-era-signs-20-year-gas-ppa-with-vistra-subsidiary-to-power-250mw-data-center-in-ector-county-texas", "data": "2026-09"},
-  {"titulo": "Blockspace: New Era, Vistra 207 MW power purchase agreement", "url": "https://blockspace.media/insight/new-era-vistra-207-mw-power-purchase-agreement/", "data": "2026-09"}
+  {
+   "titulo": "New Era Energy & Digital: formulário 10-Q do 3T26 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/2028336/000119312526456806/nuai-20260930.htm",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "New Era Energy & Digital: release do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/2028336/000121390026118324/ea031194701ex99-1.htm",
+   "data": "2026-11-12"
+  },
+  {
+   "titulo": "DatacenterDynamics: New Era signs 20-year gas PPA with Vistra subsidiary",
+   "url": "https://datacenterdynamics.com/en/news/new-era-signs-20-year-gas-ppa-with-vistra-subsidiary-to-power-250mw-data-center-in-ector-county-texas",
+   "data": "2026-09"
+  },
+  {
+   "titulo": "Blockspace: New Era, Vistra 207 MW power purchase agreement",
+   "url": "https://blockspace.media/insight/new-era-vistra-207-mw-power-purchase-agreement/",
+   "data": "2026-09"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

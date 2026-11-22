@@ -53,7 +53,11 @@
    "TeraWulf",
    "Hut 8",
    "Applied Digital"
-  ]
+  ],
+  "vantagem": {
+   "nivel": "fraca",
+   "resumo": "Energia barata e terrenos próprios para data centers, mas ativo que concorrentes também buscam e com contratos ainda recentes."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a carteira de contratos (backlog) chegou a US$ 20,3 bi no 1T27 fiscal, alta de 22% no trimestre, com cerca de dois terços de clientes com grau de investimento. A meta de mais de US$ 4 bi de receita anualizada (ARR) está totalmente contratada e financiada, com entrega prevista para 31/01/2027, podendo ir até o fim de fevereiro. Só o contrato com a Microsoft, assinado em novembro de 2025, soma cerca de US$ 9,7 bi em cinco anos. A empresa planeja 0,8 GW de capacidade até o fim de 2027 e diz ter mais de 35 GW em projetos potenciais, número que ela mesma classifica como especulativo.",

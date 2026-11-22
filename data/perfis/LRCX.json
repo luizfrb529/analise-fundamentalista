@@ -4,26 +4,73 @@
  "resumo": "Fabricante americana de equipamentos que gravam (etch) e depositam camadas nos chips, essenciais para memórias e processadores avançados. Muito lucrativa, com receita recorde crescendo 54% puxada pela IA.",
  "modelo": "A Lam Research vende máquinas de gravação e deposição de materiais para fábricas de chips (TSMC, Samsung, SK Hynix, Micron, Intel e fabricantes chinesas) e ganha também com peças, atualizações e serviços para a enorme base instalada, receita mais estável. É especialmente forte em memória, onde chips empilhados em camadas exigem muita gravação e deposição.",
  "segmentos": [
-  {"nome": "Sistemas (equipamentos novos)", "peso_receita": 0.70, "periodo": "3T26", "obs": "US$ 5,73 bi."},
-  {"nome": "Suporte ao cliente e outros", "peso_receita": 0.30, "periodo": "3T26", "obs": "US$ 2,49 bi."}
+  {
+   "nome": "Sistemas (equipamentos novos)",
+   "peso_receita": 0.7,
+   "periodo": "3T26",
+   "obs": "US$ 5,73 bi."
+  },
+  {
+   "nome": "Suporte ao cliente e outros",
+   "peso_receita": 0.3,
+   "periodo": "3T26",
+   "obs": "US$ 2,49 bi."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": 0.08, "exterior_pct": 0.92, "periodo": "3T26", "texto": "Sede na Califórnia (EUA). No trimestre: China 35%, Coreia 20%, Taiwan 18%, Japão 9%, EUA 8%, Sudeste Asiático 6% e Europa 4%."},
+ "geografia": {
+  "eua_pct": 0.08,
+  "exterior_pct": 0.92,
+  "periodo": "3T26",
+  "texto": "Sede na Califórnia (EUA). No trimestre: China 35%, Coreia 20%, Taiwan 18%, Japão 9%, EUA 8%, Sudeste Asiático 6% e Europa 4%."
+ },
  "temas": [
-  {"tema": "Chips para IA e memória HBM", "relacao": "O CEO diz que a IA aumenta a demanda e a complexidade dos chips, o que exige mais etapas de gravação e deposição, como na memória de alta largura de banda."},
-  {"tema": "Geopolítica", "relacao": "A China foi 35% da receita no trimestre, contra 26% no anterior, e está sujeita a restrições de exportação americanas."},
-  {"tema": "Investimento em fábricas", "relacao": "A empresa estima o mercado de equipamentos de fabricação de wafers (WFE) em cerca de US$ 155 bi em 2026, segundo a imprensa."}
+  {
+   "tema": "Chips para IA e memória HBM",
+   "relacao": "O CEO diz que a IA aumenta a demanda e a complexidade dos chips, o que exige mais etapas de gravação e deposição, como na memória de alta largura de banda."
+  },
+  {
+   "tema": "Geopolítica",
+   "relacao": "A China foi 35% da receita no trimestre, contra 26% no anterior, e está sujeita a restrições de exportação americanas."
+  },
+  {
+   "tema": "Investimento em fábricas",
+   "relacao": "A empresa estima o mercado de equipamentos de fabricação de wafers (WFE) em cerca de US$ 155 bi em 2026, segundo a imprensa."
+  }
  ],
  "diferencial": {
   "texto": "A Lam é líder em equipamentos de gravação de alta precisão, crucial para memórias 3D NAND, DRAM e transistores de nova geração, com tecnologia difícil de copiar e enorme base instalada que gera serviços. Os pontos fracos são a ciclicidade do investimento em fábricas, a exposição relevante à China e a concorrência de Applied Materials e Tokyo Electron.",
-  "concorrentes": ["Applied Materials", "Tokyo Electron", "KLA", "ASML", "ASM International", "Naura"]
+  "concorrentes": [
+   "Applied Materials",
+   "Tokyo Electron",
+   "KLA",
+   "ASML",
+   "ASM International",
+   "Naura"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Liderança em equipamentos de gravação e deposição de chips, essenciais para memórias avançadas, com enorme base instalada."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do trimestre até dezembro deve ser de US$ 8,6 bi, mais ou menos US$ 400 mi, com margem bruta de 52,5% e lucro de US$ 2,33 por ação. A demanda por memória e chips de IA sustenta o investimento das fábricas em 2026 e 2027.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 8,2 bi a US$ 9,0 bi", "periodo": "4T26"},
-   {"rotulo": "Margem bruta", "valor": "52,3%", "periodo": "3T26"},
-   {"rotulo": "Peso da China na receita", "valor": "35%", "periodo": "3T26"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 8,2 bi a US$ 9,0 bi",
+    "periodo": "4T26"
+   },
+   {
+    "rotulo": "Margem bruta",
+    "valor": "52,3%",
+    "periodo": "3T26"
+   },
+   {
+    "rotulo": "Peso da China na receita",
+    "valor": "35%",
+    "periodo": "3T26"
+   }
   ]
  },
  "saude": {
@@ -57,10 +104,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Lam Research: resultados do trimestre até 27/09/2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000052/lrcx_exhibitx991xq1x2027.htm", "data": "2026-10-21"},
-  {"titulo": "FourWeekMBA: Lam revenue jumps 54% to a record $8.2B on AI chip demand", "url": "https://fourweekmba.com/ai-lam-revenue-jumps-54-to-a-record-8-2b-on-ai-chip-demand/", "data": "2026-10"},
-  {"titulo": "MarketBeat: Lam Research Q1 earnings call highlights", "url": "https://www.marketbeat.com/instant-alerts/transcript-lam-research-q1-earnings-call-highlights-2026-10-21/", "data": "2026-10-21"},
-  {"titulo": "Ariva: Lam Research reports results for quarter ended September 27, 2026", "url": "https://www.ariva.de/news/lam-research-corporation-reports-financial-results-for-the-12177074", "data": "2026-10-21"}
+  {
+   "titulo": "Lam Research: resultados do trimestre até 27/09/2026 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000052/lrcx_exhibitx991xq1x2027.htm",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "FourWeekMBA: Lam revenue jumps 54% to a record $8.2B on AI chip demand",
+   "url": "https://fourweekmba.com/ai-lam-revenue-jumps-54-to-a-record-8-2b-on-ai-chip-demand/",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "MarketBeat: Lam Research Q1 earnings call highlights",
+   "url": "https://www.marketbeat.com/instant-alerts/transcript-lam-research-q1-earnings-call-highlights-2026-10-21/",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "Ariva: Lam Research reports results for quarter ended September 27, 2026",
+   "url": "https://www.ariva.de/news/lam-research-corporation-reports-financial-results-for-the-12177074",
+   "data": "2026-10-21"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

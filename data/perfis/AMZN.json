@@ -4,27 +4,79 @@
  "resumo": "Maior varejista online do mundo e dona da AWS, a maior nuvem do mundo, além de um negócio de publicidade de quase US$ 20 bi por trimestre. Muito lucrativa, mas o investimento recorde em data centers de IA deixou o fluxo de caixa livre negativo.",
  "modelo": "A Amazon vende produtos próprios e de terceiros no seu marketplace, cobrando comissões, logística e assinaturas (Prime); vende anúncios no site, no Prime Video e em parceiros; e aluga capacidade de computação, armazenamento e IA pela AWS, que gera mais da metade do lucro operacional. Desenvolve chips próprios (Trainium) e é grande investidora e parceira de nuvem da Anthropic.",
  "segmentos": [
-  {"nome": "América do Norte (varejo)", "peso_receita": 0.56, "periodo": "3T26", "obs": "US$ 112,9 bi, alta de 6%; lucro operacional de US$ 8,7 bi."},
-  {"nome": "AWS (nuvem)", "peso_receita": 0.23, "periodo": "3T26", "obs": "US$ 46,0 bi, alta de 39%; lucro operacional de US$ 17,8 bi (margem de 38,7%)."},
-  {"nome": "Internacional (varejo)", "peso_receita": 0.21, "periodo": "3T26", "obs": "US$ 43,1 bi, alta de 5%; lucro operacional de US$ 1,6 bi."}
+  {
+   "nome": "América do Norte (varejo)",
+   "peso_receita": 0.56,
+   "periodo": "3T26",
+   "obs": "US$ 112,9 bi, alta de 6%; lucro operacional de US$ 8,7 bi."
+  },
+  {
+   "nome": "AWS (nuvem)",
+   "peso_receita": 0.23,
+   "periodo": "3T26",
+   "obs": "US$ 46,0 bi, alta de 39%; lucro operacional de US$ 17,8 bi (margem de 38,7%)."
+  },
+  {
+   "nome": "Internacional (varejo)",
+   "peso_receita": 0.21,
+   "periodo": "3T26",
+   "obs": "US$ 43,1 bi, alta de 5%; lucro operacional de US$ 1,6 bi."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Seattle (EUA); varejo em cerca de 20 países, inclusive o Brasil, e AWS com data centers no mundo todo."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Seattle (EUA); varejo em cerca de 20 países, inclusive o Brasil, e AWS com data centers no mundo todo."
+ },
  "temas": [
-  {"tema": "Nuvem e IA", "relacao": "A AWS acelerou para 39% de crescimento e o CEO projeta mais de 40% em 2027 e 2028; o gasto de empresas da Fortune 500 no Bedrock, serviço de modelos de IA, subiu quase 7 vezes em um ano."},
-  {"tema": "Data centers", "relacao": "Prevê investir cerca de US$ 220 bi em 2026 e mais em 2027; o investimento de US$ 215 bi em 12 meses deixou o caixa livre negativo em US$ 42,4 bi."},
-  {"tema": "Publicidade", "relacao": "Anúncios renderam US$ 19,6 bi no trimestre, alta de 11%, abaixo do esperado pelo deslocamento do Prime Day."}
+  {
+   "tema": "Nuvem e IA",
+   "relacao": "A AWS acelerou para 39% de crescimento e o CEO projeta mais de 40% em 2027 e 2028; o gasto de empresas da Fortune 500 no Bedrock, serviço de modelos de IA, subiu quase 7 vezes em um ano."
+  },
+  {
+   "tema": "Data centers",
+   "relacao": "Prevê investir cerca de US$ 220 bi em 2026 e mais em 2027; o investimento de US$ 215 bi em 12 meses deixou o caixa livre negativo em US$ 42,4 bi."
+  },
+  {
+   "tema": "Publicidade",
+   "relacao": "Anúncios renderam US$ 19,6 bi no trimestre, alta de 11%, abaixo do esperado pelo deslocamento do Prime Day."
+  }
  ],
  "diferencial": {
   "texto": "A Amazon combina a maior rede logística de comércio eletrônico do Ocidente, o programa Prime e a liderança em nuvem, negócios com enormes barreiras de escala e capital. A AWS tem a maior base de clientes corporativos e chips próprios que reduzem custo. Os pontos fracos são as margens baixas do varejo, o investimento gigantesco em IA, a concorrência de Microsoft e Google na nuvem e de Shein, Temu e Walmart no varejo, e a pressão regulatória.",
-  "concorrentes": ["Microsoft (Azure)", "Alphabet (Google Cloud)", "Walmart", "Shein", "Temu (PDD)", "Mercado Livre"]
+  "concorrentes": [
+   "Microsoft (Azure)",
+   "Alphabet (Google Cloud)",
+   "Walmart",
+   "Shein",
+   "Temu (PDD)",
+   "Mercado Livre"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Maior rede logística de comércio eletrônico do Ocidente, programa Prime e liderança em nuvem, todos com barreiras de escala."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, as vendas do 4T26 devem ficar entre US$ 240 bi e US$ 247 bi (alta de 12% a 16%), com lucro operacional de US$ 28,5 bi a US$ 33,5 bi, e a publicidade deve crescer perto de 20%. O CEO projeta a AWS crescendo mais de 40% em 2027 e 2028, com investimento significativamente maior em 2027.",
   "metricas": [
-   {"rotulo": "Vendas projetadas", "valor": "US$ 240 bi a US$ 247 bi", "periodo": "4T26"},
-   {"rotulo": "Crescimento da AWS", "valor": "39%", "periodo": "3T26"},
-   {"rotulo": "Investimento projetado", "valor": "cerca de US$ 220 bi", "periodo": "2026"}
+   {
+    "rotulo": "Vendas projetadas",
+    "valor": "US$ 240 bi a US$ 247 bi",
+    "periodo": "4T26"
+   },
+   {
+    "rotulo": "Crescimento da AWS",
+    "valor": "39%",
+    "periodo": "3T26"
+   },
+   {
+    "rotulo": "Investimento projetado",
+    "valor": "cerca de US$ 220 bi",
+    "periodo": "2026"
+   }
   ]
  },
  "saude": {
@@ -60,10 +112,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Amazon: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm", "data": "2026-10-29"},
-  {"titulo": "Constellation Research: AWS Q3 revenue growth surges 39%, capex stings cash flow", "url": "https://www.constellationr.com/insights/news/aws-q3-revenue-growth-surges-39-capex-stings-amazons-cash-flow", "data": "2026-10-29"},
-  {"titulo": "Cord Cutters News: Amazon posts $201.9 billion in Q3 sales", "url": "https://cordcuttersnews.com/amazon-posts-201-9-billion-in-q3-sales-aws-revenue-climbs-39/", "data": "2026-10-29"},
-  {"titulo": "MediaPost: Amazon quarterly ad sales rise 11% but miss targets", "url": "https://www.mediapost.com/publications/article/419125/amazon-quarterly-ad-sales-rise-11-but-miss-targe.html", "data": "2026-10"}
+  {
+   "titulo": "Amazon: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Constellation Research: AWS Q3 revenue growth surges 39%, capex stings cash flow",
+   "url": "https://www.constellationr.com/insights/news/aws-q3-revenue-growth-surges-39-capex-stings-amazons-cash-flow",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Cord Cutters News: Amazon posts $201.9 billion in Q3 sales",
+   "url": "https://cordcuttersnews.com/amazon-posts-201-9-billion-in-q3-sales-aws-revenue-climbs-39/",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "MediaPost: Amazon quarterly ad sales rise 11% but miss targets",
+   "url": "https://www.mediapost.com/publications/article/419125/amazon-quarterly-ad-sales-rise-11-but-miss-targe.html",
+   "data": "2026-10"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

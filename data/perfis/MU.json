@@ -4,28 +4,84 @@
  "resumo": "Uma das três grandes fabricantes de memória do mundo (DRAM, HBM e NAND). A falta de memória para IA levou a receita de US$ 11,3 bi para US$ 54,2 bi por trimestre em um ano, com margem bruta de 87%.",
  "modelo": "A Micron fabrica em fábricas próprias (EUA, Japão, Taiwan, Singapura) chips de memória DRAM, memória de alta largura de banda (HBM), usada ao lado das GPUs de IA, e memória flash NAND para SSDs. Vende para provedores de nuvem, fabricantes de servidores, celulares, PCs, carros e equipamentos industriais. O setor é cíclico: preços sobem muito quando falta oferta e caem quando sobra. O ano fiscal termina no início de setembro.",
  "segmentos": [
-  {"nome": "Core Data Center (servidores)", "peso_receita": 0.33, "periodo": "4T26 fiscal", "obs": "US$ 18,0 bi, contra US$ 1,6 bi um ano antes."},
-  {"nome": "Cloud Memory (grandes nuvens, inclui HBM)", "peso_receita": 0.30, "periodo": "4T26 fiscal", "obs": "US$ 16,3 bi."},
-  {"nome": "Mobile and Client (celulares e PCs)", "peso_receita": 0.24, "periodo": "4T26 fiscal", "obs": "US$ 13,1 bi."},
-  {"nome": "Automotive and Embedded", "peso_receita": 0.13, "periodo": "4T26 fiscal", "obs": "US$ 6,8 bi."}
+  {
+   "nome": "Core Data Center (servidores)",
+   "peso_receita": 0.33,
+   "periodo": "4T26 fiscal",
+   "obs": "US$ 18,0 bi, contra US$ 1,6 bi um ano antes."
+  },
+  {
+   "nome": "Cloud Memory (grandes nuvens, inclui HBM)",
+   "peso_receita": 0.3,
+   "periodo": "4T26 fiscal",
+   "obs": "US$ 16,3 bi."
+  },
+  {
+   "nome": "Mobile and Client (celulares e PCs)",
+   "peso_receita": 0.24,
+   "periodo": "4T26 fiscal",
+   "obs": "US$ 13,1 bi."
+  },
+  {
+   "nome": "Automotive and Embedded",
+   "peso_receita": 0.13,
+   "periodo": "4T26 fiscal",
+   "obs": "US$ 6,8 bi."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Idaho (EUA), com produção nos EUA, Japão, Taiwan e Singapura e clientes no mundo todo; constrói novas fábricas em Idaho e Nova York com apoio da lei americana de chips."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Idaho (EUA), com produção nos EUA, Japão, Taiwan e Singapura e clientes no mundo todo; constrói novas fábricas em Idaho e Nova York com apoio da lei americana de chips."
+ },
  "temas": [
-  {"tema": "Inteligência artificial", "relacao": "Cada GPU de IA usa várias pilhas de memória HBM, e os servidores de IA usam muito mais DRAM e SSD; a área de data center (Core Data Center e Cloud Memory) somou US$ 34,3 bi, 63% da receita do 4T26 fiscal."},
-  {"tema": "Escassez de memória", "relacao": "A demanda de IA esgotou a capacidade do setor e elevou os preços também para celulares, PCs e carros, o que explica margens brutas acima de 80% em todas as divisões."},
-  {"tema": "Produção nos EUA", "relacao": "É a única fabricante de memória com sede nos EUA, o que a favorece em incentivos e políticas de produção local."}
+  {
+   "tema": "Inteligência artificial",
+   "relacao": "Cada GPU de IA usa várias pilhas de memória HBM, e os servidores de IA usam muito mais DRAM e SSD; a área de data center (Core Data Center e Cloud Memory) somou US$ 34,3 bi, 63% da receita do 4T26 fiscal."
+  },
+  {
+   "tema": "Escassez de memória",
+   "relacao": "A demanda de IA esgotou a capacidade do setor e elevou os preços também para celulares, PCs e carros, o que explica margens brutas acima de 80% em todas as divisões."
+  },
+  {
+   "tema": "Produção nos EUA",
+   "relacao": "É a única fabricante de memória com sede nos EUA, o que a favorece em incentivos e políticas de produção local."
+  }
  ],
  "diferencial": {
   "texto": "O mercado de DRAM é praticamente dividido entre três empresas (Samsung, SK hynix e Micron), porque uma fábrica de memória custa dezenas de bilhões de dólares e exige anos de domínio de processo: é uma das maiores barreiras de entrada da indústria. Na HBM, a qualificação junto à NVIDIA e a outros compradores leva meses e poucos fornecedores passam. Segundo a empresa, a HBM4 de 12 camadas está subindo de produção duas vezes mais rápido que a geração anterior. A SK hynix é a líder em HBM, e a Micron depende da disciplina das concorrentes em capacidade para manter preços.",
-  "concorrentes": ["SK hynix", "Samsung", "CXMT (China)", "SanDisk (NAND)", "Kioxia (NAND)"]
+  "concorrentes": [
+   "SK hynix",
+   "Samsung",
+   "CXMT (China)",
+   "SanDisk (NAND)",
+   "Kioxia (NAND)"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Uma das três grandes fabricantes de memória do mundo, setor com barreira de capital, porém de produto padronizado e preços cíclicos."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do 1T27 fiscal (setembro a novembro de 2026) deve ficar em US$ 61,5 bi, com variação de US$ 1,5 bi, e o lucro por ação em cerca de US$ 37,84, novos recordes; o CEO diz esperar um ano fiscal de 2027 ainda mais forte. A empresa informou ter fechado acordos para a maior parte da sua oferta de HBM de 2027, com preços maiores que os de 2026. Clientes adiantaram US$ 12,7 bi em depósitos para garantir fornecimento futuro. O ponto de atenção é o próprio ciclo: o investimento do setor em capacidade está subindo e, historicamente, excesso de oferta derruba preços.",
   "metricas": [
-   {"rotulo": "Receita projetada para o 1T27 fiscal", "valor": "US$ 61,5 bi (mais ou menos US$ 1,5 bi)", "periodo": "set a nov/2026"},
-   {"rotulo": "Margem bruta projetada", "valor": "cerca de 86%", "periodo": "1T27 fiscal"},
-   {"rotulo": "Depósitos de clientes por contratos futuros", "valor": "US$ 12,7 bi", "periodo": "ano fiscal 2026"}
+   {
+    "rotulo": "Receita projetada para o 1T27 fiscal",
+    "valor": "US$ 61,5 bi (mais ou menos US$ 1,5 bi)",
+    "periodo": "set a nov/2026"
+   },
+   {
+    "rotulo": "Margem bruta projetada",
+    "valor": "cerca de 86%",
+    "periodo": "1T27 fiscal"
+   },
+   {
+    "rotulo": "Depósitos de clientes por contratos futuros",
+    "valor": "US$ 12,7 bi",
+    "periodo": "ano fiscal 2026"
+   }
   ]
  },
  "saude": {
@@ -61,11 +117,31 @@
   ]
  },
  "fontes": [
-  {"titulo": "Micron: resultados do 4T26 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm", "data": "2026-09-30"},
-  {"titulo": "Micron: 8-K do 4T26 fiscal (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/mu-20260930.htm", "data": "2026-09-30"},
-  {"titulo": "Motley Fool: Micron Q4 2026 earnings call transcript", "url": "https://www.fool.com/earnings/call-transcripts/2026/10/01/micron-mu-q4-2026-earnings-call-transcript/", "data": "2026-10-01"},
-  {"titulo": "Yahoo Finance: Micron's HBM4 ramp-up", "url": "https://finance.yahoo.com/markets/stocks/articles/microns-hbm4-ramp-higher-pricing-123300062.html", "data": "2026-10"},
-  {"titulo": "Yahoo Finance: Micron capex forecast after Q4 results", "url": "https://finance.yahoo.com/markets/stocks/articles/mu-stock-drops-hours-micron-222532422.html", "data": "2026-09-30"}
+  {
+   "titulo": "Micron: resultados do 4T26 fiscal (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm",
+   "data": "2026-09-30"
+  },
+  {
+   "titulo": "Micron: 8-K do 4T26 fiscal (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/mu-20260930.htm",
+   "data": "2026-09-30"
+  },
+  {
+   "titulo": "Motley Fool: Micron Q4 2026 earnings call transcript",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/10/01/micron-mu-q4-2026-earnings-call-transcript/",
+   "data": "2026-10-01"
+  },
+  {
+   "titulo": "Yahoo Finance: Micron's HBM4 ramp-up",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/microns-hbm4-ramp-higher-pricing-123300062.html",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "Yahoo Finance: Micron capex forecast after Q4 results",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/mu-stock-drops-hours-micron-222532422.html",
+   "data": "2026-09-30"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

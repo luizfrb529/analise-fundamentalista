@@ -4,27 +4,79 @@
  "resumo": "Gigante americana de aeroespaço e defesa, dona da Collins Aerospace (sistemas de aviões), Pratt & Whitney (motores) e Raytheon (mísseis e radares, como o Patriot). Lucrativa, com carteira recorde de US$ 340 bi.",
  "modelo": "A RTX vende sistemas e peças para aviões comerciais e militares (Collins), motores e manutenção (Pratt & Whitney, inclusive o GTF usado em Airbus A320neo) e mísseis, radares e sistemas de defesa (Raytheon) para governos dos EUA e aliados. A manutenção de motores e sistemas instalados gera receita recorrente.",
  "segmentos": [
-  {"nome": "Pratt & Whitney (motores)", "peso_receita": 0.36, "periodo": "3T26", "obs": "US$ 9,23 bi, alta de 10%."},
-  {"nome": "Collins Aerospace (sistemas de aviões)", "peso_receita": 0.33, "periodo": "3T26", "obs": "US$ 8,38 bi, alta de 10%, margem de 21,3%."},
-  {"nome": "Raytheon (defesa)", "peso_receita": 0.31, "periodo": "3T26", "obs": "US$ 8,03 bi, alta de 14%."}
+  {
+   "nome": "Pratt & Whitney (motores)",
+   "peso_receita": 0.36,
+   "periodo": "3T26",
+   "obs": "US$ 9,23 bi, alta de 10%."
+  },
+  {
+   "nome": "Collins Aerospace (sistemas de aviões)",
+   "peso_receita": 0.33,
+   "periodo": "3T26",
+   "obs": "US$ 8,38 bi, alta de 10%, margem de 21,3%."
+  },
+  {
+   "nome": "Raytheon (defesa)",
+   "peso_receita": 0.31,
+   "periodo": "3T26",
+   "obs": "US$ 8,03 bi, alta de 14%."
+  }
  ],
  "segmentos_base": "Receita dos segmentos",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Arlington, Virgínia (EUA); clientes no mundo todo, incluindo companhias aéreas, Airbus, Boeing e governos aliados."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Arlington, Virgínia (EUA); clientes no mundo todo, incluindo companhias aéreas, Airbus, Boeing e governos aliados."
+ },
  "temas": [
-  {"tema": "Defesa e mísseis", "relacao": "A Raytheon cresceu 14% com Patriot, Standard Missile e Tomahawk, e recebeu contratos plurianuais de Tomahawk e AMRAAM; a carteira de defesa é de US$ 164 bi."},
-  {"tema": "Aviação comercial", "relacao": "A carteira comercial é de US$ 176 bi; a Collins teve alta de 23% em equipamentos originais."},
-  {"tema": "Problema no motor GTF", "relacao": "Uma falha rara no metal em pó exige inspeções aceleradas de grande parte da frota do motor PW1100G, o que afeta companhias aéreas e custos."}
+  {
+   "tema": "Defesa e mísseis",
+   "relacao": "A Raytheon cresceu 14% com Patriot, Standard Missile e Tomahawk, e recebeu contratos plurianuais de Tomahawk e AMRAAM; a carteira de defesa é de US$ 164 bi."
+  },
+  {
+   "tema": "Aviação comercial",
+   "relacao": "A carteira comercial é de US$ 176 bi; a Collins teve alta de 23% em equipamentos originais."
+  },
+  {
+   "tema": "Problema no motor GTF",
+   "relacao": "Uma falha rara no metal em pó exige inspeções aceleradas de grande parte da frota do motor PW1100G, o que afeta companhias aéreas e custos."
+  }
  ],
  "diferencial": {
   "texto": "A RTX combina três negócios líderes com enorme base instalada e barreiras de certificação: motores e sistemas de avião exigem décadas de qualificação e os mísseis são produzidos sob contratos de longo prazo com o governo. A carteira de US$ 340 bi dá visibilidade de anos. Os pontos fracos são o problema do motor GTF, a dependência do orçamento de defesa e a concorrência de GE, Safran, Lockheed e Northrop.",
-  "concorrentes": ["GE Aerospace", "Lockheed Martin", "Northrop Grumman", "Safran", "Honeywell", "Rolls-Royce"]
+  "concorrentes": [
+   "GE Aerospace",
+   "Lockheed Martin",
+   "Northrop Grumman",
+   "Safran",
+   "Honeywell",
+   "Rolls-Royce"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Motores, sistemas de avião e mísseis com enorme base instalada e anos de qualificação junto a governos e fabricantes."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, as vendas ajustadas de 2026 devem ficar entre US$ 97,0 bi e US$ 97,5 bi (crescimento orgânico de 10% a 11%), com lucro ajustado de US$ 7,65 a US$ 7,75 por ação e fluxo de caixa livre de US$ 9,0 bi a US$ 9,2 bi; a projeção foi elevada. A empresa recebeu mais de US$ 81 bi em novos contratos no trimestre.",
   "metricas": [
-   {"rotulo": "Carteira de pedidos", "valor": "US$ 340 bi", "periodo": "set/2026"},
-   {"rotulo": "Vendas projetadas", "valor": "US$ 97,0 bi a US$ 97,5 bi", "periodo": "2026"},
-   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 7,65 a US$ 7,75 por ação", "periodo": "2026"}
+   {
+    "rotulo": "Carteira de pedidos",
+    "valor": "US$ 340 bi",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Vendas projetadas",
+    "valor": "US$ 97,0 bi a US$ 97,5 bi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Lucro ajustado projetado",
+    "valor": "US$ 7,65 a US$ 7,75 por ação",
+    "periodo": "2026"
+   }
   ]
  },
  "saude": {
@@ -59,10 +111,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "RTX: resultados do 3T26 (8-K, Exhibit 99, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/101829/000010182926000030/a2026-10x208xkerexhibit99.htm", "data": "2026-10-20"},
-  {"titulo": "Airforce Technology: RTX third quarter result", "url": "https://www.airforce-technology.com/newsletters/rtx-third-quarter-result", "data": "2026-10"},
-  {"titulo": "Leeham News: RTX's booming defense segment lifts all ships", "url": "https://leehamnews.com/2026/10/21/rtxs-booming-defense-segment-lifts-all-ships/", "data": "2026-10-21"},
-  {"titulo": "Securities.io: RTX raises 2026 outlook as Q3 sales rise 11%", "url": "https://www.securities.io/rtx-raises-2026-outlook-as-q3-sales-rise-11-to-25-billion/", "data": "2026-10"}
+  {
+   "titulo": "RTX: resultados do 3T26 (8-K, Exhibit 99, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/101829/000010182926000030/a2026-10x208xkerexhibit99.htm",
+   "data": "2026-10-20"
+  },
+  {
+   "titulo": "Airforce Technology: RTX third quarter result",
+   "url": "https://www.airforce-technology.com/newsletters/rtx-third-quarter-result",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "Leeham News: RTX's booming defense segment lifts all ships",
+   "url": "https://leehamnews.com/2026/10/21/rtxs-booming-defense-segment-lifts-all-ships/",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "Securities.io: RTX raises 2026 outlook as Q3 sales rise 11%",
+   "url": "https://www.securities.io/rtx-raises-2026-outlook-as-q3-sales-rise-11-to-25-billion/",
+   "data": "2026-10"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

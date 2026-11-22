@@ -30,7 +30,11 @@
    "Micron",
    "SK Hynix (Solidigm)",
    "SanDisk"
-  ]
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Duopólio com a Western Digital em discos rígidos e liderança no HAMR, mas em mercado cíclico e dependente de poucas nuvens."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do trimestre até dezembro deve ser de US$ 4,8 bi, mais ou menos US$ 100 mi, com lucro ajustado de US$ 9,20 por ação. O crescimento vem do HAMR, que permite vender mais terabytes por disco com margem maior.",

@@ -1176,6 +1176,9 @@ async function blocoSobre(t) {
     const sd = pf.saude || {}, dif = pf.diferencial || {}, pot = pf.potencial || {};
     const corSaude = { "lucrativa": "pos", "lucro recente": "pos", "prejuízo com caixa": "aten", "prejuízo e queima de caixa": "neg" }[sd.situacao] || "";
     const geo = pf.geografia || {};
+    const vant = dif.vantagem || {};
+    const corVant = { "forte": "pos", "moderada": "aten", "fraca": "neg", "nenhuma clara": "neg" }[vant.nivel] || "";
+    const rotVant = { "forte": "Vantagem competitiva forte", "moderada": "Vantagem competitiva moderada", "fraca": "Vantagem competitiva fraca", "nenhuma clara": "Sem vantagem competitiva clara" }[vant.nivel] || "";
     $("#sobre").innerHTML = `<div class="grade g2 sobre-stock">
       <div class="cartao"><h3>O negócio</h3>${avisoRev}<p style="color:var(--txt-2)">${esc(pf.resumo || "")}</p>
         <div class="sobre-destaques"><div><span>Segmento</span><b>${esc(a.setor_micro)}</b></div><div><span>Sede</span><b>${esc(a.pais || "n/d")}</b></div>
@@ -1184,7 +1187,7 @@ async function blocoSobre(t) {
       <div class="cartao"><h3>Saúde financeira</h3>${sd.situacao ? `<span class="badge saude ${corSaude}">${esc(sd.situacao[0].toUpperCase() + sd.situacao.slice(1))}</span>` : ""}
         <p style="color:var(--txt-2);margin-top:10px">${esc(sd.texto || "")}</p>
         <div class="sobre-destaques"><div><span>Caixa</span><b>${esc(sd.caixa || "n/d")}</b>${sd.periodo ? `<small>${esc(sd.periodo)}</small>` : ""}</div>${sd.queima_anual ? `<div><span>Queima de caixa por ano</span><b>${esc(sd.queima_anual)}</b></div>` : ""}</div></div>
-      <div class="cartao"><h3>Diferencial e barreiras de entrada</h3><p style="color:var(--txt-2)">${esc(dif.texto || "")}</p>
+      <div class="cartao"><h3>Vantagem competitiva e barreiras de entrada</h3>${vant.nivel ? `<span class="badge saude ${corVant}">${esc(rotVant)}</span>${vant.resumo ? `<p style="margin-top:10px"><b>${esc(vant.resumo)}</b></p>` : ""}` : ""}<p style="color:var(--txt-2);margin-top:10px">${esc(dif.texto || "")}</p>
         ${(dif.concorrentes || []).length ? `<div class="sub" style="margin-top:10px">Principais concorrentes</div><div class="badges" style="margin-top:6px">${dif.concorrentes.map((c) => `<span class="badge">${esc(c)}</span>`).join("")}</div>` : ""}</div>
       <div class="cartao"><h3>De onde vem o potencial</h3><p style="color:var(--txt-2)">${esc(pot.texto || "")}</p>
         ${(pot.metricas || []).length ? `<div class="espaco" style="height:6px"></div>${pot.metricas.map((m) => `<div class="kv"><span>${esc(m.rotulo)}${m.periodo ? ` <small class="sub">(${esc(m.periodo)})</small>` : ""}</span><b>${esc(m.valor)}</b></div>`).join("")}` : ""}

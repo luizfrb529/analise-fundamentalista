@@ -5,22 +5,59 @@
  "modelo": "A Navitas projeta chips que convertem energia elétrica com menos perda e em menor tamanho que os de silício comum, e terceiriza a fabricação (GlobalFoundries nos EUA e outros parceiros). Vende a fabricantes de fontes de energia para servidores, inversores solares, carregadores de veículos e equipamentos industriais. Em outubro comprou a Claros, de reguladores de tensão integrados.",
  "segmentos": [],
  "segmentos_base": "Empresa não divulga receita por segmento no release",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA); historicamente vendia muito para fabricantes de celulares na China, negócio que está deixando, e agora mira data centers nos EUA, Ásia e Europa."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede na Califórnia (EUA); historicamente vendia muito para fabricantes de celulares na China, negócio que está deixando, e agora mira data centers nos EUA, Ásia e Europa."
+ },
  "temas": [
-  {"tema": "Energia para data centers de IA", "relacao": "É parceira da NVIDIA na nova arquitetura de energia de 800 volts para racks de IA e desenvolveu placas de conversão de 800 V para 12 V; espera que IA e energia passem de 40% da receita no fim de 2026."},
-  {"tema": "Rede elétrica e eletrificação", "relacao": "Chips de SiC de alta tensão servem a inversores, armazenamento de energia e equipamentos de rede."},
-  {"tema": "Semicondutores nos EUA", "relacao": "Embarcou os primeiros chips GaN de quinta geração fabricados nos EUA, pela GlobalFoundries."}
+  {
+   "tema": "Energia para data centers de IA",
+   "relacao": "É parceira da NVIDIA na nova arquitetura de energia de 800 volts para racks de IA e desenvolveu placas de conversão de 800 V para 12 V; espera que IA e energia passem de 40% da receita no fim de 2026."
+  },
+  {
+   "tema": "Rede elétrica e eletrificação",
+   "relacao": "Chips de SiC de alta tensão servem a inversores, armazenamento de energia e equipamentos de rede."
+  },
+  {
+   "tema": "Semicondutores nos EUA",
+   "relacao": "Embarcou os primeiros chips GaN de quinta geração fabricados nos EUA, pela GlobalFoundries."
+  }
  ],
  "diferencial": {
   "texto": "A Navitas é uma das pioneiras em GaN de potência, com portfólio que cobre GaN e SiC de alta tensão, o que permite atender da fonte do servidor até a rede elétrica. A parceria com a NVIDIA dá visibilidade no mercado de IA. Os pontos fracos são a receita muito pequena, a saída do negócio de celulares que fez a receita do ano quase não crescer, e a concorrência de gigantes como Infineon, Texas Instruments, onsemi e STMicro, que também vendem GaN e SiC.",
-  "concorrentes": ["Infineon", "Texas Instruments", "onsemi", "STMicroelectronics", "Wolfspeed", "Innoscience"]
+  "concorrentes": [
+   "Infineon",
+   "Texas Instruments",
+   "onsemi",
+   "STMicroelectronics",
+   "Wolfspeed",
+   "Innoscience"
+  ],
+  "vantagem": {
+   "nivel": "fraca",
+   "resumo": "Pioneira em chips de nitreto de gálio, mas pequena diante de gigantes do setor que vendem tecnologias semelhantes."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do 4T26 deve ser de US$ 16,0 mi, mais ou menos US$ 0,5 mi (119% de alta em um ano), com margem bruta ajustada de 40,5%, e 2026 deve fechar com cerca de US$ 49 mi. A empresa diz esperar cerca de três vezes mais receita de infraestrutura de IA em 2027 e estima um mercado endereçável de mais de US$ 8 bi em 2030.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 15,5 mi a US$ 16,5 mi", "periodo": "4T26"},
-   {"rotulo": "Margem bruta ajustada projetada", "valor": "40,5%", "periodo": "4T26"},
-   {"rotulo": "Peso de IA e energia na receita", "valor": "mais de 40%", "periodo": "fim de 2026"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 15,5 mi a US$ 16,5 mi",
+    "periodo": "4T26"
+   },
+   {
+    "rotulo": "Margem bruta ajustada projetada",
+    "valor": "40,5%",
+    "periodo": "4T26"
+   },
+   {
+    "rotulo": "Peso de IA e energia na receita",
+    "valor": "mais de 40%",
+    "periodo": "fim de 2026"
+   }
   ]
  },
  "saude": {
@@ -55,10 +92,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Navitas: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1821769/000162828026069489/exhibit991-navitassemicond.htm", "data": "2026-11-03"},
-  {"titulo": "Navitas: apresentação do 3T26 (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1821769/000162828026069489/exhibit992-navitas3q26ea.htm", "data": "2026-11-03"},
-  {"titulo": "Navitas: 8-K do programa de venda de ações (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1821769/000110465926058734/tm2613239d3_8k.htm", "data": "2026-05-11"},
-  {"titulo": "24/7 Wall St.: Navitas Q3 2026, AI data center pivot takes hold", "url": "https://247wallst.com/cards/navitas-semiconductor-q3-2026-earnings-nvts-01m6hm399mnvq0rwktwa20sb3q", "data": "2026-11-03"}
+  {
+   "titulo": "Navitas: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1821769/000162828026069489/exhibit991-navitassemicond.htm",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "Navitas: apresentação do 3T26 (8-K, Exhibit 99.2, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1821769/000162828026069489/exhibit992-navitas3q26ea.htm",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "Navitas: 8-K do programa de venda de ações (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1821769/000110465926058734/tm2613239d3_8k.htm",
+   "data": "2026-05-11"
+  },
+  {
+   "titulo": "24/7 Wall St.: Navitas Q3 2026, AI data center pivot takes hold",
+   "url": "https://247wallst.com/cards/navitas-semiconductor-q3-2026-earnings-nvts-01m6hm399mnvq0rwktwa20sb3q",
+   "data": "2026-11-03"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

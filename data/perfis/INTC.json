@@ -4,27 +4,79 @@
  "resumo": "Maior fabricante americana de processadores para PCs e servidores, que tenta virar também fábrica de chips para terceiros (Intel Foundry). A receita voltou a crescer com a demanda de data centers, mas a fábrica ainda dá prejuízo e o investimento é muito alto.",
  "modelo": "A Intel projeta e fabrica processadores Core para computadores, Xeon para servidores e aceleradores e chips de IA, e vende sobretudo a fabricantes de PCs e grandes nuvens. A divisão Intel Foundry fabrica os chips da própria Intel e busca clientes externos, competindo com a TSMC. Também controla a Mobileye (chips para carros autônomos) e vendeu 51% da Altera em 2025.",
  "segmentos": [
-  {"nome": "Client Computing e Physical AI (PCs)", "peso_receita": 0.49, "periodo": "3T26", "obs": "US$ 8,1 bi, queda de 5% em um ano."},
-  {"nome": "Data Center e IA", "peso_receita": 0.44, "periodo": "3T26", "obs": "US$ 7,3 bi, alta de 78%, maior crescimento em 15 anos."},
-  {"nome": "Outros (Mobileye e outros)", "peso_receita": 0.04, "periodo": "3T26", "obs": "US$ 0,7 bi. A Intel Foundry (US$ 6,7 bi) vende quase tudo para a própria Intel e é eliminada no total."}
+  {
+   "nome": "Client Computing e Physical AI (PCs)",
+   "peso_receita": 0.49,
+   "periodo": "3T26",
+   "obs": "US$ 8,1 bi, queda de 5% em um ano."
+  },
+  {
+   "nome": "Data Center e IA",
+   "peso_receita": 0.44,
+   "periodo": "3T26",
+   "obs": "US$ 7,3 bi, alta de 78%, maior crescimento em 15 anos."
+  },
+  {
+   "nome": "Outros (Mobileye e outros)",
+   "peso_receita": 0.04,
+   "periodo": "3T26",
+   "obs": "US$ 0,7 bi. A Intel Foundry (US$ 6,7 bi) vende quase tudo para a própria Intel e é eliminada no total."
+  }
  ],
  "segmentos_base": "Receita (Foundry é interna e não entra na soma)",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA), com fábricas nos EUA (Arizona, Oregon, Novo México, Ohio em construção), Irlanda, Israel e Malásia; a maior parte da receita vem de clientes na Ásia."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede na Califórnia (EUA), com fábricas nos EUA (Arizona, Oregon, Novo México, Ohio em construção), Irlanda, Israel e Malásia; a maior parte da receita vem de clientes na Ásia."
+ },
  "temas": [
-  {"tema": "Data centers para IA", "relacao": "A receita de data centers subiu 78% em um ano com servidores para IA; a Oracle vai usar os próximos Xeon (Diamond Rapids) na sua nuvem."},
-  {"tema": "Semicondutores nos EUA", "relacao": "É a principal aposta do governo americano para fabricar chips avançados no país; o governo tem participação acionária relevante na empresa desde 2025."},
-  {"tema": "Mercado de PCs", "relacao": "Os PCs ainda são metade da receita, e o diretor financeiro espera desaceleração pelo menos até o primeiro semestre de 2027."}
+  {
+   "tema": "Data centers para IA",
+   "relacao": "A receita de data centers subiu 78% em um ano com servidores para IA; a Oracle vai usar os próximos Xeon (Diamond Rapids) na sua nuvem."
+  },
+  {
+   "tema": "Semicondutores nos EUA",
+   "relacao": "É a principal aposta do governo americano para fabricar chips avançados no país; o governo tem participação acionária relevante na empresa desde 2025."
+  },
+  {
+   "tema": "Mercado de PCs",
+   "relacao": "Os PCs ainda são metade da receita, e o diretor financeiro espera desaceleração pelo menos até o primeiro semestre de 2027."
+  }
  ],
  "diferencial": {
   "texto": "A Intel é uma das únicas três empresas do mundo capazes de fabricar chips no estado da arte (com TSMC e Samsung) e a única grande nos EUA, com décadas de liderança em processadores x86 e enorme base instalada em PCs e servidores. O apoio do governo americano e o caixa reforçado são vantagens. Os pontos fracos são a perda de participação para AMD e para chips ARM, a fábrica ainda com prejuízo operacional (US$ 1,85 bi no 3T26) e a dificuldade de atrair grandes clientes externos frente à TSMC.",
-  "concorrentes": ["AMD", "TSMC", "NVIDIA", "Qualcomm", "Samsung", "ARM"]
+  "concorrentes": [
+   "AMD",
+   "TSMC",
+   "NVIDIA",
+   "Qualcomm",
+   "Samsung",
+   "ARM"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Uma das três únicas fabricantes de chips de ponta do mundo e base enorme em PCs, mas vem perdendo espaço tecnológico para TSMC e AMD."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do 4T26 deve ficar entre US$ 15 bi e US$ 16 bi, com margem bruta ajustada de 38% e lucro ajustado de US$ 0,25 por ação, abaixo do 3T26. O potencial depende de a Intel Foundry ganhar clientes externos com os processos 18A e 14A (o kit de projeto 14A versão 0,9 foi liberado em outubro) e de recuperar espaço em servidores de IA. A projeção fraca para o 4T26 derrubou as ações mais de 25% no pré-mercado, segundo a Zacks.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 15 bi a US$ 16 bi", "periodo": "4T26"},
-   {"rotulo": "Receita de data centers", "valor": "US$ 7,3 bi (+78%)", "periodo": "3T26"},
-   {"rotulo": "Receita da Intel Foundry", "valor": "US$ 6,7 bi (+58%)", "periodo": "3T26"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 15 bi a US$ 16 bi",
+    "periodo": "4T26"
+   },
+   {
+    "rotulo": "Receita de data centers",
+    "valor": "US$ 7,3 bi (+78%)",
+    "periodo": "3T26"
+   },
+   {
+    "rotulo": "Receita da Intel Foundry",
+    "valor": "US$ 6,7 bi (+58%)",
+    "periodo": "3T26"
+   }
   ]
  },
  "saude": {
@@ -60,10 +112,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Intel: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm", "data": "2026-10-29"},
-  {"titulo": "Intel: 8-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/0000050863-26-000188-index.htm", "data": "2026-10-29"},
-  {"titulo": "Verdict: Intel Q3 2026 results", "url": "https://www.verdict.co.uk/intel-q3-2026-results/", "data": "2026-10-29"},
-  {"titulo": "Anadolu Agency: Intel posts 21% revenue jump in Q3 on data center demand", "url": "https://aa.com.tr/en/world/us-chipmaker-intel-posts-21-revenue-jump-in-q3-on-data-center-demand/4105484", "data": "2026-10-30"}
+  {
+   "titulo": "Intel: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Intel: 8-K do 3T26 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/0000050863-26-000188-index.htm",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Verdict: Intel Q3 2026 results",
+   "url": "https://www.verdict.co.uk/intel-q3-2026-results/",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Anadolu Agency: Intel posts 21% revenue jump in Q3 on data center demand",
+   "url": "https://aa.com.tr/en/world/us-chipmaker-intel-posts-21-revenue-jump-in-q3-on-data-center-demand/4105484",
+   "data": "2026-10-30"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

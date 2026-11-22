@@ -13,6 +13,7 @@ PROIBIDOS = re.compile(TRACOS + r"|\b(compre|recomenda[cç][aã]o de compra|pre[
 NIVEIS = {"nenhuma", "baixa", "média", "media", "alta", None}
 
 
+VANTAGEM = {"forte", "moderada", "fraca", "nenhuma clara"}
 SAUDE = {"lucrativa", "lucro recente", "prejuízo com caixa", "prejuízo e queima de caixa"}
 
 
@@ -56,6 +57,9 @@ def validar(j: dict, ticker: str, stock: bool | None = None) -> list[str]:
         dif = j.get("diferencial") or {}
         if not (dif.get("texto") or "").strip() or not isinstance(dif.get("concorrentes"), list):
             erros.append("diferencial sem texto ou sem lista de concorrentes")
+        vt = dif.get("vantagem") or {}
+        if vt.get("nivel") not in VANTAGEM or not (vt.get("resumo") or "").strip() or len(vt.get("resumo") or "") > 200:
+            erros.append(f"diferencial.vantagem precisa de nivel em {sorted(VANTAGEM)} e resumo de até 200 caracteres")
         if not ((j.get("potencial") or {}).get("texto") or "").strip():
             erros.append("potencial sem texto")
         sd = j.get("saude") or {}

@@ -4,27 +4,79 @@
  "resumo": "Ex-mineradora de bitcoin que virou desenvolvedora de energia e data centers para IA, com US$ 26,6 bi em contratos de aluguel de longo prazo assinados. Ainda não recebe aluguel (entregas a partir de 2027) e o lucro hoje depende do preço do bitcoin.",
  "modelo": "A Hut 8 garante terrenos com acesso a muita energia, constrói data centers e os aluga por 15 anos ou mais a grandes clientes de IA, em contratos em que o inquilino paga os custos de operação (triple-net). A receita atual vem sobretudo da mineração de bitcoin (segmento Compute), feita em boa parte pela controlada American Bitcoin, listada em bolsa. A empresa também guarda bitcoin em caixa, cujo valor de mercado entra no resultado.",
  "segmentos": [
-  {"nome": "Compute (mineração de bitcoin e nuvem)", "peso_receita": 0.96, "periodo": "3T26", "obs": "US$ 68,4 mi."},
-  {"nome": "Digital Infrastructure (colocation)", "peso_receita": 0.02, "periodo": "3T26", "obs": "US$ 1,4 mi; a joint venture King Mountain entra só no resultado de participações."},
-  {"nome": "Power (gestão de usinas)", "peso_receita": 0.02, "periodo": "3T26", "obs": "US$ 1,3 mi."}
+  {
+   "nome": "Compute (mineração de bitcoin e nuvem)",
+   "peso_receita": 0.96,
+   "periodo": "3T26",
+   "obs": "US$ 68,4 mi."
+  },
+  {
+   "nome": "Digital Infrastructure (colocation)",
+   "peso_receita": 0.02,
+   "periodo": "3T26",
+   "obs": "US$ 1,4 mi; a joint venture King Mountain entra só no resultado de participações."
+  },
+  {
+   "nome": "Power (gestão de usinas)",
+   "peso_receita": 0.02,
+   "periodo": "3T26",
+   "obs": "US$ 1,3 mi."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Miami (EUA), listada também em Toronto. Os grandes campi de IA ficam na Louisiana (River Bend) e no Texas (Beacon Point)."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Miami (EUA), listada também em Toronto. Os grandes campi de IA ficam na Louisiana (River Bend) e no Texas (Beacon Point)."
+ },
  "temas": [
-  {"tema": "Data centers para IA", "relacao": "Tem US$ 26,6 bi em contratos de aluguel no prazo base nos campi River Bend e Beacon Point; o segundo contrato de Beacon Point, de 352 MW e US$ 9,8 bi, foi assinado em julho com um inquilino de alta qualidade de crédito, não nomeado."},
-  {"tema": "Energia", "relacao": "O ativo escasso é a energia: a empresa tem cerca de 7,9 GW em análise ou desenvolvimento e 1,33 GW em construção."},
-  {"tema": "Bitcoin", "relacao": "Guarda cerca de US$ 1,4 bi em bitcoin (metade atribuída à American Bitcoin); a variação de preço move o lucro trimestre a trimestre."}
+  {
+   "tema": "Data centers para IA",
+   "relacao": "Tem US$ 26,6 bi em contratos de aluguel no prazo base nos campi River Bend e Beacon Point; o segundo contrato de Beacon Point, de 352 MW e US$ 9,8 bi, foi assinado em julho com um inquilino de alta qualidade de crédito, não nomeado."
+  },
+  {
+   "tema": "Energia",
+   "relacao": "O ativo escasso é a energia: a empresa tem cerca de 7,9 GW em análise ou desenvolvimento e 1,33 GW em construção."
+  },
+  {
+   "tema": "Bitcoin",
+   "relacao": "Guarda cerca de US$ 1,4 bi em bitcoin (metade atribuída à American Bitcoin); a variação de preço move o lucro trimestre a trimestre."
+  }
  ],
  "diferencial": {
   "texto": "A vantagem está em ter garantido energia e terrenos em grande escala antes da corrida por data centers de IA, o que hoje leva anos para conseguir. Os contratos de longo prazo com pagamento obrigatório (take-or-pay) e o financiamento de US$ 7,5 bi no nível dos projetos, sem recurso à controladora, reduzem a necessidade de emitir ações. Os pontos fracos são que nenhum data center de IA está pronto, os prazos de construção são longos e a concorrência de outras ex-mineradoras e grandes desenvolvedoras é forte.",
-  "concorrentes": ["IREN", "Core Scientific", "Cipher Mining", "TeraWulf", "Applied Digital", "Galaxy Digital"]
+  "concorrentes": [
+   "IREN",
+   "Core Scientific",
+   "Cipher Mining",
+   "TeraWulf",
+   "Applied Digital",
+   "Galaxy Digital"
+  ],
+  "vantagem": {
+   "nivel": "fraca",
+   "resumo": "Energia e terrenos garantidos para data centers e contratos longos, mas sem data center de IA pronto e com rivais fazendo o mesmo."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, os contratos de Beacon Point devem gerar cerca de US$ 1,3 bi de resultado operacional anual médio (NOI) quando prontos, e as primeiras entregas estão previstas para o 2T27 (River Bend), 3T27 (Beacon Point fase 1) e 2T28 (fase 2). A Fluidstack tem preferência sobre mais 1.000 MW de expansão em River Bend. A empresa não divulga projeção de receita nem de lucro.",
   "metricas": [
-   {"rotulo": "Contratos de aluguel no prazo base", "valor": "US$ 26,6 bi", "periodo": "set/2026"},
-   {"rotulo": "Capacidade em construção", "valor": "1.330 MW", "periodo": "set/2026"},
-   {"rotulo": "NOI anual esperado de Beacon Point", "valor": "cerca de US$ 1,3 bi", "periodo": "após entrega"}
+   {
+    "rotulo": "Contratos de aluguel no prazo base",
+    "valor": "US$ 26,6 bi",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Capacidade em construção",
+    "valor": "1.330 MW",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "NOI anual esperado de Beacon Point",
+    "valor": "cerca de US$ 1,3 bi",
+    "periodo": "após entrega"
+   }
   ]
  },
  "saude": {
@@ -60,10 +112,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Hut 8: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926122347/tm2628741d1_ex99-1.htm", "data": "2026-11-04"},
-  {"titulo": "Hut 8: 8-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926122347/0001104659-26-122347-index.htm", "data": "2026-11-04"},
-  {"titulo": "Crypto Briefing: Hut 8 posts $189.5M Q3 profit as revenue falls short of estimates", "url": "https://cryptobriefing.com/hut-8-q3-2026-earnings-beacon-point/", "data": "2026-11-04"},
-  {"titulo": "The Block: Hut 8's 13% selloff over lack of AI tenant", "url": "https://www.theblock.co/amp/post/377788/hut-8-13-selloff-lack-ai-tenant-short-sighted-says-benchmark-after-record-quarter", "data": "2026-11"}
+  {
+   "titulo": "Hut 8: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926122347/tm2628741d1_ex99-1.htm",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Hut 8: 8-K do 3T26 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926122347/0001104659-26-122347-index.htm",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Crypto Briefing: Hut 8 posts $189.5M Q3 profit as revenue falls short of estimates",
+   "url": "https://cryptobriefing.com/hut-8-q3-2026-earnings-beacon-point/",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "The Block: Hut 8's 13% selloff over lack of AI tenant",
+   "url": "https://www.theblock.co/amp/post/377788/hut-8-13-selloff-lack-ai-tenant-short-sighted-says-benchmark-after-record-quarter",
+   "data": "2026-11"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

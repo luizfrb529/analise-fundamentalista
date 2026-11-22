@@ -5,22 +5,59 @@
  "modelo": "A Credo projeta chips de transmissão de dados (SerDes, DSPs ópticos, retimers) e vende tanto os chips quanto produtos prontos, como cabos elétricos ativos ZeroFlap e transceptores ópticos, a grandes nuvens e fabricantes de equipamentos. Terceiriza a fabricação. Em 2026 comprou a DustPhotonics, de chips de fotônica de silício, por cerca de US$ 1,3 bi, segundo a imprensa, para crescer em conexões ópticas.",
  "segmentos": [],
  "segmentos_base": "Empresa não divulga receita por produto no release",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede formal nas Ilhas Cayman e operação principal na Califórnia (EUA), com engenharia na Ásia; vende a nuvens americanas e montadoras na Ásia."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede formal nas Ilhas Cayman e operação principal na Califórnia (EUA), com engenharia na Ásia; vende a nuvens americanas e montadoras na Ásia."
+ },
  "temas": [
-  {"tema": "Infraestrutura de IA", "relacao": "Clusters de IA usam milhares de cabos e conexões; os AECs da Credo gastam menos energia que cabos ópticos em distâncias curtas e falham menos."},
-  {"tema": "Conexões ópticas", "relacao": "Com a DustPhotonics passou a vender chips de fotônica de silício para transceptores de 800G e 1,6T; a imprensa cita expectativa de mais de US$ 600 mi em receita óptica no ano fiscal."},
-  {"tema": "Eficiência energética", "relacao": "Energia é o gargalo dos data centers de IA, e conexões de menor consumo ganham espaço."}
+  {
+   "tema": "Infraestrutura de IA",
+   "relacao": "Clusters de IA usam milhares de cabos e conexões; os AECs da Credo gastam menos energia que cabos ópticos em distâncias curtas e falham menos."
+  },
+  {
+   "tema": "Conexões ópticas",
+   "relacao": "Com a DustPhotonics passou a vender chips de fotônica de silício para transceptores de 800G e 1,6T; a imprensa cita expectativa de mais de US$ 600 mi em receita óptica no ano fiscal."
+  },
+  {
+   "tema": "Eficiência energética",
+   "relacao": "Energia é o gargalo dos data centers de IA, e conexões de menor consumo ganham espaço."
+  }
  ],
  "diferencial": {
   "texto": "A Credo criou praticamente o mercado de cabos elétricos ativos e domina tecnologia própria de SerDes de baixo consumo, base de todos os seus produtos. Vender o produto pronto, e não só o chip, dá mais receita por cliente. Os pontos fracos são a enorme concentração de clientes (quatro clientes eram cerca de 84% da receita, segundo a imprensa), a integração da DustPhotonics e a concorrência de Broadcom, Marvell e Astera Labs.",
-  "concorrentes": ["Broadcom", "Marvell", "Astera Labs", "Amphenol", "Coherent", "MaxLinear"]
+  "concorrentes": [
+   "Broadcom",
+   "Marvell",
+   "Astera Labs",
+   "Amphenol",
+   "Coherent",
+   "MaxLinear"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Pioneira em cabos elétricos ativos com tecnologia própria de baixo consumo, mas com clientes muito concentrados."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do trimestre encerrado em outubro deve ficar entre US$ 525 mi e US$ 535 mi, com margem bruta ajustada de 67% a 69%. A imprensa cita expectativa de crescimento acima de 85% no ano fiscal 2027 (maio de 2026 a abril de 2027). O potencial vem dos novos clusters de IA, da migração para 1,6T e da entrada em ótica.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 525 mi a US$ 535 mi", "periodo": "trimestre até out/2026"},
-   {"rotulo": "Crescimento da receita em um ano", "valor": "115%", "periodo": "3T26"},
-   {"rotulo": "Margem bruta ajustada", "valor": "68,0%", "periodo": "3T26"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 525 mi a US$ 535 mi",
+    "periodo": "trimestre até out/2026"
+   },
+   {
+    "rotulo": "Crescimento da receita em um ano",
+    "valor": "115%",
+    "periodo": "3T26"
+   },
+   {
+    "rotulo": "Margem bruta ajustada",
+    "valor": "68,0%",
+    "periodo": "3T26"
+   }
   ]
  },
  "saude": {
@@ -55,10 +92,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Credo: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm", "data": "2026-09-01"},
-  {"titulo": "Credo: 8-K do 1T27 fiscal (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/0001628280-26-059795-index.htm", "data": "2026-09-01"},
-  {"titulo": "Zacks: Credo's optical bet is a $600M revenue opportunity taking shape", "url": "https://www.zacks.com/stock/news/2983576/credos-optical-bet-is-a-600m-revenue-opportunity-taking-shape", "data": "2026-09"},
-  {"titulo": "Pulse 2.0: Credo reports Q1 fiscal 2027 revenue of $479 million", "url": "https://pulse2.com/credo-reports-q1-fiscal-2027-revenue-of-479-million-up-115-year-over-year/", "data": "2026-09"}
+  {
+   "titulo": "Credo: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm",
+   "data": "2026-09-01"
+  },
+  {
+   "titulo": "Credo: 8-K do 1T27 fiscal (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/0001628280-26-059795-index.htm",
+   "data": "2026-09-01"
+  },
+  {
+   "titulo": "Zacks: Credo's optical bet is a $600M revenue opportunity taking shape",
+   "url": "https://www.zacks.com/stock/news/2983576/credos-optical-bet-is-a-600m-revenue-opportunity-taking-shape",
+   "data": "2026-09"
+  },
+  {
+   "titulo": "Pulse 2.0: Credo reports Q1 fiscal 2027 revenue of $479 million",
+   "url": "https://pulse2.com/credo-reports-q1-fiscal-2027-revenue-of-479-million-up-115-year-over-year/",
+   "data": "2026-09"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

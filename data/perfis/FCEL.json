@@ -4,27 +4,81 @@
  "resumo": "Fabricante americana de células a combustível de carbonato que geram eletricidade no local a partir de gás natural ou biogás, agora voltada a data centers. Receita em queda e prejuízo, mas US$ 737 mi em caixa após emissão de ações.",
  "modelo": "A FuelCell Energy fabrica em Torrington (Connecticut) usinas de células a combustível e as vende, opera usinas próprias vendendo energia em contratos de longo prazo (geração) e presta serviços de manutenção; também desenvolve tecnologia de captura de carbono e hidrogênio. Busca contratos para fornecer energia de base a data centers.",
  "segmentos": [
-  {"nome": "Produtos", "peso_receita": 0.55, "periodo": "3T26", "obs": "US$ 18,0 mi, queda de 31%."},
-  {"nome": "Geração de energia", "peso_receita": 0.27, "periodo": "3T26", "obs": "US$ 8,8 mi, queda de 29%."},
-  {"nome": "Tecnologias avançadas", "peso_receita": 0.12, "periodo": "3T26", "obs": "US$ 3,8 mi."},
-  {"nome": "Serviços", "peso_receita": 0.07, "periodo": "3T26", "obs": "US$ 2,4 mi."}
+  {
+   "nome": "Produtos",
+   "peso_receita": 0.55,
+   "periodo": "3T26",
+   "obs": "US$ 18,0 mi, queda de 31%."
+  },
+  {
+   "nome": "Geração de energia",
+   "peso_receita": 0.27,
+   "periodo": "3T26",
+   "obs": "US$ 8,8 mi, queda de 29%."
+  },
+  {
+   "nome": "Tecnologias avançadas",
+   "peso_receita": 0.12,
+   "periodo": "3T26",
+   "obs": "US$ 3,8 mi."
+  },
+  {
+   "nome": "Serviços",
+   "peso_receita": 0.07,
+   "periodo": "3T26",
+   "obs": "US$ 2,4 mi."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Connecticut (EUA); clientes nos EUA e na Coreia do Sul, com fábrica em Torrington."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Connecticut (EUA); clientes nos EUA e na Coreia do Sul, com fábrica em Torrington."
+ },
  "temas": [
-  {"tema": "Energia para data centers", "relacao": "Fechou acordo com a Fit Energy para até 380 MW para data centers (primeira fase de 30 MW firme) e, após o trimestre, uma reserva de capacidade para um data center de 75 MW no Texas."},
-  {"tema": "Geração distribuída", "relacao": "Data centers buscam energia no local para não esperar conexão à rede, o que abre espaço para células a combustível."}
+  {
+   "tema": "Energia para data centers",
+   "relacao": "Fechou acordo com a Fit Energy para até 380 MW para data centers (primeira fase de 30 MW firme) e, após o trimestre, uma reserva de capacidade para um data center de 75 MW no Texas."
+  },
+  {
+   "tema": "Geração distribuída",
+   "relacao": "Data centers buscam energia no local para não esperar conexão à rede, o que abre espaço para células a combustível."
+  }
  ],
  "diferencial": {
   "texto": "A tecnologia de carbonato fundido gera energia de base com alta eficiência, pode usar biogás e capturar carbono, e a empresa tem décadas de experiência e fábrica própria nos EUA. Os pontos fracos são o histórico longo de prejuízos, a escala pequena, a concorrência direta da Bloom Energy, muito maior, e o fato de grande parte da carteira ser reserva, não pedido firme.",
-  "concorrentes": ["Bloom Energy", "GE Vernova", "Caterpillar", "Cummins", "Plug Power", "Siemens Energy"]
+  "concorrentes": [
+   "Bloom Energy",
+   "GE Vernova",
+   "Caterpillar",
+   "Cummins",
+   "Plug Power",
+   "Siemens Energy"
+  ],
+  "vantagem": {
+   "nivel": "nenhuma clara",
+   "resumo": "Tecnologia de células a combustível com histórico longo de prejuízos, escala pequena e concorrente bem maior (Bloom)."
+  }
  },
  "potencial": {
   "texto": "A empresa mira Ebitda ajustado positivo no trimestre até outubro de 2027, produção anualizada de 100 MW a partir de outubro de 2026 e ampliação de Torrington para 500 MW até junho de 2028. A carteira firme é de US$ 1,3 bi e há mais US$ 2,35 bi em capacidade concedida, ainda não firme, e um funil de cerca de 10 GW. Não há projeção de receita.",
   "metricas": [
-   {"rotulo": "Carteira firme", "valor": "US$ 1,3 bi", "periodo": "jul/2026"},
-   {"rotulo": "Capacidade concedida (não firme)", "valor": "US$ 2,35 bi", "periodo": "jul/2026"},
-   {"rotulo": "Meta de capacidade da fábrica", "valor": "500 MW", "periodo": "jun/2028"}
+   {
+    "rotulo": "Carteira firme",
+    "valor": "US$ 1,3 bi",
+    "periodo": "jul/2026"
+   },
+   {
+    "rotulo": "Capacidade concedida (não firme)",
+    "valor": "US$ 2,35 bi",
+    "periodo": "jul/2026"
+   },
+   {
+    "rotulo": "Meta de capacidade da fábrica",
+    "valor": "500 MW",
+    "periodo": "jun/2028"
+   }
   ]
  },
  "saude": {
@@ -60,10 +114,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "FuelCell: resultados do 3T fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/886128/000110465926104498/fcel-20260902xex99d1.htm", "data": "2026-09-02"},
-  {"titulo": "Nasdaq/Zacks: FCEL Q3 loss wider than expected on Fit Energy charges", "url": "https://www.nasdaq.com/articles/fcel-q3-loss-wider-expected-fit-energy-charges", "data": "2026-09"},
-  {"titulo": "Quiver Quant: FuelCell Energy Q3 revenue falls 29% to $33 million", "url": "https://www.quiverquant.com/news/FuelCell+Energy+Q3+Revenue+Falls+29%25+to+%2433+Million", "data": "2026-09"},
-  {"titulo": "Finviz: FuelCell executes first data center power agreement", "url": "https://finviz.com/news/387919/fuelcell-energy-reports-third-fiscal-quarter-2026-results-executes-first-data-center-power-agreement-increases-annualized-production-rate-focuses-on-capacity-expansion", "data": "2026-09"}
+  {
+   "titulo": "FuelCell: resultados do 3T fiscal 2026 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/886128/000110465926104498/fcel-20260902xex99d1.htm",
+   "data": "2026-09-02"
+  },
+  {
+   "titulo": "Nasdaq/Zacks: FCEL Q3 loss wider than expected on Fit Energy charges",
+   "url": "https://www.nasdaq.com/articles/fcel-q3-loss-wider-expected-fit-energy-charges",
+   "data": "2026-09"
+  },
+  {
+   "titulo": "Quiver Quant: FuelCell Energy Q3 revenue falls 29% to $33 million",
+   "url": "https://www.quiverquant.com/news/FuelCell+Energy+Q3+Revenue+Falls+29%25+to+%2433+Million",
+   "data": "2026-09"
+  },
+  {
+   "titulo": "Finviz: FuelCell executes first data center power agreement",
+   "url": "https://finviz.com/news/387919/fuelcell-energy-reports-third-fiscal-quarter-2026-results-executes-first-data-center-power-agreement-increases-annualized-production-rate-focuses-on-capacity-expansion",
+   "data": "2026-09"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

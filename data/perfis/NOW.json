@@ -4,25 +4,69 @@
  "resumo": "Plataforma americana de software na nuvem que automatiza processos de TI, atendimento, RH e segurança em grandes empresas, agora com agentes de IA. Receita de assinaturas crescendo cerca de 21% ao ano, com alta margem ajustada e forte geração de caixa.",
  "modelo": "A ServiceNow vende assinaturas da plataforma Now, usada por grandes empresas e governos para organizar pedidos, incidentes, fluxos de trabalho e atendimento a clientes e funcionários. Cobra por usuário e por produto, com pacotes de IA (Now Assist, Pro Plus) e agentes de IA cobrados por consumo. Em 2026 fez grandes aquisições, como a Armis, de segurança de dispositivos, e a Veza, de identidade.",
  "segmentos": [
-  {"nome": "Assinaturas", "peso_receita": 0.97, "periodo": "3T26", "obs": "US$ 3,99 bi, alta de 21%."},
-  {"nome": "Serviços profissionais", "peso_receita": 0.03, "periodo": "3T26", "obs": null}
+  {
+   "nome": "Assinaturas",
+   "peso_receita": 0.97,
+   "periodo": "3T26",
+   "obs": "US$ 3,99 bi, alta de 21%."
+  },
+  {
+   "nome": "Serviços profissionais",
+   "peso_receita": 0.03,
+   "periodo": "3T26",
+   "obs": null
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA); cerca de dois terços da receita vem da América do Norte, com o restante sobretudo na Europa e Ásia."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede na Califórnia (EUA); cerca de dois terços da receita vem da América do Norte, com o restante sobretudo na Europa e Ásia."
+ },
  "temas": [
-  {"tema": "Agentes de IA nas empresas", "relacao": "Elevou a meta de novos contratos anuais de IA em 2026 para US$ 1,7 bi, contra US$ 1 bi no início do ano, e o consumo de agentes de IA em produção subiu mais de 13 vezes no ano."},
-  {"tema": "Cibersegurança", "relacao": "Com Armis e Veza, montou uma central de controle de segurança e identidade para agentes de IA e dispositivos."}
+  {
+   "tema": "Agentes de IA nas empresas",
+   "relacao": "Elevou a meta de novos contratos anuais de IA em 2026 para US$ 1,7 bi, contra US$ 1 bi no início do ano, e o consumo de agentes de IA em produção subiu mais de 13 vezes no ano."
+  },
+  {
+   "tema": "Cibersegurança",
+   "relacao": "Com Armis e Veza, montou uma central de controle de segurança e identidade para agentes de IA e dispositivos."
+  }
  ],
  "diferencial": {
   "texto": "A ServiceNow é o padrão em gestão de serviços de TI nas maiores empresas do mundo e está profundamente integrada aos processos dos clientes, o que torna a troca cara e lenta. Uma única plataforma e base de dados facilitam a venda de novos produtos e de IA. Os pontos fracos são a concorrência de Salesforce e Microsoft em IA corporativa, a avaliação de mercado exigente e a integração das grandes aquisições de 2026.",
-  "concorrentes": ["Salesforce", "Microsoft", "Atlassian", "Workday", "SAP", "Zendesk"]
+  "concorrentes": [
+   "Salesforce",
+   "Microsoft",
+   "Atlassian",
+   "Workday",
+   "SAP",
+   "Zendesk"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Padrão em gestão de serviços de TI nas maiores empresas, profundamente integrado aos processos, com troca cara e demorada."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita de assinaturas de 2026 deve ficar entre US$ 15,78 bi e US$ 15,79 bi (alta de 22,5%), com margem operacional ajustada de 31,5% e margem de caixa livre de 36%; para o 4T26, a receita de assinaturas deve ser de US$ 4,245 bi a US$ 4,255 bi. Os contratos a cumprir somam US$ 29,7 bi, e há 680 clientes com mais de US$ 5 mi de contrato anual.",
   "metricas": [
-   {"rotulo": "Receita de assinaturas projetada", "valor": "US$ 15,78 bi a US$ 15,79 bi", "periodo": "2026"},
-   {"rotulo": "Contratos a cumprir (RPO)", "valor": "US$ 29,7 bi", "periodo": "set/2026"},
-   {"rotulo": "Meta de novos contratos de IA", "valor": "US$ 1,7 bi", "periodo": "2026"}
+   {
+    "rotulo": "Receita de assinaturas projetada",
+    "valor": "US$ 15,78 bi a US$ 15,79 bi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Contratos a cumprir (RPO)",
+    "valor": "US$ 29,7 bi",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Meta de novos contratos de IA",
+    "valor": "US$ 1,7 bi",
+    "periodo": "2026"
+   }
   ]
  },
  "saude": {
@@ -57,10 +101,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "ServiceNow: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000092/erq3fy26.htm", "data": "2026-10-28"},
-  {"titulo": "Constellation Research: ServiceNow Q3 mixed, but strong Control Tower demand", "url": "https://www.constellationr.com/insights/news/servicenow-q3-mixed-strong-control-tower-demand", "data": "2026-10"},
-  {"titulo": "Diginomica: ServiceNow Q3 2026", "url": "https://diginomica.com/node/31392", "data": "2026-10"},
-  {"titulo": "Investing News: ServiceNow reports third quarter 2026 financial results", "url": "https://investingnews.com/servicenow-reports-third-quarter-2026-financial-results/", "data": "2026-10-28"}
+  {
+   "titulo": "ServiceNow: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000092/erq3fy26.htm",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "Constellation Research: ServiceNow Q3 mixed, but strong Control Tower demand",
+   "url": "https://www.constellationr.com/insights/news/servicenow-q3-mixed-strong-control-tower-demand",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "Diginomica: ServiceNow Q3 2026",
+   "url": "https://diginomica.com/node/31392",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "Investing News: ServiceNow reports third quarter 2026 financial results",
+   "url": "https://investingnews.com/servicenow-reports-third-quarter-2026-financial-results/",
+   "data": "2026-10-28"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

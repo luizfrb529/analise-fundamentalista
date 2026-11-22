@@ -4,27 +4,79 @@
  "resumo": "Ex-mineradora de bitcoin que se tornou operadora de data centers para IA, com a CoreWeave e a AMD como clientes. A receita quase triplicou em um ano, mas a dívida é alta e o lucro contábil oscila muito por causa de bônus de subscrição.",
  "modelo": "A Core Scientific converte suas antigas fazendas de mineração em data centers de alta densidade e aluga o espaço e a energia (colocation) por 12 a 15 anos, com pagamento obrigatório e reajuste anual. O cliente paga os equipamentos e a energia. A mineração de bitcoin própria e a hospedagem de máquinas de terceiros estão encolhendo.",
  "segmentos": [
-  {"nome": "Colocation (data centers para IA)", "peso_receita": 0.92, "periodo": "3T26", "obs": "US$ 215,4 mi, contra US$ 15,0 mi no 3T25."},
-  {"nome": "Mineração própria de bitcoin", "peso_receita": 0.05, "periodo": "3T26", "obs": "US$ 12,3 mi, com margem bruta negativa."},
-  {"nome": "Hospedagem de mineração", "peso_receita": 0.02, "periodo": "3T26", "obs": "US$ 5,2 mi."}
+  {
+   "nome": "Colocation (data centers para IA)",
+   "peso_receita": 0.92,
+   "periodo": "3T26",
+   "obs": "US$ 215,4 mi, contra US$ 15,0 mi no 3T25."
+  },
+  {
+   "nome": "Mineração própria de bitcoin",
+   "peso_receita": 0.05,
+   "periodo": "3T26",
+   "obs": "US$ 12,3 mi, com margem bruta negativa."
+  },
+  {
+   "nome": "Hospedagem de mineração",
+   "peso_receita": 0.02,
+   "periodo": "3T26",
+   "obs": "US$ 5,2 mi."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "texto": "Sede no Texas (EUA), com cerca de 1,1 GW em sete estados: Texas, Geórgia, Oklahoma, Carolina do Norte, Alabama, Kentucky e Dakota do Norte."},
+ "geografia": {
+  "eua_pct": 1.0,
+  "exterior_pct": 0.0,
+  "periodo": "3T26",
+  "texto": "Sede no Texas (EUA), com cerca de 1,1 GW em sete estados: Texas, Geórgia, Oklahoma, Carolina do Norte, Alabama, Kentucky e Dakota do Norte."
+ },
  "temas": [
-  {"tema": "Data centers para IA", "relacao": "Aluga cerca de 590 MW à CoreWeave (485 MW já faturando) e assinou em julho 530 MW com a AMD e uma nuvem apoiada pela AMD, com entregas de 2027 a 2028."},
-  {"tema": "Energia", "relacao": "O acesso a energia já ligada à rede, herdado da mineração, é o ativo mais valioso num momento em que novas conexões demoram anos."},
-  {"tema": "Bitcoin", "relacao": "A mineração virou atividade secundária e deu prejuízo bruto no 3T26."}
+  {
+   "tema": "Data centers para IA",
+   "relacao": "Aluga cerca de 590 MW à CoreWeave (485 MW já faturando) e assinou em julho 530 MW com a AMD e uma nuvem apoiada pela AMD, com entregas de 2027 a 2028."
+  },
+  {
+   "tema": "Energia",
+   "relacao": "O acesso a energia já ligada à rede, herdado da mineração, é o ativo mais valioso num momento em que novas conexões demoram anos."
+  },
+  {
+   "tema": "Bitcoin",
+   "relacao": "A mineração virou atividade secundária e deu prejuízo bruto no 3T26."
+  }
  ],
  "diferencial": {
   "texto": "A empresa tem energia e instalações prontas para converter, o que encurta o prazo de entrega para clientes de IA. Os contratos são longos, com pagamento obrigatório e margem esperada de 80% a 85% segundo a empresa, e somam mais de US$ 24 bi contratados. Os pontos fracos são a concentração na CoreWeave, a dívida de US$ 4,3 bi, o investimento pesado ainda a financiar para os projetos da AMD e a concorrência de outras ex-mineradoras e grandes operadoras de data centers.",
-  "concorrentes": ["IREN", "Hut 8", "Applied Digital", "Cipher Mining", "TeraWulf", "Equinix"]
+  "concorrentes": [
+   "IREN",
+   "Hut 8",
+   "Applied Digital",
+   "Cipher Mining",
+   "TeraWulf",
+   "Equinix"
+  ],
+  "vantagem": {
+   "nivel": "fraca",
+   "resumo": "Instalações com energia já conectada e contratos longos, mas cliente muito concentrado e dívida alta."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a carteira de cerca de 1,1 GW deve gerar em média US$ 1,8 bi de receita anual recorrente e US$ 1,6 bi de resultado operacional (NOI) quando todo entregue. A CoreWeave deve estar completa no início de 2027 e a AMD até o fim de 2028. Há cerca de 170 MW ainda sem cliente e mais de 2 GW em novos locais em análise. A imprensa lembra que a empresa ainda precisa financiar cerca de US$ 4,4 bi de investimentos nos próximos 24 meses. Não há projeção numérica no release.",
   "metricas": [
-   {"rotulo": "Receita contratada", "valor": "mais de US$ 24 bi", "periodo": "nov/2026"},
-   {"rotulo": "MW faturando", "valor": "485 MW", "periodo": "set/2026"},
-   {"rotulo": "Contrato AMD", "valor": "530 MW", "periodo": "entregas 2027 a 2028"}
+   {
+    "rotulo": "Receita contratada",
+    "valor": "mais de US$ 24 bi",
+    "periodo": "nov/2026"
+   },
+   {
+    "rotulo": "MW faturando",
+    "valor": "485 MW",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Contrato AMD",
+    "valor": "530 MW",
+    "periodo": "entregas 2027 a 2028"
+   }
   ]
  },
  "saude": {
@@ -60,10 +112,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Core Scientific: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000028/q32026corescientificinc-ea.htm", "data": "2026-11-05"},
-  {"titulo": "Core Scientific: apresentação do 3T26 (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000028/q3fy26earningsdeckvfinal.htm", "data": "2026-11-05"},
-  {"titulo": "Blockspace: Core Scientific colocation revenue rises 58% to $215 million", "url": "https://blockspace.media/insight/core-scientific-colocation-revenue-rises/", "data": "2026-11"},
-  {"titulo": "Quartr: Core Scientific Q3 2026 earnings summary", "url": "https://quartr.com/events/core-scientific-inc-corz-q3-2026_oqh0bodn", "data": "2026-11"}
+  {
+   "titulo": "Core Scientific: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000028/q32026corescientificinc-ea.htm",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Core Scientific: apresentação do 3T26 (8-K, Exhibit 99.2, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000028/q3fy26earningsdeckvfinal.htm",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Blockspace: Core Scientific colocation revenue rises 58% to $215 million",
+   "url": "https://blockspace.media/insight/core-scientific-colocation-revenue-rises/",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "Quartr: Core Scientific Q3 2026 earnings summary",
+   "url": "https://quartr.com/events/core-scientific-inc-corz-q3-2026_oqh0bodn",
+   "data": "2026-11"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

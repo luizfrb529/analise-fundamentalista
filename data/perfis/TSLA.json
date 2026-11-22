@@ -4,27 +4,79 @@
  "resumo": "Maior fabricante de carros elétricos dos EUA, que também vende baterias para a rede elétrica e aposta em robotáxis (Cybercab), direção autônoma (FSD) e robôs humanoides (Optimus). Lucrativa, mas com margens baixas e vendas de carros estagnadas.",
  "modelo": "A Tesla vende carros elétricos (Model 3, Y, S, X, Cybertruck, Semi) com venda direta, sem concessionárias, além do software de direção autônoma FSD por assinatura, serviços, peças, seguro e recarga (Superchargers). O segmento de energia vende baterias Megapack e Powerwall. A aposta de longo prazo é operar uma frota de robotáxis e vender robôs Optimus.",
  "segmentos": [
-  {"nome": "Automotivo", "peso_receita": 0.73, "periodo": "3T26", "obs": "US$ 20,6 bi, queda de 3%; créditos regulatórios caíram para US$ 113 mi."},
-  {"nome": "Serviços e outros", "peso_receita": 0.16, "periodo": "3T26", "obs": "US$ 4,6 bi, alta de 33%."},
-  {"nome": "Energia (baterias e solar)", "peso_receita": 0.10, "periodo": "3T26", "obs": "US$ 2,9 bi, queda de 16%; 13,7 GWh instalados."}
+  {
+   "nome": "Automotivo",
+   "peso_receita": 0.73,
+   "periodo": "3T26",
+   "obs": "US$ 20,6 bi, queda de 3%; créditos regulatórios caíram para US$ 113 mi."
+  },
+  {
+   "nome": "Serviços e outros",
+   "peso_receita": 0.16,
+   "periodo": "3T26",
+   "obs": "US$ 4,6 bi, alta de 33%."
+  },
+  {
+   "nome": "Energia (baterias e solar)",
+   "peso_receita": 0.1,
+   "periodo": "3T26",
+   "obs": "US$ 2,9 bi, queda de 16%; 13,7 GWh instalados."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede no Texas (EUA), com fábricas na Califórnia, Texas, Nevada, Xangai (China) e Berlim (Alemanha); vende principalmente nos EUA, China e Europa."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede no Texas (EUA), com fábricas na Califórnia, Texas, Nevada, Xangai (China) e Berlim (Alemanha); vende principalmente nos EUA, China e Europa."
+ },
  "temas": [
-  {"tema": "Carros autônomos", "relacao": "O Cybercab começou a fazer corridas de robotáxi em Austin em setembro, com quase 2 milhões de milhas sem motorista acumuladas; o FSD foi aprovado em nove países europeus e tem 1,74 milhão de assinaturas."},
-  {"tema": "Robôs e IA", "relacao": "A produção do robô Optimus começou em Fremont e a empresa mira 400 MW de capacidade de treinamento de IA até o fim do ano."},
-  {"tema": "Armazenamento de energia", "relacao": "A Megafactory do Texas começou a produzir, com capacidade planejada de 50 GWh."}
+  {
+   "tema": "Carros autônomos",
+   "relacao": "O Cybercab começou a fazer corridas de robotáxi em Austin em setembro, com quase 2 milhões de milhas sem motorista acumuladas; o FSD foi aprovado em nove países europeus e tem 1,74 milhão de assinaturas."
+  },
+  {
+   "tema": "Robôs e IA",
+   "relacao": "A produção do robô Optimus começou em Fremont e a empresa mira 400 MW de capacidade de treinamento de IA até o fim do ano."
+  },
+  {
+   "tema": "Armazenamento de energia",
+   "relacao": "A Megafactory do Texas começou a produzir, com capacidade planejada de 50 GWh."
+  }
  ],
  "diferencial": {
   "texto": "A Tesla tem marca global, escala de produção de elétricos, rede própria de recarga e enorme volume de dados de direção coletados da frota, base do FSD. Fabrica baterias e software próprios, o que dá controle de custo. Os pontos fracos são a queda nas vendas de carros diante da concorrência chinesa (BYD) e do fim de incentivos, a margem operacional baixa (2,6%) e o fato de grande parte do valor de mercado depender de robotáxis e robôs ainda em fase inicial.",
-  "concorrentes": ["BYD", "Waymo", "Volkswagen", "GM", "Xiaomi", "Fluence"]
+  "concorrentes": [
+   "BYD",
+   "Waymo",
+   "Volkswagen",
+   "GM",
+   "Xiaomi",
+   "Fluence"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Marca global, escala em carros elétricos, rede de recarga e dados de direção da frota, mas sob forte concorrência chinesa."
+  }
  },
  "potencial": {
   "texto": "A empresa não dá projeções numéricas no relatório. O potencial apontado vem da expansão do robotáxi (capacidade de mais de 125 mil Cybercabs por ano), do FSD na Europa, do caminhão Semi, que entrou em produção em volume em Nevada, e do Optimus. A receita de serviços e energia ganha peso frente aos carros.",
   "metricas": [
-   {"rotulo": "Assinaturas ativas do FSD", "valor": "1,74 milhão", "periodo": "set/2026"},
-   {"rotulo": "Capacidade do Cybercab", "valor": "mais de 125 mil por ano", "periodo": "2026"},
-   {"rotulo": "Entregas de veículos", "valor": "486.532", "periodo": "3T26"}
+   {
+    "rotulo": "Assinaturas ativas do FSD",
+    "valor": "1,74 milhão",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Capacidade do Cybercab",
+    "valor": "mais de 125 mil por ano",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Entregas de veículos",
+    "valor": "486.532",
+    "periodo": "3T26"
+   }
   ]
  },
  "saude": {
@@ -60,10 +112,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Tesla: relatório do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm", "data": "2026-10-21"},
-  {"titulo": "Electrek: Tesla Q3 2026 financial results", "url": "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/", "data": "2026-10-21"},
-  {"titulo": "Drive Tesla Canada: Tesla Q3 2026 earnings", "url": "https://driveteslacanada.ca/news/tesla-q3-2026-earnings-results/", "data": "2026-10-21"},
-  {"titulo": "Tesla North: Tesla Q3 2026 earnings", "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-earnings/", "data": "2026-10-21"}
+  {
+   "titulo": "Tesla: relatório do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "Electrek: Tesla Q3 2026 financial results",
+   "url": "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "Drive Tesla Canada: Tesla Q3 2026 earnings",
+   "url": "https://driveteslacanada.ca/news/tesla-q3-2026-earnings-results/",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "Tesla North: Tesla Q3 2026 earnings",
+   "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-earnings/",
+   "data": "2026-10-21"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

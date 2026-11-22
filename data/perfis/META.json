@@ -4,26 +4,73 @@
  "resumo": "Dona do Facebook, Instagram, WhatsApp e Messenger, usados por 3,64 bilhões de pessoas por dia, e uma das que mais investem em IA no mundo. Muito lucrativa com publicidade, mas com gastos recordes em data centers e prejuízo bilionário em realidade virtual.",
  "modelo": "A Meta ganha quase toda a receita vendendo anúncios em seus aplicativos (Family of Apps), com segmentação feita por IA. O segmento Reality Labs desenvolve óculos inteligentes (Ray-Ban Meta), realidade virtual (Quest) e o metaverso, ainda com grande prejuízo. A empresa constrói seus próprios data centers e modelos de IA, como o Muse, lançado em 2026.",
  "segmentos": [
-  {"nome": "Family of Apps (anúncios)", "peso_receita": 0.99, "periodo": "3T26", "obs": "US$ 64,2 bi; lucro operacional de US$ 17,1 bi, reduzido por acordo judicial."},
-  {"nome": "Reality Labs", "peso_receita": 0.01, "periodo": "3T26", "obs": "US$ 443 mi; prejuízo operacional de US$ 4,1 bi."}
+  {
+   "nome": "Family of Apps (anúncios)",
+   "peso_receita": 0.99,
+   "periodo": "3T26",
+   "obs": "US$ 64,2 bi; lucro operacional de US$ 17,1 bi, reduzido por acordo judicial."
+  },
+  {
+   "nome": "Reality Labs",
+   "peso_receita": 0.01,
+   "periodo": "3T26",
+   "obs": "US$ 443 mi; prejuízo operacional de US$ 4,1 bi."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA); usuários no mundo todo, com a maior receita por usuário nos EUA e Canadá."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede na Califórnia (EUA); usuários no mundo todo, com a maior receita por usuário nos EUA e Canadá."
+ },
  "temas": [
-  {"tema": "Inteligência artificial", "relacao": "Lançou o Muse, seu primeiro modelo de fronteira, que passou de 10 milhões de contas, segundo a imprensa; a empresa diz que a IA já gera receita adicional relevante em anúncios."},
-  {"tema": "Data centers", "relacao": "Prevê investir de US$ 135 bi a US$ 145 bi em 2026 e diz que seguirá investindo agressivamente em 2027."},
-  {"tema": "Regulação e processos", "relacao": "Registrou despesa de US$ 9,89 bi no 3T26 por acordo com estados americanos sobre saúde mental de adolescentes, de até cerca de US$ 18,6 bi no total."}
+  {
+   "tema": "Inteligência artificial",
+   "relacao": "Lançou o Muse, seu primeiro modelo de fronteira, que passou de 10 milhões de contas, segundo a imprensa; a empresa diz que a IA já gera receita adicional relevante em anúncios."
+  },
+  {
+   "tema": "Data centers",
+   "relacao": "Prevê investir de US$ 135 bi a US$ 145 bi em 2026 e diz que seguirá investindo agressivamente em 2027."
+  },
+  {
+   "tema": "Regulação e processos",
+   "relacao": "Registrou despesa de US$ 9,89 bi no 3T26 por acordo com estados americanos sobre saúde mental de adolescentes, de até cerca de US$ 18,6 bi no total."
+  }
  ],
  "diferencial": {
   "texto": "A Meta tem a maior rede de usuários do mundo e enormes dados de comportamento, o que dá aos anunciantes alcance e segmentação difíceis de igualar; o efeito de rede protege os aplicativos. A escala permite financiar data centers e modelos de IA próprios com o caixa da publicidade. Os pontos fracos são o investimento gigantesco com retorno incerto, o prejuízo de Reality Labs, os processos judiciais e a regulação sobre privacidade e jovens.",
-  "concorrentes": ["Alphabet (Google e YouTube)", "TikTok (ByteDance)", "Amazon", "Snap", "OpenAI", "Apple"]
+  "concorrentes": [
+   "Alphabet (Google e YouTube)",
+   "TikTok (ByteDance)",
+   "Amazon",
+   "Snap",
+   "OpenAI",
+   "Apple"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Maior rede de usuários do mundo, com efeito de rede e dados de comportamento que dão aos anunciantes alcance difícil de igualar."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do 4T26 deve ficar entre US$ 73 bi e US$ 76 bi, com despesas totais de 2026 entre US$ 175 bi e US$ 179 bi. Reality Labs deve perder US$ 18 bi a US$ 19 bi em 2026 e cerca de US$ 15 bi em 2027. Em janeiro de 2027 a empresa vai distribuir uma nova ação classe C sem voto, que deve funcionar como desdobramento de 2 para 1.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 73 bi a US$ 76 bi", "periodo": "4T26"},
-   {"rotulo": "Investimento projetado", "valor": "US$ 135 bi a US$ 145 bi", "periodo": "2026"},
-   {"rotulo": "Pessoas ativas por dia", "valor": "3,64 bilhões", "periodo": "set/2026"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 73 bi a US$ 76 bi",
+    "periodo": "4T26"
+   },
+   {
+    "rotulo": "Investimento projetado",
+    "valor": "US$ 135 bi a US$ 145 bi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Pessoas ativas por dia",
+    "valor": "3,64 bilhões",
+    "periodo": "set/2026"
+   }
   ]
  },
  "saude": {
@@ -59,10 +106,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Meta: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm", "data": "2026-10-21"},
-  {"titulo": "Fortune: Meta Q3 earnings, Zuckerberg, capex and Muse", "url": "https://fortune.com/2026/10/21/meta-q3-earnings-mark-zuckerberg-capex-muse/", "data": "2026-10-21"},
-  {"titulo": "AP (KSAT): Meta Q3 revenue tops estimates; Muse accounts top 10 million", "url": "https://www.ksat.com/business/2026/10/21/meta-q3-revenue-tops-estimates-and-zuckerberg-says-muse-accounts-have-topped-10-million/", "data": "2026-10-21"},
-  {"titulo": "TheWrap: For Meta, $10 billion in social media-related legal fees is a blip", "url": "https://www.thewrap.com/industry-news/business/meta-third-quarter-earnings-2026/", "data": "2026-10"}
+  {
+   "titulo": "Meta: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "Fortune: Meta Q3 earnings, Zuckerberg, capex and Muse",
+   "url": "https://fortune.com/2026/10/21/meta-q3-earnings-mark-zuckerberg-capex-muse/",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "AP (KSAT): Meta Q3 revenue tops estimates; Muse accounts top 10 million",
+   "url": "https://www.ksat.com/business/2026/10/21/meta-q3-revenue-tops-estimates-and-zuckerberg-says-muse-accounts-have-topped-10-million/",
+   "data": "2026-10-21"
+  },
+  {
+   "titulo": "TheWrap: For Meta, $10 billion in social media-related legal fees is a blip",
+   "url": "https://www.thewrap.com/industry-news/business/meta-third-quarter-earnings-2026/",
+   "data": "2026-10"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

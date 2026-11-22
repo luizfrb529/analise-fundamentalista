@@ -4,27 +4,79 @@
  "resumo": "Empresa de software que organiza dados e coloca IA para trabalhar dentro de governos e grandes empresas. A receita quase dobrou em um ano (+96% no 3T26) e a margem operacional ajustada chegou a 62%.",
  "modelo": "A Palantir vende plataformas de software por assinatura e contratos plurianuais: Gotham (defesa e inteligência), Foundry (empresas), Apollo (implantação) e AIP, que conecta modelos de inteligência artificial aos dados e processos do cliente. Os clientes são governos, sobretudo o dos EUA, e empresas privadas, que costumam começar com projetos-piloto curtos (bootcamps) e ampliar o uso depois.",
  "segmentos": [
-  {"nome": "Comercial EUA", "peso_receita": 0.43, "periodo": "3T26", "obs": "US$ 984 mi, alta de 148% em um ano; passou o governo pela primeira vez."},
-  {"nome": "Governo EUA", "peso_receita": 0.41, "periodo": "3T26", "obs": "US$ 953 mi, alta de 96%."},
-  {"nome": "Fora dos EUA (comercial e governo)", "peso_receita": 0.16, "periodo": "3T26", "obs": "Cerca de US$ 376 mi, calculado por diferença."}
+  {
+   "nome": "Comercial EUA",
+   "peso_receita": 0.43,
+   "periodo": "3T26",
+   "obs": "US$ 984 mi, alta de 148% em um ano; passou o governo pela primeira vez."
+  },
+  {
+   "nome": "Governo EUA",
+   "peso_receita": 0.41,
+   "periodo": "3T26",
+   "obs": "US$ 953 mi, alta de 96%."
+  },
+  {
+   "nome": "Fora dos EUA (comercial e governo)",
+   "peso_receita": 0.16,
+   "periodo": "3T26",
+   "obs": "Cerca de US$ 376 mi, calculado por diferença."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": 0.84, "exterior_pct": 0.16, "periodo": "3T26", "texto": "Sede em Denver (EUA). A receita americana foi de US$ 1,94 bi no 3T26 (84% do total), com clientes de governo e empresas também na Europa e em países aliados."},
+ "geografia": {
+  "eua_pct": 0.84,
+  "exterior_pct": 0.16,
+  "periodo": "3T26",
+  "texto": "Sede em Denver (EUA). A receita americana foi de US$ 1,94 bi no 3T26 (84% do total), com clientes de governo e empresas também na Europa e em países aliados."
+ },
  "temas": [
-  {"tema": "Inteligência artificial", "relacao": "A plataforma AIP leva modelos de IA para dentro das operações dos clientes; é apontada pela empresa como o motor da alta de 148% da receita comercial nos EUA."},
-  {"tema": "Defesa e segurança", "relacao": "Metade do negócio americano vem do governo, em especial defesa e inteligência; a receita do governo dos EUA subiu 96% em um ano."},
-  {"tema": "IA soberana", "relacao": "A empresa oferece a governos e empresas modelos abertos ajustados e rodando em ambiente próprio, sem depender de provedores externos; firmou parceria com a NVIDIA nessa frente."}
+  {
+   "tema": "Inteligência artificial",
+   "relacao": "A plataforma AIP leva modelos de IA para dentro das operações dos clientes; é apontada pela empresa como o motor da alta de 148% da receita comercial nos EUA."
+  },
+  {
+   "tema": "Defesa e segurança",
+   "relacao": "Metade do negócio americano vem do governo, em especial defesa e inteligência; a receita do governo dos EUA subiu 96% em um ano."
+  },
+  {
+   "tema": "IA soberana",
+   "relacao": "A empresa oferece a governos e empresas modelos abertos ajustados e rodando em ambiente próprio, sem depender de provedores externos; firmou parceria com a NVIDIA nessa frente."
+  }
  ],
  "diferencial": {
   "texto": "A Palantir tem duas décadas de trabalho com dados sigilosos de defesa e inteligência e as certificações de segurança mais altas do governo americano, barreira que leva anos para um concorrente vencer. O software (a chamada ontologia) modela toda a operação do cliente, o que torna a troca de fornecedor cara depois de implantado. Contratos com governos tendem a ser longos. Por outro lado, é muito dependente do governo dos EUA e de mudanças de orçamento, e concorre com gigantes como Microsoft, Google e Amazon, além de Snowflake e Databricks.",
-  "concorrentes": ["Microsoft", "Snowflake", "Databricks", "Salesforce", "C3.ai", "Anduril (defesa)"]
+  "concorrentes": [
+   "Microsoft",
+   "Snowflake",
+   "Databricks",
+   "Salesforce",
+   "C3.ai",
+   "Anduril (defesa)"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Software de dados e IA profundamente integrado a governos e empresas, com troca cara e anos de relacionamento em defesa."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 8,530 bi e US$ 8,534 bi (+91%), com receita comercial nos EUA acima de US$ 3,559 bi (+143%) e caixa livre ajustado de US$ 4,8 bi a US$ 5,0 bi. Para o 4T26, a projeção é de receita entre US$ 2,649 bi e US$ 2,653 bi. O valor ainda a receber dos contratos comerciais nos EUA soma US$ 6,5 bi (+79% em um ano), e a empresa fechou 64 contratos acima de US$ 10 mi no trimestre.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 8,53 bi", "periodo": "2026"},
-   {"rotulo": "Contratos comerciais EUA a receber", "valor": "US$ 6,5 bi", "periodo": "3T26"},
-   {"rotulo": "Valor total contratado no trimestre", "valor": "US$ 2,9 bi", "periodo": "3T26"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 8,53 bi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Contratos comerciais EUA a receber",
+    "valor": "US$ 6,5 bi",
+    "periodo": "3T26"
+   },
+   {
+    "rotulo": "Valor total contratado no trimestre",
+    "valor": "US$ 2,9 bi",
+    "periodo": "3T26"
+   }
   ]
  },
  "saude": {
@@ -60,10 +112,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Palantir: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/a2026q3ex991pressrelease.htm", "data": "2026-11-02"},
-  {"titulo": "Palantir: índice do 8-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/0001321655-26-000045-index.htm", "data": "2026-11-02"},
-  {"titulo": "Futurum: Palantir Q3 FY 2026 earnings", "url": "https://futurumgroup.com/?p=97554", "data": "2026-11-03"},
-  {"titulo": "Constellation Research: Palantir's Q3 highlights enterprise inflection point", "url": "https://www.constellationr.com/insights/news/palantirs-q3-highlights-enterprise-inflection-point", "data": "2026-11-03"}
+  {
+   "titulo": "Palantir: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/a2026q3ex991pressrelease.htm",
+   "data": "2026-11-02"
+  },
+  {
+   "titulo": "Palantir: índice do 8-K do 3T26 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/0001321655-26-000045-index.htm",
+   "data": "2026-11-02"
+  },
+  {
+   "titulo": "Futurum: Palantir Q3 FY 2026 earnings",
+   "url": "https://futurumgroup.com/?p=97554",
+   "data": "2026-11-03"
+  },
+  {
+   "titulo": "Constellation Research: Palantir's Q3 highlights enterprise inflection point",
+   "url": "https://www.constellationr.com/insights/news/palantirs-q3-highlights-enterprise-inflection-point",
+   "data": "2026-11-03"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

@@ -4,25 +4,69 @@
  "resumo": "Fabricante de memória flash NAND e SSDs, separada da Western Digital em 2025. A falta de memória para IA multiplicou a receita por quase cinco em um ano. Desdobrou as ações na proporção de 8 para 1 em 20/11/2026.",
  "modelo": "A SanDisk produz memória flash NAND, em fábricas no Japão mantidas em sociedade com a Kioxia (Flash Ventures), e a vende como SSDs para data centers, chips e SSDs para PCs, celulares e carros (Edge) e produtos de varejo, como cartões de memória e pendrives (Consumer). Os preços de NAND oscilam muito com o equilíbrio entre oferta e demanda. O ano fiscal termina no início de julho.",
  "segmentos": [
-  {"nome": "Edge (PCs, celulares, carros)", "peso_receita": 0.53, "periodo": "1T27 fiscal", "obs": "US$ 5,83 bi, alta de 320% em um ano."},
-  {"nome": "Data center (SSDs corporativos)", "peso_receita": 0.44, "periodo": "1T27 fiscal", "obs": "US$ 4,80 bi, contra US$ 269 mi um ano antes."},
-  {"nome": "Consumer (varejo)", "peso_receita": 0.04, "periodo": "1T27 fiscal", "obs": "US$ 397 mi, queda de 39%."}
+  {
+   "nome": "Edge (PCs, celulares, carros)",
+   "peso_receita": 0.53,
+   "periodo": "1T27 fiscal",
+   "obs": "US$ 5,83 bi, alta de 320% em um ano."
+  },
+  {
+   "nome": "Data center (SSDs corporativos)",
+   "peso_receita": 0.44,
+   "periodo": "1T27 fiscal",
+   "obs": "US$ 4,80 bi, contra US$ 269 mi um ano antes."
+  },
+  {
+   "nome": "Consumer (varejo)",
+   "peso_receita": 0.04,
+   "periodo": "1T27 fiscal",
+   "obs": "US$ 397 mi, queda de 39%."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA); a produção de memória fica no Japão, em sociedade com a Kioxia, e a montagem em outros países da Ásia."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede na Califórnia (EUA); a produção de memória fica no Japão, em sociedade com a Kioxia, e a montagem em outros países da Ásia."
+ },
  "temas": [
-  {"tema": "Inteligência artificial", "relacao": "Os data centers de IA consomem SSDs de alta capacidade para guardar dados de treinamento e respostas; a receita de data center subiu 61% só no trimestre."},
-  {"tema": "Escassez de memória", "relacao": "A falta de NAND elevou os preços para todos os mercados e levou a margem bruta de 29,8% para 85,0% em um ano."}
+  {
+   "tema": "Inteligência artificial",
+   "relacao": "Os data centers de IA consomem SSDs de alta capacidade para guardar dados de treinamento e respostas; a receita de data center subiu 61% só no trimestre."
+  },
+  {
+   "tema": "Escassez de memória",
+   "relacao": "A falta de NAND elevou os preços para todos os mercados e levou a margem bruta de 29,8% para 85,0% em um ano."
+  }
  ],
  "diferencial": {
   "texto": "O mercado de NAND é dominado por poucas empresas (Samsung, SK hynix com a Solidigm, Kioxia, Micron e SanDisk), porque as fábricas custam bilhões e exigem tecnologia própria de empilhamento de camadas. A sociedade com a Kioxia divide o custo dessas fábricas e dá escala à SanDisk. A marca é forte no varejo. O ponto fraco é a exposição ao ciclo de preços da NAND, historicamente mais volátil que o de DRAM, e a dependência de fábricas concentradas no Japão.",
-  "concorrentes": ["Samsung", "SK hynix (Solidigm)", "Kioxia", "Micron", "YMTC (China)"]
+  "concorrentes": [
+   "Samsung",
+   "SK hynix (Solidigm)",
+   "Kioxia",
+   "Micron",
+   "YMTC (China)"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Uma das poucas fabricantes de memória flash em escala, com fábricas em parceria com a Kioxia, mas em mercado cíclico e padronizado."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do 2T27 fiscal (outubro de 2026 a janeiro de 2027) deve ficar entre US$ 12,2 bi e US$ 12,6 bi, nova alta sobre o trimestre anterior, com margem bruta de cerca de 85%. O CEO cita demanda forte e crescente, puxada por data center, e fluxo de caixa livre durável; parte das vendas passou a ser feita em contratos de longo prazo com adiantamentos de clientes. O ponto de atenção é o ciclo: aumento de capacidade no setor historicamente derruba os preços.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 12,2 bi a US$ 12,6 bi", "periodo": "2T27 fiscal"},
-   {"rotulo": "Margem bruta projetada", "valor": "84,4% a 85,4%", "periodo": "2T27 fiscal"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 12,2 bi a US$ 12,6 bi",
+    "periodo": "2T27 fiscal"
+   },
+   {
+    "rotulo": "Margem bruta projetada",
+    "valor": "84,4% a 85,4%",
+    "periodo": "2T27 fiscal"
+   }
   ]
  },
  "saude": {
@@ -58,10 +102,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "SanDisk: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm", "data": "2026-10-29"},
-  {"titulo": "SanDisk: índice do 8-K do 1T27 fiscal (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/0001628280-26-068243-index.htm", "data": "2026-10-29"},
-  {"titulo": "Motley Fool: Why Sandisk stock plunged today", "url": "https://www.fool.com/investing/2026/10/30/why-sandisk-stock-plunged-today/", "data": "2026-10-30"},
-  {"titulo": "StorageNewsletter: Sandisk fiscal 1Q27 financial results", "url": "https://www.storagenewsletter.com/?p=306769", "data": "2026-10-30"}
+  {
+   "titulo": "SanDisk: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "SanDisk: índice do 8-K do 1T27 fiscal (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/0001628280-26-068243-index.htm",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Motley Fool: Why Sandisk stock plunged today",
+   "url": "https://www.fool.com/investing/2026/10/30/why-sandisk-stock-plunged-today/",
+   "data": "2026-10-30"
+  },
+  {
+   "titulo": "StorageNewsletter: Sandisk fiscal 1Q27 financial results",
+   "url": "https://www.storagenewsletter.com/?p=306769",
+   "data": "2026-10-30"
+  }
  ],
  "ultimo_resultado": "4T26"
 }

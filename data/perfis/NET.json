@@ -5,22 +5,59 @@
  "modelo": "A Cloudflare opera uma das maiores redes do mundo, com servidores em centenas de cidades, e vende assinaturas de proteção contra ataques, aceleração de sites, segurança de acesso para empresas (Zero Trust) e uma plataforma de desenvolvimento e IA (Workers), do plano gratuito ao corporativo. Ganha mais quando o cliente usa mais produtos.",
  "segmentos": [],
  "segmentos_base": "Empresa não divulga receita por segmento no release",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em San Francisco (EUA); cerca de metade da receita vem dos EUA, com rede em mais de 300 cidades no mundo."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em San Francisco (EUA); cerca de metade da receita vem dos EUA, com rede em mais de 300 cidades no mundo."
+ },
  "temas": [
-  {"tema": "IA na borda da rede", "relacao": "Oferece computação e modelos de IA rodando perto do usuário e ferramentas para sites controlarem o acesso de robôs de IA ao seu conteúdo."},
-  {"tema": "Cibersegurança", "relacao": "Ataques maiores e mais frequentes elevam a procura por proteção em nuvem."},
-  {"tema": "Eficiência com IA", "relacao": "Cortou cerca de 20% do quadro em 2026 para adotar um modelo de operação com agentes de IA, segundo a imprensa."}
+  {
+   "tema": "IA na borda da rede",
+   "relacao": "Oferece computação e modelos de IA rodando perto do usuário e ferramentas para sites controlarem o acesso de robôs de IA ao seu conteúdo."
+  },
+  {
+   "tema": "Cibersegurança",
+   "relacao": "Ataques maiores e mais frequentes elevam a procura por proteção em nuvem."
+  },
+  {
+   "tema": "Eficiência com IA",
+   "relacao": "Cortou cerca de 20% do quadro em 2026 para adotar um modelo de operação com agentes de IA, segundo a imprensa."
+  }
  ],
  "diferencial": {
   "texto": "A rede global própria, com custo baixo por uso e enorme volume de tráfego (uma fatia grande da internet passa por ela), dá dados para detectar ataques e escala difícil de copiar. O plano gratuito atrai desenvolvedores e empresas que depois pagam. Os pontos fracos são o prejuízo contábil, a avaliação de mercado alta, a margem bruta em queda com mais uso de IA e a concorrência de Akamai, Zscaler e das grandes nuvens.",
-  "concorrentes": ["Akamai", "Zscaler", "Fastly", "Amazon (AWS)", "Palo Alto Networks", "Netskope"]
+  "concorrentes": [
+   "Akamai",
+   "Zscaler",
+   "Fastly",
+   "Amazon (AWS)",
+   "Palo Alto Networks",
+   "Netskope"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Rede global própria com custo baixo por uso e enorme volume de tráfego, mas em mercado disputado com nuvens e empresas de segurança."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 2,963 bi e US$ 2,964 bi (alta de cerca de 37%), com lucro operacional ajustado de cerca de US$ 462 mi; para o 4T26, a receita deve ser de US$ 845 mi a US$ 846 mi. As obrigações contratadas de curto prazo cresceram 37%.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 2,963 bi a US$ 2,964 bi", "periodo": "2026"},
-   {"rotulo": "Crescimento da receita", "valor": "39%", "periodo": "3T26"},
-   {"rotulo": "Margem operacional ajustada", "valor": "17,5%", "periodo": "3T26"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 2,963 bi a US$ 2,964 bi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Crescimento da receita",
+    "valor": "39%",
+    "periodo": "3T26"
+   },
+   {
+    "rotulo": "Margem operacional ajustada",
+    "valor": "17,5%",
+    "periodo": "3T26"
+   }
   ]
  },
  "saude": {
@@ -55,10 +92,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Cloudflare: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000060/q326exhibit991.htm", "data": "2026-11-05"},
-  {"titulo": "PPC Land: Cloudflare revenue gains 39% to $782.5M, fastest growth in nearly four years", "url": "https://ppc.land/cloudflare-revenue-gains-39-to-782-5m-fastest-growth-in-nearly-four-years/", "data": "2026-11"},
-  {"titulo": "24/7 Wall St.: Cloudflare Q3 2026, 39% revenue growth and a guidance lift", "url": "https://247wallst.com/cards/cloudflare-q3-2026-earnings-net-01m6psg0byw1kqkd514aq3zgkb", "data": "2026-11-05"},
-  {"titulo": "BankInfoSecurity: Cloudflare says AI's future depends on lower costs", "url": "https://www.bankinfosecurity.com/cloudflare-says-ais-future-depends-on-lower-costs-a-33317", "data": "2026-11"}
+  {
+   "titulo": "Cloudflare: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000060/q326exhibit991.htm",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "PPC Land: Cloudflare revenue gains 39% to $782.5M, fastest growth in nearly four years",
+   "url": "https://ppc.land/cloudflare-revenue-gains-39-to-782-5m-fastest-growth-in-nearly-four-years/",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "24/7 Wall St.: Cloudflare Q3 2026, 39% revenue growth and a guidance lift",
+   "url": "https://247wallst.com/cards/cloudflare-q3-2026-earnings-net-01m6psg0byw1kqkd514aq3zgkb",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "BankInfoSecurity: Cloudflare says AI's future depends on lower costs",
+   "url": "https://www.bankinfosecurity.com/cloudflare-says-ais-future-depends-on-lower-costs-a-33317",
+   "data": "2026-11"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

@@ -4,26 +4,72 @@
  "resumo": "Líder mundial em software de projeto de chips (EDA) e em blocos de propriedade intelectual para chips, que comprou a Ansys, de software de simulação de engenharia. Muito lucrativa no critério ajustado, com receita crescendo mais de 40% pela aquisição.",
  "modelo": "A Synopsys vende licenças de software, em contratos de vários anos, que engenheiros usam para projetar, verificar e testar chips, e licencia blocos prontos de circuitos (Design IP), como interfaces USB, PCIe e memória. Com a Ansys, vende também software de simulação física (estrutura, calor, eletromagnetismo) para chips, carros, aviões e eletrônicos. Os clientes são fabricantes de chips, grandes empresas de tecnologia e indústrias.",
  "segmentos": [
-  {"nome": "Design Automation (software, inclui Ansys)", "peso_receita": 0.81, "periodo": "3T26", "obs": "US$ 2,00 bi, alta de 53%; a Ansys contribuiu com cerca de US$ 711 mi."},
-  {"nome": "Design IP (blocos de circuitos)", "peso_receita": 0.19, "periodo": "3T26", "obs": "US$ 473,8 mi, alta de 11%."}
+  {
+   "nome": "Design Automation (software, inclui Ansys)",
+   "peso_receita": 0.81,
+   "periodo": "3T26",
+   "obs": "US$ 2,00 bi, alta de 53%; a Ansys contribuiu com cerca de US$ 711 mi."
+  },
+  {
+   "nome": "Design IP (blocos de circuitos)",
+   "peso_receita": 0.19,
+   "periodo": "3T26",
+   "obs": "US$ 473,8 mi, alta de 11%."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA); vende no mundo todo, com receita relevante na China, sujeita a regras de exportação americanas."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede na Califórnia (EUA); vende no mundo todo, com receita relevante na China, sujeita a regras de exportação americanas."
+ },
  "temas": [
-  {"tema": "Chips para IA", "relacao": "A empresa cita a demanda ligada à IA como motivo da alta de projeção; chips de IA mais complexos exigem mais software de projeto e simulação."},
-  {"tema": "Engenharia por simulação", "relacao": "Com a Ansys, oferece simulação do sistema inteiro, do chip ao produto final."},
-  {"tema": "Geopolítica", "relacao": "As projeções supõem que não haja novas restrições de exportação para a China."}
+  {
+   "tema": "Chips para IA",
+   "relacao": "A empresa cita a demanda ligada à IA como motivo da alta de projeção; chips de IA mais complexos exigem mais software de projeto e simulação."
+  },
+  {
+   "tema": "Engenharia por simulação",
+   "relacao": "Com a Ansys, oferece simulação do sistema inteiro, do chip ao produto final."
+  },
+  {
+   "tema": "Geopolítica",
+   "relacao": "As projeções supõem que não haja novas restrições de exportação para a China."
+  }
  ],
  "diferencial": {
   "texto": "O mercado de software de projeto de chips é praticamente um duopólio com a Cadence; os engenheiros são treinados nessas ferramentas e os fluxos de trabalho e certificações com as fábricas de chips tornam a troca muito difícil. A biblioteca de propriedade intelectual é uma das maiores do mundo. Os pontos fracos são a dívida da compra da Ansys, a exposição à China e o crescimento mais lento do segmento de IP.",
-  "concorrentes": ["Cadence", "Siemens EDA", "Dassault Systèmes", "Arm", "Altair (Siemens)"]
+  "concorrentes": [
+   "Cadence",
+   "Siemens EDA",
+   "Dassault Systèmes",
+   "Arm",
+   "Altair (Siemens)"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Duopólio com a Cadence em software de projeto de chips, com engenheiros treinados e fluxos certificados de troca muito difícil."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do ano fiscal 2026 (novembro de 2025 a outubro de 2026) deve ficar entre US$ 9,69 bi e US$ 9,74 bi, com US$ 2,98 bi da Ansys, lucro ajustado de US$ 15,04 a US$ 15,10 por ação e fluxo de caixa livre de cerca de US$ 2,6 bi; a projeção foi elevada. O 4T fiscal deve ter receita de US$ 2,53 bi a US$ 2,58 bi, com divulgação no início de dezembro.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 9,69 bi a US$ 9,74 bi", "periodo": "ano fiscal 2026"},
-   {"rotulo": "Lucro ajustado por ação projetado", "valor": "US$ 15,04 a US$ 15,10", "periodo": "ano fiscal 2026"},
-   {"rotulo": "Fluxo de caixa livre projetado", "valor": "cerca de US$ 2,6 bi", "periodo": "ano fiscal 2026"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 9,69 bi a US$ 9,74 bi",
+    "periodo": "ano fiscal 2026"
+   },
+   {
+    "rotulo": "Lucro ajustado por ação projetado",
+    "valor": "US$ 15,04 a US$ 15,10",
+    "periodo": "ano fiscal 2026"
+   },
+   {
+    "rotulo": "Fluxo de caixa livre projetado",
+    "valor": "cerca de US$ 2,6 bi",
+    "periodo": "ano fiscal 2026"
+   }
   ]
  },
  "saude": {
@@ -58,10 +104,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Synopsys: resultados do 3T fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/883241/000119312526368620/d157153dex991.htm", "data": "2026-08-26"},
-  {"titulo": "Synopsys: comunicado do 3T fiscal 2026", "url": "https://news.synopsys.com/2026-08-26-Synopsys-Posts-Financial-Results-for-Third-Quarter-Fiscal-Year-2026", "data": "2026-08-26"},
-  {"titulo": "Nasdaq: SNPS Q3 earnings call highlights EDA acceleration, outlook raised", "url": "https://www.nasdaq.com/articles/snps-q3-earnings-call-highlights-eda-acceleration-outlook-raised", "data": "2026-08"},
-  {"titulo": "Zacks: SNPS Q3 earnings beat estimates on EDA and Ansys strength", "url": "https://www.zacks.com/stock/news/2981139/snps-q3-earnings-beat-estimates-on-eda-and-ansys-strength", "data": "2026-08"}
+  {
+   "titulo": "Synopsys: resultados do 3T fiscal 2026 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/883241/000119312526368620/d157153dex991.htm",
+   "data": "2026-08-26"
+  },
+  {
+   "titulo": "Synopsys: comunicado do 3T fiscal 2026",
+   "url": "https://news.synopsys.com/2026-08-26-Synopsys-Posts-Financial-Results-for-Third-Quarter-Fiscal-Year-2026",
+   "data": "2026-08-26"
+  },
+  {
+   "titulo": "Nasdaq: SNPS Q3 earnings call highlights EDA acceleration, outlook raised",
+   "url": "https://www.nasdaq.com/articles/snps-q3-earnings-call-highlights-eda-acceleration-outlook-raised",
+   "data": "2026-08"
+  },
+  {
+   "titulo": "Zacks: SNPS Q3 earnings beat estimates on EDA and Ansys strength",
+   "url": "https://www.zacks.com/stock/news/2981139/snps-q3-earnings-beat-estimates-on-eda-and-ansys-strength",
+   "data": "2026-08"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

@@ -5,21 +5,55 @@
  "modelo": "A MARA opera máquinas que validam transações da rede bitcoin e recebem novos bitcoins como recompensa, em sites próprios e de terceiros nos EUA e no exterior. Mantém parte dos bitcoins em carteira. Agora busca usar sua energia e terrenos para data centers de IA, com a Exaion (computação com GPUs), uma usina a gás (Long Ridge) e um terreno de até 2 GW no Texas.",
  "segmentos": [],
  "segmentos_base": "Receita quase toda de mineração de bitcoin (US$ 164,2 mi no 3T26)",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Flórida (EUA), com cerca de 20 sites nos EUA e no exterior; a Exaion opera na França."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede na Flórida (EUA), com cerca de 20 sites nos EUA e no exterior; a Exaion opera na França."
+ },
  "temas": [
-  {"tema": "Bitcoin", "relacao": "Produziu 2.247 BTC no trimestre e tinha 34.012 BTC em setembro; depois vendeu 13.597 BTC por cerca de US$ 1,1 bi para pagar empréstimos."},
-  {"tema": "Energia e data centers de IA", "relacao": "A Exaion assinou contrato de 4 anos e US$ 79 mi de computação com GPUs; a empresa espera fechar a compra da usina Long Ridge, de 505 MW, e diz mirar dois contratos de aluguel até o fim do ano."}
+  {
+   "tema": "Bitcoin",
+   "relacao": "Produziu 2.247 BTC no trimestre e tinha 34.012 BTC em setembro; depois vendeu 13.597 BTC por cerca de US$ 1,1 bi para pagar empréstimos."
+  },
+  {
+   "tema": "Energia e data centers de IA",
+   "relacao": "A Exaion assinou contrato de 4 anos e US$ 79 mi de computação com GPUs; a empresa espera fechar a compra da usina Long Ridge, de 505 MW, e diz mirar dois contratos de aluguel até o fim do ano."
+  }
  ],
  "diferencial": {
   "texto": "A MARA tem escala (71 EH/s de capacidade de mineração), energia barata em sites próprios (US$ 0,04 por kWh) e acesso a cerca de 1,9 GW de energia, com caminho para 4,8 GW, ativo valioso para data centers de IA. Os pontos fracos são a dependência total do preço do bitcoin, a corrida das mineradoras rivais que já fecharam grandes contratos de IA e a necessidade de capital para a mudança de modelo.",
-  "concorrentes": ["Riot Platforms", "CleanSpark", "IREN", "Core Scientific", "Cipher Mining", "Hut 8"]
+  "concorrentes": [
+   "Riot Platforms",
+   "CleanSpark",
+   "IREN",
+   "Core Scientific",
+   "Cipher Mining",
+   "Hut 8"
+  ],
+  "vantagem": {
+   "nivel": "fraca",
+   "resumo": "Escala em mineração de bitcoin e acesso a energia, mas o produto é padronizado e depende do preço do bitcoin."
+  }
  },
  "potencial": {
   "texto": "O potencial depende do preço do bitcoin e de transformar a energia em contratos de IA: a Exaion tem funil de mais de US$ 3 bi, com cerca de US$ 1 bi visado até o fim de 2027, ainda não contratado. A empresa aprovou recompra de até US$ 500 mi em ações. Não há projeção de receita.",
   "metricas": [
-   {"rotulo": "Capacidade de mineração", "valor": "71,2 EH/s", "periodo": "set/2026"},
-   {"rotulo": "Energia disponível", "valor": "cerca de 1,9 GW", "periodo": "set/2026"},
-   {"rotulo": "Bitcoins produzidos", "valor": "2.247 BTC", "periodo": "3T26"}
+   {
+    "rotulo": "Capacidade de mineração",
+    "valor": "71,2 EH/s",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Energia disponível",
+    "valor": "cerca de 1,9 GW",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Bitcoins produzidos",
+    "valor": "2.247 BTC",
+    "periodo": "3T26"
+   }
   ]
  },
  "saude": {
@@ -54,10 +88,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "MARA: carta aos acionistas do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1507605/000150760526000026/q326shareholderletter.htm", "data": "2026-11-09"},
-  {"titulo": "MARA: comunicado do 3T26 (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1507605/000150760526000026/q32026earningsannouncement.htm", "data": "2026-11-09"},
-  {"titulo": "The Block: MARA posts $634 million Q3 net profit, sells 13,597 BTC", "url": "https://theblock.co/news/business/2026-11-09-mara-q3-earnings-net-profit-bitcoin-sale-ai-pivot-436950", "data": "2026-11-09"},
-  {"titulo": "Blockspace: MARA authorizes $500 million buyback, repays $750 million", "url": "https://blockspace.media/insight/mara-buyback-bitcoin-debt-repayment/", "data": "2026-11"}
+  {
+   "titulo": "MARA: carta aos acionistas do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1507605/000150760526000026/q326shareholderletter.htm",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "MARA: comunicado do 3T26 (8-K, Exhibit 99.2, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1507605/000150760526000026/q32026earningsannouncement.htm",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "The Block: MARA posts $634 million Q3 net profit, sells 13,597 BTC",
+   "url": "https://theblock.co/news/business/2026-11-09-mara-q3-earnings-net-profit-bitcoin-sale-ai-pivot-436950",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "Blockspace: MARA authorizes $500 million buyback, repays $750 million",
+   "url": "https://blockspace.media/insight/mara-buyback-bitcoin-debt-repayment/",
+   "data": "2026-11"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

@@ -4,25 +4,68 @@
  "resumo": "Maior empresa de capital aberto de computação quântica, com tecnologia de íons aprisionados. Cresce por aquisições (inclui a fábrica de chips SkyWater) e ainda tem prejuízo operacional alto, financiado por grandes emissões de ações.",
  "modelo": "A IonQ vende computadores quânticos (instalados no cliente ou acessados pela nuvem da Amazon, Microsoft e Google), redes quânticas, sensores e relógios atômicos, e segurança de dados, para governos, universidades e empresas. Desde a compra da SkyWater também presta serviços de fabricação de chips (foundry) para terceiros. Boa parte da receita vem de contratos com governos.",
  "segmentos": [
-  {"nome": "Plataforma IonQ (quântica, redes e sensores)", "peso_receita": 0.52, "periodo": "3T26", "obs": "US$ 90,3 mi, alta de 127% em um ano."},
-  {"nome": "SkyWater (fabricação de chips)", "peso_receita": 0.48, "periodo": "3T26", "obs": "US$ 83,5 mi, receita vinda da aquisição."}
+  {
+   "nome": "Plataforma IonQ (quântica, redes e sensores)",
+   "peso_receita": 0.52,
+   "periodo": "3T26",
+   "obs": "US$ 90,3 mi, alta de 127% em um ano."
+  },
+  {
+   "nome": "SkyWater (fabricação de chips)",
+   "peso_receita": 0.48,
+   "periodo": "3T26",
+   "obs": "US$ 83,5 mi, receita vinda da aquisição."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Maryland (EUA), com operações nos EUA, Europa e Ásia; a SkyWater tem fábricas em Minnesota e na Flórida."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Maryland (EUA), com operações nos EUA, Europa e Ásia; a SkyWater tem fábricas em Minnesota e na Flórida."
+ },
  "temas": [
-  {"tema": "Computação quântica", "relacao": "É uma das líderes da tecnologia de íons aprisionados; a NVIDIA vai instalar um sistema Superion 256 da IonQ no seu centro de pesquisa quântica, e a empresa avançou para a fase C do programa de avaliação quântica da DARPA, de até US$ 300 mi."},
-  {"tema": "Defesa e governo", "relacao": "Tem contratos com DARPA (US$ 28 mi em relógios atômicos), Força Aérea e outros órgãos; governos são clientes relevantes."},
-  {"tema": "Semicondutores nos EUA", "relacao": "A compra da SkyWater dá à empresa fábrica própria de chips nos EUA, que também atende outros clientes."}
+  {
+   "tema": "Computação quântica",
+   "relacao": "É uma das líderes da tecnologia de íons aprisionados; a NVIDIA vai instalar um sistema Superion 256 da IonQ no seu centro de pesquisa quântica, e a empresa avançou para a fase C do programa de avaliação quântica da DARPA, de até US$ 300 mi."
+  },
+  {
+   "tema": "Defesa e governo",
+   "relacao": "Tem contratos com DARPA (US$ 28 mi em relógios atômicos), Força Aérea e outros órgãos; governos são clientes relevantes."
+  },
+  {
+   "tema": "Semicondutores nos EUA",
+   "relacao": "A compra da SkyWater dá à empresa fábrica própria de chips nos EUA, que também atende outros clientes."
+  }
  ],
  "diferencial": {
   "texto": "A tecnologia de íons aprisionados tem qubits naturalmente idênticos e alta fidelidade: a empresa atingiu 99,99% de fidelidade em portas de dois qubits em 2025. O caixa grande e as aquisições (redes, sensores, segurança, fabricação) formam uma plataforma mais ampla que a de concorrentes puramente quânticos. Os pontos fracos são que a computação quântica ainda não tem aplicação comercial em larga escala, a disputa com gigantes como Google e IBM e com rivais como Quantinuum, e o crescimento muito dependente de aquisições.",
-  "concorrentes": ["IBM", "Google", "Quantinuum", "Rigetti", "D-Wave", "PsiQuantum"]
+  "concorrentes": [
+   "IBM",
+   "Google",
+   "Quantinuum",
+   "Rigetti",
+   "D-Wave",
+   "PsiQuantum"
+  ],
+  "vantagem": {
+   "nivel": "fraca",
+   "resumo": "Tecnologia avançada de íons aprisionados, mas a computação quântica ainda não tem uso comercial e os rivais incluem IBM e Google."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 505 mi e US$ 515 mi, com a receita de computação quântica crescendo cerca de 110% em um ano. As obrigações de desempenho a receber (contratos assinados) mais que dobraram, para US$ 1,2 bi. A empresa fechou contratos para instalar sistemas Superion 256 (US$ 33 mi com a SDT e US$ 25 mi com a FIU) e comprou a Elisity, de segurança digital. O potencial de longo prazo depende de a computação quântica se tornar útil comercialmente, o que ainda não está comprovado.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 505 mi a US$ 515 mi", "periodo": "2026"},
-   {"rotulo": "Contratos a receber (RPO)", "valor": "US$ 1,2 bi", "periodo": "set/2026"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 505 mi a US$ 515 mi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Contratos a receber (RPO)",
+    "valor": "US$ 1,2 bi",
+    "periodo": "set/2026"
+   }
   ]
  },
  "saude": {
@@ -59,10 +102,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "IonQ: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_1.htm", "data": "2026-11-05"},
-  {"titulo": "IonQ: conclusão da compra da Elisity (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_2.htm", "data": "2026-11-05"},
-  {"titulo": "IonQ: 8-K da oferta de ações de outubro de 2026 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526424230/ionq-20261014.htm", "data": "2026-10-14"},
-  {"titulo": "IonQ: troca de diretor financeiro (8-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526461016/ionq-ex99_1.htm", "data": "2026-11-13"}
+  {
+   "titulo": "IonQ: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_1.htm",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "IonQ: conclusão da compra da Elisity (8-K, Exhibit 99.2, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_2.htm",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "IonQ: 8-K da oferta de ações de outubro de 2026 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526424230/ionq-20261014.htm",
+   "data": "2026-10-14"
+  },
+  {
+   "titulo": "IonQ: troca de diretor financeiro (8-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526461016/ionq-ex99_1.htm",
+   "data": "2026-11-13"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

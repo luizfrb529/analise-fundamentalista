@@ -4,26 +4,73 @@
  "resumo": "Fabricante de lasers, componentes ópticos e chaves ópticas para data centers de IA e telecom. A receita mais que dobrou em um ano e a empresa aceitou ser comprada pela Marvell em troca de ações, com conclusão prevista para 2028.",
  "modelo": "A Lumentum produz componentes (lasers EML, lasers de bombeio, chips para transceptores) e sistemas (módulos transceptores, chaves de circuito óptico que redirecionam o tráfego entre servidores sem converter em sinal elétrico, e equipamentos de rede óptica). Vende para provedores de nuvem, fabricantes de transceptores e de equipamentos de telecom. O ano fiscal termina em junho.",
  "segmentos": [
-  {"nome": "Componentes", "peso_receita": 0.60, "periodo": "1T27 fiscal", "obs": "US$ 754 mi, alta de 99% em um ano."},
-  {"nome": "Sistemas", "peso_receita": 0.40, "periodo": "1T27 fiscal", "obs": "US$ 508 mi, alta de 229% em um ano."}
+  {
+   "nome": "Componentes",
+   "peso_receita": 0.6,
+   "periodo": "1T27 fiscal",
+   "obs": "US$ 754 mi, alta de 99% em um ano."
+  },
+  {
+   "nome": "Sistemas",
+   "peso_receita": 0.4,
+   "periodo": "1T27 fiscal",
+   "obs": "US$ 508 mi, alta de 229% em um ano."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA), com fábricas nos EUA (inclusive a nova unidade de Greensboro, Carolina do Norte), Japão, Tailândia e outros países."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede na Califórnia (EUA), com fábricas nos EUA (inclusive a nova unidade de Greensboro, Carolina do Norte), Japão, Tailândia e outros países."
+ },
  "temas": [
-  {"tema": "Inteligência artificial", "relacao": "Lasers e chaves ópticas são peças-chave das redes dos clusters de IA; lasers de bombeio e chaves de circuito óptico lideraram o crescimento no trimestre."},
-  {"tema": "Óptica integrada ao chip (CPO)", "relacao": "Conquistou o segundo grande contrato de óptica integrada ao chip, com compromissos de compra acima de US$ 5 bi, segundo a empresa."},
-  {"tema": "Fusões no setor", "relacao": "Será comprada pela Marvell por 4,5 ações da Marvell por ação da Lumentum, negócio avaliado em US$ 115 bi."}
+  {
+   "tema": "Inteligência artificial",
+   "relacao": "Lasers e chaves ópticas são peças-chave das redes dos clusters de IA; lasers de bombeio e chaves de circuito óptico lideraram o crescimento no trimestre."
+  },
+  {
+   "tema": "Óptica integrada ao chip (CPO)",
+   "relacao": "Conquistou o segundo grande contrato de óptica integrada ao chip, com compromissos de compra acima de US$ 5 bi, segundo a empresa."
+  },
+  {
+   "tema": "Fusões no setor",
+   "relacao": "Será comprada pela Marvell por 4,5 ações da Marvell por ação da Lumentum, negócio avaliado em US$ 115 bi."
+  }
  ],
  "diferencial": {
   "texto": "A Lumentum é uma das líderes mundiais em lasers EML e de bombeio, componentes difíceis de fabricar e com poucos fornecedores qualificados, e foi pioneira nas chaves de circuito óptico usadas pelas grandes nuvens. A combinação de tecnologia própria de lasers com capacidade de fabricação em escala é uma barreira relevante. Os pontos fracos são a dependência de poucos clientes de nuvem e o fato de que, com a venda para a Marvell, o futuro do acionista passa a depender do desempenho da empresa combinada.",
-  "concorrentes": ["Coherent", "Broadcom", "InnoLight", "Applied Optoelectronics", "Sumitomo Electric", "Ciena"]
+  "concorrentes": [
+   "Coherent",
+   "Broadcom",
+   "InnoLight",
+   "Applied Optoelectronics",
+   "Sumitomo Electric",
+   "Ciena"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Tecnologia de lasers e componentes ópticos para data centers, em mercado com concorrência intensa."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do 2T27 fiscal (outubro a dezembro de 2026) deve ficar entre US$ 1,575 bi e US$ 1,625 bi, cerca de US$ 350 mi acima do trimestre anterior, com margem operacional ajustada de 45% a 46%. A empresa diz que as chaves ópticas podem virar uma linha de vários bilhões de dólares por ano. Com a venda à Marvell, cada ação da Lumentum receberá 4,5 ações da Marvell; o negócio depende de aprovação dos acionistas e de reguladores e tem multa de rescisão de até US$ 5,8 bi a ser paga pela Marvell em certos casos.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 1,575 bi a US$ 1,625 bi", "periodo": "2T27 fiscal"},
-   {"rotulo": "Contratos de óptica integrada (CPO)", "valor": "acima de US$ 5 bi", "periodo": "1T27 fiscal"},
-   {"rotulo": "Troca na venda para a Marvell", "valor": "4,5 ações MRVL por ação", "periodo": "conclusão prevista no 1S28"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 1,575 bi a US$ 1,625 bi",
+    "periodo": "2T27 fiscal"
+   },
+   {
+    "rotulo": "Contratos de óptica integrada (CPO)",
+    "valor": "acima de US$ 5 bi",
+    "periodo": "1T27 fiscal"
+   },
+   {
+    "rotulo": "Troca na venda para a Marvell",
+    "valor": "4,5 ações MRVL por ação",
+    "periodo": "conclusão prevista no 1S28"
+   }
   ]
  },
  "saude": {
@@ -59,11 +106,31 @@
   ]
  },
  "fontes": [
-  {"titulo": "Lumentum: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026068655/lite_ex991xq1fy27.htm", "data": "2026-11-02"},
-  {"titulo": "Lumentum: 8-K do acordo de fusão com a Marvell (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1633978/000119312526442758/d163169d8k.htm", "data": "2026-11-02"},
-  {"titulo": "Lumentum e Marvell: comunicado conjunto (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1633978/000119312526442758/d163169dex991.htm", "data": "2026-11-02"},
-  {"titulo": "Benzinga: Lumentum net revenue of $1.26 billion", "url": "https://www.benzinga.com/node/62772756", "data": "2026-11-02"},
-  {"titulo": "Light Reading: Marvell strikes $115B deal for Lumentum", "url": "https://lightreading.com/ai-machine-learning/marvell-strikes-115b-deal-for-lumentum", "data": "2026-11-02"}
+  {
+   "titulo": "Lumentum: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026068655/lite_ex991xq1fy27.htm",
+   "data": "2026-11-02"
+  },
+  {
+   "titulo": "Lumentum: 8-K do acordo de fusão com a Marvell (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1633978/000119312526442758/d163169d8k.htm",
+   "data": "2026-11-02"
+  },
+  {
+   "titulo": "Lumentum e Marvell: comunicado conjunto (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1633978/000119312526442758/d163169dex991.htm",
+   "data": "2026-11-02"
+  },
+  {
+   "titulo": "Benzinga: Lumentum net revenue of $1.26 billion",
+   "url": "https://www.benzinga.com/node/62772756",
+   "data": "2026-11-02"
+  },
+  {
+   "titulo": "Light Reading: Marvell strikes $115B deal for Lumentum",
+   "url": "https://lightreading.com/ai-machine-learning/marvell-strikes-115b-deal-for-lumentum",
+   "data": "2026-11-02"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

@@ -5,21 +5,55 @@
  "modelo": "A Strategy funciona como uma tesouraria de bitcoin listada em bolsa: emite ações comuns (quando negociam acima do valor do bitcoin por ação), ações preferenciais com dividendos (STRK, STRF, STRD, STRC) e dívida conversível, e usa o dinheiro para comprar bitcoin. Mantém uma reserva em dólares para pagar dividendos e juros. Ainda vende software de análise de dados, com receita de cerca de US$ 125 mi por trimestre.",
  "segmentos": [],
  "segmentos_base": "Receita de software de US$ 125,4 mi no 3T26; o valor da empresa vem do bitcoin",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Virgínia (EUA)."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede na Virgínia (EUA)."
+ },
  "temas": [
-  {"tema": "Bitcoin", "relacao": "Detinha 850.849 BTC em 15/11/2026, a um custo médio de US$ 75.452; o preço do bitcoin em queda nas últimas semanas fica perto desse custo."},
-  {"tema": "Mercado de capitais", "relacao": "Levantou cerca de US$ 21 bi em 2026 com ações comuns e preferenciais para comprar bitcoin."}
+  {
+   "tema": "Bitcoin",
+   "relacao": "Detinha 850.849 BTC em 15/11/2026, a um custo médio de US$ 75.452; o preço do bitcoin em queda nas últimas semanas fica perto desse custo."
+  },
+  {
+   "tema": "Mercado de capitais",
+   "relacao": "Levantou cerca de US$ 21 bi em 2026 com ações comuns e preferenciais para comprar bitcoin."
+  }
  ],
  "diferencial": {
   "texto": "A Strategy foi pioneira e é de longe a maior tesouraria corporativa de bitcoin, com acesso a vários tipos de financiamento que investidores comuns não têm, o que permite comprar bitcoin em escala. Os pontos fracos são a dependência total do preço do bitcoin, os dividendos e juros fixos a pagar, a diluição dos acionistas e o fato de o modelo depender de as ações negociarem acima do valor do bitcoin que a empresa tem (mNAV acima de 1).",
-  "concorrentes": ["MARA Holdings", "Metaplanet", "Twenty One Capital", "BitMine", "ETFs de bitcoin (IBIT)", "Coinbase"]
+  "concorrentes": [
+   "MARA Holdings",
+   "Metaplanet",
+   "Twenty One Capital",
+   "BitMine",
+   "ETFs de bitcoin (IBIT)",
+   "Coinbase"
+  ],
+  "vantagem": {
+   "nivel": "nenhuma clara",
+   "resumo": "O negócio é guardar bitcoin comprado com dinheiro captado; não há vantagem operacional duradoura além do acesso a capital."
+  }
  },
  "potencial": {
   "texto": "O desempenho depende quase só do preço do bitcoin e da capacidade de seguir captando para comprar mais. A empresa mede o sucesso pelo BTC Yield, o aumento de bitcoin por ação, que estava negativo em 3,7% no ano até outubro. Não há projeção financeira.",
   "metricas": [
-   {"rotulo": "Bitcoins em carteira", "valor": "850.849 BTC", "periodo": "15/11/2026"},
-   {"rotulo": "Custo médio por bitcoin", "valor": "US$ 75.452", "periodo": "15/11/2026"},
-   {"rotulo": "Capital levantado em 2026", "valor": "US$ 21,2 bi", "periodo": "até out/2026"}
+   {
+    "rotulo": "Bitcoins em carteira",
+    "valor": "850.849 BTC",
+    "periodo": "15/11/2026"
+   },
+   {
+    "rotulo": "Custo médio por bitcoin",
+    "valor": "US$ 75.452",
+    "periodo": "15/11/2026"
+   },
+   {
+    "rotulo": "Capital levantado em 2026",
+    "valor": "US$ 21,2 bi",
+    "periodo": "até out/2026"
+   }
   ]
  },
  "saude": {
@@ -54,10 +88,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Strategy: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1050446/000105044626000047/mstr-20261029x8kxex9912.htm", "data": "2026-10-29"},
-  {"titulo": "Strategy: atualização semanal de bitcoin (8-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526462151/mstr-20261116.htm", "data": "2026-11-16"},
-  {"titulo": "Bitcoin Magazine: Strategy posts record operating income", "url": "https://bitcoinmagazine.com/news/strategy-posts-record-operating-income", "data": "2026-10"},
-  {"titulo": "Crypto Briefing: Strategy reports $19.5B Q3 profit on bitcoin gains", "url": "https://cryptobriefing.com/bitcoin-gains-q3-strategy-insights/", "data": "2026-10"}
+  {
+   "titulo": "Strategy: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1050446/000105044626000047/mstr-20261029x8kxex9912.htm",
+   "data": "2026-10-29"
+  },
+  {
+   "titulo": "Strategy: atualização semanal de bitcoin (8-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526462151/mstr-20261116.htm",
+   "data": "2026-11-16"
+  },
+  {
+   "titulo": "Bitcoin Magazine: Strategy posts record operating income",
+   "url": "https://bitcoinmagazine.com/news/strategy-posts-record-operating-income",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "Crypto Briefing: Strategy reports $19.5B Q3 profit on bitcoin gains",
+   "url": "https://cryptobriefing.com/bitcoin-gains-q3-strategy-insights/",
+   "data": "2026-10"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

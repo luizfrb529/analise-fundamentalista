@@ -4,26 +4,73 @@
  "resumo": "Fabricante de transceptores ópticos, lasers e materiais que ligam os servidores de IA por luz em vez de cobre. Data center e comunicações já são 82% da receita, que cresceu 56% em um ano em base comparável.",
  "modelo": "A Coherent fabrica componentes e módulos ópticos (transceptores de 800G e 1,6T, lasers, chips de fosfeto de índio) vendidos a provedores de nuvem e fabricantes de equipamentos de rede, além de lasers e materiais para indústria, semicondutores e instrumentos (segmento Industrial). Produz grande parte dos componentes internamente, inclusive os chips laser. O ano fiscal termina em junho.",
  "segmentos": [
-  {"nome": "Data center e comunicações", "peso_receita": 0.82, "periodo": "1T27 fiscal", "obs": "US$ 1,95 bi, alta de 79% em um ano."},
-  {"nome": "Industrial", "peso_receita": 0.18, "periodo": "1T27 fiscal", "obs": "US$ 419 mi, queda de 15% com a venda de negócios."}
+  {
+   "nome": "Data center e comunicações",
+   "peso_receita": 0.82,
+   "periodo": "1T27 fiscal",
+   "obs": "US$ 1,95 bi, alta de 79% em um ano."
+  },
+  {
+   "nome": "Industrial",
+   "peso_receita": 0.18,
+   "periodo": "1T27 fiscal",
+   "obs": "US$ 419 mi, queda de 15% com a venda de negócios."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Pensilvânia (EUA), com fábricas nos EUA, China, Malásia, Vietnã, Suíça e outros países."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede na Pensilvânia (EUA), com fábricas nos EUA, China, Malásia, Vietnã, Suíça e outros países."
+ },
  "temas": [
-  {"tema": "Inteligência artificial", "relacao": "Os data centers de IA estão trocando conexões de cobre por ópticas; a empresa está subindo a produção de transceptores de 1,6T com vários clientes."},
-  {"tema": "Interligação de data centers", "relacao": "A receita de conexões entre data centers passou de US$ 200 mi no trimestre, cerca de quatro vezes a de um ano antes."},
-  {"tema": "Fotônica integrada", "relacao": "Fechou um acordo PhotonLink de cerca de US$ 20 bi em cinco anos, com receita a partir de 2028, segundo a apresentação da empresa."}
+  {
+   "tema": "Inteligência artificial",
+   "relacao": "Os data centers de IA estão trocando conexões de cobre por ópticas; a empresa está subindo a produção de transceptores de 1,6T com vários clientes."
+  },
+  {
+   "tema": "Interligação de data centers",
+   "relacao": "A receita de conexões entre data centers passou de US$ 200 mi no trimestre, cerca de quatro vezes a de um ano antes."
+  },
+  {
+   "tema": "Fotônica integrada",
+   "relacao": "Fechou um acordo PhotonLink de cerca de US$ 20 bi em cinco anos, com receita a partir de 2028, segundo a apresentação da empresa."
+  }
  ],
  "diferencial": {
   "texto": "A Coherent é uma das poucas empresas que produzem em escala os próprios chips laser de fosfeto de índio, insumo escasso dos transceptores de alta velocidade; dobrou essa capacidade em um ano. A integração vertical, do material ao módulo, dá controle de custo e de oferta. A carteira ampla de produtos ópticos e o relacionamento com as grandes nuvens são barreiras relevantes. Os pontos fracos são a margem bruta abaixo da de concorrentes como a Lumentum, a dívida de US$ 4 bi e a concorrência de fabricantes chineses de módulos.",
-  "concorrentes": ["Lumentum", "InnoLight", "Eoptolink", "Broadcom", "Applied Optoelectronics", "Marvell"]
+  "concorrentes": [
+   "Lumentum",
+   "InnoLight",
+   "Eoptolink",
+   "Broadcom",
+   "Applied Optoelectronics",
+   "Marvell"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Escala e integração vertical em lasers e componentes ópticos, mas em setor competitivo e com margens apertadas."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do 2T27 fiscal (outubro a dezembro de 2026) deve ficar entre US$ 2,55 bi e US$ 2,75 bi, e o crescimento do ano fiscal de 2027 em base comparável deve passar de 60%. As metas são o primeiro trimestre de US$ 3 bi até o fim do ano fiscal de 2027, o primeiro de US$ 4 bi no ano fiscal de 2028 e margem bruta ajustada acima de 45% antes do fim de 2028. A capacidade de chips de fosfeto de índio deve mais que dobrar de novo até o fim de 2027.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 2,55 bi a US$ 2,75 bi", "periodo": "2T27 fiscal"},
-   {"rotulo": "Crescimento projetado (base comparável)", "valor": "acima de 60%", "periodo": "ano fiscal 2027"},
-   {"rotulo": "Acordo PhotonLink", "valor": "cerca de US$ 20 bi em 5 anos", "periodo": "a partir de 2028"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 2,55 bi a US$ 2,75 bi",
+    "periodo": "2T27 fiscal"
+   },
+   {
+    "rotulo": "Crescimento projetado (base comparável)",
+    "valor": "acima de 60%",
+    "periodo": "ano fiscal 2027"
+   },
+   {
+    "rotulo": "Acordo PhotonLink",
+    "valor": "cerca de US$ 20 bi em 5 anos",
+    "periodo": "a partir de 2028"
+   }
   ]
  },
  "saude": {
@@ -60,10 +107,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Coherent: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526447200/d176836dex991.htm", "data": "2026-11-04"},
-  {"titulo": "Coherent: apresentação do 1T27 fiscal (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526447200/d176836dex992.htm", "data": "2026-11-04"},
-  {"titulo": "Futurum: Coherent Q1 FY 2027, PhotonLink wins", "url": "https://futurumgroup.com/?p=97623", "data": "2026-11-05"},
-  {"titulo": "Panabee: Coherent Q1 revenue rises 56%", "url": "https://www.panabee.com/news/coherent-earnings-q1-2027", "data": "2026-11-05"}
+  {
+   "titulo": "Coherent: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526447200/d176836dex991.htm",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Coherent: apresentação do 1T27 fiscal (8-K, Exhibit 99.2, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526447200/d176836dex992.htm",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Futurum: Coherent Q1 FY 2027, PhotonLink wins",
+   "url": "https://futurumgroup.com/?p=97623",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "Panabee: Coherent Q1 revenue rises 56%",
+   "url": "https://www.panabee.com/news/coherent-earnings-q1-2027",
+   "data": "2026-11-05"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

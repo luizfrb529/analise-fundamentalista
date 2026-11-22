@@ -5,21 +5,53 @@
  "modelo": "A SK hynix fabrica, em fábricas próprias na Coreia do Sul e na China, memória DRAM (incluindo a HBM, empilhada ao lado das GPUs de IA, e a DDR5 para servidores) e memória NAND (com a Solidigm, nos EUA). Vende para fabricantes de GPUs, provedores de nuvem, fabricantes de servidores, celulares e PCs. Reporta em wons (KRW); as ações principais são negociadas em Seul e os recibos (ADRs) passaram a ser negociados nos EUA em 2026.",
  "segmentos": [],
  "segmentos_base": "A divisão entre DRAM e NAND não consta no comunicado do 3T26",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede e principais fábricas na Coreia do Sul (Icheon, Cheongju e o novo polo de Yongin), fábricas na China e unidade de encapsulamento em construção em Indiana (EUA)."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede e principais fábricas na Coreia do Sul (Icheon, Cheongju e o novo polo de Yongin), fábricas na China e unidade de encapsulamento em construção em Indiana (EUA)."
+ },
  "temas": [
-  {"tema": "Inteligência artificial", "relacao": "É a principal fornecedora de HBM, a memória das GPUs de IA; segundo a empresa, a HBM4 deve passar a HBM3E em volume e receita já no 4T26."},
-  {"tema": "Escassez de memória", "relacao": "A empresa espera que a falta de memória dure até 2030 e fechou contratos de cerca de cinco anos com 14 grandes clientes, cobrindo mais de 50% da produção de 2027 e 2028."},
-  {"tema": "Retorno ao acionista", "relacao": "Prometeu devolver cerca de 100 trilhões de wons em 2026 entre dividendos e recompras, mais de 50% do caixa livre."}
+  {
+   "tema": "Inteligência artificial",
+   "relacao": "É a principal fornecedora de HBM, a memória das GPUs de IA; segundo a empresa, a HBM4 deve passar a HBM3E em volume e receita já no 4T26."
+  },
+  {
+   "tema": "Escassez de memória",
+   "relacao": "A empresa espera que a falta de memória dure até 2030 e fechou contratos de cerca de cinco anos com 14 grandes clientes, cobrindo mais de 50% da produção de 2027 e 2028."
+  },
+  {
+   "tema": "Retorno ao acionista",
+   "relacao": "Prometeu devolver cerca de 100 trilhões de wons em 2026 entre dividendos e recompras, mais de 50% do caixa livre."
+  }
  ],
  "diferencial": {
   "texto": "A SK hynix foi a primeira a produzir HBM em massa e é a principal parceira da NVIDIA nessa memória, com tecnologia de empilhamento e encapsulamento (MR-MUF) que deu vantagem de rendimento sobre Samsung e Micron. O mercado de DRAM tem só três grandes fabricantes, porque cada fábrica custa dezenas de bilhões de dólares, uma das maiores barreiras de entrada da indústria. Os contratos longos com preço em faixa reduzem a volatilidade. O ponto fraco é o ciclo da memória: quando a oferta supera a demanda, preços e lucros caem rápido.",
-  "concorrentes": ["Samsung", "Micron", "CXMT (China)", "Kioxia (NAND)", "SanDisk (NAND)"]
+  "concorrentes": [
+   "Samsung",
+   "Micron",
+   "CXMT (China)",
+   "Kioxia (NAND)",
+   "SanDisk (NAND)"
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Liderança em memória de alta largura de banda (HBM) para IA, em setor de capital intensivo, porém cíclico e com concorrentes fortes."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a falta de memória deve continuar até 2030, a HBM4 vira o principal produto já no 4T26 e a fábrica M15X chega à capacidade máxima até o fim de 2026. Os contratos de longo prazo garantem mais da metade da produção de 2027 e 2028, com preço dentro de uma faixa ligada ao mercado. O investimento deve subir muito em 2027, com a primeira fase do polo de Yongin em operação plena. O ponto de atenção é o próprio ciclo, se toda a indústria ampliar capacidade ao mesmo tempo.",
   "metricas": [
-   {"rotulo": "Produção de 2027 e 2028 contratada", "valor": "mais de 50%", "periodo": "out/2026"},
-   {"rotulo": "Retorno ao acionista previsto", "valor": "cerca de 100 trilhões de wons", "periodo": "2026"}
+   {
+    "rotulo": "Produção de 2027 e 2028 contratada",
+    "valor": "mais de 50%",
+    "periodo": "out/2026"
+   },
+   {
+    "rotulo": "Retorno ao acionista previsto",
+    "valor": "cerca de 100 trilhões de wons",
+    "periodo": "2026"
+   }
   ]
  },
  "saude": {
@@ -54,10 +86,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "SK hynix: 3Q26 Financial Results (newsroom oficial)", "url": "https://news.skhynix.com/en/q3-2026-business-results/", "data": "2026-10-28"},
-  {"titulo": "SK hynix: teleconferência do 3T26 (newsroom oficial)", "url": "https://news.skhynix.com/en/q3-2026-earnings-conference-call/", "data": "2026-10-28"},
-  {"titulo": "The Korea Times: SK hynix launches campaign for listing depositary receipts in US", "url": "https://koreatimes.co.kr/business/companies/20260325/sk-hynix-launches-campaign-for-listing-depositary-receipts-in-us", "data": "2026-03-25"},
-  {"titulo": "Yahoo Finance: SK Hynix files US ADR listing", "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-files-us-adr-164807969.html", "data": "2026-03"}
+  {
+   "titulo": "SK hynix: 3Q26 Financial Results (newsroom oficial)",
+   "url": "https://news.skhynix.com/en/q3-2026-business-results/",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "SK hynix: teleconferência do 3T26 (newsroom oficial)",
+   "url": "https://news.skhynix.com/en/q3-2026-earnings-conference-call/",
+   "data": "2026-10-28"
+  },
+  {
+   "titulo": "The Korea Times: SK hynix launches campaign for listing depositary receipts in US",
+   "url": "https://koreatimes.co.kr/business/companies/20260325/sk-hynix-launches-campaign-for-listing-depositary-receipts-in-us",
+   "data": "2026-03-25"
+  },
+  {
+   "titulo": "Yahoo Finance: SK Hynix files US ADR listing",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-files-us-adr-164807969.html",
+   "data": "2026-03"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

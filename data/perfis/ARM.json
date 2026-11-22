@@ -4,26 +4,73 @@
  "resumo": "Empresa britânica que projeta a arquitetura de processadores usada em quase todos os celulares do mundo e cada vez mais em servidores, PCs e carros, e agora lança seu próprio chip. Controlada pela SoftBank, lucrativa, com receita crescendo 27%.",
  "modelo": "A Arm não fabrica chips: licencia seus projetos de processador (arquitetura e núcleos prontos) a empresas como Apple, Qualcomm, NVIDIA, Amazon, Google e Samsung, cobrando uma taxa de licença e royalties sobre cada chip vendido. Também vende subsistemas completos (CSS), mais valiosos, e começa a vender um chip próprio para data centers, o Arm AGI CPU.",
  "segmentos": [
-  {"nome": "Licenças e outros", "peso_receita": 0.54, "periodo": "3T26", "obs": "US$ 773 mi, alta de 50%."},
-  {"nome": "Royalties", "peso_receita": 0.46, "periodo": "3T26", "obs": "US$ 670 mi, alta de 8%; royalties de data center dobraram."}
+  {
+   "nome": "Licenças e outros",
+   "peso_receita": 0.54,
+   "periodo": "3T26",
+   "obs": "US$ 773 mi, alta de 50%."
+  },
+  {
+   "nome": "Royalties",
+   "peso_receita": 0.46,
+   "periodo": "3T26",
+   "obs": "US$ 670 mi, alta de 8%; royalties de data center dobraram."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Cambridge (Reino Unido); clientes no mundo todo, com peso grande de EUA, China, Taiwan e Coreia."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Cambridge (Reino Unido); clientes no mundo todo, com peso grande de EUA, China, Taiwan e Coreia."
+ },
  "temas": [
-  {"tema": "Data centers e IA", "relacao": "A participação de servidores com Arm nas maiores nuvens passou de 15% em 2024 para mais de 50% em 2025 e deve passar de 60% no fim de 2026, segundo a empresa."},
-  {"tema": "Chip próprio", "relacao": "O Arm AGI CPU, primeiro chip próprio, deve ter as primeiras entregas comerciais no trimestre até março de 2027, com meta de até US$ 2 bi de receita nos anos fiscais 2027 e 2028."},
-  {"tema": "IA em aparelhos", "relacao": "Celulares com IA usam núcleos Arm mais caros, elevando o royalty por chip."}
+  {
+   "tema": "Data centers e IA",
+   "relacao": "A participação de servidores com Arm nas maiores nuvens passou de 15% em 2024 para mais de 50% em 2025 e deve passar de 60% no fim de 2026, segundo a empresa."
+  },
+  {
+   "tema": "Chip próprio",
+   "relacao": "O Arm AGI CPU, primeiro chip próprio, deve ter as primeiras entregas comerciais no trimestre até março de 2027, com meta de até US$ 2 bi de receita nos anos fiscais 2027 e 2028."
+  },
+  {
+   "tema": "IA em aparelhos",
+   "relacao": "Celulares com IA usam núcleos Arm mais caros, elevando o royalty por chip."
+  }
  ],
  "diferencial": {
   "texto": "A arquitetura Arm é o padrão de fato em celulares, com um ecossistema enorme de software e engenheiros, o que torna a troca quase impossível; o baixo consumo de energia a favorece em data centers de IA. Os pontos fracos são o crescimento lento dos royalties de celulares, o risco de conflito com clientes ao vender chip próprio, a concorrência da arquitetura aberta RISC-V e a avaliação de mercado muito alta.",
-  "concorrentes": ["RISC-V (SiFive e outras)", "Intel (x86)", "AMD (x86)", "Imagination Technologies", "Cadence", "Synopsys"]
+  "concorrentes": [
+   "RISC-V (SiFive e outras)",
+   "Intel (x86)",
+   "AMD (x86)",
+   "Imagination Technologies",
+   "Cadence",
+   "Synopsys"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Arquitetura padrão em praticamente todos os celulares, com ecossistema de software e engenheiros que torna a troca quase impossível."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do trimestre até dezembro deve ser de US$ 1,54 bi, mais ou menos US$ 50 mi, com lucro ajustado de US$ 0,56 por ação. O potencial vem de data centers, da venda de subsistemas completos e do chip próprio, que pode render até US$ 2 bi nos anos fiscais 2027 e 2028.",
   "metricas": [
-   {"rotulo": "Receita projetada", "valor": "US$ 1,49 bi a US$ 1,59 bi", "periodo": "4T26"},
-   {"rotulo": "Meta de receita do chip próprio", "valor": "até US$ 2 bi", "periodo": "anos fiscais 2027 e 2028"},
-   {"rotulo": "Participação nos servidores das grandes nuvens", "valor": "mais de 60%", "periodo": "meta fim de 2026"}
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 1,49 bi a US$ 1,59 bi",
+    "periodo": "4T26"
+   },
+   {
+    "rotulo": "Meta de receita do chip próprio",
+    "valor": "até US$ 2 bi",
+    "periodo": "anos fiscais 2027 e 2028"
+   },
+   {
+    "rotulo": "Participação nos servidores das grandes nuvens",
+    "valor": "mais de 60%",
+    "periodo": "meta fim de 2026"
+   }
   ]
  },
  "saude": {
@@ -58,10 +105,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Arm: resultados do 2T27 fiscal (6-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000141/exhibit991fye27q230-sepx26.htm", "data": "2026-11-04"},
-  {"titulo": "Arm: carta aos acionistas do 2T27 fiscal (6-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000141/exhibit992fye27q230-sepx26.htm", "data": "2026-11-04"},
-  {"titulo": "Guru3D: Arm posts $1.44 billion in quarterly revenue and raises its AGI CPU ambition", "url": "https://www.guru3d.com/story/arm-posts-billion-in-quarterly-revenue-and-raises-its-agi-cpu-ambition/", "data": "2026-11"},
-  {"titulo": "Zacks: Arm Holdings Q2 earnings call centers on AGI CPU expansion", "url": "https://www.zacks.com/stock/news/3024400/arm-holdings-q2-earnings-call-centers-on-agi-cpu-expansion", "data": "2026-11"}
+  {
+   "titulo": "Arm: resultados do 2T27 fiscal (6-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000141/exhibit991fye27q230-sepx26.htm",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Arm: carta aos acionistas do 2T27 fiscal (6-K, Exhibit 99.2, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000141/exhibit992fye27q230-sepx26.htm",
+   "data": "2026-11-04"
+  },
+  {
+   "titulo": "Guru3D: Arm posts $1.44 billion in quarterly revenue and raises its AGI CPU ambition",
+   "url": "https://www.guru3d.com/story/arm-posts-billion-in-quarterly-revenue-and-raises-its-agi-cpu-ambition/",
+   "data": "2026-11"
+  },
+  {
+   "titulo": "Zacks: Arm Holdings Q2 earnings call centers on AGI CPU expansion",
+   "url": "https://www.zacks.com/stock/news/3024400/arm-holdings-q2-earnings-call-centers-on-agi-cpu-expansion",
+   "data": "2026-11"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

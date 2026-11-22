@@ -4,27 +4,81 @@
  "resumo": "Maior empresa de defesa do mundo, fabricante do caça F-35, dos mísseis Patriot PAC-3 e THAAD, de helicópteros Sikorsky e de satélites. Lucrativa, com carteira recorde de US$ 292 bi após grande contrato de mísseis.",
  "modelo": "A Lockheed Martin vende sistemas de defesa principalmente ao governo dos EUA e a aliados, em contratos de longo prazo de desenvolvimento, produção e manutenção. Tem quatro segmentos: Aeronáutica (F-35, F-16, C-130), Mísseis e Controle de Fogo (PAC-3, THAAD, GMLRS, PrSM), Sistemas Rotativos e de Missão (helicópteros Sikorsky, radares) e Espaço (satélites, mísseis estratégicos).",
  "segmentos": [
-  {"nome": "Aeronáutica", "peso_receita": 0.40, "periodo": "3T26", "obs": "US$ 8,21 bi, alta de 13%, margem de 9,0%."},
-  {"nome": "Rotativos e sistemas de missão", "peso_receita": 0.22, "periodo": "3T26", "obs": "US$ 4,51 bi, alta de 3%."},
-  {"nome": "Mísseis e controle de fogo", "peso_receita": 0.22, "periodo": "3T26", "obs": "US$ 4,50 bi, alta de 24%, margem de 14,0%."},
-  {"nome": "Espaço", "peso_receita": 0.17, "periodo": "3T26", "obs": "US$ 3,49 bi, alta de 4%."}
+  {
+   "nome": "Aeronáutica",
+   "peso_receita": 0.4,
+   "periodo": "3T26",
+   "obs": "US$ 8,21 bi, alta de 13%, margem de 9,0%."
+  },
+  {
+   "nome": "Rotativos e sistemas de missão",
+   "peso_receita": 0.22,
+   "periodo": "3T26",
+   "obs": "US$ 4,51 bi, alta de 3%."
+  },
+  {
+   "nome": "Mísseis e controle de fogo",
+   "peso_receita": 0.22,
+   "periodo": "3T26",
+   "obs": "US$ 4,50 bi, alta de 24%, margem de 14,0%."
+  },
+  {
+   "nome": "Espaço",
+   "peso_receita": 0.17,
+   "periodo": "3T26",
+   "obs": "US$ 3,49 bi, alta de 4%."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Bethesda, Maryland (EUA); a maior parte da receita vem do governo americano, com vendas a aliados na Europa, Oriente Médio e Ásia."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Bethesda, Maryland (EUA); a maior parte da receita vem do governo americano, com vendas a aliados na Europa, Oriente Médio e Ásia."
+ },
  "temas": [
-  {"tema": "Defesa antimísseis", "relacao": "Recebeu contrato plurianual de US$ 52,5 bi para produzir mísseis PAC-3 MSE, e a carteira de mísseis triplicou para US$ 142,5 bi."},
-  {"tema": "Caças F-35", "relacao": "Os custos do lote 20 do F-35 já superam o financiamento autorizado, e a empresa alerta para impacto se não houver nova autorização do governo."}
+  {
+   "tema": "Defesa antimísseis",
+   "relacao": "Recebeu contrato plurianual de US$ 52,5 bi para produzir mísseis PAC-3 MSE, e a carteira de mísseis triplicou para US$ 142,5 bi."
+  },
+  {
+   "tema": "Caças F-35",
+   "relacao": "Os custos do lote 20 do F-35 já superam o financiamento autorizado, e a empresa alerta para impacto se não houver nova autorização do governo."
+  }
  ],
  "diferencial": {
   "texto": "A Lockheed tem programas únicos e de décadas, como o F-35, usado por vários países, e os mísseis PAC-3 e THAAD, com enormes barreiras de tecnologia, segurança e relação com o governo. A carteira de US$ 292 bi dá visibilidade de anos. Os pontos fracos são a dependência do orçamento americano, margens limitadas por contratos de preço fixo e riscos de custo em grandes programas.",
-  "concorrentes": ["RTX", "Northrop Grumman", "General Dynamics", "Boeing", "BAE Systems", "L3Harris"]
+  "concorrentes": [
+   "RTX",
+   "Northrop Grumman",
+   "General Dynamics",
+   "Boeing",
+   "BAE Systems",
+   "L3Harris"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Programas únicos e de décadas, como o F-35 e os mísseis PAC-3, com barreiras enormes de tecnologia e segurança."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, as vendas de 2026 devem ficar entre US$ 80 bi e US$ 82 bi, com lucro de US$ 30,35 a US$ 30,75 por ação e fluxo de caixa livre de US$ 7,8 bi a US$ 8,0 bi; a projeção foi elevada. O crescimento vem da produção acelerada de mísseis.",
   "metricas": [
-   {"rotulo": "Carteira de pedidos", "valor": "US$ 292 bi", "periodo": "set/2026"},
-   {"rotulo": "Vendas projetadas", "valor": "US$ 80 bi a US$ 82 bi", "periodo": "2026"},
-   {"rotulo": "Contrato de mísseis PAC-3 MSE", "valor": "US$ 52,5 bi", "periodo": "2026"}
+   {
+    "rotulo": "Carteira de pedidos",
+    "valor": "US$ 292 bi",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Vendas projetadas",
+    "valor": "US$ 80 bi a US$ 82 bi",
+    "periodo": "2026"
+   },
+   {
+    "rotulo": "Contrato de mísseis PAC-3 MSE",
+    "valor": "US$ 52,5 bi",
+    "periodo": "2026"
+   }
   ]
  },
  "saude": {
@@ -59,10 +113,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "Lockheed Martin: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/936468/000162828026066780/ex991q32026.htm", "data": "2026-10-22"},
-  {"titulo": "GovConWire: Lockheed Martin missile backlog triples to $142.5B", "url": "https://www.govconwire.com/articles/lockheed-martin-q3-2026-missile-backlog-patriot", "data": "2026-10"},
-  {"titulo": "Motley Fool: Why Lockheed Martin stock soared today", "url": "https://www.fool.com/investing/2026/10/22/why-lockheed-martin-stock-soared-today/", "data": "2026-10-22"},
-  {"titulo": "Investing News: Lockheed Martin reports third quarter 2026 results", "url": "https://investingnews.com/lockheed-martin-reports-third-quarter-2026-financial-results/", "data": "2026-10-22"}
+  {
+   "titulo": "Lockheed Martin: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000162828026066780/ex991q32026.htm",
+   "data": "2026-10-22"
+  },
+  {
+   "titulo": "GovConWire: Lockheed Martin missile backlog triples to $142.5B",
+   "url": "https://www.govconwire.com/articles/lockheed-martin-q3-2026-missile-backlog-patriot",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "Motley Fool: Why Lockheed Martin stock soared today",
+   "url": "https://www.fool.com/investing/2026/10/22/why-lockheed-martin-stock-soared-today/",
+   "data": "2026-10-22"
+  },
+  {
+   "titulo": "Investing News: Lockheed Martin reports third quarter 2026 results",
+   "url": "https://investingnews.com/lockheed-martin-reports-third-quarter-2026-financial-results/",
+   "data": "2026-10-22"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

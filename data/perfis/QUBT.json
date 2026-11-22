@@ -5,21 +5,54 @@
  "modelo": "A Quantum Computing Inc (QCi) vende chips fotônicos, componentes e módulos ópticos, serviços de fábrica de chips (foundry) e máquinas quânticas fotônicas que funcionam em temperatura ambiente, como o Dirac-3, usado em problemas de otimização. Em 2026 comprou a Luminar Semiconductor (US$ 110 mi em dinheiro), a NuCrypt e a NHanced Semiconductors, que trouxeram quase toda a receita atual. Atende pesquisa, defesa, telecomunicações e sensores.",
  "segmentos": [],
  "segmentos_base": "Empresa não divulga receita por segmento no release",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Hoboken (EUA), com fábrica de chips em Tempe, Arizona, e operações na Califórnia, Illinois, Massachusetts e Virgínia; acordo com universidade no Catar."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Hoboken (EUA), com fábrica de chips em Tempe, Arizona, e operações na Califórnia, Illinois, Massachusetts e Virgínia; acordo com universidade no Catar."
+ },
  "temas": [
-  {"tema": "Fotônica e IA", "relacao": "Chips ópticos de niobato de lítio em filme fino podem transmitir dados com menos energia em data centers e telecomunicações, área que ganhou atenção com a IA."},
-  {"tema": "Computação quântica", "relacao": "As máquinas fotônicas da empresa funcionam em temperatura ambiente; a farmacêutica INmune Bio é o primeiro cliente comercial do setor de saúde."},
-  {"tema": "Semicondutores nos EUA", "relacao": "Tem fábricas próprias nos EUA após as compras de 2026, o que interessa a clientes de defesa."}
+  {
+   "tema": "Fotônica e IA",
+   "relacao": "Chips ópticos de niobato de lítio em filme fino podem transmitir dados com menos energia em data centers e telecomunicações, área que ganhou atenção com a IA."
+  },
+  {
+   "tema": "Computação quântica",
+   "relacao": "As máquinas fotônicas da empresa funcionam em temperatura ambiente; a farmacêutica INmune Bio é o primeiro cliente comercial do setor de saúde."
+  },
+  {
+   "tema": "Semicondutores nos EUA",
+   "relacao": "Tem fábricas próprias nos EUA após as compras de 2026, o que interessa a clientes de defesa."
+  }
  ],
  "diferencial": {
   "texto": "A empresa aposta em fabricação própria de chips fotônicos e em computação quântica sem refrigeração extrema, o que reduz custo e tamanho dos equipamentos. O caixa grande permite comprar empresas e tecnologia. Os pontos fracos são a margem bruta muito baixa (4,5% no 3T26), a receita que vem quase toda de aquisições, a tecnologia quântica ainda sem uso comercial relevante e a concorrência de empresas de fotônica e quântica maiores.",
-  "concorrentes": ["IonQ", "PsiQuantum", "Xanadu", "Lightwave Logic", "Coherent", "D-Wave"]
+  "concorrentes": [
+   "IonQ",
+   "PsiQuantum",
+   "Xanadu",
+   "Lightwave Logic",
+   "Coherent",
+   "D-Wave"
+  ],
+  "vantagem": {
+   "nivel": "nenhuma clara",
+   "resumo": "Receita vem quase toda de aquisições recentes, com margem bruta muito baixa e tecnologia sem uso comercial comprovado."
+  }
  },
  "potencial": {
   "texto": "A carteira de contratos era de cerca de US$ 39,1 mi em setembro. A receita do 3T26, de US$ 9,5 mi, superou a de todo o primeiro semestre graças às empresas compradas. A empresa não divulga projeção de receita; o potencial depende de ganhar escala na fábrica de chips e de transformar as máquinas quânticas em produto comercial.",
   "metricas": [
-   {"rotulo": "Carteira de contratos", "valor": "US$ 39,1 mi", "periodo": "set/2026"},
-   {"rotulo": "Caixa e aplicações", "valor": "cerca de US$ 1,3 bi", "periodo": "set/2026"}
+   {
+    "rotulo": "Carteira de contratos",
+    "valor": "US$ 39,1 mi",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Caixa e aplicações",
+    "valor": "cerca de US$ 1,3 bi",
+    "periodo": "set/2026"
+   }
   ]
  },
  "saude": {
@@ -55,10 +88,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "QCi: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1758009/000162828026072163/q3-26earningspressreleasex.htm", "data": "2026-11-09"},
-  {"titulo": "QCi: conclusão da compra da Luminar Semiconductor (8-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026011452/ea027538301ex99-1_quantum.htm", "data": "2026-02-03"},
-  {"titulo": "QCi: conclusão da compra da NHanced (8-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026070872/ea029546601ex99-1.htm", "data": "2026-06-23"},
-  {"titulo": "Quiver Quant: Quantum Computing reports $9.5 million third-quarter revenue", "url": "https://www.quiverquant.com/news/Quantum+Computing+QUBT+Reports+%249.5+Million+Third-Quarter+Revenue", "data": "2026-11-09"}
+  {
+   "titulo": "QCi: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1758009/000162828026072163/q3-26earningspressreleasex.htm",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "QCi: conclusão da compra da Luminar Semiconductor (8-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026011452/ea027538301ex99-1_quantum.htm",
+   "data": "2026-02-03"
+  },
+  {
+   "titulo": "QCi: conclusão da compra da NHanced (8-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1758009/000121390026070872/ea029546601ex99-1.htm",
+   "data": "2026-06-23"
+  },
+  {
+   "titulo": "Quiver Quant: Quantum Computing reports $9.5 million third-quarter revenue",
+   "url": "https://www.quiverquant.com/news/Quantum+Computing+QUBT+Reports+%249.5+Million+Third-Quarter+Revenue",
+   "data": "2026-11-09"
+  }
  ],
  "ultimo_resultado": "3T26"
 }

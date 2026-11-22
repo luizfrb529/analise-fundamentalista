@@ -47,7 +47,11 @@
    "CME Group",
    "Kalshi",
    "Circle"
-  ]
+  ],
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Corretora de cripto mais regulada dos EUA, custodiante de ETFs e parceira do USDC, mas em setor cíclico e competitivo."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita de assinaturas e serviços do 4T26 deve ficar entre US$ 550 mi e US$ 630 mi, e a receita de transações somava cerca de US$ 165 mi até 25/10. As despesas ajustadas de 2026 foram reduzidas para US$ 4,15 bi a US$ 4,30 bi. O potencial depende do ciclo de cripto e do crescimento de derivativos e previsões.",

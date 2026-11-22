@@ -4,26 +4,73 @@
  "resumo": "Líder americana em cibersegurança na nuvem, com a plataforma Falcon que protege computadores, servidores, nuvem e identidades. Receita recorrente de US$ 5,8 bi por ano, crescendo 25%, com forte geração de caixa e lucro contábil perto de zero.",
  "modelo": "A CrowdStrike vende assinaturas da plataforma Falcon, que usa um único agente instalado nos dispositivos e inteligência artificial na nuvem para detectar e bloquear ataques. O cliente começa com proteção de computadores e vai somando módulos (nuvem, identidade, SIEM, dados), pagos por assinatura; o modelo Falcon Flex permite trocar e acrescentar módulos com um contrato flexível. Também presta serviços de resposta a incidentes.",
  "segmentos": [
-  {"nome": "Assinaturas", "peso_receita": 0.95, "periodo": "3T26", "obs": "US$ 1,40 bi, alta de 27%."},
-  {"nome": "Serviços profissionais", "peso_receita": 0.05, "periodo": "3T26", "obs": "US$ 70,6 mi."}
+  {
+   "nome": "Assinaturas",
+   "peso_receita": 0.95,
+   "periodo": "3T26",
+   "obs": "US$ 1,40 bi, alta de 27%."
+  },
+  {
+   "nome": "Serviços profissionais",
+   "peso_receita": 0.05,
+   "periodo": "3T26",
+   "obs": "US$ 70,6 mi."
+  }
  ],
  "segmentos_base": "Receita",
- "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede no Texas (EUA); a maior parte da receita vem dos EUA, com clientes na Europa, Ásia e América Latina."},
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede no Texas (EUA); a maior parte da receita vem dos EUA, com clientes na Europa, Ásia e América Latina."
+ },
  "temas": [
-  {"tema": "Cibersegurança e IA", "relacao": "Ataques feitos com IA aumentam a demanda por defesa automatizada; a empresa lançou proteção de identidade para agentes de IA."},
-  {"tema": "Nuvem", "relacao": "Lançou com a AWS produtos conjuntos de segurança de nuvem e de SIEM de nova geração."},
-  {"tema": "Consolidação de fornecedores", "relacao": "Empresas preferem menos fornecedores de segurança; 51% dos clientes já usam seis ou mais módulos."}
+  {
+   "tema": "Cibersegurança e IA",
+   "relacao": "Ataques feitos com IA aumentam a demanda por defesa automatizada; a empresa lançou proteção de identidade para agentes de IA."
+  },
+  {
+   "tema": "Nuvem",
+   "relacao": "Lançou com a AWS produtos conjuntos de segurança de nuvem e de SIEM de nova geração."
+  },
+  {
+   "tema": "Consolidação de fornecedores",
+   "relacao": "Empresas preferem menos fornecedores de segurança; 51% dos clientes já usam seis ou mais módulos."
+  }
  ],
  "diferencial": {
   "texto": "A plataforma nativa de nuvem, com um único agente leve, e o volume enorme de dados de ataques coletados de milhões de dispositivos alimentam a IA da empresa, o que fica melhor com escala. Trocar de fornecedor de segurança é arriscado e caro para o cliente. Os pontos fracos são o lucro contábil baixo pela remuneração em ações, a concorrência acirrada e o risco reputacional mostrado pela pane global de julho de 2024, causada por uma atualização da própria empresa.",
-  "concorrentes": ["Microsoft", "Palo Alto Networks", "SentinelOne", "Zscaler", "Fortinet", "Google (Mandiant e Wiz)"]
+  "concorrentes": [
+   "Microsoft",
+   "Palo Alto Networks",
+   "SentinelOne",
+   "Zscaler",
+   "Fortinet",
+   "Google (Mandiant e Wiz)"
+  ],
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Plataforma de segurança com agente único e volume enorme de dados de ataques, que melhora com a escala e é cara de trocar."
+  }
  },
  "potencial": {
   "texto": "Segundo a empresa, a receita do ano fiscal 2027 (fevereiro de 2026 a janeiro de 2027) deve ficar entre US$ 5,99 bi e US$ 6,01 bi, e a receita recorrente anual (ARR) deve terminar entre US$ 6,60 bi e US$ 6,61 bi, com nova ARR crescendo cerca de 34%, projeção elevada. Contas que usam o Falcon Flex já somam US$ 2,29 bi em ARR, o dobro de um ano antes.",
   "metricas": [
-   {"rotulo": "Receita recorrente anual (ARR)", "valor": "US$ 5,84 bi", "periodo": "jul/2026"},
-   {"rotulo": "Receita projetada", "valor": "US$ 5,99 bi a US$ 6,01 bi", "periodo": "ano fiscal 2027"},
-   {"rotulo": "ARR de contas Falcon Flex", "valor": "US$ 2,29 bi", "periodo": "jul/2026"}
+   {
+    "rotulo": "Receita recorrente anual (ARR)",
+    "valor": "US$ 5,84 bi",
+    "periodo": "jul/2026"
+   },
+   {
+    "rotulo": "Receita projetada",
+    "valor": "US$ 5,99 bi a US$ 6,01 bi",
+    "periodo": "ano fiscal 2027"
+   },
+   {
+    "rotulo": "ARR de contas Falcon Flex",
+    "valor": "US$ 2,29 bi",
+    "periodo": "jul/2026"
+   }
   ]
  },
  "saude": {
@@ -57,10 +104,26 @@
   ]
  },
  "fontes": [
-  {"titulo": "CrowdStrike: resultados do 2T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000029/crwd-20260826xex991.htm", "data": "2026-08-26"},
-  {"titulo": "CrowdStrike: comunicado de resultados do 2T27 fiscal", "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-second-quarter-fiscal-year-2027-financial", "data": "2026-08-26"},
-  {"titulo": "Motley Fool: Why CrowdStrike stock skyrocketed today", "url": "https://www.fool.com/investing/2026/08/27/why-crowdstrike-stock-skyrocketed-today/", "data": "2026-08-27"},
-  {"titulo": "IT Brief: CrowdStrike lifts outlook after record ARR quarter", "url": "https://itbrief.com.au/story/crowdstrike-lifts-outlook-after-record-arr-quarter", "data": "2026-08"}
+  {
+   "titulo": "CrowdStrike: resultados do 2T27 fiscal (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000029/crwd-20260826xex991.htm",
+   "data": "2026-08-26"
+  },
+  {
+   "titulo": "CrowdStrike: comunicado de resultados do 2T27 fiscal",
+   "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-second-quarter-fiscal-year-2027-financial",
+   "data": "2026-08-26"
+  },
+  {
+   "titulo": "Motley Fool: Why CrowdStrike stock skyrocketed today",
+   "url": "https://www.fool.com/investing/2026/08/27/why-crowdstrike-stock-skyrocketed-today/",
+   "data": "2026-08-27"
+  },
+  {
+   "titulo": "IT Brief: CrowdStrike lifts outlook after record ARR quarter",
+   "url": "https://itbrief.com.au/story/crowdstrike-lifts-outlook-after-record-arr-quarter",
+   "data": "2026-08"
+  }
  ],
  "ultimo_resultado": "3T26"
 }
