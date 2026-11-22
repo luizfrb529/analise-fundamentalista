@@ -1,0 +1,63 @@
+{
+ "ticker": "LULU",
+ "revisado_em": "2026-11-22",
+ "resumo": "Marca canadense de roupas esportivas premium, famosa pelas leggings de ioga, que vive queda de vendas nas Américas e troca de comando. Ainda lucrativa e sem dívida, mas com projeção de receita em queda em 2026.",
+ "modelo": "A Lululemon projeta roupas esportivas e de lazer de preço alto, fabricadas por terceiros na Ásia, e vende principalmente em lojas próprias e pelo site, o que dá margem bruta alta. Cresce no exterior, sobretudo na China, enquanto tenta recuperar as vendas na América do Norte.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 2,42 bi no 2º tri fiscal 2026 (-4%); vendas mesmas lojas nas Américas -12%",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Vancouver (Canadá); maior parte das vendas nas Américas, com crescimento na China."},
+ "temas": [
+  {"tema": "Consumo e moda esportiva", "relacao": "As vendas de leggings caíram cerca de 20% e a marca perde espaço para concorrentes como a Alo Yoga, segundo a imprensa."},
+  {"tema": "Tarifas de importação", "relacao": "Recebeu US$ 134,5 mi em devolução de tarifas no trimestre, o que inflou a margem."}
+ ],
+ "diferencial": {
+  "texto": "A Lululemon construiu uma marca premium com comunidade fiel e venda direta que garante margem bruta acima de 55%. Mas a barreira de entrada em roupas esportivas é baixa: Alo, Vuori, Nike e outras copiaram o modelo, a marca está perdendo força nas Américas e a empresa passa por troca de comando.",
+  "vantagem": {"nivel": "fraca", "resumo": "Marca premium com venda direta e margem alta, mas barreira de entrada baixa e perda de espaço para rivais como Alo e Vuori."},
+  "concorrentes": ["Alo Yoga", "Vuori", "Nike", "Athleta (Gap)", "Adidas", "Anta"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2026 deve cair de 5% a 7%, para US$ 10,35 bi a US$ 10,50 bi, com lucro de US$ 9,48 a US$ 9,73 por ação, incluindo a devolução de tarifas. O potencial depende da nova CEO conseguir recuperar a marca.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 10,35 bi a US$ 10,50 bi", "periodo": "ano fiscal 2026"},
+   {"rotulo": "Lucro projetado", "valor": "US$ 9,48 a US$ 9,73 por ação", "periodo": "ano fiscal 2026"},
+   {"rotulo": "Margem bruta", "valor": "60,5%", "periodo": "2º tri fiscal 2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 2,92 por ação no trimestre, dos quais US$ 0,86 vieram da devolução de tarifas. Tem US$ 1,39 bi em caixa, sem dívida financeira, e recomprou US$ 330 mi em ações no trimestre.",
+  "caixa": "US$ 1,39 bi",
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Perda de espaço para concorrentes.",
+  "Queda de vendas nas Américas.",
+  "Tarifas sobre produtos importados.",
+  "Troca de comando."
+ ],
+ "momento": "No 2º tri fiscal 2026 (divulgado em 03/09/2026), a receita caiu 4% e a empresa cortou a projeção do ano; Heidi O'Neill, ex-executiva da Nike, assumiu como CEO em setembro.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-03",
+  "positivos": [
+   "Receita na China subiu 4%.",
+   "Sem dívida.",
+   "Recompras de US$ 330 mi."
+  ],
+  "negativos": [
+   "Vendas mesmas lojas nas Américas caíram 12%.",
+   "Projeção anual cortada."
+  ],
+  "atencao": [
+   "Resultado do 3º tri fiscal em dezembro.",
+   "Plano da nova CEO."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Lululemon: resultados do 2º tri fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm", "data": "2026-09-03"},
+  {"titulo": "Motley Fool: Why Lululemon stock crashed today", "url": "https://www.fool.com/investing/2026/09/04/why-lululemon-stock-crashed-today", "data": "2026-09-04"},
+  {"titulo": "Retail Dive: Lululemon pulls back store plans as sales plummet in Q2", "url": "https://www.retaildive.com/news/lululemon-pulls-back-store-plans-sales-plummet-q2/829660/", "data": "2026-09"}
+ ],
+ "ultimo_resultado": "3T26"
+}

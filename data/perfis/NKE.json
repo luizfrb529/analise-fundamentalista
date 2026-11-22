@@ -1,0 +1,66 @@
+{
+ "ticker": "NKE",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior marca de artigos esportivos do mundo (Nike, Jordan, Converse), em processo de recuperação após anos de perda de espaço para novas marcas. Lucrativa e com caixa forte, mas com vendas em queda e lucro pressionado.",
+ "modelo": "A Nike projeta e vende tênis, roupas e equipamentos esportivos, fabricados por terceiros principalmente na Ásia, por lojas próprias, site e aplicativo (Nike Direct) e por varejistas parceiros (atacado). Investe muito em marketing e patrocínio de atletas.",
+ "segmentos": [
+  {"nome": "Atacado", "peso_receita": 0.62, "periodo": "3T26", "obs": "Receita de US$ 6,8 bi (-1%)."},
+  {"nome": "Nike Direct", "peso_receita": 0.38, "periodo": "3T26", "obs": "Receita de US$ 4,1 bi (-8%)."}
+ ],
+ "segmentos_base": "Receita da marca Nike por canal",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Beaverton, Oregon (EUA); a América do Norte responde por cerca de 45% da receita, com Europa e China a seguir."},
+ "temas": [
+  {"tema": "Consumo e moda esportiva", "relacao": "Perde espaço para marcas como On, Hoka e Adidas; a receita da Jordan caiu em ritmo de dois dígitos, segundo a imprensa."},
+  {"tema": "Consumo na China", "relacao": "A receita na China caiu 26% em moeda constante no trimestre."}
+ ],
+ "diferencial": {
+  "texto": "A Nike tem a marca esportiva mais valiosa do mundo, contratos com grandes atletas e clubes e escala de marketing e distribuição sem igual. Mas a força da marca não impediu a perda de espaço para concorrentes mais inovadores, e a empresa está no meio de uma reestruturação, com vendas em queda e a China fraca.",
+  "vantagem": {"nivel": "moderada", "resumo": "Marca esportiva mais valiosa do mundo, com escala e atletas de ponta, mas perdendo espaço para rivais e com vendas em queda."},
+  "concorrentes": ["Adidas", "On", "Hoka (Deckers)", "Lululemon", "Puma", "Anta"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 (até mai/2027) deve cair em alta de um dígito, com lucro ajustado de US$ 1,15 a US$ 1,35 por ação. O plano de reestruturação Pace mira cerca de US$ 2,5 bi de economia até 2031.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 1,15 a US$ 1,35 por ação", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Economia prevista com o Pace", "valor": "cerca de US$ 2,5 bi", "periodo": "até 2031"},
+   {"rotulo": "Margem bruta", "valor": "42,8%", "periodo": "1º tri fiscal 2027"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 712 mi no trimestre (US$ 0,48 por ação), queda de 2%, com margem bruta de 42,8%. Tem US$ 8,4 bi em caixa e aplicações e US$ 7,9 bi em dívida, e paga cerca de US$ 610 mi por trimestre em dividendos.",
+  "caixa": "US$ 8,4 bi",
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Perda de espaço para concorrentes.",
+  "Fraqueza na China.",
+  "Tarifas sobre produtos importados.",
+  "Execução da reestruturação."
+ ],
+ "momento": "No 1º tri fiscal 2027 (divulgado em 01/10/2026), a receita caiu 4%, para US$ 11,2 bi, com a China caindo 26%, e a empresa lançou o plano de reestruturação Pace; o CEO é Elliott Hill.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-01",
+  "positivos": [
+   "Margem bruta subiu 0,6 ponto.",
+   "América do Norte cresceu 2%.",
+   "Estoques caíram 3%."
+  ],
+  "negativos": [
+   "Receita caiu 4%.",
+   "China caiu 26%."
+  ],
+  "atencao": [
+   "Cortes de pessoal do Pace.",
+   "Recuperação da Jordan e da China."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Nike: resultados do 1º tri fiscal 2027 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000184/q1fy27exhibit991er.htm", "data": "2026-10-01"},
+  {"titulo": "Nike: reports fiscal 2027 first quarter results", "url": "https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results", "data": "2026-10-01"},
+  {"titulo": "BeInCrypto: Nike earnings explained", "url": "https://beincrypto.com/nike-earnings-explained-sales-profit-beat/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

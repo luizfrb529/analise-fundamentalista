@@ -1,0 +1,132 @@
+{
+ "ticker": "GIS",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das maiores empresas de alimentos dos EUA, dona de marcas como Cheerios, Nature Valley, Pillsbury, Häagen-Dazs e Blue Buffalo. Lucrativa e boa pagadora de dividendos, mas com vendas estagnadas e lucro em queda.",
+ "modelo": "A General Mills fabrica e vende cereais, snacks, massas refrigeradas, sopas, sorvetes e ração para pets, principalmente para supermercados, além de produtos para restaurantes e cozinhas industriais (foodservice). Ganha com marcas fortes e escala de distribuição.",
+ "segmentos": [
+  {
+   "nome": "Varejo América do Norte",
+   "peso_receita": 0.56,
+   "periodo": "3T26",
+   "obs": "Vendas de US$ 2,45 bi (orgânico -3%); lucro do segmento -15%."
+  },
+  {
+   "nome": "Internacional",
+   "peso_receita": 0.18,
+   "periodo": "3T26",
+   "obs": "Vendas de US$ 794 mi (orgânico +4%)."
+  },
+  {
+   "nome": "Pets (Blue Buffalo)",
+   "peso_receita": 0.14,
+   "periodo": "3T26",
+   "obs": "Vendas de US$ 613 mi, estáveis."
+  },
+  {
+   "nome": "Foodservice",
+   "peso_receita": 0.12,
+   "periodo": "3T26",
+   "obs": "Vendas de US$ 523 mi (+1%)."
+  }
+ ],
+ "segmentos_base": "Receita (trimestre fiscal encerrado em ago/2026)",
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Minneapolis (EUA); cerca de 80% das vendas na América do Norte."
+ },
+ "temas": [
+  {
+   "tema": "Consumo pressionado",
+   "relacao": "Os consumidores trocam marcas por marcas próprias mais baratas; a empresa já fez cortes de preço e agora aposta em inovação."
+  },
+  {
+   "tema": "Venda de negócios",
+   "relacao": "Vendeu o negócio de iogurte nos EUA à Lactalis no ano fiscal 2026, com ganho de US$ 1,05 bi, o que reduziu as vendas reportadas."
+  }
+ ],
+ "diferencial": {
+  "texto": "A General Mills tem marcas tradicionais e conhecidas, escala de produção e distribuição e posição forte em cereais, snacks e ração premium para pets. Mas o setor de alimentos embalados enfrenta perda de volume para marcas próprias, consumidores mais preocupados com saúde e pressão de preços dos varejistas.",
+  "vantagem": {
+   "nivel": "moderada",
+   "resumo": "Marcas tradicionais e escala de distribuição, mas em setor que perde volume para marcas próprias e alimentos mais saudáveis."
+  },
+  "concorrentes": [
+   "Kellanova (Mars)",
+   "PepsiCo",
+   "Post Holdings",
+   "Nestlé (Purina)",
+   "Marcas próprias de varejistas"
+  ]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas orgânicas do ano fiscal 2027 (até mai/2027) devem variar entre -1,5% e +0,5%, com lucro operacional ajustado caindo de 8% a 13% e lucro ajustado de US$ 3,00 a US$ 3,20 por ação. O potencial depende da recuperação dos volumes.",
+  "metricas": [
+   {
+    "rotulo": "Lucro ajustado projetado",
+    "valor": "US$ 3,00 a US$ 3,20 por ação",
+    "periodo": "ano fiscal 2027"
+   },
+   {
+    "rotulo": "Vendas orgânicas projetadas",
+    "valor": "-1,5% a +0,5%",
+    "periodo": "ano fiscal 2027"
+   },
+   {
+    "rotulo": "Lucro operacional ajustado",
+    "valor": "US$ 634 mi (-11%)",
+    "periodo": "1º tri fiscal 2027"
+   }
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 0,74 por ação no trimestre (US$ 0,75 ajustado, -13%); a queda contábil de 67% reflete o ganho com a venda do iogurte um ano antes. Pagou US$ 330 mi em dividendos no trimestre e mira conversão de caixa livre de cerca de 95% do lucro.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Perda de volume para marcas próprias.",
+  "Consumo pressionado.",
+  "Inflação de custos.",
+  "Mudança de hábitos alimentares."
+ ],
+ "momento": "No 1º tri fiscal 2027 (divulgado em 23/09/2026), as vendas caíram 3% pela venda do negócio de iogurte, com vendas orgânicas estáveis, e a empresa manteve a projeção do ano; o CEO é Jeff Harmening.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-09-23",
+  "positivos": [
+   "Lucro ajustado acima do esperado.",
+   "Internacional cresceu 4%.",
+   "Projeção anual mantida."
+  ],
+  "negativos": [
+   "Lucro ajustado caiu 13%.",
+   "Varejo na América do Norte caiu 3%."
+  ],
+  "atencao": [
+   "Retomada dos volumes.",
+   "Resultado do 2º tri fiscal em dezembro."
+  ]
+ },
+ "fontes": [
+  {
+   "titulo": "General Mills: resultados do 1º tri fiscal 2027 (8-K, Exhibit 99, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/40704/000162828026063141/a20260923ex99.htm",
+   "data": "2026-09-23"
+  },
+  {
+   "titulo": "Food Business News: General Mills recovery story still being written",
+   "url": "https://www.foodbusinessnews.net/articles/31066-general-mills-recovery-story-still-being-written",
+   "data": "2026-09"
+  },
+  {
+   "titulo": "Finviz: General Mills Q1 earnings beat estimates",
+   "url": "https://finviz.com/news/394678/general-mills-q1-earnings-beat-estimates-as-revenue-reaches-44-billion",
+   "data": "2026-09"
+  }
+ ],
+ "ultimo_resultado": "3T26"
+}

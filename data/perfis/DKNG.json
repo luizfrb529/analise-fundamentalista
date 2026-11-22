@@ -1,0 +1,63 @@
+{
+ "ticker": "DKNG",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das duas maiores empresas de apostas esportivas e cassino online dos EUA, que agora investe pesado em mercados de previsão (DraftKings Predictions). Receita crescendo 16%, mas com prejuízo em 2026 pelos investimentos.",
+ "modelo": "A DraftKings ganha a margem sobre as apostas esportivas, a receita de jogos de cassino online (iGaming) e taxas de jogos de fantasia, nos estados americanos onde são legalizados. Investe muito em marketing para atrair e manter apostadores. Lançou os mercados de previsão, que permitem negociar contratos sobre eventos em estados onde a aposta esportiva não é legal.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 1,33 bi no 3T26 (+16%); cassino online de US$ 461 mi (+2%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Boston (EUA); atua nos estados americanos em que as apostas são legais e no Canadá (Ontário)."},
+ "temas": [
+  {"tema": "Apostas esportivas", "relacao": "O volume apostado cresceu 21,9%, para US$ 13,9 bi, com margem de 5,6%."},
+  {"tema": "Mercados de previsão", "relacao": "Vai investir de US$ 650 mi a US$ 700 mi em Predictions em 2026, que já tem mais de 1,6 milhão de usuários no ano."}
+ ],
+ "diferencial": {
+  "texto": "A DraftKings tem marca forte, escala e tecnologia própria, e divide com a FanDuel a maior parte do mercado americano de apostas online, o que dilui custos de marketing e de licença estadual. Os pontos fracos são o marketing caro, impostos estaduais crescentes, concorrência dos mercados de previsão e regulação que pode mudar.",
+  "vantagem": {"nivel": "moderada", "resumo": "Duopólio com a FanDuel nas apostas online dos EUA, com marca e tecnologia próprias, mas marketing caro e regulação incerta."},
+  "concorrentes": ["FanDuel (Flutter)", "BetMGM", "Caesars Sportsbook", "Kalshi", "Polymarket"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 6,35 bi e US$ 6,55 bi, com Ebitda ajustado de US$ 175 mi a US$ 275 mi, reduzido pelo investimento em Predictions; para 2027, a projeção é de receita de US$ 7,35 bi a US$ 7,75 bi e Ebitda ajustado de US$ 800 mi a US$ 1,0 bi.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 7,35 bi a US$ 7,75 bi", "periodo": "2027"},
+   {"rotulo": "Ebitda ajustado projetado", "valor": "US$ 800 mi a US$ 1,0 bi", "periodo": "2027"},
+   {"rotulo": "Apostadores pagantes mensais", "valor": "4,1 milhões (+13%)", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo de US$ 469 mi no 3T26 e Ebitda ajustado negativo de US$ 317 mi, por causa do investimento em Predictions. O caixa operacional em nove meses foi próximo de zero após investimentos.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Investimento pesado em Predictions.",
+  "Aumento de impostos estaduais.",
+  "Concorrência de mercados de previsão.",
+  "Regulação das apostas."
+ ],
+ "momento": "No 3T26 (divulgado em 05/11/2026), a receita subiu 16%, mas abaixo do esperado, e a empresa cortou a projeção de Ebitda de 2026 de US$ 700 mi a US$ 900 mi para US$ 175 mi a US$ 275 mi; as ações caíram cerca de 24%. O CEO é Jason Robins.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Receita subiu 16%.",
+   "Apostadores pagantes cresceram 13%.",
+   "Projeção forte para 2027."
+  ],
+  "negativos": [
+   "Prejuízo de US$ 469 mi.",
+   "Projeção de Ebitda de 2026 cortada."
+  ],
+  "atencao": [
+   "Retorno do investimento em Predictions.",
+   "Cassino online em recuperação."
+  ]
+ },
+ "fontes": [
+  {"titulo": "DraftKings: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1883685/000188368526000039/q326-prx8kexx991.htm", "data": "2026-11-05"},
+  {"titulo": "Finviz: DraftKings misses and slashes 2026 EBITDA outlook", "url": "https://finviz.com/news/418465/draftkings-misses-and-slashes-2026-ebitda-outlook-to-triple-its-predictions-bet-asking-investors-to-trust-a-2027-payoff", "data": "2026-11"},
+  {"titulo": "SiGMA: DraftKings $317 million adjusted EBITDA loss in Q3", "url": "https://sigma.world/news/draftkings-317-million-adjusted-ebitda-loss-q3/", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}
