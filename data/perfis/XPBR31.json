@@ -1,6 +1,6 @@
 {
  "ticker": "XPBR31",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-22",
  "resumo": "BDR da XP Inc, plataforma de investimentos com R$ 1,57 tri de ativos de clientes. Cerca de 77% da receita vem do varejo, sensível ao volume negociado em bolsa e à taxa de juros.",
  "modelo": "A XP distribui investimentos (ações, renda fixa, fundos, previdência) a pessoas físicas por assessores, private bankers e canais digitais, e atende empresas e institucionais com banco de atacado, emissões de dívida e ações, derivativos e tesouraria. Também oferece cartão, crédito, seguros e conta digital. A receita vem de comissões, taxas sobre ativos e spreads; é recorrente em boa parte, mas a corretagem e as emissões variam com o mercado. A empresa tem ações na Nasdaq (XP) e BDR na B3.",
  "segmentos": [
@@ -126,5 +126,25 @@
    "data": "2026-11"
   }
  ],
- "ultimo_resultado": "2T26"
+ "ultimo_resultado": "3T26",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-16",
+  "positivos": [
+   "Receita bruta de R$ 5,34 bi no 3T26, alta de 8% sobre o 3T25, com varejo em R$ 4,13 bi (+11%) e atacado em R$ 1,21 bi (+13%).",
+   "Lucro líquido ajustado de R$ 1,38 bi no 3T26, alta de 4% sobre o 3T25.",
+   "Ativos de clientes de R$ 2,24 tri no 3T26 (incluindo geridos e administrados), alta de 15% em 12 meses.",
+   "Carteira de crédito ampliada de R$ 86,2 bi no 3T26, alta de 28% em 12 meses; Basileia em 20,3%."
+  ],
+  "negativos": [
+   "ROAE de 21,7% no 3T26, abaixo dos 23,0% do 3T25.",
+   "Captação líquida de R$ 22 bi no 3T26, queda de cerca de 24% sobre os R$ 29 bi do 3T25.",
+   "Receita de emissões (issuer services) de R$ 194 mi no 3T26, queda de 40% em 12 meses."
+  ],
+  "atencao": [
+   "Evolução da captação líquida e do ROAE nos próximos trimestres, com despesas em alta.",
+   "Execução do novo programa de recompra de até R$ 1,5 bi e dos R$ 1,3 bi em dividendos aprovados."
+  ]
+ },
+ "revisao": "automática"
 }
