@@ -1,0 +1,64 @@
+{
+ "ticker": "COF",
+ "revisado_em": "2026-11-22",
+ "resumo": "Um dos maiores emissores de cartão de crédito dos EUA, que comprou a Discover em 2025 e passou a ter rede de pagamentos própria. Lucrativo, com margem de juros de 8,4%, mas exposto ao risco de crédito do consumidor.",
+ "modelo": "A Capital One ganha principalmente com juros de cartões de crédito e financiamento de carros, financiados por depósitos de varejo, além de tarifas e anuidades. Com a Discover, ganhou a rede de pagamentos Discover e Pulse, o que permite migrar cartões para rede própria e economizar taxas. Em 2026 também comprou a Brex, de cartões e gestão de despesas para empresas.",
+ "segmentos": [],
+ "segmentos_base": "Receita total de US$ 16,3 bi no 3T26; cartões domésticos com carteira de US$ 260 bi",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em McLean, Virgínia (EUA); quase toda a receita vem dos EUA, com operações menores no Canadá e Reino Unido."},
+ "temas": [
+  {"tema": "Rede de pagamentos própria", "relacao": "A integração da Discover segue bem e entrega as sinergias esperadas, segundo o CEO, permitindo levar cartões para rede própria."},
+  {"tema": "Crédito ao consumidor", "relacao": "As perdas com calotes somaram US$ 3,1 bi no trimestre, e o banco liberou US$ 225 mi de reservas."}
+ ],
+ "diferencial": {
+  "texto": "A Capital One tem décadas de experiência em análise de dados para crédito de cartões, uma das maiores carteiras de cartões dos EUA e agora uma rede de pagamentos própria, raridade entre os bancos, que pode reduzir custos e aumentar margens. Os pontos fracos são a exposição a clientes de renda média e baixa, sensível à economia, e os riscos da integração da Discover.",
+  "vantagem": {"nivel": "moderada", "resumo": "Experiência em dados de crédito e, com a Discover, uma rede de pagamentos própria, raridade entre os bancos, mas com risco de crédito elevado."},
+  "concorrentes": ["JPMorgan Chase", "American Express", "Citigroup", "Synchrony", "Bank of America", "Visa e Mastercard"]
+ },
+ "potencial": {
+  "texto": "O potencial vem das sinergias da Discover, da migração de cartões para a rede própria e do crescimento em cartões e empresas com a Brex. O banco não traz projeção numérica no release.",
+  "metricas": [
+   {"rotulo": "Margem de juros", "valor": "8,41%", "periodo": "3T26"},
+   {"rotulo": "Carteira de empréstimos", "valor": "US$ 462,5 bi", "periodo": "set/2026"},
+   {"rotulo": "Índice de capital (CET1)", "valor": "13,8%", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 3,5 bi no 3T26 (US$ 5,61 por ação, ou US$ 6,69 sem amortizações e custos de integração da Discover e da Brex), contra US$ 4,83 um ano antes. As provisões para perdas foram de US$ 2,9 bi. O índice CET1 é de 13,8%, com depósitos de US$ 481 bi.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Inadimplência do consumidor em uma desaceleração.",
+  "Execução da integração da Discover.",
+  "Regulação de cartões e tarifas.",
+  "Concorrência em cartões."
+ ],
+ "momento": "No 3T26 (divulgado em 20/10/2026), o lucro subiu para US$ 3,5 bi, com margem de juros de 8,41% e liberação de reservas; a integração da Discover segue avançando e a Brex já foi incorporada.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-20",
+  "positivos": [
+   "Lucro de US$ 5,61 por ação, contra US$ 4,83.",
+   "Margem de juros subiu 0,40 ponto.",
+   "Liberação de US$ 225 mi de reservas."
+  ],
+  "negativos": [
+   "Perdas com calotes de US$ 3,1 bi.",
+   "Depósitos caíram 1% no trimestre."
+  ],
+  "atencao": [
+   "Migração de cartões para a rede Discover.",
+   "Qualidade do crédito."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Capital One: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000142/ex991q32026earningsrelease.htm", "data": "2026-10-20"},
+  {"titulo": "Capital One: suplemento financeiro do 3T26 (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000142/ex992q32026earningsrelease.htm", "data": "2026-10-20"},
+  {"titulo": "StockStory: Credit card stocks Q3 earnings, Capital One best of the bunch", "url": "https://stockstory.org/us/stocks/nyse/cof/news/earnings/credit-card-stocks-q3-earnings-capital-one-nysecof-best-of-the-bunch", "data": "2026-10"},
+  {"titulo": "CardRates: Discover purchase powers Capital One's strong quarter", "url": "https://www.cardrates.com/news/discover-purchase-powers-capital-ones-strong-quarter/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

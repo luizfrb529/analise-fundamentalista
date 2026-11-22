@@ -1,0 +1,64 @@
+{
+ "ticker": "AXP",
+ "revisado_em": "2026-11-22",
+ "resumo": "Emissora e rede de cartões premium americana, focada em clientes de alta renda e empresas, com receita de anuidades em forte alta. Muito lucrativa, com retorno sobre o patrimônio acima de 40%.",
+ "modelo": "A American Express é ao mesmo tempo rede de pagamentos e emissora: cobra taxas mais altas dos lojistas (que aceitam porque o cliente gasta mais), anuidades dos cartões premium (como o Platinum) e juros sobre saldos financiados. Oferece benefícios de viagem e recompensas que fidelizam o cliente.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 20,1 bi no 3T26; anuidades de cartões de US$ 3,0 bi (+16%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA); a maior parte da receita vem dos EUA, com expansão internacional."},
+ "temas": [
+  {"tema": "Consumo de alta renda", "relacao": "Os gastos nos cartões subiram 8%, para US$ 454 bi, e as anuidades 16%, com a renovação do cartão Platinum nos EUA."},
+  {"tema": "Crédito", "relacao": "A taxa de perda com calotes caiu para 1,8%, entre as mais baixas do setor."}
+ ],
+ "diferencial": {
+  "texto": "A American Express tem marca premium e um modelo fechado (é rede e emissora), com dados de gastos de clientes de alta renda que permitem oferecer benefícios valiosos e cobrar anuidades altas; os clientes ricos gastam mais e dão menos calote. Os pontos fracos são a aceitação menor que Visa e Mastercard em alguns países, a concorrência de bancos com cartões premium e a sensibilidade ao consumo.",
+  "vantagem": {"nivel": "forte", "resumo": "Marca premium e modelo fechado de rede e emissora, com clientes de alta renda que gastam mais, pagam anuidades altas e dão pouco calote."},
+  "concorrentes": ["Visa", "Mastercard", "JPMorgan Chase (Sapphire)", "Capital One", "Citigroup", "Bank of America"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve crescer cerca de 10%, com lucro de US$ 18,30 a US$ 18,60 por ação (US$ 17,60 a US$ 17,90 ajustado). O crescimento vem das anuidades, de novos cartões (3,1 milhões no trimestre) e do gasto dos clientes.",
+  "metricas": [
+   {"rotulo": "Crescimento da receita projetado", "valor": "cerca de 10%", "periodo": "2026"},
+   {"rotulo": "Gastos nos cartões", "valor": "US$ 454 bi (+8%)", "periodo": "3T26"},
+   {"rotulo": "Retorno sobre patrimônio", "valor": "42,4%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 3,7 bi no 3T26 (US$ 5,42 por ação), alta de 28%, com ganho de US$ 982 mi com a venda da participação na GBTG; sem ele, US$ 4,68 por ação. A perda com calotes é de 1,8% e o índice CET1 de 10,9%. A empresa elevou o dividendo em 16%, para US$ 0,95 por trimestre.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Desaceleração do consumo de alta renda.",
+  "Custos crescentes de benefícios aos clientes.",
+  "Concorrência em cartões premium.",
+  "Regulação de tarifas."
+ ],
+ "momento": "No 3T26 (divulgado em 23/10/2026), a receita subiu 9%, para US$ 20,1 bi, e o lucro ajustado 13%, acima do esperado, com anuidades fortes; a empresa manteve a meta de crescer 10% em 2026.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-23",
+  "positivos": [
+   "Anuidades subiram 16%.",
+   "Perda com calotes caiu para 1,8%.",
+   "Dividendo elevado em 16%."
+  ],
+  "negativos": [
+   "Custos maiores com a renovação do cartão Platinum.",
+   "Novos cartões levemente abaixo de um ano antes."
+  ],
+  "atencao": [
+   "Gastos dos clientes no fim de ano.",
+   "Custo dos benefícios."
+  ]
+ },
+ "fontes": [
+  {"titulo": "American Express: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496226000405/q326exhibit991.htm", "data": "2026-10-23"},
+  {"titulo": "American Express: suplemento estatístico do 3T26 (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496226000405/q326exhibit992.htm", "data": "2026-10-23"},
+  {"titulo": "Zacks: American Express Q3 earnings beat estimates on strong card fees", "url": "https://zacks.com/stock/news/3014168/american-express-q3-earnings-beat-estimates-on-strong-card-fees", "data": "2026-10"},
+  {"titulo": "Yahoo Finance: American Express and Mastercard post strong earnings", "url": "https://finance.yahoo.com/news/american-express-mastercard-post-strong-140723410.html", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

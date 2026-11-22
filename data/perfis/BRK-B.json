@@ -1,0 +1,144 @@
+{
+ "ticker": "BRK-B",
+ "revisado_em": "2026-11-22",
+ "resumo": "Conglomerado americano criado por Warren Buffett e comandado por Greg Abel desde 2026, dono da GEICO, da ferrovia BNSF, de empresas de energia e dezenas de indústrias, além de grande carteira de ações. Muito lucrativo, com mais de US$ 370 bi em caixa e títulos.",
+ "modelo": "A Berkshire usa o dinheiro dos prêmios de seguros (float de cerca de US$ 178 bi) para investir em empresas inteiras e em ações, como Apple, American Express e Coca-Cola. Ganha com o resultado das seguradoras, a renda dos investimentos e o lucro das controladas: BNSF, Berkshire Hathaway Energy e negócios de indústria, serviços e varejo.",
+ "segmentos": [
+  {
+   "nome": "Indústria, serviços e varejo",
+   "peso_receita": 0.32,
+   "periodo": "3T26",
+   "obs": "Lucro operacional de US$ 4,0 bi."
+  },
+  {
+   "nome": "Renda de investimentos das seguradoras",
+   "peso_receita": 0.22,
+   "periodo": "3T26",
+   "obs": "US$ 2,7 bi, queda de 14% com juros menores."
+  },
+  {
+   "nome": "BNSF (ferrovia)",
+   "peso_receita": 0.14,
+   "periodo": "3T26",
+   "obs": "US$ 1,7 bi, alta de 19%."
+  },
+  {
+   "nome": "Berkshire Hathaway Energy",
+   "peso_receita": 0.13,
+   "periodo": "3T26",
+   "obs": "US$ 1,6 bi."
+  },
+  {
+   "nome": "Seguros (resultado técnico) e outros",
+   "peso_receita": 0.2,
+   "periodo": "3T26",
+   "obs": "Seguros US$ 1,35 bi (-43%); outros US$ 1,2 bi."
+  }
+ ],
+ "segmentos_base": "Lucro operacional por segmento",
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Omaha, Nebraska (EUA); a maioria dos negócios está nos EUA, com investimentos também no Japão."
+ },
+ "temas": [
+  {
+   "tema": "Recompra de ações",
+   "relacao": "Recomprou US$ 9,6 bi em ações no 3T26 e cerca de US$ 2 bi em outubro, mais que o dobro do trimestre anterior, sinal de que a nova gestão vê as ações abaixo do valor intrínseco, segundo a imprensa."
+  },
+  {
+   "tema": "Juros",
+   "relacao": "Com mais de US$ 336 bi em títulos do Tesouro, a renda de juros cai quando as taxas caem."
+  }
+ ],
+ "diferencial": {
+  "texto": "A Berkshire tem um balanço extremamente sólido, o float de seguros como fonte de capital barato e permanente, empresas líderes e difíceis de replicar (BNSF, GEICO, Energy) e reputação de comprador preferido para empresas familiares. Os pontos fracos são o tamanho, que dificulta crescer rápido, a transição pós-Buffett e o resultado de seguros sujeito a catástrofes.",
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Balanço muito sólido, float de seguros como capital barato e permanente e negócios líderes difíceis de replicar, como BNSF e GEICO."
+  },
+  "concorrentes": [
+   "Progressive",
+   "Allstate",
+   "Union Pacific",
+   "Markel",
+   "Brookfield",
+   "Chubb"
+  ]
+ },
+ "potencial": {
+  "texto": "O potencial vem do uso do enorme caixa em aquisições ou recompras e do crescimento das controladas. A empresa não dá projeções.",
+  "metricas": [
+   {
+    "rotulo": "Títulos do Tesouro e caixa",
+    "valor": "mais de US$ 370 bi",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Float de seguros",
+    "valor": "cerca de US$ 178,5 bi",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Recompras em nove meses",
+    "valor": "cerca de US$ 14,4 bi",
+    "periodo": "2026"
+   }
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro operacional de US$ 12,7 bi no 3T26, queda de 6% pela GEICO e pelos juros menores; o lucro líquido de US$ 22,1 bi inclui ganhos com ações, que a própria empresa considera pouco relevantes no curto prazo. Tinha cerca de US$ 40,7 bi em caixa e US$ 336,7 bi em títulos do Tesouro.",
+  "caixa": "cerca de US$ 377 bi (caixa e títulos do Tesouro)",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Transição de gestão após Warren Buffett.",
+  "Catástrofes que afetam as seguradoras.",
+  "Queda de juros reduzindo a renda dos títulos.",
+  "Dificuldade de investir tanto caixa com bom retorno."
+ ],
+ "momento": "No 3T26 (divulgado em 07/11/2026), o lucro operacional caiu 6%, para US$ 12,7 bi, com o resultado de seguros 43% menor, mas a BNSF cresceu 19% e a empresa acelerou as recompras para US$ 9,6 bi.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-07",
+  "positivos": [
+   "Recompras de US$ 9,6 bi no trimestre.",
+   "BNSF cresceu 19%.",
+   "Indústria, serviços e varejo cresceram 12%."
+  ],
+  "negativos": [
+   "Resultado de seguros caiu 43%.",
+   "Renda de investimentos caiu 14%."
+  ],
+  "atencao": [
+   "Uso do caixa pela nova gestão.",
+   "Resultado da GEICO."
+  ]
+ },
+ "fontes": [
+  {
+   "titulo": "Berkshire Hathaway: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526452530/brka-ex99_1.htm",
+   "data": "2026-11-07"
+  },
+  {
+   "titulo": "Berkshire Hathaway: formulário 10-Q do 3T26 (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526452412/brka-20260930.htm",
+   "data": "2026-11-09"
+  },
+  {
+   "titulo": "AP (NY1): Berkshire Hathaway buys back $9.6 billion of its own stock but its profits declined",
+   "url": "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/11/07/berkshire-hathaway-buys-back-96-billion-of-its-own-stock-but-its-profits-declined",
+   "data": "2026-11-07"
+  },
+  {
+   "titulo": "Business Insurance: Berkshire Hathaway speeds up stock buybacks",
+   "url": "https://www.businessinsurance.com/berkshire-hathaway-speeds-up-stock-buybacks-though-profit-falls/",
+   "data": "2026-11"
+  }
+ ],
+ "ultimo_resultado": "3T26"
+}

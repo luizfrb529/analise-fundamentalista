@@ -1,0 +1,63 @@
+{
+ "ticker": "MA",
+ "revisado_em": "2026-11-22",
+ "resumo": "Segunda maior rede de pagamentos com cartão do mundo, que cobra pequenas taxas por transação sem assumir risco de crédito, e cresce em serviços de valor agregado como segurança e dados. Extremamente lucrativa, com margem operacional de 60%.",
+ "modelo": "A Mastercard conecta bancos emissores, lojistas e adquirentes em mais de 200 países, cobrando por volume, por transação processada e por operações internacionais, sem emprestar dinheiro. Vende também serviços de valor agregado (prevenção a fraudes, análise de dados, cibersegurança, programas de fidelidade), que já crescem mais que a rede.",
+ "segmentos": [],
+ "segmentos_base": "Receita: rede de pagamentos +11% e serviços de valor agregado +19% no 3T26 (empresa não divulga valores no release)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Purchase, Nova York (EUA); a maior parte da receita vem de fora dos EUA."},
+ "temas": [
+  {"tema": "Pagamentos digitais", "relacao": "O volume de pagamentos subiu 7% e as transações processadas 9%, com a troca do dinheiro em espécie por cartões e carteiras digitais."},
+  {"tema": "Segurança e dados", "relacao": "Os serviços de valor agregado, como prevenção a fraudes e dados, cresceram 19% no trimestre."}
+ ],
+ "diferencial": {
+  "texto": "A Mastercard forma com a Visa um duopólio global de redes de cartões, com efeito de rede enorme (bilhões de cartões e milhões de lojistas) que torna a entrada de rivais muito difícil, e opera com margens altíssimas e sem risco de crédito. Os pontos fracos são a pressão regulatória e judicial sobre tarifas e a concorrência de pagamentos instantâneos e carteiras digitais.",
+  "vantagem": {"nivel": "forte", "resumo": "Duopólio global com a Visa e efeito de rede enorme entre bilhões de cartões e milhões de lojistas, com margens altíssimas e sem risco de crédito."},
+  "concorrentes": ["Visa", "American Express", "PayPal", "Pix e pagamentos instantâneos", "UnionPay", "Apple Pay"]
+ },
+ "potencial": {
+  "texto": "O crescimento vem de pagamentos internacionais (+11%), da troca de dinheiro por pagamentos digitais e dos serviços de valor agregado. A empresa não traz projeção no release.",
+  "metricas": [
+   {"rotulo": "Volume bruto em dólares", "valor": "US$ 2,95 trilhões (+7%)", "periodo": "3T26"},
+   {"rotulo": "Crescimento da receita", "valor": "14%", "periodo": "3T26"},
+   {"rotulo": "Margem operacional ajustada", "valor": "60,5%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 5,28 por ação no 3T26 (US$ 5,31 ajustado), alta de 22%, com receita de US$ 9,8 bi e margem operacional de 59,8%. A empresa recomprou US$ 3,0 bi em ações e pagou US$ 763 mi em dividendos no trimestre, e tem US$ 4,9 bi autorizados para recompras.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Processos e regulação sobre tarifas.",
+  "Concorrência de pagamentos instantâneos.",
+  "Desaceleração do consumo e viagens.",
+  "Riscos geopolíticos em mercados internacionais."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita subiu 14%, para US$ 9,8 bi, com pagamentos internacionais em alta de 11%, e o lucro ajustado superou o esperado, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Receita de US$ 9,8 bi, alta de 14%.",
+   "Serviços de valor agregado cresceram 19%.",
+   "Margem operacional subiu para 59,8%."
+  ],
+  "negativos": [
+   "Despesa de US$ 74 mi com acordos judiciais com lojistas."
+  ],
+  "atencao": [
+   "Decisões sobre tarifas nos EUA.",
+   "Ritmo dos pagamentos internacionais."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Mastercard: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000122/ma09302026-exx991xearnings.htm", "data": "2026-10-29"},
+  {"titulo": "Zacks: Mastercard beats Q3 earnings on higher cross-border volumes", "url": "https://www.zacks.com/stock/news/3018925/mastercard-beats-q3-earnings-on-higher-cross-border-volumes-pricing", "data": "2026-10"},
+  {"titulo": "PYMNTS: Card networks push beyond payments to lock in growth", "url": "https://www.pymnts.com/credit-cards/2026/card-networks-push-beyond-payments-to-lock-in-growth/", "data": "2026-10"},
+  {"titulo": "Yahoo Finance: American Express and Mastercard post strong earnings", "url": "https://finance.yahoo.com/news/american-express-mastercard-post-strong-140723410.html", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
