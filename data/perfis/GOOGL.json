@@ -1,0 +1,71 @@
+{
+ "ticker": "GOOGL",
+ "revisado_em": "2026-11-22",
+ "resumo": "Dona do Google (buscas e anúncios), do YouTube, do Android, do Google Cloud e da Waymo, e uma das líderes em IA com os modelos Gemini. Muito lucrativa, com a nuvem crescendo mais de 100% ao ano, mas com investimentos recordes que deixaram o caixa livre negativo no trimestre.",
+ "modelo": "A Alphabet ganha principalmente com anúncios no Google Search, no YouTube e em sites parceiros, com assinaturas (YouTube Premium, Google One), venda de aparelhos (Pixel) e a loja de aplicativos. O Google Cloud vende infraestrutura de nuvem, chips próprios de IA (TPU), modelos Gemini e software para empresas. Outras apostas (Other Bets), como a Waymo de carros autônomos, ainda dão prejuízo.",
+ "segmentos": [
+  {"nome": "Google Search e outros", "peso_receita": 0.50, "periodo": "3T26", "obs": "US$ 63,4 bi, alta de 12%."},
+  {"nome": "Google Cloud", "peso_receita": 0.24, "periodo": "3T26", "obs": "US$ 30,7 bi, alta de 103%; lucro operacional de US$ 11,1 bi."},
+  {"nome": "Assinaturas, plataformas e aparelhos", "peso_receita": 0.11, "periodo": "3T26", "obs": "US$ 14,3 bi, alta de 11%."},
+  {"nome": "Anúncios do YouTube", "peso_receita": 0.09, "periodo": "3T26", "obs": "US$ 11,2 bi, alta de 9%."},
+  {"nome": "Rede Google (sites parceiros)", "peso_receita": 0.06, "periodo": "3T26", "obs": "US$ 7,5 bi, alta de 1%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA); cerca de metade da receita vem de fora dos EUA, com usuários no mundo todo, exceto China."},
+ "temas": [
+  {"tema": "Inteligência artificial", "relacao": "O aplicativo Gemini chegou a 1 bilhão de usuários e as APIs de modelos processam quase 32 bilhões de tokens por minuto, mais de 4 vezes um ano antes."},
+  {"tema": "Nuvem e chips de IA", "relacao": "O Google Cloud dobrou de tamanho, com vendas de sistemas TPU contribuindo, e tem carteira de US$ 561 bi, segundo a imprensa."},
+  {"tema": "Data centers", "relacao": "Investiu US$ 51,4 bi no trimestre, mantém projeção de US$ 195 bi a US$ 205 bi em 2026 e prevê alta significativa em 2027, segundo a imprensa."}
+ ],
+ "diferencial": {
+  "texto": "O Google domina as buscas no mundo, o YouTube é a maior plataforma de vídeos e o Android o sistema de celular mais usado, o que dá dados e alcance incomparáveis para anúncios. É uma das poucas empresas com modelos de IA de fronteira, chips próprios (TPU) e nuvem global ao mesmo tempo. Os pontos fracos são o risco de a IA mudar a forma como as pessoas buscam, os processos antitruste nos EUA e na Europa e o investimento gigantesco.",
+  "concorrentes": ["Microsoft", "Amazon", "Meta", "OpenAI", "Apple", "TikTok (ByteDance)"]
+ },
+ "potencial": {
+  "texto": "O crescimento vem da nuvem e da IA: a carteira do Google Cloud é de US$ 561 bi, com pouco mais de 55% previstos para os próximos 24 meses, segundo a imprensa. A empresa não traz projeção de receita no release; diz que as consultas no buscador crescem no maior ritmo em cinco anos.",
+  "metricas": [
+   {"rotulo": "Receita do Google Cloud", "valor": "US$ 30,7 bi (+103%)", "periodo": "3T26"},
+   {"rotulo": "Usuários do aplicativo Gemini", "valor": "1 bilhão", "periodo": "3T26"},
+   {"rotulo": "Investimento projetado", "valor": "US$ 195 bi a US$ 205 bi", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 26,5 bi no 3T26 (US$ 2,12 por ação), reduzido por perda de US$ 8,7 bi em participações em outras empresas; o lucro operacional subiu 30%, para US$ 40,6 bi. O investimento de US$ 51,4 bi deixou o fluxo de caixa livre negativo em US$ 9,1 bi no trimestre. A empresa tem US$ 265 bi em caixa e aplicações, a dívida de longo prazo subiu para US$ 125 bi, e em vez de recomprar ações passou a vender ações em bolsa (US$ 12,4 bi no trimestre).",
+  "caixa": "US$ 265,1 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "IA pode mudar o modelo de buscas e anúncios.",
+  "Processos antitruste nos EUA e na Europa.",
+  "Investimento recorde e caixa livre negativo.",
+  "Diluição pela venda de ações em bolsa."
+ ],
+ "momento": "No 3T26 (divulgado em 28/10/2026), a receita subiu 25%, para US$ 127,6 bi, com o Google Cloud dobrando, mas buscas e YouTube ficaram abaixo do esperado e as ações caíram 12,6% no dia seguinte, segundo a imprensa. A empresa emitiu US$ 28,7 bi em títulos de dívida e vendeu ações em bolsa no trimestre.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "Google Cloud cresceu 103%, para US$ 30,7 bi.",
+   "Lucro operacional de US$ 40,6 bi, alta de 30%.",
+   "Gemini com 1 bilhão de usuários."
+  ],
+  "negativos": [
+   "Fluxo de caixa livre negativo de US$ 9,1 bi.",
+   "Anúncios de buscas e YouTube abaixo do esperado.",
+   "Perda de US$ 8,7 bi em participações."
+  ],
+  "atencao": [
+   "Investimento de 2027.",
+   "Decisões antitruste."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Alphabet: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm", "data": "2026-10-28"},
+  {"titulo": "9to5Google: Alphabet Q3 2026 earnings", "url": "https://9to5google.com/2026/10/28/alphabet-q3-2026-earnings/", "data": "2026-10-28"},
+  {"titulo": "investingLive: Alphabet Q3, Google Cloud revenue jumps 103% but search and ad sales miss", "url": "https://investinglive.com/stocks/alphabet-q3-google-cloud-revenue-jumps-103-but-search-and-ad-sales-miss-forecasts/", "data": "2026-10-28"},
+  {"titulo": "Data Studios: Alphabet Q3 2026 results, Google Cloud doubles", "url": "https://www.datastudios.org/post/alphabet-q3-2026-results-google-cloud-doubles-30-7-billion-capex-51-billion", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

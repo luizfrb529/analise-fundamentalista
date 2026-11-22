@@ -1,0 +1,70 @@
+{
+ "ticker": "AAPL",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante do iPhone, Mac, iPad, Apple Watch e AirPods e dona de um negócio de serviços (App Store, iCloud, Apple Music, pagamentos) de mais de US$ 120 bi por ano. Uma das empresas mais lucrativas do mundo, com receita recorde de US$ 479 bi no ano fiscal 2026.",
+ "modelo": "A Apple projeta seus aparelhos e chips próprios, terceiriza a montagem (principalmente na Ásia) e vende diretamente e por operadoras e varejistas. A base de mais de 2 bilhões de aparelhos ativos alimenta a receita de serviços, de margem muito alta, como a comissão da App Store, assinaturas e o pagamento do Google para ser o buscador padrão do Safari.",
+ "segmentos": [
+  {"nome": "iPhone", "peso_receita": 0.50, "periodo": "3T26", "obs": "US$ 57,6 bi, alta de 17,5%."},
+  {"nome": "Serviços", "peso_receita": 0.28, "periodo": "3T26", "obs": "US$ 31,6 bi, alta de 9,8%, margem bruta de cerca de 76%."},
+  {"nome": "Mac", "peso_receita": 0.09, "periodo": "3T26", "obs": "US$ 10,8 bi, alta de 23,7%."},
+  {"nome": "Wearables, casa e acessórios", "peso_receita": 0.07, "periodo": "3T26", "obs": "US$ 8,3 bi, queda de 7,9%."},
+  {"nome": "iPad", "peso_receita": 0.05, "periodo": "3T26", "obs": "US$ 6,2 bi, queda de 10,4%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Cupertino, Califórnia (EUA). No trimestre: Américas 43%, Europa 28%, Grande China 15% (alta de 21%), Japão 6% e resto da Ásia 8%."},
+ "temas": [
+  {"tema": "Inteligência artificial", "relacao": "Lançou a nova Siri com IA; a aposta é levar IA aos aparelhos que as pessoas já usam."},
+  {"tema": "Tarifas e cadeia de produção", "relacao": "A margem do trimestre teve ajuda de cerca de 1 ponto por restituição de tarifas de importação; a produção depende muito da China e da Índia."},
+  {"tema": "Consumo e China", "relacao": "As vendas na Grande China subiram 21% no trimestre, após anos de pressão de marcas locais."}
+ ],
+ "diferencial": {
+  "texto": "A Apple tem uma das marcas mais valiosas do mundo e um ecossistema integrado de aparelhos, chips, software e serviços que fideliza o cliente e permite preços altos. A base instalada gera receita recorrente de serviços com margem acima de 70%. Os pontos fracos são a dependência do iPhone (metade da receita), a pressão regulatória sobre a App Store e o acordo com o Google, a produção concentrada na Ásia e a percepção de atraso em IA.",
+  "concorrentes": ["Samsung", "Google", "Huawei", "Xiaomi", "Microsoft", "Meta"]
+ },
+ "potencial": {
+  "texto": "A Apple não divulga projeção no release. O potencial vem do ciclo do iPhone 18 e do novo iPhone Duo, da nova Siri com IA, da recuperação na China e do crescimento de serviços. A empresa devolve a maior parte do caixa aos acionistas em recompras e dividendos.",
+  "metricas": [
+   {"rotulo": "Receita do ano fiscal", "valor": "US$ 478,8 bi (+15%)", "periodo": "ano fiscal 2026"},
+   {"rotulo": "Lucro líquido do ano fiscal", "valor": "US$ 132,2 bi (+18%)", "periodo": "ano fiscal 2026"},
+   {"rotulo": "Recompras de ações no ano fiscal", "valor": "US$ 86,4 bi", "periodo": "ano fiscal 2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 30,7 bi no trimestre (US$ 2,10 por ação, recorde para setembro) e de US$ 132,2 bi no ano fiscal, com margem bruta de 48,8%. A operação gerou US$ 145 bi de caixa no ano. A empresa tinha cerca de US$ 137 bi em caixa e aplicações e US$ 80 bi em dívida, recomprou US$ 86,4 bi em ações e pagou US$ 15,7 bi em dividendos no ano.",
+  "caixa": "cerca de US$ 137 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dependência do iPhone.",
+  "Regulação da App Store e do acordo de buscas com o Google.",
+  "Tarifas e produção concentrada na Ásia.",
+  "Concorrência em IA."
+ ],
+ "momento": "No trimestre encerrado em setembro (3T26 no calendário, 4T fiscal da empresa, divulgado em 02/11/2026), a receita subiu 12%, para US$ 114,5 bi, acima do esperado, com iPhone e Mac fortes. Foi o primeiro resultado com John Ternus como CEO, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-02",
+  "positivos": [
+   "Receita de US$ 114,5 bi, alta de 12%.",
+   "iPhone cresceu 17,5% e Mac 23,7%.",
+   "Grande China cresceu 21%."
+  ],
+  "negativos": [
+   "iPad caiu 10,4% e wearables 7,9%.",
+   "Parte da margem veio de restituição de tarifas, não recorrente."
+  ],
+  "atencao": [
+   "Vendas de fim de ano do iPhone 18.",
+   "Adoção da nova Siri com IA."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Apple: resultados do 4T fiscal 2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/a8-kex991q4202609262026.htm", "data": "2026-11-02"},
+  {"titulo": "Apple Newsroom: Apple reports fourth quarter results", "url": "https://apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results", "data": "2026-11-02"},
+  {"titulo": "MacStories: Apple reports Q4 2026 revenue of $114.5 billion", "url": "https://www.macstories.net/news/apple-reports-q4-2026-revenue-of-114-5-billion/", "data": "2026-11-02"},
+  {"titulo": "iDrop News: Soaring iPhone and Mac sales propel Apple to $114.5B Q4", "url": "https://idropnews.com/news/apple-q4-2026-financial-results-iphone-mac-growth/270514/", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

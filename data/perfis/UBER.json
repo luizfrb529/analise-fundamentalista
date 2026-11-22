@@ -1,0 +1,67 @@
+{
+ "ticker": "UBER",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior plataforma de transporte por aplicativo e de entrega de comida do mundo, com 215 milhões de usuários ativos por mês e US$ 60 bi em reservas por trimestre. Lucrativa e geradora de caixa, aposta em parcerias com carros autônomos.",
+ "modelo": "A Uber conecta passageiros a motoristas (Mobility), clientes a restaurantes, mercados e lojas (Delivery, com o Uber Eats) e transportadoras a cargas (Freight), ficando com uma parte de cada transação. Também ganha com publicidade no aplicativo e com a assinatura Uber One. Não é dona dos carros: em vez de desenvolver veículos autônomos, faz parcerias com quem os desenvolve.",
+ "segmentos": [
+  {"nome": "Mobility (transporte)", "peso_receita": 0.51, "periodo": "3T26", "obs": "Receita de US$ 7,5 bi (-2% por mudança de modelo de negócio); reservas de US$ 29,5 bi, alta de 18%."},
+  {"nome": "Delivery (entregas)", "peso_receita": 0.37, "periodo": "3T26", "obs": "Receita de US$ 5,5 bi, alta de 23%; reservas de US$ 28,5 bi."},
+  {"nome": "Freight (cargas)", "peso_receita": 0.12, "periodo": "3T26", "obs": "US$ 1,8 bi, alta de 34%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em San Francisco (EUA), com operação em cerca de 70 países, inclusive o Brasil, um dos maiores mercados."},
+ "temas": [
+  {"tema": "Carros autônomos", "relacao": "Espera cerca de 700 veículos totalmente sem motorista na plataforma até o fim de 2026 e mais de 2.000 em 2027, com expansão comercial maior a partir de 2028, segundo a imprensa."},
+  {"tema": "Publicidade e assinaturas", "relacao": "Anúncios no aplicativo e a assinatura Uber One aumentam a receita por usuário."}
+ ],
+ "diferencial": {
+  "texto": "A Uber tem o maior volume de usuários e motoristas, o que reduz o tempo de espera e o preço, num efeito de rede difícil de copiar; juntar transporte e entregas no mesmo aplicativo aumenta o uso. Ser parceira de várias empresas de carros autônomos permite oferecer a demanda sem gastar com frota. Os pontos fracos são a regulação do trabalho de motoristas, a concorrência local (Lyft, DoorDash, 99, iFood) e o risco de empresas de robotáxi, como Waymo e Tesla, venderem corridas diretamente.",
+  "concorrentes": ["Lyft", "DoorDash", "Waymo", "Tesla", "Didi (99)", "iFood"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as reservas brutas do 4T26 devem ficar entre US$ 63,25 bi e US$ 65,25 bi (alta de 18% a 22%), com lucro ajustado de US$ 0,95 a US$ 0,99 por ação e Ebitda ajustado de US$ 3,13 bi a US$ 3,23 bi. Viagens cresceram 16% e usuários 14%.",
+  "metricas": [
+   {"rotulo": "Reservas brutas projetadas", "valor": "US$ 63,25 bi a US$ 65,25 bi", "periodo": "4T26"},
+   {"rotulo": "Usuários ativos por mês", "valor": "215 milhões", "periodo": "3T26"},
+   {"rotulo": "Carros sem motorista na plataforma", "valor": "mais de 2.000", "periodo": "meta 2027"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro operacional de US$ 1,45 bi no 3T26, alta de 30%; o lucro líquido de US$ 512 mi foi reduzido por perda de US$ 476 mi na reavaliação de participações em outras empresas (o 3T25 teve ganho tributário de US$ 4,9 bi). O fluxo de caixa livre foi de US$ 2,5 bi. A empresa tinha US$ 10,1 bi em caixa, US$ 15,7 bi em dívida de longo prazo e recomprou US$ 4,3 bi em ações no ano.",
+  "caixa": "US$ 10,1 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concorrência de robotáxis que vendem corridas diretamente.",
+  "Regulação do trabalho de motoristas e entregadores.",
+  "Lucro contábil volátil por reavaliação de participações.",
+  "Concorrência em entregas."
+ ],
+ "momento": "No 3T26 (divulgado em 04/11/2026), as reservas subiram 20%, para US$ 59,8 bi, e o Ebitda ajustado 31%, para US$ 3,0 bi, mas a projeção do 4T26 foi vista como morna e as ações recuaram, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Reservas brutas de US$ 59,8 bi, alta de 20%.",
+   "Lucro operacional de US$ 1,45 bi, alta de 30%.",
+   "Fluxo de caixa livre de US$ 2,5 bi."
+  ],
+  "negativos": [
+   "Lucro líquido caiu 92% pela comparação com ganho tributário de 2025.",
+   "Perda de US$ 476 mi em participações."
+  ],
+  "atencao": [
+   "Ritmo de entrada de carros autônomos.",
+   "Reservas do 4T26."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Uber: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000039/uberq326earningspressrelea.htm", "data": "2026-11-04"},
+  {"titulo": "24/7 Wall St.: Uber Q3 2026, strong bookings growth and an autonomous push", "url": "https://247wallst.com/cards/uber-q3-2026-earnings-uber-01m6k6trxhjn4rq4qdym9215wx", "data": "2026-11-04"},
+  {"titulo": "Crypto Briefing: Uber Q3 2026 earnings, driverless vehicles", "url": "https://cryptobriefing.com/uber-q3-2026-earnings-driverless-vehicles/", "data": "2026-11-04"},
+  {"titulo": "Securities.io: Uber third quarter revenue rises 10% as bookings grow 20%", "url": "https://www.securities.io/uber-third-quarter-revenue-rises-10-as-bookings-grow-20/", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}
