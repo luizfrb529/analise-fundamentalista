@@ -1,0 +1,66 @@
+{
+ "ticker": "KMB",
+ "revisado_em": "2026-11-22",
+ "resumo": "Gigante americana de produtos de higiene (Huggies, Kleenex, Kotex, Scott, Depend) que concluiu em novembro de 2026 a compra da Kenvue (Tylenol, Listerine, Band-Aid, Neutrogena). Lucrativa e grande pagadora de dividendos, mas com vendas estagnadas.",
+ "modelo": "A Kimberly-Clark fabrica e vende fraldas, lenços, papel higiênico, absorventes e produtos de incontinência para supermercados e farmácias, e agora também remédios sem receita e produtos de cuidados pessoais da Kenvue. Juntou seu negócio internacional de papel com a Suzano numa joint venture.",
+ "segmentos": [
+  {"nome": "América do Norte", "peso_receita": 0.66, "periodo": "3T26", "obs": "Vendas de US$ 2,7 bi (+0,9%); lucro de US$ 657 mi."},
+  {"nome": "Cuidados pessoais internacionais", "peso_receita": 0.34, "periodo": "3T26", "obs": "Vendas de US$ 1,4 bi (-2,8%); lucro de US$ 144 mi (-32,7%)."}
+ ],
+ "segmentos_base": "Receita (antes da Kenvue)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Dallas (EUA); vende no mundo todo, com cerca de dois terços da receita na América do Norte antes da Kenvue."},
+ "temas": [
+  {"tema": "Consolidação de bens de consumo", "relacao": "Concluiu em 02/11/2026 a compra da Kenvue, avaliada em cerca de US$ 48,7 bi, e espera US$ 2,1 bi em sinergias anuais, segundo a imprensa."},
+  {"tema": "Consumo pressionado", "relacao": "As vendas orgânicas caíram 1,3% com cortes de preço e concorrência na China."}
+ ],
+ "diferencial": {
+  "texto": "A Kimberly-Clark tem marcas líderes em fraldas, lenços e papel, escala de produção e distribuição, e com a Kenvue passa a ter marcas fortes de saúde do consumidor, de margem maior. Mas o setor tem concorrência intensa de Procter & Gamble e marcas próprias, e a integração da Kenvue aumenta a dívida e o risco de execução.",
+  "vantagem": {"nivel": "moderada", "resumo": "Marcas líderes em higiene e, com a Kenvue, em saúde do consumidor, mas com concorrência da P&G e de marcas próprias."},
+  "concorrentes": ["Procter & Gamble", "Essity", "Haleon", "Unilever", "Marcas próprias de varejistas"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro operacional ajustado de 2026 deve crescer em um dígito médio e o lucro ajustado por ação das operações continuadas em alta de um dígito. O potencial vem das sinergias com a Kenvue e da maior margem das marcas de saúde.",
+  "metricas": [
+   {"rotulo": "Sinergias esperadas com a Kenvue", "valor": "US$ 2,1 bi por ano", "periodo": "após integração"},
+   {"rotulo": "Lucro ajustado por ação", "valor": "US$ 1,70 (+17,2%)", "periodo": "3T26"},
+   {"rotulo": "Margem bruta ajustada", "valor": "35,5%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 1,19 por ação no 3T26 das operações continuadas (US$ 1,70 ajustado). O trimestre incluiu ganho de US$ 1,4 bi com a joint venture com a Suzano. A dívida aumentou com a compra da Kenvue, paga em parte com ações; a empresa paga dividendo trimestral de US$ 1,28.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Integração da Kenvue.",
+  "Dívida maior.",
+  "Processos sobre o Tylenol herdados da Kenvue.",
+  "Concorrência e marcas próprias."
+ ],
+ "momento": "No 3T26 (divulgado em 05/11/2026), as vendas orgânicas caíram 1,3%, mas o lucro ajustado subiu 17%; dias antes, em 02/11, a empresa concluiu a compra da Kenvue. O CEO é Mike Hsu.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Lucro ajustado subiu 17,2%.",
+   "Compra da Kenvue concluída.",
+   "Projeção de 2026 mantida."
+  ],
+  "negativos": [
+   "Vendas orgânicas caíram 1,3%.",
+   "Lucro internacional caiu 32,7%."
+  ],
+  "atencao": [
+   "Integração e sinergias da Kenvue.",
+   "Venda de marcas na Europa exigida pelo regulador."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Kimberly-Clark: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/55785/000162828026070514/kmbq32026ex-991.htm", "data": "2026-11-05"},
+  {"titulo": "Finviz: Kimberly-Clark completes acquisition of Kenvue", "url": "https://finviz.com/news/413289/kimberly-clark-completes-acquisition-of-kenvue-creating-the-preeminent-global-consumer-health-and-wellness-leader", "data": "2026-11-02"},
+  {"titulo": "Personal Care Insights: Kimberly-Clark completes US$48.7B Kenvue acquisition", "url": "https://www.personalcareinsights.com/news/kimberly-clark-kenvue-acquisition-complete.html", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

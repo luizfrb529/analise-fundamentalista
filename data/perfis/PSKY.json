@@ -1,0 +1,69 @@
+{
+ "ticker": "PSKY",
+ "revisado_em": "2026-11-22",
+ "resumo": "Gigante de mídia formada pela Paramount e pela Warner Bros. Discovery, que concluiu a fusão em outubro de 2026 e passou a se chamar Skydance (nova sigla SKYD). Dona da CBS, CNN, HBO, Paramount+, estúdios Paramount e Warner, mas com dívida enorme.",
+ "modelo": "A Skydance ganha com publicidade e taxas de distribuição de canais de TV (CBS, CNN, MTV, TNT, Discovery), assinaturas de streaming (Paramount+ e HBO Max, que serão combinados), bilheteria e licenciamento de filmes e séries dos estúdios Paramount e Warner Bros., e direitos esportivos como o UFC.",
+ "segmentos": [
+  {"nome": "TV (canais abertos e pagos)", "peso_receita": 0.43, "periodo": "3T26", "obs": "Receita de US$ 3,0 bi (-7%), antes da Warner."},
+  {"nome": "Streaming (Paramount+)", "peso_receita": 0.36, "periodo": "3T26", "obs": "Receita de US$ 2,5 bi (+11%)."},
+  {"nome": "Estúdios", "peso_receita": 0.21, "periodo": "3T26", "obs": "Receita de US$ 1,5 bi (+23%)."}
+ ],
+ "segmentos_base": "Receita da Paramount antes da fusão com a Warner",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York e Los Angeles (EUA); conteúdo distribuído no mundo todo."},
+ "temas": [
+  {"tema": "Consolidação da mídia", "relacao": "Concluiu em 06/10/2026 a compra da Warner Bros. Discovery, avaliada em mais de US$ 100 bi com dívidas, segundo a imprensa, e mira mais de US$ 6 bi de sinergias em três anos."},
+  {"tema": "Streaming", "relacao": "A receita do Paramount+ subiu 21%, e a empresa vai combinar o serviço com o HBO Max."}
+ ],
+ "diferencial": {
+  "texto": "A nova Skydance reúne duas das maiores bibliotecas de filmes e séries do mundo (Paramount e Warner, incluindo HBO, Harry Potter e DC), marcas de notícias e esportes e escala em streaming. Mas a TV tradicional está em declínio, a dívida bruta de cerca de US$ 87 bi é enorme e a integração de duas empresas grandes traz alto risco de execução.",
+  "vantagem": {"nivel": "moderada", "resumo": "Duas das maiores bibliotecas de conteúdo do mundo e escala em streaming, mas dívida enorme e TV tradicional em declínio."},
+  "concorrentes": ["Disney", "Netflix", "Comcast (NBCUniversal)", "Amazon", "Apple"]
+ },
+ "potencial": {
+  "texto": "O potencial vem das sinergias de mais de US$ 6 bi por ano em até três anos, da combinação do Paramount+ com o HBO Max e da redução da dívida. A empresa não traz projeção numérica de receita para a empresa combinada.",
+  "metricas": [
+   {"rotulo": "Sinergias previstas", "valor": "mais de US$ 6 bi por ano", "periodo": "em até três anos"},
+   {"rotulo": "Dívida bruta após a fusão", "valor": "cerca de US$ 87 bi", "periodo": "out/2026"},
+   {"rotulo": "Receita do Paramount+", "valor": "US$ 2,13 bi (+21%)", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 73 mi no 3T26 (US$ 0,06 por ação), só da Paramount, com Ebitda ajustado de US$ 1,0 bi e caixa livre de apenas US$ 31 mi por custos de reestruturação. Após a fusão, a dívida bruta passou a cerca de US$ 87 bi, com cerca de US$ 10 bi em caixa.",
+  "caixa": "cerca de US$ 10 bi",
+  "queima_anual": null,
+  "periodo": "out/2026"
+ },
+ "riscos": [
+  "Dívida muito elevada.",
+  "Integração de duas grandes empresas.",
+  "Declínio da TV tradicional.",
+  "Compromissos regulatórios assumidos na fusão."
+ ],
+ "momento": "No 3T26 (divulgado em 09/11/2026), o último trimestre antes da fusão, a receita da Paramount subiu 5%, com streaming e estúdios em alta; em 06/10, a empresa concluiu a compra da Warner Bros. Discovery. O CEO é David Ellison, com Ynon Kreiz como co-CEO.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-09",
+  "positivos": [
+   "Fusão com a Warner concluída.",
+   "Paramount+ cresceu 21%.",
+   "Estúdios cresceram 23%."
+  ],
+  "negativos": [
+   "TV tradicional caiu 7%.",
+   "Dívida de cerca de US$ 87 bi."
+  ],
+  "atencao": [
+   "Sinergias da fusão.",
+   "Mudança da sigla para SKYD."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Skydance: carta do 3T26 (8-K, Exhibit 99, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2041610/000204161026000062/ex99_q326.htm", "data": "2026-11-09"},
+  {"titulo": "CBS News: Paramount-Warner Bros. Discovery deal, Skydance", "url": "https://cbsnews.com/news/paramount-warner-bros-discovery-deal-skydance", "data": "2026-10"},
+  {"titulo": "The National: Paramount completes Warner Bros merger to create Skydance", "url": "https://www.thenationalnews.com/business/2026/10/06/paramount-completes-warner-bros-merger-in-historic-media-deal-to-create-skydance/", "data": "2026-10-06"},
+  {"titulo": "ABC News: Paramount completes its takeover of Warner Bros", "url": "https://abcnews.com/Politics/wireStory/paramount-completes-takeover-warner-bros-become-hollywood-giant-137031060", "data": "2026-10"}
+ ],
+ "pendencias": ["A empresa mudou de sigla para SKYD após a fusão; verificar se a cotação e os dados do site seguem corretos."],
+ "ultimo_resultado": "3T26"
+}

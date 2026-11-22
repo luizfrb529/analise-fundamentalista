@@ -1,0 +1,62 @@
+{
+ "ticker": "AMCR",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das maiores fabricantes de embalagens do mundo, de plástico flexível, rígido e outros materiais para alimentos, bebidas, saúde e higiene, ampliada com a compra da Berry Global. Lucrativa e boa pagadora de dividendos, mas com dívida elevada.",
+ "modelo": "A Amcor fabrica embalagens sob medida (filmes, potes, garrafas, tampas, embalagens médicas) para grandes empresas de bens de consumo e saúde, com contratos que repassam o custo das resinas aos clientes. Ganha com escala, tecnologia de materiais e presença global perto dos clientes.",
+ "segmentos": [],
+ "segmentos_base": "Vendas de US$ 6,13 bi no trimestre até set/2026 (+7%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede formal em Jersey (Reino Unido) e operacional em Zurique (Suíça) e nos EUA; fábricas em dezenas de países."},
+ "temas": [
+  {"tema": "Consolidação do setor", "relacao": "A integração da Berry Global gerou cerca de US$ 50 mi de sinergias no trimestre, com meta de US$ 650 mi em três anos."},
+  {"tema": "Custos de energia e logística", "relacao": "Custos maiores de energia e distribuição levaram a empresa a reduzir a projeção de lucro, segundo a imprensa."}
+ ],
+ "diferencial": {
+  "texto": "A Amcor tem escala global, tecnologia de materiais e relação longa com grandes marcas, que preferem fornecedores capazes de atender em vários países. Mas embalagens plásticas enfrentam regulação ambiental crescente, concorrência forte e volumes estagnados, e a dívida subiu com a Berry.",
+  "vantagem": {"nivel": "moderada", "resumo": "Escala global e relação longa com grandes marcas, mas em setor com volumes estagnados, regulação ambiental e dívida elevada."},
+  "concorrentes": ["Sealed Air", "Huhtamaki", "Constantia Flexibles", "Sonoco", "Mondi"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, o lucro ajustado do período de transição de julho a dezembro de 2026 deve ficar entre US$ 1,70 e US$ 1,80 por ação, abaixo da projeção anterior; para 2027, a empresa espera crescimento de dois dígitos do lucro ajustado, segundo a imprensa.",
+  "metricas": [
+   {"rotulo": "Lucro ajustado projetado", "valor": "US$ 1,70 a US$ 1,80 por ação", "periodo": "jul a dez/2026"},
+   {"rotulo": "Meta de sinergias com a Berry", "valor": "US$ 650 mi", "periodo": "três anos"},
+   {"rotulo": "Alavancagem prevista", "valor": "cerca de 3,6 vezes", "periodo": "dez/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 0,52 por ação no trimestre (US$ 0,95 ajustado), com fluxo de caixa livre negativo de US$ 820 mi, comum no início do ano fiscal. A dívida líquida é de US$ 14,0 bi, cerca de 3,6 vezes o Ebitda; paga dividendo trimestral de US$ 0,66.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dívida elevada.",
+  "Regulação ambiental sobre plásticos.",
+  "Custos de energia e resinas.",
+  "Integração da Berry."
+ ],
+ "momento": "No trimestre até setembro (divulgado em 04/11/2026), as vendas subiram 7% e o lucro ajustado ficou estável, mas a empresa reduziu a projeção do período de transição por custos maiores; o CEO é Peter Konieczny.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-04",
+  "positivos": [
+   "Vendas subiram 7%.",
+   "Sinergias da Berry no ritmo previsto."
+  ],
+  "negativos": [
+   "Projeção de lucro reduzida.",
+   "Caixa livre negativo de US$ 820 mi."
+  ],
+  "atencao": [
+   "Mudança do ano fiscal para dezembro.",
+   "Redução da dívida."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Amcor: resultados do trimestre até set/2026 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1748790/000174879026000029/exhibit991q12026transition.htm", "data": "2026-11-04"},
+  {"titulo": "Zacks: Amcor September 2026 earnings miss on higher costs, view cut", "url": "https://zacks.com/stock/news/3024700/amcor-september-2026-end-earnings-miss-on-higher-costs-view-cut", "data": "2026-11"},
+  {"titulo": "Packaging Dive: Amcor Q3 2026 earnings", "url": "https://www.packagingdive.com/news/amcor-q3-2026-packaging-earnings/873838/", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}
