@@ -24,7 +24,7 @@ CONCEITOS = {
              "IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments",
              "ProfitLossBeforeTax"],
     "ir": ["IncomeTaxExpenseBenefit", "IncomeTaxExpenseContinuingOperations"],
-    "lucro_liq": ["NetIncomeLoss", "ProfitLossAttributableToOwnersOfParent", "ProfitLoss"],
+    "lucro_liq": ["NetIncomeLoss", "ProfitLossAttributableToOwnersOfParent", "ProfitLoss", "NetIncomeLossAvailableToCommonStockholdersBasic"],   # Booking passou a usar o último em 2026
     "fco": ["NetCashProvidedByUsedInOperatingActivities", "CashFlowsFromUsedInOperatingActivities"],
     "capex": ["PaymentsToAcquirePropertyPlantAndEquipment", "PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities"],
     "div_pagos": ["PaymentsOfDividendsCommonStock", "PaymentsOfDividends", "DividendsPaidClassifiedAsFinancingActivities"],
@@ -277,7 +277,8 @@ def ltm_yfinance(ticker: str) -> dict:
         for n in nomes:
             if df is not None and n in df.index:
                 s = df.loc[n].dropna()
-                if len(s) >= 4:
+                # só 4 trimestres seguidos (ex.: Paramount Skydance não tem os dois trimestres da fusão no Yahoo)
+                if len(s) >= 4 and (s.index[0] - s.index[3]).days <= 300:
                     return float(s.iloc[:4].sum()), str(s.index[0].date())
         return None, None
 

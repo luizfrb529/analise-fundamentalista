@@ -1,0 +1,139 @@
+{
+ "ticker": "IREN",
+ "revisado_em": "2026-11-22",
+ "resumo": "Operadora de data centers que trocou a mineração de bitcoin por nuvem de GPUs para IA. Tem US$ 20,3 bi em contratos a receber, com Microsoft e NVIDIA entre os clientes, mas ainda dá prejuízo e investe pesado.",
+ "modelo": "A IREN constrói data centers próprios em locais com energia barata (Texas, Canadá e Austrália) e aluga capacidade de processamento com GPUs da NVIDIA para empresas de inteligência artificial, em contratos de 3 a 5 anos (AI Cloud Services) ou cedendo o espaço e a energia (AI Cloud Lease). A mineração de bitcoin, que deu origem à empresa, está sendo desligada para liberar energia para as GPUs. O ano fiscal termina em 30 de junho.",
+ "segmentos": [
+  {
+   "nome": "Nuvem de IA (serviços)",
+   "peso_receita": 0.59,
+   "periodo": "1T27 fiscal",
+   "obs": "US$ 135 mi no trimestre, contra US$ 71 mi no 4T26."
+  },
+  {
+   "nome": "Nuvem de IA (locação)",
+   "peso_receita": 0.29,
+   "periodo": "1T27 fiscal",
+   "obs": "US$ 65 mi, primeira receita dessa linha."
+  },
+  {
+   "nome": "Mineração de bitcoin",
+   "peso_receita": 0.12,
+   "periodo": "1T27 fiscal",
+   "obs": "US$ 28 mi, em queda com o desligamento das máquinas."
+  }
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede na Austrália e ações listadas na NASDAQ. Os principais data centers ficam em Childress e Sweetwater (Texas, EUA) e na Colúmbia Britânica (Canadá), com projeto licenciado em Badajoz (Espanha)."
+ },
+ "temas": [
+  {
+   "tema": "Inteligência artificial",
+   "relacao": "Toda a expansão está ligada à demanda por GPUs para treinar e rodar modelos de IA: a receita de nuvem de IA foi de US$ 200 mi no 1T27 fiscal, alta de 182% sobre o trimestre anterior."
+  },
+  {
+   "tema": "Energia",
+   "relacao": "O ativo mais escasso do negócio é energia conectada à rede: a empresa tem mais de 5 GW de energia garantida e o polo de Sweetwater (2 GW) entrou condicionalmente no processo de conexão do operador do Texas (ERCOT)."
+  },
+  {
+   "tema": "Bitcoin",
+   "relacao": "A empresa nasceu como mineradora; a mineração ainda gerou US$ 28 mi no trimestre, mas vem sendo desligada para dar lugar às GPUs."
+  }
+ ],
+ "diferencial": {
+  "texto": "O principal diferencial é ser dona de toda a cadeia: terreno, conexão de energia, prédio e GPUs, o que reduz dependência de terceiros e prazo de entrega. Energia garantida em grande escala é uma barreira de entrada relevante, porque novas conexões à rede nos EUA levam anos para sair. A empresa obteve o status NVIDIA Exemplar Cloud para os sistemas GB300 NVL72 e tem contratos com Microsoft e NVIDIA. Em contrapartida, é menor e mais nova em nuvem que concorrentes como CoreWeave e Nebius, e a carteira depende de poucos clientes grandes.",
+  "concorrentes": [
+   "CoreWeave",
+   "Nebius",
+   "Cipher Mining",
+   "TeraWulf",
+   "Hut 8",
+   "Applied Digital"
+  ]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a carteira de contratos (backlog) chegou a US$ 20,3 bi no 1T27 fiscal, alta de 22% no trimestre, com cerca de dois terços de clientes com grau de investimento. A meta de mais de US$ 4 bi de receita anualizada (ARR) está totalmente contratada e financiada, com entrega prevista para 31/01/2027, podendo ir até o fim de fevereiro. Só o contrato com a Microsoft, assinado em novembro de 2025, soma cerca de US$ 9,7 bi em cinco anos. A empresa planeja 0,8 GW de capacidade até o fim de 2027 e diz ter mais de 35 GW em projetos potenciais, número que ela mesma classifica como especulativo.",
+  "metricas": [
+   {
+    "rotulo": "Carteira de contratos (backlog)",
+    "valor": "US$ 20,3 bi",
+    "periodo": "1T27 fiscal"
+   },
+   {
+    "rotulo": "Meta de receita anualizada (ARR)",
+    "valor": "mais de US$ 4 bi",
+    "periodo": "jan/2027"
+   },
+   {
+    "rotulo": "Investimento ainda planejado no ano fiscal",
+    "valor": "US$ 15 bi",
+    "periodo": "a partir de set/2026"
+   }
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "O prejuízo foi de US$ 263 mi no 1T27 fiscal (US$ 684 mi no 4T26, que teve baixa contábil de US$ 450 mi), mas o Ebitda ajustado já é positivo (US$ 66 mi, margem de 29%). A operação gerou US$ 529 mi de caixa, insuficiente para os US$ 5,1 bi investidos no trimestre. A empresa tinha US$ 3,5 bi em caixa e dívida bruta de US$ 10,2 bi em setembro; dos US$ 15 bi ainda a investir, US$ 9 bi estão cobertos por caixa, financiamento de GPUs e adiantamentos de clientes, e US$ 6 bi dependem de captações futuras, o que pode incluir emissão de ações.",
+  "caixa": "US$ 3,5 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dependência de poucos clientes grandes, como Microsoft e um laboratório de IA não identificado.",
+  "US$ 6 bi do investimento planejado ainda dependem de captações; novas emissões de ações diluem os acionistas (US$ 498 mi emitidos no 1T27 fiscal).",
+  "Atraso na entrega: a meta de US$ 4 bi de ARR já passou do fim de 2026 para janeiro ou fevereiro de 2027.",
+  "Dívida bruta subiu de US$ 7,8 bi para US$ 10,2 bi em um trimestre."
+ ],
+ "momento": "No 1T27 fiscal (julho a setembro de 2026, divulgado em 05/11/2026), a receita foi de US$ 228 mi, alta de 66% sobre o trimestre anterior e acima da média de US$ 221 mi esperada pelos analistas, segundo a LSEG. O primeiro bloco do projeto Horizon entrou em operação para a Microsoft. A empresa comprou a Mirantis e a espanhola Nostrum Group e começou novos data centers com refrigeração líquida em Sweetwater e Mackenzie. O prejuízo caiu para US$ 263 mi, com despesa de remuneração em ações de US$ 106 mi.",
+ "destaques_resultado": {
+  "trimestre": "3T26 (1T27 fiscal da empresa)",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Receita de US$ 228 mi, alta de 66% sobre o 4T26 fiscal.",
+   "Nuvem de IA com receita de US$ 200 mi (+182% no trimestre) e margem bruta de 86%.",
+   "Ebitda ajustado de US$ 66 mi, contra US$ 19 mi no 4T26 fiscal.",
+   "Carteira de contratos de US$ 20,3 bi, alta de 22% no trimestre."
+  ],
+  "negativos": [
+   "Prejuízo líquido de US$ 263 mi.",
+   "Caixa livre caiu de US$ 5,9 bi para US$ 3,5 bi com o investimento de US$ 5,1 bi.",
+   "Mineração de bitcoin recuou de US$ 67 mi para US$ 28 mi."
+  ],
+  "atencao": [
+   "Entrega da meta de US$ 4 bi de ARR, agora prevista para janeiro de 2027.",
+   "Como serão captados os US$ 6 bi ainda não garantidos do plano de investimento."
+  ]
+ },
+ "fontes": [
+  {
+   "titulo": "IREN Reports Q1 FY27 Results (8-K, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000065/irenreportsq1-fy27result.htm",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "IREN Reports Q1 FY27 Results (RI da empresa)",
+   "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-reports-q1-fy27-results",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "CNBC: Iren earnings report Q1 2027",
+   "url": "https://www.cnbc.com/2026/11/05/iren-earnings-report-q1-2027-.html",
+   "data": "2026-11-05"
+  },
+  {
+   "titulo": "IREN DEF 14A (proxy), contrato com a Microsoft",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001878848/000114036126039451/ny20078226x1_def14a.htm",
+   "data": "2026"
+  },
+  {
+   "titulo": "Motley Fool: IREN Q1 2027 earnings call transcript",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/06/iren-iren-q1-2027-earnings-call-transcript/",
+   "data": "2026-11-06"
+  }
+ ],
+ "ultimo_resultado": "3T26"
+}

@@ -1,0 +1,67 @@
+{
+ "ticker": "SNDK",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante de memória flash NAND e SSDs, separada da Western Digital em 2025. A falta de memória para IA multiplicou a receita por quase cinco em um ano. Desdobrou as ações na proporção de 8 para 1 em 20/11/2026.",
+ "modelo": "A SanDisk produz memória flash NAND, em fábricas no Japão mantidas em sociedade com a Kioxia (Flash Ventures), e a vende como SSDs para data centers, chips e SSDs para PCs, celulares e carros (Edge) e produtos de varejo, como cartões de memória e pendrives (Consumer). Os preços de NAND oscilam muito com o equilíbrio entre oferta e demanda. O ano fiscal termina no início de julho.",
+ "segmentos": [
+  {"nome": "Edge (PCs, celulares, carros)", "peso_receita": 0.53, "periodo": "1T27 fiscal", "obs": "US$ 5,83 bi, alta de 320% em um ano."},
+  {"nome": "Data center (SSDs corporativos)", "peso_receita": 0.44, "periodo": "1T27 fiscal", "obs": "US$ 4,80 bi, contra US$ 269 mi um ano antes."},
+  {"nome": "Consumer (varejo)", "peso_receita": 0.04, "periodo": "1T27 fiscal", "obs": "US$ 397 mi, queda de 39%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA); a produção de memória fica no Japão, em sociedade com a Kioxia, e a montagem em outros países da Ásia."},
+ "temas": [
+  {"tema": "Inteligência artificial", "relacao": "Os data centers de IA consomem SSDs de alta capacidade para guardar dados de treinamento e respostas; a receita de data center subiu 61% só no trimestre."},
+  {"tema": "Escassez de memória", "relacao": "A falta de NAND elevou os preços para todos os mercados e levou a margem bruta de 29,8% para 85,0% em um ano."}
+ ],
+ "diferencial": {
+  "texto": "O mercado de NAND é dominado por poucas empresas (Samsung, SK hynix com a Solidigm, Kioxia, Micron e SanDisk), porque as fábricas custam bilhões e exigem tecnologia própria de empilhamento de camadas. A sociedade com a Kioxia divide o custo dessas fábricas e dá escala à SanDisk. A marca é forte no varejo. O ponto fraco é a exposição ao ciclo de preços da NAND, historicamente mais volátil que o de DRAM, e a dependência de fábricas concentradas no Japão.",
+  "concorrentes": ["Samsung", "SK hynix (Solidigm)", "Kioxia", "Micron", "YMTC (China)"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 2T27 fiscal (outubro de 2026 a janeiro de 2027) deve ficar entre US$ 12,2 bi e US$ 12,6 bi, nova alta sobre o trimestre anterior, com margem bruta de cerca de 85%. O CEO cita demanda forte e crescente, puxada por data center, e fluxo de caixa livre durável; parte das vendas passou a ser feita em contratos de longo prazo com adiantamentos de clientes. O ponto de atenção é o ciclo: aumento de capacidade no setor historicamente derruba os preços.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 12,2 bi a US$ 12,6 bi", "periodo": "2T27 fiscal"},
+   {"rotulo": "Margem bruta projetada", "valor": "84,4% a 85,4%", "periodo": "2T27 fiscal"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 8,1 bi no 1T27 fiscal, contra US$ 112 mi um ano antes, e caixa livre de US$ 6,3 bi no trimestre. A empresa não tem dívida financeira relevante, tinha US$ 5,1 bi em caixa em outubro e recomprou US$ 5 bi em ações no trimestre (cerca de 4% das ações em dois trimestres). O desdobramento de 8 para 1 não muda o valor da empresa: os números por ação do release são anteriores a ele.",
+  "caixa": "US$ 5,1 bi",
+  "queima_anual": null,
+  "periodo": "out/2026"
+ },
+ "riscos": [
+  "Ciclo de preços da NAND: quedas de preço já levaram o setor a prejuízos em poucos trimestres.",
+  "Concorrência da Samsung, SK hynix e de fabricantes chinesas.",
+  "Produção concentrada em fábricas no Japão, compartilhadas com a Kioxia.",
+  "Queda contínua do segmento Consumer (-39% em um ano)."
+ ],
+ "momento": "No 1T27 fiscal (julho a setembro de 2026, divulgado em 29/10/2026), a receita foi de US$ 11,0 bi, alta de 378% em um ano e de 23% no trimestre, acima dos US$ 10,7 bi esperados pelos analistas; mesmo assim a ação caiu até 11% no dia. A empresa anunciou desdobramento de 8 para 1, com negociação ajustada desde 20/11/2026, e recomprou US$ 5 bi em ações.",
+ "destaques_resultado": {
+  "trimestre": "4T26 (1T27 fiscal da empresa)",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Receita de US$ 11,0 bi, alta de 378% sobre o 1T26 fiscal e de 23% no trimestre.",
+   "Data center com US$ 4,80 bi, alta de 61% no trimestre.",
+   "Margem bruta de 85,0%, contra 29,8% um ano antes.",
+   "Caixa livre de US$ 6,3 bi e recompra de US$ 5 bi em ações."
+  ],
+  "negativos": [
+   "Consumer caiu 39% em um ano, para US$ 397 mi.",
+   "Caixa livre menor que os US$ 7,1 bi do trimestre anterior."
+  ],
+  "atencao": [
+   "Preços de NAND em 2027 e reação da oferta das concorrentes.",
+   "Comparação dos números por ação antes e depois do desdobramento de 8 para 1."
+  ]
+ },
+ "fontes": [
+  {"titulo": "SanDisk: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm", "data": "2026-10-29"},
+  {"titulo": "SanDisk: índice do 8-K do 1T27 fiscal (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/0001628280-26-068243-index.htm", "data": "2026-10-29"},
+  {"titulo": "Motley Fool: Why Sandisk stock plunged today", "url": "https://www.fool.com/investing/2026/10/30/why-sandisk-stock-plunged-today/", "data": "2026-10-30"},
+  {"titulo": "StorageNewsletter: Sandisk fiscal 1Q27 financial results", "url": "https://www.storagenewsletter.com/?p=306769", "data": "2026-10-30"}
+ ],
+ "ultimo_resultado": "4T26"
+}

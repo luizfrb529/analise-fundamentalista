@@ -1,0 +1,65 @@
+{
+ "ticker": "MRVL",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante de chips para conectar e processar dados em data centers, incluindo chips de IA sob medida. Data center já é 79% da receita, e a empresa anunciou em novembro de 2026 a compra da Lumentum por US$ 115 bi em ações.",
+ "modelo": "A Marvell projeta chips (produção terceirizada, principalmente na TSMC) para infraestrutura de dados: processadores de sinal ópticos (DSPs) que fazem a conexão entre servidores de IA, chips sob medida (custom) desenvolvidos com grandes empresas de nuvem, switches, controladores de armazenamento e chips para redes de telecomunicação e empresas. Vende para provedores de nuvem e fabricantes de equipamentos.",
+ "segmentos": [
+  {"nome": "Data center", "peso_receita": 0.79, "periodo": "2T27 fiscal", "obs": "US$ 2,17 bi, alta de 46% em um ano."},
+  {"nome": "Comunicações e outros", "peso_receita": 0.21, "periodo": "2T27 fiscal", "obs": "US$ 568 mi, alta de 10%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Delaware e operação principal na Califórnia (EUA), com clientes no mundo todo."},
+ "temas": [
+  {"tema": "Inteligência artificial", "relacao": "Fornece chips sob medida e de conexão óptica para clusters de IA; a empresa relatou pedidos de IA muito fortes e espera aceleração forte dos chips sob medida a partir do 2S do ano fiscal de 2027."},
+  {"tema": "Conectividade óptica", "relacao": "A compra da Lumentum, de lasers e componentes ópticos, junta os chips eletrônicos da Marvell à parte óptica das conexões de IA."}
+ ],
+ "diferencial": {
+  "texto": "A Marvell é uma das líderes em DSPs ópticos, peça essencial das conexões de alta velocidade em data centers de IA, e uma das poucas empresas, ao lado da Broadcom, com capacidade de desenhar chips de IA sob medida para grandes clientes. Esses projetos levam anos e criam relação longa com o cliente. Com a Lumentum, passaria a vender também lasers e componentes ópticos. Os pontos fracos são a escala menor que a da Broadcom em chips sob medida, a dependência de poucos clientes de nuvem e o risco de execução de uma aquisição desse tamanho.",
+  "concorrentes": ["Broadcom", "NVIDIA (redes)", "Credo", "Astera Labs", "MediaTek", "Coherent"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 3T27 fiscal (agosto a outubro de 2026) deve ficar em cerca de US$ 3,15 bi, alta de cerca de 15% no trimestre, e em novembro a faixa foi estreitada para mais ou menos 2% em torno desse valor. A empresa elevou as projeções de receita dos anos fiscais de 2027 e 2028. A compra da Lumentum, de US$ 115 bi em ações (4,5 ações da Marvell por ação da Lumentum), deve ser concluída no 1S28, com economia de custos estimada pelas empresas em mais de US$ 1 bi por ano.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "cerca de US$ 3,15 bi", "periodo": "3T27 fiscal"},
+   {"rotulo": "Valor da compra da Lumentum", "valor": "US$ 115 bi (em ações)", "periodo": "nov/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 308 mi no 2T27 fiscal, contra US$ 195 mi um ano antes, com margem operacional ajustada de 36,6%; o lucro contábil é menor que o ajustado por causa da amortização de aquisições. A operação gerou US$ 605 mi no trimestre. A empresa tinha US$ 3,9 bi em caixa e US$ 5,0 bi em dívida em agosto, recomprou US$ 200 mi em ações no trimestre e emitiu US$ 2 bi em ações preferenciais conversíveis em março de 2026.",
+  "caixa": "US$ 3,9 bi",
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Execução e aprovação regulatória da compra da Lumentum, prevista só para o 1S28.",
+  "Diluição: os acionistas da Lumentum ficariam com cerca de 33% da empresa combinada.",
+  "Concentração em poucos clientes de chips sob medida.",
+  "Possível conflito com clientes que concorrem com a Lumentum em componentes ópticos."
+ ],
+ "momento": "No 2T27 fiscal (maio a julho de 2026, divulgado em 27/08/2026), a receita foi recorde de US$ 2,74 bi, alta de 37% em um ano, e o lucro por ação ajustado de US$ 0,94. Em 02/11/2026 a empresa anunciou a compra da Lumentum, aprovada pelos dois conselhos, e confirmou o centro da projeção de receita do 3T27 fiscal. O resultado completo do 3T27 fiscal, encerrado em 31/10/2026, ainda não foi divulgado.",
+ "destaques_resultado": {
+  "trimestre": "3T26 (2T27 fiscal da empresa)",
+  "divulgado_em": "2026-08-27",
+  "positivos": [
+   "Receita recorde de US$ 2,74 bi, alta de 37% em um ano e de 13% no trimestre.",
+   "Data center com US$ 2,17 bi, alta de 46% em um ano.",
+   "Lucro líquido de US$ 308 mi, contra US$ 195 mi no mesmo trimestre de 2025."
+  ],
+  "negativos": [
+   "Margem bruta ajustada de 58,9%, abaixo dos 59,4% de um ano antes.",
+   "Comunicações e outros caiu 3% no trimestre."
+  ],
+  "atencao": [
+   "Resultado completo do 3T27 fiscal, com projeção de US$ 3,15 bi.",
+   "Aprovações da compra da Lumentum."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Marvell: resultados do 2T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000022/q227_8kx812026ex-991.htm", "data": "2026-08-27"},
+  {"titulo": "Marvell: anúncio da combinação com a Lumentum (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1835632/000119312526442714/d81187dex991.htm", "data": "2026-11-02"},
+  {"titulo": "Light Reading: Marvell strikes $115B deal for Lumentum", "url": "https://lightreading.com/ai-machine-learning/marvell-strikes-115b-deal-for-lumentum", "data": "2026-11-02"},
+  {"titulo": "Manufacturing Dive: Marvell-Lumentum $115B stock deal", "url": "https://www.manufacturingdive.com/news/marvell-lumentum-115b-stock-deal-ai-data-centers/873783/", "data": "2026-11-03"}
+ ],
+ "ultimo_resultado": "3T26"
+}

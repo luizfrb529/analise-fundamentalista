@@ -1,0 +1,70 @@
+{
+ "ticker": "NVDA",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior fornecedora de chips e sistemas para inteligência artificial em data centers, que já respondem por 93% da receita. Troca de comando em novembro de 2026: a diretora financeira assumiu como CEO interina.",
+ "modelo": "A NVIDIA projeta (sem fábrica própria, a produção é terceirizada, principalmente na TSMC) processadores gráficos (GPUs), CPUs, redes e sistemas completos em rack, como o Vera Rubin NVL72, vendidos a provedores de nuvem (Microsoft, Google, Oracle, CoreWeave, Nebius), empresas de IA e governos. Junto com o hardware vende software (plataforma CUDA, modelos Nemotron) que prende os desenvolvedores ao ecossistema. A linha Edge Computing reúne placas para PCs e notebooks, robótica e automóveis. O ano fiscal termina no fim de janeiro.",
+ "segmentos": [
+  {"nome": "Data Center", "peso_receita": 0.93, "periodo": "3T27 fiscal", "obs": "US$ 107,6 bi no trimestre, alta de 110% em um ano."},
+  {"nome": "Edge Computing (PCs, robótica e automóveis)", "peso_receita": 0.07, "periodo": "3T27 fiscal", "obs": "US$ 8,2 bi, alta de 42% em um ano."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA), com clientes no mundo todo. As vendas de chips de data center para a China dependem de licença do governo americano; no 3T27 fiscal foram US$ 2,4 bi em produtos Hopper, e a projeção do 4T27 não considera receita de data center da China."},
+ "temas": [
+  {"tema": "Inteligência artificial", "relacao": "É o centro do negócio: as GPUs e os sistemas da empresa são a base da maior parte do treinamento e da execução de modelos de IA, e a receita de data center dobrou em um ano."},
+  {"tema": "Data centers e energia", "relacao": "Vende sistemas completos para as chamadas fábricas de IA; firmou colaboração para até 2 GW de data centers na Austrália até 2027. A demanda depende de os clientes conseguirem energia e prédios para instalar os equipamentos."},
+  {"tema": "Geopolítica e China", "relacao": "Restrições de exportação dos EUA limitam as vendas à China, antes um mercado relevante; a projeção oficial exclui essa receita."},
+  {"tema": "Robótica e PCs com IA", "relacao": "A linha Edge Computing cresceu 42% em um ano, com notebooks RTX Spark e plataformas para robôs e carros."}
+ ],
+ "diferencial": {
+  "texto": "A principal barreira de entrada é o ecossistema de software CUDA, usado há quase 20 anos por desenvolvedores, que torna caro trocar de fornecedor. A empresa entrega o sistema inteiro (GPU, CPU, rede NVLink e Spectrum-X, software), não só o chip, e lança uma geração nova por ano, ritmo difícil de acompanhar. A escala garante prioridade na capacidade de produção da TSMC e em memórias. Os pontos fracos são a dependência de um único fabricante (TSMC), a concentração em poucos grandes clientes e o avanço de chips próprios desses clientes, como as TPUs do Google e os chips da Amazon.",
+  "concorrentes": ["AMD", "Broadcom (chips sob medida)", "Google (TPU)", "Amazon (Trainium)", "Intel", "Huawei"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 4T27 fiscal deve ficar em US$ 130 bi (com variação de 3% para mais ou para menos), novo recorde, mesmo sem considerar vendas de data center para a China; o trimestre terá uma semana a mais. A produção do Vera Rubin NVL72 começou e, segundo a empresa, é a subida de produção mais rápida da sua história, já em operação em Microsoft, Google, Oracle, CoreWeave e Nebius. Os compromissos de compra com fornecedores subiram de US$ 279 bi para US$ 390 bi no trimestre, sinal do volume que a empresa planeja entregar. O crescimento depende de os clientes manterem o ritmo de investimento em IA.",
+  "metricas": [
+   {"rotulo": "Receita projetada para o 4T27 fiscal", "valor": "US$ 130 bi (mais ou menos 3%)", "periodo": "nov/2026 a jan/2027"},
+   {"rotulo": "Margem bruta projetada", "valor": "71% a 72%", "periodo": "4T27 fiscal"},
+   {"rotulo": "Compromissos com fornecedores", "valor": "US$ 390 bi", "periodo": "3T27 fiscal"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 65,3 bi no 3T27 fiscal, alta de 105% em um ano, com margem bruta de 74,8%. A geração de caixa livre foi de US$ 43,8 bi no trimestre e US$ 113,7 bi em nove meses. A empresa devolveu US$ 28,1 bi aos acionistas no trimestre (US$ 22,1 bi em recompra de ações e US$ 6,0 bi em dividendos) e ainda tem cerca de US$ 227 bi autorizados para recompras.",
+  "caixa": "US$ 53,5 bi (caixa e títulos de dívida)",
+  "queima_anual": null,
+  "periodo": "out/2026"
+ },
+ "riscos": [
+  "Troca de comando: Jensen Huang deixou o cargo de CEO em novembro de 2026; a diretora financeira Colette Kress é CEO interina e o conselho busca um sucessor. O release cita uma investigação de um comitê independente do conselho.",
+  "Concentração em poucos clientes de nuvem, que também desenvolvem chips próprios.",
+  "Restrições de exportação para a China e dependência da produção da TSMC em Taiwan.",
+  "Margem bruta projetada cai para 71% a 72% no 4T27 fiscal, contra 74,8% no 3T27."
+ ],
+ "momento": "No 3T27 fiscal (agosto a outubro de 2026, divulgado em 17/11/2026), a receita foi de US$ 115,8 bi, alta de 103% em um ano e de 20% sobre o trimestre anterior, e o lucro por ação de US$ 2,70 (+108%). A produção do Vera Rubin começou e a empresa anunciou a compra da Hugging Face e parcerias com Meta, Palantir e Anthropic. Em 12/11/2026, Jensen Huang deixou o cargo de CEO; Colette Kress acumula a presidência interina com a diretoria financeira enquanto o conselho busca um substituto.",
+ "destaques_resultado": {
+  "trimestre": "3T26 (3T27 fiscal da empresa)",
+  "divulgado_em": "2026-11-17",
+  "positivos": [
+   "Receita de US$ 115,8 bi, alta de 103% sobre o 3T26 fiscal e de 20% sobre o trimestre anterior.",
+   "Data Center com US$ 107,6 bi, alta de 110% em um ano.",
+   "Lucro líquido de US$ 65,3 bi, alta de 105% em um ano.",
+   "Caixa livre de US$ 43,8 bi no trimestre, quase o dobro dos US$ 22,1 bi de um ano antes."
+  ],
+  "negativos": [
+   "Margem bruta de 74,8%, levemente abaixo dos 75,0% do 2T27 fiscal; projeção de 71% a 72% para o 4T27.",
+   "Ganho com participações em outras empresas caiu de US$ 7,8 bi no 2T27 fiscal para US$ 1,8 bi."
+  ],
+  "atencao": [
+   "Escolha do novo CEO e conclusão da investigação do comitê independente do conselho.",
+   "Licenças de exportação para a China, fora da projeção do 4T27 fiscal."
+  ]
+ },
+ "fontes": [
+  {"titulo": "NVIDIA Announces Financial Results for Third Quarter Fiscal 2027 (8-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm", "data": "2026-11-17"},
+  {"titulo": "NVIDIA: release do 3T27 fiscal no site de RI", "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/", "data": "2026-11-17"},
+  {"titulo": "CNBC: Nvidia CEO Jensen Huang resigns", "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html", "data": "2026-11-12"},
+  {"titulo": "Axios: Colette Kress, Nvidia's interim CEO", "url": "https://www.axios.com/2026/11/12/colette-kress-nvidia-interim-ceo-jensen-huang", "data": "2026-11-12"},
+  {"titulo": "NVIDIA: Third Quarter 2027 CFO Commentary (MarketScreener)", "url": "https://www.marketscreener.com/news/nvidia-third-quarter-2027-cfo-commentary-ce785edcdc81f420", "data": "2026-11-17"}
+ ],
+ "ultimo_resultado": "3T26"
+}

@@ -1,5 +1,7 @@
 # Revisão do perfil de uma empresa listada na B3 (quadro "Sobre" do site)
 
+Stocks americanas (tipo STOCK_US no data/universe.json) usam outro formato: siga pipeline/brief_perfil_stock.md e valide com perfis.validar(j, ticker, stock=True).
+
 Você é analista de um site de análise fundamentalista para clientes de alta renda. Revise o perfil da empresa indicada com base no resultado mais recente. Texto em português do Brasil, neutro, direto, profissional, sem adjetivos de propaganda.
 
 ## Regras inegociáveis

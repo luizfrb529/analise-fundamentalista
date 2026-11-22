@@ -1,0 +1,65 @@
+{
+ "ticker": "ONDS",
+ "revisado_em": "2026-11-22",
+ "resumo": "Grupo de defesa que reúne drones, sistemas antidrone e robôs terrestres, crescendo por aquisições. A receita foi de US$ 10 mi para US$ 167 mi por trimestre em um ano, mas a operação ainda dá prejuízo.",
+ "modelo": "A Ondas vende drones autônomos (Optimus e a linha ULTRA, da DZYNE), sistemas de defesa contra drones (Iron Drone e Sentrycs), munições remotamente guiadas (IonStrike), veículos terrestres não tripulados (Roboteam e outras) e redes de rádio privadas para ferrovias (Ondas Networks). Os clientes são principalmente forças armadas e órgãos de segurança dos EUA, de Israel e da Europa, em contratos por encomenda. Desde 2025 a empresa compra outras empresas em ritmo acelerado: só em 2026 foram seis aquisições.",
+ "segmentos": [],
+ "segmentos_base": "A empresa não divulga a receita por linha de negócio no release",
+ "geografia": {"eua_pct": 0.5, "exterior_pct": 0.5, "periodo": "3T26", "texto": "Sede nos EUA, com operações em Israel, Polônia, Alemanha e Reino Unido. Segundo a empresa, os EUA já passam de metade da receita."},
+ "temas": [
+  {"tema": "Drones e defesa", "relacao": "A guerra na Ucrânia mostrou o peso de drones baratos e de sistemas antidrone; a empresa tem um contrato-quadro de até US$ 982 mi do Exército americano para sistemas não tripulados letais, via Mistral."},
+  {"tema": "Segurança de eventos e fronteiras", "relacao": "Os sistemas antidrone Sentrycs protegem estádios da Copa do Mundo e da NFL e fronteiras, com US$ 63,1 mi em contratos nessa área em julho de 2026."},
+  {"tema": "Inteligência artificial", "relacao": "Criou a Regna AI, empresa separada de IA soberana, e usa IA para a autonomia dos drones e robôs."}
+ ],
+ "diferencial": {
+  "texto": "A empresa monta uma plataforma completa de sistemas autônomos (drones aéreos, antidrone, robôs terrestres e munições), o que permite vender pacotes para o mesmo cliente militar. Produtos já testados em combate em Israel e aprovações em programas do Exército e da Força Aérea americanos são barreiras relevantes, porque a homologação militar é lenta. O ponto fraco é que o crescimento vem em grande parte de aquisições, com integração arriscada, margem bruta em queda (21,8% no 3T26 contra 43,1% no 2T26) e concorrentes maiores e com caixa próprio.",
+  "concorrentes": ["AeroVironment", "Kratos", "Anduril", "Red Cat", "DroneShield", "Elbit Systems"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ser de pelo menos US$ 550 mi, com mais de US$ 250 mi só no 4T26, e a meta inicial para 2027 é de pelo menos US$ 1,1 bi sem contar novas aquisições. A carteira de pedidos chegou a US$ 835 mi em setembro (+36% no trimestre), com US$ 214 mi de pedidos novos no 3T26. A empresa espera Ebitda ajustado positivo na plataforma operacional no 4T26 e na empresa toda no 3T27, um trimestre antes do previsto. As metas dependem de entregar os contratos militares e integrar as empresas compradas.",
+  "metricas": [
+   {"rotulo": "Carteira de pedidos", "valor": "US$ 835 mi", "periodo": "set/2026"},
+   {"rotulo": "Receita projetada", "valor": "pelo menos US$ 550 mi", "periodo": "2026"},
+   {"rotulo": "Meta de receita", "valor": "pelo menos US$ 1,1 bi", "periodo": "2027"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "O prejuízo operacional foi de US$ 189,5 mi no 3T26 e o Ebitda ajustado ficou negativo em US$ 59,7 mi. O prejuízo líquido de US$ 64,7 mi foi reduzido por um ganho contábil de US$ 125,1 mi na reavaliação de bônus de subscrição (warrants); no acumulado de 2026 esses ganhos deixam o lucro líquido positivo, sem relação com a operação. A empresa tinha US$ 820 mi em caixa e aplicações e só US$ 6 mi de dívida em setembro, financiados por emissões de ações: o número de ações subiu de 381 milhões para 590 milhões em nove meses.",
+  "caixa": "US$ 820 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Diluição: emissões de ações frequentes para financiar aquisições e a operação.",
+  "Integração de muitas empresas compradas em pouco tempo (US$ 431 mi gastos em aquisições).",
+  "Margem bruta caiu de 43,1% para 21,8% entre o 2T26 e o 3T26.",
+  "Lucro contábil distorcido pela reavaliação de warrants, que oscila com o preço da ação."
+ ],
+ "momento": "No 3T26 (divulgado em 12/11/2026), a receita foi recorde de US$ 167,5 mi, o dobro do 2T26 e mais de 16 vezes a do 3T25, acima dos US$ 148 mi esperados pelos analistas; o crescimento orgânico em base comparável foi de 64%. A empresa concluiu seis aquisições em 2026, a maior delas a DZYNE Technologies, e elevou a projeção de receita do ano. A ação caiu após o resultado com o aumento do prejuízo operacional e a queda da margem.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Receita recorde de US$ 167,5 mi, contra US$ 10,1 mi no 3T25 e US$ 83,8 mi no 2T26.",
+   "Carteira de pedidos de US$ 835 mi, alta de 36% no trimestre.",
+   "Projeção de 2026 elevada para pelo menos US$ 550 mi; meta de US$ 1,1 bi em 2027."
+  ],
+  "negativos": [
+   "Prejuízo operacional de US$ 189,5 mi, contra US$ 15,5 mi no 3T25.",
+   "Margem bruta de 21,8%, contra 43,1% no 2T26.",
+   "Ebitda ajustado negativo em US$ 59,7 mi, contra US$ 46,2 mi negativos no 2T26."
+  ],
+  "atencao": [
+   "Entrega do Ebitda ajustado positivo da plataforma operacional prometido para o 4T26.",
+   "Novas emissões de ações e aquisições."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Ondas: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1646188/000119312526457088/onds-ex99_1.htm", "data": "2026-11-12"},
+  {"titulo": "Ondas: apresentação do 3T26 (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1646188/000119312526457088/onds-ex99_2.htm", "data": "2026-11-12"},
+  {"titulo": "Benzinga: Ondas Q3 2026", "url": "https://www.benzinga.com/node/63201636", "data": "2026-11-12"},
+  {"titulo": "Panabee: Ondas Q3 revenue climbs 16-fold", "url": "https://www.panabee.com/news/ondas-earnings-q3-2026", "data": "2026-11-12"}
+ ],
+ "ultimo_resultado": "3T26"
+}

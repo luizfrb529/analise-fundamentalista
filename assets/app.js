@@ -1140,6 +1140,7 @@ async function pgAtivo(app, t) {
   graficoProventos(t);
   $("#noticias").innerHTML = await abaNoticias(t);
 }
+function alterna0(bt, box, abrir, fechar) { const b = $(bt); if (!b) return; b.onclick = () => { const x = $(box); x.hidden = !x.hidden; b.textContent = x.hidden ? abrir : fechar; }; }
 async function blocoSobre(t) {
   const a = A(t), n = D.notes[t] || {};
   const pf = await j(`data/perfis/${t}.json`, null);
@@ -1171,6 +1172,30 @@ async function blocoSobre(t) {
   const lista = (itens, cls, titulo) => itens && itens.length ? `<div class="dr-col ${cls}"><h4>${titulo}</h4><ul>${itens.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>` : "";
   const blocoDr = dr ? `<div class="cartao dr-cartao"><div class="cartao-cab"><div><h3>Último resultado: ${esc(dr.trimestre)}</h3><p class="sub">${dr.divulgado_em ? `Divulgado em ${esc(dataBR(dr.divulgado_em))}. ` : ""}Fatos do trimestre segundo o release e o ITR da empresa; a comparação de cada item vem indicada no texto.</p></div></div>
     <div class="dr-grade">${lista(dr.positivos, "pos", "Pontos positivos")}${lista(dr.negativos, "neg", "Pontos negativos")}${lista(dr.atencao, "aten", "Pontos de atenção")}</div></div>` : "";
+  if (isStock(t) && pf) {    // stocks americanas: atuação, temas, diferencial, potencial e saúde (pipeline/brief_perfil_stock.md)
+    const sd = pf.saude || {}, dif = pf.diferencial || {}, pot = pf.potencial || {};
+    const corSaude = { "lucrativa": "pos", "lucro recente": "pos", "prejuízo com caixa": "aten", "prejuízo e queima de caixa": "neg" }[sd.situacao] || "";
+    const geo = pf.geografia || {};
+    $("#sobre").innerHTML = `<div class="grade g2 sobre-stock">
+      <div class="cartao"><h3>O negócio</h3>${avisoRev}<p style="color:var(--txt-2)">${esc(pf.resumo || "")}</p>
+        <div class="sobre-destaques"><div><span>Segmento</span><b>${esc(a.setor_micro)}</b></div><div><span>Sede</span><b>${esc(a.pais || "n/d")}</b></div>
+          <div><span>Receita fora dos EUA</span>${ok(geo.exterior_pct) ? `<b>${pct(geo.exterior_pct)}</b><small>${esc(geo.periodo || "")}</small>` : '<b class="nd-txt">Não divulgada</b>'}</div></div>
+        ${detalhe}</div>
+      <div class="cartao"><h3>Saúde financeira</h3>${sd.situacao ? `<span class="badge saude ${corSaude}">${esc(sd.situacao[0].toUpperCase() + sd.situacao.slice(1))}</span>` : ""}
+        <p style="color:var(--txt-2);margin-top:10px">${esc(sd.texto || "")}</p>
+        <div class="sobre-destaques"><div><span>Caixa</span><b>${esc(sd.caixa || "n/d")}</b>${sd.periodo ? `<small>${esc(sd.periodo)}</small>` : ""}</div>${sd.queima_anual ? `<div><span>Queima de caixa por ano</span><b>${esc(sd.queima_anual)}</b></div>` : ""}</div></div>
+      <div class="cartao"><h3>Diferencial e barreiras de entrada</h3><p style="color:var(--txt-2)">${esc(dif.texto || "")}</p>
+        ${(dif.concorrentes || []).length ? `<div class="sub" style="margin-top:10px">Principais concorrentes</div><div class="badges" style="margin-top:6px">${dif.concorrentes.map((c) => `<span class="badge">${esc(c)}</span>`).join("")}</div>` : ""}</div>
+      <div class="cartao"><h3>De onde vem o potencial</h3><p style="color:var(--txt-2)">${esc(pot.texto || "")}</p>
+        ${(pot.metricas || []).length ? `<div class="espaco" style="height:6px"></div>${pot.metricas.map((m) => `<div class="kv"><span>${esc(m.rotulo)}${m.periodo ? ` <small class="sub">(${esc(m.periodo)})</small>` : ""}</span><b>${esc(m.valor)}</b></div>`).join("")}` : ""}
+        <p class="sub" style="margin-top:10px">Projeções atribuídas à empresa e ao consenso de analistas; não são garantia de resultado.</p></div>
+      <div class="cartao"><h3>Ligação com temas do momento</h3>${(pf.temas || []).map((x) => `<div class="tema-item"><span class="badge">${esc(x.tema)}</span><p>${esc(x.relacao)}</p></div>`).join("")}</div>
+      <div class="cartao"><h3>Riscos do negócio</h3><ul class="lista-riscos">${(pf.riscos || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>
+    </div>${blocoDr ? `<div style="margin-top:16px">${blocoDr}</div>` : ""}`;
+    alterna0("#sobre-ver", "#sobre-mais", "Ver mais", "Ver menos");
+    $$("[data-sec-ir]").forEach((x) => x.onclick = (e) => { e.preventDefault(); $(`#sec-${x.dataset.secIr}`).scrollIntoView({ behavior: "smooth", block: "start" }); });
+    return;
+  }
   if (isStock(t) && !pf) {   // stocks americanas: sem perfil escrito por enquanto e sem os cenários do Brasil
     const st = (D.fund[t] || {}).stock || {};
     $("#sobre").innerHTML = `<div class="cartao"><h3>O negócio</h3><div class="sobre-destaques">

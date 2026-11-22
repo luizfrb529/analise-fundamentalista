@@ -851,7 +851,7 @@ def processar(ativo: dict, ctx: dict) -> dict:
             mercado["beta"] = mercado_ext.get("beta")
         else:
             mercado["beta"] = stats_preco(df_papel, serie_completa(precos.get("^BVSP"))).get("beta")
-        cik = S.sec_cik(ext)
+        cik = ativo.get("cik") or S.sec_cik(ext)   # "cik" no universe.json: empresa que a lista de códigos da SEC ainda não mapeia (ex.: PSKY)
         res["cik"] = cik
         anuais, ltm, ltm_ant, saldo_ant, data_ref = {}, {}, None, None, None
         fonte_fund = "SEC EDGAR (XBRL)"
@@ -915,7 +915,8 @@ def processar(ativo: dict, ctx: dict) -> dict:
             try:
                 mc_y = float(yx.info.get("marketCap") or 0)
                 impl = mc_y / mercado_ext["preco"] * (ativo.get("acoes_por_adr") or 1) if mc_y and mercado_ext.get("preco") else None
-                if impl and abs(acoes / impl - 1) > 0.25:
+                # "acoes_sec_fixas": o lucro da SEC é só da classe listada e o Yahoo soma as cotas da sociedade (ex.: Blackstone)
+                if impl and abs(acoes / impl - 1) > 0.15 and not ativo.get("acoes_sec_fixas"):
                     fc = impl / acoes
                     aviso(t, f"ações da SEC ({acoes:,.0f}) incompatíveis com o valor de mercado do Yahoo; usadas {impl:,.0f} (fator {fc:.4g}, classes ou ADR)")
                     acoes = impl

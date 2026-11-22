@@ -1,0 +1,69 @@
+{
+ "ticker": "TSM",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior fábrica de chips sob encomenda do mundo, que produz os processadores mais avançados de NVIDIA, Apple, AMD e Broadcom. Lucro recorde pelo sexto trimestre seguido, com margem bruta de 66%.",
+ "modelo": "A TSMC não projeta chips próprios: fabrica sob encomenda (foundry) os chips desenhados pelos clientes, cobrando por wafer produzido. A receita vem principalmente das tecnologias mais avançadas (2, 3 e 5 nanômetros), usadas em chips de IA, servidores e celulares, e também do encapsulamento avançado (CoWoS) que junta GPU e memória. Reporta em novos dólares taiwaneses (NT$); cada ADR negociado nos EUA equivale a 5 ações.",
+ "segmentos": [
+  {"nome": "Computação de alto desempenho (HPC, inclui IA)", "peso_receita": 0.68, "periodo": "3T26", "obs": "Era 57% um ano antes."},
+  {"nome": "Smartphones, IoT, automóveis e outros", "peso_receita": 0.32, "periodo": "3T26", "obs": "Calculado por diferença."}
+ ],
+ "segmentos_base": "Receita por plataforma",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede e a maior parte das fábricas em Taiwan, com fábricas em construção ou operação no Arizona (EUA), no Japão e na Alemanha. A maior parte da receita vem de clientes americanos."},
+ "temas": [
+  {"tema": "Inteligência artificial", "relacao": "Fabrica praticamente todos os chips de IA de ponta; segundo o presidente C.C. Wei, a demanda de IA ainda supera a capacidade da empresa."},
+  {"tema": "Geopolítica (Taiwan e China)", "relacao": "A concentração das fábricas em Taiwan é o principal risco citado por investidores; a construção de fábricas nos EUA, Japão e Alemanha reduz parte dessa exposição."},
+  {"tema": "Smartphones", "relacao": "Produz os processadores dos principais celulares, como os da Apple e da Qualcomm, segunda maior fonte de receita."}
+ ],
+ "diferencial": {
+  "texto": "A TSMC é a única empresa que produz em grande volume e com bom aproveitamento as tecnologias mais avançadas (2 e 3 nm); Samsung e Intel tentam, mas com rendimento e clientela bem menores. Cada nova geração de fábrica custa dezenas de bilhões de dólares e anos de aprendizado, barreira quase intransponível. A empresa também domina o encapsulamento avançado (CoWoS), gargalo da produção de GPUs. O ponto fraco é a concentração geográfica em Taiwan e a dependência de poucos grandes clientes.",
+  "concorrentes": ["Samsung Foundry", "Intel Foundry", "GlobalFoundries", "SMIC", "UMC"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 4T26 deve ficar entre US$ 52,3 bi e US$ 54,3 bi, alta de cerca de 58% em um ano no ponto médio, com margem bruta de 65% a 67%, puxada pela subida da produção em 2 nm. A empresa espera crescimento de cerca de 44% da receita em dólar em 2026. Em novembro, o conselho aprovou cerca de US$ 40,9 bi em investimentos de capital. A imprensa registrou tom mais cauteloso da empresa sobre 2027.",
+  "metricas": [
+   {"rotulo": "Receita projetada para o 4T26", "valor": "US$ 52,3 bi a US$ 54,3 bi", "periodo": "4T26"},
+   {"rotulo": "Crescimento esperado da receita", "valor": "cerca de 44% em dólar", "periodo": "2026"},
+   {"rotulo": "Participação de 7 nm e menores", "valor": "79% da receita de wafers", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de NT$ 763,1 bi no 3T26 (+68,7% em um ano), com margem líquida de 51,1% e retorno sobre o patrimônio de 45,5%. A operação gerou NT$ 919,8 bi e o caixa livre foi de NT$ 476,6 bi no trimestre, mesmo com investimento de NT$ 443,2 bi. A empresa tinha NT$ 4,0 trilhões em caixa e aplicações e NT$ 818 bi em dívida de longo prazo. Elevou o dividendo trimestral para NT$ 9,00 por ação.",
+  "caixa": "NT$ 4,0 trilhões (cerca de US$ 126 bi)",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Tensão entre China e Taiwan, onde está a maior parte das fábricas.",
+  "Tarifas e restrições comerciais entre EUA e China.",
+  "Margem menor nas fábricas fora de Taiwan, de custo mais alto.",
+  "Ciclo de investimento em IA dos clientes, do qual depende quase 70% da receita."
+ ],
+ "momento": "No 3T26 (divulgado em 15/10/2026), a receita foi de US$ 46,7 bi, alta de 41% em um ano e acima da projeção de US$ 44,6 bi a US$ 45,8 bi; em NT$ subiu 50,9%. O lucro por ADR foi de US$ 4,60. A tecnologia de 2 nm já responde por 8% da receita de wafers e a de 3 nm por 33%. A empresa elevou o dividendo e aprovou novos investimentos em novembro.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-15",
+  "positivos": [
+   "Receita de US$ 46,7 bi, alta de 41,2% sobre o 3T25 e acima da projeção da empresa.",
+   "Lucro líquido de NT$ 763,1 bi, alta de 68,7%, sexto recorde trimestral seguido.",
+   "Computação de alto desempenho subiu para 68% da receita, contra 57% um ano antes.",
+   "Dividendo trimestral elevado de NT$ 7,00 para NT$ 9,00 por ação."
+  ],
+  "negativos": [
+   "Margem bruta de 66,4%, abaixo dos 67,7% do 2T26.",
+   "Margem líquida caiu de 55,6% no 2T26 para 51,1%."
+  ],
+  "atencao": [
+   "Projeções para 2027, apresentadas com tom mais cauteloso.",
+   "Custos das fábricas no exterior sobre a margem."
+  ]
+ },
+ "fontes": [
+  {"titulo": "TSMC: resultados do 3T26 (6-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm", "data": "2026-10-15"},
+  {"titulo": "TSMC: apresentação do 3T26 (6-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26presentatione.htm", "data": "2026-10-15"},
+  {"titulo": "TSMC: deliberações do conselho de 10/11/2026", "url": "https://pr.tsmc.com/english/news/3352", "data": "2026-11-10"},
+  {"titulo": "The Next Web: TSMC posts a sixth straight record profit but turns cautious on 2027", "url": "https://thenextweb.com/news/tsmc-q3-2026-record-profit-prudent-2027", "data": "2026-10-15"},
+  {"titulo": "CRN Asia: TSMC third quarter revenue tops guidance", "url": "https://www.crnasia.com/news/2026/components-and-peripherals/tsmc-third-quarter-revenue-tops-guidance-as-ceo-says-ai-dema", "data": "2026-10-15"}
+ ],
+ "ultimo_resultado": "3T26"
+}

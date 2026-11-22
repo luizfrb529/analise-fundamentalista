@@ -1,0 +1,71 @@
+{
+ "ticker": "MU",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das três grandes fabricantes de memória do mundo (DRAM, HBM e NAND). A falta de memória para IA levou a receita de US$ 11,3 bi para US$ 54,2 bi por trimestre em um ano, com margem bruta de 87%.",
+ "modelo": "A Micron fabrica em fábricas próprias (EUA, Japão, Taiwan, Singapura) chips de memória DRAM, memória de alta largura de banda (HBM), usada ao lado das GPUs de IA, e memória flash NAND para SSDs. Vende para provedores de nuvem, fabricantes de servidores, celulares, PCs, carros e equipamentos industriais. O setor é cíclico: preços sobem muito quando falta oferta e caem quando sobra. O ano fiscal termina no início de setembro.",
+ "segmentos": [
+  {"nome": "Core Data Center (servidores)", "peso_receita": 0.33, "periodo": "4T26 fiscal", "obs": "US$ 18,0 bi, contra US$ 1,6 bi um ano antes."},
+  {"nome": "Cloud Memory (grandes nuvens, inclui HBM)", "peso_receita": 0.30, "periodo": "4T26 fiscal", "obs": "US$ 16,3 bi."},
+  {"nome": "Mobile and Client (celulares e PCs)", "peso_receita": 0.24, "periodo": "4T26 fiscal", "obs": "US$ 13,1 bi."},
+  {"nome": "Automotive and Embedded", "peso_receita": 0.13, "periodo": "4T26 fiscal", "obs": "US$ 6,8 bi."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Idaho (EUA), com produção nos EUA, Japão, Taiwan e Singapura e clientes no mundo todo; constrói novas fábricas em Idaho e Nova York com apoio da lei americana de chips."},
+ "temas": [
+  {"tema": "Inteligência artificial", "relacao": "Cada GPU de IA usa várias pilhas de memória HBM, e os servidores de IA usam muito mais DRAM e SSD; a área de data center (Core Data Center e Cloud Memory) somou US$ 34,3 bi, 63% da receita do 4T26 fiscal."},
+  {"tema": "Escassez de memória", "relacao": "A demanda de IA esgotou a capacidade do setor e elevou os preços também para celulares, PCs e carros, o que explica margens brutas acima de 80% em todas as divisões."},
+  {"tema": "Produção nos EUA", "relacao": "É a única fabricante de memória com sede nos EUA, o que a favorece em incentivos e políticas de produção local."}
+ ],
+ "diferencial": {
+  "texto": "O mercado de DRAM é praticamente dividido entre três empresas (Samsung, SK hynix e Micron), porque uma fábrica de memória custa dezenas de bilhões de dólares e exige anos de domínio de processo: é uma das maiores barreiras de entrada da indústria. Na HBM, a qualificação junto à NVIDIA e a outros compradores leva meses e poucos fornecedores passam. Segundo a empresa, a HBM4 de 12 camadas está subindo de produção duas vezes mais rápido que a geração anterior. A SK hynix é a líder em HBM, e a Micron depende da disciplina das concorrentes em capacidade para manter preços.",
+  "concorrentes": ["SK hynix", "Samsung", "CXMT (China)", "SanDisk (NAND)", "Kioxia (NAND)"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 1T27 fiscal (setembro a novembro de 2026) deve ficar em US$ 61,5 bi, com variação de US$ 1,5 bi, e o lucro por ação em cerca de US$ 37,84, novos recordes; o CEO diz esperar um ano fiscal de 2027 ainda mais forte. A empresa informou ter fechado acordos para a maior parte da sua oferta de HBM de 2027, com preços maiores que os de 2026. Clientes adiantaram US$ 12,7 bi em depósitos para garantir fornecimento futuro. O ponto de atenção é o próprio ciclo: o investimento do setor em capacidade está subindo e, historicamente, excesso de oferta derruba preços.",
+  "metricas": [
+   {"rotulo": "Receita projetada para o 1T27 fiscal", "valor": "US$ 61,5 bi (mais ou menos US$ 1,5 bi)", "periodo": "set a nov/2026"},
+   {"rotulo": "Margem bruta projetada", "valor": "cerca de 86%", "periodo": "1T27 fiscal"},
+   {"rotulo": "Depósitos de clientes por contratos futuros", "valor": "US$ 12,7 bi", "periodo": "ano fiscal 2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 85,0 bi no ano fiscal de 2026, contra US$ 8,5 bi em 2025, e de US$ 37,7 bi só no 4T26 fiscal. A operação gerou US$ 89,7 bi de caixa no ano, com investimento líquido de US$ 27,4 bi em fábricas. A empresa terminou o ano com US$ 73,5 bi em caixa e aplicações e só US$ 5,2 bi de dívida.",
+  "caixa": "US$ 73,5 bi (caixa e aplicações)",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Ciclo da memória: quedas de preço já derrubaram o lucro do setor em poucos trimestres no passado.",
+  "Investimento em capacidade crescente (US$ 27,4 bi no ano fiscal de 2026, com previsão de gasto trimestral ainda maior em 2027).",
+  "Concorrência da SK hynix e da Samsung em HBM e avanço de fabricantes chinesas em DRAM.",
+  "Dependência da demanda de poucos grandes compradores de IA."
+ ],
+ "momento": "No 4T26 fiscal (junho a agosto de 2026, divulgado em 30/09/2026), a receita foi de US$ 54,2 bi, alta de 31% sobre o trimestre anterior e de 379% em um ano, com margem bruta de 86,8% e lucro por ação de US$ 32,87. No ano fiscal de 2026 a receita chegou a US$ 133,2 bi, contra US$ 37,4 bi em 2025. A empresa informou já ter vendido mais de US$ 1 bi em HBM4 e iniciou recompra de ações (US$ 650 mi no ano). O próximo resultado, do 1T27 fiscal, sai em dezembro.",
+ "destaques_resultado": {
+  "trimestre": "4T26 fiscal da empresa (jun a ago/2026)",
+  "divulgado_em": "2026-09-30",
+  "positivos": [
+   "Receita de US$ 54,2 bi, alta de 379% sobre o 4T25 fiscal e de 31% sobre o 3T26.",
+   "Margem bruta de 86,8%, contra 44,7% um ano antes.",
+   "Lucro líquido de US$ 37,7 bi, contra US$ 3,2 bi no 4T25 fiscal.",
+   "Caixa livre ajustado de US$ 33,2 bi no trimestre."
+  ],
+  "negativos": [
+   "Investimento líquido em fábricas de US$ 10,8 bi no trimestre, e a empresa prevê gasto trimestral maior em 2027.",
+   "Despesa de US$ 500 mi com licenças de patentes no trimestre."
+  ],
+  "atencao": [
+   "Preços de memória em 2027 e reação da oferta das concorrentes.",
+   "Ritmo de vendas de HBM4 para a nova geração de GPUs."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Micron: resultados do 4T26 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm", "data": "2026-09-30"},
+  {"titulo": "Micron: 8-K do 4T26 fiscal (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/mu-20260930.htm", "data": "2026-09-30"},
+  {"titulo": "Motley Fool: Micron Q4 2026 earnings call transcript", "url": "https://www.fool.com/earnings/call-transcripts/2026/10/01/micron-mu-q4-2026-earnings-call-transcript/", "data": "2026-10-01"},
+  {"titulo": "Yahoo Finance: Micron's HBM4 ramp-up", "url": "https://finance.yahoo.com/markets/stocks/articles/microns-hbm4-ramp-higher-pricing-123300062.html", "data": "2026-10"},
+  {"titulo": "Yahoo Finance: Micron capex forecast after Q4 results", "url": "https://finance.yahoo.com/markets/stocks/articles/mu-stock-drops-hours-micron-222532422.html", "data": "2026-09-30"}
+ ],
+ "ultimo_resultado": "3T26"
+}

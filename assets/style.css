@@ -800,3 +800,13 @@ select { max-width: 100%; }
   .cab-pagina .segmentado button, #rk-seg button, #cal-seg button, #scr-seg button { flex: 0 0 auto; }
 }
 @media (max-width: 680px) { .cab-pagina > div { min-width: 0; max-width: 100%; } .cab-pagina .segmentado { min-width: 0; } }
+
+/* Sobre das stocks */
+.sobre-stock .cartao p { line-height: 1.55; }
+.badge.saude.pos { color: var(--pos); border-color: var(--pos); }
+.badge.saude.neg { color: var(--neg); border-color: var(--neg); }
+.badge.saude.aten { color: #d4a017; border-color: #d4a017; }
+.tema-item { margin-top: 10px; }
+.tema-item p { margin: 6px 0 0; color: var(--txt-2); line-height: 1.5; }
+.lista-riscos { margin: 8px 0 0; padding-left: 18px; color: var(--txt-2); line-height: 1.55; }
+.lista-riscos li { margin-bottom: 6px; }

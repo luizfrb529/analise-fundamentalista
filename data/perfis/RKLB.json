@@ -1,0 +1,66 @@
+{
+ "ticker": "RKLB",
+ "revisado_em": "2026-11-22",
+ "resumo": "Segunda maior empresa privada de lançamentos espaciais dos EUA, que também fabrica satélites e componentes. Tem US$ 3,6 bi em contratos a cumprir, ainda dá prejuízo e aguarda o primeiro voo do foguete Neutron, adiado para 2027.",
+ "modelo": "A Rocket Lab ganha dinheiro de duas formas: lançando satélites pequenos com o foguete Electron (e testes hipersônicos com a versão HASTE para defesa) e, principalmente, fabricando satélites inteiros e peças como painéis solares, rodas de reação e rádios (Space Systems) para a NASA, a Força Espacial e o Space Development Agency dos EUA e operadores comerciais. O Neutron, foguete médio e reutilizável em desenvolvimento, deve permitir lançar constelações inteiras. A empresa negocia a compra da operadora de satélites Iridium.",
+ "segmentos": [],
+ "segmentos_base": "A divisão entre lançamentos e sistemas espaciais não consta no release do 3T26",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA), com base de lançamento na Nova Zelândia e em Wallops, na Virgínia (EUA), onde fica a plataforma do Neutron."},
+ "temas": [
+  {"tema": "Economia espacial", "relacao": "Disputa com a SpaceX o mercado de lançamentos e constelações; tem 117 lançamentos contratados, 16 deles do Neutron, e mais de 55 satélites em construção."},
+  {"tema": "Defesa", "relacao": "Fabrica satélites para o Space Development Agency e a Força Espacial americana e faz testes hipersônicos com o HASTE; defesa é um dos motores da carteira."},
+  {"tema": "Comunicação por satélite", "relacao": "A compra pendente da Iridium, financiada com emissão de ações, levaria a empresa a operar uma constelação de comunicação, não só a construí-la."}
+ ],
+ "diferencial": {
+  "texto": "É a única empresa além da SpaceX com um foguete orbital lançando com frequência nos EUA e, ao mesmo tempo, fabricante de satélites completos, o que permite vender o pacote inteiro (satélite mais lançamento). Ter fabricação própria de componentes críticos reduz dependência de fornecedores. O histórico de lançamentos do Electron e as certificações com NASA e Pentágono são barreiras difíceis de copiar. O ponto fraco é o Neutron, essencial para competir em cargas maiores, que acumula atrasos, e a escala muito menor que a da SpaceX.",
+  "concorrentes": ["SpaceX", "Firefly Aerospace", "Blue Origin", "ULA", "Northrop Grumman", "York Space Systems"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a carteira de contratos chegou ao recorde de cerca de US$ 3,6 bi no 3T26, alta de 52% no trimestre, com cerca de US$ 1 bi em novos contratos de lançamento e US$ 470 mi em sistemas espaciais. Mais de US$ 515 mi em contratos do Neutron foram assinados no trimestre, com preço-base de lançamento elevado para US$ 70 mi. A projeção para o 4T26 é de receita entre US$ 270 mi e US$ 290 mi, recorde, com margem bruta maior. O potencial depende do primeiro voo do Neutron, agora previsto para não antes de 2027, e da conclusão da compra da Iridium.",
+  "metricas": [
+   {"rotulo": "Carteira de contratos", "valor": "US$ 3,6 bi", "periodo": "3T26"},
+   {"rotulo": "Receita projetada", "valor": "US$ 270 mi a US$ 290 mi", "periodo": "4T26"},
+   {"rotulo": "Missões do Neutron contratadas", "valor": "16", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo líquido de US$ 79,7 mi no 3T26, com Ebitda ajustado negativo de US$ 18 mi; no ano até setembro, o caixa operacional foi negativo em US$ 127 mi e o investimento somou US$ 84 mi, embora o 3T26 tenha tido caixa operacional positivo de US$ 7,2 mi. A empresa levantou US$ 3,9 bi com venda de ações em bolsa (ATM) em 2026 e terminou setembro com cerca de US$ 4,7 bi em caixa e aplicações, praticamente sem dívida. O número de ações passou de 544 milhões para 639 milhões no ano.",
+  "caixa": "US$ 4,7 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Novos atrasos no Neutron, cujo primeiro voo já passou de 2025 para 2026 e agora para 2027.",
+  "Diluição: emissões de ações financiam a operação e a compra da Iridium.",
+  "Integração da Iridium, negócio bem maior e diferente do atual.",
+  "Concorrência direta com a SpaceX, que tem custo de lançamento muito menor."
+ ],
+ "momento": "No 3T26 (divulgado em 09/11/2026), a receita foi recorde de US$ 267,8 mi, alta de 73% em um ano, acima da expectativa dos analistas, mas o prejuízo por ação de US$ 0,12 veio pior que o esperado e a ação caiu após o resultado. Em outubro a empresa adiou o primeiro voo do Neutron para não antes de 2027. Os acionistas da Iridium aprovaram a venda para a Rocket Lab, com conclusão ainda pendente.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-09",
+  "positivos": [
+   "Receita recorde de US$ 267,8 mi, alta de 73% sobre o 3T25.",
+   "Carteira de contratos de cerca de US$ 3,6 bi, alta de 52% no trimestre.",
+   "Caixa operacional positivo de US$ 7,2 mi no trimestre.",
+   "Ebitda ajustado negativo de US$ 18 mi, melhor que os US$ 26,3 mi negativos do 3T25."
+  ],
+  "negativos": [
+   "Prejuízo líquido de US$ 79,7 mi, contra US$ 18,3 mi no 3T25.",
+   "Margem bruta ajustada de 38,4%, contra 41,9% um ano antes.",
+   "Perda de US$ 27,3 mi com a liquidação antecipada de dívida conversível."
+  ],
+  "atencao": [
+   "Calendário do primeiro voo do Neutron em 2027.",
+   "Conclusão da compra da Iridium."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Rocket Lab: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000073/rklb-11092026ex991.htm", "data": "2026-11-09"},
+  {"titulo": "Rocket Lab: release do 3T26 no site de RI", "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts", "data": "2026-11-09"},
+  {"titulo": "Satellite Today: Rocket Lab's Neutron debut now delayed to 2027", "url": "https://www.satellitetoday.com/launch/2026/10/15/rocket-labs-neutron-debut-now-delayed-to-2027/", "data": "2026-10-15"},
+  {"titulo": "Finviz: Rocket Lab shares fall after Q3 earnings miss", "url": "https://finviz.com/news/419807/rocket-lab-shares-fall-over-5-after-q3-earnings-miss-despite-73-revenue-growth-and-record-backlog", "data": "2026-11-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

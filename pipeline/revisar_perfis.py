@@ -39,7 +39,7 @@ def ler(caminho: Path, padrao=None):
 def pendentes(universo: list, fundamentals: dict) -> list[tuple[str, str]]:
     """[(ticker, motivo)] em ordem de prioridade: resultado novo primeiro, depois perfis mais antigos."""
     novos, velhos = [], []
-    for a in [x for x in universo if x.get("tipo") != "STOCK_US"]:   # stocks americanas ainda sem perfil
+    for a in universo:
         t = a["ticker"]
         perfil = ler(PASTA / f"{t}.json", {}) or {}
         ult = ((fundamentals.get(t) or {}).get("agenda") or {}).get("ultima") or {}
@@ -113,7 +113,7 @@ def revisar(client, brief: str, ativo: dict, fundamentals: dict) -> dict:
     mensagens = [{"role": "user", "content": pedido}]
     for tentativa in range(2):
         j = extrair_json(pedir(client, mensagens))
-        erros = P.validar(j, t) if j is not None else ["a resposta não trouxe um JSON válido"]
+        erros = P.validar(j, t, ativo["tipo"] == "STOCK_US") if j is not None else ["a resposta não trouxe um JSON válido"]
         if not erros:
             j["revisado_em"] = HOJE
             j["ultimo_resultado"] = ult.get("rotulo")
@@ -150,11 +150,11 @@ def main():
 
     import anthropic
     client = anthropic.Anthropic()
-    brief = (Path(__file__).resolve().parent / "brief_perfil.md").read_text(encoding="utf-8")
+    briefs = {k: (Path(__file__).resolve().parent / f"brief_perfil{k}.md").read_text(encoding="utf-8") for k in ("", "_stock")}
     feitos, falhas = [], []
     for t, motivo in fila[:args.max]:
         try:
-            perfil = revisar(client, brief, por_ticker[t], fundamentals)
+            perfil = revisar(client, briefs["_stock" if por_ticker[t]["tipo"] == "STOCK_US" else ""], por_ticker[t], fundamentals)
             (PASTA / f"{t}.json").write_text(json.dumps(P.limpar(perfil), ensure_ascii=False, indent=1), encoding="utf-8")
             feitos.append(t)
             print(f"{t}: revisado ({motivo})")

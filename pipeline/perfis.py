@@ -13,8 +13,24 @@ PROIBIDOS = re.compile(TRACOS + r"|\b(compre|recomenda[cç][aã]o de compra|pre[
 NIVEIS = {"nenhuma", "baixa", "média", "media", "alta", None}
 
 
-def validar(j: dict, ticker: str) -> list[str]:
-    """Lista de problemas; vazia = perfil pode ser publicado."""
+SAUDE = {"lucrativa", "lucro recente", "prejuízo com caixa", "prejuízo e queima de caixa"}
+
+
+def eh_stock(ticker: str) -> bool:
+    import json
+    from pathlib import Path
+    try:
+        u = json.loads((Path(__file__).resolve().parents[1] / "data" / "universe.json").read_text(encoding="utf-8"))
+    except Exception:
+        return False
+    return any(a["ticker"] == ticker and a.get("tipo") == "STOCK_US" for a in u)
+
+
+def validar(j: dict, ticker: str, stock: bool | None = None) -> list[str]:
+    """Lista de problemas; vazia = perfil pode ser publicado. Stocks americanas (STOCK_US) seguem brief_perfil_stock.md;
+    sem o parâmetro, o tipo é lido do data/universe.json."""
+    if stock is None:
+        stock = eh_stock(ticker)
     erros = []
     if not isinstance(j, dict):
         return ["não é um objeto JSON"]
@@ -25,16 +41,33 @@ def validar(j: dict, ticker: str) -> list[str]:
     if achados:
         erros.append(f"termos proibidos: {sorted(achados)}")
     resumo = j.get("resumo") or ""
-    if not resumo or len(resumo) > 260:
-        erros.append(f"resumo com {len(resumo)} caracteres (máximo 260)")
+    if not resumo or len(resumo) > 280:
+        erros.append(f"resumo com {len(resumo)} caracteres (máximo 280)")
     for campo in ("modelo", "momento"):
         if not (j.get(campo) or "").strip():
             erros.append(f"campo {campo} vazio")
     fontes = [f for f in j.get("fontes") or [] if isinstance(f, dict) and str(f.get("url", "")).startswith("http")]
     if len(fontes) < 3:
         erros.append(f"{len(fontes)} fontes com link (mínimo 3)")
+    if stock:
+        temas = j.get("temas")
+        if not isinstance(temas, list) or not 1 <= len(temas) <= 4 or not all(isinstance(x, dict) and x.get("tema") and x.get("relacao") for x in temas):
+            erros.append("temas precisa de 1 a 4 itens com tema e relacao")
+        dif = j.get("diferencial") or {}
+        if not (dif.get("texto") or "").strip() or not isinstance(dif.get("concorrentes"), list):
+            erros.append("diferencial sem texto ou sem lista de concorrentes")
+        if not ((j.get("potencial") or {}).get("texto") or "").strip():
+            erros.append("potencial sem texto")
+        sd = j.get("saude") or {}
+        if sd.get("situacao") not in SAUDE or not (sd.get("texto") or "").strip():
+            erros.append(f"saude.situacao deve ser uma de {sorted(SAUDE)} e ter texto")
+        rs = j.get("riscos")
+        if not isinstance(rs, list) or not 1 <= len(rs) <= 5:
+            erros.append("riscos precisa de 1 a 5 itens")
     s = j.get("sensibilidade") or {}
-    if set(s) != CENARIOS or any(not isinstance(v, dict) or v.get("nota") not in (-2, -1, 0, 1, 2) for v in s.values()):
+    if stock:
+        pass
+    elif set(s) != CENARIOS or any(not isinstance(v, dict) or v.get("nota") not in (-2, -1, 0, 1, 2) for v in s.values()):
         erros.append("sensibilidade incompleta ou com nota fora de -2 a 2")
     segs = [x for x in j.get("segmentos") or [] if isinstance(x, dict) and isinstance(x.get("peso_receita"), (int, float))]
     if segs and not 0.9 <= sum(x["peso_receita"] for x in segs) <= 1.1:
@@ -48,7 +81,7 @@ def validar(j: dict, ticker: str) -> list[str]:
                 itens = dr.get(k)
                 if not isinstance(itens, list) or not mi <= len(itens) <= ma or not all(isinstance(x, str) and x.strip() for x in itens):
                     erros.append(f"destaques_resultado.{k} precisa de {mi} a {ma} itens de texto")
-    moeda = j.get("moeda") or {}
+    moeda = {} if stock else (j.get("moeda") or {})
     for k in ("receita_em_dolar", "divida_em_dolar"):
         if moeda.get(k) not in NIVEIS:
             erros.append(f"moeda.{k} inválido: {moeda.get(k)!r}")

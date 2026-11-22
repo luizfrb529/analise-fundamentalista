@@ -1,0 +1,67 @@
+{
+ "ticker": "ASTS",
+ "revisado_em": "2026-11-22",
+ "resumo": "Constrói uma rede de satélites que conecta celulares comuns direto do espaço, sem antena especial, em parceria com operadoras. Ainda em fase de implantação: receita pequena, prejuízo alto e serviço comercial previsto para o fim de 2026.",
+ "modelo": "A AST SpaceMobile fabrica e lança satélites grandes (BlueBird) que funcionam como torres de celular no espaço. O modelo é dividir a receita com as operadoras parceiras (como AT&T e Rakuten), que usam a rede para cobrir áreas sem sinal, e vender serviços a governos. Hoje a receita vem principalmente da entrega de estações terrestres (gateways) e de etapas de contratos com o governo americano.",
+ "segmentos": [
+  {"nome": "Produtos (gateways e equipamentos)", "peso_receita": 0.49, "periodo": "3T26", "obs": "US$ 20,6 mi."},
+  {"nome": "Serviços (inclui contratos de governo)", "peso_receita": 0.51, "periodo": "3T26", "obs": "US$ 21,8 mi."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede no Texas (EUA). O serviço começará com parceiros nos EUA, Canadá, Japão, Arábia Saudita e Reino Unido; tem autorização comercial no Brasil."},
+ "temas": [
+  {"tema": "Conectividade direto ao celular", "relacao": "É a proposta central: cobrir com sinal de celular as áreas sem antena, usando o espectro das operadoras; a empresa cita mais de 60 operadoras e 3 bilhões de assinantes no ecossistema potencial."},
+  {"tema": "Economia espacial", "relacao": "Precisa de cerca de 45 satélites em órbita até meados de 2027 e tem contratos para lançar mais de 100 até 2028, com SpaceX e Blue Origin; anunciou foguete próprio (Blacklift) para o fim de 2028."},
+  {"tema": "Defesa", "relacao": "Tem 16 contratos com o governo americano, incluindo um da Força Espacial de cerca de US$ 100 mi para sensoriamento espacial."}
+ ],
+ "diferencial": {
+  "texto": "A empresa tem um grande portfólio de patentes e satélites muito maiores que os concorrentes, o que permite banda larga direto em celulares comuns, e acordos com as principais operadoras para usar o espectro delas, algo difícil de replicar. Licenças de espectro e autorizações regulatórias em vários países também são barreiras. O maior concorrente é a SpaceX, com o Starlink Direct to Cell, que tem muito mais satélites em órbita e lança a custo próprio; a AST ainda depende de terceiros para lançar.",
+  "concorrentes": ["SpaceX (Starlink Direct to Cell)", "Globalstar e Apple", "Iridium", "Lynk Global", "Skylo"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 150 mi e US$ 200 mi, e o serviço comercial intermitente em todo o território americano e em outros mercados deve começar antes do fim de 2026. A meta é ter cerca de 45 satélites em órbita até meados de 2027, e a fabricação deve chegar a seis satélites por mês em dezembro de 2026. No Japão, um acordo com o governo e a Rakuten prevê cerca de US$ 1 bi em financiamento não diluidor. O potencial depende de lançar os satélites no prazo e de as operadoras transformarem a cobertura em receita.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 150 mi a US$ 200 mi", "periodo": "2026"},
+   {"rotulo": "Satélites em órbita (meta)", "valor": "cerca de 45", "periodo": "meados de 2027"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo e queima de caixa",
+  "texto": "Prejuízo atribuído aos acionistas de US$ 132,4 mi no 3T26 e de US$ 554,3 mi em nove meses. No ano até setembro, a operação consumiu US$ 314,5 mi e o investimento em satélites somou US$ 1,15 bi. A empresa tinha cerca de US$ 3,2 bi em caixa e dívida de US$ 4,1 bi (era US$ 2,2 bi em dezembro), incluindo US$ 1 bi em debêntures conversíveis emitidas em julho de 2026. O número de ações passou de cerca de 375 milhões para 390 milhões no ano.",
+  "caixa": "US$ 3,2 bi",
+  "queima_anual": "cerca de US$ 1,9 bi (operação e investimento, ritmo de 2026)",
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Atrasos em lançamentos, que dependem de SpaceX e Blue Origin.",
+  "Queima de caixa alta e dívida crescente; novas captações podem diluir os acionistas.",
+  "Concorrência da SpaceX, com muito mais satélites em órbita.",
+  "Receita comercial ainda não comprovada em escala."
+ ],
+ "momento": "No 3T26 (divulgado em 09/11/2026), a receita foi de US$ 42,3 mi, quase o triplo de um ano antes, mas abaixo do esperado pelos analistas. Os satélites BlueBird 11 a 13 estão operando; os de número 14 a 16 aguardam lançamento pela SpaceX, e os de 17 a 19 serão lançados pela Blue Origin no início de 2027. A empresa anunciou o foguete próprio Blacklift e fez as primeiras transferências de chamada entre rede terrestre e satélite com a AT&T.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-09",
+  "positivos": [
+   "Receita de US$ 42,3 mi, alta de 187% sobre o 3T25.",
+   "Projeção de receita de 2026 mantida entre US$ 150 mi e US$ 200 mi.",
+   "Caixa de cerca de US$ 3,2 bi ao fim de setembro."
+  ],
+  "negativos": [
+   "Prejuízo atribuído aos acionistas de US$ 132,4 mi, contra US$ 122,9 mi no 3T25.",
+   "Despesas operacionais de US$ 211 mi, alta de 124% em um ano.",
+   "Dívida de US$ 4,1 bi, quase o dobro de dezembro de 2025."
+  ],
+  "atencao": [
+   "Início do serviço comercial nos EUA prometido para antes do fim de 2026.",
+   "Calendário de lançamentos para chegar a 45 satélites em meados de 2027."
+  ]
+ },
+ "fontes": [
+  {"titulo": "AST SpaceMobile: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1780312/000119312526453758/asts-ex99_1.htm", "data": "2026-11-09"},
+  {"titulo": "AST SpaceMobile: 8-K das debêntures conversíveis de julho de 2026 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1780312/000149315226033912/form8-k.htm", "data": "2026-07-20"},
+  {"titulo": "Fierce Network: AST SpaceMobile eyes nationwide intermittent US service by year end", "url": "https://www.fierce-network.com/wireless/ast-spacemobile-eyes-nationwide-intermittent-us-service-year-end", "data": "2026-11-10"},
+  {"titulo": "NewSpace Economy: AST SpaceMobile Q3 2026 BlueBird deployment", "url": "https://newspaceeconomy.ca/2026/11/10/ast-spacemobile-q3-2026-bluebird-deployment/", "data": "2026-11-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

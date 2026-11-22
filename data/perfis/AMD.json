@@ -1,0 +1,69 @@
+{
+ "ticker": "AMD",
+ "revisado_em": "2026-11-22",
+ "resumo": "Principal concorrente da NVIDIA em chips de IA e da Intel em processadores. A receita de data center quase dobrou em um ano e a empresa projeta receita recorde de US$ 17 bi no 4T26, com os racks Helios.",
+ "modelo": "A AMD projeta chips (a produção é terceirizada, principalmente na TSMC) e vende para provedores de nuvem, fabricantes de servidores e PCs e de consoles: processadores EPYC para servidores, GPUs Instinct para IA, processadores Ryzen para PCs, chips gráficos Radeon e semicustomizados para consoles, e chips embarcados (Xilinx) para indústria, carros e telecom. Desde 2026 vende o Helios, rack completo de IA com GPUs MI450 e CPUs EPYC.",
+ "segmentos": [
+  {"nome": "Data Center", "peso_receita": 0.64, "periodo": "3T26", "obs": "US$ 8,55 bi, alta de 97% em um ano."},
+  {"nome": "Client and Gaming (PCs e consoles)", "peso_receita": 0.28, "periodo": "3T26", "obs": "US$ 3,72 bi, queda de 8%; games caíram 40%."},
+  {"nome": "Embedded", "peso_receita": 0.08, "periodo": "3T26", "obs": "US$ 1,11 bi, alta de 29%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA), com clientes no mundo todo; a produção é feita em Taiwan pela TSMC."},
+ "temas": [
+  {"tema": "Inteligência artificial", "relacao": "Anthropic, Meta, Microsoft, OpenAI e Oracle já rodam modelos nos primeiros racks Helios com GPUs MI450; a empresa emitiu bônus de subscrição (warrants) para clientes de IA ligados a esses contratos."},
+  {"tema": "Data centers", "relacao": "Os processadores EPYC ganham espaço nos servidores das grandes nuvens; o segmento Data Center já responde por 64% da receita."},
+  {"tema": "PCs com IA", "relacao": "Os processadores Ryzen AI ajudaram o segmento Client a crescer 7% em um ano, mesmo com a queda em consoles."}
+ ],
+ "diferencial": {
+  "texto": "A AMD é a única empresa com produtos competitivos ao mesmo tempo em CPU de servidor, GPU de IA e rede, o que permite vender o rack inteiro como a NVIDIA. Clientes grandes querem uma segunda fonte de GPUs para não depender de um só fornecedor, o que favorece a AMD. Projetar chips de ponta exige bilhões de dólares e anos de engenharia, barreira alta para novos entrantes. O ponto fraco é o software de IA (ROCm), menos usado que o CUDA da NVIDIA, e a fatia ainda bem menor no mercado de GPUs para IA.",
+  "concorrentes": ["NVIDIA", "Intel", "Broadcom (chips sob medida)", "Qualcomm", "Arm (licenciadores)", "Google (TPU)"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 4T26 deve ficar em cerca de US$ 17 bi (com variação de 3% para mais ou para menos), alta de cerca de 66% em um ano e 27% no trimestre, com margem bruta ajustada de 55%. A CEO Lisa Su disse esperar que a instalação dos racks Helios cresça bastante no 4T26, com HPE e Dell começando as entregas. Na teleconferência, a empresa indicou que data center deve passar de 80% da receita em 2027. A AMD também anunciou a compra da World Labs e da Taalas, ainda pendentes.",
+  "metricas": [
+   {"rotulo": "Receita projetada para o 4T26", "valor": "US$ 17 bi (mais ou menos 3%)", "periodo": "4T26"},
+   {"rotulo": "Margem bruta ajustada projetada", "valor": "cerca de 55%", "periodo": "4T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 2,43 bi no 3T26 (+95% em um ano). O caixa livre caiu para US$ 554 mi no trimestre, contra US$ 1,53 bi um ano antes, com estoques subindo 35% no trimestre para US$ 11,5 bi para atender ao 4T26. A empresa tinha US$ 15,8 bi em caixa e aplicações e US$ 7,1 bi em dívida, após emitir US$ 4,75 bi em títulos em agosto.",
+  "caixa": "US$ 15,8 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dependência de poucos clientes grandes de IA e de contratos com bônus de subscrição que podem diluir os acionistas.",
+  "Concorrência da NVIDIA, que domina o software de IA.",
+  "Produção concentrada na TSMC, em Taiwan.",
+  "Estoques e contas a receber subindo rápido antes da entrega do Helios."
+ ],
+ "momento": "No 3T26 (divulgado em 03/11/2026), a receita foi recorde de US$ 13,4 bi, alta de 45% em um ano, acima dos US$ 13,1 bi esperados pelos analistas, e o lucro por ação ajustado de US$ 2,09 (+74%). O segmento de data center quase dobrou com vendas recordes de GPUs Instinct e CPUs EPYC. A GPU MI450 foi lançada e os primeiros racks Helios estão em uso por grandes empresas de IA.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-03",
+  "positivos": [
+   "Receita recorde de US$ 13,4 bi, alta de 45% sobre o 3T25.",
+   "Data Center com US$ 8,55 bi, alta de 97% em um ano.",
+   "Lucro líquido de US$ 2,43 bi, alta de 95%.",
+   "Projeção de cerca de US$ 17 bi de receita para o 4T26."
+  ],
+  "negativos": [
+   "Caixa livre de US$ 554 mi, contra US$ 1,53 bi no 3T25.",
+   "Receita de games caiu 40% em um ano, para US$ 773 mi.",
+   "Variação de US$ 1,1 bi no valor dos warrants emitidos a clientes."
+  ],
+  "atencao": [
+   "Ritmo de entrega dos racks Helios no 4T26.",
+   "Estoques de US$ 11,5 bi, alta de 35% no trimestre."
+  ]
+ },
+ "fontes": [
+  {"titulo": "AMD: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000188/q32026991.htm", "data": "2026-11-03"},
+  {"titulo": "AMD: apresentação do 3T26 (8-K, Exhibit 99.2, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000188/amdq32026earningsslidesf.htm", "data": "2026-11-03"},
+  {"titulo": "Constellation Research: AMD Q3 shines as data center revenue nearly doubles", "url": "https://www.constellationr.com/insights/news/amd-q3-shines-data-center-revenue-nearly-doubles", "data": "2026-11-04"},
+  {"titulo": "Jon Peddie Research: AMD reports third quarter revenue of $13.4 billion", "url": "https://www.jonpeddie.com/news/amd-reports-third-quarter-revenue-of-13-4-billion-up-45-y-y/", "data": "2026-11-04"}
+ ],
+ "ultimo_resultado": "3T26"
+}
