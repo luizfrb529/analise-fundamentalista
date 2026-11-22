@@ -1,0 +1,63 @@
+{
+ "ticker": "AEHR",
+ "revisado_em": "2026-11-22",
+ "resumo": "Pequena fabricante americana de equipamentos que testam chips sob calor e tensão (burn-in) para eliminar defeitos antes do uso. Migrou de chips de carbeto de silício para carros elétricos para processadores de IA, e a receita deve triplicar no ano fiscal.",
+ "modelo": "A Aehr vende sistemas de teste e burn-in em nível de wafer (FOX-XP, FOX-NP, FOX-CP) e em nível de chip encapsulado (Sonoma, vindo da compra da Incal), além dos consumíveis usados em cada teste (WaferPaks e DiePaks), que geram receita recorrente. Os clientes são fabricantes de processadores de IA, chips de potência, fotônica de silício e memória.",
+ "segmentos": [],
+ "segmentos_base": "Empresa não divulga receita por mercado no release",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA); clientes nos EUA e na Ásia, inclusive montadoras de chips em Taiwan."},
+ "temas": [
+  {"tema": "Chips para IA", "relacao": "Processadores de IA consomem muita energia e um defeito custa caro no data center; a empresa instala mais de uma dúzia de sistemas Sonoma por mês para o processador de IA de uma grande nuvem, não nomeada."},
+  {"tema": "Fotônica de silício e potência", "relacao": "Testa chips de fotônica para conexões ópticas e chips de SiC e GaN, mercados ligados a data centers e carros elétricos."}
+ ],
+ "diferencial": {
+  "texto": "A Aehr é uma das poucas empresas com sistemas de burn-in em nível de wafer inteiro, que encontram defeitos antes do encapsulamento e reduzem custo para o cliente; os consumíveis próprios prendem o cliente à plataforma. Os pontos fracos são o tamanho pequeno, a dependência de poucos clientes (o mercado de SiC para carros elétricos esfriou em 2025) e a concorrência de Advantest, KES e equipamentos internos de grandes fabricantes.",
+  "concorrentes": ["Advantest", "KES Systems", "Teradyne", "Cohu", "FormFactor"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 (julho de 2026 a junho de 2027) deve ser de US$ 150 mi, o triplo do ano anterior, com lucro ajustado de pelo menos 20% da receita. A carteira era de US$ 109,3 mi em 01/11/2026. Um grande fornecedor de aceleradores de IA, CPUs e processadores de rede está comprando uma célula FOX-XP para instalação em Taiwan no início de 2027, e há mais de uma dúzia de clientes em prospecção.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 150 mi", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Carteira de pedidos", "valor": "US$ 109,3 mi", "periodo": "nov/2026"},
+   {"rotulo": "Pedidos do trimestre", "valor": "US$ 46,7 mi", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucro recente",
+  "texto": "Lucro líquido de US$ 7,2 mi no trimestre, contra prejuízo de US$ 2,1 mi um ano antes, com margem bruta de 47,5%. A operação consumiu US$ 3,1 mi no trimestre com aumento de estoques. A empresa tinha US$ 105 mi em caixa e nenhuma dívida, e mantém programa de venda de até US$ 60 mi em ações em bolsa, aberto em abril de 2026.",
+  "caixa": "US$ 105 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dependência de poucos clientes de IA.",
+  "Receita irregular, ligada a pedidos grandes de sistemas.",
+  "Possível diluição pelo programa de venda de ações.",
+  "Concorrência de grandes empresas de equipamentos de teste."
+ ],
+ "momento": "No trimestre encerrado em setembro (1T27 fiscal da empresa, divulgado em 02/11/2026), a receita foi recorde de US$ 33,0 mi, o triplo de um ano antes, e o lucro por ação de US$ 0,21 superou a expectativa de US$ 0,11. A empresa elevou a projeção do ano fiscal para US$ 150 mi. Em 2026 mudou o fim do ano fiscal de maio para junho.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-02",
+  "positivos": [
+   "Receita recorde de US$ 33,0 mi, alta de 200%.",
+   "Lucro líquido de US$ 7,2 mi, contra prejuízo de US$ 2,1 mi.",
+   "Projeção do ano fiscal elevada para US$ 150 mi."
+  ],
+  "negativos": [
+   "Caixa operacional negativo de US$ 3,1 mi.",
+   "Caixa caiu de US$ 116,5 mi para US$ 105,1 mi."
+  ],
+  "atencao": [
+   "Rampa do segundo processador de IA do cliente principal em 2027.",
+   "Uso do programa de venda de ações."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Aehr: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1040470/000165495426009385/aehr_ex991.htm", "data": "2026-11-02"},
+  {"titulo": "Aehr: programa de venda de ações (8-K, Exhibit 1.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1040470/000165495426003355/aehr_ex11.htm", "data": "2026-04-08"},
+  {"titulo": "24/7 Wall St.: Aehr Q1 2027 EPS far exceeds expectations on AI burn-in demand", "url": "https://247wallst.com/cards/aehr-test-systems-q1-2027-earnings-aehr-01m6f2jbcg1b4mxwbpfg99a8z7", "data": "2026-11-02"},
+  {"titulo": "Finviz: Aehr reports record first quarter fiscal 2027 revenue", "url": "https://finviz.com/news/413485/aehr-test-systems-reports-record-first-quarter-fiscal-2027-revenue-of-330-million-raises-full-year-revenue-outlook-to-150-million-triple-fiscal-2026-revenue", "data": "2026-11-02"}
+ ],
+ "ultimo_resultado": "3T26"
+}

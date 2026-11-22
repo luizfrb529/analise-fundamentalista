@@ -1,0 +1,64 @@
+{
+ "ticker": "ALAB",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana de chips de conectividade para servidores de IA: switches que ligam GPUs entre si (Scorpio), chips que mantêm o sinal limpo em PCIe (Aries), cabos ativos (Taurus) e memória CXL (Leo). A receita mais que dobrou em um ano, com alta margem e lucro.",
+ "modelo": "A Astera Labs projeta chips e terceiriza a fabricação (TSMC). Vende a grandes nuvens (hyperscalers), fabricantes de servidores e montadoras de racks, que usam seus chips para conectar processadores, aceleradores de IA, memória e redes dentro do servidor e do rack. Também oferece software de monitoramento das conexões (COSMOS).",
+ "segmentos": [],
+ "segmentos_base": "Empresa não divulga receita por produto em valores; o Scorpio virou a maior família em receita no 3T26",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede na Califórnia (EUA); boa parte das vendas é faturada para montadoras de servidores na Ásia que atendem nuvens americanas."},
+ "temas": [
+  {"tema": "Infraestrutura de IA", "relacao": "Cada rack de IA precisa de vários chips de conexão; os switches Scorpio X, que ligam aceleradores entre si, passaram de US$ 1 bi de receita anualizada, segundo a imprensa."},
+  {"tema": "Padrões abertos de interconexão", "relacao": "Participa do UALink, padrão aberto alternativo à NVLink da NVIDIA, e colabora com AMD, Intel e NVIDIA."},
+  {"tema": "Nuvem", "relacao": "Tem acordo de bônus de subscrição com a Amazon, ligado a compras da empresa."}
+ ],
+ "diferencial": {
+  "texto": "A Astera chegou cedo aos retimers PCIe e virou fornecedora padrão em muitos servidores de IA, o que gerou relacionamento profundo com as nuvens e dados de campo que ajudam nos produtos seguintes. A margem bruta de 72% mostra poder de preço. Os pontos fracos são a dependência de poucos grandes clientes e de poucas plataformas, o fato de o primeiro grande ciclo do Scorpio X já ter amadurecido, segundo analistas, e a concorrência de Broadcom, Marvell e da própria NVIDIA.",
+  "concorrentes": ["Broadcom", "Marvell", "NVIDIA", "Credo", "Microchip", "Montage Technology"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 4T26 deve ficar entre US$ 730 mi e US$ 750 mi, alta de cerca de 27% sobre o 3T26, com margem bruta de cerca de 72% e lucro ajustado de US$ 1,62 a US$ 1,66 por ação. O crescimento de 2027 depende de novas plataformas e clientes para o Scorpio, do Aries 7 (PCIe 7, amostras no 4T26) e da arquitetura de rack Orion, disponível a partir do 1T27.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 730 mi a US$ 750 mi", "periodo": "4T26"},
+   {"rotulo": "Margem bruta ajustada", "valor": "72,4%", "periodo": "3T26"},
+   {"rotulo": "Crescimento da receita em um ano", "valor": "154%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 182,9 mi no 3T26, com margem operacional de 30,6% (44,7% no critério ajustado). A operação gerou US$ 341 mi de caixa em nove meses. A empresa tinha US$ 1,38 bi em caixa e aplicações e nenhuma dívida. A remuneração em ações é alta, de US$ 82,6 mi no trimestre.",
+  "caixa": "US$ 1,38 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concentração em poucas nuvens e plataformas de IA.",
+  "Primeiro ciclo do Scorpio X já maduro; crescimento depende de novos projetos.",
+  "Concorrência de Broadcom, Marvell e NVIDIA.",
+  "Margem bruta em queda com mais hardware no mix."
+ ],
+ "momento": "No 3T26 (divulgado em 03/11/2026), a receita foi recorde de US$ 584,9 mi, alta de 154% em um ano e 49% no trimestre, acima do consenso. O Scorpio virou a maior família de produtos e a empresa lançou o Aries 7. Segundo a imprensa, as ações recuaram pela leitura de que o primeiro ciclo do Scorpio X amadureceu.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-03",
+  "positivos": [
+   "Receita de US$ 584,9 mi, alta de 154% em um ano.",
+   "Lucro líquido de US$ 182,9 mi.",
+   "Projeção de US$ 730 mi a US$ 750 mi para o 4T26."
+  ],
+  "negativos": [
+   "Margem bruta ajustada caiu 4 pontos em um ano, para 72,4%.",
+   "Remuneração em ações de US$ 82,6 mi no trimestre."
+  ],
+  "atencao": [
+   "Novos clientes e plataformas para o Scorpio em 2027.",
+   "Ritmo de adoção do PCIe 7 e do UALink."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Astera Labs: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000044/q326exhibit991.htm", "data": "2026-11-03"},
+  {"titulo": "Astera Labs: 8-K do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000044/0001736297-26-000044-index.htm", "data": "2026-11-03"},
+  {"titulo": "Zacks: Astera Labs Q3 earnings beat estimate on Scorpio X-Series strength", "url": "https://zacks.com/stock/news/3023390/astera-labs-q3-earnings-beat-estimate-on-scorpio-x-series-strength", "data": "2026-11"},
+  {"titulo": "24/7 Wall St.: Astera Labs Q3 2026, Scorpio switch drives 49% revenue surge", "url": "https://247wallst.com/cards/astera-labs-q3-2026-earnings-alab-01m6hm64b0bgsay45cnx3thxpz", "data": "2026-11-03"}
+ ],
+ "ultimo_resultado": "3T26"
+}

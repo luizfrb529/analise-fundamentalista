@@ -1,0 +1,67 @@
+{
+ "ticker": "CLS",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante canadense de equipamentos eletrônicos sob encomenda que virou uma das principais montadoras de servidores e switches de rede para data centers de IA. A receita quase dobrou em um ano e a empresa projeta US$ 40 bi em 2027.",
+ "modelo": "A Celestica projeta e fabrica, para outras empresas, switches de rede de 800G e 1,6T, servidores e racks de IA (Connectivity & Cloud Solutions), além de eletrônicos para aeroespacial, defesa, indústria, saúde e energia (Advanced Technology Solutions). Uma parte relevante é de produtos com projeto próprio (Hardware Platform Solutions), vendidos diretamente às nuvens, de margem maior.",
+ "segmentos": [
+  {"nome": "Connectivity & Cloud Solutions", "peso_receita": 0.84, "periodo": "3T26", "obs": "US$ 4,87 bi, alta de 102%; redes US$ 3,26 bi e computação e armazenamento US$ 1,61 bi."},
+  {"nome": "Advanced Technology Solutions", "peso_receita": 0.16, "periodo": "3T26", "obs": "US$ 957 mi, alta de 23%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Toronto (Canadá), com fábricas na Ásia, nas Américas e na Europa; os grandes clientes são nuvens americanas."},
+ "temas": [
+  {"tema": "Infraestrutura de IA", "relacao": "Monta switches de 800G e 1,6T e sistemas de computação de IA para grandes nuvens; a receita de computação e armazenamento subiu 242% em um ano."},
+  {"tema": "Nuvem", "relacao": "Três clientes, todos de nuvem e rede, somam 66% da receita (35%, 17% e 14%)."},
+  {"tema": "Cadeia de suprimentos", "relacao": "A empresa diz que as previsões de demanda dos clientes para 2028 são bem maiores que as de 2027."}
+ ],
+ "diferencial": {
+  "texto": "A Celestica combina fabricação em grande escala com engenharia própria de switches e servidores, o que a coloca entre as poucas parceiras capazes de entregar racks completos de IA rapidamente às maiores nuvens. A margem é maior que a de montadoras tradicionais. Os pontos fracos são a forte concentração em três clientes, a margem ainda baixa em termos absolutos (8,5%), o alto consumo de capital de giro e a concorrência de Foxconn, Quanta, Wiwynn e Jabil.",
+  "concorrentes": ["Foxconn", "Quanta", "Wiwynn", "Jabil", "Flex", "Accton"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve chegar a US$ 21,0 bi e a de 2027 a US$ 40,0 bi (alta de 90%), com lucro ajustado de US$ 21,50 por ação, margem operacional ajustada de 9,0% e investimentos de US$ 1,5 bi a US$ 2,0 bi. Para o 4T26 a projeção é de receita de US$ 6,275 bi a US$ 6,575 bi. A projeção de fluxo de caixa livre de 2026 foi reduzida para US$ 460 mi pelo investimento em estoques.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 40,0 bi", "periodo": "2027"},
+   {"rotulo": "Lucro ajustado por ação projetado", "valor": "US$ 21,50", "periodo": "2027"},
+   {"rotulo": "Receita projetada", "valor": "US$ 21,0 bi", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 397,2 mi no 3T26, contra US$ 267,8 mi um ano antes, e lucro ajustado de US$ 3,30 por ação (alta de 109%). O fluxo de caixa livre foi de US$ 127,5 mi no trimestre. Em agosto a empresa vendeu 11,1 milhões de ações por US$ 3,45 bi brutos (US$ 3,39 bi líquidos) e terminou setembro com US$ 3,96 bi em caixa e US$ 819 mi em dívida; as ações passaram de 115 milhões para 126 milhões em um ano.",
+  "caixa": "US$ 3,96 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Concentração em três grandes clientes de nuvem.",
+  "Consumo de capital de giro com o crescimento acelerado.",
+  "Margem baixa e concorrência de grandes montadoras asiáticas.",
+  "Dependência do ciclo de investimento em IA."
+ ],
+ "momento": "No 3T26 (divulgado em 26/10/2026), a receita subiu 83%, para US$ 5,83 bi, e o lucro ajustado por ação mais que dobrou, acima da projeção. Em evento com investidores a empresa apresentou a projeção de US$ 40 bi para 2027. Segundo a imprensa, a projeção de lucro do 4T26 abaixo do esperado e o consumo de caixa pesaram nas ações.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-26",
+  "positivos": [
+   "Receita de US$ 5,83 bi, alta de 83%.",
+   "Margem operacional ajustada recorde de 8,5%.",
+   "Projeção de receita de US$ 40 bi em 2027."
+  ],
+  "negativos": [
+   "Projeção de fluxo de caixa livre de 2026 cortada de US$ 600 mi para US$ 460 mi.",
+   "Margem operacional contábil caiu de 10,2% para 7,9%."
+  ],
+  "atencao": [
+   "Concentração nos três maiores clientes.",
+   "Novo programa de recompra de ações no 4T26."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Celestica: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1030894/000103089426000049/cls-20260930prcondensedfs.htm", "data": "2026-10-26"},
+  {"titulo": "Celestica: formulário 10-Q do 3T26 (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1030894/000103089426000050/cls-20260930.htm", "data": "2026-10-26"},
+  {"titulo": "24/7 Wall St.: Celestica Q3 2026, $40 billion revenue target set for 2027", "url": "https://247wallst.com/cards/celestica-q3-2026-earnings-cls-01m5wye16dkezbw1zs666n1v2m", "data": "2026-10-26"},
+  {"titulo": "StorageNewsletter: Celestica Q3 2026 results", "url": "https://www.storagenewsletter.com/?p=306437", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
