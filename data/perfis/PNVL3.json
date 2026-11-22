@@ -1,6 +1,6 @@
 {
  "ticker": "PNVL3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-22",
  "resumo": "Rede de farmácias líder no Sul, com 677 lojas, 63% delas no Rio Grande do Sul. Receita toda no Brasil, dívida baixa (0,8x Ebitda) e quase metade das vendas já feita por canais digitais no 3T26.",
  "modelo": "A Panvel (Dimed S.A.) vende medicamentos de marca, genéricos, OTC e produtos de higiene e beleza em lojas próprias no Rio Grande do Sul, Santa Catarina, Paraná e São Paulo e por aplicativo e site, com entrega própria. Tem marca própria relevante (Produtos Panvel, 7,3% das vendas no 3T26), fabricada em laboratório do grupo, o que sustenta margem em higiene e beleza. A receita é recorrente e de margem baixa (Ebitda perto de 5,7% da receita bruta); a operação de atacado foi encerrada em 2024.",
  "segmentos": [
@@ -97,5 +97,22 @@
    "data": "2026-11-05"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-06",
+  "positivos": [
+   "Receita bruta do varejo de R$ 1,70 bi no 3T26, alta de 15,3% sobre o 3T25; vendas em mesmas lojas +13,3%.",
+   "Ebitda ajustado de R$ 96,8 mi no 3T26, alta de 21,2%; lucro líquido ajustado de R$ 46,4 mi, alta de 35,4%.",
+   "Vendas digitais de R$ 792,4 mi, 46,6% da receita bruta do varejo (26,4% no 3T25)."
+  ],
+  "negativos": [
+   "Margem Ebitda ajustada de 5,7% no 3T26, ainda baixa: 0,3 p.p. acima dos 5,4% do 3T25."
+  ],
+  "atencao": [
+   "Alavancagem de 0,8x dívida líquida sobre Ebitda (1,0x no 3T25) e expansão para 677 lojas.",
+   "Participação de 13,5% no mercado do Sul (+0,7 p.p.) com a concorrência em alta."
+  ]
+ }
 }
