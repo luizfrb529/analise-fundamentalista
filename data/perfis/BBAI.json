@@ -1,0 +1,63 @@
+{
+ "ticker": "BBAI",
+ "revisado_em": "2026-11-22",
+ "resumo": "Empresa americana de software de inteligência artificial para defesa, segurança nacional e governo, como análise de dados, visão computacional e IA generativa. Receita pequena, prejuízo recorrente e forte diluição, mas com caixa elevado.",
+ "modelo": "A BigBear.ai vende software e serviços de IA para órgãos do governo americano, como FBI, Guarda Costeira e Departamento de Energia, em contratos de projeto e assinaturas. Comprou a Ask Sage em 2025, que virou sua plataforma de IA generativa para governo.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 43,6 mi no 3T26 (+31%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede nos EUA; clientes principalmente no governo americano."},
+ "temas": [
+  {"tema": "IA na defesa e no governo", "relacao": "Fechou mais de 25 contratos desde o 2T26, somando mais de US$ 225 mi, segundo a empresa."},
+  {"tema": "IA generativa", "relacao": "Oferece a plataforma de IA generativa da Ask Sage para órgãos públicos."}
+ ],
+ "diferencial": {
+  "texto": "A BigBear.ai tem credenciamento e contratos com órgãos de segurança americanos, o que exige tempo para conquistar. Mas é uma empresa pequena num mercado dominado por Palantir e grandes integradoras de defesa, com receita baixa, margem modesta e prejuízos recorrentes, e não mostra vantagem tecnológica clara.",
+  "vantagem": {"nivel": "nenhuma clara", "resumo": "Tem contratos e credenciais com o governo, mas é pequena frente a Palantir e grandes integradoras, com prejuízo e sem vantagem tecnológica clara."},
+  "concorrentes": ["Palantir", "Booz Allen Hamilton", "Leidos", "C3.ai", "Anduril"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita de 2026 deve ficar entre US$ 150 mi e US$ 165 mi, a primeira elevação de projeção. A carteira de pedidos é de cerca de US$ 330 mi, mas só 23% já têm verba garantida.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 150 mi a US$ 165 mi", "periodo": "2026"},
+   {"rotulo": "Carteira de pedidos", "valor": "cerca de US$ 330 mi", "periodo": "set/2026"},
+   {"rotulo": "Margem bruta", "valor": "31,2%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo de US$ 91,9 mi no 3T26, dos quais US$ 76,7 mi por baixa de ágio, e Ebitda ajustado negativo de US$ 9,1 mi. Tem cerca de US$ 399 mi em caixa e aplicações, mas o número de ações chegou a cerca de 480 milhões após várias emissões.",
+  "caixa": "US$ 399 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Diluição por emissão de ações.",
+  "Dependência de contratos do governo.",
+  "Concorrência de Palantir e grandes integradoras.",
+  "Prejuízos recorrentes."
+ ],
+ "momento": "No 3T26 (divulgado em 27/10/2026), a receita subiu 31%, para US$ 43,6 mi, e a empresa elevou a projeção de 2026, mas teve prejuízo de US$ 91,9 mi com baixa de ágio; o CEO é Kevin McAleenan.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-27",
+  "positivos": [
+   "Receita subiu 31%.",
+   "Primeira elevação da projeção.",
+   "Margem bruta melhorou."
+  ],
+  "negativos": [
+   "Prejuízo de US$ 91,9 mi.",
+   "Baixa de ágio de US$ 76,7 mi."
+  ],
+  "atencao": [
+   "Conversão da carteira em receita.",
+   "Orçamento de defesa dos EUA."
+  ]
+ },
+ "fontes": [
+  {"titulo": "BigBear.ai: resultados do 3T26 (8-K/A, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1836981/000183698126000088/earningsrelease-3q26.htm", "data": "2026-10-28"},
+  {"titulo": "Finviz: BigBear.ai announces Q3 2026 results and raises FY 2026 revenue guidance", "url": "https://finviz.com/news/409370/bigbearai-announces-third-quarter-2026-results-and-raises-fy-2026-revenue-guidance", "data": "2026-10-27"},
+  {"titulo": "Crypto Briefing: BigBear.ai raises 2026 revenue guidance", "url": "https://cryptobriefing.com/bigbear-ai-raises-2026-revenue-guidance/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
