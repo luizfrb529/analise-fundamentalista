@@ -1,0 +1,63 @@
+{
+ "ticker": "FCX",
+ "revisado_em": "2026-11-22",
+ "resumo": "Uma das maiores produtoras de cobre do mundo, dona da mina de Grasberg, na Indonésia, uma das maiores de cobre e ouro, e de minas nas Américas. Muito lucrativa com o cobre em alta, mas ainda recuperando Grasberg após um acidente.",
+ "modelo": "A Freeport extrai e vende cobre, ouro e molibdênio de grandes minas na Indonésia (Grasberg, por meio da PT Freeport Indonesia), nos EUA (Arizona e Novo México) e na América do Sul (Peru e Chile). O lucro depende principalmente do preço do cobre e do custo de produção.",
+ "segmentos": [],
+ "segmentos_base": "Vendas de cobre de 749 milhões de libras no 3T26; receita de US$ 7,55 bi",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Phoenix (EUA); minas na Indonésia, EUA, Peru e Chile; vendas no mundo todo."},
+ "temas": [
+  {"tema": "Cobre e eletrificação", "relacao": "O preço médio recebido do cobre foi de US$ 6,54 por libra, contra US$ 4,68 um ano antes, puxado por redes elétricas, data centers e carros elétricos."},
+  {"tema": "Recuperação de Grasberg", "relacao": "Após o deslizamento de lama em 2025, a usina de Grasberg operou a 67% da capacidade e deve chegar a 80% em meados de 2027."}
+ ],
+ "diferencial": {
+  "texto": "A Freeport tem reservas de cobre e ouro de longa duração e de classe mundial, como Grasberg, e escala em minas nas Américas, ativos praticamente impossíveis de replicar. Os pontos fracos são a dependência do preço do cobre, os riscos operacionais e políticos na Indonésia e custos maiores durante a recuperação de Grasberg.",
+  "vantagem": {"nivel": "moderada", "resumo": "Reservas de cobre e ouro de classe mundial e longa duração, mas exposta ao preço do cobre e a riscos operacionais na Indonésia."},
+  "concorrentes": ["Southern Copper", "BHP", "Codelco", "Rio Tinto", "Glencore", "Antofagasta"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas de cobre devem somar cerca de 3,0 bilhões de libras em 2026 e crescer para 3,7 bilhões em 2027 e 4,1 bilhões em 2028, segundo a imprensa, com a recuperação de Grasberg. O potencial depende também do preço do cobre.",
+  "metricas": [
+   {"rotulo": "Vendas de cobre projetadas", "valor": "cerca de 3,0 bilhões de libras", "periodo": "2026"},
+   {"rotulo": "Caixa operacional projetado", "valor": "cerca de US$ 8,5 bi", "periodo": "2026"},
+   {"rotulo": "Custo de caixa por libra", "valor": "US$ 2,07", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 1,17 bi no 3T26 (US$ 0,81 por ação), quase o dobro de um ano antes, com caixa operacional de US$ 1,98 bi. A dívida líquida é de US$ 5,1 bi, ou US$ 1,8 bi sem a dívida da fundição na Indonésia; os custos de recuperação de Grasberg somaram US$ 934 mi no ano.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Queda do preço do cobre.",
+  "Atrasos na recuperação de Grasberg.",
+  "Riscos políticos e regulatórios na Indonésia.",
+  "Custos operacionais crescentes."
+ ],
+ "momento": "No 3T26 (divulgado em 27/10/2026), o lucro quase dobrou com o cobre em alta, apesar de vendas menores pela recuperação de Grasberg, que segue no cronograma; a CEO é Kathleen Quirk.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-27",
+  "positivos": [
+   "Lucro quase dobrou.",
+   "Preço do cobre em alta.",
+   "Recuperação de Grasberg no cronograma."
+  ],
+  "negativos": [
+   "Vendas de cobre caíram de 977 para 749 milhões de libras.",
+   "Custo por libra subiu."
+  ],
+  "atencao": [
+   "Ritmo de recuperação de Grasberg.",
+   "Preço do cobre."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Freeport-McMoRan: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/831259/000083125926000045/a3q2026exhibit991.htm", "data": "2026-10-27"},
+  {"titulo": "Canadian Mining Journal: Freeport trims copper sales outlook as Grasberg recovery advances", "url": "https://www.canadianminingjournal.com/?p=1003755179", "data": "2026-10"},
+  {"titulo": "Securities.io: Freeport-McMoRan Q3 net income rises to $1.2 billion", "url": "https://www.securities.io/freeport-mcmoran-q3-net-income-rises-to-1-2-billion-from-674-million/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

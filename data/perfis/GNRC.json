@@ -1,0 +1,65 @@
+{
+ "ticker": "GNRC",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior fabricante de geradores residenciais dos EUA, que cresce rápido em geradores grandes para data centers, com um acordo de longo prazo com a Amazon. Lucrativa, com vendas recorde e carteira de data centers de US$ 4,5 bi.",
+ "modelo": "A Generac fabrica geradores de energia de reserva para residências, comércios, indústrias e data centers, vendidos por uma ampla rede de revendedores e instaladores, além de baterias, inversores e sistemas de gestão de energia. A base instalada gera receita de peças e serviços.",
+ "segmentos": [
+  {"nome": "Residencial", "peso_receita": 0.57, "periodo": "3T26", "obs": "Vendas de US$ 743 mi (+9%)."},
+  {"nome": "Comercial e industrial", "peso_receita": 0.43, "periodo": "3T26", "obs": "Vendas de US$ 552 mi (+28%), puxadas por data centers."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Waukesha, Wisconsin (EUA); vendas principalmente nos EUA, com operações também na Europa e América Latina."},
+ "temas": [
+  {"tema": "Energia para data centers", "relacao": "A carteira de geradores para data centers chegou a cerca de US$ 4,5 bi, quase triplicando em três meses, com acordo de US$ 2,4 bi com a Amazon para 2027 e 2028."},
+  {"tema": "Rede elétrica e eventos climáticos", "relacao": "Apagões e eventos climáticos extremos sustentam a demanda por geradores residenciais."}
+ ],
+ "diferencial": {
+  "texto": "A Generac domina o mercado de geradores residenciais nos EUA, com marca conhecida, a maior rede de instaladores e uma base instalada que gera reposição, o que dificulta a entrada de rivais. Em data centers, compete com Caterpillar e Cummins, maiores e com mais experiência nesse segmento.",
+  "vantagem": {"nivel": "forte", "resumo": "Domina os geradores residenciais nos EUA, com marca conhecida e a maior rede de instaladores, mas enfrenta rivais maiores em data centers."},
+  "concorrentes": ["Kohler (Rehlko)", "Briggs & Stratton", "Caterpillar", "Cummins", "Tesla (baterias)"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas de 2026 devem crescer aproximadamente entre 15% e 19%, com margem de Ebitda ajustada de 20,5% a 21,0%. O potencial vem da carteira de data centers, com entregas à Amazon a partir de 2027.",
+  "metricas": [
+   {"rotulo": "Carteira de data centers", "valor": "cerca de US$ 4,5 bi", "periodo": "set/2026"},
+   {"rotulo": "Margem de Ebitda ajustada projetada", "valor": "20,5% a 21,0%", "periodo": "2026"},
+   {"rotulo": "Margem bruta", "valor": "39,9%", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 109 mi no 3T26 (US$ 1,83 por ação; US$ 2,54 ajustado), com Ebitda ajustado de US$ 256 mi e fluxo de caixa livre de US$ 132 mi. Não recomprou ações em 2026.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Demanda residencial sensível ao clima e aos juros.",
+  "Execução da carteira de data centers.",
+  "Concorrência de Caterpillar e Cummins.",
+  "Custos de componentes."
+ ],
+ "momento": "No 3T26 (divulgado em 28/10/2026), as vendas bateram recorde de US$ 1,29 bi (+16%), a carteira de data centers saltou para US$ 4,5 bi com o acordo com a Amazon, e o lucro ajustado ficou acima do esperado; o CEO é Aaron Jagdfeld.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "Vendas recorde, alta de 16%.",
+   "Acordo de US$ 2,4 bi com a Amazon.",
+   "Margem bruta subiu."
+  ],
+  "negativos": [
+   "Receita levemente abaixo do esperado."
+  ],
+  "atencao": [
+   "Capacidade de produção para data centers.",
+   "Temporada de furacões."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Generac: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1474735/000143774926033685/ex_1032565.htm", "data": "2026-10-28"},
+  {"titulo": "24/7 Wall St.: Generac Q3 2026, AI power backlog hits $4.5 billion with Amazon deal", "url": "https://247wallst.com/cards/generac-q3-2026-earnings-gnrc-01m60ztbceak40kt17w5zvbg6m", "data": "2026-10"},
+  {"titulo": "Zacks: Generac Q3 earnings beat estimates on C&I strength", "url": "https://www.zacks.com/stock/news/3017552/generac-q3-earnings-beat-estimates-on-c-i-strength-revenues-miss", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

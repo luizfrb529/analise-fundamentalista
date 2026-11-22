@@ -1,0 +1,63 @@
+{
+ "ticker": "ADUR",
+ "revisado_em": "2026-11-22",
+ "resumo": "Pequena empresa canadense de tecnologia de reciclagem química de plásticos, que transforma resíduos plásticos em matéria-prima para a indústria química. Ainda sem receita, mas com caixa de C$ 65,8 mi.",
+ "modelo": "A Aduro desenvolve a tecnologia hidroquimiolítica, que usa água em alta temperatura para quebrar plásticos e borracha em hidrocarbonetos reaproveitáveis. Pretende ganhar construindo usinas próprias e licenciando a tecnologia. Opera uma usina piloto no Canadá e planeja a primeira usina industrial em Chemelot, na Holanda.",
+ "segmentos": [],
+ "segmentos_base": "Sem receita; empresa em fase de desenvolvimento",
+ "geografia": {"eua_pct": 0.0, "exterior_pct": 1.0, "periodo": "3T26", "texto": "Sede em London, Ontário (Canadá); primeira usina industrial planejada na Holanda."},
+ "temas": [
+  {"tema": "Reciclagem e economia circular", "relacao": "A usina piloto completou campanhas de até 75 horas em 2026, processando cerca de 758 kg de polímero."},
+  {"tema": "Transição energética na Europa", "relacao": "A primeira usina industrial, de cerca de 10 mil toneladas por ano, será construída em Chemelot, com conclusão prevista para o início de 2028."}
+ ],
+ "diferencial": {
+  "texto": "A tecnologia da Aduro é própria e pode processar plásticos mistos e contaminados que outros métodos não aceitam. Mas ainda não foi comprovada em escala industrial, a empresa não tem receita nem acordos comerciais firmes, e há muitas tecnologias concorrentes de reciclagem química.",
+  "vantagem": {"nivel": "nenhuma clara", "resumo": "Tecnologia própria de reciclagem química, ainda não comprovada em escala industrial, sem receita nem acordos comerciais firmes."},
+  "concorrentes": ["PureCycle", "Plastic Energy", "Mura Technology", "Agilyx", "Eastman"]
+ },
+ "potencial": {
+  "texto": "O potencial depende de construir a usina de Chemelot e provar a tecnologia em escala, para depois licenciá-la. A empresa não tem acordos comerciais firmes e não traz projeção de receita.",
+  "metricas": [
+   {"rotulo": "Caixa", "valor": "C$ 65,8 mi", "periodo": "ago/2026"},
+   {"rotulo": "Capacidade inicial da usina industrial", "valor": "cerca de 10 mil t/ano", "periodo": "início de 2028"},
+   {"rotulo": "Consumo de caixa operacional", "valor": "C$ 2,6 mi", "periodo": "1º tri fiscal 2027"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Sem receita no trimestre; o lucro de C$ 1,2 mi veio de ganho contábil com derivativos, e o consumo de caixa operacional foi de C$ 2,6 mi. Tem C$ 65,8 mi em caixa após captar cerca de C$ 31 mi em junho de 2026 com emissões de ações.",
+  "caixa": "C$ 65,8 mi",
+  "queima_anual": null,
+  "periodo": "ago/2026"
+ },
+ "riscos": [
+  "Tecnologia não comprovada em escala industrial.",
+  "Diluição por novas emissões.",
+  "Atrasos em licenças e construção.",
+  "Falta de acordos comerciais firmes."
+ ],
+ "momento": "No 1º tri fiscal 2027 (até ago/2026, divulgado em 16/10/2026), a empresa seguiu sem receita, avançou nos testes da usina piloto e prepara a construção da usina industrial em Chemelot.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-16",
+  "positivos": [
+   "Caixa de C$ 65,8 mi.",
+   "Campanhas mais longas na usina piloto."
+  ],
+  "negativos": [
+   "Sem receita.",
+   "Sem acordos comerciais firmes."
+  ],
+  "atencao": [
+   "Início da construção em Chemelot.",
+   "Parceria com a TotalEnergies."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Aduro: demonstrações do 1º tri fiscal 2027 (6-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1863934/000106299326005366/exhibit99-1.htm", "data": "2026-10-16"},
+  {"titulo": "Aduro: relatório da administração do 1º tri fiscal 2027 (6-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1863934/000106299326005366/exhibit99-2.htm", "data": "2026-10-16"},
+  {"titulo": "ChemAnalyst: Aduro chooses Chemelot as site for its first industrial facility", "url": "https://www.chemanalyst.com/NewsAndDeals/NewsDetails/aduro-clean-technologies-chooses-chemelot-as-site-for-its-first-40974", "data": "2026-01"},
+  {"titulo": "Market Realist: How Aduro's FOAK plant at Chemelot shapes the chemical recycling race", "url": "https://marketrealist.com/news/aduro-foak-plant-chemelot-chemical-recycling/", "data": "2026"}
+ ],
+ "ultimo_resultado": "3T26"
+}
