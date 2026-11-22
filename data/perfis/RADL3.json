@@ -1,6 +1,6 @@
 {
  "ticker": "RADL3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-22",
  "resumo": "Maior rede de farmácias do país (Droga Raia e Drogasil), com 3.770 lojas e 19,1% de participação de mercado. A receita é toda no Brasil e quase 30% das vendas do varejo já passa por canais digitais.",
  "modelo": "A RD Saúde vende medicamentos de marca, genéricos, isentos de prescrição e itens de higiene e beleza em farmácias próprias, por aplicativos e site, com entrega ou retirada em até 60 minutos. Complementa a receita com serviços farmacêuticos (vacinação, salas Mais Saúde), mídia e o programa de fidelidade Stix, que passou a ser 100% da RD em julho de 2026. A receita é recorrente e ligada ao consumo de saúde; os preços de medicamentos seguem reajuste anual definido pela CMED.",
  "segmentos": [
@@ -79,5 +79,24 @@
    "data": "2026-11-07"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-03",
+  "positivos": [
+   "Receita bruta de R$ 13,2 bi no 3T26, alta de 16,0%; receita líquida de R$ 11,4 bi, alta de 7,8%.",
+   "Ebitda ajustado de R$ 1,02 bi no 3T26, alta de 14,7%.",
+   "Dívida líquida ajustada de R$ 2,9 bi, queda de 15,4%, ou 0,8x o Ebitda (1,1x um ano antes)."
+  ],
+  "negativos": [
+   "Lucro contábil de R$ 426,9 mi no 3T26, queda de 10,3%, por efeitos da venda da 4Bio.",
+   "Fluxo de caixa livre de R$ 160,2 mi no 3T26, ante R$ 615,6 mi no 3T25.",
+   "Margem Ebitda ajustada de 7,8%, queda de 0,1 p.p."
+  ],
+  "atencao": [
+   "Meta de 330 a 350 aberturas brutas de lojas em 2026, com 3.770 farmácias em setembro.",
+   "Evolução do fluxo de caixa livre nos próximos trimestres."
+  ]
+ }
 }
