@@ -1,0 +1,132 @@
+{
+ "ticker": "JPM",
+ "revisado_em": "2026-11-22",
+ "resumo": "Maior banco dos EUA e do mundo ocidental em valor de mercado, líder em banco de varejo (Chase), banco de investimento, mercados e gestão de patrimônio. Muito lucrativo, com retorno sobre o patrimônio tangível de 20%.",
+ "modelo": "O JPMorgan ganha com juros de empréstimos e cartões (Chase), tarifas e serviços bancários, assessoria em fusões e emissões, negociação de ações e renda fixa para clientes, pagamentos e custódia, e gestão de patrimônio e fundos. A escala reduz custos e atrai depósitos.",
+ "segmentos": [
+  {
+   "nome": "Banco comercial e de investimento",
+   "peso_receita": 0.52,
+   "periodo": "3T26",
+   "obs": "Lucro de US$ 8,2 bi, alta de 20%."
+  },
+  {
+   "nome": "Varejo (Chase)",
+   "peso_receita": 0.36,
+   "periodo": "3T26",
+   "obs": "Lucro de US$ 5,7 bi, alta de 13%."
+  },
+  {
+   "nome": "Gestão de patrimônio",
+   "peso_receita": 0.12,
+   "periodo": "3T26",
+   "obs": "Lucro de US$ 1,8 bi, alta de 11%."
+  }
+ ],
+ "segmentos_base": "Lucro líquido por segmento (antes de Corporate)",
+ "geografia": {
+  "eua_pct": null,
+  "exterior_pct": null,
+  "periodo": null,
+  "texto": "Sede em Nova York (EUA); a maior parte da receita vem dos EUA, com banco de investimento e mercados no mundo todo."
+ },
+ "temas": [
+  {
+   "tema": "Juros nos EUA",
+   "relacao": "A receita líquida de juros subiu 13%, para US$ 27,0 bi; cortes de juros podem reduzi-la."
+  },
+  {
+   "tema": "Mercado de capitais",
+   "relacao": "O banco de investimento e mercados cresceu com mais emissões, fusões e negociação."
+  }
+ ],
+ "diferencial": {
+  "texto": "O JPMorgan tem escala, marca e diversificação incomparáveis entre os bancos americanos, o que dá custo de captação baixo, liderança em quase todos os negócios e capacidade de investir pesado em tecnologia. Os pontos fracos são a sensibilidade a juros e ao ciclo econômico, a regulação de capital e a sucessão do CEO Jamie Dimon.",
+  "vantagem": {
+   "nivel": "forte",
+   "resumo": "Escala, marca e diversificação sem igual entre os bancos americanos, com captação barata e liderança em quase todas as áreas."
+  },
+  "concorrentes": [
+   "Bank of America",
+   "Citigroup",
+   "Wells Fargo",
+   "Goldman Sachs",
+   "Morgan Stanley",
+   "Capital One"
+  ]
+ },
+ "potencial": {
+  "texto": "O crescimento vem do aumento de clientes e depósitos no varejo, do banco de investimento e da gestão de patrimônio. O banco elevou o dividendo para US$ 1,65 por ação e reduziu as recompras no trimestre. Não há projeção de lucro no release.",
+  "metricas": [
+   {
+    "rotulo": "Retorno sobre patrimônio tangível",
+    "valor": "20%",
+    "periodo": "3T26"
+   },
+   {
+    "rotulo": "Índice de capital (CET1)",
+    "valor": "13,9%",
+    "periodo": "set/2026"
+   },
+   {
+    "rotulo": "Valor patrimonial por ação",
+    "valor": "US$ 132,30",
+    "periodo": "set/2026"
+   }
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 15,3 bi no 3T26 (US$ 5,57 por ação, ou US$ 5,75 sem perda com títulos), alta de 6%, com receita de US$ 50,9 bi. O índice de capital CET1 é de 13,9%, acima do exigido, e as provisões para perdas de crédito foram de US$ 2,7 bi. O banco paga dividendo trimestral de US$ 1,65.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Ciclo econômico e inadimplência.",
+  "Queda de juros reduzindo a receita de juros.",
+  "Regulação de capital.",
+  "Sucessão do CEO."
+ ],
+ "momento": "No 3T26 (divulgado em 13/10/2026), o lucro subiu 6%, para US$ 15,3 bi, com receita de US$ 50,9 bi (+8%), mas ficou um pouco abaixo das estimativas, segundo a imprensa; o banco reduziu as recompras.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-13",
+  "positivos": [
+   "Receita de US$ 50,9 bi, alta de 8%.",
+   "Banco de investimento com lucro 20% maior.",
+   "Dividendo elevado para US$ 1,65."
+  ],
+  "negativos": [
+   "Perda de US$ 658 mi com títulos.",
+   "Lucro ajustado abaixo das estimativas."
+  ],
+  "atencao": [
+   "Trajetória dos juros.",
+   "Qualidade do crédito."
+  ]
+ },
+ "fontes": [
+  {
+   "titulo": "JPMorgan: resultados do 3T26 (8-K, Exhibit 99.1, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026065582/a3q26erfexhibit991narrative.htm",
+   "data": "2026-10-13"
+  },
+  {
+   "titulo": "JPMorgan: suplemento financeiro do 3T26 (8-K, Exhibit 99.2, SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026065582/a3q26erfex992supplement.htm",
+   "data": "2026-10-13"
+  },
+  {
+   "titulo": "Pulse 2.0: JPMorgan Chase reports $15.3 billion Q3 profit",
+   "url": "https://pulse2.com/jpmorgan-chase-q3-2026-results",
+   "data": "2026-10"
+  },
+  {
+   "titulo": "Beinsure: JPMorgan Chase net income rises to $15.3bn",
+   "url": "https://beinsure.com/news/jpmorgan-chase-net-income-rises-to-15-3bn/",
+   "data": "2026-10"
+  }
+ ],
+ "ultimo_resultado": "3T26"
+}

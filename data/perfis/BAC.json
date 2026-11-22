@@ -1,0 +1,69 @@
+{
+ "ticker": "BAC",
+ "revisado_em": "2026-11-22",
+ "resumo": "Segundo maior banco dos EUA, com enorme base de depósitos de varejo, gestão de patrimônio (Merrill Lynch) e banco de investimento. Lucrativo, mas o último trimestre teve multa regulatória de US$ 1,2 bi.",
+ "modelo": "O Bank of America ganha principalmente com juros sobre empréstimos e investimentos financiados por depósitos baratos de dezenas de milhões de clientes, além de tarifas de cartões e contas, assessoria e negociação no banco de investimento e taxas de gestão de patrimônio da Merrill e do Private Bank.",
+ "segmentos": [
+  {"nome": "Banco de varejo", "peso_receita": 0.38, "periodo": "3T26", "obs": "US$ 11,6 bi, alta de 4%; lucro de US$ 3,5 bi."},
+  {"nome": "Gestão de patrimônio (Merrill)", "peso_receita": 0.23, "periodo": "3T26", "obs": "US$ 7,1 bi, alta de 13%; lucro de US$ 1,5 bi."},
+  {"nome": "Banco corporativo", "peso_receita": 0.20, "periodo": "3T26", "obs": "US$ 6,2 bi, estável; lucro de US$ 2,0 bi."},
+  {"nome": "Mercados", "peso_receita": 0.19, "periodo": "3T26", "obs": "US$ 5,9 bi, queda de 6%; lucro de US$ 1,2 bi."}
+ ],
+ "segmentos_base": "Receita dos segmentos",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Charlotte, Carolina do Norte (EUA); a grande maioria da receita vem dos EUA."},
+ "temas": [
+  {"tema": "Juros nos EUA", "relacao": "A receita líquida de juros subiu 8%, para US$ 16,4 bi, com a margem de juros subindo para 2,16%."},
+  {"tema": "Regulação", "relacao": "Registrou despesa de US$ 1,2 bi com acordo regulatório no trimestre."}
+ ],
+ "diferencial": {
+  "texto": "O Bank of America tem uma das maiores bases de depósitos de varejo dos EUA, com custo de captação baixo, além da rede de assessores da Merrill e liderança em tecnologia bancária digital. Os pontos fracos são a sensibilidade a juros, a menor rentabilidade que o JPMorgan e os custos regulatórios.",
+  "vantagem": {"nivel": "forte", "resumo": "Uma das maiores bases de depósitos de varejo dos EUA, com captação barata, mais a rede de assessores da Merrill Lynch."},
+  "concorrentes": ["JPMorgan Chase", "Wells Fargo", "Citigroup", "Morgan Stanley", "Charles Schwab", "Goldman Sachs"]
+ },
+ "potencial": {
+  "texto": "O crescimento vem do aumento da receita de juros com a renovação de títulos antigos a taxas maiores, da gestão de patrimônio e do banco de investimento. O banco devolveu US$ 8,3 bi aos acionistas no trimestre. Não há projeção no release.",
+  "metricas": [
+   {"rotulo": "Retorno sobre patrimônio tangível", "valor": "12,6% (14,9% ajustado)", "periodo": "3T26"},
+   {"rotulo": "Índice de capital (CET1)", "valor": "10,9%", "periodo": "set/2026"},
+   {"rotulo": "Valor patrimonial tangível por ação", "valor": "US$ 29,14", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 6,9 bi no 3T26 (US$ 0,91 por ação), contra US$ 8,3 bi um ano antes, reduzido por despesa de US$ 1,2 bi com acordo regulatório; sem ela, o lucro seria de US$ 8,1 bi. O índice CET1 é de 10,9%. O banco recomprou US$ 6,0 bi em ações e pagou US$ 2,2 bi em dividendos no trimestre.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Queda de juros reduzindo a receita de juros.",
+  "Custos e multas regulatórias.",
+  "Ciclo econômico e inadimplência.",
+  "Capital mais justo que o de rivais."
+ ],
+ "momento": "No 3T26 (divulgado em 14/10/2026), a receita subiu 3%, para US$ 30,0 bi, e a receita de juros 8%, mas o lucro caiu 17%, para US$ 6,9 bi, pela despesa regulatória de US$ 1,2 bi.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-14",
+  "positivos": [
+   "Receita líquida de juros subiu 8%.",
+   "Gestão de patrimônio cresceu 13%.",
+   "US$ 8,3 bi devolvidos aos acionistas."
+  ],
+  "negativos": [
+   "Despesa de US$ 1,2 bi com acordo regulatório.",
+   "Mercados caíram 6%."
+  ],
+  "atencao": [
+   "Trajetória dos juros.",
+   "Índice de capital em queda."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Bank of America: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000481/bac09302026ex991.htm", "data": "2026-10-14"},
+  {"titulo": "Bank of America Newsroom: third quarter 2026 results", "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/10/bank-of-america-reports-third-quarter-2026-financial-results.html", "data": "2026-10-14"},
+  {"titulo": "Vested Finance: Bank of America Q3 2026, net income falls 17%", "url": "https://vestedfinance.com/blog/us-stocks/bank-of-america-q3-earnings-2026/", "data": "2026-10"},
+  {"titulo": "Pulse 2.0: Bank of America Q3 revenue rises 3% to $30 billion", "url": "https://pulse2.com/bank-of-america-q3-2026-results/", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}

@@ -1,0 +1,64 @@
+{
+ "ticker": "NU",
+ "revisado_em": "2026-11-22",
+ "resumo": "Nubank, maior banco digital fora da Ásia, com 143 milhões de clientes no Brasil, México e Colômbia. Muito lucrativo, com retorno sobre o patrimônio de 32% e custo de atendimento muito baixo, mas exposto ao risco de crédito.",
+ "modelo": "O Nubank ganha principalmente com juros de cartão de crédito e empréstimos pessoais, tarifas de intercâmbio, conta digital, investimentos, seguros e marketplace, tudo pelo aplicativo, sem agências. O custo de atender cada cliente é de cerca de US$ 1 por mês, contra receita média de US$ 17,7. Em 2026 começou a operar como banco no México e lançou operação nos EUA.",
+ "segmentos": [],
+ "segmentos_base": "Empresa não divulga receita por país no release",
+ "geografia": {"eua_pct": 0.0, "exterior_pct": 1.0, "periodo": "3T26", "texto": "Sede em São Paulo, listada em Nova York (holding nas Ilhas Cayman); cerca de 120 milhões de clientes no Brasil, 16,6 milhões no México e 6,1 milhões na Colômbia."},
+ "temas": [
+  {"tema": "Bancos digitais", "relacao": "Ganhou 3,7 milhões de clientes no trimestre; recebeu licença bancária no México e lançou o Nu US com banco parceiro, aguardando licença bancária própria nos EUA."},
+  {"tema": "Crédito e juros", "relacao": "A carteira de crédito é de US$ 41,6 bi; a inadimplência acima de 90 dias subiu para 7,3%, segundo a imprensa."}
+ ],
+ "diferencial": {
+  "texto": "O Nubank tem custo de atendimento por cliente entre os mais baixos do mundo, marca muito forte e dados de crédito de dezenas de milhões de pessoas, o que permite crescer rápido com retorno alto. Os pontos fracos são o risco de crédito em economias voláteis, a dependência do Brasil, a concorrência de bancos tradicionais e outros digitais (Mercado Pago, Inter) e a regulação.",
+  "vantagem": {"nivel": "forte", "resumo": "Custo por cliente entre os mais baixos do mundo, marca forte e dados de crédito de mais de 140 milhões de clientes, com retorno sobre patrimônio acima de 30%."},
+  "concorrentes": ["Itaú Unibanco", "Mercado Pago", "Banco Inter", "Bradesco", "PicPay", "Revolut"]
+ },
+ "potencial": {
+  "texto": "O crescimento vem do aumento da receita por cliente (+21% a câmbio constante), da expansão no México com a licença bancária e da entrada nos EUA. A empresa não divulga projeção numérica, e a imprensa cita preparação para um cenário mais difícil em 2027.",
+  "metricas": [
+   {"rotulo": "Clientes", "valor": "143 milhões", "periodo": "set/2026"},
+   {"rotulo": "Retorno sobre patrimônio (ROE)", "valor": "32%", "periodo": "3T26"},
+   {"rotulo": "Carteira de crédito", "valor": "US$ 41,6 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido recorde de US$ 1,09 bi no 3T26, alta de 31% a câmbio constante, com ROE de 32% e índice de eficiência de 19,3%. Os depósitos somam US$ 47,5 bi, acima da carteira de crédito, o que dá funding barato. A inadimplência de 15 a 90 dias está em 4,9%.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Inadimplência em alta.",
+  "Juros e economia do Brasil.",
+  "Concorrência de bancos e fintechs.",
+  "Execução no México e nos EUA."
+ ],
+ "momento": "No 3T26 (divulgado em 12/11/2026), o Nubank teve lucro recorde de US$ 1,09 bi, acima das projeções, com 143 milhões de clientes; o ROE recuou de 33% para 32% e a inadimplência subiu, segundo a imprensa.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Lucro recorde de US$ 1,09 bi.",
+   "Receita por cliente subiu 21% a câmbio constante.",
+   "Início da operação bancária no México."
+  ],
+  "negativos": [
+   "Inadimplência acima de 90 dias subiu para 7,3%.",
+   "ROE caiu de 33% para 32%."
+  ],
+  "atencao": [
+   "Licença bancária nos EUA.",
+   "Qualidade do crédito em 2027."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Nu Holdings: apresentação de resultados do 3T26 (6-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1691493/000129281426005275/nu20261112_6k.htm", "data": "2026-11-12"},
+  {"titulo": "Nu Holdings: demonstrações financeiras do 3T26 (6-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1691493/000129281426005272/nufs3q26_6k.htm", "data": "2026-11-12"},
+  {"titulo": "NeoFeed: Nubank lucra US$ 1,1 bilhão, vê ROE recuar", "url": "https://neofeed.com.br/negocios/nubank-lucra-us-11-bilhao-ve-roe-recuar-e-se-prepara-para-cenario-mais-dificil-em-2027/", "data": "2026-11"},
+  {"titulo": "Bloomberg Línea: Lucro do Nubank no terceiro trimestre supera projeções", "url": "https://www.bloomberglinea.com.br/negocios/lucro-do-nubank-no-terceiro-trimestre-supera-projecoes-com-expansao-no-brasil/", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

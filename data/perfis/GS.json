@@ -1,0 +1,68 @@
+{
+ "ticker": "GS",
+ "revisado_em": "2026-11-22",
+ "resumo": "Um dos maiores bancos de investimento do mundo, líder em assessoria de fusões, negociação de ações e gestão de patrimônio de clientes ricos. Muito lucrativo, com receita crescendo 23% e retorno sobre patrimônio de 18,7%.",
+ "modelo": "O Goldman Sachs ganha com assessoria em fusões e aquisições e emissões de ações e dívida (investment banking), com a negociação e o financiamento de ações e renda fixa para clientes institucionais (mercados) e com taxas de gestão de recursos e patrimônio. Saiu do varejo e está vendendo a carteira do Apple Card.",
+ "segmentos": [
+  {"nome": "Banco de investimento e mercados", "peso_receita": 0.72, "periodo": "3T26", "obs": "US$ 13,5 bi, alta de 32%; ações US$ 6,4 bi (+72%), renda fixa US$ 3,5 bi, assessoria US$ 3,2 bi (+21%)."},
+  {"nome": "Gestão de recursos e patrimônio", "peso_receita": 0.27, "periodo": "3T26", "obs": "US$ 5,1 bi, alta de 14%."},
+  {"nome": "Soluções de plataforma (Apple Card)", "peso_receita": 0.01, "periodo": "3T26", "obs": "US$ 170 mi, queda de 72%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Nova York (EUA), com operações relevantes em Londres, Europa e Ásia."},
+ "temas": [
+  {"tema": "Mercado de capitais", "relacao": "A receita de ações subiu 72%, no segundo melhor trimestre da história do banco, e a assessoria 21% com mais fusões e emissões."},
+  {"tema": "Gestão de patrimônio", "relacao": "Os ativos sob supervisão chegaram a US$ 4,1 trilhões, alta de 19% em um ano."}
+ ],
+ "diferencial": {
+  "texto": "O Goldman tem marca, relacionamentos e talento que o colocam no topo dos rankings de fusões e de negociação de ações no mundo, negócios em que reputação e escala atraem os maiores clientes. Os pontos fracos são a dependência do humor dos mercados, receita mais volátil que a de bancos de varejo e a saída custosa do varejo.",
+  "vantagem": {"nivel": "forte", "resumo": "Marca e relacionamentos que o mantêm no topo mundial em fusões e negociação de ações, onde reputação e escala atraem os maiores clientes."},
+  "concorrentes": ["Morgan Stanley", "JPMorgan Chase", "Bank of America", "Citigroup", "UBS", "Barclays"]
+ },
+ "potencial": {
+  "texto": "O crescimento vem do ciclo de fusões e emissões, do financiamento a clientes de ações e da gestão de patrimônio; a carteira de mandatos de banco de investimento recuou um pouco no trimestre, segundo o release. Não há projeção numérica.",
+  "metricas": [
+   {"rotulo": "Retorno sobre patrimônio", "valor": "18,7%", "periodo": "3T26"},
+   {"rotulo": "Ativos sob supervisão", "valor": "US$ 4,1 trilhões", "periodo": "set/2026"},
+   {"rotulo": "Valor patrimonial por ação", "valor": "US$ 372,64", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro líquido de US$ 5,3 bi no 3T26 (US$ 17,01 por ação), alta de 29%, com ROE de 18,7%. O índice CET1 é de 12,4%. O banco recomprou US$ 3,0 bi em ações no trimestre e declarou dividendo de US$ 5,00 por ação.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dependência do humor dos mercados.",
+  "Receita volátil de negociação.",
+  "Regulação de capital.",
+  "Perdas na saída do Apple Card."
+ ],
+ "momento": "No 3T26 (divulgado em 13/10/2026), a receita subiu 23%, para US$ 18,7 bi, e o lucro 29%, acima do esperado, com ações em alta de 72%; a carteira de mandatos recuou um pouco frente ao trimestre anterior.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-13",
+  "positivos": [
+   "Receita de ações subiu 72%.",
+   "Lucro líquido de US$ 5,3 bi, alta de 29%.",
+   "Recompra de US$ 3,0 bi."
+  ],
+  "negativos": [
+   "Renda fixa caiu 1%.",
+   "Receita caiu 8% frente ao 2T26."
+  ],
+  "atencao": [
+   "Carteira de mandatos de fusões.",
+   "Conclusão da venda do Apple Card."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Goldman Sachs: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000529/a3q26gsearningsresults.htm", "data": "2026-10-13"},
+  {"titulo": "Zacks: Goldman Q3 earnings beat on strong equities, IB revenues", "url": "https://www.zacks.com/stock/news/3006356/goldman-q3-earnings-beat-on-strong-equities-ib-revenues-shares-rise", "data": "2026-10"},
+  {"titulo": "Private Banker International: Goldman Sachs Q3 profit climbs 29% on equities boom", "url": "https://www.privatebankerinternational.com/news/goldman-sachs-q3-profit-climbs-29-on-equities-boom", "data": "2026-10"},
+  {"titulo": "StockStory: GS Q3 deep dive, investment banking and asset management momentum", "url": "https://stockstory.org/us/stocks/nyse/gs/news/earnings-call/gs-q3-deep-dive-investment-banking-and-asset-management-momentum-drive-results", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
