@@ -1,0 +1,66 @@
+{
+ "ticker": "KLAC",
+ "revisado_em": "2026-11-22",
+ "resumo": "Líder mundial em equipamentos de inspeção e medição de chips (controle de processo), que encontram defeitos durante a fabricação. Uma das empresas mais lucrativas do setor, com margem bruta perto de 62% e receita crescendo 29%.",
+ "modelo": "A KLA vende sistemas que inspecionam wafers, máscaras e chips em cada etapa da fabricação e medem se as camadas estão corretas, permitindo às fábricas aumentar o rendimento (yield). Os clientes são fabricantes de chips, memórias e encapsulamento. Também tem serviços recorrentes sobre a base instalada e equipamentos para placas de circuito e componentes.",
+ "segmentos": [
+  {"nome": "Controle de processo de semicondutores", "peso_receita": 0.91, "periodo": "3T26", "obs": "US$ 3,75 bi, alta de 29,5%."},
+  {"nome": "Inspeção de placas e componentes", "peso_receita": 0.06, "periodo": "3T26", "obs": "US$ 242 mi, alta de 27,8%."},
+  {"nome": "Processos especiais", "peso_receita": 0.03, "periodo": "3T26", "obs": "US$ 140 mi, alta de 16,5%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Milpitas, Califórnia (EUA); a China deve ser de 27% a 29% da receita no 4T26 e cair para cerca de 20% em 2027, segundo a imprensa."},
+ "temas": [
+  {"tema": "Chips para IA", "relacao": "O CEO diz que o controle de processo é crítico para a construção da infraestrutura de IA, pois chips maiores e mais complexos têm mais pontos de falha."},
+  {"tema": "Encapsulamento avançado", "relacao": "A demanda por inspeção em encapsulamento avançado e placas de alto desempenho cresce com a IA."}
+ ],
+ "diferencial": {
+  "texto": "A KLA domina o mercado de inspeção e medição, com mais da metade dele, graças a décadas de algoritmos e dados de defeitos acumulados; cada nova geração de chip exige mais inspeção, o que faz o setor crescer acima do mercado de equipamentos. Os pontos fracos são a ciclicidade, a exposição à China e a concorrência de Applied Materials e de empresas japonesas em nichos.",
+  "concorrentes": ["Applied Materials", "Onto Innovation", "Hitachi High-Tech", "Lasertec", "Nova", "Camtek"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do trimestre até dezembro deve ser de US$ 4,7 bi, mais ou menos US$ 200 mi, com margem bruta ajustada de 62,5% e lucro ajustado de US$ 1,44 por ação. O crescimento vem de chips de IA e encapsulamento avançado, compensando a menor participação da China.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 4,5 bi a US$ 4,9 bi", "periodo": "4T26"},
+   {"rotulo": "Margem bruta ajustada projetada", "valor": "62,5%", "periodo": "4T26"},
+   {"rotulo": "Fluxo de caixa livre em 12 meses", "valor": "US$ 4,0 bi", "periodo": "set/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 1,18 por ação no trimestre (já ajustado pelo desdobramento de 10 para 1 de junho de 2026), alta de 39%, com margem bruta de cerca de 62%. O fluxo de caixa livre foi de US$ 1,34 bi no trimestre e de US$ 4,0 bi em 12 meses. A empresa tinha US$ 4,7 bi em caixa e aplicações e US$ 5,7 bi em dívida, e devolveu US$ 1,24 bi aos acionistas no trimestre.",
+  "caixa": "US$ 4,7 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Ciclo de investimento das fábricas de chips.",
+  "Restrições de exportação para a China.",
+  "Concentração em poucos grandes clientes.",
+  "Concorrência em nichos de inspeção."
+ ],
+ "momento": "No trimestre encerrado em setembro (3T26 no calendário, 1T27 fiscal da empresa, divulgado em 28/10/2026), a receita subiu 29%, para US$ 4,14 bi, acima do ponto médio da projeção, e a empresa projetou aceleração para o trimestre seguinte.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-28",
+  "positivos": [
+   "Receita de US$ 4,14 bi, alta de 29%.",
+   "Fluxo de caixa livre de US$ 1,34 bi.",
+   "Projeção de US$ 4,7 bi para o trimestre seguinte."
+  ],
+  "negativos": [
+   "Serviços cresceram menos (14%) que equipamentos."
+  ],
+  "atencao": [
+   "Queda da participação da China em 2027.",
+   "Investimento das fábricas em 2027."
+  ]
+ },
+ "fontes": [
+  {"titulo": "KLA: resultados do 1T27 fiscal (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000032/exhibit991earningsrelease0.htm", "data": "2026-10-28"},
+  {"titulo": "I-Connect007: KLA reports Q1 FY2027 revenue of $4.14 billion", "url": "https://iconnect007.com/article/152197/kla-reports-q1-fy2027-revenue-of-414-billion-exceeding-guidance/152194/pcb", "data": "2026-10"},
+  {"titulo": "Securities.io: KLA posts fiscal Q1 revenue of $4.14 billion", "url": "https://www.securities.io/kla-posts-fiscal-q1-revenue-of-4-14-billion-above-guidance-midpoint/", "data": "2026-10"},
+  {"titulo": "MarketBeat: KLA Q1 earnings call highlights", "url": "https://marketbeat.com/instant-alerts/transcript-kla-q1-earnings-call-highlights-2026-10-28/", "data": "2026-10-28"}
+ ],
+ "ultimo_resultado": "3T26"
+}
