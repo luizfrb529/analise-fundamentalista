@@ -1,0 +1,66 @@
+{
+ "ticker": "ON",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana de chips de potência (inclusive carbeto de silício), analógicos e sensores de imagem para carros, indústria e data centers de IA. Lucrativa, com caixa livre forte e crescimento retomado puxado por IA.",
+ "modelo": "A onsemi projeta e fabrica, em grande parte em fábricas próprias, semicondutores que controlam e convertem energia (MOSFETs, IGBTs, carbeto de silício), chips analógicos e sensores de imagem, vendidos a montadoras, fabricantes industriais, de energia solar e de servidores para IA.",
+ "segmentos": [
+  {"nome": "Soluções de potência (PSG)", "peso_receita": 0.52, "periodo": "4T26", "obs": "Receita de US$ 890 mi (+21%)."},
+  {"nome": "Analógicos e sinais mistos (AMG)", "peso_receita": 0.35, "periodo": "4T26", "obs": "Receita de US$ 597 mi (+2%)."},
+  {"nome": "Sensores inteligentes (ISG)", "peso_receita": 0.14, "periodo": "4T26", "obs": "Receita de US$ 235 mi (+2%)."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Scottsdale, Arizona (EUA); fábricas nos EUA, Europa e Ásia e vendas no mundo todo, com peso relevante da China."},
+ "temas": [
+  {"tema": "Energia para data centers de IA", "relacao": "A receita de data centers de IA chegou a US$ 180 mi no trimestre, alta de 175%, e deve somar cerca de US$ 620 mi em 2026, segundo a imprensa."},
+  {"tema": "Veículos elétricos", "relacao": "O carbeto de silício é usado em inversores de carros elétricos, mas a receita automotiva caiu 1% no trimestre."}
+ ],
+ "diferencial": {
+  "texto": "A onsemi tem tecnologia própria e fabricação integrada em carbeto de silício e chips de potência, desde o cristal até o módulo, e posição forte em sensores de imagem automotivos. Mas o mercado de potência é muito disputado, com Infineon, STMicro e fabricantes chineses ampliando capacidade, e a empresa depende dos ciclos de carros e indústria.",
+  "vantagem": {"nivel": "moderada", "resumo": "Fabricação integrada em carbeto de silício e posição forte em sensores automotivos, mas em mercado disputado e dependente de ciclos."},
+  "concorrentes": ["Infineon", "STMicroelectronics", "Wolfspeed", "Texas Instruments", "Sony (sensores)"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 4T26 deve ficar entre US$ 1,715 bi e US$ 1,815 bi, com lucro ajustado de US$ 0,95 a US$ 1,07 por ação. A empresa espera dobrar a receita de data centers de IA em 2027 e mira mais de US$ 3 bi nesse mercado em 2030, com a compra da Ferric, segundo a imprensa.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "US$ 1,715 bi a US$ 1,815 bi", "periodo": "4T26"},
+   {"rotulo": "Receita de data centers de IA", "valor": "US$ 180 mi (+175%)", "periodo": "3T26"},
+   {"rotulo": "Fluxo de caixa livre", "valor": "US$ 489 mi (28% da receita)", "periodo": "3T26"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 0,79 por ação no 3T26 (US$ 0,90 ajustado), com margem bruta de 41% e fluxo de caixa livre de US$ 489 mi, alta de 31%. Recomprou US$ 710 mi em ações no ano.",
+  "caixa": null,
+  "queima_anual": null,
+  "periodo": "out/2026"
+ },
+ "riscos": [
+  "Fraqueza no mercado automotivo.",
+  "Concorrência chinesa em carbeto de silício.",
+  "Ciclo de estoques de semicondutores.",
+  "Ociosidade das fábricas próprias."
+ ],
+ "momento": "No 3T26 (divulgado em 02/11/2026), a receita subiu 11%, para US$ 1,72 bi, com data centers de IA crescendo 175%, enquanto o automotivo caiu levemente; o CEO é Hassane El-Khoury.",
+ "destaques_resultado": {
+  "trimestre": "4T26",
+  "divulgado_em": "2026-11-02",
+  "positivos": [
+   "Receita subiu 11%.",
+   "Data centers de IA cresceram 175%.",
+   "Caixa livre subiu 31%."
+  ],
+  "negativos": [
+   "Receita automotiva caiu 1%."
+  ],
+  "atencao": [
+   "Integração da Ferric.",
+   "Recuperação do automotivo."
+  ]
+ },
+ "fontes": [
+  {"titulo": "onsemi: resultados do 3T26 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1097864/000114036126041580/ef20084671_ex99-1.htm", "data": "2026-11-02"},
+  {"titulo": "onsemi: reports third quarter 2026 results", "url": "https://www.onsemi.com/company/newsroom/news-and-insights/onsemi-reports-third-quarter-2026-results", "data": "2026-11-02"},
+  {"titulo": "StockStory: onsemi Q3 beats on revenue", "url": "https://stockstory.org/us/stocks/nasdaq/on/news/earnings/onsemi-nasdaqon-q3-beats-on-revenue", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "4T26"
+}

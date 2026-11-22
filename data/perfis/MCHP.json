@@ -1,0 +1,63 @@
+{
+ "ticker": "MCHP",
+ "revisado_em": "2026-11-22",
+ "resumo": "Fabricante americana de microcontroladores, chips analógicos e FPGAs usados em indústria, carros, data centers e defesa, com dezenas de milhares de clientes. Lucrativa e em forte recuperação de vendas em 2026, mas com dívida elevada.",
+ "modelo": "A Microchip vende microcontroladores, chips analógicos, FPGAs, conectividade, memória e chips para data centers (switches PCIe) a um número muito grande de clientes, diretamente e por distribuidores. Os produtos têm vida longa e são difíceis de substituir depois de projetados no equipamento do cliente.",
+ "segmentos": [],
+ "segmentos_base": "Vendas de US$ 1,62 bi no 2º tri fiscal 2027 (+42,2%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Chandler, Arizona (EUA); fábricas nos EUA e na Ásia e vendas no mundo todo."},
+ "temas": [
+  {"tema": "Data centers e IA", "relacao": "As vendas para data centers subiram 55,7%, segundo a imprensa, e os projetos ganhos com switches PCIe Gen6 dobraram para 24; comprou a Hailo, de processadores de IA na borda."},
+  {"tema": "Ciclo de semicondutores", "relacao": "As vendas se recuperam após forte ajuste de estoques em 2024 e 2025, com novos pedidos acima das entregas."}
+ ],
+ "diferencial": {
+  "texto": "A Microchip tem um dos maiores portfólios de microcontroladores do mundo, base de clientes muito pulverizada e produtos com ciclo de vida de décadas, o que gera alto custo de troca e margens brutas acima de 60%. Os pontos fracos são a dívida elevada, a sensibilidade a ciclos de estoque e a concorrência de grandes rivais.",
+  "vantagem": {"nivel": "moderada", "resumo": "Grande portfólio de microcontroladores, clientes pulverizados e produtos de vida longa com alto custo de troca, mas dívida elevada e ciclos fortes."},
+  "concorrentes": ["Texas Instruments", "STMicroelectronics", "NXP", "Renesas", "Infineon", "Broadcom"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, as vendas do 3º tri fiscal 2027 devem ficar entre US$ 1,573 bi e US$ 1,638 bi, com lucro ajustado de US$ 0,87 a US$ 0,95 por ação. O potencial vem da continuidade da recuperação e do crescimento em data centers.",
+  "metricas": [
+   {"rotulo": "Vendas projetadas", "valor": "US$ 1,573 bi a US$ 1,638 bi", "periodo": "3º tri fiscal 2027"},
+   {"rotulo": "Margem bruta ajustada", "valor": "66,5%", "periodo": "2º tri fiscal 2027"},
+   {"rotulo": "Dividendo trimestral", "valor": "US$ 0,455", "periodo": "dez/2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 0,68 por ação no trimestre (US$ 0,97 ajustado), com margem bruta de 65,9%. A dívida de longo prazo é de US$ 5,5 bi, com cerca de US$ 0,46 bi em caixa, e os estoques seguem altos.",
+  "caixa": "US$ 457 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Dívida elevada.",
+  "Ciclos de estoque nos clientes.",
+  "Concorrência de grandes fabricantes.",
+  "Restrições de oferta."
+ ],
+ "momento": "No 2º tri fiscal 2027 (divulgado em 05/11/2026), as vendas subiram 42,2%, para US$ 1,62 bi, acima da projeção, mas a previsão para o trimestre seguinte é de leve queda e as ações caíram cerca de 10%; o CEO é Steve Sanghi.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "Vendas subiram 42,2%.",
+   "Data centers cresceram 55,7%.",
+   "Novos pedidos acima das entregas."
+  ],
+  "negativos": [
+   "Vendas incluíram cerca de US$ 53 mi não recorrentes.",
+   "Projeção de leve queda no trimestre seguinte."
+  ],
+  "atencao": [
+   "Redução da dívida.",
+   "Integração da Hailo."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Microchip: resultados do 2º tri fiscal 2027 (8-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/827054/000082705426000061/exhibit991q2fy27.htm", "data": "2026-11-05"},
+  {"titulo": "Finviz: Microchip announces results for second quarter of fiscal 2027", "url": "https://finviz.com/news/417835/microchip-technology-announces-financial-results-for-second-quarter-of-fiscal-year-2027", "data": "2026-11-05"},
+  {"titulo": "Zacks: MCHP Q2 earnings call highlights supply constraints and growth", "url": "https://zacks.com/stock/news/3025567/mchp-q2-earnings-call-highlights-supply-constraints-and-growth", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

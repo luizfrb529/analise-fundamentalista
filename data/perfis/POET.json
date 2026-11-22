@@ -1,0 +1,64 @@
+{
+ "ticker": "POET",
+ "revisado_em": "2026-11-22",
+ "resumo": "Pequena empresa canadense de fotônica que desenvolve o interposer óptico, plataforma para montar motores ópticos de 800G e 1,6T usados em data centers de IA. Receita ainda mínima e prejuízo, mas caixa de US$ 774 mi após grandes captações.",
+ "modelo": "A POET projeta o interposer óptico, um chip que integra lasers, moduladores e receptores num só componente, simplificando a fabricação de transceptores ópticos. Vende motores ópticos e componentes para fabricantes de módulos e espera ganhar escala com a produção em massa a partir de 2027.",
+ "segmentos": [],
+ "segmentos_base": "Receita de US$ 1,03 mi no 3T26 (+244%)",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Toronto (Canadá); operações na Ásia e clientes fabricantes de módulos ópticos."},
+ "temas": [
+  {"tema": "Óptica para data centers de IA", "relacao": "Desenvolve motores ópticos de 800G e 1,6T; espera que sete de nove clientes ativos entrem em produção em 2027, segundo a empresa."},
+  {"tema": "Fotônica de silício", "relacao": "O laser híbrido Blazar deve ter amostras no 1º semestre de 2027 e produção no início de 2028."}
+ ],
+ "diferencial": {
+  "texto": "O interposer óptico da POET é uma abordagem própria e protegida por patentes que pode reduzir o custo de montar transceptores. Mas a tecnologia ainda não provou escala comercial, a receita é de cerca de US$ 1 mi por trimestre, e grandes fabricantes como Broadcom, Marvell, Coherent e Intel têm soluções próprias de fotônica de silício.",
+  "vantagem": {"nivel": "nenhuma clara", "resumo": "Tecnologia própria de interposer óptico, mas sem escala comercial comprovada e diante de grandes rivais em fotônica de silício."},
+  "concorrentes": ["Broadcom", "Marvell", "Coherent", "Intel", "Lumentum", "InnoLight"]
+ },
+ "potencial": {
+  "texto": "O potencial depende da produção em massa: a empresa quer multiplicar por cerca de dez a capacidade de wafers e de montagem de motores em 2027, entregar a carteira atual até o 2T27 e ter no 4T26 mais entregas que nos três trimestres anteriores somados. Não há projeção de receita.",
+  "metricas": [
+   {"rotulo": "Caixa e aplicações", "valor": "US$ 774,3 mi", "periodo": "set/2026"},
+   {"rotulo": "Receita do trimestre", "valor": "US$ 1,03 mi (+244%)", "periodo": "3T26"},
+   {"rotulo": "Capacidade de wafers prevista", "valor": "cerca de 1.250 por mês", "periodo": "2027"}
+  ]
+ },
+ "saude": {
+  "situacao": "prejuízo com caixa",
+  "texto": "Prejuízo de US$ 7,6 mi no 3T26, reduzido por ganho contábil de US$ 6,4 mi com bônus de subscrição, e consumo de caixa operacional de US$ 12,7 mi. Tem US$ 774 mi em caixa e aplicações após captar US$ 550 mi em 2026, com forte diluição e muitos bônus de subscrição em aberto.",
+  "caixa": "US$ 774,3 mi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Tecnologia sem escala comercial comprovada.",
+  "Diluição por ações e bônus de subscrição.",
+  "Concorrência de grandes fabricantes.",
+  "Atrasos na produção em massa."
+ ],
+ "momento": "No 3T26 (divulgado em 16/11/2026), a receita bateu recorde de US$ 1,03 mi e a empresa detalhou planos de ampliar a capacidade em dez vezes, mas as ações caíram após o resultado.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-16",
+  "positivos": [
+   "Receita recorde, alta de 244%.",
+   "Caixa de US$ 774 mi.",
+   "Novo pedido de US$ 2,4 mi."
+  ],
+  "negativos": [
+   "Receita ainda mínima.",
+   "Forte diluição em 2026."
+  ],
+  "atencao": [
+   "Entregas do 4T26.",
+   "Início da produção em massa em 2027."
+  ]
+ },
+ "fontes": [
+  {"titulo": "POET: resultados do 3T26 (6-K, Exhibit 99.1, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1437424/000117184326007469/exh_991.htm", "data": "2026-11-16"},
+  {"titulo": "POET: demonstrações do 3T26 (6-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226051994/ex99-1.htm", "data": "2026-11-16"},
+  {"titulo": "Finviz: POET reports record Q3 2026 revenue of $1.03M, up 244%", "url": "https://finviz.com/news/422999/poet-technologies-reports-record-q3-2026-revenue-of-103m-up-244", "data": "2026-11"},
+  {"titulo": "Stocktwits: POET stock plunges after Q3, CEO targets 10-fold capacity expansion", "url": "https://stocktwits.com/news-articles/markets/equity/poet-technologies-stock-plunges-after-q3-earnings-ceo-targets-10-fold-capacity-expansion/cNb7tLeR9ge", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}
