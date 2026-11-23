@@ -36,6 +36,12 @@ def ler(caminho: Path, padrao=None):
         return padrao
 
 
+def ordem_tri(rotulo: str) -> tuple:
+    """'3T26' -> (26, 3). Rótulo atrasado na agenda (perfil já cobre um trimestre mais novo) não conta como pendência."""
+    m = re.match(r"^([1-4])T(\d{2})$", str(rotulo or ""))
+    return (int(m.group(2)), int(m.group(1))) if m else (0, 0)
+
+
 def pendentes(universo: list, fundamentals: dict) -> list[tuple[str, str]]:
     """[(ticker, motivo)] em ordem de prioridade: resultado novo primeiro, depois perfis mais antigos."""
     novos, velhos = [], []
@@ -47,7 +53,7 @@ def pendentes(universo: list, fundamentals: dict) -> list[tuple[str, str]]:
         revisado = perfil.get("revisado_em") or "2000-01-01"
         if not perfil:
             novos.append((t, "sem perfil"))
-        elif rotulo and perfil.get("ultimo_resultado") and rotulo != perfil.get("ultimo_resultado"):
+        elif rotulo and perfil.get("ultimo_resultado") and ordem_tri(rotulo) > ordem_tri(perfil.get("ultimo_resultado")):
             novos.append((t, f"resultado novo {rotulo} (perfil cobre {perfil.get('ultimo_resultado')})"))
         elif rotulo and ult.get("entrega") and ult["entrega"] > revisado:
             novos.append((t, f"resultado {rotulo} entregue em {ult['entrega']}, depois da revisão de {revisado}"))
@@ -130,6 +136,8 @@ def main():
     ap.add_argument("--max", type=int, default=int(os.environ.get("MAX_PERFIS", "6")))
     ap.add_argument("--tickers", default="")
     ap.add_argument("--simular", action="store_true", help="só lista o que seria revisado")
+    ap.add_argument("--grupo", choices=("todos", "stocks", "b3"), default="todos",
+                    help="stocks: só as americanas (STOCK_US); b3: só os ativos da B3")
     args = ap.parse_args()
 
     universo = ler(DATA / "universe.json", [])
@@ -139,6 +147,9 @@ def main():
         fila = [(t.strip().upper(), "pedido manual") for t in args.tickers.split(",") if t.strip().upper() in por_ticker]
     else:
         fila = pendentes(universo, fundamentals)
+    if args.grupo != "todos":
+        stock = args.grupo == "stocks"
+        fila = [(t, m) for t, m in fila if (por_ticker[t].get("tipo") == "STOCK_US") == stock]
     print(f"{len(fila)} perfis pendentes de revisão")
     for t, motivo in fila[:args.max]:
         print(f"  {t}: {motivo}")
