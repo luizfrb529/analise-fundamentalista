@@ -1,6 +1,6 @@
 {
  "ticker": "RDOR3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-23",
  "resumo": "Maior rede de hospitais privados do país e dona da SulAmérica, de planos de saúde e seguros. A receita bruta vem cerca de 60% dos hospitais; a operação é toda no Brasil.",
  "modelo": "A Rede D'Or opera 75 hospitais (73 próprios e 2 sob gestão) com 13.771 leitos, além de oncologia e outros serviços, e recebe principalmente de operadoras de planos de saúde. Desde 2022 controla a SulAmérica, que vende planos de saúde e odontológicos, previdência e gestão de recursos para 6,2 milhões de beneficiários. A receita é recorrente: diárias, procedimentos e oncologia nos hospitais, e mensalidades de planos na SulAmérica, que também gera receita financeira sobre as reservas técnicas.",
  "segmentos": [
@@ -79,5 +79,25 @@
    "data": "2026-11-12"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Ebitda ajustado de R$ 3,61 bi no 3T26, alta de 11,6% sobre o 3T25.",
+   "Sinistralidade da SulAmérica de 77,7% no 3T26, queda de 2,4 p.p. sobre o 3T25.",
+   "Geração de caixa operacional de R$ 2,8 bi no 3T26, alta de 19,2% sobre o 3T25.",
+   "Margem bruta dos hospitais de 28,0% no 3T26, alta de 2,3 p.p. sobre o 3T25."
+  ],
+  "negativos": [
+   "Lucro líquido de R$ 1,45 bi no 3T26, queda de 0,1% sobre o 3T25, com receita líquida de R$ 15,41 bi (+5,6%).",
+   "Resultado financeiro negativo de R$ 715,9 mi no 3T26, contra R$ 524,2 mi no 3T25.",
+   "Taxa de ocupação dos hospitais de 79,6% no 3T26, queda de 2 p.p. sobre o 3T25."
+  ],
+  "atencao": [
+   "Alavancagem de 1,65x dívida líquida/Ebitda em set/26 (1,71x em jun/26), com expansão prevista de 2.690 leitos entre 2026 e 2028.",
+   "Resultado financeiro e imposto, que seguraram o lucro líquido apesar do Ebitda maior."
+  ]
+ }
 }
