@@ -1,6 +1,6 @@
 {
  "ticker": "ALOS3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-23",
  "resumo": "Maior empresa de shoppings do país, com receita de aluguel, estacionamento e mídia. Opera só no Brasil e vende participações em shoppings maduros para pagar dividendos e reduzir dívida.",
  "modelo": "A Allos, resultado da fusão entre Aliansce Sonae e brMalls, é dona e administradora de shoppings em várias regiões do país. Ganha dinheiro com aluguel de lojistas (mínimo e percentual sobre vendas), estacionamento, serviços e mídia (Hello, presente também em aeroportos) e, pontualmente, com incorporação em terrenos dos shoppings. A receita é majoritariamente recorrente e a empresa recicla capital vendendo participações em ativos.",
  "segmentos": [
@@ -91,5 +91,23 @@
    "data": "2026-10-23"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-05",
+  "positivos": [
+   "FFO de R$ 384,5 mi no 3T26, alta de 26,1% sobre o 3T25, com margem FFO de 49,5% (+3,5 p.p.).",
+   "NOI de R$ 609,7 mi no 3T26, alta de 5,1% sobre o 3T25.",
+   "Vendas dos lojistas de R$ 10 bi no 3T26, alta de 3% em carteira comparável; vendas nas mesmas lojas +2,7% sem Tijuca."
+  ],
+  "negativos": [
+   "Vendas nas mesmas lojas de 2,5% no portfólio total no 3T26, abaixo dos 3,8% do 1T26.",
+   "Dívida líquida de R$ 4,0 bi, alta de 9,9% no trimestre, ou 1,8x o Ebitda (1,7x no 2T26)."
+  ],
+  "atencao": [
+   "Alavancagem prevista perto de 2,0x em 2027, segundo a empresa, com dividendos mensais de R$ 0,28 a R$ 0,30 por ação.",
+   "Venda de participações em sete shoppings ao FII Kinea Allos Malls, anunciada em outubro de 2026."
+  ]
+ }
 }
