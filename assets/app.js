@@ -484,6 +484,7 @@ async function render() {
     else if (r === "fiis") pgFiis(app, q);
     else if (r === "fii") await pgFii(app, p.toUpperCase());
     else if (r === "filtros") pgFiltros(app);
+    else if (r === "estudar") pgEstudar(app);
     else app.innerHTML = '<div class="cartao"><h1>Página não encontrada</h1><p><a class="lk" href="#/">Voltar ao início</a></p></div>';
   } catch (e) {
     console.error(e);
@@ -1067,7 +1068,7 @@ async function pgAtivo(app, t) {
 
   app.innerHTML = `${trilha([[stk ? "Stocks" : emAcoes(t) ? "Ações" : "BDRs", `#/ativos?seg=${segTab}`], [a.setor_macro, `#/ativos?seg=${segTab}&setor=${encodeURIComponent(a.setor_macro)}`], [t]])}
   <div class="ativo-topo">
-    <div class="ativo-id">${logo(t, "g")}<div><h1>${t}${classes.length ? classes.map((c) => `<span class="badge">${c}</span>`).join("") : ""}${isRec(t) ? `<span class="badge rec">${esc(recNome(t))}</span>` : ""}${estado(t) ? `<span class="badge estatal" data-tip="${esc(estado(t).resumo)}"><i class="q-estatal"></i>${rotEstado(t)}</span>` : ""}</h1><div class="nm">${esc(a.nome)}</div>${proxResultado(t)}</div></div>
+    <div class="ativo-id">${logo(t, "g")}<div><h1>${t}${classes.length ? classes.map((c) => `<span class="badge">${c}</span>`).join("") : ""}${isRec(t) ? `<span class="badge rec">${esc(recNome(t))}</span>` : ""}${estado(t) ? `<span class="badge estatal" data-tip="${esc(estado(t).resumo)}"><i class="q-estatal"></i>${rotEstado(t)}</span>` : ""}</h1><div class="nm">${esc(a.nome)}</div>${proxResultado(t)}<div style="margin-top:8px">${btnEstudar(t, "ativo")}</div></div></div>
     <nav class="secoes-nav" id="secoes">${[["sobre", "Sobre a empresa"], ["indicadores", "Indicadores"], ["criterios", "Critérios"], ["resultados", "Resultados"], ["proventos", "Proventos"], ["governanca", "Governança"], ["acionistas", "Acionistas"], ["noticias", "Comunicados"]].filter(([id]) => !(stk && (id === "governanca" || id === "acionistas"))).map(([id, nm]) => `<a href="#" data-sec="${id}">${nm}</a>`).join("")}</nav>
   </div>
 
@@ -2382,6 +2383,71 @@ function zoomMapa(ch, BASE) {
    FUNDOS IMOBILIÁRIOS
    ===================================================================== */
 const TIPO_FUNDO = { fii: "FII", fiagro: "Fiagro", infra: "FI-Infra" };
+/* ---------------- Para estudar: lista pessoal de teses (ações, BDRs, FIIs e stocks), guardada no navegador */
+const estudarLer = () => lsGet("para_estudar", []);
+const estudarGravar = (l) => { lsSet("para_estudar", l); contarEstudar(); };
+const naLista = (t) => estudarLer().some((x) => x.t === t);
+function contarEstudar() { const el = document.getElementById("n-estudar"); if (el) { const n = estudarLer().length; el.textContent = n ? n : ""; el.style.display = n ? "" : "none"; } }
+function btnEstudar(t, k) {
+  const tem = naLista(t);
+  return `<button type="button" class="btn peq btn-estudar${tem ? " na-lista" : ""}" data-estudar="${t}" data-k="${k}" title="${tem ? "Tirar da lista Para estudar" : "Guardar na lista Para estudar"}">${tem ? "✓ Na lista Para estudar" : "☆ Para estudar"}</button>`;
+}
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-estudar]");
+  if (!b) return;
+  e.preventDefault();
+  const t = b.dataset.estudar, l = estudarLer();
+  const i = l.findIndex((x) => x.t === t);
+  if (i >= 0) l.splice(i, 1); else l.push({ t, k: b.dataset.k, em: new Date().toISOString().slice(0, 10), nota: "" });
+  estudarGravar(l);
+  if (rota().r === "estudar") { pgEstudar($("#app")); return; }
+  b.outerHTML = btnEstudar(t, b.dataset.k);
+});
+function grupoEstudar(x) {
+  if (x.k === "fii") return "fiis";
+  if (!D.univMap[x.t]) return null;
+  return isStock(x.t) ? "stocks" : emAcoes(x.t) ? "acoes" : "bdrs";
+}
+function pgEstudar(app) {
+  const l = estudarLer();
+  const GR = [["acoes", "Ações"], ["bdrs", "BDRs"], ["fiis", "Fundos imobiliários"], ["stocks", "Stocks"]];
+  const linha = (x) => {
+    const fii = x.k === "fii", f = fii ? D.fiiMap[x.t] || {} : null, a = fii ? null : A(x.t);
+    const nome = fii ? f.nome || "" : a.nome;
+    const pm = fii ? "R$" : moedaPreco(x.t);
+    const p = fii ? fiiPreco(x.t, f.preco) : (D.prices[x.t] || {}).preco;
+    const v12 = fii ? f.var_12m : (D.prices[x.t] || {}).var_12m;
+    const link = fii ? `#/fii/${x.t}` : `#/ativo/${x.t}`;
+    return `<div class="est-item" data-t="${x.t}">
+      <div class="est-id"><a href="${link}">${logo(x.t, "p")}</a><div><a href="${link}"><b>${x.t}</b></a><small>${esc(nome)}</small></div></div>
+      <div class="est-px"><b>${ok(p) ? `${pm} ${nf2.format(p)}` : ND}</b><small>12 meses ${varHtml(v12)}</small></div>
+      <textarea class="est-nota" data-nota="${x.t}" rows="2" placeholder="Sua tese, dúvidas, o que falta conferir...">${esc(x.nota || "")}</textarea>
+      <div class="est-acoes"><small>desde ${dataBR(x.em)}</small><button type="button" class="btn peq" data-estudar="${x.t}" data-k="${x.k}">Tirar da lista</button></div>
+    </div>`;
+  };
+  const blocos = GR.map(([g, n]) => {
+    const it = l.filter((x) => grupoEstudar(x) === g);
+    return it.length ? `<div class="cartao est-grupo"><h2>${n} <span class="badge">${it.length}</span></h2>${it.map(linha).join("")}</div>` : "";
+  }).join("");
+  app.innerHTML = `${trilha([["Para estudar"]])}<div class="cab-pagina"><div><h1>Para estudar</h1>
+    <p>Sua lista de teses em estudo, separada do resto da plataforma. Para incluir um ativo, abra a página dele e clique em <b>☆ Para estudar</b>. As anotações ficam salvas neste navegador.</p></div></div>
+    ${l.length ? blocos : `<div class="cartao"><p>A lista está vazia. Abra uma ação, BDR, FII ou stock e clique em <b>☆ Para estudar</b> ao lado do nome.</p></div>`}
+    <div class="cartao"><h3>Levar a lista para outro aparelho</h3><p class="sub">A lista fica guardada só neste navegador. Para usar no celular ou em outro computador, copie aqui e cole lá.</p>
+      <div class="linha" style="gap:8px;margin-top:8px"><button type="button" class="btn peq" id="est-copiar">Copiar lista</button><button type="button" class="btn peq" id="est-colar">Colar lista copiada</button></div></div>`;
+  $$("[data-nota]").forEach((ta) => ta.oninput = () => { const l2 = estudarLer(); const x = l2.find((y) => y.t === ta.dataset.nota); if (x) { x.nota = ta.value; lsSet("para_estudar", l2); } });
+  $("#est-copiar").onclick = async () => { const txt = JSON.stringify(estudarLer()); try { await navigator.clipboard.writeText(txt); alert("Lista copiada. Cole no outro aparelho em Para estudar > Colar lista copiada."); } catch (e) { prompt("Copie o texto abaixo:", txt); } };
+  $("#est-colar").onclick = () => {
+    const txt = prompt("Cole aqui a lista copiada do outro aparelho:");
+    if (!txt) return;
+    try {
+      const novo = JSON.parse(txt);
+      if (!Array.isArray(novo)) throw new Error();
+      const l2 = estudarLer();
+      novo.filter((x) => x && x.t).forEach((x) => { const y = l2.find((z) => z.t === x.t); if (y) { if (x.nota && !y.nota) y.nota = x.nota; } else l2.push({ t: x.t, k: x.k === "fii" ? "fii" : "ativo", em: x.em || new Date().toISOString().slice(0, 10), nota: x.nota || "" }); });
+      estudarGravar(l2); pgEstudar(app);
+    } catch (e) { alert("Não reconheci o texto colado. Copie de novo no outro aparelho."); }
+  };
+}
 function pgFiis(app, q) {
   const tipo = (q && q.get && q.get("tipo")) || "todos", setor = (q && q.get && q.get("setor")) || "", ordem = FII_METRICAS[(q && q.get && q.get("ordem")) || ""] ? q.get("ordem") : "pl";
   const todos = D.fiis || [];
@@ -2437,7 +2503,7 @@ async function pgFii(app, t) {
   const pctTot = (lst, k = "valor") => { const tot = lst.reduce((a, x) => a + (x[k] || 0), 0) || 1; return lst.map((x) => [x.nome || x.faixa || x.indexador, (x[k] || 0) / tot]); };
   app.innerHTML = `${trilha([["Fundos imobiliários", "#/fiis"], [t]])}
   <div class="ativo-cab"><div class="ativo-id">${logo(t, "g")}<div><h1>${t} <span class="badge">${TIPO_FUNDO[tipo] || "FII"}</span></h1><div class="nm">${esc(c.nome || "")}</div>
-    <div class="badges"><span class="badge">${esc(c.segmento || "Segmento n/d")}</span>${c.gestao ? `<span class="badge">Gestão ${esc(c.gestao.toLowerCase())}</span>` : ""}<span class="badge ${/qualific|profiss/i.test(sb.publico || "") ? "alerta" : "pos"}">${esc((sb.publico || "").replace(/^qualquer investidor \(público em geral\)$/, "Público em geral"))}</span><span class="badge">Perfil: ${esc(sb.perfil || "n/d")}</span></div></div></div></div>
+    <div class="badges"><span class="badge">${esc(c.segmento || "Segmento n/d")}</span>${c.gestao ? `<span class="badge">Gestão ${esc(c.gestao.toLowerCase())}</span>` : ""}<span class="badge ${/qualific|profiss/i.test(sb.publico || "") ? "alerta" : "pos"}">${esc((sb.publico || "").replace(/^qualquer investidor \(público em geral\)$/, "Público em geral"))}</span><span class="badge">Perfil: ${esc(sb.perfil || "n/d")}</span></div><div style="margin-top:8px">${btnEstudar(t, "fii")}</div></div></div></div>
 
   <div class="cartao" style="margin-top:18px"><div class="cotacao-cab"><div title="Cotação com atraso de até 15 minutos."><div class="sub">Cotação</div>
     <div class="preco-grande">${reais(preco)}${ok(vivo ? vivo.var_dia : i.var_dia) ? ` <span class="preco-var">(${varHtml(vivo ? vivo.var_dia : i.var_dia)})</span>` : ""}</div>
@@ -2943,6 +3009,7 @@ function pedirSenha() {
   }
   ligarBusca($("#busca"), $("#busca-lista"));
   montarMenus();
+  contarEstudar();
   await Promise.race([precosAoVivo(), new Promise((r) => setTimeout(r, 3000))]);
   faixaMercado();
   animarFaixa();

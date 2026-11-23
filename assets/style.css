@@ -810,3 +810,16 @@ select { max-width: 100%; }
 .tema-item p { margin: 6px 0 0; color: var(--txt-2); line-height: 1.5; }
 .lista-riscos { margin: 8px 0 0; padding-left: 18px; color: var(--txt-2); line-height: 1.55; }
 .lista-riscos li { margin-bottom: 6px; }
+
+/* Para estudar */
+.btn-estudar.na-lista { border-color: var(--pos, #22c55e); color: var(--pos, #22c55e); }
+.n-estudar { display: inline-block; min-width: 18px; padding: 0 6px; margin-left: 4px; border-radius: 999px; background: var(--sup-3); font-size: .72rem; line-height: 18px; text-align: center; }
+.est-grupo h2 { display: flex; align-items: center; gap: 8px; }
+.est-item { display: grid; grid-template-columns: minmax(180px, 1.2fr) 140px 2fr auto; gap: 14px; align-items: center; padding: 12px 0; border-top: 1px solid var(--borda); }
+.est-item:first-of-type { border-top: 0; }
+.est-id { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.est-id small, .est-px small, .est-acoes small { display: block; color: var(--txt-2); font-size: .78rem; }
+.est-id small { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.est-nota { width: 100%; resize: vertical; min-height: 44px; padding: 8px 10px; border: 1px solid var(--borda); border-radius: 8px; background: var(--sup-2); color: inherit; font: inherit; font-size: .86rem; }
+.est-acoes { display: grid; gap: 6px; justify-items: end; }
+@media (max-width: 760px) { .est-item { grid-template-columns: 1fr auto; } .est-nota { grid-column: 1 / -1; } .est-acoes { grid-column: 1 / -1; grid-auto-flow: column; justify-content: space-between; align-items: center; } }
