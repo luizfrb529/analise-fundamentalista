@@ -1,6 +1,6 @@
 {
  "ticker": "JHSF3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-23",
  "resumo": "Grupo de alta renda com shoppings, hotéis Fasano, aeroporto executivo e incorporação. No 3T26, metade da receita veio de incorporação; operações no exterior (EUA e Uruguai) ainda são pequenas e sem número divulgado.",
  "modelo": "A JHSF desenvolve e administra ativos voltados ao público de alta renda: shoppings (Cidade Jardim, Catarina, CJ Boa Vista Village), o Grupo Fasano (11 hotéis e 36 restaurantes), o Aeroporto Executivo Catarina, clubes e residências, além da gestora JHSF Capital (R$ 12,9 bi sob gestão em set/26). A renda recorrente vem de aluguéis, diárias, restaurantes, aviação e taxas de gestão; a incorporação gera receita pontual com venda de lotes e casas, em boa parte para fundos imobiliários estruturados pela própria JHSF Capital.",
  "segmentos": [
@@ -116,5 +116,24 @@
    "data": "2026-04-27"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Receita bruta de R$ 917,8 mi no 3T26, alta de 62,6% sobre o 3T25.",
+   "Ebitda ajustado de R$ 469,6 mi no 3T26, alta de 78,7% (margem de 54,9%).",
+   "Lucro líquido de R$ 391,5 mi no 3T26, alta de 28,6% sobre o 3T25.",
+   "Renda recorrente de R$ 481,8 mi no 3T26, alta de 40,8%, com aviação dobrando de tamanho."
+  ],
+  "negativos": [
+   "Margem líquida de 45,8% no 3T26, contra 58,9% no 3T25, por menor valorização de propriedades para investimento.",
+   "Caixa líquido gerencial de R$ 741,1 mi em set/26, contra R$ 1,19 bi em jun/26."
+  ],
+  "atencao": [
+   "Metade da receita do trimestre veio de incorporação, receita pontual que varia com as vendas a fundos imobiliários.",
+   "Dívida bruta de R$ 6,49 bi em set/26 e integração das compras do FBO de Miami e do Enjoy Punta del Este."
+  ]
+ }
 }
