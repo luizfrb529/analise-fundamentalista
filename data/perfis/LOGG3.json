@@ -1,6 +1,6 @@
 {
  "ticker": "LOGG3",
- "revisado_em": "2026-11-18",
+ "revisado_em": "2026-11-23",
  "resumo": "Desenvolve e aluga galpões logísticos classe A em várias regiões do Brasil e vende ativos prontos para financiar novas obras. Boa parte do lucro vem da valorização e venda de ativos, não só do aluguel.",
  "modelo": "A LOG constrói galpões logísticos modulares, aluga para empresas de e-commerce, varejo, farmacêutico e transporte e depois recicla parte dos ativos estabilizados, vendendo-os para financiar o programa Log 2 Milhões. A receita recorrente é o aluguel e, cada vez mais, serviços da plataforma LOG 360 (administração de condomínios, gestão de obras e de ativos de terceiros). O resultado de desenvolvimento, com reavaliação e venda de ativos, é pontual e responde pela maior parte do Ebitda.",
  "segmentos": [
@@ -79,5 +79,23 @@
    "data": "2025-10-29"
   }
  ],
- "ultimo_resultado": "3T26"
+ "ultimo_resultado": "3T26",
+ "revisao": "automática",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-10",
+  "positivos": [
+   "Lucro líquido de R$ 121,6 mi no 3T26, alta de 9,2% sobre o 3T25 (R$ 314,3 mi em 9M26, +10,4%).",
+   "Absorção bruta recorde de 495 mil m² no 3T26 e pré-locação de 488 mil m², com yield on cost médio de 13,8%.",
+   "Dividendos de R$ 86,6 mi aprovados para pagamento em 30/11/2026."
+  ],
+  "negativos": [
+   "Receita líquida de R$ 57,7 mi no 3T26, queda de 13,5%, com ABL média 28,5% menor após vendas de ativos.",
+   "Ebitda de R$ 179,1 mi no 3T26, queda de 7,1% sobre o 3T25.",
+   "Dívida líquida ajustada de R$ 906,1 mi, 1,5x o Ebitda de 12 meses (1,3x no 3T25)."
+  ],
+  "atencao": [
+   "Capex recorde de R$ 318,5 mi no 3T26, com 914,9 mil m² em construção, que pressiona o caixa até a entrega dos galpões."
+  ]
+ }
 }
