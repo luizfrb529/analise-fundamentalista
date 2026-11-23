@@ -3032,3 +3032,42 @@ function pedirSenha() {
   window.addEventListener("hashchange", render);
   render();
 })();
+
+/* ---------------- ordenar qualquer tabela clicando no cabeçalho (1º clique: maior para menor; 2º: menor para maior).
+   Vale para todas as tabelas do site (ações, BDRs, FIIs, stocks, rankings, comparador...). Texto ordena de A a Z. */
+function valorCelula(td) {
+  if (!td) return null;
+  const bruto = (td.dataset.v !== undefined ? td.dataset.v : td.innerText || "").trim();
+  if (!bruto || /^(n\/d|nd|—|-|–)$/i.test(bruto)) return null;
+  const data = bruto.match(/^(\d{2})\/(\d{2})\/(\d{4})/);
+  if (data) return { n: Number(data[3] + data[2] + data[1]) };
+  const limpo = bruto.replace(/R\$|US\$|€|%|▲|▼|\bpts?\b|\bpp\b|\bx\b|\b(bi|mi|mil|tri)\b|[\s()+]/gi, "");
+  if (/[a-zà-ú]/i.test(limpo)) return { t: bruto.toLocaleLowerCase("pt-BR") };
+  const m = bruto.match(/[-−]?\d[\d.]*(,\d+)?/);
+  if (!m) return { t: bruto.toLocaleLowerCase("pt-BR") };
+  let n = Number(m[0].replace("−", "-").replace(/\./g, "").replace(",", "."));
+  if (/\btri\b/i.test(bruto)) n *= 1e12; else if (/\bbi\b/i.test(bruto)) n *= 1e9; else if (/\bmi\b/i.test(bruto)) n *= 1e6; else if (/\bmil\b/i.test(bruto)) n *= 1e3;
+  return isFinite(n) ? { n } : null;
+}
+document.addEventListener("click", (e) => {
+  const th = e.target.closest("table thead th");
+  if (!th || th.classList.contains("ord") || e.target.closest("a, button, input, select")) return;   // th.ord: tabela que já ordena sozinha (lista de ações, BDRs e stocks)
+  const tabela = th.closest("table"), corpo = tabela.tBodies[0];
+  if (!corpo || tabela.classList.contains("sem-ordem")) return;
+  const idx = [...th.parentNode.children].indexOf(th);
+  const linhas = [...corpo.rows].filter((r) => r.cells.length > idx && !r.querySelector("td[colspan]"));
+  if (linhas.length < 2) return;
+  const vals = linhas.map((r) => valorCelula(r.cells[idx]));
+  const numerica = vals.filter((v) => v && v.n !== undefined).length >= vals.filter(Boolean).length / 2;
+  const atual = th.dataset.ordem, nova = atual ? (atual === "desc" ? "asc" : "desc") : (numerica ? "desc" : "asc");
+  $$("th[data-ordem]", tabela).forEach((x) => { delete x.dataset.ordem; });
+  th.dataset.ordem = nova;
+  const pares = linhas.map((r, i) => [r, vals[i]]);
+  pares.sort((a, b) => {
+    const va = a[1], vb = b[1];
+    if (!va) return 1; if (!vb) return -1;
+    const c = numerica ? (va.n ?? -Infinity) - (vb.n ?? -Infinity) : String(va.t ?? va.n).localeCompare(String(vb.t ?? vb.n), "pt-BR", { numeric: true });
+    return nova === "asc" ? c : -c;
+  });
+  pares.forEach(([r]) => corpo.appendChild(r));
+});

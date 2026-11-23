@@ -236,6 +236,11 @@ tbody tr:last-child td { border-bottom: 0; }
 tbody tr.clicavel { cursor: pointer; }
 tbody tr:hover td { background: var(--sup-2); }
 th.n, td.n { text-align: right; }
+/* cabeçalhos de tabela ordenáveis (clique: maior para menor, depois menor para maior) */
+table thead th { cursor: pointer; user-select: none; }
+table thead th:hover { color: var(--txt); }
+table thead th[data-ordem="desc"]::after { content: " ▼"; font-size: .7em; }
+table thead th[data-ordem="asc"]::after { content: " ▲"; font-size: .7em; }
 td.melhor { color: var(--pos); font-weight: 700; background: var(--pos-fundo); }
 td.pior { color: var(--neg); background: var(--neg-fundo); }
 tr.grupo-linha td { background: var(--sup-3); font-weight: 700; font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--txt-2); }
