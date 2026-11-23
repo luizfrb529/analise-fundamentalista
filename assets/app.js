@@ -2448,18 +2448,29 @@ function pgEstudar(app) {
     } catch (e) { alert("Não reconheci o texto colado. Copie de novo no outro aparelho."); }
   };
 }
+// tijolo: fundos donos de imóveis ou ativos reais; papel: fundos de crédito (CRI, CRA, debêntures). Híbridos e fundos de fundos ficam fora das duas classes.
+const SETORES_TIJOLO = new Set(["Logística", "Lajes corporativas", "Shoppings", "Renda urbana", "Tijolo multissetorial", "Agro", "Energia", "Desenvolvimento"]);
+function classeFii(f) {
+  const tp = f.tipo || "fii";
+  if (tp === "fiagro" || tp === "infra" || /receb/i.test(f.setor || "")) return "papel";
+  if (SETORES_TIJOLO.has(f.setor)) return "tijolo";
+  return null;
+}
 function pgFiis(app, q) {
   const tipo = (q && q.get && q.get("tipo")) || "todos", setor = (q && q.get && q.get("setor")) || "", ordem = FII_METRICAS[(q && q.get && q.get("ordem")) || ""] ? q.get("ordem") : "pl";
+  const classes = new Set(((q && q.get && q.get("classe")) || "").split(",").filter((c) => c === "tijolo" || c === "papel"));
   const todos = D.fiis || [];
   const M = FII_METRICAS[ordem];
-  const l = todos.filter((f) => (tipo === "todos" || (f.tipo || "fii") === tipo) && (!setor || f.setor === setor))
+  const l = todos.filter((f) => (tipo === "todos" || (f.tipo || "fii") === tipo) && (!setor || f.setor === setor) && (!classes.size || classes.has(classeFii(f))))
     .sort((a, b) => { const va = M.v(a), vb = M.v(b); if (!ok(va)) return 1; if (!ok(vb)) return -1; return M.dir > 0 ? vb - va : va - vb; });
-  const url = (o) => { const p = new URLSearchParams(); const x = { tipo, setor, ordem, ...o }; if (x.tipo && x.tipo !== "todos") p.set("tipo", x.tipo); if (x.setor) p.set("setor", x.setor); if (x.ordem && x.ordem !== "pl") p.set("ordem", x.ordem); const s0 = p.toString(); return "#/fiis" + (s0 ? "?" + s0 : ""); };
+  const url = (o) => { const p = new URLSearchParams(); const x = { tipo, setor, ordem, classe: [...classes].join(","), ...o }; if (x.tipo && x.tipo !== "todos") p.set("tipo", x.tipo); if (x.setor) p.set("setor", x.setor); if (x.classe) p.set("classe", x.classe); if (x.ordem && x.ordem !== "pl") p.set("ordem", x.ordem); const s0 = p.toString(); return "#/fiis" + (s0 ? "?" + s0 : ""); };
+  const qtdClasse = (c) => todos.filter((f) => (tipo === "todos" || (f.tipo || "fii") === tipo) && classeFii(f) === c).length;
   const setores = [...new Set(todos.map((f) => f.setor).filter(Boolean))].sort((a, b) => a.localeCompare(b, "pt-BR"));
   const qtd = (k) => todos.filter((f) => (f.tipo || "fii") === k).length;
   app.innerHTML = `${trilha([["Fundos imobiliários"]])}<div class="cab-pagina"><div><h1>Fundos imobiliários</h1>
     <p>FIIs, Fiagros e FI-Infra listados na B3: rendimentos, patrimônio e carteira, com dados oficiais da CVM e da B3.</p></div></div>
   <div class="chips" id="fii-tipo" style="margin-bottom:14px">${[["todos", "Todos", todos.length], ["fii", "FII", qtd("fii")], ["fiagro", "Fiagro", qtd("fiagro")], ["infra", "FI-Infra", qtd("infra")]].filter(([k, , n]) => k === "todos" || n).map(([k, n, c]) => `<a class="chip${tipo === k ? " ativo" : ""}" href="${url({ tipo: k })}">${n} <span class="muted">${c}</span></a>`).join("")}</div>
+  <div class="linha fii-classe" style="gap:18px;margin-bottom:12px">${[["tijolo", "Fundos de tijolo", "Donos de imóveis e outros ativos reais: logística, lajes, shoppings, renda urbana, agro, energia e desenvolvimento."], ["papel", "Fundos de papel", "Fundos de crédito: CRI, CRA (Fiagros) e debêntures (FI-Infra)."]].map(([k, n, d]) => `<label class="chk" title="${esc(d)}"><input type="checkbox" data-classe="${k}"${classes.has(k) ? " checked" : ""}> ${n} <span class="muted">${qtdClasse(k)}</span></label>`).join("")}<span class="sub">Híbridos e fundos de fundos aparecem só sem filtro marcado.</span></div>
   <div class="linha" style="gap:10px;margin-bottom:14px"><label class="sub">Setor <select id="fii-setor"><option value="">Todos os setores</option>${setores.map((x) => `<option${x === setor ? " selected" : ""}>${esc(x)}</option>`).join("")}</select></label>
     <label class="sub">Ordenar por <select id="fii-ordem">${Object.entries(FII_METRICAS).map(([k, x]) => `<option value="${k}"${k === ordem ? " selected" : ""}>${esc(x.nome)}</option>`).join("")}</select></label></div>
   <div class="cartao"><div class="tabela-wrap"><table class="resp"><thead><tr><th>Fundo</th><th>Setor</th><th class="n">Preço</th><th class="n">P/VP</th><th class="n">DY 12m</th><th class="n">Último rend.</th><th class="n">Patrimônio</th><th class="n">Liquidez diária</th><th class="n">Rend. 3 anos</th><th class="n">VP 3 anos</th><th class="n">12 meses</th></tr></thead><tbody>
@@ -2469,6 +2480,7 @@ function pgFiis(app, q) {
     <td class="n" data-label="Liquidez diária">${ok(f.liquidez_21) ? "R$ " + grande(f.liquidez_21) : ND}</td><td class="n" data-label="Rend. 3 anos">${fmtU(f.cagr_rend_3a, "pct")}</td><td class="n" data-label="VP 3 anos">${fmtU(f.cagr_vp_3a, "pct")}</td><td class="n" data-label="12 meses">${varHtml(f.var_12m)}</td></tr>`; }).join("") || '<tr><td colspan="11" class="vazio">Nenhum fundo neste recorte.</td></tr>'}
   </tbody></table></div><p class="sub" style="margin-top:10px">Preço da B3 (Yahoo Finance, atraso de até 15 minutos). Patrimônio e valor patrimonial: Informe Mensal da CVM (FII e Fiagro) e Informe Diário (FI-Infra). Rendimentos: avisos aos cotistas no FundosNet (FII e Fiagro) e proventos da B3 (FI-Infra). Crescimento de 3 anos ajustado por desdobramentos de cotas.</p></div>`;
   $("#fii-setor").onchange = (e) => { location.hash = url({ setor: e.target.value }); };
+  $$("[data-classe]").forEach((c) => c.onchange = () => { location.hash = url({ classe: $$("[data-classe]").filter((x) => x.checked).map((x) => x.dataset.classe).join(",") }); });
   $("#fii-ordem").onchange = (e) => { location.hash = url({ ordem: e.target.value }); };
 }
 function fiiPreco(t, padrao) { const v = D.vivoFii && D.vivoFii[t]; return v && ok(v.preco) ? v.preco : padrao; }

@@ -823,3 +823,9 @@ select { max-width: 100%; }
 .est-nota { width: 100%; resize: vertical; min-height: 44px; padding: 8px 10px; border: 1px solid var(--borda); border-radius: 8px; background: var(--sup-2); color: inherit; font: inherit; font-size: .86rem; }
 .est-acoes { display: grid; gap: 6px; justify-items: end; }
 @media (max-width: 760px) { .est-item { grid-template-columns: 1fr auto; } .est-nota { grid-column: 1 / -1; } .est-acoes { grid-column: 1 / -1; grid-auto-flow: column; justify-content: space-between; align-items: center; } }
+
+/* FIIs: filtro tijolo / papel */
+.fii-classe { align-items: center; flex-wrap: wrap; }
+.fii-classe .chk { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1px solid var(--borda); border-radius: 10px; background: var(--sup); font-weight: 600; font-size: .86rem; cursor: pointer; }
+.fii-classe .chk:has(input:checked) { border-color: var(--pos); background: var(--pos-fundo); }
+.fii-classe .chk input { width: 16px; height: 16px; accent-color: var(--pos); cursor: pointer; }
