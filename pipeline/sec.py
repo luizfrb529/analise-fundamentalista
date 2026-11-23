@@ -45,8 +45,12 @@ CONCEITOS = {
     "receber": ["AccountsReceivableNetCurrent"],
     "estoques": ["InventoryNet"],
     "fornecedores": ["AccountsPayableCurrent"],
-    "divida_cp": ["LongTermDebtCurrent", "DebtCurrent", "ShortTermBorrowings"],
-    "divida_lp": ["LongTermDebtNoncurrent", "LongTermDebt", "Borrowings"],
+    # dívida: as contas extras (notas e dívida com arrendamento) só entram quando são as mais recentes; Oracle e AbbVie usam essas
+    # e as debêntures conversíveis (Snowflake, Cloudflare, Akamai), notas da Realty Income e o total combinado da Super Micro
+    "divida_cp": ["LongTermDebtCurrent", "DebtCurrent", "ShortTermBorrowings", "LongTermDebtAndCapitalLeaseObligationsCurrent", "NotesPayableCurrent",
+                  "ConvertibleDebtCurrent", "ConvertibleNotesPayableCurrent"],
+    "divida_lp": ["LongTermDebtNoncurrent", "LongTermDebt", "Borrowings", "LongTermDebtAndCapitalLeaseObligations", "LongTermNotesPayable",
+                  "ConvertibleDebtNoncurrent", "NotesPayable", "SeniorNotes", "OtherLongTermDebtNoncurrent", "DebtLongtermAndShorttermCombinedAmount"],
     "carteira": ["LoansAndAdvancesToCustomers"],
 }
 SALDOS = {"ativo", "ativo_circ", "passivo_circ", "passivo_total", "pl", "pl_total", "_nci", "caixa", "receber", "estoques",

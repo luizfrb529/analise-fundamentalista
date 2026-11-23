@@ -367,6 +367,48 @@ def google_news(consulta: str, lingua: str = "pt-BR", pais: str = "BR", limite: 
     return itens[:limite]
 
 
+SMALLCAPS = "https://www.smallcaps.com.br/wp-json/wp/v2"
+_SMALLCAPS: dict = {}
+
+
+def smallcaps_posts(paginas: int = 2) -> list[dict]:
+    """Artigos do SmallCaps.com.br (WordPress, API aberta): ~100 posts por página cobrem cerca de 1,5 ano.
+    Cada post traz os códigos de negociação citados (tags como 'fesa4' e códigos entre parênteses no título).
+    Busca uma vez por execução."""
+    if "posts" in _SMALLCAPS:
+        return _SMALLCAPS["posts"]
+    posts, ids = [], set()
+    try:
+        for p in range(1, paginas + 1):
+            lote = get(f"{SMALLCAPS}/posts?per_page=100&page={p}&_fields=title,link,date_gmt,tags").json()
+            posts += lote
+            for x in lote:
+                ids.update(x.get("tags") or [])
+        nomes, ids = {}, sorted(ids)
+        for i in range(0, len(ids), 100):
+            for tg in get(f"{SMALLCAPS}/tags?per_page=100&include={','.join(map(str, ids[i:i + 100]))}&_fields=id,slug").json():
+                nomes[tg["id"]] = tg["slug"]
+    except Exception as e:
+        print(f"  [smallcaps] {e}")
+        _SMALLCAPS["posts"] = []
+        return []
+    import html
+    out = []
+    for x in posts:
+        titulo = html.unescape(re.sub(r"<[^>]+>", "", (x.get("title") or {}).get("rendered", ""))).strip()
+        cods = {nomes.get(t, "").upper() for t in x.get("tags") or []}
+        cods |= set(re.findall(r"\(([A-Z]{4}\d{1,2})\)", titulo))
+        cods = {c for c in cods if re.fullmatch(r"[A-Z]{4}\d{1,2}", c)}
+        data = (x.get("date_gmt") or "") + "+00:00" if x.get("date_gmt") else None
+        out.append({"titulo": titulo, "veiculo": "SmallCaps", "data": data, "link": x.get("link"), "_cods": cods})
+    _SMALLCAPS["posts"] = out
+    return out
+
+
+def smallcaps_empresa(ticker: str) -> list[dict]:
+    return [{k: v for k, v in x.items() if k != "_cods"} for x in smallcaps_posts() if ticker.upper() in x["_cods"]]
+
+
 def noticias_empresa(nome: str, ticker: str, ticker_exterior: str | None = None, limite: int = 15) -> list[dict]:
     """Notícias de negócio e resultado da empresa: busca direcionada a termos de mercado e peneira por título
     (indicators.noticia_financeira). Para BDRs, inclui a imprensa em inglês."""
@@ -382,6 +424,9 @@ def noticias_empresa(nome: str, ticker: str, ticker_exterior: str | None = None,
         en = [dict(x, lingua="en") for x in google_news(f'("{nome}" OR {ticker_exterior}) (stock OR earnings OR shares OR revenue OR profit)', "en-US", "US", 40)
               if I.noticia_financeira(x["titulo"], x["veiculo"], nome, ticker_exterior)]
         itens = itens + en
+    else:
+        # artigos do SmallCaps.com.br sobre a empresa (só código da B3; o site cobre a bolsa brasileira)
+        itens = itens + smallcaps_empresa(ticker)
     vistos, out = set(), []
     for x in sorted(itens, key=lambda x: x["data"] or "", reverse=True):
         chave = x["titulo"].strip().lower()

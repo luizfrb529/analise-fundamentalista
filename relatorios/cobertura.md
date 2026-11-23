@@ -1,6 +1,6 @@
 # Relatório de cobertura de dados
 
-Gerado em 22/11/2026 09:20 | Preços de fechamento de 2026-11-20 | Balanços até 3T2026
+Gerado em 23/11/2026 15:19 | Preços de fechamento de 2026-11-20 | Balanços até 3T2026
 
 | Ticker | Modelo | Balanço | Fonte | Indicadores com valor | Faltando |
 |---|---|---|---|---|---|
@@ -40,7 +40,7 @@ Gerado em 22/11/2026 09:20 | Preços de fechamento de 2026-11-20 | Balanços at�
 | DEXP3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/102 | 5 |
 | SUZB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
 | KLBN11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
-| RANI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 101/102 | 1 |
+| RANI3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/102 | 2 |
 | AXIA3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 92/102 | 10 |
 | ALUP11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
 | TAEE11 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
@@ -68,7 +68,7 @@ Gerado em 22/11/2026 09:20 | Preços de fechamento de 2026-11-20 | Balanços at�
 | VULC3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
 | SBFG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
 | AMOB3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 77/102 | 25 |
-| MELI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 88/101 | 13 |
+| MELI34 | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 89/101 | 12 |
 | MRVE3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 81/102 | 21 |
 | TEND3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
 | DIRR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/102 | 2 |
@@ -100,7 +100,7 @@ Gerado em 22/11/2026 09:20 | Preços de fechamento de 2026-11-20 | Balanços at�
 | ECOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 91/102 | 11 |
 | SEQL3 | RECUPERACAO | 2026-09-30 | CVM (DFP/ITR, consolidado) | 71/92 | 21 |
 | LOGG3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 90/102 | 12 |
-| ALOS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 97/102 | 5 |
+| ALOS3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 98/102 | 4 |
 | JHSF3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 100/102 | 2 |
 | RDOR3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 94/102 | 8 |
 | FLRY3 | GERAL | 2026-09-30 | CVM (DFP/ITR, consolidado) | 99/102 | 3 |
@@ -159,7 +159,7 @@ Gerado em 22/11/2026 09:20 | Preços de fechamento de 2026-11-20 | Balanços at�
 | ARM | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 38/96 | 58 |
 | NVTS | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 48/96 | 48 |
 | LAES | GERAL | None | SEC EDGAR (XBRL) | 15/96 | 81 |
-| CBRS | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 30/96 | 66 |
+| CBRS | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 36/96 | 60 |
 | MU | GERAL | 2026-09-03 | SEC EDGAR (XBRL) | 90/96 | 6 |
 | SNDK | GERAL | 2026-10-02 | SEC EDGAR (XBRL) | 73/96 | 23 |
 | WDC | GERAL | 2026-10-02 | SEC EDGAR (XBRL) | 87/96 | 9 |
@@ -175,20 +175,20 @@ Gerado em 22/11/2026 09:20 | Preços de fechamento de 2026-11-20 | Balanços at�
 | GLW | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 84/96 | 12 |
 | DELL | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 85/96 | 11 |
 | HPE | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 82/96 | 14 |
-| SMCI | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 72/96 | 24 |
+| SMCI | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 86/96 | 10 |
 | VRT | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 89/96 | 7 |
 | VICR | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 70/96 | 26 |
-| NBIS | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 34/96 | 62 |
-| CRWV | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 46/96 | 50 |
+| NBIS | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 43/96 | 53 |
+| CRWV | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 58/96 | 38 |
 | IREN | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 57/96 | 39 |
-| APLD | GERAL | 2026-08-31 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 33/96 | 63 |
+| APLD | GERAL | 2026-08-31 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 39/96 | 57 |
 | AAPL | GERAL | 2026-09-26 | SEC EDGAR (XBRL) | 94/96 | 2 |
 | NOW | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 84/96 | 12 |
 | ORCL | GERAL | 2026-08-31 | SEC EDGAR (XBRL) | 88/96 | 8 |
 | MSFT | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 94/96 | 2 |
 | PLTR | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 63/96 | 33 |
-| SNOW | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 54/96 | 42 |
-| NET | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 53/96 | 43 |
+| SNOW | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 65/96 | 31 |
+| NET | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 65/96 | 31 |
 | FSLY | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 50/96 | 46 |
 | GTLB | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 53/96 | 43 |
 | DOCN | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 83/96 | 13 |
@@ -207,9 +207,9 @@ Gerado em 22/11/2026 09:20 | Preços de fechamento de 2026-11-20 | Balanços at�
 | QNT | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 29/96 | 67 |
 | VST | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 88/96 | 8 |
 | CEG | GERAL | 2026-06-30 | SEC EDGAR (XBRL) | 78/96 | 18 |
-| GEV | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 50/96 | 46 |
+| GEV | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 52/96 | 44 |
 | BE | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 74/96 | 22 |
-| FCEL | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 59/96 | 37 |
+| FCEL | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 60/96 | 36 |
 | PWR | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 92/96 | 4 |
 | FPS | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 71/96 | 25 |
 | BWXT | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 89/96 | 7 |
@@ -217,14 +217,14 @@ Gerado em 22/11/2026 09:20 | Preços de fechamento de 2026-11-20 | Balanços at�
 | UEC | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 49/96 | 47 |
 | RKLB | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 62/96 | 34 |
 | ASTS | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 56/96 | 40 |
-| SPCX | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 30/96 | 66 |
+| SPCX | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 36/96 | 60 |
 | UMAC | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 42/96 | 54 |
 | AMZN | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 84/96 | 12 |
-| MELI | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 84/96 | 12 |
+| MELI | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 85/96 | 11 |
 | CPNG | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 67/96 | 29 |
 | LQDT | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 63/96 | 33 |
-| COST | GERAL | 2026-08-31 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 53/96 | 43 |
-| HD | GERAL | 2026-11-01 | SEC EDGAR (XBRL) | 71/96 | 25 |
+| COST | GERAL | 2026-08-31 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 62/96 | 34 |
+| HD | GERAL | 2026-11-01 | SEC EDGAR (XBRL) | 85/96 | 11 |
 | FIVE | GERAL | 2026-08-01 | SEC EDGAR (XBRL) | 68/96 | 28 |
 | TSLA | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 81/96 | 15 |
 | NFLX | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 87/96 | 9 |
@@ -238,26 +238,26 @@ Gerado em 22/11/2026 09:20 | Preços de fechamento de 2026-11-20 | Balanços at�
 | SOFI | BANCO | 2026-09-30 | SEC EDGAR (XBRL) | 43/62 | 19 |
 | GS | BANCO | 2026-09-30 | SEC EDGAR (XBRL) | 49/62 | 13 |
 | MS | BANCO | 2026-09-30 | SEC EDGAR (XBRL) | 48/62 | 14 |
-| HOOD | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 56/96 | 40 |
+| HOOD | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 57/96 | 39 |
 | XP | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 48/96 | 48 |
-| BN | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 46/96 | 50 |
-| BRK-B | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 58/96 | 38 |
+| BN | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 52/96 | 44 |
+| BRK-B | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 60/96 | 36 |
 | MSTR | TESOURARIA_CRIPTO | 2026-09-30 | SEC EDGAR (XBRL) | 62/90 | 28 |
 | BMNR | TESOURARIA_CRIPTO | 2026-08-31 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 38/90 | 52 |
 | MARA | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 62/96 | 34 |
 | LLY | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 68/96 | 28 |
 | JNJ | GERAL | 2026-09-27 | SEC EDGAR (XBRL) | 84/96 | 12 |
-| ABBV | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 84/96 | 12 |
+| ABBV | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 87/96 | 9 |
 | MRK | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 79/96 | 17 |
 | UNH | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 90/96 | 6 |
 | TARA | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 35/96 | 61 |
-| OXY | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 75/96 | 21 |
-| USAR | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 48/96 | 48 |
+| OXY | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 76/96 | 20 |
+| USAR | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 49/96 | 47 |
 | VZ | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 78/96 | 18 |
 | CSCO | GERAL | 2026-10-24 | SEC EDGAR (XBRL) | 86/96 | 10 |
 | ANET | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 68/96 | 28 |
 | IBM | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 77/96 | 19 |
-| VRSN | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 42/96 | 54 |
+| VRSN | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 50/96 | 46 |
 | V | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 77/96 | 19 |
 | MA | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 88/96 | 8 |
 | AXP | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 67/96 | 29 |
@@ -266,32 +266,32 @@ Gerado em 22/11/2026 09:20 | Preços de fechamento de 2026-11-20 | Balanços at�
 | CB | SEGURADORA | 2026-09-30 | SEC EDGAR (XBRL) | 53/58 | 5 |
 | MCO | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 91/96 | 5 |
 | WMT | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 91/96 | 5 |
-| KR | GERAL | 2026-07-31 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 51/96 | 45 |
-| KO | GERAL | 2026-10-02 | SEC EDGAR (XBRL) | 76/96 | 20 |
-| KHC | GERAL | 2026-09-26 | SEC EDGAR (XBRL) | 47/96 | 49 |
+| KR | GERAL | 2026-07-31 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 57/96 | 39 |
+| KO | GERAL | 2026-10-02 | SEC EDGAR (XBRL) | 93/96 | 3 |
+| KHC | GERAL | 2026-09-26 | SEC EDGAR (XBRL) | 56/96 | 40 |
 | STZ | GERAL | 2026-08-31 | SEC EDGAR (XBRL) | 88/96 | 8 |
-| SIRI | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 72/96 | 24 |
+| SIRI | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 89/96 | 7 |
 | NYT | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 72/96 | 24 |
-| LEN | GERAL | 2026-08-31 | SEC EDGAR (XBRL) | 59/96 | 37 |
-| NEE | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 49/96 | 47 |
-| SO | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 43/96 | 53 |
-| DUK | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 47/96 | 49 |
+| LEN | GERAL | 2026-08-31 | SEC EDGAR (XBRL) | 61/96 | 35 |
+| NEE | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 55/96 | 41 |
+| SO | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 49/96 | 47 |
+| DUK | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 53/96 | 43 |
 | ETN | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 89/96 | 7 |
-| DVA | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 66/96 | 30 |
-| XOM | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 40/96 | 56 |
+| DVA | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 82/96 | 14 |
+| XOM | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 46/96 | 50 |
 | CVX | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 59/96 | 37 |
 | COP | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 63/96 | 33 |
 | SCCO | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 92/96 | 4 |
 | NEM | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 65/96 | 31 |
 | NUE | GERAL | 2026-10-03 | SEC EDGAR (XBRL) | 80/96 | 16 |
-| LPX | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 67/96 | 29 |
+| LPX | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 80/96 | 16 |
 | GE | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 65/96 | 31 |
 | RTX | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 83/96 | 13 |
 | LMT | GERAL | 2026-09-27 | SEC EDGAR (XBRL) | 86/96 | 10 |
 | BA | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 77/96 | 19 |
 | COIN | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 74/96 | 22 |
-| GLXY | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 41/96 | 55 |
-| CRCL | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 55/96 | 41 |
+| GLXY | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 47/96 | 49 |
+| CRCL | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 69/96 | 27 |
 | TMUS | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 90/96 | 6 |
 | T | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 76/96 | 20 |
 | CMCSA | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 83/96 | 13 |
@@ -313,87 +313,79 @@ Gerado em 22/11/2026 09:20 | Preços de fechamento de 2026-11-20 | Balanços at�
 | ADSK | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 86/96 | 10 |
 | SNPS | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 89/96 | 7 |
 | CRWD | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 50/96 | 46 |
-| AKAM | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 68/96 | 28 |
+| AKAM | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 84/96 | 12 |
 | PATH | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 62/96 | 34 |
-| SOUN | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 37/96 | 59 |
+| SOUN | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 45/96 | 51 |
 | BBAI | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 60/96 | 36 |
-| WETO | GERAL | None | SEC EDGAR (XBRL) | 14/96 | 82 |
 | APP | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 82/96 | 14 |
 | RDDT | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 57/96 | 39 |
 | SNAP | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 69/96 | 27 |
 | TTD | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 70/96 | 26 |
-| APH | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 78/96 | 18 |
-| FLEX | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 50/96 | 46 |
+| APH | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 95/96 | 1 |
+| FLEX | GERAL | 2026-03-31 | SEC EDGAR (XBRL) | 81/96 | 15 |
 | JBL | GERAL | 2026-08-31 | SEC EDGAR (XBRL) | 91/96 | 5 |
-| CLS | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 54/96 | 42 |
-| HUT | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 47/96 | 49 |
+| CLS | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 68/96 | 28 |
+| HUT | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 56/96 | 40 |
 | CORZ | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 52/96 | 44 |
-| NUAI | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 45/96 | 51 |
+| NUAI | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 53/96 | 43 |
 | WFC | BANCO | 2026-09-30 | SEC EDGAR (XBRL) | 50/62 | 12 |
 | XYZ | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 84/96 | 12 |
 | AFRM | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 69/96 | 27 |
 | BLK | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 72/96 | 24 |
 | BX | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 66/96 | 30 |
 | AON | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 89/96 | 7 |
-| PLD | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 55/96 | 41 |
-| O | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 53/96 | 43 |
+| PLD | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 61/96 | 35 |
+| O | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 58/96 | 38 |
 | VICI | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 77/96 | 19 |
 | CBRE | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 84/96 | 12 |
-| HHH | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 43/96 | 53 |
+| HHH | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 57/96 | 39 |
 | BABA | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 51/96 | 45 |
-| SE | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 41/96 | 55 |
-| DASH | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 60/96 | 36 |
-| GRAB | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 39/96 | 57 |
+| SE | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 50/96 | 46 |
+| DASH | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 76/96 | 20 |
+| GRAB | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 47/96 | 49 |
 | CPRT | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 64/96 | 32 |
-| BKNG | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 68/96 | 28 |
-| DKNG | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 49/96 | 47 |
+| BKNG | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 84/96 | 12 |
+| DKNG | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 59/96 | 37 |
 | NKE | GERAL | 2026-08-31 | SEC EDGAR (XBRL) | 74/96 | 22 |
 | LULU | GERAL | 2026-08-02 | SEC EDGAR (XBRL) | 70/96 | 26 |
 | GIS | GERAL | 2026-08-30 | SEC EDGAR (XBRL) | 79/96 | 17 |
 | KMB | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 83/96 | 13 |
 | AMCR | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 79/96 | 17 |
 | QSR | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 71/96 | 25 |
-| PSKY | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 29/96 | 67 |
-| ZNB | GERAL | None | SEC EDGAR (XBRL) | 18/96 | 78 |
+| SKYD | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 67/96 | 29 |
 | LVWR | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 55/96 | 41 |
-| LOT | GERAL | 2025-12-31 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 28/96 | 68 |
-| CENN | GERAL | 2026-06-30 | SEC EDGAR (XBRL) | 59/96 | 37 |
-| INEO | GERAL | None | SEC EDGAR (XBRL) | 18/96 | 78 |
-| CAT | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 76/96 | 20 |
+| LOT | GERAL | 2025-12-31 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 33/96 | 63 |
+| CENN | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 59/96 | 37 |
+| CAT | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 93/96 | 3 |
 | PNR | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 89/96 | 7 |
 | EME | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 69/96 | 27 |
 | FIX | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 93/96 | 3 |
 | HON | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 90/96 | 6 |
-| NXAT | GERAL | None | SEC EDGAR (XBRL) | 14/96 | 82 |
-| AEHL | GERAL | None | SEC EDGAR (XBRL) | 16/96 | 80 |
 | FSLR | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 89/96 | 7 |
 | GNRC | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 81/96 | 15 |
 | EOSE | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 59/96 | 37 |
-| RAYA | GERAL | None | SEC EDGAR (XBRL) | 17/96 | 79 |
 | OKLO | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 42/96 | 54 |
 | SMR | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 45/96 | 51 |
-| FCX | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 41/96 | 55 |
+| FCX | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 47/96 | 49 |
 | LEU | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 82/96 | 14 |
 | UUUU | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 58/96 | 38 |
 | ADUR | GERAL | 2026-08-31 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 31/96 | 65 |
-| PCT | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 47/96 | 49 |
+| PCT | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 56/96 | 40 |
 | LOOP | GERAL | 2026-08-31 | SEC EDGAR (XBRL) | 43/96 | 53 |
 | AQMS | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 43/96 | 53 |
 | AXON | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 83/96 | 13 |
 | KTOS | GERAL | 2026-09-27 | SEC EDGAR (XBRL) | 63/96 | 33 |
 | AVAV | GERAL | 2026-08-01 | SEC EDGAR (XBRL) | 58/96 | 38 |
-| MRCY | GERAL | 2026-10-02 | SEC EDGAR (XBRL) | 62/96 | 34 |
-| PL | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 53/96 | 43 |
+| MRCY | GERAL | 2026-10-02 | SEC EDGAR (XBRL) | 78/96 | 18 |
+| PL | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 62/96 | 34 |
 | ACHR | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 51/96 | 45 |
-| ONDS | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 55/96 | 41 |
-| VJET | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 52/96 | 44 |
+| ONDS | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 64/96 | 32 |
+| VJET | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 59/96 | 37 |
 | NVO | GERAL | 2026-09-30 | SEC EDGAR (XBRL anual) + yfinance (LTM trimestral) | 49/96 | 47 |
 | ZTS | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 77/96 | 19 |
-| AKAN | GERAL | None | SEC EDGAR (XBRL) | 18/96 | 78 |
 | REGN | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 76/96 | 20 |
 | SNGX | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 44/96 | 52 |
 | PODD | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 71/96 | 25 |
-| POAS | GERAL | None | SEC EDGAR (XBRL) | 14/96 | 82 |
 | MEDS | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 47/96 | 49 |
 
 ## B3SA3
@@ -1043,6 +1035,7 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
+- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 
 ## AXIA3
 
@@ -1434,7 +1427,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
@@ -1901,7 +1893,6 @@ Indicadores sem valor e motivo:
 Indicadores sem valor e motivo:
 
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Participação do controlador (`controlador_pct`): FRE sem acionista marcado como controlador (controle difuso)
@@ -2416,7 +2407,7 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
-- proporção declarada 70 difere da implícita pelo preço 62.08
+- proporção declarada 70 difere da implícita pelo preço 62.94
 
 Indicadores sem valor e motivo:
 
@@ -2494,7 +2485,7 @@ Indicadores sem valor e motivo:
 ## NVDC34
 
 Avisos do pipeline:
-- proporção declarada 48 difere da implícita pelo preço 40.73
+- proporção declarada 48 difere da implícita pelo preço 41.30
 
 Indicadores sem valor e motivo:
 
@@ -2514,7 +2505,7 @@ Indicadores sem valor e motivo:
 ## MUTC34
 
 Avisos do pipeline:
-- proporção declarada 6 difere da implícita pelo preço 5.07
+- proporção declarada 6 difere da implícita pelo preço 5.14
 
 Indicadores sem valor e motivo:
 
@@ -2608,7 +2599,7 @@ Indicadores sem valor e motivo:
 ## V1RT34
 
 Avisos do pipeline:
-- proporção declarada 10 difere da implícita pelo preço 8.70
+- proporção declarada 10 difere da implícita pelo preço 8.82
 
 Indicadores sem valor e motivo:
 
@@ -2624,7 +2615,7 @@ Indicadores sem valor e motivo:
 ## RGTI34
 
 Avisos do pipeline:
-- proporção declarada 1 difere da implícita pelo preço 0.87
+- proporção declarada 1 difere da implícita pelo preço 0.88
 
 Indicadores sem valor e motivo:
 
@@ -2683,7 +2674,7 @@ Indicadores sem valor e motivo:
 ## QUBT34
 
 Avisos do pipeline:
-- proporção declarada 1 difere da implícita pelo preço 0.88
+- proporção declarada 1 difere da implícita pelo preço 0.90
 
 Indicadores sem valor e motivo:
 
@@ -2893,6 +2884,8 @@ Indicadores sem valor e motivo:
 
 ## NVDA
 
+Avisos do pipeline:
+- ações da SEC (24,100,000,000) incompatíveis com o valor de mercado do Yahoo; usadas 31,583,653,637 (fator 1.311, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -2933,6 +2926,8 @@ Indicadores sem valor e motivo:
 
 ## MRVL
 
+Avisos do pipeline:
+- ações da SEC (876,900,000) incompatíveis com o valor de mercado do Yahoo; usadas 1,055,760,625 (fator 1.204, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -3120,6 +3115,7 @@ Indicadores sem valor e motivo:
 Avisos do pipeline:
 - ações da SEC desatualizadas (última em 2024-08-02); usado o número do Yahoo
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- ações da SEC (269,507,528) incompatíveis com o valor de mercado do Yahoo; usadas 328,240,678 (fator 1.218, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -3174,6 +3170,8 @@ Indicadores sem valor e motivo:
 
 ## LAES
 
+Avisos do pipeline:
+- ações da SEC (191,525,129) incompatíveis com o valor de mercado do Yahoo; usadas 244,711,348 (fator 1.278, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -3264,10 +3262,10 @@ Indicadores sem valor e motivo:
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (0.83 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
@@ -3275,7 +3273,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
@@ -3289,16 +3286,12 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -3336,6 +3329,8 @@ Indicadores sem valor e motivo:
 
 ## MU
 
+Avisos do pipeline:
+- ações da SEC (1,131,423,212) incompatíveis com o valor de mercado do Yahoo; usadas 1,339,436,169 (fator 1.184, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -3349,7 +3344,7 @@ Indicadores sem valor e motivo:
 ## SNDK
 
 Avisos do pipeline:
-- ações da SEC (142,289,365) incompatíveis com o valor de mercado do Yahoo; usadas 955,559,886 (fator 6.716, classes ou ADR)
+- ações da SEC (142,289,365) incompatíveis com o valor de mercado do Yahoo; usadas 1,075,517,343 (fator 7.559, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -3405,6 +3400,7 @@ Indicadores sem valor e motivo:
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- ações da SEC (7,051,733,240) incompatíveis com o valor de mercado do Yahoo; usadas 8,430,487,282 (fator 1.196, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -3530,6 +3526,8 @@ Indicadores sem valor e motivo:
 
 ## AEHR
 
+Avisos do pipeline:
+- ações da SEC (32,794,791) incompatíveis com o valor de mercado do Yahoo; usadas 39,931,695 (fator 1.218, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -3577,6 +3575,8 @@ Indicadores sem valor e motivo:
 
 ## AXTI
 
+Avisos do pipeline:
+- ações da SEC (65,722,351) incompatíveis com o valor de mercado do Yahoo; usadas 80,707,137 (fator 1.228, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -3605,6 +3605,8 @@ Indicadores sem valor e motivo:
 
 ## AAOI
 
+Avisos do pipeline:
+- dívida da SEC (0.10 bi) bem abaixo da do Yahoo (0.28 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
@@ -3705,6 +3707,7 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- ações da SEC (635,812,750) incompatíveis com o valor de mercado do Yahoo; usadas 768,660,618 (fator 1.209, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -3742,27 +3745,15 @@ Indicadores sem valor e motivo:
 
 ## SMCI
 
+Avisos do pipeline:
+- dívida da SEC (3.98 bi) bem abaixo da do Yahoo (8.65 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -3823,39 +3814,32 @@ Indicadores sem valor e motivo:
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- ações da SEC (292,902,405) incompatíveis com o valor de mercado do Yahoo; usadas 352,592,390 (fator 1.204, classes ou ADR)
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (14.19 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita (principal) (`tir_implicita`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR - título de referência (`tir_spread_ref`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -3893,21 +3877,18 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- ações da SEC (556,125,724) incompatíveis com o valor de mercado do Yahoo; usadas 670,278,550 (fator 1.205, classes ou ADR)
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (46.87 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -3916,17 +3897,10 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de estoque (`pme`): empresa sem estoques relevantes
 - Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
 - CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 3 exercícios ou extremos negativos
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
@@ -3949,6 +3923,8 @@ Indicadores sem valor e motivo:
 
 ## IREN
 
+Avisos do pipeline:
+- ações da SEC (357,378,674) incompatíveis com o valor de mercado do Yahoo; usadas 525,779,528 (fator 1.471, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -3996,10 +3972,11 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - SEC em XBRL só até 2025-05-31; LTM até 2026-08-31 pelo yfinance
+- ações da SEC (302,387,140) incompatíveis com o valor de mercado do Yahoo; usadas 366,601,655 (fator 1.212, classes ou ADR)
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (6.38 bi) em 2026-08-31; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
@@ -4007,7 +3984,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
@@ -4021,16 +3997,12 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -4157,7 +4129,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
@@ -4165,25 +4136,15 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de estoque (`pme`): empresa sem estoques relevantes
 - Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
 - CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 8 exercícios ou extremos negativos
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
@@ -4207,32 +4168,20 @@ Avisos do pipeline:
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de estoque (`pme`): empresa sem estoques relevantes
 - Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
 - CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 9 exercícios ou extremos negativos
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
@@ -4404,7 +4353,7 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
-- ações da SEC (48,020,885) incompatíveis com o valor de mercado do Yahoo; usadas 201,157,880 (fator 4.189, classes ou ADR)
+- ações da SEC (48,020,885) incompatíveis com o valor de mercado do Yahoo; usadas 196,372,449 (fator 4.089, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -4479,6 +4428,7 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
+- ações da SEC (26,188,972) incompatíveis com o valor de mercado do Yahoo; usadas 33,272,640 (fator 1.27, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -4743,6 +4693,8 @@ Indicadores sem valor e motivo:
 
 ## IONQ
 
+Avisos do pipeline:
+- ações da SEC (432,462,651) incompatíveis com o valor de mercado do Yahoo; usadas 524,651,607 (fator 1.213, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -4939,7 +4891,7 @@ Indicadores sem valor e motivo:
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
-- ações da SEC (45,555,575) incompatíveis com o valor de mercado do Yahoo; usadas 267,894,220 (fator 5.881, classes ou ADR)
+- ações da SEC (45,555,575) incompatíveis com o valor de mercado do Yahoo; usadas 295,900,473 (fator 6.495, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -5069,7 +5021,6 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
 - Caixa (`caixa`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -5077,7 +5028,6 @@ Indicadores sem valor e motivo:
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
@@ -5103,6 +5053,8 @@ Indicadores sem valor e motivo:
 
 ## BE
 
+Avisos do pipeline:
+- ações da SEC (295,656,689) incompatíveis com o valor de mercado do Yahoo; usadas 349,300,173 (fator 1.181, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -5131,6 +5083,8 @@ Indicadores sem valor e motivo:
 
 ## FCEL
 
+Avisos do pipeline:
+- ações da SEC (79,954,196) incompatíveis com o valor de mercado do Yahoo; usadas 94,236,000 (fator 1.179, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -5140,7 +5094,6 @@ Indicadores sem valor e motivo:
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
@@ -5186,6 +5139,7 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- ações da SEC (274,527,094) incompatíveis com o valor de mercado do Yahoo; usadas 339,047,538 (fator 1.235, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -5382,6 +5336,7 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- ações da SEC (311,349,798) incompatíveis com o valor de mercado do Yahoo; usadas 439,474,784 (fator 1.412, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -5431,10 +5386,10 @@ Indicadores sem valor e motivo:
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (38.84 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
@@ -5442,7 +5397,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
@@ -5456,16 +5410,12 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -5587,7 +5537,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
@@ -5601,6 +5550,7 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- dívida da SEC (0.77 bi) bem abaixo da do Yahoo (1.76 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
@@ -5677,33 +5627,25 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (6.16 bi) em 2026-08-31; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -5729,26 +5671,12 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - Capex (`capex`): conta não encontrada na fonte ou não aplicável ao modelo
 - FCL (`fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -6039,6 +5967,7 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- dívida da SEC (2.66 bi) bem abaixo da do Yahoo (22.14 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
@@ -6056,7 +5985,6 @@ Indicadores sem valor e motivo:
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -6145,17 +6073,16 @@ Indicadores sem valor e motivo:
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (282.07 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
@@ -6164,16 +6091,12 @@ Indicadores sem valor e motivo:
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -6204,6 +6127,7 @@ Indicadores sem valor e motivo:
 Avisos do pipeline:
 - ações da SEC desatualizadas (última em 2011-04-29); usado o número do Yahoo
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (130.78 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
@@ -6218,7 +6142,6 @@ Indicadores sem valor e motivo:
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
 - Caixa (`caixa`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -6227,7 +6150,6 @@ Indicadores sem valor e motivo:
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Prazo médio de estoque (`pme`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
@@ -6444,12 +6366,9 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - ROE (`roe`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 
 ## MRK
@@ -6570,7 +6489,6 @@ Indicadores sem valor e motivo:
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -6584,7 +6502,7 @@ Indicadores sem valor e motivo:
 ## USAR
 
 Avisos do pipeline:
-- ações da SEC (132,638,561) incompatíveis com o valor de mercado do Yahoo; usadas 375,319,927 (fator 2.83, classes ou ADR)
+- ações da SEC (132,638,561) incompatíveis com o valor de mercado do Yahoo; usadas 422,453,447 (fator 3.185, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -6609,7 +6527,6 @@ Indicadores sem valor e motivo:
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
@@ -6740,10 +6657,10 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - SEC em XBRL só até 2012-12-31; LTM até 2026-09-30 pelo yfinance
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (1.79 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/VP (`pvp`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
@@ -6751,17 +6668,11 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -6769,7 +6680,6 @@ Indicadores sem valor e motivo:
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -6949,17 +6859,16 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (15.37 bi) em 2026-07-31; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
@@ -6968,16 +6877,12 @@ Indicadores sem valor e motivo:
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -7003,33 +6908,15 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## KHC
 
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
@@ -7039,20 +6926,14 @@ Indicadores sem valor e motivo:
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -7061,8 +6942,6 @@ Indicadores sem valor e motivo:
 - Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
 - CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
@@ -7100,29 +6979,12 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de estoque (`pme`): empresa sem estoques relevantes
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 
 ## NYT
@@ -7161,6 +7023,7 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (5.88 bi) em 2026-08-31; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
@@ -7178,7 +7041,6 @@ Indicadores sem valor e motivo:
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
 - Caixa (`caixa`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -7188,7 +7050,6 @@ Indicadores sem valor e motivo:
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
@@ -7206,17 +7067,16 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - SEC em XBRL só até 2026-03-31; LTM até 2026-09-30 pelo yfinance
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (113.93 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
@@ -7225,16 +7085,12 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -7261,17 +7117,16 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - SEC em XBRL só até 2026-03-31; LTM até 2026-09-30 pelo yfinance
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (74.00 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
@@ -7281,16 +7136,12 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -7322,17 +7173,16 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - SEC em XBRL só até 2026-03-31; LTM até 2026-09-30 pelo yfinance
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (92.79 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
@@ -7341,16 +7191,12 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -7393,31 +7239,15 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/VP (`pvp`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Prazo médio de estoque (`pme`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - ROE (`roe`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -7428,17 +7258,16 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (34.25 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
@@ -7448,16 +7277,12 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -7490,6 +7315,8 @@ Indicadores sem valor e motivo:
 
 ## CVX
 
+Avisos do pipeline:
+- dívida da SEC (0.73 bi) bem abaixo da do Yahoo (33.53 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
@@ -7646,29 +7473,16 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 17 exercícios ou extremos negativos
 - CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 17 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
@@ -7807,18 +7621,16 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
-- ações da SEC (189,140,238) incompatíveis com o valor de mercado do Yahoo; usadas 584,145,212 (fator 3.088, classes ou ADR)
+- ações da SEC (189,140,238) incompatíveis com o valor de mercado do Yahoo; usadas 659,896,660 (fator 3.489, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
@@ -7829,13 +7641,9 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -7874,30 +7682,16 @@ Avisos do pipeline:
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Prazo médio de estoque (`pme`): empresa sem estoques relevantes
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
 - CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 3 exercícios ou extremos negativos
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
@@ -7918,6 +7712,8 @@ Indicadores sem valor e motivo:
 
 ## TMUS
 
+Avisos do pipeline:
+- dívida da SEC (6.34 bi) bem abaixo da do Yahoo (83.67 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
@@ -7981,7 +7777,7 @@ Indicadores sem valor e motivo:
 Avisos do pipeline:
 - ações da SEC desatualizadas (última em 2016-06-30); usado o número do Yahoo
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
-- ações da SEC (114,454,221) incompatíveis com o valor de mercado do Yahoo; usadas 179,051,557 (fator 1.564, classes ou ADR)
+- ações da SEC (114,454,221) incompatíveis com o valor de mercado do Yahoo; usadas 176,603,566 (fator 1.543, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -8004,6 +7800,8 @@ Indicadores sem valor e motivo:
 
 ## CRDO
 
+Avisos do pipeline:
+- ações da SEC (187,951,918) incompatíveis com o valor de mercado do Yahoo; usadas 224,860,965 (fator 1.196, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -8072,6 +7870,8 @@ Indicadores sem valor e motivo:
 
 ## ALAB
 
+Avisos do pipeline:
+- ações da SEC (174,782,075) incompatíveis com o valor de mercado do Yahoo; usadas 207,998,916 (fator 1.19, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -8120,6 +7920,7 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
+- ações da SEC (132,290,739) incompatíveis com o valor de mercado do Yahoo; usadas 198,412,590 (fator 1.5, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -8416,30 +8217,16 @@ Indicadores sem valor e motivo:
 
 ## AKAM
 
+Avisos do pipeline:
+- dívida da SEC (1.15 bi) bem abaixo da do Yahoo (7.57 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de estoque (`pme`): empresa sem estoques relevantes
 - Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -8498,7 +8285,6 @@ Avisos do pipeline:
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
@@ -8507,7 +8293,6 @@ Indicadores sem valor e motivo:
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -8518,12 +8303,8 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -8532,8 +8313,6 @@ Indicadores sem valor e motivo:
 - Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Prazo médio de estoque (`pme`): empresa sem estoques relevantes
 - Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
 - CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 5 exercícios ou extremos negativos
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
@@ -8599,97 +8378,6 @@ Indicadores sem valor e motivo:
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
-
-## WETO
-
-Avisos do pipeline:
-- ações da SEC (821,300, em 2026-06-30) ajustadas por desdobramento/grupamento posterior (fator 0.01)
-- ações da SEC (8,213) incompatíveis com o valor de mercado do Yahoo; usadas 14,935,715 (fator 1819, classes ou ADR)
-
-Indicadores sem valor e motivo:
-
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/VP (`pvp`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/Receita (PSR) (`psr`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Ativo (`p_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
-- P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- LPA (`lpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- VPA (`vpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
-- P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita (principal) (`tir_implicita`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR - título de referência (`tir_spread_ref`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Caixa (`caixa`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- PL/Ativos (`pl_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Passivos/Ativos (`passivos_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
-- Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem líquida (`margem_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Giro do ativo (`giro_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Prazo médio de estoque (`pme`): empresa sem estoques relevantes
-- Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROE (`roe`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROA (`roa`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
-- CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
-- CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 5 exercícios ou extremos negativos
-- CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
-- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 5 exercícios ou extremos negativos
-- CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
-- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 5 exercícios ou extremos negativos
-- CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
-- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 5 exercícios ou extremos negativos
-- CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- Receita LTM vs LTM anterior (`cresc_receita_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCO (`fco`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex (`capex`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCL (`fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- EBITDA (`ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
-- Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
-- Proventos por ação 12m (`dpa_12m`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividend Yield 12m (`dy`): conta não encontrada na fonte ou não aplicável ao modelo
-- Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
-- % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
-- Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
-- Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
-- Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- Nota por critérios (`nota_criterios`): conta não encontrada na fonte ou não aplicável ao modelo
-- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## APP
 
@@ -8834,78 +8522,28 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## FLEX
 
-Avisos do pipeline:
-- SEC em XBRL só até 2026-03-31; LTM até 2026-09-30 pelo yfinance
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
-- Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Prazo médio de estoque (`pme`): empresa sem estoques relevantes
-- Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
 - CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 19 exercícios ou extremos negativos
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- Capex (`capex`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCL (`fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - EBITDA (`ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
-- Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
-- Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 
 ## JBL
 
@@ -8923,29 +8561,15 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
 - CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 4 exercícios ou extremos negativos
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
@@ -8968,19 +8592,18 @@ Indicadores sem valor e motivo:
 
 ## HUT
 
+Avisos do pipeline:
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (7.63 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
@@ -8989,17 +8612,11 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de estoque (`pme`): empresa sem estoques relevantes
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
 - CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 4 exercícios ou extremos negativos
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
@@ -9076,15 +8693,12 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -9095,9 +8709,6 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -9105,8 +8716,6 @@ Indicadores sem valor e motivo:
 - Prazo médio de estoque (`pme`): empresa sem estoques relevantes
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
 - CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 3 exercícios ou extremos negativos
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
@@ -9236,8 +8845,6 @@ Indicadores sem valor e motivo:
 
 ## BX
 
-Avisos do pipeline:
-- ações da SEC (751,115,317) incompatíveis com o valor de mercado do Yahoo; usadas 1,234,373,483 (fator 1.643, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -9289,17 +8896,16 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - SEC em XBRL só até 2026-03-31; LTM até 2026-09-30 pelo yfinance
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (36.83 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
@@ -9307,16 +8913,12 @@ Indicadores sem valor e motivo:
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -9339,14 +8941,12 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
@@ -9354,9 +8954,6 @@ Indicadores sem valor e motivo:
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -9428,19 +9025,15 @@ Indicadores sem valor e motivo:
 
 ## HHH
 
+Avisos do pipeline:
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (5.70 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -9449,22 +9042,14 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Prazo médio de estoque (`pme`): empresa sem estoques relevantes
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
 - CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 4 exercícios ou extremos negativos
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
@@ -9489,7 +9074,7 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
-- ações da SEC (1,858,037,427) incompatíveis com o valor de mercado do Yahoo; usadas 19,901,960,391 (fator 10.71, classes ou ADR)
+- ações da SEC (1,858,037,427) incompatíveis com o valor de mercado do Yahoo; usadas 21,217,678,815 (fator 11.42, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -9544,34 +9129,26 @@ Indicadores sem valor e motivo:
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (1.22 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -9607,32 +9184,17 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (2.73 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Prazo médio de estoque (`pme`): empresa sem estoques relevantes
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
 - CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 8 exercícios ou extremos negativos
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
@@ -9652,35 +9214,28 @@ Indicadores sem valor e motivo:
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (2.07 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -9758,12 +9313,6 @@ Indicadores sem valor e motivo:
 
 - P/VP (`pvp`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Prazo médio de estoque (`pme`): empresa sem estoques relevantes
@@ -9771,28 +9320,18 @@ Indicadores sem valor e motivo:
 - ROE (`roe`): conta não encontrada na fonte ou não aplicável ao modelo
 - ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
 - ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
-- CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
-- CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 3 exercícios ou extremos negativos
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
-- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 3 exercícios ou extremos negativos
-- CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
-- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 3 exercícios ou extremos negativos
-- CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
-- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 3 exercícios ou extremos negativos
 - CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- Anos com receita crescendo (`consist_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- Estabilidade de margem (`estab_margem`): conta não encontrada na fonte ou não aplicável ao modelo
-- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## DKNG
 
 Avisos do pipeline:
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- dívida da SEC (1.25 bi) bem abaixo da do Yahoo (2.19 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
@@ -9800,27 +9339,18 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de estoque (`pme`): empresa sem estoques relevantes
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
 - CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 6 exercícios ou extremos negativos
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
@@ -9929,7 +9459,7 @@ Indicadores sem valor e motivo:
 ## KMB
 
 Avisos do pipeline:
-- ações da SEC (332,614,474) incompatíveis com o valor de mercado do Yahoo; usadas 613,675,342 (fator 1.845, classes ou ADR)
+- ações da SEC (332,614,474) incompatíveis com o valor de mercado do Yahoo; usadas 621,030,430 (fator 1.867, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -9975,6 +9505,7 @@ Indicadores sem valor e motivo:
 Avisos do pipeline:
 - ações da SEC desatualizadas (última em 2024-04-23); usado o número do Yahoo
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- ações da SEC (348,350,731) incompatíveis com o valor de mercado do Yahoo; usadas 463,039,631 (fator 1.329, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -10004,168 +9535,42 @@ Indicadores sem valor e motivo:
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 
-## PSKY
+## SKYD
 
 Avisos do pipeline:
-- SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
-- número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- ações da SEC (1,071,666,977) incompatíveis com o valor de mercado do Yahoo; usadas 5,186,599,798 (fator 4.84, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
-- Volatilidade anualizada (`volatilidade`): conta não encontrada na fonte ou não aplicável ao modelo
-- Beta (`beta`): histórico de preço curto
-- Maior queda em 5 anos (`drawdown_5a`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
+- P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita (principal) (`tir_implicita`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR - título de referência (`tir_spread_ref`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
-- Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Prazo médio de estoque (`pme`): empresa sem estoques relevantes
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
-- CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 4 exercícios ou extremos negativos
+- CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 2 exercícios ou extremos negativos
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
-- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 4 exercícios ou extremos negativos
+- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 2 exercícios ou extremos negativos
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
-- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 4 exercícios ou extremos negativos
+- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 2 exercícios ou extremos negativos
 - CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
-- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 4 exercícios ou extremos negativos
-- CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
+- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 2 exercícios ou extremos negativos
 - Receita LTM vs LTM anterior (`cresc_receita_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
 - Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex (`capex`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCL (`fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- EBITDA (`ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
 - Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
-- DY médio 5a (`dy_medio_5a`): sem proventos suficientes nos últimos 5 anos
-- Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
-- % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
-- Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
-- Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
-- Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-
-## ZNB
-
-Avisos do pipeline:
-- ações da SEC desatualizadas (última em 2023-06-30); usado o número do Yahoo
-- número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
-
-Indicadores sem valor e motivo:
-
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/VP (`pvp`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/Receita (PSR) (`psr`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Ativo (`p_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
-- P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- LPA (`lpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- VPA (`vpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
-- P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita (principal) (`tir_implicita`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR - título de referência (`tir_spread_ref`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Caixa (`caixa`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- PL/Ativos (`pl_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Passivos/Ativos (`passivos_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
-- Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem líquida (`margem_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Giro do ativo (`giro_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Prazo médio de estoque (`pme`): empresa sem estoques relevantes
-- Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROE (`roe`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROA (`roa`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
-- CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
-- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 10 exercícios ou extremos negativos
-- CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
-- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 10 exercícios ou extremos negativos
-- CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
-- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 10 exercícios ou extremos negativos
-- CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- Receita LTM vs LTM anterior (`cresc_receita_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCO (`fco`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex (`capex`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCL (`fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- EBITDA (`ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
-- Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
-- Proventos por ação 12m (`dpa_12m`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividend Yield 12m (`dy`): conta não encontrada na fonte ou não aplicável ao modelo
 - Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
-- % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
+- Estabilidade de margem (`estab_margem`): conta não encontrada na fonte ou não aplicável ao modelo
+- Qualidade contábil (Piotroski F-Score) (`piotroski`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## LVWR
 
@@ -10218,10 +9623,10 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (1.77 bi) em 2025-12-31; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/VP (`pvp`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
@@ -10230,7 +9635,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
@@ -10244,8 +9648,6 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -10253,7 +9655,6 @@ Indicadores sem valor e motivo:
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -10293,7 +9694,7 @@ Indicadores sem valor e motivo:
 ## CENN
 
 Avisos do pipeline:
-- ações da SEC (2,456,452) incompatíveis com o valor de mercado do Yahoo; usadas 37,585,453 (fator 15.3, classes ou ADR)
+- ações da SEC (67,585,452) incompatíveis com o valor de mercado do Yahoo; usadas 36,892,476 (fator 0.5459, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -10335,114 +9736,15 @@ Indicadores sem valor e motivo:
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
 
-## INEO
-
-
-Indicadores sem valor e motivo:
-
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/VP (`pvp`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/Receita (PSR) (`psr`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Ativo (`p_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
-- P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- LPA (`lpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- VPA (`vpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
-- P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Caixa (`caixa`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- PL/Ativos (`pl_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Passivos/Ativos (`passivos_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
-- Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem líquida (`margem_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Giro do ativo (`giro_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Prazo médio de estoque (`pme`): empresa sem estoques relevantes
-- Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROE (`roe`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROA (`roa`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
-- CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
-- CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 4 exercícios ou extremos negativos
-- CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
-- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 4 exercícios ou extremos negativos
-- CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
-- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 4 exercícios ou extremos negativos
-- CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
-- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 4 exercícios ou extremos negativos
-- CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- Receita LTM vs LTM anterior (`cresc_receita_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCO (`fco`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex (`capex`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCL (`fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- EBITDA (`ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
-- Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
-- Proventos por ação 12m (`dpa_12m`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividend Yield 12m (`dy`): conta não encontrada na fonte ou não aplicável ao modelo
-- Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
-- % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
-- Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
-- Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
-- Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- Nota por critérios (`nota_criterios`): conta não encontrada na fonte ou não aplicável ao modelo
-- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
-
 ## CAT
 
+Avisos do pipeline:
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (45.20 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 
 ## PNR
@@ -10511,186 +9813,6 @@ Indicadores sem valor e motivo:
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
 - CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 19 exercícios ou extremos negativos
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-
-## NXAT
-
-Avisos do pipeline:
-- ações da SEC (64,221,193, em 2025-12-31) ajustadas por desdobramento/grupamento posterior (fator 0.0333333)
-- ações da SEC (2,140,706) incompatíveis com o valor de mercado do Yahoo; usadas 3,236,566 (fator 1.512, classes ou ADR)
-
-Indicadores sem valor e motivo:
-
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/VP (`pvp`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/Receita (PSR) (`psr`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Ativo (`p_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
-- P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- LPA (`lpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- VPA (`vpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
-- P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita (principal) (`tir_implicita`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR - título de referência (`tir_spread_ref`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Caixa (`caixa`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- PL/Ativos (`pl_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Passivos/Ativos (`passivos_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
-- Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem líquida (`margem_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Giro do ativo (`giro_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Prazo médio de estoque (`pme`): empresa sem estoques relevantes
-- Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROE (`roe`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROA (`roa`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
-- CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
-- CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 3 exercícios ou extremos negativos
-- CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
-- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 3 exercícios ou extremos negativos
-- CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
-- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 3 exercícios ou extremos negativos
-- CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
-- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 3 exercícios ou extremos negativos
-- CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- Receita LTM vs LTM anterior (`cresc_receita_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCO (`fco`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex (`capex`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCL (`fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- EBITDA (`ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
-- Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
-- Proventos por ação 12m (`dpa_12m`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividend Yield 12m (`dy`): conta não encontrada na fonte ou não aplicável ao modelo
-- Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
-- % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
-- Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
-- Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
-- Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- Nota por critérios (`nota_criterios`): conta não encontrada na fonte ou não aplicável ao modelo
-- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
-
-## AEHL
-
-Avisos do pipeline:
-- ações da SEC (4,580,547, em 2025-09-30) ajustadas por desdobramento/grupamento posterior (fator 0.0104167)
-- ações da SEC (47,714) incompatíveis com o valor de mercado do Yahoo; usadas 19,014,856 (fator 398.5, classes ou ADR)
-
-Indicadores sem valor e motivo:
-
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/VP (`pvp`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/Receita (PSR) (`psr`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Ativo (`p_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
-- P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- LPA (`lpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- VPA (`vpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
-- P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita (principal) (`tir_implicita`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR - título de referência (`tir_spread_ref`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Caixa (`caixa`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- PL/Ativos (`pl_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Passivos/Ativos (`passivos_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
-- Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem líquida (`margem_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Giro do ativo (`giro_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Prazo médio de estoque (`pme`): empresa sem estoques relevantes
-- Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROE (`roe`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROA (`roa`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
-- CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
-- CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 4 exercícios ou extremos negativos
-- CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
-- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 4 exercícios ou extremos negativos
-- CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
-- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 4 exercícios ou extremos negativos
-- CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
-- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 4 exercícios ou extremos negativos
-- CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- Receita LTM vs LTM anterior (`cresc_receita_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCO (`fco`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex (`capex`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCL (`fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- EBITDA (`ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
-- Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
-- Proventos por ação 12m (`dpa_12m`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividend Yield 12m (`dy`): conta não encontrada na fonte ou não aplicável ao modelo
-- Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
-- % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
-- Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- Nota por critérios (`nota_criterios`): conta não encontrada na fonte ou não aplicável ao modelo
-- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## FSLR
 
@@ -10768,93 +9890,6 @@ Indicadores sem valor e motivo:
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 - Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-
-## RAYA
-
-Avisos do pipeline:
-- número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
-
-Indicadores sem valor e motivo:
-
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/VP (`pvp`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/Receita (PSR) (`psr`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Ativo (`p_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
-- P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- LPA (`lpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- VPA (`vpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
-- P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita (principal) (`tir_implicita`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR - título de referência (`tir_spread_ref`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Caixa (`caixa`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- PL/Ativos (`pl_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Passivos/Ativos (`passivos_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
-- Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem líquida (`margem_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Giro do ativo (`giro_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Prazo médio de estoque (`pme`): empresa sem estoques relevantes
-- Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROE (`roe`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROA (`roa`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
-- CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 6 exercícios ou extremos negativos
-- CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
-- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 6 exercícios ou extremos negativos
-- CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
-- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 6 exercícios ou extremos negativos
-- CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
-- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 6 exercícios ou extremos negativos
-- CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- Receita LTM vs LTM anterior (`cresc_receita_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCO (`fco`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex (`capex`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCL (`fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- EBITDA (`ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
-- Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
-- Proventos por ação 12m (`dpa_12m`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividend Yield 12m (`dy`): conta não encontrada na fonte ou não aplicável ao modelo
-- Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
-- % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
-- Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
-- Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
-- Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## OKLO
 
@@ -10979,17 +10014,16 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - SEC sem trimestrais em XBRL (emissor estrangeiro, 6-K); LTM pelo yfinance
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (9.40 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
@@ -10999,16 +10033,12 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
 - Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
@@ -11180,19 +10210,18 @@ Indicadores sem valor e motivo:
 
 ## PCT
 
+Avisos do pipeline:
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (0.44 bi) em 2026-09-30; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -11203,18 +10232,12 @@ Indicadores sem valor e motivo:
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Prazo médio de estoque (`pme`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
 - CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 6 exercícios ou extremos negativos
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
@@ -11455,30 +10478,16 @@ Indicadores sem valor e motivo:
 
 ## MRCY
 
+Avisos do pipeline:
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (0.35 bi) em 2026-10-02; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
 - CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 17 exercícios ou extremos negativos
 - CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
@@ -11497,18 +10506,16 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
+- dívida da SEC (0.00 bi) bem abaixo da do Yahoo (0.45 bi) em 2026-07-31; usada a do Yahoo
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -11518,14 +10525,8 @@ Indicadores sem valor e motivo:
 - TIR - título de referência (`tir_spread_ref`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
 - CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 7 exercícios ou extremos negativos
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
@@ -11600,15 +10601,12 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
 - EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
 - TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
@@ -11618,16 +10616,10 @@ Indicadores sem valor e motivo:
 - TIR - título de referência (`tir_spread_ref`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
 - Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
 - Ciclo financeiro (`ciclo_financeiro`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
 - CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 11 exercícios ou extremos negativos
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
@@ -11647,7 +10639,6 @@ Indicadores sem valor e motivo:
 
 Indicadores sem valor e motivo:
 
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
 - P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
@@ -11655,7 +10646,6 @@ Indicadores sem valor e motivo:
 - P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
 - EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
 - PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
 - P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
@@ -11667,15 +10657,10 @@ Indicadores sem valor e motivo:
 - TIR - título de referência (`tir_spread_ref`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
 - Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
 - Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
 - % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
 - CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
 - CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 9 exercícios ou extremos negativos
 - CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
@@ -11772,93 +10757,6 @@ Indicadores sem valor e motivo:
 - CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
 - EBITDA (`ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
 - Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-
-## AKAN
-
-Avisos do pipeline:
-- ações da SEC (1,983,546, em 2025-12-31) ajustadas por desdobramento/grupamento posterior (fator 0.0444)
-- ações da SEC (88,069) incompatíveis com o valor de mercado do Yahoo; usadas 2,639,467 (fator 29.97, classes ou ADR)
-
-Indicadores sem valor e motivo:
-
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/VP (`pvp`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/Receita (PSR) (`psr`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Ativo (`p_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
-- P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- LPA (`lpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- VPA (`vpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
-- P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita (principal) (`tir_implicita`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR - título de referência (`tir_spread_ref`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Caixa (`caixa`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- PL/Ativos (`pl_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Passivos/Ativos (`passivos_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
-- Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem líquida (`margem_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Giro do ativo (`giro_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Prazo médio de estoque (`pme`): empresa sem estoques relevantes
-- Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROE (`roe`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROA (`roa`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
-- CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 7 exercícios ou extremos negativos
-- CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
-- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 7 exercícios ou extremos negativos
-- CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
-- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 7 exercícios ou extremos negativos
-- CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
-- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 7 exercícios ou extremos negativos
-- CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- Receita LTM vs LTM anterior (`cresc_receita_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCO (`fco`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex (`capex`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCL (`fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- EBITDA (`ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
-- Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
-- Proventos por ação 12m (`dpa_12m`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividend Yield 12m (`dy`): conta não encontrada na fonte ou não aplicável ao modelo
-- Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
-- % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
-- Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
-- Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
 
 ## REGN
 
@@ -11978,99 +10876,10 @@ Indicadores sem valor e motivo:
 - Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
 - % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
 
-## POAS
-
-Avisos do pipeline:
-- número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
-- ações da SEC (1,096,450) incompatíveis com o valor de mercado do Yahoo; usadas 16,221,701 (fator 14.79, classes ou ADR)
-
-Indicadores sem valor e motivo:
-
-- Valor da firma (EV) (`ev`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/L (`pl`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/VP (`pvp`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/EBITDA (`p_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/EBIT (`p_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- P/Receita (PSR) (`psr`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Ativo (`p_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- P/Capital de giro (`p_capital_giro`): capital de giro ou ativo circulante líquido negativo
-- P/Ativo circulante líquido (`p_acl`): capital de giro ou ativo circulante líquido negativo
-- EV/EBITDA (`ev_ebitda`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/EBIT (`ev_ebit`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- EV/Receita (`ev_receita`): conta não encontrada na fonte ou não aplicável ao modelo
-- LPA (`lpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- VPA (`vpa`): conta não encontrada na fonte ou não aplicável ao modelo
-- PEG (`peg`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- Earnings Yield (`earnings_yield`): lucro, EBIT, EBITDA ou PL negativo/ausente (múltiplo sem sentido)
-- FCF Yield (`fcf_yield`): FCL negativo ou lucro negativo
-- P/L vs média própria 5a (`pl_vs_media5`): múltiplo atual ou médio sem valor positivo
-- EV/EBITDA vs média própria 5a (`evebitda_vs_media5`): múltiplo atual ou médio sem valor positivo
-- TIR implícita por lucro (`tir_lucro`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por caixa (`tir_caixa`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita por DCF reverso (`tir_dcf`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR implícita (principal) (`tir_implicita`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- TIR - título de referência (`tir_spread_ref`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento implícito (`cresc_implicito`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Crescimento histórico de referência (`cresc_historico_ref`): conta não encontrada na fonte ou não aplicável ao modelo
-- Implícito - histórico (`cresc_gap`): lucro ou FCL médio negativo, ou margem FCL média <= 0 (sem fluxo positivo para descontar)
-- Dívida bruta (`divida_bruta`): conta não encontrada na fonte ou não aplicável ao modelo
-- Caixa (`caixa`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dívida líquida (`divida_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./PL (`divliq_pl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBITDA (`divliq_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dív. líq./EBIT (`divliq_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- PL/Ativos (`pl_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Passivos/Ativos (`passivos_ativos`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez corrente (`liquidez_corrente`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez seca (`liquidez_seca`): conta não encontrada na fonte ou não aplicável ao modelo
-- Liquidez imediata (`liquidez_imediata`): conta não encontrada na fonte ou não aplicável ao modelo
-- Cobertura de juros (`cobertura_juros`): despesa financeira não identificada
-- % dívida no curto prazo (`divida_cp_pct`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem bruta (`margem_bruta`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Margem EBITDA (`margem_ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem EBIT (`margem_ebit`): conta não encontrada na fonte ou não aplicável ao modelo
-- Margem líquida (`margem_liquida`): conta não encontrada na fonte ou não aplicável ao modelo
-- Giro do ativo (`giro_ativo`): conta não encontrada na fonte ou não aplicável ao modelo
-- Prazo médio de recebimento (`pmr`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Prazo médio de estoque (`pme`): empresa sem estoques relevantes
-- Prazo médio de pagamento (`pmp`): conta de custo, recebíveis ou fornecedores não identificada no plano de contas
-- Ciclo financeiro (`ciclo_financeiro`): empresa sem estoques relevantes
-- ROE (`roe`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROA (`roa`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC (`roic`): conta não encontrada na fonte ou não aplicável ao modelo
-- ROIC - custo de capital (`roic_spread`): conta não encontrada na fonte ou não aplicável ao modelo
-- CAGR receita 5a (`cagr_receita_5a`): extremo da série negativo ou ausente
-- CAGR receita 10a (`cagr_receita_10a`): histórico disponível de 4 exercícios ou extremos negativos
-- CAGR EBITDA 5a (`cagr_ebitda_5a`): extremo da série negativo ou ausente
-- CAGR EBITDA 10a (`cagr_ebitda_10a`): histórico disponível de 4 exercícios ou extremos negativos
-- CAGR lucro 5a (`cagr_lucro_5a`): extremo da série negativo ou ausente
-- CAGR lucro 10a (`cagr_lucro_10a`): histórico disponível de 4 exercícios ou extremos negativos
-- CAGR LPA 5a (`cagr_lpa_5a`): extremo da série negativo ou ausente
-- CAGR LPA 10a (`cagr_lpa_10a`): histórico disponível de 4 exercícios ou extremos negativos
-- CAGR dividendo por ação 5a (`cagr_dpa_5a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- CAGR dividendo por ação 10a (`cagr_dpa_10a`): sem proventos no ano inicial ou final (CAGR exige valores positivos nos dois extremos)
-- Receita LTM vs LTM anterior (`cresc_receita_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- Lucro LTM vs LTM anterior (`cresc_lucro_ltm`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCO (`fco`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex (`capex`): conta não encontrada na fonte ou não aplicável ao modelo
-- FCL (`fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- EBITDA (`ebitda`): conta não encontrada na fonte ou não aplicável ao modelo
-- Capex/Depreciação (`capex_depreciacao`): conta não encontrada na fonte ou não aplicável ao modelo
-- Conversão de caixa (`conversao_caixa`): FCL negativo ou lucro negativo
-- Proventos por ação 12m (`dpa_12m`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividend Yield 12m (`dy`): conta não encontrada na fonte ou não aplicável ao modelo
-- Payout (`payout`): conta não encontrada na fonte ou não aplicável ao modelo
-- Dividendos pagos / FCL (`dividendos_sobre_fcl`): conta não encontrada na fonte ou não aplicável ao modelo
-- Anos com corte (`anos_corte`): sem proventos suficientes nos últimos 5 anos
-- % JCP nos proventos 12m (`jcp_pct_12m`): sem proventos nos últimos 12 meses
-- Diluição 3a (`diluicao_3a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
-- Diluição 5a (`diluicao_5a`): composição do capital na CVM só existe a partir de 2020 ou quantidade histórica estimada
-- Recompras LTM (`recompras_ltm`): sem linha de recompra na DFC
-- Nota por critérios (`nota_criterios`): conta não encontrada na fonte ou não aplicável ao modelo
-- WACC (`wacc`): conta não encontrada na fonte ou não aplicável ao modelo
-
 ## MEDS
 
+Avisos do pipeline:
+- ações da SEC (5,724,857) incompatíveis com o valor de mercado do Yahoo; usadas 7,520,497 (fator 1.314, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -12137,15 +10946,22 @@ Empresas fora do modelo RECUPERACAO com dois ou mais entre PL negativo, Dív.lí
 | TUPY3 | GERAL | dív.líq/EBITDA 10.148525; EBIT não cobre juros (-0.49x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | OBTC3 | TESOURARIA_CRIPTO | dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-7.44x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | IREN | GERAL | dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-9.40x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
+| SNOW | GERAL | dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-148.76x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
+| NET | GERAL | dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-31.85x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | FSLY | GERAL | dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-4.91x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | MARA | GERAL | dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-65.05x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
+| KHC | GERAL | dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-5.09x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | SNAP | GERAL | dív.líq/EBITDA 40.505713; EBIT não cobre juros (-0.81x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
+| HUT | GERAL | dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-4.04x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | CORZ | GERAL | patrimônio líquido negativo; dív.líq/EBITDA com EBITDA negativo | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | VICI | GERAL | dív.líq/EBITDA 51.248416; EBIT não cobre juros (0.38x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
-| GIS | GERAL | dív.líq/EBITDA 34.822807; EBIT não cobre juros (-0.39x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
+| DKNG | GERAL | dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-21.98x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
+| GIS | GERAL | dív.líq/EBITDA 34.683338; EBIT não cobre juros (-0.39x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | LVWR | GERAL | patrimônio líquido negativo; dív.líq/EBITDA com EBITDA negativo | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | EOSE | GERAL | patrimônio líquido negativo; dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-6.98x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
+| PCT | GERAL | dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-2.94x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | AXON | GERAL | dív.líq/EBITDA 6.3506; EBIT não cobre juros (0.60x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
+| PL | GERAL | dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-18.69x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 | MEDS | GERAL | patrimônio líquido negativo; dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-6.22x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 
 ## Geral

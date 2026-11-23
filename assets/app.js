@@ -33,7 +33,7 @@ const NAO_FIN = new Set(["divida_bruta", "divida_liquida", "ev", "p_ebitda", "p_
 const SUPRIME_REC = new Set(["pl", "peg", "earnings_yield", "p_ebit", "p_ebitda", "ev_ebit", "ev_ebitda", "tir_implicita"]);
 const ROT = {
   empresa: "Empresa", setor_micro: "Setor", preco: "Preço", var_12m: "12 meses", var_ano: "No ano", valor_mercado_brl: "Valor de mercado",
-  tir_implicita: "TIR implícita", divliq_ebitda: "Dív. líq./EBITDA", margem_liquida: "Margem líquida", margem_bruta: "Margem bruta",
+  tir_implicita: "TIR implícita", divliq_ebitda: "Dív. líq./EBITDA", caixa_liquido: "Caixa líquido", caixa_liq_vm: "Caixa líq./Valor mercado", ev_ebit: "EV/EBIT", margem_liquida: "Margem líquida", margem_bruta: "Margem bruta",
   margem_ebitda: "Margem EBITDA", cagr_lucro_5a: "CAGR lucro 5a", cagr_receita_5a: "CAGR receita 5a", ev_ebitda: "EV/EBITDA", dy: "Dividend yield",
   pl: "P/L", pvp: "P/VP", roe: "ROE", roic: "ROIC", roa: "ROA", piotroski: "Qualidade contábil", payout: "Payout", lpa: "LPA", vpa: "VPA",
   psr: "PSR", liquidez_corrente: "Liquidez corrente", giro_ativo: "Giro do ativo", pl_ativos: "Patrimônio/Ativos", passivos_ativos: "Passivos/Ativos",
@@ -47,6 +47,8 @@ const EXTRA_META = {
   var_5a: { nome: "Variação em 5 anos", unidade: "pct", direcao: 1, grupo: "Preço" },
   margem_fcl: { nome: "Margem de fluxo de caixa livre", unidade: "pct", direcao: 1, grupo: "Caixa", formula: "Fluxo de caixa livre de 12 meses (caixa operacional - investimentos) / receita de 12 meses. Mostra quanto de cada R$ 100 vendidos sobra em caixa." },
   valor_mercado_brl: { nome: "Valor de mercado em R$", unidade: "moeda_grande_brl", direcao: 0, grupo: "Geral", formula: "Valor de mercado em reais (BDR: em dólar x PTAX)." },
+  caixa_liquido: { nome: "Caixa líquido", unidade: "moeda_grande", direcao: 1, grupo: "Endividamento", formula: "Caixa e aplicações menos a dívida bruta (o contrário da dívida líquida)." },
+  caixa_liq_vm: { nome: "Caixa líquido / valor de mercado", unidade: "pct", direcao: 1, grupo: "Endividamento", formula: "Quanto do valor de mercado da empresa está em caixa líquido." },
 };
 const ICONE_GRAF = '<svg viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7"/></svg>';
 const ICONE_LUPA = '<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>';
@@ -141,6 +143,8 @@ function val(t, k) {
     case "porte": return ind(t).porte || null;
     case "margem_fcl": { const i = ind(t); if (isFin(t) || !ok(i.fcl) || !ok(i.ev) || !ok(i.ev_receita) || !i.ev_receita) return null; const r = i.ev / i.ev_receita; return r > 0 ? i.fcl / r : null; }
     case "preco": case "var_mes": case "var_ano": case "var_12m": case "var_5a": case "max_52s": case "min_52s": return p[k] ?? null;
+    case "caixa_liquido": { const dl = ind(t).divida_liquida; return ok(dl) ? -dl : null; }
+    case "caixa_liq_vm": { const i = ind(t); if (!ok(i.divida_liquida) || !ok(i.ev)) return null; const vm = i.ev - i.divida_liquida; return vm > 0 ? -i.divida_liquida / vm : null; }
     default: { const v = ind(t)[k]; return v === undefined ? null : v; }
   }
 }
@@ -485,6 +489,7 @@ async function render() {
     else if (r === "fii") await pgFii(app, p.toUpperCase());
     else if (r === "filtros") pgFiltros(app);
     else if (r === "estudar") pgEstudar(app);
+    else if (r === "saudaveis") pgSaudaveis(app, q);
     else app.innerHTML = '<div class="cartao"><h1>Página não encontrada</h1><p><a class="lk" href="#/">Voltar ao início</a></p></div>';
   } catch (e) {
     console.error(e);
@@ -2383,6 +2388,32 @@ function zoomMapa(ch, BASE) {
    FUNDOS IMOBILIÁRIOS
    ===================================================================== */
 const TIPO_FUNDO = { fii: "FII", fiagro: "Fiagro", infra: "FI-Infra" };
+/* ---------------- Empresas saudáveis: caixa líquido (mais caixa que dívida), com filtros opcionais de lucro, retorno e qualidade */
+const FILTROS_SAUDE = [
+  ["lucro", "Lucro nos últimos 12 meses", (t) => ok(val(t, "margem_liquida")) && val(t, "margem_liquida") > 0],
+  ["roic", "ROIC acima de 10%", (t) => ok(val(t, "roic")) && val(t, "roic") > 0.10],
+  ["qualidade", "Qualidade contábil 6 ou mais", (t) => ok(val(t, "piotroski")) && val(t, "piotroski") >= 6],
+  ["dividendos", "Paga dividendos", (t) => ok(val(t, "dy")) && val(t, "dy") > 0],
+  ["liquidez", "Liquidez corrente acima de 1,5", (t) => ok(val(t, "liquidez_corrente")) && val(t, "liquidez_corrente") > 1.5],
+];
+function pgSaudaveis(app, q) {
+  const seg = ["ACAO_BR", "BDR", "STOCK"].includes(q.get("seg")) ? q.get("seg") : "ACAO_BR";
+  const ativos = new Set((q.has("f") ? q.get("f") : "lucro").split(",").filter((k) => FILTROS_SAUDE.some(([x]) => x === k)));
+  const universo = seg === "STOCK" ? D.stocks : seg === "BDR" ? D.tickers.filter((t) => !emAcoes(t)) : D.tickers.filter(emAcoes);
+  const base = universo.filter((t) => !isFin(t) && !semValuation(t) && ok(val(t, "caixa_liquido")) && val(t, "caixa_liquido") > 0);
+  const l = base.filter((t) => FILTROS_SAUDE.every(([k, , f]) => !ativos.has(k) || f(t))).sort((a, b) => (val(b, "caixa_liq_vm") ?? -9) - (val(a, "caixa_liq_vm") ?? -9));
+  const url = (o) => { const x = { seg, f: [...ativos].join(","), ...o }; return `#/saudaveis?seg=${x.seg}&f=${x.f}`; };
+  const cols = ["setor_micro", "valor_mercado_brl", "caixa_liquido", "caixa_liq_vm", "liquidez_corrente", "roic", "margem_liquida", "dy", "ev_ebit", "cagr_lucro_5a", "piotroski"];
+  app.innerHTML = `${trilha([["Empresas saudáveis"]])}<div class="cab-pagina"><div><h1>Empresas saudáveis</h1>
+    <p>Empresas com <b>caixa líquido</b>: têm mais dinheiro em caixa do que dívida. São as que menos dependem de crédito e tendem a atravessar melhor períodos de juros altos e crise. Bancos e seguradoras ficam de fora, porque dívida tem outro significado para eles.</p></div>${pilulasData()}</div>
+    <div class="chips" style="margin-bottom:14px">${[["ACAO_BR", "Ações"], ["BDR", "BDRs"], ["STOCK", "Stocks"]].map(([k, n]) => `<a class="chip${seg === k ? " ativo" : ""}" href="${url({ seg: k })}">${n}</a>`).join("")}</div>
+    <div class="linha fii-classe" style="gap:12px;margin-bottom:14px">${FILTROS_SAUDE.map(([k, n]) => `<label class="chk"><input type="checkbox" data-fs="${k}"${ativos.has(k) ? " checked" : ""}> ${n}</label>`).join("")}</div>
+    <div class="cartao"><div class="linha" style="justify-content:space-between;margin-bottom:10px"><b>${l.length} empresa${l.length === 1 ? "" : "s"}</b><span class="sub">de ${base.length} com caixa líquido. Clique no cabeçalho para ordenar.</span></div>
+    ${tabela(l, cols)}
+    <p class="sub" style="margin-top:10px">Lista por critérios objetivos dos últimos balanços; não é recomendação de compra. Caixa líquido = caixa e aplicações menos dívida bruta. Ordem inicial: maior caixa líquido em relação ao valor de mercado.</p></div>`;
+  ligarLinhas(app);
+  $$("[data-fs]").forEach((c) => c.onchange = () => { location.hash = url({ f: $$("[data-fs]").filter((x) => x.checked).map((x) => x.dataset.fs).join(",") }); });
+}
 /* ---------------- Para estudar: lista pessoal de teses (ações, BDRs, FIIs e stocks), guardada no navegador */
 const estudarLer = () => lsGet("para_estudar", []);
 const estudarGravar = (l) => { lsSet("para_estudar", l); contarEstudar(); };

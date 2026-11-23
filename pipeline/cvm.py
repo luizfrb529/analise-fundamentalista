@@ -188,6 +188,11 @@ def saldos(bpa: Contas, bpp: Contas, modelo: str) -> dict:
         cd, v = bpp.achar(r"emprestimos e financiamentos", prefixo=pref, nivel=3)
         if cd:
             v = (v or 0.0) - bpp.filhos_somar(cd, r"arrendamento")
+        if not v:
+            # há empresas (ex.: Allos) que lançam a dívida dentro de "Outras obrigações"
+            extra = bpp.somar(r"emprestimo|financiamento|debenture", prefixo=pref, nivel_min=4, excluir=r"arrendamento|receber|derivativ")
+            if extra:
+                v = extra
         s[chave] = v
     return s
 

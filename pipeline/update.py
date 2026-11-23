@@ -923,6 +923,26 @@ def processar(ativo: dict, ctx: dict) -> dict:
                     hist_sh = [(e, v * fc) for e, v in hist_sh]
             except Exception as e:
                 aviso(t, f"conferência do número de ações: {e}")
+        if stock and ltm and moeda_rep == "USD" and gm not in ("BANCO", "SEGURADORA") and data_ref:
+            # dívida conferida com o balanço trimestral do Yahoo: a SEC tem dezenas de contas de dívida e às vezes
+            # a empresa usa uma que não lemos (conversíveis, notas). Se a SEC mostrar bem menos, vale o Yahoo.
+            try:
+                qb = yx.quarterly_balance_sheet
+                col = [c for c in qb.columns if abs((c.date() - dt.date.fromisoformat(data_ref)).days) <= 45]
+                if col:
+                    def yv(nome):
+                        try:
+                            v = qb.at[nome, col[0]]
+                            return 0.0 if v != v else float(v)
+                        except KeyError:
+                            return 0.0
+                    y_cp, y_lp = yv("Current Debt"), yv("Long Term Debt")
+                    s_tot = (ltm.get("divida_cp") or 0) + (ltm.get("divida_lp") or 0)
+                    if y_cp + y_lp > 2.5e8 and s_tot < 0.6 * (y_cp + y_lp):
+                        aviso(t, f"dívida da SEC ({s_tot / 1e9:.2f} bi) bem abaixo da do Yahoo ({(y_cp + y_lp) / 1e9:.2f} bi) em {data_ref}; usada a do Yahoo")
+                        ltm["divida_cp"], ltm["divida_lp"] = y_cp, y_lp
+            except Exception as e:
+                aviso(t, f"conferência da dívida no Yahoo: {e}")
         splits = S.acoes_de(precos.get(ext), "Stock Splits")
         # empresa que reporta em reais (XP, Inter): preço lá fora convertido pela PTAX para casar com o balanço;
         # em outra moeda (TSMC, SK hynix, ASML, Cameco): pela cotação da moeda contra o dólar no Yahoo
