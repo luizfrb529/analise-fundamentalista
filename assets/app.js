@@ -349,14 +349,24 @@ function statusMercado(chave) {
   if (dia === 0 || dia === 6) return { aberto: false, motivo: "final de semana" };
   if (!m) return { aberto: null, motivo: "Calendário indisponível" };
   if (m.feriados && m.feriados[hoje]) return { aberto: false, motivo: m.feriados[hoje] === "Sem pregão" ? "dia sem pregão" : `feriado (${m.feriados[hoje]})` };
-  if (m.sessoes && m.sessoes[hoje]) return { aberto: true, motivo: "" };
+  const s = m.sessoes && m.sessoes[hoje];
+  if (s) {
+    // pregão regular do dia (abertura e fechamento em UTC, com fechamento antecipado quando houver); horas mostradas em Brasília
+    const ab = new Date(s[0]), fe = new Date(s[1]), agora = new Date();
+    const hBr = (d) => new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo", hour: "2-digit", minute: "2-digit" }).format(d).replace(":", "h");
+    if (agora < ab) return { aberto: false, motivo: `abre às ${hBr(ab)} (Brasília)` };
+    if (agora >= fe) return { aberto: false, motivo: `pregão encerrado às ${hBr(fe)} (Brasília)` };
+    return { aberto: true, motivo: `até ${hBr(fe)} (Brasília)` };
+  }
   return { aberto: null, motivo: "Calendário desatualizado" };
 }
+// atualiza os quadros de mercado a cada minuto, para virar aberto/fechado na hora certa sem recarregar a página
+setInterval(() => { const el = document.querySelector(".mercados-hoje"); if (el && !document.hidden) el.outerHTML = quadrosMercado(); }, 60000);
 function quadrosMercado() {
   return `<div class="mercados-hoje" aria-label="Funcionamento das bolsas hoje">${[["brasil", "Mercado Brasil"], ["eua", "Mercado EUA"]].map(([k, n]) => {
     const st = statusMercado(k), cls = st.aberto === true ? "aberto" : st.aberto === false ? "fechado" : "nd";
     return `<div class="merc-hoje ${cls}" title="${k === "brasil" ? "B3" : "NYSE e Nasdaq"}"><div class="mh-cab">${BANDEIRA[k]}<span>${n}</span></div>
-      <div class="mh-st"><i></i>${st.aberto === true ? "Aberto" : st.aberto === false ? "Fechado" : "Sem informação"}</div>${st.motivo ? `<div class="mh-mot">${st.aberto === false ? "Motivo: " : ""}${esc(st.motivo)}</div>` : ""}</div>`;
+      <div class="mh-st"><i></i>${st.aberto === true ? "Aberto" : st.aberto === false ? "Fechado" : "Sem informação"}</div>${st.motivo ? `<div class="mh-mot">${st.aberto === false && !/^(abre|pregão)/.test(st.motivo) ? "Motivo: " : ""}${esc(st.motivo)}</div>` : ""}</div>`;
   }).join("")}</div>`;
 }
 const RAMO_VIVO = "https://raw.githubusercontent.com/luizfrb529/analise-fundamentalista/refs/heads/mercado/";
