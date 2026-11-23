@@ -49,7 +49,7 @@ const EXTRA_META = {
   valor_mercado_brl: { nome: "Valor de mercado em R$", unidade: "moeda_grande_brl", direcao: 0, grupo: "Geral", formula: "Valor de mercado em reais (BDR: em dólar x PTAX)." },
   caixa_liquido: { nome: "Caixa líquido", unidade: "moeda_grande", direcao: 1, grupo: "Endividamento", formula: "Caixa e aplicações menos a dívida bruta (o contrário da dívida líquida)." },
   caixa_liq_vm: { nome: "Caixa líquido / valor de mercado", unidade: "pct", direcao: 1, grupo: "Endividamento", formula: "Quanto do valor de mercado da empresa está em caixa líquido." },
-  nota_saude: { nome: "Nota saudável", unidade: "x", direcao: 1, grupo: "Geral", formula: "De 0 a 10, média de três posições dentro da lista: caixa líquido / valor de mercado (maior é melhor), ROE (maior é melhor) e P/L (menor é melhor; prejuízo fica com zero nesse item)." },
+  nota_saude: { nome: "Nota saudável", unidade: "x", direcao: 1, grupo: "Geral", formula: "De 0 a 10, média de quatro posições dentro da lista: caixa líquido (caixa menos dívida) / valor de mercado, ROE e FCF yield (maior é melhor) e P/L (menor é melhor). Prejuízo ou caixa livre negativo ficam com zero no item." },
 };
 const ICONE_GRAF = '<svg viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7"/></svg>';
 const ICONE_LUPA = '<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>';
@@ -2404,12 +2404,14 @@ function notaSaude(l) {
   const cx = pos((t) => ok(val(t, "caixa_liq_vm")) ? val(t, "caixa_liq_vm") : null, true);
   const roe = pos((t) => ok(val(t, "roe")) ? val(t, "roe") : null, true);
   const pl = pos((t) => ok(val(t, "pl")) && val(t, "pl") > 0 ? val(t, "pl") : null, false);
-  l.forEach((t) => { NOTA_SAUDE[t] = Math.round(((cx[t] || 0) + (roe[t] || 0) + (pl[t] || 0)) / 3 * 100) / 10; });
+  const fcf = pos((t) => ok(val(t, "fcf_yield")) && val(t, "fcf_yield") > 0 ? val(t, "fcf_yield") : null, true);
+  l.forEach((t) => { NOTA_SAUDE[t] = Math.round(((cx[t] || 0) + (roe[t] || 0) + (pl[t] || 0) + (fcf[t] || 0)) / 4 * 100) / 10; });
 }
 const FILTROS_SAUDE = [
   ["lucro", "Lucro nos últimos 12 meses", (t) => ok(val(t, "margem_liquida")) && val(t, "margem_liquida") > 0],
   ["roic", "ROIC acima de 10%", (t) => ok(val(t, "roic")) && val(t, "roic") > 0.10],
   ["qualidade", "Qualidade contábil 6 ou mais", (t) => ok(val(t, "piotroski")) && val(t, "piotroski") >= 6],
+  ["fcf", "Fluxo de caixa livre positivo", (t) => ok(val(t, "fcl")) && val(t, "fcl") > 0],
   ["dividendos", "Paga dividendos", (t) => ok(val(t, "dy")) && val(t, "dy") > 0],
   ["liquidez", "Liquidez corrente acima de 1,5", (t) => ok(val(t, "liquidez_corrente")) && val(t, "liquidez_corrente") > 1.5],
 ];
@@ -2422,14 +2424,14 @@ function pgSaudaveis(app, q) {
   notaSaude(l);
   l.sort((a, b) => NOTA_SAUDE[b] - NOTA_SAUDE[a] || (val(b, "caixa_liq_vm") ?? -9) - (val(a, "caixa_liq_vm") ?? -9));
   const url = (o) => { const x = { seg, f: [...ativos].join(","), ...o }; return `#/saudaveis?seg=${x.seg}&f=${x.f}`; };
-  const cols = ["nota_saude", "setor_micro", "valor_mercado_brl", "caixa_liquido", "caixa_liq_vm", "roe", "pl", "margem_liquida", "dy", "liquidez_corrente"];
+  const cols = ["nota_saude", "setor_micro", "valor_mercado_brl", "caixa_liquido", "caixa_liq_vm", "roe", "pl", "fcl", "fcf_yield", "margem_liquida", "dy", "liquidez_corrente"];
   app.innerHTML = `${trilha([["Empresas saudáveis"]])}<div class="cab-pagina"><div><h1>Empresas saudáveis</h1>
     <p>Empresas com <b>caixa líquido</b>: têm mais dinheiro em caixa do que dívida. São as que menos dependem de crédito e tendem a atravessar melhor períodos de juros altos e crise. Bancos e seguradoras ficam de fora, porque dívida tem outro significado para eles.</p></div>${pilulasData()}</div>
     <div class="chips" style="margin-bottom:14px">${[["ACAO_BR", "Ações"], ["BDR", "BDRs"], ["STOCK", "Stocks"]].map(([k, n]) => `<a class="chip${seg === k ? " ativo" : ""}" href="${url({ seg: k })}">${n}</a>`).join("")}</div>
     <div class="linha fii-classe" style="gap:12px;margin-bottom:14px">${FILTROS_SAUDE.map(([k, n]) => `<label class="chk"><input type="checkbox" data-fs="${k}"${ativos.has(k) ? " checked" : ""}> ${n}</label>`).join("")}</div>
     <div class="cartao"><div class="linha" style="justify-content:space-between;margin-bottom:10px"><b>${l.length} empresa${l.length === 1 ? "" : "s"}</b><span class="sub">de ${base.length} com caixa líquido. Clique no cabeçalho para ordenar.</span></div>
     ${tabela(l, cols)}
-    <p class="sub" style="margin-top:10px">Lista por critérios objetivos dos últimos balanços; não é recomendação de compra. Caixa líquido = caixa e aplicações menos dívida bruta. Ordem inicial pela nota de 0 a 10, que combina três indicadores comparando as empresas da lista: caixa líquido em relação ao valor de mercado (quanto maior, melhor), ROE (quanto maior, melhor) e P/L (quanto menor, melhor). Empresa com prejuízo fica com zero no P/L.</p></div>`;
+    <p class="sub" style="margin-top:10px">Lista por critérios objetivos dos últimos balanços; não é recomendação de compra. Caixa líquido = caixa e aplicações menos dívida bruta. Ordem inicial pela nota de 0 a 10, que compara as empresas da lista em quatro indicadores: caixa líquido em relação ao valor de mercado, ROE e FCF yield (fluxo de caixa livre de 12 meses sobre o valor de mercado), em que maior é melhor, e P/L, em que menor é melhor. Prejuízo ou caixa livre negativo ficam com zero no item.</p></div>`;
   ligarLinhas(app);
   $$("[data-fs]").forEach((c) => c.onchange = () => { location.hash = url({ f: $$("[data-fs]").filter((x) => x.checked).map((x) => x.dataset.fs).join(",") }); });
 }
