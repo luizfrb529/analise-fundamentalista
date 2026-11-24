@@ -1,0 +1,69 @@
+{
+ "ticker": "IFNNY",
+ "revisado_em": "2026-11-24",
+ "resumo": "Maior fabricante europeia de chips, líder mundial em semicondutores de potência e em chips para carros. Lucrativa, com receita recorde puxada pela energia de data centers de IA.",
+ "modelo": "A Infineon projeta e fabrica, principalmente em fábricas próprias na Alemanha, Áustria e Malásia, chips de potência (silício, carbeto de silício e nitreto de gálio), microcontroladores, sensores e chips de segurança. Vende para montadoras, fabricantes de fontes de energia para data centers, energia renovável, indústria e eletrônicos. O ano fiscal termina em setembro; o papel é negociado nos EUA como recibo de balcão (IFNNY, 1 ação por recibo) e na bolsa alemã (IFX).",
+ "segmentos": [
+  {"nome": "Automotivo", "peso_receita": 0.44, "periodo": "4T fiscal 2026", "obs": "Receita de 2,09 bi de euros no trimestre."},
+  {"nome": "Sistemas de potência e sensores", "peso_receita": 0.38, "periodo": "4T fiscal 2026", "obs": "Receita de 1,80 bi de euros, alta de 25% sobre o trimestre anterior, com margem de 30,8%."},
+  {"nome": "Potência industrial verde", "peso_receita": 0.11, "periodo": "4T fiscal 2026", "obs": "Receita de 503 mi de euros."},
+  {"nome": "Sistemas conectados e seguros", "peso_receita": 0.07, "periodo": "4T fiscal 2026", "obs": "Receita de 318 mi de euros, com margem de 7,9%."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Neubiberg, perto de Munique (Alemanha); vende no mundo todo, com forte presença na China e no restante da Ásia."},
+ "temas": [
+  {"tema": "Energia para data centers de IA", "relacao": "A empresa espera receita perto de 4 bi de euros com fontes de energia para data centers no ano fiscal 2027."},
+  {"tema": "Carros elétricos", "relacao": "Líder em chips de potência e microcontroladores para veículos, inclusive carbeto de silício."},
+  {"tema": "Transição energética", "relacao": "Fornece chips para inversores solares, eólicos e redes elétricas."}
+ ],
+ "diferencial": {
+  "texto": "A Infineon é a maior fabricante mundial de semicondutores de potência e a líder em chips automotivos, com tecnologia própria em silício, carbeto de silício e nitreto de gálio e fábricas de 300 mm que dão escala e custo menor. Produtos qualificados por montadoras e fabricantes de servidores geram alto custo de troca. Os pontos fracos são a exposição ao ciclo automotivo e industrial, à China e ao câmbio.",
+  "vantagem": {"nivel": "forte", "resumo": "Líder mundial em chips de potência e automotivos, com tecnologia, escala e clientes de longo prazo difíceis de trocar."},
+  "concorrentes": ["STMicroelectronics", "NXP Semiconductors", "Texas Instruments", "onsemi", "Renesas"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do ano fiscal 2027 deve chegar a cerca de 20 bi de euros, alta de mais de 20%, com margem do resultado dos segmentos na faixa de 25%. O primeiro trimestre fiscal deve ter receita de cerca de 4,6 bi de euros. A empresa prevê investir de 3,0 a 3,5 bi de euros no ano.",
+  "metricas": [
+   {"rotulo": "Receita projetada", "valor": "cerca de 20 bi de euros", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Margem do resultado dos segmentos", "valor": "faixa de 25%", "periodo": "ano fiscal 2027"},
+   {"rotulo": "Receita com energia de data centers", "valor": "perto de 4 bi de euros", "periodo": "ano fiscal 2027"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de 1,51 bi de euros no ano fiscal 2026 (1,73 euro por ação, ajustado), com margem do resultado dos segmentos de 19,7% e fluxo de caixa livre ajustado de 1,93 bi de euros. Tem 2,14 bi de euros em caixa contra 6,85 bi de euros de dívida, uma dívida líquida de cerca de 4,7 bi de euros, que vem caindo desde março. A proposta de dividendo é de 0,38 euro por ação.",
+  "caixa": "2,14 bi de euros",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Ciclo da indústria automotiva e industrial.",
+  "Exposição à China e a tarifas comerciais.",
+  "Variação do euro contra o dólar.",
+  "Investimento alto em fábricas novas."
+ ],
+ "momento": "No 4T fiscal 2026 (julho a setembro, divulgado em 10/11/2026), a receita foi recorde, de 4,71 bi de euros (+19%), com margem do resultado dos segmentos de 23,8%; o CEO é Jochen Hanebeck.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-10",
+  "positivos": [
+   "Receita recorde, alta de 19%.",
+   "Margem subiu para 23,8%.",
+   "Projeção de alta de mais de 20% em 2027."
+  ],
+  "negativos": [
+   "Dívida líquida ainda alta.",
+   "Sistemas conectados com margem baixa."
+  ],
+  "atencao": [
+   "Demanda de energia para IA.",
+   "Câmbio do euro."
+  ]
+ },
+ "fontes": [
+  {"titulo": "Infineon: resultados do 4T e do ano fiscal 2026 (comunicado)", "url": "https://www.infineon.com/assets/row/public/documents/corporate/press/2026/infpr202611-025e.pdf", "data": "2026-11-10"},
+  {"titulo": "EuropaWire: Infineon Reports EUR 16.35 Billion FY 2026 Revenue and Forecasts Over 20 Percent Growth for 2027", "url": "https://news.europawire.eu/infineon-reports-e16-35-billion-fy-2026-revenue-and-forecasts-over-20-percent-growth-for-2027/eu-press-release/2026/11/10/16/27/06/187084/", "data": "2026-11-10"},
+  {"titulo": "Investing.com: Infineon FY26 slides, AI boom drives record results, EUR 20bn FY27 target", "url": "https://www.investing.com/news/company-news/infineon-fy26-slides-ai-boom-drives-record-results-20bn-fy27-target-93CH-5014519", "data": "2026-11"}
+ ],
+ "ultimo_resultado": "3T26"
+}

@@ -295,13 +295,29 @@ def ltm_yfinance(ticker: str) -> dict:
         return None
 
     out["lucro_liq"], ref = soma4(inc, ["Net Income Common Stockholders", "Net Income"])
+    try:
+        # o trimestral do Yahoo às vezes traz um trimestre errado (STMicro, 2T26: -208 mi no lugar de +222 mi da SEC);
+        # o lucro de 12 meses do resumo do Yahoo vem de outra base: se divergir muito, vale ele
+        n12 = t.info.get("netIncomeToCommon")
+        if n12 and out["lucro_liq"] is not None and abs(out["lucro_liq"] - n12) > 0.25 * abs(n12):
+            print(f"  [yf] {ticker}: lucro 12m pela soma dos trimestres {out['lucro_liq']:,.0f} difere do resumo {n12:,.0f}; usado o resumo")
+            out["lucro_liq"] = float(n12)
+    except Exception:
+        pass
     out["receita"], _ = soma4(inc, ["Total Revenue", "Operating Revenue"])
+    out["ebit"], _ = soma4(inc, ["Operating Income", "EBIT"])
+    out["da"], _ = soma4(inc, ["Reconciled Depreciation"])
     out["juros_rec"], _ = soma4(inc, ["Interest Income"])
     out["juros_desp"], _ = soma4(inc, ["Interest Expense"])
     out["fco"], _ = soma4(cf, ["Operating Cash Flow"])
+    out["capex"], _ = soma4(cf, ["Capital Expenditure"])
     out["pl"] = ult(bal, ["Stockholders Equity", "Common Stock Equity"])
     out["ativo"] = ult(bal, ["Total Assets"])
-    out["caixa"] = ult(bal, ["Cash And Cash Equivalents"])
+    out["ativo_circ"] = ult(bal, ["Current Assets"])
+    out["passivo_circ"] = ult(bal, ["Current Liabilities"])
+    out["caixa"] = ult(bal, ["Cash Cash Equivalents And Short Term Investments", "Cash And Cash Equivalents"])
+    out["divida_cp"] = ult(bal, ["Current Debt"]) or 0.0
+    out["divida_lp"] = ult(bal, ["Long Term Debt"]) or 0.0
     out["minoritarios"] = ult(bal, ["Minority Interest"]) or 0.0
     out["_fim"] = ref
     out["_fonte"] = "yfinance (trimestrais)"

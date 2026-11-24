@@ -1,0 +1,69 @@
+{
+ "ticker": "STM",
+ "revisado_em": "2026-11-24",
+ "resumo": "Fabricante franco-italiana de chips analógicos, de potência, sensores e microcontroladores para carros, indústria e eletrônicos. Lucrativa, com caixa líquido e receita voltando a crescer forte em 2026.",
+ "modelo": "A STMicroelectronics projeta e fabrica, em grande parte em fábricas próprias na Europa e na Ásia, chips analógicos, sensores, semicondutores de potência (inclusive de carbeto de silício), microcontroladores e chips de radiofrequência e óptica. Vende para montadoras, indústria, fabricantes de celulares e de equipamentos de comunicação, direto (68% da receita) ou por distribuidores.",
+ "segmentos": [
+  {"nome": "Analógicos, MEMS e sensores", "peso_receita": 0.42, "periodo": "3T26", "obs": "Receita de US$ 1,56 bi (+8,8%)."},
+  {"nome": "Processamento embarcado", "peso_receita": 0.32, "periodo": "3T26", "obs": "Receita de US$ 1,21 bi (+24,1%), com margem operacional de 23,1%."},
+  {"nome": "RF e comunicação óptica", "peso_receita": 0.13, "periodo": "3T26", "obs": "Receita de US$ 504 mi (+46,2%)."},
+  {"nome": "Potência e discretos", "peso_receita": 0.13, "periodo": "3T26", "obs": "Receita de US$ 477 mi (+11,3%), ainda com prejuízo operacional."}
+ ],
+ "segmentos_base": "Receita",
+ "geografia": {"eua_pct": null, "exterior_pct": null, "periodo": null, "texto": "Sede em Genebra (Suíça), com fábricas na França, Itália, Singapura, Malásia e outros países; vende no mundo todo, com peso relevante da Ásia."},
+ "temas": [
+  {"tema": "Data centers de IA", "relacao": "A empresa cita os chips para data centers de IA como um dos motores do crescimento, segundo o comunicado do 3T26."},
+  {"tema": "Satélites de órbita baixa", "relacao": "Fornece chips de radiofrequência para comunicação por satélite, outro motor citado pela empresa."},
+  {"tema": "Ciclo de semicondutores", "relacao": "Depois da queda de 2024 e 2025, a receita de 2026 deve crescer cerca de 23%, para US$ 14,5 bi."}
+ ],
+ "diferencial": {
+  "texto": "A STMicro tem fábricas próprias, portfólio amplo e relação antiga com montadoras e indústria, o que dá escala e custo de troca em produtos qualificados por anos. Os pontos fracos são a margem bem abaixo das concorrentes americanas, a alta dependência do ciclo automotivo e industrial e a concorrência de Infineon, NXP, Texas Instruments e fabricantes chineses.",
+  "vantagem": {"nivel": "moderada", "resumo": "Escala, fábricas próprias e clientes de longo prazo em carros e indústria, mas margens menores que as rivais e forte exposição ao ciclo."},
+  "concorrentes": ["Infineon", "NXP Semiconductors", "Texas Instruments", "Microchip", "Renesas"]
+ },
+ "potencial": {
+  "texto": "Segundo a empresa, a receita do 4T26 deve ficar perto de US$ 4,15 bi (+24,7% sobre o 4T25), com margem bruta de cerca de 39%. Um programa de reorganização das fábricas e de redução de custos busca recuperar a margem nos próximos anos.",
+  "metricas": [
+   {"rotulo": "Receita projetada (ponto médio)", "valor": "US$ 4,15 bi", "periodo": "4T26"},
+   {"rotulo": "Margem bruta projetada", "valor": "39,0%", "periodo": "4T26"},
+   {"rotulo": "Receita esperada no ano", "valor": "cerca de US$ 14,5 bi", "periodo": "2026"}
+  ]
+ },
+ "saude": {
+  "situacao": "lucrativa",
+  "texto": "Lucro de US$ 291 mi no 3T26 (US$ 0,31 por ação), com margem operacional de 9,8%. Tem US$ 5,31 bi em caixa e aplicações contra US$ 3,21 bi de dívida, um caixa líquido de US$ 2,11 bi. O fluxo de caixa livre foi de US$ 351 mi no trimestre, mas ficou perto de zero em 12 meses por causa da compra dos sensores MEMS da NXP.",
+  "caixa": "US$ 5,31 bi",
+  "queima_anual": null,
+  "periodo": "set/2026"
+ },
+ "riscos": [
+  "Ciclo da indústria automotiva e industrial.",
+  "Margem abaixo das concorrentes e custo de fábricas ociosas.",
+  "Concorrência de fabricantes chineses.",
+  "Variação do euro, já que boa parte dos custos é na Europa."
+ ],
+ "momento": "No 3T26 (divulgado em 29/10/2026), a receita subiu 17,9%, para US$ 3,76 bi, acima do ponto médio da projeção, e a margem bruta foi a 37,3%; o CEO é Jean-Marc Chery.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-10-29",
+  "positivos": [
+   "Receita subiu 17,9% no ano.",
+   "Margem bruta subiu 4,1 pontos.",
+   "Projeção forte para o 4T26."
+  ],
+  "negativos": [
+   "Lucro ajustado por ação abaixo do esperado.",
+   "Potência e discretos com prejuízo."
+  ],
+  "atencao": [
+   "Custos de reorganização das fábricas.",
+   "Retomada do setor automotivo."
+  ]
+ },
+ "fontes": [
+  {"titulo": "STMicroelectronics: resultados do 3T26 (6-K, SEC)", "url": "https://www.sec.gov/Archives/edgar/data/0000932787/000093278726000086/c3419c-q326earningspressre.htm", "data": "2026-10-29"},
+  {"titulo": "ST Newsroom: STMicroelectronics Reports Q3 2026 Financial Results", "url": "https://newsroom.st.com/media-center/press-item.html/stmicroelectronics-reports-q3-2026-financial-results.html", "data": "2026-10-29"},
+  {"titulo": "Investing.com: Earnings call transcript, STMicroelectronics posts revenue beat in Q3 2026", "url": "https://uk.investing.com/news/stock-market-news/earnings-call-transcript-stmicroelectronics-posts-revenue-beat-in-q3-2026-93CH-4940493", "data": "2026-10"}
+ ],
+ "ultimo_resultado": "3T26"
+}
