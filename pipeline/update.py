@@ -306,6 +306,11 @@ def proventos_b3(info: dict, ativo: dict, splits) -> list[dict]:
     if m:
         comp = {"ON": int(m.group(1)), "PN": int(m.group(2))}
     alvo = "ON" if ativo["ticker"].endswith("3") else "PN"
+    # espécie exata pelo dígito do código (4 PN, 5 PNA, 6 PNB...): sem isso, empresa com PNA e PNB (Unipar, Banrisul)
+    # tinha os proventos das duas classes somados no papel
+    especie = {"3": "NOR", "4": "NPR", "5": "NPA", "6": "NPB", "7": "NPC", "8": "NPD"}.get(ativo["ticker"][-1])
+    especies = {(d.get("isinCode") or d.get("assetIssued") or "")[8:11] for d in info.get("cashDividends") or []}
+    exato = especie if especie in especies else None
     out = []
     por_data = {}
     for d in info.get("cashDividends") or []:
@@ -330,7 +335,7 @@ def proventos_b3(info: dict, ativo: dict, splits) -> list[dict]:
                 continue
             k = (data_com, tipo, pag)
             por_data[k] = por_data.get(k, 0.0) + valor * comp[cls]
-        elif cls == alvo:
+        elif (exato and (d.get("isinCode") or d.get("assetIssued") or "")[8:11] == exato) or (not exato and cls == alvo):
             out.append({"data_com": data_com, "pagamento": pag, "valor": valor, "tipo": tipo, "referente": d.get("relatedTo")})
     for (data_com, tipo, pag), v in por_data.items():
         out.append({"data_com": data_com, "pagamento": pag, "valor": v, "tipo": tipo, "referente": None})

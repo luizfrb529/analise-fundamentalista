@@ -40,6 +40,100 @@ def serie_semanal(df: pd.DataFrame) -> list:
     return out
 
 
+def serie_semanal_fii(fech: pd.Series, rend: dict, desde: str | None) -> list:
+    """FII: cotações semanais (Yahoo + COTAHIST da B3) e rendimentos cruzados de várias fontes (rendimentos_fii.py),
+    no lugar do Yahoo, que não tem os rendimentos antes de 2022 nem as cotações antigas de vários fundos.
+    O fechamento ajustado é refeito reinvestindo cada rendimento na cota na data ex. A série começa em `desde`
+    (primeiro pregão, ou o mês a partir do qual os rendimentos são conhecidos, se for depois)."""
+    if desde:
+        fech = fech[fech.index >= pd.Timestamp(desde)]
+    prov = pd.Series(0.0, index=fech.index)
+    for data, v in rend.items():
+        i = fech.index.searchsorted(pd.Timestamp(data) + pd.Timedelta(days=1))   # semana da data ex (dia útil seguinte à data base)
+        if 0 < i < len(fech.index):
+            prov.iloc[i] += v
+    out, aj, c_ant = [], None, None
+    for (data, c), p in zip(fech.items(), prov.values):
+        aj = float(c) if aj is None else aj * (float(c) + p) / c_ant
+        c_ant = float(c)
+        out.append([data.strftime("%Y-%m-%d"), round(float(c), 4), aj, round(float(p), 6)])
+    if out:
+        k = out[-1][1] / out[-1][2]          # mesma convenção do Yahoo: o ajustado termina igual ao fechamento
+        for r in out:
+            r[2] = round(r[2] * k, 4)
+    return out
+
+
+def _sexta_ex(data_com: str) -> str:
+    """Sexta-feira da semana da data ex (dia útil seguinte à data com)."""
+    d = dt.date.fromisoformat(data_com) + dt.timedelta(days=1)
+    while d.weekday() >= 5:
+        d += dt.timedelta(days=1)
+    return (d + dt.timedelta(days=(4 - d.weekday()) % 7)).isoformat()
+
+
+def _perto(a: float, b: float) -> bool:
+    return abs(a - b) <= max(0.05 * max(abs(a), abs(b)), 0.005)
+
+
+def corrigir_proventos_acao(t: str, semanal: list, b3: list) -> tuple[list, list]:
+    """Confere os proventos do Yahoo com os da B3 (oficiais, últimos 12 meses) semana a semana; quando divergem,
+    o Investidor10 desempata. Pagamento que falta no Yahoo entra pelo registro da B3. Devolve a série corrigida
+    (ajustado refeito reinvestindo os proventos) e a lista de correções."""
+    import i10
+    hoje = dt.date.today().isoformat()
+    b3 = [p for p in b3 or [] if p.get("data_com") and p.get("valor") and _sexta_ex(p["data_com"]) <= hoje]
+    if not b3 or not semanal:
+        return semanal, []
+    ini = min(_sexta_ex(p["data_com"]) for p in b3)
+    pb, mes_de = {}, {}
+    for p in b3:
+        k = _sexta_ex(p["data_com"])
+        pb[k] = pb.get(k, 0.0) + p["valor"]
+        mes_de[k] = p["data_com"][:7]
+    datas = [r[0] for r in semanal]
+    py = {r[0]: r[3] for r in semanal if r[3] and r[0] >= ini}
+    terceira = None
+    corr, novo = [], {}
+    for k in sorted(set(pb) | set(py)):
+        b, y = pb.get(k), py.get(k)
+        if b is not None and y is not None and _perto(b, y):
+            continue
+        if b is None:
+            continue                      # só no Yahoo: a lista da B3 às vezes não traz tudo; mantém
+        if terceira is None:
+            try:
+                terceira = i10.historico(t, tipo="acoes")
+            except Exception:
+                terceira = {}
+        i = terceira.get(mes_de[k])
+        if y is not None and i is not None and _perto(i, y) and not _perto(i, b):
+            continue                      # Investidor10 confirma o Yahoo
+        novo[k] = b
+        corr.append({"semana": k, "yahoo": round(y, 6) if y is not None else None, "b3": round(b, 6),
+                     "investidor10": round(i, 6) if i is not None else None, "usado": "B3"})
+    if not novo:
+        return semanal, []
+    out = [list(r) for r in semanal]
+    for k, v in novo.items():
+        j = next((n for n, d in enumerate(datas) if d >= k), None)
+        if j is None:
+            continue
+        # tira o valor do Yahoo da semana errada mais próxima (até 2 semanas) e põe o da B3 na semana certa
+        for n in range(max(0, j - 2), min(len(out), j + 3)):
+            if out[n][3] and n != j and out[n][0] not in pb and abs(out[n][3] - v) < max(v, out[n][3]):
+                out[n][3] = 0.0
+        out[j][3] = round(v, 6)
+    aj = None
+    for n, r in enumerate(out):
+        aj = r[1] if aj is None else aj * (r[1] + r[3]) / out[n - 1][1]
+        r[2] = aj
+    k = out[-1][1] / out[-1][2]
+    for r in out:
+        r[2] = round(r[2] * k, 4)
+    return out, corr
+
+
 def mensal_bcb(serie: int) -> list:
     """[[AAAA-MM, taxa do mês em fração], ...] desde ANOS atrás."""
     hoje = dt.date.today()
@@ -106,15 +200,49 @@ def main():
     tickers = [a["ticker"] for a in universo] + [f["ticker"] for f in fiis]
     sim = {t: (t if t in stocks else t + ".SA") for t in tickers}   # stocks americanas não levam .SA
     dfs = S.precos_yf(list(sim.values()) + ["^BVSP", "^SP500TR"], anos=ANOS)
+    try:
+        import rendimentos_fii
+        rend_fii = rendimentos_fii.todos(dfs)
+    except Exception as e:
+        print(f"rendimentos dos FIIs: {e}; FIIs ficam com os dividendos do Yahoo")
+        rend_fii = {}
+    prov_b3 = {}
+    try:      # proventos oficiais da B3 (últimos 12 meses), gravados pelo update.py
+        dv = json.loads((RAIZ / "data" / "dividends.json").read_text(encoding="utf-8"))
+        prov_b3 = {t: x["lista"] for t, x in dv.items() if isinstance(x, dict) and str(x.get("fonte", "")).startswith("B3")}
+    except Exception as e:
+        print(f"proventos da B3: {e}")
     n = 0
     for t in tickers:
         df = dfs.get(sim[t])
         if df is None or df.empty:
-            print(f"{t}: sem preço")
-            continue
+            if t not in rend_fii:
+                print(f"{t}: sem preço")
+                continue
         fonte = "Yahoo Finance (bolsa americana, em US$)" if t in stocks else "Yahoo Finance (B3)"
-        gravar(SAIDA / f"{t}.json", {"ticker": t, "fonte": fonte, "moeda": "USD" if t in stocks else "BRL",
-                                     "colunas": ["data", "fechamento", "ajustado", "proventos"], "semanal": serie_semanal(df)})
+        obj = {"ticker": t, "fonte": fonte, "moeda": "USD" if t in stocks else "BRL",
+               "colunas": ["data", "fechamento", "ajustado", "proventos"]}
+        if t in rend_fii and rend_fii[t][0]:
+            serie, primeiro, info, semanal = rend_fii[t]
+            listado = info.get("listado_desde")
+            # rendimentos conhecidos só a partir de um mês bem depois da listagem: a série começa ali, com aviso
+            limitado = bool(primeiro and listado and primeiro > (pd.Timestamp(listado) + pd.DateOffset(months=2)).strftime("%Y-%m"))
+            desde = (primeiro + "-01") if limitado else listado
+            obj["semanal"] = serie_semanal_fii(semanal, serie, desde)
+            obj["fonte"] = "B3 (COTAHIST) e Yahoo Finance"
+            obj["listado_desde"] = listado
+            obj["proventos_desde"] = primeiro
+            obj["inicio_limitado"] = limitado
+            obj["fonte_proventos"] = ", ".join(rendimentos_fii.NOMES[f] for f in rendimentos_fii.PRIORIDADE if info["meses_por_fonte"].get(f))
+            obj["conferencia"] = {k: v for k, v in info.items() if k != "exemplos_conflito"}
+        else:
+            obj["semanal"] = serie_semanal(df)
+            if t in prov_b3:
+                obj["semanal"], corr = corrigir_proventos_acao(t, obj["semanal"], prov_b3[t])
+                if corr:
+                    obj["correcoes_proventos"] = corr
+                    print(f"{t}: {len(corr)} provento(s) do Yahoo corrigido(s) pela B3")
+        gravar(SAIDA / f"{t}.json", obj)
         n += 1
     anterior = {}
     if (SAIDA / "_benchmarks.json").exists():

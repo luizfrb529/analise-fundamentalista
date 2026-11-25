@@ -2108,13 +2108,13 @@ async function pgRetorno(app, q) {
   app.innerHTML = `${trilha([["Retorno total"]])}<div class="cab-pagina"><div><h1>Retorno total</h1>
     <p>${eua ? "Quanto o valor investido virou em dólares, somando a variação do preço e os dividendos. Compare com o S&P 500 com dividendos reinvestidos." : "Quanto o valor investido virou, somando a variação do preço e os proventos. Compare com CDI, IPCA + juro real e Ibovespa."}</p></div></div>
   ${misto ? '<div class="aviso-info">Stocks americanas estão em dólar e ações da B3 em reais: para comparar, escolha só stocks (contra o S&P 500) ou só ativos da B3.</div>' : ""}
-  <div class="aviso-rt"><b>Estimativa.</b> Cálculo próprio com preços e proventos brutos do Yahoo Finance (JCP antes do IR de 15%), sem custos e impostos. Calculadoras que descontam IR ou usam outras datas chegam a números diferentes; use como referência de ordem de grandeza, não como extrato.</div>
+  <div class="aviso-rt"><b>Estimativa.</b> Cálculo próprio com preços e proventos brutos (JCP antes do IR de 15%), sem custos e impostos. Calculadoras que descontam IR ou usam outras datas chegam a números diferentes; use como referência de ordem de grandeza, não como extrato.</div>
   <div class="cartao rt-ctrl">
     <div class="linha"><div class="chips">${sel.map((t, i) => `<button class="chip ativo" data-rm="${t}"><i class="rt-cor" style="background:${RT_CORES[i]}"></i>${logo(t)}${t}<span class="x">✕</span></button>`).join("") || '<span class="muted">Escolha até 6 ações.</span>'}</div>
       <select id="rt-add"><option value="">Adicionar ação ou FII</option><optgroup label="Ações e BDRs">${D.univ.filter((a) => !sel.includes(a.ticker) && a.tipo !== "STOCK_US").map((a) => `<option value="${a.ticker}">${a.ticker} · ${esc(a.nome)}</option>`).join("")}</optgroup><optgroup label="Stocks (EUA, em US$)">${D.stocks.filter((x) => !sel.includes(x)).map((x) => `<option value="${x}">${x} · ${esc(A(x).nome)}</option>`).join("")}</optgroup><optgroup label="Fundos imobiliários">${(D.fiis || []).filter((f) => !sel.includes(f.ticker)).map((f) => `<option value="${f.ticker}">${f.ticker} · ${esc(f.nome)}</option>`).join("")}</optgroup></select></div>
     <div class="linha rt-opcoes">
       <label class="rt-valor">Valor investido <span class="rt-valor-campo">${mo} <input id="rt-valor" inputmode="decimal" value="${nf2.format(VI)}" aria-label="Valor investido"></span></label>
-      <div class="abas" id="rt-per" style="margin:0">${[["1", "1 ano"], ["3", "3 anos"], ["5", "5 anos"], ["10", "10 anos"], ["15", "15 anos"]].map(([v, n]) => `<button data-v="${v}" class="${v === anos ? "ativo" : ""}">${n}</button>`).join("")}</div>
+      <div class="abas" id="rt-per" style="margin:0">${[["1", "1 ano"], ["3", "3 anos"], ["5", "5 anos"], ["10", "10 anos"], ["15", "15 anos"], ["max", "Desde o início"]].map(([v, n]) => `<button data-v="${v}" class="${v === anos ? "ativo" : ""}">${n}</button>`).join("")}</div>
       <div class="abas" id="rt-modo" style="margin:0">${[["com", "Com reinvestimento"], ["sem", "Sem reinvestimento"], ["ambos", "Os dois"]].map(([v, n]) => `<button data-v="${v}" class="${v === modo ? "ativo" : ""}">${n}</button>`).join("")}</div>
       <div class="rt-bench">${Object.entries(RT_BENCH).filter(([k]) => eua ? k === "sp500" : k !== "sp500").map(([k, [n, c]]) => `<label><input type="checkbox" value="${k}" ${bench.includes(k) ? "checked" : ""}><i class="rt-cor" style="background:${c}"></i>${n}</label>`).join("")}</div>
     </div></div>
@@ -2133,8 +2133,20 @@ async function pgRetorno(app, q) {
   const bm = D.cache.rtBench || (D.cache.rtBench = await j("data/retorno/_benchmarks.json", null));
   const series = await Promise.all(sel.map((t) => D.cache["rt" + t] ? D.cache["rt" + t] : j(`data/retorno/${t}.json`, null).then((x) => (D.cache["rt" + t] = x))));
   if (!bm) { $("#rt-saida").innerHTML = '<div class="cartao"><p class="vazio">Dados de retorno total indisponíveis no momento.</p></div>'; return; }
-  const inicio = new Date(); inicio.setFullYear(inicio.getFullYear() - +anos);
-  const ini = inicio.toISOString().slice(0, 10);
+  const inicio = new Date(); inicio.setFullYear(inicio.getFullYear() - (anos === "max" ? 40 : +anos));
+  let ini = inicio.toISOString().slice(0, 10);
+  if (anos === "max") {   // desde o início: a partir do primeiro pregão do ativo mais novo escolhido, para comparar no mesmo período
+    const ini0 = series.filter((x) => x && x.semanal && x.semanal.length).map((x) => x.semanal[0][0]).sort().pop();
+    if (ini0) ini = ini0;
+  }
+  // FIIs: os rendimentos só são conhecidos a partir de "proventos_desde"; o período começa ali para todos compararem igual
+  const limites = series.map((x, i) => x && x.inicio_limitado && x.semanal.length && x.semanal[0][0] >= ini ? [sel[i], x.semanal[0][0], x.proventos_desde] : null).filter(Boolean);
+  let avisoIni = "";
+  if (limites.length) {
+    const mx = limites.reduce((m, l) => (l[1] > m[1] ? l : m));
+    ini = mx[1];
+    avisoIni = ` O período começa em ${dataBR(ini)}: o histórico de rendimentos de ${limites.map((l) => l[0] + " (desde " + l[2].split("-").reverse().join("/") + ")").join(", ")} não foi encontrado em fonte confiável para os anos anteriores.`;
+  }
   // calendário semanal: sextas do Ibovespa no período
   const cal = ((eua ? bm.sp500 : bm.ibov) || []).map(([d]) => d).filter((d) => d >= ini);
   if (cal.length < 2) { $("#rt-saida").innerHTML = '<div class="cartao"><p class="vazio">Sem dados para o período.</p></div>'; return; }
@@ -2192,12 +2204,12 @@ async function pgRetorno(app, q) {
   o.plugins.tooltip.itemSort = (a, b) => (b.parsed.y || 0) - (a.parsed.y || 0);
   linhasTab.sort((a, b) => b.fim - a.fim);
   $("#rt-saida").innerHTML = `<div class="cartao"><div class="grafico alto"><canvas id="g-rt"></canvas></div>
-    <p class="sub" style="margin-top:8px">Valor de ${mo} ${nf2.format(VI)} investidos em ${dataBR(d0)}, semana a semana. ${modo === "ambos" ? "Linha cheia: proventos reinvestidos na própria ação. Linha tracejada: proventos guardados em dinheiro, sem render." : modo === "com" ? "Proventos reinvestidos na própria ação na data ex." : "Proventos guardados em dinheiro, sem render."}</p></div>
+    <p class="sub" style="margin-top:8px">Valor de ${mo} ${nf2.format(VI)} investidos em ${dataBR(d0)}, semana a semana. ${modo === "ambos" ? "Linha cheia: proventos reinvestidos na própria ação. Linha tracejada: proventos guardados em dinheiro, sem render." : modo === "com" ? "Proventos reinvestidos na própria ação na data ex." : "Proventos guardados em dinheiro, sem render."}${avisoIni}</p></div>
   <div class="cartao" style="margin-top:16px"><div class="cartao-cab"><h3>Resultado no período</h3><button class="btn peq" id="rt-xls">Baixar Excel</button></div>
     <div class="tabela-wrap"><table class="resp"><thead><tr><th>Investimento</th><th class="n">Valor final</th><th class="n">Retorno no período</th><th class="n">Retorno ao ano</th></tr></thead><tbody>
     ${linhasTab.map((l) => `<tr><td data-label="Investimento"><i class="rt-cor${l.tracej ? " tracej" : ""}" style="background:${l.cor}"></i>${esc(l.nome)}${l.desde !== d0 ? ` <span class="muted">desde ${dataBR(l.desde)}</span>` : ""}</td><td class="n" data-label="Valor final"><b>${mo} ${nf2.format(l.fim)}</b></td><td class="n" data-label="Retorno no período">${varHtml(l.total)}</td><td class="n" data-label="Retorno ao ano">${ok(l.aa) ? varHtml(l.aa) : '<span class="muted">menos de 1 ano</span>'}</td></tr>`).join("")}
     </tbody></table></div>
-    ${eua ? `<p class="sub" style="margin-top:10px">Fontes: preços e dividendos das stocks pelo Yahoo Finance (bolsa americana, em US$), pela data ex, com dividendos brutos (antes do imposto retido nos EUA); S&P 500 com dividendos reinvestidos (S&P 500 Total Return). Sem custos, impostos e câmbio. Rentabilidade passada não garante rentabilidade futura.</p>` : `<p class="sub" style="margin-top:10px">Fontes: preços e proventos da B3 via Yahoo Finance, pela data ex, com proventos brutos (JCP antes do IR de 15%); calculadoras que descontam IR ou usam outras datas de início e fim chegam a números diferentes; CDI e IPCA mensais do Banco Central (séries 4391 e 433); IFIX diário oficial da B3 (índice de retorno total, já considera os rendimentos), com o último mês publicado repetido até sair o próximo. Sem custos, impostos e taxas. Rentabilidade passada não garante rentabilidade futura.</p>`}</div>`;
+    ${eua ? `<p class="sub" style="margin-top:10px">Fontes: preços e dividendos das stocks pelo Yahoo Finance (bolsa americana, em US$), pela data ex, com dividendos brutos (antes do imposto retido nos EUA); S&P 500 com dividendos reinvestidos (S&P 500 Total Return). Sem custos, impostos e câmbio. Rentabilidade passada não garante rentabilidade futura.</p>` : `<p class="sub" style="margin-top:10px">Fontes: preços e proventos da B3 via Yahoo Finance, pela data ex, com proventos brutos (JCP antes do IR de 15%); calculadoras que descontam IR ou usam outras datas de início e fim chegam a números diferentes; CDI e IPCA mensais do Banco Central (séries 4391 e 433); IFIX diário oficial da B3 (índice de retorno total, já considera os rendimentos), com o último mês publicado repetido até sair o próximo. FIIs: cotações da série histórica oficial da B3 (COTAHIST) e do Yahoo, ajustadas por desdobramentos; rendimentos cruzados mês a mês entre os avisos oficiais (FundosNet), as tabelas de rentabilidade dos administradores (FundosNet), o Investidor10 e o informe mensal da CVM, porque o Yahoo não tem os rendimentos dos fundos antes de 2022. Não inclui o valor de direitos de subscrição em novas emissões de cotas. Sem custos, impostos e taxas. Rentabilidade passada não garante rentabilidade futura.</p>`}</div>`;
   charts.push(new Chart($("#g-rt"), { type: "line", data: { labels: cal.map(dataBR), datasets: dsets }, options: o }));
   $("#rt-xls").onclick = () => baixarExcel(`retorno_total_${anos}_anos`, [{ nome: "Retorno total", cab: ["Investimento", "Desde", `Valor final de ${mo} ${nf2.format(VI)} (${mo})`, "Retorno no período (%)", "Retorno ao ano (%)"], linhas: linhasTab.map((l) => [l.nome, dataBR(l.desde), +l.fim.toFixed(2), +(l.total * 100).toFixed(2), ok(l.aa) ? +(l.aa * 100).toFixed(2) : null]) }]);
 }
