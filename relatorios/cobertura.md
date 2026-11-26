@@ -1,6 +1,6 @@
 # Relatório de cobertura de dados
 
-Gerado em 26/11/2026 05:57 | Preços de fechamento de 2026-11-25 | Balanços até 3T2026
+Gerado em 26/11/2026 17:38 | Preços de fechamento de 2026-11-25 | Balanços até 3T2026
 
 | Ticker | Modelo | Balanço | Fonte | Indicadores com valor | Faltando |
 |---|---|---|---|---|---|
@@ -312,7 +312,7 @@ Gerado em 26/11/2026 05:57 | Preços de fechamento de 2026-11-25 | Balanços at�
 | ADBE | GERAL | 2026-08-28 | SEC EDGAR (XBRL) | 87/96 | 9 |
 | INTU | GERAL | 2026-10-31 | SEC EDGAR (XBRL) | 91/96 | 5 |
 | WDAY | GERAL | 2026-10-31 | SEC EDGAR (XBRL) | 78/96 | 18 |
-| ADSK | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 86/96 | 10 |
+| ADSK | GERAL | 2026-10-31 | SEC EDGAR (XBRL) | 86/96 | 10 |
 | SNPS | GERAL | 2026-07-31 | SEC EDGAR (XBRL) | 89/96 | 7 |
 | CRWD | GERAL | 2026-10-31 | SEC EDGAR (XBRL) | 50/96 | 46 |
 | AKAM | GERAL | 2026-09-30 | SEC EDGAR (XBRL) | 84/96 | 12 |
@@ -2783,6 +2783,8 @@ Indicadores sem valor e motivo:
 
 ## BEEF3
 
+Avisos do pipeline:
+- total de ações CVM (991,717,887) difere da B3 (914,670,252); usado CVM
 
 Indicadores sem valor e motivo:
 
@@ -7728,7 +7730,6 @@ Indicadores sem valor e motivo:
 
 Avisos do pipeline:
 - número de ações pelo yfinance (SEC sem dei:EntityCommonStockSharesOutstanding)
-- ações da SEC (189,140,238) incompatíveis com o valor de mercado do Yahoo; usadas 584,145,208 (fator 3.088, classes ou ADR)
 
 Indicadores sem valor e motivo:
 
@@ -10961,5 +10962,6 @@ Empresas fora do modelo RECUPERACAO com dois ou mais entre PL negativo, Dív.lí
 | MEDS | GERAL | patrimônio líquido negativo; dív.líq/EBITDA com EBITDA negativo; EBIT não cobre juros (-6.22x) | monitorar: conferir se houve pedido de recuperação judicial ou extrajudicial |
 
 ## Geral
+- cdi: HTTP 304 em https://api.bcb.gov.br/dados/serie/bcdata.sgs.4389/dados/ultimos/1?formato=json&_=1795725504
 - NTN-B: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
 - sem histórico: ['BPAC4.SA', 'MGLU4.SA', 'RAIZ3.SA', 'TFCO3.SA']
