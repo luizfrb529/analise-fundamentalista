@@ -1,0 +1,49 @@
+{
+ "ticker": "ALLD3",
+ "revisado_em": "2026-11-28",
+ "resumo": "Distribuidora e varejista de celulares e eletrônicos, com lojas físicas, venda online, recondicionados (Trocafy) e operação em Miami. Tem caixa líquido e lucro recorrente em alta.",
+ "modelo": "A Allied distribui smartphones, tablets e eletrônicos de grandes marcas para o varejo e empresas (B2B), opera lojas físicas e canais online e vende aparelhos recondicionados pela Trocafy. Ganha na margem de distribuição e de varejo, com receita pontual de venda de produtos, sensível ao ciclo de lançamentos e ao crédito ao consumo. Tem também uma operação de distribuição em Miami (EUA).",
+ "segmentos": [
+  {"nome": "Distribuição Brasil", "peso_receita": null, "periodo": "3T26", "obs": "Cresceu 29,7% no 3T26."},
+  {"nome": "Canal online (inclui Trocafy)", "peso_receita": null, "periodo": "3T26", "obs": "R$ 302,9 mi (+16,3%); Trocafy +49,0%."},
+  {"nome": "Operação em Miami", "peso_receita": null, "periodo": "3T26", "obs": "R$ 240 mi, queda de 41,3% em reais."}
+ ],
+ "segmentos_base": "Receita líquida de R$ 1,49 bi no 3T26 (distribuição Brasil e lojas sem divisão confirmada)",
+ "geografia": {"brasil_pct": 0.84, "exterior_pct": 0.16, "periodo": "3T26", "base": "Receita líquida", "texto": "A maior parte da receita é no Brasil; a operação de Miami respondeu por R$ 240 mi dos R$ 1,49 bi do 3T26."},
+ "moeda": {"receita_em_dolar": "baixa", "divida_em_dolar": "nenhuma", "texto": "Parte da receita vem da operação em Miami, em dólar. No Brasil, os aparelhos têm preço ligado ao câmbio, e a alta do dólar encarece produtos e pode reduzir volume."},
+ "momento": "No 3T26, a receita líquida foi de R$ 1,49 bi (+5,6% sobre o 3T25), com a receita no Brasil subindo 24,7% e a operação de Miami caindo 41,3% em reais. O Ebitda recorrente subiu 40%, para R$ 71,3 mi, e o lucro recorrente 56,7%, para R$ 58,6 mi; o lucro contábil foi de R$ 33,8 mi, queda frente ao 3T25, que teve a venda de créditos da Lei do Bem. A empresa provisionou R$ 37,6 mi para um cliente do varejo em recuperação judicial e terminou setembro com caixa líquido de R$ 184,2 mi.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Ebitda recorrente de R$ 71,3 mi no 3T26, alta de 40% sobre o 3T25.",
+   "Lucro recorrente de R$ 58,6 mi, alta de 56,7% sobre o 3T25.",
+   "Receita no Brasil subiu 24,7%, com distribuição +29,7% e B2B +44,6%."
+  ],
+  "negativos": [
+   "Lucro líquido contábil de R$ 33,8 mi, queda de 87,1% sobre o 3T25, que teve ganho não recorrente.",
+   "Operação de Miami caiu 41,3% em reais, para R$ 240 mi.",
+   "Provisão de R$ 37,6 mi para um cliente do varejo em recuperação judicial."
+  ],
+  "atencao": [
+   "Recebimento de clientes do varejo em recuperação judicial.",
+   "Desempenho da operação em Miami."
+  ]
+ },
+ "sensibilidade": {
+  "selic_caindo": {"nota": 2, "porque": "Celulares e eletrônicos dependem de crédito parcelado ao consumidor; juro menor aumenta volume e reduz inadimplência dos varejistas clientes."},
+  "dolar_subindo": {"nota": -2, "porque": "Aparelhos têm preço ligado ao dólar; câmbio alto encarece produtos e reduz vendas no Brasil, efeito maior que o ganho na operação de Miami."},
+  "commodities_subindo": {"nota": 0, "porque": "O negócio não depende diretamente de commodities."},
+  "pib_acelerando": {"nota": 2, "porque": "Eletrônicos são compra discricionária; mais renda e emprego elevam volumes."},
+  "inflacao_subindo": {"nota": -1, "porque": "Inflação corrói a renda disponível para bens discricionários."},
+  "risco_fiscal_subindo": {"nota": -2, "porque": "Risco fiscal enfraquece o real e mantém o juro alto, os dois ruins para a demanda de eletrônicos."}
+ },
+ "fontes": [
+  {"titulo": "Visno Invest: Allied (ALLD3) registra lucro líquido de R$ 33,8 mi no 3T26", "url": "https://visnoinvest.com.br/news/16497/allied-alld3-registra-lucro-liquido-de-r-338-mi-no-3t26", "data": "2026-11"},
+  {"titulo": "TradeMap: Lucro da Allied (ALLD3) caiu 87,1% no terceiro trimestre de 2026", "url": "https://trademap.com.br/noticias/news-8599955", "data": "2026-11"},
+  {"titulo": "Brasil Inovador: Allied Tecnologia eleva Ebitda recorrente em 40% no terceiro trimestre", "url": "https://brasilinovador.com.br/allied-tecnologia-eleva-ebitda-recorrente-em-40-no-terceiro-trimestre-com-expansao-do-varejo-fisico-e-eletronicos-circulares/", "data": "2026-11"},
+  {"titulo": "GuruFocus: Allied Tecnologia Q3 2026 Earnings Call Highlights", "url": "https://www.gurufocus.com/news/9202216/allied-tecnologia-sa-bspalld3-q3-2026-earnings-call-highlights-40-ebitda-growth-and-net-cash-position-despite-market-headwinds", "data": "2026-11"}
+ ],
+ "pendencias": "Peso exato de distribuição Brasil e lojas físicas na receita não confirmado; marcas distribuídas não detalhadas nas fontes do trimestre.",
+ "ultimo_resultado": "3T26"
+}

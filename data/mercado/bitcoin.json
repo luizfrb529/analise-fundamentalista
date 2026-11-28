@@ -1,0 +1,50 @@
+{
+ "atualizado_em": "2026-11-28T12:06:28",
+ "empresas": [
+  {
+   "ticker": "MSTR",
+   "nome": "Strategy",
+   "moeda": "USD",
+   "btc": 851305.0,
+   "data_btc": "2026-11-22",
+   "fonte_btc": "Strategy, 8-K de 23/11/2026 (SEC), tabela BTC Update",
+   "url_btc": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526470961/mstr-20261123.htm",
+   "acoes": 425458835.0,
+   "divida_bruta": 6715414000,
+   "caixa": 2501456000,
+   "balanco_ate": null,
+   "btc_balanco": 847666.0,
+   "data_btc_balanco": "2026-09-30"
+  },
+  {
+   "ticker": "OBTC3",
+   "nome": "OranjeBTC",
+   "moeda": "BRL",
+   "btc": 3950,
+   "data_btc": "2026-09-30",
+   "fonte_btc": "OranjeBTC, resultado do 3T26 (3.950 BTC em tesouraria), confirmado pelo saldo no balanço da CVM",
+   "url_btc": "https://bitnoticias.com.br/noticias/brasileira-oranjebtc-registra-primeiro-lucro-de-sua-historia-e-amplia-reserva-para-3-950-bitcoins",
+   "acoes": 137236580.0,
+   "divida_bruta": 379417000.0,
+   "caixa": 161769000.0,
+   "balanco_ate": null,
+   "btc_balanco": 3950.006027565078,
+   "data_btc_balanco": "2026-09-30"
+  },
+  {
+   "ticker": "CASH3",
+   "nome": "Méliuz",
+   "moeda": "BRL",
+   "btc": 526.7,
+   "data_btc": "2026-11-11",
+   "fonte_btc": "Méliuz: venda de 78 BTC para a recompra de ações, estoque passou de 604,7 para 526,7 BTC (fato divulgado; confirmado por BTG e imprensa)",
+   "url_btc": "https://moonbh.com.br/capital-m/2026/11/11/meliuz-vende-78-bitcoins-recompra-acoes-cash3/",
+   "acoes": 104382720.0,
+   "divida_bruta": 0.0,
+   "caixa": 106271000.0,
+   "balanco_ate": null,
+   "btc_balanco": null,
+   "data_btc_balanco": null
+  }
+ ]
+}

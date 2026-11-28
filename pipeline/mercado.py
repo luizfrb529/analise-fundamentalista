@@ -14,7 +14,9 @@ from zoneinfo import ZoneInfo
 import yfinance as yf
 
 ATIVOS = {"ibovespa": "^BVSP", "smll": "SMLL.SA", "ewz": "EWZ", "ifix": "IFIX.SA", "sp500": "^GSPC", "nasdaq": "^IXIC", "dolar": "BRL=X",
-          "euro": "EURBRL=X", "brent": "BZ=F", "ouro": "GC=F", "_btc_usd": "BTC-USD"}
+          "euro": "EURBRL=X", "brent": "BZ=F", "ouro": "GC=F", "_btc_usd": "BTC-USD",
+          # aba Commodities (preço de tela; histórico e itens da LME e da B3 vêm do pipeline/commodities.py, diário)
+          "wti": "CL=F", "prata": "SI=F", "cobre": "HG=F", "aco": "HRC=F", "minerio": "TIO=F"}
 
 
 def cotacao(simbolo: str):
@@ -36,6 +38,8 @@ def main():
         except Exception as e:  # um ativo fora do ar não derruba os outros
             print(f"{simbolo}: {e}")
     btc, usd = itens.pop("_btc_usd", None), itens.get("dolar")
+    if btc:
+        itens["bitcoin_usd"] = btc
     if btc and usd:
         var = (1 + (btc["var_dia"] or 0)) * (1 + (usd["var_dia"] or 0)) - 1
         itens["bitcoin_brl"] = {"valor": btc["valor"] * usd["valor"], "var_dia": var}

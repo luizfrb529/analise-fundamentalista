@@ -58,6 +58,7 @@ const ICONE_LUPA = '<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><pat
    ESTADO E UTILITÁRIOS
    ===================================================================== */
 const D = {};
+const PAGINA_VIVA = { fn: null };   // página com preço de tela que se redesenha a cada cotação ao vivo
 let charts = [];
 const EST = { homeSeg: "ACAO_BR", tab: { seg: "TODOS", setor: "", porte: "", busca: "", preset: "padrao", sort: { k: "valor_mercado_brl", d: -1 }, colunas: null },
   rkSeg: "TODOS", rkSetor: "", rkAbertos: {}, rkListas: {}, scrFiltros: [],
@@ -474,8 +475,11 @@ async function render() {
   let ativoMenu = r;
   if (r === "ativos" || r === "filtros") ativoMenu = q.get("seg") === "BDR" ? "bdrs" : q.get("seg") === "STOCK" ? "stocks" : "acoes";
   if (r === "ativo" && D.univMap[p.toUpperCase()]) ativoMenu = isStock(p.toUpperCase()) ? "stocks" : emAcoes(p.toUpperCase()) ? "acoes" : "bdrs";
-  $$(".menu-item > a").forEach((a) => a.classList.toggle("ativo", a.dataset.rota === ativoMenu));
+  PAGINA_VIVA.fn = null;
+  $$(".menu-item > a, .gaveta > a").forEach((a) => a.classList.toggle("ativo", a.dataset.rota === ativoMenu));
+  $("#gaveta-btn").classList.toggle("ativo", $$(".gaveta > a").some((a) => a.dataset.rota === ativoMenu));
   $("#menu").classList.remove("aberto");
+  gaveta(false);
   const app = $("#app");
   try {
     if (r === "") pgHome(app);
@@ -492,7 +496,12 @@ async function render() {
     else if (r === "filtros") pgFiltros(app);
     else if (r === "estudar") pgEstudar(app);
     else if (r === "saudaveis") pgSaudaveis(app, q);
+    else if (r === "commodities") await pgCommodities(app);
+    else if (r === "bitcoin") await pgBitcoin(app);
+    else if (r === "aluguel") await pgAluguel(app, q);
+    else if (r === "tecnica") await pgTecnica(app, q);
     else app.innerHTML = '<div class="cartao"><h1>Página não encontrada</h1><p><a class="lk" href="#/">Voltar ao início</a></p></div>';
+    preencherMM200();
   } catch (e) {
     console.error(e);
     app.innerHTML = `<div class="cartao"><h2>Erro ao montar a página</h2><p class="sub">${esc(e.message)}</p></div>`;
@@ -1084,6 +1093,7 @@ async function pgAtivo(app, t) {
       <div class="preco-grande">${pm} ${ok(p.preco) ? nf2.format(p.preco) : "n/d"}${ok(p.var_dia) ? ` <span class="preco-var">(${varHtml(p.var_dia)})</span>` : ""}</div>
       ${a.fator_cotacao && ok(p.preco) ? `<div class="sub">Preço por ação. Na B3, ${t} é cotado por lote de ${a.fator_cotacao.fator}: R$ ${nf2.format(p.preco * a.fator_cotacao.fator)}.</div>` : ""}
       <div class="sub" style="margin-top:6px">${p.ao_vivo ? `Atualizada às ${new Date(p.ao_vivo).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}` : `Fechamento de ${dataBR(p.data)}`}</div>
+      <div class="sub mm200-linha" data-mm200="${t}"></div>
       <div class="sub">No ano ${varHtml(p.var_ano)} · 12 meses ${varHtml(p.var_12m)}</div>
       ${pos52 !== null ? `<div class="faixa52"><div class="trilho"><span class="marc" style="left:${pos52}%"></span></div><div class="ext"><span>Mín. 52 semanas ${pm} ${nf2.format(p.min_52s)}</span><span>Máx. ${pm} ${nf2.format(p.max_52s)}</span></div></div>` : ""}</div>
       <div class="linha" style="gap:8px"><a class="btn peq" href="#/retorno?t=${t}&p=10&m=ambos&b=${stk ? "sp500" : "cdi,ipca6"}">Retorno total com ${stk ? "dividendos" : "proventos"}</a><div class="chips" id="px-per"><button class="chip ativo" data-p="1">1A</button><button class="chip" data-p="5">5A</button><button class="chip" data-p="10">10A</button></div></div></div>
@@ -2584,6 +2594,7 @@ async function pgFii(app, t) {
   <div class="cartao" style="margin-top:18px"><div class="cotacao-cab"><div title="Cotação com atraso de até 15 minutos."><div class="sub">Cotação</div>
     <div class="preco-grande">${reais(preco)}${ok(vivo ? vivo.var_dia : i.var_dia) ? ` <span class="preco-var">(${varHtml(vivo ? vivo.var_dia : i.var_dia)})</span>` : ""}</div>
     <div class="sub" style="margin-top:6px">${vivo ? `Atualizada às ${new Date(vivo.ao_vivo).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}` : `Fechamento de ${dataBR(i.data_preco)}`}</div>
+    <div class="sub mm200-linha" data-mm200="${t}"></div>
     <div class="sub">No ano ${varHtml(i.var_ano)} · 12 meses ${varHtml(i.var_12m)}</div>
     ${ok(i.min_52s) && ok(i.max_52s) && i.max_52s > i.min_52s ? `<div class="faixa52"><div class="trilho"><span class="marc" style="left:${Math.max(0, Math.min(100, (preco - i.min_52s) / (i.max_52s - i.min_52s) * 100))}%"></span></div><div class="ext"><span>Mín. 52 semanas ${reais(i.min_52s)}</span><span>Máx. ${reais(i.max_52s)}</span></div></div>` : ""}</div>
     <div class="linha" style="gap:8px"><a class="btn peq" href="#/retorno?t=${t}&p=3&m=ambos&b=${ehInfra ? "cdi,ipca5" : "ifix,cdi"}">Retorno total x ${ehInfra ? "CDI e IPCA+5%" : "IFIX e CDI"}</a><div class="chips" id="fii-per"><button class="chip ativo" data-p="1">1A</button><button class="chip" data-p="3">3A</button><button class="chip" data-p="10">Máx.</button></div></div></div>
@@ -2911,7 +2922,7 @@ function exportarAgenda(seg, permitidos) {
    ===================================================================== */
 /* ---------------- faixa de cotações: dados ao vivo e arraste com o mouse */
 const AO_VIVO = { url: "https://raw.githubusercontent.com/luizfrb529/analise-fundamentalista/refs/heads/mercado/mercado.json",
-  cambio: "https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL", intervaloMs: 60000 };
+  cambio: "https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL,BTC-USD", intervaloMs: 60000 };
 const FAIXA = { x: 0, pausado: false, arrastando: false, ultX: 0, moveu: 0, ultimo: 0, hora: null };
 async function cotacoesAoVivo() {
   const m = D.macro;
@@ -2932,12 +2943,13 @@ async function cotacoesAoVivo() {
     if (r.ok) {
       const j = await r.json();
       const usa = (par, chave) => { const x = j[par]; if (x && isFinite(+x.bid)) m[chave] = { ...(m[chave] || {}), valor: +x.bid, var_dia: +x.pctChange / 100 }; };
-      usa("USDBRL", "dolar"); usa("EURBRL", "euro"); usa("BTCBRL", "bitcoin_brl");
+      usa("USDBRL", "dolar"); usa("EURBRL", "euro"); usa("BTCBRL", "bitcoin_brl"); usa("BTCUSD", "bitcoin_usd");
       for (const par of ["USDBRL", "EURBRL", "BTCBRL"]) if (j[par] && +j[par].timestamp) { const q = new Date(+j[par].timestamp * 1000); if (!hora || q > hora) hora = q; }   // o Bitcoin negocia 24h: o relógio mostra a cotação mais recente
     }
   } catch (e) { /* idem */ }
   FAIXA.hora = hora;
   faixaMercado();
+  if (PAGINA_VIVA.fn) PAGINA_VIVA.fn();      // páginas com preço de tela (commodities, bitcoin) se redesenham
 }
 function faixaMercado() {
   const m = D.macro || {};
@@ -3029,6 +3041,19 @@ function tema() {
     render();
   };
   $("#menu-btn").onclick = () => $("#menu").classList.toggle("aberto");
+  $("#gaveta-btn").onclick = () => gaveta($("#gaveta").hidden);
+  $("#gaveta-fechar").onclick = () => gaveta(false);
+  $("#gaveta-fundo").onclick = () => gaveta(false);
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !$("#gaveta").hidden) gaveta(false); });
+}
+/* painel lateral com as ferramentas que não cabem no menu de cima */
+function gaveta(abrir) {
+  const g = $("#gaveta"), f = $("#gaveta-fundo"), b = $("#gaveta-btn");
+  if (!g) return;
+  g.hidden = !abrir; f.hidden = !abrir;
+  b.setAttribute("aria-expanded", abrir ? "true" : "false");
+  document.body.classList.toggle("gaveta-aberta", !!abrir);
+  if (abrir) { const x = g.querySelector("a.ativo") || g.querySelector("a"); x && x.focus(); }
 }
 function tooltips() {
   const tt = $("#tooltip");
@@ -3135,3 +3160,343 @@ document.addEventListener("click", (e) => {
   });
   pares.forEach(([r]) => corpo.appendChild(r));
 });
+
+/* =====================================================================
+   COMMODITIES: petróleo, metais e agro (pipeline/commodities.py; preço de tela pela faixa ao vivo)
+   ===================================================================== */
+function sparkSvg(serie, cls = "") {
+  const v = (serie || []).map((x) => x[1]).filter(ok);
+  if (v.length < 2) return '<div class="spark-vazio">Histórico ainda curto</div>';
+  const W = 320, H = 64, mn = Math.min(...v), mx = Math.max(...v), r = mx - mn || 1;
+  const pts = v.map((y, i) => [(i / (v.length - 1)) * W, H - 4 - ((y - mn) / r) * (H - 8)]);
+  const linha = pts.map(([x, y], i) => `${i ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`).join("");
+  return `<svg class="spark ${cls}" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true"><path class="area" d="${linha}L${W},${H}L0,${H}Z"/><path class="linha" d="${linha}"/></svg>`;
+}
+function fmtPrecoCm(x) {
+  const v = x.preco, moeda = x.unidade.startsWith("R$") ? "R$" : "US$";
+  return `${moeda} ${v >= 10 ? nf2.format(v) : new Intl.NumberFormat("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 3 }).format(v)}`;
+}
+async function pgCommodities(app) {
+  app.innerHTML = '<div class="carregando"><span></span>Carregando cotações</div>';
+  const d = D.cache.cm || (D.cache.cm = await j("data/mercado/commodities.json", null));
+  if (!d || !(d.itens || []).length) { app.innerHTML = '<div class="cartao"><p class="vazio">Cotações de commodities indisponíveis no momento.</p></div>'; return; }
+  const desenhar = () => {
+    const m = D.macro || {};
+    const itens = d.itens.map((x) => {
+      const v = x.ao_vivo && m[x.ao_vivo] && ok(m[x.ao_vivo].valor) && FAIXA.hora ? m[x.ao_vivo] : null;   // preço de tela (Yahoo, atraso de até 15 min)
+      return v ? { ...x, preco: v.valor, var_dia: v.var_dia, vivo: true } : x;
+    });
+    const grupos = [...new Set(itens.map((x) => x.grupo))];
+    const pil = (n, v) => `<span class="cm-pil">${n} ${varHtml(v)}</span>`;
+    const card = (x) => `<div class="cartao cm-card">
+      <div class="cm-topo"><span class="cm-nome">${esc(x.nome)} <i class="info" data-tip="${esc(x.explicacao + " Fonte: " + x.fonte + (x.conferencia ? ". Conferência: " + x.conferencia : "") + ".")}">?</i></span>
+        <span class="cm-hora">${x.vivo ? "hoje " + FAIXA.hora.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" }) : dataBR(x.data)}</span></div>
+      <div class="cm-preco"><b>${fmtPrecoCm(x)}</b> ${ok(x.var_dia) ? `<span class="cm-dia ${sinal(x.var_dia)}">${x.var_dia > 0 ? "▲" : x.var_dia < 0 ? "▼" : ""} ${nf2.format(Math.abs(x.var_dia) * 100)}%</span> <span class="muted">no dia</span>` : ""}</div>
+      <div class="cm-sub">1 semana ${varHtml(x.var_sem)}</div>
+      <div class="cm-sub muted">${esc(x.unidade)} · ${esc(x.praca)}</div>
+      ${sparkSvg(x.serie, (x.var_12m ?? x.var_mes ?? 0) >= 0 ? "alta" : "baixa")}
+      <div class="cm-pils">${pil("1 mês", x.var_mes)}${ok(x.var_12m) ? pil("1 ano", x.var_12m) : `<span class="cm-pil muted" data-tip="A B3 só guarda 21 dias no boletim diário; o histórico é acumulado dia a dia desde ${dataBR(x.historico_desde)}.">histórico desde ${dataBR(x.historico_desde)}</span>`}${ok(x.var_ano) ? pil("No ano", x.var_ano) : ""}</div>
+    </div>`;
+    app.innerHTML = `${trilha([["Commodities"]])}<div class="cab-pagina"><div><h1>Commodities</h1>
+      <p>Petróleo, metais e agro: cotação, variação e gráfico de 1 ano. Passe o mouse no <i class="info">?</i> para saber o que é cada uma e de onde vem o preço.</p></div></div>
+      ${grupos.map((g) => `<h2 class="cm-grupo">${esc(g)}</h2><div class="cm-grade">${itens.filter((x) => x.grupo === g).map(card).join("")}</div>`).join("")}
+      <p class="sub" style="margin-top:14px">Fontes: Yahoo Finance (contratos futuros mais próximos, com atraso de até 15 minutos), LME pelo preço oficial à vista publicado pela Westmetall (alumínio, níquel e zinco) e Boletim Diário da B3 (boi gordo e milho, indicadores CEPEA/B3). Gráficos com fechamentos diários de 1 ano. Conteúdo informativo, não é recomendação.</p>`;
+  };
+  desenhar();
+  PAGINA_VIVA.fn = () => { if (rota().r === "commodities") desenhar(); };
+}
+
+/* =====================================================================
+   EMPRESAS COM BITCOIN: mNAV com o preço de tela da ação e do bitcoin
+   (posição em BTC: data/mercado/bitcoin.json, pipeline/bitcoin_tesouraria.py)
+   ===================================================================== */
+async function pgBitcoin(app) {
+  app.innerHTML = '<div class="carregando"><span></span>Carregando</div>';
+  const d = D.cache.btcTes || (D.cache.btcTes = await j("data/mercado/bitcoin.json", null));
+  if (!d || !(d.empresas || []).length) { app.innerHTML = '<div class="cartao"><p class="vazio">Dados indisponíveis no momento.</p></div>'; return; }
+  const ns = await Promise.all(d.empresas.map((e) => noticias(e.ticker)));
+  const lista = d.empresas.flatMap((e, i) => (ns[i].noticias || []).map((x) => ({ ...x, t: e.ticker })));
+  const vistos = new Set();
+  const notic = lista.filter((x) => { const k = (x.titulo || "").toLowerCase(); if (vistos.has(k)) return false; vistos.add(k); return true; })
+    .sort((a, b) => String(b.data || "").localeCompare(String(a.data || ""))).slice(0, 18);
+  const nfBtc = new Intl.NumberFormat("pt-BR", { maximumFractionDigits: 2 });
+  const desenhar = () => {
+    const m = D.macro || {};
+    const btcBrl = (m.bitcoin_brl || {}).valor, btcUsd = (m.bitcoin_usd || {}).valor || (btcBrl && (m.dolar || {}).valor ? btcBrl / m.dolar.valor : null);
+    const linhas = d.empresas.map((e) => {
+      const p = D.prices[e.ticker] || {}, usd = e.moeda === "USD", mo = usd ? "US$" : "R$";
+      const btcPx = usd ? btcUsd : btcBrl;
+      const vm = ok(p.preco) && ok(e.acoes) ? p.preco * e.acoes : null;
+      const nav = ok(btcPx) ? e.btc * btcPx : null;
+      const dl = (e.divida_bruta || 0) - (e.caixa || 0);
+      const ev = ok(vm) ? vm + dl : null;
+      return { ...e, p, usd, mo, btcPx, vm, nav, dl, ev,
+        mnav: ok(vm) && nav ? vm / nav : null, mnavEv: ok(ev) && nav ? ev / nav : null,
+        implicito: ok(vm) ? vm / e.btc : null, sats: ok(e.acoes) ? (e.btc / e.acoes) * 1e8 : null };
+    });
+    const leitura = (x) => {
+      if (!ok(x.mnav)) return "";
+      const dif = x.mnav - 1;
+      return dif < 0
+        ? `O valor de mercado é <b>${nf2.format(-dif * 100)}% menor</b> que o valor dos bitcoins que a empresa tem: pela ação, cada bitcoin sai mais barato que no mercado (antes de dívida, caixa e custos da empresa).`
+        : `O valor de mercado é <b>${nf2.format(dif * 100)}% maior</b> que o valor dos bitcoins que a empresa tem: pela ação, paga-se um ágio sobre o bitcoin direto.`;
+    };
+    const tip = {
+      mnav: "mNAV = valor de mercado da empresa ÷ valor dos bitcoins que ela tem, ao preço de agora. Abaixo de 1,00: a bolsa paga menos que os bitcoins valem (desconto). Acima de 1,00: paga mais (ágio).",
+      mnavEv: "mNAV ajustado = (valor de mercado + dívida − caixa em dinheiro) ÷ valor dos bitcoins. Considera que a dívida também precisa ser paga e o caixa em dinheiro também pertence ao acionista. Na Strategy, não inclui as ações preferenciais.",
+      impl: "Quanto custa cada bitcoin comprado indiretamente pela ação: valor de mercado ÷ bitcoins da empresa.",
+      sats: "Satoshis (1 bitcoin = 100 milhões de satoshis) por ação: a fatia de bitcoin que cada ação representa.",
+    };
+    const cel = (x) => `<div class="cartao btc-card">
+      <div class="btc-cab">${empresa(x.ticker)}</div>
+      <div class="btc-num"><span>mNAV <i class="info" data-tip="${esc(tip.mnav)}">?</i></span><b class="${ok(x.mnav) ? (x.mnav < 1 ? "pos" : "neg") : ""}">${ok(x.mnav) ? nf2.format(x.mnav) : "n/d"}</b></div>
+      <div class="btc-barras" aria-hidden="true">${ok(x.vm) && x.nav ? (() => { const mx = Math.max(x.vm, x.nav); return `<div><span>Valor de mercado</span><i style="width:${(x.vm / mx) * 100}%" class="vm"></i><em>${x.mo} ${grande(x.vm)}</em></div><div><span>Bitcoins em caixa</span><i style="width:${(x.nav / mx) * 100}%" class="nav"></i><em>${x.mo} ${grande(x.nav)}</em></div>`; })() : ""}</div>
+      <p class="btc-leitura">${leitura(x)}</p>
+      <div class="btc-grade">
+        <div><span>Cotação</span><b>${ok(x.p.preco) ? x.mo + " " + nf2.format(x.p.preco) : "n/d"}</b> ${varHtml(x.p.var_dia)}</div>
+        <div><span>Bitcoins da empresa</span><b>${nfBtc.format(x.btc)} BTC</b><small>em ${dataBR(x.data_btc)} <i class="info" data-tip="${esc("Fonte: " + x.fonte_btc)}">i</i></small></div>
+        <div><span>mNAV ajustado <i class="info" data-tip="${esc(tip.mnavEv)}">?</i></span><b>${ok(x.mnavEv) ? nf2.format(x.mnavEv) : "n/d"}</b><small>${x.dl >= 0 ? "dívida líquida" : "caixa líquido"} ${x.mo} ${grande(Math.abs(x.dl))}</small></div>
+        <div><span>Bitcoin pela ação <i class="info" data-tip="${esc(tip.impl)}">?</i></span><b>${ok(x.implicito) ? x.mo + " " + nf2.format(x.implicito) : "n/d"}</b><small>no mercado: ${ok(x.btcPx) ? x.mo + " " + nf2.format(x.btcPx) : "n/d"}</small></div>
+        <div><span>Satoshis por ação <i class="info" data-tip="${esc(tip.sats)}">?</i></span><b>${ok(x.sats) ? new Intl.NumberFormat("pt-BR", { maximumFractionDigits: 0 }).format(x.sats) : "n/d"}</b></div>
+        <div><span>Ações consideradas</span><b>${ok(x.acoes) ? new Intl.NumberFormat("pt-BR").format(x.acoes) : "n/d"}</b></div>
+      </div>
+    </div>`;
+    const quando = FAIXA.hora ? `atualizado às ${FAIXA.hora.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}` : "fechamento";
+    app.innerHTML = `${trilha([["Empresas com bitcoin"]])}<div class="cab-pagina"><div><h1>Empresas com bitcoin</h1>
+      <p>Compara o valor de mercado de cada empresa, pela cotação de agora, com o valor dos bitcoins que ela tem. Serve para ver se sai mais barato ter o bitcoin pela ação ou comprá-lo direto.</p></div></div>
+      <div class="btc-preco cartao"><div><span>Bitcoin agora</span><b>${ok(btcBrl) ? "R$ " + nf2.format(btcBrl) : "n/d"}</b> ${varHtml((m.bitcoin_brl || {}).var_dia)}</div><div><span>Em dólar</span><b>${ok(btcUsd) ? "US$ " + nf2.format(btcUsd) : "n/d"}</b></div><div class="muted">${quando}</div></div>
+      <div class="btc-cards">${linhas.map(cel).join("")}</div>
+      <div class="cartao" style="margin-top:16px"><div class="cartao-cab"><h3>Notícias dessas empresas</h3></div>
+        ${notic.map((x) => `<div class="noticia"><a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.titulo)}</a><div class="meta"><a href="#/ativo/${x.t}"><b>${x.t}</b></a> · ${esc(x.veiculo || "")} · ${x.data ? new Date(x.data).toLocaleDateString("pt-BR") : "n/d"}</div></div>`).join("") || '<p class="vazio">Sem notícias recentes.</p>'}</div>
+      <p class="sub" style="margin-top:12px">Bitcoin ao vivo pela AwesomeAPI; cotação das ações pela faixa ao vivo (Yahoo, atraso de até 15 minutos no pregão). Posição em bitcoin: última divulgada por cada empresa (Strategy: 8-K semanal na SEC; OranjeBTC e Méliuz: resultados e fatos divulgados, conferidos com o balanço). Dívida e caixa do último balanço. Não considera impostos, custos da empresa nem outros ativos e passivos. Conteúdo informativo, não é recomendação.</p>`;
+  };
+  desenhar();
+  PAGINA_VIVA.fn = () => { if (rota().r === "bitcoin") desenhar(); };
+}
+
+/* =====================================================================
+   ALUGUEL DE AÇÕES (BTC da B3): ranking do dia de todos os papéis e série por ativo (pipeline/aluguel.py)
+   ===================================================================== */
+const AL_TIPS = {
+  taxa: "Taxa média que o tomador paga ao ano para alugar a ação. Taxa alta costuma indicar muita procura para vender a descoberto (aposta na queda) ou ação difícil de encontrar para alugar.",
+  qtd: "Quantidade de ações emprestadas em aberto (saldo no BTC da B3).",
+  valor: "Valor em reais das ações emprestadas em aberto.",
+  pct: "Ações alugadas em relação ao total de ações da classe. É uma aproximação da posição vendida (short interest): o tomador pode alugar também para hedge, arbitragem ou liquidação.",
+  dpct: "Variação do percentual alugado sobre o pregão anterior, em pontos percentuais.",
+  vm: "Valor de mercado da empresa (todas as classes de ação, ao fechamento do dia).",
+  pctvm: "Valor alugado em relação ao valor de mercado da empresa.",
+  dias: "Dias para zerar: ações alugadas dividido pelo volume médio diário negociado (até 21 pregões). Quanto maior, mais difícil zerar a posição vendida de uma vez.",
+  dval: "Variação do valor alugado em reais sobre o pregão anterior.",
+};
+async function pgAluguel(app, q) {
+  app.innerHTML = '<div class="carregando"><span></span>Carregando o aluguel de ações</div>';
+  const ind = D.cache.alInd || (D.cache.alInd = await j("data/aluguel/indice.json", null));
+  if (!ind || !(ind.datas || []).length) { app.innerHTML = '<div class="cartao"><p class="vazio">Dados de aluguel indisponíveis no momento.</p></div>'; return; }
+  const data = ind.datas.includes(q.get("d")) ? q.get("d") : ind.datas[ind.datas.length - 1];
+  const tipo = q.get("tipo") || "Ação", porte = q.get("porte") || "todos", minimo = q.get("min") !== "0";
+  const tk = (q.get("t") || "").toUpperCase(), met = q.get("m") || "taxa", per = q.get("p") || "3m";
+  const dd = D.cache["al" + data] || (D.cache["al" + data] = await j(`data/aluguel/dia/${data}.json`, { linhas: [] }));
+  const ir = (o) => { const x = { d: data, tipo, porte, min: minimo ? "1" : "0", t: tk, m: met, p: per, ...o }; location.hash = `#/aluguel?d=${x.d}&tipo=${encodeURIComponent(x.tipo)}&porte=${x.porte}&min=${x.min}&t=${x.t}&m=${x.m}&p=${x.p}`; };
+  const PORTES = { todos: ["Todos os portes", () => true], small: ["Small caps (até R$ 10 bi)", (v) => ok(v) && v <= 10e9], mid: ["Mid caps (R$ 10 bi a R$ 50 bi)", (v) => ok(v) && v > 10e9 && v <= 50e9], large: ["Large caps (acima de R$ 50 bi)", (v) => ok(v) && v > 50e9] };
+  const lista = dd.linhas.filter((x) => (tipo === "Todos" || x.tipo === tipo) && (!minimo || x.valor >= 1e6) && (porte === "todos" || PORTES[porte][1](x.vm)))
+    .sort((a, b) => (b.taxa || 0) - (a.taxa || 0));
+  const alvo = tk || (lista[0] || {}).t;
+  const pct = (v, n = 2) => (ok(v) ? nf2.format(v * 100) + "%" : ND);
+  const th = (rot, k, n = true) => `<th class="${n ? "n" : ""}">${rot}${AL_TIPS[k] ? ` <i class="info" data-tip="${esc(AL_TIPS[k])}">?</i>` : ""}</th>`;
+  app.innerHTML = `${trilha([["Aluguel de ações"]])}<div class="cab-pagina"><div><h1>Aluguel de ações (BTC)</h1>
+      <p>Posição alugada é o saldo de ações emprestadas no BTC da B3. Serve de aproximação da venda a descoberto, mas não é a venda em si: o tomador pode alugar para outros fins (hedge, arbitragem, liquidação).</p></div>
+      <div class="datas"><span class="pilula"><i></i>Posição de ${dataBR(data)}</span><span class="pilula">Fonte: B3, Boletim Diário</span></div></div>
+    <div class="cartao">
+      <div class="linha al-ctrl">
+        <input id="al-busca" list="al-tks" placeholder="Buscar ticker" value="${esc(alvo || "")}" aria-label="Ativo do gráfico">
+        <datalist id="al-tks">${dd.linhas.filter((x) => x.valor >= 1e6).map((x) => `<option value="${x.t}">${esc(x.nome || "")}</option>`).join("")}</datalist>
+        <div class="abas" id="al-met" style="margin:0">${[["taxa", "Taxa média (tomador, a.a.)"], ["qtd", "Ações alugadas"], ["valor", "R$ alugado"], ["pct", "% das ações"]].map(([v, n]) => `<button data-v="${v}" class="${v === met ? "ativo" : ""}">${n}</button>`).join("")}</div>
+        <div class="abas" id="al-per" style="margin:0">${[["1m", "1 mês"], ["3m", "3 meses"], ["6m", "6 meses"], ["1a", "1 ano"], ["tudo", "Tudo"]].map(([v, n]) => `<button data-v="${v}" class="${v === per ? "ativo" : ""}">${n}</button>`).join("")}</div>
+      </div>
+      <div class="grafico alto"><canvas id="g-al"></canvas></div>
+      <p class="sub" id="al-nota" style="margin-top:6px"></p>
+    </div>
+    <div class="cartao" style="margin-top:16px">
+      <div class="cartao-cab al-cab"><h3>Ranking do dia por taxa ${minimo ? '<span class="muted">(posições a partir de R$ 1 mi)</span>' : ""}</h3>
+        <div class="linha" style="gap:8px;flex-wrap:wrap">
+          <select id="al-tipo" aria-label="Tipo de ativo">${["Ação", "Unit", "FII", "ETF", "BDR", "Todos"].map((x) => `<option ${x === tipo ? "selected" : ""}>${x}</option>`).join("")}</select>
+          <select id="al-porte" aria-label="Porte">${Object.entries(PORTES).map(([k, [n]]) => `<option value="${k}" ${k === porte ? "selected" : ""}>${n}</option>`).join("")}</select>
+          <select id="al-data" aria-label="Data">${[...ind.datas].reverse().map((x) => `<option value="${x}" ${x === data ? "selected" : ""}>${dataBR(x)}</option>`).join("")}</select>
+          <label class="chk"><input type="checkbox" id="al-min" ${minimo ? "checked" : ""}> A partir de R$ 1 mi</label>
+          <button class="btn peq" id="al-csv">Baixar Excel</button>
+        </div></div>
+      <div class="tabela-wrap alta"><table class="resp"><thead><tr><th>Ticker</th><th>Nome</th>${th("Ações alugadas", "qtd")}${th("R$ alugado", "valor")}${th("Taxa média", "taxa")}${th("% das ações", "pct")}${th("Δ % (p.p.)", "dpct")}${th("Valor de mercado", "vm")}${th("Alugado % do valor", "pctvm")}${th("Dias para zerar", "dias")}${th("Δ R$ (dia)", "dval")}</tr></thead><tbody>
+      ${lista.map((x) => `<tr class="clicavel ${x.t === alvo ? "sel" : ""}" data-al="${x.t}"><td><b>${x.t}</b></td><td class="muted al-nome">${esc(x.nome || "")}</td><td class="n">${new Intl.NumberFormat("pt-BR").format(x.qtd)}</td><td class="n">R$ ${grande(x.valor)}</td><td class="n"><b>${pct(x.taxa)}</b>${x.herdada ? ' <i class="info" data-tip="Sem novos contratos no dia: a B3 repete a última taxa (taxa herdada).">h</i>' : ""}</td><td class="n">${pct(x.pct_acoes)}</td><td class="n">${ok(x.d_pct) ? `<span class="${sinal(-x.d_pct)}">${x.d_pct > 0 ? "+" : ""}${nf2.format(x.d_pct * 100)} p.p.</span>` : ND}</td><td class="n">${ok(x.vm) ? "R$ " + grande(x.vm) : ND}</td><td class="n">${pct(x.pct_vm)}</td><td class="n">${ok(x.dias_zerar) ? nf2.format(x.dias_zerar) : ND}</td><td class="n">${varHtml(x.d_valor)}</td></tr>`).join("") || `<tr><td colspan="11" class="vazio">Nenhum papel neste recorte.</td></tr>`}
+      </tbody></table></div>
+      <p class="sub" style="margin-top:10px">${lista.length} papéis. Clique numa linha para ver o gráfico; clique no cabeçalho para ordenar. "h": taxa herdada (sem contratos novos no dia). Todos os papéis com aluguel na B3, não só os acompanhados no site. Conteúdo informativo, não é recomendação.</p>
+    </div>`;
+  $$("#al-met button").forEach((b) => b.onclick = () => ir({ m: b.dataset.v }));
+  $$("#al-per button").forEach((b) => b.onclick = () => ir({ p: b.dataset.v }));
+  $("#al-tipo").onchange = (e) => ir({ tipo: e.target.value });
+  $("#al-porte").onchange = (e) => ir({ porte: e.target.value });
+  $("#al-data").onchange = (e) => ir({ d: e.target.value });
+  $("#al-min").onchange = (e) => ir({ min: e.target.checked ? "1" : "0" });
+  $("#al-busca").onchange = (e) => { const v = e.target.value.trim().toUpperCase(); if (v) ir({ t: v }); };
+  $$("tr[data-al]").forEach((tr) => tr.onclick = () => ir({ t: tr.dataset.al }));
+  $("#al-csv").onclick = () => baixarExcel(`aluguel_${data}`, [{ nome: "Aluguel", cab: ["Ticker", "Nome", "Tipo", "Ações alugadas", "R$ alugado", "Taxa média (% a.a.)", "Taxa herdada", "% das ações", "Valor de mercado (R$)", "Alugado % do valor", "Dias para zerar", "Variação R$ no dia (%)"],
+    linhas: lista.map((x) => [x.t, x.nome, x.tipo, x.qtd, x.valor, ok(x.taxa) ? +(x.taxa * 100).toFixed(4) : null, x.herdada ? "sim" : "não", ok(x.pct_acoes) ? +(x.pct_acoes * 100).toFixed(4) : null, x.vm ?? null, ok(x.pct_vm) ? +(x.pct_vm * 100).toFixed(4) : null, ok(x.dias_zerar) ? +x.dias_zerar.toFixed(2) : null, ok(x.d_valor) ? +(x.d_valor * 100).toFixed(2) : null]) }]);
+  // gráfico do ativo escolhido
+  if (!alvo) return;
+  const s = await j(`data/aluguel/serie/${alvo}.json`, null);
+  const nota = $("#al-nota");
+  if (!s || !s.serie.length) { nota.textContent = `Sem série de aluguel guardada para ${alvo} (o site guarda a série de papéis com pelo menos R$ 1 milhão alugado).`; return; }
+  const dias = { "1m": 31, "3m": 92, "6m": 183, "1a": 366, tudo: 1e5 }[per] || 92;
+  const corte = new Date(Date.parse(s.serie[s.serie.length - 1][0]) - dias * 864e5).toISOString().slice(0, 10);
+  const pts = s.serie.filter((r) => r[0] >= corte);
+  const idx = { taxa: 1, qtd: 2, valor: 3, pct: 4 }[met];
+  const mult = met === "taxa" || met === "pct" ? 100 : 1;
+  const rotM = { taxa: "Taxa média (tomador, % a.a.)", qtd: "Ações alugadas", valor: "R$ alugado", pct: "% das ações" }[met];
+  const el = $("#g-al");
+  const c = cor("--serie-3") || cor("--acento");
+  const o = optGraf({ legenda: false });
+  o.plugins.title = { display: true, text: `${alvo} · ${rotM}`, color: cor("--txt"), font: { family: "Inter", size: 14, weight: "600" } };
+  o.plugins.tooltip.callbacks.label = (ctx) => `${rotM}: ${met === "valor" ? "R$ " + grande(ctx.parsed.y) : met === "qtd" ? new Intl.NumberFormat("pt-BR").format(ctx.parsed.y) : nf2.format(ctx.parsed.y) + "%"}${pts[ctx.dataIndex][5] && met === "taxa" ? " (taxa herdada)" : ""}`;
+  o.scales.y.ticks.callback = (v) => (met === "valor" ? grande(v) : met === "qtd" ? grande(v) : nf2.format(v) + "%");
+  charts.push(new Chart(el, { type: "line", data: { labels: pts.map((r) => dataBR(r[0])), datasets: [{ data: pts.map((r) => (ok(r[idx]) ? r[idx] * mult : null)), borderColor: c, backgroundColor: c, borderWidth: 2, tension: 0.15,
+    pointRadius: 3, pointBackgroundColor: pts.map((r) => (r[5] ? "transparent" : c)), pointBorderColor: c }] }, options: o }));
+  nota.textContent = `Ponto vazado: dia sem novos contratos (a B3 repete a última taxa). Histórico guardado desde ${dataBR(s.serie[0][0])}: a B3 só disponibiliza os últimos 21 pregões, e o site acumula a série dia a dia.`;
+}
+
+/* =====================================================================
+   ANÁLISE TÉCNICA: médias móveis, MACD, IFR, ADX e Bandas de Bollinger (preços: data/tecnica/<T>.json)
+   ===================================================================== */
+const TEC = {
+  sma(v, n) { const o = Array(v.length).fill(null); let s = 0; for (let i = 0; i < v.length; i++) { s += v[i]; if (i >= n) s -= v[i - n]; if (i >= n - 1) o[i] = s / n; } return o; },
+  ema(v, n) { const o = Array(v.length).fill(null), k = 2 / (n + 1); let e = null, ini = v.findIndex(ok); if (ini < 0) return o;
+    for (let i = ini; i < v.length; i++) { if (!ok(v[i])) { o[i] = e; continue; } if (i < ini + n - 1) continue; if (e === null) { let s = 0; for (let j = i - n + 1; j <= i; j++) s += v[j]; e = s / n; } else e = v[i] * k + e * (1 - k); o[i] = e; } return o; },
+  desvio(v, n) { const o = Array(v.length).fill(null); for (let i = n - 1; i < v.length; i++) { const f = v.slice(i - n + 1, i + 1), m = f.reduce((a, b) => a + b, 0) / n; o[i] = Math.sqrt(f.reduce((a, b) => a + (b - m) ** 2, 0) / n); } return o; },
+  ifr(v, n = 14) { const o = Array(v.length).fill(null); let g = 0, p = 0;
+    for (let i = 1; i < v.length; i++) { const d = v[i] - v[i - 1], up = Math.max(d, 0), dn = Math.max(-d, 0);
+      if (i <= n) { g += up; p += dn; if (i === n) { g /= n; p /= n; o[i] = p === 0 ? 100 : 100 - 100 / (1 + g / p); } }
+      else { g = (g * (n - 1) + up) / n; p = (p * (n - 1) + dn) / n; o[i] = p === 0 ? 100 : 100 - 100 / (1 + g / p); } } return o; },
+  adx(h, l, c, n = 14) { const len = c.length, pdi = Array(len).fill(null), mdi = Array(len).fill(null), adx = Array(len).fill(null);
+    let tr = 0, pdm = 0, mdm = 0, dxs = [], a = null;
+    for (let i = 1; i < len; i++) {
+      const up = h[i] - h[i - 1], dn = l[i - 1] - l[i];
+      const p = up > dn && up > 0 ? up : 0, m = dn > up && dn > 0 ? dn : 0;
+      const t = Math.max(h[i] - l[i], Math.abs(h[i] - c[i - 1]), Math.abs(l[i] - c[i - 1]));
+      if (i <= n) { tr += t; pdm += p; mdm += m; if (i < n) continue; } else { tr = tr - tr / n + t; pdm = pdm - pdm / n + p; mdm = mdm - mdm / n + m; }
+      const pi = tr ? (100 * pdm) / tr : 0, mi = tr ? (100 * mdm) / tr : 0; pdi[i] = pi; mdi[i] = mi;
+      const dx = pi + mi ? (100 * Math.abs(pi - mi)) / (pi + mi) : 0;
+      if (a === null) { dxs.push(dx); if (dxs.length === n) { a = dxs.reduce((x, y) => x + y, 0) / n; adx[i] = a; } } else { a = (a * (n - 1) + dx) / n; adx[i] = a; }
+    }
+    return { pdi, mdi, adx }; },
+};
+const TEC_TIPS = {
+  mm200: "Média móvel de 200 dias: a média dos preços de fechamento dos últimos 200 pregões (cerca de 10 meses). É a referência mais usada para a tendência de longo prazo. Preço acima da MM200 costuma indicar tendência de alta; abaixo, de baixa. Também funciona como suporte (piso) ou resistência (teto) onde o preço costuma reagir.",
+  mm50: "Médias de 20 e 50 dias: mostram a tendência de curto e médio prazo. Quando a MM50 cruza a MM200 para cima, chama-se 'cruz dourada' (golden cross), sinal de virada para alta; para baixo, 'cruz da morte' (death cross), sinal de virada para baixa.",
+  macd: "MACD: diferença entre duas médias exponenciais (12 e 26 dias), comparada com a sua própria média de 9 dias (linha de sinal). MACD acima da linha de sinal e acima de zero indica tendência de alta ganhando força; abaixo, de baixa. Serve para confirmar mudanças de tendência.",
+  ifr: "IFR (Índice de Força Relativa, ou RSI), de 14 dias, vai de 0 a 100 e mede a velocidade das altas contra as baixas. Acima de 70: ativo 'sobrecomprado' (subiu muito rápido, pode corrigir). Abaixo de 30: 'sobrevendido' (caiu muito rápido, pode repicar). Entre 30 e 70: neutro.",
+  adx: "ADX, de 14 dias: mede a FORÇA da tendência, sem dizer a direção. Acima de 25: tendência forte; abaixo de 20: mercado de lado (sem tendência), em que sinais de rompimento costumam falhar. A direção vem das linhas DI+ e DI−: DI+ acima de DI− indica tendência de alta; o contrário, de baixa.",
+  bb: "Bandas de Bollinger: uma média de 20 dias com uma faixa de 2 desvios-padrão acima e abaixo. As bandas se abrem quando a volatilidade aumenta e se fecham quando diminui (aperto costuma vir antes de um movimento forte). Preço 'caminhando' na banda de cima indica alta forte; na de baixo, baixa forte.",
+};
+async function pgTecnica(app, q) {
+  const todos = [...D.tickers, ...(D.stocks || []), ...((D.fiis || []).map((f) => f.ticker))];
+  const t = (q.get("t") || "").toUpperCase(), per = q.get("p") || "1a";
+  const ir = (o) => { const x = { t, p: per, ...o }; location.hash = `#/tecnica?t=${x.t}&p=${x.p}`; };
+  const nomeDe = (x) => (D.univMap[x] ? D.univMap[x].nome : (D.fiiMap && D.fiiMap[x] ? D.fiiMap[x].nome : ""));
+  const cab = `${trilha([["Análise técnica"]])}<div class="cab-pagina"><div><h1>Análise técnica</h1>
+    <p>Escolha um ativo para ver a tendência pelos indicadores mais usados. Passe o mouse no <i class="info">?</i> de cada indicador para entender o que ele mostra e como ler o sinal.</p></div></div>
+    <div class="cartao tec-sel"><label>Ativo <input id="tec-t" list="tec-lista" value="${esc(t)}" placeholder="Digite o código, ex.: PETR4" autocomplete="off"></label>
+      <datalist id="tec-lista">${todos.map((x) => `<option value="${x}">${esc(nomeDe(x))}</option>`).join("")}</datalist>
+      <div class="abas" id="tec-per" style="margin:0">${[["6m", "6 meses"], ["1a", "1 ano"], ["2a", "2 anos"]].map(([v, n]) => `<button data-v="${v}" class="${v === per ? "ativo" : ""}">${n}</button>`).join("")}</div></div>`;
+  const ligar = () => {
+    $("#tec-t").onchange = (e) => { const v = e.target.value.trim().toUpperCase(); if (v) ir({ t: v }); };
+    $$("#tec-per button").forEach((b) => b.onclick = () => ir({ p: b.dataset.v }));
+  };
+  if (!t) { app.innerHTML = cab + '<div class="cartao"><p class="vazio">Escolha um ativo acima.</p></div>'; ligar(); return; }
+  app.innerHTML = cab + '<div class="carregando"><span></span>Calculando indicadores</div>'; ligar();
+  const d = await j(`data/tecnica/${t}.json`, null);
+  if (!d || !(d.d || []).length) { app.innerHTML = cab + `<div class="cartao"><p class="vazio">Sem histórico de preços para ${esc(t)}.</p></div>`; ligar(); return; }
+  const lin = d.d, dt = lin.map((r) => r[0]), h = lin.map((r) => r[1]), l = lin.map((r) => r[2]), c = lin.map((r) => r[3]);
+  const mo = d.moeda === "USD" ? "US$" : "R$";
+  const mm20 = TEC.sma(c, 20), mm50 = TEC.sma(c, 50), mm200 = TEC.sma(c, 200), dp = TEC.desvio(c, 20);
+  const bbS = mm20.map((m, i) => (ok(m) ? m + 2 * dp[i] : null)), bbI = mm20.map((m, i) => (ok(m) ? m - 2 * dp[i] : null));
+  const e12 = TEC.ema(c, 12), e26 = TEC.ema(c, 26), macd = e12.map((x, i) => (ok(x) && ok(e26[i]) ? x - e26[i] : null));
+  const sinalM = TEC.ema(macd, 9), hist = macd.map((x, i) => (ok(x) && ok(sinalM[i]) ? x - sinalM[i] : null));
+  const ifr = TEC.ifr(c), A = TEC.adx(h, l, c);
+  const n = c.length - 1, P = c[n];
+  const fmtP = (v) => (ok(v) ? `${mo} ${nf2.format(v)}` : ND);
+  // leituras
+  const cards = [];
+  const tag = (s) => `<span class="tec-tag ${s}">${{ alta: "Alta", baixa: "Baixa", neutro: "Neutro", forte: "Tendência forte", fraca: "Sem tendência", sobrec: "Sobrecomprado", sobrev: "Sobrevendido" }[s]}</span>`;
+  if (ok(mm200[n])) {
+    const dist = P / mm200[n] - 1, incl = ok(mm200[n - 20]) ? mm200[n] / mm200[n - 20] - 1 : null;
+    cards.push(["Média móvel de 200 dias", "mm200", fmtP(mm200[n]), tag(dist >= 0 ? "alta" : "baixa"),
+      `O preço (${fmtP(P)}) está <b>${nf2.format(Math.abs(dist) * 100)}% ${dist >= 0 ? "acima" : "abaixo"}</b> da média de 200 dias: tendência de longo prazo de ${dist >= 0 ? "alta" : "baixa"}. A média está ${incl === null ? "n/d" : incl > 0.002 ? "subindo" : incl < -0.002 ? "caindo" : "de lado"} no último mês.`]);
+  } else cards.push(["Média móvel de 200 dias", "mm200", ND, "", "Histórico menor que 200 pregões."]);
+  if (ok(mm50[n]) && ok(mm200[n])) {
+    let cruz = null;
+    for (let i = n; i > 0 && i > n - 260; i--) { if (!ok(mm50[i - 1]) || !ok(mm200[i - 1])) break; const a = mm50[i] - mm200[i], b = mm50[i - 1] - mm200[i - 1]; if (a * b < 0) { cruz = [i, a > 0]; break; } }
+    const acima = mm50[n] > mm200[n];
+    cards.push(["Médias de 20 e 50 dias", "mm50", `${fmtP(mm20[n])} · ${fmtP(mm50[n])}`, tag(acima ? "alta" : "baixa"),
+      `A MM50 está ${acima ? "acima" : "abaixo"} da MM200${cruz ? `; o último cruzamento foi uma <b>${cruz[1] ? "cruz dourada (para cima)" : "cruz da morte (para baixo)"}</b> em ${dataBR(dt[cruz[0]])}` : "; sem cruzamento no último ano"}. Preço ${P > mm20[n] ? "acima" : "abaixo"} da MM20 (curto prazo).`]);
+  }
+  if (ok(macd[n]) && ok(sinalM[n])) {
+    const alta = macd[n] > sinalM[n], pos = macd[n] > 0, cresce = ok(hist[n - 5]) && Math.abs(hist[n]) > Math.abs(hist[n - 5]);
+    cards.push(["MACD", "macd", nf2.format(macd[n]), tag(alta && pos ? "alta" : !alta && !pos ? "baixa" : "neutro"),
+      `MACD ${alta ? "acima" : "abaixo"} da linha de sinal e ${pos ? "acima" : "abaixo"} de zero: ${alta && pos ? "tendência de alta" : !alta && !pos ? "tendência de baixa" : alta ? "sinal de melhora, ainda abaixo de zero" : "sinal de perda de força, ainda acima de zero"}${cresce ? ", ganhando força" : ", perdendo força"}.`]);
+  }
+  if (ok(ifr[n])) {
+    const v = ifr[n];
+    cards.push(["IFR (RSI) de 14 dias", "ifr", nf2.format(v), tag(v >= 70 ? "sobrec" : v <= 30 ? "sobrev" : "neutro"),
+      v >= 70 ? "Acima de 70: o ativo subiu rápido demais no curto prazo e pode corrigir." : v <= 30 ? "Abaixo de 30: o ativo caiu rápido demais no curto prazo e pode repicar." : `Entre 30 e 70: zona neutra (${v >= 50 ? "mais força compradora" : "mais força vendedora"}).`]);
+  }
+  if (ok(A.adx[n])) {
+    const v = A.adx[n], alta = A.pdi[n] > A.mdi[n];
+    cards.push(["ADX (força da tendência)", "adx", nf2.format(v), tag(v >= 25 ? "forte" : v < 20 ? "fraca" : "neutro"),
+      `${v >= 25 ? "Acima de 25: tendência forte" : v < 20 ? "Abaixo de 20: mercado de lado, sem tendência definida" : "Entre 20 e 25: tendência moderada"}. DI+ (${nf2.format(A.pdi[n])}) ${alta ? "acima" : "abaixo"} de DI− (${nf2.format(A.mdi[n])}): direção de ${alta ? "alta" : "baixa"}.`]);
+  }
+  if (ok(bbS[n])) {
+    const pb = (P - bbI[n]) / (bbS[n] - bbI[n]), larg = (bbS[n] - bbI[n]) / mm20[n], larg20 = ok(bbS[n - 20]) ? (bbS[n - 20] - bbI[n - 20]) / mm20[n - 20] : null;
+    cards.push(["Bandas de Bollinger", "bb", `${fmtP(bbI[n])} a ${fmtP(bbS[n])}`, tag(pb > 0.8 ? "alta" : pb < 0.2 ? "baixa" : "neutro"),
+      `Preço ${pb > 1 ? "acima da banda de cima" : pb < 0 ? "abaixo da banda de baixo" : `a ${nf2.format(pb * 100)}% do caminho entre a banda de baixo e a de cima`}. Bandas ${larg20 === null ? "" : larg > larg20 * 1.1 ? "se abrindo (volatilidade subindo)" : larg < larg20 * 0.9 ? "se fechando (volatilidade caindo; costuma anteceder movimento forte)" : "estáveis"}.`]);
+  }
+  const dias = { "6m": 126, "1a": 252, "2a": 520 }[per] || 252, ini = Math.max(0, c.length - dias), cort = (v) => v.slice(ini);
+  const rot = cort(dt).map(dataBR);
+  app.innerHTML = cab + `
+    <div class="cartao tec-res"><div>${empresa(t)}</div><div><span>Último fechamento</span><b>${fmtP(P)}</b> <span class="muted">${dataBR(dt[n])}</span></div></div>
+    <div class="tec-cards">${cards.map(([nm, k, v, tg, txt]) => `<div class="cartao tec-card"><div class="tec-card-cab"><span>${nm} <i class="info" data-tip="${esc(TEC_TIPS[k])}">?</i></span>${tg}</div><b class="tec-val">${v}</b><p>${txt}</p></div>`).join("")}</div>
+    <div class="cartao" style="margin-top:14px"><div class="cartao-cab"><h3>Preço, médias móveis e Bandas de Bollinger <i class="info" data-tip="${esc(TEC_TIPS.mm200 + " " + TEC_TIPS.bb)}">?</i></h3></div><div class="grafico alto"><canvas id="g-tec-p"></canvas></div></div>
+    <div class="tec-graf2">
+      <div class="cartao"><div class="cartao-cab"><h3>MACD <i class="info" data-tip="${esc(TEC_TIPS.macd)}">?</i></h3></div><div class="grafico"><canvas id="g-tec-m"></canvas></div></div>
+      <div class="cartao"><div class="cartao-cab"><h3>IFR (RSI) <i class="info" data-tip="${esc(TEC_TIPS.ifr)}">?</i></h3></div><div class="grafico"><canvas id="g-tec-i"></canvas></div></div>
+      <div class="cartao"><div class="cartao-cab"><h3>ADX, DI+ e DI− <i class="info" data-tip="${esc(TEC_TIPS.adx)}">?</i></h3></div><div class="grafico"><canvas id="g-tec-a"></canvas></div></div>
+    </div>
+    <p class="sub" style="margin-top:12px">Indicadores calculados pelo site com os preços diários do Yahoo Finance (ajustados por desdobramento, não por proventos), até o último fechamento. Análise técnica descreve o comportamento passado do preço; não prevê o futuro e não é recomendação de compra ou venda.</p>`;
+  ligar();
+  const ds = (label, data, cor_, extra = {}) => ({ label, data, borderColor: cor_, backgroundColor: cor_, borderWidth: 1.6, pointRadius: 0, tension: 0.1, spanGaps: true, ...extra });
+  const c1 = cor("--txt"), c2 = cor("--serie-2"), c3 = cor("--cm-cor"), c4 = cor("--acento"), cb = cor("--txt-3");
+  const oP = optGraf({ legenda: true });
+  charts.push(new Chart($("#g-tec-p"), { type: "line", data: { labels: rot, datasets: [
+    ds("Preço", cort(c), c1, { borderWidth: 2 }), ds("MM20", cort(mm20), c3), ds("MM50", cort(mm50), c2), ds("MM200", cort(mm200), c4, { borderWidth: 2.2 }),
+    ds("Banda de cima", cort(bbS), cb, { borderDash: [4, 4], borderWidth: 1 }), ds("Banda de baixo", cort(bbI), cb, { borderDash: [4, 4], borderWidth: 1 })] }, options: oP }));
+  const oM = optGraf({ legenda: true });
+  charts.push(new Chart($("#g-tec-m"), { data: { labels: rot, datasets: [
+    { type: "bar", label: "Histograma", data: cort(hist), backgroundColor: cort(hist).map((v) => (v >= 0 ? cor("--pos") || "#33c47a" : cor("--neg") || "#e5484d")), borderWidth: 0 },
+    { type: "line", ...ds("MACD", cort(macd), c2) }, { type: "line", ...ds("Sinal", cort(sinalM), c4) }] }, options: oM }));
+  const oI = optGraf({ legenda: false }); oI.scales.y.min = 0; oI.scales.y.max = 100;
+  charts.push(new Chart($("#g-tec-i"), { type: "line", data: { labels: rot, datasets: [ds("IFR", cort(ifr), c2),
+    ds("70", rot.map(() => 70), cb, { borderDash: [3, 3], borderWidth: 1 }), ds("30", rot.map(() => 30), cb, { borderDash: [3, 3], borderWidth: 1 })] }, options: oI }));
+  const oA = optGraf({ legenda: true });
+  charts.push(new Chart($("#g-tec-a"), { type: "line", data: { labels: rot, datasets: [ds("ADX", cort(A.adx), c1, { borderWidth: 2 }), ds("DI+", cort(A.pdi), cor("--pos") || "#33c47a"), ds("DI−", cort(A.mdi), cor("--neg") || "#e5484d"),
+    ds("25", rot.map(() => 25), cb, { borderDash: [3, 3], borderWidth: 1 })] }, options: oA }));
+}
+
+/* média móvel de 200 dias no quadro de cotação de ações, stocks e FIIs (preços de data/tecnica) */
+async function preencherMM200() {
+  for (const el of $$("[data-mm200]")) {
+    const t = el.dataset.mm200;
+    const d = await j(`data/tecnica/${t}.json`, null);
+    if (!d || !d.d || d.d.length < 200) { el.remove(); continue; }
+    const c = d.d.map((r) => r[3]), mm = c.slice(-200).reduce((a, b) => a + b, 0) / 200;
+    const p = (D.prices[t] && D.prices[t].preco) || (D.vivoFii && D.vivoFii[t] && D.vivoFii[t].preco) || c[c.length - 1];
+    const dist = p / mm - 1, mo = d.moeda === "USD" ? "US$" : "R$";
+    el.innerHTML = `Média de 200 dias: <b>${mo} ${nf2.format(mm)}</b> · preço <span class="${dist >= 0 ? "pos" : "neg"}">${nf2.format(Math.abs(dist) * 100)}% ${dist >= 0 ? "acima" : "abaixo"}</span> <i class="info" data-tip="${esc(TEC_TIPS.mm200)}">?</i> · <a class="lk" href="#/tecnica?t=${t}">Análise técnica</a>`;
+  }
+}

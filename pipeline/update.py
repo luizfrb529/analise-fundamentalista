@@ -755,6 +755,11 @@ def processar(ativo: dict, ctx: dict) -> dict:
         else:
             acoes_on, acoes_pn = on_b3, pn_b3
             aviso(t, "sem composição do capital na CVM; usado total da B3 sem descontar tesouraria")
+        if ativo.get("acoes_fixas"):
+            # número de ações informado pela própria empresa (ex.: OranjeBTC conta só as ON fora da tesouraria;
+            # as PN registradas na B3 não são negociadas e ficam fora do valor de mercado e do mNAV que ela divulga)
+            acoes_on, acoes_pn = float(ativo["acoes_fixas"]), 0.0
+            aviso(t, f"número de ações fixado em {acoes_on:,.0f}: {ativo.get('acoes_fonte') or 'informado pela empresa'}")
         acoes = acoes_on + acoes_pn
         # valor de mercado somando classes
         vm = 0.0

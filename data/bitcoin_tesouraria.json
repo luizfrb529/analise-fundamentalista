@@ -1,0 +1,26 @@
+{
+ "_leia": "Posição em bitcoin divulgada pelas empresas da aba 'Empresas com bitcoin'. A Strategy (MSTR) é lida sozinha do 8-K semanal na SEC (pipeline/bitcoin_tesouraria.py); as demais, cadastradas aqui com data e fonte. O robô também compara com o balanço (CVM/SEC) e usa o dado mais recente.",
+ "empresas": [
+  {
+   "ticker": "MSTR",
+   "btc": 851305.0,
+   "data": "2026-11-22",
+   "fonte": "Strategy, 8-K de 23/11/2026 (SEC), tabela BTC Update",
+   "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526470961/mstr-20261123.htm"
+  },
+  {
+   "ticker": "OBTC3",
+   "btc": 3950,
+   "data": "2026-09-30",
+   "fonte": "OranjeBTC, resultado do 3T26 (3.950 BTC em tesouraria), confirmado pelo saldo no balanço da CVM",
+   "url": "https://bitnoticias.com.br/noticias/brasileira-oranjebtc-registra-primeiro-lucro-de-sua-historia-e-amplia-reserva-para-3-950-bitcoins"
+  },
+  {
+   "ticker": "CASH3",
+   "btc": 526.7,
+   "data": "2026-11-11",
+   "fonte": "Méliuz: venda de 78 BTC para a recompra de ações, estoque passou de 604,7 para 526,7 BTC (fato divulgado; confirmado por BTG e imprensa)",
+   "url": "https://moonbh.com.br/capital-m/2026/11/11/meliuz-vende-78-bitcoins-recompra-acoes-cash3/"
+  }
+ ]
+}

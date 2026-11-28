@@ -72,6 +72,22 @@ jobs:
         if: steps.checar.outputs.pular != 'sim'
         run: python pipeline/retorno.py || echo "retorno total falhou; mantém os dados anteriores"
 
+      - name: Commodities (Yahoo, LME pela Westmetall e B3)
+        if: steps.checar.outputs.pular != 'sim'
+        run: python pipeline/commodities.py || echo "commodities falharam; mantém os dados anteriores"
+
+      - name: Empresas com bitcoin (posição divulgada; Strategy pelo 8-K semanal)
+        if: steps.checar.outputs.pular != 'sim'
+        run: python pipeline/bitcoin_tesouraria.py || echo "bitcoin falhou; mantém os dados anteriores"
+
+      - name: Aluguel de ações (Boletim Diário da B3, todos os papéis)
+        if: steps.checar.outputs.pular != 'sim'
+        run: python pipeline/aluguel.py || echo "aluguel falhou; mantém os dados anteriores"
+
+      - name: Preços diários para a análise técnica
+        if: steps.checar.outputs.pular != 'sim'
+        run: python pipeline/tecnica.py || echo "análise técnica falhou; mantém os dados anteriores"
+
       - name: Histórico dos itens da faixa de cotações (B3, Yahoo, BCB, Tesouro, FRED e Focus)
         if: steps.checar.outputs.pular != 'sim'
         run: python pipeline/mercado_hist.py || echo "histórico da faixa falhou; mantém os dados anteriores"

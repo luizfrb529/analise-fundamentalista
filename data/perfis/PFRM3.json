@@ -1,0 +1,48 @@
+{
+ "ticker": "PFRM3",
+ "revisado_em": "2026-11-28",
+ "resumo": "Distribuidora de medicamentos e produtos de saúde para farmácias e hospitais, com braço de especialidades (4BIO) e rede de farmácias. Margens finas e alavancagem maior após a compra da 4BIO.",
+ "modelo": "A Profarma compra medicamentos, perfumaria e produtos hospitalares dos fabricantes e os distribui a farmácias independentes, redes e hospitais em todo o Brasil, ganhando na margem de distribuição e no giro de estoque. Atua também em especialidades (medicamentos de alto custo e oncológicos, com a 4BIO e a Profarma Specialty) e no varejo farmacêutico com as redes d1000. A receita é recorrente, ligada ao consumo de medicamentos, com margem Ebitda de cerca de 4%.",
+ "segmentos": [
+  {"nome": "Distribuição farmacêutica", "peso_receita": null, "periodo": "3T26", "obs": "Principal negócio, de farmácias independentes e redes."},
+  {"nome": "Especialidades (4BIO e Profarma Specialty)", "peso_receita": null, "periodo": "3T26", "obs": "Medicamentos de alto custo; a compra da 4BIO elevou a dívida."},
+  {"nome": "Varejo (d1000)", "peso_receita": null, "periodo": "3T26", "obs": "Redes de farmácias próprias."}
+ ],
+ "segmentos_base": "Receita líquida (a divisão por segmento não foi confirmada em duas fontes)",
+ "geografia": {"brasil_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "base": null, "texto": "Opera e vende só no Brasil, com centros de distribuição em vários estados."},
+ "moeda": {"receita_em_dolar": "nenhuma", "divida_em_dolar": "nenhuma", "texto": "Receita e dívida em reais. O dólar afeta indiretamente o custo dos medicamentos importados, repassado pelos fabricantes dentro do reajuste regulado."},
+ "momento": "No 3T26, a receita bruta foi de R$ 4,5 bi e a receita líquida de R$ 3,87 bi (+35,7% sobre o 3T25), com a consolidação da 4BIO. O Ebitda ajustado subiu 31,6%, para R$ 150,5 mi, mas a margem caiu para 3,9% (4,0% no 3T25), e o lucro líquido ajustado recuou 11,2%, para R$ 46,7 mi. A dívida líquida chegou a R$ 1,4 bi, sendo R$ 827,7 mi bancária e R$ 537,2 mi de obrigações pela compra da 4BIO, o que levou a alavancagem a 2,8 vezes o Ebitda (1,8 vez sem a 4BIO).",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Receita líquida de R$ 3,87 bi no 3T26, alta de 35,7% sobre o 3T25.",
+   "Ebitda ajustado de R$ 150,5 mi, alta de 31,6% sobre o 3T25.",
+   "Lucro bruto de R$ 577,2 mi, alta de 29,1%, com margem bruta de 14,9%."
+  ],
+  "negativos": [
+   "Lucro líquido ajustado de R$ 46,7 mi, queda de 11,2% sobre o 3T25.",
+   "Margem Ebitda ajustada de 3,9%, ante 4,0% no 3T25.",
+   "Dívida líquida de R$ 1,4 bi, 2,8 vezes o Ebitda, incluindo R$ 537,2 mi de obrigações da compra da 4BIO."
+  ],
+  "atencao": [
+   "Redução da alavancagem depois da integração da 4BIO.",
+   "Margem de distribuição com a entrada de especialidades de alto custo."
+  ]
+ },
+ "sensibilidade": {
+  "selic_caindo": {"nota": 2, "porque": "Com dívida líquida de R$ 1,4 bi e margem Ebitda perto de 4%, juro menor reduz bastante a despesa financeira e libera lucro."},
+  "dolar_subindo": {"nota": 0, "porque": "Receita e dívida em reais; o efeito do câmbio nos medicamentos importados chega pelos fabricantes, dentro do reajuste regulado."},
+  "commodities_subindo": {"nota": 0, "porque": "O negócio não depende de preços de commodities."},
+  "pib_acelerando": {"nota": 1, "porque": "Consumo de medicamentos é pouco sensível ao ciclo, mas perfumaria e varejo farmacêutico ganham com mais renda."},
+  "inflacao_subindo": {"nota": 0, "porque": "O reajuste anual de medicamentos acompanha a inflação, mas custos de frete e pessoal sobem antes."},
+  "risco_fiscal_subindo": {"nota": -1, "porque": "Risco fiscal tende a manter o juro alto, o que pesa numa empresa alavancada."}
+ },
+ "fontes": [
+  {"titulo": "Visno Invest: Profarma (PFRM3) registra receita bruta de R$ 4,5 bi no 3T26", "url": "https://visnoinvest.com.br/news/16521/profarma-pfrm3-registra-receita-bruta-de-r-45-bi-no-3t26", "data": "2026-11"},
+  {"titulo": "InfoMoney: Sanepar, JHSF, Unipar, IMC e mais empresas divulgam resultados no 3T", "url": "https://www.infomoney.com.br/mercados/sanepar-jhsf-unipar-imc-e-mais-empresas-divulgam-resultados-no-3t/", "data": "2026-11"},
+  {"titulo": "Ativo Virtual: Balanços do 3T26, JHSF e Sanepar lucram", "url": "https://www.ativovirtual.com.br/avnews/artigos/balancos-do-3t26-jhsf-e-sanepar-lucram-unipar-e-bombril-viram-prejuizo", "data": "2026-11"}
+ ],
+ "pendencias": "Divisão da receita por segmento e lucro líquido contábil do 3T26 não confirmados em duas fontes.",
+ "ultimo_resultado": "3T26"
+}

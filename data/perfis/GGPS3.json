@@ -1,0 +1,48 @@
+{
+ "ticker": "GGPS3",
+ "revisado_em": "2026-11-28",
+ "resumo": "Maior empresa de serviços terceirizados do Brasil (facilities, segurança, limpeza, manutenção, logística e alimentação), que cresce por aquisições. Receita recorrente de contratos e baixa alavancagem.",
+ "modelo": "O Grupo GPS presta serviços terceirizados para empresas, indústrias, hospitais e órgãos públicos: segurança, limpeza, manutenção, facilities, logística, alimentação e serviços em plataformas marítimas. A receita vem de contratos de prazo longo, renovados com frequência, e o custo principal é mão de obra. Cresce comprando empresas regionais (30 aquisições desde a abertura de capital, somando R$ 9,4 bi de receita).",
+ "segmentos": [
+  {"nome": "Facilities, segurança e serviços gerais", "peso_receita": null, "periodo": "3T26", "obs": "Principal negócio; a divisão por linha não foi confirmada."},
+  {"nome": "Logística, alimentação e serviços industriais", "peso_receita": null, "periodo": "3T26", "obs": null}
+ ],
+ "segmentos_base": "Receita líquida (divisão por segmento não confirmada em duas fontes)",
+ "geografia": {"brasil_pct": 1.0, "exterior_pct": 0.0, "periodo": "3T26", "base": null, "texto": "Opera em todo o Brasil; não tem receita relevante no exterior."},
+ "moeda": {"receita_em_dolar": "nenhuma", "divida_em_dolar": "nenhuma", "texto": "Receita, custo e dívida em reais; o câmbio tem efeito pequeno no negócio."},
+ "momento": "No 3T26, a receita líquida foi de cerca de R$ 4,69 bi (+5% sobre o 3T25, com 4% de crescimento orgânico) e o Ebitda ajustado de R$ 456 mi (+5%), com margem de 9,7% (0,1 ponto abaixo do 3T25). O lucro líquido ajustado foi de R$ 193 mi (+3%). A alavancagem caiu para 1,3 vez o Ebitda (1,5 vez um ano antes) e a geração de caixa operacional foi de 124% do Ebitda. A empresa reduziu de propósito o ritmo de aquisições até meados de 2027 por causa da reforma tributária e de mudanças trabalhistas, e o crescimento orgânico desacelerou com menos licitações comerciais.",
+ "destaques_resultado": {
+  "trimestre": "3T26",
+  "divulgado_em": "2026-11-12",
+  "positivos": [
+   "Receita líquida de cerca de R$ 4,69 bi no 3T26, alta de 5% sobre o 3T25.",
+   "Ebitda ajustado de R$ 456 mi, alta de 5% sobre o 3T25.",
+   "Alavancagem de 1,3 vez o Ebitda, ante 1,5 vez no 3T25, com caixa operacional de 124% do Ebitda."
+  ],
+  "negativos": [
+   "Margem Ebitda ajustada de 9,7%, 0,1 ponto abaixo do 3T25, com pico sazonal de despesas trabalhistas.",
+   "Crescimento orgânico desacelerou para 4%, com pausa em licitações comerciais.",
+   "Lucro líquido ajustado de R$ 193 mi (+3%) ficou abaixo do esperado pelo mercado, segundo a imprensa."
+  ],
+  "atencao": [
+   "Retomada das aquisições, pausadas até meados de 2027.",
+   "Efeito da reforma tributária e de mudanças trabalhistas nos contratos."
+  ]
+ },
+ "sensibilidade": {
+  "selic_caindo": {"nota": 1, "porque": "Com alavancagem de 1,3 vez o Ebitda, juro menor reduz a despesa financeira e barateia novas aquisições."},
+  "dolar_subindo": {"nota": 0, "porque": "Receita, custo e dívida em reais."},
+  "commodities_subindo": {"nota": 0, "porque": "O custo principal é mão de obra, não commodities."},
+  "pib_acelerando": {"nota": 1, "porque": "Mais atividade leva empresas a contratar mais serviços terceirizados e a ampliar contratos."},
+  "inflacao_subindo": {"nota": 0, "porque": "Contratos têm reajuste anual ligado a inflação e dissídio, mas o repasse demora alguns meses."},
+  "risco_fiscal_subindo": {"nota": -1, "porque": "Risco fiscal mantém o juro alto e pode atrasar pagamentos de clientes públicos."}
+ },
+ "fontes": [
+  {"titulo": "InfoMoney: Grupo GPS (GGPS3) tem lucro ajustado de R$ 193 mi no 3º tri, alta de 3%", "url": "https://www.infomoney.com.br/mercados/grupo-gps-ggps3-resultados-terceiro-trimestre-2026/", "data": "2026-11-12"},
+  {"titulo": "Visno Invest: Grupo GPS (GGPS3) registra lucro líquido de R$ 162 mi no 3T26", "url": "https://visnoinvest.com.br/news/16512/grupo-gps-ggps3-registra-lucro-liquido-de-r-162-mi-no-3t26", "data": "2026-11"},
+  {"titulo": "Investing.com: Earnings call transcript, GPS Q3 2026", "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-gps-posts-slight-q3-2026-miss-as-shares-rise-93CH-5025698", "data": "2026-11"},
+  {"titulo": "GuruFocus: GPS Q3 2026 Earnings Call Highlights", "url": "https://www.gurufocus.com/news/9202223/gps-participacoes-e-empreendimentos-sa-bspggps3-q3-2026-earnings-call-highlights-solid-cash-generation-and-5-revenue-growth-amid-commercial-pause", "data": "2026-11"}
+ ],
+ "pendencias": "Lucro líquido contábil diverge entre as fontes (R$ 162 mi contábil e R$ 193 mi ajustado); usado o ajustado, confirmado por InfoMoney e Reuters. Divisão da receita por segmento não confirmada.",
+ "ultimo_resultado": "3T26"
+}

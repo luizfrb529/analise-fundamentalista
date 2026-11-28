@@ -213,7 +213,7 @@ def normalizar_cotacao(df: pd.DataFrame, fc: dict) -> pd.DataFrame:
     return d
 
 
-def precos_yf(tickers: list[str], anos: int = 11) -> dict[str, pd.DataFrame]:
+def precos_yf(tickers: list[str], anos: int = 11, ohlc: bool = False) -> dict[str, pd.DataFrame]:
     """Histórico diário (Close não ajustado por proventos, mas ajustado por desdobramento; Adj Close; Volume)."""
     """Inclui as colunas Dividends e Stock Splits (actions=True), para não precisar de uma chamada por ticker."""
     import yfinance as yf
@@ -228,7 +228,7 @@ def precos_yf(tickers: list[str], anos: int = 11) -> dict[str, pd.DataFrame]:
             except KeyError:
                 continue
             if len(d):
-                cols = [c for c in ("Close", "Adj Close", "Volume", "Dividends", "Stock Splits") if c in d.columns]
+                cols = [c for c in (("High", "Low") if ohlc else ()) + ("Close", "Adj Close", "Volume", "Dividends", "Stock Splits") if c in d.columns]
                 out[t] = normalizar_cotacao(d[cols].copy(), fatores.get(t))
         time.sleep(1)
     return out
