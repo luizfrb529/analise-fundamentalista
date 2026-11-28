@@ -3195,12 +3195,12 @@ async function pgCommodities(app) {
       <div class="cm-sub">1 semana ${varHtml(x.var_sem)}</div>
       <div class="cm-sub muted">${esc(x.unidade)} · ${esc(x.praca)}</div>
       ${sparkSvg(x.serie, (x.var_12m ?? x.var_mes ?? 0) >= 0 ? "alta" : "baixa")}
-      <div class="cm-pils">${pil("1 mês", x.var_mes)}${ok(x.var_12m) ? pil("1 ano", x.var_12m) : `<span class="cm-pil muted" data-tip="A B3 só guarda 21 dias no boletim diário; o histórico é acumulado dia a dia desde ${dataBR(x.historico_desde)}.">histórico desde ${dataBR(x.historico_desde)}</span>`}${ok(x.var_ano) ? pil("No ano", x.var_ano) : ""}</div>
+      <div class="cm-pils">${pil("1 mês", x.var_mes)}${ok(x.var_12m) ? pil("12 meses", x.var_12m) : `<span class="cm-pil muted">12 meses: sem dado</span>`}${ok(x.var_ano) ? pil("No ano", x.var_ano) : `<span class="cm-pil muted">No ano: sem dado</span>`}</div>
     </div>`;
     app.innerHTML = `${trilha([["Commodities"]])}<div class="cab-pagina"><div><h1>Commodities</h1>
-      <p>Petróleo, metais e agro: cotação, variação e gráfico de 1 ano. Passe o mouse no <i class="info">?</i> para saber o que é cada uma e de onde vem o preço.</p></div></div>
+      <p>Petróleo, metais e agro: cotação, variação e gráfico de 12 meses. Petróleo e metais em dólar; agro em reais. Passe o mouse no <i class="info">?</i> para saber o que é cada uma e de onde vem o preço.</p></div></div>
       ${grupos.map((g) => `<h2 class="cm-grupo">${esc(g)}</h2><div class="cm-grade">${itens.filter((x) => x.grupo === g).map(card).join("")}</div>`).join("")}
-      <p class="sub" style="margin-top:14px">Fontes: Yahoo Finance (contratos futuros mais próximos, com atraso de até 15 minutos), LME pelo preço oficial à vista publicado pela Westmetall (alumínio, níquel e zinco) e Boletim Diário da B3 (boi gordo e milho, indicadores CEPEA/B3). Gráficos com fechamentos diários de 1 ano. Conteúdo informativo, não é recomendação.</p>`;
+      <p class="sub" style="margin-top:14px">Fontes: Yahoo Finance (contratos futuros mais próximos, com atraso de até 15 minutos), LME pelo preço oficial à vista publicado pela Westmetall (alumínio, níquel e zinco) e indicadores CEPEA/Esalq publicados diariamente pelo Notícias Agrícolas (boi gordo, milho e soja, em reais), conferidos com o Boletim Diário da B3. Gráficos com fechamentos diários de 1 ano. Conteúdo informativo, não é recomendação.</p>`;
   };
   desenhar();
   PAGINA_VIVA.fn = () => { if (rota().r === "commodities") desenhar(); };
@@ -3241,6 +3241,12 @@ async function pgBitcoin(app) {
         ? `O valor de mercado é <b>${nf2.format(-dif * 100)}% menor</b> que o valor dos bitcoins que a empresa tem: pela ação, cada bitcoin sai mais barato que no mercado (antes de dívida, caixa e custos da empresa).`
         : `O valor de mercado é <b>${nf2.format(dif * 100)}% maior</b> que o valor dos bitcoins que a empresa tem: pela ação, paga-se um ágio sobre o bitcoin direto.`;
     };
+    const resumo = (x) => {   // a conta em uma linha: quanto se paga por 1 de bitcoin comprando pela ação
+      if (!ok(x.mnav)) return "";
+      const n = (v) => `${x.mo} ${nf2.format(v)}`;
+      const caro = x.mnav >= 1;
+      return `<div class="btc-resumo ${caro ? "neg" : "pos"}"><b>Em resumo:</b> comprando a ação, é como pagar <b>${n(x.mnav)}</b> por cada ${x.mo} 1,00 em bitcoin${ok(x.implicito) && ok(x.btcPx) ? ` (um bitcoin sai por ${n(x.implicito)}, contra ${n(x.btcPx)} no mercado)` : ""}.${ok(x.mnavEv) ? ` Contando a ${x.dl > 0 ? "dívida líquida" : "sobra de caixa"}, sai por <b>${n(x.mnavEv)}</b>.` : ""}</div>`;
+    };
     const tip = {
       mnav: "mNAV = valor de mercado da empresa ÷ valor dos bitcoins que ela tem, ao preço de agora. Abaixo de 1,00: a bolsa paga menos que os bitcoins valem (desconto). Acima de 1,00: paga mais (ágio).",
       mnavEv: "mNAV ajustado = (valor de mercado + dívida − caixa em dinheiro) ÷ valor dos bitcoins. Considera que a dívida também precisa ser paga e o caixa em dinheiro também pertence ao acionista. Na Strategy, não inclui as ações preferenciais.",
@@ -3252,6 +3258,7 @@ async function pgBitcoin(app) {
       <div class="btc-num"><span>mNAV <i class="info" data-tip="${esc(tip.mnav)}">?</i></span><b class="${ok(x.mnav) ? (x.mnav < 1 ? "pos" : "neg") : ""}">${ok(x.mnav) ? nf2.format(x.mnav) : "n/d"}</b></div>
       <div class="btc-barras" aria-hidden="true">${ok(x.vm) && x.nav ? (() => { const mx = Math.max(x.vm, x.nav); return `<div><span>Valor de mercado</span><i style="width:${(x.vm / mx) * 100}%" class="vm"></i><em>${x.mo} ${grande(x.vm)}</em></div><div><span>Bitcoins em caixa</span><i style="width:${(x.nav / mx) * 100}%" class="nav"></i><em>${x.mo} ${grande(x.nav)}</em></div>`; })() : ""}</div>
       <p class="btc-leitura">${leitura(x)}</p>
+      ${resumo(x)}
       <div class="btc-grade">
         <div><span>Cotação</span><b>${ok(x.p.preco) ? x.mo + " " + nf2.format(x.p.preco) : "n/d"}</b> ${varHtml(x.p.var_dia)}</div>
         <div><span>Bitcoins da empresa</span><b>${nfBtc.format(x.btc)} BTC</b><small>em ${dataBR(x.data_btc)} <i class="info" data-tip="${esc("Fonte: " + x.fonte_btc)}">i</i></small></div>
@@ -3288,6 +3295,7 @@ const AL_TIPS = {
   dias: "Dias para zerar: ações alugadas dividido pelo volume médio diário negociado (até 21 pregões). Quanto maior, mais difícil zerar a posição vendida de uma vez.",
   dval: "Variação do valor alugado em reais sobre o pregão anterior.",
 };
+let AL_ROLAR = false;   // clique numa linha do ranking leva ao gráfico, que fica abaixo
 async function pgAluguel(app, q) {
   app.innerHTML = '<div class="carregando"><span></span>Carregando o aluguel de ações</div>';
   const ind = D.cache.alInd || (D.cache.alInd = await j("data/aluguel/indice.json", null));
@@ -3307,16 +3315,6 @@ async function pgAluguel(app, q) {
       <p>Posição alugada é o saldo de ações emprestadas no BTC da B3. Serve de aproximação da venda a descoberto, mas não é a venda em si: o tomador pode alugar para outros fins (hedge, arbitragem, liquidação).</p></div>
       <div class="datas"><span class="pilula"><i></i>Posição de ${dataBR(data)}</span><span class="pilula">Fonte: B3, Boletim Diário</span></div></div>
     <div class="cartao">
-      <div class="linha al-ctrl">
-        <input id="al-busca" list="al-tks" placeholder="Buscar ticker" value="${esc(alvo || "")}" aria-label="Ativo do gráfico">
-        <datalist id="al-tks">${dd.linhas.filter((x) => x.valor >= 1e6).map((x) => `<option value="${x.t}">${esc(x.nome || "")}</option>`).join("")}</datalist>
-        <div class="abas" id="al-met" style="margin:0">${[["taxa", "Taxa média (tomador, a.a.)"], ["qtd", "Ações alugadas"], ["valor", "R$ alugado"], ["pct", "% das ações"]].map(([v, n]) => `<button data-v="${v}" class="${v === met ? "ativo" : ""}">${n}</button>`).join("")}</div>
-        <div class="abas" id="al-per" style="margin:0">${[["1m", "1 mês"], ["3m", "3 meses"], ["6m", "6 meses"], ["1a", "1 ano"], ["tudo", "Tudo"]].map(([v, n]) => `<button data-v="${v}" class="${v === per ? "ativo" : ""}">${n}</button>`).join("")}</div>
-      </div>
-      <div class="grafico alto"><canvas id="g-al"></canvas></div>
-      <p class="sub" id="al-nota" style="margin-top:6px"></p>
-    </div>
-    <div class="cartao" style="margin-top:16px">
       <div class="cartao-cab al-cab"><h3>Ranking do dia por taxa ${minimo ? '<span class="muted">(posições a partir de R$ 1 mi)</span>' : ""}</h3>
         <div class="linha" style="gap:8px;flex-wrap:wrap">
           <select id="al-tipo" aria-label="Tipo de ativo">${["Ação", "Unit", "FII", "ETF", "BDR", "Todos"].map((x) => `<option ${x === tipo ? "selected" : ""}>${x}</option>`).join("")}</select>
@@ -3328,7 +3326,17 @@ async function pgAluguel(app, q) {
       <div class="tabela-wrap alta"><table class="resp"><thead><tr><th>Ticker</th><th>Nome</th>${th("Ações alugadas", "qtd")}${th("R$ alugado", "valor")}${th("Taxa média", "taxa")}${th("% das ações", "pct")}${th("Δ % (p.p.)", "dpct")}${th("Valor de mercado", "vm")}${th("Alugado % do valor", "pctvm")}${th("Dias para zerar", "dias")}${th("Δ R$ (dia)", "dval")}</tr></thead><tbody>
       ${lista.map((x) => `<tr class="clicavel ${x.t === alvo ? "sel" : ""}" data-al="${x.t}"><td><b>${x.t}</b></td><td class="muted al-nome">${esc(x.nome || "")}</td><td class="n">${new Intl.NumberFormat("pt-BR").format(x.qtd)}</td><td class="n">R$ ${grande(x.valor)}</td><td class="n"><b>${pct(x.taxa)}</b>${x.herdada ? ' <i class="info" data-tip="Sem novos contratos no dia: a B3 repete a última taxa (taxa herdada).">h</i>' : ""}</td><td class="n">${pct(x.pct_acoes)}</td><td class="n">${ok(x.d_pct) ? `<span class="${sinal(-x.d_pct)}">${x.d_pct > 0 ? "+" : ""}${nf2.format(x.d_pct * 100)} p.p.</span>` : ND}</td><td class="n">${ok(x.vm) ? "R$ " + grande(x.vm) : ND}</td><td class="n">${pct(x.pct_vm)}</td><td class="n">${ok(x.dias_zerar) ? nf2.format(x.dias_zerar) : ND}</td><td class="n">${varHtml(x.d_valor)}</td></tr>`).join("") || `<tr><td colspan="11" class="vazio">Nenhum papel neste recorte.</td></tr>`}
       </tbody></table></div>
-      <p class="sub" style="margin-top:10px">${lista.length} papéis. Clique numa linha para ver o gráfico; clique no cabeçalho para ordenar. "h": taxa herdada (sem contratos novos no dia). Todos os papéis com aluguel na B3, não só os acompanhados no site. Conteúdo informativo, não é recomendação.</p>
+      <p class="sub" style="margin-top:10px">${lista.length} papéis. Clique numa linha para ver o gráfico logo abaixo; clique no cabeçalho para ordenar. "h": taxa herdada (sem contratos novos no dia). Todos os papéis com aluguel na B3, não só os acompanhados no site. Conteúdo informativo, não é recomendação.</p>
+    </div>
+    <div class="cartao" id="al-graf-cartao" style="margin-top:16px">
+      <div class="linha al-ctrl">
+        <input id="al-busca" list="al-tks" placeholder="Buscar ticker" value="${esc(alvo || "")}" aria-label="Ativo do gráfico">
+        <datalist id="al-tks">${dd.linhas.filter((x) => x.valor >= 1e6).map((x) => `<option value="${x.t}">${esc(x.nome || "")}</option>`).join("")}</datalist>
+        <div class="abas" id="al-met" style="margin:0">${[["taxa", "Taxa média (tomador, a.a.)"], ["qtd", "Ações alugadas"], ["valor", "R$ alugado"], ["pct", "% das ações"]].map(([v, n]) => `<button data-v="${v}" class="${v === met ? "ativo" : ""}">${n}</button>`).join("")}</div>
+        <div class="abas" id="al-per" style="margin:0">${[["1m", "1 mês"], ["3m", "3 meses"], ["6m", "6 meses"], ["1a", "1 ano"], ["tudo", "Tudo"]].map(([v, n]) => `<button data-v="${v}" class="${v === per ? "ativo" : ""}">${n}</button>`).join("")}</div>
+      </div>
+      <div class="grafico alto"><canvas id="g-al"></canvas></div>
+      <p class="sub" id="al-nota" style="margin-top:6px"></p>
     </div>`;
   $$("#al-met button").forEach((b) => b.onclick = () => ir({ m: b.dataset.v }));
   $$("#al-per button").forEach((b) => b.onclick = () => ir({ p: b.dataset.v }));
@@ -3337,7 +3345,8 @@ async function pgAluguel(app, q) {
   $("#al-data").onchange = (e) => ir({ d: e.target.value });
   $("#al-min").onchange = (e) => ir({ min: e.target.checked ? "1" : "0" });
   $("#al-busca").onchange = (e) => { const v = e.target.value.trim().toUpperCase(); if (v) ir({ t: v }); };
-  $$("tr[data-al]").forEach((tr) => tr.onclick = () => ir({ t: tr.dataset.al }));
+  $$("tr[data-al]").forEach((tr) => tr.onclick = () => { AL_ROLAR = true; ir({ t: tr.dataset.al }); });
+  if (AL_ROLAR) { AL_ROLAR = false; requestAnimationFrame(() => $("#al-graf-cartao")?.scrollIntoView({ block: "start" })); }
   $("#al-csv").onclick = () => baixarExcel(`aluguel_${data}`, [{ nome: "Aluguel", cab: ["Ticker", "Nome", "Tipo", "Ações alugadas", "R$ alugado", "Taxa média (% a.a.)", "Taxa herdada", "% das ações", "Valor de mercado (R$)", "Alugado % do valor", "Dias para zerar", "Variação R$ no dia (%)"],
     linhas: lista.map((x) => [x.t, x.nome, x.tipo, x.qtd, x.valor, ok(x.taxa) ? +(x.taxa * 100).toFixed(4) : null, x.herdada ? "sim" : "não", ok(x.pct_acoes) ? +(x.pct_acoes * 100).toFixed(4) : null, x.vm ?? null, ok(x.pct_vm) ? +(x.pct_vm * 100).toFixed(4) : null, ok(x.dias_zerar) ? +x.dias_zerar.toFixed(2) : null, ok(x.d_valor) ? +(x.d_valor * 100).toFixed(2) : null]) }]);
   // gráfico do ativo escolhido

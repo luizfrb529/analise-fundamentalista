@@ -845,7 +845,8 @@ select { max-width: 100%; }
 @media (prefers-reduced-motion: reduce) { .gaveta { animation: none; } }
 .gaveta-cab { display: flex; align-items: center; justify-content: space-between; padding: 4px 4px 10px; }
 .gaveta-cab svg { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
-.gaveta-grupo { font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--txt-3); padding: 14px 8px 6px; }
+.gaveta-grupo { font-size: .74rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: var(--cm-cor); background: color-mix(in srgb, var(--cm-cor) 14%, transparent); border: 1px solid color-mix(in srgb, var(--cm-cor) 45%, transparent); border-radius: 8px; padding: 7px 10px; margin: 16px 0 6px; }
+.gaveta-cab + .gaveta-grupo { margin-top: 4px; }
 .gaveta > a { display: block; padding: 10px 10px; border-radius: 10px; color: var(--txt); }
 .gaveta > a b { display: block; font-size: .93rem; }
 .gaveta > a span { display: block; font-size: .8rem; color: var(--txt-3); margin-top: 2px; }
@@ -859,6 +860,7 @@ body.gaveta-aberta { overflow: hidden; }
 :root[data-theme="light"] { --cm-cor: #a66d08; }
 .cm-grupo { font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--txt-3); margin: 22px 0 10px; }
 .cm-grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px; }
+.cm-grade > .cm-card { margin: 0; }
 .cm-card { padding: 16px 16px 14px; display: flex; flex-direction: column; gap: 4px; }
 .cm-topo { display: flex; justify-content: space-between; align-items: center; }
 .cm-nome { font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--cm-cor); display: inline-flex; gap: 6px; align-items: center; }
@@ -922,3 +924,10 @@ tr.sel td { background: var(--acento-fundo); }
 .tec-tag.neutro, .tec-tag.fraca { color: var(--txt-3); }
 .tec-tag.sobrev { color: var(--serie-2); }
 .tec-graf2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px; margin-top: 14px; }
+
+/* cartões lado a lado nas abas novas: sem a margem de .cartao + .cartao, que desalinhava a grade */
+.cm-grade > .cartao, .btc-cards > .cartao, .tec-cards > .cartao, .tec-graf2 > .cartao { margin: 0; }
+.btc-resumo { font-size: .86rem; line-height: 1.45; padding: 9px 12px; border-radius: 10px; margin: 2px 0 10px; background: var(--sup-3); border-left: 3px solid var(--borda); }
+.btc-resumo.pos { border-left-color: var(--pos, #2fbf71); }
+.btc-resumo.neg { border-left-color: var(--neg, #e5484d); }
+.btc-resumo.pos, .btc-resumo.neg { color: var(--txt); }

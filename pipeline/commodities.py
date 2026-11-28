@@ -24,6 +24,8 @@ import sources as S  # noqa: E402
 RAIZ = Path(__file__).resolve().parents[1]
 SAIDA = RAIZ / "data" / "mercado" / "commodities.json"
 ACUM_B3 = RAIZ / "data" / "mercado" / "commodities_b3.json"
+ACUM_AGRO = RAIZ / "data" / "mercado" / "commodities_agro.json"
+NA = "https://www.noticiasagricolas.com.br/cotacoes/"
 HOJE = dt.date.today()
 
 ITENS = [
@@ -38,8 +40,9 @@ ITENS = [
     ("zinco", "Zinco", "Metais industriais", "lme", "LME_Zn_cash", "US$ por tonelada", "Londres (LME)", "Usado para galvanizar aço."),
     ("aco", "Aço (EUA)", "Metais industriais", "yahoo", "HRC=F", "US$ por tonelada curta", "Nova York (Comex)", "Bobina laminada a quente no mercado americano."),
     ("minerio", "Minério de ferro", "Metais industriais", "yahoo", "TIO=F", "US$ por tonelada", "Singapura (via Comex)", "Matéria-prima do aço; base do resultado da Vale."),
-    ("boi", "Boi gordo", "Agro", "b3", "RTBGI", "R$ por arroba", "B3 (indicador CEPEA/B3)", "Preço da arroba do boi pronto para abate em São Paulo."),
-    ("milho", "Milho", "Agro", "b3", "RTCNI", "R$ por saca de 60 kg", "B3 (indicador CEPEA/B3)", "Preço do milho em Campinas (SP)."),
+    ("boi", "Boi gordo", "Agro", "cepea", "boi-gordo/boi-gordo-indicador-esalq-bmf|RTBGI", "R$ por arroba", "São Paulo (indicador CEPEA/B3)", "Preço da arroba do boi pronto para abate em São Paulo."),
+    ("milho", "Milho", "Agro", "cepea", "milho/indicador-cepea-esalq-milho|RTCNI", "R$ por saca de 60 kg", "Campinas, SP (indicador CEPEA/B3)", "Preço do milho em Campinas (SP)."),
+    ("soja", "Soja", "Agro", "cepea", "soja/soja-indicador-cepea-esalq-porto-paranagua|", "R$ por saca de 60 kg", "Porto de Paranaguá, PR (indicador CEPEA)", "Preço da soja para exportação no porto de Paranaguá; referência do agro brasileiro."),
 ]
 
 
@@ -89,6 +92,64 @@ def b3_indicadores(dias: int = 21) -> dict:
     return acum
 
 
+def _num(t: str) -> float:
+    return float(t.replace(".", "").replace(",", "."))
+
+
+def na_pagina(slug: str, data: dt.date | None = None) -> dict:
+    """Indicador CEPEA publicado pelo Notícias Agrícolas: a página de uma data traz cerca de 10 dias até ela."""
+    url = NA + slug + (f"/{data.isoformat()}" if data else "")
+    h = S.get(url, headers={"User-Agent": "Mozilla/5.0"}).text
+    pontos = {}
+    for tab in re.findall(r"<table.*?</table>", h, re.S):
+        txt = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", tab))
+        m = re.search(r"^ ?Data .*?(\d{2}/\d{2}/\d{4}) ([\d.]+,\d+) ", txt)
+        if m:
+            pontos[dt.datetime.strptime(m.group(1), "%d/%m/%Y").date().isoformat()] = _num(m.group(2))
+    return pontos
+
+
+def agro(slug: str) -> dict:
+    """Série diária do indicador CEPEA (cache em data/mercado/commodities_agro.json). A página de uma data traz
+    só aquele dia: na primeira vez busca dia útil a dia útil desde pouco mais de 1 ano atrás; depois, a página
+    principal (últimos ~10 dias) e só as datas que faltarem. Dias sem cotação (feriados) ficam anotados."""
+    import time
+    from concurrent.futures import ThreadPoolExecutor
+    acum = json.loads(ACUM_AGRO.read_text(encoding="utf-8")) if ACUM_AGRO.exists() else {}
+    serie = acum.setdefault(slug, {})
+    sem = set(acum.setdefault("_sem_cotacao", {}).setdefault(slug, []))
+    serie.update(na_pagina(slug))
+    alvo = dt.date(HOJE.year - 1, HOJE.month, 1) - dt.timedelta(days=40)   # 12 meses + início do ano com folga
+    faltam, d = [], alvo
+    while d < HOJE:
+        if d.weekday() < 5 and d.isoformat() not in serie and d.isoformat() not in sem and (HOJE - d).days > 3:
+            faltam.append(d)
+        d += dt.timedelta(days=1)
+
+    def busca(dia):
+        for _ in range(3):
+            try:
+                time.sleep(0.2)
+                return dia, na_pagina(slug, dia)
+            except Exception:
+                time.sleep(2)
+        return dia, None
+    with ThreadPoolExecutor(4) as ex:
+        for dia, r in ex.map(busca, faltam):
+            if r is None:
+                continue
+            if dia.isoformat() in r:
+                serie[dia.isoformat()] = r[dia.isoformat()]
+            else:
+                sem.add(dia.isoformat())
+    acum[slug] = dict(sorted(serie.items()))
+    acum["_sem_cotacao"][slug] = sorted(sem)
+    ACUM_AGRO.parent.mkdir(parents=True, exist_ok=True)
+    ACUM_AGRO.write_text(json.dumps(acum), encoding="utf-8")
+    print(f"{slug}: {len(faltam)} datas buscadas, série com {len(serie)} dias")
+    return acum[slug]
+
+
 def variacoes(s: pd.Series) -> dict:
     s = s.dropna()
     if s.empty:
@@ -110,6 +171,7 @@ def main():
     b3 = b3_indicadores()
     out = []
     for id_, nome, grupo, fonte, cod, unidade, praca, expl in ITENS:
+        conf = None
         try:
             if fonte == "yahoo":
                 df = px.get(cod)
@@ -120,8 +182,18 @@ def main():
                 s = lme(cod)
                 nome_fonte = "LME, preço oficial à vista (Westmetall)"
             else:
-                s = pd.Series({pd.Timestamp(k): v for k, v in (b3.get(cod) or {}).items()}, dtype=float).sort_index()
-                nome_fonte = "B3, Boletim Diário (indicador CEPEA/B3)"
+                slug, cod_b3 = cod.split("|")
+                s = pd.Series({pd.Timestamp(k): v for k, v in agro(slug).items()}, dtype=float).sort_index()
+                nome_fonte = "Indicador CEPEA/Esalq publicado diariamente pelo Notícias Agrícolas"
+                conf = None
+                if cod_b3:   # conferência com o Boletim Diário da B3 nos dias em comum
+                    b3s = b3.get(cod_b3) or {}
+                    comuns = [k for k in b3s if pd.Timestamp(k) in s.index]
+                    if comuns:
+                        dif = max(abs(s[pd.Timestamp(k)] / b3s[k] - 1) for k in comuns)
+                        conf = f"igual ao Boletim Diário da B3 em {len(comuns)} pregões (diferença máxima {dif:.2%})".replace(".", ",")
+                        if dif > 0.01:
+                            print(f"ATENÇÃO {nome}: CEPEA e B3 diferem até {dif:.1%}")
         except Exception as e:
             print(f"{nome}: {e}")
             continue
@@ -129,7 +201,8 @@ def main():
             print(f"{nome}: sem dados")
             continue
         um_ano = s[s.index >= s.index[-1] - pd.Timedelta(days=366)]
-        out.append({"id": id_, "nome": nome, "grupo": grupo, "unidade": unidade, "praca": praca, "explicacao": expl,
+        extra = {"conferencia": conf} if fonte == "cepea" and conf else {}
+        out.append({**extra, "id": id_, "nome": nome, "grupo": grupo, "unidade": unidade, "praca": praca, "explicacao": expl,
                     "fonte": nome_fonte, "codigo": cod, "ao_vivo": id_ if fonte == "yahoo" else None,
                     "historico_desde": s.index[0].strftime("%Y-%m-%d"),
                     **variacoes(s), "serie": [[d.strftime("%Y-%m-%d"), round(float(v), 4)] for d, v in um_ano.items()]})
@@ -144,6 +217,19 @@ def main():
                 print(f"ATENÇÃO alumínio: LME e Comex diferem {dif:+.1%}")
     except StopIteration:
         pass
+    # conferência: soja CEPEA (Paranaguá, R$) contra a soja de Chicago convertida em reais, na variação de 12 meses
+    try:
+        sj = next(x for x in out if x["id"] == "soja")
+        z = S.precos_yf(["ZS=F", "BRL=X"], anos=2)
+        cb = (z["ZS=F"]["Close"] * z["BRL=X"]["Close"]).dropna()
+        cb.index = pd.to_datetime(cb.index).tz_localize(None) if getattr(cb.index, "tz", None) else pd.to_datetime(cb.index)
+        v12 = variacoes(cb).get("var_12m")
+        if v12 is not None and sj.get("var_12m") is not None:
+            sj["conferencia"] = f"soja de Chicago (CBOT) em reais variou {v12:+.1%} em 12 meses, contra {sj["var_12m"]:+.1%} do CEPEA".replace(".", ",")
+            if abs(v12 - sj["var_12m"]) > 0.15:
+                print(f"ATENÇÃO soja: CEPEA e Chicago em reais divergem em 12 meses ({sj['var_12m']:+.1%} x {v12:+.1%})")
+    except Exception as e:
+        print(f"conferência da soja: {e}")
     SAIDA.parent.mkdir(parents=True, exist_ok=True)
     SAIDA.write_text(json.dumps({"atualizado_em": dt.datetime.now().isoformat(timespec="seconds"), "itens": out},
                                 ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
